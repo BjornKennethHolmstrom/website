@@ -1,3 +1,4 @@
+<!-- src/lib/components/SEO.svelte -->
 <script lang="ts">
 	import { page } from '$app/stores';
 

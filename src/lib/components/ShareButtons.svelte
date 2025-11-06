@@ -1,3 +1,4 @@
+<!-- src/lib/components/ShareButtons.svelte -->
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { language, t } from '$lib/stores/languageStore';

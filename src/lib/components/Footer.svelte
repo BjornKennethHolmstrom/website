@@ -1,3 +1,4 @@
+<!-- src/lib/components/Footer.svelte -->
 <script lang="ts">
 	import { t } from '$lib/stores/languageStore';
 </script>

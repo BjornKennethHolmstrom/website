@@ -8,10 +8,6 @@
   ==========================================
 */
 
-/*
-  1. Definiera variabler i :root (Light Mode default)
-     Detta block ska vara PÅ TOPPNIVÅ, inte inuti @theme.
-*/
 :root {
   /* Neutral Palette (Slate) */
   --color-bg-light: #F1F5F9;  /* slate-100 */
@@ -28,16 +24,19 @@
   --color-page-bg: var(--color-bg-light);
   --color-page-text: var(--color-text-dark);
   --color-page-accent: var(--color-accent);
+  --color-card-bg: #FFFFFF; /* Add card background variable */
+  --color-card-text: var(--color-text-dark);
 }
 
 /*
-  2. Define overrides for Dark Mode
-     Detta är en standard CSS-regel, den ska INTE vara inuti @theme.
+  Dark Mode
 */
 .dark {
   --color-page-bg: var(--color-bg-dark);
   --color-page-text: var(--color-text-light);
-  --color-page-accent: var(--color-accent); /* Accent kan vara densamma */
+  --color-page-accent: var(--color-accent);
+  --color-card-bg: #1E293B; /* slate-800 for cards in dark mode */
+  --color-card-text: var(--color-text-light);
 }
 
 /*
@@ -46,23 +45,22 @@
   ==========================================
 */
 body {
-  /* 3. Applicera temavariablerna. 
-       Detta fungerar perfekt med Svelte-kodens
-       `bg-[var(--color-page-bg)]` etc.
-  */
   background-color: var(--color-page-bg);
   color: var(--color-page-text);
-  font-family: 'Inter', sans-serif; /* Importeras i +layout.svelte */
+  font-family: 'Inter', sans-serif;
 
-  /* Mjuk övergång för tema-växling */
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+}
 
-  .prose {
-    font-family: 'Lora', serif; /* Sätt all brödtext till Lora */
-  }
-  .prose h1, .prose h2, .prose h3, .prose h4 {
-    font-family: 'Inter', sans-serif; /* Men behåll Inter för rubriker */
-  }
+body .prose {
+  font-family: 'Lora', serif;
+}
+
+body .prose h1, 
+body .prose h2, 
+body .prose h3, 
+body .prose h4 {
+  font-family: 'Inter', sans-serif;
 }

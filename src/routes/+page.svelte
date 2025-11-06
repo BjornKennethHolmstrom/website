@@ -75,101 +75,101 @@
   </section>
 
 	<section class="space-y-12 py-16 md:py-24">
-		<div>
-			<h2
-				class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl"
-			>
-				{$t.clusterSystems}
-			</h2>
-			<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-				{#each projects.systems as project}
-					<a
-						href={project.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="block rounded-lg border border-[var(--color-separator)] bg-white p-6 shadow-md transition-shadow hover:shadow-lg dark:bg-slate-800"
-					>
-						<img
-							src={project.logo}
-							alt={`${$t[`${project.key}Title`]} logo`}
-							class="mb-4 h-12 w-auto"
-						/>
-						<h3 class="text-xl font-semibold text-slate-900">
-							{$t[`${project.key}Title`]}
-						</h3>
-						<p class="text-slate-900 opacity-80">
-							{$t[`${project.key}Tagline`]}
-						</p>
-					</a>
-				{/each}
-			</div>
-		</div>
+	 <div>
+		 <h2
+			 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl"
+		 >
+			 {$t.clusterSystems}
+		 </h2>
+		 <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+			 {#each projects.systems as project}
+				 <a
+					 href={project.url}
+					 target="_blank"
+					 rel="noopener noreferrer"
+					 class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+				 >
+					 <img
+						 src={project.logo}
+						 alt={`${$t[`${project.key}Title`]} logo`}
+						 class="mb-4 h-12 w-auto"
+					 />
+					 <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+						 {$t[`${project.key}Title`]}
+					 </h3>
+					 <p class="text-[var(--color-card-text)] opacity-80">
+						 {$t[`${project.key}Tagline`]}
+					 </p>
+				 </a>
+			 {/each}
+		 </div>
+	 </div>
 
-		<div>
-			<h2
-				class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl"
-			>
-				{$t.clusterQuartet}
-			</h2>
-			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-				{#each projects.quartet as project}
-					<a
-						href={project.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="block rounded-lg border border-[var(--color-separator)] bg-white p-6 shadow-md transition-shadow hover:shadow-lg dark:bg-slate-800"
-					>
-						<img
-							src={project.logo}
-							alt={`${$t[`${project.key}Title`]} logo`}
-							class="mb-4 h-12 w-auto"
-						/>
-						<h3 class="text-xl font-semibold text-slate-900">
-							{$t[`${project.key}Title`]}
-						</h3>
-						<p class="text-slate-900 opacity-80">
-							{$t[`${project.key}Tagline`]}
-						</p>
-					</a>
-				{/each}
-			</div>
-		</div>
+	 <div>
+		 <h2
+			 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl"
+		 >
+			 {$t.clusterQuartet}
+		 </h2>
+		 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+			 {#each projects.quartet as project}
+				 <a
+					 href={project.url}
+					 target="_blank"
+					 rel="noopener noreferrer"
+					 class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+				 >
+					 <img
+						 src={project.logo}
+						 alt={`${$t[`${project.key}Title`]} logo`}
+						 class="mb-4 h-12 w-auto"
+					 />
+					 <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+						 {$t[`${project.key}Title`]}
+					 </h3>
+					 <p class="text-[var(--color-card-text)] opacity-80">
+						 {$t[`${project.key}Tagline`]}
+					 </p>
+				 </a>
+			 {/each}
+		 </div>
+	 </div>
 
-		<div>
-			<h2
-				class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl"
-			>
-				{$t.clusterPersonal}
-			</h2>
-			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-				{#each projects.personal as project}
-					<a
-						href={project.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="block rounded-lg border border-[var(--color-separator)] bg-white p-6 shadow-md transition-shadow hover:shadow-lg dark:bg-slate-800"
-					>
-						{#if project.type === 'img'}
-							<img
-								src={project.logo}
-								alt={`${$t[`${project.key}Title`]} logo`}
-								class="mb-4 h-12 w-auto"
-							/>
-						{:else if project.type === 'emoji'}
-							<span class="mb-4 block text-5xl">
-								{project.emoji}
-							</span>
-						{/if}
+	 <div>
+		 <h2
+			 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl"
+		 >
+			 {$t.clusterPersonal}
+		 </h2>
+		 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			 {#each projects.personal as project}
+				 <a
+					 href={project.url}
+					 target="_blank"
+					 rel="noopener noreferrer"
+					 class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+				 >
+					 {#if project.type === 'img'}
+						 <img
+							 src={project.logo}
+							 alt={`${$t[`${project.key}Title`]} logo`}
+							 class="mb-4 h-12 w-auto"
+						 />
+					 {:else if project.type === 'emoji'}
+						 <span class="mb-4 block text-5xl">
+							 {project.emoji}
+						 </span>
+					 {/if}
 
-						<h3 class="text-xl font-semibold text-slate-900">
-							{$t[`${project.key}Title`]}
-						</h3>
-						<p class="text-slate-900 opacity-80">
-							{$t[`${project.key}Tagline`]}
-						</p>
-					</a>
-				{/each}
-			</div>
-		</div>
-	</section>
+					 <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+						 {$t[`${project.key}Title`]}
+					 </h3>
+					 <p class="text-[var(--color-card-text)] opacity-80">
+						 {$t[`${project.key}Tagline`]}
+					 </p>
+				 </a>
+			 {/each}
+		 </div>
+	 </div>
+ </section>
 </div>
