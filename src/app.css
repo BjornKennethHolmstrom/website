@@ -58,4 +58,11 @@ body {
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+
+  .prose {
+    font-family: 'Lora', serif; /* Sätt all brödtext till Lora */
+  }
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    font-family: 'Inter', sans-serif; /* Men behåll Inter för rubriker */
+  }
 }

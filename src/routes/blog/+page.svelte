@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { t } from '$lib/stores/languageStore';
+ import SEO from '$lib/components/SEO.svelte';
 
 	// SvelteKits magiska sätt att importera flera filer
 	// Vi använder 'eager' för att ladda allt direkt för listan
@@ -22,10 +23,11 @@
 	);
 </script>
 
-<svelte:head>
-	<title>{$t.blogTitle} | Björn Kenneth Holmström</title>
-	<meta name="description" content="{$t.blogList}{$t.blogTitle.toLowerCase()}." />
-</svelte:head>
+<SEO
+	title={$t.about.meta.title}
+	description={$t.about.meta.description}
+	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, blog, polycrisis"
+/>
 
 <section class="bg-slate-900 py-16 text-center text-white md:py-24">
 	<div class="mx-auto max-w-3xl px-4">

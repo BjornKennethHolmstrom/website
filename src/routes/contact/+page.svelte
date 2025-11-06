@@ -1,8 +1,15 @@
 <script lang="ts">
 	import { t, language } from '$lib/stores/languageStore';
+ import SEO from '$lib/components/SEO.svelte';
 
 	let formStatus: 'idle' | 'submitting' | 'success' | 'error' = 'idle';
 </script>
+
+<SEO
+	title={$t.about.meta.title}
+	description={$t.about.meta.description}
+	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, contact, polycrisis"
+/>
 
 <svelte:head>
 	<title>{$t.contact.meta.title}</title>
@@ -62,7 +69,7 @@
 			{:else}
 				<form
 					method="POST"
-					action="https://formspree.io/f/YOUR_FORM_ID"
+					action="https://formspree.io/f/mrbonjzb"
 					class="space-y-6"
 					on:submit={() => (formStatus = 'submitting')}
 				>

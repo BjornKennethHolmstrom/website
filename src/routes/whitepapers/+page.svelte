@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { t, language } from '$lib/stores/languageStore';
+ import SEO from '$lib/components/SEO.svelte';
 
 	const ggfBase = 'https://globalgovernanceframeworks.org';
 	const wpBase = 'https://bjornkennethholmstrom.wordpress.com';
@@ -134,10 +135,11 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{$t.whitepapers.meta.title}</title>
-	<meta name="description" content="{$t.whitepapers.meta.description}" />
-</svelte:head>
+<SEO
+	title={$t.about.meta.title}
+	description={$t.about.meta.description}
+	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, whitepapers, polycrisis"
+/>
 
 <section class="bg-slate-900 py-16 text-center text-white">
 	<div class="mx-auto max-w-3xl px-4">

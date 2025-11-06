@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { t } from '$lib/stores/languageStore.ts';
+ import SEO from '$lib/components/SEO.svelte';
 
 	// Definiera vår projektdata.
 	// `key` används för i18n-storen.
@@ -50,6 +51,12 @@
 		]
 	};
 </script>
+
+<SEO
+	title={$t.about.meta.title}
+	description={$t.about.meta.description}
+	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, home, polycrisis"
+/>
 
 <div class="mx-auto max-w-7xl">
   <section class="bg-slate-900 py-16 text-center text-white md:py-24">

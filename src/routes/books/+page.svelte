@@ -1,13 +1,10 @@
 <script lang="ts">
-	// Importera från din store (som antagligen heter languageStore.ts)
 	import { t, language } from '$lib/stores/languageStore';
-
-	// ... (resten av din script-tag från förra filen) ...
+ import SEO from '$lib/components/SEO.svelte';
 
 	const ggfBase = 'https://globalgovernanceframeworks.org/resources';
 
 	let books = $derived([
-		// ... (all book data är densamma) ...
 		{
 			id: 'ai',
 			key: 'ai',
@@ -200,10 +197,11 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{$t.books.meta.title}</title>
-	<meta name="description" content="{$t.books.meta.description}" />
-</svelte:head>
+<SEO
+	title={$t.about.meta.title}
+	description={$t.about.meta.description}
+	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, books, polycrisis"
+/>
 
 <section class="bg-slate-900 py-16 text-center text-white">
 	<div class="mx-auto max-w-3xl px-4">

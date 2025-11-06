@@ -1,11 +1,15 @@
 <script lang="ts">
 	import { t } from '$lib/stores/languageStore';
+	import ShareButtons from '$lib/components/ShareButtons.svelte';
+ import SEO from '$lib/components/SEO.svelte';
+
 </script>
 
-<svelte:head>
-	<title>{$t.about.meta.title}</title>
-	<meta name="description" content="{$t.about.meta.description}" />
-</svelte:head>
+<SEO
+	title={$t.about.meta.title}
+	description={$t.about.meta.description}
+	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, about, polycrisis"
+/>
 
 <section class="bg-slate-900 py-16 text-center text-white md:py-24">
 	<div class="mx-auto max-w-3xl px-4">
@@ -65,4 +69,7 @@
 			</a>
 		</div>
 	</article>
+ <br>
+ <ShareButtons title={$t.about.meta.title} description={$t.about.meta.description} />
+
 </section>
