@@ -53,9 +53,11 @@
 </script>
 
 <SEO
-	title={$t.about.meta.title}
-	description={$t.about.meta.description}
-	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, home, polycrisis"
+	title={$t.meta.title}
+	description={$t.meta.description}
+	keywords={'systems thinking, consciousness, global governance, björn kenneth holmström, polycrisis'}
+	image={'/social-preview.png'}
+	type={'website'}
 />
 
 <div class="mx-auto max-w-7xl">

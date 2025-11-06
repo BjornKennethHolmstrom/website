@@ -2,7 +2,12 @@ export const coreTranslations = {
 	en: {
 		// Header
 		wordmark: 'Björn Kenneth Holmström',
-
+  // SEO start page
+		meta: {
+			title: 'Björn Kenneth Holmström | Systems Thinker & Designer',
+			description:
+				'The personal hub for Björn Kenneth Holmström. Explore an ecosystem of open-source tools, books, and articles on systems thinking, consciousness, and global governance.'
+		},
   // Header nav
 		navBlog: 'Blog',
 		navWhitepapers: 'White Papers',
@@ -79,6 +84,12 @@ export const coreTranslations = {
 	sv: {
 		// Header
 		wordmark: 'Björn Kenneth Holmström',
+  // SEO för startsidan
+		meta: {
+			title: 'Björn Kenneth Holmström | Systemtänkare & Designer',
+			description:
+				'Björn Kenneth Holmströms personliga nav. Utforska ett ekosystem av verktyg, böcker och artiklar om systemtänkande, medvetande och global styrning.'
+		},
   // Header nav
 		navBlog: 'Blogg',
 		navWhitepapers: 'White Papers',
