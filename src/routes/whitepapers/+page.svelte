@@ -82,7 +82,7 @@
 			readTime: null,
 			version: null,
 			pdfPath: {
-				en: '/whitepapers/beyond-the-duopoly-5.pdf' // Från /static/whitepapers/
+				en: '/whitepapers/beyond-the-duopoly.pdf' // Från /static/whitepapers/
 			},
 			readOnlinePath: `${wpBase}/beyond-the-duopoly/` // Länkar till gamla WP-sidan
 		},
@@ -108,7 +108,7 @@
 			readTime: null,
 			version: null,
 			pdfPath: {
-				en: '/whitepapers/beyond-states-4.pdf' // Från /static/whitepapers/
+				en: '/whitepapers/beyond-states.pdf' // Från /static/whitepapers/
 			},
 			readOnlinePath: `${wpBase}/beyond-states/`
 		}
