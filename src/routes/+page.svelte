@@ -17,7 +17,7 @@
 				type: 'img',
 				key: 'fjäril',
 				logo: 'logo-fjarilspartiet.svg',
-				url: 'https://fjärilspartiet.se' // (Exempellänk)
+				url: 'https://fjarilspartiet.se' // (Exempellänk)
 			}
 		],
 		quartet: [
