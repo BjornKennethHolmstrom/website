@@ -948,7 +948,7 @@ The five streams can be visualized as interwoven currents flowing within the riv
 
 The diagram reveals that healthy development involves not static balance but dynamic flow—periods of focused attention on particular streams alternating with phases of integration and rebalancing. Like a river system responding to seasonal changes, the practitioner learns to direct energy where it's most needed while maintaining overall flow toward collective flourishing.
 
-![The Five Streams of Holistic Co-Flourishing](/the-five-streams-of-holistic-co-flourishing.svg)
+![The Five Streams of Holistic Co-Flourishing](/whitepapers/images/the-five-streams-of-holistic-co-flourishing.svg)
 
 *A dynamic river system visualization showing how the five streams flow together within the foundational context of Waking Up. The diagram illustrates Waking Up as both the riverbed (structural foundation) and the water itself (medium of development), with the four other streams as colored currents that converge, diverge, and interact in complex patterns. Points of synergy are shown where streams enhance each other (such as where Opening Up motivates and energizes Showing Up), while creative tensions indicate areas requiring ongoing balance (such as where intensive Cleaning Up work may temporarily destabilize meditation practice). Integration nodes represent breakthrough moments where development in one stream catalyzes growth across all others.*
 
@@ -961,7 +961,7 @@ The diagram reveals that healthy development involves not static balance but dyn
 
 This timeline acknowledges that while certain sequences may be common, individual development paths vary significantly based on temperament, life circumstances, cultural context, and the particular challenges each person faces.
 
-![Stream Devlopment Over Time](/stream-development-over-time.svg)
+![Stream Devlopment Over Time](/whitepapers/images/stream-development-over-time.svg)
 
 *A temporal visualization showing how emphasis and development across the five streams typically evolves over the course of a contemplative journey. The diagram uses flowing bands of varying thickness to represent the relative development and attention given to each stream during different phases. Early phases often emphasize establishing Waking Up foundations and beginning Cleaning Up work. Middle phases involve integration of Growing Up sophistication and Opening Up heart development as awareness stabilizes. Mature phases focus increasingly on Showing Up as inner development seeks authentic outer expression. The visualization acknowledges significant individual variation in developmental timing and sequence, with some practitioners developing heart capacity before psychological sophistication, or experiencing non-linear progression with temporary regressions during intensive integration periods.*
 

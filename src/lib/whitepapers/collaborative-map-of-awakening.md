@@ -564,10 +564,10 @@ In the spirit of the Buddha's final teaching—"Work out your salvation with dil
 
 ### Diagram 1: The Axis of Awareness - Linear Progression
 
-![The Axis of Awareness](/the-axis-of-awareness.svg)
+![The Axis of Awareness](/whitepapers/images/the-axis-of-awareness.svg)
 *[A vertical diagram showing the 17 stages from "Completely Oblivious" at the bottom to "Cessation" at the top, with phases clearly marked and annotations indicating potential non-linear jumps, cycles, and regressions for added realism.]*
 
-![The Mountain Range of Facets](/the-mountain-range-of-facets.svg)
+![The Mountain Range of Facets](/whitepapers/images/the-mountain-range-of-facets.svg)
 ### Diagram 2: The Mountain Range of Facets - Topographical Map
 *[A 3D topographical representation showing different peaks (No-Self, God-Realization, Universal Love, Non-Duality, etc.) with various paths (Investigation, Devotion, Concentration, Contemplation) shown as trails leading to them. The diagram includes valleys representing 'Dark Nights,' bridges representing integrative insights, basecamps representing foundational stages from the Axis, and rugged ridges representing tensions and synergies between facets. The vertical scale represents the Axis of Awareness - the higher one's capacity, the higher one can climb on any peak.]*
 

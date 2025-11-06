@@ -411,7 +411,7 @@ Labs require trained facilitators who understand both the methodology and group 
 
 Training programs for community facilitators could be developed through partnerships with conflict resolution organizations, universities, or civic leadership programs. The key skills include active listening, reframing techniques, group process management, and familiarity with local governance structures.
 
-![Figure: Community Solutions Lab Session Timeline - Visual showing the 3.5-hour structure with timing and activity flow](/images/community-solutions-lab-session-timeline.svg)
+![Figure: Community Solutions Lab Session Timeline - Visual showing the 3.5-hour structure with timing and activity flow](/whitepapers/images/community-solutions-lab-session-timeline.svg)
 
 ### 6.3 Examples of Lab Applications
 
