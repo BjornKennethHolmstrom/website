@@ -1,3 +1,61 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/*
+  ==========================================
+  Theme Definition (Global CSS Variables)
+  ==========================================
+*/
+
+/*
+  1. Definiera variabler i :root (Light Mode default)
+     Detta block ska vara PÅ TOPPNIVÅ, inte inuti @theme.
+*/
+:root {
+  /* Neutral Palette (Slate) */
+  --color-bg-light: #F1F5F9;  /* slate-100 */
+  --color-bg-dark: #0F172A;   /* slate-900 */
+  --color-text-light: #E2E8F0; /* slate-200 */
+  --color-text-dark: #0F172A;  /* slate-900 */
+  --color-separator: #CBD5E1;  /* slate-300 (for subtle lines) */
+
+  /* Accent Palette (Amber) */
+  --color-accent: #D97706;     /* amber-600 */
+  --color-accent-darker: #92400E; /* amber-800 (for hover, etc.) */
+
+  /* Set default assignments (Light Mode) */
+  --color-page-bg: var(--color-bg-light);
+  --color-page-text: var(--color-text-dark);
+  --color-page-accent: var(--color-accent);
+}
+
+/*
+  2. Define overrides for Dark Mode
+     Detta är en standard CSS-regel, den ska INTE vara inuti @theme.
+*/
+.dark {
+  --color-page-bg: var(--color-bg-dark);
+  --color-page-text: var(--color-text-light);
+  --color-page-accent: var(--color-accent); /* Accent kan vara densamma */
+}
+
+/*
+  ==========================================
+  Global Body Styles
+  ==========================================
+*/
+body {
+  /* 3. Applicera temavariablerna. 
+       Detta fungerar perfekt med Svelte-kodens
+       `bg-[var(--color-page-bg)]` etc.
+  */
+  background-color: var(--color-page-bg);
+  color: var(--color-page-text);
+  font-family: 'Inter', sans-serif; /* Importeras i +layout.svelte */
+
+  /* Mjuk övergång för tema-växling */
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

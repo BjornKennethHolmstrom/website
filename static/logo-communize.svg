@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 75 75"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .circle-group { fill: none; stroke-width: 4.5; stroke-linecap: round; }
+      .circle-1 { stroke: #9d7d4f; opacity: 0.75; }
+      .circle-2 { stroke: #567d56; opacity: 0.8; }
+      .circle-3 { stroke: #8a5544; opacity: 0.85; }
+      .circle-4 { stroke: #759e75; opacity: 0.85; }
+      .circle-5 { stroke: #b89d72; opacity: 0.9; }
+      .center-dot { fill: #567d56; }
+      .hexagon-structure { stroke: #8a7050; stroke-width: 2.5; opacity: 0.5; fill: none; stroke-linejoin: round; }
+      .inner-lines { stroke: #8a7050; stroke-width: 2; opacity: 0.4; }
+    </style>
+  </defs>
+  
+  <g transform="translate(37.5, 37.5)">
+    <!-- Strong hexagonal structure connecting the circles -->
+    <path d="M 0,-12 L 10.4,-3.7 L 10.4,3.7 L 0,12 L -10.4,3.7 L -10.4,-3.7 Z" 
+          class="hexagon-structure" />
+    
+    <!-- Overlapping circles representing interconnected community -->
+    <circle cx="0" cy="-12" r="10" class="circle-group circle-1" />
+    <circle cx="10.4" cy="-3.7" r="10" class="circle-group circle-2" />
+    <circle cx="10.4" cy="3.7" r="10" class="circle-group circle-3" />
+    <circle cx="0" cy="12" r="10" class="circle-group circle-4" />
+    <circle cx="-10.4" cy="3.7" r="10" class="circle-group circle-5" />
+    <circle cx="-10.4" cy="-3.7" r="10" class="circle-group circle-1" />
+    
+    <!-- Lines to center showing convergence -->
+    <line x1="0" y1="-12" x2="0" y2="0" class="inner-lines" />
+    <line x1="10.4" y1="-3.7" x2="0" y2="0" class="inner-lines" />
+    <line x1="10.4" y1="3.7" x2="0" y2="0" class="inner-lines" />
+    <line x1="0" y1="12" x2="0" y2="0" class="inner-lines" />
+    <line x1="-10.4" y1="3.7" x2="0" y2="0" class="inner-lines" />
+    <line x1="-10.4" y1="-3.7" x2="0" y2="0" class="inner-lines" />
+    
+    <!-- Central commons - the shared space -->
+    <circle cx="0" cy="0" r="6" fill="#567d56" opacity="0.25" />
+    <circle cx="0" cy="0" r="3.5" class="center-dot" />
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Multiple overlapping perspectives - BOLD VERSION like Spiralize -->
+  
+  <!-- The central point being viewed from all perspectives -->
+  <circle cx="100" cy="100" r="7" fill="#3b82f6"/>
+  
+  <!-- First perspective lens (Mind/Consciousness) - BLUE -->
+  <circle cx="76" cy="80" r="44" 
+          fill="none" 
+          stroke="#2563eb" 
+          stroke-width="6.5" 
+          opacity="0.75"
+          stroke-linecap="round"/>
+  
+  <!-- Second perspective lens (Ethics/Care) - GREEN -->
+  <circle cx="124" cy="80" r="44" 
+          fill="none" 
+          stroke="#10b981" 
+          stroke-width="6.5" 
+          opacity="0.75"
+          stroke-linecap="round"/>
+  
+  <!-- Third perspective lens (Patterns/Science) - PURPLE -->
+  <circle cx="100" cy="130" r="44" 
+          fill="none" 
+          stroke="#8b5cf6" 
+          stroke-width="6.5" 
+          opacity="0.75"
+          stroke-linecap="round"/>
+  
+  <!-- Fourth perspective lens (Aesthetics/Experience) - AMBER -->
+  <circle cx="145" cy="108" r="36" 
+          fill="none" 
+          stroke="#f59e0b" 
+          stroke-width="6" 
+          opacity="0.8"
+          stroke-linecap="round"/>
+  
+  <!-- The observer point - RED - positioned to see the whole -->
+  <circle cx="160" cy="55" r="6.5" fill="#ef4444"/>
+  <circle cx="160" cy="55" r="11" 
+          fill="none" 
+          stroke="#ef4444" 
+          stroke-width="3.5" 
+          opacity="0.65"
+          stroke-linecap="round"/>
+  
+  <!-- Intersection nodes (where understanding emerges) -->
+  <circle cx="92" cy="88" r="3" fill="#60a5fa" opacity="0.85"/>
+  <circle cx="108" cy="88" r="3" fill="#60a5fa" opacity="0.85"/>
+  <circle cx="86" cy="110" r="3" fill="#60a5fa" opacity="0.85"/>
+  <circle cx="114" cy="110" r="3" fill="#60a5fa" opacity="0.85"/>
+  <circle cx="126" cy="100" r="3" fill="#60a5fa" opacity="0.85"/>
+</svg>

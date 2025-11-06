@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0033" />
+      <stop offset="100%" stop-color="#000066" />
+    </linearGradient>
+    
+    <!-- Golden spiral path -->
+    <path id="spiralPath" d="M400 750 
+      C400 750, 450 750, 450 700
+      C450 650, 400 600, 350 600
+      C300 600, 250 650, 250 700
+      C250 750, 300 800, 350 800
+      C400 800, 475 750, 475 650
+      C475 550, 400 500, 300 500
+      C200 500, 150 600, 150 700
+      C150 800, 225 875, 350 875
+      C475 875, 550 775, 550 650
+      C550 525, 450 425, 300 425
+      C150 425, 75 550, 75 700
+      C75 850, 175 925, 350 925" 
+      fill="none" stroke="#f0c420" stroke-width="2" />
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="1200" fill="url(#bgGradient)" />
+  
+  <!-- Geometric patterns -->
+  <!-- Fibonacci spiral -->
+  <use href="#spiralPath" />
+  
+  <!-- Sacred geometry elements -->
+  <!-- Flower of Life pattern (simplified) -->
+  <g opacity="0.15" fill="none" stroke="#ffffff">
+    <!-- Center circle -->
+    <circle cx="400" cy="600" r="40" />
+    
+    <!-- Surrounding circles -->
+    <circle cx="400" cy="540" r="40" />
+    <circle cx="454.64" cy="570" r="40" />
+    <circle cx="454.64" cy="630" r="40" />
+    <circle cx="400" cy="660" r="40" />
+    <circle cx="345.36" cy="630" r="40" />
+    <circle cx="345.36" cy="570" r="40" />
+    
+    <!-- Outer layer -->
+    <circle cx="400" cy="480" r="40" />
+    <circle cx="509.28" cy="540" r="40" />
+    <circle cx="509.28" cy="660" r="40" />
+    <circle cx="400" cy="720" r="40" />
+    <circle cx="290.72" cy="660" r="40" />
+    <circle cx="290.72" cy="540" r="40" />
+  </g>
+  
+  <!-- Mathematical symbols scattered -->
+  <g fill="#ffffff" opacity="0.2" font-family="serif">
+    <text x="200" y="300" font-size="40">π</text>
+    <text x="600" y="400" font-size="30">∞</text>
+    <text x="500" y="950" font-size="35">φ</text>
+    <text x="250" y="800" font-size="25">∑</text>
+    <text x="150" y="500" font-size="35">√</text>
+    <text x="650" y="750" font-size="28">e</text>
+    <text x="100" y="350" font-size="32">∫</text>
+    <text x="550" y="300" font-size="28">⊗</text>
+  </g>
+  
+  <!-- Platonic solids outlines (simplified) -->
+  <!-- Tetrahedron -->
+  <g fill="none" stroke="#9370DB" stroke-width="1" opacity="0.3">
+    <path d="M250 350 L320 250 L350 350 Z" />
+    <path d="M250 350 L320 250 L290 300 Z" />
+    <path d="M290 300 L320 250 L350 350 Z" />
+    <path d="M250 350 L290 300 L350 350 Z" />
+  </g>
+  
+  <!-- Cube -->
+  <g fill="none" stroke="#9370DB" stroke-width="1" opacity="0.3">
+    <path d="M500 350 L550 350 L550 400 L500 400 Z" />
+    <path d="M520 330 L570 330 L570 380 L520 380 Z" />
+    <path d="M500 350 L520 330 L570 330 L550 350 Z" />
+    <path d="M550 350 L570 330 L570 380 L550 400 Z" />
+    <path d="M500 400 L520 380 L570 380 L550 400 Z" />
+    <path d="M500 350 L520 330 L520 380 L500 400 Z" />
+  </g>
+  
+  <!-- Title -->
+  <g text-anchor="middle">
+    <text x="400" y="250" font-family="Georgia, serif" font-size="60" fill="#ffffff" font-weight="bold">MYSTICAL</text>
+    <text x="400" y="320" font-family="Georgia, serif" font-size="60" fill="#ffffff" font-weight="bold">MATHEMATICS</text>
+    
+    <!-- Subtitle -->
+    <text x="400" y="380" font-family="Georgia, serif" font-size="28" fill="#f0c420" font-style="italic">Where Number Meets Being</text>
+  </g>
+  
+  <!-- Golden horizon line -->
+  <line x1="50" y1="950" x2="750" y2="950" stroke="#f0c420" stroke-width="3" />
+  
+  <!-- Author information -->
+  <g text-anchor="middle">
+    <text x="400" y="1020" font-family="Georgia, serif" font-size="30" fill="#ffffff">Björn Kenneth Holmström</text>
+    <text x="400" y="1060" font-family="Georgia, serif" font-size="25" fill="#ffffff" font-style="italic">with ChatGPT and Claude</text>
+  </g>
+  
+  <!-- Phi-based spiral in gold -->
+  <path d="M100 900 Q200 850 300 900 T500 850 T650 900" fill="none" stroke="#f0c420" stroke-width="2" />
+  
+  <!-- Additional light effects -->
+  <circle cx="400" cy="600" r="200" fill="url(#bgGradient)" opacity="0.3" />
+  
+  <!-- Small dotted grid pattern -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.1">
+    <path d="M0 0 L800 0 L800 1200 L0 1200 Z" stroke-dasharray="2,20" />
+    <path d="M0 200 L800 200 M0 400 L800 400 M0 600 L800 600 M0 800 L800 800 M0 1000 L800 1000" stroke-dasharray="2,20" />
+    <path d="M200 0 L200 1200 M400 0 L400 1200 M600 0 L600 1200" stroke-dasharray="2,20" />
+  </g>
+</svg>

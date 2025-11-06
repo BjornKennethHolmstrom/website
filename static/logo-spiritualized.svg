@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Heart-shaped flame - organic, hand-drawn feel -->
+  <!-- Outer flame glow (pale gold) -->
+  <path d="M100 40 C85 50, 70 60, 65 80 C60 100, 65 120, 75 135 C85 150, 95 160, 100 170 C105 160, 115 150, 125 135 C135 120, 140 100, 135 80 C130 60, 115 50, 100 40 Z" 
+        fill="#e8d8bd" 
+        opacity="0.6"/>
+  
+  <!-- Middle flame (soft gold) -->
+  <path d="M100 50 C88 58, 78 68, 75 85 C72 100, 77 115, 85 127 C92 138, 98 145, 100 152 C102 145, 108 138, 115 127 C123 115, 128 100, 125 85 C122 68, 112 58, 100 50 Z" 
+        fill="#d4b78a"/>
+  
+  <!-- Inner flame core (warm terracotta) -->
+  <path d="M100 65 C92 71, 86 78, 84 90 C82 100, 86 110, 92 118 C97 125, 99 130, 100 135 C101 130, 103 125, 108 118 C114 110, 118 100, 116 90 C114 78, 108 71, 100 65 Z" 
+        fill="#c06c62"/>
+  
+  <!-- Brightest center (light gold highlight) -->
+  <path d="M100 80 C96 84, 93 89, 92 96 C91 102, 94 108, 98 113 C99 115, 100 117, 100 120 C100 117, 101 115, 102 113 C106 108, 109 102, 108 96 C107 89, 104 84, 100 80 Z" 
+        fill="#f7f2ea" 
+        opacity="0.9"/>
+</svg>
