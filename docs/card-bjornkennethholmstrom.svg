@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="91mm"
+   height="61mm"
+   viewBox="0 0 91 61"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+
+  <title>Visitkort Design - Björn Kenneth Holmström</title>
+
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap');
+      
+      .bg-light { fill: #F1F5F9; }
+      .text-dark { fill: #0F172A; }
+      .text-accent { fill: #D97706; }
+      .line-accent { stroke: #D97706; }
+      .line-separator { stroke: #CBD5E1; }
+      
+      .font-light { font-family: 'Inter', sans-serif; font-weight: 300; }
+      .font-regular { font-family: 'Inter', sans-serif; font-weight: 400; }
+      .font-medium { font-family: 'Inter', sans-serif; font-weight: 500; }
+      .font-semibold { font-family: 'Inter', sans-serif; font-weight: 600; }
+      
+      /* Stilar för text-placeholders */
+      .placeholder-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 3.5px;
+        fill: #94A3B8;
+        font-style: italic;
+      }
+      .qr-placeholder-box {
+        fill: #E2E8F0;
+        stroke: #94A3B8;
+        stroke-width: 0.2;
+        stroke-dasharray: 1 1;
+      }
+    </style>
+  </defs>
+
+  <rect
+     width="100%"
+     height="100%"
+     class="bg-light"
+     id="background" />
+
+  <g
+     id="Hjälplinjer"
+     fill="none"
+     stroke="#EC4899"
+     stroke-width="0.1"
+     stroke-dasharray="1 1">
+    <rect
+       x="3"
+       y="3"
+       width="85"
+       height="55"
+       id="bleed-line" />
+    <rect
+       x="7"
+       y="7"
+       width="77"
+       height="47"
+       id="safe-zone" />
+  </g>
+
+  <g
+     id="Framsida"
+     class="text-dark">
+    
+    <text
+       x="7"
+       y="15"
+       class="font-semibold"
+       font-size="4px">Björn Kenneth Holmström</text>
+    <text
+       x="7"
+       y="20"
+       class="font-light"
+       font-size="3.5px">Systems Thinker</text>
+       
+    <line
+       x1="7"
+       y1="24"
+       x2="47"
+       y2="24"
+       class="line-accent"
+       stroke-width="0.5" />
+
+    <text
+       x="7"
+       y="53"
+       class="font-regular"
+       font-size="3.5px">bjornkennethholmstrom.org</text>
+
+    <g id="QR-Placeholder">
+      <rect
+         x="59"
+         y="30"
+         width="25"
+         height="25"
+         class="qr-placeholder-box" />
+      <text
+         x="71.5"
+         y="44"
+         text-anchor="middle"
+         class="placeholder-text"
+         font-size="3px">[QR-Kod]</text>
+    </g>
+  </g>
+
+  <g
+     id="Baksida"
+     class="text-dark"
+     display="none">
+     
+     <text
+       x="45.5"
+       y="11"
+       text-anchor="middle"
+       class="font-medium text-accent"
+       font-size="4px">An Ecosystem of Ideas</text>
+
+     <line x1="7" y1="14" x2="84" y2="14" class="line-separator" stroke-width="0.25" />
+
+     <text x="7" y="19" class="font-regular" font-size="3.5px">The Awareness Quartet</text>
+     <text x="7"  y="26" class="placeholder-text">[Spiralize Logo]</text>
+     <text x="26" y="26" class="placeholder-text">[Nondualize Logo]</text>
+     <text x="45" y="26" class="placeholder-text">[Communize Logo]</text>
+     <text x="64" y="26" class="placeholder-text">[Universalize Logo]</text>
+
+     <line x1="7" y1="31" x2="84" y2="31" class="line-separator" stroke-width="0.25" />
+
+     <text x="7" y="36" class="font-regular" font-size="3.5px">Planetary &amp; Societal Systems</text>
+     <text x="7"  y="43" class="placeholder-text">[GGF Logo]</text>
+     <text x="45" y="43" class="placeholder-text">[Fjärilspartiet Logo]</text>
+
+     <line x1="7" y1="48" x2="84" y2="48" class="line-separator" stroke-width="0.25" />
+
+     <text x="7" y="53" class="font-regular" font-size="3.5px">A Space for Being</text>
+     <text x="7" y="58" class="placeholder-text">[Spiritualized Logo]</text>
+
+  </g>
+
+</svg>
