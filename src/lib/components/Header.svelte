@@ -34,6 +34,12 @@
 					{$t.navWhitepapers}
 				</a>
 				<a
+					href="/books"
+					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+				>
+					{$t.navBooks}
+				</a>
+				<a
 					href="/contact"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>

@@ -1,187 +1,18 @@
 <script lang="ts">
 	import { t, language } from '$lib/stores/languageStore';
+ import { booksData } from '$lib/data/books';
  import SEO from '$lib/components/SEO.svelte';
 
 	const ggfBase = 'https://globalgovernanceframeworks.org/resources';
 
-	let books = $derived([
-		{
-			id: 'ai',
-			key: 'ai',
-			cover: '/resources/book-cover-ai.svg',
-			pdfPath: {
-				en: `${ggfBase}/AI_as_Catalyst_for_Cognitive_Evolution_-_From_Fragmentation_to_Integration_in_the_Age_of_AI.pdf`,
-				sv: null
-			},
-			readOnlinePath: 'https://globalgovernanceframeworks.org/resources/books/ai-as-catalyst-for-cognitive-evolution',
-			hasOnlineVersion: true,
-			category: 'consciousness',
-			year: '2025',
-			pages: '236'
-		},
-		{
-			id: 'global-governance',
-			key: 'globalGovernance',
-			cover: '/resources/book-cover-global-governance.svg',
-			pdfPath: {
-				en: `${ggfBase}/Global_Governance_-_Natural_Steps_Toward_a_Thriving_World.pdf`,
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'governance',
-			year: '2025',
-			pages: '173'
-		},
-		{
-			id: 'aubi',
-			key: 'aubi',
-			cover: '/resources/book-cover-aubi.svg',
-			pdfPath: {
-				en: `${ggfBase}/Adaptive_Universal_Basic_Income_-_A_New_Social_Contract_for_the_21st_Century.pdf`,
-				sv: `${ggfBase}/Adaptiv_Universell_Basinkomst_-_Ett_nytt_socialt_kontrakt_för_2000-talet.pdf`
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'economics',
-			year: '2025',
-			pages: '136'
-		},
-		{
-			id: 'capital-weaver',
-			key: 'capitalWeaver',
-			cover: '/resources/book-cover-the-capital-weaver.svg',
-			pdfPath: {
-				en: `${ggfBase}/The_Capital_Weaver_-_A_Practical_Guide_to_Regenerative_Investing.pdf`,
-				sv: null
-			},
-			readOnlinePath: 'https://globalgovernanceframeworks.org/resources/books/the-capital-weaver',
-			hasOnlineVersion: true,
-			category: 'methodology',
-			year: '2025',
-			pages: '362'
-		},
-		{
-			id: 'optimizing-reality',
-			key: 'optimizingReality',
-			cover: '/resources/book-cover-optimizing-reality.svg',
-			pdfPath: {
-				en: `${ggfBase}/Optimizing_Reality.pdf`,
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'systems',
-			year: '2025',
-			pages: '95'
-		},
-		{
-			id: 'reality-sovereignty',
-			key: 'realitySovereignty',
-			cover: '/resources/book-cover-reality-sovereignty-and-consciousness.svg',
-			pdfPath: {
-				en: `${ggfBase}/Reality,_Sovereignty,_and_Consciousness.pdf`,
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'consciousness',
-			year: '2025',
-			pages: '164'
-		},
-		{
-			id: 'regenerative-reciprocity',
-			key: 'regenerativeReciprocity',
-			cover: '/resources/book-cover-regenerative-reciprocity.svg',
-			pdfPath: {
-				en: `${ggfBase}/Regenerative_Reciprocity_-_Systems,_Spirituality,_and_the_Ethics_of_Sustenance_in_a_Diverse_World.pdf`,
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'sustainability',
-			year: '2025',
-			pages: '214'
-		},
-		{
-			id: 'lmci',
-			key: 'lmci',
-			cover: '/resources/book-cover-lmci.svg',
-			pdfPath: {
-				en: `${ggfBase}/Love,_Meaning,_Connection_-_A_New_Index_for_Measuring_What_Matters.pdf`,
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'metrics',
-			year: '2025',
-			pages: '222'
-		},
-		{
-			id: 'being',
-			key: 'being',
-			cover: '/resources/book-cover-being.svg',
-			pdfPath: {
-				en: `${ggfBase}/Being_-_A_Tapestry_of_Existence.pdf`,
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'philosophy',
-			year: '2025',
-			pages: '174'
-		},
-		// --- LOKALA (Wordpress) Böcker ---
-		{
-			id: 'beyond-separation',
-			key: 'beyondSeparation',
-			cover: '/resources/book-cover-beyond-separation.svg', // Du måste skapa denna SVG
-			pdfPath: {
-				en: '/books/Beyond_Separation_Systems_Thinking_and_Nonduality.pdf', // Måste ligga i /static/books/
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'consciousness',
-			year: '2025',
-			pages: '180'
-		},
-		{
-			id: 'divine-system',
-			key: 'divineSystem',
-			cover: '/resources/book-cover-the-divine-system.svg', // Du måste skapa denna SVG
-			pdfPath: {
-				en: '/books/The_Divine_System_A_Systems_Thinking_Approach_to_God.pdf', // Måste ligga i /static/books/
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'philosophy',
-			year: '2025',
-			pages: '210'
-		},
-		{
-			id: 'mystical-math',
-			key: 'mysticalMath',
-			cover: '/resources/book-cover-mystical-mathematics.svg', // Du måste skapa denna SVG
-			pdfPath: {
-				en: '/books/Mystical_Mathematics_Where_Number_Meets_Being.pdf', // Måste ligga i /static/books/
-				sv: null
-			},
-			readOnlinePath: null,
-			hasOnlineVersion: false,
-			category: 'philosophy',
-			year: '2025',
-			pages: '190'
-		}
-	]);
+// Byt namn på den importerade datan för att passa resten av koden
+	let books = $derived(booksData);
 
 	// Hjälpfunktion för att hämta PDF-info
 	function getPdfInfo(book: (typeof books)[0], currentLang: string) {
 		const availablePdf = book.pdfPath[currentLang];
 		const fallbackPdf = book.pdfPath.en;
 
-		// === ÄNDRING HÄR (x3) ===
 		if (availablePdf) {
 			return { path: availablePdf, label: $t.books.actions.downloadPdf, isTranslated: true };
 		} else if (fallbackPdf && currentLang !== 'en') {
@@ -198,8 +29,8 @@
 </script>
 
 <SEO
-	title={$t.about.meta.title}
-	description={$t.about.meta.description}
+	title={$t.books.meta.title}
+	description={$t.books.meta.description}
 	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, books, polycrisis"
 />
 

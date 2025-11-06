@@ -2,12 +2,12 @@ export const booksTranslations = {
   en: {
     books: {
       meta: {
-        title: 'Books & Whitepapers | Björn Kenneth Holmström',
+        title: 'Books | Björn Kenneth Holmström',
         description:
-          'Explore a collection of free books and whitepapers on global governance, systems thinking, consciousness, and regenerative economics.'
+          'Explore a collection of free books on global governance, systems thinking, consciousness, and regenerative economics.'
       },
       hero: {
-        title: 'Books & Whitepapers',
+        title: 'Books',
         subtitle: 'A Library of Ideas for a Flourishing World',
         description:
           'This is a complete collection of my published works, offered freely. Explore frameworks on systems thinking, consciousness, AI, governance, and regenerative economics.'
@@ -104,12 +104,12 @@ export const booksTranslations = {
   sv: {
     books: {
       meta: {
-        title: 'Böcker & Whitepapers | Björn Kenneth Holmström',
+        title: 'Böcker | Björn Kenneth Holmström',
         description:
-          'Utforska en samling gratis böcker och whitepapers om global styrning, systemtänkande, medvetande och regenerativ ekonomi.'
+          'Utforska en samling gratis böcker om global styrning, systemtänkande, medvetande och regenerativ ekonomi.'
       },
       hero: {
-        title: 'Böcker & Whitepapers',
+        title: 'Böcker',
         subtitle: 'Ett bibliotek av idéer för en blomstrande värld',
         description:
           'Detta är en komplett samling av mina publicerade verk, som erbjuds fritt. Utforska ramverk om systemtänkande, medvetande, AI, styrning och regenerativ ekonomi.'

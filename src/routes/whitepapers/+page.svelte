@@ -1,119 +1,13 @@
 <script lang="ts">
 	import { t, language } from '$lib/stores/languageStore';
  import SEO from '$lib/components/SEO.svelte';
+ import { papersData } from '$lib/data/whitepapers';
 
 	const ggfBase = 'https://globalgovernanceframeworks.org';
 	const wpBase = 'https://bjornkennethholmstrom.wordpress.com';
 
-	let papers = $derived([
-		// --- GGF Papers ---
-		{
-			id: 'responsiveSociety',
-			key: 'responsiveSociety',
-			category: 'philosophy',
-			year: '2025',
-			pages: '60',
-			readTime: '45 min',
-			version: '1.0',
-			pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Responsive_Society.pdf` },
-			readOnlinePath: `${ggfBase}/resources/whitepapers/the-responsive-society`
-		},
-		{
-			id: 'infiniteParadox',
-			key: 'infiniteParadox',
-			category: 'governance',
-			year: '2025',
-			pages: '80',
-			readTime: '45 min',
-			version: '1.0',
-			pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Infinite_Paradox.pdf` },
-			readOnlinePath: `${ggfBase}/resources/whitepapers/the-infinite-paradox`
-		},
-		{
-			id: 'regenerativeGovernance',
-			key: 'regenerativeGovernance',
-			category: 'governance',
-			year: '2025',
-			pages: '60',
-			readTime: '40 min',
-			version: '1.0',
-			pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Regenerative_Governance.pdf` },
-			readOnlinePath: `${ggfBase}/resources/whitepapers/the-regenerative-governance`
-		},
-		{
-			id: 'beyondFragmentedTruth',
-			key: 'beyondFragmentedTruth',
-			category: 'methodology',
-			year: '2025',
-			pages: '77',
-			readTime: '45 min',
-			version: '1.0',
-			pdfPath: { en: `${ggfBase}/resources/whitepapers/Beyond_Fragmented_Truth.pdf` },
-			readOnlinePath: `${ggfBase}/resources/whitepapers/beyond-fragmented-truth`
-		},
-		{
-			id: 'currencyOfCare',
-			key: 'currencyOfCare',
-			category: 'economics',
-			year: '2025',
-			pages: '36',
-			readTime: '35 min',
-			version: '1.0',
-			pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Currency_of_Care.pdf` },
-			readOnlinePath: `${ggfBase}/resources/whitepapers/the-currency-of-care`
-		},
-		{
-			id: 'cognitiveScaffolding',
-			key: 'cognitiveScaffolding',
-			category: 'methodology',
-			year: '2025',
-			pages: '25',
-			readTime: '25 min',
-			version: '1.8',
-			pdfPath: { en: `${ggfBase}/resources/whitepapers/Cognitive_Scaffolding.pdf` },
-			readOnlinePath: `${ggfBase}/resources/whitepapers/cognitive-scaffolding`
-		},
-		// --- Wordpress Papers (Nu lokala) ---
-		{
-			id: 'beyondTheDuopoly',
-			key: 'beyondTheDuopoly',
-			category: 'governance',
-			year: '2025',
-			pages: '54',
-			readTime: null,
-			version: null,
-			pdfPath: {
-				en: '/whitepapers/beyond-the-duopoly.pdf' // Från /static/whitepapers/
-			},
-			readOnlinePath: `${wpBase}/beyond-the-duopoly/` // Länkar till gamla WP-sidan
-		},
-		{
-			id: 'mapOfAwakening',
-			key: 'mapOfAwakening',
-			category: 'consciousness',
-			year: '2025',
-			pages: '36',
-			readTime: null,
-			version: null,
-			pdfPath: {
-				en: '/whitepapers/collaborative-map-of-awakening.pdf' // Från /static/whitepapers/
-			},
-			readOnlinePath: `${wpBase}/collaborative-map-of-awakening/`
-		},
-		{
-			id: 'beyondStates',
-			key: 'beyondStates',
-			category: 'consciousness',
-			year: '2025',
-			pages: '57',
-			readTime: null,
-			version: null,
-			pdfPath: {
-				en: '/whitepapers/beyond-states.pdf' // Från /static/whitepapers/
-			},
-			readOnlinePath: `${wpBase}/beyond-states/`
-		}
-	]);
+  // Byt namn på den importerade datan för att passa resten av koden
+	let papers = $derived(papersData);
 
 	// Hjälpfunktion för att hämta PDF-info
 	function getPdfInfo(paper: (typeof papers)[0], currentLang: string) {
@@ -136,8 +30,8 @@
 </script>
 
 <SEO
-	title={$t.about.meta.title}
-	description={$t.about.meta.description}
+	title={$t.whitepapers.meta.title}
+	description={$t.whitepapers.meta.description}
 	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, whitepapers, polycrisis"
 />
 
@@ -180,7 +74,7 @@
 						<div
 							class="my-4 flex flex-wrap gap-x-4 gap-y-1 border-y border-[var(--color-separator)] py-2 text-sm text-[var(--color-page-text)] opacity-60"
 						>
-							<span>📅 {paper.year}</span>
+							<span>📅 {new Date(paper.releaseDate).toLocaleDateString($language, { dateStyle: 'long' })}</span>
 							<span>📄 {paper.pages} {$t.common.ui.pages}</span>
 							{#if paper.readTime}
 								<span>⏱️ {paper.readTime}</span>

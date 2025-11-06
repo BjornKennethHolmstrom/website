@@ -11,8 +11,10 @@ export const coreTranslations = {
   // Header nav
 		navBlog: 'Blog',
 		navWhitepapers: 'White Papers',
+  navBooks: 'Books',
 		navContact: 'Contact',
   navAbout: 'About',
+  navRSS: 'RSS Feed',
   dark: 'DARK',
   light: 'LIGHT',
 		// Hero
@@ -38,9 +40,16 @@ export const coreTranslations = {
 		universalizeTagline: 'Explore universal perspective and cosmic responsibility.',
 		spiritualizedTitle: 'Spiritualized.org',
 		spiritualizedTagline: 'Spirituality as permission to be. A refuge for the overwhelmed soul.',
-		blogTitle: 'Blog posts',
-  blogList: 'Here are all my ',
+  blog: {
+			meta: {
+				title: 'Blog | Björn Kenneth Holmström',
+				description: 'All blog posts from Björn Kenneth Holmström, from 2017 to today.'
+			},
+			title: 'Blog posts',
+			listPrefix: 'Here are all my '
+		},
 		blogTagline: 'My blog',
+  blogFollow: 'Follow via',
 		booksTitle: 'Books',
 		booksTagline: 'Books and longer writings.',
 		// Footer
@@ -93,8 +102,10 @@ export const coreTranslations = {
   // Header nav
 		navBlog: 'Blogg',
 		navWhitepapers: 'White Papers',
+  navBooks: 'Böcker',
 		navContact: 'Kontakt',
   navAbout: 'Om',
+  navRSS: 'RSS-flöde',
   dark: 'MÖRK',
   light: 'LJUS',
 		// Hero
@@ -120,9 +131,16 @@ export const coreTranslations = {
 		universalizeTagline: 'Utforska universellt perspektiv och kosmiskt ansvar.',
 		spiritualizedTitle: 'Spiritualized.org',
 		spiritualizedTagline: 'Andlighet som tillåtelse att vara. En fristad för den överväldigade själen.',
-		blogTitle: 'Blogginlägg',
-  blogList: 'Här är alla mina ',
+  blog: {
+			meta: {
+				title: 'Blogg | Björn Kenneth Holmström',
+				description: 'Alla blogginlägg av Björn Kenneth Holmström, från 2017 till idag.'
+			},
+			title: 'Blogginlägg',
+			listPrefix: 'Här är alla mina '
+		},
 		blogTagline: 'Min blogg',
+  blogFollow: 'Följ via',
 		booksTitle: 'Böcker',
 		booksTagline: 'Böcker och längre skrifter.',
 		// Footer

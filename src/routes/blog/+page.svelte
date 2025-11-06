@@ -24,8 +24,8 @@
 </script>
 
 <SEO
-	title={$t.about.meta.title}
-	description={$t.about.meta.description}
+	title={$t.blog.meta.title}
+	description={$t.blog.meta.description}
 	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, blog, polycrisis"
 />
 
@@ -34,10 +34,19 @@
 		<h1
 			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text pb-2 text-4xl font-bold text-transparent sm:text-5xl"
 		>
-			{$t.blogTitle}
+			{$t.blog.title}
 		</h1>
 		<p class="text-lg text-slate-300 sm:text-xl">
-			{$t.blogList}{$t.blogTitle.toLowerCase()}.
+			{$t.blog.listPrefix}{$t.blog.title.toLowerCase()}.
+		</p>
+
+  <p class="mt-4 text-sm text-slate-400">
+			{$t.blogFollow} <a
+				href="/rss.xml"
+				class="font-medium text-amber-400 underline transition-colors hover:text-amber-300"
+			>
+				{$t.navRSS}
+			</a>
 		</p>
 	</div>
 </section>

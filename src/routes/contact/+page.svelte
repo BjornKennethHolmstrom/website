@@ -6,8 +6,8 @@
 </script>
 
 <SEO
-	title={$t.about.meta.title}
-	description={$t.about.meta.description}
+	title={$t.contact.meta.title}
+	description={$t.contact.meta.description}
 	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, contact, polycrisis"
 />
 
