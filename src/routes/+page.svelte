@@ -25,7 +25,13 @@
 			{ type: 'img', key: 'spiralize', logo: 'logo-spiralize.svg', url: 'https://spiralize.org' },
 			{ type: 'img', key: 'nondualize', logo: 'logo-nondualize.svg', url: 'https://nondualize.org' },
 			{ type: 'img', key: 'communize', logo: 'logo-communize.svg', url: 'https://communize.org' },
-			{ type: 'img', key: 'universalize', logo: 'logo-universalize.svg', url: 'https://universalize.org' }
+			{ 
+				type: 'img', 
+				key: 'universalize', 
+				logo: 'logo-universalize.svg', 
+				url: null, // Make it non-clickable
+				comingSoon: true // Add coming soon flag
+			}
 		],
 		personal: [
 			{
@@ -113,24 +119,49 @@
 		 </h2>
 		 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 			 {#each projects.quartet as project}
-				 <a
-					 href={project.url}
-					 target="_blank"
-					 rel="noopener noreferrer"
-					 class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
-				 >
-					 <img
-						 src={project.logo}
-						 alt={`${$t[`${project.key}Title`]} logo`}
-						 class="mb-4 h-12 w-auto"
-					 />
-					 <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
-						 {$t[`${project.key}Title`]}
-					 </h3>
-					 <p class="text-[var(--color-card-text)] opacity-80">
-						 {$t[`${project.key}Tagline`]}
-					 </p>
-				 </a>
+				 {#if project.comingSoon}
+					 <!-- Coming Soon Card (non-clickable) -->
+					 <div
+						 class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 opacity-70"
+					 >
+						 <img
+							 src={project.logo}
+							 alt={`${$t[`${project.key}Title`]} logo`}
+							 class="mb-4 h-12 w-auto"
+						 />
+						 <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+							 {$t[`${project.key}Title`]}
+						 </h3>
+						 <p class="text-[var(--color-card-text)] opacity-80">
+							 {$t[`${project.key}Tagline`]}
+						 </p>
+						 <div class="mt-3">
+							 <span class="inline-block rounded-full bg-amber-500/20 px-3 py-1 text-xs font-medium text-amber-300">
+								 Coming Soon
+							 </span>
+						 </div>
+					 </div>
+				 {:else}
+					 <!-- Regular Clickable Card -->
+					 <a
+						 href={project.url}
+						 target="_blank"
+						 rel="noopener noreferrer"
+						 class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+					 >
+						 <img
+							 src={project.logo}
+							 alt={`${$t[`${project.key}Title`]} logo`}
+							 class="mb-4 h-12 w-auto"
+						 />
+						 <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+							 {$t[`${project.key}Title`]}
+						 </h3>
+						 <p class="text-[var(--color-card-text)] opacity-80">
+							 {$t[`${project.key}Tagline`]}
+						 </p>
+					 </a>
+				 {/if}
 			 {/each}
 		 </div>
 	 </div>
