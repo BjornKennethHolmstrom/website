@@ -88,7 +88,7 @@ export async function GET() {
 	const xmlFeed = renderXml(sortedContent);
 	return new Response(xmlFeed, {
 		headers: {
-			'Content-Type': 'application/xml',
+			'Content-Type': 'application/rss+xml',
 			'Cache-Control': 'max-age=0, s-maxage=3600'
 		}
 	});
@@ -102,6 +102,7 @@ function renderXml(items: FeedItem[]): string {
 	const feedUrl = `${siteUrl}/rss.xml`; // Ny plats!
 
 	return `<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>${siteTitle}</title>
