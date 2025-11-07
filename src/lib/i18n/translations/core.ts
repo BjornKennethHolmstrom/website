@@ -86,6 +86,7 @@ export const coreTranslations = {
 				description: "You can also find me here:",
 				github: "GitHub",
 				discord: "Discord (The Butterfly Hub)",
+    soon: "Soon",
 				email: "Email"
 			}
 		}
@@ -177,6 +178,7 @@ export const coreTranslations = {
 				description: "Du kan också hitta mig här:",
 				github: "GitHub",
 				discord: "Discord (The Butterfly Hub)",
+    soon: "Snart",
 				email: "E-post"
 			}
 		}

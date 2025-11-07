@@ -1,3 +1,4 @@
+<!-- src/routes/blog/[slug]/+page.svelte -->
 <script lang="ts">
 	let { data } = $props();
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -24,12 +25,11 @@
 />
 
 <article
-	class="prose prose-lg dark:prose-invert mx-auto
-           prose-img:rounded-xl prose-a:text-[var(--color-accent)] hover:prose-a:underline
-           px-4 pt-16 pb-24"
+	class="prose prose-lg mx-auto px-4 pt-16 pb-24"
+	style="--tw-prose-body: var(--color-page-text); --tw-prose-headings: var(--color-page-text); --tw-prose-links: var(--color-page-accent); --tw-prose-bold: var(--color-page-text); --tw-prose-captions: var(--color-page-text); --tw-prose-code: var(--color-page-text); --tw-prose-pre-code: var(--color-page-text); --tw-prose-pre-bg: var(--color-card-bg); --tw-prose-th-borders: var(--color-separator); --tw-prose-td-borders: var(--color-separator);"
 >
 	<h1>{data.metadata.title}</h1>
-	<p class="text-lg text-slate-600 dark:text-slate-400">
+	<p class="text-lg opacity-70">
 		Publicerad: {new Date(data.metadata.date).toLocaleDateString('sv-SE', { dateStyle: 'long' })}
 	</p>
 

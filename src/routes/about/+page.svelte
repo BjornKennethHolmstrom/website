@@ -11,7 +11,7 @@
 	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, about, polycrisis"
 />
 
-<section class="bg-slate-900 py-16 text-center text-white md:py-24">
+<section class="bg-[var(--color-bg-dark)] py-16 text-center text-white md:py-24">
 	<div class="mx-auto max-w-3xl px-4">
 		<h1
 			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
@@ -26,7 +26,8 @@
 
 <section class="py-16 md:py-24">
 	<article
-		class="prose prose-lg prose-a:text-[var(--color-page-accent)] prose-strong:text-[var(--color-page-text)] mx-auto max-w-3xl px-4 dark:prose-invert hover:prose-a:underline"
+		class="prose prose-lg mx-auto max-w-3xl px-4"
+		style="--tw-prose-body: var(--color-page-text); --tw-prose-headings: var(--color-page-text); --tw-prose-links: var(--color-page-accent); --tw-prose-bold: var(--color-page-text);"
 	>
 		<h2>{$t.about.introTitle}</h2>
 		<p>{$t.about.intro}</p>
@@ -61,7 +62,7 @@
 
 		<div class="text-center">
 			<p class="text-xl">{$t.about.cta}</p>
-   <a
+			<a
 				href="/contact"
 				class="not-prose mt-4 inline-block rounded-md bg-[var(--color-page-accent)] px-8 py-3 text-lg font-medium text-white no-underline transition-opacity hover:opacity-80"
 			>
@@ -69,7 +70,6 @@
 			</a>
 		</div>
 	</article>
- <br>
- <ShareButtons title={$t.about.meta.title} description={$t.about.meta.description} />
-
+	<br>
+	<ShareButtons title={$t.about.meta.title} description={$t.about.meta.description} />
 </section>

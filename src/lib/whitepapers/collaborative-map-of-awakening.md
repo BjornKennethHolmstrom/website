@@ -2,7 +2,6 @@
 title: 'A Collaborative Map of Awakening: Integrating States of Consciousness Across Contemplative Paths'
 date: '2025-09-23'
 ---
-# A Collaborative Map of Awakening: Integrating States of Consciousness Across Contemplative Paths
 
 ## Abstract
 
