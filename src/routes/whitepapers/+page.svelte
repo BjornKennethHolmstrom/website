@@ -1,13 +1,13 @@
-<!-- src/routes/whitepapers/+page.svelte -->
 <script lang="ts">
 	import { t, language } from '$lib/stores/languageStore';
- import SEO from '$lib/components/SEO.svelte';
- import { papersData } from '$lib/data/whitepapers';
+	import SEO from '$lib/components/SEO.svelte';
+	import { papersData } from '$lib/data/whitepapers';
+	import PageHero from '$lib/components/PageHero.svelte'; // <-- 1. IMPORT THE COMPONENT
 
 	const ggfBase = 'https://globalgovernanceframeworks.org';
 	const wpBase = 'https://bjornkennethholmstrom.wordpress.com';
 
-  // Byt namn på den importerade datan för att passa resten av koden
+	// Byt namn på den importerade datan för att passa resten av koden
 	let papers = $derived(papersData);
 
 	// Hjälpfunktion för att hämta PDF-info
@@ -36,18 +36,11 @@
 	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, whitepapers, polycrisis"
 />
 
-<section class="bg-[var(--color-bg-dark)] py-16 text-center text-white">
-	<div class="mx-auto max-w-3xl px-4">
-		<h1
-			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
-		>
-			{$t.whitepapers.hero.title}
-		</h1>
-		<p class="text-xl opacity-80">{$t.whitepapers.hero.subtitle}</p>
-		<p class="mt-4 opacity-60">{$t.whitepapers.hero.description}</p>
-	</div>
-</section>
-
+<PageHero
+	title={$t.whitepapers.hero.title}
+	subtitle={$t.whitepapers.hero.subtitle}
+	description={$t.whitepapers.hero.description}
+/>
 <section class="bg-[var(--color-page-bg)] py-16">
 	<div class="mx-auto max-w-7xl px-4">
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -75,7 +68,11 @@
 						<div
 							class="my-4 flex flex-wrap gap-x-4 gap-y-1 border-y border-[var(--color-separator)] py-2 text-sm text-[var(--color-card-text)] opacity-60"
 						>
-							<span>📅 {new Date(paper.releaseDate).toLocaleDateString($language, { dateStyle: 'long' })}</span>
+							<span
+								>📅 {new Date(paper.releaseDate).toLocaleDateString($language, {
+									dateStyle: 'long'
+								})}</span
+							>
 							<span>📄 {paper.pages} {$t.common.ui.pages}</span>
 							{#if paper.readTime}
 								<span>⏱️ {paper.readTime}</span>
