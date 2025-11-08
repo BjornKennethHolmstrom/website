@@ -43,12 +43,25 @@
 			</h2>
 			<ul class="list-disc space-y-2 pl-6 text-lg">
 				{#each tDetail.recipes as recipe (recipe.slug)}
-					<li>
-						<a href={`/creations/food/${recipe.slug}`} class="link">
-							{recipe.title}
-						</a>
+					<li class="text-[var(--color-page-text)] opacity-60">
+						{recipe.title}
+						<span class="text-xs opacity-50"> (Coming Soon)</span>
 					</li>
-				{/each}
+					{/each}
+			</ul>
+		</section>
+
+		<section>
+			<h2 class="mb-6 text-3xl font-semibold text-[var(--color-page-accent)]">
+				{tDetail.categories.weird}
+			</h2>
+			<ul class="list-disc space-y-2 pl-6 text-lg">
+				{#each tDetail.weird as recipe (recipe.slug)}
+					<li class="text-[var(--color-page-text)] opacity-60">
+						{recipe.title}
+						<span class="text-xs opacity-50"> (Coming Soon)</span>
+					</li>
+					{/each}
 			</ul>
 		</section>
 

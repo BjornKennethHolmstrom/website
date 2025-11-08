@@ -2,6 +2,22 @@ import { error } from '@sveltejs/kit';
 
 export const prerender = true;
 
+export function entries() {
+	// 1. Find all our English markdown files
+	const modules = import.meta.glob('$lib/content/enlightenment/en/*.md');
+
+	// 2. Map their filenames to a slug list
+	const slugs = Object.keys(modules).map((path) => {
+		// Path is like: /src/lib/content/enlightenment/en/my-slug.md
+		const parts = path.split('/');
+		const filename = parts.pop() || ''; // 'my-slug.md'
+		const slug = filename.replace('.md', ''); // 'my-slug'
+		return { slug: slug };
+	});
+
+	return slugs;
+}
+
 export async function load({ params }) {
 	// 1. Glob *all* markdown files in the enlightenment content folder
 	// We set eager: true to load them immediately
