@@ -1,5 +1,7 @@
 import { error } from '@sveltejs/kit';
 
+export const prerender = true;
+
 export async function load({ params }) {
 	// 1. Glob *all* markdown files in the food content folder
 	// We set eager: true to load them immediately
