@@ -94,7 +94,7 @@
 	<section class="bg-slate-900 py-16 text-center text-white md:py-24">
 		<div class="mx-auto max-w-3xl px-4">
 			<h1
-				class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
+				class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl pb-2"
 			>
 				{$t.title}
 			</h1>
@@ -103,7 +103,7 @@
 			</p>
 		</div>
 	</section>
-
+	
 	<section class="space-y-12 py-16 md:py-24">
 		<div>
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">

@@ -2,6 +2,7 @@
 <script lang="ts">
 	import { t, language } from '$lib/stores/languageStore';
  import SEO from '$lib/components/SEO.svelte';
+ import PageHero from '$lib/components/PageHero.svelte';
 
 	let formStatus: 'idle' | 'submitting' | 'success' | 'error' = 'idle';
 </script>
@@ -17,18 +18,7 @@
 	<meta name="description" content="{$t.contact.meta.description}" />
 </svelte:head>
 
-<section class="bg-[var(--color-bg-dark)] py-16 text-center text-white md:py-24">
-	<div class="mx-auto max-w-3xl px-4">
-		<h1
-			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
-		>
-			{$t.contact.hero.title}
-		</h1>
-		<p class="text-lg opacity-80 sm:text-xl">
-			{$t.contact.hero.subtitle}
-		</p>
-	</div>
-</section>
+<PageHero title={$t.contact.hero.title} subtitle={$t.contact.hero.subtitle} />
 
 <section class="mx-auto max-w-4xl px-4 py-16 md:py-24">
 	<div class="grid gap-12 md:grid-cols-2">

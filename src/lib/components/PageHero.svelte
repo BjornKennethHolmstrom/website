@@ -5,14 +5,13 @@
 		subtitle: string;
 		description?: string;
 	};
-
 	const { title, subtitle, description = undefined }: Props = $props();
 </script>
 
 <section class="bg-[var(--color-bg-dark)] py-16 text-center text-white">
 	<div class="mx-auto max-w-3xl px-4">
 		<h1
-			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl"
+			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl pb-2"
 		>
 			{title}
 		</h1>
