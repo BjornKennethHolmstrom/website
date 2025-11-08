@@ -50,15 +50,15 @@ export const aboutTranslations = {
 				subtitle: 'Berättelsen bakom systemen'
 			},
 			introTitle: 'Vem jag är',
-			intro: `[Platshållare] Jag är en nyfiken tänkare, passionerad skapare och dedikerad systemdesigner som arbetar för att överbrygga klyftan mellan idéer och handling. Med en bakgrund inom teknisk fysik och matematisk optimering, centrerar mitt arbete kring att främja samarbete och omforma vad som är möjligt för individer, samhällen och planeten.`,
+			intro: `Jag är en nyfiken tänkare, passionerad skapare och dedikerad systemdesigner som arbetar för att överbrygga klyftan mellan idéer och handling. Med en bakgrund inom teknisk fysik och matematisk optimering, centrerar mitt arbete kring att främja samarbete och omforma vad som är möjligt för individer, samhällen och planeten.`,
 			journeyTitle: 'Min Resa',
-			journey_physics: `[Platshållare] Min resa började inom mjukvaruutveckling, men min nyfikenhet har tagit mig från Sverige till Baskien och Japan, vilket gett mig perspektiv som formar min syn på livet. Jag har utforskat allt från vikingahantverk till avancerad matematik.`,
-			journey_mystic: `[Platshållare] Runt 2014, efter djupt arbete med yoga och meditation, började jag få mystiska upplevelser. När jag bodde i Baskien intensifierades detta ifrågasättande av verkligheten. Jag levde nästan utan pengar i två år och utforskade konst och mystik. Till slut spårade detta ur. Jag förlorade min lägenhet, bodde i ett övergivet hus i en månad och återvände till slut till det "vanliga" livet.`,
-			journey_return: `[Platshållare] Med hjälp av familj flyttade jag tillbaka till Sverige. Detta följdes av en djup, långvarig depression och oorganisk psykos som varade i över fem år. Denna smärtsamma resa blev grundläggande. Den gav mig "den deprimerade mystikerns" perspektiv och klargjorde mitt uppdrag: att bygga system som stöder *allt* liv, inklusive de delar som är trasiga, helande eller bara är. Detta perspektiv är "varför" bakom mitt arbete, inklusive <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
+			journey_physics: `Min resa började inom mjukvaruutveckling, men min nyfikenhet har tagit mig från Sverige till Baskien och Japan, vilket gett mig perspektiv som formar min syn på livet. Jag har utforskat allt från vikingahantverk till avancerad matematik.`,
+			journey_mystic: `Runt 2014, efter djupt arbete med yoga och meditation, började jag få mystiska upplevelser. När jag bodde i Baskien intensifierades detta ifrågasättande av verkligheten. Jag levde nästan utan pengar i två år och utforskade konst och mystik. Till slut spårade detta ur. Jag förlorade min lägenhet, bodde i ett övergivet hus i en månad och återvände till slut till det "vanliga" livet.`,
+			journey_return: `Med hjälp av familj flyttade jag tillbaka till Sverige. Detta följdes av en djup, långvarig depression och oorganisk psykos som varade i över fem år. Denna smärtsamma resa blev grundläggande. Den gav mig "den deprimerade mystikerns" perspektiv och klargjorde mitt uppdrag: att bygga system som stöder *allt* liv, inklusive de delar som är trasiga, helande eller bara är. Detta perspektiv är "varför" bakom mitt arbete, inklusive <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
 			missionTitle: 'Mitt Uppdrag & Kärnprojekt',
-			mission_ggf: `[Platshållare] Mitt mest ambitiösa bidrag är initiativet till <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, en samarbetsplattform för att ompröva hur vi förvaltar vår planet. Det är ett arbete fyllt av hopp, komplexitet och omsorg.`,
-			mission_quartet: `[Platshållare] För att stödja denna vision bygger jag <a href="/">en kvartett av verktyg</a>—Spiralize.org, Nondualize.org, Communize.org och Universalize.org—tillsammans med en politisk rörelse, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, fokuserad på holistisk samhällsomvandling.`,
-			mission_question: `[Platshållare] En drivande fråga genomsyrar allt jag gör: <strong>Hur kan vi förbättra oss själva och planeten samtidigt som vi undviker tidigare misstag och förblir sanna mot vår essens?</strong>`,
+			mission_ggf: `Mitt mest ambitiösa bidrag är initiativet till <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, en samarbetsplattform för att ompröva hur vi förvaltar vår planet. Det är ett arbete fyllt av hopp, komplexitet och omsorg.`,
+			mission_quartet: `För att stödja denna vision bygger jag <a href="/">en kvartett av verktyg</a>—Spiralize.org, Nondualize.org, Communize.org och Universalize.org—tillsammans med en politisk rörelse, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, fokuserad på holistisk samhällsomvandling.`,
+			mission_question: `En drivande fråga genomsyrar allt jag gör: <strong>Hur kan vi förbättra oss själva och planeten samtidigt som vi undviker tidigare misstag och förblir sanna mot vår essens?</strong>`,
 			inspirationsTitle: 'Inspiration',
 			inspirations: [
 				'Skönheten i sammankopplade system i naturen, samhället och verkligheten som helhet.',
@@ -68,10 +68,10 @@ export const aboutTranslations = {
 				'Möjligheten till harmoni mellan alla levande varelser.'
 			],
 			interestsTitle: 'Andra Passioner',
-			interests_music: `[Platshållare] Jag älskar musik och har spelat piano, trummor, bas och gitarr i flera band (Raskolnikov, Devil Killers, Fistful of Heart).`,
-			interests_gaming: `[Platshållare] På plattformar som Steam är jag känd som <strong>Pwnytale</strong>. Jag har spelat mycket GeoGuessr och andra community-spel.`,
-			interests_nature: `[Platshållare] Min koppling till naturen och djuren är djup, vilket ledde till att jag engagerade mig i djurrättsrörelser som Anonymous for the Voiceless.`,
-			cta: `[Platshållare] Tack för att du har läst. Jag skulle uppskatta att få kontakt.`,
+			interests_music: `Jag älskar musik och har spelat piano, trummor, bas och gitarr i flera band (Raskolnikov, Devil Killers, Fistful of Heart).`,
+			interests_gaming: `På plattformar som Steam är jag känd som <strong>Pwnytale</strong>. Jag har spelat mycket GeoGuessr och andra community-spel.`,
+			interests_nature: `Min koppling till naturen och djuren är djup, vilket ledde till att jag engagerade mig i djurrättsrörelser som Anonymous for the Voiceless.`,
+			cta: `Tack för att du har läst. Jag skulle uppskatta att få kontakt.`,
 			cta_button: `Hör av dig`
 		}
 	}
