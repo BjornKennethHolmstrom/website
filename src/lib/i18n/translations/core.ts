@@ -4,7 +4,7 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO start page
 		meta: {
-			title: 'Björn Kenneth Holmström | Systems Thinker & Designer',
+			title: 'Björn Kenneth Holmström | Design with Systems Thinking',
 			description:
 				'The personal hub for Björn Kenneth Holmström. Explore an ecosystem of open-source tools, books, and articles on systems thinking, consciousness, and global governance.'
 		},
@@ -22,9 +22,9 @@ export const coreTranslations = {
   dark: 'DARK',
   light: 'LIGHT',
 		// Hero
-		title: 'Systems Thinker & Designer of Conscious Systems',
+  title: 'Designer of Conscious Systems',
 		mission:
-			'I explore, design, and build open-source tools for human and planetary flourishing. This is a map of my work.',
+			'I explore, design, and build open-source tools for human and planetary flourishing, using AI as a partner to navigate complex systems. This is a map of my work.',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
 		clusterQuartet: 'The Awareness Quartet',
@@ -109,7 +109,7 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO för startsidan
 		meta: {
-			title: 'Björn Kenneth Holmström | Systemtänkare & Designer',
+			title: 'Björn Kenneth Holmström | Design med systemtänk',
 			description:
 				'Björn Kenneth Holmströms personliga nav. Utforska ett ekosystem av verktyg, böcker och artiklar om systemtänkande, medvetande och global styrning.'
 		},
@@ -127,9 +127,9 @@ export const coreTranslations = {
   dark: 'MÖRK',
   light: 'LJUS',
 		// Hero
-		title: 'Systemtänkare och designer av medvetna system',
+  title: 'Designer av medvetna system',
 		mission:
-			'Jag utforskar, designar och bygger verktyg med öppen källkod för mänskligt och planetärt blomstrande. Det här är en karta över mitt arbete.',
+			'Jag utforskar, designar och bygger verktyg med öppen källkod för mänskligt och planetärt blomstrande, och använder AI som en partner för att navigera komplexa system. Det här är en karta över mitt arbete.',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
 		clusterQuartet: 'Medvetandets kvartett',
