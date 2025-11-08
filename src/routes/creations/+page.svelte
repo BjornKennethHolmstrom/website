@@ -19,7 +19,9 @@
 		{ key: 'poems', emoji: '📜', url: '/creations/poems' },
   { key: 'photography', emoji: '📷', url: '/creations/photography' },
 		{ key: 'writings', emoji: '✍️', url: '/creations/writings' },
-		{ key: 'minecraft', emoji: '🧱', url: '/creations/minecraft' }
+		{ key: 'minecraft', emoji: '🧱', url: '/creations/minecraft' },
+  { key: 'enlightenment', emoji: '🧘', url: '/creations/enlightenment' },
+  { key: 'food', emoji: '🥗', url: '/creations/food' }
 	];
 </script>
 

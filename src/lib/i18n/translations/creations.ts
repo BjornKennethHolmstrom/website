@@ -28,7 +28,7 @@ export const creationsTranslations = {
 			},
 			poems: {
 				title: 'Poems',
-				tagline: 'A collection of poems, mostly from Amorebieta-Etxano.'
+				tagline: 'A collection of poems, mostly from my time in Amorebieta-Etxano.'
 			},
 			writings: {
 				title: 'Writings',
@@ -38,9 +38,15 @@ export const creationsTranslations = {
 				title: 'Minecraft',
 				tagline: 'Custom survival and creative puzzle worlds.'
 			},
-
-			// --- Detail Page: Art ---
-artDetail: {
+   enlightenment: {
+				title: 'Enlightenment',
+				tagline: 'Explorations of consciousness, awakening, and non-dual awareness.'
+			},
+   food: {
+				title: 'Food',
+				tagline: 'A collection of recipes from my time in Amorebieta-Etxano.'
+			},
+   artDetail: {
 				meta: {
 					title: 'Art | Björn Kenneth Holmström',
 					description: 'Drawings created using pencils, color pencils, and ink.'
@@ -891,6 +897,131 @@ They walked forward towards the large central tree, passing palm trees that look
 						]
 					}
 				}
+			},
+   enlightenmentDetail: {
+				meta: {
+					title: 'Enlightenment | Björn Kenneth Holmström',
+					description: 'Exploring the potential for a profound shift in human consciousness and awakening.'
+				},
+				intro:
+					"Have you ever wondered why nearly every major cultural and religious tradition speaks of a profound shift in human consciousness – a state of complete understanding or awakening? From Buddhist *bodhi* to Hindu *moksha*, from Christian illumination to Zoroastrian *ushta*, these traditions point to something remarkable about human potential.",
+				universalTitle: 'A Universal Human Experience?',
+				universalBody: `What’s fascinating is that these descriptions of enlightenment emerge independently across cultures and times:
+
+* Buddhism: *bodhi*, *kensho*, *satori*
+* Hinduism: *moksha* (liberation)
+* Jainism: *Kevala Jnana*
+* Christianity: illumination, kenosis, metanoia
+* Zoroastrianism: *ushta*
+
+This convergence raises intriguing questions:
+– What if these traditions are describing a real human capacity?
+– Could there be aspects of consciousness we haven’t fully explored?
+– What might we discover by investigating this ourselves?`,
+				investigationTitle: 'Personal Investigation',
+				investigationBody:
+					'Rather than accepting any particular definition or belief, I encourage exploring this territory firsthand. Below are some of my writings that examine different angles of this investigation:',
+				contemplationsTitle: 'Contemplations',
+				contemplationsLinks: {
+					p_inf: 'What if p(∞) = 1? – The certain probability of infinity',
+					p_inf_lang: '[also in Swedish/på svenska]',
+					early: 'Early contemplations on reality',
+					sustenance: 'Beyond the need for sustenance',
+					perception: 'Perception, mind and reality'
+				},
+				experientialTitle: 'Experiential Explorations',
+				experientialLinks: {
+					gaming: 'Exploring states of being while gaming',
+					terms: 'Collection of enlightenment terms'
+				},
+				insightsTitle: 'Daily Insights',
+				insightsLinks: {
+					instagram: 'Short insights and quotes on instagram'
+				},
+				furtherReadingTitle: 'Further Reading',
+				furtherReadingBody:
+					"For those interested in traditional perspectives, here’s what Wikipedia says about {linkEnlightenment}:",
+				quote:
+					'Enlightenment is the “full comprehension of a situation”… The term translates several Buddhist terms and concepts… {linkPerennialists} and {linkUniversalists} view enlightenment and mysticism as equivalent terms for religious or spiritual insight.',
+				conclusion:
+					"What matters most isn’t what others say about enlightenment, but what we might discover through our own sincere investigation. What could you find by looking deeply into your own experience?"
+			},
+   foodDetail: {
+				meta: {
+					title: 'Food & Recipes | Björn Kenneth Holmström',
+					description: 'A collection of recipes created while living in Amorebieta-Etxano.'
+				},
+				intro:
+					'I am in the process of converting recipes I made while living in {link}. You can find them below.',
+				linkAmorebieta: 'Amorebieta/Zornotza',
+				categories: {
+					recipes: 'Recipes',
+					weird: 'These are just weeeeird:',
+					comingSoon: 'Coming Eventually:'
+				},
+				recipes: [
+					{ slug: '4x4-kale-wheel', title: '4x4 kale wheel' },
+					{ slug: 'bread-with-almond-spread', title: 'Bread with almond spread' },
+					{ slug: 'cabbage-boat', title: 'Cabbage boat' },
+					{ slug: 'salad-storm', title: 'Salad storm' },
+					{
+						slug: 'shiitake-wok-salad-and-melonberry-wheel',
+						title: 'Shiitake wok salad and melon-berry wheel'
+					},
+					{ slug: 'vegan-energy-bars', title: 'Vegan Energy Bars' }
+				],
+				weird: [
+					{
+						slug: 'spiced-seed-jelly-and-kombu-with-algae-drink',
+						title: 'Spiced Seed Jelly and Kombu with Algae Drink'
+					},
+					{
+						slug: 'fresh-carrots-and-spiced-pepper-from-the-garden',
+						title: 'Fresh Carrots and Spiced Pepper from the Garden'
+					}
+				],
+				comingSoon: [
+					{ slug: 'lentils-and-spinach---fruit-mandala', title: 'Lentils and spinach – fruit mandala' },
+					{ slug: 'sour-&-sweet-potato-embrace', title: 'Sour & sweet potato embrace' },
+					{ slug: 'kale-spinach-and-broccoli-wok', title: 'Kale, spinach and broccoli wok' },
+					{
+						slug: 'vegetable-wok-with-bread-fruit-and-tea',
+						title: 'Vegetable wok with bread, fruit and tea'
+					},
+					{
+						slug: 'plant-based-crab-with-bread-and-fruit-mandala',
+						title: 'Plant-based "crab" with bread and fruit mandala'
+					},
+					{ slug: 'miso-cabbage-soup', title: 'Miso-cabbage soup' },
+					{
+						slug: 'cabbage-soup-with-peach-and-banana',
+						title: 'Cabbage soup with peach and banana'
+					},
+					{
+						slug: 'rice-and-broccoli-with-papaya-and-apple-mandala',
+						title: 'Rice and broccoli with papaya and apple mandala'
+					},
+					{
+						slug: 'rice-with-vegetable-wok-and-lemon-ears',
+						title: 'Rice with vegetable wok and lemon ears'
+					},
+					{ slug: 'citrUFO', title: 'CitrUFO' },
+					{ slug: 'nicecream', title: 'Nicecream' },
+					{
+						slug: 'almond-banana-porridge-with-fruits',
+						title: 'Almond-banana porridge with fruits'
+					},
+					{ slug: 'vegan-pancakes', title: 'Vegan pancakes' },
+					{ slug: 'ahimsa-shuriken-fruit-mandala', title: 'Ahimsa-shuriken (fruit mandala)' },
+					{
+						slug: 'hexagonal-fruit-and-nut-mandala',
+						title: 'Hexagonal fruit and nut mandala'
+					},
+					{ slug: 'home-made-apple-vinegar', title: 'Home made apple vinegar' },
+					{ slug: 'home-made-cashew-nut-beverage', title: 'Home made cashew nut beverage' },
+					{ slug: 'home-made-peanut-butter', title: 'Home made peanut butter' },
+					{ slug: 'three-lovely-legumes', title: 'Three lovely legumes (not a recipe)' }
+				]
 			}
 		}
 	},
@@ -921,7 +1052,7 @@ They walked forward towards the large central tree, passing palm trees that look
 			},
 			poems: {
 				title: 'Dikter',
-				tagline: 'En samling dikter, de flesta från Amorebieta-Etxano.'
+				tagline: 'En samling dikter, de flesta från min tid i Amorebieta-Etxano.'
 			},
 			writings: {
 				title: 'Skrifter',
@@ -930,6 +1061,14 @@ They walked forward towards the large central tree, passing palm trees that look
 			minecraft: {
 				title: 'Minecraft',
 				tagline: 'Anpassade överlevnads- och kreativa pusselvärldar.'
+			},
+   enlightenment: {
+				title: 'Upplysning',
+				tagline: 'Utforskningar av medvetande, uppvaknande och icke-dual medvetenhet.'
+			},
+   food: {
+				title: 'Mat',
+				tagline: 'En samling recept från min tid i Amorebieta-Etxano.'
 			},
 
 			// --- Detail Page: Art ---
@@ -1051,12 +1190,12 @@ They walked forward towards the large central tree, passing palm trees that look
 					description: 'Fotopromenader från Sverige och foton från Amorebieta-Etxano.'
 				},
 				intro:
-					'[Platshållare] Jag har en Canon EOS 80D-kamera som jag köpte i mitten av 2010-talet och är väldigt nöjd med. Här är några foton från olika samlingar.',
+					'Jag har en Canon EOS 80D-kamera som jag köpte i mitten av 2010-talet och är väldigt nöjd med. Här är några foton från olika samlingar.',
 				collections: [
 					{
 						key: 'zornotza2017',
 						title: 'Amorebieta-Etxano (2017)',
-						description: '[Platshållare] Diverse foton från Zornotza, Baskien.',
+						description: 'Diverse foton från Zornotza, Baskien.',
 						basePath: '/creations/images/2017-09-15-photography/',
 						images: [
 							'bumblebee.png',
@@ -1079,7 +1218,7 @@ They walked forward towards the large central tree, passing palm trees that look
 					{
 						key: 'upplandsVasby2019',
 						title: 'Upplands Väsby Arboret (2019)',
-						description: '[Platshållare] En samling närbilder på olika trädstammar.',
+						description: 'En samling närbilder på olika trädstammar.',
 						basePath: '/creations/images/2019-03-11-photo-walk-in-upplands-vasby-botanical-tree-park-sweden/',
 						images: [
 							'ash-trunk_h1000px-e1552262035712.jpg',
@@ -1132,7 +1271,7 @@ They walked forward towards the large central tree, passing palm trees that look
 					description: 'En samling dikter i alfabetisk ordning.'
 				},
 				intro:
-					'[Platshållare] Här är mina dikter, de flesta skrivna mellan 2017 och 2018 när jag bodde i Amorebieta-Etxano/Zornotza. Du kan filtrera dem efter tema.',
+					'Här är mina dikter, de flesta skrivna mellan 2017 och 2018 när jag bodde i Amorebieta-Etxano/Zornotza. Du kan filtrera dem efter tema.',
 				filterAll: 'Visa Alla',
 				categories: {
 					mystical: 'Mystiska',
@@ -1786,7 +1925,134 @@ De gick framåt mot det stora centrala trädet och passerade palmer som i jämf�
 						]
 					}
 				}
+   },
+   enlightenmentDetail: {
+			 meta: {
+				 title: 'Upplysning | Björn Kenneth Holmström',
+				 description:
+					 'Utforskar potentialen för ett djupt skifte i mänskligt medvetande och uppvaknande.'
+			 },
+			 intro:
+				 'Har du någonsin undrat varför nästan varje större kulturell och religiös tradition talar om ett djupt skifte i mänskligt medvetande – ett tillstånd av fullständig förståelse eller uppvaknande? Från buddhistisk *bodhi* till hinduisk *moksha*, från kristen illumination till zoroastrisk *ushta*, pekar dessa traditioner på något anmärkningsvärt om mänsklig potential.',
+			 universalTitle: 'En Universell Mänsklig Erfarenhet?',
+			 universalBody: `Det fascinerande är att dessa beskrivningar av upplysning dyker upp oberoende av varandra över kulturer och tider:
+
+* Buddhism: *bodhi*, *kensho*, *satori*
+* Hinduism: *moksha* (befrielse)
+* Jainism: *Kevala Jnana*
+* Kristendom: illumination, kenosis, metanoia
+* Zoroastrianism: *ushta*
+
+Denna konvergens väcker spännande frågor:
+– Tänk om dessa traditioner beskriver en verklig mänsklig förmåga?
+– Kan det finnas aspekter av medvetandet vi inte helt har utforskat?
+– Vad skulle vi kunna upptäcka genom att undersöka detta själva?`,
+			 investigationTitle: 'Personlig Utforskning',
+			 investigationBody:
+				 'Istället för att acceptera någon särskild definition eller tro, uppmuntrar jag till att utforska detta område på egen hand. Nedan finns några av mina skrifter som undersöker olika vinklar av denna undersökning:',
+			 contemplationsTitle: 'Kontemplationer',
+			 contemplationsLinks: {
+				 p_inf: 'What if p(∞) = 1? – Den säkra sannolikheten för oändligheten',
+				 p_inf_lang: '[även på engelska/in English]',
+				 early: 'Tidiga kontemplationer om verkligheten',
+				 sustenance: 'Bortom behovet av näring',
+				 perception: 'Perception, sinne och verklighet'
+			 },
+			 experientialTitle: 'Erfarenhetsbaserade Utforskningar',
+			 experientialLinks: {
+				 gaming: 'Utforska varandetillstånd under spelande',
+				 terms: 'Samling av upplysningstermer'
+			 },
+			 insightsTitle: 'Dagens Insikter',
+			 insightsLinks: {
+				 instagram: 'Korta insikter och citat på instagram'
+			 },
+			 furtherReadingTitle: 'Vidare Läsning',
+			 furtherReadingBody:
+				 'För de som är intresserade av traditionella perspektiv, här är vad Wikipedia säger om {linkEnlightenment}:',
+			 quote:
+				 'Enlightenment is the “full comprehension of a situation”… The term translates several Buddhist terms and concepts… {linkPerennialists} and {linkUniversalists} view enlightenment and mysticism as equivalent terms for religious or spiritual insight.',
+			 conclusion:
+				 'Det som betyder mest är inte vad andra säger om upplysning, utan vad vi kan upptäcka genom vår egen uppriktiga undersökning. Vad skulle du kunna hitta genom att titta djupt in i din egen upplevelse?'
+   },
+foodDetail: {
+				meta: {
+					title: 'Mat och recept | Björn Kenneth Holmström',
+					description: 'En samling recept skapade under tiden i Amorebieta-Etxano.'
+				},
+				intro:
+					'Jag håller på att konvertera recept jag skapade när jag bodde i {link}. Du hittar dem nedan.',
+				linkAmorebieta: 'Amorebieta/Zornotza',
+				categories: {
+					recipes: 'Recept',
+					weird: 'Dessa är bara... underliga:',
+					comingSoon: 'Kommer så småningom:'
+				},
+				recipes: [
+					{ slug: '4x4-kale-wheel', title: '4x4 grönkålshjul' },
+					{ slug: 'bread-with-almond-spread', title: 'Bröd med mandelsmör' },
+					{ slug: 'cabbage-boat', title: 'Kålbåt' },
+					{ slug: 'salad-storm', title: 'Salladsstorm' },
+					{
+						slug: 'shiitake-wok-salad-and-melonberry-wheel',
+						title: 'Shiitake-woksallad och melon-bärhjul'
+					},
+					{ slug: 'vegan-energy-bars', title: 'Veganska Energibars' }
+				],
+				weird: [
+					{
+						slug: 'spiced-seed-jelly-and-kombu-with-algae-drink',
+						title: 'Kryddad Frögelé och Kombu med Algdryck'
+					},
+					{
+						slug: 'fresh-carrots-and-spiced-pepper-from-the-garden',
+						title: 'Färska Morötter och Kryddad Paprika från Trädgården'
+					}
+				],
+				comingSoon: [
+					{ slug: 'lentils-and-spinach---fruit-mandala', title: 'Linser och spenat – fruktmandala' },
+					{ slug: 'sour-&-sweet-potato-embrace', title: 'Sur- & sötpotatisomfamning' },
+					{ slug: 'kale-spinach-and-broccoli-wok', title: 'Grönkål, spenat och broccoli-wok' },
+					{
+						slug: 'vegetable-wok-with-bread-fruit-and-tea',
+						title: 'Grönsakswok med bröd, frukt och te'
+					},
+					{
+						slug: 'plant-based-crab-with-bread-and-fruit-mandala',
+						title: 'Växtbaserad "krabba" med bröd och fruktmandala'
+					},
+					{ slug: 'miso-cabbage-soup', title: 'Miso-kålsoppa' },
+					{
+						slug: 'cabbage-soup-with-peach-and-banana',
+						title: 'Kålsoppa med persika och banan'
+					},
+					{
+						slug: 'rice-and-broccoli-with-papaya-and-apple-mandala',
+						title: 'Ris och broccoli med papaya- och äppelmandala'
+					},
+					{
+						slug: 'rice-with-vegetable-wok-and-lemon-ears',
+						title: 'Ris med grönsakswok och citronöron'
+					},
+					{ slug: 'citrUFO', title: 'CitrUFO' },
+					{ slug: 'nicecream', title: 'Nicecream' },
+					{
+						slug: 'almond-banana-porridge-with-fruits',
+						title: 'Mandel-banangröt med frukter'
+					},
+					{ slug: 'vegan-pancakes', title: 'Veganska pannkakor' },
+					{ slug: 'ahimsa-shuriken-fruit-mandala', title: 'Ahimsa-shuriken (fruktmandala)' },
+					{
+						slug: 'hexagonal-fruit-and-nut-mandala',
+						title: 'Hexagonal frukt- och nötmandala'
+					},
+					{ slug: 'home-made-apple-vinegar', title: 'Hemmagjord äppelcidervinäger' },
+					{ slug: 'home-made-cashew-nut-beverage', title: 'Hemmagjord cashewdryck' },
+					{ slug: 'home-made-peanut-butter', title: 'Hemmagjort jordnötssmör' },
+					{ slug: 'three-lovely-legumes', title: 'Tre härliga baljväxter (inte ett recept)' }
+				]
 			}
 		}
 	}
 };
+
