@@ -20,8 +20,10 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
-		// INGET 'paths.base' BEHÖVS HÄR
+		}),
+		paths: {
+			relative: true
+		}
 	}
 };
 
