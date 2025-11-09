@@ -22,11 +22,13 @@ tags:
   - philosophy-of-physics
   - quantum-mechanics
   - wigners-unreasonable-effectiveness
+coverImage: >-
+  /blog/2025-10-16-when-mathematics-points-beyond-itself/images/mathematical-infinity-header.png
 ---
 
 _Why Our Best Equations Point Beyond the Finite_
 
-\[[Download as PDF](https://bjornkennethholmstrom.wordpress.com/wp-content/uploads/2025/09/when-mathematics-points-beyond-itself.pdf)\]
+\[[Download as PDF](/blog/2025-10-16-when-mathematics-points-beyond-itself/when-mathematics-points-beyond-itself.pdf)\]
 
 ## Bridging from the Previous Argument
 
