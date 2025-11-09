@@ -6,6 +6,7 @@
 	import { language } from '$lib/stores/languageStore';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 	import { 
 		getAvailableTranslations, 
 		BLOG_LANGUAGES, 
@@ -17,44 +18,81 @@
 	
 	// React to language changes from the header (for en/sv only)
 	let currentStoreLang = $derived($language);
-	let currentSlug = $derived($page.params.slug);
+	let currentSlug = $derived($page.params.slug || data.slug);
 	
 	// Get available translations for this post
 	let availableTranslations = $state<BlogLanguage[]>([]);
 	
+	// Current post content and metadata (can be updated client-side)
+	let currentContent = $state(data.content);
+	let currentMetadata = $state(data.metadata);
+	
 	// Load available translations
 	$effect(() => {
-		getAvailableTranslations(currentSlug).then(langs => {
-			availableTranslations = sortLanguagesForDisplay(langs, currentStoreLang);
-		});
+		if (browser) {
+			getAvailableTranslations(currentSlug).then(langs => {
+				availableTranslations = sortLanguagesForDisplay(langs, currentStoreLang);
+			});
+		}
 	});
+	
+	// Load language-specific content client-side
+	async function loadLanguageContent(lang: BlogLanguage) {
+		if (!browser) return;
+		
+		try {
+			let path = '';
+			if (lang === 'en') {
+				path = `/src/lib/posts/${currentSlug}/index.md`;
+			} else {
+				path = `/src/lib/posts/${currentSlug}/${BLOG_LANGUAGES[lang].dir}/index.md`;
+			}
+			
+			// Dynamically import the markdown file
+			const modules = import.meta.glob('$lib/posts/**/index.md');
+			const module = await modules[path]?.();
+			
+			if (module) {
+				currentContent = module.default;
+				currentMetadata = { ...module.metadata, lang };
+			}
+		} catch (e) {
+			console.error('Failed to load language content:', e);
+		}
+	}
 	
 	// Automatically sync with language store for en/sv
 	$effect(() => {
-		if (currentSlug) {
+		if (browser && currentSlug) {
 			const url = new URL(window.location.href);
-			const currentParam = url.searchParams.get('lang');
+			const currentParam = url.searchParams.get('lang') as BlogLanguage | null;
 			
 			// Only auto-switch for languages in the store (en/sv)
 			if (currentStoreLang === 'sv' && currentParam !== 'sv' && availableTranslations.includes('sv')) {
 				url.searchParams.set('lang', 'sv');
 				goto(url.pathname + url.search, { replaceState: true, noScroll: true });
+				loadLanguageContent('sv');
 			}
 			else if (currentStoreLang === 'en' && currentParam === 'sv') {
 				url.searchParams.delete('lang');
 				goto(url.pathname + url.search, { replaceState: true, noScroll: true });
+				loadLanguageContent('en');
+			}
+			// Load content for any other language in URL
+			else if (currentParam && currentParam !== 'en' && BLOG_LANGUAGES[currentParam]) {
+				loadLanguageContent(currentParam);
 			}
 		}
 	});
 	
 	// Current language from metadata
-	const currentLang = $derived((data.metadata?.lang || 'en') as BlogLanguage);
+	const currentLang = $derived((currentMetadata?.lang || 'en') as BlogLanguage);
 	const locale = $derived(getLocaleForLanguage(currentLang));
 	const uiText = $derived(getBlogUIText(currentLang));
 	
 	let keywords = $derived(
 		[
-			...(data.metadata?.categories || []),
+			...(currentMetadata?.categories || []),
 			'Björn Kenneth Holmström',
 			'blog',
 			'systems thinking',
@@ -73,6 +111,7 @@
 			url.searchParams.set('lang', lang);
 		}
 		goto(url.pathname + url.search);
+		loadLanguageContent(lang);
 		languageSelectorOpen = false;
 	}
 	
@@ -91,13 +130,13 @@
 
 <svelte:window onclick={handleClickOutside} />
 
-{#if data.metadata}
+{#if currentMetadata}
 	<SEO
-		title={data.metadata.title || 'Blog Post'}
-		description={data.metadata.excerpt || `Blog post: ${data.metadata.title || 'Untitled'}`}
+		title={currentMetadata.title || 'Blog Post'}
+		description={currentMetadata.excerpt || `Blog post: ${currentMetadata.title || 'Untitled'}`}
 		type="article"
-		publishedTime={data.metadata.date}
-		image={data.metadata.coverImage || '/social-preview.png'}
+		publishedTime={currentMetadata.date}
+		image={currentMetadata.coverImage || '/social-preview.png'}
 		keywords={keywords}
 		section="Blog"
 	/>
@@ -120,7 +159,7 @@
 				>
 					<!-- Special case for Basque flag -->
 					{#if currentLang === 'eu'}
-						<img src="/blog/basque-flag.svg" alt="Basque flag" class="inline-block h-6 w-6" />
+						<img src="/blog/basque-flag.svg" alt="Basque flag" class="inline-block h-4 w-6" />
 					{:else}
 						<span>{BLOG_LANGUAGES[currentLang].flag}</span>
 					{/if}
@@ -152,7 +191,7 @@
 							>
 								<!-- Special case for Basque flag -->
 								{#if lang === 'eu'}
-									<img src="/blog/basque-flag.svg" alt="Basque flag" class="inline-block h-6 w-6" />
+									<img src="/blog/basque-flag.svg" alt="Basque flag" class="inline-block h-4 w-6" />
 								{:else}
 									<span class="text-lg">{BLOG_LANGUAGES[lang].flag}</span>
 								{/if}
@@ -168,29 +207,29 @@
 		</div>
 	{/if}
 
-	{#if data.metadata?.title}
-		<h1>{data.metadata.title}</h1>
+	{#if currentMetadata?.title}
+		<h1>{currentMetadata.title}</h1>
 	{/if}
 	
-	{#if data.metadata?.date}
+	{#if currentMetadata?.date}
 		<p class="text-lg opacity-70">
-			{uiText.published}: {new Date(data.metadata.date).toLocaleDateString(locale, { dateStyle: 'long' })}
+			{uiText.published}: {new Date(currentMetadata.date).toLocaleDateString(locale, { dateStyle: 'long' })}
 		</p>
 	{/if}
 
-	{#if data.metadata?.coverImage}
+	{#if currentMetadata?.coverImage}
 		<img
-			src={data.metadata.coverImage}
-			alt={data.metadata.title || 'Cover image'}
+			src={currentMetadata.coverImage}
+			alt={currentMetadata.title || 'Cover image'}
 			class="not-prose mb-8 rounded-xl"
 		/>
 	{/if}
 
-	{#if data.content}
-		{@render data.content()}
+	{#if currentContent}
+		{@render currentContent()}
 	{/if}
 
-	{#if data.metadata?.title}
-		<ShareButtons title={data.metadata.title} />
+	{#if currentMetadata?.title}
+		<ShareButtons title={currentMetadata.title} />
 	{/if}
 </article>

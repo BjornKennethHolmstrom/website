@@ -1,35 +1,19 @@
 import { error } from '@sveltejs/kit';
-import type { BlogLanguage } from '$lib/utils/blogTranslations';
-import { BLOG_LANGUAGES } from '$lib/utils/blogTranslations';
 
-export async function load({ params, url }) {
+export async function load({ params }) {
   try {
     // Read all markdown files from posts
     const modules = import.meta.glob('$lib/posts/**/index.md', { eager: true });
     
-    // Check for requested language from query parameter
-    const requestedLang = url.searchParams.get('lang') as BlogLanguage | null;
-    
-    // If a specific language is requested, try to load it
-    if (requestedLang && requestedLang !== 'en' && BLOG_LANGUAGES[requestedLang]) {
-      const langPath = `/src/lib/posts/${params.slug}/${BLOG_LANGUAGES[requestedLang].dir}/index.md`;
-      if (modules[langPath]) {
-        const post = modules[langPath];
-        return {
-          content: post.default,
-          metadata: { ...post.metadata, lang: requestedLang }
-        };
-      }
-      // If requested language doesn't exist, fall through to English
-    }
-    
-    // Default to English version
+    // During prerendering, always load the English version
+    // Language switching will be handled client-side in the component
     const enPath = `/src/lib/posts/${params.slug}/index.md`;
     if (modules[enPath]) {
       const post = modules[enPath];
       return {
         content: post.default,
-        metadata: { ...post.metadata, lang: 'en' }
+        metadata: { ...post.metadata, lang: 'en' },
+        slug: params.slug
       };
     }
   } catch (e) {
@@ -38,4 +22,26 @@ export async function load({ params, url }) {
   }
 
   throw error(404, 'Post not found');
+}
+
+// Generate entries for prerendering
+export async function entries() {
+  const modules = import.meta.glob('$lib/posts/**/index.md', { eager: true });
+  const entries: Array<{ slug: string }> = [];
+  const slugs = new Set<string>();
+  
+  // Extract all unique slugs
+  Object.keys(modules).forEach((path) => {
+    const match = path.match(/\/posts\/([^/]+)(?:\/(?:sv|es|de|fr|eu|ja|zh|hi|ar|pt|ru))?\/index\.md$/);
+    if (match) {
+      slugs.add(match[1]);
+    }
+  });
+  
+  // Add each slug as an entry
+  slugs.forEach(slug => {
+    entries.push({ slug });
+  });
+  
+  return entries;
 }
