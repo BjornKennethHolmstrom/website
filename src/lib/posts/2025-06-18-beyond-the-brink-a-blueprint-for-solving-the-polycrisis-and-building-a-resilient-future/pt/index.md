@@ -24,6 +24,8 @@ tags:
   - solucoes-sistemicas
   - treaty-for-our-only-home
   - reforma-onu
+coverImage: >-
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/header.png
 ---
 
 _**Nota do Editor (junho de 2025):** Esta postagem foi escrita durante uma fase inicial do projeto para delinear a visão central. O site está atualmente passando por uma auditoria e revisão abrangente para garantir que todo o conteúdo esteja alinhado e consistente. Embora a visão aqui descrita permaneça nossa estrela-guia, alguns links podem estar desativados e propostas específicas estão sob revisão. Obrigado pela sua compreensão._

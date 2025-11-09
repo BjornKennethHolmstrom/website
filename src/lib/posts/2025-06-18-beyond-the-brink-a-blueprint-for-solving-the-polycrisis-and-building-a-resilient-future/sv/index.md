@@ -24,6 +24,8 @@ tags:
   - systemlösningar
   - treaty-for-our-only-home
   - fn-reform
+coverImage: >-
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/header.png
 ---
 
 _**Redaktörens anmärkning (juni 2025):** Detta inlägg skrevs under en tidigare fas av projektet för att beskriva kärnvisionen. Webbplatsen genomgår för närvarande en omfattande granskning och revidering för att säkerställa att allt innehåll är samstämmigt och konsekvent. Även om visionen som beskrivs här förblir vår ledstjärna, kan vissa länkar vara inaktiverade och specifika förslag är under utvärdering. Tack för din förståelse._

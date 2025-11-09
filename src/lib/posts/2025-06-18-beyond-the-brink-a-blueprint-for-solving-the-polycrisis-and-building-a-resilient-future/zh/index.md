@@ -23,6 +23,8 @@ tags:
   - 系统性解决方案
   - treaty-for-our-only-home
   - 联合国改革
+coverImage: >-
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/header.png
 ---
 
 _**编者注（2025年6月）：** 这篇文章撰写于项目的早期阶段，旨在概述核心愿景。本网站目前正在进行全面审核和修订，以确保所有内容保持一致。虽然此处描述的愿景仍然是我们的指路明灯，但某些链接可能已失效，具体提案也正在审查中。感谢您的理解。_

@@ -25,7 +25,7 @@ tags:
   - treaty-for-our-only-home
   - un-reform
 coverImage: >-
-  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/five-pillars.png
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/header.png
 ---
 
 _**Editor's Note (June 2025):** This post was written during an earlier phase of the project to outline the core vision. The website is currently undergoing a comprehensive audit and revision to ensure all content is aligned and consistent. While the vision described here remains our guiding star, some links may be disabled and specific proposals are under review. Thank you for your understanding._

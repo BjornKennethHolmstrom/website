@@ -24,6 +24,8 @@ tags:
   - konponbide-sistemikoak
   - treaty-for-our-only-home
   - nbe-erreforma
+coverImage: >-
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/header.png
 ---
 
 _**Editorearen oharra (2025eko ekaina):** Argitalpen hau proiektuaren hasierako fase batean idatzi zen, oinarrizko ikuspegia azaltzeko. Webgunea auditoretza eta berrikuspen sakon batean dago une honetan, eduki guztia lerrokatuta eta koherentea dela ziurtatzeko. Hemen deskribatutako ikuspegiak gure izar gidaria izaten jarraitzen duen arren, esteka batzuk desgaituta egon daitezke eta proposamen espezifikoak berrikusten ari gara. Eskerrik asko zure ulermenagatik._

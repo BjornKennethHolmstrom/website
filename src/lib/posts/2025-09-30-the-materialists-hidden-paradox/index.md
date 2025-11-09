@@ -20,11 +20,13 @@ tags:
   - "principle-of-sufficient-reason"
   - "rational-inquiry"
   - "special-pleading"
+coverImage: >-
+  /blog/2025-09-30-the-materialists-hidden-paradox/images/materialist's-paradox-header-by-gemini.png
 ---
 
 _How the refusal to explain existence collapses materialism from within and reveals a profound metaphysical truth._
 
-\[[Download as PDF](https://bjornkennethholmstrom.wordpress.com/wp-content/uploads/2025/09/the-materialists-hidden-paradox-5.pdf)\]
+\[[Download as PDF](/blog/2025-09-30-the-materialists-hidden-paradox/the-materialists-hidden-paradox.pdf)\]
 
 ## The Pre-Causal Insight
 

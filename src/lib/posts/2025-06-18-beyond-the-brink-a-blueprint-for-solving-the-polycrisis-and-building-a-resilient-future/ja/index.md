@@ -23,6 +23,8 @@ tags:
   - システミック・ソリューション
   - treaty-for-our-only-home
   - 国連改革
+coverImage: >-
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/header.png
 ---
 
 _**編集者注（2025年6月）：** この投稿は、プロジェクトの初期段階で中核となるビジョンを概説するために書かれました。現在、ウェブサイトはすべてのコンテンツが整合性を持ち、一貫していることを確認するために、包括的な監査と改訂を行っています。ここで説明されているビジョンは引き続き私たちの導きの星ですが、一部のリンクが無効になっている可能性があり、特定の提案はレビュー中です。ご理解のほどよろしくお願いいたします。_
