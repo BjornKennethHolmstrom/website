@@ -18,10 +18,9 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true
-		}),
-	
-		trailingSlash: 'ignore'
+			strict: true,
+			trailingSlash: 'ignore'
+		})
 	}
 };
 
