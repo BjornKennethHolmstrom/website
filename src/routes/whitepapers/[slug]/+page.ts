@@ -29,7 +29,7 @@ export async function entries() {
 	
 	// Extract all slugs from whitepapers
 	Object.keys(modules).forEach((path) => {
-		const match = path.match(/\/whitepapers\/([^/]+)\.md$/);
+		const match = path.match(/\/src\/lib\/whitepapers\/([^/]+)\.md$/);
 		if (match) {
 			entries.push({ slug: match[1] });
 		}

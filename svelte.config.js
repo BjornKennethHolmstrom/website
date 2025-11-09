@@ -20,12 +20,6 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		
-		// ADD THIS BLOCK
-		paths: {
-			relative: false
-		}
-	},
 	
 	trailingSlash: 'ignore'
 };
