@@ -20,11 +20,8 @@ const config = {
 			precompress: false,
 			strict: true,
 			trailingSlash: 'ignore'
-		}),
-
-		paths: {
-			relative: false
-		}
+		})
+		
 	}
 };
 
