@@ -2,7 +2,7 @@
 title: >-
   Physics Finally Catches Up to Philosophy: Why the Universe Can't Be a
   Simulation
-date: 2025-11-11T00:00:00.000Z
+date: 2025-11-10T00:00:00.000Z
 categories:
   - consciousness-studies
   - philosophy-of-science
@@ -18,7 +18,7 @@ tags:
   - simulation-theory
   - theory-of-everything
 coverImage: >-
-  /blog/2025-11-11-physics-finally-catches-up-to-philosophy-why-the-universe-cant-be-a-simulation/images/simulation-theory-header-image-1.png
+  /blog/2025-11-10-physics-finally-catches-up-to-philosophy-why-the-universe-cant-be-a-simulation/images/simulation-theory-header-image-1.png
 ---
 
 ##### A new physics paper rules out a computational universe, pointing toward the same "Ground of Being" that philosophy has pointed to for millennia.
@@ -37,7 +37,7 @@ But as the new research shows, "its" can't come from "bits." There's a fundament
 
 Now physics is telling us this isn't just philosophically unsatisfying—it's mathematically impossible. Reality cannot be self-contained within a computational framework.
 
-![](/blog/2025-11-11-physics-finally-catches-up-to-philosophy-why-the-universe-cant-be-a-simulation/images/simulation-theory-in-between-shattering-image.png)
+![](/blog/2025-11-10-physics-finally-catches-up-to-philosophy-why-the-universe-cant-be-a-simulation/images/simulation-theory-in-between-shattering-image.png)
 
 #### The Return of the Ground of Being
 

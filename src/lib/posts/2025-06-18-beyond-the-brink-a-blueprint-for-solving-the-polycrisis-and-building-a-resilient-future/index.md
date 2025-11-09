@@ -24,11 +24,11 @@ tags:
   - systemic-solutions
   - treaty-for-our-only-home
   - un-reform
+coverImage: >-
+  /blog/2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future/images/five-pillars.png
 ---
 
 _**Editor's Note (June 2025):** This post was written during an earlier phase of the project to outline the core vision. The website is currently undergoing a comprehensive audit and revision to ensure all content is aligned and consistent. While the vision described here remains our guiding star, some links may be disabled and specific proposals are under review. Thank you for your understanding._
-
-"Läs detta inlägg på svenska [här](https://bjornkennethholmstrom.wordpress.com/2025/06/18/bortom-avgrunden-en-plan-for-att-losa-polykrisen-och-bygga-en-motstandskraftig-framtid/)." (Read this post in Swedish [here](https://bjornkennethholmstrom.wordpress.com/2025/06/18/bortom-avgrunden-en-plan-for-att-losa-polykrisen-och-bygga-en-motstandskraftig-framtid/).)
 
 We're all feeling it, aren't we? The news cycles are relentless, filled with wildfires, floods, economic jitters, political polarization, and the lingering shadow of global health crises. It can feel overwhelming, like we're caught in a perfect storm of problems. This isn't just a collection of separate issues; it's what many are now calling the **polycrisis** – interconnected failures in our climate, economic, and political systems that amplify each other in dangerous feedback loops.
 
@@ -102,10 +102,10 @@ This is not utopian dreaming, but practical necessity. The costs of maintaining 
 
 **Are you ready to be part of the solution?**
 
-Explore the full details of the Treaty for Our Only Home on [globalgovernanceframework.org/start-treaty](http://globalgovernanceframework.org/start-treaty).
+Explore the full details of the Treaty for Our Only Home on [https://globalgovernanceframeworks.org/start-treaty](https://globalgovernanceframeworks.org/start-treaty).
 
 * * *
 
-**Note:** This blog post was drafted with the assistance of an AI, Gemini, to help articulate the core concepts of the Treaty for Our Only Home. The content is based on the comprehensive framework available on [globalgovernanceframework.org.](http://globalgovernanceframework.org.)
+**Note:** This blog post was drafted with the assistance of an AI, Gemini, to help articulate the core concepts of the Treaty for Our Only Home. The content is based on the comprehensive frameworks available on [globalgovernanceframeworks.org.](https://globalgovernanceframeworks.org.)
 
 * * *

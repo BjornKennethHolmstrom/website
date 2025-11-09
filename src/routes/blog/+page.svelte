@@ -1,81 +1,134 @@
+<!-- src/routes/blog/+page.svelte -->
 <script lang="ts">
-	import { t } from '$lib/stores/languageStore';
- import SEO from '$lib/components/SEO.svelte';
-
-	// SvelteKits magiska sätt att importera flera filer
-	// Vi använder 'eager' för att ladda allt direkt för listan
-	const modules = import.meta.glob('$lib/posts/**/index.md', { eager: true });
-
-	// $derived är global i Svelte 5, ingen import behövs
-	let posts = $derived(
-		Object.entries(modules)
-			.map(([path, module]) => {
-				// path = /src/lib/posts/2025-11-11-slug/index.md
-				// Regex för att fånga sluggen: 2025-11-11-slug
-				const slug = path.match(/src\/lib\/posts\/(.*?)\/index\.md/)[1];
-
-				return {
-					slug,
-					...(module.metadata as { title: string; date: string; coverImage?: string })
-				};
-			})
-			.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+	import { BLOG_LANGUAGES, sortLanguagesForDisplay, type BlogLanguage } from '$lib/utils/blogTranslations';
+	import { language } from '$lib/stores/languageStore';
+	
+	let { data } = $props();
+	let currentStoreLang = $derived($language);
+	
+	// Sort posts by date, newest first
+	const sortedPosts = $derived(
+		data.posts.sort((a, b) => 
+			new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()
+		)
 	);
+	
+	// Sort languages for each post
+	function getSortedTranslations(translations: BlogLanguage[]): BlogLanguage[] {
+		return sortLanguagesForDisplay(translations, currentStoreLang);
+	}
 </script>
 
-<SEO
-	title={$t.blog.meta.title}
-	description={$t.blog.meta.description}
-	keywords="systems thinking, consciousness development, holistic solutions, Björn Kenneth Holmström, blog, polycrisis"
-/>
-
-<section class="bg-slate-900 py-16 text-center text-white md:py-24">
-	<div class="mx-auto max-w-3xl px-4">
-		<h1
-			class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text pb-2 text-4xl font-bold text-transparent sm:text-5xl"
-		>
-			{$t.blog.title}
-		</h1>
-		<p class="text-lg text-slate-300 sm:text-xl">
-			{$t.blog.listPrefix}{$t.blog.title.toLowerCase()}.
-		</p>
-
-  <p class="mt-4 text-sm text-slate-400">
-			{$t.blogFollow} <a
-				href="/rss.xml"
-				class="font-medium text-amber-400 underline transition-colors hover:text-amber-300"
+<div class="max-w-6xl mx-auto px-4 pt-16 pb-24">
+	<h1 class="text-4xl font-bold mb-12">Blog</h1>
+	
+	<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+		{#each sortedPosts as post}
+			<article 
+				class="rounded-lg overflow-hidden transition-transform hover:scale-[1.02] flex flex-col"
+				style="background-color: var(--color-card-bg);"
 			>
-				{$t.navRSS}
-			</a>
-		</p>
-	</div>
-</section>
-
-<section class="mx-auto max-w-3xl px-4 py-16 md:py-24">
-	<ul class="w-full space-y-8">
-		{#each posts as post}
-			<li
-				class="block rounded-lg border border-[var(--color-separator)] bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-slate-800"
-			>
-				<a href="/blog/{post.slug}" class="block overflow-hidden rounded-lg">
-					{#if post.coverImage}
+				<!-- Cover Image -->
+				{#if post.metadata.coverImage}
+					<a href="/blog/{post.slug}" class="block">
 						<img
-							src={post.coverImage}
-							alt="Omslagsbild för {post.title}"
-							class="mb-4 aspect-video w-full object-cover"
+							src={post.metadata.coverImage}
+							alt={post.metadata.title}
+							class="w-full h-48 object-cover"
 						/>
-					{/if}
-
-					<div class="p-6">
-						<h2 class="text-2xl font-semibold text-slate-900 dark:text-slate-100">
-							{post.title}
+					</a>
+				{:else}
+					<a href="/blog/{post.slug}" class="block">
+						<div 
+							class="w-full h-48 flex items-center justify-center text-4xl opacity-20"
+							style="background: linear-gradient(135deg, var(--color-page-accent) 0%, var(--color-card-bg) 100%);"
+						>
+							📝
+						</div>
+					</a>
+				{/if}
+				
+				<!-- Content -->
+				<div class="p-6 flex flex-col flex-grow">
+					<!-- Header with title and language indicators -->
+					<div class="flex justify-between items-start gap-3 mb-3">
+						<h2 class="text-xl font-semibold flex-grow">
+							<a 
+								href="/blog/{post.slug}" 
+								class="hover:opacity-70 transition-opacity"
+								style="color: var(--color-page-accent);"
+							>
+								{post.metadata.title}
+							</a>
 						</h2>
-						<p class="text-slate-600 dark:text-slate-400">
-							{new Date(post.date).toLocaleDateString('sv-SE', { dateStyle: 'long' })}
-						</p>
+						
+						<!-- Language indicators -->
+						<div class="flex gap-1 text-base flex-shrink-0 flex-wrap justify-end max-w-[80px]">
+							{#each getSortedTranslations(post.translations) as lang}
+								{@const langInfo = BLOG_LANGUAGES[lang]}
+								{#if lang === 'en'}
+									<!-- English: just show flag, links to base URL -->
+									<a 
+										href="/blog/{post.slug}"
+										class="hover:opacity-70 transition-opacity inline-flex items-center"
+										title={langInfo.name}
+									>
+										{langInfo.flag}
+									</a>
+								{:else if lang === 'eu'}
+									<!-- Basque: use SVG flag -->
+									<a 
+										href="/blog/{post.slug}?lang={lang}"
+										class="hover:opacity-70 transition-opacity inline-flex items-center"
+										title={langInfo.name}
+									>
+										<img src="/blog/basque-flag.svg" alt="Basque flag" class="inline-block h-6 w-6" />
+									</a>
+								{:else}
+									<!-- Other languages: link with ?lang parameter -->
+									<a 
+										href="/blog/{post.slug}?lang={lang}"
+										class="hover:opacity-70 transition-opacity inline-flex items-center"
+										title={langInfo.name}
+									>
+										{langInfo.flag}
+									</a>
+								{/if}
+							{/each}
+						</div>
 					</div>
-				</a>
-			</li>
+					
+					<!-- Date -->
+					<p class="text-sm opacity-60 mb-3">
+						{new Date(post.metadata.date).toLocaleDateString('en-US', { 
+							year: 'numeric', 
+							month: 'long', 
+							day: 'numeric' 
+						})}
+					</p>
+					
+					<!-- Excerpt -->
+					{#if post.metadata.excerpt}
+						<p class="opacity-80 mb-4 flex-grow">
+							{post.metadata.excerpt}
+						</p>
+					{/if}
+					
+					<!-- Categories -->
+					{#if post.metadata.categories && post.metadata.categories.length > 0}
+						<div class="flex gap-2 mt-auto flex-wrap">
+							{#each post.metadata.categories as category}
+								<span 
+									class="text-xs px-2 py-1 rounded"
+									style="background-color: var(--color-page-bg); opacity: 0.8;"
+								>
+									{category}
+								</span>
+							{/each}
+						</div>
+					{/if}
+				</div>
+			</article>
 		{/each}
-	</ul>
-</section>
+	</div>
+</div>
