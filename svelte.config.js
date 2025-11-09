@@ -19,10 +19,9 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true,
-			trailingSlash: 'ignore' // Correctly placed inside adapter
+			trailingSlash: 'ignore'
 		}),
-		
-		// ADD THIS BLOCK BACK
+
 		paths: {
 			relative: false
 		}
