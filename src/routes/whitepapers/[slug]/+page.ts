@@ -3,33 +3,35 @@ import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	try {
-		// Hitta rÃ¤tt .md-fil i /src/lib/whitepapers/
-		const modules = import.meta.glob('$lib/whitepapers/*.md', { eager: true });
-		const path = `/src/lib/whitepapers/${params.slug}.md`;
+		// Updated glob to match the new file structure
+		const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
+		// Updated path to find the correct index.md file
+		const path = `/src/lib/whitepapers/${params.slug}/index.md`;
 
 		if (modules[path]) {
 			const post = modules[path];
 			return {
-				content: post.default, // HuvudinnehÃ¥llet (HTML)
-				metadata: post.metadata // Allt frÃ¥n frontmatter
+				content: post.default,
+				metadata: post.metadata
 			};
 		}
 	} catch (e) {
 		console.error(e);
-		throw error(500, `Kunde inte ladda white paper: ${params.slug}`);
+		throw error(500, `Could not load white paper: ${params.slug}`);
 	}
 
-	throw error(404, 'Hittade inte detta white paper');
+	throw error(404, 'White paper not found');
 }
 
 // Generate entries for prerendering
 export async function entries() {
-	const modules = import.meta.glob('$lib/whitepapers/*.md', { eager: true });
+	// Updated glob to match the new file structure
+	const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
 	const entries: Array<{ slug: string }> = [];
 	
-	// Extract all slugs from whitepapers
 	Object.keys(modules).forEach((path) => {
-		const match = path.match(/\/src\/lib\/whitepapers\/([^/]+)\.md$/);
+		// Updated regex to capture the slug (folder name)
+		const match = path.match(/\/src\/lib\/whitepapers\/([^/]+)\/index\.md$/);
 		if (match) {
 			entries.push({ slug: match[1] });
 		}
@@ -37,4 +39,3 @@ export async function entries() {
 	
 	return entries;
 }
-
