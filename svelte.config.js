@@ -20,11 +20,10 @@ const config = {
 			fallback: undefined,
 			precompress: false,
 			strict: true
-		}),
-		paths: {
-			assets: 'https://www.bjornkennethholmstrom.org'
-		}
-	}
+		})
+	},
+	
+	trailingSlash: 'ignore'
 };
 
 export default config;
