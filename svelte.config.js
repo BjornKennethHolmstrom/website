@@ -22,7 +22,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			relative: true
+			assets: 'https://www.bjornkennethholmstrom.org'
 		}
 	}
 };
