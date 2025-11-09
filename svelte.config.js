@@ -21,7 +21,8 @@ const config = {
 			strict: true
 		}),
 	
-	trailingSlash: 'ignore'
+		trailingSlash: 'ignore'
+	}
 };
 
 export default config;
