@@ -1,27 +1,8 @@
 // src/routes/whitepapers/[slug]/+page.ts
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
-	try {
-		// FIXED: Look for index.md files in subfolders
-		const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
-		// FIXED: Build the correct path to the index.md file
-		const path = `/src/lib/whitepapers/${params.slug}/index.md`;
-
-		if (modules[path]) {
-			const post = modules[path];
-			return {
-				content: post.default, // Main content (HTML)
-				metadata: post.metadata // All frontmatter
-			};
-		}
-	} catch (e) {
-		console.error(e);
-		throw error(500, `Could not load white paper: ${params.slug}`);
-	}
-
-	throw error(404, 'White paper not found');
-}
+// NO 'load' FUNCTION HERE.
+// The component will load its own content.
 
 // Generate entries for prerendering
 export async function entries() {
