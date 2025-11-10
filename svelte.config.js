@@ -20,7 +20,14 @@ const config = {
 			precompress: false,
 			strict: true,
 			trailingSlash: 'never'
-		})
+		}),
+		prerender: {
+			handleUnseenRoutes: (route) => {
+				// Ignore the 404 route during prerendering
+				if (route === '/[...404]') return 'ignore';
+				return 'fail';
+			}
+		}
 	}
 };
 
