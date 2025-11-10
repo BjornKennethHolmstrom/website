@@ -1,41 +1,36 @@
-// src/routes/whitepapers/[slug]/+page.ts
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
-  try {
-    // Read all whitepaper markdown files
-    const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
-    
-    // Try to find the whitepaper
-    const whitepaperPath = `/src/lib/whitepapers/${params.slug}/index.md`;
-    
-    if (modules[whitepaperPath]) {
-      const whitepaper = modules[whitepaperPath];
-      return {
-        content: whitepaper.default,        // ← CRITICAL: SERVER-SIDE CONTENT
-        metadata: whitepaper.metadata,      // ← CRITICAL: SERVER-SIDE METADATA
-        slug: params.slug
-      };
-    }
-  } catch (e) {
-    console.error('Error loading whitepaper:', e);
-    throw error(500, `Could not load whitepaper: ${params.slug}`);
-  }
+export const prerender = true;
 
-  throw error(404, 'Whitepaper not found');
+export async function load({ params }) {
+    console.log('LOADING WHITEPAPER:', params.slug);
+    
+    const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
+    const path = `/src/lib/whitepapers/${params.slug}/index.md`;
+    
+    console.log('Looking for path:', path);
+    console.log('Available modules:', Object.keys(modules));
+    
+    if (modules[path]) {
+        const module = modules[path];
+        return {
+            content: module.default,
+            metadata: module.metadata,
+            slug: params.slug
+        };
+    }
+    
+    console.error('Whitepaper not found:', params.slug);
+    throw error(404, `Whitepaper "${params.slug}" not found`);
 }
 
-// Generate entries for prerendering
 export async function entries() {
-  const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
-  const entries: Array<{ slug: string }> = [];
-  
-  Object.keys(modules).forEach((path) => {
-    const match = path.match(/\/src\/lib\/whitepapers\/([^/]+)\/index\.md$/);
-    if (match) {
-      entries.push({ slug: match[1] });
-    }
-  });
-  
-  return entries;
+    const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
+    const entries = Object.keys(modules).map(path => {
+        const slug = path.split('/').filter(Boolean).pop()?.replace('/index.md', '') || '';
+        return { slug };
+    }).filter(entry => entry.slug);
+    
+    console.log('PRERENDERING WHITEPAPERS:', entries);
+    return entries;
 }
