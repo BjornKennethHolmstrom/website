@@ -26,10 +26,21 @@ export async function load({ params }) {
 
 export async function entries() {
     const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
-    const entries = Object.keys(modules).map(path => {
-        const slug = path.split('/').filter(Boolean).pop()?.replace('/index.md', '') || '';
-        return { slug };
-    }).filter(entry => entry.slug);
+    const entries: Array<{ slug: string }> = [];
+    
+    Object.keys(modules).forEach((path) => {
+        // FIXED: Proper slug extraction
+        const parts = path.split('/');
+        // Path format: /src/lib/whitepapers/SLUG/index.md
+        // We want the part between "whitepapers" and "index.md"
+        const slugIndex = parts.indexOf('whitepapers') + 1;
+        if (slugIndex > 0 && slugIndex < parts.length - 1) {
+            const slug = parts[slugIndex];
+            if (slug && slug !== 'index.md') {
+                entries.push({ slug });
+            }
+        }
+    });
     
     console.log('PRERENDERING WHITEPAPERS:', entries);
     return entries;
