@@ -9,29 +9,31 @@
 	let currentContent = $state();
 	let currentMetadata = $state<any>(null);
 
-	async function loadWhitepaperContent(slug: string) {
-		if (!browser) return;
-		try {
-			const path = `/src/lib/whitepapers/${slug}/index.md`;
-			const modules = import.meta.glob('$lib/whitepapers/**/index.md');
-			const module = await modules[path]?.();
+ async function loadWhitepaperContent(slug: string) {
+     if (!browser) return;
+     try {
+         const path = `/src/lib/whitepapers/${slug}/index.md`;
+         const modules = import.meta.glob('$lib/whitepapers/**/index.md');
+         const module = await modules[path]?.();
 
-			if (module) {
-				currentContent = module.default;
-				currentMetadata = module.metadata;
-			}
-		} catch (e) {
-			console.error('Failed to load whitepaper content:', e);
-		}
-	}
+         if (module) {
+             currentContent = module.default;
+             currentMetadata = module.metadata;
+         } else {
+             console.error('No module found for path:', path);
+         }
+     } catch (e) {
+         console.error('Failed to load whitepaper content:', e);
+     }
+ }
 
-	// Load content when the slug changes
-	$effect(() => {
-		const slug = $page.params.slug;
-		if (browser && slug) {
-			loadWhitepaperContent(slug);
-		}
-	});
+ $effect(() => {
+     const slug = $page.params.slug;
+     if (browser && slug) {
+         console.log('Loading whitepaper:', slug);
+         loadWhitepaperContent(slug);
+     }
+ });
 	// --- END NEW DYNAMIC CONTENT LOADING ---
 
 	let keywords = $derived(
