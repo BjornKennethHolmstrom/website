@@ -2,19 +2,40 @@
 import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
-    // Minimal load function to ensure route is recognized
-    return { slug: params.slug };
+  try {
+    // Read all whitepaper markdown files
+    const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
+    
+    // Try to find the whitepaper
+    const whitepaperPath = `/src/lib/whitepapers/${params.slug}/index.md`;
+    
+    if (modules[whitepaperPath]) {
+      const whitepaper = modules[whitepaperPath];
+      return {
+        content: whitepaper.default,        // ← CRITICAL: SERVER-SIDE CONTENT
+        metadata: whitepaper.metadata,      // ← CRITICAL: SERVER-SIDE METADATA
+        slug: params.slug
+      };
+    }
+  } catch (e) {
+    console.error('Error loading whitepaper:', e);
+    throw error(500, `Could not load whitepaper: ${params.slug}`);
+  }
+
+  throw error(404, 'Whitepaper not found');
 }
 
+// Generate entries for prerendering
 export async function entries() {
-    // Simple, reliable slug extraction
-    const modules = import.meta.glob('$lib/whitepapers/*/index.md');
-    const entries = Object.keys(modules).map(path => {
-        // Extract slug from path like '/src/lib/whitepapers/beyond-states/index.md'
-        const slug = path.split('/').slice(-2)[0]; // Get the directory name before index.md
-        return { slug };
-    });
-    
-    console.log('Whitepaper entries generated:', entries);
-    return entries;
+  const modules = import.meta.glob('$lib/whitepapers/**/index.md', { eager: true });
+  const entries: Array<{ slug: string }> = [];
+  
+  Object.keys(modules).forEach((path) => {
+    const match = path.match(/\/src\/lib\/whitepapers\/([^/]+)\/index\.md$/);
+    if (match) {
+      entries.push({ slug: match[1] });
+    }
+  });
+  
+  return entries;
 }
