@@ -33,7 +33,7 @@ This is where physics meets philosophy in a profound convergence.
 
 The simulation hypothesis was, in many ways, the ultimate materialist fantasy. It suggested that if we could just build a powerful enough computer, we could replicate reality—that existence could be reduced to information processing. It was "it from a bit," as physicist John Wheeler put it.
 
-But as the new research shows, "its" can't come from "bits." There's a fundamental limit to what computation can describe. This is the same wall that materialists hit in my earlier exploration of [The Materialist's Hidden Paradox](https://bjornkennethholmstrom.wordpress.com/2025/09/30/the-materialists-hidden-paradox/). When asked why anything exists at all, materialism has to declare the universe a "brute fact"—an arbitrary stopping point that violates its own principle of sufficient reason.
+But as the new research shows, "its" can't come from "bits." There's a fundamental limit to what computation can describe. This is the same wall that materialists hit in my earlier exploration of [The Materialist's Hidden Paradox](https://www.bjornkennethholmstrom.org/blog/2025-09-30-the-materialists-hidden-paradox). When asked why anything exists at all, materialism has to declare the universe a "brute fact"—an arbitrary stopping point that violates its own principle of sufficient reason.
 
 Now physics is telling us this isn't just philosophically unsatisfying—it's mathematically impossible. Reality cannot be self-contained within a computational framework.
 
