@@ -22,15 +22,8 @@
 			{ type: 'img', key: 'spiralize', logo: 'logo-spiralize.svg', url: 'https://spiralize.org' },
 			{ type: 'img', key: 'nondualize', logo: 'logo-nondualize.svg', url: 'https://nondualize.org' },
 			{ type: 'img', key: 'communize', logo: 'logo-communize.svg', url: 'https://communize.org' },
-			{
-				type: 'img',
-				key: 'universalize',
-				logo: 'logo-universalize.svg',
-				url: null,
-				comingSoon: true
-			}
+			{	type: 'img',	key: 'universalize',	logo: 'logo-universalize.svg',	url: 'https://universalize.org' }
 		],
-		// --- ▼▼▼ NEW CLUSTER ▼▼▼ ---
 		library: [
 			{
 				type: 'emoji',
@@ -51,7 +44,6 @@
 				url: '/blog'
 			}
 		],
-		// --- ▲▲▲ NEW CLUSTER ▲▲▲ ---
 		personal: [
 			{
 				type: 'img',
@@ -77,7 +69,6 @@
 				emoji: '💡',
 				url: '/concepts'
 			}
-			// --- blog and books were removed from here ---
 		]
 	};
 </script>
