@@ -37,7 +37,7 @@ Today, I'm launching my new online hub that brings this all together.
 
 [https://bjornkennethholmstrom.org](https://bjornkennethholmstrom.org)
 
-*(⬇️ a thread...)*
+(⬇️ a thread...)
 
 -----
 
@@ -45,20 +45,20 @@ Today, I'm launching my new online hub that brings this all together.
 
 This isn't just a blog. It’s an ecosystem of open-source tools and ideas, including:
 
-[cite\_start]🏛️ **Global Governance Frameworks**  [cite: 2-78]
-[cite\_start]🌀 **The Awareness Quartet** (Spiralize  [cite: 2-71][cite\_start], Nondualize  [cite: 2-72], etc.)
-[cite\_start]📚 A complete library of my 12 **books**  [cite: 2-149] [cite\_start]& 9 **white papers**  [cite: 2-143]
-[cite\_start]✍️ My full **blog archive** (from 2017 to the polycrisis  [cite: 2-160])
+🏛️ Global Governance Frameworks
+🌀 The Awareness Quartet (Spiralize  , Nondualize , etc.)
+📚 A complete library of my 12 books & 9 white papers
+✍️ My full blog archive (from 2017 to the polycrisis)
 
 -----
 
 **Tweet 3/3 (The "For Whom" & The CTA)**
 
-[cite\_start]This work is for fellow systems thinkers, designers, consciousness explorers, and "depressed mystics"  [cite: 2-140].
+This work is for fellow systems thinkers, designers, consciousness explorers, and "depressed mystics".
 
 If you're exploring solutions to the polycrisis or the nature of awareness, I'm here to connect.
 
-Dive in, and let me know: **What part of the ecosystem resonates most with you?**
+Dive in, and let me know: What part of the ecosystem resonates most with you?
 
 -----
 

@@ -62,7 +62,7 @@ export const coreTranslations = {
   appsTitle: 'Apps',
 		appsTagline: 'Useful tools and utilities.',
 		creationsTitle: 'Creations',
-		creationsTagline: 'Music, art, and poetry.',
+		creationsTagline: 'Archive with music, art, and poetry.',
 		conceptsTitle: 'Concepts',
 		conceptsTagline: 'Experimental ideas and code.',
 		// Footer
@@ -167,7 +167,7 @@ export const coreTranslations = {
   appsTitle: 'Appar',
 		appsTagline: 'Användbara verktyg och applikationer.',
 		creationsTitle: 'Skapelser',
-		creationsTagline: 'Musik, konst och poesi.',
+		creationsTagline: 'Arkiv av musik, konst och poesi.',
 		conceptsTitle: 'Koncept',
 		conceptsTagline: 'Experimentella idéer och kod.',
 		// Footer
