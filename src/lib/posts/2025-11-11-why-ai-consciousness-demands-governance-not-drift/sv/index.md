@@ -2,7 +2,7 @@
 title: >-
   Det "verbala tricket" vi spelar på oss själva: varför AI-medvetande kräver
   styrning, inte glidning
-date: 2025-11-12T00:00:00.000Z
+date: 2025-11-11T00:00:00.000Z
 categories:
   - ai
   - styrning
@@ -19,7 +19,7 @@ tags:
   - polykris
   - meningsskapande
 coverImage: >-
-  /blog/2025-11-12-why-ai-consciousness-demands-governance-not-drift/images/ai-governance-header.png
+  /blog/2025-11-11-why-ai-consciousness-demands-governance-not-drift/images/ai-governance-header.png
 ---
 
 *Ett svar på Barbara Gail Monteros "A.I. Is on Its Way to Something Even More Remarkable Than Intelligence"*

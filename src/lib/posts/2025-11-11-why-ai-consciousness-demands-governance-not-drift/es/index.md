@@ -2,7 +2,7 @@
 title: >-
   El "truco verbal" que nos estamos haciendo: por qué la conciencia de la IA
   exige gobernanza, no deriva
-date: 2025-11-12T00:00:00.000Z
+date: 2025-11-11T00:00:00.000Z
 categories:
   - ia
   - gobernanza
@@ -19,7 +19,7 @@ tags:
   - policrisis
   - creación-de-sentido
 coverImage: >-
-  /blog/2025-11-12-why-ai-consciousness-demands-governance-not-drift/images/ai-governance-header.png
+  /blog/2025-11-11-why-ai-consciousness-demands-governance-not-drift/images/ai-governance-header.png
 ---
 
 *Una respuesta a "A.I. Is on Its Way to Something Even More Remarkable Than Intelligence" de Barbara Gail Montero*

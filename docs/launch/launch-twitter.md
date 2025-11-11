@@ -31,7 +31,7 @@ Your work is too broad for one tweet. You must use a **thread**. Here is a 3-par
 
 Hello, Twitter. This is my first post.
 
-For the last year, my work has been focused on one core idea: how to bridge the gap between the heart (consciousness, non-duality, purpose and the mind (systems, governance, logic.
+For the last year, my work has been focused on one core idea: how to bridge the gap between the heart (consciousness, non-duality, purpose) and the mind (systems, governance, logic).
 
 Today, I'm launching my new online hub that brings this all together.
 
