@@ -1,17 +1,10 @@
-Äntligen – min nya digitala hemsida och nav är här! 🦋
+Här är ett utkast för ditt Facebook-inlägg, där jag har fyllt i anledningarna baserat på dina designprinciper och ekosystemets struktur.
 
-Ni kanske undrar: "Funkade inte din gamla WordPress-sida bra?"
-Jo, som blogg och till viss del som hemsida. Men mitt arbete har vuxit till ett helt ekosystem av sammankopplade projekt.
+---
 
-Byggandet tog några dagar (tack vare AI-verktyg som hjälpte mig koda!), men innehållet representerar ett år av arbete och tanke.
+Precis som gässen migrerar över mig idag, så har jag de senaste dagarna migrerat min hemsida och blogg till en ny plats. Anledningen är att jag ville skapa en snabbare, renare och mer sammankopplad upplevelse.
 
-Denna nya hub är kartan över hela ekosystemet. Byggd med tydliga principer:
-• Ingen spårning, inga annonser
-• RSS-flöde tillgängligt
-• Snabb, statisk sida
-• Helt öppen källkod
+Den nya sidan fungerar som ett centralt "nav" som visuellt presenterar och länkar samman hela ekosystemet av mina projekt – från *Global Governance Frameworks* till *Medvetandets kvartett*. Dessutom är den byggd från grunden med öppen källkod och full respekt för din integritet, helt utan "trackers" eller databaser.
 
-Här finns allt samlat: bibliotek, "Medvetandekvartetten", globala styrningsramverk och hela mitt arkiv.
-
-Utforska gärna: [bjornkennethholmstrom.org](https://bjornkennethholmstrom.org)
-
+Besök gärna och kommentera nedan om vad du tycker:
+[https://www.bjornkennethholmstrom.org](https://www.bjornkennethholmstrom.org)

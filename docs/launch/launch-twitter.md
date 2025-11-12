@@ -35,7 +35,7 @@ For the last year, my work has been focused on one core idea: how to bridge the 
 
 Today, I'm launching my new online hub that brings this all together.
 
-[https://bjornkennethholmstrom.org](https://bjornkennethholmstrom.org)
+https://bjornkennethholmstrom.org
 
 (⬇️ a thread...)
 
