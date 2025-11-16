@@ -108,3 +108,9 @@ Där TESCREAL erbjuder en tvingande, toppstyrd och odemokratisk vision, svarar G
 3.  **En grundad etik: [`Moral Operating System`](https://globalgovernanceframeworks.org/frameworks/moral-operating-system)** Viktigast av allt, där TESCREAL-visionen bygger på en kall, "opersonlig" kalkyl för att maximera abstrakt "värde", bygger GGF på **`Moral Operating System (MOS)`**. MOS förkastar 'håll tyst och multiplicera'-kalkylen. Istället är det ett etiskt ramverk för att navigera 'Rätt relation' (Right Relationship) – ett koncept grundat i den icke-dualistiska sanningen om sammanlänkning. Det använder ett **`Dynamic Rights Spectrum`** för att *upptäcka* och *bevilja* rättigheter baserat på egenskaper som kännande (sentience) och ekologisk roll – ett direkt, arkitektoniskt motgift mot den moraliska cynismen i *Times*-artikeln. Till exempel, när man står inför ett AI-system som visar tecken på kännande, kan TESCREAL-metoden fråga 'Hur kan vi optimera detta för maximal nytta?' GGF-metoden skulle fråga 'Hur ser en rätt relation med denna framväxande varelse ut?'
 
 Detta är den övertygande visionen. Det är en arkitektur som inte ser människor som "bootloaders" som ska kasseras, utan som en del av en helig, sammanlänkad helhet. Det är en framtid byggd inte på ett andligt vakuum, utan på en andlig *grund*.
+
+Global Governance Frameworks är inte en färdig ritning som påtvingas uppifrån – det är en framväxande diskussion om hur vi tillsammans klokt kan navigera vår tekniska framtid. Dessa ramverk kan bara utvecklas genom en genuin dialog som inkluderar olika perspektiv, sätt att veta och levda erfarenheter.
+
+Om dessa idéer resonerar med dig, eller om du ser luckor och möjligheter som vi inte har beaktat, vill jag gärna höra från dig. Den framtid vi bygger kräver all vår visdom.
+
+Kontakt: [bjorn.kenneth.holmstrom@gmail.com]
