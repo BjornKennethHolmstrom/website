@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="600"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="the-spiral-of-development.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4466667"
+     inkscape:cx="400.23041"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f8f9fa"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     fill="#2c3e50"
+     id="text1">
+    The Spiral of Development
+  </text>
+  <!-- Higher stages indicator -->
+  <text
+     x="400"
+     y="65"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#7f8c8d"
+     font-style="italic"
+     id="text2">
+    ... higher stages ...
+  </text>
+  <!-- Yellow (Integral) Level -->
+  <rect
+     x="100.05678"
+     y="80.056778"
+     width="646.88647"
+     height="119.88647"
+     fill="#fff9c4"
+     stroke="#f1c40f"
+     stroke-width="3.11353"
+     rx="10.781443"
+     id="rect2" />
+  <text
+     x="120"
+     y="110"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="#f39c12"
+     id="text3">YELLOW (Integral)</text>
+  <text
+     x="120"
+     y="135"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text4">• Systemic thinking</text>
+  <text
+     x="120"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text5">• Flexible and adaptive</text>
+  <text
+     x="120"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text6">• Includes and transcends</text>
+  <!-- GGF Vision arrow and label -->
+  <path
+     d="M 520 100 L 580 100 L 570 90 M 580 100 L 570 110"
+     stroke="#27ae60"
+     stroke-width="2"
+     fill="none"
+     id="path6" />
+  <text
+     x="590"
+     y="105"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#27ae60"
+     id="text7">GGF Vision</text>
+  <text
+     x="590"
+     y="125"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#27ae60"
+     id="text8">• Wisdom-based institutions</text>
+  <text
+     x="590"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#27ae60"
+     id="text9">• Oracle Protocol</text>
+  <text
+     x="590"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#27ae60"
+     id="text10">• Integral consciousness</text>
+  <!-- Green (Communitarian) Level -->
+  <rect
+     x="100.05676"
+     y="220.05678"
+     width="646.88647"
+     height="119.88647"
+     fill="#e8f8f5"
+     stroke="#2ecc71"
+     stroke-width="3.11353"
+     rx="10.781442"
+     id="rect10" />
+  <text
+     x="120"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="#27ae60"
+     id="text11">GREEN (Communitarian)</text>
+  <text
+     x="120"
+     y="275"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text12">• Egalitarian values</text>
+  <text
+     x="120"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text13">• Consensus-oriented</text>
+  <text
+     x="120"
+     y="315"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text14">• Environmental concern</text>
+  <!-- Common Critique arrow and label -->
+  <path
+     d="M 520 240 L 580 240 L 570 230 M 580 240 L 570 250"
+     stroke="#8e44ad"
+     stroke-width="2"
+     fill="none"
+     id="path14" />
+  <text
+     x="590"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#8e44ad"
+     id="text15">Common Critique</text>
+  <text
+     x="590"
+     y="265"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#8e44ad"
+     id="text16">• Focus on inequality</text>
+  <text
+     x="590"
+     y="280"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#8e44ad"
+     id="text17">• Tech regulation</text>
+  <text
+     x="590"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#8e44ad"
+     id="text18">• Social justice</text>
+  <!-- Orange (Achievist) Level -->
+  <rect
+     x="100.05677"
+     y="360.05676"
+     width="646.88647"
+     height="119.88646"
+     fill="#fdf2e9"
+     stroke="#e67e22"
+     stroke-width="3.11354"
+     rx="10.781441"
+     id="rect18" />
+  <text
+     x="120"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="#d35400"
+     id="text19">ORANGE (Achievist)</text>
+  <text
+     x="120"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text20">• Strategic materialism</text>
+  <text
+     x="120"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text21">• Competitive optimization</text>
+  <text
+     x="120"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text22">• Engineering mindset</text>
+  <!-- TESCREAL arrow and label -->
+  <path
+     d="M 520 380 L 580 380 L 570 370 M 580 380 L 570 390"
+     stroke="#c0392b"
+     stroke-width="2"
+     fill="none"
+     id="path22" />
+  <text
+     x="590"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     fill="#c0392b"
+     id="text23">TESCREAL</text>
+  <text
+     x="590"
+     y="405"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#c0392b"
+     id="text24">• &quot;Shut up and multiply&quot;</text>
+  <text
+     x="590"
+     y="420"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#c0392b"
+     id="text25">• Cosmic optimization</text>
+  <text
+     x="590"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#c0392b"
+     id="text26">• Impersonal utility</text>
+  <!-- Blue (Traditional) Level - for context -->
+  <rect
+     x="100.03867"
+     y="500.03867"
+     width="647.92267"
+     height="79.922668"
+     fill="#eaf2ff"
+     stroke="#3498db"
+     stroke-width="2.07733"
+     rx="10.798711"
+     id="rect26" />
+  <text
+     x="120"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     fill="#2980b9"
+     id="text27">BLUE (Traditional)</text>
+  <text
+     x="120"
+     y="555"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     fill="#2c3e50"
+     id="text28">• Absolute truth • Order and purpose • Rule-based morality</text>
+  <!-- Lower stages indicator -->
+  <text
+     x="400"
+     y="595"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#7f8c8d"
+     font-style="italic"
+     id="text29">
+    ... lower stages ...
+  </text>
+  <!-- Spiral arrow indicating development -->
+  <path
+     d="M 50 140 Q 30 200 50 260 Q 70 320 50 380 Q 30 440 50 500"
+     stroke="#34495e"
+     stroke-width="3"
+     fill="none"
+     opacity="0.6"
+     id="path29" />
+  <path
+     d="M 50 500 L 45 485 M 50 500 L 55 485"
+     stroke="#34495e"
+     stroke-width="3"
+     fill="none"
+     opacity="0.6"
+     id="path30" />
+  <!-- Development direction label -->
+  <text
+     x="15"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#34495e"
+     transform="rotate(-90, 15, 320)"
+     id="text30">
+    Development →
+  </text>
+</svg>
