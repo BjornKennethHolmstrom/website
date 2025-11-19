@@ -18,6 +18,26 @@
 				url: 'https://fjarilspartiet.se'
 			}
 		],
+  architecture: [
+			{
+				type: 'emoji',
+				key: 'spheres',
+    emoji: '🪐', // Ringed planet for Shared Spheres
+				url: 'https://github.com/BjornKennethHolmstrom/SharedSpheres'
+			},
+			{
+				type: 'emoji',
+				key: 'janus',
+				emoji: '🧠', // Brain/Wisdom for Janus
+				url: 'https://github.com/BjornKennethHolmstrom/ProjectJanus'
+			},
+			{
+				type: 'emoji',
+				key: 'cosmic',
+				emoji: '🏗️', // Infrastructure for CosmicSync
+				url: 'https://github.com/BjornKennethHolmstrom/CosmicSyncCore'
+			}
+		],
 		quartet: [
 			{ type: 'img', key: 'spiralize', logo: 'logo-spiralize.svg', url: 'https://spiralize.org' },
 			{ type: 'img', key: 'nondualize', logo: 'logo-nondualize.svg', url: 'https://nondualize.org' },
@@ -113,6 +133,41 @@
 							alt={`${$t[`${project.key}Title`]} logo`}
 							class="mb-4 h-12 w-auto"
 						/>
+						<h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+							{$t[`${project.key}Title`]}
+						</h3>
+						<p class="text-[var(--color-card-text)] opacity-80">
+							{$t[`${project.key}Tagline`]}
+						</p>
+					</a>
+				{/each}
+			</div>
+		</div>
+
+  <div>
+			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
+				{$t.clusterArchitecture}
+			</h2>
+			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+				{#each projects.architecture as project}
+					<a
+						href={project.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+					>
+						{#if project.type === 'img'}
+							<img
+								src={project.logo}
+								alt={`${$t[`${project.key}Title`]} logo`}
+								class="mb-4 h-12 w-auto"
+							/>
+						{:else if project.type === 'emoji'}
+							<span class="mb-4 block text-5xl">
+								{project.emoji}
+							</span>
+						{/if}
+
 						<h3 class="text-xl font-semibold text-[var(--color-card-text)]">
 							{$t[`${project.key}Title`]}
 						</h3>
