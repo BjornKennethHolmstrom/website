@@ -35,7 +35,7 @@ tags:
   - ritual
   - grief-work
 coverImage: >-
-  /blog/2025-11-21-the-change-paradox/images/header-burning-shore.jpeg
+  /blog/2025-11-21-the-change-paradox/images/header-burning-shore.png
 ---
 
 **A war-room guide to stopping the bleeding, building unbreakable containers, and turning a traumatized electorate into a disciplined, multi-stage revolutionary force.**
