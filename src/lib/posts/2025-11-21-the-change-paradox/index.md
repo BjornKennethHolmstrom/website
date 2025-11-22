@@ -562,6 +562,42 @@ The question is: will you go first?
 
 ---
 
+## The Field Manual Is Now Live
+
+I've expanded this essay into a **complete, open-source field manual** with practical tools for organizers.
+
+**📖 Read the full manual online:**  
+[bjornkennethholmstrom.github.io/change-paradox-field-manual](https://bjornkennethholmstrom.github.io/change-paradox-field-manual)
+
+**📄 Download PDFs:**  
+[Latest release on GitHub](https://github.com/BjornKennethHolmstrom/change-paradox-field-manual/releases/latest)
+
+### What's in the Manual
+
+The field manual includes everything from this essay, plus:
+
+- **Pre-Flight Checklist** – Are you actually ready to organize?
+- **Quick Start Guide** – Get started in 15 minutes
+- **The 7-Step Protocol** – Detailed implementation guide for each step
+- **15 Policy Reframes** – How to sell Medicare for All, Green New Deal, housing, and more to Blue/Orange/Red voters
+- **5 Deep-Dive Case Studies** – What worked (UTLA strike, Georgia solar co-ops), what didn't (Bernie 2020), and why
+- **9 Anti-Patterns** – Common ways movements kill themselves
+- **Contribution Guidelines** – Help improve it
+
+### It's Open Source
+
+The manual is licensed under **CC BY-SA 4.0**. That means you can:
+- Copy and distribute it freely
+- Translate it into any language
+- Adapt it for your local context
+- Use it for trainings and campaigns
+- Print and sell physical copies
+
+**Contribute improvements:**  
+[github.com/BjornKennethHolmstrom/change-paradox-field-manual](https://github.com/BjornKennethHolmstrom/change-paradox-field-manual)
+
+The manual is designed to evolve based on field experience. If you use it and learn something—whether it works or fails—contribute that knowledge back. We're building the collective intelligence for movements that win.
+
 ## Join the conversation
 
 This essay is designed to spark dialogue across the developmental spectrum. I'd love to hear your thoughts, experiences, and pushback.

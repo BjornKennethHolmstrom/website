@@ -129,5 +129,17 @@ export const papersData: Whitepaper[] = [
 		pdfPath: { en: `${localBase}/beyond-states.pdf` },
 		readOnlinePath: `${localBase}/beyond-states/`,
 		releaseDate: '2025-09-29'
+	},
+	{
+		id: 'changeParadox',
+		key: 'changeParadox',
+		category: 'methodology',
+		year: '2025',
+		pages: '~100',
+		readTime: '2-3 hours',
+		version: '2.2',
+		pdfPath: { en: 'https://github.com/BjornKennethHolmstrom/change-paradox-field-manual/releases/latest' },
+		readOnlinePath: 'https://bjornkennethholmstrom.github.io/change-paradox-field-manual/',
+		releaseDate: '2025-11-23'
 	}
 ];
