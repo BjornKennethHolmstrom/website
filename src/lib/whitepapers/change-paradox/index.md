@@ -1,7 +1,7 @@
 ---
-title: 'The Change Paradox Field Manual'
-date: '2025-11-23'
-category: 'methodology'
+title: "The Change Paradox Field Manual"
+date: "2025-11-23"
+category: "methodology"
 tags: ["politics", "organizing", "consciousness", "systems-thinking", "spiral-dynamics", "nervous-system", "grassroots", "progressive-politics"]
 featured: true
 ---
@@ -79,7 +79,7 @@ This manual is the ramp.
 
 ## Background
 
-Developed from the essay "The Change Paradox: Why We Keep Choosing the Illusion of Change Over the Real Thing" and expanded through deep collaboration with AI reasoning systems, integrating:
+Originally synthesized from the essay "The Change Paradox: Why We Keep Choosing the Illusion of Change Over the Real Thing" and expanded through deep collaboration with AI reasoning systems, integrating:
 
 - Spiral Dynamics (developmental psychology)
 - Polyvagal Theory (nervous system regulation)
@@ -87,6 +87,8 @@ Developed from the essay "The Change Paradox: Why We Keep Choosing the Illusion 
 - Somatic organizing (Generative Somatics)
 - Campaign strategy (real-world organizing experience)
 - Historical movement analysis
+
+**This is a living document maintained by the community.** What works in practice gets added. What fails gets analyzed. The manual evolves based on field experience from organizers worldwide.
 
 ## For Organizers, By Organizers
 

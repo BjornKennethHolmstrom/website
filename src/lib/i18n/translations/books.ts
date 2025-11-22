@@ -10,7 +10,7 @@ export const booksTranslations = {
         title: 'Books',
         subtitle: 'A Library of Ideas for a Flourishing World',
         description:
-          'This is a complete collection of my published works, offered freely. Explore frameworks on systems thinking, consciousness, AI, governance, and regenerative economics.'
+          'A complete collection of books and long-form writings, freely accessible to all. Explore frameworks on systems thinking, consciousness, AI, governance, and regenerative economics.'
       },
       categories: {
         governance: 'Governance',
@@ -112,7 +112,7 @@ export const booksTranslations = {
         title: 'Böcker',
         subtitle: 'Ett bibliotek av idéer för en blomstrande värld',
         description:
-          'Detta är en komplett samling av mina publicerade verk, som erbjuds fritt. Utforska ramverk om systemtänkande, medvetande, AI, styrning och regenerativ ekonomi.'
+          'En komplett samling böcker och texter, fritt tillgängliga för alla. Utforska ramverk för systemtänkande, medvetande, AI, styrning och regenerativ ekonomi.'
       },
       categories: {
         governance: 'Styrning',
