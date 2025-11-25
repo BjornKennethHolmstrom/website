@@ -10,6 +10,9 @@ export const coreTranslations = {
 		},
   // Header nav
 		navBlog: 'Blog',
+  navEssays: 'Essays',  // or 'Manifestos'
+  essaysTitle: 'Essays',
+  essaysTagline: 'Substantial explorations and living protocols.',
 		navWhitepapers: 'White Papers',
   navBooks: 'Books',
 		navContact: 'Contact',
@@ -76,8 +79,8 @@ export const coreTranslations = {
 		conceptsTitle: 'Concepts',
 		conceptsTagline: 'Experimental ideas and code.',
 		// Footer
-		ethos: 'Built with open source and respect for your privacy. No trackers.',
-		copyright: `© ${new Date().getFullYear()} Björn Kenneth Holmström`,
+  ethos: 'Built with open source and respect for your privacy. No trackers. This is my personal hub for organizing work I hope will outlive me. All frameworks and writings are offered to the commons under open licenses.',
+  copyright: `© ${new Date().getFullYear()} Björn Kenneth Holmström. Content licensed under CC BY-SA 4.0, code under MIT.`,
   // Contact page
 		contact: {
 			meta: {
@@ -125,6 +128,9 @@ export const coreTranslations = {
 		},
   // Header nav
 		navBlog: 'Blogg',
+  navEssays: 'Essäer',  // or 'Manifest'
+  essaysTitle: 'Essäer',
+  essaysTagline: 'Omfattande utforskningar och levande protokoll.',
 		navWhitepapers: 'White papers',
   navBooks: 'Böcker',
 		navContact: 'Kontakt',
@@ -190,8 +196,8 @@ export const coreTranslations = {
 		conceptsTitle: 'Koncept',
 		conceptsTagline: 'Experimentella idéer och kod.',
 		// Footer
-		ethos: 'Byggd med öppen källkod och respekt för din integritet. Inga spårare.',
-		copyright: `© ${new Date().getFullYear()} Björn Kenneth Holmström`,
+		ethos: 'Byggt med öppen källkod och respekt för din integritet. Inga spårare. Detta är min personliga knutpunkt för att organisera arbete som jag hoppas kommer att överleva mig. Alla ramverk och texter erbjuds till allmänheten under öppna licenser.',
+		copyright: `© ${new Date().getFullYear()} Björn Kenneth Holmström. Innehåll licensierat under CC BY-SA 4.0, kod under MIT.`,
   // Contact page
 		contact: {
 			meta: {

@@ -55,6 +55,12 @@
 					{$t.navBlog}
 				</a>
 				<a
+					href="/essays"
+					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+				>
+					{$t.navEssays}
+				</a>
+				<a
 					href="/whitepapers"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>
@@ -189,6 +195,13 @@
 					onclick={closeMobileMenu}
 				>
 					{$t.navBlog}
+				</a>
+				<a
+					href="/essays"
+					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+					onclick={closeMobileMenu}
+				>
+					{$t.navEssays}
 				</a>
 				<a
 					href="/whitepapers"
