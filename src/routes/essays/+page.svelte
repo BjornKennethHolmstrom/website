@@ -99,9 +99,9 @@
 							</svg>
 							<span class="font-medium">
 								{#if $language === 'en'}
-									Download PDF (60 pages)
+									Download PDF (53 pages)
 								{:else}
-									Ladda ner PDF (60 sidor)
+									Ladda ner PDF (54 sidor)
 								{/if}
 							</span>
 						</a>
