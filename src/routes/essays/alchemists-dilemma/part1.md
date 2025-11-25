@@ -8,7 +8,7 @@ I need to start with an uncomfortable truth: even having this conversation is a 
 
 If you're reading this and thinking about how to ethically deploy surplus capital, you're already operating from a position most humans will never reach. You have enough to eat. You have shelter. You have the cognitive bandwidth to worry about whether your money is "clean." That's not universal—it's exceptional.
 
-I write this from Sweden, on social assistance for depression, having lost everything I'd accumulated in my twenties to a binary trading scam that vanished overnight. For two years after that, I lived with literally no money at all. I learned what it means to be held by community, to receive without being able to reciprocate, to watch the world continue spinning while you have no lever to move it with.
+I write this from Sweden, on social assistance for depression, having lost everything I'd accumulated in my thirties to a binary trading scam that vanished overnight. For two years after that, I lived with literally no money at all. I learned what it means to be held by community, to receive without being able to reciprocate, to watch the world continue spinning while you have no lever to move it with.
 
 And yet, even now, even on state support, I have more material security than most humans who have ever lived. I have healthcare. I have internet. I have time to write frameworks for regenerative futures instead of scrambling for survival. The fact that I'm *thinking* about these questions means I'm already operating from a position of relative safety.
 

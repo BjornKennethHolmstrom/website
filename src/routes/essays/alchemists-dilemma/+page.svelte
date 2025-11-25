@@ -4,10 +4,20 @@
 	import SEO from '$lib/components/SEO.svelte';
 	import { language } from '$lib/stores/languageStore';
 
-	// Import the three parts of the essay
-	import Part1 from './part1.md';
-	import Part2 from './part2.md';
-	import Part3 from './part3.md';
+	// Import the English parts
+	import Part1En from './part1.md';
+	import Part2En from './part2.md';
+	import Part3En from './part3.md';
+
+	// Import the Swedish parts
+	import Part1Sv from './part1-sv.md';
+	import Part2Sv from './part2-sv.md';
+	import Part3Sv from './part3-sv.md';
+
+	// Determine which parts to use based on language
+	let Part1 = $derived($language === 'sv' ? Part1Sv : Part1En);
+	let Part2 = $derived($language === 'sv' ? Part2Sv : Part2En);
+	let Part3 = $derived($language === 'sv' ? Part3Sv : Part3En);
 
 	// Essay metadata
 	const metadata = {
@@ -143,13 +153,33 @@
 		<p class="text-xl md:text-2xl italic mb-6" style="color: var(--color-page-text); opacity: 0.8;">
 			{t.subtitle}
 		</p>
-		<div class="flex flex-wrap gap-4 text-sm" style="color: var(--color-page-text); opacity: 0.6;">
+		<div class="flex flex-wrap items-center gap-4 mb-6 text-sm" style="color: var(--color-page-text); opacity: 0.6;">
 			<span>{t.author}</span>
 			<span>•</span>
 			<span>{t.published}</span>
 			<span>•</span>
 			<span>{t.readTime}</span>
 		</div>
+		
+		<!-- Download PDF Button -->
+		<a
+			href="/essays/alchemists-dilemma{$language === 'sv' ? '-sv' : ''}.pdf"
+			download
+			class="inline-flex items-center gap-2 px-4 py-2 rounded-lg transition-colors hover:opacity-80"
+			style="background-color: var(--color-separator); color: var(--color-page-text);"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+				<path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+				<path d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+			</svg>
+			<span class="font-medium">
+				{#if $language === 'en'}
+					Download complete PDF
+				{:else}
+					Ladda ner komplett PDF
+				{/if}
+			</span>
+		</a>
 	</header>
 
 	<!-- Table of Contents Toggle -->

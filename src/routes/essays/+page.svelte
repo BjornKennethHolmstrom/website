@@ -1,4 +1,3 @@
-<!-- src/routes/essays/+page.svelte -->
 <script lang="ts">
 	import { essaysTranslations as allTranslations } from '$lib/i18n/translations/essays';
 	import { language } from '$lib/stores/languageStore';
@@ -85,6 +84,28 @@
 							</div>
 						</div>
 					</a>
+					
+					<!-- Download PDF Button -->
+					<div class="mt-6 pt-6 border-t border-[var(--color-separator)]">
+						<a
+							href="/essays/alchemists-dilemma{$language === 'sv' ? '-sv' : ''}.pdf"
+							download
+							class="inline-flex items-center gap-2 px-4 py-2 rounded-lg transition-colors hover:opacity-80"
+							style="background-color: var(--color-separator); color: var(--color-page-text);"
+						>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+								<path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+								<path d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+							</svg>
+							<span class="font-medium">
+								{#if $language === 'en'}
+									Download PDF (60 pages)
+								{:else}
+									Ladda ner PDF (60 sidor)
+								{/if}
+							</span>
+						</a>
+					</div>
 				</article>
 			{/each}
 		</div>
