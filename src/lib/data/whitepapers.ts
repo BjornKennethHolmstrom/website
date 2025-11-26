@@ -35,6 +35,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '45 min' },
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Responsive_Society_-_Aligning_with_Truth_in_an_Unknown_World.pdf` },
+  coverImage: '/whitepapers/images/responsive-society-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-responsive-society`,
 		releaseDate: '2025-10-04'
 	},
@@ -47,6 +48,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '45 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Infinite_Paradox_-_Non-Dual_Ethics_for_Planetary_Governance.pdf` },
+  coverImage: '/whitepapers/images/infinite-paradox-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-infinite-paradox`,
 		releaseDate: '2025-09-03'
 	},
@@ -59,6 +61,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '40 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Regenerative_Governance_-_Integrating_Hardware_Heart_Nervous_System.pdf` },
+  coverImage: '/whitepapers/images/regenerative-governance-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-regenerative-governance`,
 		releaseDate: '2025-09-03'
 	},
@@ -71,6 +74,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '45 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/Beyond_Fragmented_Truth_-_A_Reasoning_Path_from_Ancient_Wisdom_to_Modern_Governance.pdf` },
+  coverImage: '/whitepapers/images/beyond-fragmented-truth-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/beyond-fragmented-truth`,
 		releaseDate: '2025-09-01'
 	},
@@ -83,6 +87,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '35 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Currency_of_Care_Beyond_UBI.pdf` },
+  coverImage: '/whitepapers/images/currency-of-care-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-currency-of-care`,
 		releaseDate: '2025-08-31'
 	},
@@ -95,6 +100,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '25 min'},
 		version: '1.8',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/Cognitive_Scaffolding_-_A_Multi-Model_AI_Synthesis_Method.pdf` },
+  coverImage: '/whitepapers/images/cognitive-scaffolding-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/cognitive-scaffolding`,
 		releaseDate: '2025-08-25'
 	},
