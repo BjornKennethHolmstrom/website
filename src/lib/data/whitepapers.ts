@@ -144,6 +144,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '2-3 hours', sv: '2-3 timmar' },
 		version: '2.2',
 		pdfPath: { en: 'https://github.com/BjornKennethHolmstrom/change-paradox-field-manual/releases/latest' },
+  coverImage: '/whitepapers/images/change-paradox-cover.png'
 		readOnlinePath: 'https://bjornkennethholmstrom.github.io/change-paradox-field-manual/',
 		releaseDate: '2025-11-23'
 	},
