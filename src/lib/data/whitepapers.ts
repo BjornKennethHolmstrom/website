@@ -108,6 +108,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: null},
 		version: null,
 		pdfPath: { en: `${localBase}/beyond-the-duopoly.pdf` },
+  coverImage: '/whitepapers/images/beyond-the-duopoly-cover.png',
 		readOnlinePath: `${localBase}/beyond-the-duopoly/`,
 		releaseDate: '2025-09-15'
 	},
@@ -120,6 +121,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: null},
 		version: null,
 		pdfPath: { en: `${localBase}/collaborative-map-of-awakening.pdf` },
+  coverImage: '/whitepapers/images/map-of-awakening-cover.png',
 		readOnlinePath: `${localBase}/collaborative-map-of-awakening/`,
 		releaseDate: '2025-09-23'
 	},
@@ -132,6 +134,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: null},
 		version: null,
 		pdfPath: { en: `${localBase}/beyond-states.pdf` },
+  coverImage: '/whitepapers/images/beyond-states-cover.png',
 		readOnlinePath: `${localBase}/beyond-states/`,
 		releaseDate: '2025-09-29'
 	},
@@ -144,7 +147,7 @@ export const papersData: Whitepaper[] = [
 		readTime: { en: '2-3 hours', sv: '2-3 timmar' },
 		version: '2.2',
 		pdfPath: { en: 'https://github.com/BjornKennethHolmstrom/change-paradox-field-manual/releases/latest' },
-  coverImage: '/whitepapers/images/change-paradox-cover.png'
+  coverImage: '/whitepapers/images/change-paradox-cover.png',
 		readOnlinePath: 'https://bjornkennethholmstrom.github.io/change-paradox-field-manual/',
 		releaseDate: '2025-11-23'
 	},
