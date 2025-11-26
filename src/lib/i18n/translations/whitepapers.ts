@@ -73,6 +73,11 @@ export const whitepapersTranslations = {
 				title: 'The Change Paradox Field Manual',
 				description:
 					'A comprehensive, open-source protocol for building transformative political power. Integrates nervous system regulation, Spiral Dynamics, and on-the-ground organizing tactics into a 7-step framework for movements that win.'
+			},
+   addictionIntegration: {
+				title: 'Addiction as Integration Failure: A Multi-Domain Framework',
+				description:
+					'A rigorous analysis applying Project Janus to the crisis of attention, proving that modern addiction is a systemic integration failure, not an individual pathology.'
 			}
 		}
 	},
@@ -148,7 +153,12 @@ export const whitepapersTranslations = {
 				title: 'The Change Paradox Field Manual',
 				description:
 					'Ett omfattande, open-source protokoll för att bygga transformativ politisk makt. Integrerar nervsystemsreglering, Spiral Dynamics och konkreta organisationstaktiker i ett 7-stegs ramverk för rörelser som vinner.'
-			}
+			},
+   addictionIntegration: {
+ 			title: 'Beroende som integrationsmisslyckande: Ett multidomän-ramverk',
+				description:
+					'En rigorös analys som applicerar Project Janus på uppmärksamhetskrisen och bevisar att modernt beroende är ett systemiskt integrationsfel, inte en individuell patologi.'
+			},
 		}
 	}
 };

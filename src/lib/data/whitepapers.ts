@@ -4,9 +4,13 @@ type Whitepaper = {
 	id: string;
 	key: string;
 	category: string;
+ tags?: string[];
 	year: string;
 	pages: string;
-	readTime: string | null;
+	readTime: {
+		en: string | null;
+		sv?: string | null;
+	};
 	version: string | null;
 	pdfPath: {
 		en: string | null;
@@ -14,6 +18,7 @@ type Whitepaper = {
 	};
 	readOnlinePath: string | null;
 	releaseDate: string; // <-- VIKTIGT: Ett datum för sortering
+ coverImage?: string;
 };
 
 const ggfBase = 'https://globalgovernanceframeworks.org';
@@ -27,7 +32,7 @@ export const papersData: Whitepaper[] = [
 		category: 'philosophy',
 		year: '2025',
 		pages: '60',
-		readTime: '45 min',
+		readTime: { en: '45 min' },
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Responsive_Society_-_Aligning_with_Truth_in_an_Unknown_World.pdf` },
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-responsive-society`,
@@ -39,7 +44,7 @@ export const papersData: Whitepaper[] = [
 		category: 'governance',
 		year: '2025',
 		pages: '80',
-		readTime: '45 min',
+		readTime: { en: '45 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Infinite_Paradox_-_Non-Dual_Ethics_for_Planetary_Governance.pdf` },
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-infinite-paradox`,
@@ -51,7 +56,7 @@ export const papersData: Whitepaper[] = [
 		category: 'governance',
 		year: '2025',
 		pages: '60',
-		readTime: '40 min',
+		readTime: { en: '40 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Regenerative_Governance_-_Integrating_Hardware_Heart_Nervous_System.pdf` },
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-regenerative-governance`,
@@ -63,7 +68,7 @@ export const papersData: Whitepaper[] = [
 		category: 'methodology',
 		year: '2025',
 		pages: '77',
-		readTime: '45 min',
+		readTime: { en: '45 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/Beyond_Fragmented_Truth_-_A_Reasoning_Path_from_Ancient_Wisdom_to_Modern_Governance.pdf` },
 		readOnlinePath: `${ggfBase}/resources/whitepapers/beyond-fragmented-truth`,
@@ -75,7 +80,7 @@ export const papersData: Whitepaper[] = [
 		category: 'economics',
 		year: '2025',
 		pages: '36',
-		readTime: '35 min',
+		readTime: { en: '35 min'},
 		version: '1.0',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/The_Currency_of_Care_Beyond_UBI.pdf` },
 		readOnlinePath: `${ggfBase}/resources/whitepapers/the-currency-of-care`,
@@ -87,7 +92,7 @@ export const papersData: Whitepaper[] = [
 		category: 'methodology',
 		year: '2025',
 		pages: '25',
-		readTime: '25 min',
+		readTime: { en: '25 min'},
 		version: '1.8',
 		pdfPath: { en: `${ggfBase}/resources/whitepapers/Cognitive_Scaffolding_-_A_Multi-Model_AI_Synthesis_Method.pdf` },
 		readOnlinePath: `${ggfBase}/resources/whitepapers/cognitive-scaffolding`,
@@ -100,7 +105,7 @@ export const papersData: Whitepaper[] = [
 		category: 'governance',
 		year: '2025',
 		pages: '54',
-		readTime: null,
+		readTime: { en: null},
 		version: null,
 		pdfPath: { en: `${localBase}/beyond-the-duopoly.pdf` },
 		readOnlinePath: `${localBase}/beyond-the-duopoly/`,
@@ -112,7 +117,7 @@ export const papersData: Whitepaper[] = [
 		category: 'consciousness',
 		year: '2025',
 		pages: '36',
-		readTime: null,
+		readTime: { en: null},
 		version: null,
 		pdfPath: { en: `${localBase}/collaborative-map-of-awakening.pdf` },
 		readOnlinePath: `${localBase}/collaborative-map-of-awakening/`,
@@ -124,7 +129,7 @@ export const papersData: Whitepaper[] = [
 		category: 'consciousness',
 		year: '2025',
 		pages: '57',
-		readTime: null,
+		readTime: { en: null},
 		version: null,
 		pdfPath: { en: `${localBase}/beyond-states.pdf` },
 		readOnlinePath: `${localBase}/beyond-states/`,
@@ -136,10 +141,31 @@ export const papersData: Whitepaper[] = [
 		category: 'methodology',
 		year: '2025',
 		pages: '~100',
-		readTime: '2-3 hours',
+		readTime: { en: '2-3 hours', sv: '2-3 timmar' },
 		version: '2.2',
 		pdfPath: { en: 'https://github.com/BjornKennethHolmstrom/change-paradox-field-manual/releases/latest' },
 		readOnlinePath: 'https://bjornkennethholmstrom.github.io/change-paradox-field-manual/',
 		releaseDate: '2025-11-23'
-	}
+	},
+ {
+  id: 'addictionIntegration',
+  key: 'addictionIntegration',
+  category: 'systems',
+  year: '2025',
+  version: '1.0',
+  pages: 90,
+  readTime: {
+   en: 'Quick skim: 1 hour | Full read: 3-4 hours',
+   sv: 'Snabb skumläsning: 1 timme | Fullständig läsning: 3–4 timmar'
+  },
+  tags: ['Systems Thinking', 'Psychology', 'Governance', 'Methodology'],
+  pdfPath: {
+   en: `${localBase}/addiction-as-integration-failure.pdf`,
+   sv: `${localBase}/addiction-as-integration-failure-sv.pdf`
+  },
+  // Image (Optional - uses fallback if missing, or add a cover image to /static)
+  coverImage: '/whitepapers/images/addiction-cover.png',
+  readOnlinePath: '/whitepapers/addiction-as-integration-failure', 
+		releaseDate: '2026-12-01'
+ }
 ];

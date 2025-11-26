@@ -41,14 +41,14 @@ const metadata = {
 		title: "The Alchemist's Dilemma: Holding Power Lightly in the Transition",
 		subtitle: "A Protocol for Conscious Capital",
 		author: "Björn Kenneth Holmström",
-		date: "November 2024",
+		date: "November 2025",
 		url: "https://bjornkennethholmstrom.org/essays/alchemists-dilemma"
 	},
 	sv: {
 		title: "Alkemistens dilemma: Att hålla makt lätt under övergången",
 		subtitle: "Ett protokoll för medvetet kapital",
 		author: "Björn Kenneth Holmström",
-		date: "November 2024",
+		date: "November 2025",
 		url: "https://bjornkennethholmstrom.org/essays/alchemists-dilemma"
 	}
 };
