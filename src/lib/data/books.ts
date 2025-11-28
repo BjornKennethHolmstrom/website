@@ -22,6 +22,20 @@ const ggfBase = 'https://globalgovernanceframeworks.org/resources';
 const localBase = '/books'; // För böcker i /static/books
 
 export const booksData: Book[] = [
+ {
+   id: 'integration-crisis',
+   key: 'integrationCrisis',
+   year: 2025,
+   pages: '~400',
+   category: 'consciousness',
+   cover: '/resources/book-cover-integration-crisis.svg',
+   hasOnlineVersion: true,
+   readOnlinePath: '/books/integration-crisis',
+   pdfPath: {
+     en: '/books/The_Integration_Crisis.pdf',
+     sv: '/books/Integrationskrisen.pdf'
+   }
+ },
 	{
 		id: 'ai',
 		key: 'ai',

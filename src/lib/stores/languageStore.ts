@@ -2,6 +2,7 @@ import { writable, derived } from 'svelte/store';
 import { aboutTranslations } from '../i18n/translations/about';
 import { coreTranslations } from '../i18n/translations/core';
 import { booksTranslations } from '../i18n/translations/books';
+import { integrationCrisisBookTranslations } from '../i18n/translations/integration-crisis-book';
 import { whitepapersTranslations } from '../i18n/translations/whitepapers';
 import { appsTranslations } from '../i18n/translations/apps';
 import { creationsTranslations } from '../i18n/translations/creations';
@@ -44,6 +45,7 @@ const translations = {
 		...aboutTranslations.en,
 		...coreTranslations.en,
 		...booksTranslations.en,
+		...integrationCrisisBookTranslations.en,
 		...whitepapersTranslations.en,
 		...appsTranslations.en,
 		...creationsTranslations.en,
@@ -53,6 +55,7 @@ const translations = {
 		...aboutTranslations.sv,
 		...coreTranslations.sv,
 		...booksTranslations.sv,
+		...integrationCrisisBookTranslations.sv,
 		...whitepapersTranslations.sv,
 		...appsTranslations.sv,
 		...creationsTranslations.sv,

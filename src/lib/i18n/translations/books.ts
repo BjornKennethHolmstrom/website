@@ -1,3 +1,6 @@
+// src/lib/i18n/translations/books.ts
+// COMPLETE FILE - Replace your existing books.ts with this
+
 export const booksTranslations = {
   en: {
     books: {
@@ -29,6 +32,11 @@ export const booksTranslations = {
         comingSoon: 'Coming Soon'
       },
       // === GGF Books ===
+      integrationCrisis: {
+        title: 'The Integration Crisis: Yellow Solutions to Orange Problems',
+        description:
+          'A comprehensive framework for understanding fragmentation and building systems that support whole human beings across biological, cognitive, emotional, behavioral, social, and spiritual dimensions.'
+      },
       ai: {
         title: 'AI as Catalyst for Cognitive Evolution',
         description:
@@ -91,6 +99,208 @@ export const booksTranslations = {
           'A contemplative exploration of mathematics as a sacred language, revealing how number and pattern connect the visible world to the invisible.'
       }
     },
+    integrationCrisis: {
+      meta: {
+        title: 'The Integration Crisis - Yellow Solutions to Orange Problems',
+        description:
+          'A comprehensive framework for understanding and addressing the civilizational crisis of fragmentation through systemic integration across biological, cognitive, emotional, behavioral, social, and spiritual dimensions.'
+      },
+      hero: {
+        title: 'The Integration Crisis',
+        subtitle: 'Yellow Solutions to Orange Problems',
+        tagline: 'How Fragmentation Creates Crisis—and Integration Creates Possibility'
+      },
+      intro: {
+        title: 'What This Book Is About',
+        text: 'We face a crisis of integration. Despite unprecedented material abundance, we see epidemic rates of anxiety, depression, addiction, and existential emptiness. Why? Because modern civilization optimizes for achievement and productivity while systematically preventing the very integration that makes human flourishing possible. This book offers a comprehensive framework for understanding fragmentation—and a practical roadmap for building systems that support whole human beings.'
+      },
+      parts: {
+        title: 'Book Structure',
+        part1: {
+          number: 'Part I',
+          title: 'The Crisis',
+          chapters: [
+            'The Ghost in the Achievement Machine',
+            'The Spectrum of Consciousness',
+            'The Transition Paradox',
+            'Why This Matters Now'
+          ]
+        },
+        part2: {
+          number: 'Part II',
+          title: 'The Diagnosis',
+          chapters: [
+            'The Six Domains of Human Experience',
+            'Integration as the Missing Link',
+            'Addiction as Integration Failure',
+            'The Disintegration Spiral'
+          ]
+        },
+        part3: {
+          number: 'Part III',
+          title: 'The Architecture',
+          chapters: [
+            'Project Janus: Modeling the Whole Human',
+            'Why Current Interventions Fail',
+            'The Integration Threshold',
+            'From Diagnosis to Prescription'
+          ]
+        },
+        part4: {
+          number: 'Part IV',
+          title: 'The Solutions',
+          chapters: [
+            'Cognitive Sovereignty Architecture',
+            'The Sovereign Floor: AUBI',
+            'Sanctuaries and Non-Extractive Zones',
+            'Implementation Pathways'
+          ]
+        },
+        part5: {
+          number: 'Part V',
+          title: 'The Horizon',
+          chapters: [
+            'The Research Agenda 2026-2035',
+            'The Questions That Remain Open',
+            'The Return'
+          ]
+        },
+        appendices: {
+          number: 'Appendices',
+          title: 'Tools and Resources',
+          items: [
+            'Spiral Dynamics Primer',
+            'Project Janus Framework',
+            'Glossary',
+            'First-100-Days Playbooks',
+            'Resources and Getting Involved',
+            'The Integration Scorecard'
+          ]
+        }
+      },
+      downloads: {
+        title: 'Download the Book',
+        subtitle: 'Available in multiple formats',
+        fullBook: {
+          title: 'Complete Book',
+          description: 'The full Integration Crisis book in PDF format',
+          button: 'Download Full PDF'
+        },
+        scorecard: {
+          title: 'Integration Scorecard',
+          description: 'Standalone assessment tool for measuring integration across six domains',
+          button: 'Download Scorecard'
+        },
+        playbooks: {
+          title: 'Implementation Playbooks',
+          description: 'First-100-days guides for mayors, CEOs, philanthropists, educators, and citizens',
+          button: 'Download Playbooks'
+        }
+      },
+      features: {
+        title: 'What Makes This Book Different',
+        feature1: {
+          icon: '🔬',
+          title: 'Rigorous Framework',
+          description:
+            'Not aspirational philosophy, but engineered systems with specific mechanisms, metrics, and falsifiable predictions.'
+        },
+        feature2: {
+          icon: '🧩',
+          title: 'Multi-Domain Integration',
+          description:
+            'Addresses biological, cognitive, emotional, behavioral, social, and spiritual dimensions simultaneously—not just one slice.'
+        },
+        feature3: {
+          icon: '🎯',
+          title: 'Practical Implementation',
+          description:
+            'Includes First-100-Days playbooks, integration scorecards, and concrete pathways from theory to action.'
+        },
+        feature4: {
+          icon: '📊',
+          title: 'Evidence-Based',
+          description:
+            'Grounded in developmental psychology, neuroscience, systems theory, and validated through lived experience.'
+        },
+        feature5: {
+          icon: '🌍',
+          title: 'Scalable Solutions',
+          description:
+            'Works at multiple scales—individual, organizational, community, and civilizational transformation.'
+        },
+        feature6: {
+          icon: '🔓',
+          title: 'Freely Available',
+          description:
+            'Released under Creative Commons. Fork, adapt, and implement without permission or payment.'
+        }
+      },
+      audience: {
+        title: 'Who This Book Is For',
+        groups: [
+          {
+            icon: '🏛️',
+            title: 'Policy Makers & City Leaders',
+            description:
+              'Mayors, councilors, and administrators ready to transform governance from extraction to regeneration.'
+          },
+          {
+            icon: '💼',
+            title: 'Business Leaders & Founders',
+            description:
+              'CEOs and entrepreneurs building organizations that support human flourishing, not just productivity.'
+          },
+          {
+            icon: '💰',
+            title: 'Philanthropists & Investors',
+            description:
+              'Those with resources seeking to fund systemic change rather than symptomatic relief.'
+          },
+          {
+            icon: '🎓',
+            title: 'Educators & Parents',
+            description:
+              'Anyone responsible for developmental environments—schools, families, communities.'
+          },
+          {
+            icon: '🔬',
+            title: 'Researchers & Academics',
+            description:
+              'Scholars interested in developmental psychology, systems theory, or civilizational transformation.'
+          },
+          {
+            icon: '🌱',
+            title: 'Change Agents & Activists',
+            description:
+              'Those working for social change who recognize that partial solutions create new problems.'
+          }
+        ]
+      },
+      related: {
+        title: 'Related Frameworks',
+        scorecard: {
+          title: 'Integration Scorecard',
+          description: 'Assess your integration across all six domains',
+          link: '/integration-scorecard'
+        },
+        consciousness: {
+          title: 'Consciousness & Inner Development',
+          description: 'Explore the developmental frameworks behind the book',
+          link: 'https://globalgovernanceframeworks.org/frameworks/consciousness-and-inner-development'
+        },
+        aubi: {
+          title: 'Adaptive Universal Basic Income',
+          description: 'The economic foundation for human integration',
+          link: 'https://globalgovernanceframeworks.org/frameworks/adaptive-universal-basic-income'
+        }
+      },
+      cta: {
+        title: 'Start Your Integration Journey',
+        text: 'Begin by assessing your current state with the Integration Scorecard, then explore the playbooks for your context.',
+        button: 'Take the Integration Scorecard'
+      }
+    },
     common: {
       ui: {
         bookCover: 'book cover',
@@ -131,6 +341,11 @@ export const booksTranslations = {
         comingSoon: 'Kommer snart'
       },
       // === GGF Books ===
+      integrationCrisis: {
+        title: 'Integrationskrisen: Gula lösningar på orange problem',
+        description:
+          'Ett omfattande ramverk för att förstå fragmentering och bygga system som stödjer hela människor över biologiska, kognitiva, emotionella, beteendemässiga, sociala och andliga dimensioner.'
+      },
       ai: {
         title: 'AI som katalysator för kognitiv evolution',
         description:
@@ -191,6 +406,209 @@ export const booksTranslations = {
         title: 'Mystisk matematik: Där siffror möter varat',
         description:
           'En kontemplativ utforskning av matematik som ett heligt språk, som avslöjar hur siffror och mönster kopplar den synliga världen till den osynliga.'
+      }
+    },
+    integrationCrisis: {
+      meta: {
+        title: 'Integrationskrisen - Gula lösningar på orange problem',
+        description:
+          'Ett omfattande ramverk för att förstå och adressera den civilisatoriska krisen av fragmentering genom systemisk integration över biologiska, kognitiva, emotionella, beteendemässiga, sociala och andliga dimensioner.'
+      },
+      hero: {
+        title: 'Integrationskrisen',
+        subtitle: 'Gula lösningar på orange problem',
+        tagline: 'Hur fragmentering skapar kris—och integration skapar möjligheter'
+      },
+      intro: {
+        title: 'Vad denna bok handlar om',
+        text: 'Vi står inför en integrationskris. Trots oöverträffad materiell överflöd ser vi epidemiska nivåer av ångest, depression, beroende och existentiell tomhet. Varför? För att det moderna samhället optimerar för prestation och produktivitet samtidigt som det systematiskt förhindrar just den integration som gör mänskligt blomstrande möjligt. Denna bok erbjuder ett omfattande ramverk för att förstå fragmentering—och en praktisk färdplan för att bygga system som stödjer hela människor.'
+      },
+      parts: {
+        title: 'Bokens struktur',
+        part1: {
+          number: 'Del I',
+          title: 'Krisen',
+          chapters: [
+            'Spöket i prestationsmaskinen',
+            'Medvetandets spektrum',
+            'Övergångsparadoxen',
+            'Varför detta betyder något nu'
+          ]
+        },
+        part2: {
+          number: 'Del II',
+          title: 'Diagnosen',
+          chapters: [
+            'De sex domänerna av mänsklig upplevelse',
+            'Integration som den saknade länken',
+            'Beroende som integrationsfel',
+            'Desintegrationsspiralen'
+          ]
+        },
+        part3: {
+          number: 'Del III',
+          title: 'Arkitekturen',
+          chapters: [
+            'Project Janus: Modellera den hela människan',
+            'Varför nuvarande insatser misslyckas',
+            'Integrationströskeln',
+            'Från diagnos till recept'
+          ]
+        },
+        part4: {
+          number: 'Del IV',
+          title: 'Lösningarna',
+          chapters: [
+            'Kognitiv suveränitetarkitektur',
+            'Det suveräna golvet: AUBI',
+            'Fristad och icke-extraktiva zoner',
+            'Implementeringsvägar'
+          ]
+        },
+        part5: {
+          number: 'Del V',
+          title: 'Horisonten',
+          chapters: [
+            'Forskningsagendan 2026-2035',
+            'De frågor som förblir öppna',
+            'Återkomsten'
+          ]
+        },
+        appendices: {
+          number: 'Bilagor',
+          title: 'Verktyg och resurser',
+          items: [
+            'Spiral Dynamics-primer',
+            'Project Janus-ramverket',
+            'Ordlista',
+            'Första-100-dagarna-spelböcker',
+            'Resurser och hur man engagerar sig',
+            'Integrationsresultatkortet'
+          ]
+        }
+      },
+      downloads: {
+        title: 'Ladda ner boken',
+        subtitle: 'Tillgänglig i flera format',
+        fullBook: {
+          title: 'Fullständig bok',
+          description: 'Den fullständiga boken Integrationskrisen i PDF-format',
+          button: 'Ladda ner fullständig PDF'
+        },
+        scorecard: {
+          title: 'Integrationsresultatkortet',
+          description: 'Fristående bedömningsverktyg för att mäta integration över sex domäner',
+          button: 'Ladda ner resultatkort'
+        },
+        playbooks: {
+          title: 'Implementeringsspelböcker',
+          description:
+            'Första-100-dagarna-guider för borgmästare, VD:ar, filantroper, pedagoger och medborgare',
+          button: 'Ladda ner spelböcker'
+        }
+      },
+      features: {
+        title: 'Vad som gör denna bok annorlunda',
+        feature1: {
+          icon: '🔬',
+          title: 'Rigoröst ramverk',
+          description:
+            'Inte aspirationsfilosofi, utan konstruerade system med specifika mekanismer, mätetal och falsifierbara förutsägelser.'
+        },
+        feature2: {
+          icon: '🧩',
+          title: 'Multidomänintegration',
+          description:
+            'Adresserar biologiska, kognitiva, emotionella, beteendemässiga, sociala och andliga dimensioner samtidigt—inte bara en del.'
+        },
+        feature3: {
+          icon: '🎯',
+          title: 'Praktisk implementering',
+          description:
+            'Inkluderar Första-100-dagarna-spelböcker, integrationsresultatkort och konkreta vägar från teori till handling.'
+        },
+        feature4: {
+          icon: '📊',
+          title: 'Evidensbaserad',
+          description:
+            'Grundad i utvecklingspsykologi, neurovetenskap, systemteori och validerad genom levd erfarenhet.'
+        },
+        feature5: {
+          icon: '🌍',
+          title: 'Skalbara lösningar',
+          description:
+            'Fungerar på flera skalor—individuell, organisatorisk, samhälls- och civilisatorisk transformation.'
+        },
+        feature6: {
+          icon: '🔓',
+          title: 'Fritt tillgänglig',
+          description:
+            'Släppt under Creative Commons. Förgrena, anpassa och implementera utan tillstånd eller betalning.'
+        }
+      },
+      audience: {
+        title: 'Vem denna bok är för',
+        groups: [
+          {
+            icon: '🏛️',
+            title: 'Beslutsfattare och stadsledare',
+            description:
+              'Borgmästare, rådsledamöter och administratörer redo att omvandla styrning från extraktion till regenerering.'
+          },
+          {
+            icon: '💼',
+            title: 'Företagsledare och grundare',
+            description:
+              'VD:ar och entreprenörer som bygger organisationer som stödjer mänskligt blomstrande, inte bara produktivitet.'
+          },
+          {
+            icon: '💰',
+            title: 'Filantroper och investerare',
+            description:
+              'De med resurser som söker finansiera systemisk förändring snarare än symptomatisk lindring.'
+          },
+          {
+            icon: '🎓',
+            title: 'Pedagoger och föräldrar',
+            description:
+              'Alla som är ansvariga för utvecklingsmiljöer—skolor, familjer, samhällen.'
+          },
+          {
+            icon: '🔬',
+            title: 'Forskare och akademiker',
+            description:
+              'Forskare intresserade av utvecklingspsykologi, systemteori eller civilisatorisk transformation.'
+          },
+          {
+            icon: '🌱',
+            title: 'Förändringsagenter och aktivister',
+            description:
+              'De som arbetar för social förändring och som inser att partiella lösningar skapar nya problem.'
+          }
+        ]
+      },
+      related: {
+        title: 'Relaterade ramverk',
+        scorecard: {
+          title: 'Integrationsresultatkortet',
+          description: 'Bedöm din integration över alla sex domäner',
+          link: '/integration-scorecard'
+        },
+        consciousness: {
+          title: 'Medvetande och inre utveckling',
+          description: 'Utforska utvecklingsramverken bakom boken',
+          link: 'https://globalgovernanceframeworks.org/frameworks/consciousness-and-inner-development'
+        },
+        aubi: {
+          title: 'Adaptiv universell basinkomst',
+          description: 'Den ekonomiska grunden för mänsklig integration',
+          link: 'https://globalgovernanceframeworks.org/frameworks/adaptive-universal-basic-income'
+        }
+      },
+      cta: {
+        title: 'Starta din integrationsresa',
+        text: 'Börja med att bedöma ditt nuvarande tillstånd med integrationsresultatkortet, utforska sedan spelbockerna för din kontext.',
+        button: 'Ta integrationsresultatkortet'
       }
     },
     common: {
