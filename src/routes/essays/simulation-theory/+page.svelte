@@ -177,17 +177,17 @@
 				</div>
 			</a>
 			<a
-				href="/essays/materialist-paradox"
+				href="/essays/the-infinite-ground"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
 				<div class="flex items-center gap-3">
-					<span class="text-3xl">⚛️</span>
+					<span class="text-3xl">♾️</span>
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "The Materialist's Hidden Paradox" 
-								: "Materialistens Dolda Paradox"}
+								? "The Infinite Ground" 
+								: "Den oändliga grunden"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
@@ -198,7 +198,7 @@
 				</div>
 			</a>
 			<a
-				href="/essays/origin-life"
+				href="/essays/continuity-of-life"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
@@ -207,13 +207,13 @@
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "The Origin of Life" 
-								: "Livets Ursprung"}
+								? "The Continuity of Life" 
+								: "Livets kontinuitet"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'Encompassing the known, unknown and infinite in understanding emergence' 
-								: 'Omfamnande det kända, okända och oändliga i förståelsen av emergens'}
+								? 'Why the Search for an Origin is a Category Error' 
+								: 'Varför sökandet efter ett ursprung är ett kategorifel'}
 						</p>
 					</div>
 				</div>

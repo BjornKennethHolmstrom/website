@@ -1,4 +1,4 @@
-<!-- src/routes/essays/depression-as-a-thistle/+page.svelte -->
+<!-- src/routes/essays/ecology-of-despair/+page.svelte -->
 <script lang="ts">
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	import SEO from '$lib/components/SEO.svelte';
@@ -127,28 +127,28 @@
 		</h3>
 		<div class="space-y-4">
 			<a
-				href="/essays/contemplative-guide"
+				href="/essays/change-paradox"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
 				<div class="flex items-center gap-3">
-					<span class="text-3xl">💝</span>
+					<span class="text-3xl">🏎️</span>
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "A Contemplative Guide Through Depression" 
-								: "En Kontemplativ Guide genom Depression"}
+								? "The Change Paradox" 
+								: "Förändringsparadoxen"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'Using the Love, Meaning, and Connection Index as a companion' 
-								: 'Använda Kärlek, Mening och Anslutning-indexet som följeslagare'}
+								? 'Why systems collapse when input velocity exceeds processing capacity' 
+								: 'Varför system kollapsar när ingångshastigheten överstiger bearbetningskapaciteten'}
 						</p>
 					</div>
 				</div>
 			</a>
 			<a
-				href="/essays/lost-ability"
+				href="/essays/architecture-of-stillness"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
@@ -157,8 +157,8 @@
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "I Lost the Ability to Just Be" 
-								: "Jag Förlorade Förmågan att Bara Vara"}
+								? "The Architecture of Stillness" 
+								: "Stillhetens arkitektur"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 

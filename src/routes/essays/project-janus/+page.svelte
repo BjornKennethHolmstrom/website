@@ -162,7 +162,7 @@
 				</div>
 			</a>
 			<a
-				href="/essays/breaking-the-mirror"
+				href="/essays/the-ai-mirror"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
@@ -192,13 +192,13 @@
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "The System That Makes the Rich Richer" 
-								: "Systemet som gör de rika rikare"}
+								? "The Architecture of Extraction" 
+								: "Extraktionens arkitektur"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'Economic systems analysis that informed the behavioral domain modeling' 
-								: 'Ekonomisk systemanalys som informerade beteendedomänmodelleringen'}
+								? 'Why Inequality is a Design Choice, Not an Accident' 
+								: 'Varför ojämlikhet är ett designval, inte en slump'}
 						</p>
 					</div>
 				</div>

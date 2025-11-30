@@ -119,7 +119,7 @@
 		</h3>
 		<div class="space-y-4">
 			<a
-				href="/essays/breaking-the-mirror"
+				href="/essays/the-ai-mirror"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>

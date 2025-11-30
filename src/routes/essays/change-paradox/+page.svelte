@@ -157,7 +157,7 @@
 		</h3>
 		<div class="space-y-4">
 			<a
-				href="/essays/depression-as-a-thistle"
+				href="/essays/ecology-of-despair"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
@@ -166,8 +166,8 @@
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "Depression as a Thistle" 
-								: "Depression som en Tistel"}
+								? "The Ecology of Despair" 
+								: "Förtvivlans ekologi"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
@@ -178,7 +178,7 @@
 				</div>
 			</a>
 			<a
-				href="/essays/lost-ability"
+				href="/essays/architecture-of-stillness"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
@@ -187,8 +187,8 @@
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "I Lost the Ability to Just Be" 
-								: "Jag Förlorade Förmågan att Bara Vara"}
+								? "The Architecture of Stillness" 
+								: "Stillhetens arkitektur"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 

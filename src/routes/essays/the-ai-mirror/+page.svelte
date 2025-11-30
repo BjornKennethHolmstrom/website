@@ -1,4 +1,4 @@
-<!-- src/routes/essays/breaking-the-mirror/+page.svelte -->
+<!-- src/routes/essays/the-ai-mirror/+page.svelte -->
 <script lang="ts">
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	import SEO from '$lib/components/SEO.svelte';

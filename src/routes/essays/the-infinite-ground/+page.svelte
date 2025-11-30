@@ -191,7 +191,7 @@
 				</div>
 			</a>
 			<a
-				href="/essays/origin-life"
+				href="/essays/continuity-of-life"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
@@ -200,12 +200,12 @@
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "The Origin of Life" 
-								: "Livets Ursprung"}
+								? "The Continuity of Life" 
+								: "Varför sökandet efter ett ursprung är ett kategorifel"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'Encompassing the known, unknown and infinite in emergence' 
+								? 'Why the Search for an Origin is a Category Error' 
 								: 'Omfamnande det kända, okända och oändliga i emergens'}
 						</p>
 					</div>

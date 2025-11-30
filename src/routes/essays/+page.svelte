@@ -81,7 +81,7 @@
    // --- Priority 3: Consciousness ---
    { 
      key: 'depressionThistle', 
-     url: '/essays/depression-as-a-thistle', 
+     url: '/essays/ecology-of-despair', 
      icon: '🌿',
      category: 'Consciousness',
      hasPDF: false
@@ -123,7 +123,7 @@
    },
    { 
      key: 'originLife', 
-     url: '/essays/origin-life',
+     url: '/essays/continuity-of-life',
      icon: '🌱',
      category: 'Consciousness',
      hasPDF: false

@@ -156,17 +156,17 @@
 		</h3>
 		<div class="space-y-4">
 			<a
-				href="/essays/materialist-paradox"
+				href="/essays/the-infinite-ground"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
 				<div class="flex items-center gap-3">
-					<span class="text-3xl">⚛️</span>
+					<span class="text-3xl">♾️</span>
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? "The Materialist's Hidden Paradox" 
-								: "Materialistens Dolda Paradox"}
+								? "The Infinite Ground" 
+								: "Den oändliga grunden"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
