@@ -16,7 +16,10 @@ export const essaysTranslations = {
 			  // --- Individual Essays ---
      treatyBlueprint: {
        title: "Treaty for Our Only Home",
-       desc: "A blueprint for global governance that addresses the polycrisis through interconnected frameworks"
+       subtitle: "A Blueprint for Planetary Resilience",
+       description: "We are trying to manage 21st-century risks with 20th-century institutions. This essay outlines the 'Treaty for Our Only Home'—a comprehensive architecture for transitioning from nation-state competition to planetary stewardship.",
+       published: "June 2025",
+       readTime: "18 min read"
      },
      wealthSystem: {
        title: "The Architecture of Extraction",
@@ -153,7 +156,10 @@ export const essaysTranslations = {
    cards: {
      treatyBlueprint: {
        title: "Fördrag för vårt enda hem",
-       desc: "En blueprint för global governance som adresserar polykrisen genom sammankopplade ramverk"
+       subtitle: "En plan för planetarisk motståndskraft",
+       desc: "Vi försöker hantera 2000-talets risker med 1900-talets institutioner. Denna essä beskriver 'Fördraget för vårt enda hem' – en omfattande arkitektur för övergången från konkurrens mellan nationerna till planetariskt ansvar.",
+       published: "juni 2025",
+       readTime: "18 min läsning"
      },
      wealthSystem: {
        title: "Extraktionens arkitektur",
