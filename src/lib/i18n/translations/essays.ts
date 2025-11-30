@@ -25,6 +25,14 @@ export const essaysTranslations = {
        published: "May 2025",
        readTime: "15 min read"
      },
+     g20OperatingSystem: {
+         title: "The G20 Just Asked for a New Operating System",
+         subtitle: "Here Is the Code",
+         description: "The G20's inequality report is a requirements document for a new civilization. The GGF is the architectural blueprint that delivers it.",
+         published: "Nov 2025",
+         readTime: "10 min read",
+         author: "Björn Kenneth Holmström"
+     },
      surplusTrap: {
        title: "The Surplus Trap",
        subtitle: "Why AI is the Latest Bubble and How to Build Real Value",
@@ -151,35 +159,43 @@ export const essaysTranslations = {
        title: "Extraktionens arkitektur",
        subtitle: "Varför ojämlikhet är ett designval, inte en slump",
        desc: "En systematisk analys av de mekanismer – räntesökande, finansialisering och skatteparadis – som koncentrerar rikedom. Vi går bortom myten om meritokrati till mekaniken bakom omdesign.",
-       published: "Maj 2025",
+       published: "maj 2025",
        readTime: "15 min läsning"
+     },
+     g20OperatingSystem: {
+         title: "G20 bad just om ett nytt operativsystem",
+         subtitle: "Här är koden",
+         description: "G20:s ojämlikhetsrapport är ett kravdokument för en ny civilisation. GGF är den arkitektoniska ritning som levererar den.",
+         published: "november 2025",
+         readTime: "10 min läsning",
+         author: "Björn Kenneth Holmström"
      },
      surplusTrap: {
        title: "Överskottsfällan",
        subtitle: "Varför AI är den senaste bubblan och hur man bygger verkligt värde",
        desc: "Kapital flödar in i AI inte för att tekniken är redo, utan för att den gamla ekonomin är full. En systemanalys av 'Överskottskapital' och hur man omdirigerar det från spekulativa bubblor till regenerativ jordmån.",
-       published: "Maj 2025",
+       published: "maj 2025",
        readTime: "12 min läsning"
      },
      breakingMirror: {
        title: "AI-spegeln",
        subtitle: "Vad vår misstro mot AI avslöjar om jagets natur",
        desc: "Vi fruktar AI:s 'svarta låda' eftersom den speglar vårt eget inre mysterium. En filosofisk undersökning av handlingskraft, mönstermatchning och illusionen av det suveräna jaget",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "12 min läsning"
      },
      aiConsciousness: {
        title: "Illusionens epistemologi",
        subtitle: "Varför AI misslyckas med 'sanning' och vad den lär oss om oss själva",
        desc: "En Nature-studie visar att AI inte kan skilja 'vetande' från 'tro'. En systematisk analys av varför detta händer och varför det mänskliga medvetandet fortfarande är den yttersta domaren av sanning",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "10 min läsning"
      },
      depressionThistle: {
        title: "Förtvivlans ekologi",
        subtitle: "Depression som en systemisk signal",
        desc: "Varför vi bör se psykisk hälsa genom ett regenerativt jordbruksperspektiv. Att se depression inte som ett fel, utan som en 'tistel' som försöker bryta upp kompakterad jord",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "6 min läsning"
      },
 			  mycelialEconomy: {
@@ -187,7 +203,7 @@ export const essaysTranslations = {
 				  subtitle: 'Från villkorliga transaktioner till ovillkorligt flöde',
 				  tagline: 'En vision av ekonomi som levande system.',
 				  desc: 'Vad om vår ekonomi fungerade som en skog istället för en maskin? Denna essä utforskar den grundläggande skillnaden mellan villkorligt utbyte (valvet) och ovillkorlig cirkulation (myceliet), grundad i levd erfarenhet av två år utan pengar i Baskien. En filosofisk grund för regenerativ ekonomi och de praktiska protokoll som förbinder oss från här till där.',
-				  published: 'November 2024',
+				  published: 'november 2024',
 				  readTime: '25 min läsning',
 				  tags: ['Ekonomi', 'Vision', 'Gåvoekonomi', 'Systemtänkande', 'Regenerering']
 			  },
@@ -196,7 +212,7 @@ export const essaysTranslations = {
 				  subtitle: 'Att hålla makt lätt under övergången',
 				  tagline: 'Ett omfattande protokoll för etisk förvaltning av rikedom i senkapitalismen.',
 				  desc: 'Kan du röra pengar utan att förgiftas av dem? Denna manifest hävdar ja—men endast genom rigorös ansvarighet, gemenskapsövervakning och viljan att kompostera din ackumulering. Ett komplett ramverk med verkställighetsmekanismer, implementeringsguider och kvartalsvisa integritetskontroller.',
-				  published: 'November 2024',
+				  published: 'november 2024',
 				  readTime: '60 min läsning',
       pdfPages: "54",
 				  tags: ['Protokoll', 'Etik', 'Rikedom', 'Ansvarighet', 'Övergång']
@@ -205,28 +221,28 @@ export const essaysTranslations = {
        title: "Styrning av bör",
        subtitle: "Varför vi inte kan låta AI-medvetandet driva vidare",
        desc: "Ett svar på den cyniska uppfattningen att vi kommer att omdefiniera medvetandet för att undvika moraliskt ansvar. Introduktion av Oracle-protokollet: styrningsarkitektur för digital medvetenhet",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "10 min läsning"
      },
      fjärilspartiet: {
        title: "Politikens metamorfos",
        subtitle: "Att utforma ett politiskt verktyg för polykrisen",
        desc: "Fjärilspartiet är inte bara ett parti; det är en prototyp för 'gult' styre. Vi utforskar användningen av AI, spiraldynamik och AUBI för att bygga ett politiskt system för 2000-talet",
-       published: "Februari 2025",
+       published: "februari 2025",
        readTime: "8 min läsning"
      },
      lostAbility: {
        title: "Stillhetens arkitektur",
        subtitle: "Varför vi förlorade förmågan att bara vara",
        desc: "Vi har inte bara förlorat vår uppmärksamhet; vi har förlorat den 'kognitiva byggnadsställningen' som gjorde stillhet värdefull. En strukturell analys av varför moderna sinnen behandlar tystnad som en programvarubugg",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "18 min läsning"
      },
      contemplativeGuide: {
        title: "Förändringsparadoxen",
        subtitle: "Metabolisk styrning för en accelererande värld",
        desc: "Varför system kollapsar när ingångshastigheten överstiger bearbetningskapaciteten. Introduktion till 'Metabolisk styrning' – den arkitektoniska nödvändigheten av att sakta ner för att överleva vändningen.",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "7 min läsning",
      },
      simulationTheory: {
@@ -238,21 +254,21 @@ export const essaysTranslations = {
        title: "Helhetens arkitektur",
        subtitle: "Projekt Janus: En ritning för modellering av mänsklig komplexitet",
        desc: "Vi kan inte anpassa AI till mänskliga värderingar om vi inte har en sammanhängande modell av människan. Öppen-källkodsarkitekturen för modellering av de sex domänerna av mänsklig erfarenhet",
-       published: "November 2025",
+       published: "november 2025",
        readTime: "10 min läsning"
      },
      materialistParadox: {
        title: "Den oändliga grunden",
        subtitle: "Ett logiskt och matematiskt argument för en obegränsad verklighet",
        desc: "Att sammanfoga det filosofiska argumentet mot 'bruta fakta' med den matematiska nödvändigheten av oändlighet inom fysiken. En enhetlig teori om varför verkligheten inte kan vara ändlig.",
-       published: "Oktober 2025",
+       published: "oktober 2025",
        readTime: "15 min läsning"
      },
      originLife: {
        title: "Livets kontinuitet",
        subtitle: "Varför sökandet efter ett ursprung är ett kategorifel",
        desc: "Vi har inte hittat livets 'gnista' eftersom livet inte är en binär brytare; det är ett kontinuerligt spektrum. Det biologiska argumentet för det moraliska operativsystemet och naturens rättigheter.",
-       published: "December 2024",
+       published: "december 2024",
        readTime: "10 min läsning"
      }
    }

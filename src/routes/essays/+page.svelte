@@ -27,6 +27,13 @@
      hasPDF: false
    },
    { 
+     key: 'g20OperatingSystem', 
+     url: '/essays/g20-operating-system',
+     icon: '💰',
+     category: 'Governance',
+     hasPDF: false
+   },
+   { 
      key: 'wealthSystem', 
      url: '/essays/wealth-system',
      icon: '⚖️',
