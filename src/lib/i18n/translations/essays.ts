@@ -25,6 +25,13 @@ export const essaysTranslations = {
        published: "May 2025",
        readTime: "15 min read"
      },
+     surplusTrap: {
+       title: "The Surplus Trap",
+       subtitle: "Why AI is the Latest Bubble and How to Build Real Value",
+       desc: "Capital is flooding into AI not because the tech is ready, but because the old economy is full. A systems analysis of 'Surplus Capital' and how to redirect it from speculative bubbles to regenerative soil.",
+       published: "May 2025",
+       readTime: "12 min read"
+     },
      breakingMirror: {
        title: "The AI Mirror",
        subtitle: "What Our Distrust of AI Reveals About the Nature of Self",
@@ -146,6 +153,13 @@ export const essaysTranslations = {
        desc: "En systematisk analys av de mekanismer – räntesökande, finansialisering och skatteparadis – som koncentrerar rikedom. Vi går bortom myten om meritokrati till mekaniken bakom omdesign.",
        published: "Maj 2025",
        readTime: "15 min läsning"
+     },
+     surplusTrap: {
+       title: "Överskottsfällan",
+       subtitle: "Varför AI är den senaste bubblan och hur man bygger verkligt värde",
+       desc: "Kapital flödar in i AI inte för att tekniken är redo, utan för att den gamla ekonomin är full. En systemanalys av 'Överskottskapital' och hur man omdirigerar det från spekulativa bubblor till regenerativ jordmån.",
+       published: "Maj 2025",
+       readTime: "12 min läsning"
      },
      breakingMirror: {
        title: "AI-spegeln",

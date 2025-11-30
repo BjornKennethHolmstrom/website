@@ -34,6 +34,14 @@
      hasPDF: false
    },
    { 
+			 key: 'surplusTrap', 
+			 url: '/essays/the-surplus-trap',
+			 icon: '🫧', // Bubble
+			 category: 'Governance', // or 'Economics' if you add that category
+			 date: 'Nov 2025',
+			 readTime: '12 min'
+		 },
+   { 
      key: 'aiGovernance', 
      url: '/essays/ai-governance',
      icon: '🏛️',
