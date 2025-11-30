@@ -1,0 +1,143 @@
+<script lang="ts">
+	import { essaysTranslations as allTranslations } from '$lib/i18n/translations/essays';
+	import { language } from '$lib/stores/languageStore';
+	import SEO from '$lib/components/SEO.svelte';
+	import PageHero from '$lib/components/PageHero.svelte';
+
+	// Add a loading state
+	let isLoading = true;
+
+	// Subscribe to language changes
+	$: if ($language) {
+		isLoading = false;
+	}
+
+	// Define categories for the filter
+	const categories = ['All', 'Governance', 'AI & Tech', 'Consciousness'];
+	let selectedCategory = 'All';
+
+	// Define the essay cards with categories
+	// Note: 'key' corresponds to the translation key in essays.ts
+	const essayCards = [
+		// --- Priority 1: Governance ---
+		{ 
+			key: 'treatyBlueprint', 
+			url: '/essays/treaty-blueprint', // Formerly "Beyond the Brink"
+			icon: '🌐',
+			category: 'Governance'
+		},
+		{ 
+			key: 'wealthSystem', 
+			url: '/essays/wealth-system', // Formerly "The System that makes rich richer"
+			icon: '⚖️',
+			category: 'Governance'
+		},
+		
+		// --- Priority 2: AI & Tech ---
+		{ 
+			key: 'breakingMirror', 
+			url: '/essays/breaking-the-mirror', 
+			icon: '🪞',
+			category: 'AI & Tech'
+		},
+		{ 
+			key: 'aiConsciousness', 
+			url: '/essays/ai-consciousness', 
+			icon: '🤖',
+			category: 'AI & Tech'
+		},
+
+		// --- Priority 3: Consciousness ---
+		{ 
+			key: 'depressionThistle', 
+			url: '/essays/depression-as-a-thistle', 
+			icon: '🌿',
+			category: 'Consciousness'
+		},
+		{ 
+			key: 'mycelialEconomy', 
+			url: '/essays/mycelial-economy',
+			icon: '🍄',
+			category: 'Consciousness'
+		},
+		{ 
+			key: 'alchemistsDilemma', 
+			url: '/essays/alchemists-dilemma',
+			icon: '⚗️',
+			category: 'Consciousness'
+		}
+	];
+
+	// Reactive filter
+	$: filteredCards = selectedCategory === 'All' 
+		? essayCards 
+		: essayCards.filter(card => card.category === selectedCategory);
+
+	// Helper for badge colors
+	function getCategoryColor(cat: string) {
+		switch(cat) {
+			case 'Governance': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
+			case 'AI & Tech': return 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200';
+			case 'Consciousness': return 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200';
+			default: return 'bg-gray-100 text-gray-800';
+		}
+	}
+</script>
+
+{#if isLoading}
+	<div class="flex h-64 items-center justify-center">
+		<p class="text-gray-500">Loading library...</p>
+	</div>
+{:else if $language && allTranslations[$language]?.essays}
+	{@const t = allTranslations[$language].essays}
+
+	<SEO title={t.meta.title} description={t.meta.description} />
+
+	<PageHero title={t.hero.title} subtitle={t.hero.subtitle} />
+
+	<div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+		
+		<div class="flex flex-wrap justify-center gap-3 mb-12">
+			{#each categories as category}
+				<button
+					class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 
+					{selectedCategory === category 
+						? 'bg-amber-600 text-white shadow-md scale-105' 
+						: 'bg-white dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 border border-gray-200 dark:border-gray-700'}"
+					on:click={() => selectedCategory = category}
+				>
+					{category}
+				</button>
+			{/each}
+		</div>
+
+		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			{#each filteredCards as card}
+				<a 
+					href={card.url}
+					class="group relative flex flex-col rounded-xl border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-amber-300/50"
+				>
+					<div class="flex justify-between items-start mb-4">
+						<span class="text-4xl">{card.icon}</span>
+						<span class="px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider {getCategoryColor(card.category)}">
+							{card.category}
+						</span>
+					</div>
+					
+					<div class="flex-1">
+						<h3 class="text-lg font-bold text-[var(--color-card-text)] mb-2 group-hover:text-amber-600 transition-colors">
+							{t.cards[card.key]?.title || "Untitled Essay"}
+						</h3>
+						<p class="text-sm text-[var(--color-card-text)] opacity-80 leading-relaxed">
+							{t.cards[card.key]?.desc || "Description coming soon..."}
+						</p>
+					</div>
+
+					<div class="mt-6 flex items-center text-xs font-semibold text-amber-600 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+						Read Essay <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+					</div>
+				</a>
+			{/each}
+		</div>
+	</div>
+{/if}
