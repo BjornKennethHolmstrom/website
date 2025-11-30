@@ -273,9 +273,9 @@
 		<div class="mt-16 p-6 rounded-lg bg-[var(--color-separator)] text-[var(--color-card-text)] opacity-70 text-center">
 			<p class="text-sm">
 				{#if $language === 'en'}
-					More essays coming soon. Each piece is crafted to endure—substantial explorations meant to serve the transition between worlds.
+					This library grows at the speed of insight, not the speed of the feed. Take your time to integrate what is here. New work will arrive when it is ready. Each piece is crafted to endure—substantial explorations meant to serve the transition between worlds.
 				{:else}
-					Fler essäer kommer snart. Varje stycke är skapat för att bestå—omfattande utforskningar tänkta att tjäna övergången mellan världar.
+					Detta bibliotek växer i takt med insikt, inte algoritmer. Ta dig tid att integrera det som finns här. Nya verk tillkommer när de är redo. Varje stycke är skapat för att bestå—omfattande utforskningar tänkta att tjäna övergången mellan världar.
 				{/if}
 			</p>
 		</div>

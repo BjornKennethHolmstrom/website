@@ -58,6 +58,7 @@
 			{#each papers as paper (paper.id)}
 				{@const pdfInfo = getPdfInfo(paper, $language)}
 				{@const readTime = getReadTime(paper, $language)}
+    {@const isExternal = paper.readOnlineExternal !== undefined ? paper.readOnlineExternal : isExternalLink(paper.readOnlinePath || '')}
 				<div
 					class="group flex flex-col overflow-hidden rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-lg transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-1"
 				>
@@ -109,10 +110,20 @@
 							{#if paper.readOnlinePath}
 								<a
 									href={paper.readOnlinePath}
+									target={isExternal ? "_blank" : undefined}
+									rel={isExternal ? "noopener noreferrer" : undefined}
 									class="flex flex-1 items-center justify-center gap-2 rounded-md bg-[var(--color-page-accent)] px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+									class:external-link={isExternal}
 								>
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
 									{$t.books.actions.readOnline}
+									{#if isExternal}
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+											<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+											<polyline points="15 3 21 3 21 9"/>
+											<line x1="10" y1="14" x2="21" y2="3"/>
+										</svg>
+									{/if}
 								</a>
 							{/if}
 
