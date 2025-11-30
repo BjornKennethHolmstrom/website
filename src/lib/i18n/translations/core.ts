@@ -15,6 +15,7 @@ export const coreTranslations = {
   essaysTagline: 'Substantial explorations and living protocols.',
 		navWhitepapers: 'White Papers',
   navBooks: 'Books',
+  navFrameworks: 'Frameworks',
 		navContact: 'Contact',
   navAbout: 'About',
   navRSS: 'RSS Feed',
@@ -25,12 +26,12 @@ export const coreTranslations = {
   dark: 'DARK',
   light: 'LIGHT',
 		// Hero
-  title: 'Designer of Conscious Systems',
+  title: 'Architect of the Global Governance Frameworks',
 		mission:
-			'I explore, design, and build open-source tools for human and planetary flourishing, using AI as a partner to navigate complex systems. This is a map of my work.',
+			'I am a systems thinker, consciousness researcher, and the architect of the Global Governance Frameworks initiative. My work focuses on the intersection of developmental psychology, institutional design, and human flourishing.',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
-		clusterQuartet: 'The Awareness Quartet',
+		clusterQuartet: 'The Awareness Duo',
   clusterPersonal: 'Personal Spaces & Labs',
 		clusterLibrary: 'Writings & Research',
   clusterArchitecture: 'Open Source Architectures',
@@ -56,6 +57,12 @@ export const coreTranslations = {
 		universalizeTagline: 'Explore universal perspective and cosmic responsibility.',
 		spiritualizedTitle: 'Spiritualized.org',
 		spiritualizedTagline: 'Spirituality as permission to be. A refuge for the overwhelmed soul.',
+  bookLaunch: {
+    label: "Latest Publication",
+    title: "The Integration Crisis",
+    desc: "Why does winning feel like losing? A diagnostic manual for civilizational redesign and the shift to Yellow consciousness.",
+    cta: "Read the Book"
+  },
   blog: {
 			meta: {
 				title: 'Blog | Björn Kenneth Holmström',
@@ -129,6 +136,7 @@ export const coreTranslations = {
   // Header nav
 		navBlog: 'Blogg',
   navEssays: 'Essäer',  // or 'Manifest'
+  navFrameworks: 'Ramverk',
   essaysTitle: 'Essäer',
   essaysTagline: 'Omfattande utforskningar och levande protokoll.',
 		navWhitepapers: 'White papers',
@@ -143,12 +151,12 @@ export const coreTranslations = {
   dark: 'MÖRK',
   light: 'LJUS',
 		// Hero
-  title: 'Designer av medvetna system',
+  title: 'Arkitekt för Global Governance Frameworks',
 		mission:
-			'Jag utforskar, designar och bygger verktyg med öppen källkod för mänskligt och planetärt blomstrande, och använder AI som en partner för att navigera komplexa system. Det här är en karta över mitt arbete.',
+			'Jag är systemtänkare, medvetandeforskare och arkitekt bakom initiativet Global Governance Frameworks. Mitt arbete fokuserar på skärningspunkten mellan utvecklingspsykologi, institutionell design och mänskligt välmående.',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
-		clusterQuartet: 'Medvetandets kvartett',
+		clusterQuartet: 'Medvetandets duo',
   clusterPersonal: 'Personliga rum och labb',
 		clusterLibrary: 'Skrifter och forskning',
   clusterArchitecture: 'Öppen källkodsarkitektur',
@@ -173,6 +181,7 @@ export const coreTranslations = {
 		universalizeTagline: 'Utforska universellt perspektiv och kosmiskt ansvar.',
 		spiritualizedTitle: 'Spiritualized.org',
 		spiritualizedTagline: 'Andlighet som tillåtelse att vara. En fristad för den överväldigade själen.',
+
   blog: {
 			meta: {
 				title: 'Blogg | Björn Kenneth Holmström',
@@ -181,6 +190,12 @@ export const coreTranslations = {
 			title: 'Blogginlägg',
 			listPrefix: 'Här är alla mina '
 		},
+  bookLaunch: {
+    label: "Senaste Utgivning",
+    title: "Integrationskrisen",
+    desc: "Varför känns framgång som förlust? En handbok för civilisatorisk redesign och skiftet till Gult medvetande.",
+    cta: "Läs Boken"
+  },
 		blogTagline: 'Min blogg',
   blogFollow: 'Följ via',
   booksTitle: 'Böcker',

@@ -49,10 +49,22 @@
 			<!-- Desktop Navigation -->
 			<div class="hidden items-center gap-4 md:flex">
 				<a
-					href="/blog"
+					href="/books"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>
-					{$t.navBlog}
+					{$t.navBooks}
+				</a>
+				<a
+					href="https://www.globalgovernanceframeworks.org"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex items-center gap-1 text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+				>
+					{$t.navFrameworks}
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3 w-3">
+						<path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" />
+						<path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" />
+					</svg>
 				</a>
 				<a
 					href="/essays"
@@ -67,10 +79,10 @@
 					{$t.navWhitepapers}
 				</a>
 				<a
-					href="/books"
+					href="/about"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>
-					{$t.navBooks}
+					{$t.navAbout}
 				</a>
 				<a
 					href="/contact"
@@ -78,11 +90,12 @@
 				>
 					{$t.navContact}
 				</a>
+    <!--
 				<a
-					href="/about"
+					href="/blog"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>
-					{$t.navAbout}
+					{$t.navBlog}
 				</a>
     <div class="relative">
         <button
@@ -136,7 +149,7 @@
                 </a>
             </div>
         {/if}
-    </div>
+    </div> -->
 			</div>
 		</div>
 
@@ -190,18 +203,24 @@
 	  onclick={(e) => e.stopPropagation()}
   >
 				<a
-					href="/blog"
+					href="/books"
 					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 					onclick={closeMobileMenu}
 				>
-					{$t.navBlog}
+					{$t.navBooks}
 				</a>
 				<a
-					href="/essays"
-					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+					href="https://globalgovernanceframeworks.org"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex items-center gap-2 text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 					onclick={closeMobileMenu}
 				>
-					{$t.navEssays}
+					{$t.navFrameworks}
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+						<path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" />
+						<path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" />
+					</svg>
 				</a>
 				<a
 					href="/whitepapers"
@@ -211,11 +230,18 @@
 					{$t.navWhitepapers}
 				</a>
 				<a
-					href="/books"
+					href="/essays"
 					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 					onclick={closeMobileMenu}
 				>
-					{$t.navBooks}
+					{$t.navEssays}
+				</a>
+				<a
+					href="/about"
+					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+					onclick={closeMobileMenu}
+				>
+					{$t.navAbout}
 				</a>
 				<a
 					href="/contact"
@@ -224,12 +250,13 @@
 				>
 					{$t.navContact}
 				</a>
+    <!--
 				<a
-					href="/about"
+					href="/blog"
 					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 					onclick={closeMobileMenu}
 				>
-					{$t.navAbout}
+					{$t.navBlog}
 				</a>
     <a
         href="/apps"
@@ -251,7 +278,7 @@
         onclick={closeMobileMenu}
     >
         {$t.navConcepts}
-    </a>
+    </a> -->
 			</div>
 		</div>
 	{/if}

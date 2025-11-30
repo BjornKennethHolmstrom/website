@@ -1,78 +1,102 @@
-// src/lib/i18n/translations/about.ts
-
 export const aboutTranslations = {
-	en: {
-		about: {
-			meta: {
-				title: 'About | Björn Kenneth Holmström',
-				description:
-					'The story behind the work: from engineering physics to mystical experiences, depression, and the drive to build systems for a flourishing world.'
-			},
-			hero: {
-				title: 'About Me',
-				subtitle: 'The Story Behind The Systems'
-			},
-			introTitle: 'Who I Am',
-			intro: `I’m a curious thinker, passionate creator, and dedicated systems designer working to bridge the gap between ideas and action. With a background in engineering physics and mathematical optimization, my work centers on fostering collaboration and re-imagining what’s possible for individuals, communities, and the planet.`,
-			journeyTitle: 'My Journey',
-			journey_physics: `My journey started in software development, but my curiosity has taken me from Sweden to the Basque Country and Japan, gaining perspectives that shape my approach to life. I've explored everything from Viking crafts to advanced mathematics.`,
-			journey_mystic: `Around 2014, after deep work with yoga and meditation, I began having mystical experiences. While living in the Basque Country, this questioning of reality intensified. I lived with almost no money for two years, exploring art and mysticism. Eventually, this spiraled out of control. I lost my apartment, lived in an abandoned house for a month, and ultimately returned to "ordinary" life.`,
-			journey_return: `With the help of family, I moved back to Sweden. This was followed by a deep, long-term depression and in-organic psychosis that lasted over five years. This painful journey became foundational. It gave me the perspective of the "depressed mystic" and clarified my mission: to build systems that support *all* of life, including the parts that are broken, healing, or simply being. This perspective is the "why" behind my work, including <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
-			missionTitle: 'My Mission & Core Projects',
-			mission_ggf: `My most ambitious contribution is initiating <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, a collaborative platform to rethink how we steward our planet. It’s a labor of hope, complexity, and care.`,
-			mission_quartet: `To support this vision, I’m building <a href="/">a quartet of tools</a>—Spiralize.org, Nondualize.org, Communize.org, and Universalize.org—alongside a political movement, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, focused on holistic societal transformation.`,
-			mission_question: `A driving question informs everything I do: <strong>How can we improve ourselves and the planet while avoiding the mistakes of the past and staying true to our essence?</strong>`,
-			inspirationsTitle: 'Inspirations',
-			inspirations: [
-				'The beauty of interconnected systems in nature, society, and reality as a whole.',
-				'The potential for technology to empower and uplift humanity.',
-				'The pursuit of philosophy, art, science, and spirituality.',
-				'The endless expressions of life and consciousness in nature.',
-				'The possibility of harmony between all living beings.'
-			],
-			interestsTitle: 'Other Passions',
-			interests_music: `I love music and have played piano, drums, bass, and guitar in several bands (Raskolnikov, Devil Killers, Fistful of Heart).`,
-			interests_gaming: `On platforms like Steam, I’m known as <strong>Pwnytale</strong>. I've played a lot of GeoGuessr and other community games.`,
-			interests_nature: `My connection with nature and animals runs deep, which led me to get involved with animal rights movements like Anonymous for the Voiceless.`,
-			cta: `Thank you for reading. I’d love to connect.`,
-			cta_button: `Get in Touch`
-		}
-	},
-	sv: {
-		about: {
-			meta: {
-				title: 'Om mig | Björn Kenneth Holmström',
-				description:
-					'Berättelsen bakom arbetet: från teknisk fysik till mystiska upplevelser, depression och drivkraften att bygga system för en blomstrande värld.'
-			},
-			hero: {
-				title: 'Om Mig',
-				subtitle: 'Berättelsen bakom systemen'
-			},
-			introTitle: 'Vem jag är',
-			intro: `Jag är en nyfiken tänkare, passionerad skapare och dedikerad systemdesigner som arbetar för att överbrygga klyftan mellan idéer och handling. Med en bakgrund inom teknisk fysik och matematisk optimering, centrerar mitt arbete kring att främja samarbete och omforma vad som är möjligt för individer, samhällen och planeten.`,
-			journeyTitle: 'Min Resa',
-			journey_physics: `Min resa började inom mjukvaruutveckling, men min nyfikenhet har tagit mig från Sverige till Baskien och Japan, vilket gett mig perspektiv som formar min syn på livet. Jag har utforskat allt från vikingahantverk till avancerad matematik.`,
-			journey_mystic: `Runt 2014, efter djupt arbete med yoga och meditation, började jag få mystiska upplevelser. När jag bodde i Baskien intensifierades detta ifrågasättande av verkligheten. Jag levde nästan utan pengar i två år och utforskade konst och mystik. Till slut spårade detta ur. Jag förlorade min lägenhet, bodde i ett övergivet hus i en månad och återvände till slut till det "vanliga" livet.`,
-			journey_return: `Med hjälp av familj flyttade jag tillbaka till Sverige. Detta följdes av en djup, långvarig depression och oorganisk psykos som varade i över fem år. Denna smärtsamma resa blev grundläggande. Den gav mig "den deprimerade mystikerns" perspektiv och klargjorde mitt uppdrag: att bygga system som stöder *allt* liv, inklusive de delar som är trasiga, helande eller bara är. Detta perspektiv är "varför" bakom mitt arbete, inklusive <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
-			missionTitle: 'Mitt Uppdrag & Kärnprojekt',
-			mission_ggf: `Mitt mest ambitiösa bidrag är initiativet till <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, en samarbetsplattform för att ompröva hur vi förvaltar vår planet. Det är ett arbete fyllt av hopp, komplexitet och omsorg.`,
-			mission_quartet: `För att stödja denna vision bygger jag <a href="/">en kvartett av verktyg</a>—Spiralize.org, Nondualize.org, Communize.org och Universalize.org—tillsammans med en politisk rörelse, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, fokuserad på holistisk samhällsomvandling.`,
-			mission_question: `En drivande fråga genomsyrar allt jag gör: <strong>Hur kan vi förbättra oss själva och planeten samtidigt som vi undviker tidigare misstag och förblir sanna mot vår essens?</strong>`,
-			inspirationsTitle: 'Inspiration',
-			inspirations: [
-				'Skönheten i sammankopplade system i naturen, samhället och verkligheten som helhet.',
-				'Potentialen för teknik att stärka och lyfta mänskligheten.',
-				'Strävan efter filosofi, konst, vetenskap och andlighet.',
-				'De oändliga uttrycken för liv och medvetande i naturen.',
-				'Möjligheten till harmoni mellan alla levande varelser.'
-			],
-			interestsTitle: 'Andra Passioner',
-			interests_music: `Jag älskar musik och har spelat piano, trummor, bas och gitarr i flera band (Raskolnikov, Devil Killers, Fistful of Heart).`,
-			interests_gaming: `På plattformar som Steam är jag känd som <strong>Pwnytale</strong>. Jag har spelat mycket GeoGuessr och andra community-spel.`,
-			interests_nature: `Min koppling till naturen och djuren är djup, vilket ledde till att jag engagerade mig i djurrättsrörelser som Anonymous for the Voiceless.`,
-			cta: `Tack för att du har läst. Jag skulle uppskatta att få kontakt.`,
-			cta_button: `Hör av dig`
-		}
-	}
+  en: {
+   about: {
+    meta: {
+				 title: 'About | Björn Kenneth Holmström',
+				 description: 'The story behind the work: from engineering physics to deep existential inquiry, and the drive to build systems for a flourishing world.'
+			 },
+			 hero: {
+				 title: 'About Me',
+				 subtitle: 'The Story Behind The Systems'
+			 },
+    intro: {
+      title: "Hello, I'm Björn.",
+      subtitle: "Architect. Systems Thinker. Optimizer. Creator.",
+      text: "I am a systems thinker and the architect of the Global Governance Frameworks. My mission is to optimize civilization for the liberation of all beings—designing the operating systems that make human flourishing structurally possible."
+    },
+    story: {
+      title: "The Journey",
+      p1: "My path began with a love for mathematics and physics, in the precision of engineering physics and mathematical optimization. But my curiosity was always broader—ranging from coding software to playing music, reading and crafting, always open to wider areas.",
+      p2: "In my mid-30s I moved to the Basque Country. I began pursuing enlightenment, living with radical simplicity and meditating by the river. I wanted to see if it was possible to find total freedom through inner work alone—to become a 'forest monk' in the modern world.",
+      p3: "I pushed that experiment to its limit, and eventually, I hit a breaking point. I didn't solve the equation alone. I was pulled back from the edge by the grace of others—my ex-partner and my parents, who provided the safety net I had tried to transcend. That experience humbled me. It taught me that sovereignty is not about solitude; it is about *supported autonomy*.",
+      p4: "I returned with a new understanding: we cannot be free without a foundation. I build the Global Governance Frameworks—from the Sovereign Floor to Cognitive Sovereignty—to ensure that every human being has the structural support necessary to fall, heal, and eventually flourish."
+    },
+    approach: {
+      title: "How I Work",
+      items: [
+        {
+          title: "Optimization for Flourishing",
+          desc: "I apply the logic of mathematical optimization to the problem of human suffering. How do we design systems where the 'optimal solution' is the well-being of all life?"
+        },
+        {
+          title: "AI as a Partner",
+          desc: "I use advanced AI as a cognitive exoskeleton. This collaboration allows me to synthesize holistic perspectives larger than any single human mind, bridging the gap between intuition and architecture."
+        },
+        {
+          title: "Structural Compassion",
+          desc: "My own journey taught me that well-wishing is not enough. Compassion must be encoded into our laws and economies. I build frameworks that make kindness structurally inevitable."
+        }
+      ]
+    },
+    now: {
+      title: "Current Focus",
+      items: [
+        "Architecting the Global Governance Frameworks (GGF).",
+        "Launching 'The Integration Crisis' and the Integration Series.",
+        "Developing the 'Cognitive Scaffolding' methodology for AI collaboration.",
+        "Exploring P2P technologies for digital sovereignty."
+      ]
+    }
+   }
+  },
+  sv: {
+   about: {
+			 meta: {
+				 title: 'Om mig | Björn Kenneth Holmström',
+				 description: 'Berättelsen bakom arbetet: från teknisk fysik till djup existentiell utforskning och drivkraften att bygga system för en blomstrande värld.'
+			 },
+			 hero: {
+				 title: 'Om Mig',
+				 subtitle: 'Berättelsen bakom systemen'
+			 },
+    intro: {
+      title: "Hej, jag är Björn.",
+      subtitle: "Arkitekt. Systemtänkare. Skapare.",
+      text: "Jag är systemtänkare och arkitekt bakom Global Governance Frameworks. Mitt uppdrag är att optimera civilisationen för frigörelse av alla varelser – att designa de operativsystem som gör mänskligt blomstrande strukturellt möjligt."
+    },
+    story: {
+      title: "Resan",
+      p1: "Min bana började med en kärlek för de flesta skolämnena, men fortsatte i precisionens värld med teknisk fysik och matematisk optimering. Men min nyfikenhet var alltid bredare – från att programmera mjukvara till att spela musik, läsa och hantverka, alltid öppen för nya områden.",
+      p2: "I 35-årsåldern flyttade till Baskien. Jag sökte upplysning, levde med radikal enkelhet och mediterade vid floden. Jag ville se om det var möjligt att finna total frihet enbart genom inre arbete – att leva som en 'skogsmunk' i den moderna världen.",
+      p3: "Jag drog det experimentet till sin spets och nådde till slut en brytpunkt. Jag löste inte ekvationen ensam. Jag drogs tillbaka från kanten av andras omsorg – min före detta partner och mina föräldrar, som utgjorde det skyddsnät jag försökt transcendera. Den upplevelsen gjorde mig ödmjuk. Den lärde mig att suveränitet inte handlar om ensamhet, utan om *stöttad autonomi*.",
+      p4: "Jag återvände med en ny insikt: vi kan inte vara fria utan en grund. Jag bygger Global Governance Frameworks – från 'The Sovereign Floor' till Kognitiv Suveränitet – för att säkerställa att varje människa har det strukturella stöd som krävs för att kunna falla, läka och till slut blomstra."
+    },
+    approach: {
+      title: "Hur jag arbetar",
+      items: [
+        {
+          title: "Optimering för Blomstrande",
+          desc: "Jag applicerar den matematiska optimeringens logik på problemet med mänskligt lidande. Hur designar vi system där den 'optimala lösningen' är välmående för allt liv?"
+        },
+        {
+          title: "AI som Partner",
+          desc: "Jag använder avancerad AI som ett kognitivt exoskelett. Detta samarbete låter mig syntetisera helhetsperspektiv som är större än något enskilt mänskligt sinne, och överbryggar glappet mellan intuition och arkitektur."
+        },
+        {
+          title: "Strukturell Omtanke",
+          desc: "Min egen resa lärde mig att välvilja inte räcker. Medkänsla måste kodas in i våra lagar och ekonomier. Jag bygger ramverk som gör vänlighet strukturellt oundviklig."
+        }
+      ]
+    },
+    now: {
+      title: "Just nu",
+      items: [
+        "Arkitektur och utveckling av Global Governance Frameworks (GGF).",
+        "Lansering av 'Integrationskrisen' och bokserien om integration.",
+        "Utveckling av metodiken 'Cognitive Scaffolding' för AI-samarbete.",
+        "Utforskande av P2P-teknologier för digital suveränitet."
+      ]
+    }
+   }
+  }
 };

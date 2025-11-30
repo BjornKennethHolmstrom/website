@@ -46,9 +46,11 @@
 				url: 'https://github.com/BjornKennethHolmstrom/CosmicSyncCore'
 			}
 		],
-		duo: [
+		quartet: [
 			{ type: 'img', key: 'spiralize', logo: 'logo-spiralize.svg', url: 'https://spiralize.org' },
-			{ type: 'img', key: 'communize', logo: 'logo-communize.svg', url: 'https://communize.org' }
+			{ type: 'img', key: 'nondualize', logo: 'logo-nondualize.svg', url: 'https://nondualize.org' },
+			{ type: 'img', key: 'communize', logo: 'logo-communize.svg', url: 'https://communize.org' },
+			{	type: 'img',	key: 'universalize',	logo: 'logo-universalize.svg',	url: 'https://universalize.org' }
 		],
 		library: [
 			{
@@ -68,6 +70,32 @@
 				key: 'blog',
 				emoji: '✍️',
 				url: '/blog'
+			}
+		],
+		personal: [
+			{
+				type: 'img',
+				key: 'spiritualized',
+				logo: 'logo-spiritualized.svg',
+				url: 'https://spiritualized.org'
+			},
+			{
+				type: 'emoji',
+				key: 'apps',
+				emoji: '🛠️',
+				url: '/apps'
+			},
+			{
+				type: 'emoji',
+				key: 'creations',
+				emoji: '🎨',
+				url: '/creations'
+			},
+			{
+				type: 'emoji',
+				key: 'concepts',
+				emoji: '💡',
+				url: '/concepts'
 			}
 		]
 	};
@@ -101,34 +129,6 @@
 			</p>
 		</div>
 	</section>
-
- <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-amber-100 dark:border-slate-700">
-        
-        <div class="flex-1 text-center md:text-left">
-          <span class="inline-block px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200 text-xs font-bold tracking-wider uppercase rounded-full mb-4">
-            {$t.bookLaunch.label}
-          </span>
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
-            {$t.bookLaunch.title}
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
-            {$t.bookLaunch.desc}
-          </p>
-          <a href="/books/integration-crisis" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm">
-            {$t.bookLaunch.cta}
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </a>
-        </div>
-
-        <div class="w-48 md:w-56 flex-shrink-0 transform md:rotate-3 transition-transform hover:rotate-0 duration-500">
-            <img src="/resources/book-cover-integration-crisis.svg" alt="The Integration Crisis" class="w-full h-auto rounded shadow-2xl" />
-        </div>
-
-      </div>
-    </div>
-  </section>
 	
 	<section class="space-y-12 py-16 md:py-24">
 		<div>
@@ -239,8 +239,8 @@
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
 				{$t.clusterQuartet}
 			</h2>
-			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-				{#each projects.duo as project}
+			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				{#each projects.quartet as project}
 					{#if project.comingSoon}
 						<div
 							class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 opacity-70"
@@ -298,7 +298,7 @@
 				{/each}
 			</div>
 		</div>
-<!--
+
 		<div>
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
 				{$t.clusterLibrary}
@@ -365,6 +365,6 @@
 					</a>
 				{/each}
 			</div>
-		</div> -->
+		</div>
 	</section>
 </div>
