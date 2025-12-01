@@ -34,9 +34,9 @@
 				url: 'https://github.com/BjornKennethHolmstrom/SharedSpheres'
 			},
 			{
-				type: 'emoji',
+				type: 'img',
 				key: 'janus',
-				emoji: '🧠', // Brain/Wisdom for Janus
+				logo: 'logo-project-janus.svg',            // '🧠', Brain/Wisdom for Janus
 				url: 'https://github.com/BjornKennethHolmstrom/ProjectJanus'
 			},
 			{

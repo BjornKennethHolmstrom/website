@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 400 400"
+   width="400"
+   height="400"
+   role="img"
+   aria-label="Project Janus Logo"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview26"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.76721086"
+     inkscape:cx="-177.26548"
+     inkscape:cy="211.15447"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26" />
+  <defs
+     id="defs9">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#1e293b;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="50%"
+         style="stop-color:#0f172a;stop-opacity:1"
+         id="stop2" />
+      <stop
+         offset="100%"
+         style="stop-color:#020617;stop-opacity:1"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       id="amberGlow"
+       x1="-247"
+       y1="-247"
+       x2="247"
+       y2="247"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(121.65899,141.93548)">
+      <stop
+         offset="0%"
+         style="stop-color:#fbbf24;stop-opacity:0.8"
+         id="stop4" />
+      <stop
+         offset="100%"
+         style="stop-color:#d97706;stop-opacity:0.6"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       id="integrationGradient"
+       x1="-92"
+       y1="-92"
+       x2="-92"
+       y2="92"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3526185,0,0,1.3526185,191.24424,194.93087)">
+      <stop
+         offset="0%"
+         style="stop-color:#f97316;stop-opacity:0.8"
+         id="stop6" />
+      <stop
+         offset="50%"
+         style="stop-color:#fbbf24;stop-opacity:0.9"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#d97706;stop-opacity:0.8"
+         id="stop8" />
+    </linearGradient>
+    <filter
+       id="glow"
+       x="-0.45"
+       y="-0.45"
+       width="1.9"
+       height="1.9">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="coloredBlur"
+         id="feGaussianBlur8" />
+      <feMerge
+         id="feMerge9">
+        <feMergeNode
+           in="coloredBlur"
+           id="feMergeNode8" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode9" />
+      </feMerge>
+    </filter>
+  </defs>
+  <circle
+     cx="200"
+     cy="200"
+     r="200"
+     fill="url(#bgGradient)"
+     id="circle9" />
+  <g
+     id="g26"
+     transform="matrix(1.1227603,0,0,1.1227603,-14.721439,-18.860647)">
+    <circle
+       cx="121.65899"
+       cy="141.93549"
+       r="130"
+       fill="url(#amberGlow)"
+       opacity="0.2"
+       filter="url(#glow)"
+       id="circle10"
+       style="fill:url(#amberGlow)"
+       transform="matrix(1.3526185,0,0,1.3526185,26.68604,2.9463105)" />
+    <circle
+       cx="191.24425"
+       cy="194.93088"
+       r="121.73566"
+       fill="none"
+       stroke="url(#integrationGradient)"
+       stroke-width="5.41047"
+       id="circle11"
+       style="stroke:url(#integrationGradient)" />
+    <circle
+       cx="191.24425"
+       cy="113.77377"
+       r="16.231422"
+       fill="#dc2626"
+       id="circle12"
+       style="stroke-width:1.35262" />
+    <circle
+       cx="261.58038"
+       cy="154.35234"
+       r="16.231422"
+       fill="#3b82f6"
+       id="circle13"
+       style="stroke-width:1.35262" />
+    <circle
+       cx="261.58038"
+       cy="235.50943"
+       r="16.231422"
+       fill="#ec4899"
+       id="circle14"
+       style="stroke-width:1.35262" />
+    <circle
+       cx="191.24425"
+       cy="276.08798"
+       r="16.231422"
+       fill="#8b5cf6"
+       id="circle15"
+       style="stroke-width:1.35262" />
+    <circle
+       cx="120.90808"
+       cy="235.50943"
+       r="16.231422"
+       fill="#10b981"
+       id="circle16"
+       style="stroke-width:1.35262" />
+    <circle
+       cx="120.90808"
+       cy="154.35234"
+       r="16.231422"
+       fill="#d97706"
+       id="circle17"
+       style="stroke-width:1.35262" />
+    <g
+       stroke="#fbbf24"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="g25"
+       transform="matrix(1.3526185,0,0,1.3526185,191.24424,194.93087)">
+      <line
+         x1="0"
+         y1="-60"
+         x2="52"
+         y2="-30"
+         id="line17" />
+      <line
+         x1="52"
+         y1="-30"
+         x2="52"
+         y2="30"
+         id="line18" />
+      <line
+         x1="52"
+         y1="30"
+         x2="0"
+         y2="60"
+         id="line19" />
+      <line
+         x1="0"
+         y1="60"
+         x2="-52"
+         y2="30"
+         id="line20" />
+      <line
+         x1="-52"
+         y1="30"
+         x2="-52"
+         y2="-30"
+         id="line21" />
+      <line
+         x1="-52"
+         y1="-30"
+         x2="0"
+         y2="-60"
+         id="line22" />
+      <line
+         x1="0"
+         y1="-60"
+         x2="0"
+         y2="60"
+         opacity="0.4"
+         id="line23" />
+      <line
+         x1="-52"
+         y1="-30"
+         x2="52"
+         y2="30"
+         opacity="0.4"
+         id="line24" />
+      <line
+         x1="-52"
+         y1="30"
+         x2="52"
+         y2="-30"
+         opacity="0.4"
+         id="line25" />
+    </g>
+    <circle
+       cx="121.65899"
+       cy="141.93549"
+       r="8"
+       fill="#fbbf24"
+       filter="url(#glow)"
+       id="circle25"
+       transform="matrix(1.3526185,0,0,1.3526185,26.68604,2.9463105)" />
+  </g>
+</svg>
