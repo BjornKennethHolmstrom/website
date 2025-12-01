@@ -142,7 +142,16 @@
      icon: '🌱',
      category: 'Consciousness',
      hasPDF: false
-   }
+   },
+
+   // --- Priority 4: Philosophy ---
+   { 
+			  key: 'fieldOfIntelligence', 
+			  url: '/essays/field-of-intelligence',
+			  icon: '🕸️', // Web/Network
+			  category: 'Philosophy', // Or Systems Thinking
+     hasPDF: false
+		 }
  ];
 
 	// Reactive filter

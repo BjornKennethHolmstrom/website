@@ -136,7 +136,14 @@ export const essaysTranslations = {
        desc: "We haven't found the 'spark' of life because life isn't a binary switch; it's a continuous spectrum. The biological case for the Moral Operating System and Rights of Nature.",
        published: "December 2024",
        readTime: "10 min read"
-     }
+     },
+     fieldOfIntelligence: {
+       title: "The Field of Intelligence",
+       subtitle: "Why Systems Thinking Is Not a Metaphor",
+       desc: "Intelligence isn't contained in a brain; it's a property of relationships. From slime molds to AI, exploring why intelligence is a non-local field we participate in, not a commodity we own.",
+       published: "December 2024",
+       readTime: "12 min read"
+     },
     }
 		}
 	},
@@ -276,7 +283,14 @@ export const essaysTranslations = {
        desc: "Vi har inte hittat livets 'gnista' eftersom livet inte är en binär brytare; det är ett kontinuerligt spektrum. Det biologiska argumentet för det moraliska operativsystemet och naturens rättigheter.",
        published: "december 2024",
        readTime: "10 min läsning"
-     }
+     },
+     fieldOfIntelligence: {
+       title: "Intelligensens fält",
+       subtitle: "Varför systemtänkande inte är en metafor",
+       desc: "Intelligens finns inte i en hjärna; det är en egenskap hos relationer. Från slemsvampar till AI, utforskar varför intelligens är ett icke-lokalt fält vi deltar i, inte en vara vi äger.",
+       published: "December 2024",
+       readTime: "12 min läsning"
+     },
    }
 		}
 	}
