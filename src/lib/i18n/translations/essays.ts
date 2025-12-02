@@ -18,7 +18,7 @@ export const essaysTranslations = {
        title: "Treaty for Our Only Home",
        subtitle: "A Blueprint for Planetary Resilience",
        description: "We are trying to manage 21st-century risks with 20th-century institutions. This essay outlines the 'Treaty for Our Only Home'—a comprehensive architecture for transitioning from nation-state competition to planetary stewardship.",
-       published: "June 2025",
+       published: "Jun 2025",
        readTime: "18 min read"
      },
      wealthSystem: {
@@ -35,6 +35,13 @@ export const essaysTranslations = {
          published: "Nov 2025",
          readTime: "10 min read",
          author: "Björn Kenneth Holmström"
+     },
+     checkoutLine: {
+       title: "Beyond the Checkout Line",
+       subtitle: "Why You Can't Buy a Revolution",
+       desc: "Gen Z is right to be cynical about 'Ethical Consumption.' Why voting with your wallet fails, and the architectural alternative: moving from 'Buying' to 'Building' the Commons.",
+       published: "Dec 2025",
+    			readTime: "8 min"
      },
      surplusTrap: {
        title: "The Surplus Trap",
@@ -54,21 +61,21 @@ export const essaysTranslations = {
        title: "The AI Mirror",
        subtitle: "What Our Distrust of AI Reveals About the Nature of Self",
        desc: "We fear the AI 'black box' because it reflects our own internal mystery. A philosophical inquiry into agency, pattern matching, and the illusion of the sovereign self",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "12 min read"
      },
      aiConsciousness: {
        title: "The Epistemology of Illusion",
        subtitle: "Why AI Fails at 'Truth' and What It Teaches Us About Ourselves",
        desc: "A Nature study reveals AI cannot distinguish 'knowing' from 'believing.' A systemic analysis of why this happens, and why human consciousness is still the ultimate arbiter of truth",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "10 min read"
      },
      depressionThistle: {
        title: "The Ecology of Despair",
        subtitle: "Depression as a Systemic Signal",
        desc: "Why we should view mental health through the lens of regenerative agriculture. Seeing depression not as a malfunction, but as a 'thistle' trying to break up compacted soil",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "6 min read"
      },
 			  mycelialEconomy: {
@@ -76,7 +83,7 @@ export const essaysTranslations = {
 				  subtitle: 'From conditional transactions to unconditional flow',
 				  tagline: 'A vision of economics as living system.',
 				  desc: 'What if our economy worked like a forest instead of a machine? This essay explores the fundamental difference between conditional exchange (the vault) and unconditional circulation (the mycelium), grounded in lived experience of two years without money in the Basque Country. A philosophical foundation for regenerative economics and the practical protocols that bridge us from here to there.',
-				  published: 'November 2024',
+				  published: 'Nov 2024',
 				  readTime: '25 min read'
 			  },
 			  alchemistsDilemma: {
@@ -84,7 +91,7 @@ export const essaysTranslations = {
 				  subtitle: 'Holding power lightly in the transition',
 				  tagline: 'A comprehensive protocol for ethical wealth stewardship in late-stage capitalism.',
 				  desc: 'Can you touch money without being poisoned by it? This manifesto argues yes—but only through rigorous accountability, community oversight, and the willingness to compost your accumulation. A complete framework with enforcement mechanisms, implementation guides, and quarterly integrity checks.',
-				  published: 'November 2024',
+				  published: 'Nov 2024',
 				  readTime: '60 min read',
       pdfPages: "53"
 			  },
@@ -92,63 +99,63 @@ export const essaysTranslations = {
        title: "The Governance of Ought",
        subtitle: "Why We Cannot Leave AI Consciousness to Drift",
        desc: "A response to the cynical view that we will redefine consciousness to avoid moral responsibility. Introducing the Oracle Protocol: governance architecture for digital sentience",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "10 min read"
      },
      fjärilspartiet: {
        title: "The Metamorphosis of Politics",
        subtitle: "Designing a Political Vehicle for the Polycrisis",
        desc: "Fjärilspartiet is not just a party; it is a prototype for 'Yellow' governance. Exploring the use of AI, Spiral Dynamics, and AUBI to build a political system for the 21st century.",
-       published: "February 2025",
+       published: "Feb 2025",
        readTime: "8 min read"
      },
      lostAbility: {
        title: "The Architecture of Stillness",
        subtitle: "Why We Lost the Ability to Just Be",
        desc: "We haven't just lost our attention; we've lost the 'Cognitive Scaffolding' that made stillness valuable. A structural analysis of why modern minds treat silence like a software bug.",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "18 min read"
      },
      contemplativeGuide: {
        title: "The Change Paradox",
        subtitle: "Metabolic Governance for an Accelerating World",
        desc: "Why systems collapse when input velocity exceeds processing capacity. Introducing 'Metabolic Governance'—the architectural necessity of slowing down to survive the turn.",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "7 min read",
      },
      simulationTheory: {
        title: "The Non-Algorithmic Ground",
        subtitle: "Why Reality Cannot Be Simulated",
        desc: "Physics meets Philosophy: Why Gödel's theorems suggest reality is not a computer, and why we must build civilization for the 'uncomputable' aspects of being",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "8 min read"
      },
      projectJanus: {
        title: "The Architecture of Wholeness",
        subtitle: "Project Janus: A Blueprint for Modeling Human Complexity",
        desc: "We cannot align AI with human values if we have no coherent model of the human. Unveiling the open-source architecture for modeling the six domains of human experience",
-       published: "November 2025",
+       published: "Nov 2025",
        readTime: "10 min read"
      },
      materialistParadox: {
        title: "The Infinite Ground",
        subtitle: "A Logical and Mathematical Case for an Unlimited Reality",
        desc: "Merging the philosophical argument against 'Brute Facts' with the mathematical necessity of Infinity in physics. A unified theory of why reality cannot be finite.",
-       published: "October 2025",
+       published: "Oct 2025",
        readTime: "15 min read"
      },
      originLife: {
        title: "The Continuity of Life",
        subtitle: "Why the Search for an Origin is a Category Error",
        desc: "We haven't found the 'spark' of life because life isn't a binary switch; it's a continuous spectrum. The biological case for the Moral Operating System and Rights of Nature.",
-       published: "December 2024",
+       published: "Dec 2024",
        readTime: "10 min read"
      },
      fieldOfIntelligence: {
        title: "The Field of Intelligence",
        subtitle: "Why Systems Thinking Is Not a Metaphor",
        desc: "Intelligence isn't contained in a brain; it's a property of relationships. From slime molds to AI, exploring why intelligence is a non-local field we participate in, not a commodity we own.",
-       published: "December 2024",
+       published: "Dec 2024",
        readTime: "12 min read"
      },
     }
@@ -196,6 +203,13 @@ export const essaysTranslations = {
        desc: "Kapital flödar in i AI inte för att tekniken är redo, utan för att den gamla ekonomin är full. En systemanalys av 'Överskottskapital' och hur man omdirigerar det från spekulativa bubblor till regenerativ jordmån.",
        published: "maj 2025",
        readTime: "12 min läsning"
+     },
+     checkoutLine: {
+       title: "Bortom kassakön",
+       subtitle: "Varför du inte kan köpa en revolution",
+       desc: "Generation Z har rätt i att vara cynisk om 'etisk konsumtion'. Varför att rösta med plånboken misslyckas, och det arkitektoniska alternativet: att gå från att 'köpa' till att 'bygga' allmänningen.",
+       published: "december 2025",
+       readTime: "8 min läsning"
      },
      lmciIndex: {
        title: "Att mäta det osynliga",

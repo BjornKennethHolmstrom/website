@@ -13,7 +13,7 @@
 	}
 
 	// Define categories for the filter
-	const categories = ['All', 'Governance', 'AI & Tech', 'Consciousness'];
+	const categories = ['All', 'Governance', 'Economics', 'AI & Tech', 'Consciousness', 'Philosophy'];
 	let selectedCategory = 'All';
 
 	// Define the essay cards with categories and metadata
@@ -41,14 +41,6 @@
      hasPDF: false
    },
    { 
-			 key: 'surplusTrap', 
-			 url: '/essays/the-surplus-trap',
-			 icon: '🫧', // Bubble
-			 category: 'Governance', // or 'Economics' if you add that category
-			 date: 'Nov 2025',
-			 readTime: '12 min'
-		 },
-   { 
   			key: 'lmciIndex', 
   			url: '/essays/measuring-the-invisible',
   			icon: '📐', // Ruler/Measure
@@ -71,6 +63,22 @@
      category: 'Governance',
      hasPDF: false
    },
+
+   // --- Priority 2: Economy ---
+   { 
+ 		  key: 'checkoutLine', 
+			  url: '/essays/beyond-the-checkout',
+			  icon: '🛒', // Shopping Cart
+			  category: 'Economics', 
+     hasPDF: false
+ 		},
+   { 
+			 key: 'surplusTrap', 
+			 url: '/essays/the-surplus-trap',
+			 icon: '🫧', // Bubble
+			 category: 'Economics',
+    hasPDF: false
+		 },
    
    // --- Priority 2: AI & Tech ---
    { 
@@ -173,6 +181,7 @@
 		switch(cat) {
 			case 'Governance': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
 			case 'AI & Tech': return 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200';
+   case 'Economics': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
 			case 'Consciousness': return 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200';
 			default: return 'bg-gray-100 text-gray-800';
 		}
