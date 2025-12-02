@@ -28,15 +28,42 @@ Economic geographer David Harvey describes two escape valves:
 1.  **The Spatial Fix:** Moving capital to new territories (Colonialism, Globalization).
 2.  **The Temporal Fix:** Moving capital into the *future* (Speculation, Credit, Debt).
 
-### AI as the Temporal Fix
+### **AI as the Temporal Fix & The Gap of Death**
 
 We have run out of "Space." Globalization has reached every corner of the planet. Tariffs and protectionism are closing the borders. The Spatial Fix is dead.
 
-So capital is rushing into the **Temporal Fix**.
+So capital is rushing into the **Temporal Fix** — the last escape valve.
 
-The billions pouring into AI data centers and chips are not based on current utility. They are **Fictitious Capital**—claims on future wealth that does not yet exist. Investors are betting that AI will eventually generate enough productivity to justify today's valuations.
+The billions pouring into AI data centers and chips are not based on current utility. They are **Fictitious Capital** — claims on future wealth that does not yet exist. Investors are betting that AI will eventually generate enough productivity to justify today's soaring valuations.
 
-But this is a trap. We are printing claims on the future faster than the future can generate value. This is the definition of a bubble. And when it bursts, it won't just hurt the "Magnificent Seven" tech giants; it will destroy pension funds and livelihoods across the globe.
+This is the anatomy of a bubble. But the true danger lies in the widening chasm between financial fantasy and economic reality — a **"Gap of Death"** that the AI temporal fix cannot close.
+
+#### **The Productivity J-Curve: Promised Boom, Actual Slump**
+
+Tech champions argue that AI will trigger a historic "productivity boom" that pays for our debts. But the data reveals a more sobering trajectory.
+
+As reported in *Barron's*, despite the hype, only **10% of U.S. businesses** had actually adopted AI by late 2025. This lag creates what Stanford economist Erik Brynjolfsson calls the **"Productivity J-Curve."**
+* **The Dip:** When revolutionary technology (like electricity or AI) is introduced, productivity often *falls* or stagnates for years. Society must painfully reorganize its institutions, skills, and workflows around the new tool.
+* **The Lag:** The benefits arrive only after this restructuring is complete — often a decade or more later.
+
+#### **The Solvency Mismatch**
+
+Here is the crisis: The financial markets are pricing AI as if the returns are **immediate**, but the real economy is entering the **"J-Curve" trough**.
+
+* **The Need:** To maintain even modest 2% GDP growth — necessary to service our massive debts and aging populations — the U.S. needs at least **1.4%** annual productivity growth.
+* **The Reality:** The Congressional Budget Office projects productivity will slump to **1.3%** through the end of the decade.
+
+We are missing the targets required just to tread water.
+
+#### **Why the Temporal Fix is a Trap**
+
+Capital is flooding into the AI bubble to escape the grim reality of over-accumulation. But in doing so, it is merely purchasing **claims on a future that — mathematically — cannot arrive fast enough**.
+
+We are printing fictitious capital faster than the future can generate real value. This creates a fatal divergence:
+* **Liabilities soar vertically** (from climate adaptation, aging societies, and debt service).
+* **Our capacity to pay sags** in the J-curve dip.
+
+The temporal fix does not solve the crisis of surplus capital — it **accelerates it**. When the bubble bursts, it won't just deflate tech valuations; it will erase pension funds, destroy livelihoods, and deepen the very solvency crisis it was meant to escape.
 
 ### The Failure of "Green" Redistribution
 
@@ -47,6 +74,8 @@ While necessary, this is insufficient. If you tax the surplus and give it to con
 We don't just need to redistribute the *money*; we need to redesign the *destination*.
 
 ### The Yellow Solution: Regenerative Capital
+
+If redistribution alone won’t work, what will? We must redesign not just where money goes, but what it does.
 
 We don't need to abolish capital. We need to **re-anchor** it.
 
