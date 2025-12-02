@@ -43,6 +43,13 @@ export const essaysTranslations = {
        published: "May 2025",
        readTime: "12 min read"
      },
+     lmciIndex: {
+       title: "Measuring the Invisible",
+       subtitle: "Why We Need a Metric for Aliveness to Replace the Tyranny of GDP",
+       desc: "GDP counts a forest only when it's cut down. Introducing the Love, Meaning, and Connection Index (LMCI)—a rigorous framework for tracking the 'dark matter' of human flourishing.",
+       published: "Feb 2025",
+    			readTime: "15 min"
+     },
      breakingMirror: {
        title: "The AI Mirror",
        subtitle: "What Our Distrust of AI Reveals About the Nature of Self",
@@ -189,6 +196,13 @@ export const essaysTranslations = {
        desc: "Kapital flödar in i AI inte för att tekniken är redo, utan för att den gamla ekonomin är full. En systemanalys av 'Överskottskapital' och hur man omdirigerar det från spekulativa bubblor till regenerativ jordmån.",
        published: "maj 2025",
        readTime: "12 min läsning"
+     },
+     lmciIndex: {
+       title: "Att mäta det osynliga",
+       subtitle: "Varför vi behöver ett mått på livskraft för att ersätta BNP:s tyranni",
+       desc: "BNP räknar en skog bara när den huggs ner. Vi presenterar Love, Meaning, and Connection Index (LMCI) – ett rigoröst ramverk för att spåra den 'mörka materian' i mänskligt välstånd.",
+       published: "december 2025",
+       readTime: "15 min"
      },
      breakingMirror: {
        title: "AI-spegeln",

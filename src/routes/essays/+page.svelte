@@ -49,6 +49,15 @@
 			 readTime: '12 min'
 		 },
    { 
+  			key: 'lmciIndex', 
+  			url: '/essays/measuring-the-invisible',
+  			icon: '📐', // Ruler/Measure
+  			category: 'Governance', // Or Economics
+     hasPDF: false,
+			  date: 'Feb 2025',
+ 	 		readTime: '10 min'
+	 	},
+   { 
      key: 'aiGovernance', 
      url: '/essays/ai-governance',
      icon: '🏛️',
