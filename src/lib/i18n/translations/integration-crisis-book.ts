@@ -13,7 +13,7 @@ export const integrationCrisisBookTranslations = {
         downloadPdfEn: 'Download PDF (EN)',
         downloadPdfSv: 'Download PDF (SV)',
         integrationScorecard: 'Integration Scorecard',
-        buyPaperback: 'Buy Paperback (Coming 2026)',
+        buyPaperback: 'Buy Paperback (Coming Soon)',
         previous: 'Previous',
         nextChapter: 'Next Chapter'
       },
@@ -87,7 +87,7 @@ export const integrationCrisisBookTranslations = {
         downloadPdfEn: 'Ladda ner PDF (EN)',
         downloadPdfSv: 'Ladda ner PDF (SV)',
         integrationScorecard: 'Integrationsresultatkortet',
-        buyPaperback: 'Köp pappersbok (kommer 2026)',
+        buyPaperback: 'Köp pappersbok (kommer snart)',
         previous: 'Föregående',
         nextChapter: 'Nästa kapitel'
       },
