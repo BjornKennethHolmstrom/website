@@ -13,7 +13,7 @@
 	}
 
 	// Define categories for the filter
-	const categories = ['All', 'Governance', 'Economics', 'AI & Tech', 'Consciousness', 'Philosophy'];
+	const categories = ['All', 'Governance', 'Economics', 'AI & Tech', 'Consciousness', 'Philosophy', 'Ecological'];
 	let selectedCategory = 'All';
 
 	// Define the essay cards with categories and metadata
@@ -168,7 +168,16 @@
 			  icon: '🕸️', // Web/Network
 			  category: 'Philosophy', // Or Systems Thinking
      hasPDF: false
-		 }
+		 },
+
+   // --- Priority 5: Ecological ---
+   { 
+			 key: 'silentSeas', 
+			 url: '/essays/the-violence-of-the-propeller',
+			 icon: '🐋', // Whale
+			 category: 'Ecological',
+    hadPDF: false
+		 },
  ];
 
 	// Reactive filter
@@ -181,7 +190,8 @@
 		switch(cat) {
 			case 'Governance': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
 			case 'AI & Tech': return 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200';
-   case 'Economics': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+   case 'Economics': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200';
+   case 'Ecological': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
 			case 'Consciousness': return 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200';
 			default: return 'bg-gray-100 text-gray-800';
 		}

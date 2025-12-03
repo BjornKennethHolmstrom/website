@@ -158,6 +158,13 @@ export const essaysTranslations = {
        published: "Dec 2024",
        readTime: "12 min read"
      },
+     silentSeas: {
+       title: "The Violence of the Propeller",
+       subtitle: "Why the Next Age of Logistics Must Be Silent",
+       desc: "The screw propeller moves ships by tearing the water apart (cavitation). A solarpunk vision for 'Acoustic Governance,' biomimetic propulsion, and the return of silent trade.",
+       published: "Dec 2025",
+       readTime: "8 min read"
+     },
     }
 		}
 	},
@@ -316,8 +323,15 @@ export const essaysTranslations = {
        title: "Intelligensens fält",
        subtitle: "Varför systemtänkande inte är en metafor",
        desc: "Intelligens finns inte i en hjärna; det är en egenskap hos relationer. Från slemsvampar till AI, utforskar varför intelligens är ett icke-lokalt fält vi deltar i, inte en vara vi äger.",
-       published: "December 2024",
+       published: "december 2024",
        readTime: "12 min läsning"
+     },
+     silentSeas: {
+       title: "Propellerns våld",
+       subtitle: "Varför nästa logistikålder måste vara tyst",
+       desc: "Skruvpropellern flyttar fartyg genom att riva isär vattnet (kavitation). En solarpunk-vision för 'akustisk styrning', biomimetisk framdrivning och återkomsten av tyst handel.",
+       published: "december 2025",
+       readTime: "8 min läsning"
      },
    }
 		}
