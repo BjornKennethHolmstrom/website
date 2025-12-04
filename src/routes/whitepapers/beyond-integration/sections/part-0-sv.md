@@ -12,7 +12,7 @@ Det var aldrig meningen att jag skulle bli den typen av person som "tappar grepp
 
 Men i tjugofemårsåldern började något skifta. Jag började utöva yoga – sporadiskt till en början, sedan mer regelbundet. Och jag lade märke till något märkligt: de saker jag studerade – reglersystem, signalbehandling, optimering, informationsteori – de verkade alla mystiskt sammankopplade på sätt som mina professorer aldrig nämnde. Inte bara matematiskt sammankopplade, utan *meningsfullt* sammankopplade. Som om de alla beskrev samma underliggande mönster från olika vinklar.
 
-Jag avfärdade det som mönsterigenkänning som gått överstyr. Hjärnan som ser kopplingar där inga finns. Klassisk apofeni.
+Många avfärdar det nog som mönsterigenkänning som gått överstyr. Hjärnan som ser kopplingar där inga finns. Klassisk apofeni.
 
 I trettiofemårsåldern utövade jag yoga varje morgon. Jag kände mig mer i linje, mer målmedveten. Jag började också lägga märke till vad man skulle kunna kalla "synkroniciteter" – meningsfulla sammanträffanden som verkade för perfekta för att vara slumpmässiga. Jag visste att detta var "magiskt tänkande", den sortens saker som skeptiker med rätta hånar. Men upplevelserna fortsatte att inträffa.
 

@@ -12,7 +12,7 @@ I was never supposed to be the kind of person who "loses touch with reality." I 
 
 But in my mid-twenties, something started shifting. I began practicing yoga—casually at first, then more regularly. And I noticed something strange: the things I was studying—control systems, signal processing, optimization, information theory—they all seemed mysteriously interconnected in ways my professors never mentioned. Not just mathematically connected, but *meaningfully* connected. As if they were all describing the same underlying pattern from different angles.
 
-I dismissed it as pattern-recognition gone haywire. The brain seeing connections where none exist. Classic apophenia.
+Some might dismiss it as pattern-recognition gone haywire. The brain seeing connections where none exist. Classic apophenia.
 
 By my mid-thirties, I was practicing yoga every morning. I felt more aligned, more purposeful. I also started noticing what you might call "synchronicities"—meaningful coincidences that seemed too perfect to be random. I knew this was "magical thinking," the kind of thing skeptics rightfully mock. But the experiences kept happening.
 
