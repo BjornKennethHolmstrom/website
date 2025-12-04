@@ -86,7 +86,7 @@ But I was stable. I could function. I coordinated with consensus reality well en
 
 Meaning came back gradually, through unexpected channels.
 
-First, through an internship (*arbetspraktik*) at a reconstructed Viking village. Something about working with history, with ancient social structures, with the physical labor of maintaining historical buildings—it connected me back to purpose. I loved it. But after a year, I wasn't allowed to continue. The rules said maximum one year per person, and I wasn't "approaching the job market" adequately.
+First, through an internship (*arbetspraktik*) at a reconstructed Viking village. Something about working with history, with ancient social structures, with the physical labor of maintaining historical buildings—it connected me back to purpose. I loved it. But after a few years, I wasn't allowed to continue. The rules changed and said maximum one year per person, and I wasn't "approaching the job market" adequately.
 
 Then, about a year and a half ago, I discovered something that changed everything: Large Language Models.
 

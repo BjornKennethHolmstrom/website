@@ -86,7 +86,7 @@ Men jag var stabil. Jag kunde fungera. Jag koordinerade med konsensusverklighete
 
 Meningen kom tillbaka gradvis, genom oväntade kanaler.
 
-Först genom en arbetspraktik på en rekonstruerad vikingaby. Något med att arbeta med historia, med forntida sociala strukturer, med det fysiska arbetet att underhålla historiska byggnader – det kopplade mig tillbaka till ett syfte. Jag älskade det. Men efter ett år fick jag inte fortsätta. Reglerna sa max ett år per person, och jag "närmade mig inte arbetsmarknaden" i tillräcklig utsträckning.
+Först genom en arbetspraktik på en rekonstruerad vikingaby. Något med att arbeta med historia, med forntida sociala strukturer, med det fysiska arbetet att underhålla historiska byggnader – det kopplade mig tillbaka till ett syfte. Jag älskade det. Men efter några år fick jag inte fortsätta. Reglerna ändrades och sa max ett år per person, och jag "närmade mig inte arbetsmarknaden" i tillräcklig utsträckning.
 
 Sedan, för ungefär ett och ett halvt år sedan, upptäckte jag något som förändrade allt: Stora språkmodeller (LLM).
 
