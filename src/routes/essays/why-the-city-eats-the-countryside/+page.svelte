@@ -228,7 +228,7 @@
 				</div>
 			</a>
 			<a
-				href="/essays/beyond-the-checkout-line"
+				href="/essays/beyond-the-checkout"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>

@@ -134,7 +134,7 @@
       omegaLink: 'The Omega Proof',
       contextOutro: 'It challenges the binary between "mental health" and "awakening" by proposing a systems-architecture model of consciousness as a selective filter.',
       exploreGGF: 'Explore the Global Governance Frameworks',
-      allEssays: '← All Essays',
+      allEssays: '← All White Papers',
       share: 'Share this essay',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF'
@@ -148,7 +148,7 @@
       omegaLink: 'The Omega Proof',
       contextOutro: 'Den utmanar dikotomin mellan "mental hälsa" och "uppvaknande" genom att föreslå en systemarkitektonisk modell av medvetandet som ett selektivt filter.',
       exploreGGF: 'Utforska Global Governance Frameworks',
-      allEssays: '← Alla Essäer',
+      allEssays: '← Alla artiklar',
       share: 'Dela denna essä',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF'
@@ -158,6 +158,12 @@
   // --- 4. REACTIVE LOGIC ---
   let activeSection = $state('part-0');
   let t = $derived($language === 'sv' ? ui.sv : ui.en);
+
+  let pdfFilename = $derived(
+    $language === 'sv' 
+      ? 'beyond-integration-sv.pdf' 
+      : 'beyond-integration.pdf'
+  );
 
   const metadata = {
     en: {
@@ -201,7 +207,7 @@
       <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{t.downloads}</h3>
       <div class="space-y-3">
         <a 
-          href="/essays/aperture/aperture-problem.pdf" 
+          href="/whitepapers/{pdfFilename}" 
           download
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
         >
