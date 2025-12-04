@@ -27,6 +27,26 @@ const wpBase = 'https://bjornkennethholmstrom.wordpress.com';
 const localBase = '/whitepapers'; // För filer i /static/whitepapers
 
 export const papersData: Whitepaper[] = [
+ {
+   id: 'beyond-integration',
+   key: 'beyondIntegration',
+   category: 'consciousness',
+   year: 2024,
+   coverImage: '/whitepapers/images/beyond-integration-cover.png',
+   releaseDate: '2025-12-04',
+   pages: '135', // estimate based on word count
+   version: '1.0',
+   readTime: {
+     en: '4-6 hours',
+     sv: '4-6 timmar'
+   },
+   readOnlinePath: '/whitepapers/beyond-integration',
+   pdfPath: {
+     en: `${localBase}/beyond-integration.pdf`,
+     sv: `${localBase}/beyond-integration-sv.pdf`
+   },
+   readOnlineExternal: false,
+ },
 	{
 		id: 'cognitiveScaffolding',
 		key: 'cognitiveScaffolding',

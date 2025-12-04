@@ -74,11 +74,16 @@ export const whitepapersTranslations = {
 				description:
 					'A comprehensive, open-source protocol for building transformative political power. Integrates nervous system regulation, Spiral Dynamics, and on-the-ground organizing tactics into a 7-step framework for movements that win.'
 			},
+   // --- Original papers from this website ---
    addictionIntegration: {
 				title: 'Addiction as Integration Failure: A Multi-Domain Framework',
 				description:
 					'A rigorous analysis applying Project Janus to the crisis of attention, proving that modern addiction is a systemic integration failure, not an individual pathology.'
-			}
+			},
+   beyondIntegration: {
+     title: 'Beyond Integration: Nonduality, Psychosis, and the Aperture Problem',
+     description: 'A personal and theoretical exploration of consciousness development, modal flexibility, and the systemic barriers preventing safe exploration of psychiatric medication necessity. Integrates Project Janus framework with nondual recognition to propose new approaches to mental health, AI alignment, and human development.'
+   }
 		}
 	},
 	sv: {
@@ -154,11 +159,16 @@ export const whitepapersTranslations = {
 				description:
 					'Ett omfattande, open-source protokoll för att bygga transformativ politisk makt. Integrerar nervsystemsreglering, Spiral Dynamics och konkreta organisationstaktiker i ett 7-stegs ramverk för rörelser som vinner.'
 			},
+   // --- Original papers from this website ---
    addictionIntegration: {
  			title: 'Beroende som integrationsmisslyckande: Ett multidomän-ramverk',
 				description:
 					'En rigorös analys som applicerar Project Janus på uppmärksamhetskrisen och bevisar att modernt beroende är ett systemiskt integrationsfel, inte en individuell patologi.'
 			},
+   beyondIntegration: {
+     title: 'Bortom integration: icke-dualitet, psykos och aperturproblemet',
+     description: 'En personlig och teoretisk utforskning av medvetandeutveckling, modal flexibilitet och de systemiska barriärer som förhindrar säker utforskning av behovet av psykiatrisk medicinering. Integrerar Project Janus-ramverket med icke-dualistisk insikt för att föreslå nya tillvägagångssätt för psykisk hälsa, AI-anpassning och mänsklig utveckling.'
+   }
 		}
 	}
 };

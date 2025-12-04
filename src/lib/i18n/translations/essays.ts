@@ -165,6 +165,13 @@ export const essaysTranslations = {
        published: "Dec 2025",
        readTime: "8 min read"
      },
+     cityEatsCountryside: {
+       title: "Why the City Eats the Countryside",
+       subtitle: "Internal Colonization and the Architecture of Rural Decay",
+       desc: "Sweden's school gap reveals a global mechanism: the city acts as a gravity well, extracting human capital from the periphery. How AUBI and Bioregionalism reverse the flow.",
+       published: "Dec 2025",
+       readTime: "10 min read"
+     },
     }
 		}
 	},
@@ -332,6 +339,13 @@ export const essaysTranslations = {
        desc: "Skruvpropellern flyttar fartyg genom att riva isär vattnet (kavitation). En solarpunk-vision för 'akustisk styrning', biomimetisk framdrivning och återkomsten av tyst handel.",
        published: "december 2025",
        readTime: "8 min läsning"
+     },
+     cityEatsCountryside: {
+       title: "Varför staden äter landsbygden",
+       subtitle: "Intern kolonisering och landsbygdens förfalls arkitektur",
+       desc: "Sveriges skolklyfta avslöjar en global mekanism: staden fungerar som en gravitationsbrunn och utvinner humankapital från periferin. Hur AUBI och bioregionalism vänder flödet.",
+       published: "Dec 2025",
+       readTime: "10 min läsning"
      },
    }
 		}

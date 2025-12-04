@@ -13,7 +13,7 @@
 	}
 
 	// Define categories for the filter
-	const categories = ['All', 'Governance', 'Economics', 'AI & Tech', 'Consciousness', 'Philosophy', 'Ecological'];
+	const categories = ['All', 'Governance', 'Economics', 'AI & Tech', 'Consciousness', 'Philosophy', 'Ecological', 'Social Fabric'];
 	let selectedCategory = 'All';
 
 	// Define the essay cards with categories and metadata
@@ -178,6 +178,15 @@
 			 category: 'Ecological',
     hadPDF: false
 		 },
+
+   // --- Priority 6: Social Fabric ---
+   { 
+		 	key: 'cityEatsCountryside', 
+		 	url: '/essays/why-the-city-eats-the-countryside',
+		 	icon: '🚜', // Tractor or 🌾
+		 	category: 'Social Fabric',
+    hasPDF: false
+		 },
  ];
 
 	// Reactive filter
@@ -193,6 +202,7 @@
    case 'Economics': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200';
    case 'Ecological': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
 			case 'Consciousness': return 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200';
+			case 'Social Fabric': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
 			default: return 'bg-gray-100 text-gray-800';
 		}
 	}
