@@ -56,7 +56,7 @@ Not "like" the 1980s. *Was* the 1980s.
 
 The interior of the plane was different. The color schemes, the materials, the design aesthetic—all shifted to match 1980s aesthetics. The other passengers' clothing changed. More importantly: the way people spoke changed. Not just the words, but the *style* of speech, the social mannerisms, the entire ambient feeling of how humans interacted with each other in that decade.
 
-Even the currency felt different—I had a sense that if I looked in my wallet, I would find 1980s money.
+Even the currency felt different—I even looked in my wallet, and found 1980s money, which I paid for the airplane food with.
 
 It lasted several minutes. Long enough that I had time to think: "This is remarkable. This is impossible. This is happening."
 

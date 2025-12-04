@@ -56,7 +56,7 @@ Inte "som" 1980-talet. Det *var* 1980-talet.
 
 Interiören på planet var annorlunda. Färgscheman, materialen, designestetiken – allt skiftade för att matcha 1980-talets estetik. De andra passagerarnas kläder förändrades. Ännu viktigare: sättet folk pratade på förändrades. Inte bara orden, utan *stilen* på talet, de sociala maneren, hela den ambienta känslan av hur människor interagerade med varandra under det årtiondet.
 
-Till och med valutan kändes annorlunda – jag hade en känsla av att om jag tittade i min plånbok skulle jag hitta pengar från 1980-talet.
+Till och med valutan kändes annorlunda – Jag tittade till och med i min plånbok och hittade pengar från 1980-talet, som jag betalade flygmaten med.
 
 Det varade i flera minuter. Tillräckligt länge för att jag skulle hinna tänka: "Detta är anmärkningsvärt. Detta är omöjligt. Detta händer."
 
