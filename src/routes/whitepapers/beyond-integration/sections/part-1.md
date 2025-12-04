@@ -8,11 +8,11 @@
 
 ## 1. The Paradigm Clash
 
-When I tell my story to different people, I get radically different interpretations depending on their worldview. It's as if the same phenomenological data—the 80s airplane, the two years without money, the hospitalizations, the current stability—gets processed through completely incompatible frameworks.
+Were I to tell my story to different people, I would get radically different interpretations depending on their worldview. The same phenomenological data—the 80s airplane, the two years without money, the hospitalizations, the current stability—gets processed through completely incompatible frameworks.
 
 ### What Psychiatry Says
 
-My psychiatrist is a good person, genuinely trying to help. From the psychiatric paradigm, my story is straightforward:
+Most psychiatrists are good persons, genuinely trying to help. From the psychiatric paradigm, my story is straightforward:
 
 **Diagnosis:** Inorganic psychosis
 **Etiology:** Unknown triggering event (stress, isolation, possible substance involvement) causing neurochemical imbalance
@@ -32,7 +32,7 @@ The two years living without money? Evidence of declining self-care capacity, pr
 
 ### What Spirituality Says
 
-When I tell the same story to people in spiritual or contemplative communities, I get a completely different interpretation:
+If I would tell the same story to people in spiritual or contemplative communities, I would get a completely different interpretation:
 
 **Interpretation:** Spontaneous awakening experience
 **Process:** Dissolution of ego boundaries, recognition of constructed nature of consensus reality

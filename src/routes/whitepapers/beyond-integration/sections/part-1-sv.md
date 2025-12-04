@@ -10,7 +10,7 @@ Här är översättningen av del I.
 
 ## 1\. Paradigmkonflikten
 
-Om jag skulle berätta min historia för olika människor skulle jag få radikalt olika tolkningar beroende på deras världsbild. Det är som om samma fenomenologiska data – flygplanet från 80-talet, de två åren utan pengar, sjukhusvistelserna, den nuvarande stabiliteten – bearbetas genom helt oförenliga ramverk.
+Skulle jag berätta min historia för olika människor skulle jag få radikalt olika tolkningar beroende på deras världsbild. Samma fenomenologiska data – flygplanet från 80-talet, de två åren utan pengar, sjukhusvistelserna, den nuvarande stabiliteten – bearbetas genom helt oförenliga ramverk.
 
 ### Vad psykiatrin säger
 
