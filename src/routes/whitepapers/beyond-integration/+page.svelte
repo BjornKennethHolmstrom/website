@@ -198,7 +198,7 @@
   
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
-      <a href="/essays" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
+      <a href="/whitepapers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
         {t.allEssays}
       </a>
     </div>
