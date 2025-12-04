@@ -44,7 +44,7 @@ I was confused. Deeply confused. Not about reality—I knew what I was doing—b
 
 The police came. They were professional, not unkind. They took me out of the apartment.
 
-I spent nearly a month cleaning an abandoned house, still without money, still outside the system. Then my ex-partner forwarded an email from my father: concern, an offer to help me come back to Sweden. I said yes. I thought maybe I could make a computer game called HeaRTS, something about healing through systems thinking. I recovered some belongings—clothes, my camera, my artwork. I got on a plane.
+I spent nearly a month cleaning an abandoned house, still without money, still outside the system. Then my ex-partner forwarded an email from my father: concern, an offer to help me come back to Sweden. I said yes. I thought maybe I could make a computer game called HeaRTS, a strategy game where peace becomes mechanically optimal. I recovered some belongings—clothes, my camera, my artwork. I got on a plane.
 
 ## The 80s Airplane
 

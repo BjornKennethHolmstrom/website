@@ -44,7 +44,7 @@ Jag var förvirrad. Djupt förvirrad. Inte om verkligheten – jag visste vad ja
 
 Polisen kom. De var professionella, inte ovänliga. De tog mig ut ur lägenheten.
 
-Jag tillbringade nästan en månad med att städa ett övergivet hus, fortfarande utan pengar, fortfarande utanför systemet. Sedan vidarebefordrade min ex-partner ett mejl från min far: oro, ett erbjudande om att hjälpa mig komma tillbaka till Sverige. Jag sa ja. Jag tänkte att jag kanske kunde göra ett datorspel kallat HeaRTS, något om läkning genom systemtänkande. Jag återfick några tillhörigheter – kläder, min kamera, min konst. Jag satte mig på ett plan.
+Jag tillbringade nästan en månad med att städa ett övergivet hus, fortfarande utan pengar, fortfarande utanför systemet. Sedan vidarebefordrade min ex-partner ett mejl från min far: oro, ett erbjudande om att hjälpa mig komma tillbaka till Sverige. Jag sa ja. Jag tänkte att jag kanske kunde göra ett datorspel kallat HeaRTS, ett strategispel där fred blir mekaniskt optimalt. Jag återfick några tillhörigheter – kläder, min kamera, min konst. Jag satte mig på ett plan.
 
 ## Flygplanet från 80-talet
 
