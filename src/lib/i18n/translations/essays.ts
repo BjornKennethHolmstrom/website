@@ -14,6 +14,13 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     billComingDue: {
+       title: "The Bill is Coming Due",
+       subtitle: "A Manifesto of Developmental Debt",
+       desc: "Why the global crisis isn't a failure of morals, but a failure of accounting. We have been running Stage Orange software on a planetary hard drive that is now full. A forensic audit of our civilizational balance sheet.",
+       published: "Dec 2025",
+       readTime: "12 min read"
+     },
      treatyBlueprint: {
        title: "Treaty for Our Only Home",
        subtitle: "A Blueprint for Planetary Resilience",
@@ -189,6 +196,13 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     billComingDue: {
+       title: "Notan förfaller",
+       subtitle: "Ett manifest om utvecklingsskuld",
+       desc: "Varför den globala krisen inte är ett moraliskt misslyckande, utan ett bokföringsfel. Vi har kört 'Stage Orange'-mjukvara på en planetär hårddisk som nu är full. En forensisk revision av vår civilisatoriska balansräkning.",
+       published: "december 2025",
+       readTime: "12 min läsning"
+     },
      treatyBlueprint: {
        title: "Fördrag för vårt enda hem",
        subtitle: "En plan för planetarisk motståndskraft",

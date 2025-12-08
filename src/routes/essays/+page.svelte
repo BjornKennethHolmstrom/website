@@ -20,6 +20,13 @@
  const essayCards = [
    // --- Priority 1: Governance ---
    { 
+     key: 'billComingDue', 
+     url: '/essays/the-bill-is-coming-due',
+     icon: '🧾',
+     category: 'Governance', // or 'Economics' - fits both
+     hasPDF: false
+   },
+   { 
      key: 'treatyBlueprint', 
      url: '/essays/treaty-blueprint',
      icon: '🌐',
