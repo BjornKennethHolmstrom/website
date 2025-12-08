@@ -6,12 +6,6 @@ categories: ["Governance", "Economy"]
 readTime: "12 min"
 ---
 
-# The Bill is Coming Due: A Manifesto of Developmental Debt
-
-**Why the Global Crisis Isn’t a Failure of Morals, But a Failure of Accounting — And How We Restructure Before Default.**
-
-By Björn Kenneth Holmström
-
 This manifesto was originally published by the [Global Governance Frameworks Initiative](https://www.globalgovernanceframeworks.org).
 
 ---
@@ -169,7 +163,7 @@ For decades, the cost of our debt grew slowly. We could ignore the degrading soi
 
 But exponential curves have a nasty feature: they look flat for a long time, and then, suddenly, they go vertical.
 
-We have hit the **Vertical Cost Curve**.
+We have hit the [**Vertical Cost Curve**](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof) (see the GGF's simulation data in The Omega Proof).
 
 ### The Squeeze
 The cost of solving our problems is now rising faster than our capacity to generate resources.
@@ -327,6 +321,8 @@ We can pay this bill together, or we can default alone.
 
 *Download the Developmental Debt Calculator template at [globalgovernanceframeworks.org/tools/developmental-debt-calculator](https://www.globalgovernanceframeworks.org/tools/developmental-debt-calculator)*
 
+**Dig Deeper into the Data** The concept of the "Vertical Cost Curve" is derived from the GGF's adversarial AI simulations of the Westphalian system. 📄 [Read the White Paper: The Omega Proof](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof)
+
 ---
 
 ## Appendix: The Red Team Audit
@@ -370,5 +366,5 @@ These critiques identify the four "Load-Bearing Walls" of the GGF architecture. 
 
 **The GGF is the synthesis of these truths.** It is the only path that holds the tension between the necessity of growth and the reality of limits.
 
-***
+---
 
