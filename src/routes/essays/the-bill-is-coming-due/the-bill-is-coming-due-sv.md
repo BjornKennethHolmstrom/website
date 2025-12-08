@@ -6,12 +6,6 @@ categories: ["Styrning", "Ekonomi"]
 readTime: "12 min"
 ---
 
-# Notan förfaller: Ett manifest om utvecklingsskuld
-
-**Varför den globala krisen inte är ett moraliskt misslyckande, utan ett bokföringsmisslyckande – och hur vi omstrukturerar innan vi går i konkurs.**
-
-Av Björn Kenneth Holmström
-
 Detta manifest publicerades ursprungligen av [Global Governance Frameworks Initiative](https://www.globalgovernanceframeworks.org).
 
 ---
