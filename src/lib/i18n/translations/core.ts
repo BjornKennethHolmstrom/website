@@ -31,7 +31,7 @@ export const coreTranslations = {
 			'I am a systems thinker, consciousness researcher, and the architect of the Global Governance Frameworks initiative. My work focuses on the intersection of developmental psychology, institutional design, and human flourishing.',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
-		clusterQuartet: 'The Awareness Duo',
+		clusterQuartet: 'The Awareness Quartet',
   clusterPersonal: 'Personal Spaces & Labs',
 		clusterLibrary: 'Writings & Research',
   clusterArchitecture: 'Open Source Architectures',
@@ -156,7 +156,7 @@ export const coreTranslations = {
 			'Jag är systemtänkare, medvetandeforskare och arkitekt bakom initiativet Global Governance Frameworks. Mitt arbete fokuserar på skärningspunkten mellan utvecklingspsykologi, institutionell design och mänskligt välmående.',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
-		clusterQuartet: 'Medvetandets duo',
+		clusterQuartet: 'Medvetandets kvartett',
   clusterPersonal: 'Personliga rum och labb',
 		clusterLibrary: 'Skrifter och forskning',
   clusterArchitecture: 'Öppen källkodsarkitektur',

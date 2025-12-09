@@ -46,9 +46,11 @@
 				url: 'https://github.com/BjornKennethHolmstrom/CosmicSyncCore'
 			}
 		],
-		duo: [
+		quartet: [
 			{ type: 'img', key: 'spiralize', logo: 'logo-spiralize.svg', url: 'https://spiralize.org' },
-			{ type: 'img', key: 'communize', logo: 'logo-communize.svg', url: 'https://communize.org' }
+			{ type: 'img', key: 'nondualize', logo: 'logo-nondualize.svg', url: 'https://nondualize.org' },
+			{ type: 'img', key: 'communize', logo: 'logo-communize.svg', url: 'https://communize.org' },
+			{	type: 'img',	key: 'universalize',	logo: 'logo-universalize.svg',	url: 'https://universalize.org' }
 		],
 		library: [
 			{
@@ -239,8 +241,8 @@
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
 				{$t.clusterQuartet}
 			</h2>
-			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-				{#each projects.duo as project}
+			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				{#each projects.quartet as project}
 					{#if project.comingSoon}
 						<div
 							class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 opacity-70"
