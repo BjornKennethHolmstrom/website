@@ -977,4 +977,4 @@ That's the question every movement faces. And it's the question Chapter 17 answe
 
 ---
 
-**[END OF CHAPTER 16]**
+

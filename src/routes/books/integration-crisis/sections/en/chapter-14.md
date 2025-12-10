@@ -976,8 +976,6 @@ The individual pieces matter. But the real magic is in how they work together to
 
 Ready to see the whole system?
 
-**[END OF CHAPTER 14]**
-
 **Postcard from 2040: Collective Lucidity**
 
 *It started with three people sitting on the steps of the public library. Then ten. Then a hundred. No one organized it. No notification went out. It was a spontaneous synchronization of attention.*

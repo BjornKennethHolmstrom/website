@@ -636,13 +636,11 @@ And it begins now.
 
 ---
 
-**[END OF CHAPTER 9]**
-
 **Postcard from 2040: The End of the Argument**
 
 *Ten years ago, this conflict would have ended the evening. One of us would have gotten defensive, the other would have withdrawn, and we would have retreated to our screens to nurse our grievances in separate algorithmic silos. But tonight, when the disagreement hit, nobody flinched. We didn't try to "win." We didn't try to "compromise."*
 
 *We just sat with the tension. We let it sit on the table between us like a heavy stone. We breathed. We waited for the nervous systems to settle. And then, without forcing it, the third option emerged—the one neither of us could have seen while we were defending our ground. It wasn't a negotiation; it was a joint discovery. We finished dinner, not exhausted by the fight, but energized by the integration.*
 
-**[END OF PART II: PRINCIPLES OF YELLOW THINKING]**
+
 

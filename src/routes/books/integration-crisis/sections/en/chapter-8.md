@@ -620,4 +620,4 @@ And the quality of our civilization will ultimately be measured the same way.
 
 ---
 
-**[END OF CHAPTER 8]**
+

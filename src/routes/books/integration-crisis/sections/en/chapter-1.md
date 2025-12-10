@@ -242,4 +242,4 @@ And whether enough of us will recognize it when we see it.
 
 ---
 
-**[END OF CHAPTER 1]**
+

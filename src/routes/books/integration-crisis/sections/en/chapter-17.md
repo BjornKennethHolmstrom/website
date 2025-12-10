@@ -1178,4 +1178,4 @@ The next chapter gets personal for those with resources.
 
 ---
 
-**[END OF CHAPTER 17]**
+

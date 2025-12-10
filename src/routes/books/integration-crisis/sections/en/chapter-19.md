@@ -964,8 +964,4 @@ Because now we bring it all together—the vision, the coalition, the power, the
 
 ---
 
-**[END OF CHAPTER 19]**
 
----
-
-**[END OF PART IV: THE ALCHEMIST’S PATH]**

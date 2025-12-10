@@ -1213,8 +1213,4 @@ Not just "pilot cities work" but "what happens when this approach transforms:**
 
 ---
 
-**[END OF CHAPTER 18]**
 
----
-
-**[END OF PART IV: THE ALCHEMIST'S PATH]**

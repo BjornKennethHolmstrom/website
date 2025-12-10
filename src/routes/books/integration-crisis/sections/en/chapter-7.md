@@ -590,4 +590,4 @@ That's what we explore next.
 
 ---
 
-**[END OF CHAPTER 7]**
+

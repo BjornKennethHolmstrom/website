@@ -607,10 +607,6 @@ And where you begin changes what becomes possible.
 
 ---
 
-**[END OF CHAPTER 10]**
-
----
-
 **Author's Note:** The Integration Emergency Kit scorecard and tracking templates will be available as downloadable resources at [your website]. 
 
 **However:** I cannot promise ongoing guided practices, managed community forums, or curated information about local working groups. That infrastructure requires resources and capacity I may not have.

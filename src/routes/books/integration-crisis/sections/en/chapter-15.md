@@ -808,6 +808,4 @@ Ready?
 
 ---
 
-**[END OF CHAPTER 15]**
 
-**[END OF PART III: THE SOLUTIONS]**

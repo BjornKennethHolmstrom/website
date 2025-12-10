@@ -358,4 +358,4 @@ Not as fantasy. As blueprint.
 
 ---
 
-**[END OF INTERLUDE]**
+

@@ -491,12 +491,10 @@ Let's build it.
 
 ---
 
-**[END OF CHAPTER 5]**
-
 **Postcard from 2040: The Quiet Roar**
 
 *It wasn’t until the third day in the city that I realized what was missing: the hum. For my entire life, urban silence had been a myth—there was always the white noise of traffic, the aggressive thrum of ventilation, the digital chirping of a thousand devices demanding attention. But here, in the rewilded center, the decibel level of human desperation had dropped so low that the environment had reclaimed the acoustic space.*
 
 *I sat on a bench in the financial district. I could hear the wind moving through the birch trees they planted where the third lane used to be. I could hear a conversation three benches away, unhurried and laughing. I could hear my own breath. It was deafening. We traveled thousands of miles just to listen to a city that had finally shut up and become beautiful.*
 
-**[END OF PART I: THE FRACTURED HUMAN]**
+

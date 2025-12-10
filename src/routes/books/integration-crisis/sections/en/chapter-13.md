@@ -904,8 +904,6 @@ For now, remember: **You need space to breathe. Not metaphorically—literally. 
 
 ---
 
-**[END OF CHAPTER 13]**
-
 **Postcard from 2040: The Return of Unhurried Eros**
 
 *The morning light hit the sheets, and for the first time in history, there was no phantom vibration on the wrist. No glance at the clock. No mental calculation of commute times or email backlogs. The attention economy had been zoned out of the bedroom.*

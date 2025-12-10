@@ -467,4 +467,4 @@ For now, know that this too is a false binary. And transcending it is essential 
 
 ---
 
-**[END OF CHAPTER 6]**
+

@@ -192,8 +192,4 @@ Together.
 
 ---
 
-**[END OF BOOK]**
-
----
-
 *The frameworks, research, and ongoing pilots discussed in this book are part of an open-source project in systemic transformation. For those ready to participate in the work of civilizational redesign, resources and connection points can be found in the pages that follow.*

@@ -63,8 +63,13 @@
 
   // --- 2. IMPORTS (Swedish) ---
   // Add these as you translate them!
+  // Front Matter
   import DedicationSv from './sections/sv/dedication.md';
-  // import PrefaceSv from './sections/sv/preface.md';
+  import PrefaceSv from './sections/sv/preface.md';
+  import PrimerSv from './sections/sv/primer.md';
+
+  // Part I: The Crisis
+  import Chapter1Sv from './sections/sv/chapter-1.md';
   // etc...
 
   // --- STATE ---
@@ -83,13 +88,13 @@
       id: 'preface', 
       titleKey: 'preface',
       compEn: PrefaceEn, 
-      compSv: PrefaceEn // Use EN until SV is ready
+      compSv: PrefaceSv
     },
     { 
       id: 'primer', 
       titleKey: 'primer',
       compEn: PrimerEn, 
-      compSv: PrimerEn
+      compSv: PrimerSv
     },
     
     // Part I: The Crisis
@@ -101,13 +106,13 @@
       id: 'chapter-1', 
       titleKey: 'chapter1',
       compEn: Chapter1En, 
-      compSv: Chapter1En
+      compSv: Chapter1Sv
     },
     { 
       id: 'chapter-2', 
       titleKey: 'chapter2',
       compEn: Chapter2En, 
-      compSv: Chapter2En
+      compSv: Chapter2En // Use EN until SV is ready
     },
     { 
       id: 'chapter-3', 

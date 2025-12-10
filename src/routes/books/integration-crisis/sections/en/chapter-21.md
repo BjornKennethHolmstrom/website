@@ -385,8 +385,4 @@ But because the questions are too important to leave to those who think they do.
 
 ---
 
-**[END OF CHAPTER 21]**
-
----
-
 *Next: Chapter 22 - The Return (Conclusion)*

@@ -746,8 +746,6 @@ And possible is where transformation begins.
 
 ---
 
-**[END OF CHAPTER 12]**
-
 **Postcard from 2040: The Library Species**
 
 *He spends forty hours a week restoring antique violins. He isn't paid for it—at least, not in Fiat currency. His Sovereign Floor covers his rent and food. He does it because the wood asks for it. He does it because he has the time to listen to the grain.*
