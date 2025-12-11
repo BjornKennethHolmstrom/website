@@ -135,7 +135,7 @@
 				</div>
 			</a>
 			<a
-				href="/essays/lost-ability"
+				href="/essays/architecture-of-stillness"
 				class="block p-4 rounded-lg transition-colors hover:opacity-90"
 				style="background-color: var(--color-separator);"
 			>
