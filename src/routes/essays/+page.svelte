@@ -177,6 +177,14 @@
      hasPDF: false
 		 },
 
+   { 
+			  key: 'geometryOfInsight', 
+			  url: '/essays/geometry-of-insight',
+			  icon: '💡',
+			  category: 'Philosophy',
+     hasPDF: false
+		 },
+
    // --- Priority 5: Ecological ---
    { 
 			 key: 'silentSeas', 

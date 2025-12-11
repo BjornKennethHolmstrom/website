@@ -144,6 +144,13 @@ export const essaysTranslations = {
        published: "Nov 2025",
        readTime: "10 min read"
      },
+     geometryOfInsight: {
+       title: "The Geometry of Insight",
+       subtitle: "Why Rationality is Not Enough to Understand an Infinite Reality",
+       desc: "A seven-dimensional framework that reveals why brilliant minds produce catastrophic failures. Integrating cognitive models, behavioral competence, mathematical elegance, developmental stages, ontological creativity, ethical purpose, and embodied wisdom—with diagnostic applications to governance and God.",
+       published: "Dec 2025",
+       readTime: "20 min read"
+     },
      materialistParadox: {
        title: "The Infinite Ground",
        subtitle: "A Logical and Mathematical Case for an Unlimited Reality",
@@ -325,6 +332,13 @@ export const essaysTranslations = {
        desc: "Vi kan inte anpassa AI till mänskliga värderingar om vi inte har en sammanhängande modell av människan. Öppen-källkodsarkitekturen för modellering av de sex domänerna av mänsklig erfarenhet",
        published: "november 2025",
        readTime: "10 min läsning"
+     },
+     geometryOfInsight: {
+       title: "Insiktens geometri",
+       subtitle: "Varför rationalitet inte räcker för att förstå en oändlig verklighet",
+       desc: "Ett sjudimensionellt ramverk som avslöjar varför briljanta sinnen producerar katastrofala misslyckanden. Integration av kognitiva modeller, beteendekompetens, matematisk elegans, utvecklingsstadier, ontologisk kreativitet, etiskt syfte och förkroppsligad visdom—med diagnostiska tillämpningar på styrning och Gud.",
+       published: "december 2025",
+       readTime: "20 min läsning"
      },
      materialistParadox: {
        title: "Den oändliga grunden",
