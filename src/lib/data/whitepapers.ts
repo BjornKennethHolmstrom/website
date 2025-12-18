@@ -35,7 +35,7 @@ export const papersData: Whitepaper[] = [
 		pages: '27',
 		readTime: { en: '35 min' },
 		version: '1.0',
-		pdfPath: { en: `${ggfBase}/resources/whitepapers/Preventing_1933_-_Architecture_of_Democratic_Resilience.pdf`, sv: `${ggfBase}/resources/whitepapers/Att_f%C3%B6rhindra_1933_-_Arkitekturen_f%C3%B6r_demomkratisk_motst%C3%A5ndskraft.pdf` },
+		pdfPath: { en: `${ggfBase}/resources/whitepapers/Preventing_1933_-_Architecture_of_Democratic_Resilience.pdf`, sv: `${ggfBase}/resources/whitepapers/Att_f%C3%B6rhindra_1933_-_Arkitekturen_f%C3%B6r_demokratisk_motst%C3%A5ndskraft.pdf` },
 		coverImage: '/whitepapers/images/preventing-1933-cover.png',
 		readOnlinePath: `${ggfBase}/resources/whitepapers/preventing-1933`,
 		readOnlineExternal: true,
