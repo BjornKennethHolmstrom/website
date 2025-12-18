@@ -23,6 +23,11 @@ export const whitepapersTranslations = {
 				methodology: 'Methodology'
 			},
 			// --- GGF Papers ---
+   preventing1933: {
+				title: 'Preventing 1933: The Architecture of Democratic Resilience',
+				description:
+					'A systems architecture analysis of the Weimar Republic\'s collapse, demonstrating how dual-currency systems and epistemic protocols could prevent a modern democratic failure.'
+			},
 			responsiveSociety: {
 				title: 'The Responsive Society: Aligning with Truth in an Unknown World',
 				description:
@@ -108,6 +113,11 @@ export const whitepapersTranslations = {
 				methodology: 'Metodik'
 			},
 			// --- GGF Papers (Översättningar saknas, använder engelsk text) ---
+   preventing1933: {
+				title: 'Att förhindra 1933: Arkitekturen för demokratisk resiliens',
+				description:
+					'En systemarkitektonisk analys av Weimarrepublikens kollaps som visar hur dubbla valutasystem och epistemiska protokoll kan förhindra en modern demokratisk kollaps.'
+			},
 			responsiveSociety: {
 				title: 'The Responsive Society: Aligning with Truth in an Unknown World',
 				description:
