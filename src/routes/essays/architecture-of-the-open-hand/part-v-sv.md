@@ -1,4 +1,4 @@
-### V. Övergångsvägen: Härifrån till dit
+### Övergångsvägen: Härifrån till dit
 
 Vi föreslår inte att störta nationalstater över en natt. Revolutionär retorik låter kraftfull men producerar ingenting utom motreaktioner och förstärkning av existerande maktstrukturer.
 

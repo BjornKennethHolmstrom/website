@@ -1,4 +1,4 @@
-### III. The Trap: When Good Intentions Meet Bad Incentives
+### The Trap: When Good Intentions Meet Bad Incentives
 
 Let us assume, for a moment, that every human being woke tomorrow wanting peace. That every president, general, and citizen genuinely desired an end to violence. Would war stop?
 

@@ -1,6 +1,6 @@
-### IV. The Solution: Trans-Rational Architecture
+### The Solution: Trans-Rational Architecture
 
-We cannot go back to being naive. We cannot simply "wish" for peace, hold hands, and expect the structures of violence to dissolve. That is Stage Green magical thinking—the belief that if we just love each other enough, systems will take care of themselves.
+We cannot go back to being naive. We cannot simply "wish" for peace, hold hands, and expect the structures of violence to dissolve. That is Stage Green magical thinking—the compassionate but systems-blind worldview (in Spiral Dynamics terms) that believes if we just love each other enough, structures will take care of themselves.
 
 They won't.
 

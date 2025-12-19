@@ -1,4 +1,4 @@
-### II. The Diagnosis: The Epistemic Error
+### The Diagnosis: The Epistemic Error
 
 War begins the moment we draw a hard line between "Me" and "You." But this line is a perceptual error, not a physical reality.
 

@@ -1,6 +1,6 @@
-### IV. Lösningen: Transrationell arkitektur
+### Lösningen: Transrationell arkitektur
 
-Vi kan inte återgå till att vara naiva. Vi kan inte bara ”önska” oss fred, hålla händer och förvänta oss att våldets strukturer ska lösas upp. Det är nivå Grön-magiskt tänkande – tron att om vi bara älskar varandra tillräckligt, kommer systemen att ta hand om sig själva.
+Vi kan inte återgå till att vara naiva. Vi kan inte bara ”önska” oss fred, hålla händer och förvänta oss att våldets strukturer ska lösas upp. Det är magiskt tänkande på Stadie Grön – den medkännande men systemblinda världsbilden (i Spiral Dynamics-termer) som tror att om vi bara älskar varandra tillräckligt, så kommer strukturerna att ta hand om sig själva.
 
 Det kommer de inte.
 
@@ -28,7 +28,7 @@ Global Governance Frameworks överlever inte genom önsketänkande eller moralis
 
 Bioregionalism gör befolkningar fundamentalt omöjliga att styra för centraliserade imperier. Här är varför:
 
-Du kan inte skära av deras mat – de odlar den lokalt, i decentraliserade nätverk som inte kan störas genom att man intar en enskild huvudstad eller försörjningslinje. Du kan inte krascha deras pengar – de myntar dem själva genom Hjärter- och Löv-valutor, som mäter och belönar faktiska omsorgsflöden snarare än att vara beroende av centralbankssystem. Du kan inte kontrollera deras narrativ – styret är distribuerat över nästlade råd som gör propaganda och centraliserad kontroll logistiskt omöjligt. Du kan inte enkelt extrahera deras resurser – allmänningsägande innebär att det inte finns någon central auktoritet att muta eller tvinga.
+Du kan inte skära av deras mat – de odlar den lokalt, i decentraliserade nätverk som inte kan störas genom att man intar en enskild huvudstad eller försörjningslinje. Du kan inte krascha deras pengar – de myntar dem själva genom Hearts- och Leaves-valutor, som mäter och belönar faktiska omsorgsflöden snarare än att vara beroende av centralbankssystem. Du kan inte kontrollera deras narrativ – styret är distribuerat över nästlade råd som gör propaganda och centraliserad kontroll logistiskt omöjligt. Du kan inte enkelt extrahera deras resurser – allmänningsägande innebär att det inte finns någon central auktoritet att muta eller tvinga.
 
 Erövring blir för dyrt för det potentiella imperiet. Inte omöjligt, men ekonomiskt irrationellt. Kostnaden för att ockupera och kontrollera ett verkligt decentraliserat bioregionalt nätverk överstiger varje fördel som skulle kunna extraheras.
 
@@ -50,9 +50,9 @@ Frågan är inte om övergången är rörig, utan om destinationen är hållbar.
 
 Här är kärnkomponenterna i den nya arkitekturen:
 
-**Hjärter-valuta (Hearts):** Ett ekonomiskt system där ”att vinna” kräver ”att bry sig”. Värde är knutet till verifierade bidrag till ömsesidigt blomstrande – inte vag välvilja, utan mätbara omsorgsflöden: tonnen av regenererad jord, megawatten av delad förnybar energi, timmarna av äldreomsorg, studenterna som fått mentorskap. Det är koldioxidredovisning för socialt och ekologiskt kapital.
+**Hearts-valuta:** Ett ekonomiskt system där ”att vinna” kräver ”att bry sig”. Värde är knutet till verifierade bidrag till ömsesidigt blomstrande – inte vag välvilja, utan mätbara omsorgsflöden: tonnen av regenererad jord, megawatten av delad förnybar energi, timmarna av äldreomsorg, studenterna som fått mentorskap. Det är koldioxidredovisning för socialt och ekologiskt kapital.
 
-Hjärter gör extraktion mindre lönsamt än regenerering genom att belöna omsorgsflöden med handelsbart värde. Om jag läker floden tjänar jag Hjärter. Om jag undervisar dina barn tjänar jag Hjärter. Om jag bygger bostäder, vårdar skogar, skapar skönhet – tjänar jag Hjärter. Valutan i sig kodar de värderingar vi påstår oss ha men för närvarande misslyckas med att incitamentera.
+Hearts gör extraktion mindre lönsamt än regenerering genom att belöna omsorgsflöden med handelsbart värde. Om jag läker floden tjänar jag Hearts. Om jag undervisar dina barn tjänar jag Hearts. Om jag bygger bostäder, vårdar skogar, skapar skönhet – tjänar jag Hearts. Valutan i sig kodar de värderingar vi påstår oss ha men för närvarande misslyckas med att incitamentera.
 
 Detta är inte byteshandel. Det är inte kryptovalutaspekulation. Det är ett mät- och belöningssystem för omsorgsekonomin som redan existerar men verkar osynligt, obetalt, undervärderat. Vi gör det läsbart och vi får det att räknas.
 
@@ -66,7 +66,7 @@ Detta är inte separatistisk balkanisering. Det är ett ramverk för distribuera
 
 **Cirkelns fördrag:** Konstitutionella gränser för återuppståendet av dominationshierarkier, inbyggda i styrelsens DNA. Inte regler påtvingade uppifrån, utan överenskommelser framväxta underifrån, ständigt omförhandlade, alltid möjliga att återkalla.
 
-Tänk på det som en strukturell nödstopp för Molok. Liksom den norska oljefondens etiska skyddsräcken eller Schweiz direktdemokratiska veto, är det en förhandsåtagande-mekanism mot eget kapande. I samma ögonblick som makt börjar koncentreras, i samma ögonblick som extraktion börjar dominera ömsesidighet, i samma ögonblick som våld blir ett politiskt verktyg snarare än en sista utväg – aktiveras Fördraget. Inte genom straff, utan genom upplösning. Zonen som bryter mot principerna förlorar tillgång till nätverket, förlorar fördelarna med samarbete, förlorar Hjärter-ekonomin.
+Tänk på det som en strukturell nödstopp för Molok. Liksom den norska oljefondens etiska skyddsräcken eller Schweiz direktdemokratiska veto, är det en förhandsåtagande-mekanism mot eget kapande. I samma ögonblick som makt börjar koncentreras, i samma ögonblick som extraktion börjar dominera ömsesidighet, i samma ögonblick som våld blir ett politiskt verktyg snarare än en sista utväg – aktiveras Fördraget. Inte genom straff, utan genom upplösning. Zonen som bryter mot principerna förlorar tillgång till nätverket, förlorar fördelarna med samarbete, förlorar Hearts-ekonomin.
 
 Du kan hoppa av – men avhopp innebär isolering, inte erövring. Kostnaden för domination överstiger dess fördelar.
 

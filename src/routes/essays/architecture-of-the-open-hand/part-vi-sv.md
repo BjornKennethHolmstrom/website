@@ -1,4 +1,4 @@
-### VI. Slutsats: Det nya svaret till barnet
+### Slutsats: Det nya svaret till barnet
 
 Ett barn frågar igen: ”Varför finns det krig?”
 

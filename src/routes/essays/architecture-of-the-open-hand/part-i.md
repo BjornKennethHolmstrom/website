@@ -1,4 +1,4 @@
-### I. The Innocent Question
+### The Innocent Question
 
 A child asks, "Why is there war?"
 

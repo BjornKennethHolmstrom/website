@@ -1,4 +1,4 @@
-### I. Den oskyldiga frågan
+### Den oskyldiga frågan
 
 Ett barn frågar: ”Varför finns det krig?”
 

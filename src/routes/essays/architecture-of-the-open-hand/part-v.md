@@ -1,4 +1,4 @@
-### V. The Transition Pathway: From Here to There
+### The Transition Pathway: From Here to There
 
 We are not proposing to overthrow nation-states overnight. Revolutionary rhetoric sounds powerful but produces nothing except backlash and reinforcement of existing power structures. 
 

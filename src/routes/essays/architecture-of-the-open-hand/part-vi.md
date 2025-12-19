@@ -1,4 +1,4 @@
-### VI. Conclusion: The New Answer to the Child
+### Conclusion: The New Answer to the Child
 
 A child asks again, "Why is there war?"
 

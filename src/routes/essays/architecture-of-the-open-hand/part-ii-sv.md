@@ -1,4 +1,4 @@
-### II. Diagnosen: Det epistemiska felet
+### Diagnosen: Det epistemiska felet
 
 Krig börjar i samma ögonblick som vi drar en hård gräns mellan ”Jag” och ”Du”. Men denna gräns är ett perceptuellt fel, inte en fysisk verklighet.
 

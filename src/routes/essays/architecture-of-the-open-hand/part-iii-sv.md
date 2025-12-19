@@ -1,4 +1,4 @@
-### III. Fällan: När goda avsikter möter dåliga incitament
+### Fällan: När goda avsikter möter dåliga incitament
 
 Låt oss anta, för ett ögonblick, att varje människa vaknade i morgon och ville ha fred. Att varje president, general och medborgare verkligen önskade ett slut på våldet. Skulle krigen upphöra?
 
