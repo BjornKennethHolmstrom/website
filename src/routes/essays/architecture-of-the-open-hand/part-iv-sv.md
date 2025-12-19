@@ -94,11 +94,13 @@ Subnationella enheter är redan laboratorierna för systemförändring. De är s
 
 **Första konkreta steget**
 
-Projektet Global Governance Frameworks har lämnat in konkreta pilotförslag till kommuner i Stockholmsregionen som demonstrerar hur dessa principer översätts till byggbar infrastruktur. Ett exempel: ett ”Nervsystem” för kollektivtrafik som integrerar psykologisk motståndskraft direkt i designen av medborgerlig infrastruktur – och skapar mätbara omsorgsflöden och synlighet för allmänningar inom existerande institutionella ramverk.
+Projektet Global Governance Frameworks har utvecklat konkreta pilotramverk för **nordiska storstadsregioner**, som demonstrerar hur dessa principer översätts till byggbar infrastruktur.
+
+Ett exempel: ett **”Nervsystem” för kollektivtrafik** som integrerar psykologisk motståndskraft direkt i designen av medborgerlig infrastruktur – och skapar mätbara omsorgsflöden och synlighet för allmänningar inom existerande institutionella ramverk.
 
 Dessa är inte abstrakta teorier. Dessa är detaljerade förslag med implementationsvägar, riskanalyser och externa finansieringsstrategier. Bron håller på att designas.
 
-Förslagen är småskaliga, testbara, reversibla om de misslyckas, skalbara om de lyckas. De visar hur man kan börja bygga den nya arkitekturen inuti skalet av det gamla systemet – med hjälp av befintliga budgetar, befintlig infrastruktur, befintlig institutionell kapacitet.
+Förslagen är småskaliga, testbara, reversibla om de misslyckas, skalbara om de lyckas. De visar hur man kan börja bygga den nya arkitekturen inuti skalet av det gamla systemet – med hjälp av befintliga budgetar, befintlig infrastruktur och befintlig institutionell kapacitet.
 
 En kommun. Ett system. Ett konceptbevis på att arkitekturen kan fungera i den verkliga världen, med verkliga människor, under verkliga begränsningar.
 

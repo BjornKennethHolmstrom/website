@@ -94,12 +94,14 @@ Sub-national entities are already the laboratories of systemic change. They are 
 
 **First Concrete Step**
 
-The Global Governance Frameworks project has submitted concrete pilot proposals to Stockholm region municipalities demonstrating how these principles translate into buildable infrastructure. One example: a "Nervous System" for public transit that integrates psychological resilience directly into civic infrastructure design—creating measurable care flows and commons visibility within existing institutional frameworks.
+The Global Governance Frameworks project has developed concrete pilot frameworks for **Nordic metropolitan regions**, demonstrating how these principles translate into buildable infrastructure.
+
+One example: a **“Nervous System” for public transit** that integrates psychological resilience directly into civic infrastructure design—creating measurable care flows and commons visibility within existing institutional frameworks.
 
 These are not abstract theories. These are detailed proposals with implementation pathways, risk analyses, and external funding strategies. The bridge is being designed.
 
-The proposals are small scale, testable, reversible if they fail, scalable if they succeed. They show how you can start building the new architecture within the shell of the old system—using existing budgets, existing infrastructure, existing institutional capacity.
+The proposals are small scale, testable, reversible if they fail, scalable if they succeed. They show how you can start building the new architecture within the shell of the old system—using existing budgets, existing infrastructure, and existing institutional capacity.
 
 One municipality. One system. One proof of concept that the architecture can work in the real world, with real humans, under real constraints.
 
-That's how you change a paradigm. Not with manifestos, but with working prototypes.
+That’s how you change a paradigm. Not with manifestos, but with working prototypes.
