@@ -172,6 +172,15 @@ export const essaysTranslations = {
        published: "Dec 2024",
        readTime: "12 min read"
      },
+     architectureOpenHand: {
+       title: 'The Architecture of the Open Hand',
+       subtitle: 'Why We Fight and How We Design Peace',
+       tagline: 'A child\'s question traced from metaphysics to systems design.',
+       desc: 'A child asks: Why is there war? This essay answers truthfully, moving from the epistemic error of separation through coordination failures to concrete architectural solutions. From diagnosis (the separate self as illusion) to design (bioregional zones, Hearts currency, and the Treaty of the Circle)—showing how peace is not a feeling but a design specification.',
+       published: 'Dec 2024',
+       readTime: '25 min read',
+       pdfPages: "19"
+     },
      silentSeas: {
        title: "The Violence of the Propeller",
        subtitle: "Why the Next Age of Logistics Must Be Silent",
@@ -360,6 +369,15 @@ export const essaysTranslations = {
        desc: "Intelligens finns inte i en hjärna; det är en egenskap hos relationer. Från slemsvampar till AI, utforskar varför intelligens är ett icke-lokalt fält vi deltar i, inte en vara vi äger.",
        published: "december 2024",
        readTime: "12 min läsning"
+     },
+     architectureOpenHand: {
+       title: 'Öppna handens arkitektur',
+       subtitle: 'Varför vi krigar och hur vi designar fred',
+       tagline: 'Ett barns fråga spårad från metafysik till systemdesign.',
+       desc: 'Ett barn frågar: Varför finns det krig? Denna essä svarar ärligt och rör sig från det epistemiska felet i separation genom koordinationsmisslyckanden till konkreta arkitektoniska lösningar. Från diagnos (det separata jaget som illusion) till design (bioregionala zoner, Hearts-valuta och Cirkelns fördrag)—som visar hur fred inte är en känsla utan en designspecifikation.',
+       published: 'december 2024',
+       readTime: '25 min läsning',
+       pdfPages: "19"
      },
      silentSeas: {
        title: "Propellerns våld",

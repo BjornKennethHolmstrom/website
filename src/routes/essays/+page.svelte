@@ -184,6 +184,13 @@
 			  category: 'Philosophy',
      hasPDF: false
 		 },
+   {
+     key: 'architectureOpenHand',
+     url: '/essays/architecture-of-the-open-hand',
+     icon: '🤲',  // Open hands emoji
+     category: 'Philosophy',  // Could also be 'Governance' or 'Consciousness'
+     hasPDF: true
+   },
 
    // --- Priority 5: Ecological ---
    { 

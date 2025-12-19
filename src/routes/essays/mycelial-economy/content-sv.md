@@ -1,9 +1,3 @@
-# Den myceliska ekonomin: Från villkorade transaktioner till villkorslöst flöde
-
-*En vision av ekonomi som levande system*
-
----
-
 ## Inledning: Längtan
 
 Jag har ett minne som hemsöker mig – inte på det sätt som trauma hemsöker, utan på det sätt som skönhet gör. Två år i Baskien, levde av frukter och vad andra kasserat. Inga pengar, ingen portfölj, ingen strategisk positionering. Bara händer, jord, och den tysta intelligensen av att veta när något är moget. Jag var ingen speciell, och jag var lyckligare än jag någonsin varit före eller efter det.

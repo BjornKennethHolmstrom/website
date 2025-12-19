@@ -1,9 +1,3 @@
-# The Mycelial Economy: From Conditional Transactions to Unconditional Flow
-
-*A Vision of Economics as Living System*
-
----
-
 ## Opening: The Yearning
 
 I have a memory that haunts me—not in the way trauma haunts, but in the way beauty does. Two years in the Basque Country, living from fruits and what others discarded. No money, no portfolio, no strategic positioning. Just hands, earth, and the quiet intelligence of knowing when something is ripe. I was nobody special, and I was happier than I've ever been before or since.
