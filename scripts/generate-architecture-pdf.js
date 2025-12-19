@@ -83,6 +83,15 @@ const pdfStyles = `
 		min-height: 80vh;
 		text-align: center;
 	}
+
+ .cover-image {
+  max-width: 80%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 2em 0;
+  border-radius: 4px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle depth */
+ }
 	
 	.cover h1 {
 		font-size: 28pt;
@@ -274,6 +283,19 @@ const pdfStyles = `
 </style>
 `;
 
+// Helper to convert image to base64
+function getImageAsBase64(filename) {
+  // Adjust this path to where you actually save the image
+  const imagePath = path.join(__dirname, '../static/essays', filename);
+  
+  if (fs.existsSync(imagePath)) {
+    const bitmap = fs.readFileSync(imagePath);
+    const base64 = Buffer.from(bitmap).toString('base64');
+    return `data:image/jpeg;base64,${base64}`;
+  }
+  return null;
+}
+
 // Read and combine markdown files
 function readMarkdownFiles() {
 	console.log(`Reading markdown files for language: ${LANGUAGE}`);
@@ -312,34 +334,38 @@ function generateHTML(parts) {
 		gfm: true
 	});
 	
-	// Generate cover page
-	let html = `
+  // Load the image
+  const coverImageSrc = getImageAsBase64('architecture-of-the-open-hand-cover.jpg'); // Ensure this file is in your essay folder
+    
+  // Generate cover page with image
+  let html = `
 <!DOCTYPE html>
 <html lang="${LANGUAGE}">
 <head>
-	<meta charset="UTF-8">
-	<title>${meta.title}</title>
-	${pdfStyles}
+  <meta charset="UTF-8">
+  <title>${meta.title}</title>
+  ${pdfStyles}
 </head>
 <body>
-	<div class="cover">
-		<h1>${meta.title}</h1>
-		<div class="subtitle">${meta.subtitle}</div>
-		<div class="metadata">
-			<div>${meta.author}</div>
-			<div>${meta.date}</div>
-		</div>
-		<div class="url">${meta.url}</div>
-	</div>
+  <div class="cover">
+    <h1>${meta.title}</h1>
+    <div class="subtitle">${meta.subtitle}</div>
+        
+    ${coverImageSrc ? `<img src="${coverImageSrc}" class="cover-image" alt="Cherry Blossoms" />` : ''}
+
+    <div class="metadata">
+      <div>${meta.author}</div>
+      <div>${meta.date}</div>
+    </div>
+    <div class="url">${meta.url}</div>
+  </div>
 `;
 	
 	// Add each part with divider
 	parts.forEach((part, index) => {
-		if (index > 0) {
-			const partLabel = LANGUAGE === 'en' ? 'Part' : 'Del';
-			html += `\n<div class="part-divider"><h1>${partLabel} ${part.romanNumeral}</h1></div>\n`;
-		}
-		
+		const partLabel = LANGUAGE === 'en' ? 'Part' : 'Del';
+		html += `\n<div class="part-divider"><h1>${partLabel} ${part.romanNumeral}</h1></div>\n`;
+	
 		html += marked.parse(part.content);
 	});
 	
