@@ -27,7 +27,7 @@
       <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
         <div class="absolute inset-0 rounded-full border-4 border-amber-500/20 shadow-2xl transform rotate-3"></div>
         <img 
-          src="/portrait-bw.jpg" 
+          src="/portrait-2.jpg" 
           alt="Björn Kenneth Holmström" 
           class="absolute inset-0 w-full h-full object-cover rounded-full filter grayscale contrast-110 shadow-inner"
         />
