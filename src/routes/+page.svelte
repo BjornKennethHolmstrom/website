@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { t } from '$lib/stores/languageStore.ts';
 	import SEO from '$lib/components/SEO.svelte';
+ import { fly } from 'svelte/transition';
+ import { onMount } from 'svelte';
 
 	// Definiera vår projektdata.
 	const projects = {
@@ -80,6 +82,42 @@
     if (url.startsWith('http')) return 'external';
     return 'local';
   }
+
+  // --- CAROUSEL LOGIC ---
+  let activeIndex = 0;
+  let direction = 1; // 1 for right, -1 for left
+  let autoSlideInterval: any;
+
+  // Compute the current book based on index
+  $: currentBook = $t.bookLaunches[activeIndex];
+
+  const nextSlide = () => {
+    direction = 1;
+    activeIndex = (activeIndex + 1) % $t.bookLaunches.length;
+    resetTimer();
+  };
+
+  const prevSlide = () => {
+    direction = -1;
+    activeIndex = (activeIndex - 1 + $t.bookLaunches.length) % $t.bookLaunches.length;
+    resetTimer();
+  };
+
+  const resetTimer = () => {
+    clearInterval(autoSlideInterval);
+    startTimer();
+  };
+
+  const startTimer = () => {
+    autoSlideInterval = setInterval(() => {
+      nextSlide();
+    }, 8000); // Auto-slide every 8 seconds
+  };
+
+  onMount(() => {
+    startTimer();
+    return () => clearInterval(autoSlideInterval);
+  });
 </script>
 
 <SEO
@@ -104,31 +142,70 @@
 		</div>
 	</section>
 
- <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-amber-100 dark:border-slate-700">
+ <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="relative min-h-[500px] md:min-h-[400px]"> 
         
-        <div class="flex-1 text-center md:text-left">
-          <span class="inline-block px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200 text-xs font-bold tracking-wider uppercase rounded-full mb-4">
-            {$t.bookLaunch.label}
-          </span>
-          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
-            {$t.bookLaunch.title}
-          </h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
-            {$t.bookLaunch.desc}
-          </p>
-          <a href="/books/integration-crisis" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm">
-            {$t.bookLaunch.cta}
-            <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </a>
-        </div>
+        {#key activeIndex}
+          <div 
+            in:fly={{ x: 200 * direction, duration: 400, delay: 100 }} 
+            out:fly={{ x: -200 * direction, duration: 400 }}
+            class="absolute inset-0 w-full"
+          >
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-amber-100 dark:border-slate-700 h-full">
+              
+              <div class="flex-1 text-center md:text-left z-10">
+                <span class={`inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 ${currentBook.colorClass}`}>
+                  {currentBook.label}
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+                  {currentBook.title}
+                </h2>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                  {currentBook.desc}
+                </p>
+                <a href={currentBook.url} class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm">
+                  {currentBook.cta}
+                  <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
 
-        <div class="w-48 md:w-56 flex-shrink-0 transform md:rotate-3 transition-transform hover:rotate-0 duration-500">
-            <img src="/resources/book-cover-integration-crisis.svg" alt="The Integration Crisis" class="w-full h-auto rounded shadow-2xl" />
-        </div>
+              <div class="w-48 md:w-56 flex-shrink-0 transform md:rotate-3 transition-transform hover:rotate-0 duration-500 z-10">
+                  <img src={currentBook.cover} alt={currentBook.title} class="w-full h-auto rounded shadow-2xl" />
+              </div>
 
+            </div>
+          </div>
+        {/key}
       </div>
+
+      <button 
+        on:click={prevSlide} 
+        class="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+        aria-label="Previous book"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <button 
+        on:click={nextSlide} 
+        class="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+        aria-label="Next book"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+        {#each $t.bookLaunches as _, i}
+          <button 
+            class="w-2.5 h-2.5 rounded-full transition-colors {i === activeIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"
+            on:click={() => { direction = i > activeIndex ? 1 : -1; activeIndex = i; resetTimer(); }}
+            aria-label="Go to slide {i + 1}"
+          ></button>
+        {/each}
+      </div>
+
     </div>
   </section>
 	

@@ -61,12 +61,26 @@ export const coreTranslations = {
 		universalizeTagline: 'Explore universal perspective and cosmic responsibility.',
 		spiritualizedTitle: 'Spiritualized.org',
 		spiritualizedTagline: 'Spirituality as permission to be. A refuge for the overwhelmed soul.',
-  bookLaunch: {
-    label: "Latest Publication",
-    title: "The Integration Crisis",
-    desc: "Why does winning feel like losing? A diagnostic manual for civilizational redesign and the shift to Yellow consciousness.",
-    cta: "Read the Book"
-  },
+  bookLaunches: [
+    {
+      label: "Latest Publication",
+      title: "The Integration Crisis",
+      desc: "Why does winning feel like losing? A diagnostic manual for civilizational redesign and the shift to Yellow consciousness.",
+      cta: "Read the Book",
+      url: "/books/integration-crisis",
+      cover: "/resources/book-cover-integration-crisis.svg", // Ensure this path exists
+      colorClass: "bg-amber-100 text-amber-800" // Custom badge color
+    },
+    {
+      label: "Online Exclusive",
+      title: "Radical Competence",
+      desc: "A strategic field guide for the frustrated progressive. How to stop losing to the oligarchy and reclaim the capability to govern.",
+      cta: "Read Online",
+      url: "https://globalgovernanceframeworks.org/resources/books/radical-competence", // Adjust URL as needed
+      cover: "/resources/book-cover-radical-competence.svg", // Placeholder name
+      colorClass: "bg-emerald-100 text-emerald-800" // Green badge for "Stage Green" target
+    }
+  ],
   blog: {
 			meta: {
 				title: 'Blog | Björn Kenneth Holmström',
@@ -198,12 +212,26 @@ export const coreTranslations = {
 			title: 'Blogginlägg',
 			listPrefix: 'Här är alla mina '
 		},
-  bookLaunch: {
-    label: "Senaste Utgivning",
-    title: "Integrationskrisen",
-    desc: "Varför känns framgång som förlust? En handbok för civilisatorisk redesign och skiftet till Gult medvetande.",
-    cta: "Läs Boken"
-  },
+  bookLaunches: [
+    {
+      label: "Senaste Utgivning",
+      title: "Integrationskrisen",
+      desc: "Varför känns framgång som förlust? En handbok för civilisatorisk redesign och skiftet till Gult medvetande.",
+      cta: "Läs Boken",
+      url: "/books/integration-crisis",
+      cover: "/resources/book-cover-integration-crisis.svg",
+      colorClass: "bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200"
+    },
+    {
+      label: "Exklusivt Online",
+      title: "Radical Competence", // Titles usually stay in original lang or "Radikal Kompetens"
+      desc: "En strategisk fälthandbok för den frustrerade progressiva. Hur vi slutar förlora mot oligarkin och återtar förmågan att styra.",
+      cta: "Läs Online",
+      url: "https://globalgovernanceframeworks.org/resources/books/radical-competence",
+      cover: "/resources/book-cover-radical-competence.svg",
+      colorClass: "bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200"
+    }
+  ],
 		blogTagline: 'Min blogg',
   blogFollow: 'Följ via',
   booksTitle: 'Böcker',
