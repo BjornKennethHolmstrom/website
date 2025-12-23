@@ -29,21 +29,21 @@
   architecture: [
 			{
 				type: 'emoji',
-				key: 'spheres',
-    emoji: '🪐', // Ringed planet for Shared Spheres
-				url: 'https://github.com/BjornKennethHolmstrom/SharedSpheres'
+				key: 'civicbase',
+				emoji: '🛡️', // Shield for CivicBase (formerly CosmicSyncCore)
+				url: 'https://github.com/BjornKennethHolmstrom/CivicBase'
+			},
+			{
+				type: 'emoji',
+				key: 'stuga',
+    emoji: '🏠', // House for Stuga
+				url: 'https://github.com/GlobalGovernanceFrameworks/love-ledger'
 			},
 			{
 				type: 'img',
 				key: 'janus',
 				logo: 'logo-project-janus.svg',            // '🧠', Brain/Wisdom for Janus
 				url: 'https://github.com/BjornKennethHolmstrom/ProjectJanus'
-			},
-			{
-				type: 'emoji',
-				key: 'cosmic',
-				emoji: '🏗️', // Infrastructure for CosmicSync
-				url: 'https://github.com/BjornKennethHolmstrom/CosmicSyncCore'
 			}
 		],
 		quartet: [
