@@ -33,13 +33,13 @@
 				type: 'emoji',
 				key: 'civicbase',
 				emoji: '🛡️', // Shield for CivicBase (formerly CosmicSyncCore)
-				url: 'https://github.com/BjornKennethHolmstrom/CivicBase'
+				url: 'https://github.com/GlobalGovernanceFrameworks/CivicBase'
 			},
 			{
 				type: 'emoji',
 				key: 'stuga',
     emoji: '🏠', // House for Stuga
-				url: 'https://github.com/GlobalGovernanceFrameworks/love-ledger'
+				url: 'https://github.com/GlobalGovernanceFrameworks/Stuga'
 			},
 			{
 				type: 'img',
