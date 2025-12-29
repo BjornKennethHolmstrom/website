@@ -73,6 +73,13 @@
 
    // --- Priority 2: Economy ---
    { 
+     key: 'boosterRocket', 
+     url: '/essays/booster-rocket',
+     icon: '🚀',
+     category: 'Economics',
+     hasPDF: false
+   },
+   { 
  		  key: 'checkoutLine', 
 			  url: '/essays/beyond-the-checkout',
 			  icon: '🛒', // Shopping Cart

@@ -35,6 +35,13 @@ export const essaysTranslations = {
        published: "May 2025",
        readTime: "15 min read"
      },
+     boosterRocket: {
+       title: 'The Booster Rocket That Won\'t Detach',
+       subtitle: 'Redesigning Venture Capital for Companies That Last',
+       desc: 'We\'ve confused temporary risk with permanent ownership. High-risk capital is essential for innovation—but once companies reach orbit, investors shouldn\'t extract forever. Here\'s how redeemable equity fixes venture capital.',
+       published: 'Dec 2025',
+       readTime: '15 min read'
+     },
      g20OperatingSystem: {
          title: "The G20 Just Asked for a New Operating System",
          subtitle: "Here Is the Code",
@@ -232,6 +239,13 @@ export const essaysTranslations = {
        desc: "En systematisk analys av de mekanismer – räntesökande, finansialisering och skatteparadis – som koncentrerar rikedom. Vi går bortom myten om meritokrati till mekaniken bakom omdesign.",
        published: "maj 2025",
        readTime: "15 min läsning"
+     },
+     boosterRocket: {
+       title: 'Boosterraketen som inte lossnar',
+       subtitle: 'Att omdesigna riskkapital för företag som håller',
+       desc: 'Vi har förväxlat tillfällig risk med permanent ägande. Riskkapital är nödvändigt för innovation—men när företag når omloppsbana bör investerare inte extrahera för evigt. Så här fixar inlösbar egenkapital riskkapitalmodellen.',
+       published: 'december 2025',
+       readTime: '15 min läsning'
      },
      g20OperatingSystem: {
          title: "G20 bad just om ett nytt operativsystem",
