@@ -216,6 +216,13 @@
 		 	category: 'Social Fabric',
     hasPDF: false
 		 },
+   { 
+     key: 'holdingContradictions', 
+     url: '/essays/holding-contradictions', // This matches your new route folder
+     icon: '🗺️', // The Map icon fits the "Mapping the Territories" theme perfectly
+     category: 'Social Fabric', // Fits best here alongside societal critique
+     hasPDF: true // Set to true since your individual page has a PDF download link
+   },
  ];
 
 	// Reactive filter

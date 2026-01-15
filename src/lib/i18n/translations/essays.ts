@@ -202,6 +202,13 @@ export const essaysTranslations = {
        published: "Dec 2025",
        readTime: "10 min read"
      },
+     holdingContradictions: {
+       title: "Holding the Contradictions",
+       subtitle: "A Map of Gender in Biology, Experience, and Society",
+       desc: "An integrative map of the gender debate that moves beyond polarization by honoring the partial truths in biology, psychology, culture, and ethics.",
+       published: "Jan 2025",
+       readTime: "45 min read"
+     },
     }
 		}
 	},
@@ -406,6 +413,13 @@ export const essaysTranslations = {
        desc: "Sveriges skolklyfta avslöjar en global mekanism: staden fungerar som en gravitationsbrunn och utvinner humankapital från periferin. Hur AUBI och bioregionalism vänder flödet.",
        published: "Dec 2025",
        readTime: "10 min läsning"
+     },
+     holdingContradictions: {
+       title: "Att hålla motsägelserna",
+       subtitle: "En karta över kön i biologi, erfarenhet och samhälle",
+       desc: "En integrerande karta över könsdebatten som rör sig bortom polarisering genom att hedra de partiella sanningarna inom biologi, psykologi, kultur och etik.",
+       published: "januari 2025",
+       readTime: "45 min läsning"
      },
    }
 		}
