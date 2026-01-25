@@ -73,6 +73,26 @@
 				emoji: '✍️',
 				url: '/blog'
 			}
+		],
+		personal: [
+			{
+				type: 'img',
+				key: 'spiritualized',
+				logo: 'logo-spiritualized.svg',
+				url: 'https://spiritualized.org'
+			},
+			{
+				type: 'emoji',
+				key: 'apps',
+				emoji: '🛠️',
+				url: '/apps'
+			},
+			{
+				type: 'emoji',
+				key: 'creations',
+				emoji: '🎨',
+				url: '/creations'
+			}
 		]
 	};
 
@@ -392,7 +412,7 @@
 				{/each}
 			</div>
 		</div>
-<!--
+
 		<div>
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
 				{$t.clusterLibrary}
@@ -430,7 +450,7 @@
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
 				{$t.clusterPersonal}
 			</h2>
-			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{#each projects.personal as project}
 					<a
 						href={project.url}
@@ -459,6 +479,6 @@
 					</a>
 				{/each}
 			</div>
-		</div> -->
+		</div>
 	</section>
 </div>
