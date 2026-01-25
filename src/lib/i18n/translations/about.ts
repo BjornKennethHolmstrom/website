@@ -1,102 +1,78 @@
+// src/lib/i18n/translations/about.ts
+
 export const aboutTranslations = {
-  en: {
-    about: {
-      meta: {
-        title: 'About | Björn Kenneth Holmström',
-        description: 'From Engineering Physics to Global Governance: The story of an architect building the operating systems for a flourishing world.'
-      },
-      hero: {
-        title: 'About Me',
-        subtitle: 'The Story Behind The Systems'
-      },
-      intro: {
-        title: "Hello, I'm Björn.",
-        subtitle: "Architect. Systems Thinker. Author.",
-        text: "I am a systems architect working at the intersection of institutional design, developmental psychology, and human flourishing. As the founder of Global Governance Frameworks, I am building the open-source blueprints for a regenerative civilization—answering the question of what it would take for humanity to thrive together."
-      },
-      story: {
-        title: "The Journey",
-        p1: "My path began with the precision of Engineering Physics and mathematical optimization. I loved the clarity of equations and the power of code. But as I deepened my understanding of complex systems, I realized that the most critical challenges we face aren't technical—they are psychological and structural.",
-        p2: "In my mid-30s, I moved to the Basque Country to conduct a deep 'field study' into human consciousness. I lived in radical simplicity, dedicating years to meditation and introspective research. I wanted to test the limits of subjective well-being: Is it possible to find total freedom through inner work alone, independent of external systems?",
-        p3: "The answer was a profound 'No.' My research revealed that true sovereignty is not about isolation; it is about *interconnection*. We cannot meditate our way out of a broken ecosystem. I realized that individual flourishing requires a 'holding environment'—structures that support us when we fall and help us grow.",
-        p4: "This insight brought me back to engineering, but with a new focus. I realized we must *architect* for compassion. Today, I build the Global Governance Frameworks to design the 'Hardware, Heart, and Nervous System' of a society where human flourishing is the structural default."
-      },
-      approach: {
-        title: "The Architecture (My Method)",
-        items: [
-          {
-            title: "The Hardware (Structure)",
-            desc: "I apply engineering rigor to institutional design. We need new physical and economic structures that align with planetary boundaries and make regeneration the path of least resistance."
-          },
-          {
-            title: "The Heart (Culture)",
-            desc: "Systems are made of people. I integrate developmental psychology into governance to create cultures of 'supported autonomy'—where empathy and growth are baked into the system."
-          },
-          {
-            title: "The Nervous System (AI & Data)",
-            desc: "I treat AI not just as a tool, but as a cognitive partner. By leveraging technology as a 'sensing mechanism,' we can make wiser, more distributed decisions than any single human mind could alone."
-          }
-        ]
-      },
-      now: {
-        title: "Current Focus",
-        items: [
-          "Architecting the Global Governance Frameworks (GGF).",
-          "Launching 'The Integration Crisis' and the Integration Series.",
-          "Developing 'Cognitive Scaffolding' methodologies for human-AI collaboration.",
-          "Building the community for the open-source governance ecosystem."
-        ]
-      }
-    }
-  },
-  sv: {
-    about: {
-      meta: {
-        title: 'Om mig | Björn Kenneth Holmström',
-        description: 'Från teknisk fysik till global styrning: Berättelsen om en arkitekt som bygger operativsystemen för en blomstrande värld.'
-      },
-      hero: {
-        title: 'Om Mig',
-        subtitle: 'Berättelsen bakom systemen'
-      },
-      intro: {
-        title: "Hej, jag är Björn.",
-        subtitle: "Arkitekt. Systemtänkare. Författare.",
-        text: "Jag är en systemarkitekt som arbetar i skärningspunkten mellan institutionell design, utvecklingspsykologi och mänskligt blomstrande. Som grundare av Global Governance Frameworks bygger jag open-source-ritningar för en regenerativ civilisation – och svarar på frågan om vad som krävs för att mänskligheten ska blomstra tillsammans."
-      },
-      story: {
-        title: "Resan",
-        p1: "Min bana började med precisionen i teknisk fysik och matematisk optimering. Jag älskade ekvationernas tydlighet och kodens kraft. Men i takt med att jag fördjupade min förståelse för komplexa system insåg jag att våra största utmaningar inte är tekniska – de är psykologiska och strukturella.",
-        p2: "I 35-årsåldern flyttade jag till Baskien för att genomföra en djupgående studie i mänskligt medvetande. Jag levde i radikal enkelhet och ägnade år åt meditation och introspektiv forskning. Jag ville testa gränserna för subjektivt välbefinnande: Är det möjligt att finna total frihet enbart genom inre arbete, oberoende av yttre system?",
-        p3: "Svaret blev ett tydligt 'Nej'. Min forskning visade att sann suveränitet inte handlar om isolering, utan om *samspel*. Vi kan inte meditera oss ur ett trasigt ekosystem. Jag insåg att mänskligt blomstrande kräver en 'hållande miljö' – strukturer som stöttar oss när vi faller och hjälper oss att växa.",
-        p4: "Denna insikt förde mig tillbaka till ingenjörskonsten, men med ett nytt fokus. Jag insåg att vi måste *arkitekta* för medkänsla. Idag bygger jag Global Governance Frameworks för att designa 'Hårdvaran, Hjärtat och Nervsystemet' i ett samhälle där mänskligt blomstrande är standardinställningen."
-      },
-      approach: {
-        title: "Arkitekturen (Min Metod)",
-        items: [
-          {
-            title: "Hårdvaran (Struktur)",
-            desc: "Jag tillämpar ingenjörsmässig stringens på institutionell design. Vi behöver nya fysiska och ekonomiska strukturer som ligger i linje med planetära gränser och gör regeneration till den enklaste vägen."
-          },
-          {
-            title: "Hjärtat (Kultur)",
-            desc: "System består av människor. Jag integrerar utvecklingspsykologi i styrning för att skapa kulturer av 'stöttad autonomi' – där empati och utveckling är inbyggt i systemet."
-          },
-          {
-            title: "Nervsystemet (AI & Data)",
-            desc: "Jag ser inte AI bara som ett verktyg, utan som en kognitiv partner. Genom att använda teknik som en 'kännande mekanism' kan vi fatta klokare, mer distribuerade beslut än vad något enskilt mänskligt sinne kan göra ensamt."
-          }
-        ]
-      },
-      now: {
-        title: "Just nu",
-        items: [
-          "Arkitektur och utveckling av Global Governance Frameworks (GGF).",
-          "Lansering av 'Integrationskrisen' och bokserien om integration.",
-          "Utveckling av metodiken 'Cognitive Scaffolding' för samarbete mellan människa och AI.",
-          "Bygger communityt för det öppna ekosystemet kring governance."
-        ]
-      }
-    }
-  }
+	en: {
+		about: {
+			meta: {
+				title: 'About | Björn Kenneth Holmström',
+				description:
+					'The story behind the work: from engineering physics to mystical experiences, depression, and the drive to build systems for a flourishing world.'
+			},
+			hero: {
+				title: 'About Me',
+				subtitle: 'The Story Behind The Systems'
+			},
+			introTitle: 'Who I Am',
+			intro: `I’m a curious thinker, passionate creator, and dedicated systems designer working to bridge the gap between ideas and action. With a background in engineering physics and mathematical optimization, my work centers on fostering collaboration and re-imagining what’s possible for individuals, communities, and the planet.`,
+			journeyTitle: 'My Journey',
+			journey_physics: `My journey started in software development, but my curiosity has taken me from Sweden to the Basque Country and Japan, gaining perspectives that shape my approach to life. I've explored everything from Viking crafts to advanced mathematics.`,
+			journey_mystic: `Around 2014, after deep work with yoga and meditation, I began having mystical experiences. While living in the Basque Country, this questioning of reality intensified. I lived with almost no money for two years, exploring art and mysticism. Eventually, this spiraled out of control. I lost my apartment, lived in an abandoned house for a month, and ultimately returned to "ordinary" life.`,
+			journey_return: `With the help of family, I moved back to Sweden. This was followed by a deep, long-term depression and in-organic psychosis that lasted over five years. This painful journey became foundational. It gave me the perspective of the "depressed mystic" and clarified my mission: to build systems that support *all* of life, including the parts that are broken, healing, or simply being. This perspective is the "why" behind my work, including <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
+			missionTitle: 'My Mission & Core Projects',
+			mission_ggf: `My most ambitious contribution is initiating <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, a collaborative platform to rethink how we steward our planet. It’s a labor of hope, complexity, and care.`,
+			mission_quartet: `To support this vision, I’m building <a href="/">a quartet of tools</a>—Spiralize.org, Nondualize.org, Communize.org, and Universalize.org—alongside a political movement, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, focused on holistic societal transformation.`,
+			mission_question: `A driving question informs everything I do: <strong>How can we improve ourselves and the planet while avoiding the mistakes of the past and staying true to our essence?</strong>`,
+			inspirationsTitle: 'Inspirations',
+			inspirations: [
+				'The beauty of interconnected systems in nature, society, and reality as a whole.',
+				'The potential for technology to empower and uplift humanity.',
+				'The pursuit of philosophy, art, science, and spirituality.',
+				'The endless expressions of life and consciousness in nature.',
+				'The possibility of harmony between all living beings.'
+			],
+			interestsTitle: 'Other Passions',
+			interests_music: `I love music and have played piano, drums, bass, and guitar in several bands (Raskolnikov, Devil Killers, Fistful of Heart).`,
+			interests_gaming: `On platforms like Steam, I’m known as <strong>Pwnytale</strong>. I've played a lot of GeoGuessr and other community games.`,
+			interests_nature: `My connection with nature and animals runs deep, which led me to get involved with animal rights movements like Anonymous for the Voiceless.`,
+			cta: `Thank you for reading. I’d love to connect.`,
+			cta_button: `Get in Touch`
+		}
+	},
+	sv: {
+		about: {
+			meta: {
+				title: 'Om mig | Björn Kenneth Holmström',
+				description:
+					'Berättelsen bakom arbetet: från teknisk fysik till mystiska upplevelser, depression och drivkraften att bygga system för en blomstrande värld.'
+			},
+			hero: {
+				title: 'Om Mig',
+				subtitle: 'Berättelsen bakom systemen'
+			},
+			introTitle: 'Vem jag är',
+			intro: `Jag är en nyfiken tänkare, passionerad skapare och dedikerad systemdesigner som arbetar för att överbrygga klyftan mellan idéer och handling. Med en bakgrund inom teknisk fysik och matematisk optimering, centrerar mitt arbete kring att främja samarbete och omforma vad som är möjligt för individer, samhällen och planeten.`,
+			journeyTitle: 'Min Resa',
+			journey_physics: `Min resa började inom mjukvaruutveckling, men min nyfikenhet har tagit mig från Sverige till Baskien och Japan, vilket gett mig perspektiv som formar min syn på livet. Jag har utforskat allt från vikingahantverk till avancerad matematik.`,
+			journey_mystic: `Runt 2014, efter djupt arbete med yoga och meditation, började jag få mystiska upplevelser. När jag bodde i Baskien intensifierades detta ifrågasättande av verkligheten. Jag levde nästan utan pengar i två år och utforskade konst och mystik. Till slut spårade detta ur. Jag förlorade min lägenhet, bodde i ett övergivet hus i en månad och återvände till slut till det "vanliga" livet.`,
+			journey_return: `Med hjälp av familj flyttade jag tillbaka till Sverige. Detta följdes av en djup, långvarig depression och oorganisk psykos som varade i över fem år. Denna smärtsamma resa blev grundläggande. Den gav mig "den deprimerade mystikerns" perspektiv och klargjorde mitt uppdrag: att bygga system som stöder *allt* liv, inklusive de delar som är trasiga, helande eller bara är. Detta perspektiv är "varför" bakom mitt arbete, inklusive <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
+			missionTitle: 'Mitt Uppdrag & Kärnprojekt',
+			mission_ggf: `Mitt mest ambitiösa bidrag är initiativet till <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, en samarbetsplattform för att ompröva hur vi förvaltar vår planet. Det är ett arbete fyllt av hopp, komplexitet och omsorg.`,
+			mission_quartet: `För att stödja denna vision bygger jag <a href="/">en kvartett av verktyg</a>—Spiralize.org, Nondualize.org, Communize.org och Universalize.org—tillsammans med en politisk rörelse, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, fokuserad på holistisk samhällsomvandling.`,
+			mission_question: `En drivande fråga genomsyrar allt jag gör: <strong>Hur kan vi förbättra oss själva och planeten samtidigt som vi undviker tidigare misstag och förblir sanna mot vår essens?</strong>`,
+			inspirationsTitle: 'Inspiration',
+			inspirations: [
+				'Skönheten i sammankopplade system i naturen, samhället och verkligheten som helhet.',
+				'Potentialen för teknik att stärka och lyfta mänskligheten.',
+				'Strävan efter filosofi, konst, vetenskap och andlighet.',
+				'De oändliga uttrycken för liv och medvetande i naturen.',
+				'Möjligheten till harmoni mellan alla levande varelser.'
+			],
+			interestsTitle: 'Andra Passioner',
+			interests_music: `Jag älskar musik och har spelat piano, trummor, bas och gitarr i flera band (Raskolnikov, Devil Killers, Fistful of Heart).`,
+			interests_gaming: `På plattformar som Steam är jag känd som <strong>Pwnytale</strong>. Jag har spelat mycket GeoGuessr och andra community-spel.`,
+			interests_nature: `Min koppling till naturen och djuren är djup, vilket ledde till att jag engagerade mig i djurrättsrörelser som Anonymous for the Voiceless.`,
+			cta: `Tack för att du har läst. Jag skulle uppskatta att få kontakt.`,
+			cta_button: `Hör av dig`
+		}
+	}
 };
