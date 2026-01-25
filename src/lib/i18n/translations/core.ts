@@ -4,7 +4,7 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO start page
 		meta: {
-			title: 'Björn Kenneth Holmström | Design with Systems Thinking',
+			title: 'Björn Kenneth Holmström | Design of Conscious Systems',
 			description:
 				'The personal hub for Björn Kenneth Holmström. Explore an ecosystem of open-source tools, books, and articles on systems thinking, consciousness, and global governance.'
 		},
@@ -28,7 +28,7 @@ export const coreTranslations = {
 		// Hero
   title: 'Architect of the Global Governance Frameworks',
 		mission:
-			'I am a systems thinker, consciousness researcher, and the architect of the Global Governance Frameworks initiative. My work focuses on the intersection of developmental psychology, institutional design, and human flourishing.',
+			'I am a pattern weaver, consciousness researcher, and the architect of the Global Governance Frameworks initiative. My work focuses on the intersection of developmental psychology, institutional design, and human flourishing.',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
 		clusterQuartet: 'The Awareness Quartet',
@@ -147,7 +147,7 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO för startsidan
 		meta: {
-			title: 'Björn Kenneth Holmström | Design med systemtänk',
+			title: 'Björn Kenneth Holmström | Design av medvetna system',
 			description:
 				'Björn Kenneth Holmströms personliga nav. Utforska ett ekosystem av verktyg, böcker och artiklar om systemtänkande, medvetande och global styrning.'
 		},
@@ -171,7 +171,7 @@ export const coreTranslations = {
 		// Hero
   title: 'Arkitekt för Global Governance Frameworks',
 		mission:
-			'Jag är systemtänkare, medvetandeforskare och arkitekt bakom initiativet Global Governance Frameworks. Mitt arbete fokuserar på skärningspunkten mellan utvecklingspsykologi, institutionell design och mänskligt välmående.',
+			'Jag är mönstervävare, medvetandeforskare och arkitekt bakom initiativet Global Governance Frameworks. Mitt arbete fokuserar på skärningspunkten mellan utvecklingspsykologi, institutionell design och mänskligt välmående.',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
 		clusterQuartet: 'Medvetandets kvartett',
