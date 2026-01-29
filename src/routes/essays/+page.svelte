@@ -123,6 +123,13 @@
      category: 'AI & Tech',
      hasPDF: false
    },
+   { 
+     key: 'beyondAlignment', 
+     url: '/essays/beyond-alignment',
+     icon: '🪜', // Ladder - representing stages/development
+     category: 'AI & Tech',
+     hasPDF: false
+   },
 
    // --- Priority 3: Consciousness ---
    { 

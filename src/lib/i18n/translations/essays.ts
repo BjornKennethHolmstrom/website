@@ -116,6 +116,13 @@ export const essaysTranslations = {
        published: "Nov 2025",
        readTime: "10 min read"
      },
+     beyondAlignment: {
+       title: 'Beyond Alignment',
+       subtitle: 'AI and the Architecture of Human Development',
+       desc: 'An exploration of a neglected dimension of AI risk: that perfectly aligned AI might prevent civilizational development by optimizing away the friction that forces stage transitions. Building on Dario Amodei\'s "The Adolescence of Technology," this essay asks whether surviving our technological adolescence is the same as actually growing up.',
+       published: 'Jan 2026',
+       readTime: '30 min read'
+     },
      fjärilspartiet: {
        title: "The Metamorphosis of Politics",
        subtitle: "Designing a Political Vehicle for the Polycrisis",
@@ -329,6 +336,13 @@ export const essaysTranslations = {
        desc: "Ett svar på den cyniska uppfattningen att vi kommer att omdefiniera medvetandet för att undvika moraliskt ansvar. Introduktion av Oracle-protokollet: styrningsarkitektur för digital medvetenhet",
        published: "november 2025",
        readTime: "10 min läsning"
+     },
+     beyondAlignment: {
+       title: 'Bortom anpassning',
+       subtitle: 'AI och den mänskliga utvecklingens arkitektur',
+       desc: 'En utforskning av en försummad dimension av AI-risk: att perfekt anpassad AI kan förhindra civilisatorisk utveckling genom att optimera bort friktionen som driver stadieövergångar. Byggandes på Dario Amodeis "The Adolescence of Technology" frågar denna essä om att överleva vår teknologiska ungdomstid är samma sak som att faktiskt växa upp.',
+       published: 'januari 2026',
+       readTime: '30 min läsning'
      },
      fjärilspartiet: {
        title: "Politikens metamorfos",
