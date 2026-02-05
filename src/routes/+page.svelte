@@ -162,88 +162,6 @@
 		</div>
 	</section>
 
- <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-      
-      <div class="relative min-h-[500px] md:min-h-[400px]"> 
-        
-        {#key activeIndex}
-          <div 
-            in:fly={{ x: 200 * direction, duration: 400, delay: 100 }} 
-            out:fly={{ x: -200 * direction, duration: 400 }}
-            class="absolute inset-0 w-full"
-          >
-            <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-amber-100 dark:border-slate-700 h-full">
-              
-              <div class="flex-1 text-center md:text-left z-10">
-                <span class={`inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 ${currentBook.colorClass}`}>
-                  {currentBook.label}
-                </span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
-                  {currentBook.title}
-                </h2>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
-                  {currentBook.desc}
-                </p>
-                <a 
-                  href={currentBook.url} 
-                  target={getLinkType(currentBook.url) === 'external' ? '_blank' : '_self'}
-                  rel={getLinkType(currentBook.url) === 'external' ? 'noopener noreferrer' : ''}
-                  class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
-                >
-                  {currentBook.cta}
-                  
-                  {#if getLinkType(currentBook.url) === 'external'}
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  {:else}
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                    </svg>
-                  {/if}
-
-                </a>
-              </div>
-
-              <div class="w-48 md:w-56 flex-shrink-0 transform md:rotate-3 transition-transform hover:rotate-0 duration-500 z-10">
-                  <img src={currentBook.cover} alt={currentBook.title} class="w-full h-auto rounded shadow-2xl" />
-              </div>
-
-            </div>
-          </div>
-        {/key}
-      </div>
-
-      <button 
-        on:click={prevSlide} 
-        class="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
-        aria-label="Previous book"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-      </button>
-
-      <button 
-        on:click={nextSlide} 
-        class="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
-        aria-label="Next book"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-      </button>
-
-      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
-        {#each $t.bookLaunches as _, i}
-          <button 
-            class="w-2.5 h-2.5 rounded-full transition-colors {i === activeIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"
-            on:click={() => { direction = i > activeIndex ? 1 : -1; activeIndex = i; resetTimer(); }}
-            aria-label="Go to slide {i + 1}"
-          ></button>
-        {/each}
-      </div>
-
-    </div>
-  </section>
-	
 	<section class="space-y-12 py-16 md:py-24">
 		<div>
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
@@ -481,4 +399,86 @@
 			</div>
 		</div>
 	</section>
+
+ <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      
+      <div class="relative min-h-[500px] md:min-h-[400px]"> 
+        
+        {#key activeIndex}
+          <div 
+            in:fly={{ x: 200 * direction, duration: 400, delay: 100 }} 
+            out:fly={{ x: -200 * direction, duration: 400 }}
+            class="absolute inset-0 w-full"
+          >
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-amber-100 dark:border-slate-700 h-full">
+              
+              <div class="flex-1 text-center md:text-left z-10">
+                <span class={`inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 ${currentBook.colorClass}`}>
+                  {currentBook.label}
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+                  {currentBook.title}
+                </h2>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                  {currentBook.desc}
+                </p>
+                <a 
+                  href={currentBook.url} 
+                  target={getLinkType(currentBook.url) === 'external' ? '_blank' : '_self'}
+                  rel={getLinkType(currentBook.url) === 'external' ? 'noopener noreferrer' : ''}
+                  class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
+                >
+                  {currentBook.cta}
+                  
+                  {#if getLinkType(currentBook.url) === 'external'}
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  {:else}
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  {/if}
+
+                </a>
+              </div>
+
+              <div class="w-48 md:w-56 flex-shrink-0 transform md:rotate-3 transition-transform hover:rotate-0 duration-500 z-10">
+                  <img src={currentBook.cover} alt={currentBook.title} class="w-full h-auto rounded shadow-2xl" />
+              </div>
+
+            </div>
+          </div>
+        {/key}
+      </div>
+
+      <button 
+        on:click={prevSlide} 
+        class="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+        aria-label="Previous book"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+
+      <button 
+        on:click={nextSlide} 
+        class="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+        aria-label="Next book"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+        {#each $t.bookLaunches as _, i}
+          <button 
+            class="w-2.5 h-2.5 rounded-full transition-colors {i === activeIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"
+            on:click={() => { direction = i > activeIndex ? 1 : -1; activeIndex = i; resetTimer(); }}
+            aria-label="Go to slide {i + 1}"
+          ></button>
+        {/each}
+      </div>
+
+    </div>
+  </section>
 </div>
