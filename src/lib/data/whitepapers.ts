@@ -66,7 +66,7 @@ export const papersData: Whitepaper[] = [
 	 key: 'fractalCyberneticConsciousness',
 	 category: 'consciousness',
 	 tags: ['Systems Theory', 'Cybernetics', 'Fractal Geometry', 'Nondual Philosophy', 'Consciousness Studies'],
-	 year: '2025',
+	 year: '2026',
 	 pages: '51',
 	 readTime: {
 		 en: '1 hour',
