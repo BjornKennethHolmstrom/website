@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del VIII: Slutsats**
+# **Del VIII: Slutsats**
 
 *Integration genom att känna igen fiktionen*
 

@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part V: Practical Implications**
+# **Part V: Practical Implications**
 
 *What This Means for Systems, Not Just Individuals*
 

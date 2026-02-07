@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del V: Praktiska implikationer**
+# **Del V: Praktiska implikationer**
 
 *Vad detta betyder för system, inte bara individer*
 

@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part I: The Problem**
+# **Part I: The Problem**
 
 *Why Current Paradigms Can't Handle This*
 

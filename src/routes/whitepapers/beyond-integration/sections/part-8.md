@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part VIII: Conclusion**
+# **Part VIII: Conclusion**
 
 *Integration Through Recognizing the Fiction*
 

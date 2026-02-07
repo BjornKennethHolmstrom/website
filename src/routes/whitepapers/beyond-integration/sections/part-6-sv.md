@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del VI: Den specifika frågan**
+# **Del VI: Den specifika frågan**
 
 *Ska jag sluta med min medicinering? Vad skulle säker utforskning faktiskt kräva?*
 

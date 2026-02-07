@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del 0: Öppningen**
+# **Del 0: Öppningen**
 
 *En personlig redogörelse av Björn Kenneth Holmström*
 

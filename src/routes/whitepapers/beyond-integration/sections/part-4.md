@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part IV: The Janus Integration**
+# **Part IV: The Janus Integration**
 
 *Holding Both Truths Simultaneously*
 

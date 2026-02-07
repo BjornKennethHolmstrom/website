@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part III: Historical and Cultural Context**
+# **Part III: Historical and Cultural Context**
 
 *This Has Happened Before*
 

@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part II: The Aperture Theory**
+# **Part II: The Aperture Theory**
 
 *A New Framework for Consciousness and Reality Construction*
 

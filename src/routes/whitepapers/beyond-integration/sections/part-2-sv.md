@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del II: Aperturteorin**
+# **Del II: Aperturteorin**
 
 *Ett nytt ramverk för medvetande och verklighetskonstruktion*
 

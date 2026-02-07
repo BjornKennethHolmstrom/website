@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part 0: The Aperture Opens**
+# **Part 0: The Aperture Opens**
 
 *A Personal Account by Björn Kenneth Holmström*
 

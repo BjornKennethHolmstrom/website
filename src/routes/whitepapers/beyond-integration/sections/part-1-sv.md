@@ -1,8 +1,4 @@
-Här är översättningen av del I.
-
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del I: Problemet**
+# **Del I: Problemet**
 
 *Varför nuvarande paradigm inte kan hantera detta*
 

@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del III: Historisk och kulturell kontext**
+# **Del III: Historisk och kulturell kontext**
 
 *Detta har hänt förut*
 

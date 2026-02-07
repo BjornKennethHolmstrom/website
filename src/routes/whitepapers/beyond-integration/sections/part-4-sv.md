@@ -1,8 +1,4 @@
-Här är översättningen av del IV.
-
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del IV: Janus-integrationen**
+# **Del IV: Janus-integrationen**
 
 *Att hålla två sanningar samtidigt*
 

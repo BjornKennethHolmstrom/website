@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part VII: Research Agenda**
+# **Part VII: Research Agenda**
 
 *The Questions That Remain*
 

@@ -1,6 +1,4 @@
-# Bortom integration: Icke-dualitet, psykos och aperturproblemet
-
-**Del VII: Forskningsagenda**
+# **Del VII: Forskningsagenda**
 
 *Frågorna som återstår*
 

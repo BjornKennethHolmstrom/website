@@ -1,6 +1,4 @@
-# Beyond Integration: Nonduality, Psychosis, and the Aperture Problem
-
-**Part VI: The Specific Question**
+# **Part VI: The Specific Question**
 
 *Should I Stop My Medication? What Would Safe Exploration Actually Require?*
 
