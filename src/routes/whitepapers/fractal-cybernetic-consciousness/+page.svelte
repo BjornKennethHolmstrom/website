@@ -313,7 +313,7 @@
           <span class="text-sm font-bold opacity-70">{t.relatedWork}</span>
           <a href="https://github.com/BjornKennethHolmstrom/ProjectJanus" target="_blank" class="text-sm hover:underline">{t.janusLink}</a>
           <a 
-            href="/spiral-dynamics" 
+            href="https://www.spiralize.org" 
             class="text-sm hover:underline"
           >
             {t.spiralDynamicsLink}
