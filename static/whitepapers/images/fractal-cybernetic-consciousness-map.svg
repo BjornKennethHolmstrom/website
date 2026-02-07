@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="900"
+   viewBox="0 0 1200 900"
+   style="font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background-color: #0a0a1a;"
+   version="1.1"
+   id="svg57"
+   sodipodi:docname="fractal-cybernetic-consciousness-map.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview57"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.96444444"
+     inkscape:cx="185.59908"
+     inkscape:cy="520.50691"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg57" />
+  <defs
+     id="defs16">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#fractalSubstrate"
+       id="pattern57"
+       patternTransform="translate(500,120)" />
+    <!-- Subtle fractal background pattern -->
+    <pattern
+       id="fractalSubstrate"
+       x="0"
+       y="0"
+       width="150"
+       height="150"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M75 10 L140 75 L75 140 L10 75 Z"
+         fill="none"
+         stroke="#1a1a3a"
+         stroke-width="0.8"
+         opacity="0.4"
+         id="path1" />
+      <path
+         d="M75 40 L110 75 L75 110 L40 75 Z"
+         fill="none"
+         stroke="#1a1a3a"
+         stroke-width="0.5"
+         opacity="0.3"
+         id="path2" />
+      <circle
+         cx="75"
+         cy="75"
+         r="25"
+         fill="none"
+         stroke="#1a1a3a"
+         stroke-width="0.5"
+         opacity="0.2"
+         id="circle2" />
+      <circle
+         cx="75"
+         cy="75"
+         r="10"
+         fill="none"
+         stroke="#1a1a3a"
+         stroke-width="0.3"
+         opacity="0.2"
+         id="circle3" />
+    </pattern>
+    <!-- Gradients -->
+    <linearGradient
+       id="axisGradient"
+       x1="-69.8212"
+       y1="139.6424"
+       x2="-69.8212"
+       y2="0"
+       gradientTransform="matrix(0.21483446,0,0,4.6547467,500,100)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#2c003e"
+         stop-opacity="0.9"
+         id="stop3" />
+      <stop
+         offset="30%"
+         stop-color="#4a148c"
+         stop-opacity="0.7"
+         id="stop4" />
+      <stop
+         offset="70%"
+         stop-color="#6a1b9a"
+         stop-opacity="0.5"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#ab47bc"
+         stop-opacity="0.2"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="spiralGradient">
+      <stop
+         offset="0%"
+         stop-color="#ff5252"
+         id="stop7" />
+      <stop
+         offset="40%"
+         stop-color="#ffb142"
+         id="stop8" />
+      <stop
+         offset="75%"
+         stop-color="#33d9b2"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#34ace0"
+         id="stop10" />
+    </linearGradient>
+    <radialGradient
+       id="nodeGlow"
+       cx="50%"
+       cy="50%"
+       r="50%">
+      <stop
+         offset="0%"
+         stop-color="#ffffff"
+         stop-opacity="1"
+         id="stop11" />
+      <stop
+         offset="70%"
+         stop-color="#33d9b2"
+         stop-opacity="0.6"
+         id="stop12" />
+      <stop
+         offset="100%"
+         stop-color="#33d9b2"
+         stop-opacity="0"
+         id="stop13" />
+    </radialGradient>
+    <!-- Filters -->
+    <filter
+       id="softGlow"
+       x="-1.5"
+       y="-1.5"
+       width="4"
+       height="4">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur13" />
+      <feFlood
+         flood-color="#33d9b2"
+         flood-opacity="0.3"
+         result="glowColor"
+         id="feFlood13" />
+      <feComposite
+         in="glowColor"
+         in2="blur"
+         operator="in"
+         result="softGlow"
+         id="feComposite13" />
+      <feMerge
+         id="feMerge14">
+        <feMergeNode
+           in="softGlow"
+           id="feMergeNode13" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode14" />
+      </feMerge>
+    </filter>
+    <filter
+       id="phaseTransitionGlow"
+       x="-0.48"
+       y="-0.48"
+       width="1.96"
+       height="1.96">
+      <feGaussianBlur
+         stdDeviation="8"
+         result="blur"
+         id="feGaussianBlur14" />
+      <feFlood
+         flood-color="#ffdd59"
+         flood-opacity="0.4"
+         id="feFlood14" />
+      <feComposite
+         in2="blur"
+         operator="in"
+         id="feComposite14" />
+      <feMerge
+         id="feMerge16">
+        <feMergeNode
+           id="feMergeNode15" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode16" />
+      </feMerge>
+    </filter>
+    <!-- Arrow marker -->
+    <marker
+       id="arrow"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M0,0 L0,6 L9,3 z"
+         fill="#6c5ce7"
+         id="path16" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#spiralGradient"
+       id="linearGradient57"
+       gradientTransform="matrix(0.7121105,0,0,1.4042764,500,100)"
+       x1="-204.37602"
+       y1="34.181304"
+       x2="204.37541"
+       y2="34.181304"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- ===== BACKGROUND ===== -->
+  <rect
+     width="100%"
+     height="100%"
+     fill="url(#fractalSubstrate)"
+     id="rect16" />
+  <text
+     x="600"
+     y="870"
+     text-anchor="middle"
+     fill="#5d6d97"
+     font-size="14"
+     font-style="italic"
+     id="text16">
+    Consciousness as Fractal Substrate (Brahman, Dharmakaya) — Self-similar pattern across all scales
+  </text>
+  <!-- ===== CENTRAL AXIS ===== -->
+  <rect
+     x="485"
+     y="100"
+     width="30"
+     height="650"
+     fill="url(#axisGradient)"
+     rx="8"
+     id="rect17"
+     style="fill:url(#axisGradient)" />
+  <text
+     x="610.13824"
+     y="767.92627"
+     fill="#a29bfe"
+     font-size="14px"
+     font-weight="500"
+     id="text17">Contracted Identification (Low RV)</text>
+  <circle
+     cx="500"
+     cy="760"
+     r="8"
+     fill="#ff5252"
+     opacity="0.8"
+     id="circle17" />
+  <text
+     x="548.53369"
+     y="116.80285"
+     fill="#74b9ff"
+     font-size="14px"
+     font-weight="500"
+     id="text18">Nondual Abidance (Sahaja)</text>
+  <circle
+     cx="500"
+     cy="120"
+     r="12"
+     fill="#74b9ff"
+     filter="url(#softGlow)"
+     id="circle18" />
+  <g
+     transform="rotate(-90,425,25)"
+     id="g19">
+    <text
+       x="0"
+       y="0"
+       fill="#dfe6e9"
+       font-size="16px"
+       font-weight="600"
+       text-anchor="middle"
+       id="text19">Increasing Requisite Variety →</text>
+    <line
+       x1="-80"
+       y1="3"
+       x2="80"
+       y2="3"
+       stroke="#6c5ce7"
+       stroke-width="2"
+       stroke-dasharray="4, 2"
+       id="line19" />
+  </g>
+  <!-- ===== EVOLUTIONARY SPIRAL ===== -->
+  <path
+     d="m 500,760 a 60,40 0 1 0 0,-40"
+     fill="none"
+     stroke="#ff5252"
+     stroke-width="3"
+     opacity="0.7"
+     id="path20" />
+  <text
+     x="616.29034"
+     y="740"
+     fill="#fab1a0"
+     font-size="12px"
+     id="text20">Egoic Baseline: Low bandwidth, reactive focus</text>
+  <path
+     d="M 500,720 C 380,720 320,650 380,580 440,510 560,510 620,440 680,370 620,300 500,270 380,240 320,190 380,150"
+     fill="none"
+     stroke="url(#spiralGradient)"
+     stroke-width="4"
+     stroke-linecap="round"
+     opacity="0.9"
+     id="path21"
+     style="stroke:url(#linearGradient57)" />
+  <g
+     transform="translate(359.3318,652.07373)"
+     id="g21">
+    <circle
+       cx="0"
+       cy="0"
+       r="6"
+       fill="#ffb142"
+       id="circle21" />
+    <text
+       x="20"
+       y="4"
+       fill="#fdcb6e"
+       font-size="12px"
+       id="text21">Stabilization (Śamatha)</text>
+  </g>
+  <g
+     transform="translate(596.08295,462.67281)"
+     id="g22">
+    <circle
+       cx="0"
+       cy="0"
+       r="6"
+       fill="#00cec9"
+       id="circle22" />
+    <text
+       x="20"
+       y="4"
+       fill="#81ecec"
+       font-size="12px"
+       id="text22">Expansion (Vipassanā)</text>
+  </g>
+  <g
+     transform="translate(394.58525,344.81567)"
+     id="g23">
+    <circle
+       cx="0"
+       cy="0"
+       r="6"
+       fill="#6c5ce7"
+       id="circle23" />
+    <text
+       x="20"
+       y="4"
+       fill="#a29bfe"
+       font-size="12px"
+       id="text23">Insight (Prajñā)</text>
+  </g>
+  <g
+     transform="translate(500,270)"
+     id="g26">
+    <circle
+       cx="0"
+       cy="0"
+       r="20"
+       fill="#ffdd59"
+       filter="url(#phaseTransitionGlow)"
+       opacity="0.9"
+       id="circle24" />
+    <circle
+       cx="0"
+       cy="0"
+       r="8"
+       fill="#ffffff"
+       id="circle25" />
+    <text
+       x="40"
+       y="-10"
+       fill="#ffdd59"
+       font-size="13px"
+       font-weight="600"
+       id="text25">Nondual Glimpse</text>
+    <text
+       x="40"
+       y="10"
+       fill="#ffeaa7"
+       font-size="11px"
+       font-style="italic"
+       id="text26">(Controller-system dissolution)</text>
+  </g>
+  <path
+     d="M 500,250 C 440,220 380,180 440,150 500,120 560,120 500,120"
+     fill="none"
+     stroke="#34ace0"
+     stroke-width="3"
+     stroke-dasharray="6, 4"
+     opacity="0.8"
+     id="path26" />
+  <circle
+     cx="500"
+     cy="120"
+     r="40"
+     fill="none"
+     stroke="#34ace0"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     id="circle26" />
+  <circle
+     cx="500"
+     cy="120"
+     r="25"
+     fill="url(#fractalSubstrate)"
+     opacity="0.7"
+     id="circle27"
+     style="fill:url(#pattern57)" />
+  <text
+     x="503.29929"
+     y="97.770386"
+     text-anchor="middle"
+     fill="#74b9ff"
+     font-size="13px"
+     font-weight="600"
+     id="text27">Sahaja Samadhi</text>
+  <text
+     x="624.27319"
+     y="133.16707"
+     text-anchor="middle"
+     fill="#dfe6e9"
+     font-size="11px"
+     id="text28">Holographic Functioning</text>
+  <text
+     x="625.73956"
+     y="150.23436"
+     text-anchor="middle"
+     fill="#aaaaaa"
+     font-size="10px"
+     id="text29">Spontaneous right action (Wu-wei)</text>
+  <!-- ===== LEFT PANEL: LOW VARIETY STATE ===== -->
+  <g
+     transform="translate(81.336406,202.07373)"
+     id="g33">
+    <rect
+       x="0"
+       y="0"
+       width="300"
+       height="250"
+       rx="12"
+       fill="#1e1e2e"
+       stroke="#333344"
+       stroke-width="2"
+       id="rect30" />
+    <text
+       x="150"
+       y="30"
+       text-anchor="middle"
+       fill="#ff7675"
+       font-size="18px"
+       font-weight="600"
+       id="text30">Low Variety State</text>
+    <text
+       x="150"
+       y="55"
+       text-anchor="middle"
+       fill="#aaaaaa"
+       font-size="13px"
+       id="text31">Awareness Obscured, Focus Narrow</text>
+    <!-- Visualization -->
+    <circle
+       cx="150"
+       cy="150"
+       r="80"
+       fill="#0f0f1a"
+       stroke="#333344"
+       stroke-width="1"
+       id="circle31" />
+    <!-- Narrow spotlight -->
+    <path
+       d="m 150,150 -30,-40 a 80,80 0 0 1 60,0 z"
+       fill="#ff5252"
+       fill-opacity="0.4"
+       stroke="#ff5252"
+       stroke-width="1"
+       id="path31" />
+    <circle
+       cx="150"
+       cy="110"
+       r="15"
+       fill="#ff5252"
+       opacity="0.7"
+       id="circle32" />
+    <!-- Dashed lines showing constriction -->
+    <line
+       x1="150"
+       y1="70"
+       x2="150"
+       y2="110"
+       stroke="#ff5252"
+       stroke-width="2"
+       stroke-dasharray="4, 2"
+       id="line32" />
+    <text
+       x="150"
+       y="65"
+       text-anchor="middle"
+       fill="#ff5252"
+       font-size="11px"
+       id="text32">Narrow Focus</text>
+    <text
+       x="150"
+       y="240"
+       text-anchor="middle"
+       fill="#777777"
+       font-size="12px"
+       id="text33">Identification with content • High cognitive noise</text>
+  </g>
+  <!-- ===== RIGHT PANEL: HIGH VARIETY STATE ===== -->
+  <g
+     transform="translate(800, 200)"
+     id="g42">
+    <rect
+       x="0"
+       y="0"
+       width="300"
+       height="250"
+       rx="12"
+       fill="#1e1e2e"
+       stroke="#333344"
+       stroke-width="2"
+       id="rect33" />
+    <text
+       x="150"
+       y="30"
+       text-anchor="middle"
+       fill="#00cec9"
+       font-size="18"
+       font-weight="600"
+       id="text34">High Variety / Sahaja</text>
+    <text
+       x="150"
+       y="55"
+       text-anchor="middle"
+       fill="#aaa"
+       font-size="13"
+       id="text35">Awareness  Focus Unified</text>
+    <!-- Holographic attention visualization -->
+    <circle
+       cx="150"
+       cy="150"
+       r="80"
+       fill="#0f0f1a"
+       stroke="#00cec9"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="circle35" />
+    <!-- Holographic grid -->
+    <line
+       x1="70"
+       y1="150"
+       x2="230"
+       y2="150"
+       stroke="#00cec9"
+       stroke-width="0.8"
+       opacity="0.4"
+       id="line35" />
+    <line
+       x1="150"
+       y1="70"
+       x2="150"
+       y2="230"
+       stroke="#00cec9"
+       stroke-width="0.8"
+       opacity="0.4"
+       id="line36" />
+    <line
+       x1="100"
+       y1="100"
+       x2="200"
+       y2="200"
+       stroke="#00cec9"
+       stroke-width="0.8"
+       opacity="0.4"
+       id="line37" />
+    <line
+       x1="200"
+       y1="100"
+       x2="100"
+       y2="200"
+       stroke="#00cec9"
+       stroke-width="0.8"
+       opacity="0.4"
+       id="line38" />
+    <!-- Central point radiating to whole field -->
+    <circle
+       cx="150"
+       cy="150"
+       r="4"
+       fill="#ffffff"
+       filter="url(#softGlow)"
+       id="circle38" />
+    <circle
+       cx="150"
+       cy="150"
+       r="80"
+       fill="none"
+       stroke="url(#radialGradient)"
+       stroke-width="1"
+       opacity="0.3"
+       id="circle39" />
+    <!-- Radial lines showing holographic property -->
+    <line
+       x1="150"
+       y1="150"
+       x2="100"
+       y2="100"
+       stroke="#34ace0"
+       stroke-width="1"
+       opacity="0.5"
+       id="line39" />
+    <line
+       x1="150"
+       y1="150"
+       x2="200"
+       y2="200"
+       stroke="#34ace0"
+       stroke-width="1"
+       opacity="0.5"
+       id="line40" />
+    <line
+       x1="150"
+       y1="150"
+       x2="100"
+       y2="200"
+       stroke="#34ace0"
+       stroke-width="1"
+       opacity="0.5"
+       id="line41" />
+    <line
+       x1="150"
+       y1="150"
+       x2="200"
+       y2="100"
+       stroke="#34ace0"
+       stroke-width="1"
+       opacity="0.5"
+       id="line42" />
+    <text
+       x="150"
+       y="240"
+       text-anchor="middle"
+       fill="#777"
+       font-size="12"
+       id="text42">Holographic Attention • Any point reflects the whole field</text>
+  </g>
+  <!-- ===== CONNECTING ARROWS & ANNOTATIONS ===== -->
+  <!-- Practice arrow -->
+  <path
+     d="M430 650 Q 380 550 450 450"
+     fill="none"
+     stroke="#6c5ce7"
+     stroke-width="3"
+     marker-end="url(#arrow)"
+     id="path42" />
+  <text
+     x="177.64977"
+     y="645.92163"
+     fill="#a29bfe"
+     font-size="14px"
+     font-weight="500"
+     id="text43">Cultivation via Practice:</text>
+  <text
+     x="177.64977"
+     y="665.92163"
+     fill="#aaaaaa"
+     font-size="13px"
+     id="text44">Ethics • Meditation • Wisdom</text>
+  <!-- Resonance arrow -->
+  <path
+     d="m 745.09028,240.32464 q -50,-50 -100,-80"
+     fill="none"
+     stroke="#33d9b2"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrow)"
+     id="path44" />
+  <text
+     x="750"
+     y="180"
+     fill="#33d9b2"
+     font-size="14"
+     font-weight="500"
+     id="text45">Resonance:</text>
+  <text
+     x="749.26685"
+     y="194.86777"
+     fill="#aaaaaa"
+     font-size="13px"
+     id="text46">Pattern Recognition</text>
+  <!-- Recursive arrow -->
+  <path
+     d="M520 50 A 30 30 0 1 1 580 80"
+     fill="none"
+     stroke="#74b9ff"
+     stroke-width="2"
+     opacity="0.7"
+     marker-end="url(#arrow)"
+     id="path46" />
+  <text
+     x="620"
+     y="70"
+     fill="#74b9ff"
+     font-size="13"
+     font-style="italic"
+     id="text47">Recursive Self-Knowing</text>
+  <!-- ===== TITLE ===== -->
+  <rect
+     x="50"
+     y="20"
+     width="1100"
+     height="60"
+     rx="10"
+     fill="#1a1a2e"
+     opacity="0.9"
+     id="rect47" />
+  <text
+     x="600"
+     y="40"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="24"
+     font-weight="700"
+     id="text48">
+    The Fractal-Cybernetic Consciousness Map
+  </text>
+  <text
+     x="600"
+     y="70"
+     text-anchor="middle"
+     fill="#aaa"
+     font-size="16"
+     id="text49">
+    Visualizing the Evolution from Contraction to Nondual Wholeness
+  </text>
+  <line
+     x1="100"
+     y1="80"
+     x2="1100"
+     y2="80"
+     stroke="#33d9b2"
+     stroke-width="2"
+     opacity="0.6"
+     id="line49" />
+  <!-- ===== LEGEND ===== -->
+  <g
+     transform="translate(50, 780)"
+     id="g57">
+    <rect
+       x="0"
+       y="0"
+       width="1100"
+       height="80"
+       rx="8"
+       fill="#1a1a2e"
+       opacity="0.8"
+       stroke="#333"
+       stroke-width="1"
+       id="rect49" />
+    <text
+       x="20"
+       y="25"
+       fill="#74b9ff"
+       font-size="16"
+       font-weight="600"
+       id="text50">Legend:</text>
+    <g
+       transform="translate(120, 15)"
+       id="g51">
+      <line
+         x1="0"
+         y1="10"
+         x2="20"
+         y2="10"
+         stroke="#ff5252"
+         stroke-width="3"
+         id="line50" />
+      <text
+         x="30"
+         y="15"
+         fill="#dfe6e9"
+         font-size="12"
+         id="text51">Contracted State (Low RV)</text>
+    </g>
+    <g
+       transform="translate(120, 35)"
+       id="g52">
+      <line
+         x1="0"
+         y1="10"
+         x2="20"
+         y2="10"
+         stroke="url(#spiralGradient)"
+         stroke-width="3"
+         id="line51" />
+      <text
+         x="30"
+         y="15"
+         fill="#dfe6e9"
+         font-size="12"
+         id="text52">Evolutionary Spiral (Increasing Complexity)</text>
+    </g>
+    <g
+       transform="translate(120, 55)"
+       id="g53">
+      <line
+         x1="0"
+         y1="10"
+         x2="20"
+         y2="10"
+         stroke="#34ace0"
+         stroke-width="2"
+         stroke-dasharray="4,2"
+         id="line52" />
+      <text
+         x="30"
+         y="15"
+         fill="#dfe6e9"
+         font-size="12"
+         id="text53">Integration Phase (Post-Transition)</text>
+    </g>
+    <g
+       transform="translate(500, 15)"
+       id="g54">
+      <circle
+         cx="10"
+         cy="10"
+         r="8"
+         fill="#ffdd59"
+         opacity="0.8"
+         id="circle53" />
+      <text
+         x="25"
+         y="15"
+         fill="#dfe6e9"
+         font-size="12"
+         id="text54">Phase Transition (Nondual Glimpse)</text>
+    </g>
+    <g
+       transform="translate(500, 35)"
+       id="g55">
+      <circle
+         cx="10"
+         cy="10"
+         r="8"
+         fill="#34ace0"
+         stroke="#74b9ff"
+         stroke-width="1"
+         id="circle54" />
+      <text
+         x="25"
+         y="15"
+         fill="#dfe6e9"
+         font-size="12"
+         id="text55">Sahaja (Stabilized Nondual Abidance)</text>
+    </g>
+    <g
+       transform="translate(500, 55)"
+       id="g56">
+      <rect
+         x="0"
+         y="2"
+         width="20"
+         height="16"
+         fill="url(#fractalSubstrate)"
+         stroke="#aaa"
+         stroke-width="0.5"
+         id="rect55" />
+      <text
+         x="25"
+         y="15"
+         fill="#dfe6e9"
+         font-size="12"
+         id="text56">Fractal Pattern (Consciousness Architecture)</text>
+    </g>
+  </g>
+</svg>

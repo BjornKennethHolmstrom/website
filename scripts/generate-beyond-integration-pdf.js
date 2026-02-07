@@ -459,7 +459,7 @@ function generateHTML(parts) {
 			html += `\n<div class="section-divider"></div>\n`;
 		}
 		
-		html += `<h1>${part.title}</h1>\n`;
+/*		html += `<h1>${part.title}</h1>\n`;*/
 		
 		const partHtml = marked.parse(part.content);
 		const partSize = (partHtml.length / 1024).toFixed(1);

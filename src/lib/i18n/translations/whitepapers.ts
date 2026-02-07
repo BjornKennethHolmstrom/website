@@ -28,6 +28,10 @@ export const whitepapersTranslations = {
 				description:
 					'A systems architecture analysis of the Weimar Republic\'s collapse, demonstrating how dual-currency systems and epistemic protocols could prevent a modern democratic failure.'
 			},
+   fractalCyberneticConsciousness: {
+    title: 'The Fractal-Cybernetic Model of Consciousness',
+    description: 'A transdisciplinary framework bridging cybernetics, fractal geometry, and contemplative science to explain consciousness evolution toward awakening. Integrates Ashby\'s requisite variety, Mandelbrot\'s fractality, and nondual mysticism into a unified model of consciousness development.'
+   },
 			responsiveSociety: {
 				title: 'The Responsive Society: Aligning with Truth in an Unknown World',
 				description:
@@ -118,6 +122,10 @@ export const whitepapersTranslations = {
 				description:
 					'En systemarkitektonisk analys av Weimarrepublikens kollaps som visar hur dubbla valutasystem och epistemiska protokoll kan förhindra en modern demokratisk kollaps.'
 			},
+   fractalCyberneticConsciousness: {
+    title: 'Den Fraktala-Kybernetiska Medvetandemodellen',
+    description: 'Ett tvärvetenskapligt ramverk som förenar kybernetik, fraktalgeometri och kontemplativ vetenskap för att förklara medvetandets evolution mot uppvaknande. Integrerar Ashbys nödvändiga mångfald, Mandelbrots fraktalitet och icke-dualistisk mysticism till en enhetlig modell för medvetandeutveckling.'
+   },
 			responsiveSociety: {
 				title: 'The Responsive Society: Aligning with Truth in an Unknown World',
 				description:

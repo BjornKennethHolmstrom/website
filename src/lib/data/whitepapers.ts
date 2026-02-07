@@ -61,6 +61,27 @@ export const papersData: Whitepaper[] = [
    },
    readOnlineExternal: false,
  },
+ {
+	 id: 'fractalCyberneticConsciousness',
+	 key: 'fractalCyberneticConsciousness',
+	 category: 'consciousness',
+	 tags: ['Systems Theory', 'Cybernetics', 'Fractal Geometry', 'Nondual Philosophy', 'Consciousness Studies'],
+	 year: '2025',
+	 pages: '51',
+	 readTime: {
+		 en: '1 hour',
+		 sv: '1 timme'
+	 },
+	 version: '1.0',
+	 pdfPath: {
+		 en: `${localBase}/fractal-cybernetic-consciousness.pdf`,
+		 sv: `${localBase}/fractal-cybernetic-consciousness-sv.pdf`
+	 },
+	 coverImage: '/whitepapers/images/fractal-cybernetic-cover.png',
+	 readOnlinePath: '/whitepapers/fractal-cybernetic-consciousness',
+	 readOnlineExternal: false,
+	 releaseDate: '2026-02-07'
+ },
 	{
 		id: 'cognitiveScaffolding',
 		key: 'cognitiveScaffolding',

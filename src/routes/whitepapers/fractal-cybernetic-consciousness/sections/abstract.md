@@ -1,0 +1,10 @@
+**Abstract**
+
+This paper proposes a novel integrative model of consciousness evolution that synthesizes principles from cybernetics, fractal geometry, and contemplative science. At its core, the model posits that the realization of nondual awareness—often described as “god-realization” or mystical union—arises when a conscious system achieves a state of *requisite variety* (Ashby, 1956) sufficient to stably mirror the complexity of reality, and simultaneously recognizes its inherent *fractality*—its structural and qualitative self-similarity to the whole.
+
+We argue that consciousness is not merely emergent from neural complexity but is fundamentally fractal in nature: the architecture of the cosmos and the architecture of awareness are scale-invariant expressions of a unified field. Spiritual development, in this framework, is the process by which the local psychophysical system increases its internal differentiation and integration, thereby expanding its capacity to “meet” reality without distortion. When requisite variety is maximized, the boundary between the controller (self) and the system (totality) dissolves, revealing a pre-existing identity. This culminates in what contemplative traditions term *sahaja samadhi*—a stable, natural abidance as the whole, in which focus and awareness unite, and any point of attention reflects the totality.
+
+The model offers a transdisciplinary explanatory bridge, framing mystical states not as regressive or anomalous, but as the logical endpoint of sophisticated self-organization. It provides a theoretical foundation for interpreting neurophenomenological data, designing consciousness-evolution practices, and re-envisioning the relationship between mind, science, and the sacred. We conclude by outlining testable predictions and implications for future research at the intersection of cognitive science, systems theory, and philosophy of mind.
+
+---
+**Keywords:** consciousness, requisite variety, fractality, nondual awareness, cybernetics, mystical experience, self-organization, integration, samadhi, neurophenomenology.
