@@ -17,6 +17,7 @@
     type: 'emoji',
     key: 'subsidiarity',
     emoji: '🇸🇪',
+				badge: 'NEW',
     url: 'https://svensksubsidiaritet.se'/*,
     badge: 'PILOT'*/
    },
@@ -31,7 +32,6 @@
 				key: 'changeParadox',
 				emoji: '📘',
 				url: 'https://bjornkennethholmstrom.github.io/change-paradox-field-manual/',
-				badge: 'NEW',
 				githubUrl: 'https://github.com/BjornKennethHolmstrom/change-paradox-field-manual'
 			}
 		],
