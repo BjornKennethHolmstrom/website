@@ -13,6 +13,13 @@
 				logo: 'logo-ggf.svg',
 				url: 'https://globalgovernanceframeworks.org'
 			},
+   {
+    type: 'emoji',
+    key: 'subsidiarity',
+    emoji: '🇸🇪',
+    url: 'https://svensksubsidiaritet.se'/*,
+    badge: 'PILOT'*/
+   },
 			{
 				type: 'img',
 				key: 'fjäril',
@@ -163,12 +170,13 @@
 	</section>
 
 	<section class="space-y-12 py-16 md:py-24">
-		<div>
-			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
-				{$t.clusterSystems}
-			</h2>
-			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-				{#each projects.systems as project}
+   <div>
+    <h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
+        {$t.clusterSystems}
+    </h2>
+    
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
+        {#each projects.systems as project}
 					<a
 						href={project.url}
 						target="_blank"

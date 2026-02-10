@@ -39,6 +39,8 @@ export const coreTranslations = {
 		// Projects
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Frameworks for meta-governance and interoperability.',
+  subsidiarityTitle: 'Svensk Subsidiaritet',
+  subsidiarityTagline: 'From centralized excellence to distributed resilience.',
 		fjärilTitle: 'Fjärilspartiet',
 		fjärilTagline: 'A Swedish political party founded in systems thinking.',
 		janusTitle: 'Project Janus',
@@ -181,6 +183,8 @@ export const coreTranslations = {
 		// Projects
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Ramverk för meta-styrning och interoperabilitet.',
+  subsidiarityTitle: 'Svensk Subsidiaritet',
+  subsidiarityTagline: 'Från centraliserad excellens till distribuerad resiliens.',
 		fjärilTitle: 'Fjärilspartiet',
 		fjärilTagline: 'Ett svenskt politiskt parti grundat i systemtänkande.',
 		janusTitle: 'Project Janus',
