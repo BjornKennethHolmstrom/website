@@ -29,7 +29,7 @@
 			},
 			{
 				type: 'emoji',
-				key: 'changeParadox',
+				key: 'changeParadox', 
 				emoji: '📘',
 				url: 'https://bjornkennethholmstrom.github.io/change-paradox-field-manual/',
 				githubUrl: 'https://github.com/BjornKennethHolmstrom/change-paradox-field-manual'
