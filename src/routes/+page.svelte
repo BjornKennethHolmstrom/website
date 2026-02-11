@@ -14,9 +14,9 @@
 				url: 'https://globalgovernanceframeworks.org'
 			},
    {
-    type: 'emoji',
+    type: 'img',
     key: 'subsidiarity',
-    emoji: '🇸🇪',
+    logo: 'logo-subsidiarity.svg',
 				badge: 'NEW',
     url: 'https://svensksubsidiaritet.se'/*,
     badge: 'PILOT'*/
