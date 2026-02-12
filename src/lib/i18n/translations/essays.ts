@@ -216,6 +216,15 @@ export const essaysTranslations = {
        published: "Jan 2025",
        readTime: "45 min read"
      },
+     betweenTwoArticles: {
+       title: "Between Two Articles",
+       subtitle: "What the World Bank and Cisco Reveal About the Consciousness We've Outgrown",
+       tagline: "A Spiral Dynamics reading of the memetic collision beneath our two futures.",
+       desc: "On February 11, 2026, two documents were published. One described how to create jobs for 1.2 billion young humans. The other described how to build collective intelligence for AI agents. They did not reference each other. This essay holds them together—diagnosing the ORANGE frame both share, the questions neither can ask, and the emergence that becomes possible when we release control and trust the 19-year-old in Bhubaneswar.",
+       published: "Feb 2026",
+       readTime: "35 min read",
+       pdfPages: "59" // Estimate, adjust after PDF generation
+     }
     }
 		}
 	},
@@ -435,6 +444,15 @@ export const essaysTranslations = {
        published: "januari 2025",
        readTime: "45 min läsning"
      },
+     betweenTwoArticles: {
+       title: "Mellan två artiklar",
+       subtitle: "Vad Världsbanken och Cisco avslöjar om medvetandet vi vuxit ifrån",
+       tagline: "En Spiral Dynamics-läsning av den memetiska kollisionen under våra två framtider.",
+       desc: "Den 11 februari 2026 publicerades två dokument. Det ena beskrev hur man skapar jobb för 1,2 miljarder unga människor. Det andra beskrev hur man bygger kollektiv intelligens för AI-agenter. De refererade inte till varandra. Denna essä håller dem samman—diagnostiserar ORANGE-ramverket båda delar, frågorna ingen kan ställa, och framväxten som blir möjlig när vi släpper kontroll och litar på 19-åringen i Bhubaneswar.",
+       published: "februari 2026",
+       readTime: "35 min läsning",
+       pdfPages: "59"
+     }
    }
 		}
 	}

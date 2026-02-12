@@ -133,6 +133,13 @@
 
    // --- Priority 3: Consciousness ---
    { 
+     key: 'betweenTwoArticles', 
+     url: '/essays/between-two-articles',
+     icon: '📰',
+     category: 'Consciousness',
+     hasPDF: true
+   },
+   { 
      key: 'depressionThistle', 
      url: '/essays/ecology-of-despair', 
      icon: '🌿',
