@@ -92,24 +92,34 @@ export async function getAvailableTranslations(slug: string): Promise<BlogLangua
 /**
  * Get all blog posts with their available translations
  * Useful for blog index pages
+ * 
+ * @param options.includeArchived - Whether to include archived posts (default: false)
  */
-export async function getAllPostsWithTranslations() {
+export async function getAllPostsWithTranslations(options?: { includeArchived?: boolean }) {
   const modules = import.meta.glob('$lib/posts/**/index.md', { eager: true });
   const posts = new Map();
   
   Object.entries(modules).forEach(([path, module]: [string, any]) => {
     // Extract slug and language from path
-    // Patterns: /posts/[slug]/index.md (English) or /posts/[slug]/[lang]/index.md (other)
     const match = path.match(/\/posts\/([^/]+)(?:\/(sv|es|de|fr|eu|ja|zh|hi|ar|pt|ru))?\/index\.md$/);
     if (match) {
       const slug = match[1];
       const lang = (match[2] as BlogLanguage) || 'en';
       
+      // Check if this post should be filtered out based on archive status
+      const isArchived = module.metadata?.archived === true;
+      
+      // Skip archived posts unless explicitly requested
+      if (isArchived && !options?.includeArchived) {
+        return;
+      }
+      
       if (!posts.has(slug)) {
         posts.set(slug, {
           slug,
           translations: [] as BlogLanguage[],
-          metadata: {}
+          metadata: {},
+          isArchived // Add archive flag
         });
       }
       
@@ -124,6 +134,57 @@ export async function getAllPostsWithTranslations() {
   });
   
   return Array.from(posts.values());
+}
+
+/**
+ * Get only archived posts
+ */
+export async function getArchivedPosts() {
+  const modules = import.meta.glob('$lib/posts/**/index.md', { eager: true });
+  const posts = new Map();
+  
+  Object.entries(modules).forEach(([path, module]: [string, any]) => {
+    const match = path.match(/\/posts\/([^/]+)(?:\/(sv|es|de|fr|eu|ja|zh|hi|ar|pt|ru))?\/index\.md$/);
+    if (match) {
+      const slug = match[1];
+      const lang = (match[2] as BlogLanguage) || 'en';
+      
+      // Only include archived posts
+      if (module.metadata?.archived !== true) {
+        return;
+      }
+      
+      if (!posts.has(slug)) {
+        // For the first language we find, store all metadata
+        posts.set(slug, {
+          slug,
+          translations: [lang],
+          metadata: { ...module.metadata }, // Create a copy to avoid reference issues
+          isArchived: true
+        });
+      } else {
+        // For additional languages, just add to translations array
+        const post = posts.get(slug);
+        post.translations.push(lang);
+        
+        // If this is English and we don't have English metadata yet, update it
+        if (lang === 'en' && post.metadata?.title !== module.metadata.title) {
+          post.metadata = { ...module.metadata };
+        }
+      }
+    }
+  });
+  
+  // Convert Map to array and ensure we have valid metadata
+  return Array.from(posts.values()).map(post => ({
+    ...post,
+    metadata: post.metadata || {
+      title: 'Untitled',
+      date: new Date().toISOString(),
+      categories: [],
+      excerpt: ''
+    }
+  }));
 }
 
 /**

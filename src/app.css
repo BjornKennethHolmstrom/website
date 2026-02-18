@@ -64,3 +64,26 @@ body .prose h3,
 body .prose h4 {
   font-family: 'Inter', sans-serif;
 }
+
+/* Line clamp utilities (if not already in your Tailwind config) */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Optional: Smooth transitions */
+.hover\:scale-\[1\.02\] {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Archive-specific styling (optional) */
+.archive-post {
+  filter: grayscale(0.1);
+  transition: all 0.2s ease;
+}
+
+.archive-post:hover {
+  filter: grayscale(0);
+}

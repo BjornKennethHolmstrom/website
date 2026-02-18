@@ -1,6 +1,7 @@
 ---
 title: 'Understanding Infinite Intelligence: A Systems Perspective'
 date: 2024-12-01T00:00:00.000Z
+archived: true
 categories:
   - science
   - spirituality

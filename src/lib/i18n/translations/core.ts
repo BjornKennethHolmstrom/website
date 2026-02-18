@@ -29,6 +29,7 @@ export const coreTranslations = {
   title: 'Architect of the Global Governance Frameworks',
   ingress: 'From engineering physics to mysticism, from psychosis to systems design – my journey has taught me that the deepest problems require the integration of the personal, the political and the existential.',
   description: 'As the architect behind Global Governance Frameworks and initiator of the Butterfly Party, I work at the intersection of consciousness development and institutional design – for a world that can manage its own complexity.',
+  help: 'Show welcome guide',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
 		clusterQuartet: 'The Awareness Quartet',
@@ -142,7 +143,70 @@ export const coreTranslations = {
     soon: "Soon",
 				email: "Email"
 			}
-		}
+		},
+  welcomeModal: {
+    title: 'Welcome!',
+    subtitle: 'This website holds many dimensions – here are three paths in, depending on what you seek.',
+    close: 'Close',
+    goToHomepage: 'Go to homepage',
+    dontShowAgain: 'Don\'t show this again',
+    categories: {
+      systems: {
+        title: 'Systems Thinker & Changemaker',
+        quote: '"I want to understand how we can redesign society\'s fundamental structures."',
+        links: {
+          whitepapers: 'White papers',
+          subsidiarity: 'Swedish Subsidiarity',
+          ggf: 'Global Governance Frameworks',
+          fjaril: 'Fjärilspartiet'
+        }
+      },
+      spiritual: {
+        title: 'Spiritual Seeker',
+        quote: '"I\'m curious about meditation, awakening, and non-duality."',
+        links: {
+          spiritualized: 'Spiritualized.org',
+          poems: 'Poems',
+          enlightenment: 'Enlightenment',
+          nondualize: 'Nondualize.org'
+        }
+      },
+      creative: {
+        title: 'Creative Soul',
+        quote: '"I want to see your art, music, and personal projects."',
+        links: {
+          art: 'Art gallery',
+          music: 'Music',
+          photography: 'Photography',
+          minecraft: 'Minecraft worlds'
+        }
+      }
+    }
+  },
+  archive: {
+    title: 'Blog Archive',
+    description: 'Early writings, daily reflections, and creative explorations from 2017-2024. These posts show the evolution of ideas and the journey behind the current work.',
+    backToBlog: 'Back to blog',
+    stats: {
+      posts: 'archived posts',
+      years: 'years'
+    },
+    filters: {
+      title: 'Filter by:',
+      allYears: 'All years',
+      allCategories: 'All categories',
+      reset: 'Reset filters',
+      year: 'Year',
+      category: 'Category'
+    },
+    emptyState: {
+      noPosts: 'No archived posts match your filters.',
+      clearFilters: 'Clear filters'
+    },
+    post: {
+      readMore: 'Read more'
+    }
+  }
 	},
 	sv: {
 		// Header
@@ -174,6 +238,7 @@ export const coreTranslations = {
   title: 'Arkitekt för Global Governance Frameworks',
 		ingress: 'Från teknisk fysik till mystik, från psykos till systemdesign – min resa har lärt mig att de djupaste problemen kräver integration av det personliga, det politiska och det existentiella.',
   description: 'Som arkitekt bakom Global Governance Frameworks och initiativtagare till Fjärilspartiet arbetar jag i skärningspunkten mellan medvetandeutveckling och institutionell design – för en värld som kan hantera sin egen komplexitet.',
+  help: 'Visa vägledning',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
 		clusterQuartet: 'Medvetandets kvartett',
@@ -287,6 +352,69 @@ export const coreTranslations = {
     soon: "Snart",
 				email: "E-post"
 			}
-		}
+		},
+  welcomeModal: {
+    title: 'Välkommen!',
+    subtitle: 'Den här webbplatsen rymmer många dimensioner – här är tre ingångar, beroende på vad du söker.',
+    close: 'Stäng',
+    goToHomepage: 'Gå till startsidan',
+    dontShowAgain: 'Visa inte detta igen',
+    categories: {
+      systems: {
+        title: 'Systemtänkare & samhällsförändrare',
+        quote: '"Jag vill förstå hur vi kan designa om samhällets grundläggande strukturer."',
+        links: {
+          whitepapers: 'White papers',
+          subsidiarity: 'Svensk Subsidiaritet',
+          ggf: 'Global Governance Frameworks',
+          fjaril: 'Fjärilspartiet'
+        }
+      },
+      spiritual: {
+        title: 'Andligt sökande',
+        quote: '"Jag är nyfiken på meditation, uppvaknande och icke-dualitet."',
+        links: {
+          spiritualized: 'Spiritualized.org',
+          poems: 'Dikter',
+          enlightenment: 'Upplysning',
+          nondualize: 'Nondualize.org'
+        }
+      },
+      creative: {
+        title: 'Kreativ själ',
+        quote: '"Jag vill se dina konstverk, musik och personliga projekt."',
+        links: {
+          art: 'Konstgalleri',
+          music: 'Musik',
+          photography: 'Fotografi',
+          minecraft: 'Minecraft-världar'
+        }
+      }
+    }
+  },
+  archive: {
+    title: 'Bloggarkiv',
+    description: 'Tidiga skrifter, dagliga reflektioner och kreativa utforskningar från 2017-2024. Dessa inlägg visar idéernas utveckling och resan bakom det nuvarande arbetet.',
+    backToBlog: 'Tillbaka till bloggen',
+    stats: {
+      posts: 'arkiverade inlägg',
+      years: 'år'
+    },
+    filters: {
+      title: 'Filtrera efter:',
+      allYears: 'Alla år',
+      allCategories: 'Alla kategorier',
+      reset: 'Återställ filter',
+      year: 'År',
+      category: 'Kategori'
+    },
+    emptyState: {
+      noPosts: 'Inga arkiverade inlägg matchar dina filter.',
+      clearFilters: 'Rensa filter'
+    },
+    post: {
+      readMore: 'Läs mer'
+    }
+  }
 	}
 };

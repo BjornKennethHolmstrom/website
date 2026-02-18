@@ -131,4 +131,40 @@
 			</article>
 		{/each}
 	</div>
+ <div class="mt-16 pt-8 border-t border-[var(--color-separator)]">
+   <div class="max-w-3xl mx-auto text-center">
+					{#if currentStoreLang === 'en'}
+       <h2 class="text-2xl font-semibold mb-3" style="color: var(--color-page-accent);">
+         📚 Earlier writings (2017-2024)
+       </h2>
+       <p class="opacity-80 mb-6 max-w-2xl mx-auto">
+         Before the current work took shape, I explored mysticism, daily life, 
+         and early versions of these ideas. The archive shows the full journey.
+       </p>
+       <a 
+         href="/blog/archive" 
+         class="inline-flex items-center gap-2 px-6 py-3 rounded-lg transition-all hover:gap-3"
+         style="background-color: var(--color-page-accent); color: white;"
+       >
+         <span>Browse the archive</span>
+         <span>→</span>
+       </a>
+					{:else}
+       <h2 class="text-2xl font-semibold mb-3" style="color: var(--color-page-accent);">
+         📚 Tidigare texter (2017-2024)
+       </h2>
+       <p class="opacity-80 mb-6 max-w-2xl mx-auto">
+         Innan det nuvarande arbetet tog form utforskade jag mysticism, vardagslivet och tidiga versioner av dessa idéer. Arkivet visar hela resan.
+       </p>
+       <a 
+         href="/blog/archive"
+         class="inline-flex items-center gap-2 px-6 py-3 rounded-lg transition-all hover:gap-3"
+         style="background-color: var(--color-page-accent); color: white;"
+       >
+         <span>Bläddra i arkivet</span>
+         <span>→</span>
+       </a>
+     {/if}
+   </div>
+ </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 title: "The Origin of Life: Encompassing the Known, the Unknown, and the Infinite"
 date: 2024-12-14
+archived: true
 categories: 
   - "science"
 tags: 

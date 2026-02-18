@@ -145,6 +145,40 @@
     startTimer();
     return () => clearInterval(autoSlideInterval);
   });
+
+  let showWelcomeModal = false;
+  let dontShowAgain = false;
+  
+  onMount(() => {
+    // Only check for permanent opt-out, not for first visit
+    const dontShow = localStorage.getItem('dontShowWelcomeModal');
+    if (dontShow === 'true') {
+      dontShowAgain = true;
+    }
+  });
+
+  function closeWithPreference() {
+    if (dontShowAgain) {
+      localStorage.setItem('dontShowWelcomeModal', 'true');
+    }
+    showWelcomeModal = false;
+  }
+
+  function openModal() {
+    showWelcomeModal = true;
+  }
+  
+  function closeModal() {
+    showWelcomeModal = false;
+  }
+  
+  // Hantera klick utanför modal
+  function handleOutsideClick(event: MouseEvent) {
+    const modal = document.getElementById('welcome-modal-content');
+    if (modal && !modal.contains(event.target as Node)) {
+      closeModal();
+    }
+  }
 </script>
 
 <SEO
@@ -154,6 +188,111 @@
 	image={'/social-preview.png'}
 	type={'website'}
 />
+
+{#if showWelcomeModal}
+  <!-- Overlay -->
+  <div 
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+    on:click={handleOutsideClick}
+    transition:fly={{ y: 20, duration: 300 }}
+  >
+    <!-- Modal content -->
+    <div 
+      id="welcome-modal-content"
+      class="max-w-2xl w-full max-h-[90vh] overflow-y-auto bg-white dark:bg-slate-900 rounded-xl shadow-2xl p-6 md:p-8 relative"
+    >
+      <!-- Close button -->
+      <button 
+        on:click={closeModal}
+        class="absolute top-4 right-4 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
+        aria-label={$t.welcomeModal.close}
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      
+      <h2 class="text-2xl font-bold text-amber-600 mb-2">
+        {$t.welcomeModal.title}
+      </h2>
+      <p class="text-slate-600 dark:text-slate-300 mb-6">
+        {$t.welcomeModal.subtitle}
+      </p>
+      
+      <!-- Tre kolumner på desktop, staplade på mobil -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Systemtänkare -->
+        <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+          <div class="text-3xl mb-2">🌍</div>
+          <h3 class="font-bold text-lg mb-1">
+            {$t.welcomeModal.categories.systems.title}
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 italic">
+            {$t.welcomeModal.categories.systems.quote}
+          </p>
+          <ul class="text-sm space-y-1">
+            <li>• <a href="/whitepapers" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.whitepapers}</a></li>
+            <li>• <a href="https://svensksubsidiaritet.se" target="_blank" rel="noopener"  class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.subsidiarity}</a></li>
+            <li>• <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.ggf}</a></li>
+            <li>• <a href="https://fjarilspartiet.se" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.fjaril}</a></li>
+          </ul>
+        </div>
+        
+        <!-- Andligt sökande -->
+        <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+          <div class="text-3xl mb-2">🧘</div>
+          <h3 class="font-bold text-lg mb-1">
+            {$t.welcomeModal.categories.spiritual.title}
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 italic">
+            {$t.welcomeModal.categories.spiritual.quote}
+          </p>
+          <ul class="text-sm space-y-1">
+            <li>• <a href="https://spiritualized.org" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.spiritual.links.spiritualized}</a></li>
+            <li>• <a href="/creations/poems" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.spiritual.links.poems}</a></li>
+            <li>• <a href="/enlightenment" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.spiritual.links.enlightenment}</a></li>
+            <li>• <a href="https://nondualize.org" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.spiritual.links.nondualize}</a></li>
+          </ul>
+        </div>
+        
+        <!-- Kreativ -->
+        <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
+          <div class="text-3xl mb-2">🎨</div>
+          <h3 class="font-bold text-lg mb-1">
+            {$t.welcomeModal.categories.creative.title}
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 italic">
+            {$t.welcomeModal.categories.creative.quote}
+          </p>
+          <ul class="text-sm space-y-1">
+            <li>• <a href="/creations#art" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.creative.links.art}</a></li>
+            <li>• <a href="/creations#music" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.creative.links.music}</a></li>
+            <li>• <a href="/creations#photography" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.creative.links.photography}</a></li>
+            <li>• <a href="/creations#minecraft" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.creative.links.minecraft}</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center justify-center gap-2 text-sm text-slate-500">
+        <input type="checkbox" id="dontShowAgain" bind:checked={dontShowAgain} class="rounded" />
+        <label for="dontShowAgain">
+          {$t.welcomeModal.dontShowAgain}
+        </label>
+      </div>
+      
+      <!-- Länk till startsidan -->
+      <div class="mt-6 text-center">
+        <button 
+          on:click={closeModal}
+          class="text-sm text-slate-500 hover:text-amber-600 transition-colors"
+        >
+          {$t.welcomeModal.goToHomepage} →
+        </button>
+      </div>
+    </div>
+  </div>
+{/if}
 
 <div class="mx-auto max-w-7xl">
 	<section class="bg-slate-900 py-16 text-center text-white md:py-24">
@@ -494,4 +633,12 @@
 
     </div>
   </section>
+
+  <button
+    on:click={() => showWelcomeModal = true}
+    class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-amber-500 hover:bg-amber-600 text-white shadow-lg flex items-center justify-center transition-all hover:scale-110"
+    aria-label={$t.help}
+  >
+    <span class="text-2xl font-bold">?</span>
+  </button>
 </div>
