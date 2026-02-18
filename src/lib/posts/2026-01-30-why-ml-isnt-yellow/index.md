@@ -18,7 +18,7 @@ tags:
   - vanguardism
   - first-tier
 coverImage: >-
-  /blog/2026-01-30-why-ml-isnt-yellow/images/header-spiral-revolution.png
+  /blog/2026-01-30-why-ml-isnt-yellow/images/header-spiral-revolution-smaller.png
 ---
 
 ## The Paradox That Won't Quit
