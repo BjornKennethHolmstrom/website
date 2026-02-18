@@ -27,8 +27,8 @@ export const coreTranslations = {
   light: 'LIGHT',
 		// Hero
   title: 'Architect of the Global Governance Frameworks',
-		mission:
-			'I am a pattern weaver, consciousness researcher, and the architect of the Global Governance Frameworks initiative. My work focuses on the intersection of developmental psychology, institutional design, and human flourishing.',
+  ingress: 'From engineering physics to mysticism, from psychosis to systems design – my journey has taught me that the deepest problems require the integration of the personal, the political and the existential.',
+  description: 'As the architect behind Global Governance Frameworks and initiator of the Butterfly Party, I work at the intersection of consciousness development and institutional design – for a world that can manage its own complexity.',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
 		clusterQuartet: 'The Awareness Quartet',
@@ -172,8 +172,8 @@ export const coreTranslations = {
   light: 'LJUS',
 		// Hero
   title: 'Arkitekt för Global Governance Frameworks',
-		mission:
-			'Jag är mönstervävare, medvetandeforskare och arkitekt bakom initiativet Global Governance Frameworks. Mitt arbete fokuserar på skärningspunkten mellan utvecklingspsykologi, institutionell design och mänskligt välmående.',
+		ingress: 'Från teknisk fysik till mystik, från psykos till systemdesign – min resa har lärt mig att de djupaste problemen kräver integration av det personliga, det politiska och det existentiella.',
+  description: 'Som arkitekt bakom Global Governance Frameworks och initiativtagare till Fjärilspartiet arbetar jag i skärningspunkten mellan medvetandeutveckling och institutionell design – för en värld som kan hantera sin egen komplexitet.',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
 		clusterQuartet: 'Medvetandets kvartett',

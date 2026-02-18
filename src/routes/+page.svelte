@@ -158,14 +158,19 @@
 <div class="mx-auto max-w-7xl">
 	<section class="bg-slate-900 py-16 text-center text-white md:py-24">
 		<div class="mx-auto max-w-3xl px-4">
-			<h1
-				class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl pb-2"
-			>
-				{$t.title}
-			</h1>
-			<p class="text-lg text-slate-300 sm:text-xl">
-				{$t.mission}
-			</p>
+    <h1 class="mb-4 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl pb-2">
+        {$t.title}
+    </h1>
+
+    <!-- Personlig ingress -->
+    <p class="text-lg text-slate-300 sm:text-xl mb-6 italic border-l-4 border-amber-500 pl-4">
+        {$t.ingress}
+    </p>
+
+    <!-- Professionell rollbeskrivning -->
+    <p class="text-base text-slate-400">
+        {$t.description}
+    </p>
 		</div>
 	</section>
 
