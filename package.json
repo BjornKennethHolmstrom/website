@@ -13,9 +13,9 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-  "pdf:alchemist": "node scripts/generate-alchemists-pdf.js en",
-  "pdf:alchemist:sv": "node scripts/generate-alchemists-pdf.js sv",
-  "pdf:all": "npm run pdf:alchemist && npm run pdf:alchemist:sv"
+		"pdf:alchemist": "node scripts/generate-alchemists-pdf.js en",
+		"pdf:alchemist:sv": "node scripts/generate-alchemists-pdf.js sv",
+		"pdf:all": "npm run pdf:alchemist && npm run pdf:alchemist:sv"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
@@ -45,7 +45,9 @@
 		"vite": "^7.1.10"
 	},
 	"dependencies": {
-		"glob": "^11.0.3",
-		"gray-matter": "^4.0.3"
+		"glob": "^11.1.0",
+		"gray-matter": "^4.0.3",
+		"rehype-katex": "^7.0.1",
+		"remark-math": "^6.0.0"
 	}
 }
