@@ -92,6 +92,10 @@ export const whitepapersTranslations = {
    beyondIntegration: {
      title: 'Beyond Integration: Nonduality, Psychosis, and the Aperture Problem',
      description: 'A personal and theoretical exploration of consciousness development, modal flexibility, and the systemic barriers preventing safe exploration of psychiatric medication necessity. Integrates Project Janus framework with nondual recognition to propose new approaches to mental health, AI alignment, and human development.'
+   },
+   architectureOfStability: {
+     title: 'The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance',
+     description: 'A transdisciplinary analysis showing that centralized governance with time delay is mathematically unstable, and proposing fractal subsidiarity—with Sweden as the prototype—as the constitutional solution for adaptive, resilient societies.'
    }
 		}
 	},
@@ -186,6 +190,10 @@ export const whitepapersTranslations = {
    beyondIntegration: {
      title: 'Bortom integration: icke-dualitet, psykos och aperturproblemet',
      description: 'En personlig och teoretisk utforskning av medvetandeutveckling, modal flexibilitet och de systemiska barriärer som förhindrar säker utforskning av behovet av psykiatrisk medicinering. Integrerar Project Janus-ramverket med icke-dualistisk insikt för att föreslå nya tillvägagångssätt för psykisk hälsa, AI-anpassning och mänsklig utveckling.'
+   },
+   architectureOfStability: {
+     title: 'Stabilitetens arkitektur: Ett systemteoretiskt ramverk för makt och styrning',
+     description: 'En tvärvetenskaplig analys som visar att centraliserad styrning med tidsfördröjning är matematiskt instabil, och föreslår fraktal subsidiaritet – med Sverige som prototyp – som den konstitutionella lösningen för anpassningsbara, resilienta samhällen.'
    }
 		}
 	}

@@ -28,6 +28,27 @@ const localBase = '/whitepapers'; // För filer i /static/whitepapers
 
 export const papersData: Whitepaper[] = [
  {
+	 id: 'architectureOfStability',
+	 key: 'architectureOfStability',
+	 category: 'governance',
+  tags: ['Systems Theory', 'Control Theory', 'Cybernetics', 'Constitutional Design', 'Subsidiarity', 'Governance', 'Complexity Science', 'Fractal Architecture', 'Stability Analysis', 'Sweden', 'Prototype'],
+	 year: '2026',
+	 pages: '193',
+	 readTime: {
+		 en: '4 hours',
+		 sv: '4 timmar'
+	 },
+	 version: '1.0',
+	 pdfPath: {
+		 en: `${localBase}/architecture-of-stability.pdf`,
+		 sv: `${localBase}/architecture-of-stability.pdf`
+	 },
+	 coverImage: '/whitepapers/images/architecture-of-stability-cover.png',
+	 readOnlinePath: '/whitepapers/architecture-of-stability',
+	 readOnlineExternal: false,
+	 releaseDate: '2026-02-19'
+ },
+ {
 		id: 'preventing1933',
 		key: 'preventing1933',
 		category: 'governance',
