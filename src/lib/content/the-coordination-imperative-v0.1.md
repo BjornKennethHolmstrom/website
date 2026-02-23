@@ -258,7 +258,7 @@ If you are a **sharer** — someone with a platform, a community, a network, or 
 
 And if you are none of these — if you are simply someone who read this and found it interesting — the invitation is smaller but no less important. Notice coordination failures when you encounter them. The next time an institution fails in a way that feels predictable and preventable, ask: what protocol would make this unnecessary? What information would need to be shared? Who would need to act locally? What would make defection costly? You may find that thinking in these terms changes what you see.
 
-For those interested in the technical depth behind these ideas — specific protocol designs, economic mechanisms, governance architectures, and implementation roadmaps — a comprehensive open-source framework ecosystem is in development. It is called the Global Governance Frameworks project, and it is available at [globalgovernanceframeworks.org]. It contains detailed specifications for many of the mechanisms sketched in this document: coordination councils, enforcement architectures, economic transition protocols, democratic accountability structures, and much more. It is a work in progress, built in the open, with all the rough edges that implies.
+For those interested in the technical depth behind these ideas — specific protocol designs, economic mechanisms, governance architectures, and implementation roadmaps — a comprehensive open-source framework ecosystem is in development. It is called the Global Governance Frameworks project, and it is available at [globalgovernanceframeworks.org](https://www.globalgovernanceframeworks.org). It contains detailed specifications for many of the mechanisms sketched in this document: coordination councils, enforcement architectures, economic transition protocols, democratic accountability structures, and much more. It is a work in progress, built in the open, with all the rough edges that implies.
 
 It is, like this document, a starting point. Not a destination.
 
@@ -280,6 +280,6 @@ For those who want to go deeper, a few starting points — not an exhaustive bib
 
 ---
 
-*This document is version 0.1, released under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). You are free to share, adapt, translate, critique, fork, and improve it, provided you give appropriate credit and distribute your contributions under the same license. The source is available as a Markdown file at [https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1.md].*
+*This document is version 0.1, released under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). You are free to share, adapt, translate, critique, fork, and improve it, provided you give appropriate credit and distribute your contributions under the same license. The source is available as a Markdown file at [https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1.md](https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1.md).*
 
 *If five AIs and a Swede can get this far, imagine what happens when the rest of you join in.*
