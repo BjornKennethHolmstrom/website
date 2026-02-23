@@ -7,6 +7,7 @@ import { whitepapersTranslations } from '../i18n/translations/whitepapers';
 import { appsTranslations } from '../i18n/translations/apps';
 import { creationsTranslations } from '../i18n/translations/creations';
 import { conceptsTranslations } from '../i18n/translations/concepts';
+import { coordinationTranslations } from '../i18n/translations/coordination';
 
 // 1. Check if we are in a browser environment
 const isBrowser = typeof window !== 'undefined';
@@ -49,7 +50,8 @@ const translations = {
 		...whitepapersTranslations.en,
 		...appsTranslations.en,
 		...creationsTranslations.en,
-		...conceptsTranslations.en
+		...conceptsTranslations.en,
+  ...coordinationTranslations.en
 	},
 	sv: {
 		...aboutTranslations.sv,
@@ -59,7 +61,8 @@ const translations = {
 		...whitepapersTranslations.sv,
 		...appsTranslations.sv,
 		...creationsTranslations.sv,
-		...conceptsTranslations.sv
+		...conceptsTranslations.sv,
+  ...coordinationTranslations.sv
 	}
 };
 

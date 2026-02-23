@@ -38,6 +38,8 @@ export const coreTranslations = {
   clusterArchitecture: 'Open Source Architectures',
 
 		// Projects
+  coordinationTitle: "The Coordination Imperative",
+  coordinationTagline: "A protocol for planetary-scale cooperation.",
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Frameworks for meta-governance and interoperability.',
   subsidiarityTitle: 'Svensk Subsidiaritet',
@@ -246,6 +248,8 @@ export const coreTranslations = {
 		clusterLibrary: 'Skrifter och forskning',
   clusterArchitecture: 'Öppen källkodsarkitektur',
 		// Projects
+  coordinationTitle: "The Coordination Imperative",
+  coordinationTagline: "Ett protokoll för samarbete på planetär skala.",
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Ramverk för meta-styrning och interoperabilitet.',
   subsidiarityTitle: 'Svensk Subsidiaritet',

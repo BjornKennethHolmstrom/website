@@ -7,6 +7,13 @@
 	// Definiera vår projektdata.
 	const projects = {
 		systems: [
+   {
+		 	type: 'emoji',
+		 	key: 'coordination',
+		 	emoji: '🌐',
+		 	url: '/coordination-imperative',
+		 	badge: 'NEW'
+		 },
 			{
 				type: 'img',
 				key: 'ggf',
