@@ -157,6 +157,7 @@ export const coreTranslations = {
         title: 'Systems Thinker & Changemaker',
         quote: '"I want to understand how we can redesign society\'s fundamental structures."',
         links: {
+          coordination: 'The Coordination Imperative',
           whitepapers: 'White papers',
           subsidiarity: 'Swedish Subsidiarity',
           ggf: 'Global Governance Frameworks',
@@ -368,6 +369,7 @@ export const coreTranslations = {
         title: 'Systemtänkare & samhällsförändrare',
         quote: '"Jag vill förstå hur vi kan designa om samhällets grundläggande strukturer."',
         links: {
+          coordination: 'The Coordination Imperative',
           whitepapers: 'White papers',
           subsidiarity: 'Svensk Subsidiaritet',
           ggf: 'Global Governance Frameworks',

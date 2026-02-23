@@ -239,6 +239,7 @@
             {$t.welcomeModal.categories.systems.quote}
           </p>
           <ul class="text-sm space-y-1">
+            <li>• <a href="/coordination-imperative" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.coordination}</a></li>
             <li>• <a href="/whitepapers" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.whitepapers}</a></li>
             <li>• <a href="https://svensksubsidiaritet.se" target="_blank" rel="noopener"  class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.subsidiarity}</a></li>
             <li>• <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.ggf}</a></li>
