@@ -30,4 +30,16 @@ De kontemplativa traditionerna som pekar hit erbjuder inte en sjätte styrningsa
 
 Det är dit den ingenjörsmässiga analysen kan peka, och där den måste stanna.
 
+---
+
+Men att stanna är inte riktigt rätt heller.
+
+Den icke-duala insikten är inte att inre styrning ersätter yttre styrning. Det är att inre och yttre speglar varandra — som ovan, så nedan; som inom, så utan. Igenkännandet att jaget aldrig var skilt från det det styr upplöser inte arbetet. Det förändrar vad arbetet är till för.
+
+Det är logiken i bodhisattvans löfte: just eftersom gränsen mellan själv och andra genomskådas drar man sig inte tillbaka. Befrielse som stannar vid individen är en mer förfinad form av separation. Löftet är igenkännandet att inre och yttre upplöses tillsammans eller inte alls. Man stannar kvar i formernas värld inte trots igenkännandet utan på grund av det.
+
+Global Governance Frameworks bär detta igenkännande i vad de kallar Befrielseimpermanens: att designa för graciös upplösning i takt med att samordning blir naturlig. Du bygger ställningen med vetskapen att det är en ställning. Ramverken, protokollen, samordningsarkitekturerna — dessa är inte mål. De är den yttre formen av samma rörelse som inåt igenkänner att styrningen och resursen aldrig var två. När samordning verkligen blir naturlig — när den självstyrande allmänningen inte längre behöver styrning eftersom den separation som skapade tragedin har genomskådats — komposterar sig ställningen själv.
+
+Bodhisattvan bygger ställningen. Ingenjören bygger ställningen. Bägge handlingar utförda från samma igenkännande.
+
 Varje mening efter denna skulle vara ytterligare ett lager.

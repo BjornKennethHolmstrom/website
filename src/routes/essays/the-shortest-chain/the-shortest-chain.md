@@ -30,4 +30,16 @@ The contemplative traditions that point here are not offering a sixth governance
 
 This is where the engineering analysis can point, and where it must stop.
 
+---
+
+Except that stopping is not quite right either.
+
+The nondual insight is not that inner governance supersedes outer governance. It is that inner and outer are reflections of each other — as above, so below; as within, so without. The recognition that the self was never separate from what it governs does not dissolve the work. It changes what the work is for.
+
+This is the logic of the bodhisattva vow: precisely because the boundary between self and other is seen through, you do not withdraw. Liberation that stops at the individual is a more refined form of separation. The vow is the recognition that inner and outer dissolve together or not at all. You remain in the world of forms not despite the recognition but because of it.
+
+The Global Governance Frameworks carry this recognition in what they call Liberatory Impermanence: designing for graceful dissolution as coordination becomes natural. You build the scaffold knowing it is a scaffold. The frameworks, the protocols, the coordination architectures — these are not ends. They are the outer form of the same movement that inwardly recognizes the controller and the resource were never two. When coordination becomes genuinely natural — when the self-governing commons requires no governance because the separation that created the tragedy has been seen through — the scaffold composts itself.
+
+The bodhisattva builds the scaffold. The engineer builds the scaffold. Both acts performed from the same recognition.
+
 Any sentence after this one would be another layer.

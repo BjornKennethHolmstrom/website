@@ -1,0 +1,4 @@
+**AI governance** is another one. The alignment problem is essentially an observability problem — can human values be transmitted through the training process without aggregation loss and noise corruption? The formal structure is almost identical to paper three, with training data as the representation chain and model behaviour as the policy output. That one could probably be written without a simulator at all, as a purely analytical paper extending the observability framework.
+
+**Debt and monetary systems** connect to paper two's fractality argument in an interesting way. Monetary systems are disturbance controllers operating at multiple timescales — interest rate cycles, credit cycles, secular debt supercycles — and central banks are single-scale controllers trying to stabilize a multi-frequency disturbance environment. The frequency gap theorem applies directly. This one might actually benefit from a simulator.
+
