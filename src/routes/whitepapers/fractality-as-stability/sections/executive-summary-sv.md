@@ -1,0 +1,13 @@
+# Sammanfattning
+
+Den föregående rapporten i denna serie visade att styrningsarkitekturer med lägre latens och högre signaltrohet överträffar centraliserade arkitekturer under lokaliserade störningar. Det resultatet rörde en enda typ av störning på en enda skala. Verkliga styrningsmiljöer ser inte ut så.
+
+Verkliga styrningssystem står inför samtidiga störningar över flera tidsskalor: snabba lokala chocker som kräver svar inom dagar, medellånga påtryckningar som verkar över månader, och långsamma sekulära trender som utvecklas över år eller decennier. Denna rapport demonstrerar att ingen enskalig regulator stabilt kan styra ett system som utsätts för störningar över alla tre banden samtidigt. Begränsningen är inte politisk eller institutionell. Den följer av ett grundläggande samband i reglerteknik mellan en regulators latens och den maximala störningsfrekvens den kan stabilisera.
+
+Det formella resultatet: en regulator med svarslatens τ kan inte stabilisera störningar som är snabbare än f_max ≈ 1/(2τ). En central regulator med τ = 12 kan hantera långsam drift men är strukturellt blind för snabba och medellånga störningar. En lokal regulator med τ = 2 kan hantera snabba chocker men överreagerar systematiskt på långsam drift, vilket producerar ihållande oscillation. Ingen av arkitekturerna täcker hela störningsspektrumet. Båda lämnar ett frekvensgap som ingen justering av deras parametrar kan stänga.
+
+Fraktala arkitekturer — nästlade hierarkier av regulatorer, var och en anpassad till tidsskalan för sitt störningsband — stänger alla frekvensgap samtidigt. Det lokala lagret hanterar snabba chocker med hög signaltrohet och låg latens. Det regionala lagret absorberar medellånga påtryckningar. Det globala lagret följer långsam drift. Varje lager hanterar det som det kan nå; inget lager ombeds hantera det som det strukturellt inte kan.
+
+Denna rapport utökar Governance Stability Simulator till en miljö med störningar på flera skalor och jämför tre arkitekturer: centraliserad styrning (arkitektur A), distribuerad lokal styrning (arkitektur B) och fraktal flerskalig styrning (arkitektur C). Alla tre arkitekturer ges identiska ställdonsresurser. Prestandaskillnader kan endast tillskrivas arkitekturen.
+
+Fyndet är inte att fraktal styrning är att föredra. Det är att fraktal arkitektur är det stabilitetsoptimala svaret på en multifrekvent störningsmiljö — i samma bemärkelse som det mänskliga nervsystemet, immunsystemet och internet är fraktala, inte för att deras designers föredrog distribuerade strukturer, utan för att enskaliga alternativ bevisligen är mindre stabila.

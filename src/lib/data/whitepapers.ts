@@ -35,16 +35,37 @@ export const papersData: Whitepaper[] = [
 		year: '2026',
 		pages: '33',
 		readTime: {
-			en: '45 min',
-			sv: '45 min'
+			en: '40 min',
+			sv: '40 min'
 		},
 		version: '1.0',
 		pdfPath: {
 			en: `${localBase}/governance-stability-simulator.pdf`,
-			en: `${localBase}/governance-stability-simulator-sv.pdf`,
+			sv: `${localBase}/governance-stability-simulator-sv.pdf`,
 		},
 		coverImage: '/whitepapers/images/governance-simulator-cover.png',
 		readOnlinePath: '/whitepapers/governance-stability-simulator',
+		readOnlineExternal: false,
+		releaseDate: '2026-02-27'
+	},
+	{
+		id: 'fractalityAsStability',
+		key: 'fractalityAsStability',
+		category: 'governance',
+		tags: ['Control Theory', 'Cybernetics', 'Fractal Architecture', 'Multi-Scale Systems', 'Governance Engineering', 'Feedback Systems', 'Frequency Analysis', 'Subsidiarity', 'Simulation'],
+		year: '2026',
+		pages: '47',
+		readTime: {
+			en: '50 min',
+			sv: '50 min'
+		},
+		version: '1.0',
+		pdfPath: {
+			en: `${localBase}/fractality-as-stability.pdf`,
+			sv: `${localBase}/fractality-as-stability-sv.pdf`,
+		},
+		coverImage: '/whitepapers/images/fractality-as-stability-cover.png',
+		readOnlinePath: '/whitepapers/fractality-as-stability',
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},

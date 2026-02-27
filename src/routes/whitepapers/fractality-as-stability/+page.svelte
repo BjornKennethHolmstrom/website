@@ -38,6 +38,9 @@
   import AppendixCEn from './sections/appendix-c.md';
   import AppendixCSv from './sections/appendix-c-sv.md';
 
+  import AppendixDEn from './sections/appendix-d.md';
+  import AppendixDSv from './sections/appendix-d-sv.md';
+
   // --- 2. CONTENT STRUCTURE ---
 
   const contentMap = [
@@ -50,15 +53,15 @@
     },
     {
       id: 'part-1',
-      titleEn: 'Part I: Governance as a Feedback System',
-      titleSv: 'Del I: Styrning som ett återkopplingssystem',
+      titleEn: 'Part I: The Multi-Scale Problem',
+      titleSv: 'Del I: Flerskaliga problemet',
       compEn: Part1En,
       compSv: Part1Sv,
     },
     {
       id: 'part-2',
-      titleEn: 'Part II: A Formal Grammar for Governance',
-      titleSv: 'Del II: En formell grammatik för styrning',
+      titleEn: 'Part II: Fractal Architecture as the Formal Solution',
+      titleSv: 'Del II: Fraktal arkitektur som den formella lösningen',
       compEn: Part2En,
       compSv: Part2Sv,
     },
@@ -113,10 +116,17 @@
     },
     {
       id: 'appendix-c',
-      titleEn: 'Appendix C: References and Sources',
-      titleSv: 'Appendix C: Referenser och källor',
+      titleEn: 'Appendix C: Disturbance Timescale Reference Table',
+      titleSv: 'Appendix C: Referenstabell för störningstidsskalor',
       compEn: AppendixCEn,
       compSv: AppendixCSv,
+    },
+    {
+      id: 'appendix-d',
+      titleEn: 'Appendix D: References and Sources',
+      titleSv: 'Appendix D: Referenser och källor',
+      compEn: AppendixDEn,
+      compSv: AppendixDSv,
     },
   ];
 
@@ -124,47 +134,45 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper',
+      tag: 'Whitepaper · Series II',
+      seriesNote: 'This is the second paper in the Governance as Engineering series.',
+      seriesLink: 'Read Paper I: Governance Stability Simulator →',
       contextTitle: 'Context',
-      contextIntro: 'This paper introduces the Governance Stability Simulator — an open analytical framework that models governance institutions as feedback control systems. Using standard mathematics from control theory and cybernetics, it compares governance architectures by their measurable stability properties rather than their stated intentions.',
-      relatedWork: 'Related work:',
-      architectureLink: 'The Architecture of Stability',
-      gsiLink: 'Global Subsidiarity Index',
-      contextOutro: 'The core finding: high latency and low signal fidelity place hard mathematical ceilings on what any governance architecture can achieve. These ceilings are structural, not political.',
+      contextIntro: 'This paper extends the control-theoretic governance framework from paper one to multi-scale disturbance environments. The core finding: no single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
+      contextOutro: 'The frequency-latency constraint (f_max ≈ 1/2τ) places a hard ceiling on what any single-scale controller can achieve. Fractality closes all frequency gaps simultaneously. This is not a governance preference. It is a structural result.',
       allWhitepapers: '← All Whitepapers',
-      share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewCode: 'View Source Code',
       citeThis: 'Cite This Work',
+      share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok',
+      tag: 'Vitbok · Serie II',
+      seriesNote: 'Detta är den andra rapporten i serien Styrning som ingenjörskonst.',
+      seriesLink: 'Läs rapport I: Styrstabilitetssimulatorn →',
       contextTitle: 'Kontext',
-      contextIntro: 'Denna vitbok introducerar styrstabilitetssimulatorn — ett öppet analytiskt ramverk som modellerar styrningsinstitutioner som återkopplingssystem. Med hjälp av standardmatematik från reglerteknik och cybernetik jämförs styrningsarkitekturer utifrån mätbara stabilitetsegenskaper snarare än uttalade intentioner.',
-      relatedWork: 'Relaterat arbete:',
-      architectureLink: 'Stabilitetens arkitektur',
-      gsiLink: 'Global subsidiaritetsindex',
-      contextOutro: 'Kärnresultatet: hög latens och låg signalfidelitet sätter hårda matematiska tak för vad en styrningsarkitektur kan uppnå. Dessa tak är strukturella, inte politiska.',
+      contextIntro: 'Denna vitbok utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
+      contextOutro: 'Frekvens-latensbegränsningen (f_max ≈ 1/2τ) sätter ett hårt tak för vad en enskild skalregulator kan uppnå. Fraktalitet stänger alla frekvensgap samtidigt. Detta är inte en styrningspreferens. Det är ett strukturellt resultat.',
       allWhitepapers: '← Alla vitböcker',
-      share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       viewCode: 'Visa källkod',
       citeThis: 'Citera detta arbete',
+      share: 'Dela detta dokument',
     },
   };
 
   const metadata = {
     en: {
-      title: 'Governance Stability Simulator',
-      subtitle: 'A Control-Theoretic Model of Institutional Adaptation',
-      description: 'An open analytical framework modelling governance as a feedback control system, demonstrating how latency and signal fidelity determine the structural stability limits of any institutional architecture.',
+      title: 'Fractality as Stability',
+      subtitle: 'A Multi-Scale Control-Theoretic Proof',
+      description: 'Extending the governance-as-engineering framework to multi-scale disturbance environments. No single-scale controller can stabilize a multi-frequency disturbance environment. Fractal architectures are the stability-optimal solution — for the same reasons the nervous system, immune system, and internet are fractal.',
     },
     sv: {
-      title: 'Styrstabilitetssimulatorn',
-      subtitle: 'En reglerteoretisk modell för institutionell anpassning',
-      description: 'Ett öppet analytiskt ramverk som modellerar styrning som ett återkopplingssystem och visar hur latens och signalfidelitet bestämmer de strukturella stabilitets­gränserna för varje institutionell arkitektur.',
+      title: 'Fraktalitet som stabilitet',
+      subtitle: 'Ett flerskaligt reglerteoretiskt bevis',
+      description: 'Utvidgar styrning-som-ingenjörskonst-ramverket till flerskaliga störningsmiljöer. Ingen enskild skalregulator kan stabilisera en flerfrekvent störningsmiljö. Fraktala arkitekturer är den stabilitetsoptimala lösningen — av samma skäl som nervsystemet, immunsystemet och internet är fraktala.',
     },
   };
 
@@ -174,7 +182,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = 'governance-stability-simulator.pdf';
+  let pdfFilename = 'fractality-as-stability.pdf';
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
@@ -192,8 +200,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning. GGF Vitboksserie.`
-      : `Holmström, B. K. (2026). Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation. GGF Whitepaper Series.`;
+      ? `Holmström, B. K. (2026). Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis. GGF Vitboksserie, rapport II.`
+      : `Holmström, B. K. (2026). Fractality as Stability: A Multi-Scale Control-Theoretic Proof. GGF Whitepaper Series, Paper II.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -214,6 +222,16 @@
     <div class="mb-8">
       <a href="/whitepapers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
         {t.allWhitepapers}
+      </a>
+    </div>
+
+    <!-- Series note -->
+    <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
+      {t.seriesNote}
+      <a href="/whitepapers/governance-stability-simulator"
+        class="block mt-2 font-medium hover:opacity-100"
+        style="color: var(--color-page-accent);">
+        {t.seriesLink}
       </a>
     </div>
 
@@ -282,38 +300,8 @@
     <!-- Context Card -->
     <div class="mb-16 p-8 rounded-xl border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-sm">
       <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{t.contextTitle}</h3>
-      <div class="prose prose-sm max-w-none" style="--tw-prose-body: var(--color-page-text); --tw-prose-links: var(--color-page-accent);">
-        <p class="text-base">{t.contextIntro}</p>
-
-        <div class="flex flex-wrap gap-4 my-6">
-          <span class="text-sm font-bold opacity-70">{t.relatedWork}</span>
-          <a
-            href="/whitepapers/architecture-of-stability"
-            class="text-sm hover:underline"
-            style="color: var(--color-page-accent);"
-          >
-            {t.architectureLink}
-          </a>
-          <a
-            href="https://www.svensksubsidiaritet.se/ramverk/gsi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center gap-1 text-sm hover:underline"
-            style="color: var(--color-page-accent);"
-          >
-            {t.gsiLink}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-70">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </a>
-        </div>
-
-        <p class="mt-4 opacity-80 leading-relaxed">
-          {t.contextOutro}
-        </p>
-      </div>
+      <p class="text-base mb-4" style="color: var(--color-page-text);">{t.contextIntro}</p>
+      <p class="opacity-80 leading-relaxed" style="color: var(--color-page-text);">{t.contextOutro}</p>
     </div>
 
     <!-- Content Sections -->
@@ -334,7 +322,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-c'}
+        {#if section.id !== 'appendix-d'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

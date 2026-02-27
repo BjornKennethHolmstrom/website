@@ -1,5 +1,4 @@
 // src/lib/i18n/translations/whitepapers.ts
-
 export const whitepapersTranslations = {
 	en: {
 		whitepapers: {
@@ -26,6 +25,11 @@ export const whitepapersTranslations = {
 				title: 'Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation',
 				description:
 					'An open analytical framework modelling governance as a feedback control system. Demonstrates how latency and signal fidelity place hard mathematical ceilings on institutional performance — and why subsidiarity is an engineering requirement, not a political preference.'
+			},
+			fractalityAsStability: {
+				title: 'Fractality as Stability: A Multi-Scale Control-Theoretic Proof',
+				description:
+					'No single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution. Paper II in the Governance as Engineering series.'
 			},
 			// --- GGF Papers ---
 			preventing1933: {
@@ -129,6 +133,11 @@ export const whitepapersTranslations = {
 				title: 'Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning',
 				description:
 					'Ett öppet analytiskt ramverk som modellerar styrning som ett återkopplingssystem. Visar hur latens och signalfidelitet sätter hårda matematiska tak för institutionell prestanda — och varför subsidiaritet är ett ingenjörskrav, inte en politisk preferens.'
+			},
+			fractalityAsStability: {
+				title: 'Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis',
+				description:
+					'Ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen. Rapport II i serien Styrning som ingenjörskonst.'
 			},
 			// --- GGF Papers ---
 			preventing1933: {

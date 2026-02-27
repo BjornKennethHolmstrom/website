@@ -1,0 +1,13 @@
+# Executive summary
+
+The previous paper in this series demonstrated that governance architectures with lower latency and higher signal fidelity outperform centralized architectures under localized disturbance. That result concerned a single type of disturbance at a single scale. Real governance environments are not like that.
+
+Real governance systems face simultaneous disturbances across multiple timescales: fast local shocks that demand response within days, medium pressures that operate over months, and slow secular drifts that unfold over years or decades. This paper demonstrates that no single-scale controller can stably govern a system subject to disturbances across all three bands simultaneously. The limitation is not political or institutional. It follows from a fundamental relationship in feedback control theory between a controller's latency and the maximum frequency of disturbance it can stabilize.
+
+The formal result: any controller with response latency τ cannot stabilize disturbances faster than f_max ≈ 1/(2τ). A central controller with τ = 12 can handle slow drift but is structurally blind to fast and medium disturbances. A local controller with τ = 2 can handle fast shocks but systematically over-reacts to slow drift, producing sustained oscillation. Neither architecture covers the full disturbance spectrum. Both leave a frequency gap that no tuning of their parameters can close.
+
+Fractal architectures — nested hierarchies of controllers, each matched to the timescale of its disturbance band — close all frequency gaps simultaneously. The local layer handles fast shocks with high signal fidelity and low latency. The regional layer absorbs medium pressures. The global layer tracks slow drift. Each layer handles what it can reach; no layer is asked to handle what it structurally cannot.
+
+This paper extends the Governance Stability Simulator to a multi-scale disturbance environment and compares three architectures: centralized control (Architecture A), distributed local control (Architecture B), and fractal multi-scale control (Architecture C). All three architectures are given identical actuator resources. Performance differences are attributable to architecture alone.
+
+The finding is not that fractal governance is preferable. It is that fractal architecture is the stability-optimal response to a multi-frequency disturbance environment — in the same sense that the human nervous system, the immune system, and the internet are fractal, not because their designers preferred distributed structures, but because single-scale alternatives are provably less stable.

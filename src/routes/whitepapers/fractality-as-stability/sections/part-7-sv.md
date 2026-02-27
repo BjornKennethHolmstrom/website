@@ -1,0 +1,21 @@
+# Del VII: Slutsats
+
+Det argument som denna rapport framför är exakt och avgränsat.
+
+Den gör inte gällande att all styrning bör vara lokal, eller att globala institutioner är illegitima, eller att något särskilt politiskt arrangemang är att föredra. Detta vore normativa påståenden som reglertekniken inte kan avgöra.
+
+Påståendet är strukturellt: i system som utsätts för samtidiga störningar över flera tidsskalor kan ingen enskalig regulator täcka hela frekvensspektrumet för dessa störningar. Detta följer av förhållandet mellan en regulators svarslatens och den maximala störningsfrekvens den kan stabilisera. Det är ett matematiskt resultat, inte ett politiskt.
+
+Följdsatsen är lika exakt: fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till tidsskalan för sina respektive störningsband — är det stabilitetsoptimala svaret på miljöer med multifrekventa störningar. Inte för att distribuerad styrning är filosofiskt tilltalande, utan för att de alternativa arkitekturerna lämnar frekvensgap som ingen parameterjustering kan stänga.
+
+Simuleringen gör detta synligt. Arkitektur A:s dramatiska kollaps — som producerar fem gånger så stort stabilitetsunderskott som den fraktala arkitekturen trots lika ställdonsresurser — är inte ett misslyckande av kompetens eller resurser. Det är den förutsägbara konsekvensen av att be en regulator med τ = 12 att svara på störningar med perioder på 30 och 45 tidssteg. Arkitektur B:s ihållande oscillation i det långsamma bandet är inte ett kalibreringsfel. Det är den förutsägbara konsekvensen av att be en regulator med hög förstärkning och låg latens att följa en trend som den inte kan skilja från en lokal störning. Båda misslyckandelägena är strukturella. Båda undviks genom att matcha regulatoregenskaper med störningstidsskalor på varje skala.
+
+Detta resultat vilar på en lång intellektuell tradition. Ashbys lag om nödvändig mångfald fastslog 1956 att regulatorer måste matcha komplexiteten hos sina system. Shannons sats om kanalkapacitet fastslog att informationsöverföring har fundamentala gränser som sätts av kanalens egenskaper, inte av kodarens kvalitet. Beers modell för livskraftiga system föreslog att livskraftiga organisationer måste implementera rekursiv hierarkisk styrning. Vad denna rapport tillför är en simulering som gör dessa resultat kvantitativt synliga i en styrningskontext, med parametrar som är tillräckligt explicita för att kunna reproduceras och ifrågasättas.
+
+Nervsystemet, immunsystemet och internet kom inte fram till fraktal arkitektur genom politisk filosofi. De kom fram till det genom selektionstryck och ingenjörsmässig nödvändighet. Styrningsimplikationen är inte att mänskliga institutioner bör imitera biologiska system av preferens. Den är att samma begränsningar gäller: system som måste stabilisera störningar över många tidsskalor är underkastade samma förhållande mellan frekvens och latens, och samma arkitektoniska lösning följer.
+
+Det som återstår att göra är det svårare arbetet: att översätta formella resultat till empiriska mätningar, kalibrera ramverket mot verkliga styrningsdata och utöka modellen till den ickelinjära, adaptiva och tvärskaliga dynamik som ligger utanför den nuvarande simuleringens räckvidd. Ramverket är en utgångspunkt, inte en slutsats.
+
+De människor som först formaliserade dessa idéer — Wiener, Ashby, Beer, Shannon, Meadows — förstod att de gjorde något mer än ingenjörskonst. De försökte hitta ett språk där de strukturella kraven för livskraftiga komplexa system kunde göras exakta: inte för att vinna debatter, utan för att göra vissa typer av arkitektoniska misstag svårare att begå av misstag.
+
+Det projektet förblir ofullbordat. De kommande decenniernas styrningsutmaningar — klimat, demografisk övergång, teknologisk störning, institutionell urholkning — kommer att kräva styrningssystem kapabla att svara samtidigt över snabba, medellånga och långsamma tidsskalor. Huruvida dessa system kommer att vara arkitektoniskt kapabla att möta den utmaningen är en fråga som den ingenjörsmässiga inramningen kan hjälpa till att besvara. Denna rapport är ett litet bidrag till det svaret.
