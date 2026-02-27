@@ -26,9 +26,6 @@
   import Part6En from './sections/part-6.md';
   import Part6Sv from './sections/part-6-sv.md';
 
-  import Part7En from './sections/part-7.md';
-  import Part7Sv from './sections/part-7-sv.md';
-
   import AppendixAEn from './sections/appendix-a.md';
   import AppendixASv from './sections/appendix-a-sv.md';
 
@@ -37,9 +34,6 @@
 
   import AppendixCEn from './sections/appendix-c.md';
   import AppendixCSv from './sections/appendix-c-sv.md';
-
-  import AppendixDEn from './sections/appendix-d.md';
-  import AppendixDSv from './sections/appendix-d-sv.md';
 
   // --- 2. CONTENT STRUCTURE ---
 
@@ -53,52 +47,45 @@
     },
     {
       id: 'part-1',
-      titleEn: 'Part I: The Multi-Scale Problem',
-      titleSv: 'Del I: Flerskaliga problemet',
+      titleEn: 'Part I: The Observability Problem',
+      titleSv: 'Del I: Observerbarhetsproblemet',
       compEn: Part1En,
       compSv: Part1Sv,
     },
     {
       id: 'part-2',
-      titleEn: 'Part II: Fractal Architecture as the Formal Solution',
-      titleSv: 'Del II: Fraktal arkitektur som den formella lösningen',
+      titleEn: 'Part II: The Simulation',
+      titleSv: 'Del II: Simuleringen',
       compEn: Part2En,
       compSv: Part2Sv,
     },
     {
       id: 'part-3',
-      titleEn: 'Part III: The Simulation',
-      titleSv: 'Del III: Simuleringen',
+      titleEn: 'Part III: Structural Observations',
+      titleSv: 'Del III: Strukturella observationer',
       compEn: Part3En,
       compSv: Part3Sv,
     },
     {
       id: 'part-4',
-      titleEn: 'Part IV: Structural Observations',
-      titleSv: 'Del IV: Strukturella observationer',
+      titleEn: 'Part IV: Limitations',
+      titleSv: 'Del IV: Begränsningar',
       compEn: Part4En,
       compSv: Part4Sv,
     },
     {
       id: 'part-5',
-      titleEn: 'Part V: Limitations',
-      titleSv: 'Del V: Begränsningar',
+      titleEn: 'Part V: Implications',
+      titleSv: 'Del V: Implikationer',
       compEn: Part5En,
       compSv: Part5Sv,
     },
     {
       id: 'part-6',
-      titleEn: 'Part VI: Implications',
-      titleSv: 'Del VI: Implikationer',
+      titleEn: 'Part VI: Conclusion',
+      titleSv: 'Del VI: Slutsats',
       compEn: Part6En,
       compSv: Part6Sv,
-    },
-    {
-      id: 'part-7',
-      titleEn: 'Part VII: Conclusion',
-      titleSv: 'Del VII: Slutsats',
-      compEn: Part7En,
-      compSv: Part7Sv,
     },
     {
       id: 'appendix-a',
@@ -116,17 +103,10 @@
     },
     {
       id: 'appendix-c',
-      titleEn: 'Appendix C: Disturbance Timescale Reference Table',
-      titleSv: 'Appendix C: Referenstabell för störningstidsskalor',
+      titleEn: 'Appendix C: References and Sources',
+      titleSv: 'Appendix C: Referenser och källor',
       compEn: AppendixCEn,
       compSv: AppendixCSv,
-    },
-    {
-      id: 'appendix-d',
-      titleEn: 'Appendix D: References and Sources',
-      titleSv: 'Appendix D: Referenser och källor',
-      compEn: AppendixDEn,
-      compSv: AppendixDSv,
     },
   ];
 
@@ -134,15 +114,15 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series II',
-      seriesNote: 'This is the second paper in the Governance as Engineering series.',
+      tag: 'Whitepaper · Series III',
+      seriesNote: 'This is the third paper in the Governance as Engineering series.',
       seriesLinks: [
-        { href: '/whitepapers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
-        { href: '/whitepapers/observability-democracy-connection',  label: 'Paper III: The Observability-Democracy Connection →' },
+        { href: '/whitepapers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
+        { href: '/whitepapers/fractality-as-stability',        label: 'Paper II: Fractality as Stability →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'This paper extends the control-theoretic governance framework from paper one to multi-scale disturbance environments. The core finding: no single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
-      contextOutro: 'The frequency-latency constraint (f_max ≈ 1/2τ) places a hard ceiling on what any single-scale controller can achieve. Fractality closes all frequency gaps simultaneously. This is not a governance preference. It is a structural result.',
+      contextIntro: 'Democratic governance claims to transmit citizen preferences into policy through representative institutions. This paper asks whether that transmission is technically possible — not whether institutions are well-designed, but whether the information-theoretic properties of representation chains allow citizen preferences to survive to the policy layer at all.',
+      contextOutro: 'The finding: representation chains with three or more layers are constitutionally unobservable. Noise variance exceeds surviving signal variance. The policy layer cannot recover true citizen preferences regardless of institutional quality. This is a diagnosis, not a prescription.',
       allWhitepapers: '← All Whitepapers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -151,15 +131,15 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie II',
-      seriesNote: 'Detta är den andra rapporten i serien Styrning som ingenjörskonst.',
+      tag: 'Vitbok · Serie III',
+      seriesNote: 'Detta är den tredje rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
-        { href: '/whitepapers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
-        { href: '/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+        { href: '/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
+        { href: '/whitepapers/fractality-as-stability',        label: 'Rapport II: Fraktalitet som stabilitet →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Denna vitbok utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
-      contextOutro: 'Frekvens-latensbegränsningen (f_max ≈ 1/2τ) sätter ett hårt tak för vad en enskild skalregulator kan uppnå. Fraktalitet stänger alla frekvensgap samtidigt. Detta är inte en styrningspreferens. Det är ett strukturellt resultat.',
+      contextIntro: 'Demokratisk styrning hävdar att medborgarnas preferenser förmedlas till politiken via representativa institutioner. Denna vitbok frågar om den överföringen är tekniskt möjlig — inte om institutionerna är väldesignade, utan om representationskedjornas informationsteoretiska egenskaper tillåter medborgerliga preferenser att överleva till politiklagret.',
+      contextOutro: 'Resultatet: representationskedjor med tre eller fler lager är konstitutionellt iakttagbara. Brusvariansen överstiger den kvarvarande signalvariansen. Politiklagret kan inte återskapa sanna medborgarpreferenser oavsett institutionell kvalitet. Detta är en diagnos, inte ett recept.',
       allWhitepapers: '← Alla vitböcker',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -171,14 +151,14 @@
 
   const metadata = {
     en: {
-      title: 'Fractality as Stability',
-      subtitle: 'A Multi-Scale Control-Theoretic Proof',
-      description: 'Extending the governance-as-engineering framework to multi-scale disturbance environments. No single-scale controller can stabilize a multi-frequency disturbance environment. Fractal architectures are the stability-optimal solution — for the same reasons the nervous system, immune system, and internet are fractal.',
+      title: 'The Observability-Democracy Connection',
+      subtitle: 'How Representation Chains Destroy the Signal They Are Meant to Transmit',
+      description: 'Representation chains with three or more layers are constitutionally unobservable: noise variance exceeds surviving signal variance at the policy layer, and no institutional reform within the existing architecture can restore preference transmission fidelity. Paper III in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Fraktalitet som stabilitet',
-      subtitle: 'Ett flerskaligt reglerteoretiskt bevis',
-      description: 'Utvidgar styrning-som-ingenjörskonst-ramverket till flerskaliga störningsmiljöer. Ingen enskild skalregulator kan stabilisera en flerfrekvent störningsmiljö. Fraktala arkitekturer är den stabilitetsoptimala lösningen — av samma skäl som nervsystemet, immunsystemet och internet är fraktala.',
+      title: 'Observerbarhets-demokratikopplingen',
+      subtitle: 'Hur representationskedjor förstör den signal de är avsedda att förmedla',
+      description: 'Representationskedjor med tre eller fler lager är konstitutionellt icke-observerbara: brusvariansen överstiger den kvarvarande signalvariansen i politiklagret, och ingen institutionell reform inom den befintliga arkitekturen kan återställa preferensöverföringens trohet. Rapport III i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -188,7 +168,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = 'fractality-as-stability.pdf';
+  let pdfFilename = 'observability-democracy-connection.pdf';
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
@@ -206,8 +186,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis. GGF Vitboksserie, rapport II.`
-      : `Holmström, B. K. (2026). Fractality as Stability: A Multi-Scale Control-Theoretic Proof. GGF Whitepaper Series, Paper II.`;
+      ? `Holmström, B. K. (2026). Observerbarhets-demokratikopplingen: Hur representationskedjor förstör den signal de är avsedda att förmedla. GGF Vitboksserie, rapport III.`
+      : `Holmström, B. K. (2026). The Observability-Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit. GGF Whitepaper Series, Paper III.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -332,7 +312,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-d'}
+        {#if section.id !== 'appendix-c'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

@@ -145,31 +145,31 @@ const pdfStyles = `
 	}
 	
 	.cover .description {
-		font-size: 11pt;
-		margin-bottom: 1em;
+		font-size: 10.5pt;
+		margin-bottom: 0.6em;
 		color: #666;
 		max-width: 600px;
+		line-height: 1.4;
+	}
+
+	.cover .metadata {
+		font-size: 10.5pt;
+		color: #666;
+		margin-top: 0.6em;
 		line-height: 1.5;
 	}
-	
-	.cover .metadata {
-		font-size: 11pt;
-		color: #666;
-		margin-top: 1em;
-		line-height: 1.6;
-	}
-	
+
 	.cover .url {
-		font-size: 9pt;
+		font-size: 8.5pt;
 		color: #888;
-		margin-top: 0.6em;
+		margin-top: 0.4em;
 		font-family: 'Courier New', monospace;
 	}
-	
+
 	.cover .license {
-		font-size: 9pt;
+		font-size: 8.5pt;
 		color: #888;
-		margin-top: 0.3em;
+		margin-top: 0.2em;
 		font-style: italic;
 	}
 	

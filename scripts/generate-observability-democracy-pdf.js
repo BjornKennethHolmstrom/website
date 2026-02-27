@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for the Fractality as Stability whitepaper
+ * Generate PDF for The Observability-Democracy Connection whitepaper
  *
- * Usage: node scripts/generate-fractality-as-stability-pdf.js [language]
- * Example: node scripts/generate-fractality-as-stability-pdf.js en
- * Example: node scripts/generate-fractality-as-stability-pdf.js sv
+ * Usage: node scripts/generate-observability-democracy-pdf.js [language]
+ * Example: node scripts/generate-observability-democracy-pdf.js en
+ * Example: node scripts/generate-observability-democracy-pdf.js sv
  *
  * Requirements:
  * npm install marked puppeteer
@@ -30,30 +30,30 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/fractality-as-stability/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/observability-democracy-connection/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
-const OUTPUT_FILE = path.join(OUTPUT_DIR, `fractality-as-stability${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/fractality-as-stability-cover.png');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, `observability-democracy-connection${suffix}.pdf`);
+const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/observability-democracy-cover.png');
 
 const metadata = {
 	en: {
-		title: 'Fractality as Stability',
-		subtitle: 'A Multi-Scale Control-Theoretic Proof',
-		description: 'No single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
+		title: 'The Observability-Democracy Connection',
+		subtitle: 'How Representation Chains Destroy the Signal They Are Meant to Transmit',
+		description: 'Representation chains with three or more layers are constitutionally unobservable: noise variance exceeds surviving signal variance at the policy layer, and no institutional reform within the existing architecture can restore preference transmission fidelity.',
 		author: 'Björn Kenneth Holmström',
 		date: 'February 2026',
-		url: 'https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability',
-		seriesNote: 'Paper II in the Governance as Engineering series',
+		url: 'https://bjornkennethholmstrom.org/whitepapers/observability-democracy-connection',
+		seriesNote: 'Paper III in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
-		title: 'Fraktalitet som stabilitet',
-		subtitle: 'Ett flerskaligt reglerteoretiskt bevis',
-		description: 'Ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
+		title: 'Observerbarhets-demokratikopplingen',
+		subtitle: 'Hur representationskedjor förstör den signal de är avsedda att förmedla',
+		description: 'Representationskedjor med tre eller fler lager är konstitutionellt icke-observerbara: brusvariansen överstiger den kvarvarande signalvariansen i politiklagret, och ingen institutionell reform kan återställa preferensöverföringens trohet.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Februari 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/fractality-as-stability',
-		seriesNote: 'Rapport II i serien Styrning som ingenjörskonst',
+		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/observability-democracy-connection',
+		seriesNote: 'Rapport III i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
 };
@@ -61,18 +61,16 @@ const metadata = {
 const meta = metadata[LANGUAGE];
 
 const sections = [
-	{ file: 'executive-summary', title: LANGUAGE === 'en' ? 'Executive Summary'                                      : 'Sammanfattning',                                        isAppendix: false },
-	{ file: 'part-1',            title: LANGUAGE === 'en' ? 'Part I: The Multi-Scale Problem'                        : 'Del I: Det flerskaliga problemet',                       isAppendix: false },
-	{ file: 'part-2',            title: LANGUAGE === 'en' ? 'Part II: Fractal Architecture as the Formal Solution'   : 'Del II: Fraktal arkitektur som den formella lösningen',  isAppendix: false },
-	{ file: 'part-3',            title: LANGUAGE === 'en' ? 'Part III: The Simulation'                               : 'Del III: Simuleringen',                                  isAppendix: false },
-	{ file: 'part-4',            title: LANGUAGE === 'en' ? 'Part IV: Structural Observations'                       : 'Del IV: Strukturella observationer',                     isAppendix: false },
-	{ file: 'part-5',            title: LANGUAGE === 'en' ? 'Part V: Limitations'                                    : 'Del V: Begränsningar',                                   isAppendix: false },
-	{ file: 'part-6',            title: LANGUAGE === 'en' ? 'Part VI: Implications'                                  : 'Del VI: Implikationer',                                  isAppendix: false },
-	{ file: 'part-7',            title: LANGUAGE === 'en' ? 'Part VII: Conclusion'                                   : 'Del VII: Slutsats',                                      isAppendix: false },
-	{ file: 'appendix-a',        title: LANGUAGE === 'en' ? 'Appendix A: Mathematical Formulations'                  : 'Appendix A: Matematiska formuleringar',                  isAppendix: true  },
-	{ file: 'appendix-b',        title: LANGUAGE === 'en' ? 'Appendix B: Code and Reproduction'                      : 'Appendix B: Kod och reproducerbarhet',                   isAppendix: true  },
-	{ file: 'appendix-c',        title: LANGUAGE === 'en' ? 'Appendix C: Disturbance Timescale Reference Table'      : 'Appendix C: Referenstabell för störningstidsskalor',     isAppendix: true  },
-	{ file: 'appendix-d',        title: LANGUAGE === 'en' ? 'Appendix D: References and Sources'                     : 'Appendix D: Referenser och källor',                      isAppendix: true  },
+	{ file: 'executive-summary', title: LANGUAGE === 'en' ? 'Executive Summary'                                                           : 'Sammanfattning',                                              isAppendix: false },
+	{ file: 'part-1',            title: LANGUAGE === 'en' ? 'Part I: The Observability Problem'                                           : 'Del I: Observerbarhetsproblemet',                              isAppendix: false },
+	{ file: 'part-2',            title: LANGUAGE === 'en' ? 'Part II: The Simulation'                                                     : 'Del II: Simuleringen',                                         isAppendix: false },
+	{ file: 'part-3',            title: LANGUAGE === 'en' ? 'Part III: Structural Observations'                                           : 'Del III: Strukturella observationer',                          isAppendix: false },
+	{ file: 'part-4',            title: LANGUAGE === 'en' ? 'Part IV: Limitations'                                                        : 'Del IV: Begränsningar',                                        isAppendix: false },
+	{ file: 'part-5',            title: LANGUAGE === 'en' ? 'Part V: Implications'                                                        : 'Del V: Implikationer',                                         isAppendix: false },
+	{ file: 'part-6',            title: LANGUAGE === 'en' ? 'Part VI: Conclusion'                                                         : 'Del VI: Slutsats',                                             isAppendix: false },
+	{ file: 'appendix-a',        title: LANGUAGE === 'en' ? 'Appendix A: Mathematical Formulations'                                       : 'Appendix A: Matematiska formuleringar',                        isAppendix: true  },
+	{ file: 'appendix-b',        title: LANGUAGE === 'en' ? 'Appendix B: Code and Reproduction'                                           : 'Appendix B: Kod och reproducerbarhet',                         isAppendix: true  },
+	{ file: 'appendix-c',        title: LANGUAGE === 'en' ? 'Appendix C: References and Sources'                                          : 'Appendix C: Referenser och källor',                            isAppendix: true  },
 ];
 
 // ── CSS ───────────────────────────────────────────────────────────────────────
@@ -125,7 +123,7 @@ const pdfStyles = `
 	}
 
 	.cover h1 {
-		font-size: 24pt;
+		font-size: 22pt;
 		font-weight: bold;
 		margin-bottom: 0.3em;
 		line-height: 1.2;
@@ -133,11 +131,12 @@ const pdfStyles = `
 	}
 
 	.cover .subtitle {
-		font-size: 14pt;
+		font-size: 13pt;
 		font-style: italic;
 		margin-bottom: 0.4em;
 		color: #555;
-		line-height: 1.3;
+		line-height: 1.4;
+		max-width: 560px;
 	}
 
 	.cover .series-note {
@@ -151,7 +150,7 @@ const pdfStyles = `
 		font-size: 10.5pt;
 		margin-bottom: 0.6em;
 		color: #666;
-		max-width: 600px;
+		max-width: 580px;
 		line-height: 1.4;
 	}
 
@@ -244,6 +243,7 @@ const pdfStyles = `
 		margin-bottom: 1em;
 		border-radius: 4px;
 		font-family: 'Courier New', monospace;
+		color: #1a1a1a;
 	}
 
 	code {
@@ -252,6 +252,7 @@ const pdfStyles = `
 		font-family: 'Courier New', monospace;
 		font-size: 9pt;
 		border-radius: 2px;
+		color: #1a1a1a;
 	}
 
 	pre code { background: none; padding: 0; }
@@ -264,13 +265,7 @@ const pdfStyles = `
 		font-size: 10pt;
 	}
 
-	th, td {
-		border: 1px solid #ddd;
-		padding: 0.5em;
-		text-align: left;
-		vertical-align: top;
-	}
-
+	th, td { border: 1px solid #ddd; padding: 0.5em; text-align: left; vertical-align: top; }
 	th { background: #f5f5f5; font-weight: bold; }
 
 	a { color: #0066cc; text-decoration: none; }
@@ -288,25 +283,10 @@ const pdfStyles = `
 	.appendix, .acknowledgements, .references { page-break-before: always; }
 
 	.figure-container { page-break-inside: avoid; break-inside: avoid; }
-
-	.figure {
-		page-break-inside: avoid;
-		margin: 1.5em 0;
-		text-align: center;
-	}
-
-	.figure img {
-		max-width: 100%;
-		max-height: 22cm;
-		width: auto;
-		height: auto;
-		object-fit: contain;
-		border: 1px solid #ddd;
-		border-radius: 4px;
-	}
+	.figure { page-break-inside: avoid; margin: 1.5em 0; text-align: center; }
+	.figure img { max-width: 100%; max-height: 22cm; width: auto; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 4px; }
 
 	img, .cover-image { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
-
 	figure, .figure, .diagram-container { page-break-inside: avoid; break-inside: avoid; margin: 1.5em 0; }
 
 	h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
@@ -331,7 +311,7 @@ function processMarkdownImagesSync(content) {
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
 			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/fractality-as-stability', imagePath),
+			path.join(__dirname, '../src/routes/whitepapers/observability-democracy-connection', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 
@@ -471,7 +451,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper · Series II' : 'Vitbok · Serie II'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper · Series III' : 'Vitbok · Serie III'}</span>
 				</div>
 			`,
 			footerTemplate: `
@@ -495,7 +475,7 @@ async function generatePDF(html) {
 
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for Fractality as Stability whitepaper...\n');
+		console.log('📄 Starting PDF generation for The Observability-Democracy Connection whitepaper...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);
 
@@ -503,7 +483,7 @@ async function main() {
 		const html = generateHTML(sections);
 
 		if (process.env.DEBUG) {
-			const debugFile = path.join(__dirname, `../debug-fractality-${LANGUAGE}.html`);
+			const debugFile = path.join(__dirname, `../debug-observability-${LANGUAGE}.html`);
 			fs.writeFileSync(debugFile, html);
 			console.log(`Debug HTML saved to: ${debugFile}`);
 		}

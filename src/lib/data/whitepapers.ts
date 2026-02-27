@@ -69,6 +69,27 @@ export const papersData: Whitepaper[] = [
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},
+ {
+		id: 'observabilityDemocracy',
+		key: 'observabilityDemocracy',
+		category: 'governance',
+		tags: ['Information Theory', 'Observability', 'Democracy', 'Representation', 'Signal Fidelity', 'Governance Engineering', 'Control Theory', 'Simulation'],
+		year: '2026',
+		pages: '34',
+		readTime: {
+			en: '45 min',
+			sv: '45 min'
+		},
+		version: '1.0',
+		pdfPath: {
+			en: `${localBase}/observability-democracy-connection.pdf`,
+			sv: `${localBase}/observability-democracy-connection-sv.pdf`,
+		},
+		coverImage: '/whitepapers/images/observability-democracy-cover.png',
+		readOnlinePath: '/whitepapers/observability-democracy-connection',
+		readOnlineExternal: false,
+		releaseDate: '2026-02-27'
+	},
 	{
 		id: 'architectureOfStability',
 		key: 'architectureOfStability',

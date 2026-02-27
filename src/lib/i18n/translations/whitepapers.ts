@@ -1,4 +1,5 @@
 // src/lib/i18n/translations/whitepapers.ts
+
 export const whitepapersTranslations = {
 	en: {
 		whitepapers: {
@@ -30,6 +31,11 @@ export const whitepapersTranslations = {
 				title: 'Fractality as Stability: A Multi-Scale Control-Theoretic Proof',
 				description:
 					'No single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution. Paper II in the Governance as Engineering series.'
+			},
+			observabilityDemocracy: {
+				title: 'The Observability-Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit',
+				description:
+					'Representation chains with three or more layers are constitutionally unobservable: noise variance exceeds surviving signal variance at the policy layer. No institutional reform within the existing architecture can restore preference transmission fidelity. Paper III in the Governance as Engineering series.'
 			},
 			// --- GGF Papers ---
 			preventing1933: {
@@ -138,6 +144,11 @@ export const whitepapersTranslations = {
 				title: 'Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis',
 				description:
 					'Ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen. Rapport II i serien Styrning som ingenjörskonst.'
+			},
+			observabilityDemocracy: {
+				title: 'Observerbarhets-demokratikopplingen: Hur representationskedjor förstör den signal de är avsedda att förmedla',
+				description:
+					'Representationskedjor med tre eller fler lager är konstitutionellt icke-observerbara: brusvariansen överstiger den kvarvarande signalvariansen i politiklagret. Ingen institutionell reform inom den befintliga arkitekturen kan återställa preferensöverföringens trohet. Rapport III i serien Styrning som ingenjörskonst.'
 			},
 			// --- GGF Papers ---
 			preventing1933: {

@@ -124,7 +124,12 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper',
+      tag: 'Whitepaper · Series I',
+      seriesNote: 'This is the first paper in the Governance as Engineering series.',
+      seriesLinks: [
+        { href: '/whitepapers/fractality-as-stability',              label: 'Paper II: Fractality as Stability →' },
+        { href: '/whitepapers/observability-democracy-connection',   label: 'Paper III: The Observability-Democracy Connection →' },
+      ],
       contextTitle: 'Context',
       contextIntro: 'This paper introduces the Governance Stability Simulator — an open analytical framework that models governance institutions as feedback control systems. Using standard mathematics from control theory and cybernetics, it compares governance architectures by their measurable stability properties rather than their stated intentions.',
       relatedWork: 'Related work:',
@@ -139,7 +144,12 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Vitbok',
+      tag: 'Vitbok · Serie I',
+      seriesNote: 'Detta är den första rapporten i serien Styrning som ingenjörskonst.',
+      seriesLinks: [
+        { href: '/whitepapers/fractality-as-stability',            label: 'Rapport II: Fraktalitet som stabilitet →' },
+        { href: '/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+      ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna vitbok introducerar styrstabilitetssimulatorn — ett öppet analytiskt ramverk som modellerar styrningsinstitutioner som återkopplingssystem. Med hjälp av standardmatematik från reglerteknik och cybernetik jämförs styrningsarkitekturer utifrån mätbara stabilitetsegenskaper snarare än uttalade intentioner.',
       relatedWork: 'Relaterat arbete:',
@@ -217,6 +227,20 @@
       </a>
     </div>
 
+    <!-- Series note -->
+    <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
+      {t.seriesNote}
+      <div class="mt-2 space-y-1">
+        {#each t.seriesLinks as link}
+          <a href={link.href}
+            class="block font-medium hover:opacity-100"
+            style="color: var(--color-page-accent);">
+            {link.label}
+          </a>
+        {/each}
+      </div>
+    </div>
+
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{t.downloads}</h3>
       <div class="space-y-3">
@@ -229,7 +253,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/pwnytale/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
