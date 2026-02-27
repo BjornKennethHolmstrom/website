@@ -14,6 +14,14 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     shortestChain: {
+       title: 'The Shortest Chain',
+       subtitle: 'Inner Governance and the Limit of Observation',
+       desc: 'The Governance as Engineering series establishes that shorter chains produce better outcomes. Applied inward, this argument reaches a limit that engineering cannot resolve: every instruction — including "observe yourself" — adds a layer of intermediation. Where the framework arrives, it must stop.',
+       published: 'Feb 2026',
+       readTime: '5 min read',
+       tags: ['Consciousness', 'Governance', 'Observation', 'Krishnamurti', 'Spiral Dynamics']
+     },
      billComingDue: {
        title: "The Bill is Coming Due",
        subtitle: "A Manifesto of Developmental Debt",
@@ -242,6 +250,14 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     shortestChain: {
+       title: 'Den kortaste kedjan',
+       subtitle: 'Inre styrning och observationens gräns',
+       desc: 'Serien Styrning som ingenjörskonst fastslår att kortare kedjor ger bättre resultat. Tillämpat inåt når detta argument en gräns som ingenjörskonsten inte kan lösa: varje instruktion — inklusive "observera dig själv" — lägger till ett lager av förmedling. Där ramverket anländer måste det stanna.',
+       published: 'februari 2026',
+       readTime: '5 min läsning',
+       tags: ['Medvetande', 'Styrning', 'Observation', 'Krishnamurti', 'Spiral Dynamics']
+     },
      billComingDue: {
        title: "Notan förfaller",
        subtitle: "Ett manifest om utvecklingsskuld",

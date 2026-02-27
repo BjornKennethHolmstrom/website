@@ -90,6 +90,27 @@ export const papersData: Whitepaper[] = [
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},
+ {
+		id: 'requisiteVarietyCommons',
+		key: 'requisiteVarietyCommons',
+		category: 'governance',
+		tags: ['Commons Governance', 'Requisite Variety', 'Cybernetics', 'Indigenous Sovereignty', 'Traditional Ecological Knowledge', 'Feedback Loops', 'Resource Management', 'Governance Engineering', 'Simulation'],
+		year: '2026',
+		pages: '43',
+		readTime: {
+			en: '50 min',
+			sv: '50 min'
+		},
+		version: '1.0',
+		pdfPath: {
+			en: `${localBase}/requisite-variety-and-the-commons.pdf`,
+			sv: `${localBase}/requisite-variety-and-the-commons-sv.pdf`,
+		},
+		coverImage: '/whitepapers/images/requisite-variety-commons-cover.png',
+		readOnlinePath: '/whitepapers/requisite-variety-and-the-commons',
+		readOnlineExternal: false,
+		releaseDate: '2026-02-27'
+	},
 	{
 		id: 'architectureOfStability',
 		key: 'architectureOfStability',

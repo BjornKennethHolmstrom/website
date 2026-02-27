@@ -119,6 +119,7 @@
       seriesLinks: [
         { href: '/whitepapers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
         { href: '/whitepapers/fractality-as-stability',        label: 'Paper II: Fractality as Stability →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons',    label: 'Paper IV: Requisite Variety and the Commons →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Democratic governance claims to transmit citizen preferences into policy through representative institutions. This paper asks whether that transmission is technically possible — not whether institutions are well-designed, but whether the information-theoretic properties of representation chains allow citizen preferences to survive to the policy layer at all.',
@@ -136,6 +137,7 @@
       seriesLinks: [
         { href: '/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/whitepapers/fractality-as-stability',        label: 'Rapport II: Fraktalitet som stabilitet →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Demokratisk styrning hävdar att medborgarnas preferenser förmedlas till politiken via representativa institutioner. Denna vitbok frågar om den överföringen är tekniskt möjlig — inte om institutionerna är väldesignade, utan om representationskedjornas informationsteoretiska egenskaper tillåter medborgerliga preferenser att överleva till politiklagret.',

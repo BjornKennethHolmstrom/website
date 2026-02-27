@@ -133,6 +133,13 @@
 
    // --- Priority 3: Consciousness ---
    { 
+     key: 'shortestChain', 
+     url: '/essays/the-shortest-chain',
+     icon: '🔗',
+     category: 'Consciousness',
+     hasPDF: false
+   },
+   { 
      key: 'betweenTwoArticles', 
      url: '/essays/between-two-articles',
      icon: '📰',

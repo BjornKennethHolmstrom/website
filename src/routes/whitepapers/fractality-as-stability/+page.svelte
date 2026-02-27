@@ -139,6 +139,7 @@
       seriesLinks: [
         { href: '/whitepapers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
         { href: '/whitepapers/observability-democracy-connection',  label: 'Paper III: The Observability-Democracy Connection →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons',   label: 'Paper IV: Requisite Variety and the Commons →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper extends the control-theoretic governance framework from paper one to multi-scale disturbance environments. The core finding: no single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
@@ -156,6 +157,7 @@
       seriesLinks: [
         { href: '/whitepapers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna vitbok utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
@@ -257,7 +259,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
+          href="https://github.com/pwnytale/ggf-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

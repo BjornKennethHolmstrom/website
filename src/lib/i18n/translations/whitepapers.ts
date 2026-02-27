@@ -25,7 +25,7 @@ export const whitepapersTranslations = {
 			governanceSimulator: {
 				title: 'Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation',
 				description:
-					'An open analytical framework modelling governance as a feedback control system. Demonstrates how latency and signal fidelity place hard mathematical ceilings on institutional performance — and why subsidiarity is an engineering requirement, not a political preference.'
+					'An open analytical framework modelling governance as a feedback control system. Demonstrates how latency and signal fidelity place hard mathematical ceilings on institutional performance — and why subsidiarity is an engineering requirement, not a political preference. Paper I in the Governance as Engineering series.'
 			},
 			fractalityAsStability: {
 				title: 'Fractality as Stability: A Multi-Scale Control-Theoretic Proof',
@@ -36,6 +36,11 @@ export const whitepapersTranslations = {
 				title: 'The Observability-Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit',
 				description:
 					'Representation chains with three or more layers are constitutionally unobservable: noise variance exceeds surviving signal variance at the policy layer. No institutional reform within the existing architecture can restore preference transmission fidelity. Paper III in the Governance as Engineering series.'
+			},
+ 		requisiteVarietyCommons: {
+				title: 'Requisite Variety and the Commons: Why Proximity Governs',
+				description:
+					'The tragedy of the commons is an architectural failure — a missing feedback loop — not a motivational one. Ashby\'s Law of Requisite Variety determines which governance systems can stabilize renewable resources: state management performs worse than open access, and indigenous resource sovereignty is a structural engineering requirement. Paper IV in the Governance as Engineering series.'
 			},
 			// --- GGF Papers ---
 			preventing1933: {
@@ -138,7 +143,7 @@ export const whitepapersTranslations = {
 			governanceSimulator: {
 				title: 'Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning',
 				description:
-					'Ett öppet analytiskt ramverk som modellerar styrning som ett återkopplingssystem. Visar hur latens och signalfidelitet sätter hårda matematiska tak för institutionell prestanda — och varför subsidiaritet är ett ingenjörskrav, inte en politisk preferens.'
+					'Ett öppet analytiskt ramverk som modellerar styrning som ett återkopplingssystem. Visar hur latens och signalfidelitet sätter hårda matematiska tak för institutionell prestanda — och varför subsidiaritet är ett ingenjörskrav, inte en politisk preferens. Rapport I i serien Styrning som ingenjörskonst.'
 			},
 			fractalityAsStability: {
 				title: 'Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis',
@@ -149,6 +154,11 @@ export const whitepapersTranslations = {
 				title: 'Observerbarhets-demokratikopplingen: Hur representationskedjor förstör den signal de är avsedda att förmedla',
 				description:
 					'Representationskedjor med tre eller fler lager är konstitutionellt icke-observerbara: brusvariansen överstiger den kvarvarande signalvariansen i politiklagret. Ingen institutionell reform inom den befintliga arkitekturen kan återställa preferensöverföringens trohet. Rapport III i serien Styrning som ingenjörskonst.'
+			},
+ 		requisiteVarietyCommons: {
+				title: 'Nödvändig variation och allmänningen: Varför närhet styr',
+				description:
+					'Allmänningens tragedi är ett arkitektoniskt misslyckande — en saknad återkopplingsslinga — inte ett motivationsmisslyckande. Ashbys lag om nödvändig variation avgör vilka styrningssystem som kan stabilisera förnybara resurser: statlig förvaltning presterar sämre än fri tillgång, och ursprungsbefolkningars resurssouveränitet är ett strukturellt ingenjörskrav. Rapport IV i serien Styrning som ingenjörskonst.'
 			},
 			// --- GGF Papers ---
 			preventing1933: {
