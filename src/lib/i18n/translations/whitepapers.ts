@@ -22,16 +22,21 @@ export const whitepapersTranslations = {
 				philosophy: 'Philosophy',
 				methodology: 'Methodology'
 			},
+			governanceSimulator: {
+				title: 'Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation',
+				description:
+					'An open analytical framework modelling governance as a feedback control system. Demonstrates how latency and signal fidelity place hard mathematical ceilings on institutional performance — and why subsidiarity is an engineering requirement, not a political preference.'
+			},
 			// --- GGF Papers ---
-   preventing1933: {
+			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
 				description:
 					'A systems architecture analysis of the Weimar Republic\'s collapse, demonstrating how dual-currency systems and epistemic protocols could prevent a modern democratic failure.'
 			},
-   fractalCyberneticConsciousness: {
-    title: 'The Fractal-Cybernetic Model of Consciousness',
-    description: 'A transdisciplinary framework bridging cybernetics, fractal geometry, and contemplative science to explain consciousness evolution toward awakening. Integrates Ashby\'s requisite variety, Mandelbrot\'s fractality, and nondual mysticism into a unified model of consciousness development.'
-   },
+			fractalCyberneticConsciousness: {
+				title: 'The Fractal-Cybernetic Model of Consciousness',
+				description: 'A transdisciplinary framework bridging cybernetics, fractal geometry, and contemplative science to explain consciousness evolution toward awakening. Integrates Ashby\'s requisite variety, Mandelbrot\'s fractality, and nondual mysticism into a unified model of consciousness development.'
+			},
 			responsiveSociety: {
 				title: 'The Responsive Society: Aligning with Truth in an Unknown World',
 				description:
@@ -66,7 +71,7 @@ export const whitepapersTranslations = {
 			beyondTheDuopoly: {
 				title: 'Beyond the Duopoly: A Playbook for Post-Polarized Politics',
 				description:
-					'Diagnoses political polarization as a systems failure and proposes an integrated framework to restore democracy’s capacity for collective wisdom.'
+					'Diagnoses political polarization as a systems failure and proposes an integrated framework to restore democracy\'s capacity for collective wisdom.'
 			},
 			mapOfAwakening: {
 				title: 'A Collaborative Map of Awakening: Integrating States of Consciousness',
@@ -83,20 +88,20 @@ export const whitepapersTranslations = {
 				description:
 					'A comprehensive, open-source protocol for building transformative political power. Integrates nervous system regulation, Spiral Dynamics, and on-the-ground organizing tactics into a 7-step framework for movements that win.'
 			},
-   // --- Original papers from this website ---
-   addictionIntegration: {
+			// --- Original papers from this website ---
+			addictionIntegration: {
 				title: 'Addiction as Integration Failure: A Multi-Domain Framework',
 				description:
 					'A rigorous analysis applying Project Janus to the crisis of attention, proving that modern addiction is a systemic integration failure, not an individual pathology.'
 			},
-   beyondIntegration: {
-     title: 'Beyond Integration: Nonduality, Psychosis, and the Aperture Problem',
-     description: 'A personal and theoretical exploration of consciousness development, modal flexibility, and the systemic barriers preventing safe exploration of psychiatric medication necessity. Integrates Project Janus framework with nondual recognition to propose new approaches to mental health, AI alignment, and human development.'
-   },
-   architectureOfStability: {
-     title: 'The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance',
-     description: 'A transdisciplinary analysis showing that centralized governance with time delay is mathematically unstable, and proposing fractal subsidiarity—with Sweden as the prototype—as the constitutional solution for adaptive, resilient societies.'
-   }
+			beyondIntegration: {
+				title: 'Beyond Integration: Nonduality, Psychosis, and the Aperture Problem',
+				description: 'A personal and theoretical exploration of consciousness development, modal flexibility, and the systemic barriers preventing safe exploration of psychiatric medication necessity. Integrates Project Janus framework with nondual recognition to propose new approaches to mental health, AI alignment, and human development.'
+			},
+			architectureOfStability: {
+				title: 'The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance',
+				description: 'A transdisciplinary analysis showing that centralized governance with time delay is mathematically unstable, and proposing fractal subsidiarity—with Sweden as the prototype—as the constitutional solution for adaptive, resilient societies.'
+			}
 		}
 	},
 	sv: {
@@ -120,16 +125,21 @@ export const whitepapersTranslations = {
 				philosophy: 'Filosofi',
 				methodology: 'Metodik'
 			},
-			// --- GGF Papers (Översättningar saknas, använder engelsk text) ---
-   preventing1933: {
+			governanceSimulator: {
+				title: 'Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning',
+				description:
+					'Ett öppet analytiskt ramverk som modellerar styrning som ett återkopplingssystem. Visar hur latens och signalfidelitet sätter hårda matematiska tak för institutionell prestanda — och varför subsidiaritet är ett ingenjörskrav, inte en politisk preferens.'
+			},
+			// --- GGF Papers ---
+			preventing1933: {
 				title: 'Att förhindra 1933: Arkitekturen för demokratisk resiliens',
 				description:
 					'En systemarkitektonisk analys av Weimarrepublikens kollaps som visar hur dubbla valutasystem och epistemiska protokoll kan förhindra en modern demokratisk kollaps.'
 			},
-   fractalCyberneticConsciousness: {
-    title: 'Den Fraktala-Kybernetiska Medvetandemodellen',
-    description: 'Ett tvärvetenskapligt ramverk som förenar kybernetik, fraktalgeometri och kontemplativ vetenskap för att förklara medvetandets evolution mot uppvaknande. Integrerar Ashbys nödvändiga mångfald, Mandelbrots fraktalitet och icke-dualistisk mysticism till en enhetlig modell för medvetandeutveckling.'
-   },
+			fractalCyberneticConsciousness: {
+				title: 'Den fraktala-kybernetiska medvetandemodellen',
+				description: 'Ett tvärvetenskapligt ramverk som förenar kybernetik, fraktalgeometri och kontemplativ vetenskap för att förklara medvetandets evolution mot uppvaknande. Integrerar Ashbys nödvändiga mångfald, Mandelbrots fraktalitet och icke-dualistisk mysticism till en enhetlig modell för medvetandeutveckling.'
+			},
 			responsiveSociety: {
 				title: 'The Responsive Society: Aligning with Truth in an Unknown World',
 				description:
@@ -148,7 +158,7 @@ export const whitepapersTranslations = {
 			beyondFragmentedTruth: {
 				title: 'Beyond Fragmented Truth: A Reasoning Path from Ancient Wisdom to Modern Governance',
 				description:
-					'En metodologiskt ramverk för att använda AI-förstärkt resonemang för att överbrygga forntida visdomstraditioner och samtida styrningsutmaningar.'
+					'En metodologisk ramverk för att använda AI-förstärkt resonemang för att överbrygga forntida visdomstraditioner och samtida styrningsutmaningar.'
 			},
 			currencyOfCare: {
 				title: 'The Currency of Care: Why Universal Basic Income Isn\'t Enough',
@@ -160,7 +170,7 @@ export const whitepapersTranslations = {
 				description:
 					'En omfattande metodik för att utnyttja olika AI-modeller för att utveckla robusta, holistiska lösningar för den globala polykrisen.'
 			},
-			// --- Wordpress Papers (Översättningar saknas, använder engelsk text) ---
+			// --- Wordpress Papers ---
 			beyondTheDuopoly: {
 				title: 'Beyond the Duopoly: A Playbook for Post-Polarized Politics',
 				description:
@@ -181,20 +191,20 @@ export const whitepapersTranslations = {
 				description:
 					'Ett omfattande, open-source protokoll för att bygga transformativ politisk makt. Integrerar nervsystemsreglering, Spiral Dynamics och konkreta organisationstaktiker i ett 7-stegs ramverk för rörelser som vinner.'
 			},
-   // --- Original papers from this website ---
-   addictionIntegration: {
- 			title: 'Beroende som integrationsmisslyckande: Ett multidomän-ramverk',
+			// --- Original papers from this website ---
+			addictionIntegration: {
+				title: 'Beroende som integrationsmisslyckande: Ett multidomän-ramverk',
 				description:
 					'En rigorös analys som applicerar Project Janus på uppmärksamhetskrisen och bevisar att modernt beroende är ett systemiskt integrationsfel, inte en individuell patologi.'
 			},
-   beyondIntegration: {
-     title: 'Bortom integration: icke-dualitet, psykos och aperturproblemet',
-     description: 'En personlig och teoretisk utforskning av medvetandeutveckling, modal flexibilitet och de systemiska barriärer som förhindrar säker utforskning av behovet av psykiatrisk medicinering. Integrerar Project Janus-ramverket med icke-dualistisk insikt för att föreslå nya tillvägagångssätt för psykisk hälsa, AI-anpassning och mänsklig utveckling.'
-   },
-   architectureOfStability: {
-     title: 'Stabilitetens arkitektur: Ett systemteoretiskt ramverk för makt och styrning',
-     description: 'En tvärvetenskaplig analys som visar att centraliserad styrning med tidsfördröjning är matematiskt instabil, och föreslår fraktal subsidiaritet – med Sverige som prototyp – som den konstitutionella lösningen för anpassningsbara, resilienta samhällen.'
-   }
+			beyondIntegration: {
+				title: 'Bortom integration: icke-dualitet, psykos och aperturproblemet',
+				description: 'En personlig och teoretisk utforskning av medvetandeutveckling, modal flexibilitet och de systemiska barriärer som förhindrar säker utforskning av behovet av psykiatrisk medicinering. Integrerar Project Janus-ramverket med icke-dualistisk insikt för att föreslå nya tillvägagångssätt för psykisk hälsa, AI-anpassning och mänsklig utveckling.'
+			},
+			architectureOfStability: {
+				title: 'Stabilitetens arkitektur: Ett systemteoretiskt ramverk för makt och styrning',
+				description: 'En tvärvetenskaplig analys som visar att centraliserad styrning med tidsfördröjning är matematiskt instabil, och föreslår fraktal subsidiaritet – med Sverige som prototyp – som den konstitutionella lösningen för anpassningsbara, resilienta samhällen.'
+			}
 		}
 	}
 };
