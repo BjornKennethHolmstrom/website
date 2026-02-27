@@ -72,6 +72,13 @@
    },
 
    // --- Priority 2: Economy ---
+   {
+     key: 'economyCannotSee',
+     url: '/essays/the-economy-that-cannot-see',
+     icon: '🫥',
+     category: 'Economics',
+     hasPDF: false
+   },
    { 
      key: 'boosterRocket', 
      url: '/essays/booster-rocket',

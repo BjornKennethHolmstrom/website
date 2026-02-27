@@ -14,6 +14,14 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     economyCannotSee: {
+       title: 'The Economy That Cannot See',
+       subtitle: 'GDP, Variety Destruction, and the Broken Feedback Loop',
+       desc: 'GDP is a single-dimension signal governing a high-variety system. Applied to economics, Ashby\'s Law of Requisite Variety reveals why market consolidation is not merely inefficient — it progressively destroys the observation capacity needed to serve what it claims to grow. The broken feedback loop between extraction and consequence is not a market failure. It is the market\'s architecture.',
+       published: 'Feb 2026',
+       readTime: '15 min read',
+       tags: ['Economics', 'Governance', 'Systems Thinking', 'GDP', 'Requisite Variety']
+     },
      shortestChain: {
        title: 'The Shortest Chain',
        subtitle: 'Inner Governance and the Limit of Observation',
@@ -250,6 +258,14 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     economyCannotSee: {
+       title: 'Ekonomin som inte kan se',
+       subtitle: 'BNP, variationsförstörelse och den brutna återkopplingsslingan',
+       desc: 'BNP är en endimensionssignal som styr ett system med hög variation. Tillämpat på ekonomi avslöjar Ashbys lag om nödvändig variation varför marknadskonsolidering inte bara är ineffektiv — den förstör progressivt den observationskapacitet som behövs för att tjäna det den påstår sig odla. Den brutna återkopplingsslingan mellan utvinning och konsekvens är inte ett marknadsmisslyckande. Det är marknadens arkitektur.',
+       published: 'februari 2026',
+       readTime: '15 min läsning',
+       tags: ['Ekonomi', 'Styrning', 'Systemtänkande', 'BNP', 'Nödvändig variation']
+     },
      shortestChain: {
        title: 'Den kortaste kedjan',
        subtitle: 'Inre styrning och observationens gräns',
