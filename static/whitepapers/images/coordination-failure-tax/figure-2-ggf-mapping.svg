@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" font-family="Georgia, serif">
+
+  <!-- Background -->
+  <rect width="760" height="380" fill="#fafaf8"/>
+
+  <!-- Title -->
+  <text x="380" y="28" text-anchor="middle" font-size="13" fill="#222" font-weight="bold">
+    Figure 2. The GGF as a structural response to four diagnosed failure modes
+  </text>
+  <text x="380" y="46" text-anchor="middle" font-size="11" fill="#555">
+    Each architectural principle is load-bearing against a specific constraint
+  </text>
+
+  <!-- ── Column headers ──────────────────────────────────────── -->
+  <rect x="20" y="62" width="170" height="32" rx="4" fill="#e0e0e0"/>
+  <text x="105" y="82" text-anchor="middle" font-size="11" fill="#222" font-weight="bold">Paper / Failure Mode</text>
+
+  <rect x="200" y="62" width="185" height="32" rx="4" fill="#e0e0e0"/>
+  <text x="292" y="78" text-anchor="middle" font-size="11" fill="#222" font-weight="bold">Westphalian</text>
+  <text x="292" y="90" text-anchor="middle" font-size="11" fill="#222" font-weight="bold">Manifestation</text>
+
+  <rect x="395" y="62" width="345" height="32" rx="4" fill="#e0e0e0"/>
+  <text x="567" y="82" text-anchor="middle" font-size="11" fill="#222" font-weight="bold">GGF Structural Response</text>
+
+  <!-- ── Row 1: Paper I ───────────────────────────────────────── -->
+  <rect x="20" y="102" width="170" height="58" rx="4" fill="#fdecea" stroke="#c0392b" stroke-width="1.2"/>
+  <text x="105" y="122" text-anchor="middle" font-size="10.5" fill="#7b1a13" font-weight="bold">Paper I</text>
+  <text x="105" y="138" text-anchor="middle" font-size="10" fill="#c0392b">Spatial blindness</text>
+  <text x="105" y="153" text-anchor="middle" font-size="9.5" fill="#c0392b">from aggregation</text>
+
+  <rect x="200" y="102" width="185" height="58" rx="4" fill="#fff5f5" stroke="#c0392b" stroke-width="1"/>
+  <text x="292" y="122" text-anchor="middle" font-size="10" fill="#555">National aggregate stats;</text>
+  <text x="292" y="137" text-anchor="middle" font-size="10" fill="#555">local crises invisible</text>
+  <text x="292" y="152" text-anchor="middle" font-size="10" fill="#555">until nationally visible</text>
+
+  <rect x="395" y="102" width="345" height="58" rx="4" fill="#e8f4ec" stroke="#4a7c59" stroke-width="1.2"/>
+  <text x="567" y="120" text-anchor="middle" font-size="10.5" fill="#2a4a35" font-weight="bold">Subsidiarity + Bioregional Governance Units</text>
+  <text x="567" y="136" text-anchor="middle" font-size="10" fill="#4a7c59">Governance embedded within ecological boundaries;</text>
+  <text x="567" y="151" text-anchor="middle" font-size="10" fill="#4a7c59">observation latency approaches zero for local disturbances</text>
+
+  <!-- ── Row 2: Paper II ──────────────────────────────────────── -->
+  <rect x="20" y="168" width="170" height="58" rx="4" fill="#fef3e2" stroke="#d68910" stroke-width="1.2"/>
+  <text x="105" y="188" text-anchor="middle" font-size="10.5" fill="#7d5a0a" font-weight="bold">Paper II</text>
+  <text x="105" y="204" text-anchor="middle" font-size="10" fill="#d68910">Frequency gaps</text>
+  <text x="105" y="219" text-anchor="middle" font-size="9.5" fill="#d68910">from single-scale control</text>
+
+  <rect x="200" y="168" width="185" height="58" rx="4" fill="#fffbf0" stroke="#d68910" stroke-width="1"/>
+  <text x="292" y="188" text-anchor="middle" font-size="10" fill="#555">Electoral cycles miss fast</text>
+  <text x="292" y="203" text-anchor="middle" font-size="10" fill="#555">crises and slow structural</text>
+  <text x="292" y="218" text-anchor="middle" font-size="10" fill="#555">change simultaneously</text>
+
+  <rect x="395" y="168" width="345" height="58" rx="4" fill="#e8f4ec" stroke="#4a7c59" stroke-width="1.2"/>
+  <text x="567" y="186" text-anchor="middle" font-size="10.5" fill="#2a4a35" font-weight="bold">Polycentric Nested Architecture</text>
+  <text x="567" y="202" text-anchor="middle" font-size="10" fill="#4a7c59">Community → bioregional → continental → global layers,</text>
+  <text x="567" y="217" text-anchor="middle" font-size="10" fill="#4a7c59">each calibrated to its frequency band</text>
+
+  <!-- ── Row 3: Paper III ─────────────────────────────────────── -->
+  <rect x="20" y="234" width="170" height="58" rx="4" fill="#f0eaf8" stroke="#7d3c98" stroke-width="1.2"/>
+  <text x="105" y="254" text-anchor="middle" font-size="10.5" fill="#4a1a6b" font-weight="bold">Paper III</text>
+  <text x="105" y="270" text-anchor="middle" font-size="10" fill="#7d3c98">Preference invisibility</text>
+  <text x="105" y="285" text-anchor="middle" font-size="9.5" fill="#7d3c98">from deep chains</text>
+
+  <rect x="200" y="234" width="185" height="58" rx="4" fill="#faf5ff" stroke="#7d3c98" stroke-width="1"/>
+  <text x="292" y="254" text-anchor="middle" font-size="10" fill="#555">3–5 layer representation;</text>
+  <text x="292" y="269" text-anchor="middle" font-size="10" fill="#555">SNR below threshold;</text>
+  <text x="292" y="284" text-anchor="middle" font-size="10" fill="#555">policy governs phantom signal</text>
+
+  <rect x="395" y="234" width="345" height="58" rx="4" fill="#e8f4ec" stroke="#4a7c59" stroke-width="1.2"/>
+  <text x="567" y="252" text-anchor="middle" font-size="10.5" fill="#2a4a35" font-weight="bold">Direct Participation + Shallow Chains</text>
+  <text x="567" y="268" text-anchor="middle" font-size="10" fill="#4a7c59">Community assemblies feed councils through ≤2 layers;</text>
+  <text x="567" y="283" text-anchor="middle" font-size="10" fill="#4a7c59">Circuit Breakers validate preference signal at each level</text>
+
+  <!-- ── Row 4: Paper IV ──────────────────────────────────────── -->
+  <rect x="20" y="300" width="170" height="58" rx="4" fill="#e2f0fb" stroke="#1a6fa8" stroke-width="1.2"/>
+  <text x="105" y="320" text-anchor="middle" font-size="10.5" fill="#0d3d63" font-weight="bold">Paper IV</text>
+  <text x="105" y="336" text-anchor="middle" font-size="10" fill="#1a6fa8">Observational</text>
+  <text x="105" y="351" text-anchor="middle" font-size="9.5" fill="#1a6fa8">inadequacy (commons)</text>
+
+  <rect x="200" y="300" width="185" height="58" rx="4" fill="#f0f8ff" stroke="#1a6fa8" stroke-width="1"/>
+  <text x="292" y="320" text-anchor="middle" font-size="10" fill="#555">Annual aggregate quota;</text>
+  <text x="292" y="335" text-anchor="middle" font-size="10" fill="#555">single-dimension signal;</text>
+  <text x="292" y="350" text-anchor="middle" font-size="10" fill="#555">authorizes overharvest</text>
+
+  <rect x="395" y="300" width="345" height="58" rx="4" fill="#e8f4ec" stroke="#4a7c59" stroke-width="1.2"/>
+  <text x="567" y="318" text-anchor="middle" font-size="10.5" fill="#2a4a35" font-weight="bold">Indigenous Wisdom Council + Commons Trusts</text>
+  <text x="567" y="334" text-anchor="middle" font-size="10" fill="#4a7c59">Multi-generational slow-variable signal; continuous</text>
+  <text x="567" y="349" text-anchor="middle" font-size="10" fill="#4a7c59">multi-dimensional monitoring within resource boundaries</text>
+
+</svg>

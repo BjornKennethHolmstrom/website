@@ -42,6 +42,12 @@ export const whitepapersTranslations = {
 				description:
 					'The tragedy of the commons is an architectural failure — a missing feedback loop — not a motivational one. Ashby\'s Law of Requisite Variety determines which governance systems can stabilize renewable resources: state management performs worse than open access, and indigenous resource sovereignty is a structural engineering requirement. Paper IV in the Governance as Engineering series.'
 			},
+   coordinationFailureTax: {
+     title: 'The Coordination Failure Tax',
+     subtitle: 'Architectural Compounding and the Path to Requisite Governance',
+     description: 'Four governance failure modes — spatial blindness, frequency gaps, preference invisibility, and observational inadequacy — do not add. They multiply. This paper introduces the coordination failure tax, maps the compounding mechanism formally, and shows how the Global Governance Frameworks constitute a structural response to all four diagnosed constraints simultaneously.',
+     seriesLabel: 'Paper V · Governance as Engineering',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -160,6 +166,12 @@ export const whitepapersTranslations = {
 				description:
 					'Allmänningens tragedi är ett arkitektoniskt misslyckande — en saknad återkopplingsslinga — inte ett motivationsmisslyckande. Ashbys lag om nödvändig variation avgör vilka styrningssystem som kan stabilisera förnybara resurser: statlig förvaltning presterar sämre än fri tillgång, och ursprungsbefolkningars resurssouveränitet är ett strukturellt ingenjörskrav. Rapport IV i serien Styrning som ingenjörskonst.'
 			},
+   coordinationFailureTax: {
+     title: 'Samordningsmisslyckandets skatt',
+     subtitle: 'Arkitektonisk förstärkning och vägen mot nödvändig styrning',
+     description: 'Fyra styrningsfelmönster — rumslig blindhet, frekvensluckor, preferensosynlighet och observationsotillräcklighet — adderar inte. De multiplicerar. Denna rapport introducerar samordningsmisslyckandets skatt, kartlägger förstärkningsmekanismen formellt och visar hur Global Governance Frameworks utgör ett strukturellt svar på alla fyra diagnosticerade begränsningar samtidigt.',
+     seriesLabel: 'Rapport V · Styrning som ingenjörskonst',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Att förhindra 1933: Arkitekturen för demokratisk resiliens',

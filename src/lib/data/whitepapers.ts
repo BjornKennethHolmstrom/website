@@ -111,6 +111,28 @@ export const papersData: Whitepaper[] = [
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},
+ {
+  id: 'coordinationFailureTax',
+  key: 'coordinationFailureTax',
+  category: 'governance',
+  tags: ['Governance Architecture','Systems Theory','Coordination Failure','Requisite Variety','Cybernetics','Democratic Reform','Commons Governance','Global Governance Frameworks','Institutional Design',
+  ],
+  year: '2026',
+  pages: '18',
+		readTime: {
+			en: '25 min',
+			sv: '25 min'
+		},
+		version: '1.0',
+		pdfPath: {
+			en: `${localBase}/coordination-failure-tax.pdf`,
+			sv: `${localBase}/coordination-failure-tax-sv.pdf`,
+		},
+		coverImage: '/whitepapers/images/coordination-failure-tax-cover.png',
+		readOnlinePath: '/whitepapers/coordination-failure-tax',
+		readOnlineExternal: false,
+		releaseDate: '2026-03-02'
+	},
 	{
 		id: 'architectureOfStability',
 		key: 'architectureOfStability',
