@@ -31,7 +31,7 @@ export const coordinationTranslations = {
 			},
 			translationsNotice: {
 				title: 'Translations',
-				desc: 'Currently available in English. Translations to Swedish and other languages are planned. If you would like to contribute a translation, please submit a Pull Request via GitHub.'
+				desc: 'Currently available in English and Swedish. Translations to other languages are possible. If you would like to contribute a translation, please submit a Pull Request via GitHub.'
 			}
 		}
 	},
@@ -67,7 +67,7 @@ export const coordinationTranslations = {
 			},
 			translationsNotice: {
 				title: 'Översättningar',
-				desc: 'För närvarande tillgänglig på engelska. Översättningar till svenska och andra språk planeras. Om du vill bidra med en översättning, skicka gärna in en Pull Request via GitHub.'
+				desc: 'För närvarande tillgänglig på engelska och svenska. Översättningar till andra språk är möjliga. Om du vill bidra med en översättning, skicka gärna in en Pull Request via GitHub.'
 			}
 		}
 	}

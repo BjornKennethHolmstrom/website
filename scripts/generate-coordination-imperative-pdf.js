@@ -193,10 +193,13 @@ const pdfStyles = `
 		page-break-after: always;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		min-height: 90vh;
+		justify-content: space-between;
+		height: 24.7cm;
+		max-height: 24.7cm;
+		overflow: hidden;
+		box-sizing: border-box;
 		text-align: ${meta.dir === 'rtl' ? 'right' : 'left'};
-		padding: 2cm 0;
+		padding: 1.5cm 0 1cm 0;
 	}
 
 	.cover-type {
@@ -244,12 +247,12 @@ const pdfStyles = `
 	}
 
 	.cover .meta {
-		margin-top: auto;
 		border-top: 1px solid #d6d3d1;
-		padding-top: 1.5rem;
-		font-size: 11pt;
+		padding-top: 1rem;
+		font-size: 10.5pt;
 		color: #57534e;
-		line-height: 1.8;
+		line-height: 1.7;
+		flex-shrink: 0;
 	}
 
 	.cover .meta-url {

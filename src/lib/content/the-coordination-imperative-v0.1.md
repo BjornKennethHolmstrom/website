@@ -244,6 +244,28 @@ This document does not have complete answers to any of these critiques. What it 
 
 ---
 
+## The Prior Question
+
+Everything in this document assumes we want to solve the problems it describes. That assumption deserves to be named.
+
+The coordination failures documented here — pandemic mismanagement, climate gridlock, resource collapse — are not accidents. They are outputs of a system that is, in some sense, working as designed: optimizing for the extraction of short-term value by whoever holds the most concentrated power, externalizing the costs onto whoever cannot resist. Fixing the coordination architecture does not automatically change what the architecture is used for.
+
+So before the question of *how* to coordinate, there is a prior question: *what for?*
+
+This document cannot answer that. But it can ask it clearly, which may be the more important contribution.
+
+Do we — as a species, not as interest groups or nations or generations — want to flourish? Not merely to survive, not merely to grow, not merely to avoid the worst outcomes. To actually flourish: to build a world where the full range of human possibility is available to more than a small fraction of those alive, where the ecological systems that make life possible are stable across the timescales of our children's children, where the intelligence that has emerged in this corner of the universe can keep developing rather than foreclosing itself.
+
+If yes, we need to say so. Collectively. Loudly enough that it shapes what the coordination architecture is built to do.
+
+This is not naive. It is the hardest thing the document asks. The coordination failure tax — the compounding cost of architectures that cannot transmit citizen preferences, that cannot observe slow degradation, that cannot respond at the speed of the threats they face — is also the mechanism by which this question cannot currently be asked at the scale where it matters. We cannot coordinate on what we want because we cannot coordinate. The architecture must be built before the question can be properly answered.
+
+But the question has to come first. Even partially. Even imperfectly. Even in documents like this one, which cannot speak for humanity but can at least name what it hopes humanity might say.
+
+This is an invitation to ask the question — in your community, your institution, your government, your language, your tradition. Not to adopt this document's answer. To contribute yours. The architecture we build will reflect the answers we give. If we do not give any, it will reflect the answers of whoever fills the silence.
+
+---
+
 ## An Invitation
 
 This document does not end with a call to action. There is no petition to sign, no organization to join, no movement to enlist in.
