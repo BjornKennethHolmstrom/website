@@ -152,6 +152,26 @@ Men det finns en princip som styr alla implementeringsdetaljer, och den är enke
 
 ---
 
+### Observationsfällan: varför vi inte kan göra ett "IPCC" av allt
+
+För att förstå varför det globala lagret måste begränsas på detta sätt, tänk på skillnaden mellan att styra klimatet och att styra ojämlikhet.
+
+När det internationella samfundet insåg klimatrisens omfattning skapade man FN:s klimatpanel (IPCC – Intergovernmental Panel on Climate Change). Det betraktas allmänt som en framgång för global samordning. På grund av denna framgång föreslår beslutsfattare ofta att man ska skapa "ett IPCC för ojämlikhet", "ett IPCC för AI" eller "ett IPCC för global hälsa".
+
+Denna instinkt är förståelig men avslöjar en strukturell missanpassning.
+
+IPCC fungerar eftersom jordens atmosfär har ett relativt hanterbart observationsproblem. Atmosfären är ett enda, välblandat fluidsystem. Nyckelvariablerna (miljondelar koldioxid, global medeltemperatur) kan mätas från relativt få mätpunkter, och ett ton koldioxid som släpps ut i Peking beter sig identiskt med ett ton som släpps ut i Berlin. Systemet har låg varians.
+
+Mänsklig ojämlikhet, fattigdom och social stabilitet har inte denna egenskap. De är hyperlokala fenomen med hög varians. De förhållanden som producerar extrem fattigdom i en kongolesisk gruvregion, en brasiliansk favela och en postindustriell walesisk stad är strukturellt helt annorlunda. De har olika historiska orsaker, olika kulturella återkopplingsloopar och kräver radikalt olika hävstångspunkter för ingripanden.
+
+När ett centraliserat permanent organ försöker styra ett system med hög varians ställs det inför ett enormt beräkningsmässigt tryck att aggregera dessa mångfaldiga verkligheter till en enda global bild.
+
+Detta är **genomsnittsproblemet** (the Averaging Problem). Aggregering förstör systematiskt den lokala signalen som gör ett effektivt ingripande möjligt. Ett centralt aggregerat ojämlikhetsindex eller en hälsopolicy observerar *genomsnittet*; det kan inte observera det *specifika*. Policyer som är kalibrerade efter genomsnittet kommer att vara systematiskt felanpassade till de förhållanden som avviker från det – vilket är precis där kriser koncentreras.
+
+Detta är ingen politisk invändning mot global enighet; det är en strukturell begränsning definierad av Ashbys lag om erforderlig variation. Ett styrande organ kan bara reagera på den mångfald av störningar som det har kapacitet att observera. Om det globala organet försöker styra ingripanden direkt, snarare än att bara sätta gränser och låta lokala noder (subsidiaritet) utföra responsen, kommer det att replikera exakt de strukturella fellägen som det var utformat för att lösa.
+
+---
+
 ## Vad som förändras, vad som inte gör det
 
 Om de föregående två avsnitten beskrev vad samordningskapacitet är och hur det fungerar, tar det här avsnittet upp frågan som de flesta läsare faktiskt bryr sig om: vad betyder det för mig?

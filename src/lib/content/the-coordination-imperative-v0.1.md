@@ -150,6 +150,26 @@ But there is a principle that governs all the implementation detail, and it is s
 
 ---
 
+### The Observation Trap: Why We Cannot "IPCC" Everything
+
+To understand why the global layer must be restricted this way, consider the difference between governing the climate and governing inequality.
+
+When the international community realized the scale of the climate crisis, it created the Intergovernmental Panel on Climate Change (IPCC). It is widely considered a success of global coordination. Because of this success, policymakers frequently suggest creating "an IPCC for inequality," "an IPCC for AI," or "an IPCC for global health."
+
+This instinct is understandable but reveals a structural mismatch.
+
+The IPCC works because the Earth's atmosphere has a relatively tractable observation problem. The atmosphere is a single, well-mixed fluid system. The key variables (parts per million of CO2, global mean temperature) can be measured from relatively few vantage points, and a ton of carbon emitted in Beijing behaves identically to a ton emitted in Berlin. The system has low variance.
+
+Human inequality, poverty, and social stability do not have this property. They are hyper-localized, high-variance phenomena. The conditions that produce extreme poverty in a Congolese mining region, a Brazilian favela, and a post-industrial Welsh town are structurally entirely different. They have different historical causes, different cultural feedback loops, and require radically different intervention leverage points.
+
+When a centralized permanent body attempts to govern a high-variance system, it faces immense computational pressure to aggregate these diverse realities into a single global picture.
+
+This is the **Averaging Problem**. Aggregation systematically destroys the local signal that makes effective intervention possible. A centrally aggregated inequality index or health policy observes the *average*; it cannot observe the *specific*. Policies calibrated to the average will be systematically mismatched to the conditions that deviate from it—which is precisely where crises concentrate.
+
+This is not a political objection to global unity; it is a structural limitation defined by Ashby's Law of Requisite Variety. A governing body can only respond to the variety of disturbances it is capable of observing. If the global body attempts to govern interventions directly, rather than simply setting boundaries and allowing local nodes (subsidiarity) to execute the response, it will replicate the exact structural failure modes it was designed to solve.
+
+---
+
 ## What Changes, What Doesn't
 
 If the previous two sections described what coordination capacity is and how it works, this one addresses the question that most readers actually care about: what does it mean for me?
