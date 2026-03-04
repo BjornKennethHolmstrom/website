@@ -2,7 +2,7 @@
 
 ### A protocol for planetary-scale cooperation
 
-*v0.1 — Draft for review*
+*v0.2 — Draft for review*
 
 ---
 
@@ -264,6 +264,40 @@ This document does not have complete answers to any of these critiques. What it 
 
 ---
 
+## The transition mechanics: Upgrading legacy hardware
+
+When the structural failures of centralized governance become undeniable, a dangerous false dichotomy usually emerges: we must either fiercely defend the failing status quo, or burn the institutions to the ground and start over.
+
+Both paths are catastrophic. Defending a centralized bottleneck guarantees slow systemic collapse driven by latency and the averaging problem. Destroying the institutions — the revolutionary impulse — eliminates centuries of accumulated social capital, physical infrastructure, logistical networks, and institutional memory. When complex systems lose their legacy infrastructure, they do not evolve; they regress into power vacuums that are immediately filled by authoritarianism.
+
+Institutions like the United Nations, the nation-state, and municipal councils are not the enemy. They are the **legacy hardware** of human coordination. The problem is not that the hardware exists; the problem is that it is running an outdated, high-latency operating system. We do not need to destroy the computer. We need to install better routing protocols.
+
+The transition to a more distributed, polycentric governance model happens through a process of **structural permeation**, enabled by a specific upgrade to our baseline economic infrastructure.
+
+### Universal basic income as cognitive infrastructure
+
+In a traditional centralized institution, the human nodes — civil servants, administrators, citizens — are caught in a survival dynamic. Because their livelihood depends on the institution, their primary incentive is compliance, not adaptation. A node cannot afford to challenge a failing bottleneck if doing so threatens their baseline survival. The cognitive bandwidth of the system is consumed by institutional self-preservation rather than problem-solving.
+
+To upgrade the legacy hardware, we must alter the physics of this constraint. This is the structural purpose of a universal basic income.
+
+A guaranteed income floor is not merely a mechanism for poverty alleviation; it is foundational cognitive infrastructure. By decoupling baseline survival from institutional obedience, it lowers the noise floor of survival anxiety — freeing the intellectual bandwidth that nodes need to actually engage with complex problems rather than manage personal risk. Individuals who are not afraid for their survival make different decisions than those who are. At scale, this changes what institutions are capable of.
+
+### The permeation strategy
+
+Individuals with that security act as **adaptive nodes** within rigid legacy structures. Rather than fighting institutions from the outside, they permeate them.
+
+Equipped with diagnostic thinking about where information actually lives, where decision latency is highest, and where the averaging problem is generating the most damage, these nodes begin rewiring the circuitry while the machine is still running:
+
+1. **Lateral routing:** Building horizontal communication channels that bypass slow vertical hierarchies, allowing municipalities and local communities to coordinate directly across jurisdictions.
+2. **High-fidelity feedback loops:** Implementing localized sensing and response mechanisms that move decision authority to the level where the relevant information exists — neutralizing the averaging problem from within.
+3. **Resource redirection:** Using the institution's existing reach — its budgets, legal frameworks, physical infrastructure — and orienting it toward outcomes that the institution's formal mandate already supports, but that its architecture currently prevents it from achieving.
+
+This is how systemic transformation actually occurs. Not through replacement, but through inside-out upgrade. The reach, scale, and stability of legacy institutions are preserved; their centralized bottlenecks are gradually redistributed toward faster, higher-fidelity distributed protocols.
+
+We do not need a revolution to navigate the coordination crisis. We need a coordinated firmware update, executed by sovereign nodes from within.
+
+---
+
 ## The Prior Question
 
 Everything in this document assumes we want to solve the problems it describes. That assumption deserves to be named.
@@ -322,6 +356,6 @@ For those who want to go deeper, a few starting points — not an exhaustive bib
 
 ---
 
-*This document is version 0.1, released under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). You are free to share, adapt, translate, critique, fork, and improve it, provided you give appropriate credit and distribute your contributions under the same license. The source is available as a Markdown file at [https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1.md](https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1.md).*
+*This document is version 0.2, released under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). You are free to share, adapt, translate, critique, fork, and improve it, provided you give appropriate credit and distribute your contributions under the same license. The source is available as a Markdown file at [https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.2.md](https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.2.md).*
 
 *If five AIs and a Swede can get this far, imagine what happens when the rest of you join in.*

@@ -2,7 +2,7 @@
 
 ### Ett protokoll för samarbete på planetär skala
 
-*v0.1 — Utkast för granskning*
+*v0.2 — Utkast för granskning*
 
 ---
 
@@ -266,6 +266,40 @@ Det här dokumentet har inga fullständiga svar på någon av dessa kritiker. Va
 
 ---
 
+### Övergångsmekaniken: att uppgradera föråldrad hårdvara
+
+När de strukturella misslyckandena hos centraliserad styrning blir obestridliga uppstår vanligtvis en farlig falsk dikotomi: vi måste antingen bistert försvara det fallerande status quo, eller bränna ner institutionerna till grunden och börja om.
+
+Båda vägarna är katastrofala. Att försvara en centraliserad flaskhals garanterar en långsam systemkollaps driven av fördröjning och genomsnittsproblemet. Att förstöra institutionerna – den revolutionära impulsen – eliminerar århundraden av ackumulerat socialt kapital, fysisk infrastruktur, logistiska nätverk och institutionellt minne. När komplexa system förlorar sin nedärvda infrastruktur utvecklas de inte; de tillbakabildas till maktvakuum som omedelbart fylls av auktoritärt styre.
+
+Institutioner som Förenta nationerna, nationalstaten och kommunfullmäktige är inte fienden. De är den mänskliga samordningens nedärvda hårdvara. Problemet är inte att hårdvaran existerar; problemet är att den kör ett föråldrat operativsystem med hög fördröjning. Vi behöver inte förstöra datorn. Vi behöver installera bättre dirigeringsprotokoll (routingprotokoll).
+
+Övergången till en mer distribuerad, polycentrisk styrmodell sker genom en process av strukturell genomsyrning, möjliggjord av en specifik uppgradering av vår grundläggande ekonomiska infrastruktur.
+
+### Universell basinkomst som kognitiv infrastruktur
+
+I en traditionell centraliserad institution är de mänskliga noderna – tjänstemän, administratörer, medborgare – fångade i en överlevnadsdynamik. Eftersom deras uppehälle beror på institutionen är deras primära incitament efterlevnad, inte anpassning. En nod har inte råd att utmana en fallerande flaskhals om det hotar deras grundläggande överlevnad. Systemets kognitiva bandbredd förbrukas av institutionell självbevarelsedrift snarare än problemlösning.
+
+För att uppgradera den föråldrade hårdvaran måste vi förändra fysiken i denna begränsning. Detta är det strukturella syftet med en universell basinkomst.
+
+Ett garanterat inkomstgolv är inte bara en mekanism för fattigdomsbekämpning; det är en grundläggande kognitiv infrastruktur. Genom att frikoppla grundläggande överlevnad från institutionell lydnad sänks brusgolvet för överlevnadsångest – vilket frigör den intellektuella bandbredd som noder behöver för att faktiskt ta sig an komplexa problem istället för att hantera personliga risker. Individer som inte är rädda för sin överlevnad fattar andra beslut än de som är det. I stor skala förändrar detta vad institutioner är kapabla till.
+
+### Genomsyrningsstrategin
+
+Individer med denna trygghet agerar som adaptiva noder inom stela äldre strukturer. Istället för att bekämpa institutioner utifrån, genomsyrar de dem.
+
+Utrustade med diagnostiskt tänkande kring var information faktiskt finns, var beslutsfördröjningen är som högst och var genomsnittsproblemet orsakar mest skada, börjar dessa noder koppla om kretsarna medan maskinen fortfarande är igång:
+
+* **Lateral dirigering:** Att bygga horisontella kommunikationskanaler som kringgår långsamma vertikala hierarkier, vilket gör det möjligt för kommuner och lokalsamhällen att samordna sig direkt över jurisdiktionsgränser.
+* **Återkopplingsloopar med hög precision:** Att implementera lokala avkännings- och svarsmekanismer som flyttar beslutsfattandet till den nivå där den relevanta informationen finns – vilket neutraliserar genomsnittsproblemet inifrån.
+* **Omdirigering av resurser:** Att använda institutionens befintliga räckvidd – dess budgetar, juridiska ramverk, fysiska infrastruktur – och rikta in den mot resultat som institutionens formella mandat redan stöder, men som dess nuvarande arkitektur hindrar den från att uppnå.
+
+Det är så här systemisk transformation faktiskt sker. Inte genom utbyte, utan genom en uppgradering inifrån och ut. Räckvidden, skalan och stabiliteten hos nedärvda institutioner bevaras; deras centraliserade flaskhalsar omfördelas gradvis mot snabbare, distribuerade protokoll med högre precision.
+
+Vi behöver inte en revolution för att navigera samordningskrisen. Vi behöver en samordnad uppdatering av den inbyggda mjukvaran (firmware-uppdatering), utförd av suveräna noder inifrån.
+
+---
+
 ## Den föregående frågan
 
 Allt i detta dokument utgår från att vi vill lösa de problem det beskriver. Detta antagande förtjänar att uttalas.
@@ -324,6 +358,6 @@ För de som vill gå djupare, här är några utgångspunkter – inte en uttöm
 
 ---
 
-*Detta dokument är version 0.1, släppt under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Du är fri att dela, anpassa, översätta, kritisera, forka och förbättra det, förutsatt att du anger lämpligt erkännande och distribuerar dina bidrag under samma licens. Källkoden finns tillgänglig som en Markdown-fil på [https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1-sv.md](https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1-sv.md).*
+*Detta dokument är version 0.2, släppt under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Du är fri att dela, anpassa, översätta, kritisera, forka och förbättra det, förutsatt att du anger lämpligt erkännande och distribuerar dina bidrag under samma licens. Källkoden finns tillgänglig som en Markdown-fil på [https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.2-sv.md](https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.2-sv.md).*
 
 *Om fem AI:n och en svensk kan komma så här långt, tänk vad som händer när resten av er ansluter.*

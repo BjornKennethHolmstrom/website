@@ -2,14 +2,14 @@
   import SEO from '$lib/components/SEO.svelte';
   import { t, language } from '$lib/stores/languageStore.ts';
 
-  import ContentEn from '$lib/content/the-coordination-imperative-v0.1.md';
-  import ContentSv from '$lib/content/the-coordination-imperative-v0.1-sv.md';
+  import ContentEn from '$lib/content/the-coordination-imperative-v0.2.md';
+  import ContentSv from '$lib/content/the-coordination-imperative-v0.2-sv.md';
 
   let Content = $derived($language === 'sv' ? ContentSv : ContentEn);
   let pdfHref = $derived(
     $language === 'sv'
-      ? '/downloads/coordination-imperative/The-Coordination-Imperative-v0.1-sv.pdf'
-      : '/downloads/coordination-imperative/The-Coordination-Imperative-v0.1.pdf'
+      ? '/downloads/coordination-imperative/The-Coordination-Imperative-v0.2-sv.pdf'
+      : '/downloads/coordination-imperative/The-Coordination-Imperative-v0.2.pdf'
   );
 </script>
 
@@ -70,7 +70,7 @@
       </a>
 
       <a
-        href="https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.1.md"
+        href="https://github.com/BjornKennethHolmstrom/website/tree/main/src/lib/content/the-coordination-imperative-v0.2.md"
         target="_blank"
         rel="noopener noreferrer"
         class="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-700 dark:bg-slate-800"

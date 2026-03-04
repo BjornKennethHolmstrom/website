@@ -22,7 +22,7 @@ export const coordinationTranslations = {
 				title: 'Read the Document',
 				pdf: {
 					title: 'Download PDF',
-					desc: 'Formatted for reading, printing, and offline sharing. (English, v0.1)'
+					desc: 'Formatted for reading, printing, and offline sharing. (English, v0.2)'
 				},
 				github: {
 					title: 'Read / Fork on GitHub',
@@ -58,7 +58,7 @@ export const coordinationTranslations = {
 				title: 'Läs dokumentet',
 				pdf: {
 					title: 'Ladda ner PDF',
-					desc: 'Formaterad för läsning, utskrift och delning offline. (Engelska, v0.1)'
+					desc: 'Formaterad för läsning, utskrift och delning offline. (Swedish, v0.2)'
 				},
 				github: {
 					title: 'Läs / Förgrena på GitHub',
