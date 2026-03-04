@@ -58,7 +58,7 @@ export const coordinationTranslations = {
 				title: 'Läs dokumentet',
 				pdf: {
 					title: 'Ladda ner PDF',
-					desc: 'Formaterad för läsning, utskrift och delning offline. (Swedish, v0.2)'
+					desc: 'Formaterad för läsning, utskrift och delning offline. (Svenska, v0.2)'
 				},
 				github: {
 					title: 'Läs / Förgrena på GitHub',
