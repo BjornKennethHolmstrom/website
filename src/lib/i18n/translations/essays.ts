@@ -14,6 +14,13 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     hiddenCostOfMoney: {
+       title: 'The Hidden Cost of Money',
+       subtitle: 'Why Our Symbolic System Is Energy Inefficient',
+       desc: 'Money has a physical footprint, a psychological footprint, and three deeper structural wastes — moral, informational, and administrative. An energy-efficiency analysis of the price mechanism, and what a lower-overhead alternative might ask of us.',
+       published: 'March 2026',
+       readTime: '12 min read',
+     },
      economyCannotSee: {
        title: 'The Economy That Cannot See',
        subtitle: 'GDP, Variety Destruction, and the Broken Feedback Loop',
@@ -258,6 +265,13 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     hiddenCostOfMoney: {
+       title: 'Pengarnas dolda kostnad',
+       subtitle: 'Varför vårt symboliska system är energiineffektivt',
+       desc: 'Pengar har ett fysiskt fotavtryck, ett psykologiskt fotavtryck och tre djupare strukturella slöserier — moraliska, informationsmässiga och administrativa. En energieffektivitetsanalys av prismekanism, och vad ett alternativ med lägre overhead kräver av oss.',
+       published: 'mars 2026',
+       readTime: '12 min läsning',
+     },
      economyCannotSee: {
        title: 'Ekonomin som inte kan se',
        subtitle: 'BNP, variationsförstörelse och den brutna återkopplingsslingan',

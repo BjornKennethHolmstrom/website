@@ -73,6 +73,13 @@
 
    // --- Priority 2: Economy ---
    {
+     key: 'hiddenCostOfMoney',
+     url: '/essays/the-hidden-cost-of-money',
+     icon: '💸',
+     category: 'Economics',
+     hasPDF: false,
+   },
+   {
      key: 'economyCannotSee',
      url: '/essays/the-economy-that-cannot-see',
      icon: '🫥',
