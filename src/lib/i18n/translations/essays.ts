@@ -199,14 +199,14 @@ export const essaysTranslations = {
        title: "The Continuity of Life",
        subtitle: "Why the Search for an Origin is a Category Error",
        desc: "We haven't found the 'spark' of life because life isn't a binary switch; it's a continuous spectrum. The biological case for the Moral Operating System and Rights of Nature.",
-       published: "Dec 2024",
+       published: "Dec 2025",
        readTime: "10 min read"
      },
      fieldOfIntelligence: {
        title: "The Field of Intelligence",
        subtitle: "Why Systems Thinking Is Not a Metaphor",
        desc: "Intelligence isn't contained in a brain; it's a property of relationships. From slime molds to AI, exploring why intelligence is a non-local field we participate in, not a commodity we own.",
-       published: "Dec 2024",
+       published: "Dec 2025",
        readTime: "12 min read"
      },
      architectureOpenHand: {
@@ -214,7 +214,7 @@ export const essaysTranslations = {
        subtitle: 'Why We Fight and How We Design Peace',
        tagline: 'A child\'s question traced from metaphysics to systems design.',
        desc: 'A child asks: Why is there war? This essay answers truthfully, moving from the epistemic error of separation through coordination failures to concrete architectural solutions. From diagnosis (the separate self as illusion) to design (bioregional zones, Hearts currency, and the Treaty of the Circle)—showing how peace is not a feeling but a design specification.',
-       published: 'Dec 2024',
+       published: 'Dec 2025',
        readTime: '25 min read',
        pdfPages: "19"
      },
@@ -450,14 +450,14 @@ export const essaysTranslations = {
        title: "Livets kontinuitet",
        subtitle: "Varför sökandet efter ett ursprung är ett kategorifel",
        desc: "Vi har inte hittat livets 'gnista' eftersom livet inte är en binär brytare; det är ett kontinuerligt spektrum. Det biologiska argumentet för det moraliska operativsystemet och naturens rättigheter.",
-       published: "december 2024",
+       published: "december 2025",
        readTime: "10 min läsning"
      },
      fieldOfIntelligence: {
        title: "Intelligensens fält",
        subtitle: "Varför systemtänkande inte är en metafor",
        desc: "Intelligens finns inte i en hjärna; det är en egenskap hos relationer. Från slemsvampar till AI, utforskar varför intelligens är ett icke-lokalt fält vi deltar i, inte en vara vi äger.",
-       published: "december 2024",
+       published: "december 2025",
        readTime: "12 min läsning"
      },
      architectureOpenHand: {
@@ -465,7 +465,7 @@ export const essaysTranslations = {
        subtitle: 'Varför vi krigar och hur vi designar fred',
        tagline: 'Ett barns fråga spårad från metafysik till systemdesign.',
        desc: 'Ett barn frågar: Varför finns det krig? Denna essä svarar ärligt och rör sig från det epistemiska felet i separation genom koordinationsmisslyckanden till konkreta arkitektoniska lösningar. Från diagnos (det separata jaget som illusion) till design (bioregionala zoner, Hearts-valuta och Cirkelns fördrag)—som visar hur fred inte är en känsla utan en designspecifikation.',
-       published: 'december 2024',
+       published: 'december 2025',
        readTime: '25 min läsning',
        pdfPages: "19"
      },
