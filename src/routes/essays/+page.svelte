@@ -73,6 +73,13 @@
 
    // --- Priority 2: Economy ---
    {
+     key: 'beyondDiagnosis',
+     url: '/essays/beyond-diagnosis',
+     icon: '🔧',
+     category: 'Economics',
+     hasPDF: false
+   },
+   {
      key: 'hiddenCostOfMoney',
      url: '/essays/the-hidden-cost-of-money',
      icon: '💸',

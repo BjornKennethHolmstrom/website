@@ -14,6 +14,14 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     beyondDiagnosis: {
+       title: 'Beyond Diagnosis: From Decolonial Critique to Institutional Architecture',
+       subtitle: 'What Systems Thinking Adds to the Decolonial Project',
+       desc: 'Epistemic decolonization operates at the paradigm level — the highest leverage point in any system. But critique alone cannot instantiate a new paradigm in working institutions. This essay asks what the connecting work requires, why it has been so hard, and what a partial attempt at it looks like.',
+       published: 'March 2026',
+       readTime: '25 min read',
+       tags: ['Economics', 'Systems Thinking', 'Governance', 'Decolonial', 'Sovereign Debt']
+     },
      hiddenCostOfMoney: {
        title: 'The Hidden Cost of Money',
        subtitle: 'Why Our Symbolic System Is Energy Inefficient',
@@ -265,6 +273,14 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     beyondDiagnosis: {
+       title: 'Bortom diagnosen: Från dekolonial kritik till institutionell arkitektur',
+       subtitle: 'Vad systemtänkande tillför det dekoloniala projektet',
+       desc: 'Epistemisk dekolonisering verkar på paradigmnivå — den högsta hävstångspunkten i vilket system som helst. Men kritik ensam kan inte förverkliga ett nytt paradigm i fungerande institutioner. Denna essä frågar vad det förbindande arbetet kräver och varför det har varit så svårt.',
+       published: 'mars 2026',
+       readTime: '25 min läsning',
+       tags: ['Ekonomi', 'Systemtänkande', 'Styrning', 'Dekolonial', 'Statsskuld']
+     },
      hiddenCostOfMoney: {
        title: 'Pengarnas dolda kostnad',
        subtitle: 'Varför vårt symboliska system är energiineffektivt',
