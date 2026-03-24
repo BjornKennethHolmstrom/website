@@ -10,10 +10,12 @@
 	// Mobile menu state
 	let mobileMenuOpen = $state(false);
  let otherMenuOpen = $state(false); //
+ let frameworksMobileOpen = $state(false);
 	
-	function closeMobileMenu() {
-		mobileMenuOpen = false;
-	}
+ function closeMobileMenu() {
+  mobileMenuOpen = false;
+  frameworksMobileOpen = false;
+ }
 
  function closeOtherMenu() {
 	 otherMenuOpen = false;
@@ -48,18 +50,28 @@
 
 			<!-- Desktop Navigation -->
 			<div class="hidden items-center gap-4 md:flex">
-				<a
-					href="https://www.globalgovernanceframeworks.org"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="flex items-center gap-1 text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
-				>
-					{$t.navFrameworks}
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3 w-3">
-						<path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" />
-						<path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" />
-					</svg>
-				</a>
+    <div class="group relative">
+        <button class="flex items-center gap-1 text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100">
+            {$t.navFrameworks || 'Frameworks'}
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        
+        <div class="invisible absolute left-0 top-full z-20 mt-2 flex w-56 flex-col overflow-hidden rounded-md border border-[var(--color-separator)] bg-[var(--color-page-bg)] opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+            <a 
+                href="https://globalgovernanceframeworks.org" 
+                target="_blank" 
+                class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]"
+            >
+                Global Governance Frameworks ↗
+            </a>
+            <a 
+                href="/eu-pilot" 
+                class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]"
+            >
+               {$t.navEUPilot}
+            </a>
+        </div>
+    </div>
 				<a
 					href="/books"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
@@ -84,35 +96,12 @@
 				>
 					{$t.navBlog}
 				</a>
-    <div class="relative">
-        <button
-            onclick={(e) => {
-                e.stopPropagation(); // Prevents window click from closing it
-                otherMenuOpen = !otherMenuOpen;
-            }}
-            class="flex items-center gap-1 text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
-            aria-haspopup="true"
-            aria-expanded={otherMenuOpen}
-        >
-            {$t.navOther}
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5 transition-transform {otherMenuOpen ? 'rotate-180' : ''}"
-            >
-                <path
-                    fill-rule="evenodd"
-                    d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z"
-                    clip-rule="evenodd"
-                />
-            </svg>
+    <div class="group relative">
+        <button class="flex items-center gap-1 text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100">
+            {$t.navOther || 'Other'}
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-        {#if otherMenuOpen}
-            <div
-                onclick={(e) => e.stopPropagation()}
-                class="absolute right-0 top-full z-20 mt-2 w-48 origin-top-right rounded-md border border-[var(--color-separator)] bg-[var(--color-page-bg)] py-1 shadow-lg"
-            >
+        <div class="invisible absolute left-0 top-full z-20 mt-2 flex w-48 flex-col overflow-hidden rounded-md border border-[var(--color-separator)] bg-[var(--color-page-bg)] opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
                 <a
                     href="/apps"
                     class="block px-4 py-2 text-sm text-[var(--color-page-text)] opacity-90 transition-opacity hover:opacity-100"
@@ -134,8 +123,7 @@
                 >
                     {$t.navConcepts}
                 </a>
-            </div>
-        {/if}
+        </div>
     </div> 
 				<a
 					href="/about"
@@ -201,19 +189,35 @@
 	  class="flex h-full flex-col items-center justify-center gap-8"
 	  onclick={(e) => e.stopPropagation()}
   >
-				<a
-					href="https://globalgovernanceframeworks.org"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="flex items-center gap-2 text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
-					onclick={closeMobileMenu}
-				>
-					{$t.navFrameworks}
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
-						<path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" />
-						<path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" />
-					</svg>
-				</a>
+    <div class="flex flex-col">
+        <button
+            class="flex w-full items-center justify-between text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+            onclick={() => frameworksMobileOpen = !frameworksMobileOpen}
+        >
+            {$t.navFrameworks || 'Frameworks'}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform" class:rotate-180={frameworksMobileOpen}><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        
+        {#if frameworksMobileOpen}
+            <div class="mt-3 flex flex-col gap-4 border-l-2 border-[var(--color-separator)] pl-4">
+                <a
+                    href="https://globalgovernanceframeworks.org"
+                    target="_blank"
+                    class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                    onclick={closeMobileMenu}
+                >
+                    Global Governance Frameworks ↗
+                </a>
+                <a
+                    href="/eu-pilot"
+                    class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                    onclick={closeMobileMenu}
+                >
+                    {$t.navEUPilot}
+                </a>
+            </div>
+        {/if}
+    </div>
 				<a
 					href="/books"
 					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
@@ -242,27 +246,41 @@
 				>
 					{$t.navBlog}
 				</a>
-    <a
-        href="/apps"
-        class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
-        onclick={closeMobileMenu}
-    >
-        {$t.navApps}
-    </a>
-    <a
-        href="/creations"
-        class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
-        onclick={closeMobileMenu}
-    >
-        {$t.navCreations}
-    </a>
-    <a
-        href="/concepts"
-        class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
-        onclick={closeMobileMenu}
-    >
-        {$t.navConcepts}
-    </a> 
+    <div class="flex flex-col">
+        <button
+            class="flex w-full items-center justify-between text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+            onclick={() => otherMenuOpen = !otherMenuOpen}
+        >
+            {$t.navOther || 'Other'}
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform" class:rotate-180={otherMenuOpen}><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        
+        {#if otherMenuOpen}
+          <div class="mt-3 flex flex-col gap-4 border-l-2 border-[var(--color-separator)] pl-4">
+            <a
+                href="/apps"
+                class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                onclick={closeMobileMenu}
+            >
+                {$t.navApps}
+            </a>
+            <a
+                href="/creations"
+                class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                onclick={closeMobileMenu}
+            >
+                {$t.navCreations}
+            </a>
+            <a
+                href="/concepts"
+                class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                onclick={closeMobileMenu}
+            >
+                {$t.navConcepts}
+            </a> 
+          </div>
+        {/if}
+    </div>
 				<a
 					href="/about"
 					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
