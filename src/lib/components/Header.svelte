@@ -70,6 +70,9 @@
             >
                {$t.navEUPilot}
             </a>
+            <a href="/africa-pilot" class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]">
+                {$t.navAfricaPilot}
+            </a>
         </div>
     </div>
 				<a
@@ -214,6 +217,9 @@
                     onclick={closeMobileMenu}
                 >
                     {$t.navEUPilot}
+                </a>
+                <a href="/africa-pilot" class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100" onclick={closeMobileMenu}>
+                    {$t.navAfricaPilot}
                 </a>
             </div>
         {/if}

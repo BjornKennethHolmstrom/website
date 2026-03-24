@@ -52,7 +52,7 @@ c.stratulat@epc.eu
 > Best regards,
 > Björn Kenneth Holmström
 > Systems Architect
-> [Link]
+> bjornkennethholmstrom.org/eu-pilot
 
 ---
 
@@ -82,7 +82,7 @@ e.kuiper@epc.eu
 > Best regards,
 > Björn Kenneth Holmström
 > Systems Architect
-> [Link]
+> bjornkennethholmstrom.org/eu-pilot
 
 ---
 

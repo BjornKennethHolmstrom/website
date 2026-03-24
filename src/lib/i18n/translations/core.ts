@@ -17,6 +17,7 @@ export const coreTranslations = {
   navBooks: 'Books',
   navFrameworks: 'Frameworks',
   navEUPilot: 'EU Subsidiarity (Pilot)',
+  navAfricaPilot: 'Africa Subsidiarity (Pilot)',
 		navContact: 'Contact',
   navAbout: 'About',
   navRSS: 'RSS Feed',
@@ -226,6 +227,7 @@ export const coreTranslations = {
   navEssays: 'Essäer',  // or 'Manifest'
   navFrameworks: 'Ramverk',
   navEUPilot: 'EU subsidiaritet (pilot)',
+  navAfricaPilot: 'Afrika subsidiaritet (pilot)',
   essaysTitle: 'Essäer',
   essaysTagline: 'Omfattande utforskningar och levande protokoll.',
 		navWhitepapers: 'White papers',

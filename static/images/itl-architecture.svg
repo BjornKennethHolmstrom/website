@@ -1,0 +1,79 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .text-title { font-family: system-ui, sans-serif; font-size: 20px; font-weight: 700; fill: #0f172a; }
+      .text-sub { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; fill: #475569; }
+      .text-sm { font-family: system-ui, sans-serif; font-size: 12px; fill: #64748b; }
+      .text-white { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 600; fill: #ffffff; }
+      .text-white-sm { font-family: system-ui, sans-serif; font-size: 12px; fill: #e2e8f0; }
+      .box-layer { rx: 6; ry: 6; }
+      .layer-3 { fill: #1e293b; }
+      .layer-2 { fill: #334155; }
+      .layer-1 { fill: #475569; }
+      .box-node { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 8; ry: 8; }
+      .line-conn { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 4 4; }
+      .line-solid { stroke: #64748b; stroke-width: 2; marker-end: url(#arrow); }
+      .accent { fill: #0284c7; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <text x="40" y="50" class="text-title">Protocol Architecture (The Stack)</text>
+  <text x="40" y="70" class="text-sm">Information flow from local mesh to macro diagnostics</text>
+
+  <rect x="40" y="100" width="340" height="80" class="box-layer layer-3" />
+  <text x="60" y="130" class="text-white">Layer 3: Diagnostic (GSI)</text>
+  <text x="60" y="150" class="text-white-sm">AfCFTA / Smart Africa Harmonization Index</text>
+  <text x="60" y="165" class="text-white-sm">Macro-routing and telemetry</text>
+
+  <rect x="40" y="210" width="340" height="80" class="box-layer layer-2" />
+  <text x="60" y="240" class="text-white">Layer 2: Privacy (ZKRS)</text>
+  <text x="60" y="260" class="text-white-sm">Zero-Knowledge Reputational Staking</text>
+  <text x="60" y="275" class="text-white-sm">Verifiable trust without data centralization</text>
+
+  <rect x="40" y="320" width="340" height="80" class="box-layer layer-1" />
+  <text x="60" y="350" class="text-white">Layer 1: Base (USSD / Offline)</text>
+  <text x="60" y="370" class="text-white-sm">Feature-phone native actuation</text>
+  <text x="60" y="385" class="text-white-sm">P2P mesh sync via Bluetooth/NFC</text>
+
+  <line x1="210" y1="320" x2="210" y2="295" class="line-solid" />
+  <line x1="210" y1="210" x2="210" y2="185" class="line-solid" />
+  <text x="220" y="312" class="text-sm">Cryptographic proofs</text>
+  <text x="220" y="202" class="text-sm">Anonymized telemetry</text>
+
+
+  <text x="480" y="50" class="text-title">Deployment Matrix (Phase 1)</text>
+  <text x="480" y="70" class="text-sm">Triangular activation model for sandbox testing</text>
+
+  <line x1="660" y1="140" x2="550" y2="320" class="line-conn" />
+  <line x1="660" y1="140" x2="770" y2="320" class="line-conn" />
+  <line x1="550" y1="320" x2="770" y2="320" class="line-conn" />
+
+  <rect x="580" y="100" width="160" height="70" class="box-node" />
+  <text x="660" y="130" class="text-sub" text-anchor="middle">Legitimacy Anchor</text>
+  <text x="660" y="150" class="text-sm" text-anchor="middle">Smart Africa / AfCFTA</text>
+  <text x="660" y="185" class="text-sm accent" text-anchor="middle">DPI Standards</text>
+
+  <rect x="470" y="320" width="160" height="70" class="box-node" />
+  <text x="550" y="350" class="text-sub" text-anchor="middle">Sandbox Host</text>
+  <text x="550" y="370" class="text-sm" text-anchor="middle">Cross-Border Corridor</text>
+  <text x="550" y="410" class="text-sm accent" text-anchor="middle">Real-world testing</text>
+
+  <rect x="690" y="320" width="160" height="70" class="box-node" />
+  <text x="770" y="350" class="text-sub" text-anchor="middle">Infrastructure Builder</text>
+  <text x="770" y="370" class="text-sm" text-anchor="middle">iHub / Civic-Tech</text>
+  <text x="770" y="410" class="text-sm accent" text-anchor="middle">USSD/Protocol Code</text>
+
+  <circle cx="660" cy="255" r="40" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" />
+  <text x="660" y="250" class="text-sub" text-anchor="middle">ITL</text>
+  <text x="660" y="268" class="text-sm" text-anchor="middle">Pilot</text>
+
+  <line x1="430" y1="40" x2="430" y2="460" stroke="#e2e8f0" stroke-width="2" />
+
+</svg>
+
