@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for the Informal Trust Ledger (ITL) v0.3
- * Usage: node scripts/generate-itl-pdf.js
+ * Generate PDF for DPI 2.0: The Subsidiarity Layer v0.3
+ * Usage: node scripts/generate-india-dpi-pdf.js
  */
 
 import fs from 'fs';
@@ -14,15 +14,13 @@ import puppeteer from 'puppeteer';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Directories (Adjust the INPUT_FILE path if you saved v0.3.md somewhere else)
-const INPUT_FILE = path.join(__dirname, '../src/routes/africa-informal-trust-ledger/sections/v0.3.md');
+const INPUT_FILE = path.join(__dirname, '../src/routes/india-dpi-2/sections/v0.3.md');
 const OUTPUT_DIR = path.join(__dirname, '../static/pdfs');
-const OUTPUT_FILE = path.join(OUTPUT_DIR, 'informal-trust-ledger-v0.3.pdf');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'india-dpi-2.0-v0.3.pdf');
 
 async function main() {
-	console.log('📄 Starting PDF generation for Informal Trust Ledger...\n');
+	console.log('📄 Starting PDF generation for DPI 2.0: The Subsidiarity Layer...\n');
 
-	// Ensure output directory exists
 	if (!fs.existsSync(OUTPUT_DIR)) {
 		fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 	}
@@ -32,13 +30,9 @@ async function main() {
 		process.exit(1);
 	}
 
-	// 1. Read Markdown
 	const content = fs.readFileSync(INPUT_FILE, 'utf-8');
-
-	// 2. Parse Markdown to HTML
 	const htmlContent = marked.parse(content);
 
-	// 3. Wrap in modern, DPI-focused CSS 
 	const fullHtml = `
 		<!DOCTYPE html>
 		<html>
@@ -46,9 +40,9 @@ async function main() {
 			<meta charset="UTF-8">
 			<style>
 				:root {
-					--text-main: #1e293b;
-					--border: #e2e8f0;
-					--accent: #0f766e; /* Deep Civic Green */
+					--text-main: #1f2937;
+					--border: #e5e7eb;
+					--accent: #1e3a5f; /* Deep Navy */
 				}
 				body {
 					font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -70,7 +64,6 @@ async function main() {
 					border-bottom: 2px solid var(--accent); 
 					padding-bottom: 0.2em; 
 				}
-				/* Title page styling for the very first h1 */
 				h1:first-of-type {
 					font-size: 28pt;
 					border-bottom: none;
@@ -107,6 +100,25 @@ async function main() {
 				}
 				hr { border: 0; border-top: 1px solid var(--border); margin: 2.5em 0; }
 				strong { color: #0f172a; }
+				code {
+					background-color: #f1f5f9;
+					padding: 2px 6px;
+					border-radius: 3px;
+					font-size: 0.9em;
+				}
+				pre {
+					background-color: #f8fafc;
+					border: 1px solid var(--border);
+					border-radius: 4px;
+					padding: 1em;
+					overflow-x: auto;
+					font-size: 9pt;
+					line-height: 1.5;
+				}
+				pre code {
+					background: none;
+					padding: 0;
+				}
 			</style>
 		</head>
 		<body>
@@ -115,7 +127,6 @@ async function main() {
 		</html>
 	`;
 
-	// 4. Generate PDF via Puppeteer
 	console.log('🚀 Launching headless browser...');
 	const browser = await puppeteer.launch({ headless: "new" });
 	const page = await browser.newPage();
@@ -131,7 +142,7 @@ async function main() {
 		displayHeaderFooter: true,
 		headerTemplate: `
 			<div style="font-size: 8pt; color: #64748b; width: 100%; text-align: right; margin: 0 2cm; font-family: -apple-system, sans-serif;">
-				Informal Trust Ledger (ITL) v0.3
+				DPI 2.0: The Subsidiarity Layer v0.3
 			</div>
 		`,
 		footerTemplate: `

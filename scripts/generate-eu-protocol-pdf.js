@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Directories
-const INPUT_DIR = path.join(__dirname, '../src/routes/eu-pilot/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/eu-subsidiarity-protocol/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/pdfs');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'european-subsidiarity-protocol-v1.2-full.pdf');
 
