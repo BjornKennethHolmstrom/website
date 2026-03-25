@@ -32,27 +32,26 @@ c.stratulat@epc.eu
 
 **Subject:** Operationalizing subsidiarity: a pilot-ready framework for EU governance
 
-> Dear Corina Stratulat,
->
-> I am writing to you because of your work on EU institutional reform and citizen participation at the European Policy Centre, particularly your focus on how governance mechanisms can function more effectively in practice.
->
-> I am a systems architect currently developing the **European Subsidiarity Protocol**—a structured operational framework designed to make subsidiarity empirically actionable rather than primarily political.
->
-> The framework focuses on two core elements:
->
-> • **A Subsidiarity Index (GSI):** a diagnostic model for identifying optimal governance tiers and strengthening existing mechanisms such as the “Yellow Card”
-> • **A Swedish pilot pathway:** a concrete implementation scenario grounded in municipal capacity and existing EU funding structures
->
-> I have attached a short executive briefing and architecture overview.
->
-> I would value your perspective on whether this type of framework could be meaningfully developed further within an EPC context, particularly in relation to ongoing discussions on institutional reform.
->
-> I work primarily in a written, asynchronous mode due to the technical nature of the system, so even brief reflections or questions would be greatly appreciated.
->
-> Best regards,
-> Björn Kenneth Holmström
-> Systems Architect
-> bjornkennethholmstrom.org/eu-pilot
+Dear Corina Stratulat,
+
+I am writing to you because of your work on EU institutional reform and citizen participation at the European Policy Centre, particularly your work on EU institutional reform and citizen participation, including the EU Democracy Reform Observatory.
+
+I am currently developing the European Subsidiarity Protocol, a structured operational framework designed to make subsidiarity empirically actionable rather than primarily political.
+
+The framework focuses on two core elements:
+
+- A Subsidiarity Index (GSI): a diagnostic model for identifying optimal governance tiers and strengthening existing mechanisms such as the “Yellow Card”
+- A Swedish pilot pathway: a concrete implementation scenario grounded in municipal capacity and existing EU funding structures
+
+I have attached a short executive briefing and architecture overview.
+
+I would value your perspective on whether this type of framework could be meaningfully developed further within an EPC context, particularly in relation to ongoing discussions on institutional reform.
+
+I work primarily in writing, happy to continue the conversation by email. Even brief reflections or questions would be greatly appreciated.
+
+Best regards,
+Björn Kenneth Holmström
+bjornkennethholmstrom.org/eu-subsidiarity-protocol
 
 ---
 
@@ -62,27 +61,26 @@ e.kuiper@epc.eu
 
 **Subject:** A structural approach to Europe’s care capacity challenge
 
-> Dear Elizabeth Kuiper,
->
-> I am writing to you because of your work on health systems and societal resilience at the European Policy Centre, especially your focus on how Europe can structurally respond to demographic and care-related pressures.
->
-> I am a systems architect currently developing the **European Subsidiarity Protocol**—a structured framework for activating underutilized local capacity in a fiscally sustainable way.
->
-> One part of this framework is specifically designed to interface with the **European Care Strategy**, through:
->
-> • **A Civic Value Registry:** a privacy-preserving way to make informal care capacity visible without centralizing data
-> • **Conditional Service Credits (CSC):** a non-inflationary mechanism to activate local care contributions and relieve pressure on formal systems
->
-> I have attached a short executive briefing and architecture overview.
->
-> I would value your perspective on whether this type of approach could be relevant to ongoing work on societal resilience and care system sustainability.
->
-> I work primarily in a written, asynchronous mode, so even brief reflections or questions would be greatly appreciated.
->
-> Best regards,
-> Björn Kenneth Holmström
-> Systems Architect
-> bjornkennethholmstrom.org/eu-pilot
+Dear Elizabeth Kuiper,
+
+I am writing to you because of your focus on societal resilience at the European Policy Centre, especially how Europe can structurally respond to demographic and care-related pressures.
+
+I am currently developing the European Subsidiarity Protocol, a structured framework for activating underutilized local capacity in a fiscally sustainable way.
+
+One part of this framework is specifically designed to interface with the European Care Strategy, through:
+
+- A Civic Value Registry: a privacy-preserving way to make informal care capacity visible without centralizing data
+- Conditional Service Credits (CSC): a non-inflationary mechanism to activate local care contributions and relieve pressure on formal systems
+
+I have attached a short executive briefing and architecture overview.
+
+I would value your perspective on whether this type of approach could be relevant to ongoing work on societal resilience and care system sustainability.
+
+I work primarily in writing, so even brief reflections or questions would be greatly appreciated.
+
+Best regards,
+Björn Kenneth Holmström
+bjornkennethholmstrom.org/eu-subsidiarity-protocol
 
 ---
 
@@ -171,22 +169,14 @@ Your goal is to:
 
 > Dear [Name],
 >
-> Thank you—that sounds good.
->
-> To make the conversation as concrete as possible, I suggest focusing on one specific entry point:
->
-> → [pick ONE: subsidiarity mechanism OR care pilot]
->
-> I can prepare a short written outline in advance so we can go directly into substance.
->
-> Would that work from your side?
+> Thank you — I'd welcome that. I work best in writing, so rather than a call, let me prepare a focused written brief on [specific topic] and send it to you. That way we can go directly into substance without scheduling overhead. Would that work?
 >
 > Best regards,
 > Björn
 
 ---
 
-## 🔴 Scenario D: No reply (after ~5–7 days)
+## 🔴 Scenario D: No reply (after ~7–10 days)
 
 ### Follow-up:
 

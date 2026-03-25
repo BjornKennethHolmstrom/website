@@ -10,31 +10,34 @@ Here is the highly tailored, Swedish-language "Architect" pitch designed specifi
 
 ### 📧 Email 3: To Marcus Stolte Holmberg (The SKR / Subsidiaritet Pitch)
 
-**Ämne:** Operativt ramverk för Artikel 5: Pilotförslag för svenskt kommunalt självstyre i EU
+**Till:** marcus.stolteholmberg@skr.se (alt: marcus.holmberg@skr.se)
 
-> Hej Marcus,
-> 
-> Jag kontaktar dig i din roll som sektionschef för EU och internationella frågor på SKR, särskilt med tanke på ert arbete med att värna det kommunala självstyret gentemot EU:s lagstiftningsprocesser.
-> 
-> Jag är systemarkitekt. Under det senaste året har jag utvecklat **European Subsidiarity Protocol**—en operativ och teknisk arkitektur designad för att lösa den strukturella tröghet ("latency crisis") som Draghi-rapporten pekar på, och samtidigt ge regioner och kommuner ett empiriskt verktyg för att försvara subsidiaritetsprincipen.
-> 
-> Idag är subsidiaritetsprövningen (det gula kortet) en politisk förhandling. Detta protokoll uppgraderar det till en mätbar, datadriven process.
-> 
-> Arkitekturen (som nu är redo för granskning) innehåller:
-> 1. **Global Subsidiarity Index (GSI):** En diagnostisk mätstandard som matematiskt identifierar när EU-direktiv är för trubbiga för lokala förhållanden (och därmed bör delegeras till NUTS-2/NUTS-3 nivå).
-> 2. **Fas 1 Pilotdesign:** Jag har medvetet designat den första implementeringsfasen (och dess tekniska datalager) för den svenska kommunala kontexten, med Västra Götaland som tänkt referensram.
-> 
-> Jag har bifogat en 2-sidig Executive Briefing samt en arkitekturkarta (på engelska, då ramverket är anpassat för EU-kommissionen). Du kan även läsa den fullständiga tekniska specifikationen här: [Länk till din /eu-pilot sida]
-> 
-> **Mitt förslag är följande:** Jag är systemets tekniska arkitekt. Jag söker nu en strategisk och politisk partner med rätt institutionell tyngd för att utvärdera om denna modell kan användas operativt av SKR (eller Eurocities) för att flytta fram positionerna kring regional autonomi i Bryssel. 
-> 
-> På grund av arbetets djupa tekniska natur arbetar jag uteslutande asynkront. Om det bifogade ramverket linjerar med SKR:s strategiska mål framåt, tar jag mycket gärna emot dina skriftliga tankar kring hur vi skulle kunna ta detta vidare.
-> 
-> Vänliga hälsningar,
-> 
-> Björn Kenneth Holmström
-> Systems Architect
-> bjornkennethholmstrom.org/eu-pilot
+**Ämne:** Operativt ramverk för Artikel 5: pilotförslag för svenskt kommunalt självstyre i EU
+
+---
+
+Hej Marcus,
+
+Jag kontaktar dig i din roll som sektionschef för EU och internationella frågor på SKR, särskilt med tanke på ert arbete med att värna det kommunala självstyret gentemot EU:s lagstiftningsprocesser.
+
+Jag är systemarkitekt. Under det senaste året har jag utvecklat **European Subsidiarity Protocol**: en operativ arkitektur designad för att adressera den strukturella tröghet som Draghi-rapporten pekar på, och samtidigt ge regioner och kommuner ett empiriskt verktyg för att stärka subsidiaritetsprincipen.
+
+Idag är subsidiaritetsprövningen (det gula kortet) en politisk förhandling. Detta protokoll kompletterar det med en mätbar, datadriven diagnostik.
+
+Arkitekturen innehåller bland annat:
+
+1. **Global Subsidiarity Index (GSI):** En diagnostisk mätstandard som systematiskt identifierar när EU-direktiv missar lokala förhållanden, och på vilken nivå (NUTS-2/NUTS-3) beslut bör ligga.
+2. **Fas 1 — svensk pilotdesign:** Den första implementeringsfasen är medvetet designad för den svenska kommunala kontexten, med Västra Götaland som tänkt referensram.
+
+Jag har bifogat en tvåsidig sammanfattning samt en arkitekturkarta (på engelska, då ramverket är anpassat för EU-kommissionen). Den fullständiga tekniska specifikationen finns här: bjornkennethholmstrom.org/eu-subsidiarity-protocol
+
+Om ramverket är relevant för SKR:s arbete kring subsidiaritet och regional autonomi, skulle jag uppskatta dina synpunkter på om och hur det skulle kunna utvecklas vidare. Jag arbetar bäst skriftligt; tar gärna emot dina tankar via mejl.
+
+Vänliga hälsningar,
+
+Björn Kenneth Holmström
+Systemarkitekt
+bjornkennethholmstrom.org/eu-subsidiarity-protocol
 
 ***
 
