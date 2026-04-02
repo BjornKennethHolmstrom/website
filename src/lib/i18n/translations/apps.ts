@@ -29,6 +29,10 @@ export const appsTranslations = {
 				tagline:
 					'An interactive web app designed to help explore and understand complex ideas.'
 			},
+   mycel: {
+       title: 'Mycel',
+       tagline: 'A coordination substrate for living communities. See who\'s around, what they offer, what they need — then go meet in person.'
+   },
 			adit: {
 				title: 'ADIT (Audio-based Digital Information Transfer)',
 				description:
@@ -155,6 +159,10 @@ conceptexplorerDetail: {
 				tagline:
 					'En interaktiv webbapp designad för att hjälpa till att utforska och förstå komplexa idéer.'
 			},
+   mycel: {
+       title: 'Mycel',
+       tagline: 'Ett koordineringssubstrat för levande samhällen. Se vilka som finns i närheten, vad de erbjuder, vad de behöver — och träffas sedan på riktigt.'
+   },
 			adit: {
 				title: 'ADIT (Audio-based Digital Information Transfer)',
 				description:

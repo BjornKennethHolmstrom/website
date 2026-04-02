@@ -50,10 +50,11 @@
 				url: 'https://github.com/GlobalGovernanceFrameworks/CivicBase'
 			},
 			{
-				type: 'emoji',
-				key: 'stuga',
-    emoji: '🏠', // House for Stuga
-				url: 'https://github.com/GlobalGovernanceFrameworks/Stuga'
+				type: 'img',
+				key: 'mycel',
+    logo: '/apps/images/logo-mycel.svg',
+				url: '/mycel',
+		 	badge: 'NEW'
 			},
 			{
 				type: 'img',
@@ -402,6 +403,15 @@
 							<span class="mb-4 block text-5xl">
 								{project.emoji}
 							</span>
+						{/if}
+
+						<!-- NEW Badge -->
+						{#if project.badge === 'NEW'}
+							<div class="absolute -top-3 -right-3">
+								<span class="inline-block rounded-full bg-amber-500 px-3 py-1 text-xs font-bold text-slate-900 shadow-lg">
+									⭐ NEW
+								</span>
+							</div>
 						{/if}
 
 						<h3 class="text-xl font-semibold text-[var(--color-card-text)]">

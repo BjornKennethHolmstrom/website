@@ -9,6 +9,7 @@ import { creationsTranslations } from '../i18n/translations/creations';
 import { conceptsTranslations } from '../i18n/translations/concepts';
 import { coordinationTranslations } from '../i18n/translations/coordination';
 import { euTranslations } from '../i18n/translations/eu';
+import { mycelTranslations } from '../i18n/translations/mycel';
 
 // 1. Check if we are in a browser environment
 const isBrowser = typeof window !== 'undefined';
@@ -53,7 +54,8 @@ const translations = {
 		...creationsTranslations.en,
 		...conceptsTranslations.en,
   ...coordinationTranslations.en,
-  ...euTranslations.en
+  ...euTranslations.en,
+  ...mycelTranslations.en
 	},
 	sv: {
 		...aboutTranslations.sv,
@@ -65,7 +67,8 @@ const translations = {
 		...creationsTranslations.sv,
 		...conceptsTranslations.sv,
   ...coordinationTranslations.sv,
-  ...euTranslations.sv
+  ...euTranslations.sv,
+  ...mycelTranslations.sv
 	}
 };
 

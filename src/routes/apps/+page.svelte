@@ -94,6 +94,41 @@
 					</a>
 				</div>
 			</div>
+   <div
+				class="flex flex-col rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-md"
+			>
+				<div class="flex-grow p-6">
+					<img
+						src="/apps/images/logo-mycel.svg"
+						alt="Mycel logo"
+						class="mb-4 h-12 w-auto"
+					/>
+					<h3 class="text-2xl font-semibold text-[var(--color-card-text)]">
+						{t.mycel.title}
+					</h3>
+					<p class="mt-2 text-[var(--color-card-text)] opacity-80">
+						{t.mycel.tagline}
+					</p>
+				</div>
+				<div
+					class="flex flex-wrap gap-4 rounded-b-lg border-t border-[var(--color-separator)] bg-[var(--color-page-bg)] p-4"
+				>
+					<a
+						href="/mycel"
+						class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-amber-700"
+					>
+						{t.learnMore}
+					</a>
+					<a
+						href="https://bjornkennethholmstrom.github.io/mycel"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="rounded-md bg-slate-500/20 px-4 py-2 text-sm font-medium text-[var(--color-page-text)] transition-colors hover:bg-slate-500/30"
+					>
+						{t.visitOnline}
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 
