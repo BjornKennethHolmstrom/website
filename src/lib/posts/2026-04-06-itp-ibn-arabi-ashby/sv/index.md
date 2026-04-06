@@ -106,6 +106,6 @@ Och hela artikeln finns här:
 
 Du kanske inte anser att detta är ”sant” i en vetenskaplig eller teologisk mening. Men du kanske håller med om att det är *sammanhängande*. Och den sammanhållningen, över åtta århundraden, över cybernetik och kryptografi, över poesi och kod – känns som en gåva.
 
-Ashby gav oss lagen. Ibn ʿArabī gav oss visionen. Whitepapret är mitt lilla försök att bygga en bro mellan dem.
+Ashby gav oss lagen. Ibn ʿArabī gav oss visionen. Artikeln är mitt lilla försök att bygga en bro mellan dem.
 
 Må variationen vara med dig.
