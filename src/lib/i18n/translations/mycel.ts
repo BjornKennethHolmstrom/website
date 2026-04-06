@@ -64,7 +64,7 @@ export const mycelTranslations = {
 		},
 		relation: {
 			title: 'Relation to Global Governance Frameworks',
-			p1: 'Mycel is developed under the <a href="/coordination" class="underline hover:opacity-70">Global Governance Frameworks</a> research initiative as the practical infrastructure layer for bioregional coordination, the Social Fabric Framework, and the Hearts care economy. It is designed to stand alone as useful infrastructure regardless of that broader context.'
+			p1: 'Mycel is developed under the <a href="https://www.globalgovernanceframeworks.org" class="underline hover:opacity-70">Global Governance Frameworks</a> research initiative as the practical infrastructure layer for bioregional coordination, the Social Fabric Framework, and the Hearts care economy. It is designed to stand alone as useful infrastructure regardless of that broader context.'
 		},
 		footer: {
 			status: 'Status: Early prototype — Phase 0 complete. Works for small groups who know each other.',
@@ -136,7 +136,7 @@ export const mycelTranslations = {
 		},
 		relation: {
 			title: 'Relation till Global Governance Frameworks',
-			p1: 'Mycel utvecklas under forskningsinitiativet <a href="/coordination" class="underline hover:opacity-70">Global Governance Frameworks</a> som det praktiska infrastrukturlagret för bioregional samordning, Social Fabric Framework och Hearts-omsorgsekonomin. Det är designat att fungera som användbar infrastruktur oberoende av det bredare sammanhanget.'
+			p1: 'Mycel utvecklas under forskningsinitiativet <a href="https://www.globalgovernanceframeworks.org" class="underline hover:opacity-70">Global Governance Frameworks</a> som det praktiska infrastrukturlagret för bioregional samordning, Social Fabric Framework och Hearts-omsorgsekonomin. Det är designat att fungera som användbar infrastruktur oberoende av det bredare sammanhanget.'
 		},
 		footer: {
 			status: 'Status: Tidig prototyp — Fas 0 klar. Fungerar för små grupper som känner varandra.',
