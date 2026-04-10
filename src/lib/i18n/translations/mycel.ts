@@ -1,5 +1,9 @@
 export const mycelTranslations = {
 	en: {
+  mycelPageMeta: {
+    title: 'Mycel | Coordination substrate for living communities',
+    description: 'Mycel is a lightweight coordination network inspired by mycelium. See who\'s around, what they offer, what they need — then go meet in person.'
+  },
 		hero: {
 			title: 'Mycel',
 			tagline: 'A coordination substrate for living communities'
@@ -68,6 +72,10 @@ export const mycelTranslations = {
 		}
 	},
 	sv: {
+		mycelPageMeta: {
+			title: 'Mycel – Ett koordineringssubstrat för levande samhällen',
+			description: 'Mycel är ett lätt, offline‑kapabelt koordineringsnätverk inspirerat av mycel. Se vilka som finns i närheten, vad de erbjuder, vad de behöver — och träffas sedan på riktigt.'
+		},
 		hero: {
 			title: 'Mycel',
 			tagline: 'Ett koordineringssubstrat för levande samhällen'
