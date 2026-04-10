@@ -1,6 +1,6 @@
 export const euTranslations = {
 	en: {
-		meta: {
+		euPageMeta: {
 			title: 'European Subsidiarity Protocol',
 			description: 'A proposed framework for addressing governance latency in the European Union.'
 		},
@@ -31,7 +31,7 @@ export const euTranslations = {
 		}
 	},
 	sv: {
-		meta: {
+		euPageMeta: {
 			title: 'Europeiskt subsidiaritetsprotokoll',
 			description: 'Ett förslag till ramverk för att adressera styrningslatens i Europeiska unionen.'
 		},
