@@ -1,9 +1,5 @@
 export const mycelTranslations = {
 	en: {
-		meta: {
-			title: 'Mycel — A Coordination Substrate for Living Communities',
-			description: 'A lightweight, offline-capable coordination network inspired by mycelium. Not social media — infrastructure that strengthens real-world connection.'
-		},
 		hero: {
 			title: 'Mycel',
 			tagline: 'A coordination substrate for living communities'
@@ -72,10 +68,6 @@ export const mycelTranslations = {
 		}
 	},
 	sv: {
-		meta: {
-			title: 'Mycel — ett koordineringssubstrat för levande samhällen',
-			description: 'Ett lätt, offline-kapabelt koordineringsnätverk inspirerat av mycel. Inte sociala medier — infrastruktur som stärker verkliga mänskliga kontakter.'
-		},
 		hero: {
 			title: 'Mycel',
 			tagline: 'Ett koordineringssubstrat för levande samhällen'
