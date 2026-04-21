@@ -58,7 +58,7 @@ Skottland, med sina självständighetsrörelser och jordreformer för gemenskape
 
 Det här är inte hypotetiska fall. Det här är aktiva frontlinjer där samtalet redan har gått bortom "om" till "hur". Verkliga institutioner står inför verkliga beslut om sin framtid och söker efter den arkitektur som det nuvarande systemet inte kan erbjuda.
 
-Fönstret för samordnad övergång är ungefär 2025–2035, baserat på observerbara trender i resursbegränsningar, klimattippningspunkter och institutionell ansträngning. Detta är inte profetia. Detta är extrapolering från nuvarande banor kombinerat med en förståelse för hur komplexa system beter sig under stress.
+Fönstret för samordnad övergång är ungefär 2025–2035, baserat på observerbara trender i resursbegränsningar, klimattippningspunkter och institutionell ansträngning. Detta är inte profetia, och tidslinjen är inte fastställd. Det är extrapolering från observerbara banor – en som skulle kunna accelereras eller försenas av val som görs nu – i kombination med en förståelse för hur komplexa system beter sig under stress.
 
 Detta är den ultimata konsekvensen av vår diagnos: ett system byggt på separation och extraktion kommer oundvikligen att utmatta sin värd. Att bygga livbåtar är inte alarmism; det är den logiska slutsatsen av att förstå fällan. Vattnet blir redan kallare. Antingen bygger vi nu, eller så lär vi oss simma i mycket kallt vatten.
 

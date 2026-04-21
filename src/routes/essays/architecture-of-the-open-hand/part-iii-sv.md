@@ -46,6 +46,8 @@ Sedan kom fossila bränslen. Plötsligt hade vi tillgång till miljoner år av k
 
 Vi använder Jordens överflöd för att förstöra Jorden.
 
+Detta är värt att begrunda. Den exempellösa omfattningen av våld under 1900-talet – två världskrig, industrialiserat folkmord, kärnvapenarsenaler – var inte en moralisk regression från tidigare århundraden. Det var en termodynamisk möjlighet som tidigare århundraden helt enkelt inte hade råd med. Oljans energitäthet gjorde det möjligt att projicera kraft över haven, upprätthålla åratal långa mekaniserade kampanjer och döda i industriell skala. Ta bort det energiöverskottet och logistiken för ett imperiums kollaps. Detta omformulerar den kommande övergången: minskande fossil energi är inte bara en ekologisk kris. Det är också potentiellt det materiella slutet på krigsspelet som vi har känt det – om vi utformar övergången medvetet snarare än att låta den producera resurskonflikter istället.
+
 **Fönstret som stängs**
 
 Här möter metafysik den materiella verkligheten: När de ekologiska gränserna dras åt under det kommande decenniet av begränsningar, försvinner den materiella basen för det gamla spelet.

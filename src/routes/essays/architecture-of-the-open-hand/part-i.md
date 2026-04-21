@@ -12,7 +12,7 @@ Most adults cannot speak this answer. We ourselves have forgotten it, or never l
 
 But what if they deserve better? What if the question itself—innocent, direct, morally uncorrupted—points toward the deepest diagnosis of human violence? What if answering it honestly requires not just political science or military history, but a fundamental investigation into the nature of selfhood, consciousness, and the structures we build to house both?
 
-War is not a biological necessity. It is not "human nature" in any fixed sense. It is a structural consequence of an epistemic error—a mistake whose logic has been baked into the very architecture of our collective life: our laws, economies, and identities. We are trying to solve a structural problem with procedural tweaks, like redecorating a house built on a cracked foundation. To stop it, we don't need more treaties drafted in the language of the old paradigm. We need a new container for human existence.
+War is not a simple biological necessity. It is not 'human nature' in any fixed or inevitable sense. It is a structural consequence of an epistemic error—a mistake whose logic has been baked into the very architecture of our collective life: our laws, economies, and identities. We are trying to solve a structural problem with procedural tweaks, like redecorating a house built on a cracked foundation. To stop it, we don't need more treaties drafted in the language of the old paradigm. We need a new container for human existence.
 
 This essay is an attempt to answer the child truthfully. It begins with metaphysics, moves through systems analysis, and arrives at architecture. From diagnosis to design. From the illusion that separates us to the infrastructure that could reunite us.
 

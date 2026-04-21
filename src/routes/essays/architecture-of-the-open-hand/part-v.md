@@ -58,7 +58,7 @@ Scotland, with its independence movements and community land reform. Estonia, al
 
 These are not hypotheticals. These are active frontiers where the conversation has already moved beyond "if" to "how." Real institutions are facing real decisions about their futures, searching for the architecture that the current system cannot provide.
 
-The window for coordinated transition is roughly 2025-2035, based on observable trends in resource constraints, climate tipping points, and institutional strain. This is not prophecy. This is extrapolation from current trajectories combined with an understanding of how complex systems behave under stress.
+The window for coordinated transition is roughly 2025-2035, based on observable trends in resource constraints, climate tipping points, and institutional strain. This is not prophecy, and the timeline is not fixed. It is extrapolation from observable trajectories — one that could be accelerated or delayed by choices made now — combined with an understanding of how complex systems behave under stress.
 
 This is the ultimate consequence of our diagnosis: a system built on separation and extraction will inevitably exhaust its host. Building lifeboats is not alarmism; it is the logical conclusion of understanding the trap. The water is already getting colder. We either build now, or we learn to swim in very cold water.
 

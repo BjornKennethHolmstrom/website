@@ -46,6 +46,8 @@ Then came fossil fuels. Suddenly, we had access to millions of years of concentr
 
 We use the abundance of the Earth to destroy the Earth.
 
+This is worth sitting with. The unprecedented scale of 20th century violence — two world wars, industrialized genocide, nuclear arsenals — was not a moral regression from previous centuries. It was a thermodynamic possibility that previous centuries simply couldn't afford. The energy density of oil made it possible to project force across oceans, sustain years-long mechanized campaigns, and kill at industrial scale. Remove that energy surplus and the logistics of empire collapse. This reframes the transition ahead: declining fossil energy isn't only an ecological crisis. It is also, potentially, the material end of the war-game as we have known it — if we design the transition deliberately rather than letting it produce resource conflicts instead.
+
 **The Closing Window**
 
 Here is where metaphysics meets material reality: As ecological limits tighten over the coming decade of constraint, the material basis for the old game disappears.
