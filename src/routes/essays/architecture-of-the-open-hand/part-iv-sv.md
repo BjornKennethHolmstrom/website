@@ -38,6 +38,28 @@ Detta handlar inte om att omvända krigsherrar till pacifism. Det handlar om att
 
 Försvaret ligger i decentraliseringen. Ett piggsvin besegrar inte ett rovdjur genom överlägsen styrka. Det gör bara måltiden inte värd smärtan. Ett imperium är en spindel – skär av huvudet, och den dör. Ett bioregionalt nätverk är en sjöstjärna – skär av en arm, och den växer ut en ny. Detta är inte bara motståndskraft; det är avskräckning genom oreglerbarhet.
 
+**Realistens fråga**
+
+En hårdnackad kritiker – kalla dem en Mearsheimer-realist – kommer att läsa allt ovan och ställa frågan som är viktig: *Vad stoppar en beslutsam angripare?*
+
+Detta är rätt fråga. Den förtjänar ett direkt svar snarare än undanflykt.
+
+Den realistiska kritiken lyder så här: maktasymmetri trumfar incitamentsdesign. Stater som kan dominera kommer att dominera. Decentraliserade system blir inte ostyrbara – de blir fragmenterade och svaga, enkla måltavlor för söndra-och-härska-strategier som inte kräver att man erövrar allt, utan bara kontrollerar viktiga noder och flöden. Och mäktiga stater kommer inte att tillåta parallella suveränitetssystem att mogna – de kommer att kooptera, reglera eller undertrycka dem långt innan de når kritisk massa, eftersom distribuerad styrning hotar beskattning, territoriell integritet och kontroll.
+
+Detta är inte triviala invändningar. Historien erbjuder fler exempel på decentraliserade samhällen som absorberats än att framgångsrikt avvärja centraliserad makt. Piggsvinsstrategin fungerar tills den inte gör det.
+
+Tre svar är värda att ge ärligt.
+
+För det första gör inte detta ramverk anspråk på att eliminera stormaktskonflikter. Målet är mer blygsamt: att minska andelen mänskligt liv som är organiserat inom system där överlevnad är beroende av den konkurrensen. Ett bioregionalt nätverk som gör 20 % av världens befolkning genuint kostsamt att erövra och ekonomiskt ointressant att utvinna ur har förändrat kalkylen även om stormakter fortfarande konkurrerar. Målet är inte att besegra Mearsheimers värld – utan att krympa den.
+
+För det andra antar den realistiska modellen en relativt stabil och enhetligt kapabel stat. Polykrisen försvagar inte nödvändigtvis stater enhetligt – den fragmenterar deras kapacitet. Stater förblir mycket kapabla inom områden knutna till regimers överlevnad, samtidigt som de blir mindre effektiva i perifer styrning. Kriser kan producera centralisering, och gör det ofta – men de producerar också ojämna verkställighetsmiljöer där alternativa system kan uppstå i luckorna snarare än i direkt opposition. Realisten har rätt i att stater kommer att undertrycka alternativ som skalar upp till den grad att de hotar kärnkontrollfunktioner. Den relevanta frågan är om alla alternativa formationer kan undertryckas samtidigt under förhållanden av distribuerad framväxt och ojämn statskapacitet.
+
+För det tredje har realisten rätt i att identitet driver människor att kämpa för saker som är materiellt irrationella. Men detta går åt båda hållen. Samma identitetsbildningsförmåga som producerar nationalistisk mobilisering för krig kan producera bioregional identitet som gör befolkningar genuint ovilliga att administreras av avlägsna makter. Zapatisterna finns fortfarande kvar – inte som en modell för skalbarhet, utan som bevis på uthållighet. Decentraliserad rotning garanterar inte överlevnad mot bestämd makt; den höjer kostnaden och minskar avkastningen.
+
+Inget av detta svarar helt och hållet på realistens åsikt. Ett ramverk som kräver gynnsamma förutsättningar för att mogna förblir sårbart för argumentet att dessa förutsättningar inte kommer att infinna sig i tid. Det är en verklig begränsning, och intellektuell ärlighet kräver att den namnges. Under nuvarande banor kan det dock vara mer hanterbart att ändra fördelningen av sårbarhet än att eliminera drivkrafterna bakom konflikt. Det är inte en garanti – det är en annan sannolikhetsfördelning. Fler vägar till en kontrollerad övergång, färre vägar till obestridd auktoritär konsolidering.
+
+Realisten frågar: vad stoppar angriparen? Arkitekten svarar: inte bara detta ramverk – utan en värld med mer distribuerad motståndskraft, mer lokalt förankrade ekonomier och fler samhällen med genuina alternativ till statligt beroende – är svårare att erövra än den värld vi har nu.
+
 **Att bygga bron medan vi går på den**
 
 Vi erkänner öppet: Vi konstruerar denna arkitektur medan det gamla krigssystemet fortfarande körs. Övergången i sig är utmaningen. Det kommer att finnas en period – kanske decennier – där båda systemen samexisterar, där det gamla spelet fortfarande har spelare, där våld förblir möjligt.
