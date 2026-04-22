@@ -117,6 +117,13 @@
    
    // --- Priority 2: AI & Tech ---
    { 
+     key: 'aiOptimizationMismatch', 
+     url: '/essays/ai-optimization-mismatch',
+     icon: '🎯',
+     category: 'AI & Tech',
+     hasPDF: true
+   },
+   { 
      key: 'breakingMirror', 
      url: '/essays/the-ai-mirror', 
      icon: '🪞',

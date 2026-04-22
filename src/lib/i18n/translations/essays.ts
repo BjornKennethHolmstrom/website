@@ -255,6 +255,14 @@ export const essaysTranslations = {
        published: "Feb 2026",
        readTime: "35 min read",
        pdfPages: "59" // Estimate, adjust after PDF generation
+     },
+     aiOptimizationMismatch: {
+       title: 'AI and the Optimization–Design Mismatch',
+       subtitle: 'Why making a broken system faster is not progress',
+       desc: 'AI is an optimization technology. But when the objective function it optimizes—GDP, engagement, quarterly earnings—is misaligned with human and ecological flourishing, increasing efficiency amplifies dysfunction. This essay diagnoses the mismatch, traces its consequences, and outlines what realigning AI with a higher-fidelity signal would require.',
+       published: 'April 2026',
+       readTime: '12 min read',
+       tags: ['AI', 'Systems Thinking', 'Economics', 'Governance', 'Optimization', 'Ashby\'s Law']
      }
     }
 		}
@@ -514,6 +522,14 @@ export const essaysTranslations = {
        published: "februari 2026",
        readTime: "35 min läsning",
        pdfPages: "59"
+     },
+     aiOptimizationMismatch: {
+       title: 'AI och optimerings–design-missmatchningen',
+       subtitle: 'Varför det inte är framsteg att få ett trasigt system att gå snabbare',
+       desc: 'AI är en optimeringsteknologi. Men när målfunktionen den optimerar—BNP, engagemang, kvartalsvinster—är felanpassad till mänskligt och ekologiskt blomstrande, förstärker ökad effektivitet dysfunktionen. Denna essä diagnostiserar missmatchningen, spårar dess konsekvenser och skisserar vad som krävs för att omrikta AI mot en signal med högre upplösning.',
+       published: 'april 2026',
+       readTime: '12 min läsning',
+       tags: ['AI', 'Systemtänkande', 'Ekonomi', 'Styrning', 'Optimering', 'Ashbys lag']
      }
    }
 		}
