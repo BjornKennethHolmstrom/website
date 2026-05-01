@@ -10,6 +10,7 @@ import { conceptsTranslations } from '../i18n/translations/concepts';
 import { coordinationTranslations } from '../i18n/translations/coordination';
 import { euTranslations } from '../i18n/translations/eu';
 import { mycelTranslations } from '../i18n/translations/mycel';
+import { governanceSimulatorTranslations } from '../i18n/translations/simulator';
 
 // 1. Check if we are in a browser environment
 const isBrowser = typeof window !== 'undefined';
@@ -55,7 +56,8 @@ const translations = {
 		...conceptsTranslations.en,
   ...coordinationTranslations.en,
   ...euTranslations.en,
-  ...mycelTranslations.en
+  ...mycelTranslations.en,
+  ...governanceSimulatorTranslations.en
 	},
 	sv: {
 		...aboutTranslations.sv,
@@ -68,7 +70,8 @@ const translations = {
 		...conceptsTranslations.sv,
   ...coordinationTranslations.sv,
   ...euTranslations.sv,
-  ...mycelTranslations.sv
+  ...mycelTranslations.sv,
+  ...governanceSimulatorTranslations.sv
 	}
 };
 

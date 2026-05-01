@@ -26,6 +26,7 @@ export const coreTranslations = {
   navApps: 'Apps',
   navCreations: 'Creations',
   navConcepts: 'Concepts',
+  navSimulator: 'Governance Simulator',
   dark: 'DARK',
   light: 'LIGHT',
 		// Hero
@@ -243,6 +244,7 @@ export const coreTranslations = {
   navApps: 'Appar',
   navCreations: 'Skapelser',
   navConcepts: 'Koncept',
+  navSimulator: 'Styrningssimulator',
   dark: 'MÖRK',
   light: 'LJUS',
 		// Hero

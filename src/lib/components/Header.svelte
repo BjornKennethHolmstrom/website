@@ -129,6 +129,13 @@
                 >
                     {$t.navConcepts}
                 </a>
+                <a
+                    href="/governance-simulator"
+                    class="block px-4 py-2 text-sm text-[var(--color-page-text)] opacity-90 transition-opacity hover:opacity-100"
+                    onclick={closeOtherMenu}
+                >
+                    {$t.navSimulator}
+                </a>
         </div>
     </div> 
 				<a
@@ -289,6 +296,13 @@
                 onclick={closeMobileMenu}
             >
                 {$t.navConcepts}
+            </a> 
+            <a
+                href="/governance-simulator"
+                class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                onclick={closeMobileMenu}
+            >
+                {$t.navSimulator}
             </a> 
           </div>
         {/if}
