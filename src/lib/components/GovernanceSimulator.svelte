@@ -62,7 +62,7 @@
   // ================================================================
   // SCENARIO DEFINITIONS
   // ================================================================
-  type Scenario = 'supplyChain' | 'capture';
+  type Scenario = 'supplyChain' | 'capture' | 'disinfo' | 'ecological';
   let scenario: Scenario = 'supplyChain';
 
   // Supply chain params
@@ -83,6 +83,39 @@
     TAU_A: 10, SIGMA_A: 3.0, K_A: 0.35,
     TAU_B: 2,  SIGMA_B: 0.4, K_B: 0.70,
     A_SYS: 0.96, X_REF: 100, BETA: 0.02
+  };
+
+
+  // Disinformation params
+  // A: false signal inflates perceived mean → controller pushes nodes toward
+  //    wrong target (X_FALSE=115). Weak gain stays below oscillation threshold.
+  //    Nodes settle at wrong equilibrium ~80 instead of 100. Visible misallocation.
+  // B: 3 scattered nodes nudged briefly, strong peer coupling corrects them.
+  const DIS = {
+    AFFECTED_NODES_B: [2, 3, 7],
+    TAU_A: 12, SIGMA_A: 2.0, K_A: 0.32,
+    TAU_B: 2,  SIGMA_B: 0.4, K_B: 0.72,
+    A_SYS: 0.95, X_REF: 100, BETA: 0.018,
+    X_FALSE: 115,   // false signal: controller thinks mean is 115 (too high)
+    K_FALSE: 0.06,  // well below stability ceiling for tau=12 — no oscillation
+    FALSE_NUDGE: -6.0,
+  };
+
+  // Ecological threshold params
+  // Slow-building pressure per node (carrying capacity declining)
+  // A: sees national average — misses local threshold breaches until cascade
+  // B: each node monitors own threshold — acts before local collapse
+  const ECO = {
+    DECAY_RATE: 0.12,    // capacity loss per step post-crisis (applied per node)
+    THRESHOLD: 55,       // below this = collapse cascade (rapid further decay)
+    COLLAPSE_ACCEL: 0.08,// extra decay per step once below threshold
+    TAU_A: 13, SIGMA_A: 7.0, K_A: 0.28,
+    TAU_B: 2,  SIGMA_B: 0.5, K_B: 0.72,
+    A_SYS: 0.95, X_REF: 100, BETA: 0.022,
+    // Pressure starts hitting different nodes at different times
+    PRESSURE_NODES: [    // [nodeIndex, startStep] — staggered local pressures
+      [2, 25], [5, 28], [0, 32], [7, 35], [3, 40], [6, 44], [1, 50], [8, 54], [4, 60]
+    ]
   };
 
   // ================================================================
@@ -209,9 +242,127 @@
     simA = xA; simB = xB;
   }
 
+  function precomputeDisinfo() {
+    const rng = makeRng(55);
+    const { AFFECTED_NODES_B, TAU_A, SIGMA_A, K_A, TAU_B, SIGMA_B, K_B,
+            A_SYS, X_REF, BETA, X_FALSE, FALSE_NUDGE, K_FALSE } = DIS;
+    const drift = X_REF * (1 - A_SYS);
+
+    // B: affected nodes misled for 30 steps, then peer coupling corrects them
+    const DISINFO_DURATION_B = 30;
+    const BETA_B_DIS = 0.09; // stronger peer coupling in B
+
+    const xA: number[][] = [Array(N).fill(X_REF)];
+    const xB: number[][] = [Array(N).fill(X_REF)];
+    const uA: number[][] = [Array(N).fill(0)];
+    const uB: number[][] = [Array(N).fill(0)];
+    const yA: number[][] = [Array(N).fill(X_REF)];
+    const yB: number[][] = [Array(N).fill(X_REF)];
+
+    for (let tt = 1; tt < T_MAX - 1; tt++) {
+      const disinfo = tt >= T_CRISIS;
+      const disinfoActiveB = disinfo && (tt - T_CRISIS) < DISINFO_DURATION_B;
+
+      // Architecture A: false signal replaces the observed mean with X_FALSE.
+      // Controller uses full gain K_A but acts on wrong data — drives all nodes
+      // toward X_FALSE (115) instead of X_REF (100). Nodes overshoot upward,
+      // then natural decay pulls them back, creating sustained oscillation around
+      // the wrong target. The single channel has no way to detect the lie.
+      const yAt = xA[tt-1].map(x => x + rng.randn() * SIGMA_A);
+      yA.push(yAt);
+      if (disinfo) {
+        // Channel is compromised: controller sees X_FALSE as the system mean
+        const perceivedErr = X_REF - X_FALSE; // always negative: -15
+        uA.push(Array(N).fill(K_A * perceivedErr));
+      } else {
+        const meanErr = X_REF - yAt.reduce((a,b) => a+b, 0) / N;
+        uA.push(Array(N).fill(K_A * meanErr));
+      }
+
+      // Architecture B: 3 scattered nodes receive false nudge for DISINFO_DURATION_B steps.
+      // Strong peer coupling pulls them back. After window, full recovery.
+      const yBt = xB[tt-1].map(x => x + rng.randn() * SIGMA_B);
+      yB.push(yBt);
+      uB.push(yBt.map((y, i) => {
+        if (disinfoActiveB && AFFECTED_NODES_B.includes(i)) {
+          return K_FALSE * (X_REF - y) + FALSE_NUDGE;
+        }
+        return K_B * (X_REF - y);
+      }));
+
+      const actA = tt >= TAU_A ? uA[tt - TAU_A] : Array(N).fill(0);
+      const actB = tt >= TAU_B ? uB[tt - TAU_B] : Array(N).fill(0);
+      const cA = couple(xA[tt-1], BETA);
+      const cB = couple(xB[tt-1], BETA_B_DIS);
+
+      xA.push(xA[tt-1].map((x,i) => clamp(A_SYS*x + cA[i] + actA[i] + drift)));
+      xB.push(xB[tt-1].map((x,i) => clamp(A_SYS*x + cB[i] + actB[i] + drift)));
+    }
+    simA = xA; simB = xB;
+  }
+
+  function precomputeEcological() {
+    const rng = makeRng(33);
+    const { DECAY_RATE, THRESHOLD, COLLAPSE_ACCEL, TAU_A, SIGMA_A, K_A,
+            TAU_B, SIGMA_B, K_B, A_SYS, X_REF, BETA, PRESSURE_NODES } = ECO;
+    const drift = X_REF * (1 - A_SYS);
+
+    // Build pressure schedule: pressureStart[i] = step at which node i starts degrading
+    const pressureStart: number[] = Array(N).fill(999);
+    PRESSURE_NODES.forEach(([node, start]) => { pressureStart[node] = start; });
+
+    const xA: number[][] = [Array(N).fill(X_REF)];
+    const xB: number[][] = [Array(N).fill(X_REF)];
+    const uA: number[][] = [Array(N).fill(0)];
+    const uB: number[][] = [Array(N).fill(0)];
+    const yA: number[][] = [Array(N).fill(X_REF)];
+    const yB: number[][] = [Array(N).fill(X_REF)];
+
+    for (let tt = 1; tt < T_MAX - 1; tt++) {
+      // Ecological pressure: per-node carrying capacity declining from pressureStart
+      const pressure = Array(N).fill(0).map((_, i) => {
+        if (tt < pressureStart[i]) return 0;
+        const stepsUnder = tt - pressureStart[i];
+        // Extra collapse acceleration if already below threshold
+        const collapse = xA[tt-1][i] < THRESHOLD ? COLLAPSE_ACCEL * stepsUnder : 0;
+        return -(DECAY_RATE + collapse) * stepsUnder * 0.15;
+      });
+      const pressureB = Array(N).fill(0).map((_, i) => {
+        if (tt < pressureStart[i]) return 0;
+        const stepsUnder = tt - pressureStart[i];
+        const collapse = xB[tt-1][i] < THRESHOLD ? COLLAPSE_ACCEL * stepsUnder : 0;
+        return -(DECAY_RATE + collapse) * stepsUnder * 0.15;
+      });
+
+      // Architecture A: sees national average — misses local threshold approach
+      const yAt = xA[tt-1].map((x,i) => x + rng.randn() * SIGMA_A + pressure[i]);
+      yA.push(yAt);
+      // Controller responds to national mean — local crises diluted
+      const meanErr = X_REF - yAt.reduce((a,b) => a+b, 0) / N;
+      uA.push(Array(N).fill(K_A * meanErr));
+
+      // Architecture B: each node monitors its own state including local pressure
+      const yBt = xB[tt-1].map((x,i) => x + rng.randn() * SIGMA_B + pressureB[i]);
+      yB.push(yBt);
+      // Each node responds to its own observed pressure — catches threshold approach early
+      uB.push(yBt.map(y => K_B * (X_REF - y)));
+
+      const actA = tt >= TAU_A ? uA[tt - TAU_A] : Array(N).fill(0);
+      const actB = tt >= TAU_B ? uB[tt - TAU_B] : Array(N).fill(0);
+      const cA = couple(xA[tt-1], BETA);
+      const cB = couple(xB[tt-1], BETA);
+
+      xA.push(xA[tt-1].map((x,i) => clamp(A_SYS*x + cA[i] + actA[i] + pressure[i]*0.5 + drift)));
+      xB.push(xB[tt-1].map((x,i) => clamp(A_SYS*x + cB[i] + actB[i] + pressureB[i]*0.5 + drift)));
+    }
+    simA = xA; simB = xB;
+  }
+
   function precompute() {
     if (scenario === 'supplyChain') precomputeSupplyChain();
-    else precomputeCapture();
+    else if (scenario === 'capture') precomputeCapture();
+    else if (scenario === 'disinfo') precomputeDisinfo();
+    else precomputeEcological();
   }
 
   // ================================================================
@@ -243,7 +394,7 @@
         );
       }
 
-    } else {
+    } else if (scenario === 'capture') {
       // Capture scenario
       const captured = step >= T_CRISIS;
       if (!captured) {
@@ -265,6 +416,36 @@
           const healthy = [0,1,2,4,5,6,7,8];
           const n = healthy[Math.floor(Math.random()*healthy.length)];
           neighbours(n).forEach(nb => { if (Math.random() < 0.3) spawnPulse(n, nb, 'B', 'resource'); });
+        }
+      }
+
+    } else if (scenario === 'disinfo') {
+      const active = step >= T_CRISIS;
+      if (!active) {
+        if (Math.random() < 0.3) spawnPulse(Math.floor(Math.random()*9), 4, 'A', 'info');
+        if (Math.random() < 0.3) { const n = Math.floor(Math.random()*9); neighbours(n).forEach(nb => { if (Math.random() < 0.3) spawnPulse(n, nb, 'B', 'info'); }); }
+      } else {
+        // A: corrupt info signal into center
+        if (Math.random() < 0.5) spawnPulse(Math.floor(Math.random()*9), 4, 'A', 'corrupt');
+        if (Math.random() < 0.45) spawnPulse(4, Math.floor(Math.random()*9), 'A', 'corrupt');
+        // B: affected nodes receive false signal, healthy nodes share cross-checks
+        DIS.AFFECTED_NODES_B.forEach(n => { if (Math.random() < 0.4) spawnPulse(n, neighbours(n)[0] ?? 4, 'B', 'corrupt-local'); });
+        if (Math.random() < 0.4) { const healthy = [0,2,3,5,6,8]; const n = healthy[Math.floor(Math.random()*healthy.length)]; neighbours(n).forEach(nb => { if (Math.random() < 0.35) spawnPulse(n, nb, 'B', 'info'); }); }
+      }
+
+    } else if (scenario === 'ecological') {
+      if (step % 4 === 0) {
+        // A: slow trickle of info to center
+        if (Math.random() < 0.35) spawnPulse(Math.floor(Math.random()*9), 4, 'A', 'info');
+        if (step >= T_CRISIS) {
+          // Distress signals from affected nodes
+          ECO.PRESSURE_NODES.filter(([, start]) => step >= start).forEach(([node]) => {
+            if (Math.random() < 0.5) spawnPulse(node as number, 4, 'A', 'resource');
+          });
+          // B: local nodes signal neighbours immediately when pressure detected
+          ECO.PRESSURE_NODES.filter(([, start]) => step >= start).forEach(([node]) => {
+            neighbours(node as number).forEach(nb => { if (Math.random() < 0.4) spawnPulse(node as number, nb, 'B', 'resource'); });
+          });
         }
       }
     }
@@ -330,29 +511,49 @@
   // ================================================================
   $: captureActive = scenario === 'capture' && step >= T_CRISIS;
   $: isCaptureScenario = scenario === 'capture';
+  $: isDisinfoScenario = scenario === 'disinfo';
+  $: isEcoScenario = scenario === 'ecological';
+  $: disinfoActive = isDisinfoScenario && step >= T_CRISIS;
+  $: crisisIcon = scenario === 'capture' ? '☠' : scenario === 'ecological' ? '🌿' : scenario === 'disinfo' ? '📡' : '⚡';
 
   $: annotationA = (() => {
     if (scenario === 'supplyChain') {
-      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.crisisHit,      cls: '' };
+      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.crisisHit, cls: '' };
       if (step >= T_CRISIS + 6 && step < T_CRISIS + SC.TAU_A) return { text: t.annotations.centralBottleneck, cls: 'warn' };
       if (step >= T_CRISIS + SC.TAU_A && step < T_CRISIS + SC.TAU_A + 18) return { text: t.annotations.uniformPolicy, cls: 'warn' };
-    } else {
-      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.centerCaptured,  cls: 'warn' };
+    } else if (scenario === 'capture') {
+      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.centerCaptured, cls: 'warn' };
       if (step >= T_CRISIS + 6 && step < T_CRISIS + 35) return { text: t.annotations.corruptSignals, cls: 'warn' };
       if (step >= T_CRISIS + 35) return { text: t.annotations.systemDegraded, cls: 'warn' };
+    } else if (scenario === 'disinfo') {
+      if (step >= T_CRISIS && step < T_CRISIS + 8)   return { text: t.annotations.falseSignalInjected, cls: 'warn' };
+      if (step >= T_CRISIS + 8 && step < T_CRISIS + 30) return { text: t.annotations.controllerMisled, cls: 'warn' };
+      if (step >= T_CRISIS + 30) return { text: t.annotations.systemOscillates, cls: 'warn' };
+    } else if (scenario === 'ecological') {
+      if (step >= T_CRISIS && step < T_CRISIS + 15)  return { text: t.annotations.localPressure, cls: '' };
+      if (step >= T_CRISIS + 15 && step < T_CRISIS + 40) return { text: t.annotations.averageMasksCollapse, cls: 'warn' };
+      if (step >= T_CRISIS + 40) return { text: t.annotations.cascadeUnderway, cls: 'warn' };
     }
     return null;
   })();
 
   $: annotationB = (() => {
     if (scenario === 'supplyChain') {
-      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.crisisHit,    cls: '' };
+      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.crisisHit, cls: '' };
       if (step >= T_CRISIS + SC.TAU_B && step < T_CRISIS + SC.TAU_B + 10) return { text: t.annotations.localResponse, cls: 'good' };
       if (step >= T_CRISIS + 15 && step < T_CRISIS + 35) return { text: t.annotations.containment, cls: 'good' };
-    } else {
-      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.localCaptured,  cls: '' };
+    } else if (scenario === 'capture') {
+      if (step >= T_CRISIS && step < T_CRISIS + 6)   return { text: t.annotations.localCaptured, cls: '' };
       if (step >= T_CRISIS + 6 && step < T_CRISIS + 22) return { text: t.annotations.isolatedDamage, cls: 'warn' };
       if (step >= T_CRISIS + 22) return { text: t.annotations.systemIntact, cls: 'good' };
+    } else if (scenario === 'disinfo') {
+      if (step >= T_CRISIS && step < T_CRISIS + 8)   return { text: t.annotations.someNodesMisled, cls: '' };
+      if (step >= T_CRISIS + 8 && step < T_CRISIS + 25) return { text: t.annotations.peersCorrect, cls: 'good' };
+      if (step >= T_CRISIS + 25) return { text: t.annotations.disinfoContained, cls: 'good' };
+    } else if (scenario === 'ecological') {
+      if (step >= T_CRISIS && step < T_CRISIS + 8)   return { text: t.annotations.localPressure, cls: '' };
+      if (step >= T_CRISIS + 8 && step < T_CRISIS + 25) return { text: t.annotations.earlyWarning, cls: 'good' };
+      if (step >= T_CRISIS + 25) return { text: t.annotations.thresholdDefended, cls: 'good' };
     }
     return null;
   })();
@@ -373,11 +574,22 @@
       on:click={() => switchScenario('capture')}>
       ☠ {t.controls.scenarios.capture}
     </button>
+    <button class="scenario-tab" class:active={scenario === 'disinfo'}
+      on:click={() => switchScenario('disinfo')}>
+      📡 {t.controls.scenarios.disinfo}
+    </button>
+    <button class="scenario-tab" class:active={scenario === 'ecological'}
+      on:click={() => switchScenario('ecological')}>
+      🌿 {t.controls.scenarios.ecological}
+    </button>
   </div>
 
   <!-- Scenario description -->
   <p class="scenario-desc">
-    {scenario === 'supplyChain' ? t.controls.scenarios.supplyChainDesc : t.controls.scenarios.captureDesc}
+    {scenario === 'supplyChain' ? t.controls.scenarios.supplyChainDesc
+    : scenario === 'capture' ? t.controls.scenarios.captureDesc
+    : scenario === 'disinfo' ? t.controls.scenarios.disinfoDesc
+    : t.controls.scenarios.ecologicalDesc}
   </p>
 
   <!-- Controls row -->
@@ -476,7 +688,10 @@
         <span>{t.metrics.affectedNodes}: <strong class:warn-text={affectedA > 0}>{affectedA}/{N}</strong></span>
         <span>
           {isCaptureScenario ? t.metrics.captureRadius : t.metrics.responseLatency}:
-          <strong>{isCaptureScenario ? 'N' : SC.TAU_A} {isCaptureScenario ? '' : t.metrics.steps}</strong>
+          <strong>
+            {isCaptureScenario ? 'N' : scenario === 'supplyChain' ? SC.TAU_A : scenario === 'disinfo' ? DIS.TAU_A : ECO.TAU_A}
+            {isCaptureScenario ? '' : t.metrics.steps}
+          </strong>
         </span>
       </div>
     </div>
@@ -535,7 +750,10 @@
         <span>{t.metrics.affectedNodes}: <strong class:warn-text={affectedB > 0}>{affectedB}/{N}</strong></span>
         <span>
           {isCaptureScenario ? t.metrics.captureRadius : t.metrics.responseLatency}:
-          <strong>{isCaptureScenario ? '1' : SC.TAU_B} {isCaptureScenario ? t.metrics.node : t.metrics.steps}</strong>
+          <strong>
+            {isCaptureScenario ? '1' : scenario === 'supplyChain' ? SC.TAU_B : scenario === 'disinfo' ? DIS.TAU_B : ECO.TAU_B}
+            {isCaptureScenario ? t.metrics.node : t.metrics.steps}
+          </strong>
         </span>
       </div>
     </div>
@@ -552,7 +770,7 @@
     </div>
     <div class="step-labels">
       <span>t=0</span>
-      <span class="crisis-label">{isCaptureScenario ? '☠' : '⚡'} t={T_CRISIS}</span>
+      <span class="crisis-label">{crisisIcon} t={T_CRISIS}</span>
       <span>t={T_MAX}</span>
     </div>
   </div>
@@ -565,6 +783,12 @@
     {#if isCaptureScenario}
       <div class="legend-item"><span class="dot captured-dot"></span>{t.legend.captured}</div>
       <div class="legend-item"><span class="pulse-dot corrupt-dot"></span>{t.legend.corruptSignal}</div>
+    {:else if isDisinfoScenario}
+      <div class="legend-item"><span class="pulse-dot info-dot"></span>{t.legend.informationFlow}</div>
+      <div class="legend-item"><span class="pulse-dot corrupt-dot"></span>{t.legend.falseSignal}</div>
+    {:else if isEcoScenario}
+      <div class="legend-item"><span class="pulse-dot res-dot"></span>{t.legend.resourceFlow}</div>
+      <div class="legend-item"><span class="pulse-dot info-dot"></span>{t.legend.distressSignal}</div>
     {:else}
       <div class="legend-item"><span class="pulse-dot info-dot"></span>{t.legend.informationFlow}</div>
       <div class="legend-item"><span class="pulse-dot res-dot"></span>{t.legend.resourceFlow}</div>

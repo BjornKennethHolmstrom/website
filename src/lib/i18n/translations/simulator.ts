@@ -19,7 +19,11 @@ export const governanceSimulatorTranslations = {
           supplyChain: 'Supply chain disruption',
           supplyChainDesc: 'A fertilizer/food cascade — mirrors real geopolitical shocks. Tests resource routing and local substitution.',
           capture: 'Governance capture',
-          captureDesc: 'A powerful actor captures the decision center. In a centralized system this corrupts the entire network. In a polycentric system, damage stays local.'
+          captureDesc: 'A powerful actor captures the decision center. In a centralized system this corrupts the entire network. In a polycentric system, damage stays local.',
+          disinfo: 'Disinformation crisis',
+          disinfoDesc: 'A false signal is injected into the information channel. Centralized systems act on corrupted data. Polycentric systems cross-check locally and isolate the lie.',
+          ecological: 'Ecological threshold breach',
+          ecologicalDesc: 'Local ecosystems hit tipping points at different times. Centralized systems see only the national average — missing local collapses until cascade. Local monitoring catches each threshold early.'
         },
         speed: 'Speed',
         slow: 'Slow',
@@ -47,7 +51,9 @@ export const governanceSimulatorTranslations = {
         resourceFlow: 'Resource flow',
         informationFlow: 'Information flow',
         corruptSignal: 'Corrupt signal',
-        blocked: 'Blocked'
+        blocked: 'Blocked',
+        falseSignal: 'False signal',
+        distressSignal: 'Distress signal'
       },
       metrics: {
         title: 'Live metrics',
@@ -78,7 +84,18 @@ export const governanceSimulatorTranslations = {
         systemDegraded: 'System-wide degradation',
         localCaptured: 'One node captured — damage local',
         isolatedDamage: 'Damage isolated to 1 node',
-        systemIntact: 'Rest of system intact'
+        systemIntact: 'Rest of system intact',
+        falseSignalInjected: 'False signal injected into channel',
+        controllerMisled: 'Controller acting on false data',
+        systemOscillates: 'System destabilised by bad signal',
+        someNodesMisled: 'Some nodes receive false signal',
+        peersCorrect: 'Peer nodes cross-check and correct',
+        disinfoContained: 'False signal isolated — most nodes stable',
+        localPressure: 'Local ecological pressure building',
+        averageMasksCollapse: 'National average masks local collapse',
+        cascadeUnderway: 'Cascade — too late for centralized response',
+        earlyWarning: 'Local early warning activates',
+        thresholdDefended: 'Local thresholds held — no cascade'
       },
       insight: {
         title: 'What you just saw',
@@ -121,7 +138,11 @@ export const governanceSimulatorTranslations = {
           supplyChain: 'Leveranskedjestörning',
           supplyChainDesc: 'En gödselmedels-/livsmedelskedja — speglar verkliga geopolitiska chocker. Testar resursflöden och lokal substitution.',
           capture: 'Styrningskapning',
-          captureDesc: 'En maktaktör kapar beslutscentret. I ett centraliserat system korrumperas hela nätverket. I ett polycentriskt system begränsas skadan lokalt.'
+          captureDesc: 'En maktaktör kapar beslutscentret. I ett centraliserat system korrumperas hela nätverket. I ett polycentriskt system begränsas skadan lokalt.',
+          disinfo: 'Desinformationskris',
+          disinfoDesc: 'En falsk signal injiceras i informationskanalen. Centraliserade system agerar på korrupt data. Polycentriska system korskollar lokalt och isolerar lögnen.',
+          ecological: 'Ekologiskt tröskelbrott',
+          ecologicalDesc: 'Lokala ekosystem når vippunkter vid olika tidpunkter. Centraliserade system ser bara det nationella genomsnittet — missar lokala kollaps tills kaskaden är igång. Lokal övervakning fångar varje tröskel i tid.'
         },
         speed: 'Hastighet',
         slow: 'Långsam',
@@ -149,7 +170,9 @@ export const governanceSimulatorTranslations = {
         resourceFlow: 'Resursflöde',
         informationFlow: 'Informationsflöde',
         corruptSignal: 'Korrumperad signal',
-        blocked: 'Blockerad'
+        blocked: 'Blockerad',
+        falseSignal: 'Falsk signal',
+        distressSignal: 'Nödsignal'
       },
       metrics: {
         title: 'Livemätvärden',
@@ -180,7 +203,18 @@ export const governanceSimulatorTranslations = {
         systemDegraded: 'Systemomfattande degradering',
         localCaptured: 'En nod kapad — skadan lokal',
         isolatedDamage: 'Skadan isolerad till 1 nod',
-        systemIntact: 'Resten av systemet intakt'
+        systemIntact: 'Resten av systemet intakt',
+        falseSignalInjected: 'Falsk signal injicerad i kanalen',
+        controllerMisled: 'Styrenheten agerar på falsk data',
+        systemOscillates: 'Systemet destabiliseras av felaktig signal',
+        someNodesMisled: 'Vissa noder tar emot falsk signal',
+        peersCorrect: 'Grannoder korskontrollerar och korrigerar',
+        disinfoContained: 'Falsk signal isolerad — de flesta noder stabila',
+        localPressure: 'Lokalt ekologiskt tryck ökar',
+        averageMasksCollapse: 'Nationellt genomsnitt döljer lokal kollaps',
+        cascadeUnderway: 'Kaskad igång — för sent för centraliserat svar',
+        earlyWarning: 'Lokal tidig varning aktiveras',
+        thresholdDefended: 'Lokala trösklar hållna — ingen kaskad'
       },
       insight: {
         title: 'Vad du just såg',
