@@ -44,7 +44,7 @@ const metadata = {
 		subtitle: "A field guide to the synchronisation deficit — and how India can make its fragments cohere",
 		description: "India does not lack capacity — it lacks the ability to synchronise its extraordinary strengths across scale. This report diagnoses the structural mechanisms and proposes a Synchronisation Sandbox as the first step.",
 		author: "Björn Kenneth Holmström",
-		date: "July 2026",
+		date: "May 2026",
 		url: "https://bjornkennethholmstrom.org/reports/india-leap-lag-cycle",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Country Report · India"
@@ -54,7 +54,7 @@ const metadata = {
 		subtitle: "तालमेल की कमी के लिए एक फील्ड गाइड — और भारत अपने टुकड़ों को कैसे जोड़ सकता है",
 		description: "भारत में क्षमता की कमी नहीं है — उसमें पैमाने पर अपनी असाधारण ताकतों को तालमेल से जोड़ने की क्षमता का अभाव है। यह रिपोर्ट संरचनात्मक तंत्रों का निदान करती है और पहले कदम के रूप में एक तालमेल सैंडबॉक्स प्रस्तावित करती है।",
 		author: "ब्योर्न केनेथ होल्मस्ट्रॉम",
-		date: "जुलाई 2026",
+		date: "मई 2026",
 		url: "https://bjornkennethholmstrom.org/reports/india-leap-lag-cycle",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "देश रिपोर्ट · भारत"
@@ -64,7 +64,7 @@ const metadata = {
 		subtitle: "ஒத்திசைவு குறைபாட்டிற்கான ஒரு கள வழிகாட்டி — மற்றும் இந்தியா தனது துண்டுகளை எவ்வாறு ஒன்றிணைக்க முடியும்",
 		description: "இந்தியாவுக்கு திறன் இல்லையென்பதல்ல — பல்வேறு அளவீடுகளில் தனது அசாதாரண பலங்களை ஒத்திசைக்கும் திறன் இல்லை. இந்த அறிக்கை கட்டமைப்பு வழிமுறைகளை கண்டறிந்து, முதல் படியாக ஒரு ஒத்திசைவு சேண்ட்பாக்சை முன்மொழிகிறது.",
 		author: "பியோர்ன் கென்னத் ஹோல்ஸ்ட்ரோம்",
-		date: "ஜூலை 2026",
+		date: "மே 2026",
 		url: "https://bjornkennethholmstrom.org/reports/india-leap-lag-cycle",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "நாட்டு அறிக்கை · இந்தியா"

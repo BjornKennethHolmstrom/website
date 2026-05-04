@@ -43,7 +43,7 @@ const metadata = {
         subtitle: "Why Sweden's High-Trust Model Is Quietly Deprecating",
         description: "A field guide to the feedback deficit — and how Sweden can rebuild its capacity to sense, share, and adapt.",
         author: "Björn Kenneth Holmström",
-        date: "July 2026",
+        date: "May 2026",
         url: "https://bjornkennethholmstrom.org/reports/sweden-competence-trap",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Country Report · Sweden"
@@ -53,7 +53,7 @@ const metadata = {
         subtitle: "Varför Sveriges högtillitsmodell tyst deprekeras",
         description: "En guide till återkopplingsunderskottet — och hur Sverige kan återuppbygga sin förmåga att upptäcka, dela och anpassa.",
         author: "Björn Kenneth Holmström",
-        date: "Juli 2026",
+        date: "Maj 2026",
         url: "https://bjornkennethholmstrom.org/reports/sweden-competence-trap",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Landrapport · Sverige"

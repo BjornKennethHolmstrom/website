@@ -43,7 +43,7 @@ const metadata = {
 		subtitle: "Why France Governs by Decree but Cannot Make Decisions Stick",
 		description: "A field guide to the integration deficit — and how France can reconnect decision with legitimacy.",
 		author: "Björn Kenneth Holmström",
-		date: "June 2026",
+		date: "May 2026",
 		url: "https://bjornkennethholmstrom.org/reports/france-decisiveness-mirage",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Country Report · France"
@@ -53,7 +53,7 @@ const metadata = {
 		subtitle: "Pourquoi la France gouverne par décret mais ne parvient pas à faire tenir ses décisions",
 		description: "Un guide sur le déficit d'intégration — et comment la France peut reconnecter la décision à la légitimité.",
 		author: "Björn Kenneth Holmström",
-		date: "Juin 2026",
+		date: "Mai 2026",
 		url: "https://bjornkennethholmstrom.org/reports/france-decisiveness-mirage",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Rapport Pays · France"

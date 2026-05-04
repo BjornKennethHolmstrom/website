@@ -98,6 +98,25 @@ export const reportsData: Report[] = [
          en: '/reports/eu-coherence-mirage-en.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'uk-control-mirage',
+     key: 'ukControlMirage',
+     category: 'country',
+     year: 2026,
+     pages: 62,
+     readTime: {
+         en: '50–60 min',
+         sv: '50–60 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-05-05',
+     coverImage: '/images/reports/uk-control-mirage/cover.png',
+     readOnlinePath: '/reports/uk-control-mirage',
+     pdfPath: {
+         en: '/reports/uk-control-mirage-en.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 

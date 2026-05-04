@@ -41,6 +41,11 @@ export const reportsTranslations = {
        title: 'The Coherence Mirage: Why the European Union Agrees on Everything and Aligns on Nothing',
        description:
            'The EU does not lack decisions — it lacks the capacity to arrive together, in time. This report diagnoses a compound coherence deficit produced by sovereignty fragmentation, the translation gap, asymmetric capacity, and time-scale mismatch, and proposes Coherence Regions as the concrete first step.'
+   },
+   ukControlMirage: {
+       title: 'The Control Mirage: Why Britain\'s Centralised Power Produces Fragmented Outcomes',
+       description:
+           'The UK does not lack ambition — it lacks the ability to place control where reality actually is. This report diagnoses a control-delivery mismatch produced by administrative hollowing, the Treasury trap, and the English Question, and proposes Trailblazer Regions 2.0 as the concrete first step.'
    }
 		}
 	},
@@ -84,6 +89,11 @@ export const reportsTranslations = {
        title: 'Koherensspeglingen: Varför Europeiska unionen är överens om allt men samordnar ingenting',
        description:
            'EU saknar inte beslut — det saknar förmågan att anlända tillsammans, i tid. Rapporten diagnosticerar ett sammansatt koherensunderskott skapat av suveränitetsfragmentering, översättningsgap, asymmetrisk kapacitet och tidsskalematchning, och föreslår Koherensregioner som det konkreta första steget.'
+   },
+   ukControlMirage: {
+       title: 'Kontrollspeglingen: Varför Storbritanniens centraliserade makt producerar fragmenterade resultat',
+       description:
+           'Storbritannien saknar inte ambition — det saknar förmågan att placera kontroll där verkligheten faktiskt finns. Rapporten diagnosticerar ett kontroll‑genomförande‑glapp skapat av administrativ urholkning, finansdepartementets fälla och den engelska frågan, och föreslår Trailblazer Regions 2.0 som det konkreta första steget.'
    }
 		}
 	}
