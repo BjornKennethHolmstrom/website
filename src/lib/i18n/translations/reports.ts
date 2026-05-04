@@ -36,6 +36,11 @@ export const reportsTranslations = {
        title: 'The Leap-Lag Cycle: Why India\'s Brilliant Front-Row Still Can\'t Synchronise with the Rest of the Theatre',
        description:
            'India does not lack capacity — it lacks the ability to synchronise its extraordinary strengths across scale. This report diagnoses a synchronisation deficit produced by the scale gradient, the patchwork state, the coherence gap, and the judicial bottleneck, and proposes a Synchronisation Sandbox as the concrete first step.'
+   },
+   euCoherenceMirage: {
+       title: 'The Coherence Mirage: Why the European Union Agrees on Everything and Aligns on Nothing',
+       description:
+           'The EU does not lack decisions — it lacks the capacity to arrive together, in time. This report diagnoses a compound coherence deficit produced by sovereignty fragmentation, the translation gap, asymmetric capacity, and time-scale mismatch, and proposes Coherence Regions as the concrete first step.'
    }
 		}
 	},
@@ -74,6 +79,11 @@ export const reportsTranslations = {
        title: 'Språng-och-släp-cykeln: Varför Indiens briljanta frontlinje fortfarande inte kan synkronisera med resten av teatern',
        description:
            'Indien saknar inte kapacitet — det saknar förmågan att synkronisera sina extraordinära styrkor över skala. Rapporten diagnosticerar ett synkroniseringsunderskott skapat av skalgradienten, lapptäcksstaten, koherensgapet och den rättsliga flaskhalsen, och föreslår en Synkroniseringssandlåda som det konkreta första steget.'
+   },
+   euCoherenceMirage: {
+       title: 'Koherensspeglingen: Varför Europeiska unionen är överens om allt men samordnar ingenting',
+       description:
+           'EU saknar inte beslut — det saknar förmågan att anlända tillsammans, i tid. Rapporten diagnosticerar ett sammansatt koherensunderskott skapat av suveränitetsfragmentering, översättningsgap, asymmetrisk kapacitet och tidsskalematchning, och föreslår Koherensregioner som det konkreta första steget.'
    }
 		}
 	}

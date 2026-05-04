@@ -79,6 +79,25 @@ export const reportsData: Report[] = [
          ta: '/reports/india-leap-lag-cycle-ta.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'eu-coherence-mirage',
+     key: 'euCoherenceMirage',
+     category: 'country',
+     year: 2026,
+     pages: 61,
+     readTime: {
+         en: '50–60 min',
+         sv: '50–60 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-08-01',
+     coverImage: '/images/reports/eu-coherence-mirage/cover.png',
+     readOnlinePath: '/reports/eu-coherence-mirage',
+     pdfPath: {
+         en: '/reports/eu-coherence-mirage-en.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 
