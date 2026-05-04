@@ -26,7 +26,12 @@ export const reportsTranslations = {
 				title: 'The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick',
 				description:
 					'France does not lack decisions — it lacks the capacity to make decisions that integrate. This report diagnoses an integration deficit in outer translation and inner deliberation and proposes a territorial rebalancing framework, including Territoires d\'Intégration Adaptative.'
-			}
+			},
+   swedenCompetenceTrap: {
+       title: 'The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating',
+       description:
+           'Sweden does not lack competence — it lacks the capacity to sense, share, and act on disturbing signals before they compound. This report diagnoses a feedback deficit produced by the Data Archipelago, cultural variance suppression, and the municipal capacity trap, and proposes Framtidskommuner as the concrete first step.'
+   }
 		}
 	},
 	sv: {
@@ -54,7 +59,12 @@ export const reportsTranslations = {
 				title: 'Beslutsamhetshägringen: Varför Frankrike styr genom dekret men inte kan få beslut att bestå',
 				description:
 					'Frankrike saknar inte beslut – det saknar kapacitet att fatta beslut som integreras. Rapporten diagnosticerar ett integrationsunderskott i yttre översättning och inre deliberation och föreslår ett ramverk för territoriell ombalansering, inklusive Territoires d\'Intégration Adaptative.'
-			}
+			},
+   swedenCompetenceTrap: {
+       title: 'Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras',
+       description:
+           'Sverige saknar inte kompetens — det saknar kapacitet att upptäcka, dela och agera på oroande signaler innan de förvärras. Rapporten diagnosticerar ett återkopplingsunderskott skapat av dataarkipelagen, kulturell variansdämpning och den kommunala kapacitetsfällan, och föreslår Framtidskommuner som det konkreta första steget.'
+   }
 		}
 	}
 };

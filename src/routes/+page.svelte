@@ -108,8 +108,28 @@
 				emoji: '🎨',
 				url: '/creations'
 			}
-		]
+  ]
 	};
+ const countryReports = [
+     {
+         key: 'reportsGermany',
+         emoji: '🇩🇪',
+         url: '/reports/germany-spending-mirage'
+     },
+     {
+         key: 'reportsFrance',
+         emoji: '🇫🇷',
+         url: '/reports/france-decisiveness-mirage'
+     }
+ ];
+
+  // To be published
+  //      {
+  //      key: 'reportsSweden',
+  //      emoji: '🇸🇪',
+  //      url: '/reports/sweden-competence-trap'
+  //  }
+ 
 
   // Helper to determine link type
   function getLinkType(url: string) {
@@ -380,6 +400,33 @@
 				{/each}
 			</div>
 		</div>
+
+
+  <!-- Country Reports -->
+  <div>
+      <h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">
+          {$t.clusterReports}
+      </h2>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {#each countryReports as report}
+              <a
+                  href={report.url}
+                  target="_self"
+                  class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+              >
+                  <span class="mb-4 block text-5xl">
+                      {report.emoji}
+                  </span>
+                  <h3 class="text-xl font-semibold text-[var(--color-card-text)]">
+                      {$t[`${report.key}Title`]}
+                  </h3>
+                  <p class="text-[var(--color-card-text)] opacity-80">
+                      {$t[`${report.key}Tagline`]}
+                  </p>
+              </a>
+          {/each}
+      </div>
+  </div>
 
   <div>
 			<h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">

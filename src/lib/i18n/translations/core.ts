@@ -41,6 +41,15 @@ export const coreTranslations = {
   clusterPersonal: 'Personal Spaces & Labs',
 		clusterLibrary: 'Writings & Research',
   clusterArchitecture: 'Open Source Architectures',
+  clusterReports: 'Country Reports',
+ 
+  // Reports
+  reportsGermanyTitle: 'Germany: The Spending Mirage',
+  reportsGermanyTagline: 'Why money isn’t the problem — it’s system capacity.',
+  reportsFranceTitle: 'France: The Decisiveness Mirage',
+  reportsFranceTagline: 'Decisions are easy; making them stick is the challenge.',
+  reportsSwedenTitle: 'Sweden: The Competence Trap',
+  reportsSwedenTagline: 'When high trust hides the signals you need.',
 
 		// Projects
   coordinationTitle: "The Coordination Imperative",
@@ -260,6 +269,16 @@ export const coreTranslations = {
   clusterPersonal: 'Personliga rum och labb',
 		clusterLibrary: 'Skrifter och forskning',
   clusterArchitecture: 'Öppen källkodsarkitektur',
+  clusterReports: 'Landrapporter',
+
+  // Reports
+  reportsGermanyTitle: 'Tyskland: Spenderingshägringen',
+  reportsGermanyTagline: 'Varför pengar inte är problemet – utan systemkapacitet.',
+  reportsFranceTitle: 'Frankrike: Beslutsamhetshägringen',
+  reportsFranceTagline: 'Beslut är lätta; att få dem att hålla är utmaningen.',
+  reportsSwedenTitle: 'Sverige: Kompetensfällan',
+  reportsSwedenTagline: 'När hög tillit döljer de signaler du behöver.',
+
 		// Projects
   coordinationTitle: "The Coordination Imperative",
   coordinationTagline: "Ett protokoll för samarbete på planetär skala.",
