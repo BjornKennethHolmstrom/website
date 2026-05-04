@@ -30,12 +30,32 @@ export const reportsData: Report[] = [
 			sv: '35–45 min'
 		},
 		version: '1.0',
-		releaseDate: '2026-05-01',
+		releaseDate: '2026-05-04',
 		coverImage: '/images/reports/germany-spending-mirage/cover.png',
 		readOnlinePath: '/reports/germany-spending-mirage',
 		pdfPath: {
 			en: '/reports/germany-spending-mirage-en.pdf',
 			de: '/reports/germany-spending-mirage-de.pdf'   // German!
+		},
+		readOnlineExternal: false
+	},
+ {
+		id: 'france-decisiveness-mirage',
+		key: 'franceDecisivenessMirage',
+		category: 'country',
+		year: 2026,
+		pages: 52,
+		readTime: {
+			en: '40–50 min',
+			sv: '40–50 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-04',
+		coverImage: '/images/reports/france-decisiveness-mirage/cover.png',
+		readOnlinePath: '/reports/france-decisiveness-mirage',
+		pdfPath: {
+			en: '/reports/france-decisiveness-mirage-en.pdf',
+			fr: '/reports/france-decisiveness-mirage-fr.pdf'
 		},
 		readOnlineExternal: false
 	}

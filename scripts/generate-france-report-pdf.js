@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for the Germany Spending Mirage report
+ * Generate PDF for the France Decisiveness Mirage report
  * 
- * Usage: node scripts/generate-germany-report-pdf.js [language]
- * Example: node scripts/generate-germany-report-pdf.js en
- * Example: node scripts/generate-germany-report-pdf.js de
+ * Usage: node scripts/generate-france-report-pdf.js [language]
+ * Example: node scripts/generate-france-report-pdf.js en
+ * Example: node scripts/generate-france-report-pdf.js fr
  * 
  * Requirements:
  * npm install marked puppeteer
@@ -22,7 +22,7 @@ const __dirname = path.dirname(__filename);
 
 // ── Configuration ────────────────────────────────────────────────────────────
 const LANGUAGE = process.argv[2] || 'en';
-const VALID_LANGUAGES = ['en', 'de'];
+const VALID_LANGUAGES = ['en', 'fr'];
 
 if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 	console.error(`Invalid language: ${LANGUAGE}`);
@@ -30,7 +30,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 	process.exit(1);
 }
 
-const REPORT_SLUG = 'germany-spending-mirage';
+const REPORT_SLUG = 'france-decisiveness-mirage';
 const INPUT_DIR = path.join(__dirname, `../src/routes/reports/${REPORT_SLUG}/sections`);
 const OUTPUT_DIR = path.join(__dirname, `../static/reports`);
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `${REPORT_SLUG}-${LANGUAGE}.pdf`);
@@ -39,48 +39,47 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const metadata = {
 	en: {
-		title: "The Spending Mirage",
-		subtitle: "Why Germany Has Money but No Capacity to Decide",
-		description: "A field guide to the twin deficit holding Germany back – and how to rebuild the ability to decide, execute, and learn.",
+		title: "The Decisiveness Mirage",
+		subtitle: "Why France Governs by Decree but Cannot Make Decisions Stick",
+		description: "A field guide to the integration deficit — and how France can reconnect decision with legitimacy.",
 		author: "Björn Kenneth Holmström",
-		date: "May 2026",
-		url: "https://bjornkennethholmstrom.org/reports/germany-spending-mirage",
+		date: "June 2026",
+		url: "https://bjornkennethholmstrom.org/reports/france-decisiveness-mirage",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
-		type: "Country Report · Germany"
+		type: "Country Report · France"
 	},
-	de: {
-		title: "Die Ausgabenmirage",
-		subtitle: "Warum Deutschland Geld hat, aber nicht entscheiden kann",
-		description: "Ein Leitfaden zum doppelten Defizit, das Deutschland zurückhält – und wie die Fähigkeit zu entscheiden, auszuführen und zu lernen wiederhergestellt werden kann.",
+	fr: {
+		title: "Le mirage de la décision",
+		subtitle: "Pourquoi la France gouverne par décret mais ne parvient pas à faire tenir ses décisions",
+		description: "Un guide sur le déficit d'intégration — et comment la France peut reconnecter la décision à la légitimité.",
 		author: "Björn Kenneth Holmström",
-		date: "Mai 2026",
-		url: "https://bjornkennethholmstrom.org/reports/germany-spending-mirage",
+		date: "Juin 2026",
+		url: "https://bjornkennethholmstrom.org/reports/france-decisiveness-mirage",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
-		type: "Länderbericht · Deutschland"
+		type: "Rapport Pays · France"
 	}
 };
 
 const meta = metadata[LANGUAGE];
 
-// ── Section definitions (file base name without language suffix) ───────────
+// ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
-	{ file: 'executive-summary',     titleEn: 'Executive Summary',                        titleDe: 'Zusammenfassung',                            isAppendix: false },
-	{ file: '01-invisible-deficit',  titleEn: '1. The Invisible Deficit',                 titleDe: '1. Das unsichtbare Defizit',                 isAppendix: false },
-	{ file: '02-spending-mirage',    titleEn: '2. The Spending Mirage',                   titleDe: '2. Die Ausgabenmirage',                      isAppendix: false },
-	{ file: '03-twin-deficit',       titleEn: '3. The Twin Deficit: A New Diagnosis',      titleDe: '3. Das doppelte Defizit: Eine neue Diagnose', isAppendix: false },
-	{ file: '04-capacity-building',  titleEn: '4. What Building Capacity Actually Looks Like', titleDe: '4. Wie Kapazitätsaufbau tatsächlich aussieht', isAppendix: false },
-	{ file: '05-political-immune',   titleEn: '5. The Political Immune System',           titleDe: '5. Das politische Immunsystem',              isAppendix: false },
-	{ file: '06-transition',         titleEn: '6. Working with the Grain: Transition Architecture', titleDe: '6. Mit dem System arbeiten: Übergangsarchitektur', isAppendix: false },
-	{ file: '07-pilot',              titleEn: '7. A Concrete First Step: The Adaptive Governance Pilot Regions', titleDe: '7. Ein konkreter erster Schritt: Die adaptiven Governance-Pilotregionen', isAppendix: false },
-	{ file: '08-coda',               titleEn: '8. Coda: From Spending to Sensing',        titleDe: '8. Koda: Vom Ausgeben zum Wahrnehmen',        isAppendix: false },
-	{ file: '09-appendix-a',         titleEn: 'Appendix A: Value Systems & Policy Mindsets', titleDe: 'Anhang A: Wertesysteme & Politiklogiken',   isAppendix: true  },
-	{ file: '09-appendix-b',         titleEn: 'Appendix B: International Analogues & Precedents', titleDe: 'Anhang B: Internationale Analogien & Präzedenzfälle', isAppendix: true  },
-	{ file: '09-appendix-c',         titleEn: 'Appendix C: Bibliography & Source Notes',  titleDe: 'Anhang C: Bibliographie & Quellenangaben',   isAppendix: true  },
-	{ file: '09-appendix-d',         titleEn: 'Appendix D: Frequently Anticipated Questions', titleDe: 'Anhang D: Häufig erwartete Fragen',         isAppendix: true  },
-	{ file: '09-appendix-e',         titleEn: 'Appendix E: About the Author',             titleDe: 'Anhang E: Über den Autor',                   isAppendix: true  },
+	{ file: '01-executive-summary',       titleEn: 'Executive Summary',                                       titleFr: 'Résumé exécutif',                                          isAppendix: false },
+	{ file: '02-decisiveness-mirage',     titleEn: '1. The Decisiveness Mirage',                              titleFr: '1. Le mirage de la décision',                              isAppendix: false },
+	{ file: '03-integration-deficit',     titleEn: '2. The Integration Deficit: A New Diagnosis',              titleFr: '2. Le déficit d\'intégration : Un Nouveau Diagnostic',      isAppendix: false },
+	{ file: '04-building-integration',    titleEn: '3. What Building Integration Capacity Looks Like',         titleFr: '3. À quoi ressemble la construction de la capacité d\'intégration', isAppendix: false },
+	{ file: '05-political-immune-system', titleEn: '4. The Political Immune System: Why Integration Fails',    titleFr: '4. Le système immunitaire politique : Pourquoi l\'Intégration Échoue', isAppendix: false },
+	{ file: '06-transition-architecture', titleEn: '5. Working with the Grain: Transition Architecture for France', titleFr: '5. Travailler avec le système : Architecture de transition pour la France', isAppendix: false },
+	{ file: '07-pilots',                  titleEn: '6. A Concrete First Step: Territorial Integration Pilots', titleFr: '6. Un premier pas concret : Les territoires d\'intégration adaptative', isAppendix: false },
+	{ file: '08-coda',                    titleEn: '7. Coda: From Deciding to Integrating',                   titleFr: '7. Coda : De la décision à l\'intégration',                 isAppendix: false },
+	{ file: '09-appendix-a',              titleEn: 'Appendix A: Value Systems & Policy Mindsets',             titleFr: 'Annexe A : Systèmes de valeurs & logiques politiques',     isAppendix: true  },
+	{ file: '09-appendix-b',              titleEn: 'Appendix B: International Analogues & Precedents',        titleFr: 'Annexe B : Analogies internationales & précédents',        isAppendix: true  },
+	{ file: '09-appendix-c',              titleEn: 'Appendix C: Bibliography & Source Notes',                 titleFr: 'Annexe C : Bibliographie & sources',                       isAppendix: true  },
+	{ file: '09-appendix-d',              titleEn: 'Appendix D: Anticipated Objections',                     titleFr: 'Annexe D : Objections anticipées',                         isAppendix: true  },
+	{ file: '09-appendix-e',              titleEn: 'Appendix E: About the Author & Method',                  titleFr: 'Annexe E : À Propos de l\'auteur & méthode',               isAppendix: true  },
 ];
 
-// ── CSS (adapted from whitepaper generator) ─────────────────────────────────
+// ── CSS ──────────────────────────────────────────────────────────────────────
 const pdfStyles = `
 <style>
 	@page {
@@ -110,6 +109,7 @@ const pdfStyles = `
 	}
 	
 	/* Cover page */
+	/* Cover page */
 	.cover {
 		page-break-after: always;
 		display: flex;
@@ -123,14 +123,14 @@ const pdfStyles = `
 		box-sizing: border-box;
 	}
 	
-	.cover-image {
-  width: auto;
-  height: 400px;
-		object-fit: contain;
-		margin-bottom: 1em;
-		border-radius: 8px;
-		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-	}
+ .cover-image {
+     width: auto;
+     height: 400px;
+     object-fit: contain;
+     margin-bottom: 1em;
+     border-radius: 8px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ }
 	
 	.cover h1 {
 		font-size: 24pt;
@@ -156,26 +156,32 @@ const pdfStyles = `
 		line-height: 1.4;
 	}
 
-	.cover .metadata {
-		font-size: 10.5pt;
-		color: #666;
-		margin-top: 0.6em;
-		line-height: 1.5;
-	}
+ .cover .metadata {
+     font-size: 10.5pt;
+     color: #666;
+     margin-top: 1em;
+     line-height: 1.5;
+ }
 
-	.cover .url {
-		font-size: 8.5pt;
-		color: #888;
-		margin-top: 0.4em;
-		font-family: 'Courier New', monospace;
-	}
+ .cover .url {
+     font-size: 8.5pt;
+     color: #888;
+     margin-top: 0.6em;
+     font-family: 'Courier New', monospace;
+ }
 
-	.cover .license {
-		font-size: 8.5pt;
-		color: #888;
-		margin-top: 0.2em;
-		font-style: italic;
-	}
+ .cover .license {
+     font-size: 8.5pt;
+     color: #888;
+     margin-top: 0.4em;
+     font-style: italic;
+ }
+
+ .cover .type {
+     font-size: 9pt;
+     color: #888;
+     margin-top: 0.3em;
+ }
 
 	/* Typography */
 	h1 {
@@ -324,8 +330,7 @@ const pdfStyles = `
 		page-break-after: avoid;
 	}
 	
-	.section-divider {
-		page-break-before: always;
+	.section-gap {
 		margin: 2em 0 1em 0;
 	}
 	
@@ -357,7 +362,7 @@ const pdfStyles = `
 
 	img,
 	.cover-image {
-		max-height: 14cm;
+		max-height: 20cm;
 		width: auto;
 		max-width: 100%;
 		object-fit: contain;
@@ -395,9 +400,13 @@ const pdfStyles = `
 	.page-break-after  { page-break-after: always;  }
 	.page-break-avoid  { page-break-inside: avoid; break-inside: avoid; }
 
- .section-gap {
-     margin: 2em 0 1em 0;   /* same spacing, no page break */
- }
+	.section-divider {
+		page-break-before: always;
+	}
+
+	.section-gap {
+		margin: 2em 0 1em 0;
+	}
 </style>
 `;
 
@@ -457,7 +466,6 @@ function readMarkdownFiles() {
 	const contents = [];
 
 	for (const section of sections) {
-		// File name format: <base>.en.md or <base>.de.md
 		const filename = `${section.file}.${LANGUAGE}.md`;
 		const filepath = path.join(INPUT_DIR, filename);
 
@@ -471,14 +479,12 @@ function readMarkdownFiles() {
 		let content = fs.readFileSync(filepath, 'utf-8');
 		console.log(`✓ (${(content.length / 1024).toFixed(1)} KB)`);
 
-		// Remove possible frontmatter (--- ... ---)
 		content = content.replace(/^---\n[\s\S]*?\n---\n/, '');
 
 		process.stdout.write(`   Processing images... `);
 		content = processMarkdownImagesSync(content);
 
-		// Get the correct title for the current language
-		const title = LANGUAGE === 'de' ? section.titleDe : section.titleEn;
+		const title = LANGUAGE === 'fr' ? section.titleFr : section.titleEn;
 		contents.push({ title, content, isAppendix: section.isAppendix });
 	}
 
@@ -530,10 +536,10 @@ function generateHTML(sections) {
 	sections.forEach((section, index) => {
 		process.stdout.write(`  Processing ${section.title}... `);
 
-  if (index > 0) {
-      const dividerClass = section.isAppendix ? 'section-gap' : 'section-divider';
-      html += `<div class="${dividerClass}"></div>\n`;
-  }
+		if (index > 0) {
+			const dividerClass = section.isAppendix ? 'section-gap' : 'section-divider';
+			html += `<div class="${dividerClass}"></div>\n`;
+		}
 
 		const sectionClass = section.isAppendix ? 'appendix' : '';
 		html += `<section class="${sectionClass}">\n`;
@@ -623,7 +629,7 @@ async function generatePDF(html) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for Germany Spending Mirage report...\n');
+		console.log('📄 Starting PDF generation for France Decisiveness Mirage report...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);
 

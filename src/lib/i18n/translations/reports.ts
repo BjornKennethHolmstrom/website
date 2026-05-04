@@ -21,6 +21,11 @@ export const reportsTranslations = {
 				title: 'The Spending Mirage: Why Germany Has Money but No Capacity to Decide',
 				description:
 					'Germany does not have a spending problem — it has a system capacity problem. This report diagnoses a twin deficit in outer execution and inner sensemaking and proposes a capacity-first investment framework, including Adaptive Governance Pilot Regions.'
+			},
+			franceDecisivenessMirage: {
+				title: 'The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick',
+				description:
+					'France does not lack decisions — it lacks the capacity to make decisions that integrate. This report diagnoses an integration deficit in outer translation and inner deliberation and proposes a territorial rebalancing framework, including Territoires d\'Intégration Adaptative.'
 			}
 		}
 	},
@@ -44,6 +49,11 @@ export const reportsTranslations = {
 				title: 'Spenderingshägringen: Varför Tyskland har pengar men saknar kapacitet att besluta',
 				description:
 					'Tyskland har inget utgiftsproblem – det har ett systemkapacitetsproblem. Rapporten diagnosticerar ett dubbelt underskott i yttre exekveringsförmåga och inre meningsskapande och föreslår en kapacitets-först investeringsram, inklusive adaptiva styrningspilotregioner.'
+			},
+			franceDecisivenessMirage: {
+				title: 'Beslutsamhetshägringen: Varför Frankrike styr genom dekret men inte kan få beslut att bestå',
+				description:
+					'Frankrike saknar inte beslut – det saknar kapacitet att fatta beslut som integreras. Rapporten diagnosticerar ett integrationsunderskott i yttre översättning och inre deliberation och föreslår ett ramverk för territoriell ombalansering, inklusive Territoires d\'Intégration Adaptative.'
 			}
 		}
 	}

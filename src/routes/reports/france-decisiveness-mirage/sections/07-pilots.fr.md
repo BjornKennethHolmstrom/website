@@ -1,0 +1,85 @@
+## 6. Une première étape concrète : les pilotes d'intégration territoriale
+
+### 6.1 La logique du pilote
+
+Un cadre sans première étape est une expérience de pensée. L'agenda d'intégration esquissé dans ce rapport est délibérément ambitieux : il propose un changement structurel dans la manière dont l'État français se rapporte à son territoire, à ses citoyens et à sa propre énergie politique. Mais les changements structurels ne commencent pas partout à la fois. Tenter de les imposer nationalement serait commettre l'erreur même que ce rapport diagnostique — un autre décret parisien, un autre déclencheur de la boucle des réformes, une autre réforme consumée par le spectacle avant d'avoir eu la chance de faire ses preuves.
+
+Le chemin le plus sage est de commencer par des expériences contenues et protégées qui démontrent la nouvelle logique en pratique et laissent le succès faire le travail de persuasion. Cette section propose l'établissement de **Territoires d'Intégration Adaptative** (TIA) : un petit nombre de zones géographiquement définies dans lesquelles la couche de traduction externe, l'infrastructure délibérative interne et les terrains d'essai vivants décrits dans la section 4 peuvent être développés de manière intégrée, avec une flexibilité réglementaire, une évaluation transparente et un mandat explicite d'apprentissage.
+
+La proposition n'est pas spéculative. Elle s'appuie sur des précédents qui existent déjà dans le droit et la pratique français. L'article 72 de la Constitution permet aux collectivités territoriales de déroger aux lois et règlements nationaux à titre expérimental. Les *expérimentations* autorisées au titre de l'article 37-1 ont permis des déviations limitées dans des domaines tels que la santé et les transports. Ce qui a manqué, c'est l'ambition d'utiliser ces mécanismes à une échelle systémique plutôt que sectorielle, et la volonté politique de les protéger assez longtemps pour que leurs résultats deviennent visibles. Le concept de TIA comble cette lacune.
+
+---
+
+### 6.2 Critères de sélection
+
+Les pilotes ne devraient pas être sélectionnés uniquement sur la base de la commodité politique ou de l'enthousiasme. L'objectif est de créer une preuve de concept crédible, et la crédibilité dépend du choix de contextes où les défis sont réels, les conditions représentatives et la capacité locale à s'engager sérieusement est présente.
+
+Cinq critères devraient guider la sélection :
+
+**Densité de problèmes.** Le territoire devrait faire face à un groupe significatif de défis interconnectés — par exemple, une transition industrielle combinée à un déclin démographique, ou une pression sur le logement combinée à des goulets d'étranglement dans les transports, ou un potentiel d'énergie renouvelable combiné à des conflits d'usage des sols. L'objectif n'est pas de trouver le territoire le plus en détresse, mais de trouver des territoires où l'interconnexion des défis est indéniable et où les limites des approches en silos sont visiblement coûteuses.
+
+**Infrastructure civique existante.** Le territoire devrait avoir une base d'institutions fonctionnelles, d'organisations de la société civile actives et une certaine histoire de collaboration intersectorielle — même fragmentée. Le TIA n'est pas une mission de construction d'État à partir de zéro. C'est une mise à niveau d'un système qui a déjà une certaine capacité à l'absorber. Un territoire avec des réseaux denses d'associations, des élus locaux engagés et une tradition de dialogue social accélérerait rapidement. Un territoire sans expérience préalable de collaboration intersectorielle aurait des difficultés.
+
+**Volonté politique.** Au moins un acteur politique significatif — un président de région, un maire d'une intercommunalité majeure, une coalition transpartisane — doit être véritablement engagé dans l'expérience, pas simplement tolérant à son égard. Cet engagement doit inclure la volonté d'accepter l'examen public de résultats mitigés et de protéger le pilote à travers ses inévitables phases difficiles. Sans cette couverture, le cadrage sans risque d'échec s'effondre.
+
+**Pertinence pour le passage à l'échelle.** Le territoire devrait être raisonnablement représentatif des conditions françaises plus larges, pas une exception exotique. La diversité entre les pilotes sélectionnés est essentielle : métropolitain et ultramarin, industriel et agricole, en croissance et en déclin, du nord et du sud. Si les pilotes ne réussissent que dans des microclimats uniquement favorables, leurs leçons seront rejetées comme non pertinentes pour le reste du pays.
+
+**Échelle gérable.** Le territoire devrait être assez grand pour contenir des interactions systémiques significatives — un *bassin de vie* avec ses schémas de navette, son marché du travail, son infrastructure énergétique — mais assez petit pour être gouvernable comme une entité d'apprentissage unique. Une région, un département ou un groupe d'intercommunalités serait approprié. L'ensemble du territoire national serait trop grand pour une expérience initiale ; une seule commune serait trop petite.
+
+Un processus de sélection transparent, avec des critères publiés et un appel ouvert à manifestation d'intérêt, serait en lui-même un signal de la nouvelle logique de gouvernance. Il inviterait les acteurs territoriaux à se porter volontaires plutôt qu'à être conscrits — une fondation essentielle pour le passage à l'échelle par attraction.
+
+---
+
+### 6.3 Caractéristiques fondamentales de conception
+
+Chaque TIA serait façonné par les conditions et priorités locales, mais tous partageraient un ensemble de caractéristiques fondamentales qui incarnent le cadre d'intégration.
+
+**Mandat de gouvernance intégrée.** Le territoire pilote recevrait un ensemble sur mesure de flexibilités réglementaires et d'autorités de coordination qui lui permettent de traiter l'énergie, le logement, la mobilité, le développement économique et les services publics comme un espace de conception intégré unique. Cela ne signifie pas abolir les institutions existantes ni créer une nouvelle couche de gouvernement. Cela signifie donner aux institutions déjà présentes dans ce territoire la permission de se coordonner différemment — et leur fournir les données partagées, le soutien à la facilitation et l'autonomie fiscale pour le faire.
+
+**Colonne vertébrale numérique territoriale.** Chaque pilote déploierait une plateforme numérique régionale — une version locale et à l'échelle de l'infrastructure numérique nationale décrite dans la section 4. Celle-ci fournirait une visibilité en temps réel sur les flux de ressources, l'utilisation des infrastructures, les indicateurs environnementaux et les résultats sociaux, permettant aux décideurs comme aux citoyens de voir les interactions systémiques actuellement invisibles. La plateforme servirait également d'outil de coordination unifié à travers les *échelons*, réduisant la friction administrative qui consume actuellement tant de capacité locale.
+
+**Organe délibératif citoyen permanent.** Chaque TIA incorporerait une assemblée citoyenne permanente ou un organe délibératif équivalent, composé de résidents tirés au sort, doté d'une facilitation experte et d'un accès à la colonne vertébrale numérique territoriale, et habilité à produire des recommandations sur les décisions territoriales majeures. L'assemblée ne remplacerait pas les organes élus. Elle fournirait un canal structuré pour la construction collective de sens qui est actuellement absent — l'infrastructure délibérative même que la Convention Climat a démontrée sous forme ponctuelle et que le système a échoué à institutionnaliser. Fait crucial, l'autorité exécutive du territoire serait légalement tenue de répondre publiquement aux recommandations de l'assemblée et d'expliquer le raisonnement derrière ses décisions.
+
+**Pactes de financement trans-idéologiques.** Une part significative du budget d'investissement du pilote — peut-être 30 à 50 % du financement de nouveaux projets — serait conditionnée à des demandes conjointes de groupes de parties prenantes structurellement divers. Un projet d'énergie renouvelable, par exemple, pourrait exiger le co-parrainage d'une association environnementale, d'une fédération patronale locale et de l'intercommunalité concernée. Une initiative de logement pourrait exiger un partenariat entre un bailleur social, une association de locataires et une autorité de transport. Cela forcerait le muscle collaboratif à se développer tôt et générerait des projets avec une légitimité plus large et une conception plus résiliente.
+
+**Cadre d'apprentissage adaptatif.** Le pilote serait évalué non pas principalement par rapport à des objectifs de production fixes — tant d'unités de logement, tant de mégawatts — mais par rapport à un ensemble de métriques de capacité systémique. La plus importante d'entre elles est **la demi-vie des politiques** : combien de temps les initiatives développées au sein du TIA survivent-elles et restent-elles efficaces ? Une demi-vie courte signale que l'architecture d'intégration ne fonctionne pas encore. Une demi-vie longue signale que les décisions commencent à tenir. Les métriques supplémentaires incluent : les délais de la décision à la mise en œuvre, la fréquence de coordination inter-échelons, les indicateurs de confiance citoyenne, les taux de participation délibérative, et le rythme auquel les territoires voisins adoptent volontairement des approches similaires.
+
+L'évaluation serait menée par un partenaire d'apprentissage indépendant — un consortium d'institutions de recherche — et publiée de manière transparente en temps réel. Les pilotes existent pour générer des connaissances, pas seulement des résultats. Ces connaissances doivent être accessibles aux autres territoires, au gouvernement national et au public. La transparence est le moteur du passage à l'échelle par attraction.
+
+---
+
+### 6.4 Budget, gouvernance et base juridique
+
+**Budget.** Les pilotes devraient être financés assez généreusement pour être sérieux mais pas si somptueusement que leurs résultats soient rejetés comme le produit de ressources exceptionnelles. Une enveloppe approximative de 300 à 700 millions d'euros par pilote sur une phase initiale de cinq ans serait appropriée. La majorité serait dirigée vers l'infrastructure de construction de capacité elle-même — la plateforme numérique, les processus délibératifs, le personnel de coordination, l'évaluation — plutôt que vers des projets d'investissement traditionnels. Les projets d'investissement viendraient plus tard, informés par la capacité qui a été construite. L'investissement total à travers trois à cinq pilotes représenterait une fraction d'un pour cent des dépenses publiques annuelles — trivial en termes budgétaires, transformateur si l'apprentissage est appliqué.
+
+**Gouvernance.** Chaque TIA serait gouverné par un conseil tripartite comprenant des représentants élus territoriaux, des délégués de l'État et des dirigeants de la société civile. Ce n'est pas une structure administrative standard. La conception tripartite est essentielle pour empêcher tout acteur unique de capturer le pilote. Le gouvernement territorial fournit la légitimité démocratique et la connaissance locale. L'État fournit les ressources, les exemptions réglementaires et l'assurance que le cadre juridique du pilote sera respecté. La société civile fournit la connexion à l'expérience vécue et un contrepoids à l'inertie institutionnelle. Les décisions seraient prises par consensus chaque fois que possible, avec un mécanisme transparent pour résoudre les désaccords irréconciliables.
+
+**Base juridique.** Les instruments constitutionnels et législatifs pour l'expérimentation territoriale existent déjà. L'article 72, alinéa 4 de la Constitution permet aux collectivités territoriales de déroger aux lois et règlements nationaux à titre expérimental. L'article 37-1 autorise le gouvernement à accorder des pouvoirs expérimentaux par décret. Ce qui a manqué, c'est la volonté politique d'utiliser ces instruments à une échelle systémique. Les TIA nécessiteraient une *loi d'expérimentation* dédiée — spécifiant l'étendue des exemptions réglementaires, la structure de gouvernance, le mandat d'évaluation et les conditions dans lesquelles le statut de pilote peut être prolongé, modifié ou résilié. La législation devrait inclure une clause de temporarité : après cinq ans, les pilotes doivent soit être renouvelés sur la base de résultats démontrés, soit être clos de manière ordonnée. La nature temporaire de la base juridique est politiquement protectrice ; elle assure aux sceptiques que l'expérience est bornée et réversible, tout en donnant à l'expérience suffisamment de temps pour démontrer sa valeur.
+
+---
+
+### 6.5 Comment mesurer le succès
+
+Le succès des TIA doit être mesuré en des termes qui se connectent directement au diagnostic de déficit d'intégration.
+
+**Les métriques de capacité externe** incluraient : le temps moyen de la décision politique à la mise en œuvre locale, le nombre d'accords de coordination inter-échelons en fonctionnement, le pourcentage de services publics accessibles via un portail numérique territorial unique, la vitesse de résolution des conflits réglementaires et le coût administratif par projet réalisé. Les références de base seraient établies avant le début du pilote et suivies de manière transparente.
+
+**Les métriques de capacité interne** incluraient : la confiance des citoyens dans la gouvernance territoriale, les taux de participation aux processus délibératifs, la diversité des parties prenantes engagées dans les projets collaboratifs, le sentiment rapporté d'agentivité et de tolérance à la complexité parmi les citoyens et les fonctionnaires, et le rythme auquel les innovations locales sont adoptées par les territoires voisins sans mandat central.
+
+**La demi-vie des politiques** serait la métrique signature. Pour chaque initiative majeure au sein du TIA, les évaluateurs suivraient combien de temps elle survit sous une forme reconnaissable avant d'être annulée, diluée au-delà de l'efficacité ou tranquillement abandonnée. Une demi-vie courte — semaines ou mois — indique que l'architecture d'intégration n'a pas encore pris. Une demi-vie moyenne — survie partielle avec modification significative — indique un progrès. Une demi-vie longue — intégration stable, adaptation sans érosion — indique que la boucle des réformes a été brisée, du moins dans ce domaine et sur ce territoire.
+
+**Les métriques de résultats systémiques** incluraient : les réductions d'émissions de carbone, les tendances de l'accessibilité financière du logement, les modifications du partage modal des transports, les indicateurs de diversification économique et les indices d'équité territoriale. Ce ne sont pas des produits directs de la construction de capacité ; ce sont les résultats en aval que la construction de capacité permet. Ils devraient être suivis mais pas traités comme les critères d'évaluation principaux, car la construction de capacité est un investissement à moyen et long terme, et la juger uniquement par les résultats à court terme reproduirait l'impatience qui alimente le spectacle.
+
+L'évaluation serait publiée dans des formats accessibles et visuels — tableaux de bord publics, rapports d'apprentissage annuels, ateliers d'échange entre pairs — conçus pour rendre l'expérience des pilotes lisible pour les autres territoires, le gouvernement national et le public plus large. La transparence est le moteur du passage à l'échelle par attraction. Plus l'apprentissage est visible, plus il devient difficile pour l'ancienne logique de le rejeter.
+
+---
+
+### 6.6 Une note sur le calendrier
+
+La France n'est pas statique. Les pressions qui ont généré les *gilets jaunes* et les impasses des réformes des retraites ne se sont pas dissipées ; elles ont été absorbées dans un paysage politique de plus en plus fragmenté et volatil. La prochaine tentative de réforme majeure — qu'elle concerne la transition écologique, le cadre fiscal ou la structure de l'État elle-même — entrera dans la même boucle à moins que l'architecture sous-jacente ne change.
+
+Les TIA devraient être lancés durant le cycle politique actuel. Le cadre juridique peut être rédigé en un an. Les premiers pilotes peuvent être sélectionnés et opérationnels en deux. La fenêtre n'est pas infinie. Elle se refermera lorsque la prochaine crise remaniera l'agenda et que les vieux réflexes se réaffirmeront.
+
+La proposition n'est pas de retarder d'autres actions nécessaires pendant que les pilotes fonctionnent. La transition énergétique, l'effort de logement, l'agenda de cohésion territoriale — tout cela doit avancer. Mais une petite fraction des ressources disponibles devrait être investie dans la capacité qui déterminera si ces efforts réussissent ou se dissolvent dans le spectacle. Les TIA ne sont pas une alternative à l'action. Ils sont le mécanisme pour garantir que l'action devienne de plus en plus intelligente, de plus en plus légitime et de plus en plus durable au fil du temps.
+
+---
