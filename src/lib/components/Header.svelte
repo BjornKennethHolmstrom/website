@@ -70,12 +70,14 @@
             >
                {$t.navEU || 'EU Subsidiarity Protocol'}
             </a>
+<!-- 
             <a href="/africa-informal-trust-ledger" class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]">
                 {$t.navAfrica || 'Africa — Informal Trust Ledger'}
             </a>
             <a href="/india-dpi-2" class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]">
                 {$t.navIndia || 'India — DPI 2.0'}
             </a>
+-->
         </div>
     </div>
 				<a
@@ -234,12 +236,14 @@
                 >
                     {$t.navEU || 'EU Subsidiarity Protocol'}
                 </a>
+<!--
+
                 <a href="/africa-informal-trust-ledger" class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100" onclick={closeMobileMenu}>
                     {$t.navAfrica || 'Africa — Informal Trust Ledger'}
                 </a>
                 <a href="/india-dpi-2" class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100" onclick={closeMobileMenu}>
                     {$t.navIndia || 'India — DPI 2.0'}
-                </a>
+                </a> -->
             </div>
         {/if}
     </div>
