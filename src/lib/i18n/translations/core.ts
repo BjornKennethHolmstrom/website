@@ -13,6 +13,7 @@ export const coreTranslations = {
   navEssays: 'Essays',  // or 'Manifestos'
   essaysTitle: 'Essays',
   essaysTagline: 'Substantial explorations and living protocols.',
+  navReports: 'Reports',
 		navWhitepapers: 'White Papers',
   navBooks: 'Books',
   navFrameworks: 'Frameworks',
@@ -235,6 +236,7 @@ export const coreTranslations = {
   navIndiaPilot: 'Indien — DPI 2.0',
   essaysTitle: 'Essäer',
   essaysTagline: 'Omfattande utforskningar och levande protokoll.',
+  navReports: 'Rapporter',
 		navWhitepapers: 'White papers',
   navBooks: 'Böcker',
 		navContact: 'Kontakt',

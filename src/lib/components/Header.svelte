@@ -85,6 +85,12 @@
 					{$t.navBooks}
 				</a>
 				<a
+					href="/reports"
+					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+				>
+					{$t.navReports}
+				</a>
+				<a
 					href="/whitepapers"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>
@@ -243,6 +249,13 @@
 					onclick={closeMobileMenu}
 				>
 					{$t.navBooks}
+				</a>
+				<a
+					href="/reports"
+					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+					onclick={closeMobileMenu}
+				>
+					{$t.navReports}
 				</a>
 				<a
 					href="/whitepapers"

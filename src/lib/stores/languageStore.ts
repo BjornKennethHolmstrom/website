@@ -11,6 +11,7 @@ import { coordinationTranslations } from '../i18n/translations/coordination';
 import { euTranslations } from '../i18n/translations/eu';
 import { mycelTranslations } from '../i18n/translations/mycel';
 import { governanceSimulatorTranslations } from '../i18n/translations/simulator';
+import { reportsTranslations } from '../i18n/translations/reports';
 
 // 1. Check if we are in a browser environment
 const isBrowser = typeof window !== 'undefined';
@@ -57,7 +58,8 @@ const translations = {
   ...coordinationTranslations.en,
   ...euTranslations.en,
   ...mycelTranslations.en,
-  ...governanceSimulatorTranslations.en
+  ...governanceSimulatorTranslations.en,
+  ...reportsTranslations.en
 	},
 	sv: {
 		...aboutTranslations.sv,
@@ -71,7 +73,8 @@ const translations = {
   ...coordinationTranslations.sv,
   ...euTranslations.sv,
   ...mycelTranslations.sv,
-  ...governanceSimulatorTranslations.sv
+  ...governanceSimulatorTranslations.sv,
+  ...reportsTranslations.sv
 	}
 };
 
