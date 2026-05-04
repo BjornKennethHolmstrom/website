@@ -31,6 +31,11 @@ export const reportsTranslations = {
        title: 'The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating',
        description:
            'Sweden does not lack competence — it lacks the capacity to sense, share, and act on disturbing signals before they compound. This report diagnoses a feedback deficit produced by the Data Archipelago, cultural variance suppression, and the municipal capacity trap, and proposes Framtidskommuner as the concrete first step.'
+   },
+   indiaLeapLagCycle: {
+       title: 'The Leap-Lag Cycle: Why India\'s Brilliant Front-Row Still Can\'t Synchronise with the Rest of the Theatre',
+       description:
+           'India does not lack capacity — it lacks the ability to synchronise its extraordinary strengths across scale. This report diagnoses a synchronisation deficit produced by the scale gradient, the patchwork state, the coherence gap, and the judicial bottleneck, and proposes a Synchronisation Sandbox as the concrete first step.'
    }
 		}
 	},
@@ -64,6 +69,11 @@ export const reportsTranslations = {
        title: 'Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras',
        description:
            'Sverige saknar inte kompetens — det saknar kapacitet att upptäcka, dela och agera på oroande signaler innan de förvärras. Rapporten diagnosticerar ett återkopplingsunderskott skapat av dataarkipelagen, kulturell variansdämpning och den kommunala kapacitetsfällan, och föreslår Framtidskommuner som det konkreta första steget.'
+   },
+   indiaLeapLagCycle: {
+       title: 'Språng-och-släp-cykeln: Varför Indiens briljanta frontlinje fortfarande inte kan synkronisera med resten av teatern',
+       description:
+           'Indien saknar inte kapacitet — det saknar förmågan att synkronisera sina extraordinära styrkor över skala. Rapporten diagnosticerar ett synkroniseringsunderskott skapat av skalgradienten, lapptäcksstaten, koherensgapet och den rättsliga flaskhalsen, och föreslår en Synkroniseringssandlåda som det konkreta första steget.'
    }
 		}
 	}

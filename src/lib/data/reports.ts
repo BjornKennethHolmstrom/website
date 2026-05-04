@@ -58,7 +58,28 @@ export const reportsData: Report[] = [
 			fr: '/reports/france-decisiveness-mirage-fr.pdf'
 		},
 		readOnlineExternal: false
-	}
+	},
+ {
+     id: 'india-leap-lag-cycle',
+     key: 'indiaLeapLagCycle',
+     category: 'country',
+     year: 2026,
+     pages: 55,
+     readTime: {
+         en: '40–50 min',
+         sv: '40–50 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-07-04',
+     coverImage: '/images/reports/india-leap-lag-cycle/cover.png',
+     readOnlinePath: '/reports/india-leap-lag-cycle',
+     pdfPath: {
+         en: '/reports/india-leap-lag-cycle-en.pdf',
+         hi: '/reports/india-leap-lag-cycle-hi.pdf',
+         ta: '/reports/india-leap-lag-cycle-ta.pdf'
+     },
+     readOnlineExternal: false
+ }
 ];
 
 /* TODO: Publish 12/6
