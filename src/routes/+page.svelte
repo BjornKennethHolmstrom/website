@@ -114,12 +114,14 @@
      {
          key: 'reportsGermany',
          emoji: '🇩🇪',
-         url: '/reports/germany-spending-mirage'
+         url: '/reports/germany-spending-mirage',
+         badge: 'NEW'
      },
      {
          key: 'reportsFrance',
          emoji: '🇫🇷',
-         url: '/reports/france-decisiveness-mirage'
+         url: '/reports/france-decisiveness-mirage',
+         badge: 'NEW'
      }
  ];
 
@@ -127,7 +129,8 @@
   //      {
   //      key: 'reportsSweden',
   //      emoji: '🇸🇪',
-  //      url: '/reports/sweden-competence-trap'
+  //      url: '/reports/sweden-competence-trap',
+  //      badge: 'NEW'
   //  }
  
 
@@ -412,8 +415,17 @@
               <a
                   href={report.url}
                   target="_self"
-                  class="block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
+                  class="group relative block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
               >
+                  <!-- NEW Badge -->
+                  {#if report.badge}
+                      <div class="absolute -top-3 -right-3 z-10">
+                          <span class="inline-block rounded-full bg-amber-500 px-3 py-1 text-xs font-bold text-slate-900 shadow-lg">
+                              ⭐ {report.badge}
+                          </span>
+                      </div>
+                  {/if}
+
                   <span class="mb-4 block text-5xl">
                       {report.emoji}
                   </span>

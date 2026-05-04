@@ -4,9 +4,9 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO start page
 		meta: {
-			title: 'Björn Kenneth Holmström | Design of Conscious Systems',
+			title: 'Björn Kenneth Holmström | Systems Thinker & Governance Architect',
 			description:
-				'The personal hub for Björn Kenneth Holmström. Explore an ecosystem of open-source tools, books, and articles on systems thinking, consciousness, and global governance.'
+				'Thoughtful, long-form analysis at the intersection of governance, complexity, and consciousness. Home of the Country Reports series and the Governance as Engineering whitepapers.'
 		},
   // Header nav
 		navBlog: 'Blog',
@@ -232,9 +232,9 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO för startsidan
 		meta: {
-			title: 'Björn Kenneth Holmström | Design av medvetna system',
+			title: 'Björn Kenneth Holmström | Systemtänkare och styrningsarkitekt',
 			description:
-				'Björn Kenneth Holmströms personliga nav. Utforska ett ekosystem av verktyg, böcker och artiklar om systemtänkande, medvetande och global styrning.'
+				'Tankeväckande, långformatsanalys i skärningspunkten mellan styrning, komplexitet och medvetenhet. Hemvist för Country Reports-serien och artiklarna om styrning som ingenjörskonst.'
 		},
   // Header nav
 		navBlog: 'Blogg',
