@@ -70,7 +70,7 @@ export const reportsData: Report[] = [
          sv: '40–50 min'
      },
      version: '1.0',
-     releaseDate: '2026-07-04',
+     releaseDate: '2026-05-04',
      coverImage: '/images/reports/india-leap-lag-cycle/cover.png',
      readOnlinePath: '/reports/india-leap-lag-cycle',
      pdfPath: {
@@ -91,7 +91,7 @@ export const reportsData: Report[] = [
          sv: '50–60 min'
      },
      version: '1.0',
-     releaseDate: '2026-08-01',
+     releaseDate: '2026-05-04',
      coverImage: '/images/reports/eu-coherence-mirage/cover.png',
      readOnlinePath: '/reports/eu-coherence-mirage',
      pdfPath: {
