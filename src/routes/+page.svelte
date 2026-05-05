@@ -4,6 +4,15 @@
  import { fly } from 'svelte/transition';
  import { onMount } from 'svelte';
 
+ // Governance as Engineering — carousel papers
+ const governanceEngineeringPapers = [
+   { key: 'geSeriesPaperI',   url: '/whitepapers/governance-stability-simulator',            coverImage: '/whitepapers/images/governance-simulator-cover.png' },
+   { key: 'geSeriesPaperII',  url: '/whitepapers/fractality-as-stability',                   coverImage: '/whitepapers/images/fractality-as-stability-cover.png' },
+   { key: 'geSeriesPaperIII', url: '/whitepapers/observability-democracy-connection',        coverImage: '/whitepapers/images/observability-democracy-cover.png' },
+   { key: 'geSeriesPaperIV',  url: '/whitepapers/requisite-variety-and-the-commons',         coverImage: '/whitepapers/images/requisite-variety-commons-cover.png' },
+   { key: 'geSeriesPaperV',   url: '/whitepapers/coordination-failure-tax',                  coverImage: '/whitepapers/images/coordination-failure-tax-cover.png' },
+ ];
+
 	// Definiera vår projektdata.
 	const projects = {
 		systems: [
@@ -142,6 +151,46 @@
   }
 
   // --- CAROUSEL LOGIC ---
+
+  // Governance as Engineering carousel
+  let activeGEIndex = 0;
+  let geDirection = 1;
+  let geAutoSlideInterval: any;
+  let geSlideDuration = 7000; // slightly faster than book carousel
+
+  // Resolve the current paper's translations correctly
+  $: currentGEPaper = governanceEngineeringPapers[activeGEIndex];
+  $: currentPaper = {
+    title: $t.geCarouselSeries[governanceEngineeringPapers[activeGEIndex].key].title,
+    desc:  $t.geCarouselSeries[governanceEngineeringPapers[activeGEIndex].key].desc,
+    url:   governanceEngineeringPapers[activeGEIndex].url,
+    coverImage: governanceEngineeringPapers[activeGEIndex].coverImage,
+  };
+
+  function geNextSlide() {
+    geDirection = 1;
+    activeGEIndex = (activeGEIndex + 1) % governanceEngineeringPapers.length;
+    geResetTimer();
+  }
+
+  function gePrevSlide() {
+    geDirection = -1;
+    activeGEIndex = (activeGEIndex - 1 + governanceEngineeringPapers.length) % governanceEngineeringPapers.length;
+    geResetTimer();
+  }
+
+  function geResetTimer() {
+    clearInterval(geAutoSlideInterval);
+    geStartTimer();
+  }
+
+  function geStartTimer() {
+    geAutoSlideInterval = setInterval(() => {
+      geNextSlide();
+    }, geSlideDuration);
+  }
+
+  // Book carousel
   let activeIndex = 0;
   let direction = 1; // 1 for right, -1 for left
   let autoSlideInterval: any;
@@ -173,8 +222,15 @@
   };
 
   onMount(() => {
+    // Start the book carousel timer (existing)
     startTimer();
-    return () => clearInterval(autoSlideInterval);
+    // Start the GE carousel timer (new)
+    geStartTimer();
+
+    return () => {
+      clearInterval(autoSlideInterval);
+      clearInterval(geAutoSlideInterval);
+    };
   });
 
   let showWelcomeModal = false;
@@ -344,6 +400,85 @@
     </p>
 		</div>
 	</section>
+
+<!-- Governance as Engineering Carousel -->
+<section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-semibold text-amber-600 dark:text-amber-400 mb-2">
+      {$t.geCarouselTitle}
+    </h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-8">
+      {$t.geCarouselSubtitle}
+    </p>
+
+    <div class="relative min-h-[320px] md:min-h-[260px]">
+      {#key activeGEIndex}
+        <div
+          in:fly={{ x: 200 * geDirection, duration: 400, delay: 100 }}
+          out:fly={{ x: -200 * geDirection, duration: 400 }}
+          class="absolute inset-0 w-full"
+        >
+          <div class="bg-gradient-to-br from-slate-50 to-amber-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-slate-200 dark:border-slate-700 h-full">
+            
+            <div class="flex-1 text-center md:text-left z-10">
+              <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
+                Whitepaper
+              </span>
+              <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
+                {currentPaper.title}
+              </h3>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                {currentPaper.desc}
+              </p>
+              <a
+                href={currentPaper.url}
+                class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                Read the Paper
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 -mr-1"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+
+            <div class="w-48 md:w-56 flex-shrink-0 flex items-center justify-center">
+              <img 
+                src={currentPaper.coverImage} 
+                alt={currentPaper.title} 
+                class="w-full h-auto rounded shadow-lg" 
+              />
+            </div>
+          </div>
+        </div>
+      {/key}
+    </div>
+
+    <!-- Navigation buttons -->
+    <button
+      on:click={gePrevSlide}
+      class="absolute left-2 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+      aria-label="Previous paper"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <button
+      on:click={geNextSlide}
+      class="absolute right-2 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+      aria-label="Next paper"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <!-- Dots -->
+    <div class="flex justify-center space-x-2 mt-6">
+      {#each governanceEngineeringPapers as _, i}
+        <button
+          class="w-2.5 h-2.5 rounded-full transition-colors {i === activeGEIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"
+          on:click={() => { geDirection = i > activeGEIndex ? 1 : -1; activeGEIndex = i; geResetTimer(); }}
+          aria-label="Go to paper {i + 1}"
+        ></button>
+      {/each}
+    </div>
+  </div>
+</section>
 
 	<section class="space-y-12 py-16 md:py-24">
    <div>

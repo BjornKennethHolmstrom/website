@@ -51,6 +51,30 @@ export const coreTranslations = {
   reportsSwedenTitle: 'Sweden: The Competence Trap',
   reportsSwedenTagline: 'When high trust hides the signals you need.',
 
+  // Governance as Engineering — Carousel
+  geCarouselSeries: {
+    geSeriesPaperI: {
+      title: 'I: Governance Stability Simulator',
+      desc:  'Models governance as a feedback control system, demonstrating hard mathematical ceilings on institutional performance.'
+    },
+    geSeriesPaperII: {
+      title: 'II: Fractality as Stability',
+      desc:  'Proves that no single‑scale controller can stabilise a multi‑frequency disturbance environment — nested architectures are required.'
+    },
+    geSeriesPaperIII: {
+      title: 'III: The Observability‑Democracy Connection',
+      desc:  'Shows that representation chains with 3+ layers destroy the citizen preference signal before it reaches the policy layer.'
+    },
+    geSeriesPaperIV: {
+      title: 'IV: Requisite Variety and the Commons',
+      desc:  'Demonstrates why proximity governs — observation dimensionality determines resource management outcomes.'
+    },
+    geSeriesPaperV: {
+      title: 'V: The Coordination Failure Tax',
+      desc:  'Reveals that the four failure modes multiply rather than add — the tax is exponential, not linear.'
+    },
+  },
+
 		// Projects
   coordinationTitle: "The Coordination Imperative",
   coordinationTagline: "A protocol for planetary-scale cooperation.",
@@ -278,6 +302,29 @@ export const coreTranslations = {
   reportsFranceTagline: 'Beslut är lätta; att få dem att hålla är utmaningen.',
   reportsSwedenTitle: 'Sverige: Kompetensfällan',
   reportsSwedenTagline: 'När hög tillit döljer de signaler du behöver.',
+
+  geCarouselSeries: {
+    geSeriesPaperI: {
+      title: 'I: Styrstabilitetssimulatorn',
+      desc:  'Modellerar styrning som ett återkopplingssystem och visar på hårda matematiska tak för institutionell prestanda.'
+    },
+    geSeriesPaperII: {
+      title: 'II: Fraktalitet som stabilitet',
+      desc:  'Bevisar att ingen enskalig regulator kan stabilisera en flerfrekvent störningsmiljö — nästlade arkitekturer krävs.'
+    },
+    geSeriesPaperIII: {
+      title: 'III: Observerbarhets‑demokratikopplingen',
+      desc:  'Visar att representationskedjor med 3+ lager förstör medborgarpreferenssignalen innan den når policynivån.'
+    },
+    geSeriesPaperIV: {
+      title: 'IV: Nödvändig variation och allmänningen',
+      desc:  'Demonstrerar varför närhet styr — observationsdimensionalitet avgör resurshanteringsutfall.'
+    },
+    geSeriesPaperV: {
+      title: 'V: Samordningsmisslyckandets skatt',
+      desc:  'Avslöjar att de fyra felsätten multipliceras snarare än adderas — skatten är exponentiell, inte linjär.'
+    },
+  },
 
 		// Projects
   coordinationTitle: "The Coordination Imperative",
