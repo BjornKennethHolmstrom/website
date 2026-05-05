@@ -58,6 +58,8 @@ export const coreTranslations = {
   reportsUKTagline: 'Centralised power, hollowed‑out delivery — why Britain can’t execute what it commands.',
   reportsSynthesisTitle: 'The Subsidiarity Deficit',
   reportsSynthesisTagline: 'Why six governance systems fail under complexity — and what must be built instead.',
+  reportsBrazilTitle: 'Brazil: The Accumulation Deficit',
+  reportsBrazilTagline: 'Brilliant breakthroughs that can\'t compound — can Brazil beat the capture equilibrium?',
 
   // Governance as Engineering — Carousel
   geCarouselBadge: 'Featured Research',
@@ -319,6 +321,8 @@ export const coreTranslations = {
   reportsUKTagline: 'Centraliserad makt, urholkad leverans — varför Storbritannien inte kan leverera.',
   reportsSynthesisTitle: 'Subsidiaritetsunderskottet',
   reportsSynthesisTagline: 'Varför sex styrsystem misslyckas under komplexitet — och vad som måste byggas istället.',
+  reportsBrazilTitle: 'Brasilien: Ackumulationsunderskottet',
+  reportsBrazilTagline: 'Briljanta genombrott som inte kan ackumuleras — kan Brasilien rå på fångstjämvikten?',
 
   geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {

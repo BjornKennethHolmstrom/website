@@ -153,6 +153,12 @@
           emoji: '🌐',
           url: '/reports/subsidiarity-deficit',
           badge: 'NEW'
+      },
+      {
+          key: 'reportsBrazil',
+          emoji: '🇧🇷',
+          url: '/reports/brazil-accumulation-deficit',
+          badge: 'NEW'
       }
   ];
 
