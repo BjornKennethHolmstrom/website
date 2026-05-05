@@ -52,6 +52,11 @@ export const reportsTranslations = {
        title: 'The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity',
        description:
            'A synthesis of the Country Reports for Systemic Change, identifying the common structural pressure behind six distinct governance failure modes and the architectural requirements for redesign.'
+   },
+   brazilAccumulationDeficit: {
+       title: 'The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound',
+       description:
+           'Brazil does not lack capacity — it lacks the ability to compound its breakthroughs into durable, system‑wide capacity. This report diagnoses a capture equilibrium produced by coalitional presidentialism and proposes an Algorithmic Bypass as the concrete first step.'
    }
 		}
 	},
@@ -106,6 +111,11 @@ export const reportsTranslations = {
        title: 'Subsidiaritetsunderskottet: Varför sex styrsystem misslyckas under komplexitet',
        description:
            'En syntes av Country Reports-serien som identifierar det gemensamma strukturella trycket bakom sex olika styrningsmisslyckanden och de arkitektoniska kraven för omgestaltning.'
+   },
+   brazilAccumulationDeficit: {
+       title: 'Ackumulationsunderskottet: Varför Brasiliens briljanta genombrott inte kan ackumuleras',
+       description:
+           'Brasilien saknar inte kapacitet — det saknar förmågan att omvandla sina genombrott till varaktig, systemövergripande kapacitet. Rapporten diagnosticerar en fångstjämvikt skapad av koalitionspresidentialism och föreslår en Algoritmisk Förbikoppling som det konkreta första steget.'
    }
 		}
 	}

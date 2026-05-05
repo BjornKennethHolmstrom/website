@@ -136,6 +136,26 @@ export const reportsData: Report[] = [
          en: '/reports/subsidiarity-deficit-en.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'brazil-accumulation-deficit',
+     key: 'brazilAccumulationDeficit',
+     category: 'country',
+     year: 2026,
+     pages: 67,
+     readTime: {
+         en: '60–75 min',
+         sv: '60–75 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-05-05',
+     coverImage: '/images/reports/brazil-accumulation-deficit/cover.png',
+     readOnlinePath: '/reports/brazil-accumulation-deficit',
+     pdfPath: {
+         en: '/reports/brazil-accumulation-deficit-en.pdf',
+         pt_br: '/reports/brazil-accumulation-deficit-pt_br.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 
