@@ -438,39 +438,41 @@
       {$t.geCarouselSubtitle}
     </p>
 
-    <div class="relative min-h-[320px] md:min-h-[260px]">
+    <div class="relative min-h-[400px] sm:min-h-[320px] md:min-h-[260px]">
       {#key activeGEIndex}
         <div
           in:fly={{ x: 200 * geDirection, duration: 400, delay: 100 }}
           out:fly={{ x: -200 * geDirection, duration: 400 }}
           class="absolute inset-0 w-full"
         >
-          <div class="bg-gradient-to-br from-slate-50 to-amber-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-slate-200 dark:border-slate-700 h-full">
+          <div class="bg-gradient-to-br from-slate-50 to-amber-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm border border-slate-200 dark:border-slate-700 h-full">
             
-            <div class="flex-1 text-center md:text-left z-10">
+            <!-- Text content -->
+            <div class="flex-1 text-center md:text-left z-10 w-full">
               <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
                 Whitepaper
               </span>
-              <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
                 {currentPaper.title}
               </h3>
-              <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+              <p class="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed max-w-2xl">
                 {currentPaper.desc}
               </p>
               <a
                 href={currentPaper.url}
-                class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
+                class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
               >
                 Read the Paper
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 -mr-1"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 -mr-1"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
             </div>
 
-            <div class="w-48 md:w-56 flex-shrink-0 flex items-center justify-center">
+            <!-- Cover image – scaled down on mobile, full size on desktop -->
+            <div class="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center">
               <img 
                 src={currentPaper.coverImage} 
                 alt={currentPaper.title} 
-                class="w-full h-auto rounded shadow-lg" 
+                class="w-full h-auto rounded shadow-md" 
               />
             </div>
           </div>
