@@ -189,6 +189,12 @@
     },
   ];
 
+  $effect(() => {
+    if (reportLang === 'hi') {
+      console.log('Hindi comp for executive-summary:', contentMap[0].compHi);
+    }
+  });
+
   // ------------------------------------------
   // 3. Local report language (EN, HI, TA)
   // ------------------------------------------
@@ -209,7 +215,7 @@
   }
 
   function sectionComp(section: typeof contentMap[0]) {
-    if (reportLang === 'hi') return section.compH;
+    if (reportLang === 'hi') return section.compHi;
     if (reportLang === 'ta') return section.compTa;
     return section.compEn;
   }
