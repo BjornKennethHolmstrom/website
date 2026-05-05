@@ -50,8 +50,17 @@ export const coreTranslations = {
   reportsFranceTagline: 'Decisions are easy; making them stick is the challenge.',
   reportsSwedenTitle: 'Sweden: The Competence Trap',
   reportsSwedenTagline: 'When high trust hides the signals you need.',
+  reportsIndiaTitle: 'India: The Leap‑Lag Cycle',
+  reportsIndiaTagline: 'Brilliant breakthroughs, uneven diffusion — can India synchronise its scale?',
+  reportsEUTitle: 'EU: The Coherence Mirage',
+  reportsEUTagline: 'Agrees on everything, aligns on nothing — fixing the Union’s arrival time.',
+  reportsUKTitle: 'UK: The Control Mirage',
+  reportsUKTagline: 'Centralised power, hollowed‑out delivery — why Britain can’t execute what it commands.',
+  reportsSynthesisTitle: 'The Subsidiarity Deficit',
+  reportsSynthesisTagline: 'Why six governance systems fail under complexity — and what must be built instead.',
 
   // Governance as Engineering — Carousel
+  geCarouselBadge: 'Featured Research',
   geCarouselSeries: {
     geSeriesPaperI: {
       title: 'I: Governance Stability Simulator',
@@ -302,7 +311,16 @@ export const coreTranslations = {
   reportsFranceTagline: 'Beslut är lätta; att få dem att hålla är utmaningen.',
   reportsSwedenTitle: 'Sverige: Kompetensfällan',
   reportsSwedenTagline: 'När hög tillit döljer de signaler du behöver.',
+  reportsIndiaTitle: 'Indien: Språng‑och‑släp‑cykeln',
+  reportsIndiaTagline: 'Briljanta genombrott, ojämn spridning — kan Indien synkronisera sin skala?',
+  reportsEUTitle: 'EU: Koherensspeglingen',
+  reportsEUTagline: 'Överens om allt, samordnar inget — hur unionen kan lära sig anlända i tid.',
+  reportsUKTitle: 'UK: Kontrollspeglingen',
+  reportsUKTagline: 'Centraliserad makt, urholkad leverans — varför Storbritannien inte kan leverera.',
+  reportsSynthesisTitle: 'Subsidiaritetsunderskottet',
+  reportsSynthesisTagline: 'Varför sex styrsystem misslyckas under komplexitet — och vad som måste byggas istället.',
 
+  geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {
     geSeriesPaperI: {
       title: 'I: Styrstabilitetssimulatorn',

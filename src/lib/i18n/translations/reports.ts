@@ -15,7 +15,8 @@ export const reportsTranslations = {
 					'In-depth reports applying integrative frameworks to real-world governance challenges, starting with national adaptive capacity.'
 			},
 			categories: {
-				country: 'Country Analysis'
+				country: 'Country Analysis',
+    synthesis: 'Synthesis'
 			},
 			germanySpendingMirage: {
 				title: 'The Spending Mirage: Why Germany Has Money but No Capacity to Decide',
@@ -46,6 +47,11 @@ export const reportsTranslations = {
        title: 'The Control Mirage: Why Britain\'s Centralised Power Produces Fragmented Outcomes',
        description:
            'The UK does not lack ambition — it lacks the ability to place control where reality actually is. This report diagnoses a control-delivery mismatch produced by administrative hollowing, the Treasury trap, and the English Question, and proposes Trailblazer Regions 2.0 as the concrete first step.'
+   },
+   subsidiarityDeficit: {
+       title: 'The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity',
+       description:
+           'A synthesis of the Country Reports for Systemic Change, identifying the common structural pressure behind six distinct governance failure modes and the architectural requirements for redesign.'
    }
 		}
 	},
@@ -63,7 +69,8 @@ export const reportsTranslations = {
 					'Fördjupade rapporter som tillämpar integrerande ramverk på verkliga styrningsutmaningar, med början i nationell adaptiv kapacitet.'
 			},
 			categories: {
-				country: 'Landanalys'
+				country: 'Landanalys',
+    synthesis: 'Syntes'
 			},
 			germanySpendingMirage: {
 				title: 'Spenderingshägringen: Varför Tyskland har pengar men saknar kapacitet att besluta',
@@ -94,6 +101,11 @@ export const reportsTranslations = {
        title: 'Kontrollspeglingen: Varför Storbritanniens centraliserade makt producerar fragmenterade resultat',
        description:
            'Storbritannien saknar inte ambition — det saknar förmågan att placera kontroll där verkligheten faktiskt finns. Rapporten diagnosticerar ett kontroll‑genomförande‑glapp skapat av administrativ urholkning, finansdepartementets fälla och den engelska frågan, och föreslår Trailblazer Regions 2.0 som det konkreta första steget.'
+   },
+   subsidiarityDeficit: {
+       title: 'Subsidiaritetsunderskottet: Varför sex styrsystem misslyckas under komplexitet',
+       description:
+           'En syntes av Country Reports-serien som identifierar det gemensamma strukturella trycket bakom sex olika styrningsmisslyckanden och de arkitektoniska kraven för omgestaltning.'
    }
 		}
 	}

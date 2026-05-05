@@ -119,20 +119,42 @@
 			}
   ]
 	};
- const countryReports = [
-     {
-         key: 'reportsGermany',
-         emoji: '🇩🇪',
-         url: '/reports/germany-spending-mirage',
-         badge: 'NEW'
-     },
-     {
-         key: 'reportsFrance',
-         emoji: '🇫🇷',
-         url: '/reports/france-decisiveness-mirage',
-         badge: 'NEW'
-     }
- ];
+  const countryReports = [
+      {
+          key: 'reportsGermany',
+          emoji: '🇩🇪',
+          url: '/reports/germany-spending-mirage'
+      },
+      {
+          key: 'reportsFrance',
+          emoji: '🇫🇷',
+          url: '/reports/france-decisiveness-mirage'
+      },
+      {
+          key: 'reportsIndia',
+          emoji: '🇮🇳',
+          url: '/reports/india-leap-lag-cycle',
+          badge: 'NEW'
+      },
+      {
+          key: 'reportsEU',
+          emoji: '🇪🇺',
+          url: '/reports/eu-coherence-mirage',
+          badge: 'NEW'
+      },
+      {
+          key: 'reportsUK',
+          emoji: '🇬🇧',
+          url: '/reports/uk-control-mirage',
+          badge: 'NEW'
+      },
+      {
+          key: 'reportsSynthesis',
+          emoji: '🌐',
+          url: '/reports/subsidiarity-deficit',
+          badge: 'NEW'
+      }
+  ];
 
   // To be published
   //      {
@@ -404,9 +426,14 @@
 <!-- Governance as Engineering Carousel -->
 <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-2xl font-semibold text-amber-600 dark:text-amber-400 mb-2">
+  <div class="flex items-center gap-3 mb-2">
+    <h2 class="text-2xl font-semibold text-amber-600 dark:text-amber-400">
       {$t.geCarouselTitle}
     </h2>
+    <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full bg-amber-500 text-white shadow">
+      {$t.geCarouselBadge}
+    </span>
+  </div>
     <p class="text-gray-600 dark:text-gray-400 mb-8">
       {$t.geCarouselSubtitle}
     </p>

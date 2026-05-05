@@ -117,6 +117,25 @@ export const reportsData: Report[] = [
          en: '/reports/uk-control-mirage-en.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'subsidiarity-deficit',
+     key: 'subsidiarityDeficit',
+     category: 'synthesis',
+     year: 2026,
+     pages: 60,
+     readTime: {
+         en: '60–75 min',
+         sv: '60–75 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-10-01',
+     coverImage: '/images/reports/subsidiarity-deficit/cover.png',
+     readOnlinePath: '/reports/subsidiarity-deficit',
+     pdfPath: {
+         en: '/reports/subsidiarity-deficit-en.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 
