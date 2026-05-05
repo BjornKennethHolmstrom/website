@@ -259,11 +259,8 @@
   let dontShowAgain = false;
   
   onMount(() => {
-    // Only check for permanent opt-out, not for first visit
-    const dontShow = localStorage.getItem('dontShowWelcomeModal');
-    if (dontShow === 'true') {
+      // Never show the modal on first visit — only via the floating button
       dontShowAgain = true;
-    }
   });
 
   function closeWithPreference() {
