@@ -190,19 +190,39 @@ export const reportsData: Report[] = [
      key: 'finlandThroughputConstraint',
      category: 'country',
      year: 2026,
-     pages: 64,
+     pages: 58,
      readTime: {
          en: '55–65 min',
          sv: '55–65 min'
      },
      version: '1.0',
-     releaseDate: '2026-12-15',
+     releaseDate: '2026-05-06',
      coverImage: '/images/reports/finland-throughput-constraint/cover.png',
      readOnlinePath: '/reports/finland-throughput-constraint',
      pdfPath: {
          en: '/reports/finland-throughput-constraint-en.pdf',
          fi: '/reports/finland-throughput-constraint-fi.pdf',
          sv: '/reports/finland-throughput-constraint-sv.pdf'
+     },
+     readOnlineExternal: false
+ },
+ {
+     id: 'russia-legibility-deficit',
+     key: 'russiaLegibilityDeficit',
+     category: 'country',
+     year: 2026,
+     pages: 32,
+     readTime: {
+         en: '35–45 min',
+         sv: '35–45 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-05-06',
+     coverImage: '/images/reports/russia-legibility-deficit/cover.png',
+     readOnlinePath: '/reports/russia-legibility-deficit',
+     pdfPath: {
+         en: '/reports/russia-legibility-deficit-en.pdf',
+         ru: '/reports/russia-legibility-deficit-ru.pdf'
      },
      readOnlineExternal: false
  }

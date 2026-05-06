@@ -67,6 +67,11 @@ export const reportsTranslations = {
        title: 'The Throughput Constraint: Why Finland\'s World‑Class Governance Still Cannot Transform Fast Enough',
        description:
            'Finland is not failing — it has hit the next ceiling. This report diagnoses a Throughput Constraint in a system that can see the future with world‑class clarity but cannot yet act on what it sees at the speed the 21st century demands.'
+   },
+   russiaLegibilityDeficit: {
+       title: 'The Legibility Deficit: When Governance Architecture Eliminates the Possibility of Governance',
+       description:
+           'Russia is not another failure mode — it is a different category of system. This boundary case diagnoses a Legibility Deficit in an architecture that makes accurate perception a threat to its own survival, and reveals the limits of adaptive governance.'
    }
 		}
 	},
@@ -136,6 +141,11 @@ export const reportsTranslations = {
        title: 'Genomströmningsbegränsningen: Varför Finlands styrning i världsklass fortfarande inte kan transformeras tillräckligt snabbt',
        description:
            'Finland misslyckas inte — det har nått nästa tak. Denna rapport diagnosticerar en genomströmningsbegränsning i ett system som kan se framtiden med enastående klarhet men ännu inte kan agera på vad det ser i den takt som 2000‑talet kräver.'
+   },
+   russiaLegibilityDeficit: {
+       title: 'Läsbarhetsunderskottet: När styrningsarkitektur eliminerar möjligheten till styrning',
+       description:
+           'Ryssland är inte ännu ett felläge — det är en annan kategori av system. Detta gränsfall diagnosticerar ett läsbarhetsunderskott i en arkitektur som gör korrekt perception till ett hot mot sin egen överlevnad, och avslöjar gränserna för adaptiv styrning.'
    }
 		}
 	}

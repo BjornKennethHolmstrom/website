@@ -171,6 +171,12 @@
           emoji: '🇫🇮',
           url: '/reports/finland-throughput-constraint',
           badge: 'NEW'
+      },
+      {
+          key: 'reportsRussia',
+          emoji: '🇷🇺',
+          url: '/reports/russia-legibility-deficit',
+          badge: 'NEW'
       }
   ];
 

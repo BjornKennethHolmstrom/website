@@ -64,6 +64,8 @@ export const coreTranslations = {
   reportsUSTagline: 'Why America\'s islands of excellence can\'t become a continent of competence.',
   reportsFinlandTitle: 'Finland: The Throughput Constraint',
   reportsFinlandTagline: 'The nation that sees the future — but can\'t yet arrive there in time.',
+  reportsRussiaTitle: 'Russia: The Legibility Deficit',
+  reportsRussiaTagline: 'When accurate perception becomes a threat to the state itself.',
 
   // Governance as Engineering — Carousel
   geCarouselBadge: 'Featured Research',
@@ -331,6 +333,8 @@ export const coreTranslations = {
   reportsUSTagline: 'Varför Amerikas öar av excellens inte kan bli en kontinent av kompetens.',
   reportsFinlandTitle: 'Finland: Genomströmningsbegränsningen',
   reportsFinlandTagline: 'Nationen som ser framtiden — men ännu inte kan anlända dit i tid.',
+  reportsRussiaTitle: 'Ryssland: Läsbarhetsunderskottet',
+  reportsRussiaTagline: 'När korrekt perception blir ett hot mot staten själv.',
 
   geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {
