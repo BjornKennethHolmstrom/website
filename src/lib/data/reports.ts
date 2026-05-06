@@ -184,6 +184,27 @@ export const reportsData: Report[] = [
          en: '/reports/us-integration-deficit-en.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'finland-throughput-constraint',
+     key: 'finlandThroughputConstraint',
+     category: 'country',
+     year: 2026,
+     pages: 64,
+     readTime: {
+         en: '55–65 min',
+         sv: '55–65 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-12-15',
+     coverImage: '/images/reports/finland-throughput-constraint/cover.png',
+     readOnlinePath: '/reports/finland-throughput-constraint',
+     pdfPath: {
+         en: '/reports/finland-throughput-constraint-en.pdf',
+         fi: '/reports/finland-throughput-constraint-fi.pdf',
+         sv: '/reports/finland-throughput-constraint-sv.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 

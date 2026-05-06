@@ -62,6 +62,11 @@ export const reportsTranslations = {
        title: 'The Integration Deficit: Why America\'s Islands of Excellence Cannot Become a Continent of Competence',
        description:
            'The United States does not lack capacity — it lacks the ability to integrate its distributed strengths into coherent collective action. This report diagnoses an integration deficit produced by constitutional over‑vetoing, adversarial subsidiarity, and the Veto Industrial Complex, and proposes cross‑state compacts and municipal laboratories as the concrete first step.'
+   },
+   finlandThroughputConstraint: {
+       title: 'The Throughput Constraint: Why Finland\'s World‑Class Governance Still Cannot Transform Fast Enough',
+       description:
+           'Finland is not failing — it has hit the next ceiling. This report diagnoses a Throughput Constraint in a system that can see the future with world‑class clarity but cannot yet act on what it sees at the speed the 21st century demands.'
    }
 		}
 	},
@@ -126,6 +131,11 @@ export const reportsTranslations = {
        title: 'Integrationsunderskottet: Varför Amerikas öar av excellens inte kan bli en kontinent av kompetens',
        description:
            'USA saknar inte kapacitet — det saknar förmågan att integrera sina distribuerade styrkor till sammanhängande kollektiva åtgärder. Rapporten diagnosticerar ett integrationsunderskott skapat av konstitutionell övervetoing, adversativ subsidiaritet och det vetoindustriella komplexet, och föreslår delstatsöverskridande avtal och kommunala laboratorier som det konkreta första steget.'
+   },
+   finlandThroughputConstraint: {
+       title: 'Genomströmningsbegränsningen: Varför Finlands styrning i världsklass fortfarande inte kan transformeras tillräckligt snabbt',
+       description:
+           'Finland misslyckas inte — det har nått nästa tak. Denna rapport diagnosticerar en genomströmningsbegränsning i ett system som kan se framtiden med enastående klarhet men ännu inte kan agera på vad det ser i den takt som 2000‑talet kräver.'
    }
 		}
 	}

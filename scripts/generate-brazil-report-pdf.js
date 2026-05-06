@@ -43,7 +43,7 @@ const metadata = {
         subtitle: "A field guide to the capture equilibrium — and how Brazil can build the integration layer that converts its genius into durable capacity",
         description: "Brazil does not lack capacity — it lacks the ability to compound its breakthroughs into durable, system‑wide capacity. This report diagnoses a capture equilibrium produced by coalitional presidentialism and proposes an Algorithmic Bypass as the concrete first step.",
         author: "Björn Kenneth Holmström",
-        date: "November 2026",
+        date: "May 2026",
         url: "https://bjornkennethholmstrom.org/reports/brazil-accumulation-deficit",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Country Report · Brazil"
@@ -53,7 +53,7 @@ const metadata = {
         subtitle: "Um guia para o equilíbrio de captura — e como o Brasil pode construir a camada de integração que transforma sua genialidade em capacidade duradoura",
         description: "O Brasil não carece de capacidade — carece da habilidade de transformar seus avanços em capacidade sistêmica e duradoura. Este relatório diagnostica um equilíbrio de captura gerado pelo presidencialismo de coalizão e propõe um Bypass Algorítmico como primeiro passo concreto.",
         author: "Björn Kenneth Holmström",
-        date: "Novembro 2026",
+        date: "Maio 2026",
         url: "https://bjornkennethholmstrom.org/reports/brazil-accumulation-deficit",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Relatório de País · Brasil"

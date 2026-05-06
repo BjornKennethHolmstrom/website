@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for the US Integration Deficit report
+ * Generate PDF for the Finland Throughput Constraint report
  * 
- * Usage: node scripts/generate-us-report-pdf.js [language]
- * Currently only 'en' is supported.
+ * Usage: node scripts/generate-finland-report-pdf.js [language]
+ * Example: node scripts/generate-finland-report-pdf.js en
+ * Example: node scripts/generate-finland-report-pdf.js fi
+ * Example: node scripts/generate-finland-report-pdf.js sv
  * 
  * Requirements:
  * npm install marked puppeteer
@@ -21,15 +23,15 @@ const __dirname = path.dirname(__filename);
 
 // ── Configuration ────────────────────────────────────────────────────────────
 const LANGUAGE = process.argv[2] || 'en';
-const VALID_LANGUAGES = ['en'];
+const VALID_LANGUAGES = ['en', 'fi', 'sv'];
 
 if (!VALID_LANGUAGES.includes(LANGUAGE)) {
     console.error(`Invalid language: ${LANGUAGE}`);
-    console.error(`Currently only 'en' is supported.`);
+    console.error(`Valid languages: ${VALID_LANGUAGES.join(', ')}`);
     process.exit(1);
 }
 
-const REPORT_SLUG = 'us-integration-deficit';
+const REPORT_SLUG = 'finland-throughput-constraint';
 const INPUT_DIR = path.join(__dirname, `../src/routes/reports/${REPORT_SLUG}/sections`);
 const OUTPUT_DIR = path.join(__dirname, `../static/reports`);
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `${REPORT_SLUG}-${LANGUAGE}.pdf`);
@@ -38,37 +40,56 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const metadata = {
     en: {
-        title: "The Integration Deficit",
-        subtitle: "A field guide to the escalate–block–bypass–delegitimise spiral — and how the United States can build the coordination layer its Constitution never provided",
-        description: "The United States does not lack capacity — it lacks the ability to integrate its distributed strengths into coherent collective action. This report diagnoses an integration deficit produced by constitutional over‑vetoing, adversarial subsidiarity, and the Veto Industrial Complex, and proposes cross‑state compacts and municipal laboratories as the concrete first step.",
+        title: "The Throughput Constraint",
+        subtitle: "A field guide to the Trust‑Velocity Paradox — and how the most advanced democracy on earth can complete its evolution into anticipatory governance",
+        description: "Finland is not failing — it has hit the next ceiling. This report diagnoses a Throughput Constraint in a system that can see the future with world‑class clarity but cannot yet act on what it sees at the speed the 21st century demands.",
         author: "Björn Kenneth Holmström",
         date: "May 2026",
-        url: "https://bjornkennethholmstrom.org/reports/us-integration-deficit",
+        url: "https://bjornkennethholmstrom.org/reports/finland-throughput-constraint",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
-        type: "Country Report · United States"
+        type: "Country Report · Finland"
+    },
+    fi: {
+        title: "Läpäisykyvyn rajoite",
+        subtitle: "Kenttäopas luottamus‑nopeusparadoksiin — ja siihen, miten maailman edistynein demokratia voi viedä kehityksensä loppuun ennakoivaksi hallinnoksi",
+        description: "Suomi ei ole epäonnistumassa — se on saavuttanut seuraavan katon. Tämä raportti diagnosoi läpäisykyvyn rajoitteen järjestelmässä, joka näkee tulevaisuuden maailmanluokan selkeydellä, mutta ei vielä pysty toimimaan havaintojensa mukaisesti 2000‑luvun vaatimalla nopeudella.",
+        author: "Björn Kenneth Holmström",
+        date: "Toukokuu 2026",
+        url: "https://bjornkennethholmstrom.org/reports/finland-throughput-constraint",
+        license: "Creative Commons Attribution-ShareAlike 4.0 International",
+        type: "Maaraportti · Suomi"
+    },
+    sv: {
+        title: "Genomströmningsbegränsningen",
+        subtitle: "En fältguide till tillit‑hastighetsparadoxen — och hur den mest avancerade demokratin på jorden kan fullborda sin utveckling till anticipatorisk styrning",
+        description: "Finland misslyckas inte — det har nått nästa tak. Denna rapport diagnosticerar en genomströmningsbegränsning i ett system som kan se framtiden med enastående klarhet men ännu inte kan agera på vad det ser i den takt som 2000‑talet kräver.",
+        author: "Björn Kenneth Holmström",
+        date: "Maj 2026",
+        url: "https://bjornkennethholmstrom.org/reports/finland-throughput-constraint",
+        license: "Creative Commons Attribution-ShareAlike 4.0 International",
+        type: "Landrapport · Finland"
     }
 };
 
 const meta = metadata[LANGUAGE];
 
-// ── Section definitions (English only) ───────────────────────────────────────
+// ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
-    { file: '00-executive-summary',            title: 'Executive Summary' },
-    { file: '01-integration-deficit',          title: '1. The Integration Deficit' },
-    { file: '02-structural-mechanics',         title: '2. The Integration Deficit: Structural Mechanics' },
-    { file: '03-building-integration-capacity', title: '3. What Building Integration Capacity Would Look Like' },
-    { file: '04-political-immune-system',      title: '4. The Political Immune System: The Veto Industrial Complex and the Permanent Campaign' },
-    { file: '05-transition-architecture',      title: '5. Working with the Grain: Transition Architecture for the United States' },
-    { file: '06-first-step',                   title: '6. A Concrete First Step: Cross‑State Compacts and Municipal Laboratories' },
-    { file: '07-coda',                         title: '7. Coda: From Archipelago to Continent' },
-    { file: '08-appendix-a',                   title: 'Appendix A: Value Systems & Policy Mindsets',        isAppendix: true },
-    { file: '08-appendix-b',                   title: 'Appendix B: International Analogues & Precedents',   isAppendix: true },
-    { file: '08-appendix-c',                   title: 'Appendix C: The Governance as Engineering Connection', isAppendix: true },
-    { file: '08-appendix-d',                   title: 'Appendix D: Anticipated Objections',                isAppendix: true },
-    { file: '08-appendix-e',                   title: 'Appendix E: About the Author & Method',             isAppendix: true },
+    { file: '00-executive-summary',                titleEn: 'Executive Summary',                                           titleFi: 'Tiivistelmä',                                                          titleSv: 'Sammanfattning',                                                          isAppendix: false },
+    { file: '01-throughput-constraint',            titleEn: '1. The Throughput Constraint',                                titleFi: '1. Läpäisykyvyn rajoite',                                              titleSv: '1. Genomströmningsbegränsningen',                                         isAppendix: false },
+    { file: '02-structural-mechanisms',             titleEn: '2. The Throughput Constraint: Structural Mechanisms',          titleFi: '2. Läpäisykyvyn rajoite: Rakenteelliset mekanismit',                   titleSv: '2. Genomströmningsbegränsningen: Strukturella mekanismer',               isAppendix: false },
+    { file: '03-building-transformational-velocity', titleEn: '3. What Building Transformational Velocity Would Look Like',  titleFi: '3. Miltä transformaationopeuden rakentaminen näyttäisi',                 titleSv: '3. Hur byggandet av transformationshastighet skulle se ut',               isAppendix: false },
+    { file: '04-stability-bias',                    titleEn: '4. The Political Immune System: The Stability Bias',          titleFi: '4. Poliittinen immuunijärjestelmä: Vakausvinouma',                     titleSv: '4. Det politiska immunsystemet: Stabilitetsbiasen',                      isAppendix: false },
+    { file: '05-first-step',                        titleEn: '5. A Concrete First Step',                                   titleFi: '5. Konkreettinen ensimmäinen askel',                                    titleSv: '5. Ett konkret första steg',                                              isAppendix: false },
+    { file: '06-coda',                              titleEn: '6. Coda: The Prototype at the Frontier',                     titleFi: '6. Koda: Prototyyppi rajalla',                                          titleSv: '6. Koda: Prototypen vid frontlinjen',                                     isAppendix: false },
+    { file: '07-appendix-a',                        titleEn: 'Appendix A: Value Systems & Policy Mindsets',                 titleFi: 'Liite A: Arvojärjestelmät ja politiikan ajattelutavat',                 titleSv: 'Bilaga A: Värdesystem och policy‑mentaliteter',                          isAppendix: true  },
+    { file: '07-appendix-b',                        titleEn: 'Appendix B: International Analogues & Precedents',            titleFi: 'Liite B: Kansainväliset analogiat ja ennakkotapaukset',                 titleSv: 'Bilaga B: Internationella analogier och prejudikat',                     isAppendix: true  },
+    { file: '07-appendix-c',                        titleEn: 'Appendix C: The Governance as Engineering Connection',        titleFi: 'Liite C: Governance as Engineering ‑yhteys',                             titleSv: 'Bilaga C: Kopplingen till Governance as Engineering',                   isAppendix: true  },
+    { file: '07-appendix-d',                        titleEn: 'Appendix D: Anticipated Objections',                         titleFi: 'Liite D: Ennakoidut vastaväitteet',                                     titleSv: 'Bilaga D: Förväntade invändningar',                                      isAppendix: true  },
+    { file: '07-appendix-e',                        titleEn: 'Appendix E: About the Author & Method',                      titleFi: 'Liite E: Kirjoittajasta ja menetelmästä',                               titleSv: 'Bilaga E: Om författaren och metoden',                                   isAppendix: true  },
 ];
 
-// ── CSS (identical to other report scripts) ──────────────────────────────────
+// ── CSS (identical to other reports) ─────────────────────────────────────────
 const pdfStyles = `
 <style>
 	@page {
@@ -97,7 +118,6 @@ const pdfStyles = `
 		padding: 0;
 	}
 	
-	/* Cover page */
 	.cover {
 		page-break-after: always;
 		display: flex;
@@ -111,14 +131,14 @@ const pdfStyles = `
 		box-sizing: border-box;
 	}
 	
- .cover-image {
-     width: auto;
-     height: 400px;
-     object-fit: contain;
-     margin-bottom: 1em;
-     border-radius: 8px;
-     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
- }
+	.cover-image {
+		width: auto;
+		height: 400px;
+		object-fit: contain;
+		margin-bottom: 1em;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	}
 	
 	.cover h1 {
 		font-size: 24pt;
@@ -144,34 +164,33 @@ const pdfStyles = `
 		line-height: 1.4;
 	}
 
- .cover .metadata {
-     font-size: 10.5pt;
-     color: #666;
-     margin-top: 1em;
-     line-height: 1.5;
- }
+	.cover .metadata {
+		font-size: 10.5pt;
+		color: #666;
+		margin-top: 1em;
+		line-height: 1.5;
+	}
 
- .cover .url {
-     font-size: 8.5pt;
-     color: #888;
-     margin-top: 0.6em;
-     font-family: 'Courier New', monospace;
- }
+	.cover .url {
+		font-size: 8.5pt;
+		color: #888;
+		margin-top: 0.6em;
+		font-family: 'Courier New', monospace;
+	}
 
- .cover .license {
-     font-size: 8.5pt;
-     color: #888;
-     margin-top: 0.4em;
-     font-style: italic;
- }
+	.cover .license {
+		font-size: 8.5pt;
+		color: #888;
+		margin-top: 0.4em;
+		font-style: italic;
+	}
 
- .cover .type {
-     font-size: 9pt;
-     color: #888;
-     margin-top: 0.3em;
- }
+	.cover .type {
+		font-size: 9pt;
+		color: #888;
+		margin-top: 0.3em;
+	}
 
-	/* Typography */
 	h1 {
 		font-size: 20pt;
 		font-weight: bold;
@@ -472,7 +491,12 @@ function readMarkdownFiles() {
         process.stdout.write(`   Processing images... `);
         content = processMarkdownImagesSync(content);
 
-        contents.push({ title: section.title, content, isAppendix: section.isAppendix });
+        let title;
+        if (LANGUAGE === 'fi') title = section.titleFi;
+        else if (LANGUAGE === 'sv') title = section.titleSv;
+        else title = section.titleEn;
+
+        contents.push({ title, content, isAppendix: section.isAppendix });
     }
 
     console.log(`\n✅ All sections read successfully\n`);
@@ -616,7 +640,7 @@ async function generatePDF(html) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
     try {
-        console.log('📄 Starting PDF generation for US Integration Deficit report...\n');
+        console.log('📄 Starting PDF generation for Finland Throughput Constraint report...\n');
         console.log(`Language: ${LANGUAGE}`);
         console.log(`Output: ${OUTPUT_FILE}\n`);
 

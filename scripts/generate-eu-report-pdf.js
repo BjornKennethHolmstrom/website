@@ -42,7 +42,7 @@ const metadata = {
         subtitle: "A field guide to the compound deficit — and how the EU can learn to arrive together, in time",
         description: "The EU does not lack decisions — it lacks the capacity to arrive together, in time. This report diagnoses a compound coherence deficit produced by sovereignty fragmentation, the translation gap, asymmetric capacity, and time‑scale mismatch, and proposes Coherence Regions as the concrete first step.",
         author: "Björn Kenneth Holmström",
-        date: "August 2026",
+        date: "May 2026",
         url: "https://bjornkennethholmstrom.org/reports/eu-coherence-mirage",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Country Report · European Union"

@@ -60,6 +60,10 @@ export const coreTranslations = {
   reportsSynthesisTagline: 'Why six governance systems fail under complexity — and what must be built instead.',
   reportsBrazilTitle: 'Brazil: The Accumulation Deficit',
   reportsBrazilTagline: 'Brilliant breakthroughs that can\'t compound — can Brazil beat the capture equilibrium?',
+  reportsUSTitle: 'United States: The Integration Deficit',
+  reportsUSTagline: 'Why America\'s islands of excellence can\'t become a continent of competence.',
+  reportsFinlandTitle: 'Finland: The Throughput Constraint',
+  reportsFinlandTagline: 'The nation that sees the future — but can\'t yet arrive there in time.',
 
   // Governance as Engineering — Carousel
   geCarouselBadge: 'Featured Research',
@@ -323,6 +327,10 @@ export const coreTranslations = {
   reportsSynthesisTagline: 'Varför sex styrsystem misslyckas under komplexitet — och vad som måste byggas istället.',
   reportsBrazilTitle: 'Brasilien: Ackumulationsunderskottet',
   reportsBrazilTagline: 'Briljanta genombrott som inte kan ackumuleras — kan Brasilien rå på fångstjämvikten?',
+  reportsUSTitle: 'USA: Integrationsunderskottet',
+  reportsUSTagline: 'Varför Amerikas öar av excellens inte kan bli en kontinent av kompetens.',
+  reportsFinlandTitle: 'Finland: Genomströmningsbegränsningen',
+  reportsFinlandTagline: 'Nationen som ser framtiden — men ännu inte kan anlända dit i tid.',
 
   geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {

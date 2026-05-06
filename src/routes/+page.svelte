@@ -159,6 +159,18 @@
           emoji: '🇧🇷',
           url: '/reports/brazil-accumulation-deficit',
           badge: 'NEW'
+      },
+      {
+          key: 'reportsUS',
+          emoji: '🇺🇸',
+          url: '/reports/us-integration-deficit',
+          badge: 'NEW'
+      },
+      {
+          key: 'reportsFinland',
+          emoji: '🇫🇮',
+          url: '/reports/finland-throughput-constraint',
+          badge: 'NEW'
       }
   ];
 

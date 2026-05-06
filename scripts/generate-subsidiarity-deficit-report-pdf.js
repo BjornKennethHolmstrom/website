@@ -42,7 +42,7 @@ const metadata = {
         subtitle: "A synthesis of the Country Reports for Systemic Change and what they collectively imply for the redesign of governance architecture",
         description: "Six countries, six distinct failure modes, one common structural pressure: governance authority is systematically mismatched to the scale of the problems it faces. This synthesis identifies the structural requirements for redesign.",
         author: "Björn Kenneth Holmström",
-        date: "October 2026",
+        date: "May 2026",
         url: "https://bjornkennethholmstrom.org/reports/subsidiarity-deficit",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Synthesis Report"

@@ -1,0 +1,25 @@
+## Liite B: Kansainväliset analogiat ja ennakkotapaukset
+
+Tämän raportin ehdotukset eivät ole vailla ennakkotapauksia. Seuraavat esimerkit havainnollistavat olemassa olevia nopeushakuisten hallintouudistusten toteutuksia useissa maissa, kiinnittäen erityistä huomiota niihin pohjoismaisiin ja balttilaisiin konteksteihin, jotka ovat Suomelle kaikkein merkityksellisimpiä.
+
+### B.1 Tanska: Hyvinvointivaltion uudistus ja työmarkkinoiden joustavuus
+
+Tanskan "flexicurity"-malli – yhdistelmä joustavia työmarkkinoita, anteliaita työttömyysetuuksia ja aktiivista työmarkkinapolitiikkaa – on useimmin siteerattu esimerkki pohjoismaisesta hyvinvointivaltiosta, joka on onnistuneesti lisännyt transformaationopeuttaan. Malli rakennettiin asteittain useiden vuosikymmenten kuluessa, neuvoteltuna työmarkkinaosapuolten kanssa ja säilytettynä yli hallitusvaihdosten. Tanska on osoittanut kykyä myös institutionaalistettuun alasajoon: vuoden 2011 eläkeuudistukset, jotka nostivat eläkeikää ja sitoivat sen elinajanodotteeseen, hyväksyttiin laajalla parlamentaarisella tuella ja ovat osoittautuneet kestäviksi yli vaalikausien. Suomelle Tanskan kokemus tarjoaa mallipohjan sille, kuinka alasajomekanismeja voidaan ottaa käyttöön laukaisematta vakausvinoumaa – asteittaisilla, näyttöön perustuvilla, neuvotelluilla uudistuksilla, jotka säilyttävät universaalin tarjonnan perusarkkitehtuurin samalla mukauttaen erityisiä välineitä muuttuviin olosuhteisiin.
+
+### B.2 Viro: Digitaalinen nopeus ja hallinto ohjelmistonopeudella
+
+Viron digitaalisen hallinnon infrastruktuuri – X‑Road-tiedonvälityskerros, e‑residenssiohjelma, digitaalinen identiteettijärjestelmä, julkisten palvelujen lähes täydellinen digitalisointi – on maailman edistynein esimerkki siitä, mitä tapahtuu, kun hallinto toimii ohjelmistonopeudella. Viro rakensi tämän infrastruktuurin kahden vuosikymmenen aikana hyödyntäen pientä kokoaan, neuvostojärjestelmän jälkeistä institutionaalista joustavuuttaan ja poliittista konsensusta siitä, että digitaalinen transformaatio oli kansallisen selviytymisen kannalta välttämätöntä. Suomelle Viro tarjoaa peilin siitä, mikä on mahdollista pienessä, korkean luottamuksen ja teknologisesti kehittyneessä pohjoismais-balttilaisessa yhteiskunnassa – ja muistutuksen siitä, että Suomi, jolla on verrattavissa oleva tekninen kyvykkyys ja korkeampi luottamustaso, ei ole vielä saavuttanut vastaavaa digitaalista nopeutta julkisella sektorillaan.
+
+### B.3 Singapore: Iskunvaimennusinstituutiot ja ennakoiva hallinto
+
+Singaporen pelastuspalvelu, sen pandemian torjunnan infrastruktuuri ja sen ennalta valtuutettujen hätätilavaltuuksien järjestelmä tarjoavat mallin iskunvaimennusinstituutioista – pysyvistä kyvykkyyksistä nopeaan, koordinoituun toimintaan kriiseissä, suunniteltuina etukäteen ja suojatoimilla rajattuina. Singaporen hallintomalli ei ole demokraattinen pohjoismaisessa mielessä, eikä Suomen tule omaksua sen poliittista arkkitehtuuria. Mutta sen hätätilannevasteen mekanismien operatiivinen suunnittelu – ennalta hyväksytyt varautumissuunnitelmat, poikkihallinnolliset koordinointielimet, joilla on ennalta valtuutettu toimivalta, julkisen talouden uudelleen kohdentamisen valtuudet, jotka aktivoituvat objektiivisesti määritellyillä liipaisimilla – on suoraan relevanttia tässä raportissa ehdotetulle kansalliselle resilienssivirastolle.
+
+### B.4 Yhdistynyt kuningaskunta: Ilmastonmuutoskomitea riippumattomien komiteoiden mallina
+
+Yhdistyneen kuningaskunnan ilmastonmuutoskomitea, joka perustettiin vuoden 2008 ilmastonmuutoslailla, on maailman menestynein esimerkki riippumattomasta lakisääteisestä elimestä, joka asettaa laillisesti sitovia pitkän aikavälin tavoitteita ja tarjoaa arvovaltaista, puolueetonta arviointia edistymisestä niitä kohti. Komitean hiilibudjetit ovat selviytyneet hallitusvaihdoksista, intensiivisen poliittisen kiistelyn ajanjaksoista ja Yhdistyneen kuningaskunnan erosta Euroopan unionista. Sen riippumattomuus, tekninen uskottavuus ja lakisääteinen perusta ovat tehneet sen suosituksista poliitikoille vaikeita sivuuttaa. Tässä raportissa ehdotettu väestökomitea on nimenomaisesti mallinnettu ilmastonmuutoskomitean mukaan – elin, joka epäpolitisoi faktapohjan, luo jaetun viitepisteen demokraattiselle keskustelulle ja rajoittaa poliittisesti puolustettavien vastausten joukkoa sanelematta, mitä noiden vastausten tulisi olla.
+
+### B.5 Irlanti: Kansalaisraadit ja deliberatiivinen demokratia
+
+Irlannin kansalaisraadit – avioliittojen tasa-arvosta, abortista, ilmastonmuutoksesta – ovat osoittaneet, että satunnaisesti valitut kansalaiset, joille on tarjottu asiantuntijatietoa ja ammattimaista fasilitointia, kykenevät pohtimaan syvästi kiistanalaisia kysymyksiä ja tuottamaan suosituksia, jotka purkavat poliittisen umpikujan ja nauttivat laajaa julkista legitimiteettiä. Suomelle, joka on jo kokeillut kansalaisraateja ja puntaroivia mielipidemittauksia, Irlannin kokemus tarjoaa mallipohjan sille, kuinka pysyvät kansalaisraadit voitaisiin institutionalisoida pysyväksi osaksi hallintoarkkitehtuuria, tarjoten demokraattisen legitimiteetin niille vaihtokaupoille, joita konsensus ei yksin kykene ratkaisemaan.
+
+---
