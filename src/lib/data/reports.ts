@@ -16,12 +16,14 @@ export interface Report {
 	readOnlinePath: string;
 	pdfPath?: Record<string, string>;   // e.g. { en: '...', de: '...' }
 	readOnlineExternal?: boolean;
+ emoji?: string; 
 }
 
 export const reportsData: Report[] = [
 	{
 		id: 'germany-spending-mirage',
 		key: 'germanySpendingMirage',
+  emoji: '🇩🇪',
 		category: 'country',
 		year: 2026,
 		pages: 45,
@@ -42,6 +44,7 @@ export const reportsData: Report[] = [
  {
 		id: 'france-decisiveness-mirage',
 		key: 'franceDecisivenessMirage',
+  emoji: '🇫🇷',
 		category: 'country',
 		year: 2026,
 		pages: 52,
@@ -62,6 +65,7 @@ export const reportsData: Report[] = [
  {
      id: 'india-leap-lag-cycle',
      key: 'indiaLeapLagCycle',
+     emoji: '🇮🇳',
      category: 'country',
      year: 2026,
      pages: 55,
@@ -83,6 +87,7 @@ export const reportsData: Report[] = [
  {
      id: 'eu-coherence-mirage',
      key: 'euCoherenceMirage',
+     emoji: '🇪🇺',
      category: 'country',
      year: 2026,
      pages: 61,
@@ -102,6 +107,7 @@ export const reportsData: Report[] = [
  {
      id: 'uk-control-mirage',
      key: 'ukControlMirage',
+     emoji: '🇬🇧',
      category: 'country',
      year: 2026,
      pages: 62,
@@ -122,6 +128,7 @@ export const reportsData: Report[] = [
      id: 'subsidiarity-deficit',
      key: 'subsidiarityDeficit',
      category: 'synthesis',
+     emoji: '🧩',
      year: 2026,
      pages: 60,
      readTime: {
@@ -140,6 +147,7 @@ export const reportsData: Report[] = [
  {
      id: 'brazil-accumulation-deficit',
      key: 'brazilAccumulationDeficit',
+     emoji: '🇧🇷',
      category: 'country',
      year: 2026,
      pages: 67,
@@ -156,6 +164,26 @@ export const reportsData: Report[] = [
          pt_br: '/reports/brazil-accumulation-deficit-pt_br.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'us-integration-deficit',
+     key: 'usIntegrationDeficit',
+     emoji: '🇺🇸',
+     category: 'country',
+     year: 2026,
+     pages: 71,
+     readTime: {
+         en: '60–75 min',
+         sv: '60–75 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-05-06',
+     coverImage: '/images/reports/us-integration-deficit/cover.png',
+     readOnlinePath: '/reports/us-integration-deficit',
+     pdfPath: {
+         en: '/reports/us-integration-deficit-en.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 
@@ -163,6 +191,7 @@ export const reportsData: Report[] = [
  {
      id: 'sweden-competence-trap',
      key: 'swedenCompetenceTrap',
+     emoji: '🇸🇪',
      category: 'country',
      year: 2026,
      pages: 56,

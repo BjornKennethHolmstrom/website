@@ -57,6 +57,11 @@ export const reportsTranslations = {
        title: 'The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound',
        description:
            'Brazil does not lack capacity — it lacks the ability to compound its breakthroughs into durable, system‑wide capacity. This report diagnoses a capture equilibrium produced by coalitional presidentialism and proposes an Algorithmic Bypass as the concrete first step.'
+   },
+   usIntegrationDeficit: {
+       title: 'The Integration Deficit: Why America\'s Islands of Excellence Cannot Become a Continent of Competence',
+       description:
+           'The United States does not lack capacity — it lacks the ability to integrate its distributed strengths into coherent collective action. This report diagnoses an integration deficit produced by constitutional over‑vetoing, adversarial subsidiarity, and the Veto Industrial Complex, and proposes cross‑state compacts and municipal laboratories as the concrete first step.'
    }
 		}
 	},
@@ -116,6 +121,11 @@ export const reportsTranslations = {
        title: 'Ackumulationsunderskottet: Varför Brasiliens briljanta genombrott inte kan ackumuleras',
        description:
            'Brasilien saknar inte kapacitet — det saknar förmågan att omvandla sina genombrott till varaktig, systemövergripande kapacitet. Rapporten diagnosticerar en fångstjämvikt skapad av koalitionspresidentialism och föreslår en Algoritmisk Förbikoppling som det konkreta första steget.'
+   },
+   usIntegrationDeficit: {
+       title: 'Integrationsunderskottet: Varför Amerikas öar av excellens inte kan bli en kontinent av kompetens',
+       description:
+           'USA saknar inte kapacitet — det saknar förmågan att integrera sina distribuerade styrkor till sammanhängande kollektiva åtgärder. Rapporten diagnosticerar ett integrationsunderskott skapat av konstitutionell övervetoing, adversativ subsidiaritet och det vetoindustriella komplexet, och föreslår delstatsöverskridande avtal och kommunala laboratorier som det konkreta första steget.'
    }
 		}
 	}

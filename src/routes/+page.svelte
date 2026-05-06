@@ -150,7 +150,7 @@
       },
       {
           key: 'reportsSynthesis',
-          emoji: '🌐',
+          emoji: '🧩',
           url: '/reports/subsidiarity-deficit',
           badge: 'NEW'
       },

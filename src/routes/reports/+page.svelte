@@ -50,11 +50,14 @@
 
 					<div class="flex flex-1 flex-col p-6 lg:p-8">
 						<div class="mb-4 flex items-start justify-between gap-4">
-							<span
-								class="inline-flex items-center rounded-full bg-[var(--color-separator)] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-page-accent)]"
-							>
-								{$t.reports.categories[report.category] || report.category}
-							</span>
+       <span
+         class="inline-flex items-center rounded-full bg-[var(--color-separator)] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--color-page-accent)]"
+       >
+         {$t.reports.categories[report.category] || report.category}
+         {#if report.emoji}
+           <span class="ml-1">{report.emoji}</span>
+         {/if}
+       </span>
 							<span class="whitespace-nowrap text-sm opacity-50">{report.year}</span>
 						</div>
 
