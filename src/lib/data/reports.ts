@@ -225,6 +225,27 @@ export const reportsData: Report[] = [
          ru: '/reports/russia-legibility-deficit-ru.pdf'
      },
      readOnlineExternal: false
+ },
+ {
+     id: 'china-calibration-deficit',
+     key: 'chinaCalibrationDeficit',
+     emoji: '🇨🇳',
+     category: 'country',
+     year: 2026,
+     pages: 77,
+     readTime: {
+         en: '65–80 min',
+         sv: '65–80 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-05-07',
+     coverImage: '/images/reports/china-calibration-deficit/cover.png',
+     readOnlinePath: '/reports/china-calibration-deficit',
+     pdfPath: {
+         en: '/reports/china-calibration-deficit-en.pdf',
+         zh: '/reports/china-calibration-deficit-zh.pdf'
+     },
+     readOnlineExternal: false
  }
 ];
 

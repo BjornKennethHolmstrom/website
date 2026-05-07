@@ -72,6 +72,11 @@ export const reportsTranslations = {
        title: 'The Legibility Deficit: When Governance Architecture Eliminates the Possibility of Governance',
        description:
            'Russia is not another failure mode — it is a different category of system. This boundary case diagnoses a Legibility Deficit in an architecture that makes accurate perception a threat to its own survival, and reveals the limits of adaptive governance.'
+   },
+   chinaCalibrationDeficit: {
+       title: 'The Calibration Deficit: Why China\'s Extraordinary Capacity Cannot Correct Its Own Course',
+       description:
+           'China does not lack capacity — it lacks the ability to keep its model of reality aligned with reality itself. This report diagnoses a Calibration Deficit produced by the promotion tournament, the LGFV debt engine, epistemic feedback collapse, and míng zhé bǎo shēn, and proposes an Experimental Governance Protocol as the concrete first step.'
    }
 		}
 	},
@@ -146,6 +151,11 @@ export const reportsTranslations = {
        title: 'Läsbarhetsunderskottet: När styrningsarkitektur eliminerar möjligheten till styrning',
        description:
            'Ryssland är inte ännu ett felläge — det är en annan kategori av system. Detta gränsfall diagnosticerar ett läsbarhetsunderskott i en arkitektur som gör korrekt perception till ett hot mot sin egen överlevnad, och avslöjar gränserna för adaptiv styrning.'
+   },
+   chinaCalibrationDeficit: {
+       title: 'Kalibreringsbrist: Varför Kinas extraordinära kapacitet inte kan korrigera sin egen kurs',
+       description:
+           'Kina saknar inte kapacitet — det saknar förmågan att hålla sin modell av verkligheten i linje med verkligheten själv. Rapporten diagnosticerar en kalibreringsbrist skapad av befordransturnering, LGFV-skuldmotorn, epistemisk återkopplingskollaps och míng zhé bǎo shēn, och föreslår ett Experimentellt Styrningsprotokoll som det konkreta första steget.'
    }
 		}
 	}

@@ -177,7 +177,14 @@
           emoji: '🇷🇺',
           url: '/reports/russia-legibility-deficit',
           badge: 'NEW'
+      },
+      {
+          key: 'reportsChina',
+          emoji: '🇨🇳',
+          url: '/reports/china-calibration-deficit',
+          badge: 'NEW'
       }
+
   ];
 
   // To be published

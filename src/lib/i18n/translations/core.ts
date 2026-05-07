@@ -66,6 +66,8 @@ export const coreTranslations = {
   reportsFinlandTagline: 'The nation that sees the future — but can\'t yet arrive there in time.',
   reportsRussiaTitle: 'Russia: The Legibility Deficit',
   reportsRussiaTagline: 'When accurate perception becomes a threat to the state itself.',
+  reportsChinaTitle: 'China: The Calibration Deficit',
+  reportsChinaTagline: 'Why a system built for execution can no longer correct itself fast enough.',
 
   // Governance as Engineering — Carousel
   geCarouselBadge: 'Featured Research',
@@ -335,6 +337,8 @@ export const coreTranslations = {
   reportsFinlandTagline: 'Nationen som ser framtiden — men ännu inte kan anlända dit i tid.',
   reportsRussiaTitle: 'Ryssland: Läsbarhetsunderskottet',
   reportsRussiaTagline: 'När korrekt perception blir ett hot mot staten själv.',
+  reportsChinaTitle: 'Kina: Kalibreringsunderskottet',
+  reportsChinaTagline: 'Varför ett system byggt för genomförande inte längre kan korrigera sig självt tillräckligt snabbt.',
 
   geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {
