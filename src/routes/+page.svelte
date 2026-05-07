@@ -183,6 +183,12 @@
           emoji: '🇨🇳',
           url: '/reports/china-calibration-deficit',
           badge: 'NEW'
+      },
+      {
+	      key: 'reportsJapan',
+	      emoji: '🇯🇵',
+	      url: '/reports/japan-continuity-trap',
+	      badge: 'NEW'
       }
 
   ];

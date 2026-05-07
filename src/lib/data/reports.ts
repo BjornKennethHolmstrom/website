@@ -246,7 +246,28 @@ export const reportsData: Report[] = [
          zh: '/reports/china-calibration-deficit-zh.pdf'
      },
      readOnlineExternal: false
- }
+ },
+	{
+		id: 'japan-continuity-trap',
+		key: 'japanContinuityTrap',
+		emoji: '🇯🇵',
+		category: 'country',
+		year: 2026,
+		pages: 80,
+		readTime: {
+			en: '65–80 min',
+			sv: '65–80 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-08',
+		coverImage: '/images/reports/japan-continuity-trap/cover.png',
+		readOnlinePath: '/reports/japan-continuity-trap',
+		pdfPath: {
+			en: '/reports/japan-continuity-trap-en.pdf',
+			ja: '/reports/japan-continuity-trap-ja.pdf'
+		},
+		readOnlineExternal: false
+	}
 ];
 
 /* TODO: Publish 12/6

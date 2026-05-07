@@ -77,6 +77,11 @@ export const reportsTranslations = {
        title: 'The Calibration Deficit: Why China\'s Extraordinary Capacity Cannot Correct Its Own Course',
        description:
            'China does not lack capacity — it lacks the ability to keep its model of reality aligned with reality itself. This report diagnoses a Calibration Deficit produced by the promotion tournament, the LGFV debt engine, epistemic feedback collapse, and míng zhé bǎo shēn, and proposes an Experimental Governance Protocol as the concrete first step.'
+   },
+   japanContinuityTrap: {
+	   title: 'The Continuity Trap: Why Japan\'s Civilizational Miracle Cannot Renew Itself',
+	   description:
+		   'Japan does not lack capacity — it lacks the ability to replace the paradigm that delivered its post‑war miracle. This report diagnoses a Continuity Trap produced by the Iron Triangle, the fiscal‑demographic trap, and a cultural operating system that converts systemic failure into individual endurance, and proposes Institutional Kaizen and a Demography Commission as the concrete first step.'
    }
 		}
 	},
@@ -156,6 +161,11 @@ export const reportsTranslations = {
        title: 'Kalibreringsbrist: Varför Kinas extraordinära kapacitet inte kan korrigera sin egen kurs',
        description:
            'Kina saknar inte kapacitet — det saknar förmågan att hålla sin modell av verkligheten i linje med verkligheten själv. Rapporten diagnosticerar en kalibreringsbrist skapad av befordransturnering, LGFV-skuldmotorn, epistemisk återkopplingskollaps och míng zhé bǎo shēn, och föreslår ett Experimentellt Styrningsprotokoll som det konkreta första steget.'
+   },
+   japanContinuityTrap: {
+	   title: 'Kontinuitetsfällan: Varför Japans civilisatoriska mirakel inte kan förnya sig',
+	   description:
+		   'Japan saknar inte kapacitet — det saknar förmågan att ersätta det paradigm som levererade efterkrigsmiraklet. Rapporten diagnosticerar en kontinuitetsfälla skapad av järntriangeln, den fiskal‑demografiska fällan och ett kulturellt operativsystem som omvandlar systemfel till individuell uthållighet, och föreslår Institutionell Kaizen och en Demografikommission som det konkreta första steget.'
    }
 		}
 	}

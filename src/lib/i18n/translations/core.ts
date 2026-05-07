@@ -68,6 +68,8 @@ export const coreTranslations = {
   reportsRussiaTagline: 'When accurate perception becomes a threat to the state itself.',
   reportsChinaTitle: 'China: The Calibration Deficit',
   reportsChinaTagline: 'Why a system built for execution can no longer correct itself fast enough.',
+  reportsJapanTitle: 'Japan: The Continuity Trap',
+  reportsJapanTagline: 'Why the world\'s most coherent society can\'t renew itself.',
 
   // Governance as Engineering — Carousel
   geCarouselBadge: 'Featured Research',
@@ -339,6 +341,8 @@ export const coreTranslations = {
   reportsRussiaTagline: 'När korrekt perception blir ett hot mot staten själv.',
   reportsChinaTitle: 'Kina: Kalibreringsunderskottet',
   reportsChinaTagline: 'Varför ett system byggt för genomförande inte längre kan korrigera sig självt tillräckligt snabbt.',
+  reportsJapanTitle: 'Japan: Kontinuitetsfällan',
+  reportsJapanTagline: 'Varför världens mest sammanhållna samhälle inte kan förnya sig.',
 
   geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {
