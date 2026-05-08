@@ -31,9 +31,9 @@ export const coreTranslations = {
   dark: 'DARK',
   light: 'LIGHT',
 		// Hero
-  title: 'Architect of the Global Governance Frameworks',
+  title: 'Exploring Governance, Systems & Consciousness',
   ingress: 'From engineering physics to mysticism, from psychosis to systems design – my journey has taught me that the deepest problems require the integration of the personal, the political and the existential.',
-  description: 'As the architect behind Global Governance Frameworks and initiator of the Butterfly Party, I work at the intersection of consciousness development and institutional design – for a world that can manage its own complexity.',
+  description: 'I write about governance architectures, collective intelligence, societal feedback systems and consciousness development — including the Governance as Engineering series and the Global Governance Frameworks project.',
   help: 'Show welcome guide',
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
@@ -304,9 +304,9 @@ export const coreTranslations = {
   dark: 'MÖRK',
   light: 'LJUS',
 		// Hero
-  title: 'Arkitekt för Global Governance Frameworks',
+  title: 'Utforskar styrning, system och medvetande',
 		ingress: 'Från teknisk fysik till mystik, från psykos till systemdesign – min resa har lärt mig att de djupaste problemen kräver integration av det personliga, det politiska och det existentiella.',
-  description: 'Som arkitekt bakom Global Governance Frameworks och initiativtagare till Fjärilspartiet arbetar jag i skärningspunkten mellan medvetandeutveckling och institutionell design – för en värld som kan hantera sin egen komplexitet.',
+  description: 'Jag skriver om styrningsarkitekturer, kollektiv intelligens, samhälleliga feedbacksystem och medvetandeutveckling – inklusive serien Styrning som ingenjörskonst och projektet Global Governance Frameworks.',
   help: 'Visa vägledning',
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
