@@ -53,6 +53,11 @@ export const whitepapersTranslations = {
        description:
            'Objective functions are observation architectures. Low-dimensional value functions produce the same structural collapse as low-dimensional governance channels. The variety gap — the mismatch between the dimensionality of reality and the value architecture — is introduced as a unifying diagnostic for systemic blindness. Paper VI in the Governance as Engineering series.'
    },
+   selfVarietyGap: {
+       title: 'The Variety Gap in the Self: What a Person Optimizes For Determines What They Can Perceive',
+       description:
+           'Extends the governance-as-engineering framework to self-governance. The ego is a low-dimensional controller; narrow personal values create blind spots that eventually return as crises. Introduces the self-variety gap (G_self) — a unifying diagnostic for psychological blind spots. Companion to the Governance as Engineering series.'
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -181,6 +186,11 @@ export const whitepapersTranslations = {
        title: 'Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se',
        description:
            'Målfunktioner är observationsarkitekturer. Lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler. Variationsgapet — skillnaden mellan verklighetens dimensionalitet och värdearkitekturens — introduceras som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.'
+   },
+   selfVarietyGap: {
+       title: 'Variationsgapet i självet: Vad en person optimerar för avgör vad de kan uppfatta',
+       description:
+           'Utvidgar ramverket för styrning som ingenjörskonst till självstyrning. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som till slut återvänder som kriser. Introducerar själv-variationsgapet (G_self) — ett enhetligt diagnostiskt verktyg för psykologiska blinda fläckar. Komplement till serien Styrning som ingenjörskonst.'
    },
 			// --- GGF Papers ---
 			preventing1933: {

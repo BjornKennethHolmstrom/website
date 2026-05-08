@@ -28,6 +28,27 @@ const localBase = '/whitepapers';
 
 export const papersData: Whitepaper[] = [
  {
+     id: 'selfVarietyGap',
+     key: 'selfVarietyGap',
+     category: 'governance',
+     tags: ['Self-Governance', 'Variety Gap', 'Cybernetics', 'Psychology', 'Goodhart-Ashby Synthesis', 'Meta-Governance', 'Personal Development', 'Systems Theory'],
+     year: '2026',
+     pages: '57',
+     readTime: {
+         en: '65 min',
+         sv: '65 min'
+     },
+     version: '1.0',
+     pdfPath: {
+         en: `${localBase}/self-variety-gap.pdf`,
+         sv: `${localBase}/self-variety-gap-sv.pdf`,
+     },
+     coverImage: '/whitepapers/images/self-variety-gap-cover.png',
+     readOnlinePath: '/whitepapers/self-variety-gap',
+     readOnlineExternal: false,
+     releaseDate: '2026-05-08'
+ },
+ {
      id: 'theVarietyGap',
      key: 'theVarietyGap',
      category: 'governance',

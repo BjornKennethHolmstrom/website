@@ -194,7 +194,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = 'fractality-as-stability.pdf';
+  let pdfFilename = $derived(currentLang === 'sv' ? 'fractality-as-stability-sv.pdf' : 'fractality-as-stability.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;

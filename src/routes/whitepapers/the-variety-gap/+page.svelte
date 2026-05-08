@@ -168,11 +168,11 @@
       tag: 'Vitbok · Serie VI',
       seriesNote: 'Detta är den sjätte rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
-        { href: '/sv/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
-        { href: '/sv/whitepapers/fractality-as-stability', label: 'Rapport II: Fraktalitet som stabilitet →' },
-        { href: '/sv/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
-        { href: '/sv/whitepapers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
-        { href: '/sv/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
+        { href: '/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
+        { href: '/whitepapers/fractality-as-stability', label: 'Rapport II: Fraktalitet som stabilitet →' },
+        { href: '/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
+        { href: '/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Varje styrsystem fungerar under en explicit eller implicit målfunktion. Den funktionen väljer vilka dimensioner av verkligheten systemet uppmärksammar — och, genom utelämnande, vilka det inte kan uppfatta. Genom att behandla målfunktioner som observationsarkitekturer visar denna vitbok att lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler: de uteslutna dimensionerna återkommer så småningom som olösliga kriser.',
@@ -205,7 +205,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = 'the-variety-gap.pdf';
+  let pdfFilename = $derived(currentLang === 'sv' ? 'the-variety-gap-sv.pdf' : 'the-variety-gap.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;

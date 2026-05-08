@@ -3,110 +3,140 @@
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS ---
+  // --- 1. IMPORT MARKDOWN SECTIONS (Companion: Self-Variety Gap) ---
 
-  import ExecutiveSummaryEn from './sections/executive-summary.md';
-  import ExecutiveSummarySv from './sections/executive-summary-sv.md';
+  import AbstractEn from './sections/abstract.en.md';
+  import AbstractSv from './sections/abstract.sv.md';
 
-  import Part1En from './sections/part-1.md';
-  import Part1Sv from './sections/part-1-sv.md';
+  import Part1En from './sections/part-1.en.md';
+  import Part1Sv from './sections/part-1.sv.md';
 
-  import Part2En from './sections/part-2.md';
-  import Part2Sv from './sections/part-2-sv.md';
+  import Part2En from './sections/part-2.en.md';
+  import Part2Sv from './sections/part-2.sv.md';
 
-  import Part3En from './sections/part-3.md';
-  import Part3Sv from './sections/part-3-sv.md';
+  import Part3En from './sections/part-3.en.md';
+  import Part3Sv from './sections/part-3.sv.md';
 
-  import Part4En from './sections/part-4.md';
-  import Part4Sv from './sections/part-4-sv.md';
+  import Part4En from './sections/part-4.en.md';
+  import Part4Sv from './sections/part-4.sv.md';
 
-  import Part5En from './sections/part-5.md';
-  import Part5Sv from './sections/part-5-sv.md';
+  import Part5En from './sections/part-5.en.md';
+  import Part5Sv from './sections/part-5.sv.md';
 
-  import Part6En from './sections/part-6.md';
-  import Part6Sv from './sections/part-6-sv.md';
+  import Part6En from './sections/part-6.en.md';
+  import Part6Sv from './sections/part-6.sv.md';
 
-  import AppendixAEn from './sections/appendix-a.md';
-  import AppendixASv from './sections/appendix-a-sv.md';
+  import Part7En from './sections/part-7.en.md';
+  import Part7Sv from './sections/part-7.sv.md';
 
-  import AppendixBEn from './sections/appendix-b.md';
-  import AppendixBSv from './sections/appendix-b-sv.md';
+  import AppendixAEn from './sections/appendix-a.en.md';
+  import AppendixASv from './sections/appendix-a.sv.md';
 
-  import AppendixCEn from './sections/appendix-c.md';
-  import AppendixCSv from './sections/appendix-c-sv.md';
+  import AppendixBEn from './sections/appendix-b.en.md';
+  import AppendixBSv from './sections/appendix-b.sv.md';
+
+  import AppendixCEn from './sections/appendix-c.en.md';
+  import AppendixCSv from './sections/appendix-c.sv.md';
+
+  import AppendixDEn from './sections/appendix-d.en.md';
+  import AppendixDSv from './sections/appendix-d.sv.md';
+
+  import AppendixEEn from './sections/appendix-e.en.md';
+  import AppendixESv from './sections/appendix-e.sv.md';
 
   // --- 2. CONTENT STRUCTURE ---
 
   const contentMap = [
     {
-      id: 'executive-summary',
-      titleEn: 'Executive Summary',
+      id: 'abstract',
+      titleEn: 'Abstract',
       titleSv: 'Sammanfattning',
-      compEn: ExecutiveSummaryEn,
-      compSv: ExecutiveSummarySv,
+      compEn: AbstractEn,
+      compSv: AbstractSv,
     },
     {
       id: 'part-1',
-      titleEn: 'Part I: The Observability Problem',
-      titleSv: 'Del I: Observerbarhetsproblemet',
+      titleEn: 'Part I: The Unifying Principle — How Narrow Values Destroy Self‑Observability',
+      titleSv: 'Del I: Den enhetliga principen — Hur snäva värderingar förstör själv‑observerbarhet',
       compEn: Part1En,
       compSv: Part1Sv,
     },
     {
       id: 'part-2',
-      titleEn: 'Part II: The Simulation',
-      titleSv: 'Del II: Simuleringen',
+      titleEn: 'Part II: The Optimization Turn — Personal Values as Observation Architectures',
+      titleSv: 'Del II: Optimeringens vändning — Personliga värderingar som observationsarkitekturer',
       compEn: Part2En,
       compSv: Part2Sv,
     },
     {
       id: 'part-3',
-      titleEn: 'Part III: Structural Observations',
-      titleSv: 'Del III: Strukturella observationer',
+      titleEn: 'Part III: The Missing Dimensions — Truth, Meaning, Connection, and Health as Signal Channels',
+      titleSv: 'Del III: De saknade dimensionerna — Sanning, mening, gemenskap och hälsa som signalkanaler',
       compEn: Part3En,
       compSv: Part3Sv,
     },
     {
       id: 'part-4',
-      titleEn: 'Part IV: Limitations',
-      titleSv: 'Del IV: Begränsningar',
+      titleEn: 'Part IV: Evidence from Psychology and Neuroscience',
+      titleSv: 'Del IV: Bevis från psykologi och neurovetenskap',
       compEn: Part4En,
       compSv: Part4Sv,
     },
     {
       id: 'part-5',
-      titleEn: 'Part V: Implications',
-      titleSv: 'Del V: Implikationer',
+      titleEn: 'Part V: Meta‑Self‑Governance — Designing for Value Evolution',
+      titleSv: 'Del V: Meta‑självstyrning — Design för värdeevolution',
       compEn: Part5En,
       compSv: Part5Sv,
     },
     {
       id: 'part-6',
-      titleEn: 'Part VI: Conclusion',
-      titleSv: 'Del VI: Slutsats',
+      titleEn: 'Part VI: The Speculative Horizon — Transcendence, Nonduality, and the Limit G_self → 0',
+      titleSv: 'Del VI: Den spekulativa horisonten — Transcendens, icke‑dualitet och gränsen G_self → 0',
       compEn: Part6En,
       compSv: Part6Sv,
     },
     {
+      id: 'part-7',
+      titleEn: 'Part VII: Conclusion — The Wholistic Imperative for the Self',
+      titleSv: 'Del VII: Slutsats — Det holistiska imperativet för självet',
+      compEn: Part7En,
+      compSv: Part7Sv,
+    },
+    {
       id: 'appendix-a',
-      titleEn: 'Appendix A: Mathematical Formulations',
-      titleSv: 'Appendix A: Matematiska formuleringar',
+      titleEn: 'Appendix A: Formal Derivation of the Self‑Variety Gap (Static)',
+      titleSv: 'Appendix A: Formell härledning av själv‑variationsgapet (statisk)',
       compEn: AppendixAEn,
       compSv: AppendixASv,
     },
     {
       id: 'appendix-b',
-      titleEn: 'Appendix B: Code and Reproduction',
-      titleSv: 'Appendix B: Kod och reproducerbarhet',
+      titleEn: 'Appendix B: Extension to Time‑Varying Personal Dimensionality',
+      titleSv: 'Appendix B: Utvidgning till tidsvarierande personlig dimensionalitet',
       compEn: AppendixBEn,
       compSv: AppendixBSv,
     },
     {
       id: 'appendix-c',
-      titleEn: 'Appendix C: References and Sources',
-      titleSv: 'Appendix C: Referenser och källor',
+      titleEn: 'Appendix C: Psychological Evidence Summary Table',
+      titleSv: 'Appendix C: Sammanfattningstabell över psykologiska bevis',
       compEn: AppendixCEn,
       compSv: AppendixCSv,
+    },
+    {
+      id: 'appendix-d',
+      titleEn: 'Appendix D: Simulation Architecture — The Self Stability Simulator',
+      titleSv: 'Appendix D: Simuleringsarkitektur — Självstabilitetssimulatorn',
+      compEn: AppendixDEn,
+      compSv: AppendixDSv,
+    },
+    {
+      id: 'appendix-e',
+      titleEn: 'Appendix E: Annotated Reference List',
+      titleSv: 'Appendix E: Kommenterad referenslista',
+      compEn: AppendixEEn,
+      compSv: AppendixESv,
     },
   ];
 
@@ -114,18 +144,19 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series III',
-      seriesNote: 'This is the third paper in the Governance as Engineering series.',
+      tag: 'Whitepaper · Companion to the Governance as Engineering Series',
+      seriesNote: 'This paper extends the Governance as Engineering framework to the architecture of the self. It is a companion to the main series.',
       seriesLinks: [
         { href: '/whitepapers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
-        { href: '/whitepapers/fractality-as-stability',        label: 'Paper II: Fractality as Stability →' },
-        { href: '/whitepapers/requisite-variety-and-the-commons',    label: 'Paper IV: Requisite Variety and the Commons →' },
+        { href: '/whitepapers/fractality-as-stability', label: 'Paper II: Fractality as Stability →' },
+        { href: '/whitepapers/observability-democracy-connection', label: 'Paper III: The Observability‑Democracy Connection →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons', label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/whitepapers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/whitepapers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Democratic governance claims to transmit citizen preferences into policy through representative institutions. This paper asks whether that transmission is technically possible — not whether institutions are well-designed, but whether the information-theoretic properties of representation chains allow citizen preferences to survive to the policy layer at all.',
-      contextOutro: 'The finding: representation chains with three or more layers are constitutionally unobservable. Noise variance exceeds surviving signal variance. The policy layer cannot recover true citizen preferences regardless of institutional quality. This is a diagnosis, not a prescription.',
+      contextIntro: 'This companion volume applies the variety‑gap framework — originally developed for governance institutions — to the individual self. The ego operates as a low‑dimensional controller; narrow personal values create blind spots that accumulate damage until crises (burnout, existential collapse) force recognition. Long‑term wellbeing requires not just broader values but a capacity for personal meta‑governance: consciously evolving one’s own value architecture.',
+      contextOutro: 'Drawing on control theory, self‑regulation psychology, and contemplative neuroscience, the paper introduces the self‑variety gap (G_self) as a diagnostic for psychological blind spots and a guide to the practices — value audits, mindfulness, honest relationships — that can close it.',
       allWhitepapers: '← All Whitepapers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -134,18 +165,19 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie III',
-      seriesNote: 'Detta är den tredje rapporten i serien Styrning som ingenjörskonst.',
+      tag: 'Vitbok · Kompanjon till serien Styrning som ingenjörskonst',
+      seriesNote: 'Denna rapport utvidgar ramverket Styrning som ingenjörskonst till självets arkitektur. Den är en kompanjon till huvudserien.',
       seriesLinks: [
-        { href: '/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
-        { href: '/whitepapers/fractality-as-stability',        label: 'Rapport II: Fraktalitet som stabilitet →' },
-        { href: '/whitepapers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },
-        { href: '/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
-        { href: '/whitepapers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
+        { href: '/sv/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
+        { href: '/sv/whitepapers/fractality-as-stability', label: 'Rapport II: Fraktalitet som stabilitet →' },
+        { href: '/sv/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets‑demokratikopplingen →' },
+        { href: '/sv/whitepapers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
+        { href: '/sv/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
+        { href: '/sv/whitepapers/the-variety-gap', label: 'Rapport VI: Variationsgapet →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Demokratisk styrning hävdar att medborgarnas preferenser förmedlas till politiken via representativa institutioner. Denna vitbok frågar om den överföringen är tekniskt möjlig — inte om institutionerna är väldesignade, utan om representationskedjornas informationsteoretiska egenskaper tillåter medborgerliga preferenser att överleva till politiklagret.',
-      contextOutro: 'Resultatet: representationskedjor med tre eller fler lager är konstitutionellt iakttagbara. Brusvariansen överstiger den kvarvarande signalvariansen. Politiklagret kan inte återskapa sanna medborgarpreferenser oavsett institutionell kvalitet. Detta är en diagnos, inte ett recept.',
+      contextIntro: 'Denna kompanjonvolym tillämpar variationsgap-ramverket — ursprungligen utvecklat för styrningsinstitutioner — på det individuella självet. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som ackumulerar skada tills kriser (utbrändhet, existentiell kollaps) tvingar fram insikt. Långsiktigt välbefinnande kräver inte bara bredare värderingar utan en förmåga till personlig meta-styrning: att medvetet utveckla sin egen värdearkitektur.',
+      contextOutro: 'Med utgångspunkt i reglerteori, självregleringspsykologi och kontemplativ neurovetenskap introduceras själv-variationsgapet (G_self) som ett diagnostiskt verktyg för psykologiska blinda fläckar och en guide till de praktiker — värdegranskning, medveten närvaro, ärliga relationer — som kan minska det.',
       allWhitepapers: '← Alla vitböcker',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -157,24 +189,24 @@
 
   const metadata = {
     en: {
-      title: 'The Observability-Democracy Connection',
-      subtitle: 'How Representation Chains Destroy the Signal They Are Meant to Transmit',
-      description: 'Representation chains with three or more layers are constitutionally unobservable: noise variance exceeds surviving signal variance at the policy layer, and no institutional reform within the existing architecture can restore preference transmission fidelity. Paper III in the Governance as Engineering series.',
+      title: 'The Variety Gap in the Self',
+      subtitle: 'What a Person Optimizes For Determines What They Can Perceive',
+      description: 'Extends the Governance as Engineering framework from institutions to the self. The ego is a low‑dimensional controller; narrow personal values create blind spots that eventually return as crises. A companion to the Governance as Engineering series.',
     },
     sv: {
-      title: 'Observerbarhets-demokratikopplingen',
-      subtitle: 'Hur representationskedjor förstör den signal de är avsedda att förmedla',
-      description: 'Representationskedjor med tre eller fler lager är konstitutionellt icke-observerbara: brusvariansen överstiger den kvarvarande signalvariansen i politiklagret, och ingen institutionell reform inom den befintliga arkitekturen kan återställa preferensöverföringens trohet. Rapport III i serien Styrning som ingenjörskonst.',
+      title: 'Variationsgapet i självet',
+      subtitle: 'Vad en person optimerar för avgör vad de kan uppfatta',
+      description: 'Utvidgar ramverket Styrning som ingenjörskonst från institutioner till självet. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som till slut återvänder som kriser. En kompanjon till serien Styrning som ingenjörskonst.',
     },
   };
 
   // --- 4. REACTIVE LOGIC ---
 
-  let activeSection = $state('executive-summary');
+  let activeSection = $state('abstract');
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'observability-democracy-connection-sv.pdf' : 'observability-democracy-connection.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'self-variety-gap-sv.pdf' : 'self-variety-gap.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
@@ -192,8 +224,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Observerbarhets-demokratikopplingen: Hur representationskedjor förstör den signal de är avsedda att förmedla. GGF Vitboksserie, rapport III.`
-      : `Holmström, B. K. (2026). The Observability-Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit. GGF Whitepaper Series, Paper III.`;
+      ? `Holmström, B. K. (2026). Variationsgapet i självet: Vad en person optimerar för avgör vad de kan uppfatta. GGF Vitboksserie, kompanjonvolym.`
+      : `Holmström, B. K. (2026). The Variety Gap in the Self: What a Person Optimizes For Determines What They Can Perceive. GGF Whitepaper Series, companion volume.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -204,7 +236,7 @@
   title="{meta.title} | GGF Whitepaper"
   description={meta.description}
   type="article"
-  publishedTime="2026-02"
+  publishedTime="2026-05"
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
@@ -318,7 +350,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-c'}
+        {#if section.id !== 'appendix-e'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

@@ -190,7 +190,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = 'governance-stability-simulator.pdf';
+  let pdfFilename = $derived(currentLang === 'sv' ? 'governance-stability-simulator-sv.pdf' : 'governance-stability-simulator.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
