@@ -1,0 +1,250 @@
+<!-- src/routes/reports/nigeria-substrate-deficit/+page.svelte -->
+<script lang="ts">
+  import SEO from '$lib/components/SEO.svelte';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
+
+  // ------------------------------------------
+  // 1. Import all section components (EN only)
+  // ------------------------------------------
+
+  // Executive Summary
+  import ExecutiveSummaryEn from './sections/00-executive-summary.en.md';
+
+  // 1. The Substrate Deficit
+  import SubstrateDeficitEn from './sections/01-substrate-deficit.en.md';
+
+  // 2. Structural Mechanisms
+  import StructuralMechanismsEn from './sections/02-structural-mechanisms.en.md';
+
+  // 3. Building Governance Substrate
+  import BuildingSubstrateEn from './sections/03-building-governance-substrate.en.md';
+
+  // 4. The Political Immune System: The Extraction Coalition
+  import ImmuneSystemEn from './sections/04-political-immune-system.en.md';
+
+  // 5. Working with the Grain: Transition Architecture
+  import TransitionArchitectureEn from './sections/05-transition-architecture.en.md';
+
+  // 6. A Concrete First Step
+  import FirstStepEn from './sections/06-first-step.en.md';
+
+  // 7. Coda
+  import CodaEn from './sections/07-coda.en.md';
+
+  // Appendices
+  import AppendixAEn from './sections/08-appendix-a.en.md';
+  import AppendixBEn from './sections/08-appendix-b.en.md';
+  import AppendixCEn from './sections/08-appendix-c.en.md';
+  import AppendixDEn from './sections/08-appendix-d.en.md';
+  import AppendixEEn from './sections/09-appendix-e.en.md';
+
+  // ------------------------------------------
+  // 2. Section map
+  // ------------------------------------------
+  const contentMap = [
+    {
+      id: 'executive-summary',
+      title: 'Executive Summary',
+      comp: ExecutiveSummaryEn,
+    },
+    {
+      id: 'substrate-deficit',
+      title: '1. The Substrate Deficit',
+      comp: SubstrateDeficitEn,
+    },
+    {
+      id: 'structural-mechanisms',
+      title: '2. The Substrate Deficit: Structural Mechanisms',
+      comp: StructuralMechanismsEn,
+    },
+    {
+      id: 'building-substrate',
+      title: '3. What Building Governance Substrate Would Look Like',
+      comp: BuildingSubstrateEn,
+    },
+    {
+      id: 'immune-system',
+      title: '4. The Political Immune System: The Extraction Coalition',
+      comp: ImmuneSystemEn,
+    },
+    {
+      id: 'transition-architecture',
+      title: '5. Working with the Grain: Transition Architecture for Nigeria',
+      comp: TransitionArchitectureEn,
+    },
+    {
+      id: 'first-step',
+      title: '6. A Concrete First Step: The Fiscal Accountability Compact and the Demography-Climate Commission',
+      comp: FirstStepEn,
+    },
+    {
+      id: 'coda',
+      title: '7. Coda: The Post-Westphalian Prototype — or the Pre-Westphalian Warning',
+      comp: CodaEn,
+    },
+    {
+      id: 'appendix-a',
+      title: 'Appendix A: Value Systems & Policy Mindsets',
+      comp: AppendixAEn,
+    },
+    {
+      id: 'appendix-b',
+      title: 'Appendix B: International Analogues & Precedents',
+      comp: AppendixBEn,
+    },
+    {
+      id: 'appendix-c',
+      title: 'Appendix C: The Governance as Engineering Connection',
+      comp: AppendixCEn,
+    },
+    {
+      id: 'appendix-d',
+      title: 'Appendix D: Anticipated Objections',
+      comp: AppendixDEn,
+    },
+    {
+      id: 'appendix-e',
+      title: 'Appendix E: About the Author & Method',
+      comp: AppendixEEn,
+    },
+  ];
+
+  // ------------------------------------------
+  // 3. Active section tracking
+  // ------------------------------------------
+  let activeSection = $state('executive-summary');
+
+  function scrollTo(id: string) {
+    activeSection = id;
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // ------------------------------------------
+  // 4. Metadata & UI texts (English only)
+  // ------------------------------------------
+  const metadata = {
+    title: "The Substrate Deficit: Why Nigeria Governs Without a State",
+    subtitle:
+      'A field guide to the Extraction–Dissociation–Adaptation–Crisis Loop — and how Africa’s most populous nation can build the institutional foundations its informal genius already assumes',
+    description:
+      'Nigeria is not a failed state — it is a hyper-governed society where the real governance of daily life occurs through informal networks the formal state neither controls nor acknowledges. This report diagnoses a Substrate Deficit produced by the petrostate fiscal architecture, the extraction coalition, and a cultural operating system that converts public office into private patrimony.',
+  };
+
+  const ui = {
+    tag: 'Country Report · Nigeria',
+    allReports: '← All Reports',
+    downloads: 'Downloads',
+    share: 'Share',
+    cite: 'How to cite',
+    pdfLabelEn: 'PDF (English)',
+  };
+</script>
+
+<SEO
+  title="{metadata.title} | Country Report"
+  description={metadata.description}
+  type="article"
+  publishedTime="2026-05"
+/>
+
+<div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
+
+  <!-- SIDEBAR -->
+  <aside class="hidden lg:block w-72 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
+    <!-- Back link -->
+    <div class="mb-8">
+      <a href="/reports" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
+        {ui.allReports}
+      </a>
+    </div>
+
+    <!-- Downloads -->
+    <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
+      <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{ui.downloads}</h3>
+      <div class="space-y-3">
+        <a
+          href="/reports/nigeria-substrate-deficit-en.pdf"
+          download
+          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          {ui.pdfLabelEn}
+        </a>
+      </div>
+    </div>
+
+    <!-- Section Navigation -->
+    <nav class="space-y-1">
+      {#each contentMap as section}
+        <button
+          onclick={() => scrollTo(section.id)}
+          class="block w-full text-left px-3 py-2 rounded-md text-sm transition-colors
+            {activeSection === section.id
+              ? 'bg-[var(--color-page-accent)] text-white font-medium shadow-sm'
+              : 'text-[var(--color-page-text)] hover:bg-[var(--color-card-bg)] opacity-70 hover:opacity-100'}"
+        >
+          {section.title}
+        </button>
+      {/each}
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-1 min-w-0 px-4 pt-16 pb-24">
+    <header class="mb-12 text-center lg:text-left">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-medium tracking-wide uppercase mb-4"
+        style="background-color: var(--color-card-bg); color: var(--color-page-accent);">
+        {ui.tag}
+      </div>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
+        {metadata.title}
+      </h1>
+      <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
+        {metadata.subtitle}
+      </p>
+    </header>
+
+    <!-- Content Sections -->
+    <div class="space-y-16">
+      {#each contentMap as section}
+        <div id={section.id} class="scroll-mt-24">
+          <article class="prose prose-lg max-w-none"
+            style="
+              --tw-prose-headings: var(--color-page-text);
+              --tw-prose-body: var(--color-page-text);
+              --tw-prose-bold: var(--color-page-text);
+              --tw-prose-links: var(--color-page-accent);
+              --tw-prose-quotes: var(--color-page-text);
+              --tw-prose-code: var(--color-page-text);
+              --tw-prose-pre-bg: var(--color-card-bg);
+              --tw-prose-pre-code: #1a1a1a;
+            ">
+            <svelte:component this={section.comp} />
+          </article>
+        </div>
+        {#if section.id !== 'appendix-e'}
+          <hr class="border-[var(--color-separator)] opacity-30 my-8" />
+        {/if}
+      {/each}
+    </div>
+
+    <!-- Share & Citation -->
+    <div class="mt-24 pt-8 border-t border-[var(--color-separator)]">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <ShareButtons title={metadata.title} />
+        <button
+          onclick={() => {
+            const cite = 'Holmström, B. K. (2026). The Substrate Deficit: Why Nigeria Governs Without a State. Strategic Country Report.';
+            navigator.clipboard.writeText(cite);
+            alert('Citation copied!');
+          }}
+          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          {ui.cite}
+        </button>
+      </div>
+    </div>
+  </main>
+</div>

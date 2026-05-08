@@ -267,6 +267,26 @@ export const reportsData: Report[] = [
 			ja: '/reports/japan-continuity-trap-ja.pdf'
 		},
 		readOnlineExternal: false
+	},
+	{
+		id: 'nigeria-substrate-deficit',
+		key: 'nigeriaSubstrateDeficit',
+		emoji: '🇳🇬',
+		category: 'country',
+		year: 2026,
+		pages: 78,
+		readTime: {
+			en: '65–80 min',
+			sv: '65–80 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-09',
+		coverImage: '/images/reports/nigeria-substrate-deficit/cover.png',
+		readOnlinePath: '/reports/nigeria-substrate-deficit',
+		pdfPath: {
+			en: '/reports/nigeria-substrate-deficit-en.pdf'
+		},
+		readOnlineExternal: false
 	}
 ];
 

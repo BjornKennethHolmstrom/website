@@ -190,6 +190,12 @@
 	      emoji: '🇯🇵',
 	      url: '/reports/japan-continuity-trap',
 	      badge: 'NEW'
+      },
+      {
+	      key: 'reportsNigeria',
+	      emoji: '🇳🇬',
+	      url: '/reports/nigeria-substrate-deficit',
+	      badge: 'NEW'
       }
 
   ];

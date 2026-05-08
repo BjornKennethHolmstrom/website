@@ -82,6 +82,11 @@ export const reportsTranslations = {
 	   title: 'The Continuity Trap: Why Japan\'s Civilizational Miracle Cannot Renew Itself',
 	   description:
 		   'Japan does not lack capacity — it lacks the ability to replace the paradigm that delivered its post‑war miracle. This report diagnoses a Continuity Trap produced by the Iron Triangle, the fiscal‑demographic trap, and a cultural operating system that converts systemic failure into individual endurance, and proposes Institutional Kaizen and a Demography Commission as the concrete first step.'
+   },
+   nigeriaSubstrateDeficit: {
+	   title: 'The Substrate Deficit: Why Nigeria Governs Without a State',
+	   description:
+		   'Nigeria is not a failed state — it is a hyper-governed society where the real governance of daily life occurs through informal networks the formal state neither controls nor acknowledges. This report diagnoses a Substrate Deficit produced by the petrostate fiscal architecture, the extraction coalition, and a cultural operating system that converts public office into private patrimony, and proposes a Fiscal Accountability Compact and a Demography-Climate Commission as the concrete first step.'
    }
 		}
 	},
@@ -166,6 +171,11 @@ export const reportsTranslations = {
 	   title: 'Kontinuitetsfällan: Varför Japans civilisatoriska mirakel inte kan förnya sig',
 	   description:
 		   'Japan saknar inte kapacitet — det saknar förmågan att ersätta det paradigm som levererade efterkrigsmiraklet. Rapporten diagnosticerar en kontinuitetsfälla skapad av järntriangeln, den fiskal‑demografiska fällan och ett kulturellt operativsystem som omvandlar systemfel till individuell uthållighet, och föreslår Institutionell Kaizen och en Demografikommission som det konkreta första steget.'
+   },
+   nigeriaSubstrateDeficit: {
+	   title: 'Substratunderskottet: Varför Nigeria styr utan en stat',
+	   description:
+		   'Nigeria är inte en misslyckad stat — det är ett hyperstyrt samhälle där den verkliga styrningen av dagligt liv sker genom informella nätverk som den formella staten varken kontrollerar eller erkänner. Rapporten diagnosticerar ett substratunderskott skapat av petrostatens finansarkitektur, utvinningskoalitionen och ett kulturellt operativsystem som omvandlar offentliga ämbeten till privat arv, och föreslår en finanspolitisk ansvarighetspakt och en demografi‑klimatkommission som det konkreta första steget.'
    }
 		}
 	}

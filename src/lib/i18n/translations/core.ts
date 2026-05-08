@@ -70,6 +70,8 @@ export const coreTranslations = {
   reportsChinaTagline: 'Why a system built for execution can no longer correct itself fast enough.',
   reportsJapanTitle: 'Japan: The Continuity Trap',
   reportsJapanTagline: 'Why the world\'s most coherent society can\'t renew itself.',
+  reportsNigeriaTitle: 'Nigeria: The Substrate Deficit',
+  reportsNigeriaTagline: 'Why Africa\'s most populous nation governs without a state.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -348,6 +350,8 @@ export const coreTranslations = {
   reportsChinaTagline: 'Varför ett system byggt för genomförande inte längre kan korrigera sig självt tillräckligt snabbt.',
   reportsJapanTitle: 'Japan: Kontinuitetsfällan',
   reportsJapanTagline: 'Varför världens mest sammanhållna samhälle inte kan förnya sig.',
+  reportsNigeriaTitle: 'Nigeria: Substratunderskottet',
+  reportsNigeriaTagline: 'Varför Afrikas folkrikaste nation styr utan en stat.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',
