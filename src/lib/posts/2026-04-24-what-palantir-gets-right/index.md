@@ -58,7 +58,7 @@ There is another fork. It says:
 
 **The alternative is not centralized military remobilization. It is distributed regenerative coordination.**
 
-This is the path my work on the Global Governance Frameworks (GGF) attempts to articulate.
+This is the path the Global Governance Frameworks (GGF) attempts to articulate.
 
 | Palantir's Path | The GGF Path |
 | :--- | :--- |

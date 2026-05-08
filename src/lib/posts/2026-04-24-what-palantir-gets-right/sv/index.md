@@ -58,7 +58,7 @@ Det finns ett annat vägskäl. Det säger:
 
 **Alternativet är inte centraliserad militär remobilisering. Det är distribuerad regenerativ samordning.**
 
-Detta är den väg som mitt arbete med Global Governance Frameworks (GGF) försöker artikulera.
+Detta är den väg Global Governance Frameworks (GGF) försöker artikulera.
 
 | Palantirs väg | GGF-vägen |
 | :--- | :--- |
