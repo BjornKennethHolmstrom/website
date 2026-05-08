@@ -3,130 +3,141 @@
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS ---
+  // --- 1. IMPORT MARKDOWN SECTIONS (Paper VI: The Variety Gap) ---
+  // Note: There is no separate executive summary; the abstract serves as the opening section.
 
-  import ExecutiveSummaryEn from './sections/executive-summary.md';
-  import ExecutiveSummarySv from './sections/executive-summary-sv.md';
+  import AbstractEn from './sections/abstract.en.md';
+  import AbstractSv from './sections/abstract.sv.md';
 
-  import Part1En from './sections/part-1.md';
-  import Part1Sv from './sections/part-1-sv.md';
+  import Part1En from './sections/part-1.en.md';
+  import Part1Sv from './sections/part-1.sv.md';
 
-  import Part2En from './sections/part-2.md';
-  import Part2Sv from './sections/part-2-sv.md';
+  import Part2En from './sections/part-2.en.md';
+  import Part2Sv from './sections/part-2.sv.md';
 
-  import Part3En from './sections/part-3.md';
-  import Part3Sv from './sections/part-3-sv.md';
+  import Part3En from './sections/part-3.en.md';
+  import Part3Sv from './sections/part-3.sv.md';
 
-  import Part4En from './sections/part-4.md';
-  import Part4Sv from './sections/part-4-sv.md';
+  import Part4En from './sections/part-4.en.md';
+  import Part4Sv from './sections/part-4.sv.md';
 
-  import Part5En from './sections/part-5.md';
-  import Part5Sv from './sections/part-5-sv.md';
+  import Part5En from './sections/part-5.en.md';
+  import Part5Sv from './sections/part-5.sv.md';
 
-  import Part6En from './sections/part-6.md';
-  import Part6Sv from './sections/part-6-sv.md';
+  import Part6En from './sections/part-6.en.md';
+  import Part6Sv from './sections/part-6.sv.md';
 
-  import Part7En from './sections/part-7.md';
-  import Part7Sv from './sections/part-7-sv.md';
+  import Part7En from './sections/part-7.en.md';
+  import Part7Sv from './sections/part-7.sv.md';
 
-  import AppendixAEn from './sections/appendix-a.md';
-  import AppendixASv from './sections/appendix-a-sv.md';
+  import AppendixAEn from './sections/appendix-a.en.md';
+  import AppendixASv from './sections/appendix-a.sv.md';
 
-  import AppendixBEn from './sections/appendix-b.md';
-  import AppendixBSv from './sections/appendix-b-sv.md';
+  import AppendixBEn from './sections/appendix-b.en.md';
+  import AppendixBSv from './sections/appendix-b.sv.md';
 
-  import AppendixCEn from './sections/appendix-c.md';
-  import AppendixCSv from './sections/appendix-c-sv.md';
+  import AppendixCEn from './sections/appendix-c.en.md';
+  import AppendixCSv from './sections/appendix-c.sv.md';
 
-  import AppendixDEn from './sections/appendix-d.md';
-  import AppendixDSv from './sections/appendix-d-sv.md';
+  import AppendixDEn from './sections/appendix-d.en.md';
+  import AppendixDSv from './sections/appendix-d.sv.md';
+
+  import AppendixFEn from './sections/appendix-f.en.md';
+  import AppendixFSv from './sections/appendix-f.sv.md';
 
   // --- 2. CONTENT STRUCTURE ---
 
   const contentMap = [
     {
-      id: 'executive-summary',
-      titleEn: 'Executive Summary',
-      titleSv: 'Sammanfattning',
-      compEn: ExecutiveSummaryEn,
-      compSv: ExecutiveSummarySv,
+      id: 'abstract',
+      titleEn: 'Abstract',
+      titleSv: 'Sammanfattning',   // Swedish for "Summary"
+      compEn: AbstractEn,
+      compSv: AbstractSv,
     },
     {
       id: 'part-1',
-      titleEn: 'Part I: The Multi-Scale Problem',
-      titleSv: 'Del I: Flerskaliga problemet',
+      titleEn: 'Part I: The Engineering Grammar and Its Generalization',
+      titleSv: 'Del I: Styrningens grammatik och dess generalisering',
       compEn: Part1En,
       compSv: Part1Sv,
     },
     {
       id: 'part-2',
-      titleEn: 'Part II: Fractal Architecture as the Formal Solution',
-      titleSv: 'Del II: Fraktal arkitektur som den formella lösningen',
+      titleEn: 'Part II: The Optimization Turn — Value Functions as Observation Architectures',
+      titleSv: 'Del II: Optimeringens vändning — Värdefunktioner som observationsarkitekturer',
       compEn: Part2En,
       compSv: Part2Sv,
     },
     {
       id: 'part-3',
-      titleEn: 'Part III: The Simulation',
-      titleSv: 'Del III: Simuleringen',
+      titleEn: 'Part III: The Variety Gap — Dynamics and the Dissolution Threshold',
+      titleSv: 'Del III: Variationsgapet — Dynamik och upplösningströskeln',
       compEn: Part3En,
       compSv: Part3Sv,
     },
     {
       id: 'part-4',
-      titleEn: 'Part IV: Structural Observations',
-      titleSv: 'Del IV: Strukturella observationer',
+      titleEn: 'Part IV: The Missing Dimensions — Truth, Meaning, Connection, and Wellbeing as Signal Channels',
+      titleSv: 'Del IV: De saknade dimensionerna — Sanning, mening, gemenskap och välbefinnande som signalkanaler',
       compEn: Part4En,
       compSv: Part4Sv,
     },
     {
       id: 'part-5',
-      titleEn: 'Part V: Limitations',
-      titleSv: 'Del V: Begränsningar',
+      titleEn: 'Part V: The Country Reports Re‑interpreted Through the Variety Gap',
+      titleSv: 'Del V: Landsrapporterna tolkade genom variationsgapet',
       compEn: Part5En,
       compSv: Part5Sv,
     },
     {
       id: 'part-6',
-      titleEn: 'Part VI: Implications',
-      titleSv: 'Del VI: Implikationer',
+      titleEn: 'Part VI: Meta‑Governance — Designing for Open‑Ended Value Evolution',
+      titleSv: 'Del VI: Meta-styrning — Design för öppen värdeevolution',
       compEn: Part6En,
       compSv: Part6Sv,
     },
     {
       id: 'part-7',
-      titleEn: 'Part VII: Conclusion',
-      titleSv: 'Del VII: Slutsats',
+      titleEn: 'Part VII: Conclusion — From Diagnosis to Imperative',
+      titleSv: 'Del VII: Slutsats — Från diagnos till imperativ',
       compEn: Part7En,
       compSv: Part7Sv,
     },
     {
       id: 'appendix-a',
-      titleEn: 'Appendix A: Mathematical Formulations',
-      titleSv: 'Appendix A: Matematiska formuleringar',
+      titleEn: 'Appendix A: Formal Derivation of the Minimum Value Dimensionality Condition (Static)',
+      titleSv: 'Appendix A: Formell härledning av minimidimensionen för värde (statisk)',
       compEn: AppendixAEn,
       compSv: AppendixASv,
     },
     {
       id: 'appendix-b',
-      titleEn: 'Appendix B: Code and Reproduction',
-      titleSv: 'Appendix B: Kod och reproducerbarhet',
+      titleEn: 'Appendix B: Extension to Time‑Varying Dimensionality',
+      titleSv: 'Appendix B: Utvidgning till tidsvarierande dimensionalitet',
       compEn: AppendixBEn,
       compSv: AppendixBSv,
     },
     {
       id: 'appendix-c',
-      titleEn: 'Appendix C: Disturbance Timescale Reference Table',
-      titleSv: 'Appendix C: Referenstabell för störningstidsskalor',
+      titleEn: 'Appendix C: Simulation Architecture for Value‑Function Collapse',
+      titleSv: 'Appendix C: Simuleringsarkitektur för värdefunktionskollaps',
       compEn: AppendixCEn,
       compSv: AppendixCSv,
     },
     {
       id: 'appendix-d',
-      titleEn: 'Appendix D: References and Sources',
-      titleSv: 'Appendix D: Referenser och källor',
+      titleEn: 'Appendix D: Country Report Variety‑Gap Estimation Table',
+      titleSv: 'Appendix D: Landsrapportens variationsgapsbedömningstabell',
       compEn: AppendixDEn,
       compSv: AppendixDSv,
+    },
+    {
+      id: 'appendix-f',
+      titleEn: 'Appendix F: Annotated Reference List',
+      titleSv: 'Appendix F: Kommenterad referenslista',
+      compEn: AppendixFEn,
+      compSv: AppendixFSv,
     },
   ];
 
@@ -134,18 +145,18 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series II',
-      seriesNote: 'This is the second paper in the Governance as Engineering series.',
+      tag: 'Whitepaper · Series VI',
+      seriesNote: 'This is the sixth paper in the Governance as Engineering series.',
       seriesLinks: [
-        { href: '/whitepapers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
-        { href: '/whitepapers/observability-democracy-connection',  label: 'Paper III: The Observability-Democracy Connection →' },
-        { href: '/whitepapers/requisite-variety-and-the-commons',   label: 'Paper IV: Requisite Variety and the Commons →' },
+        { href: '/whitepapers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
+        { href: '/whitepapers/fractality-as-stability', label: 'Paper II: Fractality as Stability →' },
+        { href: '/whitepapers/observability-democracy-connection', label: 'Paper III: The Observability-Democracy Connection →' },
+        { href: '/whitepapers/requisite-variety-and-the-commons', label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/whitepapers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
-        { href: '/whitepapers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'This paper extends the control-theoretic governance framework from paper one to multi-scale disturbance environments. The core finding: no single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
-      contextOutro: 'The frequency-latency constraint (f_max ≈ 1/2τ) places a hard ceiling on what any single-scale controller can achieve. Fractality closes all frequency gaps simultaneously. This is not a governance preference. It is a structural result.',
+      contextIntro: 'Every governance system operates under an explicit or implicit objective function. That function selects which dimensions of reality the system attends to — and, by omission, which it cannot perceive. Treating objective functions as observation architectures, this paper shows that low‑dimensional value functions produce the same structural collapse as low‑dimensional governance channels: the excluded dimensions eventually re‑enter as unresolvable crises.',
+      contextOutro: 'The paper introduces the variety gap (G) — the mismatch between the dimensionality of reality and the value architecture — as a unifying diagnostic. When G exceeds a critical threshold, the system becomes constitutionally blind to existential threats. Long‑run viability requires not just better metrics but an enduring capacity for value evolution.',
       allWhitepapers: '← All Whitepapers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -154,18 +165,18 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie II',
-      seriesNote: 'Detta är den andra rapporten i serien Styrning som ingenjörskonst.',
+      tag: 'Vitbok · Serie VI',
+      seriesNote: 'Detta är den sjätte rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
-        { href: '/whitepapers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
-        { href: '/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
-        { href: '/whitepapers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },
-        { href: '/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
-        { href: '/whitepapers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
+        { href: '/sv/whitepapers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
+        { href: '/sv/whitepapers/fractality-as-stability', label: 'Rapport II: Fraktalitet som stabilitet →' },
+        { href: '/sv/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+        { href: '/sv/whitepapers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
+        { href: '/sv/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Denna vitbok utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
-      contextOutro: 'Frekvens-latensbegränsningen (f_max ≈ 1/2τ) sätter ett hårt tak för vad en enskild skalregulator kan uppnå. Fraktalitet stänger alla frekvensgap samtidigt. Detta är inte en styrningspreferens. Det är ett strukturellt resultat.',
+      contextIntro: 'Varje styrsystem fungerar under en explicit eller implicit målfunktion. Den funktionen väljer vilka dimensioner av verkligheten systemet uppmärksammar — och, genom utelämnande, vilka det inte kan uppfatta. Genom att behandla målfunktioner som observationsarkitekturer visar denna vitbok att lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler: de uteslutna dimensionerna återkommer så småningom som olösliga kriser.',
+      contextOutro: 'Vitboken introducerar variationsgapet (G) — avståndet mellan verklighetens dimensionalitet och värdearkitekturens dimensionalitet — som ett enhetligt diagnostiskt verktyg. När G överskrider en kritisk tröskel blir systemet konstitutionellt blint för existentiella hot. Långsiktig överlevnad kräver inte bara bättre mätetal, utan en varaktig förmåga att utveckla värdegrunden.',
       allWhitepapers: '← Alla vitböcker',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -177,24 +188,24 @@
 
   const metadata = {
     en: {
-      title: 'Fractality as Stability',
-      subtitle: 'A Multi-Scale Control-Theoretic Proof',
-      description: 'Extending the governance-as-engineering framework to multi-scale disturbance environments. No single-scale controller can stabilize a multi-frequency disturbance environment. Fractal architectures are the stability-optimal solution — for the same reasons the nervous system, immune system, and internet are fractal.',
+      title: 'The Variety Gap',
+      subtitle: 'What We Don’t Optimize For, We Lose the Ability to See',
+      description: 'Objective functions are observation architectures. This paper introduces the variety gap — the mismatch between the dimensionality of reality and the value architecture — as a unifying diagnostic for systemic blindness. Paper VI in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Fraktalitet som stabilitet',
-      subtitle: 'Ett flerskaligt reglerteoretiskt bevis',
-      description: 'Utvidgar styrning-som-ingenjörskonst-ramverket till flerskaliga störningsmiljöer. Ingen enskild skalregulator kan stabilisera en flerfrekvent störningsmiljö. Fraktala arkitekturer är den stabilitetsoptimala lösningen — av samma skäl som nervsystemet, immunsystemet och internet är fraktala.',
+      title: 'Variationsgapet',
+      subtitle: 'Vad vi inte optimerar för, förlorar vi förmågan att se',
+      description: 'Målfunktioner är observationsarkitekturer. Denna vitbok introducerar variationsgapet — diskrepansen mellan verklighetens dimensionalitet och värdearkitekturen — som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.',
     },
   };
 
   // --- 4. REACTIVE LOGIC ---
 
-  let activeSection = $state('executive-summary');
+  let activeSection = $state('abstract');   // start with abstract
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = 'fractality-as-stability.pdf';
+  let pdfFilename = 'the-variety-gap.pdf';
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
@@ -212,8 +223,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis. GGF Vitboksserie, rapport II.`
-      : `Holmström, B. K. (2026). Fractality as Stability: A Multi-Scale Control-Theoretic Proof. GGF Whitepaper Series, Paper II.`;
+      ? `Holmström, B. K. (2026). Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se. GGF Vitboksserie, rapport VI.`
+      : `Holmström, B. K. (2026). The Variety Gap: What We Don’t Optimize For, We Lose the Ability to See. GGF Whitepaper Series, Paper VI.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -224,7 +235,7 @@
   title="{meta.title} | GGF Whitepaper"
   description={meta.description}
   type="article"
-  publishedTime="2026-02"
+  publishedTime="2026-05"
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
@@ -263,7 +274,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/pwnytale/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
@@ -338,7 +349,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-d'}
+        {#if section.id !== 'appendix-f'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

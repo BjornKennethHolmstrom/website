@@ -131,6 +131,7 @@
         { href: '/whitepapers/observability-democracy-connection',   label: 'Paper III: The Observability-Democracy Connection →' },
         { href: '/whitepapers/requisite-variety-and-the-commons',    label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/whitepapers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
+        { href: '/whitepapers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper introduces the Governance Stability Simulator — an open analytical framework that models governance institutions as feedback control systems. Using standard mathematics from control theory and cybernetics, it compares governance architectures by their measurable stability properties rather than their stated intentions.',
@@ -153,6 +154,7 @@
         { href: '/whitepapers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
         { href: '/whitepapers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },
         { href: '/whitepapers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
+        { href: '/whitepapers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna vitbok introducerar styrstabilitetssimulatorn — ett öppet analytiskt ramverk som modellerar styrningsinstitutioner som återkopplingssystem. Med hjälp av standardmatematik från reglerteknik och cybernetik jämförs styrningsarkitekturer utifrån mätbara stabilitetsegenskaper snarare än uttalade intentioner.',
@@ -257,7 +259,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/pwnytale/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

@@ -27,45 +27,67 @@ const wpBase = 'https://bjornkennethholmstrom.wordpress.com';
 const localBase = '/whitepapers';
 
 export const papersData: Whitepaper[] = [
-	{
-		id: 'governanceSimulator',
-		key: 'governanceSimulator',
-		category: 'governance',
-		tags: ['Control Theory', 'Cybernetics', 'Systems Theory', 'Subsidiarity', 'Governance Engineering', 'Feedback Systems', 'Simulation'],
-		year: '2026',
-		pages: '33',
+ {
+     id: 'theVarietyGap',
+     key: 'theVarietyGap',
+     category: 'governance',
+     tags: ['Variety Gap', 'Value Architecture', 'Goodhart-Ashby Synthesis', 'Meta-Governance', 'Observability', 'Cybernetics', 'Complexity', 'Civilizational Viability', 'Systems Theory', 'Governance Engineering'],
+     year: '2026',
+     pages: '47',
+     readTime: {
+         en: '60 min',
+         sv: '60 min'
+     },
+     version: '1.0',
+     pdfPath: {
+         en: `${localBase}/the-variety-gap.pdf`,
+         sv: `${localBase}/the-variety-gap-sv.pdf`,
+     },
+     coverImage: '/whitepapers/images/the-variety-gap-cover.png',
+     readOnlinePath: '/whitepapers/the-variety-gap',
+     readOnlineExternal: false,
+     releaseDate: '2026-05-08'
+ },
+ {
+  id: 'coordinationFailureTax',
+  key: 'coordinationFailureTax',
+  category: 'governance',
+  tags: ['Governance Architecture','Systems Theory','Coordination Failure','Requisite Variety','Cybernetics','Democratic Reform','Commons Governance','Global Governance Frameworks','Institutional Design',
+  ],
+  year: '2026',
+  pages: '18',
 		readTime: {
-			en: '40 min',
-			sv: '40 min'
+			en: '25 min',
+			sv: '25 min'
 		},
 		version: '1.0',
 		pdfPath: {
-			en: `${localBase}/governance-stability-simulator.pdf`,
-			sv: `${localBase}/governance-stability-simulator-sv.pdf`,
+			en: `${localBase}/coordination-failure-tax.pdf`,
+			sv: `${localBase}/coordination-failure-tax-sv.pdf`,
 		},
-		coverImage: '/whitepapers/images/governance-simulator-cover.png',
-		readOnlinePath: '/whitepapers/governance-stability-simulator',
+		coverImage: '/whitepapers/images/coordination-failure-tax-cover.png',
+		readOnlinePath: '/whitepapers/coordination-failure-tax',
 		readOnlineExternal: false,
-		releaseDate: '2026-02-27'
+		releaseDate: '2026-03-02'
 	},
-	{
-		id: 'fractalityAsStability',
-		key: 'fractalityAsStability',
+ {
+		id: 'requisiteVarietyCommons',
+		key: 'requisiteVarietyCommons',
 		category: 'governance',
-		tags: ['Control Theory', 'Cybernetics', 'Fractal Architecture', 'Multi-Scale Systems', 'Governance Engineering', 'Feedback Systems', 'Frequency Analysis', 'Subsidiarity', 'Simulation'],
+		tags: ['Commons Governance', 'Requisite Variety', 'Cybernetics', 'Indigenous Sovereignty', 'Traditional Ecological Knowledge', 'Feedback Loops', 'Resource Management', 'Governance Engineering', 'Simulation'],
 		year: '2026',
-		pages: '47',
+		pages: '43',
 		readTime: {
 			en: '50 min',
 			sv: '50 min'
 		},
 		version: '1.0',
 		pdfPath: {
-			en: `${localBase}/fractality-as-stability.pdf`,
-			sv: `${localBase}/fractality-as-stability-sv.pdf`,
+			en: `${localBase}/requisite-variety-and-the-commons.pdf`,
+			sv: `${localBase}/requisite-variety-and-the-commons-sv.pdf`,
 		},
-		coverImage: '/whitepapers/images/fractality-as-stability-cover.png',
-		readOnlinePath: '/whitepapers/fractality-as-stability',
+		coverImage: '/whitepapers/images/requisite-variety-commons-cover.png',
+		readOnlinePath: '/whitepapers/requisite-variety-and-the-commons',
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},
@@ -90,48 +112,47 @@ export const papersData: Whitepaper[] = [
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},
- {
-		id: 'requisiteVarietyCommons',
-		key: 'requisiteVarietyCommons',
+	{
+		id: 'fractalityAsStability',
+		key: 'fractalityAsStability',
 		category: 'governance',
-		tags: ['Commons Governance', 'Requisite Variety', 'Cybernetics', 'Indigenous Sovereignty', 'Traditional Ecological Knowledge', 'Feedback Loops', 'Resource Management', 'Governance Engineering', 'Simulation'],
+		tags: ['Control Theory', 'Cybernetics', 'Fractal Architecture', 'Multi-Scale Systems', 'Governance Engineering', 'Feedback Systems', 'Frequency Analysis', 'Subsidiarity', 'Simulation'],
 		year: '2026',
-		pages: '43',
+		pages: '47',
 		readTime: {
 			en: '50 min',
 			sv: '50 min'
 		},
 		version: '1.0',
 		pdfPath: {
-			en: `${localBase}/requisite-variety-and-the-commons.pdf`,
-			sv: `${localBase}/requisite-variety-and-the-commons-sv.pdf`,
+			en: `${localBase}/fractality-as-stability.pdf`,
+			sv: `${localBase}/fractality-as-stability-sv.pdf`,
 		},
-		coverImage: '/whitepapers/images/requisite-variety-commons-cover.png',
-		readOnlinePath: '/whitepapers/requisite-variety-and-the-commons',
+		coverImage: '/whitepapers/images/fractality-as-stability-cover.png',
+		readOnlinePath: '/whitepapers/fractality-as-stability',
 		readOnlineExternal: false,
 		releaseDate: '2026-02-27'
 	},
- {
-  id: 'coordinationFailureTax',
-  key: 'coordinationFailureTax',
-  category: 'governance',
-  tags: ['Governance Architecture','Systems Theory','Coordination Failure','Requisite Variety','Cybernetics','Democratic Reform','Commons Governance','Global Governance Frameworks','Institutional Design',
-  ],
-  year: '2026',
-  pages: '18',
+	{
+		id: 'governanceSimulator',
+		key: 'governanceSimulator',
+		category: 'governance',
+		tags: ['Control Theory', 'Cybernetics', 'Systems Theory', 'Subsidiarity', 'Governance Engineering', 'Feedback Systems', 'Simulation'],
+		year: '2026',
+		pages: '33',
 		readTime: {
-			en: '25 min',
-			sv: '25 min'
+			en: '40 min',
+			sv: '40 min'
 		},
 		version: '1.0',
 		pdfPath: {
-			en: `${localBase}/coordination-failure-tax.pdf`,
-			sv: `${localBase}/coordination-failure-tax-sv.pdf`,
+			en: `${localBase}/governance-stability-simulator.pdf`,
+			sv: `${localBase}/governance-stability-simulator-sv.pdf`,
 		},
-		coverImage: '/whitepapers/images/coordination-failure-tax-cover.png',
-		readOnlinePath: '/whitepapers/coordination-failure-tax',
+		coverImage: '/whitepapers/images/governance-simulator-cover.png',
+		readOnlinePath: '/whitepapers/governance-stability-simulator',
 		readOnlineExternal: false,
-		releaseDate: '2026-03-02'
+		releaseDate: '2026-02-27'
 	},
 	{
 		id: 'architectureOfStability',

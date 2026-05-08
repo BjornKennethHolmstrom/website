@@ -45,8 +45,13 @@ export const whitepapersTranslations = {
    coordinationFailureTax: {
      title: 'The Coordination Failure Tax',
      subtitle: 'Architectural Compounding and the Path to Requisite Governance',
-     description: 'Four governance failure modes — spatial blindness, frequency gaps, preference invisibility, and observational inadequacy — do not add. They multiply. This paper introduces the coordination failure tax, maps the compounding mechanism formally, and shows how the Global Governance Frameworks constitute a structural response to all four diagnosed constraints simultaneously.',
+     description: 'Four governance failure modes — spatial blindness, frequency gaps, preference invisibility, and observational inadequacy — do not add. They multiply. This paper introduces the coordination failure tax, maps the compounding mechanism formally, and shows how the Global Governance Frameworks constitute a structural response to all four diagnosed constraints simultaneously. Paper V in the Governance as Engineering series.',
      seriesLabel: 'Paper V · Governance as Engineering',
+   },
+   theVarietyGap: {
+       title: 'The Variety Gap: What We Don\'t Optimize For, We Lose the Ability to See',
+       description:
+           'Objective functions are observation architectures. Low-dimensional value functions produce the same structural collapse as low-dimensional governance channels. The variety gap — the mismatch between the dimensionality of reality and the value architecture — is introduced as a unifying diagnostic for systemic blindness. Paper VI in the Governance as Engineering series.'
    },
 			// --- GGF Papers ---
 			preventing1933: {
@@ -169,8 +174,13 @@ export const whitepapersTranslations = {
    coordinationFailureTax: {
      title: 'Samordningsmisslyckandets skatt',
      subtitle: 'Arkitektonisk förstärkning och vägen mot nödvändig styrning',
-     description: 'Fyra styrningsfelmönster — rumslig blindhet, frekvensluckor, preferensosynlighet och observationsotillräcklighet — adderar inte. De multiplicerar. Denna rapport introducerar samordningsmisslyckandets skatt, kartlägger förstärkningsmekanismen formellt och visar hur Global Governance Frameworks utgör ett strukturellt svar på alla fyra diagnosticerade begränsningar samtidigt.',
+     description: 'Fyra styrningsfelmönster — rumslig blindhet, frekvensluckor, preferensosynlighet och observationsotillräcklighet — adderar inte. De multiplicerar. Denna rapport introducerar samordningsmisslyckandets skatt, kartlägger förstärkningsmekanismen formellt och visar hur Global Governance Frameworks utgör ett strukturellt svar på alla fyra diagnosticerade begränsningar samtidigt. Rapport V i serien Styrning som ingenjörskonst.',
      seriesLabel: 'Rapport V · Styrning som ingenjörskonst',
+   },
+   theVarietyGap: {
+       title: 'Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se',
+       description:
+           'Målfunktioner är observationsarkitekturer. Lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler. Variationsgapet — skillnaden mellan verklighetens dimensionalitet och värdearkitekturens — introduceras som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.'
    },
 			// --- GGF Papers ---
 			preventing1933: {

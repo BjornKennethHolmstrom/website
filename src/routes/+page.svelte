@@ -11,6 +11,7 @@
    { key: 'geSeriesPaperIII', url: '/whitepapers/observability-democracy-connection',        coverImage: '/whitepapers/images/observability-democracy-cover.png' },
    { key: 'geSeriesPaperIV',  url: '/whitepapers/requisite-variety-and-the-commons',         coverImage: '/whitepapers/images/requisite-variety-commons-cover.png' },
    { key: 'geSeriesPaperV',   url: '/whitepapers/coordination-failure-tax',                  coverImage: '/whitepapers/images/coordination-failure-tax-cover.png' },
+   { key: 'geSeriesPaperVI',   url: '/whitepapers/the-variety-gap',                  coverImage: '/whitepapers/images/the-variety-gap-cover.png' },
  ];
 
 	// Definiera vår projektdata.
@@ -496,7 +497,7 @@
                 href={currentPaper.url}
                 class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
               >
-                Read the Paper
+                {$t.geCarouselButton} 
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 -mr-1"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </a>
             </div>

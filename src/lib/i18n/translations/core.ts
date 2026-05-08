@@ -72,6 +72,7 @@ export const coreTranslations = {
   reportsJapanTagline: 'Why the world\'s most coherent society can\'t renew itself.',
 
   // Governance as Engineering — Carousel
+  geCarouselButton: 'Read the Paper ',
   geCarouselBadge: 'Featured Research',
   geCarouselSeries: {
     geSeriesPaperI: {
@@ -93,6 +94,10 @@ export const coreTranslations = {
     geSeriesPaperV: {
       title: 'V: The Coordination Failure Tax',
       desc:  'Reveals that the four failure modes multiply rather than add — the tax is exponential, not linear.'
+    },
+    geSeriesPaperVI: {
+      title: 'VI: The Variety Gap',
+      desc:  'Shows that objective functions are observation architectures — low‑dimensional value functions blind systems to the dimensions that eventually destroy them.'
     },
   },
 
@@ -344,6 +349,7 @@ export const coreTranslations = {
   reportsJapanTitle: 'Japan: Kontinuitetsfällan',
   reportsJapanTagline: 'Varför världens mest sammanhållna samhälle inte kan förnya sig.',
 
+  geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',
   geCarouselSeries: {
     geSeriesPaperI: {
@@ -365,6 +371,10 @@ export const coreTranslations = {
     geSeriesPaperV: {
       title: 'V: Samordningsmisslyckandets skatt',
       desc:  'Avslöjar att de fyra felsätten multipliceras snarare än adderas — skatten är exponentiell, inte linjär.'
+    },
+    geSeriesPaperVI: {
+      title: 'VI: Variationsgapet',
+      desc:  'Visar att målfunktioner är observationsarkitekturer — lågdimensionella värdefunktioner gör system blinda för de dimensioner som till slut förgör dem.'
     },
   },
 
