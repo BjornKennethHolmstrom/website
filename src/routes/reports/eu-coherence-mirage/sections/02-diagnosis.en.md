@@ -98,3 +98,9 @@ This is the coherence deficit at work. It is not a failure of competence, resour
 
 ---
 
+### 2.8 Why Constitutional Redesign Is Not Enough
+
+Constitutional redesign proposals—from federal settlements to treaty simplification—address symptoms of the coherence deficit (unclear competences, weak political authority) without rewiring the patterns that produce it. A federal constitution would still inherit the Translation Gap, Asymmetric Capacity, and Time-Scale Mismatch unless the underlying coordination architecture is upgraded. The Union needs operational coherence capacity first—the ability to sense, translate, and align action across sovereign systems in real time. That capacity could eventually support formal constitutional revision. Or it might render such revision unnecessary by demonstrating that coherence is achievable within existing treaties, properly equipped.
+
+---
+
