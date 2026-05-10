@@ -40,6 +40,23 @@ The argument advanced here is an opening, not a conclusion. Several significant 
 
 **The legitimacy gap.** As acknowledged in Part VI, the engineering framework can specify the structural conditions for viability; it cannot supply democratic legitimacy. How to reconcile the need for value‑dimensional expansion with the requirement for popular consent, particularly when the excluded dimensions are not yet perceived by the population whose consent is sought, is a deep problem at the intersection of political theory, cognitive science, and institutional design. The paper does not resolve it (Habermas, 1996; Dryzek, 2000).
 
+### 7.3.1 The Measurement Gap
+
+The framework's most immediate limitation is the gap between formal definition and empirical measurement. The variables dim(V), dim(R), G, and G_crit are defined precisely in Appendices A–B using linear algebra, but real governance systems do not come with labeled observation matrices and disturbance spaces. Appendix G provides measurement protocols, but these protocols have not been implemented. This means:
+
+**All quantitative claims in the paper are provisional.** The variety gap estimates for country cases (G ≈ 2–3), the critical threshold estimate (G_crit ≈ 2–3), the dynamic parameters (α, β)—all are order-of-magnitude judgments, not measurements. They serve to make the framework concrete and falsifiable, but they have not been falsified (or confirmed) by data.
+
+**The framework's empirical status is "testable but not yet tested."** It generates predictions:
+- Systems with larger variety gaps should exhibit more frequent governance failures
+- Gap growth rate should correlate with institutional rigidity
+- Crossing G_crit should produce characteristic failure signatures (noise-tracking, policy-outcome decorrelation)
+
+These predictions are specific enough to be wrong, which means the framework has empirical content. But testing them requires implementing Appendix G's protocols, which requires resources and access this paper does not mobilize.
+
+**The research priority is operationalization.** Before pursuing theoretical extensions, the framework needs empirical grounding. This means: measuring dim(V) for 5–10 countries using PCA on budget/legislative time series; measuring dim(D) using historical shock factor analysis; testing whether estimated G predicts governance failure rates in panel data; and empirically calibrating G_crit by identifying SNR thresholds in documented collapses.
+
+Until this work is done, the framework remains a diagnostic lens and conceptual vocabulary—useful for organizing observations, but not validated as explanatory or predictive.
+
 #### 7.4 The Civilisational Bet
 
 The variety‑gap framework implies a wager. The wager is that a civilisation that learns to consciously expand its value architecture — that builds the capacity to perceive what it currently excludes — will outlast one that does not. The wager is not provable in advance; it can only be tested by history.
@@ -48,9 +65,35 @@ But the historical record, such as it is, leans toward the framework’s predict
 
 What the framework offers is not a final answer but a structured way of asking the question. It provides a language in which the structural necessities of value evolution can be made precise. It identifies the variety gap as the single variable that tracks the accumulating risk of systemic blindness. It proposes, in provisional form, the institutional machinery that might keep the gap within bounds. And it insists, with as much clarity as the current formal apparatus permits, that the question of what a civilisation learns to value is the most consequential design decision it will ever make — and the one for which it is currently least well‑equipped.
 
-#### 7.5 Invitation
+### 7.5 Testable Predictions
 
-The simulations, the formal derivations, and the country analyses presented across the Governance as Engineering series and this paper constitute a diagnostic instrument. They generate testable predictions: about the relationship between value dimensionality and collapse risk, about the growth dynamics of the variety gap under different adaptation regimes, about the performance effects of specific meta‑governance institutions. The predictions await empirical confrontation.
+The framework generates falsifiable predictions that distinguish it from a purely interpretive lens. Confirmation would constitute empirical validation; disconfirmation would require revision or rejection of the framework. Appendix H provides detailed operationalizations, data sources, and statistical tests for each prediction.
+
+1. **Variety gap and crisis frequency:** Systems with larger estimated variety gaps (G) will experience more frequent governance crises — especially in excluded dimensions — than systems with smaller G, controlling for economic development and regime type.
+
+2. **Gap growth and institutional rigidity:** Countries with more rigid governance institutions will exhibit faster variety‑gap growth (dG/dt) than more adaptive systems, because their adaptation efficiency β is lower.
+
+3. **Signature failure patterns at G_crit:** When a governance system crosses the estimated critical threshold, it should exhibit policy‑outcome decorrelation, reactive governance, and phantom‑signal tracking — patterns distinguishable from ordinary poor performance.
+
+4. **Multidimensional value architectures and crisis reduction:** Systems that explicitly track multiple wellbeing dimensions will experience fewer crises in traditionally excluded domains than comparable GDP‑centric systems.
+
+5. **Value audits and gap reduction:** Organizations that implement structured value audits will add more dimensions to their tracked objectives and experience fewer “unexpected” failures than comparable organizations that do not.
+
+6. **Goodhart–Ashby simulator calibration:** In documented cases of metric‑fixation collapse, calibrating the value‑function collapse simulator with real parameter estimates should reproduce observed collapse trajectories better than naive extrapolation.
+
+7. **Representation chain depth and democratic satisfaction:** Democracies with representation chains exceeding 2–3 layers will exhibit lower citizen satisfaction with democracy and weaker preference‑policy congruence than those with shorter chains.
+
+These predictions are specific enough to be wrong. That is their value: they convert the framework from a way of seeing into a set of claims that can be tested, refined, or refuted by evidence.
+
+#### 7.6 Invitation
+
+**What has been established:** The paper establishes a conceptual framework and a formal structure. It shows that objective functions are observation architectures (Part II), that low-dimensional observation creates structural blindness (Parts I–III), and that specific exclusions (truth, meaning, wellbeing, relational integrity) accelerate gap growth (Part IV). It demonstrates that disparate governance failures can be re-interpreted using a unified vocabulary (Part V) and specifies institutional mechanisms that would, in principle, enable value evolution (Part VI).
+ 
+**What has not been established:** The framework has not been empirically validated. The country case re-interpretations are consistent with the framework but do not test it. The measurement protocols exist but have not been implemented. The quantitative claims (G ≈ 2–3, G_crit ≈ 2–3) are illustrative, not measured. The dynamic model is conceptual, not calibrated.
+ 
+**The boundary between contribution and aspiration:** The contribution is a *way of seeing* governance failures—a structured vocabulary and formal apparatus that makes certain patterns visible. The aspiration is that this way of seeing will prove empirically grounded once the measurement work is done. The paper cannot claim to have completed that work, only to have specified what it would require.
+
+The simulations, the formal derivations, and the country analyses presented across the Governance as Engineering series and this paper constitute a diagnostic instrument. They generate testable predictions: about the relationship between value dimensionality and collapse risk, about the growth dynamics of the variety gap under different adaptation regimes, about the performance effects of specific meta‑governance institutions. The predictions await empirical testing.
 
 The paper closes, therefore, not with a declaration but with an invitation. The invitation is to treat the variety gap not as a metaphor but as a variable — to measure it, to model it, to test its consequences, and to design the institutions that might keep it from crossing the threshold at which a civilisation can no longer see the sources of its own fragility.
 

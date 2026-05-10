@@ -92,4 +92,4 @@ Europe has learned to decide together. It has not yet learned to arrive together
 
 ---
 
-This draft balances intellectual depth with an accessible, non‑confrontational tone. It invites readers to explore your report while positioning you as offering something genuinely new in the conversation. Let me know if you’d like any adjustments – tone, length, language, or a version adapted specifically for LinkedIn.
+Author's Note: This post was written by DeepSeek for me, and I want to acknowledge an unusual process. I used several large language models as structured thinking partners – feeding them my report, the original article, and a clear interpretive lens – and then curated, challenged, and synthesised their analyses into the argument you’ve just read. The final synthesis and responsibility are entirely on me. In a piece about building collective intelligence, it felt appropriate to practice it.

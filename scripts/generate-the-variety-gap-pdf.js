@@ -76,6 +76,8 @@ const sections = [
 	{ file: 'appendix-c',  title: LANGUAGE === 'en' ? 'Appendix C: Simulation Architecture for Value‑Function Collapse'     : 'Appendix C: Simuleringsarkitektur för värdefunktionskollaps', isAppendix: true  },
 	{ file: 'appendix-d',  title: LANGUAGE === 'en' ? 'Appendix D: Country Report Variety‑Gap Estimation Table'              : 'Appendix D: Landsrapportens variationsgapsbedömningstabell',  isAppendix: true  },
 	{ file: 'appendix-f',  title: LANGUAGE === 'en' ? 'Appendix F: Annotated Reference List'                                : 'Appendix F: Kommenterad referenslista',                        isAppendix: true  },
+	{ file: 'appendix-g',   title: LANGUAGE === 'en' ? 'Appendix G: Operational Definitions and Measurement Protocols' : 'Appendix G: Operationella definitioner och mätprotokoll', isAppendix: true },
+	{ file: 'appendix-h',   title: LANGUAGE === 'en' ? 'Appendix H: Testable Predictions and Falsification Protocols' : 'Appendix H: Testbara förutsägelser och falsifieringsprotokoll', isAppendix: true },
 ];
 
 // ── CSS (same as original, tweaked for new paper) ───────────────────────────

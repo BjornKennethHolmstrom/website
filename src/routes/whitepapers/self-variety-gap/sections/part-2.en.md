@@ -44,6 +44,16 @@ The deeper mechanism is architectural. A single metric — happiness, success, c
 
 This yields the Goodhart–Ashby synthesis for the self: *any personal value function with dimensionality lower than the variety of the self will eventually optimize away its own ability to perceive the self’s true state.* The person who optimizes for happiness loses the ability to perceive the conditions that produce happiness. The person who optimizes for success loses the ability to perceive the costs they are paying. The person who optimizes for control loses the ability to perceive the adaptive opportunities they are excluding. In each case, the narrow metric destroys the informational basis on which its own success depends.
 
+#### 2.4.1 What the Synthesis Adds: Novelty and Relationship to Existing Work
+
+*The Goodhart–Ashby synthesis is not a simple conjunction of two established results. It makes three distinct moves that neither Ashby’s Law nor Goodhart’s Law, in their original formulations, captured:*
+
+- **Ashby’s Law** states a necessary condition for a regulator to stabilize a system under disturbance: the regulator’s variety must match that of the disturbance environment. It does not, however, analyze how the regulator’s *objective function* shapes its own perceptual field — what the regulator can see is taken as given.
+- **Goodhart’s Law** describes the corruption of a metric when it becomes a target, but it does so primarily in behavioral terms: agents optimize what is measured, and the measure ceases to track the underlying target. The mechanism is motivational, not architectural.
+- **The present synthesis** identifies the objective function *as* the observation channel. When an objective function compresses a high‑dimensional state space into a low‑dimensional metric, it performs exactly the dimensionality reduction that Ashby’s Law shows is destabilizing. The result is a *structural* failure of observability — the excluded dimensions become invisible to the controller, and the proxy‑target divergence becomes undetectable regardless of agent honesty. Goodhart collapse is revealed as a special case of variety‑gap crossing.
+
+*The synthesis thus extends both laws: it generalizes Goodhart from behavioral to structural, and it extends Ashby from the design of control systems to the design of the objectives those systems serve. The variety gap* **G** *is the metric that captures this unification.*
+
 #### 2.5 The Self‑Variety Gap (G_self)
 
 We can now define the central diagnostic construct for personal governance. Let **Reality_self** denote the true multidimensional state space of the person — physical, emotional, relational, existential, and contextual dimensions at a level of resolution relevant to their wellbeing. The dimensionality of this space, **dim(Reality_self)**, is large and, crucially, not static. As a person ages, enters new relationships, confronts mortality, or develops new capacities, new dimensions of experience become causally relevant. The disturbance space of the self expands across the lifespan.

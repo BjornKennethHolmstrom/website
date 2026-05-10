@@ -28,38 +28,17 @@ const localBase = '/whitepapers';
 
 export const papersData: Whitepaper[] = [
  {
-     id: 'selfVarietyGap',
-     key: 'selfVarietyGap',
-     category: 'governance',
-     tags: ['Self-Governance', 'Variety Gap', 'Cybernetics', 'Psychology', 'Goodhart-Ashby Synthesis', 'Meta-Governance', 'Personal Development', 'Systems Theory'],
-     year: '2026',
-     pages: '57',
-     readTime: {
-         en: '65 min',
-         sv: '65 min'
-     },
-     version: '1.0',
-     pdfPath: {
-         en: `${localBase}/self-variety-gap.pdf`,
-         sv: `${localBase}/self-variety-gap-sv.pdf`,
-     },
-     coverImage: '/whitepapers/images/self-variety-gap-cover.png',
-     readOnlinePath: '/whitepapers/self-variety-gap',
-     readOnlineExternal: false,
-     releaseDate: '2026-05-08'
- },
- {
      id: 'theVarietyGap',
      key: 'theVarietyGap',
      category: 'governance',
      tags: ['Variety Gap', 'Value Architecture', 'Goodhart-Ashby Synthesis', 'Meta-Governance', 'Observability', 'Cybernetics', 'Complexity', 'Civilizational Viability', 'Systems Theory', 'Governance Engineering'],
      year: '2026',
-     pages: '47',
+     pages: '62',
      readTime: {
-         en: '60 min',
-         sv: '60 min'
+         en: '70 min',
+         sv: '70 min'
      },
-     version: '1.0',
+     version: '1.1',
      pdfPath: {
          en: `${localBase}/the-variety-gap.pdf`,
          sv: `${localBase}/the-variety-gap-sv.pdf`,
@@ -196,6 +175,27 @@ export const papersData: Whitepaper[] = [
 		readOnlineExternal: false,
 		releaseDate: '2026-02-19'
 	},
+ {
+     id: 'selfVarietyGap',
+     key: 'selfVarietyGap',
+     category: 'governance',
+     tags: ['Self-Governance', 'Variety Gap', 'Cybernetics', 'Psychology', 'Goodhart-Ashby Synthesis', 'Meta-Governance', 'Personal Development', 'Systems Theory'],
+     year: '2026',
+     pages: '57',
+     readTime: {
+         en: '65 min',
+         sv: '65 min'
+     },
+     version: '1.0',
+     pdfPath: {
+         en: `${localBase}/self-variety-gap.pdf`,
+         sv: `${localBase}/self-variety-gap-sv.pdf`,
+     },
+     coverImage: '/whitepapers/images/self-variety-gap-cover.png',
+     readOnlinePath: '/whitepapers/self-variety-gap',
+     readOnlineExternal: false,
+     releaseDate: '2026-05-08'
+ },
 	{
 		id: 'preventing1933',
 		key: 'preventing1933',

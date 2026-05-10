@@ -12,6 +12,8 @@ Låt **V** beteckna systemets värderingsarkitektur — den explicita eller impl
 
 **G = dim(R) − dim(V)**
 
+**Mätstatus:** Variationsgapet definieras formellt i Appendix A och mäts operationellt i Appendix G. I de empiriska tillämpningar som följer (landfall, historisk analys) uppskattas G heuristiskt med hjälp av kvalitativ mönstermatchning mot ramverkets förutsagda misslyckandesignaturer. Dessa uppskattningar är illustrativa — storleksordningsbedömningar snarare än precisa mätningar. Att flytta ramverket från diagnostisk lins till validerad teori kräver implementering av de mätprotokoll som specificeras i Appendix G.
+
 **G** är alltid positivt — ingen ändlig värderingsarkitektur uttömmer den verklighet den styr — och det tenderar att växa över tid om inte systemet aktivt expanderar sin värdedimensionalitet. Gapet är ett mått på systemets strukturella okunskap: antalet kausalt relevanta dimensioner som helt enkelt är frånvarande från dess optimeringslandskap. Ju större gap, desto större volym av verklighet som kan påverka systemets öde utan att systemet någonsin uppfattar det som något som betyder något.
 
 #### 3.2 Gapets dynamik
@@ -20,7 +22,8 @@ Eftersom **dim(R)** expanderar över tid — i takt med att miljöer, teknologie
 
 **dG/dt = α − β · A(V)**
 
-där:
+där α, β och A(V) är konceptuella parametrar som införs för att synliggöra gapdynamiken. Dessa är *inte* för närvarande uppmätta kvantiteter — Appendix G tillhandahåller operationella protokoll för framtida empiriskt arbete. Modellen används illustrativt i texten för att organisera kvalitativa observationer om hur styrsystem halkar efter sina störningsmiljöer. Den bör inte tolkas som en kalibrerad prediktiv ekvation.
+
 - **α** är *uppkomsthastigheten* för nya störningsdimensioner: hur snabbt verklighetens effektiva tillståndsrum expanderar.
 - **A(V)** är *anpassningshastigheten* hos värderingsarkitekturen: den hastighet med vilken systemet lägger till nya dimensioner till sin målfunktion.
 - **β** är *anpassningseffektiviteten*: i vilken utsträckning ansträngningar att expandera **dim(V)** lyckas faktiskt spåra de nyuppkomna dimensionerna.
@@ -33,7 +36,11 @@ Detta är inte ett påstående att **α**, **β** eller **A(V)** för närvarand
 
 I takt med att **G** växer ökar volymen av oobserverade kausala dimensioner. Dessa dimensioner upphör inte att verka; de genererar effekter som korsar in i systemets observerbara rum, men i förvrängd form — som oförklarad volatilitet, som "exogena chocker", som kriser vilka tycks sakna uppenbar orsak inom systemets ramverk. Systemets egen optimeringslogik kan inte attribuera dessa effekter korrekt, eftersom de dimensioner från vilka de härrör inte ingår i dess värdekarta. Det reagerar på symptom snarare än orsaker, och dess responser förstärker ofta de underliggande störningarna. Taleb (2012) beskriver denna dynamik som den skörhet som uppstår när system optimeras för ett smalt intervall av betingelser och förlorar förmågan att absorbera variabilitet.
 
-Det existerar en kritisk tröskel, **G_crit**, vid vilken signalen från de observerade dimensionerna överväldigas av bruset från de oobserverade. Formellt är detta den punkt där signal‑brusförhållandet i värdekanalen faller under ett — samma konstitutionella oobserverbarhetsvillkor som identifierades i Artikel III för demokratiska representationskedjor, nu generaliserat till själva värderingsarkitekturen. När **G > G_crit** är informationen som målfunktionen bär om systemets verkliga tillstånd mindre än informationen som bidras av oövervakade störningar (Shannon, 1948). Systemet optimerar inte längre mot sina uttalade mål; det optimerar mot en fantom och följer bruskaraktäristiken hos sin egen okunskap.
+Det existerar en kritisk tröskel, **G_crit**, vid vilken signalen från de observerade dimensionerna överväldigas av bruset från de icke-observerade. Formellt är detta den punkt där signal‑brusförhållandet i värdekanalen faller under ett (Appendix B). 
+ 
+**Provisorisk uppskattning:** Baserat på Rapport III:s analys av representationskedjor uppskattar vi G_crit ≈ 2–3 för de flesta styrkontexter (Appendix G.5), men detta är högst osäkert och kontextberoende. Empirisk kalibrering kräver variansdekomponeringsstudier som ännu inte har genomförts. Landfallen nedan bedöms som "närmar sig" eller "överskrider" G_crit baserat på kvalitativ mönstermatchning mot förväntade misslyckandesignaturer (reaktiv styrning, brusspårning, policy-utfallsdekorrelation), inte direkt SNR-mätning.
+
+Samma konstitutionella oobserverbarhetsvillkor identifierades i Artikel III för demokratiska representationskedjor, nu generaliserat till själva värderingsarkitekturen. När **G > G_crit** är informationen som målfunktionen bär om systemets verkliga tillstånd mindre än informationen som bidras av oövervakade störningar (Shannon, 1948). Systemet optimerar inte längre mot sina uttalade mål; det optimerar mot en fantom och följer bruskaraktäristiken hos sin egen okunskap.
 
 Vid denna tröskel inträder systemet i ett tillstånd av *strukturell självblindhet*. Det kan inte uppfatta orsakerna till sin egen instabilitet, inte för att det saknar data, utan för att de kategorier i vilka det skulle kunna formulera dessa orsaker inte existerar i dess värderingsarkitektur. Det kommer att tolka ekologisk kollaps som en exogen utbudschock, demokratisk delegitimering som ett kommunikationsmisslyckande, institutionell drift som ett ledarskapsproblem. Intervenerna som följer — mer tillväxt, hårdare kontroll, bättre kommunikation — kommer att hämtas från den existerande dimensionsmängden och lämnar de faktiska exkluderade dimensionerna orörda, ofta förvärrar dem. Detta är den mekanistiska kärnan i vad senare avsnitt kommer att beskriva i landrapporterna: punkten där själva optimeringsarkitekturen har blivit den primära generatorn av systemisk sårbarhet.
 

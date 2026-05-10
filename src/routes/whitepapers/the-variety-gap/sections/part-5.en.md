@@ -4,6 +4,10 @@ The Governance as Engineering series produced a set of national governance diagn
 
 This part retells five of those cases through the variety‑gap lens. The purpose is not to re‑litigate the original diagnoses but to demonstrate that the variety gap provides a unifying metric that makes the failure modes commensurable — and that the proposed remedies in each report implicitly aim to expand **dim(V)**.
 
+**Methodological note on the country cases:** The variety gap estimates presented in this part are heuristic, not empirical. They are derived by pattern-matching observed governance failures to the framework's predicted signatures, not by measuring dim(V), dim(D), or G directly. The country reports were developed independently within the Governance as Engineering series using different diagnostic vocabularies; this part re-interprets those findings through the variety-gap lens to demonstrate the framework's potential explanatory power.
+ 
+This is interpretive work, not validation. The framework would be validated if it generated novel predictions about governance failures in countries not yet studied—predictions that were then confirmed by independent observation. That validation work remains to be done. What this part demonstrates is *consistency*: the variety gap mechanism, if correct, would explain the observed failure patterns. It does not prove the mechanism is correct.
+
 #### 5.1 Japan: Optimizing Stability Excludes Adaptive Capacity
 
 Japan’s post‑war governance architecture was an extraordinary achievement. It optimized for stability — social order, institutional continuity, baseline functionality — and delivered it for decades. The lifetime employment system, the keiretsu networks, the *amakudari* retirement pipeline, the LDP’s permanent electoral dominance: all were components of a value architecture with **dim(V) ≈ 1**. The metric was continuity (Governance as Engineering Series, Japan Report).
@@ -51,6 +55,10 @@ The variety gap widens as integration deepens. A shared currency without a fisca
 The proposed Coherence Regions, standing fiscal capacity, differentiated decision‑making, and subsidiarity as a routing protocol are attempts to increase **dim(V)** by adding temporal responsiveness and spatial differentiation as explicit value dimensions — without, crucially, destroying the member‑state diversity that makes the Union worth preserving.
 
 #### 5.6 Summary Table
+
+The values for dim(V), dim(R), and G in this table are qualitative judgments based on the country reports' diagnostic findings. They illustrate how the variety gap framework would interpret those findings, but they do not constitute independent measurements. Treating them as data would be a category error. They are conceptual scaffolding—placeholders for the actual measurements that Appendix G's protocols would produce.
+ 
+The table's value is in showing that different governance failures can be characterized using a common vocabulary (variety gap, excluded dimensions, collapse modes). Its weakness is that this characterization has not been validated against independent empirical data.
 
 | Country / System | Approx. dim(V) | Core Value Optimized | Key Excluded dim(R) | G Status | Collapse Mode |
 |------------------|----------------|----------------------|---------------------|----------|---------------|

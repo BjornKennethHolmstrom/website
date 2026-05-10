@@ -12,6 +12,8 @@ The *variety gap* is then:
 
 **G = dim(R) − dim(V)**
 
+**Measurement status:** The variety gap is defined formally in Appendix A and measured operationally in Appendix G. In the empirical applications that follow (country cases, historical analysis), G is estimated heuristically using qualitative pattern-matching to the framework's predicted failure signatures. These estimates are illustrative—order-of-magnitude judgments rather than precise measurements. Moving the framework from diagnostic lens to validated theory requires implementing the measurement protocols specified in Appendix G.
+
 **G** is always positive — no finite value architecture exhausts the reality it governs — and it tends to grow over time unless the system actively expands its value dimensionality. The gap is a measure of the system’s structural ignorance: the number of causally relevant dimensions that are simply absent from its optimization landscape. The larger the gap, the larger the volume of reality that can affect the system’s fate without the system ever perceiving it as something that matters.
 
 #### 3.2 Dynamics of the Gap
@@ -20,7 +22,8 @@ Because **dim(R)** expands over time — as environments, technologies, and soci
 
 **dG/dt = α − β · A(V)**
 
-where:
+where α, β, and A(V) are conceptual parameters introduced to make the gap dynamics visible. These are *not* currently measured quantities—Appendix G provides operational protocols for future empirical work. The model is used illustratively in the text to organize qualitative observations about how governance systems fall behind their disturbance environments. It should not be interpreted as a calibrated predictive equation.
+
 - **α** is the *emergence rate* of new disturbance dimensions: how quickly the effective state space of reality expands.
 - **A(V)** is the *adaptation rate* of the value architecture: the speed at which the system adds new dimensions to its objective function.
 - **β** is the *adaptation efficiency*: the extent to which efforts to expand **dim(V)** succeed in actually tracking the newly emergent dimensions.
@@ -33,7 +36,11 @@ This is not a claim that **α**, **β**, or **A(V)** are currently measurable wi
 
 As **G** grows, the volume of unobserved causal dimensions increases. These dimensions do not cease to operate; they generate effects that cross into the system’s observable space, but in distorted form — as unexplained volatility, as “exogenous shocks,” as crises that seem to have no obvious cause within the system’s framework. The system’s own optimization logic cannot attribute these effects correctly, because the dimensions from which they originate are not part of its value map. It responds to symptoms rather than causes, and its responses often amplify the underlying disturbances. Taleb (2012) describes this dynamic as the fragility that arises when systems are optimized for a narrow range of conditions and lose the capacity to absorb variability.
 
-There exists a critical threshold, **G_crit**, at which the signal from the observed dimensions is overwhelmed by the noise from the unobserved ones. Formally, this is the point where the signal‑to‑noise ratio in the value channel falls below unity — the same constitutional unobservability condition identified in Paper III for democratic representation chains, now generalized to the architecture of values themselves. When **G > G_crit**, the information carried by the objective function about the system’s true state is less than the information contributed by unmonitored disturbances (Shannon, 1948). The system is no longer optimizing toward its stated goals; it is optimizing toward a phantom, tracking the noise characteristics of its own ignorance.
+There exists a critical threshold, **G_crit**, at which the signal from the observed dimensions is overwhelmed by the noise from the unobserved ones. Formally, this is the point where the signal‑to‑noise ratio in the value channel falls below unity (Appendix B). 
+ 
+**Provisional estimate:** Based on Paper III's representation chain analysis, we estimate G_crit ≈ 2–3 for most governance contexts (Appendix G.5), though this is highly uncertain and context-dependent. Empirical calibration requires variance decomposition studies that have not yet been conducted. The country cases below are assessed as "approaching" or "exceeding" G_crit based on qualitative pattern-matching to expected failure signatures (reactive governance, noise-tracking, policy-outcome decorrelation), not direct SNR measurement.
+
+The same constitutional unobservability condition was identified in Paper III for democratic representation chains, now generalized to the architecture of values themselves. When **G > G_crit**, the information carried by the objective function about the system’s true state is less than the information contributed by unmonitored disturbances (Shannon, 1948). The system is no longer optimizing toward its stated goals; it is optimizing toward a phantom, tracking the noise characteristics of its own ignorance.
 
 At this threshold, the system enters a condition of *structural self‑blindness*. It cannot perceive the causes of its own instability, not because it lacks data, but because the categories in which it might frame those causes do not exist in its value architecture. It will interpret ecological collapse as an exogenous supply shock, democratic delegitimation as a messaging failure, institutional drift as a leadership problem. The interventions that follow — more growth, tighter control, better communication — will be drawn from the existing dimension set and will leave the actual excluded dimensions untouched, often worsening them. This is the mechanistic core of what later sections will describe in the country reports: the point at which the optimization architecture itself has become the primary generator of systemic vulnerability.
 

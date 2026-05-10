@@ -4,6 +4,10 @@ Serien *Governance as Engineering* producerade en uppsättning nationella styrni
 
 Denna del återberättar fem av dessa fall genom variationsgapets lins. Syftet är inte att återuppta de ursprungliga diagnoserna utan att demonstrera att variationsgapet tillhandahåller ett enande mått som gör felmoderna kommensurabla — och att de föreslagna åtgärderna i varje rapport implicit syftar till att expandera **dim(V)**.
 
+**Metodologisk not om landfallen:** Variationsgapsuppskattningarna som presenteras i denna del är heuristiska, inte empiriska. De härleds genom mönstermatchning av observerade styrmisslyckanden mot ramverkets förutsagda signaturer, inte genom att mäta dim(V), dim(D) eller G direkt. Landsrapporterna utvecklades oberoende inom serien Styrning som ingenjörskonst med hjälp av olika diagnostiska vokabulärer; denna del omtolkar dessa fynd genom variationsgap-linsen för att demonstrera ramverkets potentiella förklaringskraft.
+ 
+Detta är tolkningsarbete, inte validering. Ramverket skulle valideras om det genererade nya förutsägelser om styrmisslyckanden i länder som ännu inte studerats — förutsägelser som sedan bekräftades av oberoende observation. Det valideringsarbetet återstår att göra. Vad denna del demonstrerar är *konsistens*: variationsgapmekanismen skulle, om den är korrekt, förklara de observerade misslyckandemönstren. Den bevisar inte att mekanismen är korrekt.
+
 #### 5.1 Japan: Optimering för stabilitet exkluderar anpassningsförmåga
 
 Japans efterkrigstida styrningsarkitektur var en enastående prestation. Den optimerade för stabilitet — social ordning, institutionell kontinuitet, grundläggande funktionalitet — och levererade det under årtionden. Systemet med livstidsanställning, keiretsu-nätverken, *amakudari*-pensioneringspipelinen, LDP:s permanenta valdominans: allt var komponenter i en värderingsarkitektur med **dim(V) ≈ 1**. Måttet var kontinuitet (Governance as Engineering Series, Japanrapporten).
@@ -51,6 +55,10 @@ Variationsgapet vidgas i takt med att integrationen fördjupas. En delad valuta 
 De föreslagna Koherensregionerna, stående finanspolitisk kapacitet, differentierat beslutsfattande och subsidiaritet som ett routingprotokoll är försök att öka **dim(V)** genom att lägga till temporal responsivitet och rumslig differentiering som explicita värdedimensioner — utan att, avgörande nog, förstöra den medlemsstatsdiversitet som gör unionen värd att bevara.
 
 #### 5.6 Sammanfattande tabell
+
+Värdena för dim(V), dim(R) och G i denna tabell är kvalitativa bedömningar baserade på landsrapporternas diagnostiska fynd. De illustrerar hur variationsgap-ramverket skulle tolka dessa fynd, men de utgör inte oberoende mätningar. Att behandla dem som data vore ett kategorifel. De är konceptuell byggnadsställning — platshållare för de faktiska mätningar som Appendix G:s protokoll skulle producera.
+ 
+Tabellens värde ligger i att visa att olika styrmisslyckanden kan karakteriseras med en gemensam vokabulär (variationsgap, uteslutna dimensioner, kollapsmoder). Dess svaghet är att denna karakterisering inte har validerats mot oberoende empiriska data.
 
 | Land / System | Ungef. dim(V) | Kärnvärde som optimeras | Viktigaste exkluderade dim(R) | G‑status | Kollapsmod |
 |------------------|----------------|------------------------------|------------------------------------------|----------|-----------------------------------------------|

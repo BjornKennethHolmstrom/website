@@ -45,6 +45,12 @@
   import AppendixFEn from './sections/appendix-f.en.md';
   import AppendixFSv from './sections/appendix-f.sv.md';
 
+  import AppendixGEn from './sections/appendix-g.en.md';
+  import AppendixGSv from './sections/appendix-g.sv.md';
+
+  import AppendixHEn from './sections/appendix-h.en.md';
+  import AppendixHSv from './sections/appendix-h.sv.md';
+
   // --- 2. CONTENT STRUCTURE ---
 
   const contentMap = [
@@ -138,6 +144,20 @@
       titleSv: 'Appendix F: Kommenterad referenslista',
       compEn: AppendixFEn,
       compSv: AppendixFSv,
+    },
+    {
+      id: 'appendix-g',
+      titleEn: 'Appendix G: Operational Definitions and Measurement Protocols',
+      titleSv: 'Appendix G: Operationella definitioner och mätprotokoll',
+      compEn: AppendixGEn,
+      compSv: AppendixGSv,
+    },
+    {
+      id: 'appendix-h',
+      titleEn: 'Appendix H: Testable Predictions and Falsification Protocols',
+      titleSv: 'Appendix H: Testbara förutsägelser och falsifieringsprotokoll',
+      compEn: AppendixHEn,
+      compSv: AppendixHSv,
     },
   ];
 
@@ -349,7 +369,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-f'}
+        {#if section.id !== 'appendix-h'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

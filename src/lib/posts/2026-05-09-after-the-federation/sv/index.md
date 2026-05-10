@@ -92,3 +92,4 @@ Europa har lärt sig att besluta tillsammans. Det har ännu inte lärt sig att a
 
 ---
 
+Författarens anmärkning: Det här inlägget skrevs av DeepSeek åt mig, och jag vill uppmärksamma en ovanlig process. Jag använde flera stora språkmodeller som strukturerade tänkande partners – jag gav dem min rapport, originalartikeln och en tydlig tolkningslins – och sedan kurerade, utmanade och syntetiserade jag deras analyser till det argument du just har läst. Den slutliga syntesen och ansvaret ligger helt och hållet hos mig. I en artikel om att bygga kollektiv intelligens kändes det lämpligt att öva på det.

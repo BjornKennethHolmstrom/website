@@ -40,6 +40,23 @@ Argumentet som framförs här är en öppning, inte en slutsats. Flera betydande
 
 **Legitimitetsgapet.** Såsom erkändes i Del VI kan ingenjörsramverket specificera de strukturella villkoren för livskraft; det kan inte leverera demokratisk legitimitet. Hur man förenar behovet av värdedimensionell expansion med kravet på folkligt samtycke, särskilt när de exkluderade dimensionerna ännu inte uppfattas av den befolkning vars samtycke söks, är ett djupt problem i skärningspunkten mellan politisk teori, kognitionsvetenskap och institutionell design. Artikeln löser det inte (Habermas, 1996; Dryzek, 2000).
 
+### 7.3.1 Mätgapet
+
+Ramverkets mest omedelbara begränsning är gapet mellan formell definition och empirisk mätning. Variablerna dim(V), dim(R), G och G_crit definieras precist i Bilagorna A–B med hjälp av linjär algebra, men verkliga styrsystem kommer inte med etiketterade observationsmatriser och störningsrymder. Appendix G tillhandahåller mätprotokoll, men dessa protokoll har inte implementerats. Detta innebär:
+
+**Alla kvantitativa påståenden i uppsatsen är provisoriska.** Variationsgapsuppskattningarna för landfallen (G ≈ 2–3), den kritiska tröskeluppskattningen (G_crit ≈ 2–3), de dynamiska parametrarna (α, β) — alla är storleksordningsbedömningar, inte mätningar. De tjänar till att göra ramverket konkret och falsifierbart, men de har inte falsifierats (eller bekräftats) av data.
+
+**Ramverkets empiriska status är "testbart men ännu inte testat."** Det genererar förutsägelser:
+- System med större variationsgap bör uppvisa mer frekventa styrmisslyckanden
+- Gaptillväxttakt bör korrelera med institutionell rigiditet
+- Passage av G_crit bör producera karakteristiska misslyckandesignaturer (brusspårning, policy-utfallsdekorrelation)
+
+Dessa förutsägelser är specifika nog att kunna vara felaktiga, vilket innebär att ramverket har empiriskt innehåll. Men att testa dem kräver implementering av Appendix G:s protokoll, vilket kräver resurser och tillgång som denna uppsats inte mobiliserar.
+
+**Forskningsprioriteten är operationalisering.** Innan teoretiska utvidgningar eftersträvas behöver ramverket empirisk förankring. Detta innebär: att mäta dim(V) för 5–10 länder med hjälp av PCA på budget-/lagstiftningstidsserier; att mäta dim(D) med hjälp av historisk chockfaktoranalys; att testa om uppskattad G förutsäger frekvensen av styrmisslyckanden i paneldata; och att empiriskt kalibrera G_crit genom att identifiera SNR-trösklar i dokumenterade kollapser.
+
+Tills detta arbete är gjort förblir ramverket en diagnostisk lins och konceptuell vokabulär — användbart för att organisera observationer, men inte validerat som förklarande eller prediktivt.
+
 #### 7.4 Det civilisatoriska vadet
 
 Variationsgapsramverket implicerar ett vad. Vadet är att en civilisation som lär sig att medvetet expandera sin värderingsarkitektur — som bygger kapaciteten att uppfatta vad den för närvarande exkluderar — kommer att överleva en som inte gör det. Vadet kan inte bevisas i förväg; det kan endast testas av historien.
@@ -49,6 +66,12 @@ Men det historiska protokollet, sådant det är, lutar mot ramverkets prediktion
 Vad ramverket erbjuder är inte ett slutgiltigt svar utan ett strukturerat sätt att ställa frågan. Det tillhandahåller ett språk i vilket de strukturella nödvändigheterna för värdeevolution kan göras precisa. Det identifierar variationsgapet som den enda variabel som spårar den ackumulerande risken för systemisk blindhet. Det föreslår, i preliminär form, det institutionella maskineri som skulle kunna hålla gapet inom gränser. Och det insisterar, med så mycket klarhet som den nuvarande formella apparaten tillåter, att frågan om vad en civilisation lär sig att värdera är det mest konsekvensrika designbeslut den någonsin kommer att fatta — och det för vilket den för närvarande är sämst utrustad.
 
 #### 7.5 Inbjudan
+
+**Vad som har etablerats:** Uppsatsen etablerar ett konceptuellt ramverk och en formell struktur. Den visar att målfunktioner är observationsarkitekturer (Del II), att lågdimensionell observation skapar strukturell blindhet (Del I–III) och att specifika uteslutningar (sanning, mening, välbefinnande, relationell integritet) accelererar gaptillväxt (Del IV). Den demonstrerar att disparata styrmisslyckanden kan omtolkas med hjälp av en enhetlig vokabulär (Del V) och specificerar institutionella mekanismer som i princip skulle möjliggöra värdeevolution (Del VI).
+ 
+**Vad som inte har etablerats:** Ramverket har inte validerats empiriskt. Landfallsomtolkningarna är konsistenta med ramverket men testar det inte. Mätprotokollen existerar men har inte implementerats. De kvantitativa påståendena (G ≈ 2–3, G_crit ≈ 2–3) är illustrativa, inte uppmätta. Den dynamiska modellen är konceptuell, inte kalibrerad.
+ 
+**Gränsen mellan bidrag och strävan:** Bidraget är ett *sätt att se* styrmisslyckanden — en strukturerad vokabulär och formell apparat som gör vissa mönster synliga. Strävan är att detta sätt att se ska visa sig vara empiriskt grundat när mätarbetet väl är gjort. Uppsatsen kan inte påstå sig ha fullbordat det arbetet, endast ha specificerat vad det skulle kräva.
 
 Simuleringarna, de formella härledningarna och landanalyserna som presenterats över serien *Governance as Engineering* och denna artikel utgör ett diagnostiskt instrument. De genererar testbara prediktioner: om relationen mellan värdedimensionalitet och kollapsrisk, om variationsgapets tillväxtdynamik under olika anpassningsregimer, om prestationseffekterna av specifika metastyrningsinstitutioner. Prediktionerna väntar på empirisk konfrontation.
 
