@@ -37,7 +37,7 @@
 </script>
 
 <header
-	class="sticky top-0 z-10 w-full border-b border-[var(--color-separator)] bg-[var(--color-page-bg)] shadow-sm transition-colors"
+	class="sticky top-0 z-50 w-full border-b border-[var(--color-separator)] bg-[var(--color-page-bg)] shadow-sm transition-colors"
 >
 	<nav class="mx-auto flex max-w-7xl items-center justify-between p-4">
 		<div class="flex items-center gap-6">
@@ -58,11 +58,10 @@
         
         <div class="invisible absolute left-0 top-full z-20 mt-2 flex w-56 flex-col overflow-hidden rounded-md border border-[var(--color-separator)] bg-[var(--color-page-bg)] opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
             <a 
-                href="https://globalgovernanceframeworks.org" 
-                target="_blank" 
+                href="/variety-gap-framework"
                 class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]"
             >
-                Global Governance Frameworks ↗
+                {$t.navVarietyGap}
             </a>
             <a 
                 href="/eu-subsidiarity-protocol" 
@@ -78,6 +77,13 @@
                 {$t.navIndia || 'India — DPI 2.0'}
             </a>
 -->
+            <a 
+                href="https://globalgovernanceframeworks.org" 
+                target="_blank" 
+                class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]"
+            >
+                Global Governance Frameworks ↗
+            </a>
         </div>
     </div>
 				<a
@@ -222,12 +228,11 @@
         {#if frameworksMobileOpen}
             <div class="mt-3 flex flex-col gap-4 border-l-2 border-[var(--color-separator)] pl-4">
                 <a
-                    href="https://globalgovernanceframeworks.org"
-                    target="_blank"
+                    href="variety-gap-framework"
                     class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
                     onclick={closeMobileMenu}
                 >
-                    Global Governance Frameworks ↗
+                    {$t.navVarietyGap}
                 </a>
                 <a
                     href="/eu-subsidiarity-protocol"
@@ -244,6 +249,14 @@
                 <a href="/india-dpi-2" class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100" onclick={closeMobileMenu}>
                     {$t.navIndia || 'India — DPI 2.0'}
                 </a> -->
+                <a
+                    href="https://globalgovernanceframeworks.org"
+                    target="_blank"
+                    class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
+                    onclick={closeMobileMenu}
+                >
+                    Global Governance Frameworks ↗
+                </a>
             </div>
         {/if}
     </div>

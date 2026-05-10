@@ -24,6 +24,13 @@
 		 	url: '/coordination-imperative',
 		 	badge: 'NEW'
 		 },
+   {
+    type: 'emoji',
+    key: 'varietyGapFramework',
+    emoji: '🔦',
+    url: '/variety-gap-framework',
+    badge: 'NEW'
+   },
 			{
 				type: 'img',
 				key: 'ggf',
@@ -389,6 +396,8 @@
           </p>
           <ul class="text-sm space-y-1">
             <li>• <a href="/coordination-imperative" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.coordination}</a></li>
+            <li>• <a href="/variety-gap-framework" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.varietyGapFramework}</a></li>
+            <li>• <a href="/reports" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.reports}</a></li>
             <li>• <a href="/whitepapers" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.whitepapers}</a></li>
             <li>• <a href="https://svensksubsidiaritet.se" target="_blank" rel="noopener"  class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.subsidiarity}</a></li>
             <li>• <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.ggf}</a></li>
@@ -495,7 +504,7 @@
           <div class="bg-gradient-to-br from-slate-50 to-amber-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm border border-slate-200 dark:border-slate-700 h-full">
             
             <!-- Text content -->
-            <div class="flex-1 text-center md:text-left z-10 w-full">
+            <div class="flex-1 text-center md:text-left w-full">
               <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
                 Whitepaper
               </span>
@@ -530,14 +539,14 @@
     <!-- Navigation buttons -->
     <button
       on:click={gePrevSlide}
-      class="absolute left-2 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+      class="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
       aria-label="Previous paper"
     >
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
     </button>
     <button
       on:click={geNextSlide}
-      class="absolute right-2 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+      class="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
       aria-label="Next paper"
     >
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
@@ -566,7 +575,7 @@
         {#each projects.systems as project}
 					<a
 						href={project.url}
-						target="_blank"
+      target={getLinkType(project.url) === 'external' ? '_blank' : ''}
 						rel="noopener noreferrer"
 						class="group relative block rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 shadow-md transition-shadow hover:shadow-lg"
 					>
@@ -895,7 +904,7 @@
 
       <button 
         on:click={prevSlide} 
-        class="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+        class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
         aria-label="Previous book"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
@@ -903,13 +912,13 @@
 
       <button 
         on:click={nextSlide} 
-        class="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
+        class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
         aria-label="Next book"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
       </button>
 
-      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {#each $t.bookLaunches as _, i}
           <button 
             class="w-2.5 h-2.5 rounded-full transition-colors {i === activeIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"

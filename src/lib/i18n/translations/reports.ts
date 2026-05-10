@@ -89,7 +89,7 @@ export const reportsTranslations = {
 		   'Nigeria is not a failed state — it is a hyper-governed society where the real governance of daily life occurs through informal networks the formal state neither controls nor acknowledges. This report diagnoses a Substrate Deficit produced by the petrostate fiscal architecture, the extraction coalition, and a cultural operating system that converts public office into private patrimony, and proposes a Fiscal Accountability Compact and a Demography-Climate Commission as the concrete first step.'
    },
    israelBoundaryDeficit: {
-	   title: 'The Boundary Deficit: Why Israel\'s Survival Architecture Cannot Generate Political Settlement',
+	   title: "The Boundary Deficit: Why Israel's Survival Architecture Cannot Generate Political Settlement",
 	   description:
 		   'Israel is not a failing state — it is a state that mastered survival but cannot achieve normalcy. This report diagnoses a Boundary Deficit produced by the constitutional vacuum, the occupation paradox, and a cultural operating system that converts political questions into existential imperatives, and proposes a Basic Law: Equality and a National Deliberative Commission on Constitutional Settlement as the concrete first step.'
    }

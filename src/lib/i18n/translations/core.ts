@@ -17,6 +17,7 @@ export const coreTranslations = {
 		navWhitepapers: 'White Papers',
   navBooks: 'Books',
   navFrameworks: 'Frameworks',
+  navVarietyGap: 'The Variety Gap',
   navEUPilot: 'EU Subsidiarity Protocol',
   navAfricaPilot: 'Africa — Informal Trust Ledger',
   navIndiaPilot: 'India — DPI 2.0',
@@ -108,6 +109,8 @@ export const coreTranslations = {
 		// Projects
   coordinationTitle: "The Coordination Imperative",
   coordinationTagline: "A protocol for planetary-scale cooperation.",
+  varietyGapFrameworkTitle: 'Variety Gap Framework',
+  varietyGapFrameworkTagline: 'A cybernetic diagnostic for governance systems.',
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Frameworks for meta-governance and interoperability.',
   subsidiarityTitle: 'Svensk Subsidiaritet',
@@ -228,6 +231,8 @@ export const coreTranslations = {
         quote: '"I want to understand how we can redesign society\'s fundamental structures."',
         links: {
           coordination: 'The Coordination Imperative',
+          varietyGapFramework: 'The Variety Gap',
+          reports: 'Reports',
           whitepapers: 'White papers',
           subsidiarity: 'Swedish Subsidiarity',
           ggf: 'Global Governance Frameworks',
@@ -294,6 +299,7 @@ export const coreTranslations = {
 		navBlog: 'Blogg',
   navEssays: 'Essäer',  // or 'Manifest'
   navFrameworks: 'Ramverk',
+  navVarietyGap: 'Varietetsgapet',
   navEUPilot: 'EU subsidiaritetsprotokoll',
   navAfricaPilot: 'Afrika — Informal Trust Ledger',
   navIndiaPilot: 'Indien — DPI 2.0',
@@ -389,6 +395,8 @@ export const coreTranslations = {
 		// Projects
   coordinationTitle: "The Coordination Imperative",
   coordinationTagline: "Ett protokoll för samarbete på planetär skala.",
+  varietyGapFrameworkTitle: 'Variety Gap Framework',
+  varietyGapFrameworkTagline: 'Ett cybernetiskt diagnostiskt verktyg för styrsystem.',
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Ramverk för meta-styrning och interoperabilitet.',
   subsidiarityTitle: 'Svensk Subsidiaritet',
@@ -510,6 +518,8 @@ export const coreTranslations = {
         quote: '"Jag vill förstå hur vi kan designa om samhällets grundläggande strukturer."',
         links: {
           coordination: 'The Coordination Imperative',
+          varietyGapFramework: 'Varietetsgapet',
+          reports: 'Rapporter',
           whitepapers: 'White papers',
           subsidiarity: 'Svensk Subsidiaritet',
           ggf: 'Global Governance Frameworks',

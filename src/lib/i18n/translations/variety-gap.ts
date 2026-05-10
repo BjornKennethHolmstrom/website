@@ -1,0 +1,86 @@
+export const varietyGapTranslations = {
+  en: {
+    hero: {
+      title: 'The Variety Gap Framework',
+      subtitle:
+        'A cybernetic diagnostic for why governance systems become blind to their own fragility',
+    },
+    intro: {
+      heading: 'What is the Variety Gap Framework?',
+      p1: 'Every governance system measures some things and ignores others. The gap between what the system measures and what actually determines its survival is the <strong>variety gap</strong>. When that gap grows too wide, the system loses the ability to perceive the threats that will eventually destroy it.',
+      p2: 'The Variety Gap Framework unites two bodies of work: the <strong>Country Reports for Systemic Change</strong>, which diagnose specific governance deficits across thirteen nations; and the <strong>Governance as Engineering</strong> whitepapers, which formalize the control‑theoretic foundations, including the Variety Gap paper itself, which extends Ashby’s Law of Requisite Variety to the architecture of values. Together they form a diagnostic toolkit for understanding why well‑resourced, well‑intentioned governance systems repeatedly fail to adapt.',
+    },
+    explore: {
+      heading: 'Explore the Series',
+      reportsTitle: 'Country Reports',
+      reportsDesc: 'Thirteen national governance diagnostics applying the framework.',
+      reportsOverview: 'All Reports →',
+      papersTitle: 'Governance as Engineering',
+      papersDesc: 'Six whitepapers formalizing the control‑theoretic foundations.',
+      papersOverview: 'All Whitepapers →',
+    },
+    fieldGuide: {
+      heading: 'Country Reports Diagnostic Field Guide',
+      downloadPdf: 'Download PDF',
+    },
+    varietyReports: {
+      germany: 'Germany: The Spending Mirage',
+      france: 'France: The Decisiveness Mirage',
+      sweden: 'Sweden: The Competence Trap',
+      india: 'India: The Leap‑Lag Cycle',
+      eu: 'EU: The Coherence Mirage',
+      uk: 'UK: The Control Mirage',
+      brazil: 'Brazil: The Accumulation Deficit',
+      russia: 'Russia: The Legibility Deficit',
+      usa: 'United States: The Integration Deficit',
+      finland: 'Finland: The Throughput Constraint',
+      japan: 'Japan: The Continuity Trap',
+      nigeria: 'Nigeria: The Substrate Deficit',
+      israel: 'Israel: The Boundary Deficit',
+      china: 'China: The Calibration Deficit',
+      synthesis: 'The Subsidiarity Deficit (Synthesis)',
+    },
+  },
+  sv: {
+    hero: {
+      title: 'Varietetsgapet – ramverket',
+      subtitle:
+        'En cybernetisk diagnos för varför styrsystem blir blinda för sin egen skörhet',
+    },
+    intro: {
+      heading: 'Vad är ramverket kring varietetsgapet?',
+      p1: 'Varje styrsystem mäter vissa saker och ignorerar andra. Gapet mellan vad systemet mäter och vad som faktiskt avgör dess överlevnad är <strong>varietetsgapet</strong>. När gapet växer för mycket förlorar systemet förmågan att uppfatta de hot som till slut kommer att förgöra det.',
+      p2: 'Ramverket förenar två arbeten: <strong>Country Reports for Systemic Change</strong>, som diagnostiserar specifika styrningsbrister i tretton länder; och whitepapers <strong>Governance as Engineering</strong>, som formaliserar de styrteoretiska grunderna, inklusive själva rapporten om varietetsgapet, vilken utvidgar Ashbys lag om nödvändig variation till värderingarnas arkitektur. Tillsammans bildar de en diagnostisk verktygslåda för att förstå varför välfinansierade, välsinnade styrsystem gång på gång misslyckas med att anpassa sig.',
+    },
+    explore: {
+      heading: 'Utforska serien',
+      reportsTitle: 'Landrapporter',
+      reportsDesc: 'Tretton nationella styrningsdiagnoser som tillämpar ramverket.',
+      reportsOverview: 'Alla rapporter →',
+      papersTitle: 'Governance as Engineering',
+      papersDesc: 'Sex whitepapers som formaliserar de styrteoretiska grunderna.',
+      papersOverview: 'Alla whitepapers →',
+    },
+    fieldGuide: {
+      heading: 'Diagnostisk fältguide för landrapporter',
+      downloadPdf: 'Ladda ner PDF',
+    },
+    varietyReports: {
+      germany: 'Tyskland: Spenderingshägringen',
+      france: 'Frankrike: Beslutsamhetshägringen',
+      sweden: 'Sverige: Kompetensfällan',
+      india: 'Indien: Språng‑och‑släp‑cykeln',
+      eu: 'EU: Koherensspeglingen',
+      uk: 'UK: Kontrollspeglingen',
+      brazil: 'Brasilien: Ackumulationsunderskottet',
+      russia: 'Ryssland: Läsbarhetsunderskottet',
+      usa: 'USA: Integrationsunderskottet',
+      finland: 'Finland: Genomströmningsbegränsningen',
+      japan: 'Japan: Kontinuitetsfällan',
+      nigeria: 'Nigeria: Substratunderskottet',
+      israel: 'Israel: Gränsdragningsunderskottet',
+      china: 'Kina: Kalibreringsunderskottet',
+      synthesis: 'Subsidiaritetsunderskottet (Syntes)',
+    },
+  },
+};
