@@ -87,6 +87,11 @@ export const reportsTranslations = {
 	   title: 'The Substrate Deficit: Why Nigeria Governs Without a State',
 	   description:
 		   'Nigeria is not a failed state — it is a hyper-governed society where the real governance of daily life occurs through informal networks the formal state neither controls nor acknowledges. This report diagnoses a Substrate Deficit produced by the petrostate fiscal architecture, the extraction coalition, and a cultural operating system that converts public office into private patrimony, and proposes a Fiscal Accountability Compact and a Demography-Climate Commission as the concrete first step.'
+   },
+   israelBoundaryDeficit: {
+	   title: 'The Boundary Deficit: Why Israel\'s Survival Architecture Cannot Generate Political Settlement',
+	   description:
+		   'Israel is not a failing state — it is a state that mastered survival but cannot achieve normalcy. This report diagnoses a Boundary Deficit produced by the constitutional vacuum, the occupation paradox, and a cultural operating system that converts political questions into existential imperatives, and proposes a Basic Law: Equality and a National Deliberative Commission on Constitutional Settlement as the concrete first step.'
    }
 		}
 	},
@@ -176,6 +181,11 @@ export const reportsTranslations = {
 	   title: 'Substratunderskottet: Varför Nigeria styr utan en stat',
 	   description:
 		   'Nigeria är inte en misslyckad stat — det är ett hyperstyrt samhälle där den verkliga styrningen av dagligt liv sker genom informella nätverk som den formella staten varken kontrollerar eller erkänner. Rapporten diagnosticerar ett substratunderskott skapat av petrostatens finansarkitektur, utvinningskoalitionen och ett kulturellt operativsystem som omvandlar offentliga ämbeten till privat arv, och föreslår en finanspolitisk ansvarighetspakt och en demografi‑klimatkommission som det konkreta första steget.'
+   },
+   israelBoundaryDeficit: {
+	   title: 'Gränsdragningsunderskottet: Varför Israels överlevnadsarkitektur inte kan skapa politisk stabilitet',
+	   description:
+		   'Israel är inte en misslyckad stat — det är en stat som bemästrat överlevnad men inte kan uppnå normalitet. Rapporten diagnosticerar ett gränsdragningsunderskott skapat av det konstitutionella vakuumet, ockupationsparadoxen och ett kulturellt operativsystem som omvandlar politiska frågor till existentiella imperativ, och föreslår en grundlag om jämlikhet och en nationell överläggningskommission för konstitutionell lösning som det konkreta första steget.'
    }
 		}
 	}

@@ -196,6 +196,12 @@
 	      emoji: '🇳🇬',
 	      url: '/reports/nigeria-substrate-deficit',
 	      badge: 'NEW'
+      },
+      {
+	      key: 'reportsIsrael',
+	      emoji: '🇮🇱',
+	      url: '/reports/israel-boundary-deficit',
+	      badge: 'NEW'
       }
 
   ];

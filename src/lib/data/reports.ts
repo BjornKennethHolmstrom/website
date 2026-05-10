@@ -287,6 +287,27 @@ export const reportsData: Report[] = [
 			en: '/reports/nigeria-substrate-deficit-en.pdf'
 		},
 		readOnlineExternal: false
+	},
+	{
+		id: 'israel-boundary-deficit',
+		key: 'israelBoundaryDeficit',
+		emoji: '🇮🇱',
+		category: 'country',
+		year: 2026,
+		pages: 78,
+		readTime: {
+			en: '65–80 min',
+			sv: '65–80 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-10',
+		coverImage: '/images/reports/israel-boundary-deficit/cover.png',
+		readOnlinePath: '/reports/israel-boundary-deficit',
+		pdfPath: {
+			en: '/reports/israel-boundary-deficit-en.pdf',
+			he: '/reports/israel-boundary-deficit-he.pdf'
+		},
+		readOnlineExternal: false
 	}
 ];
 

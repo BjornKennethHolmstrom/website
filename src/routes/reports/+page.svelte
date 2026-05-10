@@ -6,12 +6,19 @@
 	import PageHero from '$lib/components/PageHero.svelte';
 
 	let reports: Report[] = $derived(reportsData);
+	let selectedImage: string | null = $state(null);
 
 	function getReadTime(report: Report, currentLang: string) {
 		if (!report.readTime) return null;
 		if (typeof report.readTime === 'string') return report.readTime;
 		return report.readTime[currentLang] || report.readTime.en || null;
 	}
+
+ function handleKeydown(e: KeyboardEvent) {
+ 	if (e.key === 'Escape') {
+ 		selectedImage = null;
+ 	}
+ }
 </script>
 
 <SEO
@@ -26,6 +33,8 @@
 	description={$t.reports.hero.description}
 />
 
+<svelte:window on:keydown={handleKeydown} />
+
 <section class="bg-[var(--color-page-bg)] py-16">
 	<div class="mx-auto max-w-7xl px-4">
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
@@ -36,14 +45,17 @@
 					class="group flex flex-col overflow-hidden rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-lg transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-1"
 				>
 					{#if report.coverImage}
-						<div class="relative overflow-hidden">
+		 			<div
+	 					class="relative overflow-hidden cursor-pointer"
+ 						on:click={() => (selectedImage = report.coverImage)}
+						>
 							<div class="aspect-[16/9] w-full">
 								<img
 									src={report.coverImage}
 									alt="Cover for {$t.reports[report.key]?.title}"
 									class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
 								/>
-								<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
 							</div>
 						</div>
 					{/if}
@@ -143,6 +155,37 @@
 		</div>
 	</div>
 </section>
+
+{#if selectedImage}
+	<!-- Modal overlay -->
+	<div
+		class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+		on:click={() => (selectedImage = null)}
+		role="dialog"
+		aria-modal="true"
+		aria-label={$t.common.ui.imagePreview || 'Image preview'}
+	>
+		<!-- Image container – stops clicks from closing the modal -->
+		<div class="relative max-h-[90vh] max-w-[90vw]" on:click|stopPropagation>
+			<!-- Close button -->
+			<button
+				class="absolute -top-4 -right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-white transition hover:bg-black/90"
+				on:click={() => (selectedImage = null)}
+				aria-label={$t.common.ui.close || 'Close'}
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="18" y1="6" x2="6" y2="18" />
+					<line x1="6" y1="6" x2="18" y2="18" />
+				</svg>
+			</button>
+			<img
+				src={selectedImage}
+				alt={$t.common.ui.fullCover || 'Full cover image'}
+				class="max-h-[85vh] max-w-[85vw] rounded-lg object-contain shadow-2xl"
+			/>
+		</div>
+	</div>
+{/if}
 
 <style>
 	/* Any additional styling (currently minimal) */

@@ -72,6 +72,8 @@ export const coreTranslations = {
   reportsJapanTagline: 'Why the world\'s most coherent society can\'t renew itself.',
   reportsNigeriaTitle: 'Nigeria: The Substrate Deficit',
   reportsNigeriaTagline: 'Why Africa\'s most populous nation governs without a state.',
+  reportsIsraelTitle: 'Israel: The Boundary Deficit',
+  reportsIsraelTagline: 'Why the state that mastered survival can\'t complete its own architecture.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -352,6 +354,8 @@ export const coreTranslations = {
   reportsJapanTagline: 'Varför världens mest sammanhållna samhälle inte kan förnya sig.',
   reportsNigeriaTitle: 'Nigeria: Substratunderskottet',
   reportsNigeriaTagline: 'Varför Afrikas folkrikaste nation styr utan en stat.',
+  reportsIsraelTitle: 'Israel: Gränsdragningsunderskottet',
+  reportsIsraelTagline: 'Varför staten som bemästrade överlevnad inte kan fullborda sin egen arkitektur.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',
