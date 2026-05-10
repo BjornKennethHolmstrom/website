@@ -14,6 +14,15 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     boundaryBlindSpot: {
+       title: 'The Boundary and the Blind Spot',
+       subtitle: 'Nondual Awareness and the Architecture of Governance',
+       tagline: 'How the observer is part of the observed—and why that matters for institutional design.',
+       desc: 'Every governance system draws a boundary that determines what becomes visible. This essay explores how the nondual insight—that the observer is inside the field it divides—illuminates the structural blind spots that cause governance systems to mistake their maps for the territory.',
+       published: 'May 2026',
+       readTime: '18 min read',
+       tags: ['Governance', 'Consciousness', 'Systems Thinking', 'Nonduality', 'Cybernetics']
+     },
      beyondDiagnosis: {
        title: 'Beyond Diagnosis: From Decolonial Critique to Institutional Architecture',
        subtitle: 'What Systems Thinking Adds to the Decolonial Project',
@@ -281,6 +290,15 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     boundaryBlindSpot: {
+       title: 'Gränsen och den blinda fläcken',
+       subtitle: 'Icke‑dual medvetenhet och styrningens arkitektur',
+       tagline: 'Hur observatören är en del av det observerade—och varför det spelar roll för institutionell design.',
+       desc: 'Varje styrsystem drar en gräns som avgör vad som blir synligt. Denna essä utforskar hur icke‑dual insikt—att observatören står inuti fältet det delar—belyser de strukturella blinda fläckar som får styrsystem att förväxla sina kartor med verkligheten.',
+       published: 'maj 2026',
+       readTime: '18 min läsning',
+       tags: ['Styrning', 'Medvetande', 'Systemtänkande', 'Icke‑dualitet', 'Cybernetik']
+     },
      beyondDiagnosis: {
        title: 'Bortom diagnosen: Från dekolonial kritik till institutionell arkitektur',
        subtitle: 'Vad systemtänkande tillför det dekoloniala projektet',

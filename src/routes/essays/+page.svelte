@@ -18,6 +18,17 @@
 
 	// Define the essay cards with categories and metadata
  const essayCards = [
+
+   // --- Priority 0: Governance & Consciousness ---
+   { 
+     key: 'boundaryBlindSpot', 
+     url: '/essays/boundary-blind-spot',
+     icon: '🔦',
+     category: 'Governance & Consciousness', // primary badge label
+     categories: ['Governance', 'Consciousness'], // for filtering
+     hasPDF: true
+   },
+
    // --- Priority 1: Governance ---
    { 
      key: 'billComingDue', 
@@ -274,10 +285,17 @@
    },
  ];
 
-	// Reactive filter
-	$: filteredCards = selectedCategory === 'All' 
-		? essayCards 
-		: essayCards.filter(card => card.category === selectedCategory);
+ // Reactive filter - force re-evaluation on category change
+ $: filteredCards = (() => {
+     if (selectedCategory === 'All') {
+         return essayCards;
+     }
+     return essayCards.filter(card => 
+         card.categories 
+             ? card.categories.includes(selectedCategory) 
+             : card.category === selectedCategory
+     );
+ })();
 
 	// Helper for badge colors
 	function getCategoryColor(cat: string) {
