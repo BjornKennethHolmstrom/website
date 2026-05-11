@@ -27,12 +27,12 @@
   ];
 
   const papers = [
-    { href: '/whitepapers/governance-stability-simulator',          key: 'paperI' },
-    { href: '/whitepapers/fractality-as-stability',                 key: 'fractality' },
-    { href: '/whitepapers/observability-democracy-connection',      key: 'observability' },
-    { href: '/whitepapers/requisite-variety-and-the-commons',       key: 'requisite' },
-    { href: '/whitepapers/coordination-failure-tax',                key: 'coordination' },
-    { href: '/whitepapers/the-variety-gap',                         key: 'varietyGap' },
+    { href: '/working-papers/governance-stability-simulator',          key: 'paperI' },
+    { href: '/working-papers/fractality-as-stability',                 key: 'fractality' },
+    { href: '/working-papers/observability-democracy-connection',      key: 'observability' },
+    { href: '/working-papers/requisite-variety-and-the-commons',       key: 'requisite' },
+    { href: '/working-papers/coordination-failure-tax',                key: 'coordination' },
+    { href: '/working-papers/the-variety-gap',                         key: 'varietyGap' },
   ];
 </script>
 
@@ -107,27 +107,27 @@
             {t.explore.papersDesc}
           </p>
         </div>
-        <a href="/whitepapers" class="text-sm font-medium text-[var(--color-page-accent)] hover:underline whitespace-nowrap">
+        <a href="/working-papers" class="text-sm font-medium text-[var(--color-page-accent)] hover:underline whitespace-nowrap">
           {t.explore.papersOverview}
         </a>
       </div>
       <div class="space-y-2">
-        <a href="/whitepapers/governance-stability-simulator" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+        <a href="/working-papers/governance-stability-simulator" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'I: Styrstabilitetssimulatorn' : 'I: Governance Stability Simulator'}
         </a>
-        <a href="/whitepapers/fractality-as-stability" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+        <a href="/working-papers/fractality-as-stability" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'II: Fraktalitet som stabilitet' : 'II: Fractality as Stability'}
         </a>
-        <a href="/whitepapers/observability-democracy-connection" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+        <a href="/working-papers/observability-democracy-connection" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'III: Observerbarhets‑demokratikopplingen' : 'III: The Observability‑Democracy Connection'}
         </a>
-        <a href="/whitepapers/requisite-variety-and-the-commons" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+        <a href="/working-papers/requisite-variety-and-the-commons" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'IV: Nödvändig variation och allmänningen' : 'IV: Requisite Variety and the Commons'}
         </a>
-        <a href="/whitepapers/coordination-failure-tax" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+        <a href="/working-papers/coordination-failure-tax" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'V: Samordningsmisslyckandets skatt' : 'V: The Coordination Failure Tax'}
         </a>
-        <a href="/whitepapers/the-variety-gap" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+        <a href="/working-papers/the-variety-gap" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'VI: Varietetsgapet' : 'VI: The Variety Gap'}
         </a>
       </div>

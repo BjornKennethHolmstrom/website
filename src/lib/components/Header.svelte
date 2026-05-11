@@ -99,10 +99,10 @@
 					{$t.navReports}
 				</a>
 				<a
-					href="/whitepapers"
+					href="/working-papers"
 					class="text-sm font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 				>
-					{$t.navWhitepapers}
+					{$t.navWorkingpapers}
 				</a>
 				<a
 					href="/essays"
@@ -275,11 +275,11 @@
 					{$t.navReports}
 				</a>
 				<a
-					href="/whitepapers"
+					href="/working-papers"
 					class="text-xl font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
 					onclick={closeMobileMenu}
 				>
-					{$t.navWhitepapers}
+					{$t.navWorkingpapers}
 				</a>
 				<a
 					href="/essays"

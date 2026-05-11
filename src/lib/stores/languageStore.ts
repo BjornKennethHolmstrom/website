@@ -3,7 +3,7 @@ import { aboutTranslations } from '../i18n/translations/about';
 import { coreTranslations } from '../i18n/translations/core';
 import { booksTranslations } from '../i18n/translations/books';
 import { integrationCrisisBookTranslations } from '../i18n/translations/integration-crisis-book';
-import { whitepapersTranslations } from '../i18n/translations/whitepapers';
+import { whitepapersTranslations } from '../i18n/translations/working-papers';
 import { appsTranslations } from '../i18n/translations/apps';
 import { creationsTranslations } from '../i18n/translations/creations';
 import { conceptsTranslations } from '../i18n/translations/concepts';

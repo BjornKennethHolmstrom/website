@@ -761,7 +761,7 @@ Var komposten.
 
 - Global Governance Frameworks: globalgovernanceframeworks.org
 - Spiralize (Integral/Systemtänkande): spiralize.org
-- Artiklar, böcker, whitepapers, länkar: bjornkennethholmstrom.org
+- Artiklar, böcker, working-papers, länkar: bjornkennethholmstrom.org
 
 **Kontakt för frågor eller stöd vid protokollantagande:**
 [bjorn.kenneth.holmstrom@gmail.com]

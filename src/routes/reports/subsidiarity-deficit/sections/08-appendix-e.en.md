@@ -14,7 +14,7 @@
 - Holmström, B. K. (2026). *Integrated Meta‑Governance Framework* (v1.3).
 - Holmström, B. K. (2026). *Invitational Framework for Indigenous Sovereignty and Planetary Healing* (v1.0).
 
-**The Governance as Engineering Series (available at bjornkennethholmstrom.org/whitepapers):**
+**The Governance as Engineering Series (available at bjornkennethholmstrom.org/working-papers):**
 - Holmström, B. K. (2026). *Governance Stability Simulator: A Control‑Theoretic Model of Institutional Adaptation.* GGF Whitepaper Series, Paper I.
 - Holmström, B. K. (2026). *Fractality as Stability: A Multi‑Scale Control‑Theoretic Proof.* GGF Whitepaper Series, Paper II.
 - Holmström, B. K. (2026). *The Observability‑Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit.* GGF Whitepaper Series, Paper III.

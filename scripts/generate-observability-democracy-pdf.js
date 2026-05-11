@@ -30,10 +30,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/observability-democracy-connection/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/observability-democracy-connection/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `observability-democracy-connection${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/observability-democracy-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/observability-democracy-cover.png');
 
 const metadata = {
 	en: {
@@ -42,7 +42,7 @@ const metadata = {
 		description: 'Representation chains with three or more layers are constitutionally unobservable: noise variance exceeds surviving signal variance at the policy layer, and no institutional reform within the existing architecture can restore preference transmission fidelity.',
 		author: 'Björn Kenneth Holmström',
 		date: 'February 2026',
-		url: 'https://bjornkennethholmstrom.org/whitepapers/observability-democracy-connection',
+		url: 'https://bjornkennethholmstrom.org/working-papers/observability-democracy-connection',
 		seriesNote: 'Paper III in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
@@ -52,7 +52,7 @@ const metadata = {
 		description: 'Representationskedjor med tre eller fler lager är konstitutionellt icke-observerbara: brusvariansen överstiger den kvarvarande signalvariansen i politiklagret, och ingen institutionell reform kan återställa preferensöverföringens trohet.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Februari 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/observability-democracy-connection',
+		url: 'https://bjornkennethholmstrom.org/sv/working-papers/observability-democracy-connection',
 		seriesNote: 'Rapport III i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
@@ -310,8 +310,8 @@ function processMarkdownImagesSync(content) {
 
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
-			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/observability-democracy-connection', imagePath),
+			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+			path.join(__dirname, '../src/routes/working-papers/observability-democracy-connection', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 

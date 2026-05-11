@@ -6,12 +6,12 @@
 
  // Governance as Engineering — carousel papers
  const governanceEngineeringPapers = [
-   { key: 'geSeriesPaperI',   url: '/whitepapers/governance-stability-simulator',            coverImage: '/whitepapers/images/governance-simulator-cover.png' },
-   { key: 'geSeriesPaperII',  url: '/whitepapers/fractality-as-stability',                   coverImage: '/whitepapers/images/fractality-as-stability-cover.png' },
-   { key: 'geSeriesPaperIII', url: '/whitepapers/observability-democracy-connection',        coverImage: '/whitepapers/images/observability-democracy-cover.png' },
-   { key: 'geSeriesPaperIV',  url: '/whitepapers/requisite-variety-and-the-commons',         coverImage: '/whitepapers/images/requisite-variety-commons-cover.png' },
-   { key: 'geSeriesPaperV',   url: '/whitepapers/coordination-failure-tax',                  coverImage: '/whitepapers/images/coordination-failure-tax-cover.png' },
-   { key: 'geSeriesPaperVI',   url: '/whitepapers/the-variety-gap',                  coverImage: '/whitepapers/images/the-variety-gap-cover.png' },
+   { key: 'geSeriesPaperI',   url: '/working-papers/governance-stability-simulator',            coverImage: '/working-papers/images/governance-simulator-cover.png' },
+   { key: 'geSeriesPaperII',  url: '/working-papers/fractality-as-stability',                   coverImage: '/working-papers/images/fractality-as-stability-cover.png' },
+   { key: 'geSeriesPaperIII', url: '/working-papers/observability-democracy-connection',        coverImage: '/working-papers/images/observability-democracy-cover.png' },
+   { key: 'geSeriesPaperIV',  url: '/working-papers/requisite-variety-and-the-commons',         coverImage: '/working-papers/images/requisite-variety-commons-cover.png' },
+   { key: 'geSeriesPaperV',   url: '/working-papers/coordination-failure-tax',                  coverImage: '/working-papers/images/coordination-failure-tax-cover.png' },
+   { key: 'geSeriesPaperVI',   url: '/working-papers/the-variety-gap',                  coverImage: '/working-papers/images/the-variety-gap-cover.png' },
  ];
 
 	// Definiera vår projektdata.
@@ -95,9 +95,9 @@
 			},
 			{
 				type: 'emoji',
-				key: 'whitepapers',
+				key: 'workingpapers',
 				emoji: '📄',
-				url: '/whitepapers'
+				url: '/working-papers'
 			},
 			{
 				type: 'emoji',
@@ -398,7 +398,7 @@
             <li>• <a href="/coordination-imperative" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.coordination}</a></li>
             <li>• <a href="/variety-gap-framework" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.varietyGapFramework}</a></li>
             <li>• <a href="/reports" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.reports}</a></li>
-            <li>• <a href="/whitepapers" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.whitepapers}</a></li>
+            <li>• <a href="/working-papers" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.workingpapers}</a></li>
             <li>• <a href="https://svensksubsidiaritet.se" target="_blank" rel="noopener"  class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.subsidiarity}</a></li>
             <li>• <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.ggf}</a></li>
             <li>• <a href="https://fjarilspartiet.se" target="_blank" rel="noopener" class="text-amber-600 hover:underline">{$t.welcomeModal.categories.systems.links.fjaril}</a></li>
@@ -506,7 +506,7 @@
             <!-- Text content -->
             <div class="flex-1 text-center md:text-left w-full">
               <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
-                Whitepaper
+                Working paper
               </span>
               <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
                 {currentPaper.title}

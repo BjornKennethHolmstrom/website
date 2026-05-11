@@ -30,10 +30,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/requisite-variety-and-the-commons/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/requisite-variety-and-the-commons/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `requisite-variety-and-the-commons${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/requisite-variety-commons-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/requisite-variety-commons-cover.png');
 
 const metadata = {
 	en: {
@@ -42,7 +42,7 @@ const metadata = {
 		description: 'The tragedy of the commons is an architectural failure — a missing feedback loop — not a motivational one. Ashby\'s Law of Requisite Variety determines which governance systems can stabilize renewable resources. State management performs worse than open access. Indigenous resource sovereignty is a structural engineering requirement.',
 		author: 'Björn Kenneth Holmström',
 		date: 'February 2026',
-		url: 'https://bjornkennethholmstrom.org/whitepapers/requisite-variety-and-the-commons',
+		url: 'https://bjornkennethholmstrom.org/working-papers/requisite-variety-and-the-commons',
 		seriesNote: 'Paper IV in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
@@ -52,7 +52,7 @@ const metadata = {
 		description: 'Allmänningens tragedi är ett arkitektoniskt misslyckande — en saknad återkopplingsslinga — inte ett motivationsmisslyckande. Ashbys lag om nödvändig variation avgör vilka styrningssystem som kan stabilisera förnybara resurser. Statlig förvaltning presterar sämre än fri tillgång. Ursprungsbefolkningars resurssouveränitet är ett strukturellt ingenjörskrav.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Februari 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/requisite-variety-and-the-commons',
+		url: 'https://bjornkennethholmstrom.org/sv/working-papers/requisite-variety-and-the-commons',
 		seriesNote: 'Rapport IV i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
@@ -311,8 +311,8 @@ function processMarkdownImagesSync(content) {
 
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
-			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/requisite-variety-and-the-commons', imagePath),
+			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+			path.join(__dirname, '../src/routes/working-papers/requisite-variety-and-the-commons', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 

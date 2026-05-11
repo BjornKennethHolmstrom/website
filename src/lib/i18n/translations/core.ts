@@ -6,7 +6,7 @@ export const coreTranslations = {
 		meta: {
 			title: 'Björn Kenneth Holmström | Systems Thinker & Governance Architect',
 			description:
-				'Thoughtful, long-form analysis at the intersection of governance, complexity, and consciousness. Home of the Country Reports series and the Governance as Engineering whitepapers.'
+				'Thoughtful, long-form analysis at the intersection of governance, complexity, and consciousness. Home of the Country Reports series and the Governance as Engineering working-papers.'
 		},
   // Header nav
 		navBlog: 'Blog',
@@ -14,7 +14,7 @@ export const coreTranslations = {
   essaysTitle: 'Essays',
   essaysTagline: 'Substantial explorations and living protocols.',
   navReports: 'Reports',
-		navWhitepapers: 'White Papers',
+		navWorkingpapers: 'Working Papers',
   navBooks: 'Books',
   navFrameworks: 'Frameworks',
   navVarietyGap: 'The Variety Gap',
@@ -171,8 +171,8 @@ export const coreTranslations = {
   blogFollow: 'Follow via',
   booksTitle: 'Books',
 		booksTagline: 'Books and longer writings.',
-  whitepapersTitle: 'White Papers',
-		whitepapersTagline: 'A library of research for systemic change.',
+  workingpapersTitle: 'Working Papers',
+		workingpapersTagline: 'A library of research for systemic change.',
 		changeParadoxTitle: 'The Change Paradox Field Manual',
 		changeParadoxTagline: 'Open-source protocol for building transformative political power.',
   appsTitle: 'Apps',
@@ -233,7 +233,7 @@ export const coreTranslations = {
           coordination: 'The Coordination Imperative',
           varietyGapFramework: 'The Variety Gap',
           reports: 'Reports',
-          whitepapers: 'White papers',
+          workingpapers: 'Working papers',
           subsidiarity: 'Swedish Subsidiarity',
           ggf: 'Global Governance Frameworks',
           fjaril: 'Fjärilspartiet'
@@ -306,7 +306,7 @@ export const coreTranslations = {
   essaysTitle: 'Essäer',
   essaysTagline: 'Omfattande utforskningar och levande protokoll.',
   navReports: 'Rapporter',
-		navWhitepapers: 'White papers',
+		navWorkingpapers: 'Arbetsdokument',
   navBooks: 'Böcker',
 		navContact: 'Kontakt',
   navAbout: 'Om',
@@ -458,8 +458,8 @@ export const coreTranslations = {
   blogFollow: 'Följ via',
   booksTitle: 'Böcker',
 		booksTagline: 'Böcker och längre skrifter.',
-		whitepapersTitle: 'White papers',
-		whitepapersTagline: 'Ett forskningsbibliotek för systemisk förändring.',
+		workingpapersTitle: 'Arbetsdokument',
+		workingpapersTagline: 'Ett forskningsbibliotek för systemisk förändring.',
 		changeParadoxTitle: 'The Change Paradox Field Manual',
 		changeParadoxTagline: 'Open-source protokoll för att bygga transformativ politisk makt.',
   appsTitle: 'Appar',
@@ -520,7 +520,7 @@ export const coreTranslations = {
           coordination: 'The Coordination Imperative',
           varietyGapFramework: 'Varietetsgapet',
           reports: 'Rapporter',
-          whitepapers: 'White papers',
+          workingpapers: 'Arbetsdokument',
           subsidiarity: 'Svensk Subsidiaritet',
           ggf: 'Global Governance Frameworks',
           fjaril: 'Fjärilspartiet'

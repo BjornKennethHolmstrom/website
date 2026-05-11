@@ -30,10 +30,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/fractality-as-stability/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/fractality-as-stability/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `fractality-as-stability${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/fractality-as-stability-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/fractality-as-stability-cover.png');
 
 const metadata = {
 	en: {
@@ -42,7 +42,7 @@ const metadata = {
 		description: 'No single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
 		author: 'Björn Kenneth Holmström',
 		date: 'February 2026',
-		url: 'https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability',
+		url: 'https://bjornkennethholmstrom.org/working-papers/fractality-as-stability',
 		seriesNote: 'Paper II in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
@@ -52,7 +52,7 @@ const metadata = {
 		description: 'Ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Februari 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/fractality-as-stability',
+		url: 'https://bjornkennethholmstrom.org/sv/working-papers/fractality-as-stability',
 		seriesNote: 'Rapport II i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
@@ -330,8 +330,8 @@ function processMarkdownImagesSync(content) {
 
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
-			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/fractality-as-stability', imagePath),
+			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+			path.join(__dirname, '../src/routes/working-papers/fractality-as-stability', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 

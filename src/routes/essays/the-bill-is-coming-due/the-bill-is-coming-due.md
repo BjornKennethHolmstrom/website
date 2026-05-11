@@ -163,7 +163,7 @@ For decades, the cost of our debt grew slowly. We could ignore the degrading soi
 
 But exponential curves have a nasty feature: they look flat for a long time, and then, suddenly, they go vertical.
 
-We have hit the [**Vertical Cost Curve**](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof) (see the GGF's simulation data in The Omega Proof).
+We have hit the [**Vertical Cost Curve**](https://globalgovernanceframeworks.org/resources/working-papers/omega-proof) (see the GGF's simulation data in The Omega Proof).
 
 ### The Squeeze
 The cost of solving our problems is now rising faster than our capacity to generate resources.
@@ -245,7 +245,7 @@ The GGF is not a political ideology. It is a bankruptcy restructuring plan. It c
 #### 1. Protocol Omega: Stopping the Bleeding
 
   * **The Problem:** The "Externalization Debt." Actors profit by dumping costs on the commons.
-  * **The Fix:** A Meta-Sovereign compliance layer. [Protocol Omega](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof) uses transparency and automated verification to ensure that no actor can "free-ride" on the stability of the whole. It closes the loop. You cannot profit from toxicity anymore.
+  * **The Fix:** A Meta-Sovereign compliance layer. [Protocol Omega](https://globalgovernanceframeworks.org/resources/working-papers/omega-proof) uses transparency and automated verification to ensure that no actor can "free-ride" on the stability of the whole. It closes the loop. You cannot profit from toxicity anymore.
   * **The Result:** The accumulation of new debt stops immediately.
 
 #### 2. Hearthstone: Refinancing the Capital
@@ -334,7 +334,7 @@ We can pay this bill together, or we can default alone.
 
 *Download the Developmental Debt Calculator template at [globalgovernanceframeworks.org/tools/developmental-debt-calculator](https://www.globalgovernanceframeworks.org/tools/developmental-debt-calculator)*
 
-**Dig Deeper into the Data** The concept of the "Vertical Cost Curve" is derived from the GGF's adversarial AI simulations of the Westphalian system. 📄 [Read the White Paper: The Omega Proof](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof)
+**Dig Deeper into the Data** The concept of the "Vertical Cost Curve" is derived from the GGF's adversarial AI simulations of the Westphalian system. 📄 [Read the White Paper: The Omega Proof](https://globalgovernanceframeworks.org/resources/working-papers/omega-proof)
 
 ---
 

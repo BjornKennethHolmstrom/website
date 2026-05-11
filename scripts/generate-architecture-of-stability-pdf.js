@@ -31,10 +31,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/architecture-of-stability/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/architecture-of-stability/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `architecture-of-stability${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/architecture-of-stability-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/architecture-of-stability-cover.png');
 
 // Metadata based on language
 const metadata = {
@@ -44,7 +44,7 @@ const metadata = {
 		description: "Integrating control theory, network science, and constitutional design to diagnose governance instability and prescribe fractal subsidiarity as the solution.",
 		author: "Björn Kenneth Holmström",
 		date: "February 2026",
-		url: "https://bjornkennethholmstrom.org/whitepapers/architecture-of-stability",
+		url: "https://bjornkennethholmstrom.org/working-papers/architecture-of-stability",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	},
 	sv: {
@@ -53,7 +53,7 @@ const metadata = {
 		description: "Integrering av reglerteori, nätverksvetenskap och konstitutionell design för att diagnostisera styrelseinstabilitet och föreslå fraktal subsidiaritet som lösning.",
 		author: "Björn Kenneth Holmström",
 		date: "Februari 2026",
-		url: "https://bjornkennethholmstrom.org/sv/whitepapers/architecture-of-stability",
+		url: "https://bjornkennethholmstrom.org/sv/working-papers/architecture-of-stability",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	}
 };
@@ -522,8 +522,8 @@ function processMarkdownImagesSync(content) {
     
     const possiblePaths = [
       path.join(__dirname, '../static', imagePath),
-      path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-      path.join(__dirname, '../src/routes/whitepapers/architecture-of-stability', imagePath),
+      path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+      path.join(__dirname, '../src/routes/working-papers/architecture-of-stability', imagePath),
       path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
     ];
     

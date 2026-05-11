@@ -1,14 +1,14 @@
 // src/routes/rss.xml/+server.ts
 // Removed the import for fetchPosts since we aren't using it anymore
-import { papersData } from '$lib/data/whitepapers';
+import { papersData } from '$lib/data/working-papers';
 import { booksData } from '$lib/data/books';
 
 export const GET = async () => {
   // Removed: const posts = await fetchPosts();
 
-  // Mappa whitepapers till RSS-struktur
-  const whitepapers = papersData.map(paper => ({
-    title: `White Paper: ${paper.key}`, // Note: You might want to add a real title field to whitepapers.ts later
+  // Mappa working-papers till RSS-struktur
+  const working-papers = papersData.map(paper => ({
+    title: `White Paper: ${paper.key}`, // Note: You might want to add a real title field to working-papers.ts later
     description: `A white paper on ${paper.category}`,
     link: paper.readOnlinePath || paper.pdfPath.en,
     date: paper.releaseDate,
@@ -24,8 +24,8 @@ export const GET = async () => {
     author: 'Björn Kenneth Holmström'
   }));
 
-  // Combine only whitepapers and books (removed ...posts)
-  const items = [...whitepapers, ...books]
+  // Combine only working-papers and books (removed ...posts)
+  const items = [...working-papers, ...books]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const body = render(items);

@@ -761,7 +761,7 @@ Be the compost.
 
 - Global Governance Frameworks: globalgovernanceframeworks.org
 - Spiralize (Integral/Systems Thinking): spiralize.org
-- Articles, books, whitepapers, links: bjornkennethholmstrom.org
+- Articles, books, working-papers, links: bjornkennethholmstrom.org
 
 **Contact for Questions or Protocol Adoption Support:**
 [bjorn.kenneth.holmstrom@gmail.com]

@@ -30,10 +30,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/the-variety-gap/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/the-variety-gap/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `the-variety-gap${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/the-variety-gap-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/the-variety-gap-cover.png');
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
 const metadata = {
@@ -43,7 +43,7 @@ const metadata = {
 		description: 'Objective functions are observation architectures. Low-dimensional value functions produce the same structural collapse as low-dimensional governance channels. The variety gap — the mismatch between the dimensionality of reality and the value architecture — is a unifying diagnostic for systemic blindness.',
 		author: 'Björn Kenneth Holmström',
 		date: 'May 2026',
-		url: 'https://bjornkennethholmstrom.org/whitepapers/the-variety-gap',
+		url: 'https://bjornkennethholmstrom.org/working-papers/the-variety-gap',
 		seriesNote: 'Paper VI in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
@@ -53,7 +53,7 @@ const metadata = {
 		description: 'Målfunktioner är observationsarkitekturer. Lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler. Variationsgapet — skillnaden mellan verklighetens dimensionalitet och värdearkitekturens — är ett enhetligt diagnostiskt verktyg för systemisk blindhet.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Maj 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/the-variety-gap',
+		url: 'https://bjornkennethholmstrom.org/sv/working-papers/the-variety-gap',
 		seriesNote: 'Rapport VI i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
@@ -317,8 +317,8 @@ function processMarkdownImagesSync(content) {
 
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
-			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/the-variety-gap', imagePath),
+			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+			path.join(__dirname, '../src/routes/working-papers/the-variety-gap', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 

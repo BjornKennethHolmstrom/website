@@ -30,10 +30,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/self-variety-gap/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/self-variety-gap/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `self-variety-gap${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/self-variety-gap-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/self-variety-gap-cover.png');
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
 const metadata = {
@@ -43,7 +43,7 @@ const metadata = {
 		description: 'Extends the variety‑gap framework from governance institutions to the individual self. The ego is a low‑dimensional controller; narrow personal values create blind spots that eventually return as crises. Introduces the self‑variety gap (G_self) as a diagnostic for psychological blind spots and a guide to the practices that can close it.',
 		author: 'Björn Kenneth Holmström',
 		date: 'May 2026',
-		url: 'https://bjornkennethholmstrom.org/whitepapers/self-variety-gap',
+		url: 'https://bjornkennethholmstrom.org/working-papers/self-variety-gap',
 		seriesNote: 'Companion to the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
@@ -53,7 +53,7 @@ const metadata = {
 		description: 'Utvidgar variationsgap-ramverket från styrningsinstitutioner till det individuella självet. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som till slut återvänder som kriser. Introducerar själv‑variationsgapet (G_self) som ett diagnostiskt verktyg för psykologiska blinda fläckar och en guide till de praktiker som kan minska det.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Maj 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/whitepapers/self-variety-gap',
+		url: 'https://bjornkennethholmstrom.org/sv/working-papers/self-variety-gap',
 		seriesNote: 'Kompanjon till serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
@@ -315,8 +315,8 @@ function processMarkdownImagesSync(content) {
 
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
-			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/self-variety-gap', imagePath),
+			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+			path.join(__dirname, '../src/routes/working-papers/self-variety-gap', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 

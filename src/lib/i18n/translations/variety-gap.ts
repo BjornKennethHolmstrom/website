@@ -8,7 +8,7 @@ export const varietyGapTranslations = {
     intro: {
       heading: 'What is the Variety Gap Framework?',
       p1: 'Every governance system measures some things and ignores others. The gap between what the system measures and what actually determines its survival is the <strong>variety gap</strong>. When that gap grows too wide, the system loses the ability to perceive the threats that will eventually destroy it.',
-      p2: 'The Variety Gap Framework unites two bodies of work: the <strong>Country Reports for Systemic Change</strong>, which diagnose specific governance deficits across thirteen nations; and the <strong>Governance as Engineering</strong> whitepapers, which formalize the control‑theoretic foundations, including the Variety Gap paper itself, which extends Ashby’s Law of Requisite Variety to the architecture of values. Together they form a diagnostic toolkit for understanding why well‑resourced, well‑intentioned governance systems repeatedly fail to adapt.',
+      p2: 'The Variety Gap Framework unites two bodies of work: the <strong>Country Reports for Systemic Change</strong>, which diagnose specific governance deficits across thirteen nations; and the <strong>Governance as Engineering</strong> working-papers, which formalize the control‑theoretic foundations, including the Variety Gap paper itself, which extends Ashby’s Law of Requisite Variety to the architecture of values. Together they form a diagnostic toolkit for understanding why well‑resourced, well‑intentioned governance systems repeatedly fail to adapt.',
     },
     explore: {
       heading: 'Explore the Series',
@@ -16,7 +16,7 @@ export const varietyGapTranslations = {
       reportsDesc: 'Thirteen national governance diagnostics applying the framework.',
       reportsOverview: 'All Reports →',
       papersTitle: 'Governance as Engineering',
-      papersDesc: 'Six whitepapers formalizing the control‑theoretic foundations.',
+      papersDesc: 'Six working-papers formalizing the control‑theoretic foundations.',
       papersOverview: 'All Whitepapers →',
     },
     fieldGuide: {
@@ -50,7 +50,7 @@ export const varietyGapTranslations = {
     intro: {
       heading: 'Vad är ramverket kring varietetsgapet?',
       p1: 'Varje styrsystem mäter vissa saker och ignorerar andra. Gapet mellan vad systemet mäter och vad som faktiskt avgör dess överlevnad är <strong>varietetsgapet</strong>. När gapet växer för mycket förlorar systemet förmågan att uppfatta de hot som till slut kommer att förgöra det.',
-      p2: 'Ramverket förenar två arbeten: <strong>Country Reports for Systemic Change</strong>, som diagnostiserar specifika styrningsbrister i tretton länder; och whitepapers <strong>Governance as Engineering</strong>, som formaliserar de styrteoretiska grunderna, inklusive själva rapporten om varietetsgapet, vilken utvidgar Ashbys lag om nödvändig variation till värderingarnas arkitektur. Tillsammans bildar de en diagnostisk verktygslåda för att förstå varför välfinansierade, välsinnade styrsystem gång på gång misslyckas med att anpassa sig.',
+      p2: 'Ramverket förenar två arbeten: <strong>Country Reports for Systemic Change</strong>, som diagnostiserar specifika styrningsbrister i tretton länder; och working-papers <strong>Governance as Engineering</strong>, som formaliserar de styrteoretiska grunderna, inklusive själva rapporten om varietetsgapet, vilken utvidgar Ashbys lag om nödvändig variation till värderingarnas arkitektur. Tillsammans bildar de en diagnostisk verktygslåda för att förstå varför välfinansierade, välsinnade styrsystem gång på gång misslyckas med att anpassa sig.',
     },
     explore: {
       heading: 'Utforska serien',
@@ -58,8 +58,8 @@ export const varietyGapTranslations = {
       reportsDesc: 'Tretton nationella styrningsdiagnoser som tillämpar ramverket.',
       reportsOverview: 'Alla rapporter →',
       papersTitle: 'Governance as Engineering',
-      papersDesc: 'Sex whitepapers som formaliserar de styrteoretiska grunderna.',
-      papersOverview: 'Alla whitepapers →',
+      papersDesc: 'Sex working-papers som formaliserar de styrteoretiska grunderna.',
+      papersOverview: 'Alla working-papers →',
     },
     fieldGuide: {
       heading: 'Diagnostisk fältguide för landrapporter',

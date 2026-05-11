@@ -98,7 +98,7 @@ Om du är nyfiken kan du utforska **TIM Sybil Collapse Visualizer** (en interakt
 
 Och hela artikeln finns här:
 
-👉 [The Immanent Trust Protocol – Technical Whitepaper](https://www.globalgovernanceframeworks.org/resources/whitepapers/immanent-trust-protocol)
+👉 [The Immanent Trust Protocol – Technical Whitepaper](https://www.globalgovernanceframeworks.org/resources/working-papers/immanent-trust-protocol)
 
 ---
 

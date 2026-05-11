@@ -31,10 +31,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/fractal-cybernetic-consciousness/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/fractal-cybernetic-consciousness/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `fractal-cybernetic-consciousness${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/fractal-cybernetic-cover-optimized-rotated.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/fractal-cybernetic-cover-optimized-rotated.png');
 
 // Metadata based on language
 const metadata = {
@@ -44,7 +44,7 @@ const metadata = {
 		description: "A transdisciplinary framework bridging cybernetics, fractal geometry, and contemplative science to explain consciousness evolution toward awakening.",
 		author: "Björn Kenneth Holmström",
 		date: "February 2026",
-		url: "https://bjornkennethholmstrom.org/whitepapers/fractal-cybernetic-consciousness",
+		url: "https://bjornkennethholmstrom.org/working-papers/fractal-cybernetic-consciousness",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	},
 	sv: {
@@ -53,7 +53,7 @@ const metadata = {
 		description: "Ett tvärvetenskapligt ramverk som förenar kybernetik, fraktalgeometri och kontemplativ vetenskap för att förklara medvetandets evolution mot uppvaknande.",
 		author: "Björn Kenneth Holmström",
 		date: "Februari 2026",
-		url: "https://bjornkennethholmstrom.org/whitepapers/fractal-cybernetic-consciousness",
+		url: "https://bjornkennethholmstrom.org/working-papers/fractal-cybernetic-consciousness",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	}
 };
@@ -711,8 +711,8 @@ async function generatePDF(html) {
 	
 	// Display success message
 	const baseUrl = LANGUAGE === 'en' ? 
-		'https://bjornkennethholmstrom.org/whitepapers/fractal-cybernetic-consciousness' :
-		'https://bjornkennethholmstrom.org/sv/whitepapers/fractal-cybernetic-consciousness';
+		'https://bjornkennethholmstrom.org/working-papers/fractal-cybernetic-consciousness' :
+		'https://bjornkennethholmstrom.org/sv/working-papers/fractal-cybernetic-consciousness';
 	
 	console.log('\n✨ Whitepaper generated successfully!');
 	console.log(`\n📚 To view the whitepaper online:`);

@@ -6,7 +6,7 @@ Este relatório foi escrito a partir de uma posição de engajamento comparativo
 
 A distância do poder institucional é tanto uma limitação quanto um recurso. Ela limita o acesso à textura granular e cotidiana da formulação de políticas brasileiras — as normas não escritas, as estruturas de poder informais, a realidade vivida que nenhum arcabouço formal pode capturar. Mas também possibilita uma liberdade de diagnóstico que a proximidade do poder frequentemente desencoraja. O relatório não reivindica conhecimento interno. Ele reivindica uma lente coerente — uma que pode se mostrar útil para aqueles que ocupam posições institucionais e estão buscando arcabouços que façam sentido do que estão experimentando.
 
-O autor também contribuiu diretamente para o design de governança através dos Quadros Globais de Governança, da série de whitepapers Governança como Engenharia e do Protocolo de Subsidiariedade da UE — todos referenciados neste documento e disponíveis na íntegra no site do autor. A síntese é oferecida no espírito de construção colaborativa de sentido, não de pronunciamento definitivo. Comentários, críticas e diálogo são bem-vindos.
+O autor também contribuiu diretamente para o design de governança através dos Quadros Globais de Governança, da série de working-papers Governança como Engenharia e do Protocolo de Subsidiariedade da UE — todos referenciados neste documento e disponíveis na íntegra no site do autor. A síntese é oferecida no espírito de construção colaborativa de sentido, não de pronunciamento definitivo. Comentários, críticas e diálogo são bem-vindos.
 
 ### Uma nota sobre o método
 

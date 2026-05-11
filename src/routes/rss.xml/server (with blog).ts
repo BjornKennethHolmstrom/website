@@ -1,12 +1,12 @@
 import { error } from '@sveltejs/kit';
 import { booksData } from '$lib/data/books';
-import { papersData } from '$lib/data/whitepapers';
+import { papersData } from '$lib/data/working-papers';
 
 // Importera dina översättningar för att hämta titlar/beskrivningar
 // (Justera sökvägarna om de ligger någon annanstans)
 import { coreTranslations } from '$lib/i18n/translations/core'; // Antagande om filnamn
 import { booksTranslations } from '$lib/i18n/translations/books';
-import { whitepapersTranslations } from '$lib/i18n/translations/whitepapers';
+import { whitepapersTranslations } from '$lib/i18n/translations/working-papers';
 
 export const prerender = true;
 
@@ -74,9 +74,9 @@ export async function GET() {
 	// 3. Formatera WHITE PAPERS
 	for (const paper of papersData) {
 		allContent.push({
-			title: `New White Paper: ${t.whitepapers[paper.key].title}`,
-			description: t.whitepapers[paper.key].description,
-			link: `${siteUrl}/whitepapers`, // Länka till white paper-sidan
+			title: `New White Paper: ${t.working-papers[paper.key].title}`,
+			description: t.working-papers[paper.key].description,
+			link: `${siteUrl}/working-papers`, // Länka till white paper-sidan
 			pubDate: new Date(paper.releaseDate)
 		});
 	}

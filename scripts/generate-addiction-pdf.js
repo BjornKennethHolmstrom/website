@@ -31,10 +31,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/addiction-as-integration-failure/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/addiction-as-integration-failure/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `addiction-as-integration-failure${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/addiction-cover-optimized.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/addiction-cover-optimized.png');
 
 // Metadata based on language
 const metadata = {
@@ -44,7 +44,7 @@ const metadata = {
 		description: "Applying the Project Janus Model to the Crisis of Attention and Meaning",
 		author: "Björn Kenneth Holmström",
 		date: "November 2025",
-		url: "https://bjornkennethholmstrom.org/whitepapers/addiction-as-integration-failure",
+		url: "https://bjornkennethholmstrom.org/working-papers/addiction-as-integration-failure",
 		license: "Creative Commons Attribution 4.0 International"
 	},
 	sv: {
@@ -53,7 +53,7 @@ const metadata = {
 		description: "Applicering av Project Janus-modellen på uppmärksamhets- och meningskrisen",
 		author: "Björn Kenneth Holmström",
 		date: "November 2025",
-		url: "https://bjornkennethholmstrom.org/whitepapers/addiction-as-integration-failure",
+		url: "https://bjornkennethholmstrom.org/working-papers/addiction-as-integration-failure",
 		license: "Creative Commons Attribution 4.0 International"
 	}
 };

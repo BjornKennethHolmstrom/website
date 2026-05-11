@@ -31,10 +31,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/governance-stability-simulator/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/governance-stability-simulator/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `governance-stability-simulator${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/governance-simulator-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/governance-simulator-cover.png');
 
 // Metadata
 const metadata = {
@@ -44,7 +44,7 @@ const metadata = {
 		description: "An open analytical framework modelling governance as a feedback control system, demonstrating how latency and signal fidelity determine the structural stability limits of any institutional architecture.",
 		author: "Björn Kenneth Holmström",
 		date: "February 2026",
-		url: "https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator",
+		url: "https://bjornkennethholmstrom.org/working-papers/governance-stability-simulator",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	},
 	sv: {
@@ -53,7 +53,7 @@ const metadata = {
 		description: "Ett öppet analytiskt ramverk som modellerar styrning som ett återkopplingssystem och visar hur latens och signalfidelitet bestämmer de strukturella stabilitets­gränserna för varje institutionell arkitektur.",
 		author: "Björn Kenneth Holmström",
 		date: "Februari 2026",
-		url: "https://bjornkennethholmstrom.org/sv/whitepapers/governance-stability-simulator",
+		url: "https://bjornkennethholmstrom.org/sv/working-papers/governance-stability-simulator",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	}
 };
@@ -411,8 +411,8 @@ function processMarkdownImagesSync(content) {
 
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
-			path.join(__dirname, '../static/whitepapers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/whitepapers/governance-stability-simulator', imagePath),
+			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
+			path.join(__dirname, '../src/routes/working-papers/governance-stability-simulator', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 

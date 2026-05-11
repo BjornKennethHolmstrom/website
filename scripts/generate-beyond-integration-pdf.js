@@ -31,10 +31,10 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/beyond-integration/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/beyond-integration/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `beyond-integration${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/beyond-integration-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/beyond-integration-cover.png');
 
 // Metadata based on language
 const metadata = {
@@ -44,7 +44,7 @@ const metadata = {
 		description: "Personal exploration and systemic analysis of the intersection between mystical experience, psychiatric diagnosis, and human potential",
 		author: "Björn Kenneth Holmström",
 		date: "December 2024",
-		url: "https://bjornkennethholmstrom.org/whitepapers/beyond-integration",
+		url: "https://bjornkennethholmstrom.org/working-papers/beyond-integration",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	},
 	sv: {
@@ -53,7 +53,7 @@ const metadata = {
 		description: "Personlig utforskning och systemisk analys av skärningspunkten mellan mystisk upplevelse, psykiatrisk diagnos och mänsklig potential",
 		author: "Björn Kenneth Holmström",
 		date: "December 2024",
-		url: "https://bjornkennethholmstrom.org/whitepapers/beyond-integration",
+		url: "https://bjornkennethholmstrom.org/working-papers/beyond-integration",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International"
 	}
 };
@@ -552,7 +552,7 @@ async function main() {
 		
 		console.log('\n✨ Done!');
 		console.log(`\nTo view the essay online:`);
-		console.log(`https://bjornkennethholmstrom.org/whitepapers/beyond-integration`);
+		console.log(`https://bjornkennethholmstrom.org/working-papers/beyond-integration`);
 	} catch (error) {
 		console.error('❌ Error generating PDF:', error);
 		process.exit(1);

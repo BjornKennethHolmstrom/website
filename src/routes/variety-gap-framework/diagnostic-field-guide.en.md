@@ -198,7 +198,7 @@ When you've completed your analysis, you should be able to fill in the following
 
 ### Where This Framework Comes From
 
-This guide distills the Country Reports for Systemic Change series (14 reports, 2026) and the Governance as Engineering whitepapers (6 papers). The series applies control theory, information theory, Ashby's Law of Requisite Variety, and Spiral Dynamics to the diagnosis of governance failure. The core finding across all cases: governance failures are not primarily failures of competence, resources, or political will. They are failures of *observation architecture*—the structures that determine what a governance system can perceive and respond to.
+This guide distills the Country Reports for Systemic Change series (14 reports, 2026) and the Governance as Engineering working-papers (6 papers). The series applies control theory, information theory, Ashby's Law of Requisite Variety, and Spiral Dynamics to the diagnosis of governance failure. The core finding across all cases: governance failures are not primarily failures of competence, resources, or political will. They are failures of *observation architecture*—the structures that determine what a governance system can perceive and respond to.
 
 The full series is available at [bjornkennethholmstrom.org](https://bjornkennethholmstrom.org).
 

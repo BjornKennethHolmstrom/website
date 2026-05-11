@@ -163,7 +163,7 @@ I årtionden växte kostnaden för vår skuld långsamt. Vi kunde ignorera den f
 
 Men exponentiella kurvor har en otäck egenskap: de ser platta ut under lång tid, och sedan, plötsligt, går de vertikalt.
 
-Vi har träffat den [**vertikala kostnadskurvan**](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof) (se GGFs simuleringsdata i The Omega Proof).
+Vi har träffat den [**vertikala kostnadskurvan**](https://globalgovernanceframeworks.org/resources/working-papers/omega-proof) (se GGFs simuleringsdata i The Omega Proof).
 
 ### Klämman
 Kostnaden för att lösa våra problem stiger nu snabbare än vår kapacitet att generera resurser.
@@ -245,7 +245,7 @@ GGF är inte en politisk ideologi. Det är en omstruktureringsplan vid konkurs. 
 #### 1. Protokoll Omega: Stoppa blödningen
 
 * **Problemet:** "Externaliseringsskulden". Aktörer profiterar genom att dumpa kostnader på allmänningen.
-* **Lösningen:** Ett meta-suveränt efterlevnadslager. [Protokoll Omega](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof) använder transparens och automatiserad verifiering för att säkerställa att ingen aktör kan åka snålskjuts på helhetens stabilitet. Det sluter loopen. Du kan inte profitera på toxicitet längre.
+* **Lösningen:** Ett meta-suveränt efterlevnadslager. [Protokoll Omega](https://globalgovernanceframeworks.org/resources/working-papers/omega-proof) använder transparens och automatiserad verifiering för att säkerställa att ingen aktör kan åka snålskjuts på helhetens stabilitet. Det sluter loopen. Du kan inte profitera på toxicitet längre.
 * **Resultatet:** Ackumuleringen av ny skuld stannar omedelbart.
 
 #### 2. Hearthstone: Refinansiering av kapitalet
@@ -334,7 +334,7 @@ Vi kan betala denna nota tillsammans, eller så kan vi gå i konkurs ensamma.
 
 *Ladda ner mallen för utvecklingsskuldskalkylatorn på [globalgovernanceframeworks.org/tools/developmental-debt](https://www.globalgovernanceframeworks.org/tools/developmental-debt)*
 
-**Gräv djupare i datan** Konceptet med den "vertikala kostnadskurvan" härrör från GGFs AI-simuleringar av det westfaliska systemet. 📄 [Läs artikeln: The Omega Proof](https://globalgovernanceframeworks.org/resources/whitepapers/omega-proof)
+**Gräv djupare i datan** Konceptet med den "vertikala kostnadskurvan" härrör från GGFs AI-simuleringar av det westfaliska systemet. 📄 [Läs artikeln: The Omega Proof](https://globalgovernanceframeworks.org/resources/working-papers/omega-proof)
 
 ---
 

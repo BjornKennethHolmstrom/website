@@ -23,11 +23,11 @@ if (!['en', 'sv'].includes(LANGUAGE)) {
   process.exit(1);
 }
 
-const INPUT_DIR = path.join(__dirname, '../src/routes/whitepapers/coordination-failure-tax/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/coordination-failure-tax/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
 const SUFFIX = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `coordination-failure-tax${SUFFIX}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/whitepapers/images/coordination-failure-tax-cover.png');
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/coordination-failure-tax-cover.png');
 
 const metadata = {
   en: {
@@ -36,7 +36,7 @@ const metadata = {
     description: 'Four governance failure modes — spatial blindness, frequency gaps, preference invisibility, and observational inadequacy — do not add. They multiply. A governance system exhibiting all four simultaneously is categorically incapable of the functions it claims to perform.',
     author: 'Björn Kenneth Holmström',
     date: 'March 2026',
-    url: 'https://bjornkennethholmstrom.org/whitepapers/coordination-failure-tax',
+    url: 'https://bjornkennethholmstrom.org/working-papers/coordination-failure-tax',
     seriesNote: 'Paper V in the Governance as Engineering series',
     license: 'Creative Commons Attribution-ShareAlike 4.0 International',
   },
@@ -46,7 +46,7 @@ const metadata = {
     description: 'Fyra styrningsfelmönster — rumslig blindhet, frekvensluckor, preferensosynlighet och observationsotillräcklighet — adderar inte. De multiplicerar. Ett styrningssystem som uppvisar alla fyra är kategoriskt oförmöget att utföra de funktioner det påstår sig utföra.',
     author: 'Björn Kenneth Holmström',
     date: 'Mars 2026',
-    url: 'https://bjornkennethholmstrom.org/sv/whitepapers/coordination-failure-tax',
+    url: 'https://bjornkennethholmstrom.org/sv/working-papers/coordination-failure-tax',
     seriesNote: 'Rapport V i serien Styrning som ingenjörskonst',
     license: 'Creative Commons Attribution-ShareAlike 4.0 International',
   },
@@ -145,8 +145,8 @@ function processImages(content) {
     if (src.startsWith('http') || src.startsWith('file:')) return match;
     const candidates = [
       path.join(__dirname, '../static', src),
-      path.join(__dirname, '../static/whitepapers/images', path.basename(src)),
-      path.join(__dirname, '../src/routes/whitepapers/coordination-failure-tax', src),
+      path.join(__dirname, '../static/working-papers/images', path.basename(src)),
+      path.join(__dirname, '../src/routes/working-papers/coordination-failure-tax', src),
       path.join(__dirname, '../static', src.replace(/^\//, '')),
     ];
     const found = candidates.find(p => fs.existsSync(p));
