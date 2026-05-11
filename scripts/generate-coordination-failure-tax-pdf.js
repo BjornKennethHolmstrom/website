@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for The Coordination Failure Tax whitepaper
+ * Generate PDF for The Coordination Failure Tax working paper
  *
  * Usage: node scripts/generate-coordination-failure-tax-pdf.js [language]
  * Example: node scripts/generate-coordination-failure-tax-pdf.js en
@@ -24,7 +24,7 @@ if (!['en', 'sv'].includes(LANGUAGE)) {
 }
 
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/coordination-failure-tax/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const SUFFIX = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `coordination-failure-tax${SUFFIX}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/coordination-failure-tax-cover.png');
@@ -231,7 +231,7 @@ async function generatePDF(html) {
       printBackground: true,
       margin: { top: '2.5cm', right: '2cm', bottom: '2.5cm', left: '2cm' },
       displayHeaderFooter: true,
-      headerTemplate: `<div style="font-size:9pt;color:#666;width:100%;margin:0 2cm;"><span style="float:left;">${meta.title}</span><span style="float:right;">${LANGUAGE === 'en' ? 'Whitepaper · Series V' : 'Vitbok · Serie V'}</span></div>`,
+      headerTemplate: `<div style="font-size:9pt;color:#666;width:100%;margin:0 2cm;"><span style="float:left;">${meta.title}</span><span style="float:right;">${LANGUAGE === 'en' ? 'Working paper · Series V' : 'Arbetsdokument · Serie V'}</span></div>`,
       footerTemplate: `<div style="font-size:9pt;color:#666;width:100%;text-align:center;"><span class="pageNumber"></span></div>`,
       timeout: 120000,
     });

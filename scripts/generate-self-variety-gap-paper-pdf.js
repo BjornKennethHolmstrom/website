@@ -31,7 +31,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/self-variety-gap/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `self-variety-gap${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/self-variety-gap-cover.png');
 
@@ -347,7 +347,7 @@ function enhanceImageMarkup(content) {
 }
 
 function readMarkdownFiles() {
-	console.log(`\n📖 Reading whitepaper sections for language: ${LANGUAGE}`);
+	console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
 	console.log(`Input directory: ${INPUT_DIR}\n`);
 	const contents = [];
 

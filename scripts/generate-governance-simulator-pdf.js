@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for the Governance Stability Simulator whitepaper
+ * Generate PDF for the Governance Stability Simulator working paper
  * 
  * Usage: node scripts/generate-governance-simulator-pdf.js [language]
  * Example: node scripts/generate-governance-simulator-pdf.js en
@@ -32,7 +32,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/governance-stability-simulator/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `governance-stability-simulator${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/governance-simulator-cover.png');
 
@@ -451,7 +451,7 @@ function enhanceImageMarkup(content) {
 
 // ── Read and combine markdown files ───────────────────────────────────────────
 function readMarkdownFiles() {
-	console.log(`\n📖 Reading whitepaper sections for language: ${LANGUAGE}`);
+	console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
 	console.log(`Input directory: ${INPUT_DIR}\n`);
 
 	const contents = [];
@@ -589,7 +589,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper' : 'Vitbok'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper' : 'Artikel'}</span>
 				</div>
 			`,
 			footerTemplate: `
@@ -617,7 +617,7 @@ async function generatePDF(html) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for Governance Stability Simulator whitepaper...\n');
+		console.log('📄 Starting PDF generation for Governance Stability Simulator working paper...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);
 

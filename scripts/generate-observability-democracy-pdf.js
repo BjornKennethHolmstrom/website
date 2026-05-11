@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for The Observability-Democracy Connection whitepaper
+ * Generate PDF for The Observability-Democracy Connection working paper
  *
  * Usage: node scripts/generate-observability-democracy-pdf.js [language]
  * Example: node scripts/generate-observability-democracy-pdf.js en
@@ -31,7 +31,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/observability-democracy-connection/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `observability-democracy-connection${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/observability-democracy-cover.png');
 
@@ -342,7 +342,7 @@ function enhanceImageMarkup(content) {
 }
 
 function readMarkdownFiles() {
-	console.log(`\n📖 Reading whitepaper sections for language: ${LANGUAGE}`);
+	console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
 	console.log(`Input directory: ${INPUT_DIR}\n`);
 	const contents = [];
 
@@ -451,7 +451,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper · Series III' : 'Vitbok · Serie III'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series III' : 'Artikel · Serie III'}</span>
 				</div>
 			`,
 			footerTemplate: `
@@ -475,7 +475,7 @@ async function generatePDF(html) {
 
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for The Observability-Democracy Connection whitepaper...\n');
+		console.log('📄 Starting PDF generation for The Observability-Democracy Connection working paper...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);
 

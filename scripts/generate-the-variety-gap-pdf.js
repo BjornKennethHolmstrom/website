@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for The Variety Gap whitepaper (Paper VI)
+ * Generate PDF for The Variety Gap working paper (Paper VI)
  *
  * Usage: node scripts/generate-variety-gap-pdf.js [language]
  * Example: node scripts/generate-variety-gap-pdf.js en
@@ -31,7 +31,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/the-variety-gap/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `the-variety-gap${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/the-variety-gap-cover.png');
 
@@ -349,7 +349,7 @@ function enhanceImageMarkup(content) {
 }
 
 function readMarkdownFiles() {
-	console.log(`\n📖 Reading whitepaper sections for language: ${LANGUAGE}`);
+	console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
 	console.log(`Input directory: ${INPUT_DIR}\n`);
 	const contents = [];
 
@@ -458,7 +458,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper · Series VI' : 'Vitbok · Serie VI'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series VI' : 'Artikel · Serie VI'}</span>
 				</div>
 			`,
 			footerTemplate: `
@@ -482,7 +482,7 @@ async function generatePDF(html) {
 
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for The Variety Gap whitepaper...\n');
+		console.log('📄 Starting PDF generation for The Variety Gap working paper...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);
 

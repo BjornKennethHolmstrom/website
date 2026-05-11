@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for The Architecture of Stability whitepaper
+ * Generate PDF for The Architecture of Stability working paper
  * 
  * Usage: node scripts/generate-architecture-of-stability-pdf.js [language]
  * Example: node scripts/generate-architecture-of-stability-pdf.js en
@@ -32,7 +32,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/architecture-of-stability/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `architecture-of-stability${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/architecture-of-stability-cover.png');
 
@@ -60,7 +60,7 @@ const metadata = {
 
 const meta = metadata[LANGUAGE];
 
-// Whitepaper sections - these are markdown files
+// Working paper sections - these are markdown files
 const sections = [
 	{ file: 'executive-summary', title: LANGUAGE === 'en' ? 'Executive Summary' : 'Sammanfattning', isAppendix: false },
 	{ file: 'part-1', title: LANGUAGE === 'en' ? 'Part I: The Bandwidth Problem' : 'Del I: Bandbreddsproblemet', isAppendix: false },
@@ -569,7 +569,7 @@ function enhanceImageMarkup(content) {
 
 // Read and combine markdown files (SYNCHRONOUS version)
 function readMarkdownFiles() {
-  console.log(`\n📖 Reading whitepaper sections for language: ${LANGUAGE}`);
+  console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
   console.log(`Input directory: ${INPUT_DIR}\n`);
   
   const contents = [];
@@ -737,7 +737,7 @@ async function generatePDF(html) {
       headerTemplate: `
         <div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
           <span style="float: left;">${meta.title}</span>
-          <span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper' : 'Vitbok'}</span>
+          <span style="float: right;">${LANGUAGE === 'en' ? 'Working paper' : 'Arbetsdokument'}</span>
         </div>
       `,
       footerTemplate: `
@@ -765,7 +765,7 @@ async function generatePDF(html) {
 // Main execution
 async function main() {
   try {
-    console.log('📄 Starting PDF generation for Architecture of Stability whitepaper...\n');
+    console.log('📄 Starting PDF generation for Architecture of Stability working paper...\n');
     console.log(`Language: ${LANGUAGE}`);
     console.log(`Output: ${OUTPUT_FILE}\n`);
     

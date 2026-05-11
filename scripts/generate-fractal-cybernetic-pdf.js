@@ -32,7 +32,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/fractal-cybernetic-consciousness/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `fractal-cybernetic-consciousness${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/fractal-cybernetic-cover-optimized-rotated.png');
 
@@ -60,7 +60,7 @@ const metadata = {
 
 const meta = metadata[LANGUAGE];
 
-// Whitepaper sections - these are markdown files
+// Working paper sections - these are markdown files
 const sections = [
 	{ file: 'abstract', title: 'Abstract' },
 	{ file: 'section-01', title: '1. Introduction: The Problem of Integration' },
@@ -498,7 +498,7 @@ const pdfStyles = `
 
 // Read and combine markdown files
 function readMarkdownFiles() {
-	console.log(`Reading whitepaper sections for language: ${LANGUAGE}`);
+	console.log(`Reading working paper sections for language: ${LANGUAGE}`);
 	
 	const contents = [];
 	
@@ -685,7 +685,7 @@ async function generatePDF(html) {
 		headerTemplate: `
 			<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 				<span style="float: left;">${meta.title}</span>
-				<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper' : 'Artikel'}</span>
+				<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper' : 'Artikel'}</span>
 			</div>
 		`,
 		footerTemplate: `
@@ -714,8 +714,8 @@ async function generatePDF(html) {
 		'https://bjornkennethholmstrom.org/working-papers/fractal-cybernetic-consciousness' :
 		'https://bjornkennethholmstrom.org/sv/working-papers/fractal-cybernetic-consciousness';
 	
-	console.log('\n✨ Whitepaper generated successfully!');
-	console.log(`\n📚 To view the whitepaper online:`);
+	console.log('\n✨ Working paper generated successfully!');
+	console.log(`\n📚 To view the working paper online:`);
 	console.log(`${baseUrl}`);
 	console.log(`\n🔧 For Swedish version:`);
 	console.log(`node scripts/generate-fractal-cybernetic-pdf.js sv`);
@@ -724,7 +724,7 @@ async function generatePDF(html) {
 // Main execution
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for Fractal-Cybernetic Model whitepaper...\n');
+		console.log('📄 Starting PDF generation for Fractal-Cybernetic Model working paper...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Input directory: ${INPUT_DIR}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);

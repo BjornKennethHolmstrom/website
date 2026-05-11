@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for Requisite Variety and the Commons whitepaper
+ * Generate PDF for Requisite Variety and the Commons working paper
  *
  * Usage: node scripts/generate-requisite-variety-commons-pdf.js [language]
  * Example: node scripts/generate-requisite-variety-commons-pdf.js en
@@ -31,7 +31,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
 const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/requisite-variety-and-the-commons/sections');
-const OUTPUT_DIR = path.join(__dirname, '../static/whitepapers');
+const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `requisite-variety-and-the-commons${suffix}.pdf`);
 const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/requisite-variety-commons-cover.png');
 
@@ -343,7 +343,7 @@ function enhanceImageMarkup(content) {
 }
 
 function readMarkdownFiles() {
-	console.log(`\n📖 Reading whitepaper sections for language: ${LANGUAGE}`);
+	console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
 	console.log(`Input directory: ${INPUT_DIR}\n`);
 	const contents = [];
 
@@ -447,7 +447,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Whitepaper · Series IV' : 'Vitbok · Serie IV'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series IV' : 'Artikel · Serie IV'}</span>
 				</div>
 			`,
 			footerTemplate: `
