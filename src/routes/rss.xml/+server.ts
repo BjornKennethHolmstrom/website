@@ -7,9 +7,9 @@ export const GET = async () => {
   // Removed: const posts = await fetchPosts();
 
   // Mappa working-papers till RSS-struktur
-  const working-papers = papersData.map(paper => ({
-    title: `White Paper: ${paper.key}`, // Note: You might want to add a real title field to working-papers.ts later
-    description: `A white paper on ${paper.category}`,
+  const workingpapers = papersData.map(paper => ({
+    title: `Working Paper: ${paper.key}`, // Note: You might want to add a real title field to working-papers.ts later
+    description: `A working paper on ${paper.category}`,
     link: paper.readOnlinePath || paper.pdfPath.en,
     date: paper.releaseDate,
     author: 'Björn Kenneth Holmström'
@@ -24,8 +24,8 @@ export const GET = async () => {
     author: 'Björn Kenneth Holmström'
   }));
 
-  // Combine only working-papers and books (removed ...posts)
-  const items = [...working-papers, ...books]
+  // Combine only workingpapers and books (removed ...posts)
+  const items = [...workingpapers, ...books]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const body = render(items);
