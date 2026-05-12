@@ -138,65 +138,61 @@
           emoji: '🇫🇷',
           url: '/reports/france-decisiveness-mirage'
       },
+          {
+          key: 'reportsSweden',
+          emoji: '🇸🇪',
+          url: '/reports/sweden-competence-trap',
+          badge: 'NEW'
+      },
       {
           key: 'reportsIndia',
           emoji: '🇮🇳',
           url: '/reports/india-leap-lag-cycle',
-          badge: 'NEW'
       },
       {
           key: 'reportsEU',
           emoji: '🇪🇺',
           url: '/reports/eu-coherence-mirage',
-          badge: 'NEW'
       },
       {
           key: 'reportsUK',
           emoji: '🇬🇧',
           url: '/reports/uk-control-mirage',
-          badge: 'NEW'
       },
       {
           key: 'reportsSynthesis',
           emoji: '🧩',
           url: '/reports/subsidiarity-deficit',
-          badge: 'NEW'
       },
       {
           key: 'reportsBrazil',
           emoji: '🇧🇷',
           url: '/reports/brazil-accumulation-deficit',
-          badge: 'NEW'
       },
       {
           key: 'reportsUS',
           emoji: '🇺🇸',
           url: '/reports/us-integration-deficit',
-          badge: 'NEW'
       },
       {
           key: 'reportsFinland',
           emoji: '🇫🇮',
           url: '/reports/finland-throughput-constraint',
-          badge: 'NEW'
       },
       {
           key: 'reportsRussia',
           emoji: '🇷🇺',
           url: '/reports/russia-legibility-deficit',
-          badge: 'NEW'
       },
       {
           key: 'reportsChina',
           emoji: '🇨🇳',
           url: '/reports/china-calibration-deficit',
-          badge: 'NEW'
       },
       {
 	      key: 'reportsJapan',
 	      emoji: '🇯🇵',
 	      url: '/reports/japan-continuity-trap',
-	      badge: 'NEW'
       },
       {
 	      key: 'reportsNigeria',
@@ -212,15 +208,6 @@
       }
 
   ];
-
-  // To be published
-  //      {
-  //      key: 'reportsSweden',
-  //      emoji: '🇸🇪',
-  //      url: '/reports/sweden-competence-trap',
-  //      badge: 'NEW'
-  //  }
- 
 
   // Helper to determine link type
   function getLinkType(url: string) {

@@ -63,6 +63,27 @@ export const reportsData: Report[] = [
 		readOnlineExternal: false
 	},
  {
+     id: 'sweden-competence-trap',
+     key: 'swedenCompetenceTrap',
+     emoji: '🇸🇪',
+     category: 'country',
+     year: 2026,
+     pages: 56,
+     readTime: {
+         en: '40–50 min',
+         sv: '40–50 min'
+     },
+     version: '1.0',
+     releaseDate: '2026-07-12',
+     coverImage: '/images/reports/sweden-competence-trap/cover.png',
+     readOnlinePath: '/reports/sweden-competence-trap',
+     pdfPath: {
+         en: '/reports/sweden-competence-trap-en.pdf',
+         sv: '/reports/sweden-competence-trap-sv.pdf'
+     },
+     readOnlineExternal: false
+ },
+ {
      id: 'india-leap-lag-cycle',
      key: 'indiaLeapLagCycle',
      emoji: '🇮🇳',
@@ -311,26 +332,3 @@ export const reportsData: Report[] = [
 	}
 ];
 
-/* TODO: Publish 12/6
- {
-     id: 'sweden-competence-trap',
-     key: 'swedenCompetenceTrap',
-     emoji: '🇸🇪',
-     category: 'country',
-     year: 2026,
-     pages: 56,
-     readTime: {
-         en: '40–50 min',
-         sv: '40–50 min'
-     },
-     version: '1.0',
-     releaseDate: '2026-07-12',
-     coverImage: '/images/reports/sweden-competence-trap/cover.png',
-     readOnlinePath: '/reports/sweden-competence-trap',
-     pdfPath: {
-         en: '/reports/sweden-competence-trap-en.pdf',
-         sv: '/reports/sweden-competence-trap-sv.pdf'
-     },
-     readOnlineExternal: false
- }
- */
