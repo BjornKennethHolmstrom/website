@@ -92,6 +92,11 @@ export const reportsTranslations = {
 	   title: "The Boundary Deficit: Why Israel's Survival Architecture Cannot Generate Political Settlement",
 	   description:
 		   'Israel is not a failing state — it is a state that mastered survival but cannot achieve normalcy. This report diagnoses a Boundary Deficit produced by the constitutional vacuum, the occupation paradox, and a cultural operating system that converts political questions into existential imperatives, and proposes a Basic Law: Equality and a National Deliberative Commission on Constitutional Settlement as the concrete first step.'
+   },
+   spainTransitionTrap: {
+	   title: 'The Transition Trap: Why Spain\'s Mastery of Democratic Transition Prevents Constitutional Completion',
+	   description:
+		   'Spain is not a failing state — it is a state that succeeded brilliantly at democratic transition and is now constrained by that success. This report diagnoses an Integrative Closure Deficit produced by the 1978 Constitution\'s frozen ambiguity, the fiscal-territorial trap, and a cultural operating system that defers hard choices indefinitely, and proposes an Inter-Regional Compact Fund and a Citizens\' Assembly on Territorial Financing as the concrete first step.'
    }
 		}
 	},
@@ -186,6 +191,11 @@ export const reportsTranslations = {
 	   title: 'Gränsdragningsunderskottet: Varför Israels överlevnadsarkitektur inte kan skapa politisk stabilitet',
 	   description:
 		   'Israel är inte en misslyckad stat — det är en stat som bemästrat överlevnad men inte kan uppnå normalitet. Rapporten diagnosticerar ett gränsdragningsunderskott skapat av det konstitutionella vakuumet, ockupationsparadoxen och ett kulturellt operativsystem som omvandlar politiska frågor till existentiella imperativ, och föreslår en grundlag om jämlikhet och en nationell överläggningskommission för konstitutionell lösning som det konkreta första steget.'
+   },
+   spainTransitionTrap: {
+	   title: 'Övergångsfällan: Varför Spaniens mästerskap i demokratisk övergång förhindrar konstitutionellt fullbordande',
+	   description:
+		   'Spanien är inte en misslyckad stat — det är en stat som lyckades briljant med demokratisk övergång och nu är begränsad av den framgången. Rapporten diagnosticerar ett integrativt slutningsunderskott skapat av 1978 års konstitutions frusna tvetydighet, den fiskal‑territoriella fällan och ett kulturellt operativsystem som skjuter upp svåra val på obestämd tid, och föreslår en interregional kompaktfond och en medborgarassembly om territoriell finansiering som det konkreta första steget.'
    }
 		}
 	}

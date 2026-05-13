@@ -75,6 +75,8 @@ export const coreTranslations = {
   reportsNigeriaTagline: 'Why Africa\'s most populous nation governs without a state.',
   reportsIsraelTitle: 'Israel: The Boundary Deficit',
   reportsIsraelTagline: 'Why the state that mastered survival can\'t complete its own architecture.',
+  reportsSpainTitle: 'Spain: The Transition Trap',
+  reportsSpainTagline: 'Why the democracy that mastered transition can\'t complete its own constitution.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -362,6 +364,8 @@ export const coreTranslations = {
   reportsNigeriaTagline: 'Varför Afrikas folkrikaste nation styr utan en stat.',
   reportsIsraelTitle: 'Israel: Gränsdragningsunderskottet',
   reportsIsraelTagline: 'Varför staten som bemästrade överlevnad inte kan fullborda sin egen arkitektur.',
+  reportsSpainTitle: 'Spanien: Övergångsfällan',
+  reportsSpainTagline: 'Varför demokratin som bemästrade övergången inte kan fullborda sin egen konstitution.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',

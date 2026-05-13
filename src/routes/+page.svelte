@@ -205,6 +205,12 @@
 	      emoji: '🇮🇱',
 	      url: '/reports/israel-boundary-deficit',
 	      badge: 'NEW'
+      },
+      {
+	      key: 'reportsSpain',
+	      emoji: '🇪🇸',
+	      url: '/reports/spain-transition-trap',
+	      badge: 'NEW'
       }
 
   ];

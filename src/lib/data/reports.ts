@@ -329,6 +329,28 @@ export const reportsData: Report[] = [
 			he: '/reports/israel-boundary-deficit-he.pdf'
 		},
 		readOnlineExternal: false
+	},
+	{
+		id: 'spain-transition-trap',
+		key: 'spainTransitionTrap',
+		emoji: '🇪🇸',
+		category: 'country',
+		year: 2026,
+		pages: 86,
+		readTime: {
+			en: '70–85 min',
+			sv: '70–85 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-13',
+		coverImage: '/images/reports/spain-transition-trap/cover.png',
+		readOnlinePath: '/reports/spain-transition-trap',
+		pdfPath: {
+			en: '/reports/spain-transition-trap-en.pdf',
+			es: '/reports/spain-transition-trap-es.pdf',
+			eu: '/reports/spain-transition-trap-eu.pdf'
+		},
+		readOnlineExternal: false
 	}
 ];
 
