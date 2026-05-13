@@ -1,9 +1,3 @@
-# The Transition Trap: Why Spain's Mastery of Democratic Transition Prevents Constitutional Completion
-
-*A field guide to the Crisis–Centralisation–Peripheral Mobilisation–Accommodation Loop — and how Europe's most plurinational democracy can build the integrative closure capacity its constitution never provided*
-
----
-
 ## 1. The Transition Trap
 
 ### 1.1 Opening: The Nation That Perfected Transition
