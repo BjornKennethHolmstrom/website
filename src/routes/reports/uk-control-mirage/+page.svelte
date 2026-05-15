@@ -131,6 +131,32 @@
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
 
+  <!-- MOBILE TOOLBAR (visible only below lg) -->
+  <div class="lg:hidden flex flex-wrap items-center justify-between gap-3 px-4 pt-4 pb-2 border-b border-[var(--color-separator)] mb-6">
+    <!-- PDF download -->
+    <a
+      href="/reports/uk-control-mirage-en.pdf"
+      download
+      class="flex items-center gap-1 text-xs font-medium text-[var(--color-page-accent)] hover:underline"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+      {ui.pdfLabelEn}
+    </a>
+
+    <!-- Cite button -->
+    <button
+      onclick={() => {
+        const cite = 'Holmström, B. K. (2026). The Control Mirage: Why Britain\'s Centralised Power Produces Fragmented Outcomes. Strategic Country Report.';
+        navigator.clipboard.writeText(cite);
+        alert('Citation copied!');
+      }}
+      class="flex items-center gap-1 text-xs font-medium text-[var(--color-page-accent)] hover:underline"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      {ui.cite}
+    </button>
+  </div>
+
   <!-- SIDEBAR -->
   <aside class="hidden lg:block w-72 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <!-- Back link -->
@@ -162,6 +188,21 @@
           {ui.pdfLabelEn}
         </a>
       </div>
+    </div>
+
+    <!-- Citation in sidebar -->
+    <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
+      <button
+        onclick={() => {
+          const cite = 'Holmström, B. K. (2026). The Control Mirage: Why Britain\'s Centralised Power Produces Fragmented Outcomes. Strategic Country Report.';
+          navigator.clipboard.writeText(cite);
+          alert('Citation copied!');
+        }}
+        class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        {ui.cite}
+      </button>
     </div>
 
     <!-- Section Navigation -->
@@ -219,22 +260,9 @@
       {/each}
     </div>
 
-    <!-- Share & Citation -->
+    <!-- Share (bottom) -->
     <div class="mt-24 pt-8 border-t border-[var(--color-separator)]">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <ShareButtons title={meta.title} />
-        <button
-          onclick={() => {
-            const cite = 'Holmström, B. K. (2026). The Control Mirage: Why Britain\'s Centralised Power Produces Fragmented Outcomes. Strategic Country Report.';
-            navigator.clipboard.writeText(cite);
-            alert('Citation copied!');
-          }}
-          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          {ui.cite}
-        </button>
-      </div>
+      <ShareButtons title={meta.title} />
     </div>
   </main>
 </div>

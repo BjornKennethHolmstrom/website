@@ -296,6 +296,67 @@
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
 
+  <!-- MOBILE TOOLBAR (visible only below lg) -->
+  <div class="lg:hidden flex flex-wrap items-center justify-between gap-3 px-4 pt-4 pb-2 border-b border-[var(--color-separator)] mb-6">
+    <!-- Language toggle (EN → HI → TA → EN) -->
+    <button
+      onclick={cycleLanguage}
+      class="flex items-center gap-1.5 text-sm font-medium px-2.5 py-1.5 rounded-md border border-[var(--color-separator)] hover:bg-[var(--color-card-bg)] transition-colors"
+    >
+      <span class="opacity-50">🌐</span>
+      <span class:font-bold={reportLang === 'en'} class:opacity-50={reportLang !== 'en'}>EN</span>
+      <span class="opacity-50">/</span>
+      <span class:font-bold={reportLang === 'hi'} class:opacity-50={reportLang !== 'hi'}>HI</span>
+      <span class="opacity-50">/</span>
+      <span class:font-bold={reportLang === 'ta'} class:opacity-50={reportLang !== 'ta'}>TA</span>
+    </button>
+
+    <!-- PDF downloads -->
+    <div class="flex items-center gap-3">
+      <a
+        href="/reports/india-leap-lag-cycle-en.pdf"
+        download
+        class="flex items-center gap-1 text-xs font-medium text-[var(--color-page-accent)] hover:underline"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        EN PDF
+      </a>
+      <a
+        href="/reports/india-leap-lag-cycle-hi.pdf"
+        download
+        class="flex items-center gap-1 text-xs font-medium text-[var(--color-page-accent)] hover:underline"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        HI PDF
+      </a>
+      <a
+        href="/reports/india-leap-lag-cycle-ta.pdf"
+        download
+        class="flex items-center gap-1 text-xs font-medium text-[var(--color-page-accent)] hover:underline"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        TA PDF
+      </a>
+    </div>
+
+    <!-- Cite button -->
+    <button
+      onclick={() => {
+        const cite = reportLang === 'hi'
+          ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट।'
+          : reportLang === 'ta'
+          ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை.'
+          : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report.';
+        navigator.clipboard.writeText(cite);
+        alert(reportLang === 'hi' ? 'उद्धरण कॉपी किया गया!' : reportLang === 'ta' ? 'மேற்கோள் நகலெடுக்கப்பட்டது!' : 'Citation copied!');
+      }}
+      class="flex items-center gap-1 text-xs font-medium text-[var(--color-page-accent)] hover:underline"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      {t.cite}
+    </button>
+  </div>
+
   <!-- SIDEBAR -->
   <aside class="hidden lg:block w-72 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <!-- Back link -->
@@ -349,6 +410,25 @@
           {t.pdfLabelTa}
         </a>
       </div>
+    </div>
+
+    <!-- Citation in sidebar -->
+    <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
+      <button
+        onclick={() => {
+          const cite = reportLang === 'hi'
+            ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट।'
+            : reportLang === 'ta'
+            ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை.'
+            : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report.';
+          navigator.clipboard.writeText(cite);
+          alert(reportLang === 'hi' ? 'उद्धरण कॉपी किया गया!' : reportLang === 'ta' ? 'மேற்கோள் நகலெடுக்கப்பட்டது!' : 'Citation copied!');
+        }}
+        class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        {t.cite}
+      </button>
     </div>
 
     <!-- Section Navigation -->
@@ -406,26 +486,9 @@
       {/each}
     </div>
 
-    <!-- Share & Citation -->
+    <!-- Share (bottom) -->
     <div class="mt-24 pt-8 border-t border-[var(--color-separator)]">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <ShareButtons title={meta.title} />
-        <button
-          onclick={() => {
-            const cite = reportLang === 'hi'
-              ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट।'
-              : reportLang === 'ta'
-              ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை.'
-              : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report.';
-            navigator.clipboard.writeText(cite);
-            alert(reportLang === 'hi' ? 'उद्धरण कॉपी किया गया!' : reportLang === 'ta' ? 'மேற்கோள் நகலெடுக்கப்பட்டது!' : 'Citation copied!');
-          }}
-          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          {t.cite}
-        </button>
-      </div>
+      <ShareButtons title={meta.title} />
     </div>
   </main>
 </div>
