@@ -16,7 +16,8 @@ export const reportsTranslations = {
 			},
 			categories: {
 				country: 'Country Analysis',
-    synthesis: 'Synthesis'
+    synthesis: 'Synthesis',
+    organization: 'Organization'
 			},
 			germanySpendingMirage: {
 				title: 'The Spending Mirage: Why Germany Has Money but No Capacity to Decide',
@@ -97,6 +98,11 @@ export const reportsTranslations = {
 	   title: 'The Transition Trap: Why Spain\'s Mastery of Democratic Transition Prevents Constitutional Completion',
 	   description:
 		   'Spain is not a failing state — it is a state that succeeded brilliantly at democratic transition and is now constrained by that success. This report diagnoses an Integrative Closure Deficit produced by the 1978 Constitution\'s frozen ambiguity, the fiscal-territorial trap, and a cultural operating system that defers hard choices indefinitely, and proposes an Inter-Regional Compact Fund and a Citizens\' Assembly on Territorial Financing as the concrete first step.'
+   },
+   aiCoherenceVelocityTrap: {
+	   title: 'The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance',
+	   description:
+		   'Frontier AI organizations are not merely technology companies — they are governance systems under extreme velocity conditions. This report diagnoses a Coherence–Velocity Trap produced by the capital architecture, founder‑centric compression, and safety‑washing mechanisms, and proposes an AI Commons Governance Protocol as the concrete first step toward multi‑scalar adaptive coherence.'
    }
 		}
 	},
@@ -115,7 +121,8 @@ export const reportsTranslations = {
 			},
 			categories: {
 				country: 'Landanalys',
-    synthesis: 'Syntes'
+    synthesis: 'Syntes',
+    organization: 'Organisation'
 			},
 			germanySpendingMirage: {
 				title: 'Spenderingshägringen: Varför Tyskland har pengar men saknar kapacitet att besluta',
@@ -196,6 +203,11 @@ export const reportsTranslations = {
 	   title: 'Övergångsfällan: Varför Spaniens mästerskap i demokratisk övergång förhindrar konstitutionellt fullbordande',
 	   description:
 		   'Spanien är inte en misslyckad stat — det är en stat som lyckades briljant med demokratisk övergång och nu är begränsad av den framgången. Rapporten diagnosticerar ett integrativt slutningsunderskott skapat av 1978 års konstitutions frusna tvetydighet, den fiskal‑territoriella fällan och ett kulturellt operativsystem som skjuter upp svåra val på obestämd tid, och föreslår en interregional kompaktfond och en medborgarassembly om territoriell finansiering som det konkreta första steget.'
+   },
+   aiCoherenceVelocityTrap: {
+	   title: 'Koherens–hastighetsfällan: En cybernetisk analys av styrningen av frontier AI',
+	   description:
+		   'Frontier AI‑organisationer är inte bara teknikföretag — de är styrsystem under extrem hastighet. Rapporten diagnostiserar en koherens–hastighetsfälla skapad av kapitalarkitekturen, grundarcentrerad kompression och säkerhetstvättningsmekanismer, och föreslår ett AI Commons Governance Protocol som det konkreta första steget mot multi‑skalär adaptiv koherens.'
    }
 		}
 	}

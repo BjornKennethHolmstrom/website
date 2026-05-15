@@ -129,6 +129,12 @@
 	};
   const countryReports = [
       {
+	      key: 'reportsAiGovernance',
+	      emoji: '🤖',
+	      url: '/reports/ai-coherence-velocity-trap',
+	      badge: 'NEW'
+      },
+      {
           key: 'reportsGermany',
           emoji: '🇩🇪',
           url: '/reports/germany-spending-mirage'

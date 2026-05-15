@@ -42,7 +42,7 @@ export const coreTranslations = {
   clusterPersonal: 'Personal Spaces & Labs',
 		clusterLibrary: 'Writings & Research',
   clusterArchitecture: 'Open Source Architectures',
-  clusterReports: 'Country Reports',
+  clusterReports: 'Country and Organizational Reports',
  
   // Reports
   reportsGermanyTitle: 'Germany: The Spending Mirage',
@@ -77,6 +77,8 @@ export const coreTranslations = {
   reportsIsraelTagline: 'Why the state that mastered survival can\'t complete its own architecture.',
   reportsSpainTitle: 'Spain: The Transition Trap',
   reportsSpainTagline: 'Why the democracy that mastered transition can\'t complete its own constitution.',
+  reportsAiGovernanceTitle: 'AI Governance: The Coherence–Velocity Trap',
+  reportsAiGovernanceTagline: 'Why the race to AGI can\'t be won by any single governance architecture.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -331,7 +333,7 @@ export const coreTranslations = {
   clusterPersonal: 'Personliga rum och labb',
 		clusterLibrary: 'Skrifter och forskning',
   clusterArchitecture: 'Öppen källkodsarkitektur',
-  clusterReports: 'Landrapporter',
+  clusterReports: 'Land- och organisationsrapporter',
 
   // Reports
   reportsGermanyTitle: 'Tyskland: Spenderingshägringen',
@@ -366,6 +368,8 @@ export const coreTranslations = {
   reportsIsraelTagline: 'Varför staten som bemästrade överlevnad inte kan fullborda sin egen arkitektur.',
   reportsSpainTitle: 'Spanien: Övergångsfällan',
   reportsSpainTagline: 'Varför demokratin som bemästrade övergången inte kan fullborda sin egen konstitution.',
+  reportsAiGovernanceTitle: 'AI-styrning: Koherens–hastighetsfällan',
+  reportsAiGovernanceTagline: 'Varför kapplöpningen mot AGI inte kan vinnas av en enskild styrningsarkitektur.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',

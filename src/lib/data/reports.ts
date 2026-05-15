@@ -21,6 +21,26 @@ export interface Report {
 
 export const reportsData: Report[] = [
 	{
+		id: 'ai-coherence-velocity-trap',
+		key: 'aiCoherenceVelocityTrap',
+		emoji: '🤖',
+		category: 'organization',
+		year: 2026,
+		pages: 68,
+		readTime: {
+			en: '60–75 min',
+			sv: '60–75 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-15',
+		coverImage: '/images/reports/ai-coherence-velocity-trap/cover.png',
+		readOnlinePath: '/reports/ai-coherence-velocity-trap',
+		pdfPath: {
+			en: '/reports/ai-coherence-velocity-trap-en.pdf'
+		},
+		readOnlineExternal: false
+	},
+	{
 		id: 'germany-spending-mirage',
 		key: 'germanySpendingMirage',
   emoji: '🇩🇪',
