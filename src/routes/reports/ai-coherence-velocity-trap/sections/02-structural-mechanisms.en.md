@@ -129,7 +129,7 @@ Safety‑washing (2.8) provides the immune response that diffuses external press
 The causal chain that drives the oscillation can be visualised as a set of reinforcing feedback loops. Capital pressure accelerates deployment. Deployment velocity suppresses the signals that would trigger safety intervention. The suppression of signals allows risks to accumulate unseen. When the risks breach a crisis threshold, a safety intervention is forced—a board action, a leadership challenge, a regulatory intervention. The intervention triggers organisational crisis, consuming political capital and damaging competitive position. The crisis is resolved through temporary accommodation—a restructuring, new commitments, a recalibration of the safety function—that preserves the underlying architecture while restoring deployment velocity. The restoration of deployment velocity intensifies the competitive pressure, which feeds back into capital pressure, restarting the loop from a slightly more fragile baseline.
 
 The mechanism operates as a continuous cycle:
-![Diagram](./coherence_velocity_trap_mechanism.svg)
+![Diagram](/images/reports/ai-coherence-velocity-trap/coherence_velocity_trap_mechanism.svg)
 
 *Figure 2.1: The reinforcing feedback mechanism. Each complete cycle erodes the organizational capacity to maintain alignment coherence, while competitive pressure ensures the loop cannot be exited unilaterally.*
 
