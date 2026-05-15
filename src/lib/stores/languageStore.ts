@@ -3,7 +3,7 @@ import { aboutTranslations } from '../i18n/translations/about';
 import { coreTranslations } from '../i18n/translations/core';
 import { booksTranslations } from '../i18n/translations/books';
 import { integrationCrisisBookTranslations } from '../i18n/translations/integration-crisis-book';
-import { whitepapersTranslations } from '../i18n/translations/working-papers';
+import { workingpapersTranslations } from '../i18n/translations/working-papers';
 import { appsTranslations } from '../i18n/translations/apps';
 import { creationsTranslations } from '../i18n/translations/creations';
 import { conceptsTranslations } from '../i18n/translations/concepts';
@@ -52,7 +52,7 @@ const translations = {
 		...coreTranslations.en,
 		...booksTranslations.en,
 		...integrationCrisisBookTranslations.en,
-		...whitepapersTranslations.en,
+		...workingpapersTranslations.en,
 		...appsTranslations.en,
 		...creationsTranslations.en,
 		...conceptsTranslations.en,
@@ -68,7 +68,7 @@ const translations = {
 		...coreTranslations.sv,
 		...booksTranslations.sv,
 		...integrationCrisisBookTranslations.sv,
-		...whitepapersTranslations.sv,
+		...workingpapersTranslations.sv,
 		...appsTranslations.sv,
 		...creationsTranslations.sv,
 		...conceptsTranslations.sv,

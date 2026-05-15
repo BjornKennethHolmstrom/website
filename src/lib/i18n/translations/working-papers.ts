@@ -1,6 +1,6 @@
 // src/lib/i18n/translations/working-papers.ts
 
-export const whitepapersTranslations = {
+export const workingpapersTranslations = {
 	en: {
 		workingpapers: {
 			meta: {
@@ -132,7 +132,12 @@ export const whitepapersTranslations = {
 			architectureOfStability: {
 				title: 'The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance',
 				description: 'A transdisciplinary analysis showing that centralized governance with time delay is mathematically unstable, and proposing fractal subsidiarity—with Sweden as the prototype—as the constitutional solution for adaptive, resilient societies.'
-			}
+			},
+   architectureOfGovernanceFailure: {
+       title: 'The Architecture of Governance Failure: Requisite Variety, Coordination Failure, and the Limits of Modern States',
+       description:
+           'A unified framework diagnosing why governance systems become blind to their own fragility. Connects Ashby\'s Law of Requisite Variety, Goodhart\'s Law, and the coordination failure tax into a single architecture of institutional collapse, illustrated through cross-national case studies, and derives the architectural prerequisites for adaptive governance.'
+   }
 		}
 	},
 	sv: {
@@ -266,7 +271,12 @@ export const whitepapersTranslations = {
 			architectureOfStability: {
 				title: 'Stabilitetens arkitektur: Ett systemteoretiskt ramverk för makt och styrning',
 				description: 'En tvärvetenskaplig analys som visar att centraliserad styrning med tidsfördröjning är matematiskt instabil, och föreslår fraktal subsidiaritet – med Sverige som prototyp – som den konstitutionella lösningen för anpassningsbara, resilienta samhällen.'
-			}
+			},
+   architectureOfGovernanceFailure: {
+       title: 'Styrningsmisslyckandets arkitektur: Nödvändig variation, samordningsmisslyckande och de moderna staternas gränser',
+       description:
+           'Ett enhetligt ramverk som diagnostiserar varför styrsystem blir blinda för sin egen skörhet. Kopplar samman Ashbys lag om nödvändig variation, Goodharts lag och samordningsmisslyckandets skatt till en sammanhållen arkitektur för institutionell kollaps, illustrerat genom nationella fallstudier, och härleder de arkitektoniska förutsättningarna för adaptiv styrning.'
+   }
 		}
 	}
 };

@@ -134,7 +134,7 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series II',
+      tag: 'Working paper · Series II',
       seriesNote: 'This is the second paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
@@ -146,7 +146,7 @@
       contextTitle: 'Context',
       contextIntro: 'This paper extends the control-theoretic governance framework from paper one to multi-scale disturbance environments. The core finding: no single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
       contextOutro: 'The frequency-latency constraint (f_max ≈ 1/2τ) places a hard ceiling on what any single-scale controller can achieve. Fractality closes all frequency gaps simultaneously. This is not a governance preference. It is a structural result.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewCode: 'View Source Code',
@@ -154,7 +154,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie II',
+      tag: 'Arbetsdokument · Serie II',
       seriesNote: 'Detta är den andra rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -164,9 +164,9 @@
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Denna vitbok utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
+      contextIntro: 'Detta arbetsdokument utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
       contextOutro: 'Frekvens-latensbegränsningen (f_max ≈ 1/2τ) sätter ett hårt tak för vad en enskild skalregulator kan uppnå. Fraktalitet stänger alla frekvensgap samtidigt. Detta är inte en styrningspreferens. Det är ett strukturellt resultat.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       viewCode: 'Visa källkod',
@@ -233,7 +233,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

@@ -28,6 +28,27 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+     id: 'architectureOfGovernanceFailure',
+     key: 'architectureOfGovernanceFailure',
+     category: 'governance',
+     tags: ['Governance Failure', 'Requisite Variety', 'Coordination Failure Tax', 'Goodhart-Ashby Synthesis', 'Observability', 'Cybernetics', 'Institutional Design', 'Meta-Governance'],
+     year: '2026',
+     pages: '33',
+     readTime: {
+         en: '45 min',
+         sv: '45 min'
+     },
+     version: '1.0',
+     pdfPath: {
+         en: `${localBase}/architecture-of-governance-failure.pdf`,
+         sv: `${localBase}/architecture-of-governance-failure-sv.pdf`,
+     },
+     coverImage: '/working-papers/images/architecture-of-governance-failure-cover.png',
+     readOnlinePath: '/working-papers/architecture-of-governance-failure',
+     readOnlineExternal: false,
+     releaseDate: '2026-05-16'
+ },
+ {
      id: 'theVarietyGap',
      key: 'theVarietyGap',
      category: 'governance',
