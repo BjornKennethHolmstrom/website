@@ -79,6 +79,8 @@ export const coreTranslations = {
   reportsSpainTagline: 'Why the democracy that mastered transition can\'t complete its own constitution.',
   reportsAiGovernanceTitle: 'AI Governance: The Coherence–Velocity Trap',
   reportsAiGovernanceTagline: 'Why the race to AGI can\'t be won by any single governance architecture.',
+  reportsHealthcareTitle: 'Healthcare: The Clinical Observability Gap',
+  reportsHealthcareTagline: 'Why healthcare systems lose the signal between the bedside and the boardroom.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -370,6 +372,8 @@ export const coreTranslations = {
   reportsSpainTagline: 'Varför demokratin som bemästrade övergången inte kan fullborda sin egen konstitution.',
   reportsAiGovernanceTitle: 'AI-styrning: Koherens–hastighetsfällan',
   reportsAiGovernanceTagline: 'Varför kapplöpningen mot AGI inte kan vinnas av en enskild styrningsarkitektur.',
+  reportsHealthcareTitle: 'Sjukvård: Det kliniska observerbarhetsgapet',
+  reportsHealthcareTagline: 'Varför sjukvårdssystem tappar signalen mellan sängkanten och styrelserummet.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',

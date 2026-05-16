@@ -103,6 +103,11 @@ export const reportsTranslations = {
 	   title: 'The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance',
 	   description:
 		   'Frontier AI organizations are not merely technology companies — they are governance systems under extreme velocity conditions. This report diagnoses a Coherence–Velocity Trap produced by the capital architecture, founder‑centric compression, and safety‑washing mechanisms, and proposes an AI Commons Governance Protocol as the concrete first step toward multi‑scalar adaptive coherence.'
+   },
+   healthcareClinicalObservabilityGap: {
+    title: 'The Clinical Observability Gap: Why Healthcare Systems Lose the Signal Between the Bedside and the Boardroom',
+    description:
+	    'Healthcare systems are becoming more organisationally sophisticated while becoming less clinically coherent. This report diagnoses a Clinical Observability Gap produced by payment architectures, documentation burdens, and the Standardisation–Signal Destruction Spiral, and proposes a Clinical Observability Audit and an Information Sandbox as the concrete first step toward restoring clinical signal fidelity.'
    }
 		}
 	},
@@ -208,6 +213,11 @@ export const reportsTranslations = {
 	   title: 'Koherens–hastighetsfällan: En cybernetisk analys av styrningen av frontier AI',
 	   description:
 		   'Frontier AI‑organisationer är inte bara teknikföretag — de är styrsystem under extrem hastighet. Rapporten diagnostiserar en koherens–hastighetsfälla skapad av kapitalarkitekturen, grundarcentrerad kompression och säkerhetstvättningsmekanismer, och föreslår ett AI Commons Governance Protocol som det konkreta första steget mot multi‑skalär adaptiv koherens.'
+   },
+   healthcareClinicalObservabilityGap: {
+	   title: 'Det kliniska observerbarhetsgapet: Varför sjukvårdssystem tappar signalen mellan sängkanten och styrelserummet',
+	   description:
+		   'Sjukvårdssystem blir allt mer organisatoriskt sofistikerade samtidigt som de blir mindre kliniskt sammanhängande. Rapporten diagnostiserar ett kliniskt observerbarhetsgap skapat av betalningsarkitekturer, dokumentationsbördor och standardiserings–signalförstörelsespiralen, och föreslår en klinisk observerbarhetsrevision och en informationssandlåda som det konkreta första steget mot att återställa klinisk signaltrohet.'
    }
 		}
 	}

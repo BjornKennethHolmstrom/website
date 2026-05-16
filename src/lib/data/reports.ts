@@ -41,6 +41,26 @@ export const reportsData: Report[] = [
 		readOnlineExternal: false
 	},
 	{
+		id: 'healthcare-clinical-observability-gap',
+		key: 'healthcareClinicalObservabilityGap',
+		emoji: '🏥',
+		category: 'organization',
+		year: 2026,
+		pages: 75,
+		readTime: {
+			en: '70–85 min',
+			sv: '70–85 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-16',
+		coverImage: '/images/reports/healthcare-clinical-observability-gap/cover.png',
+		readOnlinePath: '/reports/healthcare-clinical-observability-gap',
+		pdfPath: {
+			en: '/reports/healthcare-clinical-observability-gap-en.pdf'
+		},
+		readOnlineExternal: false
+	},
+	{
 		id: 'germany-spending-mirage',
 		key: 'germanySpendingMirage',
   emoji: '🇩🇪',

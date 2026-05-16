@@ -135,6 +135,12 @@
 	      badge: 'NEW'
       },
       {
+	      key: 'reportsHealthcare',
+	      emoji: '🏥',
+	      url: '/reports/healthcare-clinical-observability-gap',
+	      badge: 'NEW'
+      },
+      {
           key: 'reportsGermany',
           emoji: '🇩🇪',
           url: '/reports/germany-spending-mirage'
