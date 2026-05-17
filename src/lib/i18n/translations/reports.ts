@@ -108,6 +108,11 @@ export const reportsTranslations = {
     title: 'The Clinical Observability Gap: Why Healthcare Systems Lose the Signal Between the Bedside and the Boardroom',
     description:
 	    'Healthcare systems are becoming more organisationally sophisticated while becoming less clinically coherent. This report diagnoses a Clinical Observability Gap produced by payment architectures, documentation burdens, and the Standardisation–Signal Destruction Spiral, and proposes a Clinical Observability Audit and an Information Sandbox as the concrete first step toward restoring clinical signal fidelity.'
+   },
+   universitiesIntegrationDeficit: {
+	   title: 'The Integration Deficit: Why Universities Cannot See the Problems They Are Supposed to Solve',
+	   description:
+		   'Universities possess extraordinary distributed intelligence and cannot assemble it. This report diagnoses an Integration Deficit produced by departmental silos, disciplinary incentive architectures, and a Performative Reform Trap that signals commitment to interdisciplinarity while preventing it, and proposes an Integrative Capacity Audit and a Grand Challenge Pilot as the concrete first step toward building institutions that can assemble what they know.'
    }
 		}
 	},
@@ -218,6 +223,11 @@ export const reportsTranslations = {
 	   title: 'Det kliniska observerbarhetsgapet: Varför sjukvårdssystem tappar signalen mellan sängkanten och styrelserummet',
 	   description:
 		   'Sjukvårdssystem blir allt mer organisatoriskt sofistikerade samtidigt som de blir mindre kliniskt sammanhängande. Rapporten diagnostiserar ett kliniskt observerbarhetsgap skapat av betalningsarkitekturer, dokumentationsbördor och standardiserings–signalförstörelsespiralen, och föreslår en klinisk observerbarhetsrevision och en informationssandlåda som det konkreta första steget mot att återställa klinisk signaltrohet.'
+   },
+   universitiesIntegrationDeficit: {
+	   title: 'Integrationsunderskottet: Varför universitet inte kan se de problem de är satta att lösa',
+	   description:
+		   'Universitet besitter enastående distribuerad intelligens men kan inte sammanställa den. Rapporten diagnostiserar ett integrationsunderskott skapat av institutionella silor, disciplinära incitamentsarkitekturer och en performativ reformfälla som signalerar engagemang för tvärvetenskap samtidigt som den förhindrar det, och föreslår en integrativ kapacitetsrevision och en stor utmaningspilot som det konkreta första steget mot att bygga institutioner som kan sammanställa vad de vet.'
    }
 		}
 	}

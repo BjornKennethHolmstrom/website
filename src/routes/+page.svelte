@@ -141,6 +141,12 @@
 	      badge: 'NEW'
       },
       {
+	      key: 'reportsUniversities',
+	      emoji: '🎓',
+	      url: '/reports/universities-integration-deficit',
+	      badge: 'NEW'
+      },
+      {
           key: 'reportsGermany',
           emoji: '🇩🇪',
           url: '/reports/germany-spending-mirage'
@@ -154,7 +160,7 @@
           key: 'reportsSweden',
           emoji: '🇸🇪',
           url: '/reports/sweden-competence-trap',
-          badge: 'NEW'
+   	      badge: 'NEW'
       },
       {
           key: 'reportsIndia',
@@ -210,19 +216,16 @@
 	      key: 'reportsNigeria',
 	      emoji: '🇳🇬',
 	      url: '/reports/nigeria-substrate-deficit',
-	      badge: 'NEW'
       },
       {
 	      key: 'reportsIsrael',
 	      emoji: '🇮🇱',
 	      url: '/reports/israel-boundary-deficit',
-	      badge: 'NEW'
       },
       {
 	      key: 'reportsSpain',
 	      emoji: '🇪🇸',
 	      url: '/reports/spain-transition-trap',
-	      badge: 'NEW'
       }
 
   ];

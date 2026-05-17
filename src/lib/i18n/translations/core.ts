@@ -81,6 +81,8 @@ export const coreTranslations = {
   reportsAiGovernanceTagline: 'Why the race to AGI can\'t be won by any single governance architecture.',
   reportsHealthcareTitle: 'Healthcare: The Clinical Observability Gap',
   reportsHealthcareTagline: 'Why healthcare systems lose the signal between the bedside and the boardroom.',
+  reportsUniversitiesTitle: 'Universities: The Integration Deficit',
+  reportsUniversitiesTagline: 'Why universities cannot assemble what they know.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -374,6 +376,8 @@ export const coreTranslations = {
   reportsAiGovernanceTagline: 'Varför kapplöpningen mot AGI inte kan vinnas av en enskild styrningsarkitektur.',
   reportsHealthcareTitle: 'Sjukvård: Det kliniska observerbarhetsgapet',
   reportsHealthcareTagline: 'Varför sjukvårdssystem tappar signalen mellan sängkanten och styrelserummet.',
+  reportsUniversitiesTitle: 'Universitet: Integrationsunderskottet',
+  reportsUniversitiesTagline: 'Varför universitet inte kan sammanställa vad de vet.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',

@@ -61,6 +61,26 @@ export const reportsData: Report[] = [
 		readOnlineExternal: false
 	},
 	{
+		id: 'universities-integration-deficit',
+		key: 'universitiesIntegrationDeficit',
+		emoji: '🎓',
+		category: 'organization',
+		year: 2026,
+		pages: 92,
+		readTime: {
+			en: '75–90 min',
+			sv: '75–90 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-17',
+		coverImage: '/images/reports/universities-integration-deficit/cover.png',
+		readOnlinePath: '/reports/universities-integration-deficit',
+		pdfPath: {
+			en: '/reports/universities-integration-deficit-en.pdf'
+		},
+		readOnlineExternal: false
+	},
+	{
 		id: 'germany-spending-mirage',
 		key: 'germanySpendingMirage',
   emoji: '🇩🇪',
