@@ -110,13 +110,6 @@ The fragments are there. The architecture for connecting them is understood well
 
 ---
 
-*End of Part IV and Closing — Draft for review*
-
-*Part IV and Closing word count: approximately 2,800 words*
-*Full document running total: approximately 9,800 words*
-
----
-
 ## Appendix: The Coherence Table
 
 | System | Core Deficit | Signature Pattern | Cultural Anchor | Transition Feasibility |

@@ -12,6 +12,7 @@
    { key: 'geSeriesPaperIV',  url: '/working-papers/requisite-variety-and-the-commons',         coverImage: '/working-papers/images/requisite-variety-commons-cover.png' },
    { key: 'geSeriesPaperV',   url: '/working-papers/coordination-failure-tax',                  coverImage: '/working-papers/images/coordination-failure-tax-cover.png' },
    { key: 'geSeriesPaperVI',   url: '/working-papers/the-variety-gap',                  coverImage: '/working-papers/images/the-variety-gap-cover.png' },
+   { key: 'geSeriesPaperVII',  url: '/working-papers/architecture-of-governance-failure',       coverImage: '/working-papers/images/architecture-of-governance-failure-cover.png' },
  ];
 
 	// Definiera vår projektdata.

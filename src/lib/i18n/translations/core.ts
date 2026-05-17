@@ -112,6 +112,10 @@ export const coreTranslations = {
       title: 'VI: The Variety Gap',
       desc:  'Shows that objective functions are observation architectures — low‑dimensional value functions blind systems to the dimensions that eventually destroy them.'
     },
+    geSeriesPaperVII: {
+      title: 'VII: The Architecture of Governance Failure',
+      desc:  'Unifies the series into a single diagnostic narrative — why governance architectures that destroy information before it reaches decision‑makers cannot be repaired by improving those decision‑makers.'
+    },
   },
 
 		// Projects
@@ -405,6 +409,10 @@ export const coreTranslations = {
     geSeriesPaperVI: {
       title: 'VI: Variationsgapet',
       desc:  'Visar att målfunktioner är observationsarkitekturer — lågdimensionella värdefunktioner gör system blinda för de dimensioner som till slut förgör dem.'
+    },
+    geSeriesPaperVII: {
+      title: 'VII: Styrningens misslyckandes arkitektur',
+      desc:  'Förenar serien till en enda diagnostisk berättelse — varför styrningsarkitekturer som förstör information innan den når beslutsfattare inte kan repareras genom att förbättra dessa beslutsfattare.'
     },
   },
 

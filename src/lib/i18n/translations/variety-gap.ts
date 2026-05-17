@@ -15,9 +15,11 @@ export const varietyGapTranslations = {
       reportsTitle: 'Country Reports',
       reportsDesc: 'Thirteen national governance diagnostics applying the framework.',
       reportsOverview: 'All Reports →',
+      orgReportsTitle: 'Organizational Reports',
+      orgReportsDesc: 'Applying the framework to specific institutional domains.',
       papersTitle: 'Governance as Engineering',
-      papersDesc: 'Six working-papers formalizing the control‑theoretic foundations.',
-      papersOverview: 'All Whitepapers →',
+      papersDesc: 'Seven working papers formalizing the control‑theoretic foundations.',
+      papersOverview: 'All Working Papers →',
     },
     fieldGuide: {
       heading: 'Country Reports Diagnostic Field Guide',
@@ -40,6 +42,14 @@ export const varietyGapTranslations = {
       china: 'China: The Calibration Deficit',
       synthesis: 'The Subsidiarity Deficit (Synthesis)',
     },
+    orgReports: {
+      ai: 'AI Governance: The Coherence–Velocity Trap',
+      healthcare: 'Healthcare: The Clinical Observability Gap',
+      universities: 'Universities: The Integration Deficit',
+    },
+    workingPapers: {
+      architectureOfFailure: 'The Architecture of Governance Failure',
+    },
   },
   sv: {
     hero: {
@@ -57,9 +67,11 @@ export const varietyGapTranslations = {
       reportsTitle: 'Landrapporter',
       reportsDesc: 'Tretton nationella styrningsdiagnoser som tillämpar ramverket.',
       reportsOverview: 'Alla rapporter →',
+      orgReportsTitle: 'Organisationsrapporter',
+      orgReportsDesc: 'Tillämpning av ramverket på specifika institutionella domäner.',
       papersTitle: 'Governance as Engineering',
-      papersDesc: 'Sex working-papers som formaliserar de styrteoretiska grunderna.',
-      papersOverview: 'Alla working-papers →',
+      papersDesc: 'Sju working papers som formaliserar de styrteoretiska grunderna.',
+      papersOverview: 'Alla working papers →',
     },
     fieldGuide: {
       heading: 'Diagnostisk fältguide för landrapporter',
@@ -81,6 +93,14 @@ export const varietyGapTranslations = {
       israel: 'Israel: Gränsdragningsunderskottet',
       china: 'Kina: Kalibreringsunderskottet',
       synthesis: 'Subsidiaritetsunderskottet (Syntes)',
+    },
+    orgReports: {
+      ai: 'AI-styrning: Koherens–hastighetsfällan',
+      healthcare: 'Hälsovård: Den kliniska observerbarhetsluckan',
+      universities: 'Universitet: Integrationsunderskottet',
+    },
+    workingPapers: {
+      architectureOfFailure: 'Styrningens misslyckandes arkitektur',
     },
   },
 };

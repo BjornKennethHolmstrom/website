@@ -26,6 +26,12 @@
     { slug: 'subsidiarity-deficit',            emoji: '🧩', key: 'synthesis' },
   ];
 
+  const orgReports = [
+    { slug: 'ai-coherence-velocity-trap',           emoji: '🤖', key: 'ai' },
+    { slug: 'healthcare-clinical-observability-gap', emoji: '🏥', key: 'healthcare' },
+    { slug: 'universities-integration-deficit',      emoji: '🎓', key: 'universities' },
+  ];
+
   const papers = [
     { href: '/working-papers/governance-stability-simulator',          key: 'paperI' },
     { href: '/working-papers/fractality-as-stability',                 key: 'fractality' },
@@ -33,6 +39,7 @@
     { href: '/working-papers/requisite-variety-and-the-commons',       key: 'requisite' },
     { href: '/working-papers/coordination-failure-tax',                key: 'coordination' },
     { href: '/working-papers/the-variety-gap',                         key: 'varietyGap' },
+    { href: '/working-papers/architecture-of-governance-failure',      key: 'architectureOfFailure' },
   ];
 </script>
 
@@ -96,6 +103,31 @@
       </div>
     </div>
 
+    <!-- Organizational Reports -->
+    <div class="mb-12">
+      <div class="flex items-start justify-between mb-6">
+        <div>
+          <h3 class="text-2xl font-semibold text-[var(--color-page-text)] mb-1">
+            {t.explore.orgReportsTitle}
+          </h3>
+          <p class="text-[var(--color-page-text)] opacity-70">
+            {t.explore.orgReportsDesc}
+          </p>
+        </div>
+      </div>
+      <div class="space-y-2">
+        {#each orgReports as report}
+          <a
+            href={`/reports/${report.slug}`}
+            class="flex items-center gap-3 rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-3 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md"
+          >
+            <span class="text-lg">{report.emoji}</span>
+            <span>{t.orgReports[report.key]}</span>
+          </a>
+        {/each}
+      </div>
+    </div>
+
     <!-- Governance as Engineering Papers -->
     <div>
       <div class="flex items-start justify-between mb-6">
@@ -129,6 +161,9 @@
         </a>
         <a href="/working-papers/the-variety-gap" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
           📄 {lang === 'sv' ? 'VI: Varietetsgapet' : 'VI: The Variety Gap'}
+        </a>
+        <a href="/working-papers/architecture-of-governance-failure" class="block rounded-md border border-[var(--color-separator)] bg-[var(--color-card-bg)] px-4 py-2 text-sm font-medium text-[var(--color-card-text)] shadow-sm transition-shadow hover:shadow-md">
+          📄 {lang === 'sv' ? 'VII: Styrningens misslyckandes arkitektur (Syntes)' : 'VII: The Architecture of Governance Failure (Synthesis)'}
         </a>
       </div>
     </div>
