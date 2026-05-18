@@ -130,6 +130,12 @@
 	};
   const countryReports = [
       {
+	      key: 'reportsCapstone',
+	      emoji: '🔍',
+	      url: '/reports/coordination-failure-structural-condition',
+	      badge: 'CAPSTONE'
+      },
+      {
 	      key: 'reportsAiGovernance',
 	      emoji: '🤖',
 	      url: '/reports/ai-coherence-velocity-trap',

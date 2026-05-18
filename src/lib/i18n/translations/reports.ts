@@ -123,6 +123,11 @@ export const reportsTranslations = {
 	   title: 'The Adjudication–Governance Variety Gap: Why Courts Cannot See the Systems They Govern',
 	   description:
 		   'Courts are the most procedurally sophisticated governance institutions ever built — yet their observation architecture is calibrated to the individual dispute and structurally blind to the systemic consequences of their decisions. This report diagnoses an Adjudication–Governance Variety Gap and proposes a Systemic Effects Registry as the concrete first step toward multi‑scale judicial architecture.'
+   },
+   coordinationFailureStructuralCondition: {
+	   title: 'Coordination Failure as Structural Condition: Why Competent Institutions Become Blind to Their Own Fragility',
+	   description:
+		   'The capstone synthesis of twenty‑one governance analyses. A unified diagnostic framework revealing the eight structural primitives, the Variety Gap, Resolution Lock‑In, and the canonical architecture of governance failure — with design principles for building institutions that can perceive what they currently exclude.'
    }
 		}
 	},
@@ -248,6 +253,11 @@ export const reportsTranslations = {
 	   title: 'Domstolarnas styrningsvariationsgap: Varför domstolar inte kan se de system de styr',
 	   description:
 		   'Domstolar är de mest procedurmässigt sofistikerade styrinstitutioner som någonsin byggts — ändå är deras observationsarkitektur kalibrerad för den enskilda tvisten och strukturellt blind för de systemiska konsekvenserna av deras beslut. Rapporten diagnostiserar ett domstolsstyrningsvariationsgap och föreslår ett systemiskt effektregister som det konkreta första steget mot en flerskalig rättslig arkitektur.'
+   },
+   coordinationFailureStructuralCondition: {
+	   title: 'Samordningsmisslyckande som strukturellt tillstånd: Varför kompetenta institutioner blir blinda för sin egen skörhet',
+	   description:
+		   'Den sammanfattande syntesen av tjugoen styrningsanalyser. Ett enhetligt diagnostiskt ramverk som blottlägger de åtta strukturella primitiverna, varietetsgapet, upplösningslåsningen och den kanoniska arkitekturen för styrningsmisslyckande — med designprinciper för att bygga institutioner som kan uppfatta vad de för närvarande utesluter.'
    }
 		}
 	}

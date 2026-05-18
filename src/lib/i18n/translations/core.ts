@@ -87,6 +87,8 @@ export const coreTranslations = {
   reportsCentralBanksTagline: 'Why the most sophisticated governance institutions cannot perceive the economies they govern.',
   reportsCourtsTitle: 'Courts: The Adjudication–Governance Variety Gap',
   reportsCourtsTagline: 'Why the most procedurally sophisticated institutions cannot perceive the systems they govern.',
+  reportsCapstoneTitle: 'Capstone: Coordination Failure as Structural Condition',
+  reportsCapstoneTagline: 'A unified diagnostic framework from twenty‑one governance analyses — why competent institutions become blind to their own fragility.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -390,6 +392,8 @@ export const coreTranslations = {
   reportsCentralBanksTagline: 'Varför de mest sofistikerade styrinstitutionerna inte kan uppfatta de ekonomier de styr.',
   reportsCourtsTitle: 'Domstolar: Styrningsvariationsgapet',
   reportsCourtsTagline: 'Varför de mest procedurmässigt sofistikerade institutionerna inte kan uppfatta de system de styr.',
+  reportsCapstoneTitle: 'Sammanfattning: Samordningsmisslyckande som strukturellt tillstånd',
+  reportsCapstoneTagline: 'Ett enhetligt diagnostiskt ramverk från tjugoen styrningsanalyser — varför kompetenta institutioner blir blinda för sin egen skörhet.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',

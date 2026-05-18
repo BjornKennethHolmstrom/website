@@ -451,6 +451,26 @@ export const reportsData: Report[] = [
 			eu: '/reports/spain-transition-trap-eu.pdf'
 		},
 		readOnlineExternal: false
-	}
+	},
+ {
+	 id: 'coordination-failure-structural-condition',
+	 key: 'coordinationFailureStructuralCondition',
+	 emoji: '🔍',
+	 category: 'synthesis',
+	 year: 2026,
+	 pages: 73,
+	 readTime: {
+		 en: '70–90 min',
+		 sv: '70–90 min'
+	 },
+	 version: '1.0',
+	 releaseDate: '2026-05-18',
+	 coverImage: '/images/reports/coordination-failure-structural-condition/cover.png',
+	 readOnlinePath: '/reports/coordination-failure-structural-condition',
+	 pdfPath: {
+		 en: '/reports/coordination-failure-structural-condition-en.pdf'
+	 },
+	 readOnlineExternal: false
+ }
 ];
 
