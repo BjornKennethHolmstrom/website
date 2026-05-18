@@ -118,6 +118,11 @@ export const reportsTranslations = {
 	   title: 'The Monetary Policy Variety Gap: Why Central Banks Cannot See the Economies They Are Steering',
 	   description:
 		   'Central banks are the most explicitly control‑theoretic governance institutions ever built — yet their models cannot perceive the financial, distributional, fiscal, and ecological dimensions that determine the outcomes of their actions. This report diagnoses a Monetary Policy Variety Gap and proposes a Distributional Impact Assessment as the concrete first step toward requisite monetary governance.'
+   },
+   courtsAdjudicationGovernanceVarietyGap: {
+	   title: 'The Adjudication–Governance Variety Gap: Why Courts Cannot See the Systems They Govern',
+	   description:
+		   'Courts are the most procedurally sophisticated governance institutions ever built — yet their observation architecture is calibrated to the individual dispute and structurally blind to the systemic consequences of their decisions. This report diagnoses an Adjudication–Governance Variety Gap and proposes a Systemic Effects Registry as the concrete first step toward multi‑scale judicial architecture.'
    }
 		}
 	},
@@ -238,6 +243,11 @@ export const reportsTranslations = {
 	   title: 'Penningpolitikens variationsgap: Varför centralbanker inte kan se de ekonomier de styr',
 	   description:
 		   'Centralbanker är de mest uttryckligen reglerteoretiska styrinstitutioner som någonsin byggts — ändå kan deras modeller inte uppfatta de finansiella, fördelningsmässiga, fiskala och ekologiska dimensioner som avgör resultaten av deras åtgärder. Rapporten diagnostiserar ett penningpolitiskt variationsgap och föreslår en fördelningskonsekvensbeskrivning som det konkreta första steget mot en ändamålsenlig penningpolitisk styrning.'
+   },
+   courtsAdjudicationGovernanceVarietyGap: {
+	   title: 'Domstolarnas styrningsvariationsgap: Varför domstolar inte kan se de system de styr',
+	   description:
+		   'Domstolar är de mest procedurmässigt sofistikerade styrinstitutioner som någonsin byggts — ändå är deras observationsarkitektur kalibrerad för den enskilda tvisten och strukturellt blind för de systemiska konsekvenserna av deras beslut. Rapporten diagnostiserar ett domstolsstyrningsvariationsgap och föreslår ett systemiskt effektregister som det konkreta första steget mot en flerskalig rättslig arkitektur.'
    }
 		}
 	}

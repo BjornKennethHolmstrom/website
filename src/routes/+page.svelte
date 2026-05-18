@@ -154,6 +154,12 @@
 	      badge: 'NEW'
       },
       {
+	      key: 'reportsCourts',
+	      emoji: '⚖️',
+	      url: '/reports/courts-adjudication-governance-variety-gap',
+	      badge: 'NEW'
+      },
+      {
           key: 'reportsGermany',
           emoji: '🇩🇪',
           url: '/reports/germany-spending-mirage'

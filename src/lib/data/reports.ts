@@ -21,6 +21,26 @@ export interface Report {
 
 export const reportsData: Report[] = [
 	{
+		id: 'courts-adjudication-governance-variety-gap',
+		key: 'courtsAdjudicationGovernanceVarietyGap',
+		emoji: '⚖️',
+		category: 'organization',
+		year: 2026,
+		pages: 65,
+		readTime: {
+			en: '60–75 min',
+			sv: '60–75 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-18',
+		coverImage: '/images/reports/courts-adjudication-governance-variety-gap/cover.png',
+		readOnlinePath: '/reports/courts-adjudication-governance-variety-gap',
+		pdfPath: {
+			en: '/reports/courts-adjudication-governance-variety-gap-en.pdf'
+		},
+		readOnlineExternal: false
+	},
+	{
 		id: 'central-banks-monetary-policy-variety-gap',
 		key: 'centralBanksMonetaryPolicyVarietyGap',
 		emoji: '🏦',

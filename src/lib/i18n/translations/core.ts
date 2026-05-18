@@ -85,6 +85,8 @@ export const coreTranslations = {
   reportsUniversitiesTagline: 'Why universities cannot assemble what they know.',
   reportsCentralBanksTitle: 'Central Banks: The Monetary Policy Variety Gap',
   reportsCentralBanksTagline: 'Why the most sophisticated governance institutions cannot perceive the economies they govern.',
+  reportsCourtsTitle: 'Courts: The Adjudication–Governance Variety Gap',
+  reportsCourtsTagline: 'Why the most procedurally sophisticated institutions cannot perceive the systems they govern.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -386,6 +388,8 @@ export const coreTranslations = {
   reportsUniversitiesTagline: 'Varför universitet inte kan sammanställa vad de vet.',
   reportsCentralBanksTitle: 'Centralbanker: Penningpolitikens variationsgap',
   reportsCentralBanksTagline: 'Varför de mest sofistikerade styrinstitutionerna inte kan uppfatta de ekonomier de styr.',
+  reportsCourtsTitle: 'Domstolar: Styrningsvariationsgapet',
+  reportsCourtsTagline: 'Varför de mest procedurmässigt sofistikerade institutionerna inte kan uppfatta de system de styr.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',
