@@ -113,6 +113,11 @@ export const reportsTranslations = {
 	   title: 'The Integration Deficit: Why Universities Cannot See the Problems They Are Supposed to Solve',
 	   description:
 		   'Universities possess extraordinary distributed intelligence and cannot assemble it. This report diagnoses an Integration Deficit produced by departmental silos, disciplinary incentive architectures, and a Performative Reform Trap that signals commitment to interdisciplinarity while preventing it, and proposes an Integrative Capacity Audit and a Grand Challenge Pilot as the concrete first step toward building institutions that can assemble what they know.'
+   },
+   centralBanksMonetaryPolicyVarietyGap: {
+	   title: 'The Monetary Policy Variety Gap: Why Central Banks Cannot See the Economies They Are Steering',
+	   description:
+		   'Central banks are the most explicitly control‑theoretic governance institutions ever built — yet their models cannot perceive the financial, distributional, fiscal, and ecological dimensions that determine the outcomes of their actions. This report diagnoses a Monetary Policy Variety Gap and proposes a Distributional Impact Assessment as the concrete first step toward requisite monetary governance.'
    }
 		}
 	},
@@ -228,6 +233,11 @@ export const reportsTranslations = {
 	   title: 'Integrationsunderskottet: Varför universitet inte kan se de problem de är satta att lösa',
 	   description:
 		   'Universitet besitter enastående distribuerad intelligens men kan inte sammanställa den. Rapporten diagnostiserar ett integrationsunderskott skapat av institutionella silor, disciplinära incitamentsarkitekturer och en performativ reformfälla som signalerar engagemang för tvärvetenskap samtidigt som den förhindrar det, och föreslår en integrativ kapacitetsrevision och en stor utmaningspilot som det konkreta första steget mot att bygga institutioner som kan sammanställa vad de vet.'
+   },
+   centralBanksMonetaryPolicyVarietyGap: {
+	   title: 'Penningpolitikens variationsgap: Varför centralbanker inte kan se de ekonomier de styr',
+	   description:
+		   'Centralbanker är de mest uttryckligen reglerteoretiska styrinstitutioner som någonsin byggts — ändå kan deras modeller inte uppfatta de finansiella, fördelningsmässiga, fiskala och ekologiska dimensioner som avgör resultaten av deras åtgärder. Rapporten diagnostiserar ett penningpolitiskt variationsgap och föreslår en fördelningskonsekvensbeskrivning som det konkreta första steget mot en ändamålsenlig penningpolitisk styrning.'
    }
 		}
 	}

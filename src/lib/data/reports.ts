@@ -21,22 +21,42 @@ export interface Report {
 
 export const reportsData: Report[] = [
 	{
-		id: 'ai-coherence-velocity-trap',
-		key: 'aiCoherenceVelocityTrap',
-		emoji: '🤖',
+		id: 'central-banks-monetary-policy-variety-gap',
+		key: 'centralBanksMonetaryPolicyVarietyGap',
+		emoji: '🏦',
 		category: 'organization',
 		year: 2026,
-		pages: 68,
+		pages: 62,
 		readTime: {
 			en: '60–75 min',
 			sv: '60–75 min'
 		},
 		version: '1.0',
-		releaseDate: '2026-05-15',
-		coverImage: '/images/reports/ai-coherence-velocity-trap/cover.png',
-		readOnlinePath: '/reports/ai-coherence-velocity-trap',
+		releaseDate: '2026-05-18',
+		coverImage: '/images/reports/central-banks-monetary-policy-variety-gap/cover.png',
+		readOnlinePath: '/reports/central-banks-monetary-policy-variety-gap',
 		pdfPath: {
-			en: '/reports/ai-coherence-velocity-trap-en.pdf'
+			en: '/reports/central-banks-monetary-policy-variety-gap-en.pdf'
+		},
+		readOnlineExternal: false
+	},
+	{
+		id: 'universities-integration-deficit',
+		key: 'universitiesIntegrationDeficit',
+		emoji: '🎓',
+		category: 'organization',
+		year: 2026,
+		pages: 92,
+		readTime: {
+			en: '75–90 min',
+			sv: '75–90 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-05-17',
+		coverImage: '/images/reports/universities-integration-deficit/cover.png',
+		readOnlinePath: '/reports/universities-integration-deficit',
+		pdfPath: {
+			en: '/reports/universities-integration-deficit-en.pdf'
 		},
 		readOnlineExternal: false
 	},
@@ -61,22 +81,22 @@ export const reportsData: Report[] = [
 		readOnlineExternal: false
 	},
 	{
-		id: 'universities-integration-deficit',
-		key: 'universitiesIntegrationDeficit',
-		emoji: '🎓',
+		id: 'ai-coherence-velocity-trap',
+		key: 'aiCoherenceVelocityTrap',
+		emoji: '🤖',
 		category: 'organization',
 		year: 2026,
-		pages: 92,
+		pages: 68,
 		readTime: {
-			en: '75–90 min',
-			sv: '75–90 min'
+			en: '60–75 min',
+			sv: '60–75 min'
 		},
 		version: '1.0',
-		releaseDate: '2026-05-17',
-		coverImage: '/images/reports/universities-integration-deficit/cover.png',
-		readOnlinePath: '/reports/universities-integration-deficit',
+		releaseDate: '2026-05-15',
+		coverImage: '/images/reports/ai-coherence-velocity-trap/cover.png',
+		readOnlinePath: '/reports/ai-coherence-velocity-trap',
 		pdfPath: {
-			en: '/reports/universities-integration-deficit-en.pdf'
+			en: '/reports/ai-coherence-velocity-trap-en.pdf'
 		},
 		readOnlineExternal: false
 	},

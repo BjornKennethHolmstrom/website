@@ -148,6 +148,12 @@
 	      badge: 'NEW'
       },
       {
+	      key: 'reportsCentralBanks',
+	      emoji: '🏦',
+	      url: '/reports/central-banks-monetary-policy-variety-gap',
+	      badge: 'NEW'
+      },
+      {
           key: 'reportsGermany',
           emoji: '🇩🇪',
           url: '/reports/germany-spending-mirage'

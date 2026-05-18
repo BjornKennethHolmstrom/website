@@ -83,6 +83,8 @@ export const coreTranslations = {
   reportsHealthcareTagline: 'Why healthcare systems lose the signal between the bedside and the boardroom.',
   reportsUniversitiesTitle: 'Universities: The Integration Deficit',
   reportsUniversitiesTagline: 'Why universities cannot assemble what they know.',
+  reportsCentralBanksTitle: 'Central Banks: The Monetary Policy Variety Gap',
+  reportsCentralBanksTagline: 'Why the most sophisticated governance institutions cannot perceive the economies they govern.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -382,6 +384,8 @@ export const coreTranslations = {
   reportsHealthcareTagline: 'Varför sjukvårdssystem tappar signalen mellan sängkanten och styrelserummet.',
   reportsUniversitiesTitle: 'Universitet: Integrationsunderskottet',
   reportsUniversitiesTagline: 'Varför universitet inte kan sammanställa vad de vet.',
+  reportsCentralBanksTitle: 'Centralbanker: Penningpolitikens variationsgap',
+  reportsCentralBanksTagline: 'Varför de mest sofistikerade styrinstitutionerna inte kan uppfatta de ekonomier de styr.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',
