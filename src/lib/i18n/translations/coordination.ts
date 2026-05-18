@@ -6,7 +6,7 @@ export const coordinationTranslations = {
 				description: 'A protocol for planetary-scale cooperation.'
 			},
 			badges: {
-				version: 'Version 0.1 (Draft)',
+				version: 'Version 0.3 (Draft)',
 				openSource: 'Open Source'
 			},
 			hero: {
@@ -22,7 +22,7 @@ export const coordinationTranslations = {
 				title: 'Read the Document',
 				pdf: {
 					title: 'Download PDF',
-					desc: 'Formatted for reading, printing, and offline sharing. (English, v0.2)'
+					desc: 'Formatted for reading, printing, and offline sharing. (English, v0.3)'
 				},
 				github: {
 					title: 'Read / Fork on GitHub',
@@ -42,7 +42,7 @@ export const coordinationTranslations = {
 				description: 'Ett protokoll för samarbete på planetär skala.'
 			},
 			badges: {
-				version: 'Version 0.1 (Utkast)',
+				version: 'Version 0.3 (Utkast)',
 				openSource: 'Öppen källkod'
 			},
 			hero: {
@@ -58,7 +58,7 @@ export const coordinationTranslations = {
 				title: 'Läs dokumentet',
 				pdf: {
 					title: 'Ladda ner PDF',
-					desc: 'Formaterad för läsning, utskrift och delning offline. (Svenska, v0.2)'
+					desc: 'Formaterad för läsning, utskrift och delning offline. (Svenska, v0.3)'
 				},
 				github: {
 					title: 'Läs / Förgrena på GitHub',

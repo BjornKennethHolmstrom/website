@@ -37,8 +37,8 @@ const CONTENT_DIR = path.join(__dirname, '../src/lib/content');
 const OUTPUT_DIR = path.join(__dirname, '../static/downloads/coordination-imperative');
 
 const suffix = LANGUAGE === 'en' ? '' : `-${LANGUAGE}`;
-const INPUT_FILE = path.join(CONTENT_DIR, `the-coordination-imperative-v0.2${suffix}.md`);
-const OUTPUT_FILE = path.join(OUTPUT_DIR, `The-Coordination-Imperative-v0.2${suffix}.pdf`);
+const INPUT_FILE = path.join(CONTENT_DIR, `the-coordination-imperative-v0.3${suffix}.md`);
+const OUTPUT_FILE = path.join(OUTPUT_DIR, `The-Coordination-Imperative-v0.3${suffix}.pdf`);
 
 // --- METADATA PER LANGUAGE ---
 // Add new languages here. The document itself must exist as a translated .md file.
@@ -49,7 +49,7 @@ const metadata = {
 		subtitle: "A Protocol for Planetary-Scale Cooperation",
 		author: "Björn Kenneth Holmström",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "Protocol Document",
@@ -61,7 +61,7 @@ const metadata = {
 		subtitle: "Ett protokoll för planetär samverkan",
 		author: "Björn Kenneth Holmström",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/sv/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "Protokolldokument",
@@ -73,7 +73,7 @@ const metadata = {
 		subtitle: "惑星規模の協力のためのプロトコル",
 		author: "ビョルン・ケネス・ホルムストローム",
 		date: "2026年",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/ja/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "プロトコル文書",
@@ -85,7 +85,7 @@ const metadata = {
 		subtitle: "Un Protocolo para la Cooperación a Escala Planetaria",
 		author: "Björn Kenneth Holmström",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/es/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "Documento de Protocolo",
@@ -97,7 +97,7 @@ const metadata = {
 		subtitle: "Un protocole pour la coopération à l'échelle planétaire",
 		author: "Björn Kenneth Holmström",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/fr/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "Document de Protocole",
@@ -109,7 +109,7 @@ const metadata = {
 		subtitle: "Um Protocolo para Cooperação em Escala Planetária",
 		author: "Björn Kenneth Holmström",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/pt/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "Documento de Protocolo",
@@ -121,7 +121,7 @@ const metadata = {
 		subtitle: "بروتوكول للتعاون على مستوى الكوكب",
 		author: "بيورن كينيث هولمستروم",
 		date: "٢٠٢٦",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/ar/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "وثيقة بروتوكول",
@@ -133,7 +133,7 @@ const metadata = {
 		subtitle: "星球级合作协议",
 		author: "比约恩·肯尼斯·霍尔姆斯特伦",
 		date: "2026年",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/zh/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "协议文件",
@@ -145,7 +145,7 @@ const metadata = {
 		subtitle: "ग्रहीय स्तर के सहयोग के लिए एक प्रोटोकॉल",
 		author: "ब्योर्न केनेथ होल्मस्ट्रोम",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/hi/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "प्रोटोकॉल दस्तावेज़",
@@ -157,7 +157,7 @@ const metadata = {
 		subtitle: "Itifaki ya Ushirikiano wa Kiwango cha Sayari",
 		author: "Björn Kenneth Holmström",
 		date: "2026",
-		version: "v0.2",
+		version: "v0.3",
 		url: "https://bjornkennethholmstrom.org/sw/coordination-imperative",
 		license: "CC BY-SA 4.0",
 		headerLabel: "Hati ya Itifaki",
