@@ -4,9 +4,14 @@
   import { varietyGapTranslations } from '$lib/i18n/translations/variety-gap';
   import DiagnosticFieldGuideEn from './diagnostic-field-guide.en.md';
   import DiagnosticFieldGuideSv from './diagnostic-field-guide.sv.md';
+  import StableGlossaryEn from '$lib/content/stable-glossary-v1.0.md';
+  import StableGlossarySv from '$lib/content/stable-glossary-v1.0-sv.md';
 
   let lang = $derived($language === 'sv' ? 'sv' : 'en');
   let t = $derived(varietyGapTranslations[lang]);
+
+  // Tab state
+  let activeTab = $state<'field-guide' | 'glossary'>('field-guide');
 
   const reports = [
     { slug: 'germany-spending-mirage',        emoji: '🇩🇪', key: 'germany' },
@@ -169,31 +174,95 @@
     </div>
   </section>
 
-  <!-- Diagnostic Field Guide -->
+  <!-- Tabs: Diagnostic Field Guide / Stable Glossary -->
   <section class="mb-16">
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-3xl font-bold text-[var(--color-page-text)]">
-        {t.fieldGuide.heading}
-      </h2>
-      <a
-        href={`/variety-gap-framework/diagnostic-field-guide-${lang}.pdf`}
-        download
-        class="inline-flex items-center gap-2 rounded-md bg-[var(--color-page-accent)] px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition-opacity"
+    <!-- Tab buttons -->
+    <div class="flex border-b border-[var(--color-separator)] mb-8">
+      <button
+        onclick={() => activeTab = 'field-guide'}
+        class="px-6 py-3 text-sm font-medium border-b-2 transition-colors
+          {activeTab === 'field-guide'
+            ? 'border-[var(--color-page-accent)] text-[var(--color-page-accent)]'
+            : 'border-transparent text-[var(--color-page-text)] opacity-60 hover:opacity-100'}"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
-        </svg>
-        {t.fieldGuide.downloadPdf}
-      </a>
+        {t.fieldGuideTab ?? 'Diagnostic Field Guide'}
+      </button>
+      <button
+        onclick={() => activeTab = 'glossary'}
+        class="px-6 py-3 text-sm font-medium border-b-2 transition-colors
+          {activeTab === 'glossary'
+            ? 'border-[var(--color-page-accent)] text-[var(--color-page-accent)]'
+            : 'border-transparent text-[var(--color-page-text)] opacity-60 hover:opacity-100'}"
+      >
+        {t.glossaryTab ?? 'Stable Glossary'}
+      </button>
     </div>
 
-    <article class="prose prose-lg max-w-none">
-      {#if lang === 'sv'}
-        <DiagnosticFieldGuideSv />
-      {:else}
-        <DiagnosticFieldGuideEn />
-      {/if}
-    </article>
+    <!-- Field Guide panel -->
+    {#if activeTab === 'field-guide'}
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-3xl font-bold text-[var(--color-page-text)]">
+            {t.fieldGuide.heading}
+          </h2>
+          <a
+            href={`/variety-gap-framework/diagnostic-field-guide-${lang}.pdf`}
+            download
+            class="inline-flex items-center gap-2 rounded-md bg-[var(--color-page-accent)] px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition-opacity"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+            {t.fieldGuide.downloadPdf}
+          </a>
+        </div>
+
+        <article class="prose prose-lg max-w-none">
+          {#if lang === 'sv'}
+            <DiagnosticFieldGuideSv />
+          {:else}
+            <DiagnosticFieldGuideEn />
+          {/if}
+        </article>
+      </div>
+    {/if}
+
+    <!-- Glossary panel -->
+    {#if activeTab === 'glossary'}
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <h2 class="text-3xl font-bold text-[var(--color-page-text)]">
+              {t.glossary.heading}
+            </h2>
+            <p class="text-[var(--color-page-text)] opacity-70 mt-2">
+              {t.glossary.description}
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-xs text-[var(--color-page-text)] opacity-50">{t.glossary.version}</span>
+            <a
+              href={`/variety-gap-framework/stable-glossary-${lang}.pdf`}
+              download
+              class="inline-flex items-center gap-2 rounded-md bg-[var(--color-page-accent)] px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition-opacity"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+              </svg>
+              {t.glossary.downloadPdf}
+            </a>
+          </div>
+        </div>
+
+        <article class="prose prose-lg max-w-none">
+          {#if lang === 'sv'}
+            <StableGlossarySv />
+          {:else}
+            <StableGlossaryEn />
+          {/if}
+        </article>
+      </div>
+    {/if}
   </section>
 
 </div>

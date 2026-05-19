@@ -50,6 +50,14 @@ export const varietyGapTranslations = {
     workingPapers: {
       architectureOfFailure: 'The Architecture of Governance Failure',
     },
+    fieldGuideTab: 'Diagnostic Field Guide',
+    glossaryTab: 'Stable Glossary',
+    glossary: {
+      heading: 'Stable Glossary',
+      description: 'Standardised terminology for the Variety Gap Framework and the Governance as Engineering series. Use this as a reference when reading the country reports, organisational reports, or working papers.',
+      downloadPdf: 'Download PDF',
+      version: 'Version 1.0',
+    },
   },
   sv: {
     hero: {
@@ -101,6 +109,14 @@ export const varietyGapTranslations = {
     },
     workingPapers: {
       architectureOfFailure: 'Styrningens misslyckandes arkitektur',
+    },
+    fieldGuideTab: 'Diagnostisk fältguide',
+    glossaryTab: 'Stabil ordlista',
+    glossary: {
+      heading: 'Stabil ordlista',
+      description: 'Standardiserad terminologi för Varietetsgap-ramverket och Governance as Engineering-serien. Använd som referens vid läsning av landrapporter, organisationsrapporter eller working papers.',
+      downloadPdf: 'Ladda ner PDF',
+      version: 'Version 1.0',
     },
   },
 };
