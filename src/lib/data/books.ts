@@ -23,6 +23,20 @@ const localBase = '/books'; // För böcker i /static/books
 
 export const booksData: Book[] = [
  {
+   id: 'competent-blindness',
+   key: 'competentBlindness',
+   year: 2025,
+   pages: '178',
+   category: 'governance',
+   cover: '/resources/book-cover-competent-blindness.svg',
+   hasOnlineVersion: true,
+   readOnlinePath: '/books/competent-blindness',
+   pdfPath: {
+     en: '/books/Competent_Blindness.pdf',
+     sv: '/books/Kompetent_Blindhet.pdf'
+   }
+ },
+ {
    id: 'integration-crisis',
    key: 'integrationCrisis',
    year: 2025,

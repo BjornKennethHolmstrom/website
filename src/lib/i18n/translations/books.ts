@@ -1,5 +1,4 @@
 // src/lib/i18n/translations/books.ts
-// COMPLETE FILE - Replace your existing books.ts with this
 
 export const booksTranslations = {
   en: {
@@ -30,6 +29,11 @@ export const booksTranslations = {
         downloadPdf: 'Download PDF',
         notAvailable: 'Not Available',
         comingSoon: 'Coming Soon'
+      },
+      competentBlindness: {
+        title: 'Competent Blindness',
+        description:
+          'Why successful institutions become blind to their own fragility—and what must be built instead. A unified diagnostic framework from twenty‑one governance analyses across nation‑states, organisations, and institutional domains.',
       },
       // === GGF Books ===
       integrationCrisis: {
@@ -98,6 +102,61 @@ export const booksTranslations = {
         description:
           'A contemplative exploration of mathematics as a sacred language, revealing how number and pattern connect the visible world to the invisible.'
       }
+    },
+    competentBlindnessBook: {
+      meta: {
+        title: 'Competent Blindness',
+        subtitle: 'How Successful Institutions Lose Sight of the World They Govern—and What Must Be Built Instead',
+        description:
+          'A unified diagnostic framework revealing why competent institutions systematically fail to perceive the threats that eventually destroy them—and the architectural principles for building institutions that can perceive what they currently exclude.',
+      },
+      ui: {
+        backToBooks: '← All Books',
+        downloadPdfEn: 'Download PDF (English)',
+        downloadPdfSv: 'Download PDF (Swedish)',
+        previous: 'Previous Chapter',
+        nextChapter: 'Next Chapter →',
+        partLabel: 'Part',
+        chapterLabel: 'Chapter',
+        appendixLabel: 'Appendix',
+      },
+      toc: {
+        introduction: 'Introduction: The Day the Dashboard Still Looked Green',
+        chapter1: '1. The Competence Trap',
+        chapter2: '2. The World Became More Complex Than Our Institutions',
+        chapter3: '3. The Variety Gap',
+        chapter4: '4. Why Smart People Cannot See the Failure',
+        chapter5: '5. Observation Channels',
+        chapter6: '6. The Immune System',
+        chapter7: '7. Resolution Lock‑In',
+        chapter8: '8. The Compounding Failure Tax, and Why It Is Structural',
+        chapter9: '9. AI Labs and the Coherence–Velocity Trap',
+        chapter10: '10. Hospitals and the Clinical Observability Gap',
+        chapter11: '11. Universities and the Integration Deficit',
+        chapter12: '12. Courts and the Adjudication–Governance Gap',
+        chapter13: '13. Central Banks and the Monetary Variety Gap',
+        chapter14: '14. Democracies, Authoritarianism, and the Feedback Problem',
+        chapter15: '15. The Shadow Systems Already Emerging',
+        chapter16: '16. Adaptive Coherence',
+        chapter17: '17. The Logic of Structural Constraints',
+        chapter18: '18. Multi‑Scale Adaptive Governance',
+        chapter19: '19. The Civilisational Threshold',
+        conclusion: 'Conclusion: The Future Can Still Be Perceived',
+        appendixA: 'Appendix A: The Eight Structural Primitives',
+        appendixB: 'Appendix B: The Immune System Taxonomy',
+        appendixC: 'Appendix C: The Resolution Lock‑In Table',
+        appendixD: 'Appendix D: The Series Coherence Table',
+        appendixE: 'Appendix E: The Logic of Structural Constraints',
+        appendixF: 'Appendix F: Stable Glossary',
+      },
+      parts: {
+        part1: 'Part I — The Condition',
+        part2: 'Part II — The Machinery of Blindness',
+        part3: 'Part III — The Recurrence',
+        part4: 'Part IV — What Must Be Built',
+        conclusion: 'Conclusion',
+        appendices: 'Appendices',
+      },
     },
     integrationCrisis: {
       meta: {
@@ -340,6 +399,11 @@ export const booksTranslations = {
         notAvailable: 'Inte tillgänglig',
         comingSoon: 'Kommer snart'
       },
+      competentBlindness: {
+        title: 'Kompetent Blindhet',
+        description:
+          'Varför framgångsrika institutioner blir blinda för sin egen skörhet—och vad som måste byggas istället. Ett enhetligt diagnostiskt ramverk från tjugoen styrningsanalyser över nationalstater, organisationer och institutionella domäner.',
+      },
       // === GGF Books ===
       integrationCrisis: {
         title: 'Integrationskrisen: Gula lösningar på orange problem',
@@ -407,6 +471,61 @@ export const booksTranslations = {
         description:
           'En kontemplativ utforskning av matematik som ett heligt språk, som avslöjar hur siffror och mönster kopplar den synliga världen till den osynliga.'
       }
+    },
+    competentBlindnessBook: {
+      meta: {
+        title: 'Kompetent Blindhet',
+        subtitle: 'Hur framgångsrika institutioner tappar kontakten med världen de styr—och vad som måste byggas istället',
+        description:
+          'Ett enhetligt diagnostiskt ramverk som avslöjar varför kompetenta institutioner systematiskt misslyckas med att uppfatta hoten som till slut förgör dem—och de arkitektoniska principerna för att bygga institutioner som kan uppfatta vad de för närvarande utesluter.',
+      },
+      ui: {
+        backToBooks: '← Alla böcker',
+        downloadPdfEn: 'Ladda ner PDF (Engelska)',
+        downloadPdfSv: 'Ladda ner PDF (Svenska)',
+        previous: 'Föregående kapitel',
+        nextChapter: 'Nästa kapitel →',
+        partLabel: 'Del',
+        chapterLabel: 'Kapitel',
+        appendixLabel: 'Bilaga',
+      },
+      toc: {
+        introduction: 'Introduktion: Dagen då instrumentpanelen fortfarande var grön',
+        chapter1: '1. Kompetensfällan',
+        chapter2: '2. Världen blev mer komplex än våra institutioner',
+        chapter3: '3. Varietetsgapet',
+        chapter4: '4. Varför smarta människor inte kan se misslyckandet',
+        chapter5: '5. Observationskanaler',
+        chapter6: '6. Immunsystemet',
+        chapter7: '7. Upplösningslåsning',
+        chapter8: '8. Samordningsmisslyckandets skatt, och varför den är strukturell',
+        chapter9: '9. AI-labb och koherens–hastighetsfällan',
+        chapter10: '10. Sjukhus och det kliniska observerbarhetsgapet',
+        chapter11: '11. Universitet och integrationsunderskottet',
+        chapter12: '12. Domstolar och styrningsgapet',
+        chapter13: '13. Centralbanker och det penningpolitiska varietetsgapet',
+        chapter14: '14. Demokratier, auktoritära stater och återkopplingsproblemet',
+        chapter15: '15. Skuggsystemen som redan växer fram',
+        chapter16: '16. Adaptiv koherens',
+        chapter17: '17. De strukturella begränsningarnas logik',
+        chapter18: '18. Flerskalig adaptiv styrning',
+        chapter19: '19. Den civilisatoriska tröskeln',
+        conclusion: 'Slutsats: Framtiden kan fortfarande uppfattas',
+        appendixA: 'Bilaga A: De åtta strukturella primitiverna',
+        appendixB: 'Bilaga B: Immunsystemets taxonomi',
+        appendixC: 'Bilaga C: Upplösningslåsningstabellen',
+        appendixD: 'Bilaga D: Seriens koherenstabell',
+        appendixE: 'Bilaga E: De strukturella begränsningarnas logik: En kort teknisk introduktion',
+        appendixF: 'Bilaga F: Stabil ordlista',
+      },
+      parts: {
+        part1: 'Del I — Tillståndet',
+        part2: 'Del II — Blindhetens maskineri',
+        part3: 'Del III — Återkomsten',
+        part4: 'Del IV — Vad som måste byggas',
+        conclusion: 'Slutsats',
+        appendices: 'Bilagor',
+      },
     },
     integrationCrisis: {
       meta: {

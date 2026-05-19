@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="960"
+   viewBox="0 0 1200 960"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="canonical-diagram.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.90416667"
+     inkscape:cx="599.447"
+     inkscape:cy="480"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <defs
+     id="defs16">
+    <!-- Gradients -->
+    <linearGradient
+       id="envGrad"
+       x1="29.21187"
+       y1="273.86128"
+       x2="248.30089"
+       y2="273.86128"
+       gradientTransform="matrix(2.7386128,0,0,0.36514837,224,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#3B82F6"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#8B5CF6"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="obsGrad"
+       x1="31.832897"
+       y1="552.88716"
+       x2="270.57962"
+       y2="552.88716"
+       gradientTransform="matrix(2.5131234,0,0,0.39791121,224,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#10B981"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#14B8A6"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="decisionGrad"
+       x1="30.110906"
+       y1="943.17985"
+       x2="255.9427"
+       y2="943.17985"
+       gradientTransform="matrix(2.6568447,0,0,0.37638633,224,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#6366F1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#818CF8"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="actionGrad"
+       x1="27.325202"
+       y1="1405.2961"
+       x2="232.26422"
+       y2="1405.2961"
+       gradientTransform="matrix(2.9277002,0,0,0.34156503,224,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#64748B"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#94A3B8"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="feedbackGrad"
+       x1="33.466401"
+       y1="1410.3698"
+       x2="284.46441"
+       y2="1410.3698"
+       gradientTransform="matrix(2.3904572,0,0,0.41833001,224,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#DC2626"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#F97316"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="excludedGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#F59E0B"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#EF4444"
+         id="stop12" />
+    </linearGradient>
+    <!-- Arrow markers -->
+    <marker
+       id="arrowGray"
+       markerWidth="10"
+       markerHeight="10"
+       refX="8"
+       refY="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#64748B"
+         id="path12" />
+    </marker>
+    <marker
+       id="arrowRed"
+       markerWidth="10"
+       markerHeight="10"
+       refX="8"
+       refY="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#EF4444"
+         id="path13" />
+    </marker>
+    <marker
+       id="arrowAmber"
+       markerWidth="10"
+       markerHeight="10"
+       refX="8"
+       refY="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#F59E0B"
+         id="path14" />
+    </marker>
+    <marker
+       id="arrowBlue"
+       markerWidth="10"
+       markerHeight="10"
+       refX="8"
+       refY="5"
+       orient="auto">
+      <path
+         d="M0,0 L10,5 L0,10 Z"
+         fill="#3B82F6"
+         id="path15" />
+    </marker>
+    <!-- Glow filter -->
+    <filter
+       id="glow">
+      <feGaussianBlur
+         stdDeviation="4"
+         result="blur"
+         id="feGaussianBlur15" />
+      <feMerge
+         id="feMerge16">
+        <feMergeNode
+           in="blur"
+           id="feMergeNode15" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode16" />
+      </feMerge>
+    </filter>
+    <!-- Subtle shadow -->
+    <filter
+       id="shadow"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="0"
+         dy="2"
+         stdDeviation="3"
+         flood-color="#000"
+         flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="960"
+     fill="#0F172A"
+     id="rect16" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="45"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="30"
+     fill="#F8FAFC"
+     font-weight="600"
+     id="text16">
+    DET KANONISKA DIAGRAMMET
+  </text>
+  <text
+     x="600"
+     y="72"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="16"
+     fill="#94A3B8"
+     id="text17">
+    Samordningsmisslyckande som strukturellt tillstånd
+  </text>
+  <!-- ============================================================ -->
+  <!-- 1. STÖRNINGSMILJÖ -->
+  <!-- ============================================================ -->
+  <rect
+     x="304"
+     y="100"
+     width="600"
+     height="80"
+     rx="12"
+     fill="url(#envGrad)"
+     opacity="0.95"
+     filter="url(#shadow)"
+     id="rect17"
+     style="fill:url(#envGrad)" />
+  <text
+     x="604"
+     y="130"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     font-weight="600"
+     id="text18">STÖRNINGSMILJÖ</text>
+  <text
+     x="604"
+     y="155"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="13px"
+     fill="#dbeafe"
+     id="text19">Högdimensionell · snabb · kopplad · emergent · accelererande</text>
+  <!-- Variety gap label and arrow -->
+  <text
+     x="924"
+     y="130"
+     text-anchor="start"
+     font-family="Inter, Arial, sans-serif"
+     font-size="14px"
+     fill="#ef4444"
+     font-weight="600"
+     id="text20">Vₑ &gt; Vₒ</text>
+  <text
+     x="924"
+     y="152"
+     text-anchor="start"
+     font-family="Inter, Arial, sans-serif"
+     font-size="13px"
+     fill="#f87171"
+     id="text21">Varietetsgap</text>
+  <!-- Red arrow from environment to observation -->
+  <line
+     x1="604"
+     y1="180"
+     x2="604"
+     y2="215"
+     stroke="#ef4444"
+     stroke-width="2.5"
+     marker-end="url(#arrowRed)"
+     id="line21" />
+  <circle
+     cx="604"
+     cy="198"
+     r="5"
+     fill="#ef4444"
+     id="circle21" />
+  <text
+     x="644"
+     y="202"
+     font-family="Inter, Arial, sans-serif"
+     font-size="11px"
+     fill="#f87171"
+     id="text22">Punkt för maximal variationsförlust</text>
+  <!-- ============================================================ -->
+  <!-- 2. OBSERVATIONSARKITEKTUR -->
+  <!-- ============================================================ -->
+  <rect
+     x="304"
+     y="220"
+     width="600"
+     height="95"
+     rx="12"
+     fill="url(#obsGrad)"
+     opacity="0.95"
+     filter="url(#shadow)"
+     id="rect22"
+     style="fill:url(#obsGrad)" />
+  <text
+     x="604"
+     y="250"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     font-weight="600"
+     id="text23">OBSERVATIONSARKITEKTUR</text>
+  <text
+     x="604"
+     y="275"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="13px"
+     fill="#d1fae5"
+     id="text24">Sensorer → filter → komprimering</text>
+  <text
+     x="604"
+     y="295"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#a7f3d0"
+     id="text25">Talerätt · bevisregler · mått · kategorier · prejudikat</text>
+  <!-- Red dots at filter points -->
+  <circle
+     cx="444"
+     cy="265"
+     r="4"
+     fill="#ef4444"
+     opacity="0.8"
+     id="circle25" />
+  <circle
+     cx="604"
+     cy="280"
+     r="4"
+     fill="#ef4444"
+     opacity="0.8"
+     id="circle26" />
+  <circle
+     cx="764"
+     cy="265"
+     r="4"
+     fill="#ef4444"
+     opacity="0.8"
+     id="circle27" />
+  <!-- Excluded dimensions drifting left and right -->
+  <circle
+     cx="279"
+     cy="250"
+     r="7"
+     fill="#f59e0b"
+     opacity="0.7"
+     id="circle28" />
+  <circle
+     cx="269"
+     cy="270"
+     r="7"
+     fill="#ef4444"
+     opacity="0.7"
+     id="circle29" />
+  <circle
+     cx="289"
+     cy="290"
+     r="7"
+     fill="#f59e0b"
+     opacity="0.7"
+     id="circle30" />
+  <circle
+     cx="919"
+     cy="250"
+     r="7"
+     fill="#f59e0b"
+     opacity="0.7"
+     id="circle31" />
+  <circle
+     cx="934"
+     cy="275"
+     r="7"
+     fill="#ef4444"
+     opacity="0.7"
+     id="circle32" />
+  <circle
+     cx="924"
+     cy="295"
+     r="7"
+     fill="#f59e0b"
+     opacity="0.7"
+     id="circle33" />
+  <text
+     x="262"
+     y="320"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="10px"
+     fill="#fca5a5"
+     id="text33">Uteslutna</text>
+  <text
+     x="934"
+     y="320"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="10px"
+     fill="#fca5a5"
+     id="text34">Uteslutna</text>
+  <!-- Red arrow: signal degraded -->
+  <line
+     x1="604"
+     y1="315"
+     x2="604"
+     y2="350"
+     stroke="#ef4444"
+     stroke-width="2.5"
+     marker-end="url(#arrowRed)"
+     id="line34" />
+  <circle
+     cx="604"
+     cy="333"
+     r="5"
+     fill="#ef4444"
+     id="circle34" />
+  <!-- ============================================================ -->
+  <!-- 3. BESLUTSFATTNINGSLAGER -->
+  <!-- ============================================================ -->
+  <rect
+     x="304"
+     y="355"
+     width="600"
+     height="85"
+     rx="12"
+     fill="url(#decisionGrad)"
+     opacity="0.95"
+     filter="url(#shadow)"
+     id="rect34"
+     style="fill:url(#decisionGrad)" />
+  <text
+     x="604"
+     y="385"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     font-weight="600"
+     id="text35">BESLUTSFATTNINGSLAGER</text>
+  <text
+     x="604"
+     y="408"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="13px"
+     fill="#e0e7ff"
+     id="text36">Doktrinär fragmentering · vetomättnad</text>
+  <text
+     x="604"
+     y="426"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#c7d2fe"
+     id="text37">Samordningskollaps · latensackumulering</text>
+  <!-- Blue immune box marker -->
+  <rect
+     x="884"
+     y="370"
+     width="16"
+     height="12"
+     rx="3"
+     fill="#3b82f6"
+     opacity="0.6"
+     id="rect37" />
+  <text
+     x="908"
+     y="380"
+     font-family="Inter, Arial, sans-serif"
+     font-size="10px"
+     fill="#60a5fa"
+     id="text38">Immunaktivering</text>
+  <!-- Arrow: decision → action -->
+  <line
+     x1="604"
+     y1="440"
+     x2="604"
+     y2="475"
+     stroke="#64748b"
+     stroke-width="2"
+     marker-end="url(#arrowGray)"
+     id="line38" />
+  <!-- ============================================================ -->
+  <!-- 4. INSTITUTIONELL HANDLING -->
+  <!-- ============================================================ -->
+  <rect
+     x="304"
+     y="480"
+     width="600"
+     height="70"
+     rx="12"
+     fill="url(#actionGrad)"
+     opacity="0.95"
+     filter="url(#shadow)"
+     id="rect38"
+     style="fill:url(#actionGrad)" />
+  <text
+     x="604"
+     y="510"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     font-weight="600"
+     id="text39">INSTITUTIONELL HANDLING</text>
+  <text
+     x="604"
+     y="533"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="13px"
+     fill="#e2e8f0"
+     id="text40">Domar · policyer · tilldelningar · interventioner</text>
+  <!-- Arrow: action → feedback -->
+  <line
+     x1="604"
+     y1="550"
+     x2="604"
+     y2="585"
+     stroke="#64748b"
+     stroke-width="2"
+     marker-end="url(#arrowGray)"
+     id="line40" />
+  <!-- ============================================================ -->
+  <!-- 5. ÅTERKOPPLINGSSLINGA -->
+  <!-- ============================================================ -->
+  <rect
+     x="304"
+     y="590"
+     width="600"
+     height="105"
+     rx="12"
+     fill="url(#feedbackGrad)"
+     opacity="0.9"
+     filter="url(#shadow)"
+     id="rect40"
+     style="fill:url(#feedbackGrad)" />
+  <text
+     x="604"
+     y="620"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     font-weight="600"
+     id="text41">ÅTERKOPPLINGSSLINGA</text>
+  <text
+     x="604"
+     y="643"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="13px"
+     fill="#fee2e2"
+     id="text42">Empirisk återkoppling → immunsvar → symbolisk anpassning</text>
+  <text
+     x="604"
+     y="663"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#fecaca"
+     id="text43">Absorption (vanligt) · strukturreform (sällsynt)</text>
+  <text
+     x="604"
+     y="682"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#fecaca"
+     id="text44">Förbikopplingsarkitekturer uppstår där återkoppling blockeras</text>
+  <!-- Blue immune box marker -->
+  <rect
+     x="884"
+     y="610"
+     width="16"
+     height="12"
+     rx="3"
+     fill="#3b82f6"
+     opacity="0.6"
+     id="rect44" />
+  <text
+     x="908"
+     y="620"
+     font-family="Inter, Arial, sans-serif"
+     font-size="10px"
+     fill="#60a5fa"
+     id="text45">Immunaktivering</text>
+  <!-- ============================================================ -->
+  <!-- 6. SAKNAD ÅTERKOPPLING (Grey dashed, left side) -->
+  <!-- ============================================================ -->
+  <path
+     d="M 304,640 H 259 V 260 h 45"
+     fill="none"
+     stroke="#94a3b8"
+     stroke-width="1.5"
+     stroke-dasharray="6, 4"
+     marker-end="url(#arrowGray)"
+     id="path45" />
+  <text
+     x="-450"
+     y="249"
+     text-anchor="middle"
+     font-family="Inter, Arial, sans-serif"
+     font-size="11px"
+     fill="#94a3b8"
+     transform="rotate(-90)"
+     id="text46">Saknad empirisk återkoppling</text>
+  <!-- ============================================================ -->
+  <!-- 7. FÖRBIKOPPLINGSARKITEKTUR (Amber dashed, right side) -->
+  <!-- ============================================================ -->
+  <path
+     d="m 904,515 h 40 V 390 h -40"
+     fill="none"
+     stroke="#f59e0b"
+     stroke-width="1.5"
+     stroke-dasharray="6, 4"
+     marker-end="url(#arrowAmber)"
+     id="path46" />
+  <text
+     x="455"
+     y="-954"
+     font-family="Inter, Arial, sans-serif"
+     font-size="11px"
+     fill="#f59e0b"
+     transform="rotate(90)"
+     id="text47">Förbikopplingsarkitektur</text>
+  <!-- ============================================================ -->
+  <!-- 8. TECKENFÖRKLARING -->
+  <!-- ============================================================ -->
+  <rect
+     x="304"
+     y="730"
+     width="600"
+     height="190"
+     rx="8"
+     fill="none"
+     stroke="#475569"
+     stroke-width="1"
+     stroke-dasharray="4, 3"
+     id="rect47" />
+  <text
+     x="324"
+     y="758"
+     font-family="Inter, Arial, sans-serif"
+     font-size="16px"
+     fill="#f8fafc"
+     font-weight="600"
+     id="text48">Teckenförklaring</text>
+  <!-- Red arrow legend -->
+  <line
+     x1="324"
+     y1="782"
+     x2="364"
+     y2="782"
+     stroke="#ef4444"
+     stroke-width="2"
+     id="line48" />
+  <circle
+     cx="344"
+     cy="782"
+     r="4"
+     fill="#ef4444"
+     id="circle48" />
+  <text
+     x="376"
+     y="786"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#cbd5e1"
+     id="text49">Variationsförlust — signal förstörd vid filter-/komprimeringspunkter</text>
+  <!-- Amber dashed legend -->
+  <line
+     x1="324"
+     y1="808"
+     x2="364"
+     y2="808"
+     stroke="#f59e0b"
+     stroke-width="1.5"
+     stroke-dasharray="6, 4"
+     id="line49" />
+  <text
+     x="376"
+     y="812"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#cbd5e1"
+     id="text50">Förbikopplingsarkitektur — leder förbi blockerad institutionell kärna</text>
+  <!-- Grey dashed legend -->
+  <line
+     x1="324"
+     y1="834"
+     x2="364"
+     y2="834"
+     stroke="#94a3b8"
+     stroke-width="1.5"
+     stroke-dasharray="6, 4"
+     id="line50" />
+  <text
+     x="376"
+     y="838"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#cbd5e1"
+     id="text51">Saknad återkoppling — empirisk signal som aldrig når beslutsfattningslagret</text>
+  <!-- Blue box legend -->
+  <rect
+     x="324"
+     y="852"
+     width="16"
+     height="12"
+     rx="3"
+     fill="#3b82f6"
+     opacity="0.6"
+     id="rect51" />
+  <text
+     x="354"
+     y="862"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#cbd5e1"
+     id="text52">Immunsystemets aktiveringspunkter — där symbolisk anpassning absorberar reformtryck</text>
+  <!-- Grey arrow legend -->
+  <line
+     x1="324"
+     y1="882"
+     x2="364"
+     y2="882"
+     stroke="#64748b"
+     stroke-width="2"
+     id="line52" />
+  <text
+     x="376"
+     y="886"
+     font-family="Inter, Arial, sans-serif"
+     font-size="12px"
+     fill="#cbd5e1"
+     id="text53">Normalt flöde — signal / handling / återkoppling genom styrningscykeln</text>
+  <!-- ============================================================ -->
+  <!-- 9. LOOP ARROW (light grey, right edge) -->
+  <!-- ============================================================ -->
+  <path
+     d="m 904,642 h 70 v -2 -485 h -70"
+     fill="none"
+     stroke="#64748b"
+     stroke-width="1"
+     stroke-dasharray="3, 5"
+     opacity="0.4"
+     marker-end="url(#arrowGray)"
+     id="path53" />
+  <text
+     x="400"
+     y="-984"
+     font-family="Inter, Arial, sans-serif"
+     font-size="10px"
+     fill="#475569"
+     transform="rotate(90)"
+     id="text54">Kontinuerlig cykel</text>
+</svg>
