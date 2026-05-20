@@ -155,6 +155,25 @@
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
+
+  <!-- MOBILE TOOLBAR (visible only below lg) -->
+  <div class="lg:hidden flex flex-wrap items-center justify-between gap-3 px-4 pt-4 pb-2 border-b border-[var(--color-separator)] mb-6">
+    <a
+      href="/books/Competent_Blindness.pdf"
+      download
+      class="flex items-center gap-1 text-xs font-bold text-[var(--color-page-bg)] bg-[var(--color-page-accent)] px-2.5 py-1.5 rounded hover:opacity-90 transition-opacity"
+    >
+      📥 {$t.competentBlindnessBook.ui.downloadPdfEn}
+    </a>
+    <a
+      href="/books/Kompetent_Blindhet.pdf"
+      download
+      class="flex items-center gap-1 text-xs font-bold border border-[var(--color-page-accent)] text-[var(--color-page-accent)] px-2.5 py-1.5 rounded hover:bg-[var(--color-card-bg)] transition-colors"
+    >
+      📥 {$t.competentBlindnessBook.ui.downloadPdfSv}
+    </a>
+  </div>
+
   <!-- Sidebar -->
   <aside
     class="hidden lg:block w-72 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto border-r border-[var(--color-separator)]"
@@ -241,7 +260,14 @@
 
     <article
       class="prose prose-lg max-w-none"
-      style="--tw-prose-body: var(--color-page-text); --tw-prose-bold: var(--color-page-text);"
+      style="
+        --tw-prose-headings: var(--color-page-text);
+        --tw-prose-body: var(--color-page-text);
+        --tw-prose-bold: var(--color-page-text);
+        --tw-prose-links: var(--color-page-accent);
+        --tw-prose-quotes: var(--color-page-text);
+        --tw-prose-code: var(--color-page-text);
+      "
     >
       <svelte:component this={ActiveComponent} />
     </article>
