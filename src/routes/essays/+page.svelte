@@ -271,7 +271,7 @@
    // --- Priority 6: Social Fabric ---
    {
      key: 'architectureOfMisunderstanding',
-     url: '/essays/the-architecture-of-misunderstanding',
+     url: '/essays/architecture-of-misunderstanding',
      icon: '🗣️',
      category: 'Social Fabric',
      categories: ['Social Fabric', 'Governance', 'Consciousness'],

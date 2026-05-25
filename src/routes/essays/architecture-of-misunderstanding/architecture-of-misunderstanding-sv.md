@@ -1,9 +1,3 @@
-# Missförståndets arkitektur
-
-## Varför sättet vi talar med varandra på förstör den signal vi mest behöver sända
-
----
-
 Vi har byggt en civilisation vars institutioner inte kan uppfatta de hot som så småningom kommer att förgöra dem. Det är, i en mening, argumentet i det arbete som denna essä bygger vidare på. Sjukhus som mäter genomströmning kan inte se klinisk komplexitet. Centralbanker som riktar in sig på inflation kan inte se fördelningsmässigt lidande. Domstolar som är kalibrerade för enskilda tvister kan inte se de systemiska konsekvenserna av sina ackumulerade domslut. I varje fall är misslyckandet inte moraliskt utan arkitektoniskt: observationskanalen komprimerar en högdimensionell verklighet till en lågdimensionell signal, och de dimensioner som faller utanför kanalen ackumuleras som externaliteter tills de framtvingar en kris.
 
 Samma maskineri verkar inom det område där det får störst konsekvenser och minst erkänns: samtalen genom vilka människor försöker förstå varandra.

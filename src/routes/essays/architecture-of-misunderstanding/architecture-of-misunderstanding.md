@@ -1,9 +1,3 @@
-# The Architecture of Misunderstanding
-
-## Why the way we talk to each other destroys the signal we most need to transmit
-
----
-
 We have built a civilisation whose institutions cannot perceive the threats that will eventually destroy them. That, in a sentence, is the argument of the body of work this essay extends. Hospitals that measure throughput cannot see clinical complexity. Central banks that target inflation cannot see distributional suffering. Courts calibrated to individual disputes cannot see the systemic consequences of their accumulated rulings. In every case, the failure is not moral but architectural: the observation channel compresses a high-dimensional reality into a low-dimensional signal, and the dimensions that fall outside the channel accumulate as externalities until they force a crisis.
 
 The same machinery operates in the domain where it is most consequential and least acknowledged: the conversations through which human beings attempt to understand each other.
