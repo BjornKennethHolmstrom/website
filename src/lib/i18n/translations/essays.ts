@@ -272,6 +272,14 @@ export const essaysTranslations = {
        published: 'April 2026',
        readTime: '12 min read',
        tags: ['AI', 'Systems Thinking', 'Economics', 'Governance', 'Optimization', 'Ashby\'s Law']
+     },
+     architectureOfMisunderstanding: {
+       title: 'The Architecture of Misunderstanding',
+       subtitle: 'Why the way we talk to each other destroys the signal we most need to transmit',
+       desc: 'Applying the governance-as-engineering framework to human conversation. The same machinery of blindness that causes institutions to fail—the Variety Gap, the Legibility Compression Principle, the immune system—operates in how we perceive each other. What the citizens\' assembly knows that the online forum destroys.',
+       published: 'May 2026',
+       readTime: '14 min read',
+       tags: ['Conversation', 'Governance', 'Systems Thinking', 'Social Fabric', 'Adaptive Coherence']
      }
     }
 		}
@@ -548,6 +556,14 @@ export const essaysTranslations = {
        published: 'april 2026',
        readTime: '12 min läsning',
        tags: ['AI', 'Systemtänkande', 'Ekonomi', 'Styrning', 'Optimering', 'Ashbys lag']
+     },
+     architectureOfMisunderstanding: {
+       title: 'Missförståndets arkitektur',
+       subtitle: 'Varför sättet vi pratar med varandra förstör den signal vi mest behöver överföra',
+       desc: 'En tillämpning av governance-as-engineering-ramverket på mänskliga samtal. Samma blindhetsmaskineri som får institutioner att misslyckas—varietetsgapet, läsbarhetskomprimeringsprincipen, immunsystemet—verkar i hur vi uppfattar varandra. Vad medborgarförsamlingen vet som onlineforumet förstör.',
+       published: 'maj 2026',
+       readTime: '14 min läsning',
+       tags: ['Samtal', 'Styrning', 'Systemtänkande', 'Social väv', 'Adaptiv koherens']
      }
    }
 		}
