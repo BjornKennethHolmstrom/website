@@ -89,6 +89,8 @@ export const coreTranslations = {
   reportsCourtsTagline: 'Why the most procedurally sophisticated institutions cannot perceive the systems they govern.',
   reportsCapstoneTitle: 'Capstone: Coordination Failure as Structural Condition',
   reportsCapstoneTagline: 'A unified diagnostic framework from twenty‑one governance analyses — why competent institutions become blind to their own fragility.',
+  reportsStandardSettingTitle: 'Standard‑Setting: The Protocol‑Layer Variety Gap',
+  reportsStandardSettingTagline: 'Why the institutions that define what others can see are themselves structurally blind.',
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
@@ -403,6 +405,8 @@ export const coreTranslations = {
   reportsCourtsTagline: 'Varför de mest procedurmässigt sofistikerade institutionerna inte kan uppfatta de system de styr.',
   reportsCapstoneTitle: 'Sammanfattning: Samordningsmisslyckande som strukturellt tillstånd',
   reportsCapstoneTagline: 'Ett enhetligt diagnostiskt ramverk från tjugoen styrningsanalyser — varför kompetenta institutioner blir blinda för sin egen skörhet.',
+  reportsStandardSettingTitle: 'Standardisering: Varietetsgapet vid protokollagret',
+  reportsStandardSettingTagline: 'Varför institutionerna som bestämmer vad andra kan se själva är strukturellt blinda.',
 
   geCarouselButton: 'Läs artikeln ',
   geCarouselBadge: 'Utvald forskning',

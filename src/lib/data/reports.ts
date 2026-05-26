@@ -20,6 +20,26 @@ export interface Report {
 }
 
 export const reportsData: Report[] = [
+ {
+	 id: 'standard-setting-variety-gap',
+	 key: 'standardSettingVarietyGap',
+	 emoji: '📐',
+	 category: 'organization',
+	 year: 2026,
+	 pages: 71,
+	 readTime: {
+		 en: '70–85 min',
+		 sv: '70–85 min'
+	 },
+	 version: '1.0',
+	 releaseDate: '2026-05-26',
+	 coverImage: '/images/reports/standard-setting-variety-gap/cover.png',
+	 readOnlinePath: '/reports/standard-setting-variety-gap',
+	 pdfPath: {
+		 en: '/reports/standard-setting-variety-gap-en.pdf'
+	 },
+	 readOnlineExternal: false
+ },
 	{
 		id: 'courts-adjudication-governance-variety-gap',
 		key: 'courtsAdjudicationGovernanceVarietyGap',

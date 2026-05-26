@@ -136,6 +136,12 @@
 	      badge: 'CAPSTONE'
       },
       {
+	      key: 'reportsStandardSetting',
+	      emoji: '📐',
+	      url: '/reports/standard-setting-variety-gap',
+	      badge: 'NEW'
+      },
+      {
 	      key: 'reportsAiGovernance',
 	      emoji: '🤖',
 	      url: '/reports/ai-coherence-velocity-trap',

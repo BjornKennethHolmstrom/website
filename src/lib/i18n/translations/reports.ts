@@ -128,6 +128,11 @@ export const reportsTranslations = {
 	   title: 'Coordination Failure as Structural Condition: Why Competent Institutions Become Blind to Their Own Fragility',
 	   description:
 		   'The capstone synthesis of twenty‑one governance analyses. A unified diagnostic framework revealing the eight structural primitives, the Variety Gap, Resolution Lock‑In, and the canonical architecture of governance failure — with design principles for building institutions that can perceive what they currently exclude.'
+   },
+   standardSettingVarietyGap: {
+	   title: 'The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind',
+	   description:
+		   'Standard‑setting bodies are the protocol layer of global governance — yet their observation architecture systematically excludes the natural, human, and social capital that determines long‑term viability. This report diagnoses the Standard‑Setting Variety Gap and proposes a Multi‑Capital Materiality Audit and Integrated Reporting Sandbox as the concrete first step toward requisite standard‑setting architecture.'
    }
 		}
 	},
@@ -258,6 +263,11 @@ export const reportsTranslations = {
 	   title: 'Samordningsmisslyckande som strukturellt tillstånd: Varför kompetenta institutioner blir blinda för sin egen skörhet',
 	   description:
 		   'Den sammanfattande syntesen av tjugoen styrningsanalyser. Ett enhetligt diagnostiskt ramverk som blottlägger de åtta strukturella primitiverna, varietetsgapet, upplösningslåsningen och den kanoniska arkitekturen för styrningsmisslyckande — med designprinciper för att bygga institutioner som kan uppfatta vad de för närvarande utesluter.'
+   },
+   standardSettingVarietyGap: {
+	   title: 'Standardiseringsorganens varietetsgap: Varför institutionerna som bestämmer vad andra kan se själva är strukturellt blinda',
+	   description:
+		   'Standardiseringsorgan utgör det globala styrets protokollager — men deras observationsarkitektur exkluderar systematiskt det naturliga, mänskliga och sociala kapital som bestämmer långsiktig livskraft. Rapporten diagnostiserar ett standardiserings‑varietetsgap och föreslår en multikapital‑revision och en integrerad rapporteringssandlåda som ett första steg mot en ändamålsenlig standardiseringsarkitektur.'
    }
 		}
 	}
