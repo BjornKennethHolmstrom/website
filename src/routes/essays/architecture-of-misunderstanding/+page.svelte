@@ -246,27 +246,6 @@
 					</div>
 				</div>
 			</a>
-			<a
-				href="/reports/ireland-boundary-deficit"
-				class="block p-4 rounded-lg transition-colors"
-				style="background-color: var(--color-separator);"
-			>
-				<div class="flex items-center gap-3">
-					<span class="text-3xl">🇮🇪</span>
-					<div>
-						<h4 class="font-bold" style="color: var(--color-page-text);">
-							{$language === 'en' 
-								? "Ireland: The Boundary Deficit" 
-								: "Irland: Gränsdragningsunderskottet"}
-						</h4>
-						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
-							{$language === 'en' 
-								? 'How Ireland\'s citizens\' assemblies resolved what adversarial politics could not' 
-								: 'Hur Irlands medborgarassembly löste vad den adversativa politiken inte kunde'}
-						</p>
-					</div>
-				</div>
-			</a>
 		</div>
 	</nav>
 
