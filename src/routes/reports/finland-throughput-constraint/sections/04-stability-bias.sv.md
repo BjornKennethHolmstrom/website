@@ -24,7 +24,29 @@ Paradoxen är skarp. Finland kan inte överge konsensus utan att förlora den ti
 
 ---
 
-### 4.3 Institutionell tröghet – och vem som gynnas av den
+### 4.3 Populismens absorptionscykel
+
+År 2023 nådde Sannfinländarna sitt bästa valresultat i historien, slutade knappt tvåa och gick in i regeringen med sju ministerposter, däribland finansministeriet. Två år senare har stödet halverats. I kommunalvalet i april 2026 fick partiet 7,6 procent av rösterna och förlorade mer än hälften av sina mandat. I opinionsmätningarna ligger det nu nära femte plats, bakom Socialdemokraterna, Samlingspartiet, Centern och Vänsterförbundet. Den populistiska utmaning som såg ut att omforma finsk politik har neutraliserats inom en enda mandatperiod.
+
+Standardförklaringen – åtstramning som slår mot den egna väljarbasen, en finansminister som glatt poserar med saxar, arbetsmarknadsreformer som alienerar fackanslutna, rasistskandaler, ekonomisk stagnation – är riktig så långt den sträcker sig. Men den missar den strukturella dynamik som gjorde detta utfall förutsägbart från det ögonblick Sannfinländarna gick in i regeringen. Partiet absorberades av samma stabilitetsbias som producerar genomströmningsrestriktionen. Dess kollaps är inte ett bevis på att populismen misslyckades i Finland. Den är ett bevis på att den finländska styrningsarkitekturen är så effektiv på att upprätthålla jämvikt att den kan neutralisera även den mest betydande politiska utmaningen mot sina grundpremisser inom tjugofyra månader.
+
+Mekanismen är precis. Sannfinländarna steg i framträdande genom att lova vad populistpartier lovar överallt: att bryta konsensus, störa etablissemanget och styra om statens resurser till de människor som huvudfåran hade glömt. Deras bas – industriarbetare, arbetslösa, lägre tjänstemän – röstade för omvandling. Väl inne i koalitionsregeringen mötte partiet en arkitektur vars observationskanal är kalibrerad mot finanspolitiska regler, skuldkvot i förhållande till BNP och bevarandet av Finlands kreditbetyg. ”Arbetarklassintressen”, som en dimension som spelar roll, är osynliga för den kanalen. Finansministern som kampanjade för att försvara vanliga arbetare blev det offentliga ansiktet för nedskärningar i sjukvården, socialskyddet, arbetslöshetsersättningen och bostadsstödet. Partiet som lovade att störa etablissemanget blev partiet som genomförde etablissemangets finanspolitiska program.
+
+Detta är inte i första hand en berättelse om individuellt hyckleri, även om den ton döva saxposeringen vittnar om en dövhet som är ett eget fenomen. Det är en berättelse om resolutionsinlåsning tillämpad på ett politiskt parti. Sannfinländarna kunde inte styra om den finska staten i riktning mot arbetarklassintressen eftersom statens beslutsarkitektur – de finanspolitiska reglerna, EU:s budgetrestriktioner, regeringsprogrammet med det företagarvänliga Samlingspartiet – var kalibrerad till en resolution där dessa intressen inte registreras. Partiets ledning blev, när den väl satt vid regeringsbordet, inlåst vid den resolutionen. Arkitekturen behövde inte besegra Sannfinländarna. Den behövde bara göra det till det enda tillgängliga alternativet att regera inifrån arkitekturen.
+
+Immunsystemets svar var inte anfall utan absorption. Partiet gavs ministerposter, budgetar och maktens yttre kännetecken. Det integrerades i regeringens kollektiva ansvar. Och sedan gjorde arkitekturen det den alltid gör: den behandlade beslut genom de befintliga kanalerna, tillämpade de befintliga restriktionerna och producerade utfall som var strukturellt kontinuerliga med det som kommit före – oavsett vilket parti som innehade vilken portfölj. Sannfinländarnas närvaro i regeringen signalerade att systemet hade hört missnöjet, att utomstående hade tagits in, att förändring var på gång. Men signalen absorberades utan substans. Partiet utförde styre. Det förändrade det inte.
+
+Väljarna märkte det. Den bas som röstat för omstörtning såg kontinuitet. Den fackliga flygeln mötte konfrontation snarare än skydd. De arbetslösa och arbetarklassen såg sina bidrag skäras ned av det parti som lovat försvara dem. Stödraset – från andra plats till femte, från regering till valkatastrof – är immunsystemet som fullbordar sitt arbete. Den populistiska utmaningen har neutraliserats. Arkitekturen består.
+
+Återhämtningen för mitten–vänstern är systemets återgång till jämvikt. Socialdemokraterna, Vänsterförbundet och Centern är alla på uppgång i mätningarna. Detta är ingen tillfällighet. Samma stabilitetsbias som förhindrar snabb omvandling förhindrar också utdragen störning. När ett regeringsparti kollapsar flyter stödet tillbaka till de etablerade alternativen – de partier som visat kompetens inom den befintliga arkitekturen, som inte hotar dess grundpremisser, som kan litas till att regera utan att bryta konsensus. Finland vinglar inte. Det korrigerar.
+
+Implikationerna för genomströmningsrestriktionen är direkta och obekväma. Om den finländska styrningsarkitekturen kan absorbera en populistisk utmaning och återgå till jämvikt inom en mandatperiod, kan den också absorbera trycket för den omvandlingshastighet som Finlands demografiska, ekologiska och geopolitiska realiteter kräver. Samma stabilitetsbias som avfärdade Sannfinländarna är samma stabilitetsbias som bromsar den gröna omställningen, förhalar immigrationsreformen och förhindrar välfärdsstatens anpassning till ett åldrande samhälle. Arkitekturen är stabil. Frågan är om den är tillräckligt stabil för att överleva de tryck som dess egen stabilitet hindrar den från att hantera.
+
+Sannfinländarepisoden är därför inte bara en politisk historia. Den är en strukturell demonstration. Immunsystemet fungerar. Genomströmningsrestriktionen är ingen hypotes. Den är en operativ verklighet, synlig i opinionsdata och valresultat, och den kommer att fortsätta att verka tills arkitekturen omformas för att tillåta den hastighet som trycken på Finland kräver. Populisterna absorberades. De underliggande tryck som gav upphov till dem kvarstår – och de kommer att finna nya uttryck om arkitekturen inte kan bearbeta dem snabbare än den för närvarande gör.
+
+---
+
+### 4.4 Institutionell tröghet – och vem som gynnas av den
 
 Under den kulturella preferensen för konsensus ligger ett lager av institutionell tröghet som är mer specifikt och mer motståndskraftigt mot förändring. Det består av de aktörer som har strukturella intressen i den nuvarande fördelningen av offentliga resurser, och som kommer att försvara dessa intressen mot varje mekanism – hur väldesignad, hur nödvändig den än är – som hotar dem.
 
@@ -40,7 +62,7 @@ Den pragmatiska inramningen är avgörande. Solnedgång är inte åtstramning un
 
 ---
 
-### 4.4 Offentlig tillit som ett tveeggat svärd
+### 4.5 Offentlig tillit som ett tveeggat svärd
 
 Det djupaste lagret av stabilitetsbiasen är samma lager som gör Finland styrbart: de exceptionellt höga nivåerna av offentlig tillit som bär upp systemet. Tillit är den finländska styrningens osynliga infrastruktur. Det möjliggör kollektivt beslutsfattande med minimal friktion. Det minskar regleringens efterlevnadskostnader. Det tillåter det politiska systemet att fokusera på sakfrågor snarare än på skådespel. Det är, enligt varje måttstock, en djupgående demokratisk tillgång.
 
@@ -52,7 +74,7 @@ Den omställningsarkitektur som denna rapport föreslår måste navigera denna p
 
 ---
 
-### 4.5 Den narrativa strategin
+### 4.6 Den narrativa strategin
 
 Givet den stabilitetsbias som beskrivits ovan är sättet på vilket hastighetsagendan *omtalas* inte perifert för dess framgång. Det är centralt.
 

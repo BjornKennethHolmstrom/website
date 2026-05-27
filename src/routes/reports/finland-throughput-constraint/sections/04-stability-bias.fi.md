@@ -24,7 +24,29 @@ Paradoksi on polttava. Suomi ei voi hylätä konsensusta menettämättä sitä l
 
 ---
 
-### 4.3 Institutionaalinen inertia – ja kuka siitä hyötyy
+### 4.3 Populismin absorption sykli
+
+Vuonna 2023 perussuomalaiset saavutti historiansa parhaan vaalituloksen, jäi täpärästi toiseksi ja pääsi hallitukseen seitsemällä ministerinsalkulla, mukaan lukien valtiovarainministeriön. Kaksi vuotta myöhemmin puolueen kannatus on puolittunut. Huhtikuun 2026 kuntavaaleissa se sai 7,6 prosenttia äänistä ja menetti yli puolet valtuustopaikoistaan. Mielipidemittauksissa se on nyt lähellä viidettä sijaa, takanaan SDP, kokoomus, keskusta ja vasemmistoliitto. Populistinen haaste, joka näytti olevan muokkaamassa Suomen politiikkaa uusiksi, on neutraloitu yhdessä vaalikaudessa.
+
+Tavanomainen selitys – säästötoimet, jotka iskivät puolueen omaan kannattajakuntaan, valtiovarainministeri saksien kanssa iloisesti poseeraamassa, ammattiyhdistysliikkeen kannattajia vieraannuttaneet työmarkkinauudistukset, rasismikohut, talouden pysähtyneisyys – pitää sinänsä paikkansa. Se kuitenkin sivuuttaa rakenteellisen dynamiikan, joka teki tästä lopputuloksesta ennustettavan heti, kun perussuomalaiset astui hallitukseen. Puolue absorboitiin samaan vakausvinoumaan, joka tuottaa läpivirtausrajoitteen. Sen romahdus ei ole todiste populismin epäonnistumisesta Suomessa. Se on todiste siitä, että suomalainen hallinta-arkkitehtuuri on niin tehokas ylläpitämään tasapainoa, että se pystyy neutraloimaan kaikkein merkittävimmänkin lähtökohtiaan haastavan poliittisen liikkeen kahdessakymmenessä neljässä kuukaudessa.
+
+Mekanismi on täsmällinen. Perussuomalaiset nousi näkyvyyteen lupaamalla samaa kuin populistipuolueet kaikkialla: rikkoa konsensus, horjuttaa eliittiä ja ohjata valtion resurssit niille, jotka valtavirta on unohtanut. Sen kannattajapohja – teollisuustyöntekijät, työttömät, alemmat toimihenkilöt – äänesti muutoksen puolesta. Astuttuaan hallituskoalitioon puolue kohtasi arkkitehtuurin, jonka havaintokanava on kalibroitu finanssipolitiikan sääntöihin, velka-BKT-suhteeseen ja Suomen luottoluokituksen säilyttämiseen. ”Työväen edut” ulottuvuutena, jolla on väliä, ovat tälle kanavalle näkymättömiä. Valtiovarainministeristä, joka kampanjoi tavallisten työntekijöiden puolustamiseksi, tuli terveydenhuollon, sosiaaliturvan, työttömyysetuuden ja asumistuen leikkausten julkiset kasvot. Puolueesta, joka lupasi horjuttaa eliittiä, tuli puolue, joka toteutti eliitin finanssipoliittista ohjelmaa.
+
+Tämä ei ole ensisijaisesti tarina yksilöiden tekopyhyydestä, vaikka sävykuuro saksilla poseeraaminen kielii kuuroudesta, joka on oma ilmiönsä. Se on tarina resoluutiolukittumisesta, joka soveltuu poliittiseen puolueeseen. Perussuomalaiset ei kyennyt suuntaamaan Suomen valtiota työväenluokan etujen mukaisesti, koska valtion päätöksentekoarkkitehtuuri – finanssipolitiikan säännöt, EU:n budjettirajoitukset, hallitusohjelma liike-elämämyönteisen kokoomuksen kanssa – oli kalibroitu resoluutiolle, johon nuo edut eivät tallennu. Puolueen johto, kun se oli istunut hallituksen pöydässä, lukittui tuohon resoluutioon. Arkkitehtuurin ei tarvinnut voittaa perussuomalaisia. Sen tarvitsi ainoastaan tehdä arkkitehtuurin sisällä hallitsemisesta ainoa mahdollinen vaihtoehto.
+
+Immuunijärjestelmän vastaus ei ollut hyökkäys vaan absorptio. Puolueelle annettiin ministeriöt, budjetit ja vallan ulkoiset tunnusmerkit. Se integroitiin hallituksen kollektiiviseen vastuuseen. Ja sitten arkkitehtuuri teki sen, minkä se aina tekee: se käsitteli päätökset olemassa olevien kanavien kautta, sovelsi olemassa olevia rajoitteita ja tuotti lopputuloksia, jotka olivat rakenteellisesti jatkumoa aiemmalle – riippumatta siitä, millä puolueella oli mikäkin salkku. Perussuomalaisten läsnäolo hallituksessa viesti, että järjestelmä oli kuullut tyytymättömyyden, että ulkopuoliset oli tuotu sisäpuolelle, että muutos oli käynnissä. Mutta signaali absorboitiin ilman substanssia. Puolue suoritti hallitsemista. Se ei muuttanut sitä.
+
+Äänestäjät huomasivat. Perusjoukko, joka oli äänestänyt murroksen puolesta, näki jatkuvuutta. Ammattiyhdistyssiipi kohtasi vastakkainasettelua eikä suojelua. Työttömät ja työväenluokka näkivät etuuksiensa pienenevän sen puolueen toimesta, joka oli luvannut puolustaa heitä. Kannatuksen romahtaminen – kakkossijalta viidenneksi, hallituksesta vaalikatastrofiin – on immuunijärjestelmä viemässä työnsä loppuun. Populistinen haaste on neutraloitu. Arkkitehtuuri säilyy.
+
+Vasemmisto-oikeisto -akselin keskustavasemmiston elpyminen on järjestelmän palaamista tasapainotilaansa. SDP, vasemmistoliitto ja keskusta ovat kaikki nousussa mielipidemittauksissa. Tämä ei ole sattumaa. Sama vakausvinouma, joka estää nopean muutoksen, estää myös pitkittyneen häiriön. Kun hallituspuolue romahtaa, kannatus virtaa takaisin vakiintuneisiin vaihtoehtoihin – puolueisiin, jotka ovat osoittaneet pätevyytensä olemassa olevan arkkitehtuurin puitteissa, jotka eivät uhkaa sen perustavia lähtökohtia ja joiden voi luottaa hallitsevan konsensusta rikkomatta. Suomi ei hoipertele. Se korjaa.
+
+Vaikutukset läpivirtausrajoitteeseen ovat suorat ja epämukavat. Jos suomalainen hallinta-arkkitehtuuri pystyy absorboimaan populistisen haasteen ja palaamaan tasapainoon yhden vaalikauden aikana, se pystyy absorboimaan myös paineen sitä muutosnopeutta kohtaan, jota Suomen demografiset, ekologiset ja geopoliittiset realiteetit edellyttävät. Sama vakausvinouma, joka passitti perussuomalaiset, on sama vakausvinouma, joka hidastaa vihreää siirtymää, lykkää maahanmuuttouudistusta ja estää hyvinvointivaltion sopeuttamisen ikääntyvään yhteiskuntaan. Arkkitehtuuri on vakaa. Kysymys on, onko se riittävän vakaa selviytyäkseen niistä paineista, joita sen oma vakaus estää sitä käsittelemästä.
+
+Perussuomalaisten episodi ei siksi ole pelkkä poliittinen tarina. Se on rakenteellinen demonstraatio. Immuunijärjestelmä toimii. Läpivirtausrajoite ei ole hypoteesi. Se on toiminnallinen todellisuus, joka näkyy mielipidemittauksissa ja vaalituloksissa, ja se toimii edelleen, kunnes arkkitehtuuri suunnitellaan uudelleen sallimaan se nopeus, jota Suomeen kohdistuvat paineet vaativat. Populistit absorboitiin. Taustalla olevat paineet, jotka nostivat ne esiin, säilyvät – ja ne löytävät uuden ilmaisun, ellei arkkitehtuuri pysty käsittelemään niitä nykyistä nopeammin.
+
+---
+
+### 4.4 Institutionaalinen inertia – ja kuka siitä hyötyy
 
 Kulttuurisen konsensuspreferenssin alla on institutionaalisen inertian kerros, joka on täsmällisempi ja muutosta vastustavampi. Se koostuu toimijoista, joilla on rakenteellisia intressejä nykyisessä julkisten resurssien kohdentamisessa ja jotka tulevat puolustamaan noita etuja mitä tahansa mekanismia – olipa se kuinka hyvin suunniteltu, kuinka välttämätön tahansa – vastaan, joka niitä uhkaa.
 
@@ -40,7 +62,7 @@ Realistinen kehystys on olennainen. Alasajo ei ole leikkauspolitiikkaa toisella 
 
 ---
 
-### 4.4 Julkinen luottamus kaksiteräisenä miekkana
+### 4.5 Julkinen luottamus kaksiteräisenä miekkana
 
 Vakausvinouman syvin kerros on sama kerros, joka tekee Suomesta hallittavan: poikkeuksellisen korkeat julkisen luottamuksen tasot, jotka ylläpitävät järjestelmää. Luottamus on suomalaisen hallinnon näkymätön infrastruktuuri. Se mahdollistaa kollektiivisen päätöksenteon minimaalisella kitkalla. Se vähentää sääntelyn valvontakustannuksia. Se sallii poliittisen järjestelmän keskittyä sisältöön spektaakkelin sijaan. Se on millä tahansa mittarilla syvällinen demokraattinen voimavara.
 
@@ -52,7 +74,7 @@ Siirtymäarkkitehtuurin, jota tämä raportti ehdottaa, on navigoitava tämä pa
 
 ---
 
-### 4.5 Kerronnallinen strategia
+### 4.6 Kerronnallinen strategia
 
 Ottaen huomioon edellä kuvatun vakausvinouman tapa, jolla nopeusagendasta *puhutaan*, ei ole sen menestykselle toisarvoista. Se on keskeistä.
 

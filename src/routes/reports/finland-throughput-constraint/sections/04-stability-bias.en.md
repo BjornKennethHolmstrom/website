@@ -24,7 +24,29 @@ The paradox is acute. Finland cannot abandon consensus without losing the trust 
 
 ---
 
-### 4.3 Institutional Inertia—and Who Benefits from It
+### 4.3 The Populist Absorption Cycle
+
+In 2023, the Finns Party secured its best electoral result in history, coming a close second and entering government with seven ministerial portfolios, including the finance ministry. Two years later, its support has halved. At the April 2026 municipal elections, it received 7.6 percent of the vote and lost more than half its seats. Polling now places it near fifth place, behind the Social Democrats, the National Coalition, the Centre Party, and the Left Alliance. The populist challenge that seemed poised to reshape Finnish politics has been neutralised within a single parliamentary term.
+
+The standard explanation—austerity punishing the party's own base, a finance minister posing gleefully with scissors, labour reforms alienating union supporters, racism scandals, economic stagnation—is accurate as far as it goes. But it misses the structural dynamic that made this outcome predictable from the moment the Finns Party entered government. The party was absorbed by the same Stability Bias that produces the Throughput Constraint. Its collapse is not evidence that populism failed in Finland. It is evidence that the Finnish governance architecture is so effective at maintaining equilibrium that it can neutralise even the most significant political challenge to its premises within twenty‑four months.
+
+The mechanism is precise. The Finns Party rose to prominence by promising what populist parties everywhere promise: to break the consensus, disrupt the establishment, and redirect the state's resources toward the people the mainstream had forgotten. Its base—industrial workers, the unemployed, lower‑level white‑collar employees—voted for transformation. Once inside the coalition government, the party encountered an architecture whose observation channel is calibrated to fiscal rules, debt‑to‑GDP ratios, and the preservation of Finland's credit rating. "Working‑class interests," as a dimension that matters, are invisible to that channel. The finance minister who campaigned on defending ordinary workers became the public face of cuts to healthcare, social security, unemployment benefits, and housing support. The party that promised to disrupt the establishment became the party that implemented the establishment's fiscal programme.
+
+This is not primarily a story about individual hypocrisy, though the tone‑deaf scissor‑posing suggests a tin ear that is its own phenomenon. It is a story about Resolution Lock‑In applied to a political party. The Finns Party could not redirect the Finnish state toward working‑class interests because the state's decision‑making architecture—the fiscal rules, the EU budget constraints, the coalition agreement with the pro‑business NCP—was calibrated to a resolution that those interests do not register. The party's leadership, once seated at the cabinet table, became locked to that resolution. The architecture did not need to defeat the Finns Party. It simply needed to make governing within the architecture the only available option.
+
+The immune system's response was not attack but absorption. The party was given ministries, budgets, and the trappings of power. It was integrated into the coalition's collective responsibility. And then the architecture did what it always does: it processed decisions through the existing channels, applied the existing constraints, and produced outcomes that were structurally continuous with what came before—regardless of which party held which portfolio. The Finns Party's presence in government signalled that the system had heard the discontent, that the outsiders had been brought inside, that change was underway. But the signal was absorbed without the substance. The party performed governance. It did not transform it.
+
+The voters noticed. The base that had voted for disruption saw continuity. The trade union wing saw confrontation rather than protection. The unemployed and the working class saw their benefits cut by the party that had promised to defend them. The collapse in support—from second place to fifth, from government to electoral catastrophe—is the immune system completing its work. The populist challenge has been neutralised. The architecture survives.
+
+The rebound of the centre‑left is the system returning to its equilibrium. The Social Democrats, the Left Alliance, and the Centre Party are all rising in the polls. This is not a coincidence. The same Stability Bias that prevents rapid transformation also prevents prolonged disruption. When a governing party collapses, support flows back to the established alternatives—the parties that have demonstrated competence within the existing architecture, that do not threaten its fundamental premises, that can be trusted to govern without breaking the consensus. Finland does not lurch. It corrects.
+
+The implications for the Throughput Constraint are direct and uncomfortable. If the Finnish governance architecture can absorb a populist challenge and return to equilibrium within a single parliamentary term, it can also absorb the pressure for the transformational velocity that Finland's demographic, ecological, and geopolitical realities demand. The Stability Bias that dispatched the Finns Party is the same Stability Bias that slows the green transition, delays immigration reform, and prevents the welfare state's adaptation to an aging society. The architecture is stable. The question is whether it is stable enough to survive the pressures that its own stability prevents it from addressing.
+
+The Finns Party episode is therefore not merely a political story. It is a structural demonstration. The immune system works. The Throughput Constraint is not a hypothesis. It is an operational reality, visible in the polling data and the election results, and it will continue to operate until the architecture is redesigned to allow the velocity that the pressures on Finland demand. The populists were absorbed. The underlying pressures that gave rise to them remain—and they will find new expression if the architecture cannot process them faster than it currently can.
+
+---
+
+### 4.4 Institutional Inertia—and Who Benefits from It
 
 Beneath the cultural preference for consensus lies a layer of institutional inertia that is more specific and more resistant to change. It consists of the actors who have structural interests in the current allocation of public resources, and who will defend those interests against any mechanism—however well‑designed, however necessary—that threatens them.
 
@@ -40,7 +62,7 @@ The pragmatic framing is essential. Sunsetting is not austerity under another na
 
 ---
 
-### 4.4 Public Trust as a Double‑Edged Sword
+### 4.5 Public Trust as a Double‑Edged Sword
 
 The deepest layer of the Stability Bias is the same layer that makes Finland governable: the extraordinarily high levels of public trust that sustain the system. Trust is the invisible infrastructure of Finnish governance. It enables collective decision‑making with minimal friction. It reduces the enforcement costs of regulation. It allows the political system to focus on substance rather than spectacle. It is, by any measure, a profound democratic asset.
 
@@ -52,7 +74,7 @@ The transition architecture this report proposes must navigate this paradox with
 
 ---
 
-### 4.5 The Narrative Strategy
+### 4.6 The Narrative Strategy
 
 Given the Stability Bias described above, the way the velocity agenda is *talked about* is not peripheral to its success. It is central.
 
