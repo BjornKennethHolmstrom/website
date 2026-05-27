@@ -76,6 +76,50 @@
     </div>
   </section>
 
+  <!-- Interactive Explorables -->
+  <section class="insights-section">
+    <div class="content-wrap">
+      <h2 class="section-heading">{currentLang === 'sv' ? 'Interaktiva demonstrationer' : 'Interactive Explorables'}</h2>
+      <div class="insight-cards">
+        <a href="/explorables/goodhart-collapse" class="insight-card hover:shadow-md transition-shadow">
+          <div class="insight-icon" style="background: rgba(245,158,11,0.12); color: #f59e0b;">📉</div>
+          <div>
+            <h3 class="insight-heading">{currentLang === 'sv' ? 'Goodhart-kollapsen' : 'The Goodhart Collapse'}</h3>
+            <p class="insight-body">{currentLang === 'sv' ? 'När ett mått blir ett mål upphör det att vara ett bra mått. Optimera en synlig variabel medan en dold dimension kollapsar.' : 'When a measure becomes a target, it ceases to be a good measure. Optimize a visible variable while a hidden dimension collapses.'}</p>
+          </div>
+        </a>
+        <a href="/explorables/averaging-problem" class="insight-card hover:shadow-md transition-shadow">
+          <div class="insight-icon" style="background: rgba(59,130,246,0.12); color: #3b82f6;">📊</div>
+          <div>
+            <h3 class="insight-heading">{currentLang === 'sv' ? 'Medelvärdesproblemet' : 'The Averaging Problem'}</h3>
+            <p class="insight-body">{currentLang === 'sv' ? 'En central regulator ser bara medelvärdet — och missar den lokala krisen. Friska noder störs av enhetlig politik.' : 'A central controller sees only the mean — and misses the local crisis. Healthy nodes are disrupted by uniform policy.'}</p>
+          </div>
+        </a>
+        <a href="/explorables/immune-absorption" class="insight-card hover:shadow-md transition-shadow">
+          <div class="insight-icon" style="background: rgba(220,38,38,0.1); color: #dc2626;">🛡️</div>
+          <div>
+            <h3 class="insight-heading">{currentLang === 'sv' ? 'Immunabsorptioncykeln' : 'The Immune Absorption Cycle'}</h3>
+            <p class="insight-body">{currentLang === 'sv' ? 'Se hur ett reformförslag absorberas i varje institutionellt lager — och framträder som symbolisk förändring utan substans.' : 'Watch a reform proposal get absorbed at each institutional layer — emerging as symbolic change without substance.'}</p>
+          </div>
+        </a>
+        <a href="/explorables/coordination-failure-tax" class="insight-card hover:shadow-md transition-shadow">
+          <div class="insight-icon" style="background: rgba(139,92,246,0.1); color: #7c3aed;">🧮</div>
+          <div>
+            <h3 class="insight-heading">{currentLang === 'sv' ? 'Samordningsmisslyckandets skatt' : 'The Coordination Failure Tax'}</h3>
+            <p class="insight-body">{currentLang === 'sv' ? 'Arkitektoniska misslyckanden adderas inte — de multipliceras. Se hur fyra samtidiga fel kan reducera kapaciteten till 6 %.' : 'Architectural failures don\'t add — they multiply. See how four simultaneous failures can reduce capacity to 6%.'}</p>
+          </div>
+        </a>
+        <a href="/explorables/bypass-trap" class="insight-card hover:shadow-md transition-shadow">
+          <div class="insight-icon" style="background: rgba(34,197,94,0.12); color: #22c55e;">🔄</div>
+          <div>
+            <h3 class="insight-heading">{currentLang === 'sv' ? 'Förbikopplingsfällan' : 'The Bypass Trap'}</h3>
+            <p class="insight-body">{currentLang === 'sv' ? 'När en workaround lyckas försvinner trycket att reformera kärnan — om den inte har ett solnedgångsvillkor.' : 'When a workaround succeeds, pressure to reform the core vanishes — unless it has a sunset condition.'}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Technical note -->
   <section class="technical-section">
     <div class="content-wrap">
@@ -224,6 +268,11 @@
     color: var(--color-card-text);
     opacity: 0.75;
     margin: 0;
+  }
+
+  .insight-card {
+    text-decoration: none;
+    color: inherit;
   }
 
   /* Technical note */
