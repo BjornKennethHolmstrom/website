@@ -1,8 +1,8 @@
 <script lang="ts">
-  export let title: string;
+  let { title }: { title: string } = $props();
 </script>
 
-<nav class="mb-6 text-sm inline-flex items-center gap-1">
+<nav class="mb-6 inline-flex items-center gap-1 text-sm">
   <a
     href="/governance-simulator"
     class="flex items-center gap-1 opacity-60 hover:opacity-100 transition-opacity"

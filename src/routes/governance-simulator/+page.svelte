@@ -116,6 +116,13 @@
             <p class="insight-body">{currentLang === 'sv' ? 'När en workaround lyckas försvinner trycket att reformera kärnan — om den inte har ett solnedgångsvillkor.' : 'When a workaround succeeds, pressure to reform the core vanishes — unless it has a sunset condition.'}</p>
           </div>
         </a>
+        <a href="/explorables/civilization-simulator" class="insight-card hover:shadow-md transition-shadow">
+          <div class="insight-icon" style="background: rgba(99,102,241,0.12); color: #6366f1;">⚖️</div>
+          <div>
+            <h3 class="insight-heading">{currentLang === 'sv' ? 'Två civilisationer simulator' : 'Two Civilizations Simulator'}</h3>
+            <p class="insight-body">{currentLang === 'sv' ? 'Samma störningar, olika arkitekturer. Se Legacy och Adaptiv styrning divergera över tid.' : 'Same disturbances, different architectures. Watch Legacy and Adaptive governance diverge over time.'}</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
