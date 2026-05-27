@@ -84,7 +84,21 @@ Rebuilding this institutional memory is a knowledge management problem as much a
 
 ---
 
-### 2.9 The Immigration Bottleneck—and the Lutheran Collective Responsibility Shadow
+### 2.9 The Education Paradox—Human Capital Formation as a Second‑Order Throughput Constraint
+
+Finland’s education system was the engine of its rise. Throughout the 2000s, Finnish students topped the OECD’s PISA rankings, outperforming all their European peers in reading, mathematics, and science. The system was publicly funded, deliberately non‑competitive in its early years, and built on the radical premise that teacher autonomy and student wellbeing would produce better outcomes than standardised testing and market‑based competition. For a decade, the results vindicated that premise. Finland became a global model—a small Nordic nation that had cracked the code of equitable excellence.
+
+Then something went wrong. From 2009 onward, Finland’s PISA scores began a steady, accelerating decline. In the latest rankings, Finland placed twentieth overall—the steepest decline in educational attainment of any OECD country. The slide has been broad‑based: reading, mathematics, and science scores have all fallen, and the gap between high‑performing and low‑performing students has widened. The system that once produced both equity and excellence is now struggling to deliver either.
+
+This is not a failure of diagnosis. Finnish educators, researchers, and policymakers have been discussing the PISA decline for over a decade, and the likely causes are well‑understood. The digital transformation of childhood has fragmented attention and reduced the volume of sustained reading. Immigration has increased classroom diversity faster than teacher training has adapted. The 2016 curriculum reform, while well‑intentioned, may have de‑emphasised direct instruction in ways that disadvantaged students who lacked strong academic support at home. Budget cuts following the 2008 financial crisis reduced the resources available for special education and student support services. None of these explanations is controversial. All of them have been on the policy agenda for years.
+
+The Throughput Constraint is the reason they have not been addressed at the speed the evidence demands. Curriculum reform cycles operate on decade‑long timescales. Teacher training pipelines take years to adjust, and the profession’s autonomy—the very feature that made Finnish education exceptional—makes top‑down reform politically difficult and culturally suspect. The digital learning tools that could personalise instruction and support struggling students are bottlenecked by the same municipal procurement processes and digital‑physical asymmetry that slow transformation in every other domain. The education system that once made Finland the envy of the world is now Exhibit A in the case for transformational velocity: it perceives the problem clearly, it broadly agrees on the solutions, and it cannot implement them fast enough to reverse the decline before it compounds.
+
+The consequences extend far beyond the classroom. The human capital pipeline that was supposed to offset Finland’s demographic headwinds is itself deteriorating. The next generation of Finnish workers will be smaller *and* less well‑educated than their predecessors—a double headwind that makes the immigration math described in the next section even more urgent. The education paradox is the Throughput Constraint at its most personal: the future of every Finnish child is being shaped by an architecture that knows what needs to change and cannot change it in time.
+
+---
+
+### 2.10 The Immigration Bottleneck—and the Lutheran Collective Responsibility Shadow
 
 Finland's demographic math is unambiguous. The fertility rate is approximately 1.35 children per woman—far below the replacement level of 2.1. The old‑age dependency ratio is rising faster than in almost any other developed nation. The workforce is projected to begin shrinking within the current decade. The economic sustainability of the welfare state, at current levels of taxation and service provision, depends on either a dramatic acceleration in productivity growth, a significant increase in net immigration, or both.
 
@@ -96,7 +110,7 @@ This is not xenophobia in the crude sense. It is the same cultural logic that ma
 
 ---
 
-### 2.10 The Innovation Diffusion Gap
+### 2.11 The Innovation Diffusion Gap
 
 Finland excels at invention. It consistently ranks among the world's leaders in research and development spending as a share of GDP, in patent applications per capita, and in the sophistication of its startup ecosystem. Linux, the open‑source operating system that runs most of the world's servers, was created by a Finnish student. The Angry Birds franchise redefined mobile gaming. Supercell, the game developer behind Clash of Clans, became one of the most valuable private companies in Europe. Finland punches far above its weight in technological creativity.
 
@@ -106,7 +120,7 @@ The result is a recurring pattern: Finland invents or discovers something signif
 
 ---
 
-### 2.11 The Cultural Operating System: *Sisu*, Quiet Consensus, Lutheran Responsibility—and *Kalsarikännit*
+### 2.12 The Cultural Operating System: *Sisu*, Quiet Consensus, Lutheran Responsibility—and *Kalsarikännit*
 
 Every country in this series has a cultural anchor—a concept or cluster of concepts that carries the diagnosis at the level of lived experience. For Finland, that anchor has four components, and together they form the cultural operating system within which the structural mechanisms described above operate.
 
@@ -128,7 +142,7 @@ This is the cultural explanation for the "Lag" phase of the Anticipate–Consens
 
 ---
 
-### 2.12 How the Mechanisms Reinforce Each Other
+### 2.13 How the Mechanisms Reinforce Each Other
 
 The Throughput Constraint is not the sum of the mechanisms described in this section. It is their product.
 
