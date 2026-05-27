@@ -36,13 +36,13 @@ export interface CivilizationState {
   collapsed: boolean;
   collapseReason: string | null;
   immune: {
-    permeability: number;
+    permeability: number;      // base resistance to reform (0–1)
     cooldownRemaining: number;
   };
   politicalCapital: number;
   observedDimensions: Set<string>;
-  regulatedFinance: boolean;  
-  auditRevealed: boolean;     
+  regulatedFinance: boolean;
+  auditRevealed: boolean;
   reformAttempts: Record<string, number>;
 }
 
@@ -51,7 +51,8 @@ export interface SimulationParams {
   latency: number;
   noise: number;
   gain: number;
-  immunePermeability: number;      // base permeability (0–1)
+  // Note: immune permeability lives on CivilizationState, not here,
+  // because it's a property of the civilization that reforms can change.
 }
 
 export interface HistoryEntry {
