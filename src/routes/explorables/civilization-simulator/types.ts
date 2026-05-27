@@ -6,30 +6,52 @@ export interface ObservationSnapshot {
   adaptiveCapacity: number;
 }
 
+export type ReformType =
+  | 'expand_observation'
+  | 'reduce_latency'
+  | 'regulate_finance'
+  | 'invest_social'
+  | 'meta_governance_audit';
+
+export interface ReformEvent {
+  step: number;
+  target: 'legacy' | 'adaptive';
+  type: ReformType;
+  result: 'absorbed' | 'implemented';
+  description: string;
+}
+
 export interface CivilizationState {
   wealth: number;
   environment: number;
   socialTrust: number;
   financialFragility: number;
   adaptiveCapacity: number;
-  // observed (dashboard) versions — delayed + noisy
   observedWealth: number;
   observedEnvironment: number;
   observedSocialTrust: number;
   observedFinancialFragility: number;
   observedAdaptiveCapacity: number;
-  // ring buffer of true states for latency
   observationBuffer: ObservationSnapshot[];
-  // meta
   collapsed: boolean;
   collapseReason: string | null;
+  immune: {
+    permeability: number;
+    cooldownRemaining: number;
+  };
+  politicalCapital: number;
+  observedDimensions: Set<string>;
+  regulatedFinance: boolean;  
+  auditRevealed: boolean;     
+  reformAttempts: Record<string, number>;
 }
 
 export interface SimulationParams {
   type: 'legacy' | 'adaptive';
-  latency: number;   // steps delay in observation
-  noise: number;     // observation noise magnitude
-  gain: number;      // control aggressiveness
+  latency: number;
+  noise: number;
+  gain: number;
+  immunePermeability: number;      // base permeability (0–1)
 }
 
 export interface HistoryEntry {
@@ -50,4 +72,5 @@ export interface SimState {
   time: number;
   history: HistoryEntry[];
   finished: boolean;
+  reformEvents: ReformEvent[];
 }

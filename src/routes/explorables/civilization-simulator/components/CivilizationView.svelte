@@ -39,12 +39,30 @@
         ]
       : []
   );
+
+  let effectiveHiddenMetrics = $derived(
+    type === 'legacy'
+      ? (civ.auditRevealed
+          ? [] // audit reveals all, so nothing is hidden this step
+          : [
+              { name: 'Environment', value: civ.environment, unit: '%' },
+              { name: 'Social Trust', value: civ.socialTrust, unit: '%' },
+              { name: 'Financial Fragility', value: civ.financialFragility, unit: '%' },
+              { name: 'Adaptive Capacity', value: civ.adaptiveCapacity, unit: '%' },
+            ].filter(m => !civ.observedDimensions.has(m.name.toLowerCase().replace(' ', ''))))
+      : []
+  );
 </script>
 
 <div class="rounded border bg-white p-6 shadow">
   <h2 class="mb-4 text-lg font-bold">{label}</h2>
 
   <div class="space-y-3">
+    {#if civ.auditRevealed && type === 'legacy'}
+      <div class="mb-3 rounded bg-indigo-50 px-3 py-2 text-xs text-indigo-700">
+        ⚡ Audit active — all dimensions visible this step
+      </div>
+    {/if}
     {#each visibleMetrics as metric}
       <div>
         <p class="text-sm opacity-60">{metric.name}</p>
