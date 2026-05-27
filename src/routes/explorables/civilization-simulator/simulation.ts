@@ -22,7 +22,7 @@ export function createCivState(type: 'legacy' | 'adaptive'): CivilizationState {
     collapsed: false,
     collapseReason: null,
     immune: {
-      permeability: type === 'legacy' ? 0.8 : 0.2,
+      permeability: type === 'legacy' ? 0.6 : 0.2, // was 0.8 — 60% absorption gives ~12-step expected first success
       cooldownRemaining: 0,
     },
     politicalCapital: 50,
@@ -50,9 +50,33 @@ function getDelayed(state: CivilizationState, latency: number): ObservationSnaps
   return buf[idx];
 }
 
-function legacyPolicy(delayed: ObservationSnapshot, params: SimulationParams): number {
-  const observed = delayed.wealth + noise(params.noise);
-  return clamp(params.gain * (TARGET_WEALTH - observed) / 15, 0, 8);
+// Legacy policy now responds to whichever dimensions have been unlocked via reform.
+// This makes expand_observation meaningful: each unlocked dimension partially improves
+// the investment decision, moving legacy toward adaptive-style behaviour.
+function legacyPolicy(
+  delayed: ObservationSnapshot,
+  params: SimulationParams,
+  observedDimensions: Set<string>,
+): number {
+  const observedWealth = delayed.wealth + noise(params.noise);
+  let investment = clamp(params.gain * (TARGET_WEALTH - observedWealth) / 15, 0, 8);
+
+  // Fragility awareness: moderate investment when fragility is visible and rising
+  if (observedDimensions.has('financialFragility')) {
+    const fragility = clamp(delayed.financialFragility + noise(params.noise), 0, 100);
+    // Gentler than adaptive (factor floor 0.3 vs 0) — legacy governance is slow to self-restrain
+    const fragFactor = Math.max(0.3, 1 - fragility / 120);
+    investment *= fragFactor;
+  }
+
+  // Environment awareness: reduce investment when environment is visibly degraded
+  if (observedDimensions.has('environment')) {
+    const env = clamp(delayed.environment + noise(params.noise), 0, 100);
+    const envFactor = Math.max(0.5, env / 100);
+    investment *= envFactor;
+  }
+
+  return investment;
 }
 
 function adaptivePolicy(delayed: ObservationSnapshot, params: SimulationParams) {
@@ -61,34 +85,30 @@ function adaptivePolicy(delayed: ObservationSnapshot, params: SimulationParams) 
   const observedTrust     = clamp(delayed.socialTrust        + noise(params.noise), 0, 100);
   const fragilityFactor = Math.max(0, 1 - observedFragility / 100);
   return {
-    investment: clamp(params.gain * (TARGET_WEALTH - observedWealth) / 15, 0, 5) * fragilityFactor,
-    regulation: clamp(observedFragility / 100, 0, 0.8),
+    investment:     clamp(params.gain * (TARGET_WEALTH - observedWealth) / 15, 0, 5) * fragilityFactor,
+    regulation:     clamp(observedFragility / 100, 0, 0.8),
     socialPrograms: clamp((80 - observedTrust) / 100, 0, 1),
   };
 }
 
-// Effective permeability accounts for crisis pressure and repeated attempts
 function effectivePermeability(state: CivilizationState, reformType: ReformType): number {
   let p = state.immune.permeability;
-  // Crisis lowers resistance
-  if (state.environment < 30) p -= 0.2;
-  if (state.financialFragility > 70) p -= 0.15;
-  // Repeated attempts erode resistance
+  if (state.environment < 30)           p -= 0.2;
+  if (state.financialFragility > 70)    p -= 0.15;
   const attempts = state.reformAttempts[reformType] || 0;
   p -= attempts * 0.08;
-  return clamp(p, 0.1, 1.0);
+  return clamp(p, 0.05, 1.0);
 }
 
-// Reform costs by type
 function reformCost(type: ReformType): number {
   switch (type) {
     case 'expand_observation':
     case 'reduce_latency':
     case 'regulate_finance':
-      return 25; // structural reforms cost more
+      return 18; // was 25 — structural reforms cheaper so player can afford 2-3 early
     case 'invest_social':
     case 'meta_governance_audit':
-      return 12;
+      return 10; // was 12
   }
 }
 
@@ -103,7 +123,7 @@ export function stepCivilization(
     immune: { ...state.immune },
     observedDimensions: new Set(state.observedDimensions),
     reformAttempts: { ...state.reformAttempts },
-    auditRevealed: false, // reset audit each step
+    auditRevealed: false,
   };
   const events: ReformEvent[] = [];
   let paramsChanged = false;
@@ -115,12 +135,11 @@ export function stepCivilization(
     if (s.politicalCapital < cost) continue;
 
     s.politicalCapital -= cost;
-    s.immune.cooldownRemaining = 8;
+    s.immune.cooldownRemaining = 5; // was 8 — shorter cooldown gives more attempts before shock
     s.reformAttempts[r] = (s.reformAttempts[r] || 0) + 1;
 
     const perm = effectivePermeability(s, r);
-    const roll = Math.random();
-    const absorbed = roll < perm;
+    const absorbed = Math.random() < perm;
 
     events.push({
       step: 0,
@@ -128,14 +147,14 @@ export function stepCivilization(
       type: r,
       result: absorbed ? 'absorbed' : 'implemented',
       description: absorbed
-        ? `"${r}" absorbed (permeability: ${(perm*100).toFixed(0)}%)`
-        : `"${r}" succeeded! (permeability: ${(perm*100).toFixed(0)}%)`,
+        ? `"${r}" absorbed by institutional resistance (${(perm * 100).toFixed(0)}% chance)`
+        : `"${r}" implemented successfully (${(perm * 100).toFixed(0)}% resistance overcome)`,
     });
 
     if (!absorbed) {
       switch (r) {
         case 'expand_observation': {
-          const hidden = ['environment','socialTrust','financialFragility','adaptiveCapacity']
+          const hidden = ['environment', 'socialTrust', 'financialFragility', 'adaptiveCapacity']
             .filter(d => !s.observedDimensions.has(d));
           if (hidden.length > 0) s.observedDimensions.add(hidden[0]);
           break;
@@ -158,31 +177,32 @@ export function stepCivilization(
     }
   }
 
-  // Dynamics
   let { wealth, environment, socialTrust, financialFragility, adaptiveCapacity } = s;
-  const delayed = getDelayed(s, newParams?.latency ?? params.latency);
+  const activeParams = newParams ?? params;
+  const delayed = getDelayed(s, activeParams.latency);
+
   let investment: number;
   if (params.type === 'legacy') {
-    investment = legacyPolicy(delayed, newParams ?? params);
-    wealth              += 0.2 * (environment / 100) * investment - 0.02 * wealth;
-    environment         -= 0.2 * investment + 0.01 * wealth;
-    environment         += 0.04 * (100 - environment);
-    environment         += shocks.envShock;
-    financialFragility  += 0.15 * investment - 0.02;
-    if (s.regulatedFinance) financialFragility = Math.min(financialFragility, s.financialFragility + 0.5); // cap growth
-    financialFragility  += shocks.finShock;
-    socialTrust         -= 0.02 * Math.max(0, financialFragility - 40);
+    investment = legacyPolicy(delayed, activeParams, s.observedDimensions);
+    wealth             += 0.2 * (environment / 100) * investment - 0.02 * wealth;
+    environment        -= 0.2 * investment + 0.01 * wealth;
+    environment        += 0.04 * (100 - environment);
+    environment        += shocks.envShock;
+    financialFragility += 0.15 * investment - 0.02;
+    if (s.regulatedFinance) financialFragility = Math.min(financialFragility, s.financialFragility + 0.5);
+    financialFragility += shocks.finShock;
+    socialTrust        -= 0.02 * Math.max(0, financialFragility - 40);
   } else {
-    const { investment: inv, regulation, socialPrograms } = adaptivePolicy(delayed, newParams ?? params);
+    const { investment: inv, regulation, socialPrograms } = adaptivePolicy(delayed, activeParams);
     investment = inv;
-    wealth              += 0.2 * (environment / 100) * investment - 0.02 * wealth;
-    environment         -= 0.15 * investment + 0.005 * wealth;
-    environment         += 0.04 * (100 - environment) + 0.3 * regulation;
-    environment         += shocks.envShock;
-    financialFragility  += 0.15 * investment - 0.5 * regulation;
-    financialFragility  += shocks.finShock;
-    socialTrust         += 0.3 * socialPrograms - 0.01 * Math.max(0, financialFragility - 40);
-    adaptiveCapacity    += 0.05 * (regulation + socialPrograms);
+    wealth             += 0.2 * (environment / 100) * investment - 0.02 * wealth;
+    environment        -= 0.15 * investment + 0.005 * wealth;
+    environment        += 0.04 * (100 - environment) + 0.3 * regulation;
+    environment        += shocks.envShock;
+    financialFragility += 0.15 * investment - 0.5 * regulation;
+    financialFragility += shocks.finShock;
+    socialTrust        += 0.3 * socialPrograms - 0.01 * Math.max(0, financialFragility - 40);
+    adaptiveCapacity   += 0.05 * (regulation + socialPrograms);
   }
 
   wealth             = Math.max(0, wealth);
@@ -192,21 +212,23 @@ export function stepCivilization(
   adaptiveCapacity   = Math.max(0, adaptiveCapacity);
 
   let collapsed = false, collapseReason: string | null = null;
-  if (environment < 10) { collapsed = true; collapseReason = 'Environmental collapse'; wealth *= 0.2; socialTrust *= 0.5; }
+  if (environment < 10)         { collapsed = true; collapseReason = 'Environmental collapse';  wealth *= 0.2; socialTrust *= 0.5; }
   if (financialFragility >= 90) { collapsed = true; collapseReason = collapseReason ? collapseReason + ' + Financial cascade' : 'Financial cascade'; wealth *= 0.3; }
 
-  const obsWealth    = delayed.wealth + noise(params.noise);
-  const obsEnv       = s.observedDimensions.has('environment')      ? clamp(delayed.environment        + noise(params.noise), 0, 100) : 0;
-  const obsTrust     = s.observedDimensions.has('socialTrust')      ? clamp(delayed.socialTrust         + noise(params.noise), 0, 100) : 0;
-  const obsFragility = s.observedDimensions.has('financialFragility')? clamp(delayed.financialFragility  + noise(params.noise), 0, 100) : 0;
-  const obsAdaptive  = s.observedDimensions.has('adaptiveCapacity') ? clamp(delayed.adaptiveCapacity    + noise(params.noise), 0, 100) : 0;
+  const obsWealth    = delayed.wealth + noise(activeParams.noise);
+  const obsEnv       = s.observedDimensions.has('environment')         ? clamp(delayed.environment        + noise(activeParams.noise), 0, 100) : 0;
+  const obsTrust     = s.observedDimensions.has('socialTrust')         ? clamp(delayed.socialTrust         + noise(activeParams.noise), 0, 100) : 0;
+  const obsFragility = s.observedDimensions.has('financialFragility')  ? clamp(delayed.financialFragility  + noise(activeParams.noise), 0, 100) : 0;
+  const obsAdaptive  = s.observedDimensions.has('adaptiveCapacity')    ? clamp(delayed.adaptiveCapacity    + noise(activeParams.noise), 0, 100) : 0;
 
-  s.wealth = wealth; s.environment = environment; s.socialTrust = socialTrust; s.financialFragility = financialFragility; s.adaptiveCapacity = adaptiveCapacity;
-  s.observedWealth = obsWealth; s.observedEnvironment = obsEnv; s.observedSocialTrust = obsTrust; s.observedFinancialFragility = obsFragility; s.observedAdaptiveCapacity = obsAdaptive;
+  s.wealth = wealth; s.environment = environment; s.socialTrust = socialTrust;
+  s.financialFragility = financialFragility; s.adaptiveCapacity = adaptiveCapacity;
+  s.observedWealth = obsWealth; s.observedEnvironment = obsEnv; s.observedSocialTrust = obsTrust;
+  s.observedFinancialFragility = obsFragility; s.observedAdaptiveCapacity = obsAdaptive;
   s.collapsed = collapsed; s.collapseReason = collapseReason;
-  s.politicalCapital = Math.min(100, s.politicalCapital + 0.2);
+  s.politicalCapital = Math.min(100, s.politicalCapital + 0.5); // was 0.2 — faster regen = more reform attempts
   if (s.immune.cooldownRemaining > 0) s.immune.cooldownRemaining--;
-  s.observationBuffer = [...s.observationBuffer.slice(-(MAX_BUFFER-1)), { wealth, environment, socialTrust, financialFragility, adaptiveCapacity }];
+  s.observationBuffer = [...s.observationBuffer.slice(-(MAX_BUFFER - 1)), { wealth, environment, socialTrust, financialFragility, adaptiveCapacity }];
 
   return { newState: s, events, paramsChanged, newParams };
 }
