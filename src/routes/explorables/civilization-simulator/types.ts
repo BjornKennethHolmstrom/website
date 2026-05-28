@@ -17,7 +17,7 @@ export interface ReformEvent {
   step: number;
   target: 'legacy' | 'adaptive';
   type: ReformType;
-  result: 'absorbed' | 'implemented';
+  result: 'absorbed' | 'implemented' | 'rejected';
   description: string;
 }
 

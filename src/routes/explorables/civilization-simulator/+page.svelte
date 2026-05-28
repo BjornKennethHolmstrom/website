@@ -1,27 +1,17 @@
 <script lang="ts">
   import { createCivState, stepCivilization } from './simulation';
   import type { HistoryEntry, SimulationParams, ReformType, ReformEvent } from './types';
+  import { SCENARIOS, type Scenario } from './scenarios';
   import CivilizationView from './components/CivilizationView.svelte';
   import ComparisonChart from './components/ComparisonChart.svelte';
   import ParameterControls from './components/ParameterControls.svelte';
   import ExplorableBreadcrumb from '$lib/components/ExplorableBreadcrumb.svelte';
   import ReformPanel from './components/ReformPanel.svelte';
 
-  const defaultLegacyParams: SimulationParams = {
-    type: 'legacy',
-    latency: 6,
-    noise: 8,
-    gain: 1.5,
-  };
-  const defaultAdaptiveParams: SimulationParams = {
-    type: 'adaptive',
-    latency: 1,
-    noise: 1,
-    gain: 0.8,
-  };
-
-  let legacyParams   = $state({ ...defaultLegacyParams });
-  let adaptiveParams = $state({ ...defaultAdaptiveParams });
+  // --- State ---
+  let selectedScenario = $state('default');
+  let legacyParams   = $state({ ...SCENARIOS[0].legacyParams });
+  let adaptiveParams = $state({ ...SCENARIOS[0].adaptiveParams });
   let legacyCiv      = $state(createCivState('legacy'));
   let adaptiveCiv    = $state(createCivState('adaptive'));
   let time           = $state(0);
@@ -30,12 +20,48 @@
   let interval: ReturnType<typeof setInterval> | null = null;
   let legacyReforms  = $state<ReformType[]>([]);
   let reformEvents   = $state<ReformEvent[]>([]);
+  let shockQueue     = $state<{ time: number; envShock: number; finShock: number }[]>([]);
+  let shockJustHit   = $state(false); // drives the pause banner
 
+  // --- Load scenario ---
+  function loadScenario(id: string) {
+    stop();
+    const scenario = SCENARIOS.find(s => s.id === id) || SCENARIOS[0];
+    selectedScenario  = id;
+    legacyParams      = { ...scenario.legacyParams };
+    adaptiveParams    = { ...scenario.adaptiveParams };
+    shockQueue        = [...scenario.shocks];
+    legacyCiv         = createCivState('legacy');
+    adaptiveCiv       = createCivState('adaptive');
+    if (scenario.special?.includes('immune permeability')) {
+      if (id === 'russia-legibility-deficit') legacyCiv.immune.permeability = 0.95;
+      else if (id === 'sweden-drift-loop')     legacyCiv.immune.permeability = 0.7;
+      else if (id === 'us-integration-deficit') legacyCiv.immune.permeability = 0.4;
+    }
+    time         = 0;
+    history      = [];
+    reformEvents = [];
+    legacyReforms  = [];
+    shockJustHit = false;
+  }
+
+  // --- Step once ---
   function stepOnce() {
-    const shocks = {
-      envShock: time === 30 ? -30 : 0,
-      finShock: time === 50 ?  30 : 0,
-    };
+    shockJustHit = false;
+
+    const activeShocks = shockQueue.filter(s => s.time === time);
+    const envShock = activeShocks.reduce((sum, s) => sum + s.envShock, 0);
+    const finShock = activeShocks.reduce((sum, s) => sum + s.finShock, 0);
+    const shocks = { envShock, finShock };
+
+    const scenario = SCENARIOS.find(s => s.id === selectedScenario);
+    if (scenario?.id === 'brazil-breakthrough-capture') {
+      legacyCiv.immune.permeability = (time >= 30 && time <= 40) || (time >= 60 && time <= 70) ? 0.2 : 0.8;
+    }
+    if (scenario?.id === 'china-calibration-deficit' && time % 20 === 0 && time > 0) {
+      legacyParams.gain = 2.5 + Math.random() * 1.5;
+      setTimeout(() => { legacyParams.gain = 2.5; }, 3000);
+    }
 
     const legacyResult   = stepCivilization(legacyCiv,   legacyParams,   shocks, legacyReforms);
     const adaptiveResult = stepCivilization(adaptiveCiv, adaptiveParams, shocks);
@@ -65,33 +91,21 @@
     time++;
     legacyReforms = [];
 
-    // Auto-pause after shock steps so the player can respond with reforms
-    if ((time === 31 || time === 51) && running) stop();
+    if (activeShocks.length > 0 && running) {
+      shockJustHit = true;
+      stop();
+    }
     if (legacyCiv.collapsed || adaptiveCiv.collapsed) stop();
   }
 
-  function run() {
-    if (running) return;
-    running = true;
-    interval = setInterval(stepOnce, 100);
-  }
+  // --- Controls ---
+  function run()   { shockJustHit = false; if (!running) { running = true; interval = setInterval(stepOnce, 100); } }
+  function stop()  { running = false; if (interval) { clearInterval(interval); interval = null; } }
+  function reset() { loadScenario(selectedScenario); }
 
-  function stop() {
-    running = false;
-    if (interval) { clearInterval(interval); interval = null; }
-  }
+  let currentScenario = $derived(SCENARIOS.find(s => s.id === selectedScenario) ?? SCENARIOS[0]);
 
-  function reset() {
-    stop();
-    legacyParams   = { ...defaultLegacyParams };
-    adaptiveParams = { ...defaultAdaptiveParams };
-    legacyCiv      = createCivState('legacy');
-    adaptiveCiv    = createCivState('adaptive');
-    time         = 0;
-    history      = [];
-    legacyReforms  = [];
-    reformEvents = [];
-  }
+  loadScenario('default');
 </script>
 
 <div class="mx-auto max-w-6xl px-4 py-12">
@@ -104,6 +118,20 @@
     </p>
   </header>
 
+  <!-- Scenario Selector -->
+  <div class="mb-2 flex justify-center">
+    <select
+      bind:value={selectedScenario}
+      onchange={() => loadScenario(selectedScenario)}
+      class="rounded border border-slate-300 px-4 py-2 text-sm"
+    >
+      {#each SCENARIOS as s}
+        <option value={s.id}>{s.label}</option>
+      {/each}
+    </select>
+  </div>
+  <p class="mb-6 text-center text-sm text-slate-500">{currentScenario.description}</p>
+
   <ParameterControls bind:legacyParams bind:adaptiveParams onreset={reset} />
 
   <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
@@ -114,8 +142,8 @@
     <span class="text-sm font-medium">Time: {time}</span>
   </div>
 
-  <!-- Shock notification banner -->
-  {#if (time === 31 || time === 51) && !running}
+  <!-- Shock notification banner — keyed to shockJustHit, not hardcoded times -->
+  {#if shockJustHit && !running}
     <div class="mt-4 rounded border border-amber-300 bg-amber-50 p-3 text-center text-amber-800">
       ⚠ A shock just hit. The simulation is paused — consider queuing reforms before continuing.
     </div>
@@ -134,7 +162,7 @@
     <ReformPanel
       civ={legacyCiv}
       disabled={running || legacyCiv.collapsed}
-      onreform={(t) => { legacyReforms = [...legacyReforms, t]; }}
+      onreform={(t) => { legacyReforms = [t]; }}
     />
     <div class="rounded border bg-white p-4 shadow">
       <h3 class="mb-2 text-sm font-semibold">Adaptive Coherence</h3>
@@ -151,10 +179,10 @@
       <p class="mb-2 font-semibold text-violet-800">🔍 Meta-Governance Audit — True State Revealed</p>
       <div class="grid grid-cols-2 gap-x-8 gap-y-1 text-xs">
         {#each [
-          { label: 'Environment',         obs: legacyCiv.observedEnvironment,        true: legacyCiv.environment },
-          { label: 'Social Trust',         obs: legacyCiv.observedSocialTrust,        true: legacyCiv.socialTrust },
-          { label: 'Financial Fragility',  obs: legacyCiv.observedFinancialFragility, true: legacyCiv.financialFragility },
-          { label: 'Adaptive Capacity',    obs: legacyCiv.observedAdaptiveCapacity,   true: legacyCiv.adaptiveCapacity },
+          { label: 'Environment',        obs: legacyCiv.observedEnvironment,        true: legacyCiv.environment },
+          { label: 'Social Trust',        obs: legacyCiv.observedSocialTrust,        true: legacyCiv.socialTrust },
+          { label: 'Financial Fragility', obs: legacyCiv.observedFinancialFragility, true: legacyCiv.financialFragility },
+          { label: 'Adaptive Capacity',   obs: legacyCiv.observedAdaptiveCapacity,   true: legacyCiv.adaptiveCapacity },
         ] as row}
           <span class="text-violet-700 font-medium">{row.label}</span>
           <span>
@@ -170,7 +198,7 @@
   {#if reformEvents.length > 0}
     <div class="mt-4 max-h-40 overflow-y-auto rounded border bg-white p-3 text-sm">
       {#each reformEvents.slice(-10) as ev}
-        <div class="flex gap-2 {ev.result === 'absorbed' ? 'text-red-600' : 'text-emerald-600'}">
+        <div class="flex gap-2 {ev.result === 'absorbed' ? 'text-red-600' : ev.result === 'rejected' ? 'text-slate-400 italic' : 'text-emerald-600'}">
           <span class="shrink-0">[{ev.step}]</span>
           <span>{ev.description}</span>
         </div>
