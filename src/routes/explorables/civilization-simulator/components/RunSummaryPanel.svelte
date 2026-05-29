@@ -12,7 +12,7 @@
       <div class="rounded border border-red-200 bg-red-50 p-4">
         <h3 class="font-bold text-red-700">Legacy Governance</h3>
         <p>Peak Wealth: <strong>{summary.legacyPeakWealth.toFixed(1)}</strong></p>
-        <p>Collapse: <strong>{summary.legacyCollapseStep ? `Step ${summary.legacyCollapseStep}` : 'Survived'}</strong>
+        <p>Governance Failure: <strong>{summary.legacyCollapseStep ? `Step ${summary.legacyCollapseStep}` : 'Survived'}</strong>
           {#if summary.legacyCollapseReason} ({summary.legacyCollapseReason}) {/if}
         </p>
         <p>Reforms: <strong>{summary.legacyReformsSucceeded}/{summary.legacyReformsAttempted} succeeded</strong></p>
@@ -21,7 +21,7 @@
       <div class="rounded border border-blue-200 bg-blue-50 p-4">
         <h3 class="font-bold text-blue-700">Adaptive Coherence</h3>
         <p>Peak Wealth: <strong>{summary.adaptivePeakWealth.toFixed(1)}</strong></p>
-        <p>Collapse: <strong>{summary.adaptiveCollapseStep ? `Step ${summary.adaptiveCollapseStep}` : 'Survived'}</strong>
+        <p>Governance Failure: <strong>{summary.adaptiveCollapseStep ? `Step ${summary.adaptiveCollapseStep}` : 'Survived'}</strong>
           {#if summary.adaptiveCollapseReason} ({summary.adaptiveCollapseReason}) {/if}
         </p>
         <p>Hidden Damage: <strong>{summary.adaptiveHiddenDamage.toFixed(0)}</strong></p>

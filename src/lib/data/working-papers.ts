@@ -28,6 +28,27 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'measuringTheVarietyGap',
+   key: 'measuringTheVarietyGap',
+   category: 'governance',
+   tags: ['Variety Gap', 'Measurement', 'Parametric Framework', 'Diagnostic Instrument', 'Governance Engineering', 'Observability', 'Cybernetics', 'Composite Index'],
+   year: '2026',
+   pages: '80',
+   readTime: {
+     en: '70 min',
+     sv: '70 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/measuring-the-variety-gap.pdf`,
+     sv: `${localBase}/measuring-the-variety-gap-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/measuring-the-variety-gap-cover.png',
+   readOnlinePath: '/working-papers/measuring-the-variety-gap',
+   readOnlineExternal: false,
+   releaseDate: '2026-05-29'
+ },
+ {
      id: 'architectureOfGovernanceFailure',
      key: 'architectureOfGovernanceFailure',
      category: 'governance',

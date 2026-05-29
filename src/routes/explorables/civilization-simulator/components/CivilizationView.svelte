@@ -103,7 +103,7 @@
 
   {#if civ.collapsed}
     <div class="mt-4 rounded bg-red-100 p-3 text-sm font-bold text-red-800">
-      ⚠ COLLAPSED — {civ.collapseReason || 'Unknown reason'}
+      ⚠ GOVERNANCE FAILURE — {civ.collapseReason || 'Unknown reason'}
     </div>
   {/if}
 </div>

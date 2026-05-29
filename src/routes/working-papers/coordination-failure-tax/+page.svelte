@@ -42,7 +42,7 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series V',
+      tag: 'Workin Paper · Series V',
       seriesNote: 'This is the fifth paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',     label: 'Paper I: Governance Stability Simulator →' },
@@ -50,6 +50,8 @@
         { href: '/working-papers/observability-democracy-connection', label: 'Paper III: The Observability-Democracy Connection →' },
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
+        { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
       ],
       contextTitle: 'Context',
       contextIntro: 'Papers I–IV establish four distinct structural failure modes in governance architecture. Each paper demonstrates the same underlying mechanism in a different domain: aggregation destroys information, destroyed information cannot be recovered downstream, and institutional quality operates on the signal after it arrives — it cannot help if the signal is gone.',
@@ -61,7 +63,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie V',
+      tag: 'Arbetsdokument · Serie V',
       seriesNote: 'Detta är den femte rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -69,6 +71,8 @@
         { href: '/working-papers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
+        { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Rapporterna I–IV fastslår fyra distinkta strukturella felmönster i styrningsarkitektur. Varje rapport demonstrerar samma underliggande mekanism i ett annat domän: aggregering förstör information, förstörd information kan inte återhämtas nedströms, och institutionell kvalitet verkar på signalen efter att den anlänt — den kan inte hjälpa om signalen är borta.',

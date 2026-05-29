@@ -58,6 +58,11 @@ export const workingpapersTranslations = {
        description:
            'Extends the governance-as-engineering framework to self-governance. The ego is a low-dimensional controller; narrow personal values create blind spots that eventually return as crises. Introduces the self-variety gap (G_self) — a unifying diagnostic for psychological blind spots. Companion to the Governance as Engineering series.'
    },
+   measuringTheVarietyGap: {
+     title: 'Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure',
+     description:
+       'Paper VIII in the Governance as Engineering series. Develops a systematic method for measuring the Variety Gap in governance systems, mapping eight structural primitives to observable parameters and constructing a composite diagnostic index. Calibrated against the twenty-one cases in the series and validated on three pilot cases not used in framework development.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -196,6 +201,11 @@ export const workingpapersTranslations = {
        title: 'Variationsgapet i självet: Vad en person optimerar för avgör vad de kan uppfatta',
        description:
            'Utvidgar ramverket för styrning som ingenjörskonst till självstyrning. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som till slut återvänder som kriser. Introducerar själv-variationsgapet (G_self) — ett enhetligt diagnostiskt verktyg för psykologiska blinda fläckar. Komplement till serien Styrning som ingenjörskonst.'
+   },
+   measuringTheVarietyGap: {
+     title: 'Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden',
+     description:
+       'Rapport VIII i serien Styrning som ingenjörskonst. Utvecklar en systematisk metod för att mäta varietetsgapet i styrsystem, kartlägger åtta strukturella primitiver till observerbara parametrar och konstruerar ett sammansatt diagnostiskt index. Kalibrerad mot de tjugoen fallen i serien och validerad på tre pilotfall som inte använts i ramverkets utveckling.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

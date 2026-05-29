@@ -206,7 +206,7 @@
             <svg width="16" height="8" style="display:inline-block">
               <line x1="0" y1="4" x2="16" y2="4" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>
             </svg>
-            Collapse threshold
+            Failure threshold
           </span>
         {/if}
       </div>

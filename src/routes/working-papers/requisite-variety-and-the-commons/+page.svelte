@@ -58,7 +58,7 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series IV',
+      tag: 'Working Paper · Series IV',
       seriesNote: 'This is the fourth paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
@@ -66,6 +66,8 @@
         { href: '/working-papers/observability-democracy-connection',  label: 'Paper III: The Observability-Democracy Connection →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
+        { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
       ],
       contextTitle: 'Context',
       contextIntro: 'The tragedy of the commons has a standard explanation: individual incentives to extract exceed collective incentives to conserve. This paper offers a different diagnosis: the tragedy of the commons is an architectural failure before it is a motivational one. Individual extraction decisions made without feedback from the collective resource state constitute an open-loop system — an actuator with no sensor.',
@@ -78,7 +80,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie IV',
+      tag: 'Arbetsdokument · Serie IV',
       seriesNote: 'Detta är den fjärde rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -86,6 +88,8 @@
         { href: '/working-papers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
+        { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Allmänningens tragedi har en standardförklaring: individuella incitament att utvinna överstiger kollektiva incitament att bevara. Denna vitbok erbjuder en annan diagnos: allmänningens tragedi är ett arkitektoniskt misslyckande innan det är ett motivationsmisslyckande. Individuella utvinningsbeslut utan återkoppling från det kollektiva resurstillståndet utgör ett öppet system — ett styrorgan utan sensor.',

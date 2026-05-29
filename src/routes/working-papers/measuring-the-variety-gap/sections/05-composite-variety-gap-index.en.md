@@ -1,0 +1,82 @@
+## 5. The Composite Variety Gap Index
+
+The eight parameters specified in Section 3 describe distinct dimensions of governance architecture. Taken individually, they provide a profile of a system's structural vulnerabilities—where its observation channel is narrow, where its immune system is active, where bypass architectures are proliferating. But the framework's central claim is that these vulnerabilities do not operate independently. They interact, and their interaction produces outcomes that are more severe than any single parameter would predict. The composite Variety Gap Index is the mathematical expression of that interaction. It combines the eight parameters into a single diagnostic metric that estimates the gap between the effective dimensionality of the disturbance environment and the effective dimensionality of the governance system's capacity to perceive and respond to it.
+
+This section specifies the index's functional form, the foundational parameter hierarchy that weights its components, the threshold bands that define its diagnostic meaning, and the uncertainty propagation that accompanies every estimate.
+
+### 5.1 The Functional Form: Why Multiplicative?
+
+The Coordination Failure Tax, formalised in Paper V of the Governance as Engineering series, establishes that simultaneous architectural failures multiply rather than add. A governance system with four failures, each destroying half of the capacity in its dimension, operates not at zero capacity but at approximately six percent of baseline. The mathematics of compounding is the structural explanation for the persistent disappointment of institutional reform: addressing one failure while leaving others untouched produces gains that the remaining failures absorb.
+
+The composite index must reflect this structural property. An additive index would treat each parameter as an independent subtraction from a fixed baseline. A multiplicative index treats each parameter as operating on the output of the others in the causal chain—exactly the dynamic the series has documented across every domain examined.
+
+The index is therefore constructed as a multiplicative product of the eight parameters, each normalised to the interval (0,1) and representing the *fraction of requisite governance capacity remaining* after accounting for that parameter's degradation. The general form is:
+
+**G = V_e / V_o × f(τ) × g(σ) × h(immune_permeability) × j(bypass_density) × k(oscillation) × m(symbolic_ratio)**
+
+Where V_e and V_o are the effective dimensionalities of the disturbance environment and observation architecture respectively, and the functions f through m transform the remaining parameters into normalised capacity multipliers.
+
+The multiplicative form has a critical property that must be stated explicitly before it is deployed. A score of zero on any single parameter—complete signal fidelity collapse, total immune impermeability, infinite response latency—collapses the entire index to zero, regardless of the values of the other parameters. This is either a feature or a bug depending on how the index is used.
+
+For the diagnostic purpose this paper serves, it is a feature. The series' central claim is that a single severe architectural deficit can render an entire governance system incapable of its functions. Russia's signal fidelity approaches zero because the power vertical has deliberately destroyed the observation channels on which adaptive governance depends. That single catastrophic failure is sufficient to make the Russian state structurally blind, regardless of how well it performs on other dimensions. A multiplicative index that collapses to zero in this case is accurately reflecting the framework's structural claim. The additive alternative—which would show a system with one catastrophic failure and seven adequate parameters as performing at roughly eighty-seven percent of baseline—would systematically underestimate the severity of the condition the framework exists to diagnose.
+
+The paper provides an additive version as a robustness check in Appendix D. Practitioners who prefer to see both formulations can compare them. The multiplicative version is the primary index because it is structurally consistent with the framework it operationalises.
+
+### 5.2 The Foundational Parameter Hierarchy
+
+Not all eight parameters are structurally equal. Some are *foundational*—they determine whether other parameters can even be reliably estimated or effectively deployed. A governance system with catastrophically low signal fidelity cannot be meaningfully assessed for oscillation dynamics, because the data on which oscillation measurement depends has been corrupted at the source. A system with extreme immune impermeability will show low bypass density in formal measurement—not because bypasses are absent, but because the immune system has suppressed the signals that would reveal them. The parameters are causally ordered, and the composite index must respect that ordering.
+
+The paper proposes a three-tier hierarchy.
+
+**Tier 1 (Epistemic):** V_o, V_e, and σ. These are the parameters that determine what the system can perceive. They are foundational because a failure at this level renders all other parameter estimates unreliable—not merely inaccurate, but systematically biased in the direction of underestimating governance failure. The Measurement Paradox described in Section 4 is primarily a Tier 1 phenomenon: it is the epistemic parameters that degrade first and whose degradation is hardest to detect from within the degraded architecture.
+
+**Tier 2 (Response):** τ and immune permeability. These are the parameters that determine how the system acts on what it perceives. Response latency and immune system activity are secondary in the causal chain: they operate on the signal after it has been shaped by the observation architecture. A system with adequate Tier 1 parameters but severe Tier 2 deficits can perceive its environment clearly but cannot translate perception into action—the condition of the democratic fragmentation cases in the series.
+
+**Tier 3 (Emergent):** Oscillation amplitude, bypass density, and the symbolic-to-structural ratio. These are the parameters that emerge from the interaction of Tiers 1 and 2. Oscillation dynamics arise when a system with high latency and degraded signal fidelity attempts to respond to disturbances it cannot adequately perceive. Bypass architectures proliferate when the formal observation channel is blocked and the immune system prevents reform. Performative adaptation becomes the dominant institutional strategy when the immune system is strong and signal fidelity is low. The Tier 3 parameters are diagnostically valuable—they are often the most visible manifestations of governance failure—but they are effects, not causes. Treating them as independent of the foundational parameters would misidentify the locus of intervention.
+
+The composite index weights Tier 1 parameters more heavily than Tier 2, and Tier 2 more heavily than Tier 3. The weighting is implemented through exponents in the multiplicative product: each Tier 1 parameter carries an exponent of 1.5, each Tier 2 parameter an exponent of 1.0, and each Tier 3 parameter an exponent of 0.5. These weights are not derived from first principles—no such derivation exists—but they reflect the qualitative causal structure identified across the twenty-one cases. Sensitivity analysis of the weighting scheme is provided in Appendix D.
+
+The practical implication of the hierarchy is that a system with catastrophically low signal fidelity should score as severely vulnerable regardless of favourable Tier 3 values—because favourable Tier 3 values in such a system are likely artefacts of the same signal degradation that makes the system blind. The hierarchy is a structural acknowledgement of the Measurement Paradox, built into the index's architecture.
+
+### 5.3 Threshold Bands and the Non-Linear Phase Shift
+
+The Variety Gap index is a continuous variable, but its diagnostic meaning changes qualitatively at a critical value. The Observability Threshold, formalised in Paper III and generalised in the capstone, is the point at which the signal-to-noise ratio in the governance system's observation channel falls below unity. Above the threshold, the system maintains adequate perceptual contact with its environment; failures are specific and correctable. Below the threshold, the system enters a qualitatively different regime.
+
+This is not a linear degradation. It is a phase shift. When G exceeds G_crit—when the Variety Gap crosses the observability threshold—the system undergoes a transition that changes the fundamental character of its governance dynamics:
+
+- The signal arriving at the decision layer is dominated by the noise properties of the governance machinery rather than by the signal properties of the environment. Institutional quality improvements become paradoxically ineffective: better performance within the existing architecture amplifies the distortion rather than correcting it.
+- The system becomes susceptible to the signature oscillation patterns documented across the country reports. Which pattern emerges depends on the specific configuration of Tier 2 and Tier 3 parameters, but the susceptibility itself is a consequence of crossing the threshold.
+- The immune system shifts from protecting institutional integrity to protecting institutional interests. Reforms that would expand the observation channel are treated as threats to be neutralised, and the symbolic adaptation mechanisms that in healthier systems serve a stabilising function become the primary drivers of architectural stasis.
+
+The index therefore defines three diagnostic bands, not as precise numerical boundaries but as regions of parameter space with qualitatively different governance implications:
+
+- **G `<` G_crit (Below the Observability Threshold):** The system's observation architecture is inadequate to its disturbance environment. The excluded dimensions are accumulating as externalities that the system cannot perceive. The system is vulnerable to the signature failure modes documented in the series, and parametric reforms within the existing architecture are unlikely to close the gap.
+- **G ≈ G_crit (Approaching the Threshold):** The system is in a region of structural vulnerability. It may function adequately under stable conditions but is exposed to novel disturbances that its observation architecture was not designed to perceive. The trajectory of the gap—whether it is widening or narrowing—is more diagnostically significant than its absolute value.
+- **G `>` G_crit (Above the Observability Threshold):** The system's observation architecture is adequate to its disturbance environment, at least for the dimensions currently identified as relevant. It can perceive the signals required for adaptive response. The primary governance challenge is maintaining this condition as the environment evolves.
+
+The location of G_crit cannot be specified with precision from first principles. It depends on the noise characteristics of the specific governance system, the coupling strength between its disturbance dimensions, and the non-linear dynamics that the current linear framework does not capture. For the purposes of this paper, G_crit is estimated from the calibration against the twenty-one cases in Section 7: the threshold is set at the value that best discriminates between cases diagnosed as having severe architectural deficits and those diagnosed as having manageable ones. This is an empirical approximation, not a theoretical derivation, and the resulting threshold should be treated as provisional.
+
+Systems approaching the threshold may exhibit identifiable leading indicators that are not captured by the static parameters alone: increasing metric attrition (the "censorship as signal" proxy from Section 4), rising bypass density as formal institutions lose legitimacy, declining reform success rates as the immune system increasingly treats all challenges as threats. These leading indicators should be reported alongside the composite index for any system in the "approaching threshold" band, because they provide warning of an impending phase shift that the static parameters may not yet reflect.
+
+### 5.4 Uncertainty Propagation
+
+Every parameter estimate in Section 3 carries an uncertainty assessment. The composite index inherits those uncertainties, and the propagation is not straightforward. When parameters are combined multiplicatively, the uncertainty in the index depends on both the individual parameter uncertainties and the correlations between them—and those correlations are themselves difficult to estimate for the reasons described in Section 4.
+
+The paper adopts a Monte Carlo approach to uncertainty propagation. For each governance system, the eight parameters are represented not as point estimates but as probability distributions: normal distributions for parameters with symmetric uncertainty (τ, oscillation amplitude), log-normal distributions for parameters bounded at zero with right-skewed uncertainty (V_o, V_e, bypass density), and beta distributions for parameters bounded between zero and one (signal fidelity, immune permeability, symbolic-to-structural ratio). The composite index is computed for each draw from the joint distribution, and the resulting distribution of G values is reported with its median and a credible interval (typically the 5th to 95th percentile).
+
+This approach has two advantages. First, it makes the uncertainty visible: a Variety Gap score of 3.2 with a credible interval of 2.9 to 3.5 is a different claim from a score of 3.2 with an interval of 0.8 to 6.4. The former suggests a system whose condition can be estimated with reasonable confidence; the latter suggests a system where the data is too degraded to support precise diagnosis. Second, it forces the analyst to specify the correlations between parameters, making explicit the assumptions that would otherwise remain implicit. The Measurement Paradox implies that for systems with severe Tier 1 degradation, the correlations between parameters are likely positive and strong—signal fidelity collapse is correlated with immune permeability increase, with bypass proliferation, with performative adaptation—and the joint distribution should reflect this.
+
+For systems where the Measurement Paradox is active, the Monte Carlo approach provides an additional diagnostic: the credible interval for G will be wide, and the distribution will be right-skewed. The true Variety Gap is likely larger than the median estimate suggests, and the width of the interval is itself an indicator of how thoroughly the system's observation architecture has degraded the data on which measurement depends. A very wide credible interval is not a measurement failure. It is a measurement result—evidence that the system is in the condition the framework predicts.
+
+### 5.5 Reporting the Index
+
+The composite Variety Gap Index is reported in the following standardised format for each governance system assessed:
+
+- **G (median) [5th–95th percentile]:** The estimated Variety Gap with its credible interval.
+- **Threshold band:** Below G_crit, Approaching G_crit, or Above G_crit, with the basis for the classification.
+- **Tier 1 status:** A summary assessment of the epistemic parameters, with particular attention to whether the Measurement Paradox is active.
+- **Trajectory (where longitudinal data exists):** Whether the gap is widening, narrowing, or stable, as estimated by the dynamic extension in Section 6.
+- **Leading indicators (for systems approaching the threshold):** Metric attrition rate, proxy divergence, reform success trends.
+- **Primary uncertainty driver:** Which parameter contributes most to the uncertainty in the composite index.
+
+This format is designed to prevent the index from being used as a simple ranking device—a single number that invites spurious comparisons between governance systems with fundamentally different architectures, histories, and data environments. The index is a diagnostic instrument, not a league table. Its value lies in the structured questions it forces the analyst to ask, the uncertainties it forces the analyst to acknowledge, and the trajectory it forces the analyst to track over time. The number is the beginning of the diagnostic conversation, not its conclusion.

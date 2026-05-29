@@ -124,7 +124,7 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series I',
+      tag: 'Working Paper · Series I',
       seriesNote: 'This is the first paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/fractality-as-stability',              label: 'Paper II: Fractality as Stability →' },
@@ -132,6 +132,8 @@
         { href: '/working-papers/requisite-variety-and-the-commons',    label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
+        { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper introduces the Governance Stability Simulator — an open analytical framework that models governance institutions as feedback control systems. Using standard mathematics from control theory and cybernetics, it compares governance architectures by their measurable stability properties rather than their stated intentions.',
@@ -147,7 +149,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Vitbok · Serie I',
+      tag: 'Arbetsdokument · Serie I',
       seriesNote: 'Detta är den första rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/fractality-as-stability',            label: 'Rapport II: Fraktalitet som stabilitet →' },
@@ -155,6 +157,8 @@
         { href: '/working-papers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
+        { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna vitbok introducerar styrstabilitetssimulatorn — ett öppet analytiskt ramverk som modellerar styrningsinstitutioner som återkopplingssystem. Med hjälp av standardmatematik från reglerteknik och cybernetik jämförs styrningsarkitekturer utifrån mätbara stabilitetsegenskaper snarare än uttalade intentioner.',

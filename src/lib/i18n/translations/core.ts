@@ -124,6 +124,10 @@ export const coreTranslations = {
       title: 'VII: The Architecture of Governance Failure',
       desc:  'Unifies the series into a single diagnostic narrative — why governance architectures that destroy information before it reaches decision‑makers cannot be repaired by improving those decision‑makers.'
     },
+    geSeriesPaperVIII: {
+      title: 'VIII: Measuring the Variety Gap',
+      desc:  'Develops a parametric framework for diagnosing governance failure — measuring the Variety Gap through eight observable parameters, with calibration and pilot validation.',
+    }
   },
 
 		// Projects
@@ -439,6 +443,10 @@ export const coreTranslations = {
       title: 'VII: Styrningens misslyckandes arkitektur',
       desc:  'Förenar serien till en enda diagnostisk berättelse — varför styrningsarkitekturer som förstör information innan den når beslutsfattare inte kan repareras genom att förbättra dessa beslutsfattare.'
     },
+    geSeriesPaperVIII: {
+      title: 'VIII: Att mäta varietetsgapet',
+      desc:  'Utvecklar ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden — mäter varietetsgapet genom åtta observerbara parametrar, med kalibrering och pilotvalidering.',
+    }
   },
 
 		// Projects
