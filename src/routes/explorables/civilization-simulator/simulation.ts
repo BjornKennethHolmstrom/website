@@ -1,4 +1,4 @@
-import type { CivilizationState, ObservationSnapshot, SimulationParams, ReformType, ReformEvent } from './types';
+import type { CivilizationState, ObservationSnapshot, SimulationParams, ReformType, ReformEvent, HistoryEntry } from './types';
 
 const TARGET_WEALTH = 120;
 const MAX_BUFFER = 60;
@@ -125,6 +125,10 @@ export function stepCivilization(
         ? `"${r}" absorbed by institutional resistance (${(perm*100).toFixed(0)}%)`
         : `"${r}" implemented (overcame ${(perm*100).toFixed(0)}% resistance)` });
     if (!absorbed) {
+      // Reform momentum: each success slightly opens the institution to further change.
+      // Models the real dynamic where demonstrated capacity for change lowers future resistance.
+      s.immune.permeability = Math.max(0.1, s.immune.permeability - 0.05);
+
       switch (r) {
         case 'expand_observation': {
           const hidden = ['environment','socialTrust','financialFragility','adaptiveCapacity']

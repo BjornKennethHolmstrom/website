@@ -174,7 +174,7 @@
     </div>
   </div>
 
-  {#if legacyCiv.auditRevealed}
+  {#if legacyCiv.auditEverRevealed}
     <div class="mt-4 rounded border border-violet-300 bg-violet-50 p-4 text-sm">
       <p class="mb-2 font-semibold text-violet-800">🔍 Meta-Governance Audit — True State Revealed</p>
       <div class="grid grid-cols-2 gap-x-8 gap-y-1 text-xs">
@@ -191,9 +191,7 @@
           </span>
         {/each}
       </div>
-      {#if legacyCiv.auditEverRevealed}
-        <p class="mt-2 text-xs text-violet-600">The full historical gap is now visible in the charts below.</p>
-      {/if}
+      <p class="mt-2 text-xs text-violet-600">The full historical gap is now visible in the charts below.</p>
     </div>
   {/if}
 
