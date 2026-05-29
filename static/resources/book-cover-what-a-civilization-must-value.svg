@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 1536 2304" width="1536" height="2304" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient: glow gathered toward the door, upper-centre -->
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#1c1c30"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+
+    <!-- Warm halo behind the threshold -->
+    <radialGradient id="doorHalo" cx="768" cy="620" r="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#fbbf24" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Interior of the door: bright/unknowable at top, warm threshold at base -->
+    <linearGradient id="doorCore" x1="768" y1="356" x2="768" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fffdf5" stop-opacity="0.97"/>
+      <stop offset="38%" stop-color="#fde68a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.78"/>
+    </linearGradient>
+
+    <!-- The four value-rays: bright at the threshold, dissolving into the dark -->
+    <linearGradient id="rayTruth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rayEcology" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rayLove" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rayMeaning" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="softBlur" x="-0.5" y="-0.2" width="2" height="1.4">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="doorBlur" x="-0.8" y="-0.5" width="2.6" height="2">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="cornerBlur">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- Faint observation grid, verticals converging toward the threshold (a corridor) -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="400" x2="1536" y2="400"/>
+    <line x1="0" y1="600" x2="1536" y2="600"/>
+    <line x1="0" y1="800" x2="1536" y2="800"/>
+    <line x1="0" y1="1000" x2="1536" y2="1000"/>
+    <line x1="0" y1="1200" x2="1536" y2="1200"/>
+    <line x1="0" y1="1400" x2="1536" y2="1400"/>
+    <line x1="0" y1="1600" x2="1536" y2="1600"/>
+    <line x1="0" y1="1800" x2="1536" y2="1800"/>
+    <line x1="0" y1="2000" x2="1536" y2="2000"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
+    <line x1="-120" y1="2304" x2="768" y2="360"/>
+    <line x1="260" y1="2304" x2="768" y2="360"/>
+    <line x1="540" y1="2304" x2="768" y2="360"/>
+    <line x1="768" y1="2304" x2="768" y2="360"/>
+    <line x1="996" y1="2304" x2="768" y2="360"/>
+    <line x1="1276" y1="2304" x2="768" y2="360"/>
+    <line x1="1656" y1="2304" x2="768" y2="360"/>
+  </g>
+
+  <!-- Faint unperceived dimensions still lurking at the upper corners (the remainder) -->
+  <g filter="url(#cornerBlur)" opacity="0.5">
+    <circle cx="150" cy="280" r="110" fill="#8b5cf6" opacity="0.10"/>
+    <circle cx="1390" cy="320" r="120" fill="#3b82f6" opacity="0.10"/>
+    <circle cx="90" cy="2150" r="120" fill="#ef4444" opacity="0.07"/>
+    <circle cx="1450" cy="2120" r="120" fill="#f59e0b" opacity="0.07"/>
+  </g>
+
+  <!-- The four value-rays: light entering the world through the open door, widening,
+       fading into darkness at the extreme edges where dimensions remain unnamed -->
+  <g filter="url(#softBlur)">
+    <!-- meaning (violet, far left) -->
+    <polygon points="754.7,841.1 781.3,858.9 150.5,1917.5 9.5,1822.5" fill="url(#rayMeaning)"/>
+    <!-- truth (cyan, inner left) -->
+    <polygon points="752.4,846.7 783.6,853.3 590.9,2140.8 405.1,2101.2" fill="url(#rayTruth)"/>
+    <!-- ecology (green, inner right) -->
+    <polygon points="752.4,853.3 783.6,846.7 1130.9,2101.2 945.1,2140.8" fill="url(#rayEcology)"/>
+    <!-- love (rose, far right) -->
+    <polygon points="754.7,858.9 781.3,841.1 1526.5,1822.5 1385.5,1917.5" fill="url(#rayLove)"/>
+  </g>
+
+  <!-- Soft spill of light at the threshold floor, where the rays originate -->
+  <ellipse cx="768" cy="895" rx="240" ry="60" fill="#fde68a" opacity="0.20" filter="url(#doorBlur)"/>
+
+  <!-- Halo behind the door -->
+  <circle cx="768" cy="620" r="430" fill="url(#doorHalo)"/>
+
+  <!-- The door / threshold: an arch of light the framework can point at but not cross -->
+  <path d="M620,900 L620,508 A148,148 0 0 1 916,508 L916,900 Z"
+        fill="url(#doorCore)" filter="url(#doorBlur)"/>
+  <path d="M620,900 L620,508 A148,148 0 0 1 916,508 L916,900 Z"
+        fill="none" stroke="#fcd34d" stroke-width="3" stroke-opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="768" y="210" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" font-weight="bold" fill="#f8fafc" letter-spacing="3">WHAT A CIVILIZATION</text>
+  <text x="768" y="310" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="72" font-weight="bold" fill="#f8fafc" letter-spacing="3">MUST VALUE</text>
+
+  <!-- Subtitle -->
+  <text x="768" y="1330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="46" font-style="italic" fill="#cbd5e1" letter-spacing="1">The Dimensions a Society Must Perceive</text>
+  <text x="768" y="1396" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="46" font-style="italic" fill="#cbd5e1" letter-spacing="1">to Remain Viable</text>
+  <text x="768" y="1462" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="38" font-style="italic" fill="#64748b" letter-spacing="1">—and the Threshold It Cannot Cross</text>
+
+  <!-- Companion-volume line -->
+  <text x="768" y="1612" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="28" fill="#475569" letter-spacing="3">A COMPANION TO COMPETENT BLINDNESS</text>
+
+  <!-- Author -->
+  <line x1="600" y1="2018" x2="936" y2="2018" stroke="#374151" stroke-width="1"/>
+  <text x="768" y="2086" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="32" fill="#cbd5e1" letter-spacing="2">Björn Kenneth Holmström</text>
+</svg>

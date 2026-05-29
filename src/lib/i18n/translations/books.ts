@@ -30,6 +30,11 @@ export const booksTranslations = {
         notAvailable: 'Not Available',
         comingSoon: 'Coming Soon'
       },
+      whatACivilizationMustValue: {
+        title: 'What a Civilization Must Value',
+        description:
+          'The Governance‑as‑Engineering answer to the question the diagnosis raises. A structural argument for why truth, ecological integrity, love and connection, and the capacity to evolve what we value are not optional virtues but necessary conditions for a viable civilization.',
+      },
       competentBlindness: {
         title: 'Competent Blindness',
         description:
@@ -102,6 +107,43 @@ export const booksTranslations = {
         description:
           'A contemplative exploration of mathematics as a sacred language, revealing how number and pattern connect the visible world to the invisible.'
       }
+    },
+    whatACivilizationMustValueBook: {
+      meta: {
+        title: 'What a Civilization Must Value',
+        subtitle: 'The Governance‑as‑Engineering Answer',
+        description:
+          'A structural argument for the values a civilization must adopt if it wants to remain viable — and an honest account of where the framework stops and other traditions must begin.',
+      },
+      ui: {
+        backToBooks: '← All Books',
+        downloadPdfEn: 'Download PDF (English)',
+        downloadPdfSv: 'Download PDF (Swedish)',
+        previous: 'Previous',
+        nextChapter: 'Next Chapter →',
+      },
+      toc: {
+        introduction: 'Introduction: The Question the Diagnosis Raises',
+        chapter1: '1. The Self‑Defeat Argument',
+        chapter2: '2. Truth as Signal Fidelity',
+        chapter3: '3. Ecological Integrity as the Boundary Condition',
+        chapter4: '4. Love and Connection as Relational Infrastructure',
+        chapter5: '5. Meaning — Where the Framework’s Grip Loosens',
+        chapter6: '6. The Meta‑Governance Imperative',
+        chapter7: '7. The Dimensions the Framework Cannot Name',
+        conclusion: 'Conclusion: What the Reader Now Sees',
+        references: 'References',
+        glossary: 'Glossary',
+      },
+      parts: {
+        part1: 'Part I — The Architecture of Values',
+        part2: 'Part II — The Dimensions the Framework Can Underwrite',
+        part3: 'Part III — The Dimensions the Framework Can Only Flag',
+        part4: 'Part IV — The Threshold',
+        conclusion: 'Conclusion',
+        references: 'References',
+        glossary: 'Glossary',
+      },
     },
     competentBlindnessBook: {
       meta: {
@@ -399,6 +441,11 @@ export const booksTranslations = {
         notAvailable: 'Inte tillgänglig',
         comingSoon: 'Kommer snart'
       },
+      whatACivilizationMustValue: {
+        title: 'Vad en civilisation måste värdera',
+        description:
+          'Styrning‑som‑ingenjörskonst-svaret på frågan diagnosen väcker. Ett strukturellt argument för varför sanning, ekologisk integritet, kärlek och anknytning samt förmågan att utveckla vad vi värderar inte är valfria dygder utan nödvändiga villkor för en livskraftig civilisation.',
+      },
       competentBlindness: {
         title: 'Kompetent Blindhet',
         description:
@@ -471,6 +518,43 @@ export const booksTranslations = {
         description:
           'En kontemplativ utforskning av matematik som ett heligt språk, som avslöjar hur siffror och mönster kopplar den synliga världen till den osynliga.'
       }
+    },
+    whatACivilizationMustValueBook: {
+      meta: {
+        title: 'Vad en civilisation måste värdesätta',
+        subtitle: 'Styrning‑som‑ingenjörskonst-svaret',
+        description:
+          'Ett strukturellt argument för de värden en civilisation måste anta om den vill förbli livskraftig — och en ärlig redogörelse för var ramverket stannar och andra traditioner måste ta vid.',
+      },
+      ui: {
+        backToBooks: '← Alla böcker',
+        downloadPdfEn: 'Ladda ner PDF (Engelska)',
+        downloadPdfSv: 'Ladda ner PDF (Svenska)',
+        previous: 'Föregående',
+        nextChapter: 'Nästa kapitel →',
+      },
+      toc: {
+        introduction: 'Introduktion: Frågan diagnosen väcker',
+        chapter1: '1. Självförlustargumentet',
+        chapter2: '2. Sanning som signaltrohet',
+        chapter3: '3. Ekologisk integritet som gränsvillkor',
+        chapter4: '4. Kärlek och anknytning som relationell infrastruktur',
+        chapter5: '5. Mening — där ramverket tappar greppet',
+        chapter6: '6. Meta‑styrningsimperativet',
+        chapter7: '7. De dimensioner ramverket inte kan namnge',
+        conclusion: 'Slutsats: Vad läsaren nu ser',
+        references: 'Referenser',
+        glossary: 'Ordlista',
+      },
+      parts: {
+        part1: 'Del I — Värderingarnas arkitektur',
+        part2: 'Del II — De dimensioner ramverket kan garantera',
+        part3: 'Del III — De dimensioner ramverket endast kan påtala',
+        part4: 'Del IV — Tröskeln',
+        conclusion: 'Slutsats',
+        references: 'Referenser',
+        glossary: 'Ordlista',
+      },
     },
     competentBlindnessBook: {
       meta: {

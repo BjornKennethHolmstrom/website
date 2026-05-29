@@ -23,6 +23,20 @@ const localBase = '/books'; // För böcker i /static/books
 
 export const booksData: Book[] = [
  {
+   id: 'what-a-civilization-must-value',
+   key: 'whatACivilizationMustValue',
+   year: 2026,
+   pages: '40',
+   category: 'governance',
+   cover: '/resources/book-cover-what-a-civilization-must-value.svg',
+   hasOnlineVersion: true,
+   readOnlinePath: '/books/what-a-civilization-must-value',
+   pdfPath: {
+     en: '/books/What_a_Civilization_Must_Value.pdf',
+     sv: null,
+   },
+ },
+ {
    id: 'competent-blindness',
    key: 'competentBlindness',
    year: 2025,

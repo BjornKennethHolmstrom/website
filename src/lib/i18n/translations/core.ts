@@ -174,6 +174,15 @@ export const coreTranslations = {
         colorClass: "bg-slate-100 text-slate-800"
       },
       {
+        label: "Companion Volume",
+        title: "What a Civilization Must Value",
+        desc: "The Governance‑as‑Engineering answer: a structural argument for why truth, ecological integrity, love and connection, and the capacity to evolve what we value are necessary conditions for a viable civilization.",
+        cta: "Read the Book",
+        url: "/books/what-a-civilization-must-value",
+        cover: "/resources/book-cover-what-a-civilization-must-value.svg",
+        colorClass: "bg-indigo-100 text-indigo-800"
+      },
+      {
         label: "Foundational Work",
         title: "The Integration Crisis",
         desc: "Why does winning feel like losing? A diagnostic manual for civilizational redesign and the shift to Yellow consciousness.",
@@ -500,6 +509,15 @@ export const coreTranslations = {
         url: "/books/competent-blindness",
         cover: "/resources/book-cover-competent-blindness.svg",
         colorClass: "bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200"
+      },
+      {
+        label: "Följeslagare",
+        title: "Vad en civilisation måste värdesätta",
+        desc: "Styrning‑som‑ingenjörskonst-svaret: ett strukturellt argument för varför sanning, ekologisk integritet, kärlek och anknytning samt förmågan att utveckla vad vi värderar är nödvändiga villkor för en livskraftig civilisation.",
+        cta: "Läs boken",
+        url: "/books/what-a-civilization-must-value",
+        cover: "/resources/book-cover-what-a-civilization-must-value.svg",
+        colorClass: "bg-indigo-100 text-indigo-800"
       },
       {
         label: "Grundläggande Verk",
