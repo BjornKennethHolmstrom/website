@@ -34,7 +34,7 @@ Parametrarna presenteras i den ordning de har i den grundläggande hierarki som 
 
 **Datakällor.** Lagstiftnings- och regleringsdatabaser; policykronologier; jämförande dataset för offentlig förvaltning; expertundersökningar bland policypraktiker.
 
-**Osäkerhet.** Låg till måttlig. Datum för problems uppkomst och policyimplementering är offentligt observerbara för de flesta styrsystem, även om definitionen av "substantiellt svar" kräver kodningsbedömningar som kan variera mellan analytiker. Den främsta utmaningen är att välja ett representativt urval av policyepisoder snarare än att mäta latensen för enskilda episoder. System med få dokumenterade policysvar – eftersom problem systematiskt ignoreras – uppvisar ett censurerat-dataproblem som ökar osäkerheten.
+**Osäkerhet.** Låg till måttlig. Datum för problems uppkomst och policyimplementering är offentligt observerbara för de flesta styrsystem, även om definitionen av ”substantiellt svar” kräver kodningsbedömningar som kan variera mellan analytiker. Den främsta utmaningen är att välja ett representativt urval av policyepisoder snarare än att mäta latensen för enskilda episoder. System med få dokumenterade policysvar – eftersom problem systematiskt ignoreras – uppvisar ett censurerat-dataproblem som ökar osäkerheten.
 
 ---
 
@@ -48,13 +48,13 @@ Parametrarna presenteras i den ordning de har i den grundläggande hierarki som 
 
 ---
 
-### 3.5 Immunsystemaktivitet → Immunpermeabilitet (1 − sannolikhet för symbolisk anpassning)
+### 3.5 Immunsystemaktivitet → Immunpermeabilitet (1 − sannolikheten för symbolisk anpassning)
 
 **Primär proxyvariabel.** Kvoten mellan strukturellt implementerade reformer och annonserade reformer under en avgränsad observationsperiod (vanligtvis fem till tio år). En reform kodas som strukturellt implementerad om den uppfyller tre kriterier: det rättsliga eller regulatoriska instrumentet antogs; den implementerande institutionen mottog tilldelade resurser; och en oberoende utvärdering genomförd minst två år efter antagandet bekräftade att reformen producerade mätbara förändringar i institutionellt beteende eller utfall. Annonseringar som inte uppfyller något av dessa kriterier kodas som symboliska. Immunpermeabilitetsparametern är andelen annonserade reformer som uppnår strukturell implementering.
 
 **Datakällor.** Lagstiftnings- och regleringsdatabaser; budgetallokeringar knutna till reformprogram; oberoende policyutvärderingar från högre revisionsorgan, akademiska forskare och civilsamhällesorganisationer.
 
-**Osäkerhet.** Måttlig till hög. Kodning av reformutfall kräver kvalitativa bedömningar, och distinktionen mellan symbolisk och strukturell implementering existerar på en kontinuerlig skala. Mätparadoxen är särskilt akut här: system med mycket effektiva immunsystem kan producera sofistikerade reformframträdanden som är svåra att skilja från genuin strukturell förändring utan detaljerad institutionell kunskap. Metoden "censur som signal" (avsnitt 4) tillhandahåller en kompletterande proxy: den takt med vilken styrsystemet tar bort, omdefinierar eller begränsar tillgången till sina egna resultatmått över tid är i sig ett mått på immunsystemaktivitet som inte är beroende av innehållet i de kvarvarande data.
+**Osäkerhet.** Måttlig till hög. Kodning av reformutfall kräver kvalitativa bedömningar, och distinktionen mellan symbolisk och strukturell implementering existerar på en kontinuerlig skala. Mätparadoxen är särskilt akut här: system med mycket effektiva immunsystem kan producera sofistikerade reformframträdanden som är svåra att skilja från genuin strukturell förändring utan detaljerad institutionell kunskap. Metoden ”censur som signal” (avsnitt 4) tillhandahåller en kompletterande proxy: den takt med vilken styrsystemet tar bort, omdefinierar eller begränsar tillgången till sina egna resultatmått över tid är i sig ett mått på immunsystemaktivitet som inte är beroende av innehållet i de kvarvarande data.
 
 ---
 
@@ -72,7 +72,7 @@ Parametrarna presenteras i den ordning de har i den grundläggande hierarki som 
 
 **Primär proxyvariabel.** Ett sammansatt mått bestående av tre delindikatorer: (i) omfattningen av informella eller parallella styrningsinstitutioner i förhållande till formella, skattad genom kvoten mellan privat säkerhetspersonal och offentliga poliser, andelen ekonomisk aktivitet som sker utanför det formella skatte- och regleringssystemet, eller marknadsandelen för informella tvistlösningsmekanismer i förhållande till formella domstolar; (ii) divergensen mellan satellitbaserade mått på ekonomisk aktivitet (nattljusluminositet) och officiell BNP-statistik, vilket indikerar ekonomisk aktivitet som den formella observationsarkitekturen inte fångar; (iii) volymen informella digitala valutatransaktioner i förhållande till formella bankflöden, vilket indikerar finansiell förbikopplingsinfrastruktur.
 
-Dessa "mörka data"-proxyvariabler mäter inte förbikopplingstätheten direkt. De mäter fenomen som är korrelerade med förbikopplingstäthet, och deras divergens från formella indikatorer är i sig en signal om att den formella observationsarkitekturen förlorar kontakt med det system den styr.
+Dessa ”mörka data”-proxyvariabler mäter inte förbikopplingstätheten direkt. De mäter fenomen som är korrelerade med förbikopplingstäthet, och deras divergens från formella indikatorer är i sig en signal om att den formella observationsarkitekturen förlorar kontakt med det system den styr.
 
 **Datakällor.** Satellitdata över nattljus (NOAA, NASA); officiell BNP-statistik; arbetskraftsundersökningar; Internationella arbetsorganisationens skattningar av den informella ekonomin; transaktionsvolymer för kryptovalutor; rapporter från den privata säkerhetsindustrin; nationella polisbemanningsdata.
 
@@ -102,5 +102,7 @@ Dessa "mörka data"-proxyvariabler mäter inte förbikopplingstätheten direkt. 
 | Oscillationsdynamik | Cykelamplitud/frekvens | Variationskoefficient + autokorrelation för styrningsutfall | Låg | 3 (Emergent) |
 | Förbikopplingsproliferation | Förbikopplingstäthet | Mörka data-proxyvariabler: informell ekonomi, satellitdivergens, kryptoflöden | Hög | 3 (Emergent) |
 | Performativ anpassning | Symbolisk-till-strukturell kvot | Andel reformannonseringar som uppnår strukturell implementering | Måttlig | 3 (Emergent) |
+
+*Anmärkning: Den symbolisk‑till‑strukturella kvoten (ρ = 1 − p) är definitionsmässigt komplementet till immunpermeabiliteten och är inte en oberoende indata till det sammansatta indexet G. Den inkluderas i denna tabell som en namngiven diagnostik eftersom den karaktäriserar det mönster av institutionellt beteende som producerar immunpermeabilitetsvärdet, och eftersom den förtjänar att rapporteras separat vid sidan av G. Dess matematiska bidrag till G absorberas i immunpermeabilitetstermen med en kombinerad nivåviktad exponent; se appendix D.4.*
 
 Parametrarna är inte ett mätinstrument som kan tillämpas mekaniskt. De utgör ett strukturerat ramverk för skattning – ett systematiskt sätt att ställa samma diagnostiska frågor över olika styrsystem, med uttrycklig uppmärksamhet på vad som kan och inte kan vetas utifrån de tillgängliga data. Mätparadoxen, som artikeln nu vänder sig till, identifierar den djupaste utmaning som varje sådant ramverk måste konfrontera.

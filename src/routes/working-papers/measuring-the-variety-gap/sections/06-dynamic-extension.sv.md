@@ -7,15 +7,15 @@ Detta avsnitt utvidgar det statiska parametriska ramverket till det dynamiska fa
 ### 6.1 Den dynamiska ekvationen
 
 Den formella modellen för Varietetsgapets dynamik, introducerad i artikel VI och utvecklad i sammanfattningsrapporten, är:
-
-**dG/dt = α − β · A(V)**
-
+ 
+**dG/dt = α − η · A(V)**
+ 
 Där:
 - **α** är uppkomsttakten för nya störningsdimensioner – den takt med vilken den effektiva dimensionaliteten hos störningsmiljön (V_e) ökar över tid.
 - **A(V)** är styrningsarkitekturens anpassningstakt – den takt med vilken systemet utvidgar sin observationskanal till att inkludera nya dimensioner.
-- **β** är anpassningseffektiviteten – den andel av anpassningsinsatsen som framgångsrikt omsätts i utvidgad observationskapacitet, i stället för att absorberas av immunsystemet eller omvandlas till symbolisk anpassning.
-
-När β · A(V) ≥ α håller systemets observationskapacitet jämna steg med sin miljö. Varietetsgapet är stabilt eller krympande. När β · A(V) `<` α vidgas gapet. Systemet förlorar successivt perceptuell kontakt med de dimensioner som avgör dess utfall.
+- **η** är anpassningseffektiviteten – den andel av anpassningsinsatsen som framgångsrikt omsätts i utvidgad observationskapacitet, i stället för att absorberas av immunsystemet eller omvandlas till symbolisk anpassning. (Symbolen η används här för att skilja denna storhet från förbikopplingstäthetsparametern β som definieras i avsnitt 3.7 och appendix D.1.)
+ 
+När η · A(V) ≥ α håller systemets observationskapacitet jämna steg med sin miljö. Varietetsgapet är stabilt eller krympande. När η · A(V) `<` α vidgas gapet. Systemet förlorar successivt perceptuell kontakt med de dimensioner som avgör dess utfall.
 
 De statiska parametrar som utvecklades i avsnitt 3 och 5 ger skattningar av G vid en given tidpunkt. Den dynamiska utvidgningen kräver att man skattar α, β och A(V) över en definierad observationsperiod, vanligtvis det senaste decenniet för vilket data finns tillgängligt. Varje term innebär distinkta mätutmaningar.
 
@@ -39,16 +39,16 @@ Anpassningstakten mäter den hastighet med vilken styrsystemet utvidgar sin obse
 
 Denna skattning kräver försiktighet. Inte varje ökning av publicerade indikatorer representerar en genuin expansion av observationskapaciteten. Dataillusionen varnar för att tillägg av fler mätetal längs samma dimensioner ökar förtroendet utan att öka dimensionaliteten. Anpassningstakten bör därför skattas från förändringar i *oberoende* dimensioner – antalet statistiskt distinkta observationskategorier som systemet har lagt till, inte det råa antalet nya indikatorer. Där longitudinell principalkomponentanalys är möjlig ger den en mer rigorös grund för denna skattning än indikatorräkning.
 
-Anpassningseffektiviteten β är svårare att skatta än A(V) själv, eftersom det kräver att man skiljer mellan anpassningsinsatser som framgångsrikt expanderar observationskapaciteten och de som absorberas av immunsystemet. Den strukturella reformkvot som utvecklades i avsnitt 3.5 och 3.8 ger en utgångspunkt: andelen reformannonseringar som uppnår strukturell implementering är en proxyvariabel för den effektivitet med vilken systemet omvandlar adaptiv intention till adaptiv kapacitet. Men denna proxy fångar endast den synliga dimensionen av anpassningseffektiviteten. Immunsystemet kan också verka genom att förhindra att anpassningsinsatser överhuvudtaget annonseras – tjänstemannen som lär sig att inte föreslå utvidgningar av observationskanalen eftersom tidigare förslag bestraffades. Det verkliga β är sannolikt lägre än den strukturella reformkvoten antyder, och för system där Mätparadoxen är aktiv bör skattningen behandlas som en övre gräns.
+Anpassningseffektiviteten η är svårare att skatta än A(V) själv, eftersom det kräver att man skiljer mellan anpassningsinsatser som framgångsrikt expanderar observationskapaciteten och de som absorberas av immunsystemet. Den strukturella reformkvot som utvecklades i avsnitt 3.5 och 3.8 ger en utgångspunkt: andelen reformannonseringar som uppnår strukturell implementering är en proxyvariabel för den effektivitet med vilken systemet omvandlar adaptiv intention till adaptiv kapacitet. Men denna proxy fångar endast den synliga dimensionen av anpassningseffektiviteten. Immunsystemet kan också verka genom att förhindra att anpassningsinsatser överhuvudtaget annonseras – tjänstemannen som lär sig att inte föreslå utvidgningar av observationskanalen eftersom tidigare förslag bestraffades. Det verkliga η är sannolikt lägre än den strukturella reformkvoten antyder, och för system där Mätparadoxen är aktiv bör skattningen behandlas som en övre gräns.
 
 ### 6.4 Beräkning av dG/dt och tolkning av banan
 
-Med skattningar av α och β · A(V) till hands beräknas dG/dt som deras differens. Resultatet rapporteras inte som ett precist numeriskt värde – osäkerheterna i α och β är för stora för att stödja det – utan som en ban-klassificering med en tillhörande konfidensbedömning:
+Med skattningar av α och η · A(V) till hands beräknas dG/dt som deras differens. Resultatet rapporteras inte som ett precist numeriskt värde – osäkerheterna i α och β är för stora för att stödja det – utan som en ban-klassificering med en tillhörande konfidensbedömning:
 
-- **Vidgande (hög konfidens):** Alla tre α-proxyvariabler överstiger β · A(V) med en marginal som är större än den sammanlagda osäkerheten. Systemet förlorar perceptuell kontakt med sin miljö. Accelerationsasymmetrin är aktiv.
-- **Vidgande (måttlig konfidens):** Centralestimatet för α överstiger β · A(V), men osäkerhetsbanden överlappar. Banan är sannolikt negativ, men data är otillräckliga för att utesluta ett stabilt gap.
-- **Stabilt:** α och β · A(V) befinner sig inom varandras osäkerhetsband. Systemet upprätthåller sitt nuvarande Varietetsgap. Huruvida det är adekvat beror på om gapet ligger under eller över observerbarhetströskeln.
-- **Minskande:** β · A(V) överstiger α med en marginal som är större än den sammanlagda osäkerheten. Systemet expanderar sin observationskapacitet snabbare än vad dess miljö genererar nya dimensioner. Gapet sluts.
+- **Vidgande (hög konfidens):** Alla tre α-proxyvariabler överstiger η · A(V) med en marginal som är större än den sammanlagda osäkerheten. Systemet förlorar perceptuell kontakt med sin miljö. Accelerationsasymmetrin är aktiv.
+- **Vidgande (måttlig konfidens):** Centralestimatet för α överstiger η · A(V), men osäkerhetsbanden överlappar. Banan är sannolikt negativ, men data är otillräckliga för att utesluta ett stabilt gap.
+- **Stabilt:** α och η · A(V) befinner sig inom varandras osäkerhetsband. Systemet upprätthåller sitt nuvarande Varietetsgap. Huruvida det är adekvat beror på om gapet ligger under eller över observerbarhetströskeln.
+- **Minskande:** η · A(V) överstiger α med en marginal som är större än den sammanlagda osäkerheten. Systemet expanderar sin observationskapacitet snabbare än vad dess miljö genererar nya dimensioner. Gapet sluts.
 
 Ban-klassificeringen är mer informativ än det statiska Varietetsgapvärdet för system som närmar sig observerbarhetströskeln. Ett system med ett måttligt men snabbt vidgande gap kan vara mer sårbart än ett med ett stort men stabilt gap – eftersom det förra närmar sig den icke-linjära fasförskjutningen vid G_krit, medan det senare har nått en (potentiellt dysfunktionell) jämvikt. Den dynamiska utvidgningen ger således det parametriska ramverket ett prediktivt värde som den statiska ögonblicksbilden inte kan erbjuda.
 

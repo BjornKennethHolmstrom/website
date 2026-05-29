@@ -27,29 +27,27 @@ where C₀ is the baseline capacity that would obtain if all observation channel
 
 The Variety Gap G is defined as the ratio of the disturbance environment's effective dimensionality to the governance system's effective capacity to perceive and respond to it. The multiplicative index expresses this as:
 
-**G = (V_e / V_o) · (1 / f_τ) · (1 / g_σ) · (1 / h_p) · (1 / j_β) · (1 / k_ω) · (1 / m_ρ)**
+**G = (V_e / V_o) · (1 / f_τ) · (1 / g_σ) · (1 / h_p) · (1 / j_β) · (1 / k_ω)**
 
-where the functions f_τ through m_ρ transform the remaining parameters into normalised capacity multipliers bounded in (0,1], with 1 representing no degradation and values approaching 0 representing severe degradation.
+where the functions f_τ through k_ω transform the response and emergent parameters into normalised capacity multipliers bounded in (0,1], with 1 representing no degradation and values approaching 0 representing severe degradation. The symbolic-to-structural ratio ρ equals 1 − p by definition and is therefore not carried as an independent term; its contribution is subsumed into h_p = p, which carries a combined exponent in the tier-weighted formulation (D.4) reflecting both its Tier 2 and Tier 3 roles.
 
 The specific functional forms are:
 
-- **f_τ = exp(−τ / τ₀)** , where τ₀ is a reference latency (set at 12 months, the approximate latency of a well-functioning governance system). As τ → 0, f_τ → 1 (no capacity loss from latency). As τ → ∞, f_τ → 0 (complete capacity loss from infinite latency).
+- **f_τ = exp(−τ / τ₀)** , where τ₀ is a reference latency set at 12 months—the observed median response latency among the calibration cases assessed as having feasible governance transitions, and the latency at which the exponential capacity penalty becomes material (f_τ ≈ 0.37 at τ = τ₀). As τ → 0, f_τ → 1 (no capacity loss from latency). As τ → ∞, f_τ → 0 (complete capacity loss from infinite latency).
 
 - **g_σ = σ** (direct use of signal fidelity, already normalised to [0,1]).
 
-- **h_p = p** (immune permeability, the proportion of reforms that succeed).
+- **h_p = p** (immune permeability, the proportion of reforms that achieve structural implementation).
 
 - **j_β = 1 − β** (bypass density complement; higher bypass density reduces effective governance capacity).
 
-- **k_ω = exp(−ω / ω₀)** , where ω₀ is a reference oscillation amplitude (set at 0.20, the approximate coefficient of variation of GDP growth in a stable developed economy). As ω → 0, k_ω → 1. As ω → ∞, k_ω → 0.
+- **k_ω = exp(−ω / ω₀)** , where ω₀ is a reference oscillation amplitude set at 0.20—the observed median coefficient of variation of GDP growth across the high-capacity calibration cases (Finland, Sweden, Germany), representing the amplitude benchmark consistent with adequate governance. As ω → 0, k_ω → 1. As ω → ∞, k_ω → 0.
 
-- **m_ρ = 1 − ρ** = p (the structural reform ratio, identical to immune permeability by definition, but included explicitly because it captures a distinct diagnostic dimension).
-
-The product form ensures that a score of zero on any single parameter—complete signal fidelity collapse (σ = 0), total immune impermeability (p = 0), infinite latency (τ → ∞)—collapses the entire index to infinity (G → ∞), representing a system whose Variety Gap is unboundedly large. This property reflects the framework's structural claim that a single catastrophic architectural failure is sufficient to render a governance system incapable of its functions.
+The product form ensures that a score of zero on any capacity multiplier—complete signal fidelity collapse (σ = 0), total immune impermeability (p = 0), infinite latency (τ → ∞)—drives G toward infinity (G → ∞), representing a system whose Variety Gap is unboundedly large. This property reflects the framework's structural claim that a single catastrophic architectural failure is sufficient to render a governance system incapable of its functions.
 
 In practice, the parameters are bounded away from zero by measurement constraints and by the survival requirement that a governance system must maintain some minimal functionality to continue existing as a governance system. The multiplicative index is computed in logarithmic form for numerical stability:
 
-**ln G = ln(V_e / V_o) − ln f_τ − ln g_σ − ln h_p − ln j_β − ln k_ω − ln m_ρ**
+**ln G = ln(V_e / V_o) − ln f_τ − ln g_σ − ln h_p − ln j_β − ln k_ω**
 
 and exponentiated to recover G.
 
@@ -67,12 +65,14 @@ The additive formulation is easier to compute and interpret than the multiplicat
 
 Not all eight parameters are structurally equal. The foundational hierarchy described in Section 5.2 is implemented through exponents applied to each parameter in the multiplicative product. The general weighted form is:
 
-**G = (V_e / V_o)^(w₁) · (1 / f_τ)^(w₂) · (1 / g_σ)^(w₁) · (1 / h_p)^(w₂) · (1 / j_β)^(w₃) · (1 / k_ω)^(w₃) · (1 / m_ρ)^(w₃)**
+**G = (V_e / V_o)^(w₁) · (1 / f_τ)^(w₂) · (1 / g_σ)^(w₁) · (1 / h_p)^(w₂ + w₃) · (1 / j_β)^(w₃) · (1 / k_ω)^(w₃)**
 
 where:
 - **w₁ = 1.5** for Tier 1 (Epistemic) parameters: V_e/V_o, σ.
-- **w₂ = 1.0** for Tier 2 (Response) parameters: τ, immune permeability p.
-- **w₃ = 0.5** for Tier 3 (Emergent) parameters: bypass density β, oscillation amplitude ω, symbolic ratio ρ.
+- **w₂ = 1.0** for Tier 2 (Response) parameters: τ.
+- **w₃ = 0.5** for Tier 3 (Emergent) parameters: bypass density β, oscillation amplitude ω.
+
+Immune permeability p carries a combined exponent of w₂ + w₃ = 1.5, reflecting its dual structural role: as the response capacity measure (Tier 2) determining how the system acts on perceived signals, and as the source of the symbolic adaptation dynamic (Tier 3) that is definitionally identical to 1 − ρ. This consolidation is mathematically exact: since ρ = 1 − p, including ρ as a nominally separate Tier 3 term would double-count the same quantity. The combined exponent 1.5 is identical to what would have been obtained by including both p at w₂ = 1.0 and ρ at w₃ = 0.5—but stated transparently rather than obscured by the appearance of two independent parameters.
 
 The weighting scheme reflects the qualitative causal structure identified across the twenty-one cases in the series: a failure at the epistemic level (Tier 1) renders all other parameter estimates unreliable and widens the Variety Gap more severely than an equivalent failure at the response or emergent levels. The specific exponent values (1.5, 1.0, 0.5) are not derived from first principles—no such derivation exists—but represent a parsimonious parameterisation of the causal hierarchy. Sensitivity analysis of the weighting scheme is straightforward: the exponents can be varied within plausible ranges (typically ±0.5 for Tier 1, ±0.3 for Tier 2, ±0.2 for Tier 3) and the resulting diagnostic classifications compared. If the classification is stable under plausible variations of the weighting scheme, the diagnostic conclusion is robust to the weighting assumptions. If it is unstable, the sensitivity should be reported alongside the primary classification.
 
@@ -118,16 +118,16 @@ Each parameter estimate carries an uncertainty assessment, as specified in Secti
 
 ### D.7 Dynamic Extension: Estimating dG/dt
 
-The dynamic extension estimates the rate of change of the Variety Gap from the emergence rate of new disturbance dimensions (α) and the adaptation rate of the governance architecture (β_adapt · A(V)), where β_adapt is the adaptation efficiency (distinct from bypass density β) and A(V) is the adaptation effort. The dynamic equation is:
+The dynamic extension estimates the rate of change of the Variety Gap from the emergence rate of new disturbance dimensions (α) and the adaptation rate of the governance architecture (η · A(V)), where η is the adaptation efficiency and A(V) is the adaptation effort. The dynamic equation is:
 
-**dG/dt = α − β_adapt · A(V)**
+**dG/dt = α − η · A(V)**
 
 where:
 - **α** is estimated as the maximum of three proxies: the institutional novelty rate (α_inst), the academic identification rate (α_acad), and the crisis novelty rate (α_crisis), each expressed in units of new disturbance dimensions per year.
 - **A(V)** is the adaptation effort, estimated as the rate of expansion of V_o over the observation period: A(V) = ΔV_o / Δt.
-- **β_adapt** is the adaptation efficiency, estimated as the proportion of announced reforms that achieve structural implementation (p), adjusted downward for systems where the Measurement Paradox is active.
+- **η** is the adaptation efficiency, estimated as the proportion of announced reforms that achieve structural implementation (p), adjusted downward for systems where the Measurement Paradox is active. (η is used throughout Sections 6–8 in place of the symbol β_adapt used in earlier drafts, to avoid notational collision with the bypass density parameter β defined in D.1.)
 
-The dynamic estimate is reported not as a precise numerical value but as a trajectory classification with an associated confidence assessment, as described in Section 6.4. The classification is based on whether the central estimate of α exceeds the central estimate of β_adapt · A(V) by a margin larger than the combined uncertainty, and on the sensitivity of this comparison to the choice of α proxy and to the Measurement Paradox adjustment.
+The dynamic estimate is reported not as a precise numerical value but as a trajectory classification with an associated confidence assessment, as described in Section 6.4. The classification is based on whether the central estimate of α exceeds the central estimate of η · A(V) by a margin larger than the combined uncertainty, and on the sensitivity of this comparison to the choice of α proxy and to the Measurement Paradox adjustment.
 
 ### D.8 Limitations of the Formal Apparatus
 

@@ -38,7 +38,7 @@ export const papersData: Workingpaper[] = [
      en: '70 min',
      sv: '70 min'
    },
-   version: '1.0',
+   version: '1.1',
    pdfPath: {
      en: `${localBase}/measuring-the-variety-gap.pdf`,
      sv: `${localBase}/measuring-the-variety-gap-sv.pdf`,

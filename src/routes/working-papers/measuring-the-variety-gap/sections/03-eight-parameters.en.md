@@ -103,4 +103,6 @@ These "dark data" proxies do not measure bypass density directly. They measure p
 | Bypass Proliferation | Bypass density | Dark data proxies: informal economy, satellite divergence, crypto flows | High | 3 (Emergent) |
 | Performative Adaptation | Symbolic-to-structural ratio | Proportion of reform announcements achieving structural implementation | Moderate | 3 (Emergent) |
 
+*Note: The symbolic-to-structural ratio (ρ = 1 − p) is the definitional complement of immune permeability and is not an independent input to the composite index G. It is included in this table as a named diagnostic because it characterises the pattern of institutional behaviour producing the immune permeability score, and because it warrants separate reporting alongside G. Its mathematical contribution to G is absorbed into the immune permeability term with a combined tier-weighted exponent; see Appendix D.4.*
+
 The parameters are not a measurement instrument that can be applied mechanically. They are a structured framework for estimation—a systematic way of asking the same diagnostic questions across different governance systems, with explicit attention to what can and cannot be known from the available data. The Measurement Paradox, to which the paper now turns, identifies the deepest challenge that any such framework must confront.
