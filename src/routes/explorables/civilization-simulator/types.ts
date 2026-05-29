@@ -36,14 +36,16 @@ export interface CivilizationState {
   collapsed: boolean;
   collapseReason: string | null;
   immune: {
-    permeability: number;      // base resistance to reform (0–1)
+    permeability: number;
     cooldownRemaining: number;
   };
   politicalCapital: number;
   observedDimensions: Set<string>;
   regulatedFinance: boolean;
-  auditRevealed: boolean;
+  auditRevealed: boolean;      // true only for the step the audit fires
+  auditEverRevealed: boolean;  // permanently true once audit has succeeded — drives chart reveal
   reformAttempts: Record<string, number>;
+  lowTrustSteps: number;       // consecutive steps with socialTrust below collapse threshold
 }
 
 export interface SimulationParams {
@@ -51,20 +53,19 @@ export interface SimulationParams {
   latency: number;
   noise: number;
   gain: number;
-  // Note: immune permeability lives on CivilizationState, not here,
-  // because it's a property of the civilization that reforms can change.
 }
 
 export interface HistoryEntry {
   time: number;
-  legacyWealth: number;
-  adaptiveWealth: number;
-  legacyEnv: number;
-  adaptiveEnv: number;
-  legacyTrust: number;
-  adaptiveTrust: number;
-  legacyFragility: number;
-  adaptiveFragility: number;
+  // True values (always tracked internally)
+  legacyWealth: number;    adaptiveWealth: number;
+  legacyEnv: number;       adaptiveEnv: number;
+  legacyTrust: number;     adaptiveTrust: number;
+  legacyFragility: number; adaptiveFragility: number;
+  // Legacy observed values — null when the dimension is unobserved at this step
+  legacyObsEnv: number | null;
+  legacyObsTrust: number | null;
+  legacyObsFragility: number | null;
 }
 
 export interface SimState {

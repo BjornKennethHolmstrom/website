@@ -1,14 +1,13 @@
 <script lang="ts">
   import { createCivState, stepCivilization } from './simulation';
   import type { HistoryEntry, SimulationParams, ReformType, ReformEvent } from './types';
-  import { SCENARIOS, type Scenario } from './scenarios';
+  import { SCENARIOS } from './scenarios';
   import CivilizationView from './components/CivilizationView.svelte';
   import ComparisonChart from './components/ComparisonChart.svelte';
   import ParameterControls from './components/ParameterControls.svelte';
   import ExplorableBreadcrumb from '$lib/components/ExplorableBreadcrumb.svelte';
   import ReformPanel from './components/ReformPanel.svelte';
 
-  // --- State ---
   let selectedScenario = $state('default');
   let legacyParams   = $state({ ...SCENARIOS[0].legacyParams });
   let adaptiveParams = $state({ ...SCENARIOS[0].adaptiveParams });
@@ -21,23 +20,20 @@
   let legacyReforms  = $state<ReformType[]>([]);
   let reformEvents   = $state<ReformEvent[]>([]);
   let shockQueue     = $state<{ time: number; envShock: number; finShock: number }[]>([]);
-  let shockJustHit   = $state(false); // drives the pause banner
+  let shockJustHit   = $state(false);
 
-  // --- Load scenario ---
   function loadScenario(id: string) {
     stop();
-    const scenario = SCENARIOS.find(s => s.id === id) || SCENARIOS[0];
-    selectedScenario  = id;
-    legacyParams      = { ...scenario.legacyParams };
-    adaptiveParams    = { ...scenario.adaptiveParams };
-    shockQueue        = [...scenario.shocks];
-    legacyCiv         = createCivState('legacy');
-    adaptiveCiv       = createCivState('adaptive');
-    if (scenario.special?.includes('immune permeability')) {
-      if (id === 'russia-legibility-deficit') legacyCiv.immune.permeability = 0.95;
-      else if (id === 'sweden-drift-loop')     legacyCiv.immune.permeability = 0.7;
-      else if (id === 'us-integration-deficit') legacyCiv.immune.permeability = 0.4;
-    }
+    const scenario = SCENARIOS.find(s => s.id === id) ?? SCENARIOS[0];
+    selectedScenario = id;
+    legacyParams     = { ...scenario.legacyParams };
+    adaptiveParams   = { ...scenario.adaptiveParams };
+    shockQueue       = [...scenario.shocks];
+    legacyCiv        = createCivState('legacy');
+    adaptiveCiv      = createCivState('adaptive');
+    if (id === 'russia-legibility-deficit')  legacyCiv.immune.permeability = 0.95;
+    else if (id === 'sweden-drift-loop')     legacyCiv.immune.permeability = 0.7;
+    else if (id === 'us-integration-deficit') legacyCiv.immune.permeability = 0.4;
     time         = 0;
     history      = [];
     reformEvents = [];
@@ -45,20 +41,19 @@
     shockJustHit = false;
   }
 
-  // --- Step once ---
   function stepOnce() {
     shockJustHit = false;
 
     const activeShocks = shockQueue.filter(s => s.time === time);
-    const envShock = activeShocks.reduce((sum, s) => sum + s.envShock, 0);
-    const finShock = activeShocks.reduce((sum, s) => sum + s.finShock, 0);
-    const shocks = { envShock, finShock };
+    const shocks = {
+      envShock: activeShocks.reduce((sum, s) => sum + s.envShock, 0),
+      finShock: activeShocks.reduce((sum, s) => sum + s.finShock, 0),
+    };
 
-    const scenario = SCENARIOS.find(s => s.id === selectedScenario);
-    if (scenario?.id === 'brazil-breakthrough-capture') {
+    if (selectedScenario === 'brazil-breakthrough-capture') {
       legacyCiv.immune.permeability = (time >= 30 && time <= 40) || (time >= 60 && time <= 70) ? 0.2 : 0.8;
     }
-    if (scenario?.id === 'china-calibration-deficit' && time % 20 === 0 && time > 0) {
+    if (selectedScenario === 'china-calibration-deficit' && time % 20 === 0 && time > 0) {
       legacyParams.gain = 2.5 + Math.random() * 1.5;
       setTimeout(() => { legacyParams.gain = 2.5; }, 3000);
     }
@@ -67,7 +62,6 @@
     const adaptiveResult = stepCivilization(adaptiveCiv, adaptiveParams, shocks);
 
     if (legacyResult.paramsChanged && legacyResult.newParams) legacyParams = legacyResult.newParams;
-
     legacyCiv   = legacyResult.newState;
     adaptiveCiv = adaptiveResult.newState;
 
@@ -76,34 +70,37 @@
       ...legacyResult.events.map(e => ({ ...e, step: time, target: 'legacy' as const })),
     ];
 
+    // Record true values for both + observed values for legacy.
+    // The chart uses observed values for legacy by default; true legacy history
+    // is only revealed once the meta_governance_audit has succeeded.
     history = [...history, {
       time,
-      legacyWealth:      legacyCiv.wealth,
-      adaptiveWealth:    adaptiveCiv.wealth,
-      legacyEnv:         legacyCiv.environment,
-      adaptiveEnv:       adaptiveCiv.environment,
-      legacyTrust:       legacyCiv.socialTrust,
-      adaptiveTrust:     adaptiveCiv.socialTrust,
-      legacyFragility:   legacyCiv.financialFragility,
-      adaptiveFragility: adaptiveCiv.financialFragility,
+      legacyWealth:    legacyCiv.wealth,    adaptiveWealth:   adaptiveCiv.wealth,
+      legacyEnv:       legacyCiv.environment, adaptiveEnv:    adaptiveCiv.environment,
+      legacyTrust:     legacyCiv.socialTrust, adaptiveTrust:  adaptiveCiv.socialTrust,
+      legacyFragility: legacyCiv.financialFragility, adaptiveFragility: adaptiveCiv.financialFragility,
+      legacyObsEnv:       legacyCiv.observedDimensions.has('environment')        ? legacyCiv.observedEnvironment        : null,
+      legacyObsTrust:     legacyCiv.observedDimensions.has('socialTrust')        ? legacyCiv.observedSocialTrust        : null,
+      legacyObsFragility: legacyCiv.observedDimensions.has('financialFragility') ? legacyCiv.observedFinancialFragility : null,
     }];
 
     time++;
     legacyReforms = [];
 
-    if (activeShocks.length > 0 && running) {
-      shockJustHit = true;
-      stop();
-    }
+    if (activeShocks.length > 0 && running) { shockJustHit = true; stop(); }
     if (legacyCiv.collapsed || adaptiveCiv.collapsed) stop();
   }
 
-  // --- Controls ---
   function run()   { shockJustHit = false; if (!running) { running = true; interval = setInterval(stepOnce, 100); } }
   function stop()  { running = false; if (interval) { clearInterval(interval); interval = null; } }
   function reset() { loadScenario(selectedScenario); }
 
   let currentScenario = $derived(SCENARIOS.find(s => s.id === selectedScenario) ?? SCENARIOS[0]);
+
+  // Social tipping point warning — visible before collapse triggers
+  let trustWarning = $derived(
+    !legacyCiv.collapsed && legacyCiv.socialTrust < 20 && legacyCiv.lowTrustSteps > 0
+  );
 
   loadScenario('default');
 </script>
@@ -118,7 +115,6 @@
     </p>
   </header>
 
-  <!-- Scenario Selector -->
   <div class="mb-2 flex justify-center">
     <select
       bind:value={selectedScenario}
@@ -142,18 +138,23 @@
     <span class="text-sm font-medium">Time: {time}</span>
   </div>
 
-  <!-- Shock notification banner — keyed to shockJustHit, not hardcoded times -->
   {#if shockJustHit && !running}
     <div class="mt-4 rounded border border-amber-300 bg-amber-50 p-3 text-center text-amber-800">
       ⚠ A shock just hit. The simulation is paused — consider queuing reforms before continuing.
     </div>
   {/if}
 
-  <!-- Queued reforms indicator -->
+  {#if trustWarning}
+    <div class="mt-4 rounded border border-rose-400 bg-rose-50 p-3 text-center text-rose-800">
+      ⚠ Legacy social trust is critically low ({legacyCiv.socialTrust.toFixed(0)}%) —
+      sustained below threshold for {legacyCiv.lowTrustSteps} steps.
+      Social fabric collapse in {Math.max(0, 8 - legacyCiv.lowTrustSteps)} steps if trust is not restored.
+    </div>
+  {/if}
+
   {#if legacyReforms.length > 0}
     <div class="mt-3 rounded border border-amber-300 bg-amber-50 p-3 text-sm">
-      <p class="font-medium text-amber-800">Reforms queued for next step:</p>
-      <p class="text-amber-700">{legacyReforms.join(', ')}</p>
+      <p class="font-medium text-amber-800">Queued for next step: <span class="font-mono">{legacyReforms[0]}</span></p>
       <p class="mt-1 text-xs text-amber-600">Press Step or Run to execute.</p>
     </div>
   {/if}
@@ -167,34 +168,35 @@
     <div class="rounded border bg-white p-4 shadow">
       <h3 class="mb-2 text-sm font-semibold">Adaptive Coherence</h3>
       <p class="text-xs opacity-60">
-        This architecture already has built-in adaptive capacity — all dimensions are observed,
-        latency is low, and the immune system is permeable to feedback.
+        This architecture observes all five dimensions with low latency.
+        It self-regulates investment when fragility rises and social trust falls.
       </p>
     </div>
   </div>
 
-  <!-- Meta-governance audit: shows true vs. observed values for one step -->
   {#if legacyCiv.auditRevealed}
     <div class="mt-4 rounded border border-violet-300 bg-violet-50 p-4 text-sm">
       <p class="mb-2 font-semibold text-violet-800">🔍 Meta-Governance Audit — True State Revealed</p>
       <div class="grid grid-cols-2 gap-x-8 gap-y-1 text-xs">
         {#each [
-          { label: 'Environment',        obs: legacyCiv.observedEnvironment,        true: legacyCiv.environment },
-          { label: 'Social Trust',        obs: legacyCiv.observedSocialTrust,        true: legacyCiv.socialTrust },
-          { label: 'Financial Fragility', obs: legacyCiv.observedFinancialFragility, true: legacyCiv.financialFragility },
-          { label: 'Adaptive Capacity',   obs: legacyCiv.observedAdaptiveCapacity,   true: legacyCiv.adaptiveCapacity },
+          { label: 'Environment',        obs: legacyCiv.observedEnvironment,        trueVal: legacyCiv.environment },
+          { label: 'Social Trust',        obs: legacyCiv.observedSocialTrust,        trueVal: legacyCiv.socialTrust },
+          { label: 'Financial Fragility', obs: legacyCiv.observedFinancialFragility, trueVal: legacyCiv.financialFragility },
+          { label: 'Adaptive Capacity',   obs: legacyCiv.observedAdaptiveCapacity,   trueVal: legacyCiv.adaptiveCapacity },
         ] as row}
           <span class="text-violet-700 font-medium">{row.label}</span>
           <span>
             observed: <span class="font-mono">{row.obs === 0 ? '—' : row.obs.toFixed(1)}</span>
-            → true: <span class="font-mono text-violet-900">{row.true.toFixed(1)}</span>
+            → true: <span class="font-mono text-violet-900">{row.trueVal.toFixed(1)}</span>
           </span>
         {/each}
       </div>
+      {#if legacyCiv.auditEverRevealed}
+        <p class="mt-2 text-xs text-violet-600">The full historical gap is now visible in the charts below.</p>
+      {/if}
     </div>
   {/if}
 
-  <!-- Reform event log -->
   {#if reformEvents.length > 0}
     <div class="mt-4 max-h-40 overflow-y-auto rounded border bg-white p-3 text-sm">
       {#each reformEvents.slice(-10) as ev}
@@ -212,6 +214,6 @@
   </div>
 
   <div class="mt-8">
-    <ComparisonChart {history} />
+    <ComparisonChart {history} auditEverRevealed={legacyCiv.auditEverRevealed} />
   </div>
 </div>
