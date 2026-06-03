@@ -36,6 +36,14 @@ export const coreTranslations = {
   ingress: 'From engineering physics to mysticism, from psychosis to systems design – my journey has taught me that the deepest problems require the integration of the personal, the political and the existential.',
   description: 'I write about governance architectures, collective intelligence, societal feedback systems and consciousness development — including the Governance as Engineering series and the Global Governance Frameworks project.',
   help: 'Show welcome guide',
+
+  // Reader's Guide
+  readerGuideBannerBadge: "NEW",
+  readerGuideBannerTitle: "Reader's Guide",
+  readerGuideBannerDesc:
+    "Eight accessible syntheses distilling the Governance as Engineering research. Find the one that speaks to you.",
+  readerGuideBannerCta: "Browse the Guide →",
+
 		// Clusters
 		clusterSystems: 'Planetary & Societal Systems',
 		clusterQuartet: 'The Awareness Quartet',
@@ -365,6 +373,14 @@ export const coreTranslations = {
 		ingress: 'Från teknisk fysik till mystik, från psykos till systemdesign – min resa har lärt mig att de djupaste problemen kräver integration av det personliga, det politiska och det existentiella.',
   description: 'Jag skriver om styrningsarkitekturer, kollektiv intelligens, samhälleliga feedbacksystem och medvetandeutveckling – inklusive serien Styrning som ingenjörskonst och projektet Global Governance Frameworks.',
   help: 'Visa vägledning',
+
+  // Reader's Guide
+  readerGuideBannerBadge: "NYHET",
+  readerGuideBannerTitle: "Läsguide",
+  readerGuideBannerDesc:
+    "Åtta lättillgängliga synteser som destillerar forskningsserien Styrning som ingenjörskonst. Hitta den som talar till dig.",
+  readerGuideBannerCta: "Utforska guiden →",
+
 		// Clusters
 		clusterSystems: 'Planetära och samhälleliga system',
 		clusterQuartet: 'Medvetandets kvartett',
