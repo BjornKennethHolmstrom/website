@@ -12,73 +12,64 @@ export const synthesesTranslations = {
         slug: 'we-see-you',
         title: 'We See You',
         audience: 'For those who have no energy left for theories',
-        description:
-          'The foundation of all governance is the body, the breath, the safety of a place to sleep.',
-        color: 'bg-stone-50 dark:bg-stone-800',
+        description: 'The foundation of all governance is the body, the breath, the safety of a place to sleep.',
+        borderColor: 'border-l-stone-500 dark:border-l-stone-400',
       },
       {
         slug: 'the-spirits-the-state-cannot-hear',
         title: 'The Spirits the State Cannot Hear',
         audience: 'For keepers of ancestral traditions',
-        description:
-          "Why the state's deafness to the sacred is not a cultural oversight but a structural catastrophe.",
-        color: 'bg-purple-50 dark:bg-purple-900',
+        description: "Why the state's deafness to the sacred is not a cultural oversight but a structural catastrophe.",
+        borderColor: 'border-l-purple-500 dark:border-l-purple-400',
       },
       {
         slug: 'the-dashboard-was-green',
         title: 'The Dashboard Was Green',
         audience: 'For climate activists and ecological thinkers',
-        description:
-          'How narrow observation channels authorise the destruction they cannot perceive.',
-        color: 'bg-green-50 dark:bg-green-900',
+        description: 'How narrow observation channels authorise the destruction they cannot perceive.',
+        borderColor: 'border-l-green-500 dark:border-l-green-400',
       },
       {
         slug: 'the-blindness-of-power',
         title: 'The Blindness of Power',
         audience: 'For those watching the rise of strongman politics',
-        description:
-          'Why control-obsessed governance is not a symptom of strength but of terminal perceptual collapse.',
-        color: 'bg-red-50 dark:bg-red-900',
+        description: 'Why control-obsessed governance is not a symptom of strength but of terminal perceptual collapse.',
+        borderColor: 'border-l-red-500 dark:border-l-red-400',
       },
       {
         slug: 'the-democracy-that-cant-hear-you',
         title: 'The Democracy That Can’t Hear You',
         audience: 'For democratic reformers and deliberative practitioners',
-        description:
-          'Why representation chains longer than three layers destroy the signal they are meant to transmit.',
-        color: 'bg-blue-50 dark:bg-blue-900',
+        description: 'Why representation chains longer than three layers destroy the signal they are meant to transmit.',
+        borderColor: 'border-l-blue-500 dark:border-l-blue-400',
       },
       {
         slug: 'from-goodhart-to-governance',
         title: 'From Goodhart to Governance',
         audience: 'For AI safety researchers and tech governance practitioners',
-        description:
-          'Goodhart’s Law is not just about reward hacking—it is the signature of any low‑dimensional optimisation.',
-        color: 'bg-orange-50 dark:bg-orange-900',
+        description: 'Goodhart’s Law is not just about reward hacking—it is the signature of any low‑dimensional optimisation.',
+        borderColor: 'border-l-orange-500 dark:border-l-orange-400',
       },
       {
         slug: 'the-perception-threshold',
         title: 'The Perception Threshold',
         audience: 'For systems thinkers and integral practitioners',
-        description:
-          'The meta‑governance imperative as the evolutionary challenge of our civilisation.',
-        color: 'bg-yellow-50 dark:bg-yellow-900',
+        description: 'The meta‑governance imperative as the evolutionary challenge of our civilisation.',
+        borderColor: 'border-l-yellow-500 dark:border-l-yellow-400',
       },
       {
         slug: 'the-mirror-of-the-earth',
         title: 'The Mirror of the Earth',
         audience: 'For planetary thinkers and deep ecologists',
-        description:
-          'Why the Earth is speaking and our institutions cannot hear it—and what Earth‑attuned governance requires.',
-        color: 'bg-teal-50 dark:bg-teal-900',
+        description: 'Why the Earth is speaking and our institutions cannot hear it—and what Earth‑attuned governance requires.',
+        borderColor: 'border-l-teal-500 dark:border-l-teal-400',
       },
       {
         slug: 'the-clouded-mirror',
         title: 'The Clouded Mirror',
         audience: 'For anyone wanting the complete argument',
-        description:
-          'The full public‑facing synthesis of the Governance as Engineering research.',
-        color: 'bg-amber-50 dark:bg-amber-900',
+        description: 'The full public‑facing synthesis of the Governance as Engineering research programme.',
+        borderColor: 'border-l-amber-500 dark:border-l-amber-400',
       },
     ],
   },
@@ -97,7 +88,7 @@ export const synthesesTranslations = {
         audience: 'För den som inte orkar med fler teorier',
         description:
           'All styrning börjar med kroppen, andningen, tryggheten att ha någonstans att sova.',
-        color: 'bg-stone-50 dark:bg-stone-800',
+        borderColor: 'border-l-stone-50 dark:border-l-stone-400',
       },
       {
         slug: 'the-spirits-the-state-cannot-hear',
@@ -105,7 +96,7 @@ export const synthesesTranslations = {
         audience: 'För bärare av förfädernas traditioner',
         description:
           'Varför statens dövhet för det heliga inte är en kulturell förbiseelse utan en strukturell katastrof.',
-        color: 'bg-purple-50 dark:bg-purple-900',
+        borderColor: 'border-l-purple-500 dark:border-l-purple-400',
       },
       {
         slug: 'the-dashboard-was-green',
@@ -113,7 +104,7 @@ export const synthesesTranslations = {
         audience: 'För klimataktivister och ekologiska tänkare',
         description:
           'Hur smala observationskanaler godkänner förstörelse de inte kan uppfatta.',
-        color: 'bg-green-50 dark:bg-green-900',
+        borderColor: 'border-l-green-500 dark:border-l-green-400',
       },
       {
         slug: 'the-blindness-of-power',
@@ -121,7 +112,7 @@ export const synthesesTranslations = {
         audience: 'För den som ser starka mäns politik breda ut sig',
         description:
           'Varför kontrollbesatt styrning inte är ett tecken på styrka utan på terminal perceptionskollaps.',
-        color: 'bg-red-50 dark:bg-red-900',
+        borderColor: 'border-l-red-500 dark:border-l-red-400',
       },
       {
         slug: 'the-democracy-that-cant-hear-you',
@@ -129,7 +120,7 @@ export const synthesesTranslations = {
         audience: 'För demokratiaktivister och deltagardemokratins praktiker',
         description:
           'Varför representationskedjor med fler än tre lager förstör signalen de ska bära.',
-        color: 'bg-blue-50 dark:bg-blue-900',
+        borderColor: 'border-l-blue-500 dark:border-l-blue-400',
       },
       {
         slug: 'from-goodhart-to-governance',
@@ -137,7 +128,7 @@ export const synthesesTranslations = {
         audience: 'För AI‑säkerhetsforskare och teknostyrningspraktiker',
         description:
           'Goodharts lag handlar inte bara om belöningshackning – den är signumet för all lågdimensionell optimering.',
-        color: 'bg-orange-50 dark:bg-orange-900',
+        borderColor: 'border-l-orange-500 dark:border-l-orange-400',
       },
       {
         slug: 'the-perception-threshold',
@@ -145,7 +136,7 @@ export const synthesesTranslations = {
         audience: 'För systemtänkare och integrala praktiker',
         description:
           'Meta‑styrningsimperativet som vår civilisations evolutionära utmaning.',
-        color: 'bg-yellow-50 dark:bg-yellow-900',
+        borderColor: 'border-l-yellow-500 dark:border-l-yellow-400',
       },
       {
         slug: 'the-mirror-of-the-earth',
@@ -153,7 +144,7 @@ export const synthesesTranslations = {
         audience: 'För planetära tänkare och djup ekologer',
         description:
           'Varför jorden talar och våra institutioner inte kan höra den – och vad en jordförankrad styrning kräver.',
-        color: 'bg-teal-50 dark:bg-teal-900',
+        borderColor: 'border-l-teal-500 dark:border-l-teal-400',
       },
       {
         slug: 'the-clouded-mirror',
@@ -161,7 +152,7 @@ export const synthesesTranslations = {
         audience: 'För den som vill ha hela argumentet',
         description:
           'Den fullständiga publika syntesen av forskningen Styrning som ingenjörskonst.',
-        color: 'bg-amber-50 dark:bg-amber-900',
+        borderColor: 'border-l-amber-500 dark:border-l-amber-400',
       },
     ],
   },
