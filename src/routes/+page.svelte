@@ -514,9 +514,9 @@
 	</section>
 
  <!-- Reader's Guide Banner -->
- <section class="bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-slate-800 dark:to-slate-700 border-b border-amber-100 dark:border-slate-600">
+ <section class="bg-[var(--color-page-bg)] border-b border-[var(--color-separator)]">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-     <div class="relative rounded-2xl bg-white/70 dark:bg-slate-900/70 backdrop-blur shadow-sm border border-amber-200 dark:border-slate-500 p-6 md:p-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
+     <div class="relative rounded-2xl bg-[var(--color-card-bg)] shadow-sm border border-[var(--color-separator)] p-6 md:p-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
        
        <!-- Badge -->
        <div class="absolute -top-3 -left-3 md:-top-4 md:-left-4 z-10">
@@ -526,10 +526,10 @@
        </div>
 
        <div class="flex-1">
-         <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-3">
+         <h2 class="text-2xl md:text-3xl font-bold text-[var(--color-page-text)] mb-3">
            {$t.readerGuideBannerTitle}
          </h2>
-         <p class="text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
+         <p class="text-base md:text-lg text-[var(--color-page-text)] opacity-70 max-w-2xl">
            {$t.readerGuideBannerDesc}
          </p>
        </div>
@@ -545,17 +545,17 @@
  </section>
 
 <!-- Governance as Engineering Carousel -->
-<section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
+<section class="py-12 bg-[var(--color-page-bg)] border-b border-[var(--color-separator)] overflow-hidden relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="flex items-center gap-3 mb-2">
-    <h2 class="text-2xl font-semibold text-amber-600 dark:text-amber-400">
+    <h2 class="text-2xl font-semibold text-[var(--color-page-accent)]">
       {$t.geCarouselTitle}
     </h2>
     <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full bg-amber-500 text-white shadow">
       {$t.geCarouselBadge}
     </span>
   </div>
-    <p class="text-gray-600 dark:text-gray-400 mb-8">
+    <p class="text-[var(--color-page-text)] opacity-60 mb-8">
       {$t.geCarouselSubtitle}
     </p>
 
@@ -566,17 +566,17 @@
           out:fly={{ x: -200 * geDirection, duration: 400 }}
           class="absolute inset-0 w-full"
         >
-          <div class="bg-gradient-to-br from-slate-50 to-amber-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm border border-slate-200 dark:border-slate-700 h-full">
+          <div class="bg-[var(--color-card-bg)] rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm border border-[var(--color-separator)] h-full">
             
             <!-- Text content -->
             <div class="flex-1 text-center md:text-left w-full">
               <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
                 Working paper
               </span>
-              <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-[var(--color-page-text)] mb-4 leading-tight">
                 {currentPaper.title}
               </h3>
-              <p class="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed max-w-2xl">
+              <p class="text-sm sm:text-base md:text-lg text-[var(--color-page-text)] opacity-80 mb-6 leading-relaxed max-w-2xl">
                 {currentPaper.desc}
               </p>
               <a
@@ -593,7 +593,7 @@
               <img 
                 src={currentPaper.coverImage} 
                 alt={currentPaper.title} 
-                class="w-full h-auto rounded shadow-md" 
+                class="w-full h-auto rounded shadow-md ring-1 ring-slate-200 dark:ring-slate-600" 
               />
             </div>
           </div>
@@ -621,7 +621,7 @@
     <div class="flex justify-center space-x-2 mt-6">
       {#each governanceEngineeringPapers as _, i}
         <button
-          class="w-2.5 h-2.5 rounded-full transition-colors {i === activeGEIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"
+          class="w-2.5 h-2.5 rounded-full transition-colors {i === activeGEIndex ? 'bg-amber-600' : 'bg-slate-300 dark:bg-slate-600'}"
           on:click={() => { geDirection = i > activeGEIndex ? 1 : -1; activeGEIndex = i; geResetTimer(); }}
           aria-label="Go to paper {i + 1}"
         ></button>
@@ -914,7 +914,7 @@
 		</div>
 	</section>
 
- <section class="py-12 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 overflow-hidden relative">
+ <section class="py-12 bg-[var(--color-page-bg)] border-b border-[var(--color-separator)] overflow-hidden relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       
       <div class="relative min-h-[500px] md:min-h-[400px]"> 
@@ -925,16 +925,16 @@
             out:fly={{ x: -200 * direction, duration: 400 }}
             class="absolute inset-0 w-full"
           >
-            <div class="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-800 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-amber-100 dark:border-slate-700 h-full">
+            <div class="bg-[var(--color-card-bg)] rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 shadow-sm border border-[var(--color-separator)] h-full">
               
               <div class="flex-1 text-center md:text-left z-10">
                 <span class={`inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 ${currentBook.colorClass}`}>
                   {currentBook.label}
                 </span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--color-page-text)] mb-4">
                   {currentBook.title}
                 </h2>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                <p class="text-lg text-[var(--color-page-text)] opacity-80 mb-8 leading-relaxed max-w-2xl">
                   {currentBook.desc}
                 </p>
                 <a 
@@ -986,7 +986,7 @@
       <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {#each $t.bookLaunches as _, i}
           <button 
-            class="w-2.5 h-2.5 rounded-full transition-colors {i === activeIndex ? 'bg-amber-600' : 'bg-gray-300 dark:bg-gray-600'}"
+            class="w-2.5 h-2.5 rounded-full transition-colors {i === activeIndex ? 'bg-amber-600' : 'bg-slate-300 dark:bg-slate-600'}"
             on:click={() => { direction = i > activeIndex ? 1 : -1; activeIndex = i; resetTimer(); }}
             aria-label="Go to slide {i + 1}"
           ></button>

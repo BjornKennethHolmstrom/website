@@ -68,7 +68,14 @@
     <p class="text-xl opacity-70">{currentMeta.subtitle}</p>
   </header>
 
-  <article class="prose prose-lg max-w-none dark:prose-invert" style="--tw-prose-body: #f1f5f9;">
+  <article class="prose prose-lg max-w-none"
+    style="
+      --tw-prose-headings: var(--color-page-text);
+      --tw-prose-body: var(--color-page-text);
+      --tw-prose-bold: var(--color-page-text);
+      --tw-prose-links: var(--color-page-accent);
+      --tw-prose-quotes: var(--color-page-text);
+    ">
     <svelte:component this={Content} />
   </article>
 
