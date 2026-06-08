@@ -498,7 +498,7 @@ export const reportsData: Report[] = [
 		emoji: '🇨🇭',
 		category: 'country',
 		year: 2026,
-		pages: 62,
+		pages: 66,
 		readTime: {
 			en: '60–75 min',
 			sv: '60–75 min'
