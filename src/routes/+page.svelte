@@ -252,6 +252,12 @@
 	      key: 'reportsSpain',
 	      emoji: '🇪🇸',
 	      url: '/reports/spain-transition-trap',
+      },
+      {
+          key: 'reportsSwitzerland',
+          emoji: '🇨🇭',
+          url: '/reports/switzerland-boundary-expansion-deficit',
+          badge: 'NEW'
       }
 
   ];

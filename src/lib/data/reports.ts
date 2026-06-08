@@ -491,6 +491,29 @@ export const reportsData: Report[] = [
 		 en: '/reports/coordination-failure-structural-condition-en.pdf'
 	 },
 	 readOnlineExternal: false
- }
+ },
+	{
+		id: 'switzerland-boundary-expansion-deficit',
+		key: 'switzerlandBoundaryExpansionDeficit',
+		emoji: '🇨🇭',
+		category: 'country',
+		year: 2026,
+		pages: 62,
+		readTime: {
+			en: '60–75 min',
+			sv: '60–75 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-06-08',
+		coverImage: '/images/reports/switzerland-boundary-expansion-deficit/cover.png',
+		readOnlinePath: '/reports/switzerland-boundary-expansion-deficit',
+		pdfPath: {
+			en: '/reports/switzerland-boundary-expansion-deficit-en.pdf',
+			de: '/reports/switzerland-boundary-expansion-deficit-de.pdf',
+			fr: '/reports/switzerland-boundary-expansion-deficit-fr.pdf',
+			it: '/reports/switzerland-boundary-expansion-deficit-it.pdf'
+		},
+		readOnlineExternal: false
+	}
 ];
 
