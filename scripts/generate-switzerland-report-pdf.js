@@ -98,6 +98,7 @@ const sections = [
 	{ file: '09-appendix-c',                      titleEn: 'Appendix C: The Governance as Engineering Connection', titleDe: 'Anhang C: Die Verbindung zu Governance as Engineering', titleFr: 'Annexe C : Le lien avec la gouvernance comme ingénierie', titleIt: 'Appendice C: Il collegamento con Governance as Engineering', isAppendix: true  },
 	{ file: '10-appendix-d',                      titleEn: 'Appendix D: Anticipated Objections',           titleDe: 'Anhang D: Erwartete Einwände',                titleFr: 'Annexe D : Objections anticipées',       titleIt: 'Appendice D: Obiezioni previste',       isAppendix: true  },
 	{ file: '11-appendix-e',                      titleEn: 'Appendix E: About the Author & Method',        titleDe: 'Anhang E: Über den Autor und die Methode',    titleFr: 'Annexe E : À propos de l\'auteur et de la méthode', titleIt: 'Appendice E: L\'autore e il metodo',  isAppendix: true  },
+{ file: '12-appendix-f', titleEn: 'Appendix F: Glossary', titleDe: 'Anhang F: Glossar', titleFr: 'Annexe F : Glossaire', titleIt: 'Appendice F: Glossario', isAppendix: true },
 ];
 
 // ── CSS (identical to other scripts) ─────────────────────────────────────────

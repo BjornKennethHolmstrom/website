@@ -75,6 +75,12 @@
   import AppendixEFr from './sections/11-appendix-e.fr.md';
   import AppendixEIt from './sections/11-appendix-e.it.md';
 
+  import AppendixFEn from './sections/12-appendix-f.en.md';
+  import AppendixFDe from './sections/12-appendix-f.de.md';
+  import AppendixFFr from './sections/12-appendix-f.fr.md';
+  import AppendixFIt from './sections/12-appendix-f.it.md';
+
+
   // ------------------------------------------
   // 2. Section map
   // ------------------------------------------
@@ -210,6 +216,17 @@
       compDe: AppendixEDe,
       compFr: AppendixEFr,
       compIt: AppendixEIt,
+    },
+    {
+      id: 'appendix-f',
+      titleEn: 'Appendix F: Glossary',
+      titleDe: 'Anhang F: Glossar',
+      titleFr: 'Annexe F : Glossaire',
+      titleIt: 'Appendice E: Glossario',
+      compEn: AppendixFEn,
+      compDe: AppendixFDe,
+      compFr: AppendixFFr,
+      compIt: AppendixFIt,
     },
   ];
 
