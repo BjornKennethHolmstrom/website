@@ -15,6 +15,24 @@
     <p class="mt-6 text-base opacity-60 max-w-2xl mx-auto">{$t.synthesesHubIntro}</p>
   </header>
 
+  <details class="mb-12 rounded-lg border border-[var(--color-separator)] group">
+    <summary class="cursor-pointer select-none px-4 py-3 font-medium flex items-center justify-between">
+      {$t.digestTitle}
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 opacity-60 transition-transform group-open:rotate-180"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+    <ol class="px-4 pb-4 pt-1 space-y-4">
+      {#each $t.papersDigest as p}
+        <li>
+          <a href={p.href} class="font-medium text-[var(--color-page-accent)] hover:underline">{p.label}</a>
+          <p class="text-sm opacity-70 mt-1">{p.digest}</p>
+        </li>
+      {/each}
+    </ol>
+  </details>
+
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {#each $t.synthesesItems as synth}
       <div class="relative">

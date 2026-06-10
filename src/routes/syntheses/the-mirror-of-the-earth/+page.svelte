@@ -1,10 +1,15 @@
 <script lang="ts">
-  import { language } from '$lib/stores/languageStore';
+  import { language, t } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
 
   import ContentEn from '$lib/content/syntheses/the-mirror-of-the-earth.md';
   import ContentSv from '$lib/content/syntheses/the-mirror-of-the-earth-sv.md';
+
+  const SLUG = 'the-mirror-of-the-earth';
+
+  $: furtherReading = ($t.synthesesItems as { slug: string; furtherReading?: { href: string; label: string; reason: string }[] }[])
+    ?.find((i) => i.slug === SLUG)?.furtherReading ?? [];
 
   const meta = {
     en: {
@@ -78,6 +83,23 @@
     ">
     <svelte:component this={Content} />
   </article>
+
+  {#if furtherReading.length}
+    <section class="mt-16 pt-8 border-t border-[var(--color-separator)]">
+      <h3 class="text-xl font-bold mb-2">{$t.furtherReadingTitle}</h3>
+      <p class="text-sm opacity-70 mb-6">{$t.furtherReadingIntro}</p>
+      <ul class="space-y-5">
+        {#each furtherReading as item}
+          <li>
+            <a href={item.href} class="font-medium text-[var(--color-page-accent)] hover:underline">
+              {item.label} →
+            </a>
+            <p class="text-sm opacity-70 mt-1">{item.reason}</p>
+          </li>
+        {/each}
+      </ul>
+    </section>
+  {/if}
 
   <div class="mt-16 pt-8 border-t border-[var(--color-separator)]">
     <a href="/syntheses" class="text-sm opacity-60 hover:opacity-100 transition-opacity">

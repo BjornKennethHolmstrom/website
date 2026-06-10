@@ -50,7 +50,7 @@ The AI governance community, in other words, is attempting to solve an alignment
 
 If AI can widen the Variety Gap—and it can, dramatically—can it also help close it?
 
-What follows is more conjectural than the diagnosis that precedes it. The Variety Gap and its four failure modes rest on formal results and simulation; the claim that AI can help close the gap is a design argument—the hypothesis the research agenda in section 6 is meant to test, not an established finding. It should be read in that spirit.
+What follows is more conjectural than the diagnosis that precedes it. The Variety Gap and its four failure modes rest on formal results and simulation; the claim that AI can help close the gap is a design argument—the hypothesis the research agenda in section 7 is meant to test, not an established finding. It should be read in that spirit.
 
 The default trajectory is that AI will be developed within the existing narrow value architectures and will accelerate their blindness. A content platform optimising for engagement with ever-more-sophisticated AI is an observation channel of dimensionality one. It perceives what keeps users scrolling. It cannot perceive the epistemic fragmentation, the adolescent mental health crisis, or the democratic vulnerability it generates, because those dimensions are not in its objective function. It does not need to be malevolent. It just needs to be optimising a narrow metric in a multi-dimensional world.
 
@@ -64,7 +64,21 @@ This is not a proposal for algorithmic governance. It is a proposal for *percept
 
 ---
 
-### 5. The Bypass Trap and the Measurement Paradox Applied to AI Governance Tools
+### 5. The Observer Monoculture: Why a Shared Prosthesis Goes Blind Together
+
+The proposal in the previous section has a hidden vulnerability that the AI community, of all communities, should be the first to see. Everything said so far has treated observation as a property of a single channel: how wide, how fast, how many dimensions. But a governance system rarely relies on one observer. It relies on an ensemble—agencies, auditors, journalists, researchers, models—whose independent errors are supposed to cancel out, leaving a clearer picture than any one of them could produce alone. The resilience of that ensemble depends not on how many observers it contains but on how *decorrelated* their errors are. And if the sensory prosthesis of the previous section is built by giving every institution access to the same foundation model, the result is not many new eyes. It is one eye behind many screens.
+
+The mathematics is unforgiving and entirely standard. Take an ensemble of N observers, each estimating the same state with error variance σ², and let ρ be the average correlation between their errors. The variance of the ensemble's combined estimate scales with (1 − ρ)/N + ρ. When the observers are independent—ρ near zero—their errors average away and the ensemble variance falls towards zero as N grows: more observers, more reliable consensus. But as ρ approaches one, the 1/N term vanishes and the variance collapses onto ρσ². Adding observers buys nothing. A thousand correlated sensors are, for the purpose of catching systematic error, a single sensor. It is the effective number of independent observers, not the headcount, that determines whether the ensemble can see its own mistakes.
+
+There are two distinct routes to ρ → 1, and the distinction matters precisely for AI. *Model monoculture* arises when observers process independently gathered data through the same model—the same foundation model, the same architecture, the same inductive biases—so that they are blind to the same things for the same reasons. *Data monoculture* arises when observers run different models over the same underlying corpus—the same scraped web, the same benchmark suite, the same satellite pipeline—so that the gaps in the data are inherited by everyone downstream. Either is sufficient to collapse the ensemble. This is why a small pool of frontier labs evaluating one another's systemic risk, or a regulatory science that standardises on a handful of shared models, does not constitute independent oversight however many parties are nominally involved. Genuine observer diversity requires decorrelation across *both* the data and the model; running diverse algorithms over a common substrate, or diverse data through a common model, only produces the appearance of it.
+
+What makes this failure mode lethal is that it is invisible from the inside, and invisible in the most reassuring possible way. While the shared infrastructure is approximately right, the monoculture performs superbly: its outputs are consistent, its confidence is high, its accuracy on the dimensions it tracks is excellent. When the shared infrastructure carries a systematic bias—a blind spot in the one dimension that matters, a tail risk the training distribution underrepresented—every observer makes the *same* error. Every observer checking against every other observer finds agreement. The consensus is unanimous; the confidence is total; the error compounds, unobserved, until the excluded dimension forces itself into visibility through a crisis no instrument predicted. This is the Goodhart-Ashby synthesis at the level of a population: an observer ensemble with low effective dimensionality optimises away its own capacity to detect the errors in its consensus, because the excluded dimensions are the dimensions of its shared bias. And the institutional environment ratchets the collapse: an observer who follows the consensus and is wrong has merely followed best practice, while an observer who used an independent method and is wrong is judged negligent. Independence carries a penalty exactly where it is most valuable, and the ensemble is selected, observer by locally rational observer, into a single point of failure.
+
+The corrective is not infinite pluralism, which is neither achievable nor necessary. The protection that decorrelation provides is heavily front-loaded: in the framework's simulations, the first few genuinely independent observers do almost all the work of catching a systematic error, and the marginal benefit is largely exhausted by around five—a small, strictly insulated core is enough to keep a civilisation's blind spots from becoming total. Nor is this hypothetical. Numerical weather prediction already runs as a deliberate ensemble of independent modelling centres, and treats the *spread* between their forecasts—their disagreement—not as a problem to be resolved but as its single most important output, the measure of what the system does not yet know. The design implication for the sensory prosthesis of the previous section is therefore sharp, and it cuts against the grain of efficiency. An AI-assisted observation layer must be plural by construction: a protected handful of evaluators built on different data and different models, granted the standing to dissent, and read for their divergence rather than their consensus. A single shared model deployed as public infrastructure would not close the Variety Gap. It would give every institution the same blind spot at once, and call the resulting agreement a signal.
+
+---
+
+### 6. The Bypass Trap and the Measurement Paradox Applied to AI Governance Tools
 
 Any proposal to use AI as a meta-governance instrument must confront two structural challenges that this framework has identified across every domain examined.
 
@@ -78,7 +92,7 @@ These are not reasons to avoid building AI governance tools. They are reasons to
 
 ---
 
-### 6. A Research Agenda: Simulator, Measurement, Pilot
+### 7. A Research Agenda: Simulator, Measurement, Pilot
 
 The framework described here generates a concrete, testable research agenda with three components.
 
@@ -92,7 +106,7 @@ The audit does not require building a full AI tool. It can begin with manual app
 
 ---
 
-### 7. The Invitation
+### 8. The Invitation
 
 The alignment problem, understood broadly, is the problem of getting an optimisation system to pursue what we actually want rather than what we specified. That problem does not begin with artificial intelligence. It begins with the institutions we have already built—institutions that optimise for GDP while liquidating the social and ecological conditions on which prosperity depends, that optimise for engagement while degrading the epistemic commons, that optimise for stability while destroying the adaptive capacity that long-run survival requires.
 

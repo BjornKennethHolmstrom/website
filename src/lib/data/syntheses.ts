@@ -1,0 +1,25 @@
+export const papersEn = {
+  I:    { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator' },
+  II:   { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability' },
+  III:  { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability-Democracy Connection' },
+  IV:   { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Paper IV: Requisite Variety and the Commons' },
+  V:    { href: '/working-papers/coordination-failure-tax',                label: 'Paper V: The Coordination Failure Tax' },
+  VI:   { href: '/working-papers/the-variety-gap',                         label: 'Paper VI: The Variety Gap' },
+  VII:  { href: '/working-papers/architecture-of-governance-failure',      label: 'Paper VII: The Architecture of Governance Failure' },
+  VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Paper VIII: Measuring the Variety Gap' },
+  IX:   { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance' },
+  X:    { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity' },
+};
+
+export const papersSv = {
+  I:    { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn' },
+  II:   { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet' },
+  III:  { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets-demokratikopplingen' },
+  IV:   { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Rapport IV: Nödvändig variation och allmänningen' },
+  V:    { href: '/working-papers/coordination-failure-tax',                label: 'Rapport V: Samordningsmisslyckandets skatt' },
+  VI:   { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Varietetsgapet' },
+  VII:  { href: '/working-papers/architecture-of-governance-failure',      label: 'Rapport VII: Styrningsmisslyckandets arkitektur' },
+  VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet' },
+  IX:   { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning' },
+  X:    { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald' },
+};

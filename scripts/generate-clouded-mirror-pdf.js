@@ -54,8 +54,9 @@ const chapters = {
     { file: 'chapter-7',  title: '7. The Meta‑Governance Imperative' },
     { file: 'chapter-8',  title: '8. The Fragments Are Already Here' },
     { file: 'chapter-9',  title: '9. A Sensory Prosthesis: What AI Could Be For' },
-    { file: 'chapter-10', title: '10. The Civilizational Bet' },
-    { file: 'chapter-11', title: '11. The Invitation' },
+    { file: 'chapter-10', title: '10. The Shared Mirror' },
+    { file: 'chapter-11', title: '11. The Civilizational Bet' },
+    { file: 'chapter-12', title: '12. The Invitation' },
     { file: 'summary',    title: 'Summary' },
   ],
   sv: [
@@ -68,8 +69,9 @@ const chapters = {
     { file: 'chapter-7-sv',  title: '7. Meta‑styrningsimperativet' },
     { file: 'chapter-8-sv',  title: '8. Fragmenten finns redan här' },
     { file: 'chapter-9-sv',  title: '9. En sensorisk protes: Vad AI skulle kunna vara till för' },
-    { file: 'chapter-10-sv', title: '10. Det civilisatoriska vadet' },
-    { file: 'chapter-11-sv', title: '11. Inbjudan' },
+    { file: 'chapter-10-sv', title: '10. Den gemensamma spegeln' },
+    { file: 'chapter-11-sv', title: '11. Det civilisatoriska vadet' },
+    { file: 'chapter-12-sv', title: '12. Inbjudan' },
     { file: 'summary-sv',    title: 'Sammanfattning' },
   ],
 };

@@ -15,6 +15,7 @@
   import Chapter9En from '$lib/content/syntheses/the-clouded-mirror/chapter-9.md';
   import Chapter10En from '$lib/content/syntheses/the-clouded-mirror/chapter-10.md';
   import Chapter11En from '$lib/content/syntheses/the-clouded-mirror/chapter-11.md';
+  import Chapter12En from '$lib/content/syntheses/the-clouded-mirror/chapter-12.md';
   import SummaryEn from '$lib/content/syntheses/the-clouded-mirror/summary.md';
 
   // --- 2. IMPORT SWEDISH CHAPTERS ---
@@ -29,6 +30,7 @@
   import Chapter9Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-9-sv.md';
   import Chapter10Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-10-sv.md';
   import Chapter11Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-11-sv.md';
+  import Chapter12Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-12-sv.md';
   import SummarySv from '$lib/content/syntheses/the-clouded-mirror/summary-sv.md';
 
   // --- 3. BILINGUAL CONTENT STRUCTURES ---
@@ -42,8 +44,9 @@
     { id: 'chapter-7',  title: '7. The Meta‑Governance Imperative',       comp: Chapter7En },
     { id: 'chapter-8',  title: '8. The Fragments Are Already Here',       comp: Chapter8En },
     { id: 'chapter-9',  title: '9. A Sensory Prosthesis: What AI Could Be For', comp: Chapter9En },
-    { id: 'chapter-10', title: '10. The Civilizational Bet',              comp: Chapter10En },
-    { id: 'chapter-11', title: '11. The Invitation',                      comp: Chapter11En },
+    { id: 'chapter-10', title: '10. The Shared Mirror',                   comp: Chapter10En },
+    { id: 'chapter-11', title: '11. The Civilizational Bet',              comp: Chapter11En },
+    { id: 'chapter-12', title: '12. The Invitation',                      comp: Chapter12En },
     { id: 'summary',    title: 'Summary',                                 comp: SummaryEn },
   ];
 
@@ -57,8 +60,9 @@
     { id: 'chapter-7',  title: '7. Meta‑styrningsimperativet',            comp: Chapter7Sv },
     { id: 'chapter-8',  title: '8. Fragmenten finns redan här',           comp: Chapter8Sv },
     { id: 'chapter-9',  title: '9. En sensorisk protes: Vad AI skulle kunna vara till för', comp: Chapter9Sv },
-    { id: 'chapter-10', title: '10. Det civilisatoriska vadet',           comp: Chapter10Sv },
-    { id: 'chapter-11', title: '11. Inbjudan',                            comp: Chapter11Sv },
+    { id: 'chapter-10', title: '10. Den gemensamma spegeln',              comp: Chapter10Sv },
+    { id: 'chapter-11', title: '11. Det civilisatoriska vadet',           comp: Chapter11Sv },
+    { id: 'chapter-12', title: '12. Inbjudan',                            comp: Chapter12Sv },
     { id: 'summary',    title: 'Sammanfattning',                          comp: SummarySv },
   ];
 
