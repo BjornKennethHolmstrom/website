@@ -1,4 +1,4 @@
-# 1. Introduktion: Från diagnos till mätning
+## 1. Introduktion: Från diagnos till mätning
 
 Serien *Governance as Engineering* har etablerat en uppsättning strukturella begränsningar för institutionell perception. Ashbys lag om nödvändig variation fastslår att en regulator endast kan stabilisera ett system vars variation den kan matcha. Frekvens–latensvillkoret fastslår att ingen enskalig regulator kan styra störningar över alla tidsskalor. Observerbarhetströskeln fastslår att representationskedjor bortom ett visst djup förstör signalen från medborgarnas preferenser innan den når policylagret. Goodhart-Ashby-syntesen fastslår att lågdimensionella målfunktioner förr eller senare optimerar bort sin egen förmåga att uppfatta de system de styr. Och Samordningsmisslyckandets skatt fastslår att samtidiga arkitektoniska misslyckanden inte adderas – de multipliceras.
 

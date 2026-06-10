@@ -137,6 +137,14 @@ export const coreTranslations = {
     geSeriesPaperVIII: {
       title: 'VIII: Measuring the Variety Gap',
       desc:  'Develops a parametric framework for diagnosing governance failure — measuring the Variety Gap through eight observable parameters, with calibration and pilot validation.',
+    },
+    geSeriesPaperIX: {
+      title: 'IX: The Political Economy of Requisite Governance',
+      desc:  'Models the transition to requisite governance as a contested control problem. Reveals three structural traps and derives design principles for transition mechanisms — sunset‑coupled bypasses, protected spaces, incumbent buy‑outs, and observer diversity — with historical calibration and simulations.'
+    },
+    geSeriesPaperX: {
+      title: 'X: Requisite Observer Diversity',
+      desc:  'Extends the series to observer populations. Shows why civilisations need multiple, independently‑constituted epistemic systems, formalises the collapse dynamics of epistemic monocultures, and specifies a precautionary action gate and predictive‑validity weighting to maintain resilience.'
     }
   },
 
@@ -475,6 +483,14 @@ export const coreTranslations = {
     geSeriesPaperVIII: {
       title: 'VIII: Att mäta varietetsgapet',
       desc:  'Utvecklar ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden — mäter varietetsgapet genom åtta observerbara parametrar, med kalibrering och pilotvalidering.',
+    },
+    geSeriesPaperIX: {
+      title: 'IX: Den politiska ekonomin för nödvändig styrning',
+      desc:  'Modellerar övergången till nödvändig styrning som ett kontrollproblem. Avslöjar tre strukturella fällor och härleder konstruktionsprinciper för övergångsmekanismer — solnedgångskopplade bypassar, skyddade experimentutrymmen, utköp av etablerade intressen och observatörsmångfald — med historisk kalibrering och simuleringar.'
+    },
+    geSeriesPaperX: {
+      title: 'X: Nödvändig observatörsmångfald',
+      desc:  'Utvidgar serien till observatörspopulationer. Visar varför civilisationer behöver flera oberoende epistemiska system, formaliserar epistemiska monokulturers kollapsdynamik och specificerar en försiktighetsgrind och prediktiv validitetsviktning för att upprätthålla resiliens.'
     }
   },
 

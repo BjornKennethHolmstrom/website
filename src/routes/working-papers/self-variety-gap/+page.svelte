@@ -233,7 +233,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-05"

@@ -6,25 +6,25 @@ v5-simulatorn utökar serien från v4:s flerskaliga stabilitetsdemonstration til
 
 Den fullständiga källkoden finns tillgänglig på:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 Förvaret innehåller nu fem simulatorversioner:
 
 | Fil | Rapport | Beskrivning |
 | --- | --- | --- |
-| `ggf-simulator-v2.py` | Rapport I | Skalär återkopplingsmodell med en nod |
-| `ggf-simulator-v3.py` | Rapport I | Vektormodell med tio noder, lokaliserad chock |
-| `ggf-simulator-v3-unadjusted.py` | Rapport I | v3 med instabil förstärkning — instabilitetsdemonstration |
-| `ggf-simulator-v4.py` | Rapport II | Flerskalig störning, jämförelse av tre arkitekturer |
-| `ggf-simulator-v5.py` | Rapport III | Representationskedjans observerbarhet, fyra arkitekturer |
+| `gae-simulator-v2.py` | Rapport I | Skalär återkopplingsmodell med en nod |
+| `gae-simulator-v3.py` | Rapport I | Vektormodell med tio noder, lokaliserad chock |
+| `gae-simulator-v3-unadjusted.py` | Rapport I | v3 med instabil förstärkning — instabilitetsdemonstration |
+| `gae-simulator-v4.py` | Rapport II | Flerskalig störning, jämförelse av tre arkitekturer |
+| `gae-simulator-v5.py` | Rapport III | Representationskedjans observerbarhet, fyra arkitekturer |
 
 ## Att reproducera resultaten
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
 pip install numpy matplotlib
-python ggf-simulator-v5.py
+python gae-simulator-v5.py
 
 ```
 

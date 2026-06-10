@@ -6,11 +6,11 @@ The simulator is implemented in Python using NumPy for numerical computation and
 
 The full source code is available at:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 The repository includes:
-- `ggf-simulator-v2.py` — single-node scalar model (latency and signal fidelity demonstration)
-- `ggf-simulator-v3.py` — ten-node vector model (subsidiarity and the averaging problem)
+- `gae-simulator-v2.py` — single-node scalar model (latency and signal fidelity demonstration)
+- `gae-simulator-v3.py` — ten-node vector model (subsidiarity and the averaging problem)
 - `README.md` — setup instructions and parameter documentation
 - `/outputs` — pre-generated figures from the canonical parameter set
 
@@ -19,9 +19,9 @@ The repository includes:
 With Python 3.8+ and NumPy/Matplotlib installed:
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
-python ggf-simulator-v3.py
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
+python gae-simulator-v3.py
 ```
 
 The simulation is seeded for reproducibility (`numpy.random.default_rng(seed=7)`). Running with the default parameters reproduces the figures in this paper exactly.

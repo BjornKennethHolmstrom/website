@@ -165,7 +165,7 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series VI',
+      tag: 'Working Paper · Series VI',
       seriesNote: 'This is the sixth paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
@@ -174,12 +174,14 @@
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Every governance system operates under an explicit or implicit objective function. That function selects which dimensions of reality the system attends to — and, by omission, which it cannot perceive. Treating objective functions as observation architectures, this paper shows that low‑dimensional value functions produce the same structural collapse as low‑dimensional governance channels: the excluded dimensions eventually re‑enter as unresolvable crises.',
       contextOutro: 'The paper introduces the variety gap (G) — the mismatch between the dimensionality of reality and the value architecture — as a unifying diagnostic. When G exceeds a critical threshold, the system becomes constitutionally blind to existential threats. Long‑run viability requires not just better metrics but an enduring capacity for value evolution.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewCode: 'View Source Code',
@@ -187,7 +189,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie VI',
+      tag: 'Arbetsdokument · Serie VI',
       seriesNote: 'Detta är den sjätte rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -196,12 +198,14 @@
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Varje styrsystem fungerar under en explicit eller implicit målfunktion. Den funktionen väljer vilka dimensioner av verkligheten systemet uppmärksammar — och, genom utelämnande, vilka det inte kan uppfatta. Genom att behandla målfunktioner som observationsarkitekturer visar denna vitbok att lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler: de uteslutna dimensionerna återkommer så småningom som olösliga kriser.',
-      contextOutro: 'Vitboken introducerar variationsgapet (G) — avståndet mellan verklighetens dimensionalitet och värdearkitekturens dimensionalitet — som ett enhetligt diagnostiskt verktyg. När G överskrider en kritisk tröskel blir systemet konstitutionellt blint för existentiella hot. Långsiktig överlevnad kräver inte bara bättre mätetal, utan en varaktig förmåga att utveckla värdegrunden.',
-      allWhitepapers: '← Alla vitböcker',
+      contextIntro: 'Varje styrsystem fungerar under en explicit eller implicit målfunktion. Den funktionen väljer vilka dimensioner av verkligheten systemet uppmärksammar — och, genom utelämnande, vilka det inte kan uppfatta. Genom att behandla målfunktioner som observationsarkitekturer visar denna rapport att lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler: de uteslutna dimensionerna återkommer så småningom som olösliga kriser.',
+      contextOutro: 'Rapporten introducerar variationsgapet (G) — avståndet mellan verklighetens dimensionalitet och värdearkitekturens dimensionalitet — som ett enhetligt diagnostiskt verktyg. När G överskrider en kritisk tröskel blir systemet konstitutionellt blint för existentiella hot. Långsiktig överlevnad kräver inte bara bättre mätetal, utan en varaktig förmåga att utveckla värdegrunden.',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       viewCode: 'Visa källkod',
@@ -219,7 +223,7 @@
     sv: {
       title: 'Variationsgapet',
       subtitle: 'Vad vi inte optimerar för, förlorar vi förmågan att se',
-      description: 'Målfunktioner är observationsarkitekturer. Denna vitbok introducerar variationsgapet — diskrepansen mellan verklighetens dimensionalitet och värdearkitekturen — som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.',
+      description: 'Målfunktioner är observationsarkitekturer. Denna rapport introducerar variationsgapet — diskrepansen mellan verklighetens dimensionalitet och värdearkitekturen — som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -247,8 +251,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se. GGF Vitboksserie, rapport VI.`
-      : `Holmström, B. K. (2026). The Variety Gap: What We Don’t Optimize For, We Lose the Ability to See. GGF Whitepaper Series, Paper VI.`;
+      ? `Holmström, B. K. (2026). Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se. Serien Styrning som ingenjörskonst, rapport VI.`
+      : `Holmström, B. K. (2026). The Variety Gap: What We Don’t Optimize For, We Lose the Ability to See. Governance as Engineering Series, Paper VI.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -256,7 +260,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-05"
@@ -268,7 +272,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 
@@ -298,7 +302,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

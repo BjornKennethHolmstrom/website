@@ -63,6 +63,16 @@ export const workingpapersTranslations = {
      description:
        'Paper VIII in the Governance as Engineering series. Develops a systematic method for measuring the Variety Gap in governance systems, mapping eight structural primitives to observable parameters and constructing a composite diagnostic index. Calibrated against the twenty-one cases in the series and validated on three pilot cases not used in framework development.',
    },
+   politicalEconomyOfRequisiteGovernance: {
+     title: 'The Political Economy of Requisite Governance: Transition Pathways Under Incumbent Selection Pressure',
+     description:
+       'Models the transition to requisite governance as a contested control problem between reform coalitions and incumbent controllers. Introduces the transition variety ratio Ω, formalizes three structural traps (bypass, legibility, incentive‑compatibility), and derives design principles for transition mechanisms — sunset‑coupled bypasses, protected experimental spaces, incumbent buy‑out protocols, and observer diversity. Includes historical calibration (British abolition 1833, Meiji Restoration, Montreal Protocol, German coal phase‑out) and three simulations. Paper IX in the Governance as Engineering series.',
+   },
+   requisiteObserverDiversity: {
+     title: 'Requisite Observer Diversity: Why Civilizations Need Multiple, Independently‑Constituted Epistemic Systems',
+     description:
+       'Extends the Governance as Engineering series to observer populations. Argues that civilizational epistemic resilience requires an observer ensemble whose effective rank exceeds the dimensionality of the uncertainty it monitors. Formalizes Requisite Observer Diversity, derives the collapse dynamics of epistemic monocultures (including the liability shield and model collapse), and specifies design principles: constitutionally protected epistemic institutions, ensemble methods, subsidiarity of observation, precautionary action gate, and predictive‑validity weighting. Includes a simulation of epistemic monoculture collapse. Paper X in series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -206,6 +216,16 @@ export const workingpapersTranslations = {
      title: 'Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden',
      description:
        'Rapport VIII i serien Styrning som ingenjörskonst. Utvecklar en systematisk metod för att mäta varietetsgapet i styrsystem, kartlägger åtta strukturella primitiver till observerbara parametrar och konstruerar ett sammansatt diagnostiskt index. Kalibrerad mot de tjugoen fallen i serien och validerad på tre pilotfall som inte använts i ramverkets utveckling.',
+   },
+   politicalEconomyOfRequisiteGovernance: {
+     title: 'Den politiska ekonomin för nödvändig styrning: Övergångsvägar under tryck från etablerade intressen',
+     description:
+       'Modellerar övergången till nödvändig styrning som ett kontrollproblem mellan reformkoalitioner och etablerade motståndare. Introducerar övergångsvarietetskvoten Ω, formaliserar tre strukturella fällor (kringgående, läsbarhet, incitamentskompatibilitet) och härleder konstruktionsprinciper för övergångsmekanismer — solnedgångskopplade bypassar, skyddade experimentutrymmen, utköpsprotokoll för etablerade intressen och observatörsmångfald. Inkluderar historisk kalibrering (brittiska slaveriets avskaffande 1833, Meiji‑restaurationen, Montrealprotokollet, tysk kolavveckling) och tre simuleringar. Rapport IX i serien Styrning som ingenjörskonst.',
+   },
+   requisiteObserverDiversity: {
+     title: 'Nödvändig observatörsmångfald: Varför civilisationer behöver flera, oberoende epistemiska system',
+     description:
+       'Utvidgar serien Styrning som ingenjörskonst till observatörspopulationer. Argumenterar för att civilisatorisk epistemisk resiliens kräver en observatörsensemble vars effektiva rang överstiger dimensionaliteten hos den osäkerhet som övervakas. Formaliserar nödvändig observatörsmångfald, härleder kollapsdynamiken för epistemiska monokulturer (inklusive ansvarsskölden och modellkollaps) och specificerar konstruktionsprinciper: konstitutionellt skyddade epistemiska institutioner, ensemblemetoder, observationernas subsidiaritet, försiktighetsgrind och prediktiv validitetsviktning. Inkluderar en simulering av epistemisk monokulturkollaps. Rapport X i serien.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

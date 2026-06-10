@@ -1,5 +1,4 @@
-# Executive Summary
-## The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance
+## Executive Summary
 
 ---
 

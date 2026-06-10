@@ -144,6 +144,8 @@
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
         { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper extends the control-theoretic governance framework from paper one to multi-scale disturbance environments. The core finding: no single-scale controller can stabilize a system facing simultaneous fast, medium, and slow disturbances. Fractal architectures — nested hierarchies of controllers matched to their disturbance timescale — are the stability-optimal solution.',
@@ -165,7 +167,9 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Detta arbetsdokument utvidgar det reglerteoretiska styrningsramverket från rapport ett till flerskaliga störningsmiljöer. Kärnresultatet: ingen enskild skalregulator kan stabilisera ett system som möter samtidiga snabba, mellanliggande och långsamma störningar. Fraktala arkitekturer — nästlade hierarkier av regulatorer anpassade till sin störningstidsskala — är den stabilitetsoptimala lösningen.',
@@ -216,8 +220,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis. GGF Vitboksserie, rapport II.`
-      : `Holmström, B. K. (2026). Fractality as Stability: A Multi-Scale Control-Theoretic Proof. GGF Whitepaper Series, Paper II.`;
+      ? `Holmström, B. K. (2026). Fraktalitet som stabilitet: Ett flerskaligt reglerteoretiskt bevis. Serien Styrning som ingenjörskonst, rapport II.`
+      : `Holmström, B. K. (2026). Fractality as Stability: A Multi-Scale Control-Theoretic Proof. Governance as Engineering Series, Paper II.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -225,7 +229,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-02"
@@ -267,7 +271,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/pwnytale/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

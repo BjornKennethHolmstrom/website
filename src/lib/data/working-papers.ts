@@ -28,6 +28,71 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'requisiteObserverDiversity',
+   key: 'requisiteObserverDiversity',
+   category: 'governance',
+   tags: [
+     'Observer Diversity',
+     'Epistemic Systems',
+     'Governance Engineering',
+     'Cybernetics',
+     'Ensemble Methods',
+     'Model Collapse',
+     'Precautionary Principle',
+     'Civilizational Resilience',
+     'AI Safety',
+     'Observability'
+   ],
+   year: '2026',
+   pages: '50',
+   readTime: {
+     en: '45 min',
+     sv: '45 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/requisite-observer-diversity.pdf`,
+     sv: `${localBase}/requisite-observer-diversity-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/requisite-observer-diversity-cover.png',
+   readOnlinePath: '/working-papers/requisite-observer-diversity',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-10'
+ },
+ {
+   id: 'politicalEconomyOfRequisiteGovernance',
+   key: 'politicalEconomyOfRequisiteGovernance',
+   category: 'governance',
+   tags: [
+     'Political Economy',
+     'Transition Pathways',
+     'Incumbent Resistance',
+     'Requisite Variety',
+     'Governance Engineering',
+     'Control Theory',
+     'Institutional Design',
+     'Buy-out Protocols',
+     'Simulation',
+     "Ashby's Law",
+     'Transition Bandwidth'
+   ],
+   year: '2026',
+   pages: '69',                         
+   readTime: {
+     en: '60 min',                           
+     sv: '60 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/political-economy-of-requisite-governance.pdf`,
+     sv: `${localBase}/political-economy-of-requisite-governance-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/political-economy-requisite-governance-cover.png',
+   readOnlinePath: '/working-papers/political-economy-of-requisite-governance',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-10'
+ },
+ {
    id: 'measuringTheVarietyGap',
    key: 'measuringTheVarietyGap',
    category: 'governance',

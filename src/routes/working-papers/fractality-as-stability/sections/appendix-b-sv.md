@@ -6,26 +6,26 @@ v4-simulatorn utökar v3-kodbasen från rapport ett till en miljö med flerskali
 
 Den fullständiga källkoden finns tillgänglig på:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 Förvaret innehåller alla simulatorversioner i ordningsföljd:
 
 | Fil | Rapport | Beskrivning |
 | --- | --- | --- |
-| `ggf-simulator-v2.py` | Rapport 1 | Skalär modell med en nod |
-| `ggf-simulator-v3.py` | Rapport 1 | Vektormodell med tio noder, lokaliserad chock |
-| `ggf-simulator-v3-unadjusted.py` | Rapport 1 | v3 med instabilt K_B — instabilitetsdemonstration |
-| `ggf-simulator-v4.py` | Rapport 2 | Flerskalig störning, jämförelse av tre arkitekturer |
+| `gae-simulator-v2.py` | Rapport 1 | Skalär modell med en nod |
+| `gae-simulator-v3.py` | Rapport 1 | Vektormodell med tio noder, lokaliserad chock |
+| `gae-simulator-v3-unadjusted.py` | Rapport 1 | v3 med instabilt K_B — instabilitetsdemonstration |
+| `gae-simulator-v4.py` | Rapport 2 | Flerskalig störning, jämförelse av tre arkitekturer |
 
 ## Att reproducera resultaten
 
 Med Python 3.8+ och NumPy/Matplotlib installerat:
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
 pip install numpy matplotlib
-python ggf-simulator-v4.py
+python gae-simulator-v4.py
 
 ```
 

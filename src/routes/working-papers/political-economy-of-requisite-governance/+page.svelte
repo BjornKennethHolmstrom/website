@@ -1,0 +1,388 @@
+<script lang="ts">
+  import { language } from '$lib/stores/languageStore';
+  import SEO from '$lib/components/SEO.svelte';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
+
+  // --- 1. IMPORT MARKDOWN SECTIONS ---
+
+  import Part1En from './sections/part-1.md';
+  import Part1Sv from './sections/part-1-sv.md';
+
+  import Part2En from './sections/part-2.md';
+  import Part2Sv from './sections/part-2-sv.md';
+
+  import Part3En from './sections/part-3.md';
+  import Part3Sv from './sections/part-3-sv.md';
+
+  import Part4En from './sections/part-4.md';
+  import Part4Sv from './sections/part-4-sv.md';
+
+  import Part5En from './sections/part-5.md';
+  import Part5Sv from './sections/part-5-sv.md';
+
+  import Part6En from './sections/part-6.md';
+  import Part6Sv from './sections/part-6-sv.md';
+
+  import Part7En from './sections/part-7.md';
+  import Part7Sv from './sections/part-7-sv.md';
+
+  import Part8En from './sections/part-8.md';
+  import Part8Sv from './sections/part-8-sv.md';
+
+  import AppendixAEn from './sections/appendix-a.md';
+  import AppendixASv from './sections/appendix-a-sv.md';
+
+  import AppendixBEn from './sections/appendix-b.md';
+  import AppendixBSv from './sections/appendix-b-sv.md';
+
+  import AppendixCEn from './sections/appendix-c.md';
+  import AppendixCSv from './sections/appendix-c-sv.md';
+
+  // --- 2. CONTENT STRUCTURE ---
+
+  const contentMap = [
+    {
+      id: 'part-1',
+      titleEn: 'Part I: From Qualitative Diagnosis to Formal Model',
+      titleSv: 'Del I: Från kvalitativ diagnos till formell modell',
+      compEn: Part1En,
+      compSv: Part1Sv,
+    },
+    {
+      id: 'part-2',
+      titleEn: 'Part II: Modeling the Transition as a Contested Control Problem',
+      titleSv: 'Del II: Modellering av övergången som ett kontrollerat kontrollproblem',
+      compEn: Part2En,
+      compSv: Part2Sv,
+    },
+    {
+      id: 'part-3',
+      titleEn: 'Part III: The Three Structural Traps',
+      titleSv: 'Del III: De tre strukturella fällorna',
+      compEn: Part3En,
+      compSv: Part3Sv,
+    },
+    {
+      id: 'part-4',
+      titleEn: 'Part IV: Design Principles for Transition Mechanisms',
+      titleSv: 'Del IV: Konstruktionsprinciper för övergångsmekanismer',
+      compEn: Part4En,
+      compSv: Part4Sv,
+    },
+    {
+      id: 'part-5',
+      titleEn: 'Part V: Dynamic Model: Transition Bandwidth',
+      titleSv: 'Del V: Dynamisk modell: övergångsbandbredd',
+      compEn: Part5En,
+      compSv: Part5Sv,
+    },
+    {
+      id: 'part-6',
+      titleEn: 'Part VI: Simulation Architecture',
+      titleSv: 'Del VI: Simuleringsarkitektur',
+      compEn: Part6En,
+      compSv: Part6Sv,
+    },
+    {
+      id: 'part-7',
+      titleEn: 'Part VII: Limitations and Open Questions',
+      titleSv: 'Del VII: Begränsningar och öppna frågor',
+      compEn: Part7En,
+      compSv: Part7Sv,
+    },
+    {
+      id: 'part-8',
+      titleEn: 'Part VIII: Conclusion',
+      titleSv: 'Del VIII: Slutsats',
+      compEn: Part8En,
+      compSv: Part8Sv,
+    },
+    {
+      id: 'appendix-a',
+      titleEn: 'Appendix A: Heuristic Derivation of the Transition Variety Ratio Ω',
+      titleSv: 'Appendix A: Heuristisk härledning av övergångsvarietetskvoten Ω',
+      compEn: AppendixAEn,
+      compSv: AppendixASv,
+    },
+    {
+      id: 'appendix-b',
+      titleEn: 'Appendix B: The Bypass‑Trap Dynamical System',
+      titleSv: 'Appendix B: Förbikopplingsfällans dynamiska system',
+      compEn: AppendixBEn,
+      compSv: AppendixBSv,
+    },
+    {
+      id: 'appendix-c',
+      titleEn: 'Appendix C: Historical Calibration of Buy‑Out Effectiveness',
+      titleSv: 'Appendix C: Historisk kalibrering av utköpseffektivitet',
+      compEn: AppendixCEn,
+      compSv: AppendixCSv,
+    },
+  ];
+
+  // --- 3. TRANSLATIONS ---
+
+  const ui = {
+    en: {
+      tag: 'Working Paper · Series IX',
+      seriesNote: 'This is the ninth paper in the Governance as Engineering series.',
+      seriesLinks: [
+        { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
+        { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
+        { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability-Democracy Connection →' },
+        { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Paper IV: Requisite Variety and the Commons →' },
+        { href: '/working-papers/coordination-failure-tax',                label: 'Paper V: The Coordination Failure Tax →' },
+        { href: '/working-papers/the-variety-gap',                         label: 'Paper VI: The Variety Gap →' },
+        { href: '/working-papers/architecture-of-governance-failure',      label: 'Paper VII: The Architecture of Governance Failure →' },
+        { href: '/working-papers/measuring-the-variety-gap',               label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
+      ],
+      contextTitle: 'Context',
+      contextIntro: 'Paper IX moves the Governance as Engineering series from diagnostic analysis to the dynamics of adoption. It models the transition to requisite governance as a contested control problem, pitting reform coalitions against an incumbent controller that benefits from the current architecture. The paper formalises three structural traps, derives design principles for transition mechanisms, and builds three simulations to explore the dynamics.',
+      relatedWork: 'Related work:',
+      architectureLink: 'The Architecture of Stability',
+      gsiLink: 'Global Subsidiarity Index',
+      contextOutro: 'The central finding: whether a transition succeeds depends not on political will or resources, but on the variety budget and latency structure of the transition pathway itself. This paper gives that pathway a formal grammar.',
+      allWhitepapers: '← All Whitepapers',
+      share: 'Share this paper',
+      downloads: 'Downloads',
+      downloadPDF: 'Download PDF',
+      viewCode: 'View Source Code',
+      citeThis: 'Cite This Work',
+    },
+    sv: {
+      tag: 'Arbetsdokument · Serie IX',
+      seriesNote: 'Detta är den nionde rapporten i serien Styrning som ingenjörskonst.',
+      seriesLinks: [
+        { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
+        { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
+        { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+        { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Rapport IV: Nödvändig variation och allmänningen →' },
+        { href: '/working-papers/coordination-failure-tax',                label: 'Rapport V: Samordningsmisslyckandets skatt →' },
+        { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Varietetsgapet →' },
+        { href: '/working-papers/architecture-of-governance-failure',      label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
+        { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
+      ],
+      contextTitle: 'Kontext',
+      contextIntro: 'Rapport IX för serien Styrning som ingenjörskonst från diagnostisk analys till förändringens dynamik. Den modellerar övergången till nödvändig styrning som ett kontrollerat kontrollproblem där reformkoalitioner ställs mot en etablerad kontrollant som gynnas av den nuvarande arkitekturen. Rapporten formaliserar tre strukturella fällor, härleder konstruktionsprinciper för övergångsmekanismer och bygger tre simuleringar för att utforska dynamiken.',
+      relatedWork: 'Relaterat arbete:',
+      architectureLink: 'Stabilitetens arkitektur',
+      gsiLink: 'Global subsidiaritetsindex',
+      contextOutro: 'Kärnresultatet: om en övergång lyckas beror inte på politisk vilja eller resurser, utan på övergångsvägens varietetsbudget och latensstruktur. Denna rapport ger den vägen en formell grammatik.',
+      allWhitepapers: '← Alla vitböcker',
+      share: 'Dela detta dokument',
+      downloads: 'Nedladdningar',
+      downloadPDF: 'Ladda ner PDF',
+      viewCode: 'Visa källkod',
+      citeThis: 'Citera detta arbete',
+    },
+  };
+
+  const metadata = {
+    en: {
+      title: 'The Political Economy of Requisite Governance',
+      subtitle: 'Transition Pathways Under Incumbent Selection Pressure',
+      description: 'A formal model of the transition to requisite governance, treating incumbent resistance as an adaptive controller and deriving design principles for reform mechanisms that survive strategic counter‑mobilisation.',
+    },
+    sv: {
+      title: 'Den politiska ekonomin för nödvändig styrning',
+      subtitle: 'Övergångsvägar under tryck från etablerade intressen',
+      description: 'En formell modell för övergången till nödvändig styrning, där etablerade motståndare modelleras som en adaptiv kontrollant och konstruktionsprinciper härleds för reformmekanismer som överlever strategisk motmobilisering.',
+    },
+  };
+
+  // --- 4. REACTIVE LOGIC ---
+
+  let activeSection = $state('part-1');
+  let currentLang = $derived($language);
+  let t = $derived(ui[currentLang] ?? ui.en);
+  let meta = $derived(metadata[currentLang] ?? metadata.en);
+  let pdfFilename = $derived(currentLang === 'sv' ? 'political-economy-of-requisite-governance-sv.pdf' : 'political-economy-of-requisite-governance.pdf');
+
+  function sectionTitle(section: typeof contentMap[0]) {
+    return currentLang === 'sv' ? section.titleSv : section.titleEn;
+  }
+
+  function sectionComp(section: typeof contentMap[0]) {
+    return currentLang === 'sv' ? section.compSv : section.compEn;
+  }
+
+  function scrollTo(id: string) {
+    activeSection = id;
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function copyCitation() {
+    const citation = currentLang === 'sv'
+      ? `Holmström, B. K. (2026). Den politiska ekonomin för nödvändig styrning: Övergångsvägar under tryck från etablerade intressen. Styrning som ingenjörskonst, Rapport IX.`
+      : `Holmström, B. K. (2026). The Political Economy of Requisite Governance: Transition Pathways Under Incumbent Selection Pressure. Governance as Engineering, Paper IX.`;
+    navigator.clipboard.writeText(citation).then(() => {
+      alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
+    });
+  }
+</script>
+
+<SEO
+  title="{meta.title} | BKH Working paper"
+  description={meta.description}
+  type="article"
+  publishedTime="2026-06"
+/>
+
+<div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
+
+  <!-- Left Sidebar -->
+  <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
+    <div class="mb-8">
+      <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
+        {t.allWhitepapers}
+      </a>
+    </div>
+
+    <!-- Series note -->
+    <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
+      {t.seriesNote}
+      <div class="mt-2 space-y-1">
+        {#each t.seriesLinks as link}
+          <a href={link.href}
+            class="block font-medium hover:opacity-100"
+            style="color: var(--color-page-accent);">
+            {link.label}
+          </a>
+        {/each}
+      </div>
+    </div>
+
+    <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
+      <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{t.downloads}</h3>
+      <div class="space-y-3">
+        <a
+          href="/working-papers/{pdfFilename}"
+          download
+          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          {t.downloadPDF}
+        </a>
+        <!-- The GitHub repository for Paper IX -->
+        <a
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          {t.viewCode}
+        </a>
+        <button
+          onclick={copyCitation}
+          class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline w-full text-left"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          {t.citeThis}
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="space-y-1">
+      {#each contentMap as section}
+        <button
+          onclick={() => scrollTo(section.id)}
+          class="block w-full text-left px-3 py-2 rounded-md text-sm transition-colors
+          {activeSection === section.id
+            ? 'bg-[var(--color-page-accent)] text-white font-medium shadow-sm'
+            : 'text-[var(--color-page-text)] hover:bg-[var(--color-card-bg)] opacity-70 hover:opacity-100'}"
+        >
+          {sectionTitle(section)}
+        </button>
+      {/each}
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 min-w-0 px-4 pt-16 pb-24">
+
+    <header class="mb-12 text-center lg:text-left">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-medium tracking-wide uppercase mb-4"
+        style="background-color: var(--color-card-bg); color: var(--color-page-accent);">
+        {t.tag}
+      </div>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
+        {meta.title}
+      </h1>
+      <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
+        {meta.subtitle}
+      </p>
+    </header>
+
+    <!-- Context Card -->
+    <div class="mb-16 p-8 rounded-xl border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-sm">
+      <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{t.contextTitle}</h3>
+      <div class="prose prose-sm max-w-none" style="--tw-prose-body: var(--color-page-text); --tw-prose-links: var(--color-page-accent);">
+        <p class="text-base">{t.contextIntro}</p>
+
+        <div class="flex flex-wrap gap-4 my-6">
+          <span class="text-sm font-bold opacity-70">{t.relatedWork}</span>
+          <a
+            href="/working-papers/architecture-of-stability"
+            class="text-sm hover:underline"
+            style="color: var(--color-page-accent);"
+          >
+            {t.architectureLink}
+          </a>
+          <a
+            href="https://www.svensksubsidiaritet.se/ramverk/gsi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-1 text-sm hover:underline"
+            style="color: var(--color-page-accent);"
+          >
+            {t.gsiLink}
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-70">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <p class="mt-4 opacity-80 leading-relaxed">
+          {t.contextOutro}
+        </p>
+      </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="space-y-16">
+      {#each contentMap as section}
+        <div id={section.id} class="scroll-mt-24">
+          <article class="prose prose-lg max-w-none"
+            style="
+              --tw-prose-headings: var(--color-page-text);
+              --tw-prose-body: var(--color-page-text);
+              --tw-prose-bold: var(--color-page-text);
+              --tw-prose-links: var(--color-page-accent);
+              --tw-prose-quotes: var(--color-page-text);
+              --tw-prose-code: var(--color-page-text);
+              --tw-prose-pre-bg: var(--color-card-bg);
+              --tw-prose-pre-code: #1a1a1a;
+            ">
+            <svelte:component this={sectionComp(section)} />
+          </article>
+        </div>
+        {#if section.id !== 'appendix-c'}
+          <hr class="border-[var(--color-separator)] opacity-30 my-8" />
+        {/if}
+      {/each}
+    </div>
+
+    <!-- Share Buttons -->
+    <div class="mt-24 pt-8 border-t border-[var(--color-separator)]">
+      <ShareButtons title={meta.title} />
+    </div>
+
+  </main>
+</div>

@@ -114,7 +114,7 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Series III',
+      tag: 'Working Paper · Series III',
       seriesNote: 'This is the third paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
@@ -124,11 +124,13 @@
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
         { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Democratic governance claims to transmit citizen preferences into policy through representative institutions. This paper asks whether that transmission is technically possible — not whether institutions are well-designed, but whether the information-theoretic properties of representation chains allow citizen preferences to survive to the policy layer at all.',
       contextOutro: 'The finding: representation chains with three or more layers are constitutionally unobservable. Noise variance exceeds surviving signal variance. The policy layer cannot recover true citizen preferences regardless of institutional quality. This is a diagnosis, not a prescription.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewCode: 'View Source Code',
@@ -145,12 +147,14 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Demokratisk styrning hävdar att medborgarnas preferenser förmedlas till politiken via representativa institutioner. Denna vitbok frågar om den överföringen är tekniskt möjlig — inte om institutionerna är väldesignade, utan om representationskedjornas informationsteoretiska egenskaper tillåter medborgerliga preferenser att överleva till politiklagret.',
       contextOutro: 'Resultatet: representationskedjor med tre eller fler lager är konstitutionellt iakttagbara. Brusvariansen överstiger den kvarvarande signalvariansen. Politiklagret kan inte återskapa sanna medborgarpreferenser oavsett institutionell kvalitet. Detta är en diagnos, inte ett recept.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       viewCode: 'Visa källkod',
@@ -196,8 +200,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Observerbarhets-demokratikopplingen: Hur representationskedjor förstör den signal de är avsedda att förmedla. GGF Vitboksserie, rapport III.`
-      : `Holmström, B. K. (2026). The Observability-Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit. GGF Whitepaper Series, Paper III.`;
+      ? `Holmström, B. K. (2026). Observerbarhets-demokratikopplingen: Hur representationskedjor förstör den signal de är avsedda att förmedla. Serien Styrning som ingenjörskonst, rapport III.`
+      : `Holmström, B. K. (2026). The Observability-Democracy Connection: How Representation Chains Destroy the Signal They Are Meant to Transmit. Governance as Engineering Series, Paper III.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -205,7 +209,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-02"
@@ -217,7 +221,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 
@@ -247,7 +251,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

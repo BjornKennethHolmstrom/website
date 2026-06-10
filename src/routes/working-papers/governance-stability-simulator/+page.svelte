@@ -133,7 +133,9 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper introduces the Governance Stability Simulator — an open analytical framework that models governance institutions as feedback control systems. Using standard mathematics from control theory and cybernetics, it compares governance architectures by their measurable stability properties rather than their stated intentions.',
@@ -141,7 +143,7 @@
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
       contextOutro: 'The core finding: high latency and low signal fidelity place hard mathematical ceilings on what any governance architecture can achieve. These ceilings are structural, not political.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -158,7 +160,9 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna vitbok introducerar styrstabilitetssimulatorn — ett öppet analytiskt ramverk som modellerar styrningsinstitutioner som återkopplingssystem. Med hjälp av standardmatematik från reglerteknik och cybernetik jämförs styrningsarkitekturer utifrån mätbara stabilitetsegenskaper snarare än uttalade intentioner.',
@@ -166,7 +170,7 @@
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
       contextOutro: 'Kärnresultatet: hög latens och låg signalfidelitet sätter hårda matematiska tak för vad en styrningsarkitektur kan uppnå. Dessa tak är strukturella, inte politiska.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -212,8 +216,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning. GGF Vitboksserie.`
-      : `Holmström, B. K. (2026). Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation. GGF Whitepaper Series.`;
+      ? `Holmström, B. K. (2026). Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning. Working paper series.`
+      : `Holmström, B. K. (2026). Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation. Working paper series.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -221,7 +225,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-02"
@@ -233,7 +237,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 
@@ -263,7 +267,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/BjornKennethHolmstrom/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

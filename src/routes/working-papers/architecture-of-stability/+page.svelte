@@ -145,14 +145,14 @@
   // --- 3. LOCAL TRANSLATIONS (English only for now) ---
   const ui = {
     en: {
-      tag: 'Whitepaper',
+      tag: 'Working paper',
       contextTitle: 'Context',
-      contextIntro: 'This whitepaper presents a systems-theoretic framework for understanding power and designing governance architectures. It integrates control theory, network science, information theory, and constitutional design into a unified model for diagnosing instability and prescribing resilient solutions.',
+      contextIntro: 'This working paper presents a systems-theoretic framework for understanding power and designing governance architectures. It integrates control theory, network science, information theory, and constitutional design into a unified model for diagnosing instability and prescribing resilient solutions.',
       relatedWork: 'Related Frameworks:',
       gsiLink: 'Global Subsidiarity Index',
       contextOutro: 'The core thesis: centralized governance with time delay is mathematically unstable under complexity. The solution: fractal subsidiarity. Sweden as prototype.',
-      allWhitepapers: '← All Whitepapers',
-      share: 'Share this whitepaper',
+      allWorkingpapers: '← All Working papers',
+      share: 'Share this Working paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewDiagram: 'View Full Constitution',
@@ -162,11 +162,11 @@
     // sv: {
     //   tag: 'Vitbok',
     //   contextTitle: 'Kontext',
-    //   contextIntro: 'Denna vitbok presenterar ett systemteoretiskt ramverk för att förstå makt och utforma styrelseskick. Den integrerar reglerteori, nätverksvetenskap, informationsteori och konstitutionell design i en enhetlig modell för att diagnostisera instabilitet och föreslå resilienta lösningar.',
+    //   contextIntro: 'Denna arbetsrapport presenterar ett systemteoretiskt ramverk för att förstå makt och utforma styrelseskick. Den integrerar reglerteori, nätverksvetenskap, informationsteori och konstitutionell design i en enhetlig modell för att diagnostisera instabilitet och föreslå resilienta lösningar.',
     //   relatedWork: 'Relaterade ramverk:',
     //   gsiLink: 'Global Subsidiarity Index',
     //   contextOutro: 'Kärntesen: centraliserad styrning med tidsfördröjning är matematiskt instabil under komplexitet. Lösningen: fraktal subsidiaritet. Sverige som prototyp.',
-    //   allWhitepapers: '← Alla vitböcker',
+    //   allWorkingpapers: '← Alla arbetsrapporter',
     //   share: 'Dela denna vitbok',
     //   downloads: 'Nedladdningar',
     //   downloadPDF: 'Ladda ner PDF',
@@ -207,7 +207,7 @@
 
   // Citation function
   function copyCitation() {
-    const citation = `Holmström, B. K. (2026). The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance. Project Janus Whitepaper Series.`;
+    const citation = `Holmström, B. K. (2026). The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance. Working paper.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert('Citation copied to clipboard!');
     });
@@ -219,7 +219,7 @@
 </svelte:head> -->
 
 <SEO
-  title="{meta.title} | Project Janus Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-02"
@@ -231,7 +231,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

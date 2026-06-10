@@ -59,7 +59,9 @@
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro:

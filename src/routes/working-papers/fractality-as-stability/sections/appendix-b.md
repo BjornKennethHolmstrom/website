@@ -6,26 +6,26 @@ The v4 simulator extends the v3 codebase from paper one to a multi-scale disturb
 
 The full source code is available at:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 The repository includes all simulator versions in sequence:
 
 | File | Paper | Description |
 |---|---|---|
-| `ggf-simulator-v2.py` | Paper 1 | Single-node scalar model |
-| `ggf-simulator-v3.py` | Paper 1 | Ten-node vector model, localized shock |
-| `ggf-simulator-v3-unadjusted.py` | Paper 1 | v3 with unstable K_B — instability demonstration |
-| `ggf-simulator-v4.py` | Paper 2 | Multi-scale disturbance, three-architecture comparison |
+| `gae-simulator-v2.py` | Paper 1 | Single-node scalar model |
+| `gae-simulator-v3.py` | Paper 1 | Ten-node vector model, localized shock |
+| `gae-simulator-v3-unadjusted.py` | Paper 1 | v3 with unstable K_B — instability demonstration |
+| `gae-simulator-v4.py` | Paper 2 | Multi-scale disturbance, three-architecture comparison |
 
 ## Reproducing the results
 
 With Python 3.8+ and NumPy/Matplotlib installed:
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
 pip install numpy matplotlib
-python ggf-simulator-v4.py
+python gae-simulator-v4.py
 ```
 
 The simulation is seeded for reproducibility (`numpy.random.default_rng(seed=42)`). Running with default parameters exactly reproduces Figure 1 and the quantitative summary table in Part III.

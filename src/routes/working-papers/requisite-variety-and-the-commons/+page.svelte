@@ -67,12 +67,14 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'The tragedy of the commons has a standard explanation: individual incentives to extract exceed collective incentives to conserve. This paper offers a different diagnosis: the tragedy of the commons is an architectural failure before it is a motivational one. Individual extraction decisions made without feedback from the collective resource state constitute an open-loop system — an actuator with no sensor.',
       contextOutro: 'Ashby\'s Law of Requisite Variety is the central tool: a governance system must observe at least as many signal dimensions as the resource system has disturbance bands. Physical, seasonal, and relational proximity is the mechanism by which communities acquire that variety. State management is shown to perform worse than open access. Recognition of indigenous resource sovereignty is not an act of cultural generosity — it is a structural observation about which governance systems have the requisite variety to do the job.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewCode: 'View Source Code',
@@ -89,12 +91,14 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Allmänningens tragedi har en standardförklaring: individuella incitament att utvinna överstiger kollektiva incitament att bevara. Denna vitbok erbjuder en annan diagnos: allmänningens tragedi är ett arkitektoniskt misslyckande innan det är ett motivationsmisslyckande. Individuella utvinningsbeslut utan återkoppling från det kollektiva resurstillståndet utgör ett öppet system — ett styrorgan utan sensor.',
       contextOutro: 'Ashbys lag om nödvändig variation är det centrala verktyget: ett styrningssystem måste observera minst lika många signaldimensioner som resurssystemet har störningsband. Fysisk, säsongsmässig och relationell närhet är mekanismen genom vilken samhällen förvärvar denna variation. Statlig förvaltning visas prestera sämre än fri tillgång. Erkännandet av ursprungsbefolkningars resurssouveränitet är inte en akt av kulturell generositet — det är en strukturell observation om vilka styrningssystem som har den nödvändiga variationen för att utföra arbetet.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       viewCode: 'Visa källkod',
@@ -140,8 +144,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Nödvändig variation och allmänningen: Varför närhet styr. GGF Vitboksserie, rapport IV.`
-      : `Holmström, B. K. (2026). Requisite Variety and the Commons: Why Proximity Governs. GGF Whitepaper Series, Paper IV.`;
+      ? `Holmström, B. K. (2026). Nödvändig variation och allmänningen: Varför närhet styr. Serien Styrning som ingenjörskonst, rapport IV.`
+      : `Holmström, B. K. (2026). Requisite Variety and the Commons: Why Proximity Governs. Governance as Engineering Series, Paper IV.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -149,7 +153,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-02"
@@ -161,7 +165,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 
@@ -191,7 +195,7 @@
           {t.downloadPDF}
         </a>
         <a
-          href="https://github.com/pwnytale/ggf-governance-simulator"
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"

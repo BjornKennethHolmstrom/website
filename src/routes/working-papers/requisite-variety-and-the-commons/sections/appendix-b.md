@@ -6,26 +6,26 @@ The v6 simulator extends the series to the commons governance domain, replacing 
 
 The full source code is available at:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 The repository now includes six simulator versions:
 
 | File | Paper | Description |
 |---|---|---|
-| `ggf-simulator-v2.py` | Paper I | Single-node scalar feedback model |
-| `ggf-simulator-v3.py` | Paper I | Ten-node vector model, localized shock |
-| `ggf-simulator-v3-unadjusted.py` | Paper I | v3 with unstable gain — instability demo |
-| `ggf-simulator-v4.py` | Paper II | Multi-scale disturbance, three architectures |
-| `ggf-simulator-v5.py` | Paper III | Representation chain observability, four architectures |
-| `ggf-simulator-v6.py` | Paper IV | Commons governance, requisite variety, five architectures |
+| `gae-simulator-v2.py` | Paper I | Single-node scalar feedback model |
+| `gae-simulator-v3.py` | Paper I | Ten-node vector model, localized shock |
+| `gae-simulator-v3-unadjusted.py` | Paper I | v3 with unstable gain — instability demo |
+| `gae-simulator-v4.py` | Paper II | Multi-scale disturbance, three architectures |
+| `gae-simulator-v5.py` | Paper III | Representation chain observability, four architectures |
+| `gae-simulator-v6.py` | Paper IV | Commons governance, requisite variety, five architectures |
 
 ## Reproducing the results
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
 pip install numpy matplotlib
-python ggf-simulator-v6.py
+python gae-simulator-v6.py
 ```
 
 The simulation is seeded (`numpy.random.default_rng(seed=42)`). Default parameters exactly reproduce Figure 1 and the quantitative summary table in Part III.

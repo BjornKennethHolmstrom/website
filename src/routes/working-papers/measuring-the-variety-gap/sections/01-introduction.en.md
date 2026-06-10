@@ -1,4 +1,4 @@
-# 1. Introduction: From Diagnosis to Measurement
+## 1. Introduction: From Diagnosis to Measurement
 
 The Governance as Engineering series has established a set of structural constraints on institutional perception. Ashby's Law of Requisite Variety states that a controller can only stabilise a system whose variety it can match. The frequency-latency constraint states that no single-scale controller can govern disturbances across all timescales. The constitutional unobservability threshold states that representation chains beyond a certain depth destroy the signal of citizen preferences before it reaches the policy layer. The Goodhart-Ashby synthesis states that low-dimensional objective functions eventually optimise away their own ability to perceive the systems they govern. And the coordination failure tax states that simultaneous architectural failures do not add—they multiply.
 

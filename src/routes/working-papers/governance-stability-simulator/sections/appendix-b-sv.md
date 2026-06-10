@@ -6,12 +6,12 @@ Simulatorn är implementerad i Python och använder NumPy för numeriska beräkn
 
 Den fullständiga källkoden finns tillgänglig på:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 Förvaret innehåller:
 
-* `ggf-simulator-v2.py` — en-nods skalär modell (demonstration av latens och signaltrohet)
-* `ggf-simulator-v3.py` — tionods vektormodell (subsidiaritet och genomsnittsproblemet)
+* `gae-simulator-v2.py` — en-nods skalär modell (demonstration av latens och signaltrohet)
+* `gae-simulator-v3.py` — tionods vektormodell (subsidiaritet och genomsnittsproblemet)
 * `README.md` — installationsinstruktioner och parameterdokumentation
 * `/outputs` — förgenererade figurer från den kanoniska parameteruppsättningen
 
@@ -20,9 +20,9 @@ Förvaret innehåller:
 Med Python 3.8+ och NumPy/Matplotlib installerat:
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
-python ggf-simulator-v3.py
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
+python gae-simulator-v3.py
 
 ```
 

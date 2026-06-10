@@ -6,26 +6,26 @@ v6-simulatorn utökar serien till domänen för styrning av allmänningar, och e
 
 Den fullständiga källkoden finns tillgänglig på:
 
-**[github.com/BjornKennethHolmstrom/ggf-governance-simulator](https://github.com/BjornKennethHolmstrom/ggf-governance-simulator)**
+**[github.com/BjornKennethHolmstrom/gae-governance-simulator](https://github.com/BjornKennethHolmstrom/gae-governance-simulator)**
 
 Lagringsplatsen innehåller nu sex simulatorversioner:
 
 | Fil | Artikel | Beskrivning |
 | --- | --- | --- |
-| `ggf-simulator-v2.py` | Artikel I | Ennods skalär återkopplingsmodell |
-| `ggf-simulator-v3.py` | Artikel I | Tionods vektormodell, lokaliserad chock |
-| `ggf-simulator-v3-unadjusted.py` | Artikel I | v3 med instabil förstärkning — instabilitetsdemo |
-| `ggf-simulator-v4.py` | Artikel II | Flerskalig störning, tre arkitekturer |
-| `ggf-simulator-v5.py` | Artikel III | Representationskedjans observerbarhet, fyra arkitekturer |
-| `ggf-simulator-v6.py` | Artikel IV | Styrning av allmänningar, erforderlig variation, fem arkitekturer |
+| `gae-simulator-v2.py` | Artikel I | Ennods skalär återkopplingsmodell |
+| `gae-simulator-v3.py` | Artikel I | Tionods vektormodell, lokaliserad chock |
+| `gae-simulator-v3-unadjusted.py` | Artikel I | v3 med instabil förstärkning — instabilitetsdemo |
+| `gae-simulator-v4.py` | Artikel II | Flerskalig störning, tre arkitekturer |
+| `gae-simulator-v5.py` | Artikel III | Representationskedjans observerbarhet, fyra arkitekturer |
+| `gae-simulator-v6.py` | Artikel IV | Styrning av allmänningar, erforderlig variation, fem arkitekturer |
 
 ## Reproducera resultaten
 
 ```bash
-git clone https://github.com/BjornKennethHolmstrom/ggf-governance-simulator
-cd ggf-governance-simulator
+git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
+cd gae-governance-simulator
 pip install numpy matplotlib
-python ggf-simulator-v6.py
+python gae-simulator-v6.py
 
 ```
 

@@ -154,11 +154,13 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'The Governance as Engineering series has established that governance failure follows structural constraints — but has not provided a systematic method for measuring the central diagnostic concept: the Variety Gap. This paper provides that method.',
       contextOutro: 'The paper develops a parametric framework that maps observable governance characteristics to the eight structural primitives, constructs a composite Variety Gap Index, and tests it against the twenty-one cases in the series. It is not a predictive model — it is a diagnostic instrument, offered as an open invitation for empirical testing and refinement.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       citeThis: 'Cite This Work',
@@ -175,11 +177,13 @@
         { href: '/working-papers/coordination-failure-tax', label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Variationsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Serien Styrning som ingenjörskonst har fastställt att styrningsmisslyckanden följer strukturella begränsningar — men har inte tillhandahållit en systematisk metod för att mäta det centrala diagnostiska konceptet: varietetsgapet. Denna rapport tillhandahåller den metoden.',
       contextOutro: 'Rapporten utvecklar ett parametriskt ramverk som kartlägger observerbara styrningsegenskaper till de åtta strukturella primitiverna, konstruerar ett sammansatt varietetsgap-index och testar det mot de tjugoen fallen i serien. Det är inte en prediktiv modell — det är ett diagnostiskt instrument, erbjudet som en öppen inbjudan till empirisk testning och förfining.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       citeThis: 'Citera detta arbete',
@@ -224,8 +228,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden. GGF Vitboksserie, rapport VIII.`
-      : `Holmström, B. K. (2026). Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure. GGF Whitepaper Series, Paper VIII.`;
+      ? `Holmström, B. K. (2026). Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden. Serien Styrning som ingenjörskonst, rapport VIII.`
+      : `Holmström, B. K. (2026). Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure. Governance as Engineering Series, Paper VIII.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -233,7 +237,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-05"
@@ -245,7 +249,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

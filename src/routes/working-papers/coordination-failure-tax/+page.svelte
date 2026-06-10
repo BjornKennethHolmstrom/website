@@ -51,12 +51,14 @@
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Papers I–IV establish four distinct structural failure modes in governance architecture. Each paper demonstrates the same underlying mechanism in a different domain: aggregation destroys information, destroyed information cannot be recovered downstream, and institutional quality operates on the signal after it arrives — it cannot help if the signal is gone.',
       contextOutro: 'This paper makes explicit what the series implies but never states: these failure modes do not add — they multiply. A governance system exhibiting all four simultaneously is not four times worse than a well-designed one. It is categorically incapable of the functions it claims to perform. The paper introduces the coordination failure tax as a formal concept, shows how it compounds, maps the four structural constraints to the GGF\'s design principles, and identifies which categories of reform are architecturally capable of reducing the tax — and which are not.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       citeThis: 'Cite This Work',
@@ -72,12 +74,14 @@
         { href: '/working-papers/requisite-variety-and-the-commons', label: 'Rapport IV: Nödvändig variation och allmänningen →' },
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Varietetsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
-        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' }
+        { href: '/working-papers/measuring-the-variety-gap', label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
+        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Rapporterna I–IV fastslår fyra distinkta strukturella felmönster i styrningsarkitektur. Varje rapport demonstrerar samma underliggande mekanism i ett annat domän: aggregering förstör information, förstörd information kan inte återhämtas nedströms, och institutionell kvalitet verkar på signalen efter att den anlänt — den kan inte hjälpa om signalen är borta.',
       contextOutro: 'Denna rapport gör explicit vad serien antyder men aldrig uttalar: dessa felmönster adderar inte — de multiplicerar. Ett styrningssystem som uppvisar alla fyra samtidigt är inte fyra gånger sämre än ett väldesignat system. Det är kategoriskt oförmöget att utföra de funktioner det påstår sig utföra. Rapporten introducerar samordningsmisslyckandets skatt som ett formellt begrepp, visar hur den förstärks, kartlägger de fyra strukturella begränsningarna mot GGF:s designprinciper och identifierar vilka reformkategorier som är arkitektoniskt kapabla att minska skatten — och vilka som inte är det.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       citeThis: 'Citera detta arbete',
@@ -122,8 +126,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Samordningsmisslyckandets skatt: Arkitektonisk förstärkning och vägen mot nödvändig styrning. GGF Vitboksserie, rapport V.`
-      : `Holmström, B. K. (2026). The Coordination Failure Tax: Architectural Compounding and the Path to Requisite Governance. GGF Whitepaper Series, Paper V.`;
+      ? `Holmström, B. K. (2026). Samordningsmisslyckandets skatt: Arkitektonisk förstärkning och vägen mot nödvändig styrning. Serien Styrning som ingenjörskonst, rapport V.`
+      : `Holmström, B. K. (2026). The Coordination Failure Tax: Architectural Compounding and the Path to Requisite Governance. Governance as Engineering Series, Paper V.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -131,7 +135,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-03"
@@ -143,7 +147,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 
