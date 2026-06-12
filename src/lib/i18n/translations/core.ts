@@ -145,6 +145,10 @@ export const coreTranslations = {
     geSeriesPaperX: {
       title: 'X: Requisite Observer Diversity',
       desc:  'Extends the series to observer populations. Shows why civilisations need multiple, independently‑constituted epistemic systems, formalises the collapse dynamics of epistemic monocultures, and specifies a precautionary action gate and predictive‑validity weighting to maintain resilience.'
+    },
+    geSeriesPaperXI: {
+      title: 'XI: Reform Exhaustion',
+      desc:  'Models the actuation channel — the path policy intent travels from centre to street — showing that minimum control effort grows superlinearly with delegation depth. Deep chains price reform out of reach, even when every actor is competent and compliant. Closes the series\' first theoretical cycle.',
     }
   },
 
@@ -491,6 +495,10 @@ export const coreTranslations = {
     geSeriesPaperX: {
       title: 'X: Nödvändig observatörsmångfald',
       desc:  'Utvidgar serien till observatörspopulationer. Visar varför civilisationer behöver flera oberoende epistemiska system, formaliserar epistemiska monokulturers kollapsdynamik och specificerar en försiktighetsgrind och prediktiv validitetsviktning för att upprätthålla resiliens.'
+    },
+    geSeriesPaperXI: {
+      title: 'XI: Reformutmattning',
+      desc:  'Modellerar aktueringskanalen — vägen policyintention färdas från centrum till gata — och visar att minsta kontrollansträngning växer superlinjärt med delegationsdjupet. Djupa kedjor prissätter reformer ur räckhåll, även när varje aktör är kompetent och följsam. Avslutar seriens första teoretiska cykel.',
     }
   },
 

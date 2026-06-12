@@ -73,6 +73,11 @@ export const workingpapersTranslations = {
      description:
        'Extends the Governance as Engineering series to observer populations. Argues that civilizational epistemic resilience requires an observer ensemble whose effective rank exceeds the dimensionality of the uncertainty it monitors. Formalizes Requisite Observer Diversity, derives the collapse dynamics of epistemic monocultures (including the liability shield and model collapse), and specifies design principles: constitutionally protected epistemic institutions, ensemble methods, subsidiarity of observation, precautionary action gate, and predictive‑validity weighting. Includes a simulation of epistemic monoculture collapse. Paper X in series.',
    },
+   reformExhaustion: {
+     title: 'Reform Exhaustion: Delegation Depth and the Controllability of Governance',
+     description:
+       'The actuation channel — the path policy intent travels from centre to street — has been the untreated channel in the series. This paper models the delegation chain as a sequence of projections, delays, and noise injections that survive even when every actor is competent, honest, and compliant. The central result is an energy law: the minimum control effort required to realise a policy target grows superlinearly with delegation depth. Deep chains do not refuse policy; they price it out. With country‑report evidence, simulation, and a within‑country empirical anchor. Paper XI closes the series\' first theoretical cycle.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -226,6 +231,11 @@ export const workingpapersTranslations = {
      title: 'Nödvändig observatörsmångfald: Varför civilisationer behöver flera, oberoende epistemiska system',
      description:
        'Utvidgar serien Styrning som ingenjörskonst till observatörspopulationer. Argumenterar för att civilisatorisk epistemisk resiliens kräver en observatörsensemble vars effektiva rang överstiger dimensionaliteten hos den osäkerhet som övervakas. Formaliserar nödvändig observatörsmångfald, härleder kollapsdynamiken för epistemiska monokulturer (inklusive ansvarsskölden och modellkollaps) och specificerar konstruktionsprinciper: konstitutionellt skyddade epistemiska institutioner, ensemblemetoder, observationernas subsidiaritet, försiktighetsgrind och prediktiv validitetsviktning. Inkluderar en simulering av epistemisk monokulturkollaps. Rapport X i serien.',
+   },
+   reformExhaustion: {
+     title: 'Reformutmattning: Delegationsdjup och styrningens styrbarhet',
+     description:
+       'Aktueringskanalen — vägen policyintention färdas från centrum till gata — har varit den obehandlade kanalen i serien. Denna rapport modellerar delegationskedjan som en sekvens av projektioner, fördröjningar och brusinjektioner som består även när varje aktör är kompetent, ärlig och följsam. Det centrala resultatet är en energilag: den minsta kontrollansträngning som krävs för att realisera ett policymål växer superlinjärt med delegationsdjupet. Djupa kedjor vägrar inte policy; de prissätter den ur räckhåll. Med landrapportbevis, simulering och en empirisk förankring inom ett land. Rapport XI avslutar seriens första teoretiska cykel.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

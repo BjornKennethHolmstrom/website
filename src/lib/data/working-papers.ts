@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'reformExhaustion',
+   key: 'reformExhaustion',
+   category: 'governance',
+   tags: [
+     'Reform Exhaustion',
+     'Delegation Depth',
+     'Actuation Channel',
+     'Controllability',
+     'Governance Engineering',
+     'Control Theory',
+     'Implementation Science',
+     'Policy Delivery',
+     'Energy Law',
+     'Constitutional Uncontrollability',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '52',
+   readTime: {
+     en: '65 min', 
+     sv: '65 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/reform-exhaustion.pdf`,
+     sv: `${localBase}/reform-exhaustion-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/reform-exhaustion-cover.png',
+   readOnlinePath: '/working-papers/reform-exhaustion',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-12'
+ },
+ {
    id: 'requisiteObserverDiversity',
    key: 'requisiteObserverDiversity',
    category: 'governance',

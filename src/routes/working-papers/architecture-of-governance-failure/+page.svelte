@@ -62,6 +62,7 @@
         { href: '/working-papers/measuring-the-variety-gap', label: 'Paper VIII: Measuring the Variety Gap →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
+        { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
       ],
       contextTitle: 'Context',
       contextIntro:
