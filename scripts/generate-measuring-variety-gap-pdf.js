@@ -96,7 +96,7 @@ const pdfStyles = `
 		@bottom-right { content: none; }
 	}
 
-	body {
+body {
 		font-family: 'Georgia', 'Times New Roman', serif;
 		font-size: 11pt;
 		line-height: 1.6;
@@ -104,6 +104,9 @@ const pdfStyles = `
 		max-width: 100%;
 		margin: 0;
 		padding: 0;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
 	}
 
 	.cover {
@@ -292,7 +295,7 @@ const pdfStyles = `
 	.figure { page-break-inside: avoid; margin: 1.5em 0; text-align: center; }
 	.figure img { max-width: 100%; max-height: 22cm; width: auto; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 4px; }
 
-	img, .cover-image { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
+	img { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
 	figure, .figure, .diagram-container { page-break-inside: avoid; break-inside: avoid; margin: 1.5em 0; }
 
 	h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }

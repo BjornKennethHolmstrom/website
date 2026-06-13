@@ -2,130 +2,90 @@
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import { marked } from 'marked';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS ---
+  // --- 1. IMPORT MARKDOWN SECTIONS AS RAW TEXT ---
 
-  import Part1En from './sections/part-1.md';
-  import Part1Sv from './sections/part-1-sv.md';
+  import ExecSummaryEnRaw from './sections/00-executive-summary.en.md?raw';
+  import ExecSummarySvRaw from './sections/00-executive-summary.sv.md?raw';
 
-  import Part2En from './sections/part-2.md';
-  import Part2Sv from './sections/part-2-sv.md';
+  import Part1EnRaw from './sections/01-part-1.en.md?raw';
+  import Part1SvRaw from './sections/01-part-1.sv.md?raw';
+  import Part2EnRaw from './sections/02-part-2.en.md?raw';
+  import Part2SvRaw from './sections/02-part-2.sv.md?raw';
+  import Part3EnRaw from './sections/03-part-3.en.md?raw';
+  import Part3SvRaw from './sections/03-part-3.sv.md?raw';
+  import Part4EnRaw from './sections/04-part-4.en.md?raw';
+  import Part4SvRaw from './sections/04-part-4.sv.md?raw';
+  import Part5EnRaw from './sections/05-part-5.en.md?raw';
+  import Part5SvRaw from './sections/05-part-5.sv.md?raw';
+  import Part6EnRaw from './sections/06-part-6.en.md?raw';
+  import Part6SvRaw from './sections/06-part-6.sv.md?raw';
+  import Part7EnRaw from './sections/07-part-7.en.md?raw';
+  import Part7SvRaw from './sections/07-part-7.sv.md?raw';
+  import Part8EnRaw from './sections/08-part-8.en.md?raw';
+  import Part8SvRaw from './sections/08-part-8.sv.md?raw';
 
-  import Part3En from './sections/part-3.md';
-  import Part3Sv from './sections/part-3-sv.md';
+  import AppendixAEnRaw from './sections/09-appendix-a.en.md?raw';
+  import AppendixASvRaw from './sections/09-appendix-a.sv.md?raw';
+  import AppendixBEnRaw from './sections/09-appendix-b.en.md?raw';
+  import AppendixBSvRaw from './sections/09-appendix-b.sv.md?raw';
+  import AppendixCEnRaw from './sections/09-appendix-c.en.md?raw';
+  import AppendixCSvRaw from './sections/09-appendix-c.sv.md?raw';
 
-  import Part4En from './sections/part-4.md';
-  import Part4Sv from './sections/part-4-sv.md';
+  // --- 2. RAW TEXT MAP ---
+  const rawText = {
+    en: {
+      'executive-summary': ExecSummaryEnRaw,
+      'part-1': Part1EnRaw,
+      'part-2': Part2EnRaw,
+      'part-3': Part3EnRaw,
+      'part-4': Part4EnRaw,
+      'part-5': Part5EnRaw,
+      'part-6': Part6EnRaw,
+      'part-7': Part7EnRaw,
+      'part-8': Part8EnRaw,
+      'appendix-a': AppendixAEnRaw,
+      'appendix-b': AppendixBEnRaw,
+      'appendix-c': AppendixCEnRaw,
+    },
+    sv: {
+      'executive-summary': ExecSummarySvRaw,
+      'part-1': Part1SvRaw,
+      'part-2': Part2SvRaw,
+      'part-3': Part3SvRaw,
+      'part-4': Part4SvRaw,
+      'part-5': Part5SvRaw,
+      'part-6': Part6SvRaw,
+      'part-7': Part7SvRaw,
+      'part-8': Part8SvRaw,
+      'appendix-a': AppendixASvRaw,
+      'appendix-b': AppendixBSvRaw,
+      'appendix-c': AppendixCSvRaw,
+    }
+  };
 
-  import Part5En from './sections/part-5.md';
-  import Part5Sv from './sections/part-5-sv.md';
-
-  import Part6En from './sections/part-6.md';
-  import Part6Sv from './sections/part-6-sv.md';
-
-  import Part7En from './sections/part-7.md';
-  import Part7Sv from './sections/part-7-sv.md';
-
-  import Part8En from './sections/part-8.md';
-  import Part8Sv from './sections/part-8-sv.md';
-
-  import AppendixAEn from './sections/appendix-a.md';
-  import AppendixASv from './sections/appendix-a-sv.md';
-
-  import AppendixBEn from './sections/appendix-b.md';
-  import AppendixBSv from './sections/appendix-b-sv.md';
-
-  import AppendixCEn from './sections/appendix-c.md';
-  import AppendixCSv from './sections/appendix-c-sv.md';
-
-  // --- 2. CONTENT STRUCTURE ---
-
+  // --- 3. CONTENT STRUCTURE (IDs and titles) ---
   const contentMap = [
-    {
-      id: 'part-1',
-      titleEn: 'Part I: From Qualitative Diagnosis to Formal Model',
-      titleSv: 'Del I: Från kvalitativ diagnos till formell modell',
-      compEn: Part1En,
-      compSv: Part1Sv,
-    },
-    {
-      id: 'part-2',
-      titleEn: 'Part II: Modeling the Transition as a Contested Control Problem',
-      titleSv: 'Del II: Modellering av övergången som ett kontrollerat kontrollproblem',
-      compEn: Part2En,
-      compSv: Part2Sv,
-    },
-    {
-      id: 'part-3',
-      titleEn: 'Part III: The Three Structural Traps',
-      titleSv: 'Del III: De tre strukturella fällorna',
-      compEn: Part3En,
-      compSv: Part3Sv,
-    },
-    {
-      id: 'part-4',
-      titleEn: 'Part IV: Design Principles for Transition Mechanisms',
-      titleSv: 'Del IV: Konstruktionsprinciper för övergångsmekanismer',
-      compEn: Part4En,
-      compSv: Part4Sv,
-    },
-    {
-      id: 'part-5',
-      titleEn: 'Part V: Dynamic Model: Transition Bandwidth',
-      titleSv: 'Del V: Dynamisk modell: övergångsbandbredd',
-      compEn: Part5En,
-      compSv: Part5Sv,
-    },
-    {
-      id: 'part-6',
-      titleEn: 'Part VI: Simulation Architecture',
-      titleSv: 'Del VI: Simuleringsarkitektur',
-      compEn: Part6En,
-      compSv: Part6Sv,
-    },
-    {
-      id: 'part-7',
-      titleEn: 'Part VII: Limitations and Open Questions',
-      titleSv: 'Del VII: Begränsningar och öppna frågor',
-      compEn: Part7En,
-      compSv: Part7Sv,
-    },
-    {
-      id: 'part-8',
-      titleEn: 'Part VIII: Conclusion',
-      titleSv: 'Del VIII: Slutsats',
-      compEn: Part8En,
-      compSv: Part8Sv,
-    },
-    {
-      id: 'appendix-a',
-      titleEn: 'Appendix A: Heuristic Derivation of the Transition Variety Ratio Ω',
-      titleSv: 'Appendix A: Heuristisk härledning av övergångsvarietetskvoten Ω',
-      compEn: AppendixAEn,
-      compSv: AppendixASv,
-    },
-    {
-      id: 'appendix-b',
-      titleEn: 'Appendix B: The Bypass‑Trap Dynamical System',
-      titleSv: 'Appendix B: Förbikopplingsfällans dynamiska system',
-      compEn: AppendixBEn,
-      compSv: AppendixBSv,
-    },
-    {
-      id: 'appendix-c',
-      titleEn: 'Appendix C: Historical Calibration of Buy‑Out Effectiveness',
-      titleSv: 'Appendix C: Historisk kalibrering av utköpseffektivitet',
-      compEn: AppendixCEn,
-      compSv: AppendixCSv,
-    },
+    { id: 'executive-summary', titleEn: 'Executive Summary',                                                titleSv: 'Sammanfattning' },
+    { id: 'part-1',             titleEn: 'Part I: The Boundary Problem',                                     titleSv: 'Del I: Gränsproblemet' },
+    { id: 'part-2',             titleEn: 'Part II: Formal Framework',                                        titleSv: 'Del II: Formellt ramverk' },
+    { id: 'part-3',             titleEn: 'Part III: Failure Modes',                                          titleSv: 'Del III: Felmoder' },
+    { id: 'part-4',             titleEn: 'Part IV: Simulation: Boundary Mismatch and Stability',             titleSv: 'Del IV: Simulering: Gränsmatchningsfel och stabilitet' },
+    { id: 'part-5',             titleEn: 'Part V: Empirical Illustrations',                                  titleSv: 'Del V: Empiriska illustrationer' },
+    { id: 'part-6',             titleEn: 'Part VI: Design Principles',                                       titleSv: 'Del VI: Designprinciper' },
+    { id: 'part-7',             titleEn: 'Part VII: Connection to the Series',                               titleSv: 'Del VII: Koppling till serien' },
+    { id: 'part-8',             titleEn: 'Part VIII: Limitations and Conclusion',                            titleSv: 'Del VIII: Begränsningar och slutsats' },
+    { id: 'appendix-a',         titleEn: 'Appendix A: M-Δ Derivation and Stability Conditions',              titleSv: 'Appendix A: Härledning av M-Δ och stabilitetsvillkor' },
+    { id: 'appendix-b',         titleEn: 'Appendix B: Simulation Specification',                             titleSv: 'Appendix B: Simuleringsspecifikation' },
+    { id: 'appendix-c',         titleEn: 'Appendix C: Case Coding Notes',                                    titleSv: 'Appendix C: Kodningsanteckningar för fallen' },
   ];
 
-  // --- 3. TRANSLATIONS ---
-
+  // --- 4. TRANSLATIONS ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series IX',
-      seriesNote: 'This is the ninth paper in the Governance as Engineering series.',
+      tag: 'Working Paper · Series XII',
+      seriesNote: 'This is the twelfth paper in the Governance as Engineering series. It opens Cycle Two.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
@@ -135,16 +95,16 @@
         { href: '/working-papers/the-variety-gap',                         label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure',      label: 'Paper VII: The Architecture of Governance Failure →' },
         { href: '/working-papers/measuring-the-variety-gap',               label: 'Paper VIII: Measuring the Variety Gap →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
-        { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
-        { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
+        { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Paper IX moves the Governance as Engineering series from diagnostic analysis to the dynamics of adoption. It models the transition to requisite governance as a contested control problem, pitting reform coalitions against an incumbent controller that benefits from the current architecture. The paper formalises three structural traps, derives design principles for transition mechanisms, and builds three simulations to explore the dynamics.',
+      contextIntro: 'This paper asks whether a controller with perfect internal observation and actuation can still fail — and answers yes, if it has drawn the wrong system boundary. When causally relevant dynamics fall outside a controller\'s jurisdictional perimeter, they become unmodeled disturbances that feed back through the M-Δ loop, destabilising the system from outside any internal dashboard\'s view.',
       relatedWork: 'Related work:',
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
-      contextOutro: 'The central finding: whether a transition succeeds depends not on political will or resources, but on the variety budget and latency structure of the transition pathway itself. This paper gives that pathway a formal grammar.',
+      contextOutro: 'The paper introduces the boundary mismatch index B, the pooling paradox, and the Information-Actuation Frontier connecting boundary selection to delegation depth. The design response is polycentric, functionally specific jurisdictional geometries that match governance scale to the coupling structure of the dynamics they govern. Paper XII opens Cycle Two of the series.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -153,8 +113,8 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie IX',
-      seriesNote: 'Detta är den nionde rapporten i serien Styrning som ingenjörskonst.',
+      tag: 'Arbetsdokument · Serie XII',
+      seriesNote: 'Detta är den tolfte rapporten i serien Styrning som ingenjörskonst. Den inleder Cykel Två.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
@@ -164,16 +124,16 @@
         { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Varietetsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure',      label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
         { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet →' },
+        { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
-        { href: '/working-papers/reform-exhaustion', label: 'Rapport XI: Reformutmattning →' },
-        { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
+        { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Rapport IX för serien Styrning som ingenjörskonst från diagnostisk analys till förändringens dynamik. Den modellerar övergången till nödvändig styrning som ett kontrollerat kontrollproblem där reformkoalitioner ställs mot en etablerad kontrollant som gynnas av den nuvarande arkitekturen. Rapporten formaliserar tre strukturella fällor, härleder konstruktionsprinciper för övergångsmekanismer och bygger tre simuleringar för att utforska dynamiken.',
+      contextIntro: 'Denna rapport frågar om en kontrollant med perfekt intern observation och aktivering ändå kan misslyckas — och svarar ja, om den har dragit fel systemgräns. När kausalt relevanta dynamiker faller utanför kontrollantens jurisdiktionella gräns blir de omodellerade störningar som återkopplas genom M-Δ-loopen och destabiliserar systemet utom synhåll för interna instrumentpaneler.',
       relatedWork: 'Relaterat arbete:',
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
-      contextOutro: 'Kärnresultatet: om en övergång lyckas beror inte på politisk vilja eller resurser, utan på övergångsvägens varietetsbudget och latensstruktur. Denna rapport ger den vägen en formell grammatik.',
+      contextOutro: 'Rapporten introducerar gränsmatchningsindexet B, poolningsparadoxen och informations-aktiveringsfronten som kopplar gränsval till delegationsdjup. Designsvaret är polycentriska, funktionsspecifika jurisdiktionella geometrier som matchar styrningsskalan till kopplingsstrukturen hos de dynamiker som styrs. Rapport XII inleder seriens andra cykel.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -185,31 +145,34 @@
 
   const metadata = {
     en: {
-      title: 'The Political Economy of Requisite Governance',
-      subtitle: 'Transition Pathways Under Incumbent Selection Pressure',
-      description: 'A formal model of the transition to requisite governance, treating incumbent resistance as an adaptive controller and deriving design principles for reform mechanisms that survive strategic counter‑mobilisation.',
+      title: 'Boundary Selection Deficits: How the Wrong System Boundary Defeats Perfect Internal Governance',
+      subtitle: 'How the Wrong System Boundary Defeats Perfect Internal Governance',
+      description: 'A controller with perfect internal observation and actuation can still fail if its boundary excludes causally relevant dynamics. Models the M-Δ loop, the pooling paradox, and the Information-Actuation Frontier. With simulation and empirical illustrations. Opens Cycle Two of the Governance as Engineering series.',
     },
     sv: {
-      title: 'Den politiska ekonomin för nödvändig styrning',
-      subtitle: 'Övergångsvägar under tryck från etablerade intressen',
-      description: 'En formell modell för övergången till nödvändig styrning, där etablerade motståndare modelleras som en adaptiv kontrollant och konstruktionsprinciper härleds för reformmekanismer som överlever strategisk motmobilisering.',
+      title: 'Gränsdragningsunderskott: Hur fel systemgräns besegrar perfekt intern styrning',
+      subtitle: 'Hur fel systemgräns besegrar perfekt intern styrning',
+      description: 'En kontrollant med perfekt intern observation och aktivering kan ändå misslyckas om dess gräns utesluter kausalt relevanta dynamiker. Modellerar M-Δ-loopen, poolningsparadoxen och informations-aktiveringsfronten. Med simulering och empiriska illustrationer. Inleder Cykel Två i serien Styrning som ingenjörskonst.',
     },
   };
 
-  // --- 4. REACTIVE LOGIC ---
+  // --- 5. REACTIVE LOGIC ---
 
-  let activeSection = $state('part-1');
+  let activeSection = $state('executive-summary');
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'political-economy-of-requisite-governance-sv.pdf' : 'political-economy-of-requisite-governance.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'boundary-selection-deficits-sv.pdf' : 'boundary-selection-deficits.pdf');
 
-  function sectionTitle(section: typeof contentMap[0]) {
+  function sectionTitle(section: { id: string; titleEn: string; titleSv: string }) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  function sectionComp(section: typeof contentMap[0]) {
-    return currentLang === 'sv' ? section.compSv : section.compEn;
+  function sectionHtml(section: { id: string }): string {
+    const lang = currentLang as 'en' | 'sv';
+    const md = rawText[lang][section.id] ?? '';
+    const content = md.replace(/^---[\s\S]*?---\n/, '');
+    return marked.parse(content, { breaks: false, gfm: true }) as string;
   }
 
   function scrollTo(id: string) {
@@ -220,8 +183,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Den politiska ekonomin för nödvändig styrning: Övergångsvägar under tryck från etablerade intressen. Styrning som ingenjörskonst, Rapport IX.`
-      : `Holmström, B. K. (2026). The Political Economy of Requisite Governance: Transition Pathways Under Incumbent Selection Pressure. Governance as Engineering, Paper IX.`;
+      ? `Holmström, B. K. (2026). Gränsdragningsunderskott: Hur fel systemgräns besegrar perfekt intern styrning. Styrning som ingenjörskonst, Rapport XII.`
+      : `Holmström, B. K. (2026). Boundary Selection Deficits: How the Wrong System Boundary Defeats Perfect Internal Governance. Governance as Engineering, Paper XII.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -229,7 +192,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | BKH Working paper"
+  title="{meta.title} | GGF Whitepaper"
   description={meta.description}
   type="article"
   publishedTime="2026-06"
@@ -270,7 +233,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
           {t.downloadPDF}
         </a>
-        <!-- The GitHub repository for Paper IX -->
         <a
           href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
@@ -374,7 +336,7 @@
               --tw-prose-pre-bg: var(--color-card-bg);
               --tw-prose-pre-code: #1a1a1a;
             ">
-            <svelte:component this={sectionComp(section)} />
+            {@html sectionHtml(section)}
           </article>
         </div>
         {#if section.id !== 'appendix-c'}

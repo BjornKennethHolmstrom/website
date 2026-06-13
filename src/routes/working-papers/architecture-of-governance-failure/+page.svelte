@@ -63,6 +63,7 @@
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
         { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
+        { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
       ],
       contextTitle: 'Context',
       contextIntro:

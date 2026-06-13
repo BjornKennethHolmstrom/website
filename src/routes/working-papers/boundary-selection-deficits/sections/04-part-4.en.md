@@ -1,0 +1,75 @@
+# Part IV — Simulation: Boundary Mismatch and Stability
+
+The formal framework of Part II establishes that boundary mismatch can destabilize a controller even when internal observation and actuation are perfect. Part III traces three failure signatures through empirical cases. This part subjects the core mechanism to controlled simulation: a system of coupled subsystems, each governed by a controller with identical, idealized internal properties, varying only the relationship between jurisdictional boundaries and the underlying coupling structure. The simulation demonstrates that instability emerges from boundary mismatch alone, and that adaptive renegotiation is itself a control problem with its own stability ceiling.
+
+## 4.1 Model Architecture
+
+The simulated world consists of N = 12 subsystems, each representing a governance jurisdiction — a country, a region, a policy domain — that would be governed separately in a Westphalian architecture. Each subsystem i possesses an internal state vector **x_i**(t) ∈ ℝᵏ, where k = 3 captures dimensions such as economic output, environmental quality, and social stability. The true dynamics of the full system are:
+
+**ẋ_i**(t) = **A** · **x_i**(t) + **B** · **u_i**(t) + Σ_{j≠i} **K_ij** · **x_j**(t) + **w_i**(t)
+
+where **A** is the internal dynamics matrix (identical across subsystems), **B** is the actuation matrix, **u_i**(t) is the control input applied by subsystem i's controller, **K_ij** is the coupling matrix from subsystem j to subsystem i, and **w_i**(t) is genuine exogenous noise.
+
+The coupling matrices **K_ij** encode the strength and structure of cross-boundary flows. When **K_ij** is zero, subsystem i is unaffected by subsystem j. When **K_ij** is large, events in j propagate strongly into i. The full coupling structure of the real plant is the set of all **K_ij** matrices, which can be arranged into a block structure reflecting natural clusters — groups of subsystems that are densely coupled internally and sparsely coupled externally. These clusters represent the "natural" boundaries of the system: the spatial scale at which dynamics are predominantly internal.
+
+Each subsystem is governed by a controller with perfect internal properties:
+
+- **Observation:** Each controller observes its own subsystem's state **x_i**(t) with zero latency, zero noise, and full dimensionality. There are no Paper I, III, or VI observation deficits.
+- **Actuation:** Each controller can apply control inputs **u_i**(t) that affect its own subsystem with perfect fidelity — no Paper XI attenuation, no delegation chains, no projection losses.
+- **Control law:** Each controller applies proportional feedback **u_i**(t) = −**K_c** · ( **x_i**(t) − **x_target**), where **K_c** is a gain matrix tuned for optimal internal stabilization of the isolated subsystem.
+
+The controllers are, by design, as competent as the series' framework allows. Any instability that emerges is attributable to the boundary architecture, not to the controllers' internal limitations.
+
+The critical architectural variable is the *jurisdictional boundary*. In the simulation, a boundary is an assignment of subsystems to controllers. Under a given boundary configuration, each controller observes and actuates only the subsystems assigned to it. Controllers do not observe the states of subsystems outside their boundary, nor do they coordinate their control actions. The M-Δ loop from Part II is implemented directly: each controller's actions generate spillovers that propagate through the coupling matrices **K_ij** to other jurisdictions, and those spillovers return as unobserved, unmodeled disturbances.
+
+## 4.2 Coupling Structure and Boundary Scenarios
+
+The coupling structure is generated from a stochastic block model — a random graph with dense, highly weighted edges within pre-specified clusters and sparse, weak edges between them. This ensures that natural boundaries exist in the underlying dynamics: subsystems within a cluster are strongly interdependent, while subsystems in different clusters are only weakly coupled. The simulation uses four clusters of three subsystems each.
+
+The four scenarios differ only in how the jurisdictional boundaries are drawn relative to these natural clusters.
+
+**Scenario (a) — Perfectly matched boundaries.** Each controller governs exactly one natural cluster — three subsystems that are densely coupled internally and only weakly coupled to the rest of the system. The jurisdictional boundary coincides with the natural boundary of the coupling structure. Spillovers between jurisdictions are small, and structured cross-boundary feedback is minimal. B_struct ≈ 0.
+
+**Scenario (b) — Westphalian default boundaries.** Boundaries are drawn independently of the coupling structure, as if by historical accident rather than functional design. Each controller governs a random assortment of subsystems, some of which may be strongly coupled to subsystems in other jurisdictions. The boundary mismatch is moderate; B_struct is positive but not maximized. This scenario represents the default condition of the contemporary state system, where national borders reflect centuries of contingent political history rather than the coupling structure of modern economic, environmental, and informational flows.
+
+**Scenario (c) — Sykes-Picot boundaries.** Boundaries are deliberately drawn to *maximize* mismatch: the simulation identifies the highest-weighted internal edges of each natural cluster and slices jurisdictional boundaries directly through them. Two subsystems that are intimately coupled — with strong, bidirectional **K_ij** matrices — are assigned to separate controllers. Each controller treats a causally critical state variable as an exogenous disturbance. This is the boundary equivalent of the Sykes-Picot agreement that drew Middle Eastern borders through tribal, sectarian, and hydrological unities, and of every governance architecture that splits a river basin, a disease transmission network, or a financial market across jurisdictions that refuse to coordinate.
+
+**Scenario (d) — Adaptive boundary renegotiation.** Controllers begin with Westphalian boundaries (Scenario b) but are permitted to periodically renegotiate them. Every T_reneg time steps, each controller computes the observed variance of outcomes within its jurisdiction that is attributable to cross-boundary inflows — an estimate of B. If B exceeds a threshold, the controller initiates a boundary adjustment: it can merge with a neighboring jurisdiction, transfer a subsystem to another controller, or create a new functionally specific boundary for a particular coupling dimension. The adjustment itself has a latency τ_adj — the time between initiating renegotiation and the new boundary taking effect. During this latency, controllers continue to operate under the old boundaries, and the M-Δ loop continues to generate structured feedback that the old boundaries exclude.
+
+## 4.3 Stability Metric and Implementation
+
+The simulation runs for T = 500 time steps under each scenario, with Monte Carlo replication across 100 random seeds to produce distributions rather than point estimates. Stability is measured by the time-averaged sum of squared deviations from the target state across all subsystems:
+
+**Stability = − (1/T) Σ_t Σ_i ‖**x_i**(t) − **x_target**‖²**
+
+Higher values indicate better stability (smaller deviations). A system that diverges — oscillations growing without bound, states departing permanently from the target — is classified as unstable. A system that maintains bounded fluctuations around the target is classified as stable, with the magnitude of fluctuations indicating the degree of stability degradation.
+
+The key parameter sweep is over the *coupling strength* — a scalar multiplier applied uniformly to all **K_ij** matrices, representing the density of cross-boundary interdependence. Low coupling strength corresponds to a world of relatively isolated jurisdictions; high coupling strength corresponds to a densely globalized world. The simulation sweeps coupling strength from 0.01 (negligible interdependence) to 0.50 (strong interdependence) and records the stability outcome for each scenario at each coupling level.
+
+The Westphalian operating point is estimated from empirical data on trade-to-GDP ratios, financial cross-border exposures, and migration flows for a representative sample of contemporary states, and plotted on the resulting stability surface as a reference marker.
+
+## 4.4 Expected Results
+
+The simulation is designed to demonstrate four findings that operationalize the formal claims of Parts II and III.
+
+**Finding 1: Perfectly matched boundaries maintain stability across all coupling strengths.** Under Scenario (a), the M-Δ loop is negligible because the boundary coincides with the natural coupling cluster. Spillovers between jurisdictions are weak, and structured cross-boundary feedback is small. The controllers stabilize their subsystems effectively, and system-wide stability is maintained even as coupling strength increases. This is the baseline: boundary mismatch is not inevitable. It is a design variable, and when set correctly, the governance architecture is robust to interdependence.
+
+**Finding 2: Westphalian boundaries degrade stability as coupling strength increases.** Under Scenario (b), stability is comparable to Scenario (a) at low coupling strengths, but degrades progressively as coupling strengthens. The M-Δ loop becomes more active as cross-boundary flows intensify. Controllers observe increasing variance in their internal outcomes, attribute it to exogenous noise, and apply more aggressive internal corrections — which generate stronger spillovers, which return as amplified disturbances. The degradation is smooth rather than abrupt, but the stability margin shrinks continuously. Beyond a critical coupling strength — the point at which the M-Δ loop gain approaches unity — the system enters a regime of persistent oscillation.
+
+**Finding 3: Sykes-Picot boundaries generate instability at lower coupling strengths.** Scenario (c) produces the worst outcomes. By slicing through the highest-weighted internal edges of natural clusters, the boundary architecture actively creates structured cross-boundary feedback where none was necessary. Subsystems that are intimately coupled are governed by separate controllers that treat each other's dynamics as external shocks. The M-Δ loop is present even at low coupling strengths, and the system becomes unstable at coupling levels that Scenario (b) tolerates. This finding demonstrates that boundary mismatch is not only a failure to adapt to coupling — it can be an active generator of instability, a governance architecture that manufactures the crises it then fails to resolve.
+
+**Finding 4: Adaptive renegotiation can track changing coupling, but its latency imposes a stability ceiling.** Scenario (d) outperforms Scenario (b) at moderate coupling strengths, as controllers adjust their boundaries to internalize the most damaging spillovers. However, the renegotiation process itself introduces a new M-Δ loop: the lag between the emergence of a new coupling pattern and the implementation of an adjusted boundary. When coupling strength changes slowly relative to the renegotiation latency, adaptive renegotiation maintains stability. When coupling strength changes rapidly — or when the renegotiation latency is long — the adjustment process falls behind, and the system spends increasing time in boundary mismatch before corrections take effect. Beyond a critical rate of environmental change relative to renegotiation capacity, adaptive renegotiation fails: the system is perpetually adjusting to yesterday's coupling structure while today's coupling structure generates unmodeled feedback.
+
+This fourth finding connects directly to Paper IX's transition bandwidth argument. The capacity for peaceful boundary renegotiation is not infinite. It is a function of the institutional machinery available for adjusting jurisdictional perimeters — constitutional amendment processes, treaty negotiation capacity, the political willingness to cede or acquire authority over specific domains. When the rate of change in coupling structures (driven by technological change, economic integration, environmental shifts) exceeds the transition bandwidth, boundary mismatch grows regardless of the controllers' willingness to adapt. The system enters the boundary-brittleness failure mode of Part III.3: suppressed mismatch accumulating until forced dissolution.
+
+## 4.5 Key Figure
+
+The primary output of the simulation is a stability surface: system stability (z-axis) against boundary mismatch B (x-axis) and coupling strength (y-axis). The surface shows the continuous degradation of stability as both variables increase, with a critical region — not a sharp cliff but a steepening descent — where the M-Δ loop gain approaches unity and the system transitions from stable to oscillatory to divergent.
+
+The Westphalian operating point is plotted on this surface, estimated from current levels of economic, financial, informational, and epidemiological interdependence. The distance between this point and the stability surface's critical region is the system's remaining stability margin — the amount of additional coupling the current boundary architecture can absorb before entering the unstable regime.
+
+Scenarios (a), (b), and (c) appear as distinct trajectories across the surface. Scenario (a) stays in the stable region across all coupling strengths. Scenario (b) approaches the critical region as coupling increases. Scenario (c) enters the critical region earlier, at lower coupling strengths. Scenario (d) appears as a dynamic trajectory that oscillates around the stability surface, periodically approaching the critical region when environmental change outpaces renegotiation capacity, then retreating when adjustments take effect — but with an envelope that widens as the rate of environmental change increases, until the trajectory no longer retreats.
+
+A secondary figure shows the M-Δ loop gain explicitly: ‖**M**‖ · ‖**Δ**‖ plotted against coupling strength for each scenario, with the unity threshold marked. Scenario (a) stays below unity. Scenario (b) crosses unity at the critical coupling strength. Scenario (c) crosses unity earlier. The figure makes visible the mechanism that the stability surface expresses in outcome space.
+
+The simulation code is open-source, with fixed random seeds for replicability, Monte Carlo distributions rather than single runs, and parameter sweeps demonstrating robustness. As in all papers in this series, the simulation is an illustrative model: it demonstrates the qualitative dynamics the formal framework predicts, under idealized conditions, as a guide to empirical investigation rather than a substitute for it. The parameters are chosen to make the mechanisms visible, not to calibrate against any specific real-world system. The empirical illustrations in Part V provide the complementary grounding.

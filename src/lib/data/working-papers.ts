@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'boundarySelectionDeficits',
+   key: 'boundarySelectionDeficits',
+   category: 'governance',
+   tags: [
+     'Boundary Selection',
+     'System Boundaries',
+     'M-Δ Configuration',
+     'Robust Control',
+     'Spillover',
+     'Small-Gain Theorem',
+     'Polycentric Governance',
+     'Information-Actuation Frontier',
+     'Governance Engineering',
+     'Jurisdictional Design',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '72',
+   readTime: {
+     en: '80-85 min',
+     sv: '80-85 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/boundary-selection-deficits.pdf`,
+     sv: `${localBase}/boundary-selection-deficits-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/boundary-selection-deficits-cover.png',
+   readOnlinePath: '/working-papers/boundary-selection-deficits',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-13'
+ },
+ {
    id: 'reformExhaustion',
    key: 'reformExhaustion',
    category: 'governance',

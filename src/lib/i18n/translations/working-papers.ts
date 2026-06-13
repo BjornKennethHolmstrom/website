@@ -78,6 +78,11 @@ export const workingpapersTranslations = {
      description:
        'The actuation channel — the path policy intent travels from centre to street — has been the untreated channel in the series. This paper models the delegation chain as a sequence of projections, delays, and noise injections that survive even when every actor is competent, honest, and compliant. The central result is an energy law: the minimum control effort required to realise a policy target grows superlinearly with delegation depth. Deep chains do not refuse policy; they price it out. With country‑report evidence, simulation, and a within‑country empirical anchor. Paper XI closes the series\' first theoretical cycle.',
    },
+   boundarySelectionDeficits: {
+     title: 'Boundary Selection Deficits: How the Wrong System Boundary Defeats Perfect Internal Governance',
+     description:
+       'Can a controller with perfect internal observation and actuation still fail? Yes — if it has drawn the wrong system boundary. This paper models the mismatch between jurisdictional perimeters and the actual coupling structure of the systems they govern. When causally relevant dynamics fall outside a controller\'s boundary, they become unmodeled disturbances that feed back through the M-Δ loop, destabilising the system from outside any internal dashboard\'s view. Introduces the boundary mismatch index B, the pooling paradox, and the Information-Actuation Frontier connecting boundary selection to delegation depth. With simulation and empirical illustrations from climate, pandemics, the EU, India, and Israel. Paper XII opens Cycle Two of the series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -236,6 +241,11 @@ export const workingpapersTranslations = {
      title: 'Reformutmattning: Delegationsdjup och styrningens styrbarhet',
      description:
        'Aktueringskanalen — vägen policyintention färdas från centrum till gata — har varit den obehandlade kanalen i serien. Denna rapport modellerar delegationskedjan som en sekvens av projektioner, fördröjningar och brusinjektioner som består även när varje aktör är kompetent, ärlig och följsam. Det centrala resultatet är en energilag: den minsta kontrollansträngning som krävs för att realisera ett policymål växer superlinjärt med delegationsdjupet. Djupa kedjor vägrar inte policy; de prissätter den ur räckhåll. Med landrapportbevis, simulering och en empirisk förankring inom ett land. Rapport XI avslutar seriens första teoretiska cykel.',
+   },
+   boundarySelectionDeficits: {
+     title: 'Gränsdragningsunderskott: Hur fel systemgräns besegrar perfekt intern styrning',
+     description:
+       'Kan en kontrollant med perfekt intern observation och aktivering ändå misslyckas? Ja — om den har dragit fel systemgräns. Denna rapport modellerar obalansen mellan jurisdiktionella gränser och den faktiska kopplingsstrukturen hos de system som styrs. När kausalt relevanta dynamiker hamnar utanför kontrollantens gräns blir de omodellerade störningar som återkopplas genom M-Δ-loopen och destabiliserar systemet utom synhåll för interna instrumentpaneler. Introducerar gränsmatchningsindexet B, poolningsparadoxen och informations-aktiveringsfronten som kopplar gränsval till delegationsdjup. Med simulering och empiriska illustrationer från klimat, pandemier, EU, Indien och Israel. Rapport XII inleder seriens andra cykel.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

@@ -1,0 +1,19 @@
+# Sammanfattning
+
+Styrsystem kan misslyckas av ett skäl som inte har något att göra med kompetens, resurser eller politisk vilja. De kan misslyckas därför att de har dragit fel gräns kring det system de försöker styra.
+
+Detta papper identifierar *gränsdragning* som en oberoende, strukturell dimension hos styrningsarkitektur — distinkt från frågorna om tidsskala (teknisk rapport II) och värdemässig dimensionalitet (teknisk rapport VI). En regulator med perfekt intern observation och aktuering kan ändå destabiliseras om dess jurisdiktionella perimeter utesluter kausalt relevant dynamik. Denna dynamik, som verkar genom gränsöverskridande återkopplingsslingor som regulatorn inte modellerar, återkommer som störningar regulatorn varken kan förutse eller attribuera.
+
+Det formella ramverket byggs från robust reglerteori. Gapet mellan den verkliga anläggningen (den fullständiga uppsättningen interagerande dynamik) och den modellerade anläggningen (delmängden inom regulatorns jurisdiktion) modelleras som en **M-Δ återkopplingssammankoppling**. Småförstärkningssatsen tillhandahåller stabilitetsvillkoret: när slingförstärkningen kring den omodellerade dynamiken överstiger ett kan hela systemet bli instabilt, trots att varje komponent är internt välreglerad. Ett **gränsmissanpassningsindex B** definieras för att mäta andelen utfalls-varians som domineras av gränsöverskridande flöden, uppdelat i stokastiskt brus och strukturerad återkoppling — den komponent som genereras av regulatorns egna handlingar.
+
+Tre strukturella felsätt följer: **spridningseffektoscillation** (regulatorns interventioner, processade genom den externa slingan, återkommer i otakt och förstärker instabilitet), **kaskaderande gränsmisslyckande** (störningar propagerar över kopplade jurisdiktioner vars individuella regulatorer behandlar dem som exogena), och **gränssprödhet** (en rigid gräns undertrycker små kriser tills katastrofalt misslyckande inträffar).
+
+Analysen avslöjar en **poolningsparadox**: att expandera gränser för att internalisera spridningseffekter förlänger observations- och aktueringskedjor, vilket försämrar den interna styrningstroheten (teknisk rapport I, III, XI). Att krympa gränser bevarar trohet men lämnar strukturerad gränsöverskridande återkoppling oreglerad. Den resulterande **Informations-Aktueringsfronten** kan inte undflys av någon arkitektur med en enda gräns.
+
+Simuleringen demonstrerar denna dynamik i ett system av tolv kopplade delsystem under fyra gränsscenarier. Perfekt matchade gränser upprätthåller stabilitet över alla kopplingsstyrkor. Westfaliska (slumpmässiga) gränser försämras när ömsesidigt beroende intensifieras. Sykes-Picot-gränser — som medvetet skär genom de starkaste interna kopplingarna — genererar instabilitet vid de lägsta kopplingsnivåerna. Adaptiv gränsförhandling kan återställa stabilitetsmarginaler, men endast om anpassningstakten överstiger miljöförändringstakten.
+
+Empiriska illustrationer spänner över klimatförändring (gränsfallet där B närmar sig ett för varje nationell regulator), pandemistyrning (kaskaderande misslyckande genom rese- och leveranskedjenätverk), eurozonens monetär-finanspolitiska missanpassning, Indiens interstatliga flodtvister och Israels ständigt omstridda gränser.
+
+Sex konstruktionsprinciper följer: behandla gränser som designvariabler, matcha dem mot kopplingsstrukturer genom polycentriska, nästlade, överlappande jurisdiktioner, upprätthåll observationskanaler bortom aktueringsperimetrar, håll gränser provisoriskt (gränsödmjukhet), bygg institutionell kapacitet för gränsförhandling snabbare än kopplingsstrukturer förändras, och skapa funktionsspecifika globala gränsinstitutioner för genuint planetär dynamik.
+
+Pappret fullbordar den trefaldiga grammatiken för styrningsarkitektur: *skala* (vilken tidsskala?), *värde* (vilka dimensioner?) och *gräns* (vilket system?). Det är den konceptuella slutstenen i seriens första cykel och grunden för dess andra.

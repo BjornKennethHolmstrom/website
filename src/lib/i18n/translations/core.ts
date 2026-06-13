@@ -149,6 +149,10 @@ export const coreTranslations = {
     geSeriesPaperXI: {
       title: 'XI: Reform Exhaustion',
       desc:  'Models the actuation channel — the path policy intent travels from centre to street — showing that minimum control effort grows superlinearly with delegation depth. Deep chains price reform out of reach, even when every actor is competent and compliant. Closes the series\' first theoretical cycle.',
+    },
+    geSeriesPaperXII: {
+      title: 'XII: Boundary Selection Deficits',
+      desc:  'Shows that a controller with perfect internal observation and actuation can still fail if its jurisdictional boundary excludes causally relevant dynamics. Models the M-Δ loop, the pooling paradox, and the Information-Actuation Frontier. Opens Cycle Two of the series.',
     }
   },
 
@@ -499,6 +503,10 @@ export const coreTranslations = {
     geSeriesPaperXI: {
       title: 'XI: Reformutmattning',
       desc:  'Modellerar aktueringskanalen — vägen policyintention färdas från centrum till gata — och visar att minsta kontrollansträngning växer superlinjärt med delegationsdjupet. Djupa kedjor prissätter reformer ur räckhåll, även när varje aktör är kompetent och följsam. Avslutar seriens första teoretiska cykel.',
+    },
+    geSeriesPaperXII: {
+      title: 'XII: Gränsdragningsunderskott',
+      desc:  'Visar att en kontrollant med perfekt intern observation och aktivering ändå kan misslyckas om dess jurisdiktionella gräns utesluter kausalt relevanta dynamiker. Modellerar M-Δ-loopen, poolningsparadoxen och informations-aktiveringsfronten. Inleder seriens andra cykel.',
     }
   },
 

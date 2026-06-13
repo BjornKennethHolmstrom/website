@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for Reform Exhaustion (Paper XI)
+ * Generate PDF for Boundary Selection Deficits (Paper XII)
  *
- * Usage: node scripts/generate-reform-exhaustion-pdf.js [language]
- * Example: node scripts/generate-reform-exhaustion-pdf.js en
- * Example: node scripts/generate-reform-exhaustion-pdf.js sv
+ * Usage: node scripts/generate-boundary-selection-pdf.js [language]
+ * Example: node scripts/generate-boundary-selection-pdf.js en
+ * Example: node scripts/generate-boundary-selection-pdf.js sv
  *
  * Requirements:
  * npm install marked puppeteer
@@ -30,54 +30,54 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 }
 
 const suffix = LANGUAGE === 'sv' ? '-sv' : '';
-const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/reform-exhaustion/sections');
+const INPUT_DIR = path.join(__dirname, '../src/routes/working-papers/boundary-selection-deficits/sections');
 const OUTPUT_DIR = path.join(__dirname, '../static/working-papers');
-const OUTPUT_FILE = path.join(OUTPUT_DIR, `reform-exhaustion${suffix}.pdf`);
-const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/reform-exhaustion-cover.png');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, `boundary-selection-deficits${suffix}.pdf`);
+const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/boundary-selection-deficits-cover.png');
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
 const metadata = {
 	en: {
-		title: 'Reform Exhaustion',
-		subtitle: 'Delegation Depth and the Controllability of Governance',
-		description: 'Models the actuation channel through which policy intent reaches the world. Shows that minimum control effort grows superlinearly with delegation depth — deep chains price reform out of reach even when all actors are competent and compliant. Formalises latency accumulation, dimensional collapse, and noise injection as structural degradation mechanisms, each paired with country‑report evidence. Closes the series\' first theoretical cycle.',
+		title: 'Boundary Selection Deficits',
+		subtitle: 'How the Wrong System Boundary Defeats Perfect Internal Governance',
+		description: 'A controller with perfect internal observation and actuation can still fail if its jurisdictional boundary excludes causally relevant dynamics. Models the M-Δ loop, the pooling paradox, and the Information-Actuation Frontier connecting boundary selection to delegation depth. Introduces the boundary mismatch index B and polycentric jurisdictional design as structural response. With simulation and empirical illustrations. Opens Cycle Two of the Governance as Engineering series.',
 		author: 'Björn Kenneth Holmström',
 		date: 'June 2026',
-		url: 'https://bjornkennethholmstrom.org/working-papers/reform-exhaustion',
-		seriesNote: 'Paper XI in the Governance as Engineering series',
+		url: 'https://bjornkennethholmstrom.org/working-papers/boundary-selection-deficits',
+		seriesNote: 'Paper XII in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
-		title: 'Reformutmattning',
-		subtitle: 'Delegationsdjup och styrningens styrbarhet',
-		description: 'Modellerar aktueringskanalen genom vilken policyintentioner når verkligheten. Visar att minsta kontrollansträngning växer superlinjärt med delegationsdjupet — djupa kedjor prissätter reformer ur räckhåll även när alla aktörer är kompetenta och följsamma. Formaliserar latensackumulation, dimensionskollaps och brusinjektion som strukturella degraderingsmekanismer, var och en parad med landrapportbevis. Avslutar seriens första teoretiska cykel.',
+		title: 'Gränsdragningsunderskott',
+		subtitle: 'Hur fel systemgräns besegrar perfekt intern styrning',
+		description: 'En kontrollant med perfekt intern observation och aktivering kan ändå misslyckas om dess jurisdiktionella gräns utesluter kausalt relevanta dynamiker. Modellerar M-Δ-loopen, poolningsparadoxen och informations-aktiveringsfronten som kopplar gränsval till delegationsdjup. Introducerar gränsmatchningsindex B och polycentrisk jurisdiktionell design som strukturellt svar. Med simulering och empiriska illustrationer. Inleder Cykel Två i serien Styrning som ingenjörskonst.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Juni 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/working-papers/reform-exhaustion',
-		seriesNote: 'Rapport XI i serien Styrning som ingenjörskonst',
+		url: 'https://bjornkennethholmstrom.org/sv/working-papers/boundary-selection-deficits',
+		seriesNote: 'Rapport XII i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
 };
 
 const meta = metadata[LANGUAGE];
 
-// ── Section definitions (matches the Svelte page contentMap) ─────────────────
+// ── Section definitions (order as in the Svelte page contentMap) ──────────────
 const sections = [
-	{ file: '00-abstract', titleEn: 'Abstract',                                                      titleSv: 'Sammanfattning',                                   isAppendix: false },
-	{ file: '01-part-1',   titleEn: 'Part I: The Problem — The Untreated Channel',                    titleSv: 'Del I: Problemet — Den obehandlade kanalen',       isAppendix: false },
-	{ file: '02-part-2',   titleEn: 'Part II: Formal Framework',                                      titleSv: 'Del II: Formellt ramverk',                          isAppendix: false },
-	{ file: '03-part-3',   titleEn: 'Part III: Three Mechanisms, Each Paired With Its Evidence',      titleSv: 'Del III: Tre mekanismer, var och en med sin evidens', isAppendix: false },
-	{ file: '04-part-4',   titleEn: 'Part IV: Boundaries and Objections',                             titleSv: 'Del IV: Gränser och invändningar',                  isAppendix: false },
-	{ file: '05-part-5',   titleEn: 'Part V: Simulation',                                             titleSv: 'Del V: Simulering',                                 isAppendix: false },
-	{ file: '06-part-6',   titleEn: 'Part VI: Empirical Anchor',                                      titleSv: 'Del VI: Empirisk förankring',                       isAppendix: false },
-	{ file: '07-part-7',   titleEn: 'Part VII: Design Implications',                                  titleSv: 'Del VII: Designkonsekvenser',                       isAppendix: false },
-	{ file: '08-part-8',   titleEn: 'Part VIII: Limitations and Conclusion',                          titleSv: 'Del VIII: Begränsningar och slutsats',              isAppendix: false },
-	{ file: '09-appendix-a', titleEn: 'Appendix A: Chain Model Derivations',                           titleSv: 'Appendix A: Härledningar av kedjemodellen',         isAppendix: true  },
-	{ file: '10-appendix-b', titleEn: 'Appendix B: Simulation Specification',                          titleSv: 'Appendix B: Simuleringsspecifikation',              isAppendix: true  },
-	{ file: '11-appendix-c', titleEn: 'Appendix C: Case Coding Protocol',                              titleSv: 'Appendix C: Protokoll för fallkodning',             isAppendix: true  },
+	{ file: '00-executive-summary', titleEn: 'Executive Summary',                                titleSv: 'Sammanfattning',                                  isAppendix: false },
+	{ file: '01-part-1',            titleEn: 'Part I: The Boundary Problem',                     titleSv: 'Del I: Gränsproblemet',                          isAppendix: false },
+	{ file: '02-part-2',            titleEn: 'Part II: Formal Framework',                        titleSv: 'Del II: Formellt ramverk',                        isAppendix: false },
+	{ file: '03-part-3',            titleEn: 'Part III: Failure Modes',                          titleSv: 'Del III: Felmoder',                              isAppendix: false },
+	{ file: '04-part-4',            titleEn: 'Part IV: Simulation: Boundary Mismatch and Stability', titleSv: 'Del IV: Simulering: Gränsmatchningsfel och stabilitet', isAppendix: false },
+	{ file: '05-part-5',            titleEn: 'Part V: Empirical Illustrations',                  titleSv: 'Del V: Empiriska illustrationer',                isAppendix: false },
+	{ file: '06-part-6',            titleEn: 'Part VI: Design Principles',                       titleSv: 'Del VI: Designprinciper',                        isAppendix: false },
+	{ file: '07-part-7',            titleEn: 'Part VII: Connection to the Series',               titleSv: 'Del VII: Koppling till serien',                  isAppendix: false },
+	{ file: '08-part-8',            titleEn: 'Part VIII: Limitations and Conclusion',            titleSv: 'Del VIII: Begränsningar och slutsats',           isAppendix: false },
+	{ file: '09-appendix-a',        titleEn: 'Appendix A: M-Δ Derivation and Stability Conditions', titleSv: 'Appendix A: Härledning av M-Δ och stabilitetsvillkor', isAppendix: true },
+	{ file: '09-appendix-b',        titleEn: 'Appendix B: Simulation Specification',             titleSv: 'Appendix B: Simuleringsspecifikation',           isAppendix: true },
+	{ file: '09-appendix-c',        titleEn: 'Appendix C: Case Coding Notes',                    titleSv: 'Appendix C: Kodningsanteckningar för fallen',    isAppendix: true },
 ];
 
-// ── CSS (same as previous scripts) ───────────────────────────────────────────
+// ── CSS (identical to previous papers, smaller cover image for fit) ───────────
 const pdfStyles = `
 <style>
 	@page {
@@ -118,8 +118,8 @@ const pdfStyles = `
 
 	.cover-image {
 		width: 100%;
-		max-width: 220px;
-		max-height: 9cm;
+		max-width: 300px;
+		max-height: 12cm;
 		object-fit: contain;
 		margin-bottom: 1em;
 		border-radius: 8px;
@@ -206,7 +206,7 @@ const pdfStyles = `
 	.figure-container { page-break-inside: avoid; break-inside: avoid; }
 	.figure { page-break-inside: avoid; margin: 1.5em 0; text-align: center; }
 	.figure img { max-width: 100%; max-height: 22cm; width: auto; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 4px; }
-	img, { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
+	img { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
 	figure, .figure, .diagram-container { page-break-inside: avoid; break-inside: avoid; margin: 1.5em 0; }
 	h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
 	p, li { orphans: 3; widows: 3; }
@@ -229,7 +229,7 @@ function processMarkdownImagesSync(content) {
 		const possiblePaths = [
 			path.join(__dirname, '../static', imagePath),
 			path.join(__dirname, '../static/working-papers/images', path.basename(imagePath)),
-			path.join(__dirname, '../src/routes/working-papers/reform-exhaustion', imagePath),
+			path.join(__dirname, '../src/routes/working-papers/boundary-selection-deficits', imagePath),
 			path.join(__dirname, '../static', imagePath.replace(/^\//, ''))
 		];
 
@@ -346,7 +346,7 @@ async function generatePDF(html) {
 	console.log('📄 Generating PDF...');
 	if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-	const tempHtmlFile = path.join(OUTPUT_DIR, `temp-render-reform-exhaustion-${LANGUAGE}.html`);
+	const tempHtmlFile = path.join(OUTPUT_DIR, `temp-render-boundary-selection-${LANGUAGE}.html`);
 	fs.writeFileSync(tempHtmlFile, html);
 	const tempHtmlUri = 'file://' + path.resolve(tempHtmlFile).replace(/\\/g, '/');
 
@@ -371,7 +371,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series XI' : 'Artikel · Serie XI'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series XII' : 'Artikel · Serie XII'}</span>
 				</div>
 			`,
 			footerTemplate: `
@@ -395,7 +395,7 @@ async function generatePDF(html) {
 
 async function main() {
 	try {
-		console.log('📄 Starting PDF generation for Reform Exhaustion (Paper XI)...\n');
+		console.log('📄 Starting PDF generation for Boundary Selection Deficits (Paper XII)...\n');
 		console.log(`Language: ${LANGUAGE}`);
 		console.log(`Output: ${OUTPUT_FILE}\n`);
 
@@ -403,7 +403,7 @@ async function main() {
 		const html = generateHTML(sections);
 
 		if (process.env.DEBUG) {
-			const debugFile = path.join(__dirname, `../debug-reform-exhaustion-${LANGUAGE}.html`);
+			const debugFile = path.join(__dirname, `../debug-boundary-selection-${LANGUAGE}.html`);
 			fs.writeFileSync(debugFile, html);
 			console.log(`Debug HTML saved to: ${debugFile}`);
 		}
