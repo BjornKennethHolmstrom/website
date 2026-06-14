@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'legitimacyAsEmergentGain',
+   key: 'legitimacyAsEmergentGain',
+   category: 'governance',
+   tags: [
+     'Legitimacy',
+     'Trust',
+     'LPV Systems',
+     'Emergent Coupling',
+     'Gain Scheduling',
+     'Legitimacy Trap',
+     'Borrowed Legitimacy',
+     'Hysteresis',
+     'Transparency',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '77',
+   readTime: {
+     en: '90 min',
+     sv: '90 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/legitimacy-as-emergent-gain.pdf`,
+     sv: `${localBase}/legitimacy-as-emergent-gain-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/legitimacy-as-emergent-gain-cover.png',
+   readOnlinePath: '/working-papers/legitimacy-as-emergent-gain',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-14'
+ },
+ {
    id: 'boundarySelectionDeficits',
    key: 'boundarySelectionDeficits',
    category: 'governance',

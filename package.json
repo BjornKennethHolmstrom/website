@@ -47,6 +47,7 @@
 	"dependencies": {
 		"glob": "^11.1.0",
 		"gray-matter": "^4.0.3",
+		"katex": "^0.17.0",
 		"rehype-katex": "^7.0.1",
 		"remark-math": "^6.0.0"
 	}

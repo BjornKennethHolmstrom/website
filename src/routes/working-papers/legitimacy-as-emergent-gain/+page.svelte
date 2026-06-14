@@ -3,91 +3,75 @@
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
   import { marked } from 'marked';
+  import katex from 'katex';
+  import 'katex/dist/katex.min.css';
+  import { tick } from 'svelte';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS AS RAW TEXT ---
-
-  import AbstractEnRaw from './sections/00-abstract.en.md?raw';
-  import AbstractSvRaw from './sections/00-abstract.sv.md?raw';
-  import Part1EnRaw from './sections/01-part-1.en.md?raw';
-  import Part1SvRaw from './sections/01-part-1.sv.md?raw';
-  import Part2EnRaw from './sections/02-part-2.en.md?raw';
-  import Part2SvRaw from './sections/02-part-2.sv.md?raw';
-  import Part3EnRaw from './sections/03-part-3.en.md?raw';
-  import Part3SvRaw from './sections/03-part-3.sv.md?raw';
-  import Part4EnRaw from './sections/04-part-4.en.md?raw';
-  import Part4SvRaw from './sections/04-part-4.sv.md?raw';
-  import Part5EnRaw from './sections/05-part-5.en.md?raw';
-  import Part5SvRaw from './sections/05-part-5.sv.md?raw';
-  import Part6EnRaw from './sections/06-part-6.en.md?raw';
-  import Part6SvRaw from './sections/06-part-6.sv.md?raw';
-  import Part7EnRaw from './sections/07-part-7.en.md?raw';
-  import Part7SvRaw from './sections/07-part-7.sv.md?raw';
-  import Part8EnRaw from './sections/08-part-8.en.md?raw';
-  import Part8SvRaw from './sections/08-part-8.sv.md?raw';
-  import AppendixAEnRaw from './sections/09-appendix-a.en.md?raw';
-  import AppendixASvRaw from './sections/09-appendix-a.sv.md?raw';
-  import AppendixBEnRaw from './sections/10-appendix-b.en.md?raw';
-  import AppendixBSvRaw from './sections/10-appendix-b.sv.md?raw';
-  import AppendixCEnRaw from './sections/11-appendix-c.en.md?raw';
-  import AppendixCSvRaw from './sections/11-appendix-c.sv.md?raw';
+  // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
+  import ExecSummaryEnRaw from './sections/00-executive-summary.en.md?raw';
+  import ExecSummarySvRaw from './sections/00-executive-summary.sv.md?raw';
+  import Part1EnRaw       from './sections/01-part-1.en.md?raw';
+  import Part1SvRaw       from './sections/01-part-1.sv.md?raw';
+  import Part2EnRaw       from './sections/02-part-2.en.md?raw';
+  import Part2SvRaw       from './sections/02-part-2.sv.md?raw';
+  import Part3EnRaw       from './sections/03-part-3.en.md?raw';
+  import Part3SvRaw       from './sections/03-part-3.sv.md?raw';
+  import Part4EnRaw       from './sections/04-part-4.en.md?raw';
+  import Part4SvRaw       from './sections/04-part-4.sv.md?raw';
+  import Part5EnRaw       from './sections/05-part-5.en.md?raw';
+  import Part5SvRaw       from './sections/05-part-5.sv.md?raw';
+  import Part6EnRaw       from './sections/06-part-6.en.md?raw';
+  import Part6SvRaw       from './sections/06-part-6.sv.md?raw';
+  import Part7EnRaw       from './sections/07-part-7.en.md?raw';
+  import Part7SvRaw       from './sections/07-part-7.sv.md?raw';
+  import Part8EnRaw       from './sections/08-part-8.en.md?raw';
+  import Part8SvRaw       from './sections/08-part-8.sv.md?raw';
+  import AppendixAEnRaw   from './sections/09-appendix-a.en.md?raw';
+  import AppendixASvRaw   from './sections/09-appendix-a.sv.md?raw';
+  import AppendixBEnRaw   from './sections/09-appendix-b.en.md?raw';
+  import AppendixBSvRaw   from './sections/09-appendix-b.sv.md?raw';
+  import AppendixCEnRaw   from './sections/09-appendix-c.en.md?raw';
+  import AppendixCSvRaw   from './sections/09-appendix-c.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
-  // Object mapping language to raw strings for each section
-  const rawText = {
+  const rawText: Record<string, Record<string, string>> = {
     en: {
-      abstract: AbstractEnRaw,
-      'part-1': Part1EnRaw,
-      'part-2': Part2EnRaw,
-      'part-3': Part3EnRaw,
-      'part-4': Part4EnRaw,
-      'part-5': Part5EnRaw,
-      'part-6': Part6EnRaw,
-      'part-7': Part7EnRaw,
-      'part-8': Part8EnRaw,
-      'appendix-a': AppendixAEnRaw,
-      'appendix-b': AppendixBEnRaw,
-      'appendix-c': AppendixCEnRaw,
+      'executive-summary': ExecSummaryEnRaw,
+      'part-1': Part1EnRaw, 'part-2': Part2EnRaw, 'part-3': Part3EnRaw,
+      'part-4': Part4EnRaw, 'part-5': Part5EnRaw, 'part-6': Part6EnRaw,
+      'part-7': Part7EnRaw, 'part-8': Part8EnRaw,
+      'appendix-a': AppendixAEnRaw, 'appendix-b': AppendixBEnRaw, 'appendix-c': AppendixCEnRaw,
     },
     sv: {
-      abstract: AbstractSvRaw,
-      'part-1': Part1SvRaw,
-      'part-2': Part2SvRaw,
-      'part-3': Part3SvRaw,
-      'part-4': Part4SvRaw,
-      'part-5': Part5SvRaw,
-      'part-6': Part6SvRaw,
-      'part-7': Part7SvRaw,
-      'part-8': Part8SvRaw,
-      'appendix-a': AppendixASvRaw,
-      'appendix-b': AppendixBSvRaw,
-      'appendix-c': AppendixCSvRaw,
+      'executive-summary': ExecSummarySvRaw,
+      'part-1': Part1SvRaw, 'part-2': Part2SvRaw, 'part-3': Part3SvRaw,
+      'part-4': Part4SvRaw, 'part-5': Part5SvRaw, 'part-6': Part6SvRaw,
+      'part-7': Part7SvRaw, 'part-8': Part8SvRaw,
+      'appendix-a': AppendixASvRaw, 'appendix-b': AppendixBSvRaw, 'appendix-c': AppendixCSvRaw,
     }
   };
 
-  // --- 3. CONTENT STRUCTURE ---
-
-  // --- 3. CONTENT STRUCTURE (titles and IDs, no components) ---
+  // --- 3. CONTENT MAP (titles) ---
   const contentMap = [
-    { id: 'abstract',      titleEn: 'Abstract',                                                                                            titleSv: 'Sammanfattning' },
-    { id: 'part-1',        titleEn: 'Part I: The Problem — The Untreated Channel',                                                         titleSv: 'Del I: Problemet — Den obehandlade kanalen' },
-    { id: 'part-2',        titleEn: 'Part II: Formal Framework',                                                                           titleSv: 'Del II: Formellt ramverk' },
-    { id: 'part-3',        titleEn: 'Part III: Three Mechanisms, Each Paired With Its Evidence',                                           titleSv: 'Del III: Tre mekanismer, var och en med sin evidens' },
-    { id: 'part-4',        titleEn: 'Part IV: Boundaries and Objections',                                                                  titleSv: 'Del IV: Gränser och invändningar' },
-    { id: 'part-5',        titleEn: 'Part V: Simulation',                                                                                  titleSv: 'Del V: Simulering' },
-    { id: 'part-6',        titleEn: 'Part VI: Empirical Anchor',                                                                           titleSv: 'Del VI: Empirisk förankring' },
-    { id: 'part-7',        titleEn: 'Part VII: Design Implications',                                                                       titleSv: 'Del VII: Designkonsekvenser' },
-    { id: 'part-8',        titleEn: 'Part VIII: Limitations and Conclusion',                                                               titleSv: 'Del VIII: Begränsningar och slutsats' },
-    { id: 'appendix-a',    titleEn: 'Appendix A: Chain Model Derivations',                                                                 titleSv: 'Appendix A: Härledningar av kedjemodellen' },
-    { id: 'appendix-b',    titleEn: 'Appendix B: Simulation Specification',                                                                titleSv: 'Appendix B: Simuleringsspecifikation' },
-    { id: 'appendix-c',    titleEn: 'Appendix C: Case Coding Protocol',                                                                    titleSv: 'Appendix C: Protokoll för fallkodning' },
-  ]; 
+    { id: 'executive-summary', titleEn: 'Executive Summary',                                    titleSv: 'Sammanfattning' },
+    { id: 'part-1',             titleEn: 'Part I: The Legitimacy Gap',                          titleSv: 'Del I: Legitimitetsgapet' },
+    { id: 'part-2',             titleEn: 'Part II: Formal Framework',                           titleSv: 'Del II: Formellt ramverk' },
+    { id: 'part-3',             titleEn: 'Part III: Failure Modes of Legitimacy',              titleSv: 'Del III: Legitimitetsfelmoder' },
+    { id: 'part-4',             titleEn: 'Part IV: Simulation: The Legitimacy-Driven Controller', titleSv: 'Del IV: Simulering: Den legitimitetsdrivna kontrollanten' },
+    { id: 'part-5',             titleEn: 'Part V: Empirical Illustrations',                     titleSv: 'Del V: Empiriska illustrationer' },
+    { id: 'part-6',             titleEn: 'Part VI: Design Principles for Legitimacy-Sensitive Architectures', titleSv: 'Del VI: Designprinciper för legitimitetskänsliga arkitekturer' },
+    { id: 'part-7',             titleEn: 'Part VII: Connection to the Series',                  titleSv: 'Del VII: Koppling till serien' },
+    { id: 'part-8',             titleEn: 'Part VIII: Limitations and Conclusion',              titleSv: 'Del VIII: Begränsningar och slutsats' },
+    { id: 'appendix-a',         titleEn: 'Appendix A: Formal Derivations',                      titleSv: 'Appendix A: Formella härledningar' },
+    { id: 'appendix-b',         titleEn: 'Appendix B: Simulation Specification',                titleSv: 'Appendix B: Simuleringsspecifikation' },
+    { id: 'appendix-c',         titleEn: 'Appendix C: Empirical Coding Notes',                  titleSv: 'Appendix C: Empiriska kodningsanteckningar' },
+  ];
 
-  // --- 4. TRANSLATIONS ---
-
+  // --- 4. UI TRANSLATIONS ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XI',
-      seriesNote: 'This is the eleventh paper in the Governance as Engineering series. It closes the first theoretical cycle.',
+      tag: 'Working Paper · Series XIII',
+      seriesNote: "This is the thirteenth paper in the Governance as Engineering series. It bridges the series' primitives to the outcomes they produce.",
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
@@ -99,15 +83,15 @@
         { href: '/working-papers/measuring-the-variety-gap',               label: 'Paper VIII: Measuring the Variety Gap →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
-        { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
-        { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
+        { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
+        { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'This paper treats the channel the series has so far examined only under adversarial conditions — the actuation channel through which policy intent reaches the world. A directive formulated at the centre must traverse a delegation chain of ministries, agencies, regional offices, municipalities, and street‑level staff. Each layer projects the directive onto its own operational repertoire, adds latency, and injects noise — structural properties that hold even when every actor is competent, honest, and fully compliant.',
+      contextIntro: 'The Governance as Engineering series has treated observation and actuation as separate channels, each with its own structural primitives. This paper identifies a parameter that couples them: legitimacy — the willingness of the governed to comply with directives and report honestly. Legitimacy is not an architectural primitive but an emergent state variable, generated by the interaction between governance architecture and the society it governs.',
       relatedWork: 'Related work:',
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
-      contextOutro: 'The central result is an energy law: the minimum control effort required to realise a policy target grows superlinearly with delegation depth. Deep chains do not refuse policy; they price it out — a condition the paper names reform exhaustion. It closes the series\' first theoretical cycle.',
+      contextOutro: 'When legitimacy is high, the effective actuation matrix is full-rank and observation noise is low. When it collapses, the same institutional architecture becomes unsteerable and blind. This paper models legitimacy as an endogenous scheduling variable, derives the legitimacy trap, and provides design principles for legitimacy-sensitive architectures.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -116,8 +100,8 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XI',
-      seriesNote: 'Detta är den elfte rapporten i serien Styrning som ingenjörskonst. Den avslutar den första teoretiska cykeln.',
+      tag: 'Arbetsdokument · Serie XIII',
+      seriesNote: 'Detta är den trettonde rapporten i serien Styrning som ingenjörskonst. Den överbryggar seriens primitiver till de utfall de producerar.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
@@ -129,15 +113,15 @@
         { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
-        { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
-        { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
+        { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
+        { href: '/working-papers/boundary-selection-deficits',            label: 'Rapport XII: Gränsdragningsunderskott →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Denna rapport behandlar den kanal som serien hittills endast undersökt under antagonistiska förhållanden — aktueringskanalen genom vilken policyintentioner når verkligheten. Ett direktiv formulerat i centrum måste passera en delegationskedja av departement, myndigheter, regionkontor, kommuner och frontpersonal. Varje lager projicerar direktivet på sin egen operativa repertoar, tillför latens och injicerar brus — strukturella egenskaper som kvarstår även när varje aktör är kompetent, ärlig och fullt följsam.',
+      contextIntro: 'Serien Styrning som ingenjörskonst har behandlat observation och aktivering som separata kanaler, var och en med sina egna strukturella primitiver. Denna rapport identifierar en parameter som kopplar dem samman: legitimitet — de styrdas vilja att följa direktiv och rapportera ärligt. Legitimitet är inte en arkitektonisk primitiv utan en emergent tillståndsvariabel, genererad av interaktionen mellan styrningsarkitekturen och samhället.',
       relatedWork: 'Relaterat arbete:',
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
-      contextOutro: 'Det centrala resultatet är en energilag: den minsta kontrollansträngning som krävs för att realisera ett policymål växer superlinjärt med delegationsdjupet. Djupa kedjor vägrar inte policy; de prissätter den ur räckhåll — ett tillstånd rapporten kallar reformutmattning. Den avslutar seriens första teoretiska cykel.',
+      contextOutro: 'När legitimiteten är hög är den effektiva aktiveringsmatrisen full-rank och observationsbruset lågt. När den kollapsar blir samma institutionella arkitektur ostyrbar och blind. Denna rapport modellerar legitimitet som en endogen schemaläggningsvariabel, härleder legitimitetsfällan och ger designprinciper för legitimitetskänsliga arkitekturer.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -149,51 +133,82 @@
 
   const metadata = {
     en: {
-      title: 'Reform Exhaustion: Delegation Depth and the Controllability of Governance',
-      subtitle: 'Delegation Depth and the Controllability of Governance',
-      description: 'Models the actuation channel through which policy intent reaches the world. Shows that minimum control effort grows superlinearly with delegation depth — deep chains price reform out of reach even when all actors are competent and compliant. Closes the series\' first theoretical cycle.',
+      title: 'Legitimacy as Emergent Gain: The Dual-Channel Coupling of Trust in Governance Architecture',
+      subtitle: 'The Dual-Channel Coupling of Trust in Governance Architecture',
+      description: "Models legitimacy as an emergent coupling state — a gain parameter generated by the interaction between architecture and the governed. Derives the legitimacy trap, the borrowed-vs-built distinction, and hysteresis dynamics. Bridges the series' primitives to outcomes.",
     },
     sv: {
-      title: 'Reformutmattning: Delegationsdjup och styrningens styrbarhet',
-      subtitle: 'Delegationsdjup och styrningens styrbarhet',
-      description: 'Modellerar aktueringskanalen genom vilken policyintentioner når verkligheten. Visar att minsta kontrollansträngning växer superlinjärt med delegationsdjupet — djupa kedjor prissätter reformer ur räckhåll även när alla aktörer är kompetenta och följsamma. Avslutar seriens första teoretiska cykel.',
+      title: 'Legitimitet som emergent förstärkning: Förtroendets tvåkanalskoppling i styrningsarkitektur',
+      subtitle: 'Förtroendets tvåkanalskoppling i styrningsarkitektur',
+      description: 'Modellerar legitimitet som ett emergent kopplingstillstånd — en förstärkningsparameter genererad av interaktionen mellan arkitektur och de styrda. Härleder legitimitetsfällan, distinktionen mellan lånad och byggd legitimitet, och hysteresdynamik. Överbryggar seriens primitiver till utfall.',
     },
   };
 
   // --- 5. REACTIVE LOGIC ---
-  let activeSection = $state('abstract');
+  let activeSection = $state('executive-summary');
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'reform-exhaustion-sv.pdf' : 'reform-exhaustion.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'legitimacy-as-emergent-gain-sv.pdf' : 'legitimacy-as-emergent-gain.pdf');
 
-  function sectionTitle(section: { id: string; titleEn: string; titleSv: string }) {
+  function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  // Parse markdown and return HTML string
-  function sectionHtml(section: { id: string }): string {
+  function sectionHtml(section: typeof contentMap[0]): string {
     const lang = currentLang as 'en' | 'sv';
-    const md = rawText[lang][section.id] ?? '';
-    // Remove frontmatter if present (as a precaution)
-    const content = md.replace(/^---[\s\S]*?---\n/, '');
-    return marked.parse(content, { breaks: false, gfm: true }) as string;
-  }
+    const md = rawText[lang]?.[section.id] ?? '';
+    let content = md.replace(/^---[\s\S]*?---\n/, '');
 
-  function sectionComp(section: typeof contentMap[0]) {
-    return currentLang === 'sv' ? section.compSv : section.compEn;
+    const blocks: string[] = [];
+
+    // Render Display Math \[ ... \]
+    content = content.replace(/\\\[([\s\S]*?)\\\]/g, (match, tex) => {
+      try {
+        const rendered = katex.renderToString(tex.trim(), { displayMode: true, throwOnError: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX display error:', e);
+        blocks.push(match);
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Render Inline Math \( ... \)
+    content = content.replace(/\\\(([\s\S]*?)\\\)/g, (match, tex) => {
+      try {
+        const rendered = katex.renderToString(tex.trim(), { displayMode: false, throwOnError: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX inline error:', e);
+        blocks.push(match);
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Convert markdown to HTML
+    let html = marked.parse(content, { breaks: false, gfm: true }) as string;
+
+    // Restore the pre-rendered KaTeX HTML back into the content
+    html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+
+    return html;
   }
 
   function scrollTo(id: string) {
     activeSection = id;
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Reformutmattning: Delegationsdjup och styrningens styrbarhet. Styrning som ingenjörskonst, Rapport XI.`
-      : `Holmström, B. K. (2026). Reform Exhaustion: Delegation Depth and the Controllability of Governance. Governance as Engineering, Paper XI.`;
+      ? `Holmström, B. K. (2026). Legitimitet som emergent förstärkning: Förtroendets tvåkanalskoppling i styrningsarkitektur. Styrning som ingenjörskonst, Rapport XIII.`
+      : `Holmström, B. K. (2026). Legitimacy as Emergent Gain: The Dual-Channel Coupling of Trust in Governance Architecture. Governance as Engineering, Paper XIII.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -242,9 +257,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
           {t.downloadPDF}
         </a>
-        <!--
         <a
-          href="https://github.com/BjornKennethHolmstrom/gae-reform-exhaustion"
+          href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline"
@@ -252,7 +266,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           {t.viewCode}
         </a>
-        -->
         <button
           onclick={copyCitation}
           class="flex items-center gap-2 text-sm font-medium text-[var(--color-page-accent)] hover:underline w-full text-left"
