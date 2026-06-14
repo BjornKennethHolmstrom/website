@@ -16,6 +16,8 @@
   import Chapter10En from '$lib/content/syntheses/the-clouded-mirror/chapter-10.md';
   import Chapter11En from '$lib/content/syntheses/the-clouded-mirror/chapter-11.md';
   import Chapter12En from '$lib/content/syntheses/the-clouded-mirror/chapter-12.md';
+  import Chapter13En from '$lib/content/syntheses/the-clouded-mirror/chapter-13.md';
+  import Chapter14En from '$lib/content/syntheses/the-clouded-mirror/chapter-14.md';
   import SummaryEn from '$lib/content/syntheses/the-clouded-mirror/summary.md';
 
   // --- 2. IMPORT SWEDISH CHAPTERS ---
@@ -31,6 +33,8 @@
   import Chapter10Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-10-sv.md';
   import Chapter11Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-11-sv.md';
   import Chapter12Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-12-sv.md';
+  import Chapter13Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-13-sv.md';
+  import Chapter14Sv from '$lib/content/syntheses/the-clouded-mirror/chapter-14-sv.md';
   import SummarySv from '$lib/content/syntheses/the-clouded-mirror/summary-sv.md';
 
   // --- 3. BILINGUAL CONTENT STRUCTURES ---
