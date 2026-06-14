@@ -90,6 +90,51 @@ These "dark data" proxies do not measure bypass density directly. They measure p
 
 ---
 
+### 3.9 Attention Allocation: The Scheduling of Fixed Observation Capacity
+
+The parameters specified in Sections 3.1 through 3.8 describe the structural properties of a governance system's observation architecture—its dimensionality, its signal fidelity, its response latency. But they treat observation capacity as if it were uniformly distributed across all dimensions the system tracks. In practice, observation capacity is finite, and the *allocation* of that capacity across dimensions is a decision with structural consequences that the framework must acknowledge.
+
+#### The Sensor Scheduling Problem
+
+In control engineering, the *sensor scheduling* problem asks: given a fixed set of sensing resources (sensors, measurement bandwidth, processing capacity), how should those resources be allocated across the system's state dimensions to minimise estimation error? The optimal schedule depends on the relative noisiness of different channels, the rate at which different dimensions evolve, and the cost of being wrong about each dimension for the controller's objectives.
+
+The governance analogue is direct. A central bank has a fixed analytical staff, a fixed survey budget, and a fixed set of data sources. It can allocate more attention to inflation dynamics, or to financial stability risks, or to labour market conditions, or to international spillovers—but it cannot allocate maximum attention to all of them simultaneously. A health ministry can monitor hospital capacity, or disease surveillance, or pharmaceutical supply chains, or long-term demographic trends—but its epidemiological staff, its data infrastructure, and its leadership attention are finite resources that must be allocated across these dimensions. The allocation decision determines which disturbances will be detected early and which will accumulate unseen.
+
+#### Attention Allocation as a Latent Parameter
+
+Formally, let the total observation capacity of a governance system be \(C_{\text{total}}\), and let \(w_i\) be the fraction of that capacity allocated to dimension \(i\), with \(\sum_i w_i = 1\). The effective signal fidelity for dimension \(i\) is then:
+
+\[
+\sigma_i^2 = \frac{\sigma_{i,0}^2}{w_i}
+\]
+
+where \(\sigma_{i,0}^2\) is the baseline noise level when full capacity is allocated to that dimension. As \(w_i \to 0\), measurement noise for that dimension diverges—the system becomes effectively blind to it, not because the observation architecture structurally excludes it (it is still "tracked" in the sense that V_o counts it), but because no attention is being paid to the signals that arrive through that channel.
+
+This mechanism is distinct from the structural exclusion captured by V_o. A dimension that is included in V_o but starved of attention (low \(w_i\)) is *nominally* observed but *effectively* invisible. The system can claim to monitor it—the dashboard includes the indicator—while the signal is too noisy to support timely response. This is the attention-allocation pathway to the same outcome that structural exclusion produces: a disturbance dimension that accumulates until it forces itself into visibility through crisis.
+
+#### The Political Economy of Attention
+
+The allocation of observation capacity is not a purely technical decision. It is subject to the same political economy as every other governance choice. Dimensions that are politically salient, that are tied to powerful interests, or that are linked to the career incentives of decision-makers receive disproportionate attention. Dimensions that are diffuse, slow-moving, or threatening to incumbent interests are systematically underweighted.
+
+This has a specific interaction with the Measurement Paradox (Section 4). A governance system facing uncomfortable signals on a particular dimension has two ways to suppress them. It can structurally degrade the observation channel—redefining the metric, restricting access to the data, punishing honest reporting. Or it can simply allocate less attention to that channel—reduce the analytical staff assigned to it, lengthen the reporting interval, downgrade its prominence in decision-making processes. The second strategy is less visible than the first, and it is harder for the Measurement Paradox diagnostics (censorship-as-signal, proxy divergence) to detect. The dimension remains "tracked"; the dashboard remains "comprehensive"; the attention has simply drifted elsewhere.
+
+The long-term consequence is the same: the neglected dimension accumulates disturbances that the system cannot perceive in time to correct. The crisis, when it arrives, is attributed to an unforeseeable shock rather than to a predictable consequence of attention allocation.
+
+#### Implications for the Parametric Framework
+
+Attention allocation is not currently included as a ninth parameter in the composite Variety Gap Index, for two reasons. First, the data required to estimate attention weights across dimensions is even scarcer than the data required for the existing eight parameters—it requires granular information about internal resource allocation, meeting agendas, analytical workflows, and decision-makers' information diets that is rarely public and often not systematically recorded even internally. Second, attention allocation is partly captured by the existing parameters: systematic under-allocation of attention to a dimension will manifest as increased effective response latency (τ) for disturbances on that dimension, and as degraded signal fidelity (σ) when the signals that do arrive are processed with insufficient care.
+
+The framework acknowledges attention allocation as a latent mechanism that contributes to the measured values of the existing parameters, rather than as a separately estimated primitive. Future empirical work—particularly the structured expert elicitation and institutional ethnography proposed in Section 9.2—could develop protocols for estimating attention weights directly, at which point attention allocation could be promoted to a ninth parameter or incorporated as a weighting scheme on the existing signal fidelity and latency estimates.
+
+#### Connection to the Series
+
+The attention allocation problem connects to several themes developed elsewhere in the series. Paper VI's treatment of value architectures as observation channels addresses the higher-level question of which dimensions the system treats as mattering at all; attention allocation addresses the operational question of how the system distributes its finite sensing resources across the dimensions it has already decided to value. Paper X's argument for observer diversity implies that attention allocation should be diversified: an ensemble of institutions with different attention weightings will, collectively, maintain observability over a broader set of dimensions than any single institution can. Paper XIV's treatment of exploration–exploitation extends the logic dynamically: a system that never reallocates attention—that never explores the possibility that a neglected dimension has become critical—is a system whose attention allocation is optimised for a world that no longer exists.
+
+The structural point is that finite observation capacity is not a problem to be solved. It is a constraint to be managed. Every governance system must allocate its attention, explicitly or implicitly, and the allocation pattern is as consequential for observability as the structural properties of the observation channels themselves. The framework's existing parameters capture the consequences of attention allocation decisions. The decisions themselves remain, for now, in the penumbra of what the framework can measure directly. Acknowledging this is not a failure of the framework. It is the same epistemic discipline that the framework demands of the governance systems it diagnoses.
+
+---
+
+
 ### Summary Table
 
 | Primitive | Parameter | Primary Proxy | Uncertainty | Tier |
@@ -105,4 +150,7 @@ These "dark data" proxies do not measure bypass density directly. They measure p
 
 *Note: The symbolic-to-structural ratio (ρ = 1 − p) is the definitional complement of immune permeability and is not an independent input to the composite index G. It is included in this table as a named diagnostic because it characterises the pattern of institutional behaviour producing the immune permeability score, and because it warrants separate reporting alongside G. Its mathematical contribution to G is absorbed into the immune permeability term with a combined tier-weighted exponent; see Appendix D.4.*
 
+*Attention allocation—the distribution of fixed observation capacity across dimensions—is not included as a separate parameter in the current framework. It operates as a latent mechanism that influences the effective values of V_o, σ, and τ: a dimension that is nominally tracked but starved of attention will exhibit degraded signal fidelity and increased effective response latency, even though the observation architecture structurally includes it. The framework acknowledges attention allocation as a source of unobserved heterogeneity in the existing parameter estimates. Future empirical work may develop protocols for estimating attention weights directly; see Section 3.9.*
+
 The parameters are not a measurement instrument that can be applied mechanically. They are a structured framework for estimation—a systematic way of asking the same diagnostic questions across different governance systems, with explicit attention to what can and cannot be known from the available data. The Measurement Paradox, to which the paper now turns, identifies the deepest challenge that any such framework must confront.
+

@@ -90,6 +90,50 @@ Dessa ”mörka data”-proxyvariabler mäter inte förbikopplingstätheten dire
 
 ---
 
+### 3.9 Uppmärksamhetsallokering: Schemaläggningen av fast observationskapacitet
+
+Parametrarna som specificeras i avsnitt 3.1 till 3.8 beskriver de strukturella egenskaperna hos ett styrsystems observationsarkitektur – dess dimensionalitet, dess signaltrohet, dess responslatens. Men de behandlar observationskapacitet som om den vore likformigt fördelad över alla dimensioner systemet följer. I praktiken är observationskapaciteten ändlig, och *allokeringen* av den kapaciteten över dimensioner är ett beslut med strukturella konsekvenser som ramverket måste erkänna.
+
+#### Sensorplaneringsproblemet
+
+Inom reglertekniken ställer *sensorplaneringsproblemet* frågan: givet en fast uppsättning avkänningsresurser (sensorer, mätbandbredd, bearbetningskapacitet), hur bör dessa resurser allokeras över systemets tillståndsdimensioner för att minimera skattningsfelet? Den optimala planeringen beror på olika kanalers relativa brusighet, den takt med vilken olika dimensioner utvecklas, och kostnaden för att ha fel om varje dimension för regulatorns mål.
+
+Styrningsanalogin är direkt. En centralbank har en fast analytisk stab, en fast enkätbudget och en fast uppsättning datakällor. Den kan allokera mer uppmärksamhet till inflationsdynamik, eller till risker för finansiell stabilitet, eller till arbetsmarknadsförhållanden, eller till internationella spridningseffekter – men den kan inte allokera maximal uppmärksamhet till alla samtidigt. Ett hälsodepartement kan övervaka sjukhuskapacitet, eller sjukdomsövervakning, eller farmaceutiska leveranskedjor, eller långsiktiga demografiska trender – men dess epidemiologiska stab, dess datainfrastruktur och dess ledarskapsuppmärksamhet är ändliga resurser som måste allokeras över dessa dimensioner. Allokeringsbeslutet avgör vilka störningar som kommer att upptäckas tidigt och vilka som kommer att ackumuleras osedda.
+
+#### Uppmärksamhetsallokering som en latent parameter
+
+Formellt, låt den totala observationskapaciteten för ett styrsystem vara \(C_{\text{total}}\), och låt \(w_i\) vara den andel av den kapaciteten som allokeras till dimension \(i\), med \(\sum_i w_i = 1\). Den effektiva signaltroheten för dimension \(i\) är då:
+
+\[
+\sigma_i^2 = \frac{\sigma_{i,0}^2}{w_i}
+\]
+
+där \(\sigma_{i,0}^2\) är den grundläggande brusnivån när full kapacitet allokeras till den dimensionen. När \(w_i \to 0\) divergerar mätbruset för den dimensionen – systemet blir effektivt blint för den, inte för att observationsarkitekturen strukturellt utesluter den (den är fortfarande "följd" i den bemärkelsen att V_o räknar den), utan för att ingen uppmärksamhet ägnas åt de signaler som anländer genom den kanalen.
+
+Denna mekanism är distinkt från den strukturella uteslutning som fångas av V_o. En dimension som ingår i V_o men svälts på uppmärksamhet (lågt \(w_i\)) är *nominellt* observerad men *effektivt* osynlig. Systemet kan påstå sig övervaka den – instrumentpanelen inkluderar indikatorn – medan signalen är för brusig för att stödja respons i tid. Detta är uppmärksamhetsallokeringsvägen till samma utfall som strukturell uteslutning producerar: en störningsdimension som ackumuleras tills den tvingar sig till synlighet genom kris.
+
+#### Uppmärksamhetens politiska ekonomi
+
+Allokeringen av observationskapacitet är inte ett rent tekniskt beslut. Den är underkastad samma politiska ekonomi som varje annat styrningsval. Dimensioner som är politiskt framträdande, som är knutna till mäktiga intressen, eller som är kopplade till beslutsfattares karriärincitament mottar oproportionerlig uppmärksamhet. Dimensioner som är diffusa, långsamt rörliga eller hotfulla mot etablerade intressen underviktas systematiskt.
+
+Detta har en specifik interaktion med Mätparadoxen (Avsnitt 4). Ett styrsystem som står inför obekväma signaler på en viss dimension har två sätt att undertrycka dem. Det kan strukturellt försämra observationskanalen – omdefiniera mätetalet, begränsa tillgången till data, bestraffa ärlig rapportering. Eller det kan helt enkelt allokera mindre uppmärksamhet till den kanalen – minska den analytiska stab som tilldelats den, förlänga rapporteringsintervallet, nedgradera dess framträdande plats i beslutsprocesser. Den andra strategin är mindre synlig än den första, och den är svårare för Mätparadoxens diagnostik (censur-som-signal, proxydivergens) att upptäcka. Dimensionen förblir "följd"; instrumentpanelen förblir "heltäckande"; uppmärksamheten har helt enkelt glidit någon annanstans.
+
+Den långsiktiga konsekvensen är densamma: den försummade dimensionen ackumulerar störningar som systemet inte kan uppfatta i tid för att korrigera. Krisen, när den anländer, attribueras till en oförutsebar chock snarare än till en förutsägbar konsekvens av uppmärksamhetsallokering.
+
+#### Implikationer för det parametriska ramverket
+
+Uppmärksamhetsallokering ingår för närvarande inte som en nionde parameter i det sammansatta Varietetsgapsindexet, av två skäl. För det första är de data som krävs för att skatta uppmärksamhetsvikter över dimensioner ännu knappare än de data som krävs för de befintliga åtta parametrarna – det kräver granulär information om intern resursallokering, mötesagendor, analytiska arbetsflöden och beslutsfattares informationsdieter som sällan är offentlig och ofta inte registreras systematiskt ens internt. För det andra fångas uppmärksamhetsallokering delvis av de befintliga parametrarna: systematisk underallokering av uppmärksamhet till en dimension kommer att manifesteras som ökad effektiv responslatens (τ) för störningar på den dimensionen, och som försämrad signaltrohet (σ) när de signaler som väl anländer bearbetas med otillräcklig omsorg.
+
+Ramverket erkänner uppmärksamhetsallokering som en latent mekanism som bidrar till de uppmätta värdena för de befintliga parametrarna, snarare än som en separat skattad primitiv. Framtida empiriskt arbete – särskilt den strukturerade expertelicitering och institutionella etnografi som föreslås i Avsnitt 9.2 – skulle kunna utveckla protokoll för att skatta uppmärksamhetsvikter direkt, vid vilken punkt uppmärksamhetsallokering skulle kunna upphöjas till en nionde parameter eller inkorporeras som ett viktningsschema på de befintliga skattningarna av signaltrohet och latens.
+
+#### Koppling till serien
+
+Uppmärksamhetsallokeringsproblemet ansluter till flera teman som utvecklas på andra håll i serien. Artikel VI:s behandling av värdearkitekturer som observationskanaler adresserar frågan på högre nivå om vilka dimensioner systemet överhuvudtaget behandlar som betydelsefulla; uppmärksamhetsallokering adresserar den operationella frågan om hur systemet fördelar sina ändliga avkänningsresurser över de dimensioner det redan har beslutat att värdera. Artikel X:s argument för observatörsdiversitet implicerar att uppmärksamhetsallokering bör diversifieras: en ensemble av institutioner med olika uppmärksamhetsviktningar kommer, kollektivt, att upprätthålla observerbarhet över en bredare uppsättning dimensioner än någon enskild institution kan. Artikel XIV:s behandling av utforskning–exploatering utvidgar logiken dynamiskt: ett system som aldrig omallokerar uppmärksamhet – som aldrig utforskar möjligheten att en försummad dimension har blivit kritisk – är ett system vars uppmärksamhetsallokering är optimerad för en värld som inte längre existerar.
+
+Den strukturella poängen är att ändlig observationskapacitet inte är ett problem som ska lösas. Det är en restriktion som ska hanteras. Varje styrsystem måste allokera sin uppmärksamhet, explicit eller implicit, och allokeringsmönstret är lika konsekvensrikt för observerbarheten som observationskanalernas strukturella egenskaper själva. Ramverkets befintliga parametrar fångar konsekvenserna av uppmärksamhetsallokeringsbeslut. Själva besluten förblir, tills vidare, i penumbran av vad ramverket kan mäta direkt. Att erkänna detta är inte ett misslyckande för ramverket. Det är samma epistemiska disciplin som ramverket kräver av de styrsystem det diagnostiserar.
+
+---
+
 ### Sammanfattande tabell
 
 | Primitiv | Parameter | Primär proxyvariabel | Osäkerhet | Nivå |
@@ -104,5 +148,7 @@ Dessa ”mörka data”-proxyvariabler mäter inte förbikopplingstätheten dire
 | Performativ anpassning | Symbolisk-till-strukturell kvot | Andel reformannonseringar som uppnår strukturell implementering | Måttlig | 3 (Emergent) |
 
 *Anmärkning: Den symbolisk‑till‑strukturella kvoten (ρ = 1 − p) är definitionsmässigt komplementet till immunpermeabiliteten och är inte en oberoende indata till det sammansatta indexet G. Den inkluderas i denna tabell som en namngiven diagnostik eftersom den karaktäriserar det mönster av institutionellt beteende som producerar immunpermeabilitetsvärdet, och eftersom den förtjänar att rapporteras separat vid sidan av G. Dess matematiska bidrag till G absorberas i immunpermeabilitetstermen med en kombinerad nivåviktad exponent; se appendix D.4.*
+
+*Uppmärksamhetsallokering – fördelningen av fast observationskapacitet över dimensioner – ingår inte som en separat parameter i det nuvarande ramverket. Den verkar som en latent mekanism som påverkar de effektiva värdena för V_o, σ och τ: en dimension som nominellt följs men svälts på uppmärksamhet kommer att uppvisa försämrad signaltrohet och ökad effektiv responslatens, även om observationsarkitekturen strukturellt inkluderar den. Ramverket erkänner uppmärksamhetsallokering som en källa till oobserverad heterogenitet i de befintliga parameterskattningarna. Framtida empiriskt arbete kan utveckla protokoll för att skatta uppmärksamhetsvikter direkt; se Avsnitt 3.9.*
 
 Parametrarna är inte ett mätinstrument som kan tillämpas mekaniskt. De utgör ett strukturerat ramverk för skattning – ett systematiskt sätt att ställa samma diagnostiska frågor över olika styrsystem, med uttrycklig uppmärksamhet på vad som kan och inte kan vetas utifrån de tillgängliga data. Mätparadoxen, som artikeln nu vänder sig till, identifierar den djupaste utmaning som varje sådant ramverk måste konfrontera.

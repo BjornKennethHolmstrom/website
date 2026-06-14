@@ -2,146 +2,90 @@
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import { marked } from 'marked';
+  import katex from 'katex';
+  import 'katex/dist/katex.min.css';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS (Paper VIII: Measuring the Variety Gap) ---
+  // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
+  import Section01EnRaw from './sections/01-introduction.en.md?raw';
+  import Section01SvRaw from './sections/01-introduction.sv.md?raw';
+  import Section02EnRaw from './sections/02-dimensionality-estimation-problem.en.md?raw';
+  import Section02SvRaw from './sections/02-dimensionality-estimation-problem.sv.md?raw';
+  import Section03EnRaw from './sections/03-eight-parameters.en.md?raw';
+  import Section03SvRaw from './sections/03-eight-parameters.sv.md?raw';
+  import Section04EnRaw from './sections/04-measurement-paradox.en.md?raw';
+  import Section04SvRaw from './sections/04-measurement-paradox.sv.md?raw';
+  import Section05EnRaw from './sections/05-composite-variety-gap-index.en.md?raw';
+  import Section05SvRaw from './sections/05-composite-variety-gap-index.sv.md?raw';
+  import Section06EnRaw from './sections/06-dynamic-extension.en.md?raw';
+  import Section06SvRaw from './sections/06-dynamic-extension.sv.md?raw';
+  import Section07EnRaw from './sections/07-calibration.en.md?raw';
+  import Section07SvRaw from './sections/07-calibration.sv.md?raw';
+  import Section08EnRaw from './sections/08-empirical-application.en.md?raw';
+  import Section08SvRaw from './sections/08-empirical-application.sv.md?raw';
+  import Section09EnRaw from './sections/09-limitations-and-next-steps.en.md?raw';
+  import Section09SvRaw from './sections/09-limitations-and-next-steps.sv.md?raw';
+  import AppendixAEnRaw from './sections/10-appendix-a.en.md?raw';
+  import AppendixASvRaw from './sections/10-appendix-a.sv.md?raw';
+  import AppendixBEnRaw from './sections/10-appendix-b.en.md?raw';
+  import AppendixBSvRaw from './sections/10-appendix-b.sv.md?raw';
+  import AppendixCEnRaw from './sections/10-appendix-c.en.md?raw';
+  import AppendixCSvRaw from './sections/10-appendix-c.sv.md?raw';
+  import AppendixDEnRaw from './sections/10-appendix-d.en.md?raw';
+  import AppendixDSvRaw from './sections/10-appendix-d.sv.md?raw';
 
-  import Section01En from './sections/01-introduction.en.md';
-  import Section01Sv from './sections/01-introduction.sv.md';
+  // --- 2. RAW TEXT MAP ---
+  const rawText: Record<string, Record<string, string>> = {
+    en: {
+      '01-introduction': Section01EnRaw,
+      '02-dimensionality-estimation-problem': Section02EnRaw,
+      '03-eight-parameters': Section03EnRaw,
+      '04-measurement-paradox': Section04EnRaw,
+      '05-composite-variety-gap-index': Section05EnRaw,
+      '06-dynamic-extension': Section06EnRaw,
+      '07-calibration': Section07EnRaw,
+      '08-empirical-application': Section08EnRaw,
+      '09-limitations-and-next-steps': Section09EnRaw,
+      'appendix-a': AppendixAEnRaw,
+      'appendix-b': AppendixBEnRaw,
+      'appendix-c': AppendixCEnRaw,
+      'appendix-d': AppendixDEnRaw,
+    },
+    sv: {
+      '01-introduction': Section01SvRaw,
+      '02-dimensionality-estimation-problem': Section02SvRaw,
+      '03-eight-parameters': Section03SvRaw,
+      '04-measurement-paradox': Section04SvRaw,
+      '05-composite-variety-gap-index': Section05SvRaw,
+      '06-dynamic-extension': Section06SvRaw,
+      '07-calibration': Section07SvRaw,
+      '08-empirical-application': Section08SvRaw,
+      '09-limitations-and-next-steps': Section09SvRaw,
+      'appendix-a': AppendixASvRaw,
+      'appendix-b': AppendixBSvRaw,
+      'appendix-c': AppendixCSvRaw,
+      'appendix-d': AppendixDSvRaw,
+    },
+  };
 
-  import Section02En from './sections/02-dimensionality-estimation-problem.en.md';
-  import Section02Sv from './sections/02-dimensionality-estimation-problem.sv.md';
-
-  import Section03En from './sections/03-eight-parameters.en.md';
-  import Section03Sv from './sections/03-eight-parameters.sv.md';
-
-  import Section04En from './sections/04-measurement-paradox.en.md';
-  import Section04Sv from './sections/04-measurement-paradox.sv.md';
-
-  import Section05En from './sections/05-composite-variety-gap-index.en.md';
-  import Section05Sv from './sections/05-composite-variety-gap-index.sv.md';
-
-  import Section06En from './sections/06-dynamic-extension.en.md';
-  import Section06Sv from './sections/06-dynamic-extension.sv.md';
-
-  import Section07En from './sections/07-calibration.en.md';
-  import Section07Sv from './sections/07-calibration.sv.md';
-
-  import Section08En from './sections/08-empirical-application.en.md';
-  import Section08Sv from './sections/08-empirical-application.sv.md';
-
-  import Section09En from './sections/09-limitations-and-next-steps.en.md';
-  import Section09Sv from './sections/09-limitations-and-next-steps.sv.md';
-
-  import AppendixAEn from './sections/10-appendix-a.en.md';
-  import AppendixASv from './sections/10-appendix-a.sv.md';
-
-  import AppendixBEn from './sections/10-appendix-b.en.md';
-  import AppendixBSv from './sections/10-appendix-b.sv.md';
-
-  import AppendixCEn from './sections/10-appendix-c.en.md';
-  import AppendixCSv from './sections/10-appendix-c.sv.md';
-
-  import AppendixDEn from './sections/10-appendix-d.en.md';
-  import AppendixDSv from './sections/10-appendix-d.sv.md';
-
-  // --- 2. CONTENT STRUCTURE ---
-
+  // --- 3. CONTENT MAP (titles only – no components) ---
   const contentMap = [
-    {
-      id: '01-introduction',
-      titleEn: '1. Introduction: From Diagnosis to Measurement',
-      titleSv: '1. Introduktion: Från diagnos till mätning',
-      compEn: Section01En,
-      compSv: Section01Sv,
-    },
-    {
-      id: '02-dimensionality-estimation-problem',
-      titleEn: '2. The Dimensionality Estimation Problem',
-      titleSv: '2. Dimensionalitetsuppskattningsproblemet',
-      compEn: Section02En,
-      compSv: Section02Sv,
-    },
-    {
-      id: '03-eight-parameters',
-      titleEn: '3. The Eight Parameters',
-      titleSv: '3. De åtta parametrarna',
-      compEn: Section03En,
-      compSv: Section03Sv,
-    },
-    {
-      id: '04-measurement-paradox',
-      titleEn: '4. The Measurement Paradox',
-      titleSv: '4. Mätparadoxen',
-      compEn: Section04En,
-      compSv: Section04Sv,
-    },
-    {
-      id: '05-composite-variety-gap-index',
-      titleEn: '5. The Composite Variety Gap Index',
-      titleSv: '5. Det sammansatta varietetsgap-indexet',
-      compEn: Section05En,
-      compSv: Section05Sv,
-    },
-    {
-      id: '06-dynamic-extension',
-      titleEn: '6. Dynamic Extension: Measuring the Rate of Gap Change',
-      titleSv: '6. Dynamisk utvidgning: Mätning av gapets förändringshastighet',
-      compEn: Section06En,
-      compSv: Section06Sv,
-    },
-    {
-      id: '07-calibration',
-      titleEn: '7. Calibration Against the Twenty-One Cases',
-      titleSv: '7. Kalibrering mot de tjugoen fallen',
-      compEn: Section07En,
-      compSv: Section07Sv,
-    },
-    {
-      id: '08-empirical-application',
-      titleEn: '8. Empirical Application: A Pilot Validation',
-      titleSv: '8. Empirisk tillämpning: En pilotvalidering',
-      compEn: Section08En,
-      compSv: Section08Sv,
-    },
-    {
-      id: '09-limitations-and-next-steps',
-      titleEn: '9. Limitations and Next Steps',
-      titleSv: '9. Begränsningar och nästa steg',
-      compEn: Section09En,
-      compSv: Section09Sv,
-    },
-    {
-      id: 'appendix-a',
-      titleEn: 'Appendix A: Parameter Estimation Guide',
-      titleSv: 'Appendix A: Guide för parameteruppskattning',
-      compEn: AppendixAEn,
-      compSv: AppendixASv,
-    },
-    {
-      id: 'appendix-b',
-      titleEn: 'Appendix B: Country Calibration Table',
-      titleSv: 'Appendix B: Landkalibreringstabell',
-      compEn: AppendixBEn,
-      compSv: AppendixBSv,
-    },
-    {
-      id: 'appendix-c',
-      titleEn: 'Appendix C: Data Sources and Availability Matrix',
-      titleSv: 'Appendix C: Datakällor och tillgänglighetsmatris',
-      compEn: AppendixCEn,
-      compSv: AppendixCSv,
-    },
-    {
-      id: 'appendix-d',
-      titleEn: 'Appendix D: Mathematical Appendix',
-      titleSv: 'Appendix D: Matematiskt appendix',
-      compEn: AppendixDEn,
-      compSv: AppendixDSv,
-    },
+    { id: '01-introduction',                      titleEn: '1. Introduction: From Diagnosis to Measurement',                titleSv: '1. Introduktion: Från diagnos till mätning' },
+    { id: '02-dimensionality-estimation-problem', titleEn: '2. The Dimensionality Estimation Problem',                     titleSv: '2. Dimensionalitetsuppskattningsproblemet' },
+    { id: '03-eight-parameters',                  titleEn: '3. The Eight Parameters',                                      titleSv: '3. De åtta parametrarna' },
+    { id: '04-measurement-paradox',               titleEn: '4. The Measurement Paradox',                                   titleSv: '4. Mätparadoxen' },
+    { id: '05-composite-variety-gap-index',       titleEn: '5. The Composite Variety Gap Index',                           titleSv: '5. Det sammansatta varietetsgap-indexet' },
+    { id: '06-dynamic-extension',                 titleEn: '6. Dynamic Extension: Measuring the Rate of Gap Change',       titleSv: '6. Dynamisk utvidgning: Mätning av gapets förändringshastighet' },
+    { id: '07-calibration',                       titleEn: '7. Calibration Against the Twenty-One Cases',                  titleSv: '7. Kalibrering mot de tjugoen fallen' },
+    { id: '08-empirical-application',             titleEn: '8. Empirical Application: A Pilot Validation',                 titleSv: '8. Empirisk tillämpning: En pilotvalidering' },
+    { id: '09-limitations-and-next-steps',        titleEn: '9. Limitations and Next Steps',                                titleSv: '9. Begränsningar och nästa steg' },
+    { id: 'appendix-a',                           titleEn: 'Appendix A: Parameter Estimation Guide',                       titleSv: 'Appendix A: Guide för parameteruppskattning' },
+    { id: 'appendix-b',                           titleEn: 'Appendix B: Country Calibration Table',                        titleSv: 'Appendix B: Landkalibreringstabell' },
+    { id: 'appendix-c',                           titleEn: 'Appendix C: Data Sources and Availability Matrix',             titleSv: 'Appendix C: Datakällor och tillgänglighetsmatris' },
+    { id: 'appendix-d',                           titleEn: 'Appendix D: Mathematical Appendix',                            titleSv: 'Appendix D: Matematiskt appendix' },
   ];
 
-  // --- 3. TRANSLATIONS ---
-
+  // --- 4. UI TRANSLATIONS & METADATA (unchanged) ---
   const ui = {
     en: {
       tag: 'Working Paper · Series VIII',
@@ -155,7 +99,7 @@
         { href: '/working-papers/the-variety-gap', label: 'Paper VI: The Variety Gap →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Paper VII: The Architecture of Governance Failure →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
-        { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
+        { href: '/working-papers/requisite-observer-diversity', label: 'Paper X: Requisite Observer Diversity →' },
         { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
@@ -182,7 +126,7 @@
         { href: '/working-papers/the-variety-gap', label: 'Rapport VI: Variationsgapet →' },
         { href: '/working-papers/architecture-of-governance-failure', label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
-        { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
+        { href: '/working-papers/requisite-observer-diversity', label: 'Rapport X: Nödvändig observatörsmångfald →' },
         { href: '/working-papers/reform-exhaustion', label: 'Rapport XI: Reformutmattning →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
@@ -212,8 +156,7 @@
     },
   };
 
-  // --- 4. REACTIVE LOGIC ---
-
+  // --- 5. REACTIVE LOGIC ---
   let activeSection = $state('01-introduction');
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
@@ -224,8 +167,47 @@
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  function sectionComp(section: typeof contentMap[0]) {
-    return currentLang === 'sv' ? section.compSv : section.compEn;
+  // Pre‑render LaTeX with KaTeX, then parse markdown
+  function sectionHtml(section: typeof contentMap[0]): string {
+    const lang = currentLang as 'en' | 'sv';
+    const md = rawText[lang]?.[section.id] ?? '';
+    let content = md.replace(/^---[\s\S]*?---\n/, '');
+
+    const blocks: string[] = [];
+
+    // Display math \[ ... \]
+    content = content.replace(/\\\[([\s\S]*?)\\\]/g, (match, tex) => {
+      try {
+        const rendered = katex.renderToString(tex.trim(), { displayMode: true, throwOnError: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX display error:', e);
+        blocks.push(match);
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Inline math \( ... \)
+    content = content.replace(/\\\(([\s\S]*?)\\\)/g, (match, tex) => {
+      try {
+        const rendered = katex.renderToString(tex.trim(), { displayMode: false, throwOnError: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX inline error:', e);
+        blocks.push(match);
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Convert markdown to HTML
+    let html = marked.parse(content, { breaks: false, gfm: true }) as string;
+
+    // Restore pre‑rendered KaTeX HTML
+    html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+
+    return html;
   }
 
   function scrollTo(id: string) {
@@ -350,7 +332,7 @@
               --tw-prose-pre-bg: var(--color-card-bg);
               --tw-prose-pre-code: #1a1a1a;
             ">
-            <svelte:component this={sectionComp(section)} />
+            {@html sectionHtml(section)}
           </article>
         </div>
         {#if section.id !== 'appendix-d'}
