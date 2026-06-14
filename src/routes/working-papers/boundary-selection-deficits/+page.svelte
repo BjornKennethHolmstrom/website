@@ -99,6 +99,7 @@
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
         { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper asks whether a controller with perfect internal observation and actuation can still fail — and answers yes, if it has drawn the wrong system boundary. When causally relevant dynamics fall outside a controller\'s jurisdictional perimeter, they become unmodeled disturbances that feed back through the M-Δ loop, destabilising the system from outside any internal dashboard\'s view.',
@@ -106,7 +107,7 @@
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
       contextOutro: 'The paper introduces the boundary mismatch index B, the pooling paradox, and the Information-Actuation Frontier connecting boundary selection to delegation depth. The design response is polycentric, functionally specific jurisdictional geometries that match governance scale to the coupling structure of the dynamics they govern. Paper XII opens Cycle Two of the series.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -129,6 +130,7 @@
         { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
         { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna rapport frågar om en kontrollant med perfekt intern observation och aktivering ändå kan misslyckas — och svarar ja, om den har dragit fel systemgräns. När kausalt relevanta dynamiker faller utanför kontrollantens jurisdiktionella gräns blir de omodellerade störningar som återkopplas genom M-Δ-loopen och destabiliserar systemet utom synhåll för interna instrumentpaneler.',
@@ -136,7 +138,7 @@
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
       contextOutro: 'Rapporten introducerar gränsmatchningsindexet B, poolningsparadoxen och informations-aktiveringsfronten som kopplar gränsval till delegationsdjup. Designsvaret är polycentriska, funktionsspecifika jurisdiktionella geometrier som matchar styrningsskalan till kopplingsstrukturen hos de dynamiker som styrs. Rapport XII inleder seriens andra cykel.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -194,7 +196,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | GaE Working Paper"
   description={meta.description}
   type="article"
   publishedTime="2026-06"
@@ -206,7 +208,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

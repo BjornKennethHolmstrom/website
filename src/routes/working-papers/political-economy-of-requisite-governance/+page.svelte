@@ -139,6 +139,7 @@
         { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Paper IX moves the Governance as Engineering series from diagnostic analysis to the dynamics of adoption. It models the transition to requisite governance as a contested control problem, pitting reform coalitions against an incumbent controller that benefits from the current architecture. The paper formalises three structural traps, derives design principles for transition mechanisms, and builds three simulations to explore the dynamics.',
@@ -146,7 +147,7 @@
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
       contextOutro: 'The central finding: whether a transition succeeds depends not on political will or resources, but on the variety budget and latency structure of the transition pathway itself. This paper gives that pathway a formal grammar.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -169,6 +170,7 @@
         { href: '/working-papers/reform-exhaustion', label: 'Rapport XI: Reformutmattning →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Rapport IX för serien Styrning som ingenjörskonst från diagnostisk analys till förändringens dynamik. Den modellerar övergången till nödvändig styrning som ett kontrollerat kontrollproblem där reformkoalitioner ställs mot en etablerad kontrollant som gynnas av den nuvarande arkitekturen. Rapporten formaliserar tre strukturella fällor, härleder konstruktionsprinciper för övergångsmekanismer och bygger tre simuleringar för att utforska dynamiken.',
@@ -176,7 +178,7 @@
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
       contextOutro: 'Kärnresultatet: om en övergång lyckas beror inte på politisk vilja eller resurser, utan på övergångsvägens varietetsbudget och latensstruktur. Denna rapport ger den vägen en formell grammatik.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -243,7 +245,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

@@ -28,6 +28,40 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'governanceAsAdaptiveController',
+   key: 'governanceAsAdaptiveController',
+   category: 'governance',
+   tags: [
+     'Adaptive Control',
+     'Dual Control',
+     'Exploration-Exploitation',
+     'Institutional Learning',
+     'Memory',
+     'Forgetting',
+     'Persistent Excitation',
+     'Antifragility',
+     'Model Lock-in',
+     'Exploration Starvation',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '77',
+   readTime: {
+     en: '90 min',
+     sv: '90 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/governance-as-adaptive-controller.pdf`,
+     sv: `${localBase}/governance-as-adaptive-controller-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/governance-as-adaptive-controller-cover.png',
+   readOnlinePath: '/working-papers/governance-as-adaptive-controller',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-14'
+ },
+ {
    id: 'legitimacyAsEmergentGain',
    key: 'legitimacyAsEmergentGain',
    category: 'governance',
@@ -45,10 +79,10 @@ export const papersData: Workingpaper[] = [
      'Simulation'
    ],
    year: '2026',
-   pages: '77',
+   pages: '82',
    readTime: {
-     en: '90 min',
-     sv: '90 min'
+     en: '95 min',
+     sv: '95 min'
    },
    version: '1.0',
    pdfPath: {
@@ -78,10 +112,10 @@ export const papersData: Workingpaper[] = [
      'Simulation'
    ],
    year: '2026',
-   pages: '72',
+   pages: '75',
    readTime: {
-     en: '80-85 min',
-     sv: '80-85 min'
+     en: '85 min',
+     sv: '85 min'
    },
    version: '1.0',
    pdfPath: {

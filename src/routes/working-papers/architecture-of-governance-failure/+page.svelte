@@ -65,6 +65,7 @@
         { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
       ],
       contextTitle: 'Context',
       contextIntro:

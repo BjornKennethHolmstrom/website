@@ -101,6 +101,7 @@
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'This paper treats the channel the series has so far examined only under adversarial conditions — the actuation channel through which policy intent reaches the world. A directive formulated at the centre must traverse a delegation chain of ministries, agencies, regional offices, municipalities, and street‑level staff. Each layer projects the directive onto its own operational repertoire, adds latency, and injects noise — structural properties that hold even when every actor is competent, honest, and fully compliant.',
@@ -108,7 +109,7 @@
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
       contextOutro: 'The central result is an energy law: the minimum control effort required to realise a policy target grows superlinearly with delegation depth. Deep chains do not refuse policy; they price it out — a condition the paper names reform exhaustion. It closes the series\' first theoretical cycle.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -131,6 +132,7 @@
         { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
         { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
+        { href: '/working-papers/governance-as-adaptive-controller', label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Denna rapport behandlar den kanal som serien hittills endast undersökt under antagonistiska förhållanden — aktueringskanalen genom vilken policyintentioner når verkligheten. Ett direktiv formulerat i centrum måste passera en delegationskedja av departement, myndigheter, regionkontor, kommuner och frontpersonal. Varje lager projicerar direktivet på sin egen operativa repertoar, tillför latens och injicerar brus — strukturella egenskaper som kvarstår även när varje aktör är kompetent, ärlig och fullt följsam.',
@@ -138,7 +140,7 @@
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
       contextOutro: 'Det centrala resultatet är en energilag: den minsta kontrollansträngning som krävs för att realisera ett policymål växer superlinjärt med delegationsdjupet. Djupa kedjor vägrar inte policy; de prissätter den ur räckhåll — ett tillstånd rapporten kallar reformutmattning. Den avslutar seriens första teoretiska cykel.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -201,7 +203,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | GaE Working Paper"
   description={meta.description}
   type="article"
   publishedTime="2026-06"
@@ -213,7 +215,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 
