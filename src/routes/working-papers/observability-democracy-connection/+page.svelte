@@ -35,6 +35,9 @@
   import AppendixCEn from './sections/appendix-c.md';
   import AppendixCSv from './sections/appendix-c-sv.md';
 
+  import AppendixDEn from './sections/appendix-d.md';
+  import AppendixDSv from './sections/appendix-d-sv.md';
+
   // --- 2. CONTENT STRUCTURE ---
 
   const contentMap = [
@@ -107,6 +110,13 @@
       titleSv: 'Appendix C: Referenser och källor',
       compEn: AppendixCEn,
       compSv: AppendixCSv,
+    },
+    {
+      id: 'appendix-d',
+      titleEn: 'Appendix D: Endogenous Preferences: A Limitation Acknowledgment',
+      titleSv: 'Appendix D: Endogena preferenser: Ett erkännande av en begränsning',
+      compEn: AppendixDEn,
+      compSv: AppendixDSv,
     },
   ];
 
