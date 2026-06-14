@@ -11,7 +11,7 @@ export const synthesesTranslations = {
     synthesesHubFooterLinkLabel: "Working Papers",
     furtherReadingTitle: 'Technical Foundations',
     furtherReadingIntro: 'The working papers behind this essay, and what each one adds:',
-    digestTitle: 'The series in ten findings',
+    digestTitle: 'The series in fourteen findings',
     papersDigest: [
       { ...papersEn.I, digest: 'A slow institution trying to manage a fast crisis always arrives out of phase — amplifying instability rather than correcting it. Response speed is a structural property of the architecture, not a matter of effort or political will.' },
       { ...papersEn.II, digest: 'No single institution can handle both a flooding crisis this week and a demographic shift unfolding over decades. Stable governance requires different controllers at different scales, each handling only what it can actually reach.' },
@@ -23,6 +23,10 @@ export const synthesesTranslations = {
       { ...papersEn.VIII, digest: 'The gap between what a governance system can perceive and what it actually needs to perceive can be estimated from observable data. This paper builds the measurement framework — so the diagnosis is not just qualitative, but trackable, comparable, and falsifiable.' },
       { ...papersEn.IX, digest: 'Those who benefit from the current architecture are embedded in it — with shorter response times and more institutional levers than any reform coalition. A system can look functional right up to the point where it has quietly lost the capacity to change itself. That point of no return can arrive before any crisis is visible.' },
       { ...papersEn.X, digest: 'When every monitoring system shares the same models and training data, their blind spots become identical — and invisible to all of them at once. A handful of genuinely independent observers, protected from the pressures that drive conformity, provides most of the protection against this. You don\'t need infinite diversity; you need a few voices that are actually different.' },
+      { ...papersEn.XI, digest: 'A decision reaches the public only after passing down a chain of agencies, each of which delays, narrows, and distorts it — so a reform can be genuinely decided and still arrive late, hollowed out, or not at all. Past a certain depth the chain cannot deliver the policy at any feasible cost: the reform passes, half-arrives, exhausts the will that carried it, and stops.' },
+      { ...papersEn.XII, digest: 'A government can have a perfect dashboard and still fail, because the system it is governing does not fit inside its borders — climate is the clearest case, where the dynamics that decide each nation\'s fate cross every boundary it controls. The fix is not a single world authority, which would only lengthen every chain, but boundaries drawn to match where the real couplings lie.' },
+      { ...papersEn.XIII, digest: 'Two states with identical institutions can perform completely differently, because whether directives are obeyed and reports are honest is a gain that multiplies everything the architecture does — and the designer cannot set it directly. Trust built slowly through honest delivery is resilient; trust borrowed through narrative is brittle, and suppressing bad news to protect it only hides a debt that comes due all at once.' },
+      { ...papersEn.XIV, digest: 'An institution that never tests its own model of the world stops noticing when the world moves on — and because its monitoring runs on that stale model, everything looks fine right up to the failure. Staying calibrated means treating each action as an experiment, and protecting spaces where the system can keep experimenting without betting everything on the result.' },
     ],
     synthesesItems: [
       {
@@ -60,6 +64,7 @@ export const synthesesTranslations = {
                   { ...papersEn.VI, reason: 'The formal definition of the Variety Gap and the Goodhart-Ashby synthesis: why optimising a narrow dashboard destroys the correlations that made it informative.' },
                   { ...papersEn.II, reason: 'Why the slow variable is invisible: no single-scale controller can cover fast shocks, seasonal cycles, and decadal trends at once — only nested, fractal architectures can.' },
                   { ...papersEn.X, reason: 'The new fragility: when every monitoring system shares the same models and data, their blind spots become correlated — and the next collapse is invisible to all of them at once.' },
+                  { ...papersEn.XII, reason: 'Why no national dashboard, however good, can govern the climate: the carbon cycle is one coupled system no border encloses, and enlarging the jurisdiction to capture it only lengthens the chains — so the answer is boundaries matched to the couplings, not a single global one.' },
                 ],
       },
       {
@@ -72,6 +77,7 @@ export const synthesesTranslations = {
                   { ...papersEn.III, reason: 'The mathematics of the narrowed channel: why routing all signals through one node destroys the variety they carry, however capable the leader.' },
                   { ...papersEn.VII, reason: 'The immune system across fifteen jurisdictions: the Control-Blindness-Shock Loop and its cousins, documented from Russia and China to democratic systems.' },
                   { ...papersEn.IX, reason: 'Incumbent resistance modelled as an adaptive controller: why it structurally outpaces reform coalitions, and why forcing change faster than the system\'s latency allows triggers crisis rather than correction.' },
+                  { ...papersEn.XIII, reason: 'The engine inside the loop: legitimacy as the gain the strongman cannot command, why borrowed legitimacy collapses suddenly, and how suppressing observation to protect it accumulates the hidden debt that the eventual shock is paying off.' },
                 ],
       },
       {
@@ -82,6 +88,7 @@ export const synthesesTranslations = {
         borderColor: 'border-l-blue-500 dark:border-l-blue-400',
         furtherReading: [
                   { ...papersEn.III, reason: 'The result this essay rests on: the constitutional unobservability threshold, crossed at roughly two to three representation layers, with the full simulation and its parameters.' },
+                  { ...papersEn.XI, reason: 'The other half of the loop: even when an assembly produces a faithful signal, the decided policy still has to travel back down a delegation chain that delays and distorts it — why reforms can be decided faithfully and delivered unfaithfully, and where that chain stops being able to deliver at all.' },
                   { ...papersEn.I, reason: 'The latency foundation: why every controller has a gain ceiling set by its response delay, and what that means for institutions answering this year\'s problems with last year\'s information.' },
                   { ...papersEn.IX, reason: 'Why shortening the chain is resisted: reforms that threaten the layers are absorbed by them — and the design principles for transitions that survive.' },
                 ],
@@ -97,6 +104,7 @@ export const synthesesTranslations = {
                   { ...papersEn.X, reason: 'The paper written for this audience: why consolidation onto shared foundation models and training corpora collapses the observer ensemble, with the ensemble variance equation and the simulation behind the warning.' },
                   { ...papersEn.IX, reason: 'Why institutional adaptation may be too slow even when the risk is identified: transition bandwidth, and the trap where a system still functions but can no longer redesign itself.' },
                   { ...papersEn.V, reason: 'The compounding result: why simultaneous architectural failures multiply rather than add, leaving a busy system governing noise.' },
+                  { ...papersEn.XIV, reason: 'The dynamic face of Goodhart: even a well-specified objective decays as the world moves, so a system must keep exploring to stay calibrated — and the mathematics of doing that safely is the mathematics of safe recursive self-improvement, viewed from the governance side.' },
                 ],
       },
       {
@@ -109,6 +117,7 @@ export const synthesesTranslations = {
                   { ...papersEn.VI, reason: 'The meta-governance argument formalised: value architectures that can evolve, and the variety gap as the measure of what a stage of governance cannot yet perceive.' },
                   { ...papersEn.IX, reason: 'The friction between stages: why structurally superior architectures don\'t simply win — incumbent resistance, transition bandwidth, and the point of no return where a system loses the capacity to evolve.' },
                   { ...papersEn.X, reason: 'What second-tier actually requires: not a single integral observer but a structurally protected ensemble of decorrelated ones — the engineering content of the leap.' },
+                  { ...papersEn.XIV, reason: 'The engineering content of the meta-governance imperative: evolvability as a learning problem with a specific failure mode (model lock-in), and why the protected experimental space is the device that makes a stage\'s self-transcendence survivable.' },
                 ],
       },
       {
@@ -121,6 +130,7 @@ export const synthesesTranslations = {
                   { ...papersEn.IV, reason: 'The commons result at the heart of the essay: observation dimensionality, not enforcement capacity, determines whether ecosystems survive their governance.' },
                   { ...papersEn.II, reason: 'Why institutions are deaf to the slow signals: the frequency-latency constraint, and the nested architectures that close all frequency bands at once.' },
                   { ...papersEn.X, reason: 'Planetary sensing as an ensemble problem: why Earth observation consolidated into shared models and pipelines reproduces, at global scale, the blindness the essay describes.' },
+                  { ...papersEn.XII, reason: 'Why hearing the Earth is not yet governing it: perception has no perimeter but authority does, and a living system is defined by the couplings a boundary cuts — the case for boundaries matched to the Earth\'s seams rather than the inherited map.' },
                 ],
       },
       {
@@ -134,6 +144,10 @@ export const synthesesTranslations = {
                   { ...papersEn.VIII, reason: 'From concept to measurement: the parametric framework and composite index, applied across the series\' country and organisational cases.' },
                   { ...papersEn.IX, reason: 'The dynamics of change: transition bandwidth, incumbent resistance, and the limits of peaceful architectural reform.' },
                   { ...papersEn.X, reason: 'The closing argument: why everything else depends on maintaining a diverse, decorrelated ensemble of observers.' },
+                  { ...papersEn.XI, reason: 'The actuation channel: why a decided policy still has to survive the descent to delivery, and the reform exhaustion that hollows out reforms that nominally passed.' },
+                  { ...papersEn.XII, reason: 'The third axis of the grammar: boundary selection, why climate defeats every national controller, and the pooling paradox that rules out a single global fix.' },
+                  { ...papersEn.XIII, reason: 'The gain beneath both channels: legitimacy as the variable the designer cannot set, built versus borrowed, and the transparency trap.' },
+                  { ...papersEn.XIV, reason: 'The capacity to keep seeing: governance as a learning system, model lock-in, and why protected experimental spaces are the mechanism of perceptual evolution rather than mere demonstrations.' },
                   { href: '/working-papers', label: 'The full working paper series', reason: 'Papers I–V build the control-theoretic foundations the synthesis draws on.' },
                 ],
       },
@@ -149,7 +163,7 @@ export const synthesesTranslations = {
     furtherReadingTitle: 'Tekniskt ramverk',
     furtherReadingIntro: 'Arbetsdokumenten bakom denna essä, och vad vart och ett tillför:',
     synthesesHubFooterLinkLabel: 'Arbetsdokument',
-    digestTitle: 'Serien i tio resultat',
+    digestTitle: 'Serien i fjorton resultat',
     papersDigest: [
       { ...papersSv.I, digest: 'En långsam institution som försöker hantera en snabb kris anländer alltid i fel fas — och förstärker instabiliteten snarare än att korrigera den. Svarshastigheten är en strukturell egenskap i arkitekturen, inte en fråga om ansträngning eller politisk vilja.' },
       { ...papersSv.II, digest: 'Ingen enskild institution kan hantera både en översvämningskris den här veckan och en demografisk förändring som utspelar sig under decennier. Stabil styrning kräver olika reglernivåer vid olika skalor, där varje nivå bara hanterar det den faktiskt kan nå.' },
@@ -161,6 +175,10 @@ export const synthesesTranslations = {
       { ...papersSv.VIII, digest: 'Gapet mellan vad ett styrningssystem kan uppfatta och vad det faktiskt behöver uppfatta kan uppskattas från observerbara data. Denna rapport bygger mätramverket — så att diagnosen inte bara är kvalitativ, utan spårbar, jämförbar och falsifierbar.' },
       { ...papersSv.IX, digest: 'De som gynnas av den nuvarande arkitekturen är inbäddade i den — med kortare svarstider och fler institutionella hävstänger än någon reformkoalition. Ett system kan se funktionsdugligt ut ända tills det tyst har förlorat förmågan att förändra sig självt. Den punkten kan nås utan att någon kris är synlig.' },
       { ...papersSv.X, digest: 'När alla övervakningssystem delar samma modeller och träningsdata blir deras blinda fläckar identiska — och osynliga för alla på en gång. En handfull genuint oberoende observatörer, skyddade från de tryck som driver konformitet, ger merparten av skyddet mot detta. Du behöver inte oändlig mångfald; du behöver några röster som faktiskt är annorlunda.' },
+      { ...papersSv.XI, digest: 'Ett beslut når allmänheten först efter att ha passerat nedför en kedja av myndigheter, där varje led fördröjer, förtränger och förvränger det — så att en reform kan vara verkligt beslutad och ändå anlända för sent, urholkad eller inte alls. Bortom ett visst djup kan kedjan inte leverera politiken till någon rimlig kostnad: reformen antas, anländer till hälften, tömmer den vilja som bar den och stannar.' },
+      { ...papersSv.XII, digest: 'En regering kan ha en perfekt instrumentpanel och ändå misslyckas, eftersom systemet den styr inte ryms innanför dess gränser — klimatet är det tydligaste fallet, där de dynamiker som avgör varje nations öde korsar alla gränser den kontrollerar. Lösningen är inte en enda världsmyndighet, som bara skulle förlänga varje kedja, utan gränser dragna för att matcha var de verkliga kopplingarna ligger.' },
+      { ...papersSv.XIII, digest: 'Två stater med identiska institutioner kan prestera helt olika, eftersom huruvida direktiv åtlyds och rapporter är ärliga är en förstärkning som multiplicerar allt arkitekturen gör — och som konstruktören inte kan ställa in direkt. Tillit byggd långsamt genom ärlig leverans är motståndskraftig; tillit lånad genom berättelse är skör, och att dölja dåliga nyheter för att skydda den gömmer bara en skuld som förfaller på en gång.' },
+      { ...papersSv.XIV, digest: 'En institution som aldrig prövar sin egen modell av världen slutar märka när världen förändras — och eftersom dess övervakning vilar på den föråldrade modellen ser allt bra ut ända fram till haveriet. Att förbli kalibrerad innebär att behandla varje handling som ett experiment och att skydda rum där systemet kan fortsätta experimentera utan att satsa allt på utfallet.' },
     ],
     synthesesItems: [
       {
@@ -201,6 +219,7 @@ export const synthesesTranslations = {
                   { ...papersSv.VI, reason: 'Den formella definitionen av varietetsgapet och Goodhart–Ashby-syntesen: varför optimering mot en smal instrumentpanel förstör de korrelationer som gjorde den informativ.' },
                   { ...papersSv.II, reason: 'Varför den långsamma variabeln är osynlig: ingen styrning på en enda skala kan täcka snabba chocker, säsongscykler och decennietrender samtidigt — bara nästlade, fraktala arkitekturer kan.' },
                   { ...papersSv.X, reason: 'Den nya skörheten: när alla övervakningssystem delar samma modeller och data blir deras blinda fläckar korrelerade — och nästa kollaps är osynlig för alla på en gång.' },
+                  { ...papersSv.XII, reason: 'Varför ingen nationell instrumentpanel, hur god den än är, kan styra klimatet: kolcykeln är ett enda kopplat system som ingen gräns omsluter, och att utvidga jurisdiktionen för att fånga det förlänger bara kedjorna — så svaret är gränser matchade mot kopplingarna, inte en enda global.' },
                 ],
       },
       {
@@ -214,6 +233,7 @@ export const synthesesTranslations = {
                   { ...papersSv.III, reason: 'Matematiken bakom den förträngda kanalen: varför signaler som tvingas genom en enda nod förlorar den variation de bär, oavsett hur skicklig ledaren är.' },
                   { ...papersSv.VII, reason: 'Immunsystemet i femton länder: kontroll–blindhet–chock-loopen och dess släktingar, dokumenterade från Ryssland och Kina till demokratiska system.' },
                   { ...papersSv.IX, reason: 'Etablissemangets motstånd modellerat som en adaptiv regulator: varför det strukturellt är snabbare än reformkoalitioner, och varför förändring som forceras snabbare än systemets latens tillåter utlöser kris snarare än korrigering.' },
+                  { ...papersSv.XIII, reason: 'Motorn inne i slingan: legitimitet som den förstärkning den starke mannen inte kan beordra fram, varför lånad legitimitet kollapsar plötsligt, och hur undertryckandet av observation för att skydda den ackumulerar den dolda skuld som den slutliga chocken betalar av.' },
                 ],
       },
       {
@@ -225,6 +245,7 @@ export const synthesesTranslations = {
         borderColor: 'border-l-blue-500 dark:border-l-blue-400',
         furtherReading: [
                   { ...papersSv.III, reason: 'Resultatet som essän vilar på: den konstitutionella oobserverbarhetströskeln, som passeras vid ungefär två till tre representationslager, med hela simuleringen och dess parametrar.' },
+                  { ...papersSv.XI, reason: 'Slingans andra hälft: även när en medborgarpanel producerar en trogen signal måste det fattade beslutet ändå färdas tillbaka nedför en delegeringskedja som fördröjer och förvränger det — varför reformer kan beslutas troget och levereras otroget, och var den kedjan upphör att kunna leverera över huvud taget.' },
                   { ...papersSv.I, reason: 'Latensgrunden: varför varje regulator har ett förstärkningstak som bestäms av dess svarsfördröjning, och vad det betyder för institutioner som besvarar årets problem med fjolårets information.' },
                   { ...papersSv.IX, reason: 'Varför kortare kedjor möter motstånd: reformer som hotar lagren absorberas av dem — och designprinciperna för övergångar som överlever.' },
                 ],
@@ -241,6 +262,7 @@ export const synthesesTranslations = {
                   { ...papersSv.X, reason: 'Rapporten skriven för just denna läsekrets: varför konsolidering till delade grundmodeller och träningsdata kollapsar observatörsensemblen, med ensemblevariansekvationen och simuleringen bakom varningen.' },
                   { ...papersSv.IX, reason: 'Varför institutionell anpassning kan vara för långsam även när risken är identifierad: övergångsbandbredd, och fällan där ett system fortfarande fungerar men inte längre kan omkonstruera sig självt.' },
                   { ...papersSv.V, reason: 'Multiplikationsresultatet: varför samtidiga arkitekturfel multipliceras snarare än adderas, och lämnar ett fullt sysselsatt system som styr brus.' },
+                  { ...papersSv.XIV, reason: 'Goodharts dynamiska ansikte: även ett väl specificerat mål förfaller när världen rör sig, så ett system måste fortsätta utforska för att förbli kalibrerat — och matematiken för att göra det säkert är matematiken för säker rekursiv självförbättring, sedd från styrningens sida.' },
                 ],
       },
       {
@@ -254,6 +276,7 @@ export const synthesesTranslations = {
                   { ...papersSv.VI, reason: 'Meta-styrningsargumentet formaliserat: värdearkitekturer som kan utvecklas, och varietetsgapet som måttet på vad ett styrningsstadium ännu inte kan uppfatta.' },
                   { ...papersSv.IX, reason: 'Friktionen mellan stadier: varför strukturellt överlägsna arkitekturer inte bara vinner — etablissemangets motstånd, övergångsbandbredd, och punkten utan återvändo där ett system förlorar förmågan att utvecklas.' },
                   { ...papersSv.X, reason: 'Vad andra skiktet faktiskt kräver: inte en enda integral observatör utan en strukturellt skyddad ensemble av dekorrelerade — språngets ingenjörsinnehåll.' },
+                  { ...papersSv.XIV, reason: 'Det ingenjörsmässiga innehållet i meta-styrningsimperativet: utvecklingsbarhet som ett inlärningsproblem med ett specifikt felläge (modellinlåsning), och varför det skyddade experimentutrymmet är den anordning som gör ett stadiums självöverskridande överlevbart.' },
                 ],
       },
       {
@@ -267,6 +290,7 @@ export const synthesesTranslations = {
                   { ...papersSv.IV, reason: 'Allmänningsresultatet i essäns kärna: observationens dimensionalitet, inte tillsynskapaciteten, avgör om ekosystem överlever sin styrning.' },
                   { ...papersSv.II, reason: 'Varför institutionerna är döva för de långsamma signalerna: frekvens–latens-begränsningen, och de nästlade arkitekturer som täcker alla frekvensband samtidigt.' },
                   { ...papersSv.X, reason: 'Planetär avkänning som ett ensembleproblem: varför jordobservation konsoliderad till delade modeller och pipelines återskapar, i global skala, den blindhet essän beskriver.' },
+                  { ...papersSv.XII, reason: 'Varför att höra jorden ännu inte är att styra den: perception har ingen omkrets men auktoritet har det, och ett levande system definieras av de kopplingar en gräns skär av — argumentet för gränser matchade mot jordens sömmar snarare än den nedärvda kartan.' },
                 ],
       },
       {
@@ -281,6 +305,10 @@ export const synthesesTranslations = {
                   { ...papersSv.VIII, reason: 'Från begrepp till mätning: det parametriska ramverket och sammansatta indexet, tillämpat på seriens lands- och organisationsfall.' },
                   { ...papersSv.IX, reason: 'Förändringens dynamik: övergångsbandbredd, etablissemangets motstånd och gränserna för fredlig arkitekturreform.' },
                   { ...papersSv.X, reason: 'Slutargumentet: varför allt annat beror på att upprätthålla en mångfaldig, dekorrelerad ensemble av observatörer.' },
+                  { ...papersSv.XI, reason: 'Aktueringskanalen: varför ett fattat beslut ändå måste överleva nedstigningen till leverans, och den reformutmattning som urholkar reformer som nominellt antagits.' },
+                  { ...papersSv.XII, reason: 'Grammatikens tredje axel: gränsval, varför klimatet besegrar varje nationell regulator, och poolningsparadoxen som utesluter en enda global lösning.' },
+                  { ...papersSv.XIII, reason: 'Förstärkningen under båda kanalerna: legitimitet som variabeln konstruktören inte kan ställa in, byggd kontra lånad, och transparensfällan.' },
+                  { ...papersSv.XIV, reason: 'Förmågan att fortsätta se: styrning som ett inlärningssystem, modellinlåsning, och varför skyddade experimentutrymmen är mekanismen för perceptuell utveckling snarare än bara demonstrationer.' },
                   { href: '/working-papers', label: 'Hela arbetsdokumentserien', reason: 'Rapport I–V bygger de reglertekniska grunder som syntesen vilar på.' },
                 ],
       },

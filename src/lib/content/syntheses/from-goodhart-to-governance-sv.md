@@ -16,7 +16,17 @@ Detta gäller inte bara AI:s belöningsfunktioner. Det gäller centralbanker som
 
 ---
 
-### 2. Varietetsgapet i styrning
+### 2. Bortom specifikation: Lärandekravet
+
+Avsnitt 1 framställde Goodhart-Ashby-syntesen som en egenskap hos ett fast mål: optimera en lågdimensionell proxy och den avlägsnar sig från det mål den stod för. Men det höll världen stilla. Världen håller sig inte stilla. Även ett mål som är välspecificerat och högdimensionellt idag förfaller imorgon, eftersom miljön fortsätter att generera nya dimensioner, den styrda befolkningens responser förskjuts och de kopplingar som gjorde proxyn informativ rör sig under den. Ett mått som spårade målet förra decenniet kan sluta spåra det utan att någon rör måttet. Därför har anpassningsproblemet ett tidsligt lager som specifikationsspråket döljer: det räcker inte att specificera rätt mål en gång. Systemet måste fortlöpande kontrollera om dess mål fortfarande motsvarar världen – och den kontrollen är inte gratis. Den kräver att man handlar på sätt som producerar ny information om världen, inte enbart exploaterar det systemet redan tror.
+
+Detta är den duala styrningens struktur. Varje intervention ett styrsystem gör är samtidigt en handling och ett experiment: den förflyttar världen mot ett mål och, om systemet iakttar, avslöjar hur världen svarar. En skatteförändring ändrar intäkter och blottlägger en elasticitet; en reglering ändrar beteende och blottlägger en responsfunktion. Ett system som behandlar sina interventioner enbart som handlingar kastar, varje gång det handlar, bort den information det behöver för att förbli kalibrerat – och optimal politik återspeglar detta, med en explicit utforskningsbonus som lutar handlingen mot det som mest skulle minska osäkerheten om de parametrar som kommer att bli betydelsefulla. Felmoden är *utforskningssvält*: kortsiktiga incitament driver den utforskande variansen till noll, modellen glider från verkligheten, och – detta är vad som gör den dödlig – glidningen är osynlig för systemets egen övervakning, eftersom övervakningen är byggd på just den modell som har blivit inaktuell. Det är Goodhart i rörelse: inte en proxy som blev spelad, utan en proxy som systemet slutade testa, som förfaller tyst medan varje instrumentpanel förblir grön. Samma logik ger antifragilitet en precis innebörd. Ett system som undertrycker all varians – varje chock, varje misslyckande, varje avvikande mening – kan inte identifiera de parametrar som styr dess respons på stress, eftersom dessa parametrar endast avslöjas under stress. Det maximalt stabila systemet är det maximalt fragila: det har eliminerat den excitation som dess egen kalibrering är beroende av.
+
+Här upphör styrningsproblemet och det problem denna gemenskap redan arbetar med att vara analoga och blir samma objekt. Matematiken för ett system som måste utforska för att förbli kalibrerat, behålla vad det lär sig, förkasta det som inte längre är sant och skriva om sina egna beslutsregler utan att destabilisera sig självt – dual styrning, avvägningen mellan utforskning och exploatering, excitationens varaktighet, katastrofal glömska – är matematiken för ett system som lär sig modifiera sin egen modell och, i gränsen, sin egen arkitektur. Att utforma en styrningsarkitektur som tryggt kan lära sig att omforma sig själv är strukturellt identiskt med att utforma en AI som tryggt kan lära sig att modifiera sin egen kod samtidigt som den bevarar sin anpassning. Varietetsgapet, sett från denna sida, är inte bara en diagnos av varför mänskliga institutioner blir blinda. Det är anpassningsproblemet betraktat från styrningsänden av samma rör. En gemenskap som är förtrogen med belöningshackning och specifikationsspel är redan rustad att inse att sluta gapet och anpassa ett självförbättrande system är två ansikten av ett problem – och att ingetdera löses genom en bättre specifikation, eftersom det som måste bli rätt inte är målet utan den loop som fortlöpande reviderar det.
+
+---
+
+### 3. Varietetsgapet i styrning
 
 Styrsystem är återkopplingsslingor: de observerar världen, beslutar om interventioner, handlar och observerar igen. Kvaliteten på denna observation avgör allt annat. När observationskanalen är för långsam, för brusig eller för smal styr systemet en fantom – en förenklad modell av verkligheten som med tiden avlägsnar sig från verkligheten själv.
 
@@ -30,7 +40,7 @@ Detta är inte metaforer. Det är formella, simulerbara egenskaper hos varje åt
 
 ---
 
-### 3. AI-styrningsgemenskapens eget varietetsgap
+### 4. AI-styrningsgemenskapens eget varietetsgap
 
 Den aktuella diskussionen om AI-styrning fokuserar överväldigande på AI:n som objektet som ska styras. Hur anpassar vi den? Hur reglerar vi den? Hur säkerställer vi att den gagnar mänskligheten i stället för att koncentrera makt? Dessa frågor är nödvändiga. Men de ställs inom en institutionell observationskanal som lider av alla de fyra felsätt som beskrivits ovan.
 
@@ -46,7 +56,7 @@ AI-styrningsgemenskapen försöker med andra ord lösa ett anpassningsproblem f�
 
 ---
 
-### 4. AI som en sensorisk protes
+### 5. AI som en sensorisk protes
 
 Om AI kan vidga Varietetsgapet – och det kan den, dramatiskt – kan den då också hjälpa till att sluta det?
 
@@ -64,7 +74,7 @@ Detta är inte ett förslag om algoritmisk styrning. Det är ett förslag om *pe
 
 ---
 
-### 5. Observatörsmonokulturen: Varför en gemensam protes blir blind tillsammans
+### 6. Observatörsmonokulturen: Varför en gemensam protes blir blind tillsammans
 
 Förslaget i föregående avsnitt har en dold sårbarhet som AI-gemenskapen, av alla gemenskaper, borde vara den första att se. Allt som hittills har sagts har behandlat observation som en egenskap hos en enskild kanal: hur bred, hur snabb, hur många dimensioner. Men ett styrsystem förlitar sig sällan på en enda observatör. Det förlitar sig på en ensemble – myndigheter, revisorer, journalister, forskare, modeller – vars oberoende fel antas ta ut varandra och ge en tydligare bild än någon av dem skulle kunna producera ensam. Motståndskraften hos denna ensemble beror inte på hur många observatörer den innehåller, utan på hur *dekorrelerade* deras fel är. Och om den sensoriska protesen från föregående avsnitt byggs genom att ge varje institution tillgång till samma grundmodell blir resultatet inte många nya ögon. Det blir ett öga bakom många skärmar.
 
@@ -78,7 +88,7 @@ Korrektivet är inte oändlig pluralism, vilket varken är uppnåeligt eller nö
 
 ---
 
-### 6. Förbikopplingsfällan och mätparadoxen tillämpade på AI-styrningsverktyg
+### 7. Förbikopplingsfällan och mätparadoxen tillämpade på AI-styrningsverktyg
 
 Varje förslag att använda AI som ett meta-styrningsinstrument måste konfrontera två strukturella utmaningar som detta ramverk har identifierat inom varje undersökt domän.
 
@@ -92,7 +102,7 @@ Detta är inte skäl att undvika att bygga AI-styrningsverktyg. Det är skäl at
 
 ---
 
-### 7. En forskningsagenda: simulator, mätning, pilotprojekt
+### 8. En forskningsagenda: simulator, mätning, pilotprojekt
 
 Ramverket som beskrivs här genererar en konkret, testbar forskningsagenda med tre komponenter.
 
@@ -106,7 +116,7 @@ Granskningen kräver inte att man bygger ett fullständigt AI-verktyg. Den kan i
 
 ---
 
-### 8. Inbjudan
+### 9. Inbjudan
 
 Anpassningsproblemet, brett förstått, är problemet att få ett optimeringssystem att eftersträva vad vi faktiskt vill snarare än vad vi specificerade. Det problemet börjar inte med artificiell intelligens. Det börjar med de institutioner vi redan har byggt – institutioner som optimerar för BNP samtidigt som de likviderar de sociala och ekologiska förutsättningar som välståndet vilar på, som optimerar för engagemang samtidigt som de försämrar de epistemiska allmänningarna, som optimerar för stabilitet samtidigt som de förstör den adaptiva förmåga som överlevnad på lång sikt kräver.
 

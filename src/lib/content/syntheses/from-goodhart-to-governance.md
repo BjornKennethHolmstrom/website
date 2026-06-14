@@ -16,7 +16,17 @@ This is not just about AI reward functions. It applies to central banks optimisi
 
 ---
 
-### 2. The Variety Gap in Governance
+### 2. Beyond Specification: The Learning Requirement
+
+Section 1 framed the Goodhart-Ashby synthesis as a property of a fixed objective: optimise a low-dimensional proxy and it diverges from the target it stood for. But it held the world still. The world does not hold still. Even an objective that is well-specified and high-dimensional today decays tomorrow, because the environment keeps generating new dimensions, the governed population's responses shift, and the couplings that made the proxy informative move underneath it. A measure that tracked the target last decade can stop tracking it without anyone touching the measure. So the alignment problem has a temporal layer that the language of specification obscures: it is not enough to specify the right objective once. The system must keep checking whether its objective still corresponds to the world—and that check is not free. It requires acting in ways that produce new information about the world, not merely exploiting what the system already believes.
+
+This is the structure of dual control. Every intervention a governance system makes is simultaneously an action and an experiment: it moves the world toward a goal and, if the system is watching, reveals how the world responds. A tax change alters revenue and discloses an elasticity; a regulation alters behaviour and discloses a response function. A system that treats its interventions purely as actions discards, each time it acts, the information it needs to stay calibrated—and optimal policy reflects this, carrying an explicit exploration bonus that tilts action toward whatever would most reduce uncertainty about the parameters that will come to matter. The failure mode is *exploration starvation*: short-term incentives drive the exploratory variance to zero, the model drifts from reality, and—this is what makes it lethal—the drift is invisible to the system's own monitoring, because the monitoring is built on the very model that has gone stale. It is Goodhart in motion: not a proxy that was gamed, but a proxy the system stopped testing, decaying quietly while every dashboard stays green. The same logic gives antifragility a precise meaning. A system that suppresses all variance—every shock, every failure, every dissent—cannot identify the parameters that govern its response to stress, because those parameters are revealed only under stress. The maximally stable system is the maximally fragile one: it has eliminated the excitation on which its own calibration depends.
+
+Here the governance problem and the problem this community already works on stop being analogous and become the same object. The mathematics of a system that must explore to stay calibrated, retain what it learns, discard what is no longer true, and rewrite its own decision rules without destabilising itself—dual control, the exploration–exploitation trade-off, persistence of excitation, catastrophic forgetting—is the mathematics of a system learning to modify its own model and, in the limit, its own architecture. Designing a governance architecture that can safely learn to redesign itself is structurally identical to designing an AI that can safely learn to modify its own code while preserving its alignment. The Variety Gap, seen from this side, is not only a diagnosis of why human institutions go blind. It is the alignment problem viewed from the governance end of the same pipe. A community fluent in reward hacking and specification gaming is already equipped to recognise that closing the gap and aligning a self-improving system are two faces of one problem—and that neither is solved by a better specification, because the thing that has to be got right is not the objective but the loop that keeps revising it.
+
+---
+
+### 3. The Variety Gap in Governance
 
 Governance systems are feedback control loops: they observe the world, decide on interventions, act, and observe again. The quality of that observation determines everything else. When the observation channel is too slow, too noisy, or too narrow, the system governs a phantom—a simplified model of reality that diverges from reality itself over time.
 
@@ -30,7 +40,7 @@ These are not metaphors. They are formal, simulatable properties of any feedback
 
 ---
 
-### 3. The AI Governance Community’s Own Variety Gap
+### 4. The AI Governance Community’s Own Variety Gap
 
 The current conversation about AI governance is focused overwhelmingly on the AI as the object to be governed. How do we align it? How do we regulate it? How do we ensure it benefits humanity rather than concentrating power? These are necessary questions. But they are being asked within an institutional observation channel that suffers from all four of the failure modes described above.
 
@@ -46,7 +56,7 @@ The AI governance community, in other words, is attempting to solve an alignment
 
 ---
 
-### 4. AI as a Sensory Prosthesis
+### 5. AI as a Sensory Prosthesis
 
 If AI can widen the Variety Gap—and it can, dramatically—can it also help close it?
 
@@ -64,7 +74,7 @@ This is not a proposal for algorithmic governance. It is a proposal for *percept
 
 ---
 
-### 5. The Observer Monoculture: Why a Shared Prosthesis Goes Blind Together
+### 6. The Observer Monoculture: Why a Shared Prosthesis Goes Blind Together
 
 The proposal in the previous section has a hidden vulnerability that the AI community, of all communities, should be the first to see. Everything said so far has treated observation as a property of a single channel: how wide, how fast, how many dimensions. But a governance system rarely relies on one observer. It relies on an ensemble—agencies, auditors, journalists, researchers, models—whose independent errors are supposed to cancel out, leaving a clearer picture than any one of them could produce alone. The resilience of that ensemble depends not on how many observers it contains but on how *decorrelated* their errors are. And if the sensory prosthesis of the previous section is built by giving every institution access to the same foundation model, the result is not many new eyes. It is one eye behind many screens.
 
@@ -78,7 +88,7 @@ The corrective is not infinite pluralism, which is neither achievable nor necess
 
 ---
 
-### 6. The Bypass Trap and the Measurement Paradox Applied to AI Governance Tools
+### 7. The Bypass Trap and the Measurement Paradox Applied to AI Governance Tools
 
 Any proposal to use AI as a meta-governance instrument must confront two structural challenges that this framework has identified across every domain examined.
 
@@ -92,7 +102,7 @@ These are not reasons to avoid building AI governance tools. They are reasons to
 
 ---
 
-### 7. A Research Agenda: Simulator, Measurement, Pilot
+### 8. A Research Agenda: Simulator, Measurement, Pilot
 
 The framework described here generates a concrete, testable research agenda with three components.
 
@@ -106,7 +116,7 @@ The audit does not require building a full AI tool. It can begin with manual app
 
 ---
 
-### 8. The Invitation
+### 9. The Invitation
 
 The alignment problem, understood broadly, is the problem of getting an optimisation system to pursue what we actually want rather than what we specified. That problem does not begin with artificial intelligence. It begins with the institutions we have already built—institutions that optimise for GDP while liquidating the social and ecological conditions on which prosperity depends, that optimise for engagement while degrading the epistemic commons, that optimise for stability while destroying the adaptive capacity that long-run survival requires.
 
