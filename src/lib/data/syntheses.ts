@@ -9,6 +9,10 @@ export const papersEn = {
   VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Paper VIII: Measuring the Variety Gap' },
   IX:   { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance' },
   X:    { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity' },
+  XI:   { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion' },
+  XII:  { href: '/working-papers/boundary-selection-deficits',             label: 'Paper XII: Boundary Selection Deficits' },
+  XIII: { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain' },
+  XIV:  { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller' },
 };
 
 export const papersSv = {
@@ -22,4 +26,8 @@ export const papersSv = {
   VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet' },
   IX:   { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning' },
   X:    { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald' },
+  XI:   { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning' },
+  XII:  { href: '/working-papers/boundary-selection-deficits',             label: 'Rapport XII: Gränsdragningsunderskott' },
+  XIII: { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning' },
+  XIV:  { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant' },
 };
