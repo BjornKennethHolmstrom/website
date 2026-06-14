@@ -9,6 +9,12 @@ export const synthesesTranslations = {
     synthesesHubFooter:
       "These syntheses are built on the Governance as Engineering working papers and country reports. For the full technical framework, visit the",
     synthesesHubFooterLinkLabel: "Working Papers",
+    briefFeature: {
+      badge: 'Start here',
+      title: 'The Synthesis Brief',
+      desc: 'A compact, honest map of the whole series — the structural thesis, the two theory cycles, the first preregistered empirical result, and a visible three-tier system marking how strongly each claim is made. Written for collaborators and reviewers.',
+      cta: 'Read the brief',
+    },
     furtherReadingTitle: 'Technical Foundations',
     furtherReadingIntro: 'The working papers behind this essay, and what each one adds:',
     digestTitle: 'The series in fourteen findings',
@@ -160,6 +166,12 @@ export const synthesesTranslations = {
       'Åtta vägar in i samma diagnos. Varje text är skriven för en specifik målgrupp—alla vilar på samma strukturella arkitektur. Välj den som talar till dig.',
     synthesesHubFooter:
       'Dessa synteser bygger på arbetsdokumenten och landsrapporterna inom Governance as Engineering. För det fullständiga tekniska ramverket, besök',
+    briefFeature: {
+      badge: 'Börja här',
+      title: 'Syntesöversikten',
+      desc: 'En kompakt, ärlig karta över hela serien — den strukturella tesen, de två teoricyklerna, det första förregistrerade empiriska resultatet, och ett synligt trenivåsystem som markerar hur starkt varje anspråk görs. Skriven för medarbetare och granskare.',
+      cta: 'Läs översikten',
+    },
     furtherReadingTitle: 'Tekniskt ramverk',
     furtherReadingIntro: 'Arbetsdokumenten bakom denna essä, och vad vart och ett tillför:',
     synthesesHubFooterLinkLabel: 'Arbetsdokument',

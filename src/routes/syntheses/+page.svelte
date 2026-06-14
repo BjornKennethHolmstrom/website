@@ -15,6 +15,25 @@
     <p class="mt-6 text-base opacity-60 max-w-2xl mx-auto">{$t.synthesesHubIntro}</p>
   </header>
 
+  <a  
+    href="/syntheses/brief"
+    class="relative block mb-10 rounded-2xl border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 md:p-8 hover:shadow-md transition-shadow border-l-4 border-l-amber-500 dark:border-l-amber-400"
+  >
+    <span class="absolute -top-3 left-5 inline-block rounded-full bg-amber-500 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow">
+      {$t.briefFeature.badge}
+    </span>
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold mb-2 text-[var(--color-card-text)]">{$t.briefFeature.title}</h2>
+        <p class="text-sm md:text-base opacity-80 text-[var(--color-card-text)] max-w-2xl">{$t.briefFeature.desc}</p>
+      </div>
+      <span class="inline-flex items-center whitespace-nowrap text-sm font-medium text-[var(--color-page-accent)]">
+        {$t.briefFeature.cta}
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </span>
+    </div>
+  </a>
+
   <details class="mb-12 rounded-lg border border-[var(--color-separator)] group">
     <summary class="cursor-pointer select-none px-4 py-3 font-medium flex items-center justify-between">
       {$t.digestTitle}
