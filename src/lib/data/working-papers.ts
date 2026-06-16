@@ -434,7 +434,7 @@ export const papersData: Workingpaper[] = [
      'Personal Development'
    ],
    year: '2026',
-   pages: '53',
+   pages: '54',
    readTime: {
      en: '65 min',
      sv: '65 min'

@@ -101,7 +101,7 @@ const pdfStyles = `
 
 	body {
 		font-family: 'Georgia', 'Times New Roman', serif;
-		font-size: 11pt;
+		font-size: 12pt;
 		line-height: 1.6;
 		color: #1a1a1a;
 		max-width: 100%;
