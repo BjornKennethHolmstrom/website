@@ -416,6 +416,40 @@ export const papersData: Workingpaper[] = [
 		releaseDate: '2026-02-19'
 	},
  {
+   id: 'adaptiveSelfGovernance',
+   key: 'adaptiveSelfGovernance',
+   category: 'governance',
+   tags: [
+     'Self-Governance',
+     'Adaptive Control',
+     'Reflexivity',
+     'Observer Diversity',
+     'Actuation Integrity',
+     'Self-Legitimacy',
+     'Boundary Calibration',
+     'Exploration-Exploitation',
+     'Self-Revision',
+     'Observer-Plant Identity',
+     'Systems Theory',
+     'Personal Development'
+   ],
+   year: '2026',
+   pages: 'TBD',
+   readTime: {
+     en: null,
+     sv: null
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/adaptive-self-governance.pdf`,
+     sv: `${localBase}/adaptive-self-governance-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/adaptive-self-governance-cover.png',
+   readOnlinePath: '/working-papers/adaptive-self-governance',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-16'
+ },
+ {
      id: 'selfVarietyGap',
      key: 'selfVarietyGap',
      category: 'governance',

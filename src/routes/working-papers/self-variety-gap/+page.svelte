@@ -144,7 +144,12 @@
 
   const ui = {
     en: {
-      tag: 'Whitepaper · Companion to the Governance as Engineering Series',
+      tag: 'Working Paper · Companion to the Governance as Engineering Series',
+      companionLinksLabel: 'Self Series',
+      companionLinks: [
+        { href: '/working-papers/adaptive-self-governance', label: 'Self II: Adaptive Self Governance →' },
+        // Self I is current, so not repeated
+      ],
       seriesNote: 'This paper extends the Governance as Engineering framework to the architecture of the self. It is a companion to the main series.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
@@ -165,7 +170,7 @@
       contextTitle: 'Context',
       contextIntro: 'This companion volume applies the variety‑gap framework — originally developed for governance institutions — to the individual self. The ego operates as a low‑dimensional controller; narrow personal values create blind spots that accumulate damage until crises (burnout, existential collapse) force recognition. Long‑term wellbeing requires not just broader values but a capacity for personal meta‑governance: consciously evolving one’s own value architecture.',
       contextOutro: 'Drawing on control theory, self‑regulation psychology, and contemplative neuroscience, the paper introduces the self‑variety gap (G_self) as a diagnostic for psychological blind spots and a guide to the practices — value audits, mindfulness, honest relationships — that can close it.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       viewCode: 'View Source Code',
@@ -173,7 +178,12 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Kompanjon till serien Styrning som ingenjörskonst',
+      tag: 'Arbetsdokument · Kompanjon till serien Styrning som ingenjörskonst',
+      companionLinksLabel: 'Självserien',
+      companionLinks: [
+        { href: '/working-papers/adaptive-self-governance', label: 'Själv II: Adaptiv självstyrning →' },
+        // Self I is current, so not repeated
+      ],
       seriesNote: 'Denna rapport utvidgar ramverket Styrning som ingenjörskonst till självets arkitektur. Den är en kompanjon till huvudserien.',
       seriesLinks: [
         { href: '/sv/working-papers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -194,7 +204,7 @@
       contextTitle: 'Kontext',
       contextIntro: 'Denna kompanjonvolym tillämpar variationsgap-ramverket — ursprungligen utvecklat för styrningsinstitutioner — på det individuella självet. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som ackumulerar skada tills kriser (utbrändhet, existentiell kollaps) tvingar fram insikt. Långsiktigt välbefinnande kräver inte bara bredare värderingar utan en förmåga till personlig meta-styrning: att medvetet utveckla sin egen värdearkitektur.',
       contextOutro: 'Med utgångspunkt i reglerteori, självregleringspsykologi och kontemplativ neurovetenskap introduceras själv-variationsgapet (G_self) som ett diagnostiskt verktyg för psykologiska blinda fläckar och en guide till de praktiker — värdegranskning, medveten närvaro, ärliga relationer — som kan minska det.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
       viewCode: 'Visa källkod',
@@ -241,7 +251,7 @@
   function copyCitation() {
     const citation = currentLang === 'sv'
       ? `Holmström, B. K. (2026). Variationsgapet i självet: Vad en person optimerar för avgör vad de kan uppfatta. GGF Vitboksserie, kompanjonvolym.`
-      : `Holmström, B. K. (2026). The Variety Gap in the Self: What a Person Optimizes For Determines What They Can Perceive. GGF Whitepaper Series, companion volume.`;
+      : `Holmström, B. K. (2026). The Variety Gap in the Self: What a Person Optimizes For Determines What They Can Perceive. GaE Working Paper Series, companion volume.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -261,8 +271,23 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
+    </div>
+
+    <!-- Companion note (Self I) -->
+    <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
+      {t.companionNote}
+      <div class="mt-2 space-y-1">
+        <span class="font-semibold opacity-70">{t.companionLinksLabel}:</span>
+        {#each t.companionLinks as link}
+          <a href={link.href}
+            class="block font-medium hover:opacity-100"
+            style="color: var(--color-page-accent);">
+            {link.label}
+          </a>
+        {/each}
+      </div>
     </div>
 
     <!-- Series note -->

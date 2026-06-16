@@ -58,6 +58,11 @@ export const workingpapersTranslations = {
        description:
            'Extends the governance-as-engineering framework to self-governance. The ego is a low-dimensional controller; narrow personal values create blind spots that eventually return as crises. Introduces the self-variety gap (G_self) — a unifying diagnostic for psychological blind spots. Companion to the Governance as Engineering series.'
    },
+   adaptiveSelfGovernance: {
+     title: 'Adaptive Self‑Governance: The Reflexive Controller and the Limits of Self‑Revision',
+     description:
+       'Companion to The Self‑Variety Gap and Cycle Two of the Governance as Engineering series. Applies the adaptation triad — observer diversity, actuation integrity, and adaptive learning — to the self as a controller whose controller and plant are the same system. Models the correlation tax on self‑knowledge, delegation‑depth attenuation between intention and act, built vs. borrowed self‑trust, boundary calibration, and the reflexive risk of self‑revision destabilising the regime being revised. Includes formal appendices on self‑observer correlation, actuation chain attenuation, self‑legitimacy dynamics, and observer–plant identity.',
+   },
    measuringTheVarietyGap: {
      title: 'Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure',
      description:
@@ -231,6 +236,11 @@ export const workingpapersTranslations = {
        title: 'Variationsgapet i självet: Vad en person optimerar för avgör vad de kan uppfatta',
        description:
            'Utvidgar ramverket för styrning som ingenjörskonst till självstyrning. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som till slut återvänder som kriser. Introducerar själv-variationsgapet (G_self) — ett enhetligt diagnostiskt verktyg för psykologiska blinda fläckar. Komplement till serien Styrning som ingenjörskonst.'
+   },
+   adaptiveSelfGovernance: {
+     title: 'Adaptiv självstyrning: Den reflexiva kontrollanten och självrevisionens gränser',
+     description:
+       'Följeslagare till Själv‑variationsgapet och Cykel Två i serien Styrning som ingenjörskonst. Tillämpar adaptationstriaden — observatörsmångfald, aktueringsintegritet och adaptivt lärande — på självet som en kontrollant vars kontrollant och system är samma entitet. Modellerar korrelationsskatten på självkännedom, delegationsdjupets dämpning mellan intention och handling, byggd vs. lånad självtillit, gränskalibrering och den reflexiva risken att självrevision destabiliserar regimen som revideras. Innehåller formella appendix om själv‑observatörskorrelation, aktueringskedjans dämpning, själv‑legitimitetsdynamik och observatör–system‑identitet.',
    },
    measuringTheVarietyGap: {
      title: 'Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden',
