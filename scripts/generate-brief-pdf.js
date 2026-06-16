@@ -41,7 +41,7 @@ const meta = {
     file: 'brief-sv',
     title: 'Syntesöversikten',
     subtitle:
-      'Grammatiken i Governance as Engineerings fjorton arbetsdokument — vad den hävdar, hur starkt, och vad den inte gör',
+      'Grammatiken i Styrning som ingenjörkonsts fjorton arbetsdokument — vad den hävdar, hur starkt, och vad den inte gör',
     author: 'Björn Kenneth Holmström',
     date: 'Juni 2026',
     url: 'https://bjornkennethholmstrom.org/syntheses/brief',

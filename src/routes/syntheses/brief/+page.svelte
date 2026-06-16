@@ -19,7 +19,7 @@
     sv: {
       title: 'Syntesöversikten',
       subtitle:
-        'Grammatiken i Governance as Engineerings fjorton arbetsdokument — vad den hävdar, hur starkt, och vad den inte gör',
+        'Grammatiken i Styrning som ingenjörskonsts fjorton arbetsdokument — vad den hävdar, hur starkt, och vad den inte gör',
       description:
         'En kompakt, ärlig karta över hela serien för medarbetare och granskare: den strukturella tesen, de två teoricyklerna, det första förregistrerade empiriska resultatet, och ett synligt trenivåsystem som markerar hur starkt varje anspråk görs.',
       audience: 'Medarbetare, granskare och alla som utvärderar ramverket',
