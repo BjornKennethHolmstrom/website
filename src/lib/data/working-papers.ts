@@ -434,10 +434,10 @@ export const papersData: Workingpaper[] = [
      'Personal Development'
    ],
    year: '2026',
-   pages: 'TBD',
+   pages: '53',
    readTime: {
-     en: null,
-     sv: null
+     en: '65 min',
+     sv: '65 min'
    },
    version: '1.0',
    pdfPath: {

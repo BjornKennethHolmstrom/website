@@ -131,8 +131,8 @@ const pdfStyles = `
 		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 	}
 
-	.cover h1 {
-		font-size: 22pt;
+.cover h1 {
+		font-size: 24pt;
 		font-weight: bold;
 		margin-bottom: 0.3em;
 		line-height: 1.2;
@@ -140,11 +140,11 @@ const pdfStyles = `
 	}
 
 	.cover .subtitle {
-		font-size: 13pt;
+		font-size: 14pt;
 		font-style: italic;
 		margin-bottom: 0.4em;
 		color: #555;
-		line-height: 1.4;
+		line-height: 1.3;
 		max-width: 560px;
 	}
 
@@ -347,6 +347,7 @@ function generateHTML(sections) {
 	console.log('🔨 Converting markdown to HTML (pre‑rendering LaTeX)...');
 	marked.setOptions({ breaks: false, gfm: true });
 	const coverImage = getCoverImageUri();
+ const katexCssUri = 'file://' + path.resolve(path.join(__dirname, '../node_modules/katex/dist/katex.min.css')).replace(/\\/g, '/');
 
 	let html = `
 <!DOCTYPE html>
@@ -354,6 +355,7 @@ function generateHTML(sections) {
 <head>
   <meta charset="UTF-8">
   <title>${meta.title}</title>
+  <link rel="stylesheet" href="${katexCssUri}" /> 
   ${pdfStyles}
 </head>
 <body>
