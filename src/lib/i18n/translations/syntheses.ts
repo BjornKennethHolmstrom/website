@@ -17,7 +17,7 @@ export const synthesesTranslations = {
     },
     furtherReadingTitle: 'Technical Foundations',
     furtherReadingIntro: 'The working papers behind this essay, and what each one adds:',
-    digestTitle: 'The series in fourteen findings',
+    digestTitle: 'The series in fifteen findings',
     papersDigest: [
       { ...papersEn.I, digest: 'A slow institution trying to manage a fast crisis always arrives out of phase — amplifying instability rather than correcting it. Response speed is a structural property of the architecture, not a matter of effort or political will.' },
       { ...papersEn.II, digest: 'No single institution can handle both a flooding crisis this week and a demographic shift unfolding over decades. Stable governance requires different controllers at different scales, each handling only what it can actually reach.' },
@@ -33,6 +33,7 @@ export const synthesesTranslations = {
       { ...papersEn.XII, digest: 'A government can have a perfect dashboard and still fail, because the system it is governing does not fit inside its borders — climate is the clearest case, where the dynamics that decide each nation\'s fate cross every boundary it controls. The fix is not a single world authority, which would only lengthen every chain, but boundaries drawn to match where the real couplings lie.' },
       { ...papersEn.XIII, digest: 'Two states with identical institutions can perform completely differently, because whether directives are obeyed and reports are honest is a gain that multiplies everything the architecture does — and the designer cannot set it directly. Trust built slowly through honest delivery is resilient; trust borrowed through narrative is brittle, and suppressing bad news to protect it only hides a debt that comes due all at once.' },
       { ...papersEn.XIV, digest: 'An institution that never tests its own model of the world stops noticing when the world moves on — and because its monitoring runs on that stale model, everything looks fine right up to the failure. Staying calibrated means treating each action as an experiment, and protecting spaces where the system can keep experimenting without betting everything on the result.' },
+      { ...papersEn.XV, digest: 'A governance system that learns brilliantly but cannot act, or that acts constantly but never re‑observes the world it is changing, will be outpaced by events regardless of how excellent any single function is. Throughput is gated by the slowest stage: information piles up behind a sluggish learning process, innovations pile up behind a blocked execution, and reality drifts away behind an observation loop that runs too late. The dynamic dual of Paper V — where static failures multiply, dynamic capacities are throttled by their minimum.' },
     ],
     synthesesItems: [
       {
@@ -175,7 +176,7 @@ export const synthesesTranslations = {
     furtherReadingTitle: 'Tekniskt ramverk',
     furtherReadingIntro: 'Arbetsdokumenten bakom denna essä, och vad vart och ett tillför:',
     synthesesHubFooterLinkLabel: 'Arbetsdokument',
-    digestTitle: 'Serien i fjorton resultat',
+    digestTitle: 'Serien i femton resultat',
     papersDigest: [
       { ...papersSv.I, digest: 'En långsam institution som försöker hantera en snabb kris anländer alltid i fel fas — och förstärker instabiliteten snarare än att korrigera den. Svarshastigheten är en strukturell egenskap i arkitekturen, inte en fråga om ansträngning eller politisk vilja.' },
       { ...papersSv.II, digest: 'Ingen enskild institution kan hantera både en översvämningskris den här veckan och en demografisk förändring som utspelar sig under decennier. Stabil styrning kräver olika reglernivåer vid olika skalor, där varje nivå bara hanterar det den faktiskt kan nå.' },
@@ -191,6 +192,7 @@ export const synthesesTranslations = {
       { ...papersSv.XII, digest: 'En regering kan ha en perfekt instrumentpanel och ändå misslyckas, eftersom systemet den styr inte ryms innanför dess gränser — klimatet är det tydligaste fallet, där de dynamiker som avgör varje nations öde korsar alla gränser den kontrollerar. Lösningen är inte en enda världsmyndighet, som bara skulle förlänga varje kedja, utan gränser dragna för att matcha var de verkliga kopplingarna ligger.' },
       { ...papersSv.XIII, digest: 'Två stater med identiska institutioner kan prestera helt olika, eftersom huruvida direktiv åtlyds och rapporter är ärliga är en förstärkning som multiplicerar allt arkitekturen gör — och som konstruktören inte kan ställa in direkt. Tillit byggd långsamt genom ärlig leverans är motståndskraftig; tillit lånad genom berättelse är skör, och att dölja dåliga nyheter för att skydda den gömmer bara en skuld som förfaller på en gång.' },
       { ...papersSv.XIV, digest: 'En institution som aldrig prövar sin egen modell av världen slutar märka när världen förändras — och eftersom dess övervakning vilar på den föråldrade modellen ser allt bra ut ända fram till haveriet. Att förbli kalibrerad innebär att behandla varje handling som ett experiment och att skydda rum där systemet kan fortsätta experimentera utan att satsa allt på utfallet.' },
+      { ...papersSv.XV, digest: 'Ett styrsystem som lär sig briljant men inte kan handla, eller som handlar ständigt men aldrig återobserverar den värld det förändrar, kommer att bli ifrånsprunget av händelserna oavsett hur utmärkt någon enskild funktion är. Genomströmningen begränsas av det långsammaste steget: information hopar sig bakom en trög lärprocess, innovationer hopar sig bakom en blockerad exekvering, och verkligheten glider iväg bakom en observationsloop som kör för sent. Den dynamiska dualen till Rapport V — där statiska tillkortakommanden multipliceras, stryps dynamiska kapaciteter av sitt minimum.' },
     ],
     synthesesItems: [
       {

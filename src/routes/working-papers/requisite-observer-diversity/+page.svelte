@@ -120,6 +120,7 @@
         { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
+        { href: '/working-papers/adaptation-bottleneck', label: 'Paper XV: The Adaptation Bottleneck →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'While earlier papers established that a single controller can only govern what it can observe, this paper asks a deeper question: what happens when the entire civilisation relies on the same epistemic infrastructure? It argues that epistemic resilience requires an observer ensemble whose effective dimensionality exceeds the uncertainty it must monitor, and that today’s rush toward shared AI foundations, consolidated sensor networks, and harmonised regulatory science is collapsing that dimensionality exactly when it is most needed.',
@@ -127,7 +128,7 @@
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
       contextOutro: 'The paper introduces Requisite Observer Diversity as a ninth structural primitive in the series’ grammar, models the monoculture attractor, and provides design principles — constitutional protection, ensemble methods, subsidiarity of observation, and a precautionary action gate — to ensure civilisations retain the capacity to see what they are doing.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -151,6 +152,7 @@
         { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
         { href: '/working-papers/governance-as-adaptive-controller', label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
+        { href: '/working-papers/adaptation-bottleneck', label: 'Rapport XV: Adaptationsflaskhalsen →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Medan tidigare rapporter fastställde att en enskild kontrollant bara kan styra det den kan observera, ställer denna rapport en djupare fråga: vad händer när hela civilisationen förlitar sig på samma epistemiska infrastruktur? Den argumenterar för att epistemisk resiliens kräver en observatörsensemble vars effektiva dimensionalitet överstiger den osäkerhet som måste övervakas, och att dagens rusning mot gemensamma AI-grundmodeller, konsoliderade sensornätverk och harmoniserad regulatorisk vetenskap kollapsar denna dimensionalitet precis när den som mest behövs.',
@@ -158,7 +160,7 @@
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
       contextOutro: 'Rapporten introducerar nödvändig observatörsmångfald som en nionde strukturell primitiv i seriens grammatik, modellerar monokulturattraktorn och tillhandahåller konstruktionsprinciper – konstitutionellt skydd, ensemblemetoder, observationernas subsidiaritet och en försiktighetsgrind – för att säkerställa att civilisationer behåller förmågan att se vad de gör.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -213,7 +215,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | GGF Whitepaper"
+  title="{meta.title} | GaE Working Paper"
   description={meta.description}
   type="article"
   publishedTime="2026-06"
@@ -225,7 +227,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

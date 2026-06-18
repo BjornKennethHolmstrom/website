@@ -161,6 +161,10 @@ export const coreTranslations = {
     geSeriesPaperXIV: {
       title: 'XIV: Governance as an Adaptive Controller',
       desc:  'Formalises governance learning as a dual control problem. Models the exploration–exploitation trade‑off, institutional memory, and persistent excitation. Derives design principles for systems that can learn to redesign themselves. Consolidates Cycle Two.',
+    },
+    geSeriesPaperXV: {
+      title: 'XV: The Adaptation Bottleneck',
+      desc:  'Treats the Sense–Learn–Execute triad as simultaneous claims on finite capacity. Shows that effective adaptive throughput is gated by the slowest stage. Identifies three backlogs and derives the dynamic dual of Paper V. Closes the loop on Cycle Two.',
     }
   },
 
@@ -523,6 +527,10 @@ export const coreTranslations = {
     geSeriesPaperXIV: {
       title: 'XIV: Styrning som en adaptiv kontrollant',
       desc:  'Formaliserar styrningens lärande som ett dubbelkontrollproblem. Modellerar avvägningen mellan utforskning och exploatering, institutionellt minne och persistent excitation. Härleder designprinciper för system som kan lära sig att omforma sig själva. Konsoliderar Cykel Två.',
+    },
+    geSeriesPaperXV: {
+      title: 'XV: Adaptationsflaskhalsen',
+      desc:  'Behandlar Sense–Learn–Execute-triaden som samtidiga anspråk på ändlig kapacitet. Visar att effektiv adaptiv genomströmning begränsas av det långsammaste steget. Identifierar tre eftersläpningar och härleder den dynamiska dualen till Rapport V. Stänger loopen för Cykel Två.',
     }
   },
 

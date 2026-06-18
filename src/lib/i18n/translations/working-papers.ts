@@ -98,6 +98,11 @@ export const workingpapersTranslations = {
      description:
        'Completes the Cycle Two adaptation triad. Models governance learning as a dual control problem, formalising the exploration–exploitation trade‑off, institutional memory, and persistent excitation. Identifies five failure modes — exploration starvation, model lock‑in, exploitation lock‑in, learning‑induced oscillation, and the forgetting‑without‑learning trap — and derives design principles for adaptive governance architectures. Paper XIV consolidates the theoretical arc of Cycle Two and opens the transition to engineering.',
    },
+   adaptationBottleneck: {
+     title: 'The Adaptation Bottleneck: Throughput Constraints on the Sense–Learn–Execute Loop',
+     description:
+       'The Sense–Learn–Execute triad was established as three separately justified requirements. This paper treats them as three simultaneous claims on finite processing capacity and shows that effective adaptive throughput is gated by the slowest stage. Identifies three backlogs — information, innovation, and reality — and derives design implications for functionally separating the loop\'s legs. The dynamic dual of Paper V: where static deficits compound, dynamic capacities are gated by their minimum. Paper XV closes the loop on Cycle Two.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -276,6 +281,11 @@ export const workingpapersTranslations = {
      title: 'Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande',
      description:
        'Fullbordar Cykel Tvås adaptationstriad. Modellerar styrningens lärande som ett dubbelkontrollproblem, formaliserar avvägningen mellan utforskning och exploatering, institutionellt minne och persistent excitation. Identifierar fem felmoder — utforskningssvält, modellfastlåsning, exploateringsfastlåsning, lärandeinducerad oscillation och fällan att glömma utan att lära — och härleder designprinciper för adaptiva styrningsarkitekturer. Rapport XIV konsoliderar Cykel Tvås teoretiska båge och öppnar övergången till ingenjörskonst.',
+   },
+   adaptationBottleneck: {
+     title: 'Adaptationsflaskhalsen: Genomströmningsbegränsningar i Sense–Learn–Execute-loopen',
+     description:
+       'Sense–Learn–Execute-triaden etablerades som tre separat motiverade krav. Denna rapport behandlar dem som tre samtidiga anspråk på ändlig processorkapacitet och visar att effektiv adaptiv genomströmning begränsas av det långsammaste steget. Identifierar tre eftersläpningar — information, innovation och verklighet — och härleder designimplikationer för funktionell separation av loopens ben. Den dynamiska dualen till Rapport V: där statiska underskott multipliceras, styrs dynamiska kapaciteter av sitt minimum. Rapport XV stänger loopen för Cykel Två.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

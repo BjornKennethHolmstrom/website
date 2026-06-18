@@ -13,6 +13,7 @@ export const papersEn = {
   XII:  { href: '/working-papers/boundary-selection-deficits',             label: 'Paper XII: Boundary Selection Deficits' },
   XIII: { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain' },
   XIV:  { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller' },
+  XV:   { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck' },
 };
 
 export const papersSv = {
@@ -30,4 +31,5 @@ export const papersSv = {
   XII:  { href: '/working-papers/boundary-selection-deficits',             label: 'Rapport XII: Gränsdragningsunderskott' },
   XIII: { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning' },
   XIV:  { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant' },
+  XV:   { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen' },
 };

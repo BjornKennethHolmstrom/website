@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'adaptationBottleneck',
+   key: 'adaptationBottleneck',
+   category: 'governance',
+   tags: [
+     'Adaptation Bottleneck',
+     'Throughput',
+     'Sense-Learn-Execute',
+     'Bottleneck Theorem',
+     'Recursive Pipeline',
+     'Information Backlog',
+     'Innovation Backlog',
+     'Reality Backlog',
+     'Dynamic Dual',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '32',
+   readTime: {
+     en: '40 min',
+     sv: '40 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/adaptation-bottleneck.pdf`,
+     sv: `${localBase}/adaptation-bottleneck-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/adaptation-bottleneck-cover.png',
+   readOnlinePath: '/working-papers/adaptation-bottleneck',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-19'
+ },
+ {
    id: 'governanceAsAdaptiveController',
    key: 'governanceAsAdaptiveController',
    category: 'governance',

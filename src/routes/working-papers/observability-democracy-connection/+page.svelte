@@ -140,6 +140,7 @@
         { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
+        { href: '/working-papers/adaptation-bottleneck', label: 'Paper XV: The Adaptation Bottleneck →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Democratic governance claims to transmit citizen preferences into policy through representative institutions. This paper asks whether that transmission is technically possible — not whether institutions are well-designed, but whether the information-theoretic properties of representation chains allow citizen preferences to survive to the policy layer at all.',
@@ -152,7 +153,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Vitbok · Serie III',
+      tag: 'Arbetsdokument · Serie III',
       seriesNote: 'Detta är den tredje rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator', label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -168,9 +169,10 @@
         { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
         { href: '/working-papers/governance-as-adaptive-controller', label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
+        { href: '/working-papers/adaptation-bottleneck', label: 'Rapport XV: Adaptationsflaskhalsen →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Demokratisk styrning hävdar att medborgarnas preferenser förmedlas till politiken via representativa institutioner. Denna vitbok frågar om den överföringen är tekniskt möjlig — inte om institutionerna är väldesignade, utan om representationskedjornas informationsteoretiska egenskaper tillåter medborgerliga preferenser att överleva till politiklagret.',
+      contextIntro: 'Demokratisk styrning hävdar att medborgarnas preferenser förmedlas till politiken via representativa institutioner. Denna artikel frågar om den överföringen är tekniskt möjlig — inte om institutionerna är väldesignade, utan om representationskedjornas informationsteoretiska egenskaper tillåter medborgerliga preferenser att överleva till politiklagret.',
       contextOutro: 'Resultatet: representationskedjor med tre eller fler lager är konstitutionellt iakttagbara. Brusvariansen överstiger den kvarvarande signalvariansen. Politiklagret kan inte återskapa sanna medborgarpreferenser oavsett institutionell kvalitet. Detta är en diagnos, inte ett recept.',
       allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
