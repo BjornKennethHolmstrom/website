@@ -95,7 +95,7 @@
       companionLinksLabel: 'Self Series',
       companionLinks: [
         { href: '/working-papers/self-variety-gap', label: 'Self I: The Variety Gap in the Self →' },
-        // Self II is current, so not repeated
+        { href: '/working-papers/self-operator', label: 'Self III: The Operator →'},
       ],
       seriesNote: 'This paper applies the Cycle Two adaptation triad — observer diversity, actuation integrity, adaptive learning — to the self as a reflexive controller. It is a companion to the main Governance as Engineering series.',
       seriesLinks: [
@@ -130,6 +130,7 @@
       companionLinksLabel: 'Självserien',
       companionLinks: [
         { href: '/working-papers/self-variety-gap', label: 'Själv I: Variationsgapet i självet →' },
+        { href: '/working-papers/self-operator', label: 'Själv III: Operatören →'},
       ],
       seriesNote: 'Denna rapport tillämpar Cykel Tvås adaptationstriad — observatörsmångfald, aktueringsintegritet, adaptivt lärande — på självet som en reflexiv kontrollant. Den är en kompanjon till huvudserien Styrning som ingenjörskonst.',
       seriesLinks: [

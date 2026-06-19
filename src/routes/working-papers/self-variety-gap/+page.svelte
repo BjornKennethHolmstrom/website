@@ -148,7 +148,7 @@
       companionLinksLabel: 'Self Series',
       companionLinks: [
         { href: '/working-papers/adaptive-self-governance', label: 'Self II: Adaptive Self Governance →' },
-        // Self I is current, so not repeated
+        { href: '/working-papers/self-operator', label: 'Self III: The Operator →'},
       ],
       seriesNote: 'This paper extends the Governance as Engineering framework to the architecture of the self. It is a companion to the main series.',
       seriesLinks: [
@@ -182,7 +182,7 @@
       companionLinksLabel: 'Självserien',
       companionLinks: [
         { href: '/working-papers/adaptive-self-governance', label: 'Själv II: Adaptiv självstyrning →' },
-        // Self I is current, so not repeated
+        { href: '/working-papers/self-operator', label: 'Själv III: Operatören →'},
       ],
       seriesNote: 'Denna rapport utvidgar ramverket Styrning som ingenjörskonst till självets arkitektur. Den är en kompanjon till huvudserien.',
       seriesLinks: [

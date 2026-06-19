@@ -103,6 +103,11 @@ export const workingpapersTranslations = {
      description:
        'The Sense–Learn–Execute triad was established as three separately justified requirements. This paper treats them as three simultaneous claims on finite processing capacity and shows that effective adaptive throughput is gated by the slowest stage. Identifies three backlogs — information, innovation, and reality — and derives design implications for functionally separating the loop\'s legs. The dynamic dual of Paper V: where static deficits compound, dynamic capacities are gated by their minimum. Paper XV closes the loop on Cycle Two.',
    },
+   selfOperator: {
+     title: 'Self III: The Operator — How Institutions Inherit the Limits of Their Nodes',
+     description:
+       'Closes the seam between the governance series and the Self papers. Derives Inherited Unobservability: an institution\'s capacity to perceive interior dimensions of the governed is upper-bounded by the perceptual capacity of the human operators through whom those dimensions must pass. Couples operator self‑opacity to distortion in estimating others\' interior states. Identifies the operator‑seeded legitimacy spiral. The final Self paper, bridging personal and institutional architecture.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -286,6 +291,11 @@ export const workingpapersTranslations = {
      title: 'Adaptationsflaskhalsen: Genomströmningsbegränsningar i Sense–Learn–Execute-loopen',
      description:
        'Sense–Learn–Execute-triaden etablerades som tre separat motiverade krav. Denna rapport behandlar dem som tre samtidiga anspråk på ändlig processorkapacitet och visar att effektiv adaptiv genomströmning begränsas av det långsammaste steget. Identifierar tre eftersläpningar — information, innovation och verklighet — och härleder designimplikationer för funktionell separation av loopens ben. Den dynamiska dualen till Rapport V: där statiska underskott multipliceras, styrs dynamiska kapaciteter av sitt minimum. Rapport XV stänger loopen för Cykel Två.',
+   },
+   selfOperator: {
+     title: 'Själv III: Operatören — Hur institutioner ärver sina noders begränsningar',
+     description:
+       'Stänger sömmen mellan styrningsserien och Själv‑artiklarna. Härleder Ärvd oobserverbarhet: institutionens förmåga att uppfatta de styrdas inre dimensioner begränsas uppåt av den perceptuella kapaciteten hos de mänskliga operatörer genom vilka dessa dimensioner måste passera. Kopplar operatörens självopacitet till förvrängning i uppskattningen av andras inre tillstånd. Identifierar den operatörssådda legitimitetsnedåtgående spiralen. Den avslutande Själv‑artikeln, som överbryggar personlig och institutionell arkitektur.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

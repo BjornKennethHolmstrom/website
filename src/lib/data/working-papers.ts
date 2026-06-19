@@ -28,6 +28,37 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'selfOperator',
+   key: 'selfOperator',
+   category: 'governance',
+   tags: [
+     'Self-Governance',
+     'Operator',
+     'Inherited Unobservability',
+     'Self-to-Other Distortion',
+     'Legitimacy Spiral',
+     'Interior States',
+     'Observer Diversity',
+     'Governance Engineering',
+     'Personal Development'
+   ],
+   year: '2026',
+   pages: '29',
+   readTime: {
+     en: '35 min',
+     sv: '35 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/self-operator.pdf`,
+     sv: `${localBase}/self-operator-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/self-operator-cover.png',
+   readOnlinePath: '/working-papers/self-operator',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-19'
+ },
+ {
    id: 'adaptationBottleneck',
    key: 'adaptationBottleneck',
    category: 'governance',

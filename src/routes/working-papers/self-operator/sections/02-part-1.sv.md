@@ -1,0 +1,27 @@
+### Del I — Ärvd oobserverbarhet
+
+#### 1.1 Noden är ett lager
+
+Rapport III modellerade representationskedjan som en försämrad kommunikationskanal. Varje lager aggregerar — vilket irreversibelt förstör inomgruppsvarians — och tillför brus; den överlevande signalen krymper multiplikativt medan bruset växer additivt, tills, bortom en tröskelkedjelängd, signalen vid policylagret domineras av brus och ingen nedströms teknik kan återvinna vad aggregeringen förstörde. Den artikeln drog en slutsats som denna nu vrider i rät vinkel. Den höll institutionell kvalitet konstant och varierade kedjestruktur, och fann att en kedja bemannad av de mest ärliga, plikttrogna representanter man kan tänka sig producerar samma observerbarhetsutfall som en bemannad av mediokra sådana. Begränsningen var konstitutionell: inbyggd i lagerantalet, likgiltig inför dygden hos de människor som befolkar lagren. **[R]**
+
+Den duala frågan är vad som händer när vi håller kedjestrukturen konstant och varierar den perceptuella kapaciteten hos ett enskilt lager. En mänsklig beslutsnod är inte bara en relästation; den är själv en observationskanal, med sin egen observationsmatris som mappar den skiva av anläggningen den står inför till den representation den skickar uppåt. Kalla den C_nod. Rapport III:s apparat säger oss redan hur vi ska läsa konsekvensen. Institutionens effektiva observationsmatris är sammansättningen av dess formella avkänningskanal och de mänskliga noder som ligger i serie med den. Om C_nod är rangdefekt i någon riktning — om operatören helt enkelt inte kan uppfatta en dimension av tillståndet framför sig, och saknar repertoar för den — då ligger den riktningen i den sammansatta matrisens nollrum, och observerbarhetsmatrisen O = [C; CA; …] förlorar rang på det motsvarande underrummet. Dimensionen producerar noll utdata oavsett sitt värde. Den är osynlig för varje observatör nedströms, precis som Rapport III:s förstörda varians var det, och av samma strukturella skäl: informationen överfördes aldrig. **[R]**
+
+#### 1.2 Principen
+
+Detta ger artikelns centrala resultat, angivet som operatörsskalans följdsats av konstitutionell oobserverbarhet.
+
+> **Ärvd oobserverbarhet.** För varje styrningsarkitektur är observerbarhet med avseende på en klass av störningar uppåt begränsad av observationskapaciteten hos de operatörsnoder genom vilka information om den störningen måste passera. En perceptuell brist vid en nod propagerar till en rangdefekt i kedjan, på det underrum noden inte kan uppfatta, oberoende av kvaliteten eller kvantiteten hos den formella avkänningsinfrastruktur som omger den. **[R]**
+
+Stringensen här är ärvd, inte ny: propositionen är en omdisponering av Rapport III:s rangargument med noden, snarare än kedjelängden, som källan till bristen. Taggen återspeglar härledningsstatus. Den bär en väsentlig kvalificering, utvecklad i Del V: påståendet är strukturellt, inte metriskt. Det säger att en nods rangdefekt propagerar; det påstår *inte* att C_nod är skattningsbar som en matris, att operatörer kan rangordnas efter hur nära deras C_nod ligger identiteten, eller att interventioner flyttar den i kalibrerade steg. Inget av det håller, och principen behöver det inte. Det strukturella uttalandet — att vad en nod inte kan uppfatta, kan kedjan inte uppfatta genom den — står på algebran allena.
+
+#### 1.3 Varför inre dimensioner binder
+
+För de flesta dimensioner är principen slack, eftersom operatören inte är den enda vägen. Yttre, mätbara drag hos anläggningen — produktion, genomströmning, efterlevnadsantal, utsläpp — har formella kanaler som routar förbi den mänskliga noden: sensorer, register, administrativa journaler, oberoende revision. En perceptuellt snäv operatör försämrar dessa dimensioner endast lokalt och återhämtningsbart, eftersom en annan kanal bär samma signal. Gränsen binder där det inte finns någon förbikoppling.
+
+Inre dimensioner är där det inte finns någon. De generativa tillstånden hos de styrda — förödmjukelse, rädsla, behovet av ordning, sårad tillhörighet, förlust av ställning — är verkliga komponenter i anläggningens sanna tillstånd, kausalt uppströms om de beteenden som så småningom registreras i data, och frånvarande från direkt mätning. De har ingen sensor. Den enda kanal genom vilken de inträder i institutionens representation är en mänsklig: en operatör som läser dem, eller misslyckas med det, av människorna framför sig. För dessa dimensioner är C_nod inte en väg bland flera; den är vägen. Dess rangdefekt är därför oåtervinningsbar, och operatörskapacitet blir den bindande begränsningen för vad institutionen kan uppfatta.
+
+> **Följdsats (den inre bindningen).** För störningar vars kritiska drag är inre i förhållande till mänskliga agenter, och som därför saknar en formell avkänningskanal som förbikopplar mänsklig perception, är operatörskapacitet den bindande begränsningen för institutionell observerbarhet. **[R]**
+
+Detta är den exakta dualen till Rapport III:s kvalitetsoberoende‑fynd, och det bär samma obekväma egg. Där kunde en välskött institution inte överbemanna en kedja som var strukturellt för lång. Här kan en välresursad institution inte överinstrumentera en operatör som är perceptuellt snäv i de dimensioner som endast passerar genom dem. Mer data hjälper inte; bättre dashboards hjälper inte; AI‑förstärkning av den formella kanalen hjälper inte — eftersom den bristfälliga kanalen är den som förstärkningen inte kan nå. Begränsningen ligger inte i infrastrukturen. Den ligger i noden, och institutionen ärver den.
+
+---
