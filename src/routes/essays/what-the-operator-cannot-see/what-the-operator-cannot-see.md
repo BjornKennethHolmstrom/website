@@ -1,10 +1,6 @@
-# What the Operator Cannot See
-
-### Structural conditions for perceiving well enough to govern
-
----
-
 ## Before you read this
+
+If you haven’t read [The Boundary and the Blind Spot](/essays/boundary-blind-spot), start there for the philosophical foundations.
 
 This is a short, practical translation of a longer body of theory — the *Governance as Engineering* papers and their *Self* sub-series — for someone who occupies a decision node and will never read the papers themselves. It treats governance as a control problem: the question of whether an institution can perceive the reality it acts on accurately enough to act well.
 

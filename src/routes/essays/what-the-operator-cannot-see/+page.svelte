@@ -1,12 +1,12 @@
-<!-- src/routes/essays/boundary-blind-spot/+page.svelte -->
+<!-- src/routes/essays/what-the-operator-cannot-see/+page.svelte -->
 <script lang="ts">
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	import SEO from '$lib/components/SEO.svelte';
 	import { language } from '$lib/stores/languageStore';
 
-	// Import the essay content
-	import ContentEn from './boundary-blind-spot.md';
-	import ContentSv from './boundary-blind-spot-sv.md';
+	// Import the essay content (adjust the file names as needed)
+	import ContentEn from './what-the-operator-cannot-see.md';
+	import ContentSv from './what-the-operator-cannot-see-sv.md';
 
 	// Determine which content to use based on language
 	let Content = $derived($language === 'sv' ? ContentSv : ContentEn);
@@ -14,20 +14,20 @@
 	// Essay metadata
 	const metadata = {
 		en: {
-			title: 'The Boundary and the Blind Spot',
-			subtitle: 'Nondual Insight and the Architecture of Governance',
-			description: 'Every governance system draws a boundary that determines what becomes visible. This essay explores how the nondual insight—that the observer is part of the observed—illuminates the structural blind spots of institutional design.',
-			published: 'May 2026',
-			readTime: '18 min read',
-			author: 'Björn Kenneth Holmström'
+			title: "What the Operator Cannot See",
+			subtitle: "Structural conditions for perceiving well enough to govern",
+			description: "A practical translation of the Governance as Engineering framework. The limits of a decision-maker's perception become the limits of the institution – and how structural diversity can correct for what no individual can perceive alone.",
+			published: "June 2026",
+			readTime: "18 min read",
+			author: "Björn Kenneth Holmström"
 		},
 		sv: {
-			title: 'Gränsen och den blinda fläcken',
-			subtitle: 'Icke‑dualitet och styrningens arkitektur',
-			description: 'Varje styrsystem drar en gräns som avgör vad som blir synligt. Denna essä utforskar hur icke‑dual insikt—att observatören är en del av det observerade—belyser de strukturella blinda fläckarna i institutionell design.',
-			published: 'maj 2026',
-			readTime: '18 min läsning',
-			author: 'Björn Kenneth Holmström'
+			title: "Vad operatören inte kan se",
+			subtitle: "Strukturella förutsättningar för att uppfatta tillräckligt väl för att styra",
+			description: "En praktisk översättning av ramverket Governance as Engineering. En beslutsfattares perceptuella gränser blir institutionens gränser – och hur strukturell mångfald kan korrigera det ingen individ kan uppfatta ensam.",
+			published: "Juni 2026",
+			readTime: "18 min läsning",
+			author: "Björn Kenneth Holmström"
 		}
 	};
 
@@ -40,7 +40,7 @@
 	description={t.description}
 	type="article"
 	publishedTime={t.published}
-	keywords="governance, nondual, consciousness, institutional design, blind spots, second-order cybernetics, variety gap, systems thinking, Ashby's Law"
+	keywords="governance, perception, institutional design, blind spots, decision-making, structural diversity, cognitive limits, leadership, operator, sensemaking"
 	section="Essays"
 />
 
@@ -100,69 +100,88 @@
 			{$language === 'en' ? 'Related Reading' : 'Relaterad läsning'}
 		</h3>
 		<div class="space-y-4">
-			<!-- Link to the new operator essay -->
+			<!-- Cross-link to The Boundary and the Blind Spot -->
 			<a
-				href="/essays/what-the-operator-cannot-see"
+				href="/essays/boundary-blind-spot"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
 				<div class="flex items-center gap-3">
-					<span class="text-3xl">👁️</span>
+					<span class="text-3xl">🔦</span>
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'What the Operator Cannot See' 
-								: 'Vad operatören inte kan se'}
+								? 'The Boundary and the Blind Spot' 
+								: 'Gränsen och den blinda fläcken'}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'The structural conditions for perceiving well enough to govern' 
-								: 'De strukturella förutsättningarna för att uppfatta tillräckligt väl för att styra'}
-						</p>
-					</div>
-				</div>
-			</a>
-
-			<!-- Another related essay (you can swap or remove) -->
-			<a
-				href="/essays/the-economy-that-cannot-see"
-				class="block p-4 rounded-lg transition-colors"
-				style="background-color: var(--color-separator);"
-			>
-				<div class="flex items-center gap-3">
-					<span class="text-3xl">🫥</span>
-					<div>
-						<h4 class="font-bold" style="color: var(--color-page-text);">
-							{$language === 'en' 
-								? 'The Economy That Cannot See' 
-								: 'Ekonomin som inte kan se'}
-						</h4>
-						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
-							{$language === 'en' 
-								? 'GDP, variety destruction, and the broken feedback loop' 
-								: 'BNP, variationsförstörelse och den brutna återkopplingsslingan'}
+								? 'Nondual insight and the architecture of governance' 
+								: 'Icke‑dualitet och styrningens arkitektur'}
 						</p>
 					</div>
 				</div>
 			</a>
 
 			<a
-				href="/essays/the-shortest-chain"
+				href="/essays/treaty-blueprint"
 				class="block p-4 rounded-lg transition-colors"
 				style="background-color: var(--color-separator);"
 			>
 				<div class="flex items-center gap-3">
-					<span class="text-3xl">🔗</span>
+					<span class="text-3xl">🌐</span>
 					<div>
 						<h4 class="font-bold" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'The Shortest Chain' 
-								: 'Den kortaste kedjan'}
+								? "Treaty for Our Only Home" 
+								: "Fördrag för Vårt Enda Hem"}
 						</h4>
 						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
 							{$language === 'en' 
-								? 'Inner governance and the limit of observation' 
-								: 'Inre styrning och observationens gräns'}
+								? 'The broader governance framework containing the Oracle Protocol' 
+								: 'Det bredare governance-ramverket som innehåller Oracle-protokollet'}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a
+				href="/essays/the-ai-mirror"
+				class="block p-4 rounded-lg transition-colors"
+				style="background-color: var(--color-separator);"
+			>
+				<div class="flex items-center gap-3">
+					<span class="text-3xl">🪞</span>
+					<div>
+						<h4 class="font-bold" style="color: var(--color-page-text);">
+							{$language === 'en' 
+								? "The AI Mirror" 
+								: "AI-spegeln"}
+						</h4>
+						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
+							{$language === 'en' 
+								? 'What our distrust of AI reveals about the nature of self' 
+								: 'Vad vår misstro mot AI avslöjar om självets natur'}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a
+				href="/essays/ai-consciousness"
+				class="block p-4 rounded-lg transition-colors"
+				style="background-color: var(--color-separator);"
+			>
+				<div class="flex items-center gap-3">
+					<span class="text-3xl">🤖</span>
+					<div>
+						<h4 class="font-bold" style="color: var(--color-page-text);">
+							{$language === 'en' 
+								? "The AI That Can't Know It's Wrong" 
+								: "AI:n som inte kan veta att den har fel"}
+						</h4>
+						<p class="text-sm opacity-70" style="color: var(--color-page-text);">
+							{$language === 'en' 
+								? 'The epistemological blind spot that makes governance essential' 
+								: 'Den epistemologiska blind fläcken som gör governance essentiell'}
 						</p>
 					</div>
 				</div>

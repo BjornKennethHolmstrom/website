@@ -1,8 +1,3 @@
-# Gränsen och den blinda fläcken  
-## Icke-dualistisk insikt och styrningens arkitektur
-
----
-
 ### 1.
 
 Varje styrsystem drar en linje. Linjen skiljer det som räknas från det som inte räknas – BNP från obetalt omsorgsarbete, nationell säkerhet från ekologisk integritet, medborgare från icke-medborgare, det observerbara från det osynliga. Denna linje finns inte i naturen. Den projiceras av själva observationsarkitekturen: mätvärdena, kategorierna, aggregeringsprocedurerna, representationskedjorna. Linjen är ett val, och valet glöms oftast bort. Det som en gång var ett beslut blir en given förutsättning. Det som en gång var en projektion blir helt enkelt ”så saker och ting är”.

@@ -1,8 +1,3 @@
-# The Boundary and the Blind Spot
-## Nondual Insight and the Architecture of Governance
-
----
-
 ### 1.
 
 Every governance system draws a line. The line separates what counts from what does not count—GDP from unpaid care, national security from ecological integrity, citizen from non-citizen, the observable from the invisible. This line is not found in nature. It is projected by the architecture of observation itself: the metrics, the categories, the aggregation procedures, the representation chains. The line is a choice, and the choice is usually forgotten. What was once a decision becomes a given. What was once a projection becomes simply "the way things are."

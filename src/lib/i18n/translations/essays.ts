@@ -14,6 +14,14 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     operatorCannotSee: {
+       title: "What the Operator Cannot See",
+       subtitle: "Structural conditions for perceiving well enough to govern",
+       desc: "A practical translation of the Governance as Engineering framework. The limits of a decision-maker's perception become the limits of the institution – and how structural diversity can correct for what no individual can perceive alone.",
+       published: "June 2026",
+       readTime: "18 min read",
+       tags: ["Governance", "Perception", "Systems Thinking", "Blind Spots", "Institutional Design"]
+     },
      boundaryBlindSpot: {
        title: 'The Boundary and the Blind Spot',
        subtitle: 'Nondual Awareness and the Architecture of Governance',
@@ -298,6 +306,14 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     operatorCannotSee: {
+       title: "Vad operatören inte kan se",
+       subtitle: "Strukturella förutsättningar för att uppfatta tillräckligt väl för att styra",
+       desc: "En praktisk översättning av ramverket Governance as Engineering. En beslutsfattares perceptuella gränser blir institutionens gränser – och hur strukturell mångfald kan korrigera det ingen individ kan uppfatta ensam.",
+       published: "juni 2026",
+       readTime: "18 min läsning",
+       tags: ["Styrning", "Perception", "Systemtänkande", "Blinda fläckar", "Institutionell design"]
+     },
      boundaryBlindSpot: {
        title: 'Gränsen och den blinda fläcken',
        subtitle: 'Icke‑dual medvetenhet och styrningens arkitektur',

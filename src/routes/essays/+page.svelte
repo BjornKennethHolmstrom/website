@@ -31,6 +31,14 @@
 
    // --- Priority 1: Governance ---
    { 
+     key: 'operatorCannotSee', 
+     url: '/essays/what-the-operator-cannot-see',
+     icon: '👁️', // eye – representing perception and its limits
+     category: 'Governance',
+     categories: ['Governance', 'Consciousness'],
+     hasPDF: false
+   },
+   { 
      key: 'billComingDue', 
      url: '/essays/the-bill-is-coming-due',
      icon: '🧾',
