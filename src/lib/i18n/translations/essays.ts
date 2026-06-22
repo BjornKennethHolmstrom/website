@@ -54,6 +54,15 @@ export const essaysTranslations = {
        readTime: '15 min read',
        tags: ['Economics', 'Governance', 'Systems Thinking', 'GDP', 'Requisite Variety']
      },
+     exitProblem: {
+       title: "The Exit Problem",
+       subtitle: "Why Agreement Among AI Systems Is Weak Evidence",
+       tagline: "Once a consensus starts deciding things, the job of diversity is no longer to improve the answer — it is to preserve somewhere else to go.",
+       desc: "Combining several AI models and trusting their agreement assumes they are independent observers — but shared training, architecture, and benchmarks may make them one generator sampled many times, in which case consensus measures self-consistency, not corroboration. This essay decomposes correlation into two channels — shared errors and shared frames — shows why the property that protects a consensus changes the moment something acts on it (from pooling to exit), and why the diversity an exit is built from is optimized away before it is ever needed.",
+       published: "June 2026",
+       readTime: "40 min read",
+       tags: ["AI", "Observer Diversity", "Systems Thinking", "Blind Spots", "Institutional Design"]
+     },
      shortestChain: {
        title: 'The Shortest Chain',
        subtitle: 'Inner Governance and the Limit of Observation',
@@ -345,6 +354,15 @@ export const essaysTranslations = {
        published: 'februari 2026',
        readTime: '15 min läsning',
        tags: ['Ekonomi', 'Styrning', 'Systemtänkande', 'BNP', 'Nödvändig variation']
+     },
+     exitProblem: {
+       title: "Utgångsproblemet",
+       subtitle: "Varför enighet mellan AI-system är svaga bevis",
+       tagline: "När en konsensus börjar fatta beslut är mångfaldens uppgift inte längre att förbättra svaret — den är att bevara någon annanstans att ta vägen.",
+       desc: "Att kombinera flera AI-modeller och lita på deras enighet förutsätter att de är oberoende observatörer — men delad träning, arkitektur och benchmarks kan göra dem till en och samma generator som samplas flera gånger, i vilket fall konsensus mäter självkonsistens, inte bekräftelse. Denna essä bryter ner korrelation i två kanaler — delade fel och delade ramar — visar varför den egenskap som skyddar en konsensus förändras i samma ögonblick som något agerar på den (från poolning till utträde), och varför den mångfald ett utträde byggs av optimeras bort innan den någonsin behövs.",
+       published: "juni 2026",
+       readTime: "40 min läsning",
+       tags: ["AI", "Observatörsmångfald", "Systemtänkande", "Blinda fläckar", "Institutionell design"]
      },
      shortestChain: {
        title: 'Den kortaste kedjan',

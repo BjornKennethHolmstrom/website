@@ -1,0 +1,81 @@
+<svg viewBox="0 0 820 600" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .title   { font-size: 26px; fill: #1a1a2e; font-weight: 700; }
+      .sub      { font-size: 15px; fill: #5a6472; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .phead    { font-size: 20px; font-weight: 700; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.05em; }
+      .pslate   { fill: #475569; }
+      .paccent  { fill: #c2761a; }
+      .psub      { font-size: 12.5px; fill: #6b7280; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .prop      { font-size: 13px; fill: #3a4250; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .nodelbl   { font-size: 13px; fill: #ffffff; font-weight: 700; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .small     { font-size: 11px; fill: #6b7280; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .smallacc  { font-size: 11px; fill: #c2761a; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 600; }
+      .chip      { font-size: 13px; font-style: italic; fill: #475569; }
+      .chipacc   { font-size: 13px; font-style: italic; fill: #c2761a; }
+      .cap       { font-size: 13.5px; fill: #475569; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    </style>
+    <marker id="arrowSlate" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrowAcc" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#c2761a"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="46" class="title">Pooling vs. exit</text>
+  <text x="40" y="70" class="sub">Two ways to spend diversity — and only one survives a consensus that acts on the world</text>
+
+  <!-- ============ LEFT PANEL: POOLING ============ -->
+  <rect x="40" y="95" width="355" height="420" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="62" y="135" class="phead pslate">POOLING</text>
+  <text x="62" y="157" class="psub">while the consensus is only read</text>
+
+  <!-- diagram: N observers -> blend -->
+  <text x="95" y="188" text-anchor="middle" class="small">observers</text>
+  <circle cx="95" cy="210" r="8" fill="#64748b"/>
+  <circle cx="95" cy="240" r="8" fill="#64748b"/>
+  <circle cx="95" cy="270" r="8" fill="#64748b"/>
+  <circle cx="95" cy="300" r="8" fill="#64748b"/>
+  <line x1="105" y1="210" x2="290" y2="255" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrowSlate)"/>
+  <line x1="105" y1="240" x2="290" y2="255" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="105" y1="270" x2="290" y2="255" stroke="#94a3b8" stroke-width="1.4"/>
+  <line x1="105" y1="300" x2="290" y2="255" stroke="#94a3b8" stroke-width="1.4" marker-end="url(#arrowSlate)"/>
+  <circle cx="315" cy="255" r="24" fill="#64748b"/>
+  <text x="315" y="259" text-anchor="middle" class="nodelbl">blend</text>
+  <text x="315" y="298" text-anchor="middle" class="small">held all at once</text>
+
+  <!-- properties -->
+  <text x="62" y="350" class="prop">• hold all observers simultaneously</text>
+  <text x="62" y="372" class="prop">• independent errors cancel in the mean</text>
+  <text x="62" y="394" class="prop">• alternatives <tspan font-weight="700">ADD</tspan> — the value is in the sum</text>
+  <text x="62" y="448" class="chip">the logic of a portfolio</text>
+
+  <!-- ============ RIGHT PANEL: EXIT ============ -->
+  <rect x="425" y="95" width="355" height="420" rx="8" fill="#fdf8f0" stroke="#e0a64e" stroke-width="2.5"/>
+  <text x="447" y="135" class="phead paccent">EXIT</text>
+  <text x="447" y="157" class="psub">once the consensus decides something</text>
+
+  <!-- diagram: A fails -> defect to B -->
+  <rect x="455" y="200" width="86" height="52" rx="6" fill="#64748b"/>
+  <text x="498" y="231" text-anchor="middle" class="nodelbl">A</text>
+  <text x="498" y="272" text-anchor="middle" class="smallacc">fails / captured</text>
+
+  <path d="M 545 215 C 610 215, 615 268, 660 282" fill="none" stroke="#c2761a" stroke-width="1.8" marker-end="url(#arrowAcc)"/>
+  <text x="612" y="232" text-anchor="middle" class="smallacc">defect</text>
+
+  <rect x="665" y="258" width="86" height="52" rx="6" fill="#fdf3e3" stroke="#e0a64e" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="708" y="289" text-anchor="middle" class="paccent" font-size="17" font-weight="700" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">B</text>
+  <text x="708" y="330" text-anchor="middle" class="small">held in reserve</text>
+
+  <!-- properties -->
+  <text x="447" y="368" class="prop">• one apparatus at a time</text>
+  <text x="447" y="390" class="prop">• B's value is the <tspan font-style="italic">unexercised</tspan> option</text>
+  <text x="447" y="412" class="prop">• alternatives <tspan font-weight="700">COMPETE</tspan> — the value is in the leaving</text>
+  <text x="447" y="462" class="chipacc">the logic of a real option</text>
+
+  <!-- Caption -->
+  <text x="40" y="552" class="cap">Performativity is the hinge: once combining the estimate <tspan font-style="italic">is</tspan> the act that enacts it, there is no fixed target left to</text>
+  <text x="40" y="574" class="cap">pool toward — the portfolio operation becomes unavailable, and leaving is the only move left.</text>
+</svg>

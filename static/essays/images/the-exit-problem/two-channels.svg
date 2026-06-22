@@ -1,0 +1,62 @@
+<svg viewBox="0 0 820 580" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .title  { font-size: 26px; fill: #1a1a2e; font-weight: 700; }
+      .sub     { font-size: 15px; fill: #5a6472; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .colhead { font-size: 14px; fill: #3a4250; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.06em; font-weight: 600; }
+      .rowsym  { font-size: 23px; fill: #1a1a2e; }
+      .rowdesc { font-size: 12.5px; fill: #6b7280; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .verdict { font-size: 27px; font-weight: 700; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.04em; }
+      .why     { font-size: 12.5px; fill: #4a5568; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .lowv    { fill: #64748b; }
+      .highv   { fill: #c2761a; }
+      .tag     { font-size: 10.5px; fill: #c2761a; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.08em; font-weight: 700; }
+      .cap     { font-size: 13.5px; fill: #475569; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="48" class="title">Two channels, each two-faced</text>
+  <text x="40" y="72" class="sub">What you want from correlation — by channel, and by relation</text>
+
+  <!-- Column headers -->
+  <text x="450" y="128" text-anchor="middle" class="colhead">WITHIN ONE APPARATUS</text>
+  <text x="690" y="128" text-anchor="middle" class="colhead">ACROSS RIVAL APPARATUSES</text>
+
+  <!-- Grid cells: low cells -->
+  <!-- error / within -->
+  <rect x="330" y="145" width="240" height="150" rx="6" fill="#eef2f6" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="200" text-anchor="middle" class="verdict lowv">LOW</text>
+  <text x="450" y="230" text-anchor="middle" class="why">pooled errors cancel —</text>
+  <text x="450" y="248" text-anchor="middle" class="why">the apparatus catches its own wobble</text>
+
+  <!-- error / across -->
+  <rect x="570" y="145" width="240" height="150" rx="6" fill="#eef2f6" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="690" y="200" text-anchor="middle" class="verdict lowv">LOW</text>
+  <text x="690" y="230" text-anchor="middle" class="why">a rival can return</text>
+  <text x="690" y="248" text-anchor="middle" class="why">a genuinely different verdict</text>
+
+  <!-- frame / within  (the only HIGH) -->
+  <rect x="330" y="295" width="240" height="150" rx="6" fill="#fdf3e3" stroke="#e0a64e" stroke-width="2.5"/>
+  <text x="450" y="350" text-anchor="middle" class="verdict highv">HIGH</text>
+  <text x="450" y="380" text-anchor="middle" class="why">parts share enough vocabulary</text>
+  <text x="450" y="398" text-anchor="middle" class="why">to combine into one answer at all</text>
+  <text x="450" y="426" text-anchor="middle" class="tag">THE ONLY ONE YOU WANT HIGH</text>
+
+  <!-- frame / across -->
+  <rect x="570" y="295" width="240" height="150" rx="6" fill="#eef2f6" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="690" y="350" text-anchor="middle" class="verdict lowv">LOW</text>
+  <text x="690" y="380" text-anchor="middle" class="why">access to the hypotheses</text>
+  <text x="690" y="398" text-anchor="middle" class="why">the dominant frame excludes</text>
+
+  <!-- Row labels -->
+  <text x="305" y="214" text-anchor="end" class="rowsym">&#961;<tspan font-size="15px" dy="4">error</tspan></text>
+  <text x="305" y="236" text-anchor="end" class="rowdesc">shared mistakes</text>
+
+  <text x="305" y="364" text-anchor="end" class="rowsym">&#961;<tspan font-size="15px" dy="4">frame</tspan></text>
+  <text x="305" y="386" text-anchor="end" class="rowdesc">shared vocabulary / hypothesis space</text>
+
+  <!-- Caption -->
+  <text x="40" y="510" class="cap">Three of the four cells want low correlation. The sole exception — high frame-correlation <tspan font-style="italic">within</tspan> an apparatus —</text>
+  <text x="40" y="532" class="cap">is only what lets its parts combine into a single answer. Everything else, you want decorrelated.</text>
+</svg>

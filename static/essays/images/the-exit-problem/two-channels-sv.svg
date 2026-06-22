@@ -1,0 +1,62 @@
+<svg viewBox="0 0 820 580" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .title  { font-size: 26px; fill: #1a1a2e; font-weight: 700; }
+      .sub     { font-size: 15px; fill: #5a6472; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .colhead { font-size: 14px; fill: #3a4250; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.06em; font-weight: 600; }
+      .rowsym  { font-size: 23px; fill: #1a1a2e; }
+      .rowdesc { font-size: 12.5px; fill: #6b7280; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .verdict { font-size: 27px; font-weight: 700; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.04em; }
+      .why     { font-size: 12.5px; fill: #4a5568; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .lowv    { fill: #64748b; }
+      .highv   { fill: #c2761a; }
+      .tag     { font-size: 10.5px; fill: #c2761a; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: 0.08em; font-weight: 700; }
+      .cap     { font-size: 13.5px; fill: #475569; font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="48" class="title">Två kanaler, var och en med två ansikten</text>
+  <text x="40" y="72" class="sub">Vad du vill ha från korrelation — per kanal, och per relation</text>
+
+  <!-- Column headers -->
+  <text x="450" y="128" text-anchor="middle" class="colhead">INOM EN APPARAT</text>
+  <text x="690" y="128" text-anchor="middle" class="colhead">MELLAN RIVALISERANDE APPARATER</text>
+
+  <!-- Grid cells: low cells -->
+  <!-- error / within -->
+  <rect x="330" y="145" width="240" height="150" rx="6" fill="#eef2f6" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="200" text-anchor="middle" class="verdict lowv">LÅG</text>
+  <text x="450" y="230" text-anchor="middle" class="why">poolade fel tar ut varandra —</text>
+  <text x="450" y="248" text-anchor="middle" class="why">apparaten fångar sin egen vacklan</text>
+
+  <!-- error / across -->
+  <rect x="570" y="145" width="240" height="150" rx="6" fill="#eef2f6" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="690" y="200" text-anchor="middle" class="verdict lowv">LÅG</text>
+  <text x="690" y="230" text-anchor="middle" class="why">en rival kan ge</text>
+  <text x="690" y="248" text-anchor="middle" class="why">en genuint annorlunda dom</text>
+
+  <!-- frame / within  (the only HIGH) -->
+  <rect x="330" y="295" width="240" height="150" rx="6" fill="#fdf3e3" stroke="#e0a64e" stroke-width="2.5"/>
+  <text x="450" y="350" text-anchor="middle" class="verdict highv">HÖG</text>
+  <text x="450" y="380" text-anchor="middle" class="why">delarna delar tillräckligt med vokabulär</text>
+  <text x="450" y="398" text-anchor="middle" class="why">för att kunna kombineras till ett enda svar</text>
+  <text x="450" y="426" text-anchor="middle" class="tag">DEN ENDA DU VILL HA HÖG</text>
+
+  <!-- frame / across -->
+  <rect x="570" y="295" width="240" height="150" rx="6" fill="#eef2f6" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="690" y="350" text-anchor="middle" class="verdict lowv">LÅG</text>
+  <text x="690" y="380" text-anchor="middle" class="why">tillgång till de hypoteser</text>
+  <text x="690" y="398" text-anchor="middle" class="why">den dominanta ramen utesluter</text>
+
+  <!-- Row labels -->
+  <text x="305" y="214" text-anchor="end" class="rowsym">&#961;<tspan font-size="15px" dy="4">error</tspan></text>
+  <text x="305" y="236" text-anchor="end" class="rowdesc">delade misstag</text>
+
+  <text x="305" y="364" text-anchor="end" class="rowsym">&#961;<tspan font-size="15px" dy="4">frame</tspan></text>
+  <text x="305" y="386" text-anchor="end" class="rowdesc">delad vokabulär / hypotesrum</text>
+
+  <!-- Caption -->
+  <text x="40" y="510" class="cap">Tre av de fyra cellerna vill ha låg korrelation. Det enda undantaget — hög ramkorrelation <tspan font-style="italic">inom</tspan> en apparat —</text>
+  <text x="40" y="532" class="cap">är bara det som låter dess delar kombineras till ett enda svar. Allt annat vill du ha dekorrelerat.</text>
+</svg>

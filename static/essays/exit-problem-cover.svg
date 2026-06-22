@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 380 320"
+   font-family="Georgia, 'Times New Roman', serif"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="exit-problem-cover.svg"
+   width="380"
+   height="320"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0333333"
+     inkscape:cx="300"
+     inkscape:cy="420"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .eyebrow { font-size: 13px; fill: #64748b; font-family: -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; letter-spacing: 0.22em; }
+      .ttl     { font-size: 46px; fill: #1a1a2e; font-weight: 700; }
+      .subttl  { font-size: 18px; fill: #5a6472; font-style: italic; }
+      .foot    { font-size: 13px; fill: #475569; font-family: -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; letter-spacing: 0.04em; }
+    </style>
+    <marker
+       id="exitArrow"
+       markerWidth="9"
+       markerHeight="9"
+       refX="6"
+       refY="3"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <path
+         d="M 0,0 7,3 0,6 Z"
+         fill="#c2761a"
+         id="path1" />
+    </marker>
+  </defs>
+  <!-- Eyebrow -->
+  <!-- ====== GLYPH: many collapse to one; one line exits ====== -->
+  <g
+     stroke="#64748b"
+     stroke-width="1"
+     opacity="0.55"
+     id="g12"
+     transform="translate(-118.06452,-169.35484)">
+    <line
+       x1="150"
+       y1="200"
+       x2="350"
+       y2="330"
+       id="line1" />
+    <line
+       x1="150"
+       y1="224"
+       x2="350"
+       y2="330"
+       id="line2" />
+    <line
+       x1="150"
+       y1="248"
+       x2="350"
+       y2="330"
+       id="line3" />
+    <line
+       x1="150"
+       y1="272"
+       x2="350"
+       y2="330"
+       id="line4" />
+    <line
+       x1="150"
+       y1="296"
+       x2="350"
+       y2="330"
+       id="line5" />
+    <line
+       x1="150"
+       y1="320"
+       x2="350"
+       y2="330"
+       id="line6" />
+    <line
+       x1="150"
+       y1="344"
+       x2="350"
+       y2="330"
+       id="line7" />
+    <line
+       x1="150"
+       y1="368"
+       x2="350"
+       y2="330"
+       id="line8" />
+    <line
+       x1="150"
+       y1="392"
+       x2="350"
+       y2="330"
+       id="line9" />
+    <line
+       x1="150"
+       y1="416"
+       x2="350"
+       y2="330"
+       id="line10" />
+    <line
+       x1="150"
+       y1="440"
+       x2="350"
+       y2="330"
+       id="line11" />
+    <line
+       x1="150"
+       y1="464"
+       x2="350"
+       y2="330"
+       id="line12" />
+  </g>
+  <!-- collapse node (the one) -->
+  <circle
+     cx="231.93549"
+     cy="160.64516"
+     r="17"
+     fill="none"
+     stroke="#64748b"
+     stroke-width="1"
+     opacity="0.35"
+     id="circle12" />
+  <circle
+     cx="231.93549"
+     cy="160.64516"
+     r="9"
+     fill="#64748b"
+     id="circle13" />
+  <!-- the exit: one line leaving the collapsed point to a reserved alternative -->
+  <path
+     d="m 239.93548,154.64516 c 52,-24 72,-73.999999 94,-109.999999"
+     fill="none"
+     stroke="#c2761a"
+     stroke-width="2.2"
+     marker-end="url(#exitArrow)"
+     id="path13" />
+  <circle
+     cx="341.93549"
+     cy="36.645161"
+     r="12"
+     fill="#fdf3e3"
+     stroke="#e0a64e"
+     stroke-width="2"
+     stroke-dasharray="5, 4"
+     id="circle14" />
+  <!-- ====== Title block ====== -->
+  <!-- rule -->
+  <!-- Footer -->
+</svg>

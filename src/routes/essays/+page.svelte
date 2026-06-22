@@ -136,6 +136,14 @@
    
    // --- Priority 2: AI & Tech ---
    { 
+     key: 'exitProblem', 
+     url: '/essays/the-exit-problem',
+     icon: '🚪',
+     category: 'AI & Tech',
+     categories: ['AI & Tech', 'Governance'],
+     hasPDF: true
+   },
+   { 
      key: 'aiOptimizationMismatch', 
      url: '/essays/ai-optimization-mismatch',
      icon: '🎯',
