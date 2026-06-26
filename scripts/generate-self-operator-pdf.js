@@ -73,7 +73,9 @@ const sections = [
 	{ file: '06-part-5',   titleEn: 'Part V: Against Borrowed Formal Authority', titleSv: 'Del V: Mot lånad formell auktoritet' },
 	{ file: '07-part-6',   titleEn: 'Part VI: Compassion as Consequence, and the Limit of Compensation', titleSv: 'Del VI: Medkänsla som konsekvens, och kompensationens gräns' },
 	{ file: '08-part-7',   titleEn: 'Part VII: The Boundary at the Operator', titleSv: 'Del VII: Gränsen vid operatören' },
-	{ file: '09-appendix-a', titleEn: 'Appendix A: Simulation Specification', titleSv: 'Bilaga A: Simuleringsspecifikation' },
+ { file: '09-part-8',   titleEn: 'Part VIII: The Formation of the Observer', titleSv: 'Del VIII: Observatörens formation' },
+	{ file: '10-appendix-a', titleEn: 'Appendix A: Simulation Specification', titleSv: 'Bilaga A: Simuleringsspecifikation' },
+	{ file: '10-appendix-b', titleEn: 'Appendix B: The Inheritance Asymmetry', titleSv: 'Bilaga B: Arvsasymmetrin' },
 ];
 
 // ── CSS ─────────────────────────────────────────────────────────────────────

@@ -17,7 +17,9 @@
   import Part5EnRaw     from './sections/06-part-5.en.md?raw';
   import Part6EnRaw     from './sections/07-part-6.en.md?raw';
   import Part7EnRaw     from './sections/08-part-7.en.md?raw';
-  import AppendixAEnRaw from './sections/09-appendix-a.en.md?raw';
+  import Part8EnRaw     from './sections/09-part-8.en.md?raw';
+  import AppendixAEnRaw from './sections/10-appendix-a.en.md?raw';
+  import AppendixBEnRaw from './sections/10-appendix-b.en.md?raw';
 
   // Swedish
   import AbstractSvRaw  from './sections/00-abstract.sv.md?raw';
@@ -29,7 +31,9 @@
   import Part5SvRaw     from './sections/06-part-5.sv.md?raw';
   import Part6SvRaw     from './sections/07-part-6.sv.md?raw';
   import Part7SvRaw     from './sections/08-part-7.sv.md?raw';
-  import AppendixASvRaw from './sections/09-appendix-a.sv.md?raw';
+  import Part8SvRaw     from './sections/09-part-8.sv.md?raw';
+  import AppendixASvRaw from './sections/10-appendix-a.sv.md?raw';
+  import AppendixBSvRaw from './sections/10-appendix-b.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
   const rawText: Record<string, Record<string, string>> = {
@@ -37,13 +41,15 @@
       'abstract': AbstractEnRaw,
       'part-0': Part0EnRaw, 'part-1': Part1EnRaw, 'part-2': Part2EnRaw,
       'part-3': Part3EnRaw, 'part-4': Part4EnRaw, 'part-5': Part5EnRaw,
-      'part-6': Part6EnRaw, 'part-7': Part7EnRaw, 'appendix-a': AppendixAEnRaw,
+      'part-6': Part6EnRaw, 'part-7': Part7EnRaw, 'part-8': Part8EnRaw,
+      'appendix-a': AppendixAEnRaw, 'appendix-b': AppendixBEnRaw,
     },
     sv: {
       'abstract': AbstractSvRaw,
       'part-0': Part0SvRaw, 'part-1': Part1SvRaw, 'part-2': Part2SvRaw,
       'part-3': Part3SvRaw, 'part-4': Part4SvRaw, 'part-5': Part5SvRaw,
-      'part-6': Part6SvRaw, 'part-7': Part7SvRaw, 'appendix-a': AppendixASvRaw,
+      'part-6': Part6SvRaw, 'part-7': Part7SvRaw, 'part-8': Part8SvRaw, 
+      'appendix-a': AppendixASvRaw, 'appendix-b': AppendixBSvRaw,
     },
   };
 
@@ -58,7 +64,9 @@
     { id: 'part-5',   titleEn: 'Part V: Against Borrowed Formal Authority',               titleSv: 'Del V: Mot lånad formell auktoritet' },
     { id: 'part-6',   titleEn: 'Part VI: Compassion as Consequence, and the Limit of Compensation', titleSv: 'Del VI: Medkänsla som konsekvens, och kompensationens gräns' },
     { id: 'part-7',   titleEn: 'Part VII: The Boundary at the Operator',                  titleSv: 'Del VII: Gränsen vid operatören' },
+    { id: 'part-8',   titleEn: 'Part VIII: The Formation of the Observer',                  titleSv: 'Del VIII: Observatörens formation' },
     { id: 'appendix-a', titleEn: 'Appendix A: Simulation Specification',                  titleSv: 'Bilaga A: Simuleringsspecifikation' },
+    { id: 'appendix-b', titleEn: 'Appendix B: The Inheritance Asymmetry',                  titleSv: 'Bilaga B: Arvsasymmetrin' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
