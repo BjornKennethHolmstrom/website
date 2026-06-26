@@ -19,6 +19,10 @@ export const appsTranslations = {
 			downloadZip: 'Download ZIP',
 
 			// --- App Cards ---
+   echo: {
+     title: 'ECHO',
+     tagline: 'An instrument that measures whether the observers you rely on — AI models, experts, indicators — are genuinely independent, or just echoing each other.'
+   },
 			tito: {
 				title: 'TiTo Time Tracker',
 				tagline:
@@ -150,6 +154,10 @@ conceptexplorerDetail: {
 			downloadZip: 'Ladda ner ZIP',
 
 			// --- App Cards ---
+   echo: {
+     title: 'ECHO',
+     tagline: 'Ett instrument som mäter om observatörerna du förlitar dig på — AI-modeller, experter, indikatorer — verkligen är oberoende, eller bara ekar varandra.'
+   },
 			tito: {
 				title: 'TiTo Time Tracker',
 				tagline: 'En enkel och effektiv webbapplikation för att spåra tid spenderad på olika projekt.'

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ECHO">
+  <title>ECHO</title>
+  <!-- echo ripples: rings fading outward -->
+  <g fill="none" stroke="#2563eb" stroke-width="3">
+    <circle cx="32" cy="32" r="28" stroke-opacity="0.20" />
+    <circle cx="32" cy="32" r="21" stroke-opacity="0.40" />
+    <circle cx="32" cy="32" r="14" stroke-opacity="0.72" />
+  </g>
+  <!-- the source, and three "observers" lined up on one ray: many marks, one direction -->
+  <g fill="#2563eb">
+    <circle cx="32" cy="32" r="6" />
+    <circle cx="41.9" cy="22.1" r="2.6" />
+    <circle cx="46.85" cy="17.15" r="2.6" />
+    <circle cx="51.8" cy="12.2" r="2.6" />
+  </g>
+</svg>
