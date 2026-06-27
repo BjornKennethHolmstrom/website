@@ -4,7 +4,7 @@
 </script>
 
 <SEO
-  title="The Clouded Mirror — Reader's Guide"
+  title="The Clouded Mirror — Reader's Guide to Governance as Engineering"
   description="Eight accessible pathways into a unified diagnosis of why our institutions can't see the crises they create—and what we can build instead."
 />
 
