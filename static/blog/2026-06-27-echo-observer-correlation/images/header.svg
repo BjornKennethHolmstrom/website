@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Five observers that look independent collapsing into a single echoed direction">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1428"/>
+      <stop offset="1" stop-color="#080e1c"/>
+    </linearGradient>
+    <radialGradient id="srcGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#bfdbfe" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#3b82f6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nodeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7dd3fc" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#srcGlow)" opacity="0.5" transform="translate(-560,0)"/>
+
+  <!-- echo ripples at the source -->
+  <g fill="none" stroke="#3b82f6">
+    <circle cx="330" cy="315" r="64"  stroke-opacity="0.50" stroke-width="2"/>
+    <circle cx="330" cy="315" r="118" stroke-opacity="0.30" stroke-width="2"/>
+    <circle cx="330" cy="315" r="180" stroke-opacity="0.18" stroke-width="2"/>
+    <circle cx="330" cy="315" r="250" stroke-opacity="0.10" stroke-width="2"/>
+  </g>
+
+  <!-- what independence would look like: a wide, faint, dashed fan -->
+  <g stroke="#94a3b8" stroke-opacity="0.16" stroke-width="1.5" stroke-dasharray="2 7">
+    <line x1="330" y1="315" x2="690" y2="13"/>
+    <line x1="330" y1="315" x2="745" y2="95"/>
+    <line x1="330" y1="315" x2="782" y2="185"/>
+    <line x1="330" y1="315" x2="782" y2="445"/>
+    <line x1="330" y1="315" x2="745" y2="535"/>
+    <line x1="330" y1="315" x2="690" y2="617"/>
+  </g>
+  <!-- faint nodes where independent observers would scatter, on the arc -->
+  <g fill="#94a3b8" fill-opacity="0.30">
+    <circle cx="690" cy="13"  r="5"/>
+    <circle cx="745" cy="95"  r="5"/>
+    <circle cx="782" cy="185" r="5"/>
+    <circle cx="782" cy="445" r="5"/>
+    <circle cx="745" cy="535" r="5"/>
+    <circle cx="690" cy="617" r="5"/>
+  </g>
+
+  <!-- what we measured: five rays collapsed into one tight, bright bundle -->
+  <g stroke="url(#ray)" stroke-width="2.6" stroke-opacity="0.92" stroke-linecap="round">
+    <line x1="330" y1="315" x2="797" y2="266"/>
+    <line x1="330" y1="315" x2="799" y2="290"/>
+    <line x1="330" y1="315" x2="800" y2="315"/>
+    <line x1="330" y1="315" x2="799" y2="340"/>
+    <line x1="330" y1="315" x2="797" y2="364"/>
+  </g>
+  <!-- glowing end nodes of the bundle -->
+  <g>
+    <circle cx="797" cy="266" r="22" fill="url(#nodeGlow)"/>
+    <circle cx="799" cy="290" r="22" fill="url(#nodeGlow)"/>
+    <circle cx="800" cy="315" r="24" fill="url(#nodeGlow)"/>
+    <circle cx="799" cy="340" r="22" fill="url(#nodeGlow)"/>
+    <circle cx="797" cy="364" r="22" fill="url(#nodeGlow)"/>
+    <circle cx="797" cy="266" r="5.5" fill="#e0f2fe"/>
+    <circle cx="799" cy="290" r="5.5" fill="#e0f2fe"/>
+    <circle cx="800" cy="315" r="6"   fill="#ffffff"/>
+    <circle cx="799" cy="340" r="5.5" fill="#e0f2fe"/>
+    <circle cx="797" cy="364" r="5.5" fill="#e0f2fe"/>
+  </g>
+
+  <!-- the source -->
+  <circle cx="330" cy="315" r="46" fill="url(#srcGlow)"/>
+  <circle cx="330" cy="315" r="9" fill="#ffffff"/>
+
+  <!-- labels -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+    <text x="705" y="58" fill="#94a3b8" fill-opacity="0.6" font-size="20" letter-spacing="2.5" font-weight="500">IF INDEPENDENT</text>
+    <text x="848" y="308" fill="#7dd3fc" font-size="21" letter-spacing="3" font-weight="600">OBSERVED</text>
+    <text x="848" y="352" fill="#ffffff" font-size="40" font-weight="700">&#961; &#8776; 0.81</text>
+    <text x="848" y="384" fill="#cbd5e1" fill-opacity="0.7" font-size="18" font-weight="400">five models, ~one independent view</text>
+    <text x="78" y="560" fill="#bfdbfe" font-size="26" letter-spacing="6" font-weight="700">ECHO</text>
+  </g>
+</svg>

@@ -3,7 +3,7 @@ import { papersEn, papersSv } from '../../data/syntheses';
 export const synthesesTranslations = {
   en: {
     synthesesHubTitle: 'The Clouded Mirror',
-    synthesesHubSubtitle: "A Reader's Guide",
+    synthesesHubSubtitle: "A Reader's Guide to Governance as Engineering",
     synthesesHubIntro:
       "Eight pathways into the same diagnosis. Each is written for a different audience—each is grounded in the same structural architecture. Choose the one that speaks to you.",
     synthesesHubFooter:
@@ -162,7 +162,7 @@ export const synthesesTranslations = {
   },
   sv: {
     synthesesHubTitle: 'The Clouded Mirror',
-    synthesesHubSubtitle: 'En läsguide',
+    synthesesHubSubtitle: 'En läsguide för Styrning som ingenjörskonst',
     synthesesHubIntro:
       'Åtta vägar in i samma diagnos. Varje text är skriven för en specifik målgrupp—alla vilar på samma strukturella arkitektur. Välj den som talar till dig.',
     synthesesHubFooter:
