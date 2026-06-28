@@ -50,7 +50,7 @@ const metadata = {
 	sv: {
 		title: 'Nödvändig observatörsmångfald',
 		subtitle: 'Varför civilisationer behöver flera, oberoende epistemiska system',
-		description: 'Utvidgar ramverket Styrning som ingenjörskonst från enskilda kontrollanter till observatörspopulationen. Argumenterar för att civilisatorisk epistemisk resiliens kräver en observatörsensemble vars effektiva dimensionalitet överstiger den osäkerhet som måste övervakas. Formaliserar kollapsdynamiken för epistemiska monokulturer, ansvarsskölden och modellkollaps, och specificerar konstruktionsprinciper – konstitutionellt skydd, ensemblemetoder, observationernas subsidiaritet, en försiktighetsgrind och prediktiv validitetsviktning – för att upprätthålla förmågan att se vad en civilisation gör.',
+		description: 'Utvidgar ramverket Styrning som ingenjörskonst från enskilda regulatorer till observatörspopulationen. Argumenterar för att civilisatorisk epistemisk resiliens kräver en observatörsensemble vars effektiva dimensionalitet överstiger den osäkerhet som måste övervakas. Formaliserar kollapsdynamiken för epistemiska monokulturer, ansvarsskölden och modellkollaps, och specificerar konstruktionsprinciper – konstitutionellt skydd, ensemblemetoder, observationernas subsidiaritet, en försiktighetsgrind och prediktiv validitetsviktning – för att upprätthålla förmågan att se vad en civilisation gör.',
 		author: 'Björn Kenneth Holmström',
 		date: 'Juni 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/requisite-observer-diversity',
@@ -370,7 +370,7 @@ async function generatePDF(html) {
 			headerTemplate: `
 				<div style="font-size: 9pt; color: #666; width: 100%; margin: 0 2cm;">
 					<span style="float: left;">${meta.title}</span>
-					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series X' : 'Artikel · Serie X'}</span>
+					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series X' : 'Arbetsdokument · Serie X'}</span>
 				</div>
 			`,
 			footerTemplate: `
