@@ -154,6 +154,11 @@
     .metrics{grid-template-columns:repeat(2,1fr);}
     .top{flex-direction:column; align-items:flex-start; gap:6px;}
   }
+  .gracebar{margin-top:14px; display:none; align-items:center; justify-content:space-between; gap:12px;
+    background:#171c22; border:1px solid var(--lens); border-radius:11px; padding:11px 14px; flex-wrap:wrap;}
+  .gracebar span{font-size:12.5px; color:var(--ink);}
+  .gracebar button{appearance:none; cursor:pointer; font-family:var(--sans); font-weight:600; font-size:13px;
+    border-radius:9px; padding:9px 18px; border:1px solid var(--lens); background:var(--lens); color:#0c0e12;}
   @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
 </style>
 </head>
@@ -171,6 +176,12 @@
 
   <!-- lens tabs -->
   <div class="lenses" id="lenses"></div>
+
+  <!-- grace period -->
+  <div class="gracebar" id="gracebar">
+    <span>The crisis hasn&rsquo;t started yet. Switch lenses freely to see what each one shows &mdash; then start when you&rsquo;re ready.</span>
+    <button id="startCrisis">Start crisis</button>
+  </div>
 
   <!-- active stage -->
   <div class="stage" id="stage"></div>
@@ -306,7 +317,9 @@
 
   // ---------- switching ----------
   function requestSwitch(target){
-    if(phase!=="playing" || target===mode) return;
+    if(target===mode) return;
+    if(phase==="orient"){ mode=target; render(); return; }   // free browsing before the crisis starts
+    if(phase!=="playing") return;
     if(omega<SWITCH_COST){ flashOmega(); return; }
     omega-=SWITCH_COST;
     pendingMode=target; phase="blackout"; blackoutLeft=settings.black;
@@ -334,6 +347,7 @@
   function render(){
     setLensVar();
     $("clk").textContent=W.tick; $("omega").textContent=Math.round(omega);
+    $("gracebar").style.display = phase==="orient" ? "flex" : "none";
     renderTabs(); renderStage(); renderActions();
   }
 
@@ -345,8 +359,8 @@
       b.dataset.active=active?"1":"0";
       b.innerHTML=`<div class="nm"><span class="swatch"></span>${L.name}</div>
         <div class="sub">${L.sub}</div>
-        <div class="cost">${active?"active":"switch &middot; \u03a9"+SWITCH_COST+" + blackout"}</div>
-        ${active?"":'<span class="lockmark">&#128274; unseen</span>'}`;
+        <div class="cost">${active?"active":(phase==="orient"?"view (free)":"switch &middot; \u03a9"+SWITCH_COST+" + blackout")}</div>
+        ${active?"":'<span class="lockmark">'+(phase==="orient"?"&#128065; view":"&#128274; unseen")+'</span>'}`;
       if(!active) b.addEventListener("click",()=>requestSwitch(k));
       el.appendChild(b);
     });
@@ -499,7 +513,12 @@
   function startGame(){
     clearInterval(timer); clearInterval(scrambleT); clearInterval(jitterTimer);
     $("overlay").classList.remove("show"); $("blackout").classList.remove("show");
-    fresh(); render();
+    fresh(); phase="orient"; render();          // world frozen; free lens browsing until the player starts
+  }
+
+  function beginCrisis(){
+    if(phase!=="orient") return;
+    phase="playing"; render();
     timer=setInterval(tickLoop,TICK_MS);
     jitterTimer=setInterval(()=>{          // sub-tick shimmer: the refresh-rate stutter
       if(mode==="threshold" && phase==="playing"){
@@ -513,6 +532,7 @@
   bindSeg("segPerm","perm",v=>v);
   bindSeg("segBlack","black",v=>+v);
   $("restartBtn").addEventListener("click",startGame);
+  $("startCrisis").addEventListener("click",beginCrisis);
   render();
   showIntro();
 })();
