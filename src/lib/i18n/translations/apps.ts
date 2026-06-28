@@ -165,7 +165,7 @@ conceptexplorerDetail: {
 
 			// --- App Cards ---
    threelenses: {
-     title: 'Tre perspektiv',
+     title: 'Tre linser',
      tagline: 'Ett kontrollrumspussel som spelas genom tre oförenliga linser på en enda dold kris — var och en uppfattar olika saker och kan bara agera på sitt eget språk. Överlev en kollaps som instrumentpanelen inte kan se komma.'
    },
    threetickers: {
