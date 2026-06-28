@@ -15,10 +15,15 @@ export const appsTranslations = {
 			archiveTitle: 'Archived Experiments',
 			learnMore: 'Learn More',
 			visitOnline: 'Try Online',
+   play: 'Play',
 			viewOnGithub: 'View on GitHub',
 			downloadZip: 'Download ZIP',
 
 			// --- App Cards ---
+   threetickers: {
+     title: 'Three Tickers',
+     tagline: 'A 60-second instrument-panel puzzle: three independent-looking readouts, one hidden sensor. A playable demonstration of why redundant observers can fail together.'
+   },
    echo: {
      title: 'ECHO',
      tagline: 'An instrument that measures whether the observers you rely on — AI models, experts, indicators — are genuinely independent, or just echoing each other.'
@@ -150,10 +155,15 @@ conceptexplorerDetail: {
 			archiveTitle: 'Arkiverade experiment',
 			learnMore: 'Läs mer',
 			visitOnline: 'Testa online',
+   play: 'Spela',
 			viewOnGithub: 'Visa på GitHub',
 			downloadZip: 'Ladda ner ZIP',
 
 			// --- App Cards ---
+   threetickers: {
+     title: 'Three Tickers',
+     tagline: 'Ett instrumentpussel på 60 sekunder: tre till synes oberoende mätvärden, men en enda dold sensor. En spelbar demonstration av varför redundanta observatörer kan svika samtidigt.'
+   },
    echo: {
      title: 'ECHO',
      tagline: 'Ett instrument som mäter om observatörerna du förlitar dig på — AI-modeller, experter, indikatorer — verkligen är oberoende, eller bara ekar varandra.'
@@ -181,7 +191,6 @@ conceptexplorerDetail: {
 				description:
 					'Ett AutoHotKey-overlay för Spotify från tidigt 2000-tal. Det tystade automatiskt reklam, hämtade låttexter och gitarrtabulatur för låten som spelades.'
 			},
-// --- ▼▼▼ ADD TITO DETAIL PAGE (SV) ▼▼▼ ---
 			titoDetail: {
 				meta: {
 					title: 'TiTo Time Tracker | Björn Kenneth Holmström',

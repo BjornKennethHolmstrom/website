@@ -1,0 +1,21 @@
+<svg width="54" height="48" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three Tickers">
+  <!-- instrument bezel -->
+  <rect x="1.5" y="1.5" width="51" height="45" rx="7" stroke="#7C8893" stroke-opacity="0.45" stroke-width="1.5"/>
+  <!-- baseline -->
+  <line x1="5" y1="33" x2="49" y2="33" stroke="#7C8893" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="2 2.5"/>
+
+  <!-- Gamma: most delayed, most attenuated echo (back) -->
+  <polyline points="17,33 23,32 27,31 30,18 32,18 35,31 39,32 45,33"
+    stroke="#29A7B6" stroke-opacity="0.3" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Beta: delayed echo (mid) -->
+  <polyline points="11,33 17,32 21,31 24,16 26,16 29,31 33,32 39,33"
+    stroke="#29A7B6" stroke-opacity="0.5" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Alpha: the one real sensor (front) -->
+  <polyline points="5,33 11,32 15,31 18,15 20,15 23,31 27,32 33,33"
+    stroke="#29A7B6" stroke-opacity="1" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- peak markers: one solid source, two fading echoes -->
+  <circle cx="31" cy="18" r="1.5" fill="#E0922A" fill-opacity="0.28"/>
+  <circle cx="25" cy="16" r="1.7" fill="#E0922A" fill-opacity="0.5"/>
+  <circle cx="19" cy="15" r="2.1" fill="#E0922A"/>
+</svg>

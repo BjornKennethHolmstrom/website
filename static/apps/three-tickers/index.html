@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Tickers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#14171c; --panel:#1b2027; --raised:#222a33; --line:#2b333d;
+    --ink:#d7dee7; --muted:#727e8c; --faint:#4a545f;
+    --accent:#57c7d4; --safe:#5fb98a; --warn:#e3a52f; --crash:#e0564a;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+    --sans:'Space Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:
+      radial-gradient(120% 80% at 50% -10%, #1a1f27 0%, var(--bg) 60%) fixed,
+      var(--bg);
+    color:var(--ink); font-family:var(--sans);
+    min-height:100vh; display:flex; justify-content:center;
+    -webkit-font-smoothing:antialiased; line-height:1.45;
+  }
+  .wrap{width:100%; max-width:680px; padding:28px 20px 56px;}
+
+  /* ---- header ---- */
+  .masthead{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+  h1{font-size:22px; font-weight:600; letter-spacing:-.01em; margin:0;}
+  h1 .dot{color:var(--accent);}
+  .goal{font-size:13px; color:var(--muted); margin:6px 0 0; max-width:42ch;}
+  .ticks{font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; white-space:nowrap;}
+  .ticks b{color:var(--ink); font-weight:500;}
+
+  /* ---- status readout (hero) ---- */
+  .status{
+    margin-top:22px; background:linear-gradient(180deg,var(--raised),var(--panel));
+    border:1px solid var(--line); border-radius:14px; padding:22px 22px 18px;
+    position:relative; overflow:hidden;
+  }
+  .status::before{ /* faint scanlines */
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:.05;
+    background:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 4px);
+  }
+  .status-top{display:flex; align-items:center; justify-content:space-between;}
+  .status-label{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted);}
+  .state-pill{
+    font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.08em;
+    padding:3px 9px; border-radius:999px; border:1px solid currentColor;
+  }
+  .status-value{
+    font-family:var(--mono); font-weight:600; font-size:64px; line-height:1;
+    margin:10px 0 2px; letter-spacing:-.02em; font-variant-numeric:tabular-nums;
+    transition:color .25s ease;
+  }
+  /* gauge */
+  .gauge{margin-top:14px; position:relative; height:34px;}
+  .gauge-track{position:absolute; top:14px; left:0; right:0; height:4px; background:#10141a; border-radius:3px;}
+  .gauge-band{position:absolute; top:11px; height:10px; border-radius:3px;
+    background:rgba(95,185,138,.16); border:1px solid rgba(95,185,138,.35);}
+  .gauge-needle{position:absolute; top:6px; width:2px; height:22px; background:var(--ink);
+    border-radius:2px; transition:left .5s cubic-bezier(.3,.8,.3,1), background .25s; transform:translateX(-1px);}
+  .gauge-scale{position:absolute; top:24px; left:0; right:0; height:12px;
+    font-family:var(--mono); font-size:9px; color:var(--faint);}
+  .gauge-scale span{position:absolute; transform:translateX(-50%);}
+
+  /* ---- feeds ---- */
+  .feeds{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:14px;}
+  .feed{background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:13px 13px 12px; display:flex; flex-direction:column; gap:8px; position:relative;
+    transition:opacity .3s, border-color .3s;}
+  .feed.cut{opacity:.38; border-style:dashed;}
+  .feed-name{
+    appearance:none; background:none; border:none; padding:0; cursor:pointer; text-align:left;
+    font-family:var(--sans); font-size:12px; font-weight:500; color:var(--muted);
+    letter-spacing:.04em; display:flex; align-items:center; gap:6px;
+  }
+  .feed-name .label{border-bottom:1px dotted var(--faint); padding-bottom:1px;}
+  .feed-name:hover .label,.feed-name:focus-visible .label{color:var(--ink); border-bottom-color:var(--accent);}
+  .feed-name .mag{font-size:10px; color:var(--faint); transition:color .2s;}
+  .feed-name:hover .mag{color:var(--accent);}
+  .feed-val{font-family:var(--mono); font-weight:600; font-size:30px; line-height:1;
+    font-variant-numeric:tabular-nums; transition:color .25s;}
+  .spark{width:100%; height:24px; display:block;}
+  .spark polyline{fill:none; stroke:var(--accent); stroke-width:1.6; opacity:.85;
+    stroke-linejoin:round; stroke-linecap:round;}
+  .feed.cut .spark polyline{stroke:var(--faint);}
+
+  .source{font-family:var(--mono); font-size:10.5px; color:var(--accent);
+    border-top:1px solid var(--line); padding-top:7px; margin-top:1px; display:none;
+    line-height:1.35; letter-spacing:.01em;}
+  .source.show{display:block;}
+  .source .k{color:var(--muted);}
+  .cut-btn{
+    appearance:none; margin-top:7px; width:100%; cursor:pointer; display:none;
+    font-family:var(--mono); font-size:10px; letter-spacing:.06em; font-weight:600;
+    background:#171c22; color:var(--warn); border:1px solid #3a3122; border-radius:7px;
+    padding:5px 6px;
+  }
+  .cut-btn.show{display:block;}
+  .cut-btn:hover{background:#1d2228; border-color:var(--warn);}
+  .feed.cut .cut-btn{color:var(--accent); border-color:#243038;}
+
+  /* ---- internals / wiring ---- */
+  .internals{margin-top:14px; background:#151a20; border:1px solid var(--line);
+    border-radius:12px; padding:14px 16px; display:none;}
+  .internals.show{display:block;}
+  .internals-label{font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:10px;}
+  .wire svg{width:100%; max-width:420px; height:74px; display:block; margin:0 auto;}
+  .wnode{fill:#222a33; stroke:var(--line); stroke-width:1.5;}
+  .wnode.live{stroke:var(--accent);}
+  .wnode.cut{stroke:var(--faint); fill:#181d23;}
+  .wlabel{font-family:var(--mono); font-size:12px; font-weight:600; fill:var(--ink);}
+  .wlabel.cut{fill:var(--faint);}
+  .wlink{stroke:var(--accent); stroke-width:1.6; opacity:.6; marker-end:url(#arr);}
+  .wlink.cut{stroke:var(--crash); stroke-dasharray:4 4; opacity:.7; marker-end:none;}
+  .wdelay{font-family:var(--mono); font-size:9px; fill:var(--muted);}
+
+  /* ---- controls ---- */
+  .controls{display:flex; gap:10px; margin-top:16px; align-items:stretch;}
+  .btn{appearance:none; cursor:pointer; font-family:var(--sans); font-weight:600;
+    font-size:14px; border-radius:11px; padding:13px 16px; transition:.15s; flex:1;
+    border:1px solid var(--line); background:var(--raised); color:var(--ink);}
+  .btn:hover:not(:disabled){border-color:var(--muted);}
+  .btn:disabled{opacity:.4; cursor:not-allowed;}
+  .btn-primary{flex:2; background:linear-gradient(180deg,#2a3540,#212a33);
+    border-color:#33414d;}
+  .btn-primary:hover:not(:disabled){border-color:var(--accent); color:#fff;}
+  .btn-primary .sub{display:block; font-family:var(--mono); font-size:10px;
+    font-weight:400; color:var(--muted); letter-spacing:.02em; margin-top:2px;}
+  .btn-ghost{flex:1; background:none;}
+
+  .hint{margin-top:14px; min-height:20px; font-size:13px; color:var(--muted);
+    text-align:center; transition:opacity .3s; line-height:1.5;}
+  .hint b{color:var(--accent); font-weight:500;}
+  .attempts{font-family:var(--mono);}
+
+  /* ---- overlay ---- */
+  .overlay{position:absolute; inset:0; display:none; align-items:center; justify-content:center;
+    background:rgba(16,19,24,.82); backdrop-filter:blur(3px); border-radius:14px; z-index:5;}
+  .overlay.show{display:flex;}
+  .card{text-align:center; padding:24px 26px; max-width:88%;}
+  .card .verdict{font-family:var(--mono); font-size:13px; font-weight:600; letter-spacing:.1em;}
+  .card h2{font-size:30px; margin:6px 0 0; font-weight:700; letter-spacing:-.01em;}
+  .card p{font-size:13.5px; color:var(--muted); margin:12px 0 0; line-height:1.55;}
+  .card .btn{margin-top:18px; flex:none; display:inline-block; min-width:150px;}
+
+  .footnote{margin-top:26px; font-size:11px; color:var(--faint); text-align:center; line-height:1.5;}
+
+  @media (max-width:520px){
+    .status-value{font-size:52px;}
+    .feed-val{font-size:24px;}
+    h1{font-size:19px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div>
+      <h1>Three Tickers<span class="dot">.</span></h1>
+      <p class="goal">Keep <b style="color:var(--ink)">SYSTEM STATUS</b> inside the 40&ndash;60 band for all 10 ticks. You have one intervention.</p>
+    </div>
+    <div class="ticks">TICK <b id="tickNum">0</b> / 10</div>
+  </div>
+
+  <!-- status readout -->
+  <div class="status" id="statusPanel">
+    <div class="status-top">
+      <span class="status-label">System status</span>
+      <span class="state-pill" id="statePill" style="color:var(--muted)">STANDBY</span>
+    </div>
+    <div class="status-value" id="statusVal">&mdash;</div>
+    <div class="gauge">
+      <div class="gauge-track"></div>
+      <div class="gauge-band" id="gaugeBand"></div>
+      <div class="gauge-needle" id="gaugeNeedle" style="left:50%"></div>
+      <div class="gauge-scale" id="gaugeScale"></div>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <div class="card">
+        <div class="verdict" id="ovVerdict"></div>
+        <h2 id="ovTitle"></h2>
+        <p id="ovBody"></p>
+        <button class="btn btn-primary" id="ovBtn" style="flex:none">Restart run</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- feeds -->
+  <div class="feeds" id="feeds"></div>
+
+  <!-- wiring internals -->
+  <div class="internals" id="internals">
+    <div class="internals-label">Internal signal path</div>
+    <div class="wire">
+      <svg viewBox="0 0 420 74" id="wireSvg" aria-hidden="true">
+        <defs>
+          <marker id="arr" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="var(--accent)"/>
+          </marker>
+        </defs>
+        <!-- links -->
+        <line class="wlink" id="linkAB" x1="92" y1="30" x2="158" y2="30"/>
+        <line class="wlink" id="linkBG" x1="262" y1="30" x2="328" y2="30"/>
+        <text class="wdelay" x="125" y="22" text-anchor="middle">delay 2t</text>
+        <text class="wdelay" x="295" y="22" text-anchor="middle">delay 1t</text>
+        <!-- nodes -->
+        <g><rect class="wnode live" x="22" y="16" width="56" height="28" rx="7"/>
+          <text class="wlabel" x="50" y="34" text-anchor="middle">α</text></g>
+        <g><rect class="wnode" id="nodeB" x="172" y="16" width="56" height="28" rx="7"/>
+          <text class="wlabel" id="labB" x="200" y="34" text-anchor="middle">β</text></g>
+        <g><rect class="wnode" id="nodeG" x="342" y="16" width="56" height="28" rx="7"/>
+          <text class="wlabel" id="labG" x="370" y="34" text-anchor="middle">γ</text></g>
+        <text class="wdelay" x="50" y="60" text-anchor="middle" fill="var(--accent)">sensor</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- controls -->
+  <div class="controls">
+    <button class="btn btn-primary" id="interveneBtn" disabled>
+      Intervene
+      <span class="sub">&minus;10 &middot; takes effect next tick</span>
+    </button>
+    <button class="btn btn-ghost" id="startBtn">Start</button>
+  </div>
+
+  <div class="hint" id="hint">Press <b>Start</b>. The status holds steady &mdash; until it doesn&rsquo;t.</div>
+
+  <div class="footnote">A teaching vignette &middot; Governance as Engineering</div>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---- scenario (deterministic) ----
+  // trueState = what Feed Alpha (the one real sensor) reads, before intervention.
+  // index 1..10 ; pre-history treated as 50.
+  const TRUE = [null,50,51,53,59,68,68,68,68,68,68];
+  const TOTAL = 10;
+  const TICK_MS = 1400;
+  const DAMP = 10;          // intervention magnitude
+  const LO = 40, HI = 60;   // safe band
+  const SC_MIN = 30, SC_MAX = 70; // gauge scale
+
+  // ---- state ----
+  let t = 0;                    // current tick (0 = not started)
+  let running = false;
+  let timer = null;
+  let interventionTick = null;  // tick at which Intervene was pressed (effect for tick > this)
+  let linked = {alpha:true, beta:true, gamma:true};
+  let inspected = {alpha:false, beta:false, gamma:false};
+  let scissorsUnlocked = false;
+  let attempts = 0;
+  let alphaHist = {};           // tick -> alpha value (with offset), for echo lookups
+  let sparks = {alpha:[], beta:[], gamma:[]};
+  let ended = false;
+
+  const FEEDS = [
+    {id:"alpha", greek:"α", name:"Feed Alpha", src:["direct sensor","&mdash; live"], cut:false},
+    {id:"beta",  greek:"β", name:"Feed Beta",  src:["Feed Alpha","delayed 2 ticks"], cut:true},
+    {id:"gamma", greek:"γ", name:"Feed Gamma", src:["Feed Beta","delayed 1 tick"], cut:true},
+  ];
+
+  // ---- helpers ----
+  function offsetAt(tick){
+    return (interventionTick !== null && tick > interventionTick) ? -DAMP : 0;
+  }
+  function alphaAt(tick){
+    if(tick < 1) return 50; // pre-history baseline
+    if(alphaHist[tick] !== undefined) return alphaHist[tick];
+    return TRUE[tick] + offsetAt(tick);
+  }
+  function feedValues(tick){
+    const a = TRUE[tick] + offsetAt(tick);
+    alphaHist[tick] = a;
+    const b = alphaAt(tick-2);   // Beta = Alpha delayed 2
+    const g = alphaAt(tick-3);   // Gamma = Beta delayed 1 = Alpha delayed 3
+    return {alpha:a, beta:b, gamma:g};
+  }
+  function status(vals){
+    let sum=0,n=0;
+    if(linked.alpha){sum+=vals.alpha;n++;}
+    if(linked.beta){sum+=vals.beta;n++;}
+    if(linked.gamma){sum+=vals.gamma;n++;}
+    return n? sum/n : null;
+  }
+  function stateOf(s){
+    if(s===null) return {k:"no-signal",c:"var(--muted)",t:"NO SIGNAL"};
+    if(s>HI) return {k:"crash",c:"var(--crash)",t:"OVERLOAD"};
+    if(s<LO) return {k:"crash",c:"var(--crash)",t:"STALL"};
+    if(s>=HI-5 || s<=LO+5) return {k:"warn",c:"var(--warn)",t:"WARNING"};
+    return {k:"safe",c:"var(--safe)",t:"NOMINAL"};
+  }
+
+  // ---- DOM ----
+  const $ = id => document.getElementById(id);
+  const feedsEl=$("feeds"), hintEl=$("hint");
+
+  function buildFeeds(){
+    feedsEl.innerHTML="";
+    FEEDS.forEach(f=>{
+      const el=document.createElement("div");
+      el.className="feed"; el.id="feed-"+f.id;
+      el.innerHTML=`
+        <button class="feed-name" data-feed="${f.id}" aria-label="Inspect ${f.name}">
+          <span class="label">${f.greek} &middot; ${f.name.split(' ')[1]}</span>
+          <span class="mag">inspect</span>
+        </button>
+        <div class="feed-val" id="val-${f.id}">&mdash;</div>
+        <svg class="spark" id="spark-${f.id}" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <polyline points=""/>
+        </svg>
+        <div class="source" id="src-${f.id}">
+          <span class="k">source &middot;</span> ${f.src[0]}<br>${f.src[1]}
+        </div>
+        ${f.cut?`<button class="cut-btn" id="cut-${f.id}" data-cut="${f.id}">&#9986; drop from average</button>`:""}
+      `;
+      feedsEl.appendChild(el);
+    });
+    feedsEl.querySelectorAll(".feed-name").forEach(b=>b.addEventListener("click",()=>inspect(b.dataset.feed)));
+    feedsEl.querySelectorAll(".cut-btn").forEach(b=>b.addEventListener("click",()=>toggleCut(b.dataset.cut)));
+  }
+
+  function buildScale(){
+    const sc=$("gaugeScale"); sc.innerHTML="";
+    [30,40,50,60,70].forEach(v=>{
+      const pct=(v-SC_MIN)/(SC_MAX-SC_MIN)*100;
+      const s=document.createElement("span"); s.style.left=pct+"%"; s.textContent=v;
+      sc.appendChild(s);
+    });
+    const band=$("gaugeBand");
+    band.style.left=((LO-SC_MIN)/(SC_MAX-SC_MIN)*100)+"%";
+    band.style.width=((HI-LO)/(SC_MAX-SC_MIN)*100)+"%";
+  }
+
+  function drawSpark(id){
+    const data=sparks[id]; if(!data.length) return;
+    const poly=$("spark-"+id).querySelector("polyline");
+    const n=data.length, span=SC_MAX-SC_MIN;
+    const pts=data.map((v,i)=>{
+      const x = n===1?50:(i/(n-1))*100;
+      const y = 24 - Math.max(0,Math.min(1,(v-SC_MIN)/span))*24;
+      return x.toFixed(1)+","+y.toFixed(1);
+    }).join(" ");
+    poly.setAttribute("points",pts);
+  }
+
+  function render(vals){
+    // feed values + colours
+    FEEDS.forEach(f=>{
+      const v=vals?vals[f.id]:null;
+      const el=$("val-"+f.id);
+      el.textContent = v===null||v===undefined ? "\u2014" : Math.round(v);
+      const cls=stateOf(v);
+      el.style.color = (v===null) ? "var(--muted)" :
+        (v>HI||v<LO)?"var(--crash)": (v>=HI-5||v<=LO+5)?"var(--warn)":"var(--ink)";
+      $("feed-"+f.id).classList.toggle("cut", !linked[f.id]);
+      drawSpark(f.id);
+    });
+    // status
+    const s = vals?status(vals):null;
+    const st = stateOf(s);
+    const sv=$("statusVal");
+    sv.textContent = s===null?"\u2014":(Math.round(s*10)/10).toFixed(1);
+    sv.style.color = st.c;
+    const pill=$("statePill"); pill.textContent=st.t; pill.style.color=st.c;
+    const needle=$("gaugeNeedle");
+    if(s!==null){
+      const pct=Math.max(0,Math.min(100,(s-SC_MIN)/(SC_MAX-SC_MIN)*100));
+      needle.style.left=pct+"%"; needle.style.background=st.c;
+    }
+    $("tickNum").textContent=t;
+  }
+
+  // ---- tick loop ----
+  function start(){
+    if(running) return;
+    resetRun();
+    running=true; ended=false;
+    $("startBtn").textContent="Running\u2026"; $("startBtn").disabled=true;
+    $("interveneBtn").disabled=false;
+    setHint("");
+    tick(); // first tick immediately
+    timer=setInterval(tick,TICK_MS);
+  }
+
+  function tick(){
+    t++;
+    const vals=feedValues(t);
+    sparks.alpha.push(vals.alpha); sparks.beta.push(vals.beta); sparks.gamma.push(vals.gamma);
+    Object.keys(sparks).forEach(k=>{ if(sparks[k].length>6) sparks[k].shift(); });
+    render(vals);
+    const s=status(vals);
+    if(s!==null && (s>HI || s<LO)){ return endRun(false, s); }
+    if(t>=TOTAL){ return endRun(true, s); }
+  }
+
+  function endRun(win, s){
+    clearInterval(timer); running=false; ended=true;
+    $("interveneBtn").disabled=true;
+    $("startBtn").textContent="Start"; $("startBtn").disabled=false;
+    if(!win) attempts++;
+    showOverlay(win, s);
+    updateHint();
+  }
+
+  function resetRun(){
+    clearInterval(timer); t=0; interventionTick=null; alphaHist={};
+    sparks={alpha:[],beta:[],gamma:[]};
+    $("overlay").classList.remove("show");
+    $("interveneBtn").querySelector(".sub").textContent="\u221210 \u00b7 takes effect next tick";
+    render(null);
+  }
+
+  // ---- intervention ----
+  $("interveneBtn").addEventListener("click",()=>{
+    if(!running || interventionTick!==null) return;
+    interventionTick=t;
+    $("interveneBtn").disabled=true;
+    $("interveneBtn").querySelector(".sub").textContent="engaged at tick "+t;
+  });
+
+  // ---- inspect / cut ----
+  function inspect(id){
+    inspected[id]=true;
+    $("src-"+id).classList.add("show");
+    $("internals").classList.add("show");
+    updateWire();
+    if(inspected.beta && inspected.gamma && !scissorsUnlocked){
+      scissorsUnlocked=true;
+      $("cut-beta")?.classList.add("show");
+      $("cut-gamma")?.classList.add("show");
+    }
+    updateHint();
+  }
+
+  function toggleCut(id){
+    if(!scissorsUnlocked) return;
+    linked[id]=!linked[id];
+    $("cut-"+id).innerHTML = linked[id] ? "&#9986; drop from average" : "&#8617; add back to average";
+    updateWire();
+    if(running){ const vals=feedValues(t); render(vals); }
+    updateHint();
+  }
+
+  function updateWire(){
+    const setNode=(node,lab,id)=>{
+      const cut=!linked[id];
+      $(node).classList.toggle("cut",cut);
+      $(node).classList.toggle("live",inspected[id]&&!cut);
+      $(lab).classList.toggle("cut",cut);
+    };
+    setNode("nodeB","labB","beta");
+    setNode("nodeG","labG","gamma");
+    $("linkAB").classList.toggle("cut",!linked.beta);
+    $("linkBG").classList.toggle("cut",!linked.gamma);
+  }
+
+  // ---- hints ----
+  function setHint(html){ hintEl.innerHTML=html; }
+  function updateHint(){
+    if(running){ setHint(""); return; }
+    if(scissorsUnlocked){
+      const echoesCut = !linked.beta && !linked.gamma;
+      if(echoesCut) setHint("Status now tracks the one real sensor. <b>Start</b> and intervene while &alpha; is still climbing &mdash; before it crosses 60.");
+      else setHint("&beta; and &gamma; are &alpha; replayed late. Use <b>&#9986;</b> to drop both from the average, then run again.");
+      return;
+    }
+    if(inspected.beta || inspected.gamma){
+      setHint("Keep looking. <b>Inspect</b> the other feeds too.");
+      return;
+    }
+    if(attempts>=2){
+      setHint("Three readouts &mdash; but do they agree because reality is calm, or for another reason? <b>Inspect</b> a feed&rsquo;s source.");
+      return;
+    }
+    if(attempts===1){
+      setHint("Restart and try again. Watch which feed moves <i>first</i>.");
+      return;
+    }
+    setHint("Press <b>Start</b>. The status holds steady &mdash; until it doesn&rsquo;t.");
+  }
+
+  // ---- overlay ----
+  function showOverlay(win,s){
+    const ov=$("overlay"), v=$("ovVerdict"), ti=$("ovTitle"), b=$("ovBody"), btn=$("ovBtn");
+    if(win){
+      v.textContent="\u2713 STABLE"; v.style.color="var(--safe)";
+      ti.textContent="10 / 10 ticks held";
+      if(!linked.beta && !linked.gamma){
+        b.innerHTML="You read the one real sensor. &beta; and &gamma; were &alpha; replayed late; averaging them in kept status calm while &alpha; was already over the line &mdash; so every warning you could act on arrived too late. Cutting the echoes moved the warning forward to where action still mattered.";
+      } else {
+        b.innerHTML="Held &mdash; this time. Try it again without intervening early, and watch how the averaged status hides &alpha;&rsquo;s climb.";
+      }
+      btn.textContent="Run again";
+    } else {
+      v.textContent="\u26a0 "+stateOf(s).t; v.style.color="var(--crash)";
+      ti.textContent="System crash \u00b7 "+(Math.round(s*10)/10).toFixed(1);
+      if(!scissorsUnlocked){
+        b.innerHTML="Status is the mean of three feeds. Acting when status warned you was already too late. Before restarting, <b>inspect</b> what each feed actually measures.";
+      } else if(linked.beta || linked.gamma){
+        b.innerHTML="You&rsquo;re still averaging in the echoes. Drop &beta; and &gamma; with <b>&#9986;</b> so status follows &alpha; directly.";
+      } else {
+        b.innerHTML="Status followed &alpha; this time &mdash; but the intervention landed too late or too early. Intervene while &alpha; reads in the 50s, not after it leaps.";
+      }
+      btn.textContent="Restart run";
+    }
+    ov.classList.add("show");
+  }
+  $("ovBtn").addEventListener("click",()=>{ $("overlay").classList.remove("show"); start(); });
+
+  // ---- init ----
+  buildFeeds(); buildScale(); updateWire(); render(null);
+  $("startBtn").addEventListener("click",start);
+
+  // keyboard: space / enter to intervene while running
+  document.addEventListener("keydown",e=>{
+    if((e.code==="Space") && running && interventionTick===null && document.activeElement.tagName!=="BUTTON"){
+      e.preventDefault(); $("interveneBtn").click();
+    }
+  });
+})();
+</script>
+</body>
+</html>
