@@ -8,7 +8,7 @@ Långsiktig civilisatorisk livskraft, hävdar artikeln, kräver inte bara högdi
 
 **Bidrag**
 - Etablerar **målfunktioner som observationsarkitekturer**, och förenar optimeringsteori, styrteori och epistemologi (Goodhart, 1975; Conant & Ashby, 1970).
-- Formulerar **Goodhart-Ashby-syntesen**: varje målfunktion med dimensionalitet lägre än systemets variation bryter slutligen ned sin egen förmåga att uppfatta systemets verkliga tillstånd (Manheim & Garrabrant, 2018).
+- Formulerar **Goodhart-Ashby-syntesen**: en målfunktion kommer att optimera bort sin egen förmåga att uppfatta systemets verkliga tillstånd närhelst den utelämnar en dimension som är kausalt kopplad till just den proxy den optimerar. (Manheim & Garrabrant, 2018).
 - Introducerar **variationsgapet (G)** som ett operationaliserbart mått på systemblindhet och kollapsrisk.
 - Demonstrerar ramverkets *potentiella förklaringsomfång* genom **landfallsstudier** tolkade som variationsgapsöverskridanden (Governance as Engineering Series; Gilens & Page, 2014; FAO, 2022). Dessa omtolkningar är konsistenta med ramverket men utgör inte oberoende validering. 
 - Artikulerar **metastyrningsimperativet**: att utforma institutioner som medvetet kan utveckla sina egna värderingsarkitekturer innan **G** blir fatalt (Beer, 1979; von Foerster, 1984).

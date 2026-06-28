@@ -8,7 +8,7 @@ Long‑run civilizational viability, the paper argues, requires not merely highe
 
 **Contributions**
 - Establishes **objective functions as observation architectures**, uniting optimization theory, control theory, and epistemology (Goodhart, 1975; Conant & Ashby, 1970).
-- Formulates the **Goodhart‑Ashby synthesis**: any objective function with dimensionality lower than system variety eventually degrades its own ability to perceive the system’s true state (Manheim & Garrabrant, 2018).
+- Formulates the **Goodhart‑Ashby synthesis**: an objective function will optimise away its own ability to perceive the system's true state whenever it omits a dimension that is causally coupled to the very proxy it optimises. (Manheim & Garrabrant, 2018).
 - Introduces the **variety gap (G)** as an operationalizable metric for systemic blindness and collapse risk.
 - Demonstrates the framework's *potential explanatory scope* through **country case studies** re‑interpreted as variety‑gap crossings (Governance as Engineering Series; Gilens & Page, 2014; FAO, 2022). These re-interpretations are consistent with the framework but do not constitute independent validation.
 - Articulates the **meta‑governance imperative**: designing institutions that can consciously evolve their own value architectures before **G** becomes fatal (Beer, 1979; von Foerster, 1984).

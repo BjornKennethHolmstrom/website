@@ -342,7 +342,7 @@ export const papersData: Workingpaper[] = [
          en: '70 min',
          sv: '70 min'
      },
-     version: '1.1',
+     version: '1.2',
      pdfPath: {
          en: `${localBase}/the-variety-gap.pdf`,
          sv: `${localBase}/the-variety-gap-sv.pdf`,
