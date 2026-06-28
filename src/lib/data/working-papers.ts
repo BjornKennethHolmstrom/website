@@ -214,7 +214,7 @@ export const papersData: Workingpaper[] = [
      en: '65 min', 
      sv: '65 min'
    },
-   version: '1.0',
+   version: '1.1',
    pdfPath: {
      en: `${localBase}/reform-exhaustion.pdf`,
      sv: `${localBase}/reform-exhaustion-sv.pdf`,
