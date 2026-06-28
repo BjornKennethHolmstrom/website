@@ -1,0 +1,8 @@
+<svg width="54" height="48" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three Lenses">
+  <!-- three lenses over one hidden state: overlapping but never coincident -->
+  <circle cx="27" cy="18" r="13" fill="#5a9bd4" fill-opacity="0.16" stroke="#5a9bd4" stroke-width="1.6"/>
+  <circle cx="19" cy="31" r="13" fill="#5fb98a" fill-opacity="0.16" stroke="#5fb98a" stroke-width="1.6"/>
+  <circle cx="35" cy="31" r="13" fill="#e3a52f" fill-opacity="0.16" stroke="#e3a52f" stroke-width="1.6"/>
+  <!-- the hidden state they each only partly cover -->
+  <circle cx="27" cy="27" r="2" fill="#7C8893" fill-opacity="0.7"/>
+</svg>

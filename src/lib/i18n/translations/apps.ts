@@ -20,6 +20,10 @@ export const appsTranslations = {
 			downloadZip: 'Download ZIP',
 
 			// --- App Cards ---
+   threelenses: {
+     title: 'Three Lenses',
+     tagline: 'A control-room puzzle played through three incompatible lenses on one hidden crisis — each resolves different things and can only act in its own language. Survive a collapse the dashboard cannot see coming.'
+   },
    threetickers: {
      title: 'Three Tickers',
      tagline: 'A 60-second instrument-panel puzzle: three independent-looking readouts, one hidden sensor. A playable demonstration of why redundant observers can fail together.'
@@ -160,6 +164,10 @@ conceptexplorerDetail: {
 			downloadZip: 'Ladda ner ZIP',
 
 			// --- App Cards ---
+   threelenses: {
+     title: 'Three Lenses',
+     tagline: 'Ett kontrollrumspussel som spelas genom tre oförenliga linser på en enda dold kris — var och en uppfattar olika saker och kan bara agera på sitt eget språk. Överlev en kollaps som instrumentpanelen inte kan se komma.'
+   },
    threetickers: {
      title: 'Three Tickers',
      tagline: 'Ett instrumentpussel på 60 sekunder: tre till synes oberoende mätvärden, men en enda dold sensor. En spelbar demonstration av varför redundanta observatörer kan svika samtidigt.'

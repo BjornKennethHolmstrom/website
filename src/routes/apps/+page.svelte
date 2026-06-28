@@ -28,6 +28,35 @@
    >
      <div class="flex-grow p-6">
        <img
+         src="/apps/images/logo-three-lenses.svg"
+         alt="Three Lenses logo"
+         class="mb-4 h-12 w-auto"
+       />
+       <h3 class="text-2xl font-semibold text-[var(--color-card-text)]">
+         {t.threelenses.title}
+       </h3>
+       <p class="mt-2 text-[var(--color-card-text)] opacity-80">
+         {t.threelenses.tagline}
+       </p>
+     </div>
+     <div
+       class="flex flex-wrap gap-4 rounded-b-lg border-t border-[var(--color-separator)] bg-[var(--color-page-bg)] p-4"
+     >
+       <a
+         href="/play/three-lenses.html"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-amber-700"
+       >
+         {t.play}
+       </a>
+     </div>
+   </div>
+   <div
+     class="flex flex-col rounded-lg border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-md"
+   >
+     <div class="flex-grow p-6">
+       <img
          src="/apps/images/logo-three-tickers.svg"
          alt="Three Tickers logo"
          class="mb-4 h-12 w-auto"
@@ -43,7 +72,7 @@
        class="flex flex-wrap gap-4 rounded-b-lg border-t border-[var(--color-separator)] bg-[var(--color-page-bg)] p-4"
      >
        <a
-         href="/apps/three-tickers/"
+         href="/play/three-tickers.html"
          target="_blank"
          rel="noopener noreferrer"
          class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-amber-700"
