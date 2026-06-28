@@ -165,11 +165,11 @@ conceptexplorerDetail: {
 
 			// --- App Cards ---
    threelenses: {
-     title: 'Three Lenses',
+     title: 'Tre perspektiv',
      tagline: 'Ett kontrollrumspussel som spelas genom tre oförenliga linser på en enda dold kris — var och en uppfattar olika saker och kan bara agera på sitt eget språk. Överlev en kollaps som instrumentpanelen inte kan se komma.'
    },
    threetickers: {
-     title: 'Three Tickers',
+     title: 'Tre mätare',
      tagline: 'Ett instrumentpussel på 60 sekunder: tre till synes oberoende mätvärden, men en enda dold sensor. En spelbar demonstration av varför redundanta observatörer kan svika samtidigt.'
    },
    echo: {

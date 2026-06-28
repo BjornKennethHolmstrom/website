@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>En kris, tre perspektiv</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#14171c; --panel:#1b2027; --raised:#222a33; --line:#2b333d;
+    --ink:#d7dee7; --muted:#727e8c; --faint:#4a545f;
+    --safe:#5fb98a; --warn:#e3a52f; --crash:#e0564a;
+    --lens:#5a9bd4;                 /* ändras per aktiv lins */
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+    --sans:'Space Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:radial-gradient(130% 90% at 50% -10%, #1a1f27 0%, var(--bg) 60%) fixed, var(--bg);
+    color:var(--ink); font-family:var(--sans); min-height:100vh;
+    display:flex; justify-content:center; -webkit-font-smoothing:antialiased; line-height:1.45;
+  }
+  .wrap{width:100%; max-width:1000px; padding:22px 18px 48px;}
+  .mono{font-family:var(--mono);}
+
+  /* header */
+  .top{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  h1{font-size:18px; font-weight:600; margin:0; letter-spacing:-.01em;}
+  h1 small{color:var(--muted); font-weight:400; font-size:13px; margin-left:8px;}
+  .readouts{display:flex; gap:18px; font-family:var(--mono); font-size:12px; color:var(--muted);}
+  .readouts b{color:var(--ink); font-weight:600;}
+  .readouts .om b{color:var(--lens);}
+
+  .reality{margin-top:10px; font-family:var(--mono); font-size:11px; color:var(--faint);
+    border:1px dashed var(--line); border-radius:8px; padding:6px 10px; display:inline-flex; gap:8px;}
+
+  /* lens tabs */
+  .lenses{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px;}
+  .lens-tab{appearance:none; cursor:pointer; text-align:left; background:var(--panel);
+    border:1px solid var(--line); border-radius:11px; padding:12px 13px; transition:.15s;
+    color:var(--ink); position:relative; overflow:hidden;}
+  .lens-tab .nm{font-size:13px; font-weight:600; display:flex; align-items:center; gap:7px;}
+  .lens-tab .nm .swatch{width:9px; height:9px; border-radius:2px; background:var(--c);}
+  .lens-tab .sub{font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:3px;}
+  .lens-tab .cost{font-family:var(--mono); font-size:10px; color:var(--warn); margin-top:6px;}
+  .lens-tab[data-active="1"]{border-color:var(--c); background:linear-gradient(180deg,#222a33,#1a1f26);}
+  .lens-tab[data-active="1"] .cost{color:var(--muted);}
+  .lens-tab:not([data-active="1"]):hover{border-color:var(--muted);}
+  .lens-tab .lockmark{position:absolute; top:11px; right:12px; font-size:11px; color:var(--faint);}
+
+  /* active panel */
+  .stage{margin-top:14px; background:var(--panel); border:1px solid var(--line);
+    border-radius:14px; padding:18px; position:relative; min-height:300px;
+    border-top:2px solid var(--lens); transition:border-color .3s;}
+  .stage-head{display:flex; align-items:baseline; justify-content:space-between; gap:10px;}
+  .stage-title{font-size:15px; font-weight:600; color:var(--lens);}
+  .stage-note{font-family:var(--mono); font-size:10.5px; color:var(--muted); max-width:46ch; text-align:right;}
+
+  /* threshold lens */
+  .metrics{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:16px;}
+  .metric{background:#171c22; border:1px solid var(--line); border-radius:10px; padding:12px;}
+  .metric .lbl{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
+  .metric .v{font-family:var(--mono); font-weight:600; font-size:28px; margin:6px 0 2px; font-variant-numeric:tabular-nums;}
+  .metric .th{font-family:var(--mono); font-size:10px; color:var(--muted);}
+  .metric .th.ok{color:var(--safe);} .metric .th.bad{color:var(--crash);}
+  .advisory{margin-top:14px; font-family:var(--mono); font-size:11.5px; border-radius:9px; padding:9px 12px;
+    border:1px solid; display:none;}
+  .advisory.faint{display:block; color:var(--warn); border-color:#473a1f; background:#1d1a12;}
+  .advisory.clear{display:block; color:var(--lens); border-color:#2a3a4a; background:#141b22;}
+  .incidents{margin-top:14px; font-family:var(--mono); font-size:11px; color:var(--muted); line-height:1.7;}
+  .incidents .d{color:var(--ink);}
+  .memo{margin-top:14px; font-family:var(--mono); font-size:11px; color:var(--warn);
+    border:1px solid #473a1f; background:#1d1a12; border-radius:9px; padding:8px 11px;}
+
+  /* relational lens */
+  .relwrap{display:grid; grid-template-columns:1.3fr 1fr; gap:16px; margin-top:14px; align-items:center;}
+  @media(max-width:640px){.relwrap{grid-template-columns:1fr;}}
+  .ggauge .glbl{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
+  .ggauge .gv{font-family:var(--mono); font-weight:600; font-size:40px; margin:4px 0; font-variant-numeric:tabular-nums;}
+  .gbar{height:8px; background:#10141a; border-radius:5px; position:relative; overflow:hidden;}
+  .gbar .fill{position:absolute; left:0; top:0; bottom:0; border-radius:5px; transition:width .4s, background .3s;}
+  .gbar .mark{position:absolute; top:-3px; bottom:-3px; width:2px; background:var(--crash); left:100%;}
+  .gnote{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:8px; line-height:1.5;}
+  .loopsvg{width:100%; height:auto;}
+  .lnode{fill:#1a2028; stroke:var(--lens); stroke-width:1.5;}
+  .ltext{font-family:var(--mono); font-size:10px; fill:var(--ink);}
+  .ledge{stroke:var(--lens); fill:none; opacity:.8; marker-end:url(#la);}
+
+  /* index lens */
+  .idxwrap{margin-top:14px; text-align:center;}
+  .idxwrap .big{font-family:var(--mono); font-weight:600; font-size:68px; line-height:1; color:var(--lens);
+    font-variant-numeric:tabular-nums;}
+  .idxwrap .trend{font-family:var(--mono); font-size:12px; color:var(--safe); margin-top:4px;}
+  .idxwrap .trend.down{color:var(--crash);}
+  .idxspark{width:100%; max-width:420px; height:46px; margin:14px auto 0; display:block;}
+  .idxspark polyline{fill:none; stroke:var(--lens); stroke-width:1.8; stroke-linejoin:round;}
+  .subkpi{display:flex; justify-content:center; gap:26px; margin-top:14px; font-family:var(--mono); font-size:11px; color:var(--muted);}
+  .subkpi b{color:var(--ink); font-weight:600; display:block; font-size:16px;}
+
+  /* actions */
+  .actions{margin-top:16px;}
+  .actions-lbl{font-size:11px; letter-spacing:.04em; color:var(--muted); margin-bottom:9px;}
+  .act-row{display:flex; gap:10px; flex-wrap:wrap;}
+  .act{appearance:none; cursor:pointer; flex:1; min-width:150px; text-align:left;
+    background:var(--raised); border:1px solid var(--line); border-radius:10px; padding:11px 13px;
+    color:var(--ink); transition:.15s;}
+  .act:hover:not(:disabled){border-color:var(--lens);}
+  .act:disabled{opacity:.4; cursor:not-allowed;}
+  .act .an{font-size:13px; font-weight:600;}
+  .act .ad{font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:3px; line-height:1.4;}
+  .act .ac{font-family:var(--mono); font-size:10px; color:var(--warn); margin-top:5px;}
+  .lockline{margin-top:11px; font-family:var(--mono); font-size:10.5px; color:var(--faint);
+    border-top:1px solid var(--line); padding-top:9px;}
+
+  /* settings */
+  .settings{margin-top:16px; display:flex; gap:20px; flex-wrap:wrap; align-items:center;
+    font-size:12px; color:var(--muted);}
+  .settings .grp{display:flex; align-items:center; gap:8px;}
+  .seg{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden;}
+  .seg button{appearance:none; cursor:pointer; background:none; border:none; color:var(--muted);
+    font-family:var(--mono); font-size:11px; padding:5px 10px;}
+  .seg button[data-on="1"]{background:var(--raised); color:var(--ink);}
+
+  .footnote{margin-top:22px; font-size:10.5px; color:var(--faint); text-align:center; line-height:1.6;}
+
+  /* overlays */
+  .overlay{position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+    background:rgba(14,17,22,.86); backdrop-filter:blur(4px); z-index:20; padding:20px;}
+  .overlay.show{display:flex;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:26px 28px; max-width:520px; text-align:center;}
+  .card h2{margin:0 0 8px; font-size:24px; font-weight:700;}
+  .card p{font-size:13.5px; color:var(--muted); line-height:1.6; margin:8px 0;}
+  .card .btn{appearance:none; cursor:pointer; margin-top:16px; font-family:var(--sans);
+    font-weight:600; font-size:14px; border-radius:11px; padding:12px 22px;
+    border:1px solid #33414d; background:linear-gradient(180deg,#2a3540,#212a33); color:#fff;}
+  .card .verdict{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:.1em;}
+
+  /* blackout */
+  .blackout{position:fixed; inset:0; display:none; flex-direction:column; align-items:center; justify-content:center;
+    background:#0c0e12; z-index:25; text-align:center;}
+  .blackout.show{display:flex;}
+  .blackout .scramble{font-family:var(--mono); font-size:13px; color:#39424d; letter-spacing:.15em;
+    max-width:80%; line-height:2; height:64px; overflow:hidden; margin-bottom:14px;}
+  .blackout .bmsg{font-size:15px; color:var(--ink); font-weight:600;}
+  .blackout .bsub{font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:8px;}
+  .blackout .bcount{font-family:var(--mono); font-size:40px; color:var(--warn); margin-top:16px; font-variant-numeric:tabular-nums;}
+  .blackout .bwarn{font-family:var(--mono); font-size:11px; color:var(--crash); margin-top:14px;}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <h1>En kris, tre perspektiv <small>prototyp v0</small></h1>
+    <div class="readouts">
+      <span>DAG <b id="clk">0</b>/45</span>
+      <span class="om">&Omega; <b id="omega">100</b></span>
+    </div>
+  </div>
+  <div class="reality">&#128584; VERKLIGHET (dold) &middot; du ser aldrig systemet direkt &mdash; bara en lins i taget</div>
+
+  <!-- lens tabs -->
+  <div class="lenses" id="lenses"></div>
+
+  <!-- active stage -->
+  <div class="stage" id="stage"></div>
+
+  <!-- actions -->
+  <div class="actions" id="actions"></div>
+
+  <!-- settings -->
+  <div class="settings">
+    <div class="grp">Institutionell permeabilitet
+      <span class="seg" id="segPerm">
+        <button data-v="leaky">läckande</button>
+        <button data-v="silo" data-on="1">silo</button>
+        <button data-v="quarantine">karantän</button>
+      </span>
+    </div>
+    <div class="grp">Mörkläggning
+      <span class="seg" id="segBlack">
+        <button data-v="2">kort</button>
+        <button data-v="5" data-on="1">medel</button>
+        <button data-v="8">lång</button>
+      </span>
+    </div>
+    <button id="restartBtn" style="padding:5px 12px; color:var(--muted); font-family:var(--mono); font-size:11px; cursor:pointer; background:none;">starta om</button>
+  </div>
+
+  <div class="footnote">
+    Linser är upplösnings-/aggregeringsinställningar (Paper VI) över ett dolt tillstånd; krisen är en kopplingsdriven korrelerad kollaps (Paper X).<br>
+    Ingen lins visar grundsanningen; permeabiliteten styr hur långt den dolda kopplingen läcker in i Tröskellinsen som efterlevnadsbrus &mdash; platt medelvärde, ökande varians. Spiraletiketter vore ett valfritt [H]-skal &mdash; används inte här.
+  </div>
+</div>
+
+<!-- intro / win / lose overlay -->
+<div class="overlay" id="overlay">
+  <div class="card" id="card"></div>
+</div>
+
+<!-- blackout overlay -->
+<div class="blackout" id="blackout">
+  <div class="scramble mono" id="scramble"></div>
+  <div class="bmsg" id="bmsg">Omkalibrerar lins</div>
+  <div class="bsub" id="bsub"></div>
+  <div class="bcount" id="bcount">5</div>
+  <div class="bwarn">krisen fortsätter, oobserverad</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const $=id=>document.getElementById(id);
+
+  // ---------- config ----------
+  const TICK_MS=1500, WINDOW=45, RUNAWAY=1.0, G0=0.45, BASE_RATE=0.018;
+  const SWITCH_COST=35, COLLAPSE_STAB=32;
+
+  const LENSES={
+    threshold:{name:"Tröskellins", c:"#5a9bd4", sub:"regler & gränsvärden per mått"},
+    relational:{name:"Relationslins", c:"#5fb98a", sub:"koppling & återkoppling"},
+    index:{name:"Indexlins", c:"#e3a52f", sub:"ett sammansatt prestandatal"},
+  };
+  const ORDER=["threshold","relational","index"];
+
+  // ---------- state ----------
+  let W, mode, omega, phase, blackoutLeft, pendingMode, settings, timer, espark, scrambleT, jitterTimer;
+
+  function fresh(){
+    W={ tick:0, g:G0, gMult:1.0, runStep:0,
+        stab:64, comp:83, compMean:83, solv:67, unrest:33, E:68 };
+    mode="threshold"; omega=100; phase="playing";
+    blackoutLeft=0; pendingMode=null; espark=[];
+    settings=settings||{perm:"silo", black:5};
+  }
+
+  // ---------- world tick ----------
+  function advance(){
+    W.tick++;
+    W.g += BASE_RATE*W.gMult;
+    if(W.g < RUNAWAY){
+      const s=Math.max(0,Math.min(1,(W.g-G0)/(RUNAWAY-G0)));
+      const n=()=> (Math.random()-0.5)*0.6;
+      W.stab=64-8*s+n(); W.solv=67-9*s+n(); W.unrest=33+10*s+n();
+      W.compMean=83-2.5*s;        // mean holds ~flat; the lie lives in the variance
+      W.comp=W.compMean;          // formal status reads off the steady mean
+      W.E=68+30*s+n();
+    } else {
+      W.runStep++;
+      W.stab-=9; W.comp-=11; W.compMean=W.comp; W.solv-=8; W.unrest+=12; W.E-=24;
+    }
+    espark.push(W.E); if(espark.length>26) espark.shift();
+  }
+
+  function tickLoop(){
+    if(phase==="won"||phase==="lost") return;
+    advance();
+    // collapse?
+    if(W.g>=RUNAWAY && W.stab<COLLAPSE_STAB){ return end(false); }
+    // blackout countdown
+    if(phase==="blackout"){
+      blackoutLeft--;
+      if(blackoutLeft<=0){ mode=pendingMode; pendingMode=null; phase="playing"; $("blackout").classList.remove("show"); }
+    }
+    // win?
+    if(W.tick>=WINDOW && phase!=="blackout"){ return end(true); }
+    render();
+  }
+
+  // ---------- actions ----------
+  function spend(c){ if(omega<c) return false; omega-=c; return true; }
+
+  const ACTIONS={
+    threshold:[
+      {n:"Utfärda direktiv", d:"Fastställ eller justera en formell regel.", c:5, f:()=>{ W.stab+=3; }},
+      {n:"Upprätthåll efterlevnad", d:"Skärp granskningar och sanktioner.", c:8, f:()=>{ W.comp+=6; W.gMult*=1.25; }},
+      {n:"Justera tröskelintervall", d:"Bredda det acceptabla intervallet.", c:3, f:()=>{ /* kosmetisk */ }},
+    ],
+    relational:[
+      {n:"Dämpa koppling", d:"Koppla loss den åtstramande återkopplingskanten.", c:18, f:()=>{ W.g=Math.max(0.30,W.g-0.25); if(W.g<RUNAWAY)W.runStep=0; }},
+      {n:"Lägg till slack i loopen", d:"Inför buffert; bromsar loopens tillväxt.", c:22, f:()=>{ W.gMult*=0.45; }},
+      {n:"Kartlägg loop", d:"Upplös mer av strukturen.", c:5, f:()=>{ W._mapped=true; }},
+    ],
+    index:[
+      {n:"Optimera allokering", d:"Omfördela för maximal genomströmning.", c:6, f:()=>{ W.E+=6; W.g+=0.08; }},
+      {n:"Minska slöseri", d:"Ta bort redundans och buffertar.", c:4, f:()=>{ W.E+=4; W.gMult*=1.15; }},
+    ],
+  };
+
+  function doAction(i){
+    if(phase!=="playing") return;
+    const a=ACTIONS[mode][i];
+    if(!spend(a.c)) return;
+    a.f(); render();
+  }
+
+  // ---------- switching ----------
+  function requestSwitch(target){
+    if(phase!=="playing" || target===mode) return;
+    if(omega<SWITCH_COST){ flashOmega(); return; }
+    omega-=SWITCH_COST;
+    pendingMode=target; phase="blackout"; blackoutLeft=settings.black;
+    const bo=$("blackout"); bo.classList.add("show");
+    $("bsub").textContent = LENSES[mode].name+"  \u2192  "+LENSES[target].name;
+    runScramble();
+    render();
+  }
+  function flashOmega(){ const o=$("omega"); o.style.color="var(--crash)"; setTimeout(()=>o.style.color="",400); }
+
+  function runScramble(){
+    clearInterval(scrambleT);
+    const glyphs="01<>/\\|=+*#%&";
+    scrambleT=setInterval(()=>{
+      if(phase!=="blackout"){ clearInterval(scrambleT); return; }
+      let s=""; for(let i=0;i<46;i++) s+=glyphs[Math.floor(Math.random()*glyphs.length)];
+      $("scramble").textContent=s;
+      $("bcount").textContent=Math.max(0,blackoutLeft);
+    },90);
+  }
+
+  // ---------- render ----------
+  function setLensVar(){ document.documentElement.style.setProperty("--lens", LENSES[mode].c); }
+
+  function render(){
+    setLensVar();
+    $("clk").textContent=W.tick; $("omega").textContent=Math.round(omega);
+    renderTabs(); renderStage(); renderActions();
+  }
+
+  function renderTabs(){
+    const el=$("lenses"); el.innerHTML="";
+    ORDER.forEach(k=>{
+      const L=LENSES[k], active=(k===mode), b=document.createElement("button");
+      b.className="lens-tab"; b.style.setProperty("--c",L.c);
+      b.dataset.active=active?"1":"0";
+      b.innerHTML=`<div class="nm"><span class="swatch"></span>${L.name}</div>
+        <div class="sub">${L.sub}</div>
+        <div class="cost">${active?"aktiv":"byt &middot; \u03a9"+SWITCH_COST+" + mörkläggning"}</div>
+        ${active?"":'<span class="lockmark">&#128274; osynlig</span>'}`;
+      if(!active) b.addEventListener("click",()=>requestSwitch(k));
+      el.appendChild(b);
+    });
+  }
+
+  function renderStage(){
+    const st=$("stage");
+    if(mode==="threshold") st.innerHTML=stageThreshold();
+    else if(mode==="relational") st.innerHTML=stageRelational();
+    else st.innerHTML=stageIndex();
+  }
+
+  function band(v,thr,dir){ // dir 'min' ok if v>thr, 'max' ok if v<thr
+    const ok = dir==="min" ? v>thr : v<thr;
+    return `<div class="th ${ok?'ok':'bad'}">${dir==='min'?'&gt; '+thr+' krav':'&lt; '+thr+' krav'} ${ok?'\u2713':'\u2717'}</div>`;
+  }
+  const MEMOS=[
+    "Logistikhandläggare begärde överflyttning till D4 — skäl utelämnat.",
+    "Nattskiftskoordinator avgick; ingen efterträdare utsedd.",
+    "Fikarumstillbehör i D7 ombeställda tre gånger denna vecka.",
+    "Två seniora revisorer tog oplanerad ledighet.",
+  ];
+  function compDisplay(){
+    const sync=Math.max(0,Math.min(1,(W.g-G0)/(RUNAWAY-G0)));
+    const amp = settings.perm==="quarantine" ? 0 : sync*3.8;  // flat mean, widening variance
+    const j = amp ? (Math.random()*2-1)*amp : 0;
+    return (W.compMean + j).toFixed(1);
+  }
+  function stageThreshold(){
+    const m=W;
+    const sync=Math.max(0,Math.min(1,(W.g-G0)/(RUNAWAY-G0)));
+    let memo="";
+    if(settings.perm==="leaky" && W.g<RUNAWAY && sync>0.40){
+      memo=`<div class="memo">&#9888; oarkiverad notis &middot; ${MEMOS[Math.floor(W.tick/6)%MEMOS.length]}</div>`;
+    }
+    return `<div class="stage-head"><div class="stage-title">Tröskellins &middot; ordning / regler</div>
+      <div class="stage-note">Upplöser: regler, tröskelvärden, efterlevnadsavvikelser.<br>Upplöser inte: koppling, återkoppling, kausal struktur.</div></div>
+      <div class="metrics">
+        <div class="metric"><div class="lbl">Stabilitet</div><div class="v">${Math.round(m.stab)}</div>${band(m.stab,54,'min')}</div>
+        <div class="metric"><div class="lbl">Efterlevnad</div><div class="v"><span id="compVal">${compDisplay()}</span>%</div>${band(m.compMean,70,'min')}</div>
+        <div class="metric"><div class="lbl">Soliditet</div><div class="v">${Math.round(m.solv)}%</div>${band(m.solv,56,'min')}</div>
+        <div class="metric"><div class="lbl">Oro</div><div class="v">${Math.round(m.unrest)}</div>${band(m.unrest,45,'max')}</div>
+      </div>
+      ${memo}
+      <div class="incidents">Incidentkö &middot; <span class="d">Varvsförsening</span> D7 &middot; <span class="d">Tillståndsstockning</span> D3 &middot; <span class="d">Skattetvist</span> D9</div>`;
+  }
+
+  function stageRelational(){
+    const g=W.g, pct=Math.min(100,(g/RUNAWAY)*100);
+    const col = g>0.9?"var(--crash)":g>0.7?"var(--warn)":"var(--lens)";
+    return `<div class="stage-head"><div class="stage-title">Relationslins &middot; koppling / återkoppling</div>
+      <div class="stage-note">Upplöser: noder, kanter, loopförstärkning.<br>Upplöser inte: tröskelvärden, efterlevnadsprocent, skalärt index.</div></div>
+      <div class="relwrap">
+        <svg class="loopsvg" viewBox="0 0 300 200" aria-hidden="true">
+          <defs><marker id="la" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="${col}"/></marker></defs>
+          <path class="ledge" style="stroke:${col};stroke-width:${1+g*5}" d="M90,60 Q170,35 230,75"/>
+          <path class="ledge" style="stroke:${col};stroke-width:${1+g*5}" d="M235,95 Q210,160 140,165"/>
+          <path class="ledge" style="stroke:${col};stroke-width:${1+g*5}" d="M120,160 Q60,130 80,80"/>
+          <g><circle class="lnode" cx="78" cy="60" r="26"/><text class="ltext" x="78" y="63" text-anchor="middle">Försörjning</text></g>
+          <g><circle class="lnode" cx="232" cy="82" r="26"/><text class="ltext" x="232" y="85" text-anchor="middle">Förtroende</text></g>
+          <g><circle class="lnode" cx="130" cy="166" r="26"/><text class="ltext" x="130" y="169" text-anchor="middle">Efterlevnad</text></g>
+        </svg>
+        <div class="ggauge">
+          <div class="glbl">Loopförstärkning (g)</div>
+          <div class="gv" style="color:${col}">${g.toFixed(2)}</div>
+          <div class="gbar"><div class="fill" style="width:${pct}%; background:${col}"></div><div class="mark"></div></div>
+          <div class="gnote">Skengång vid g = 1,00. Drivande loop:<br>försörjningsfördröjning &rarr; förtroendeerosion &rarr; efterlevnadsfall &rarr; försörjningsfördröjning.${g>0.7?'<br><span style="color:var(--warn)">Självförstärkande &mdash; åtstramande.</span>':''}</div>
+        </div>
+      </div>`;
+  }
+
+  function stageIndex(){
+    const E=W.E, down=W.g>=RUNAWAY;
+    const pts=espark.map((v,i)=>{
+      const x=espark.length<=1?50:(i/(espark.length-1))*100;
+      const y=46-Math.max(0,Math.min(1,(v-40)/70))*46;
+      return x.toFixed(1)+","+y.toFixed(1);
+    }).join(" ");
+    return `<div class="stage-head"><div class="stage-title">Indexlins &middot; optimering</div>
+      <div class="stage-note">Upplöser: ett sammansatt prestandavärde.<br>Upplöser inte: tröskelvärden, koppling, var värdet kommer ifrån.</div></div>
+      <div class="idxwrap">
+        <div class="big">${Math.round(E)}</div>
+        <div class="trend ${down?'down':''}">${down?'\u25bc kollapsar':'\u25b2 prestandaindex stiger'}</div>
+        <svg class="idxspark" viewBox="0 0 100 46" preserveAspectRatio="none"><polyline points="${pts}"/></svg>
+        <div class="subkpi"><div><b>${Math.round(70+W.E/4)}%</b>genomströmning</div><div><b>${Math.round(W.E/9)}</b>kostnadsindex</div></div>
+      </div>`;
+  }
+
+  function renderActions(){
+    const el=$("actions");
+    const acts=ACTIONS[mode];
+    let html=`<div class="actions-lbl">Åtgärder &mdash; uttryckbara inom <b style="color:var(--lens)">${LENSES[mode].name}</b> endast</div><div class="act-row">`;
+    acts.forEach((a,i)=>{
+      const dis=(phase!=="playing"||omega<a.c)?"disabled":"";
+      html+=`<button class="act" ${dis} data-i="${i}"><div class="an">${a.n}</div><div class="ad">${a.d}</div><div class="ac">\u03a9 ${a.c}</div></button>`;
+    });
+    html+=`</div><div class="lockline">Åtgärder från andra linser finns inte i denna linsens vokabulär &mdash; för att använda dem måste du växla lins och omkalibrera.</div>`;
+    el.innerHTML=html;
+    el.querySelectorAll(".act").forEach(b=>b.addEventListener("click",()=>doAction(+b.dataset.i)));
+  }
+
+  // ---------- end ----------
+  function end(win){
+    phase=win?"won":"lost"; clearInterval(timer); clearInterval(scrambleT); clearInterval(jitterTimer);
+    $("blackout").classList.remove("show");
+    const c=$("card");
+    if(win){
+      c.innerHTML=`<div class="verdict" style="color:var(--safe)">\u2713 SYSTEMET LIVSKRAFTIGT</div>
+        <h2>Du höll det i 45 dagar</h2>
+        <p>Kollapsen byggdes upp på en plats som Tröskellinsen inte kunde upplösa och inte kunde agera på. Att överleva innebar att lämna en instrumentpanel som visade grönt, gå blind i ${settings.black} tick, och agera med ett vokabulär som bara Relationslinsen hade.</p>
+        <p style="color:var(--faint)">Det oberoende som Tröskellinsen förutsätter är exakt det som kopplingen i tysthet tog bort.</p>
+        <button class="btn" id="again">Kör igen</button>`;
+    } else {
+      const why = W.g>=RUNAWAY
+        ? "Återkopplingsloopen gick över i skengång och de &lsquo;oberoende&rsquo; måtten kraschade tillsammans."
+        : "Systemet föll ur livskraft.";
+      c.innerHTML=`<div class="verdict" style="color:var(--crash)">\u2717 SYSTEMKRASCH</div>
+        <h2>Dag ${W.tick}</h2>
+        <p>${why}</p>
+        <p style="color:var(--faint)">${mode==="threshold"?"Tröskellinsen visade grönt ända till slutet &mdash; den var aldrig kopplad för att se koppling.":mode==="index"?"Indexskalären steg ända fram till kollapsen. Aggregeringen dolde strukturen.":"Lösningen finns bara i Relationslinsen &mdash; nåddes för sent."}</p>
+        <button class="btn" id="again">Försök igen</button>`;
+    }
+    $("overlay").classList.add("show");
+    $("again").addEventListener("click",startGame);
+  }
+
+  // ---------- settings & start ----------
+  function bindSeg(id,key,cast){
+    $(id).querySelectorAll("button").forEach(b=>{
+      b.addEventListener("click",()=>{
+        $(id).querySelectorAll("button").forEach(x=>x.dataset.on="0");
+        b.dataset.on="1"; settings[key]=cast(b.dataset.v);
+        if(phase==="playing") render();
+      });
+    });
+  }
+
+  function showIntro(){
+    const c=$("card");
+    c.innerHTML=`<div class="verdict" style="color:var(--lens)">EN KRIS, TRE LINSER</div>
+      <h2>Överlev 45 dagar</h2>
+      <p>En kris i försörjningsnätverket utvecklas. Du kan bara se den &mdash; och agera på den &mdash; genom <b>en lins i taget</b>. Varje lins upplöser olika saker och har ett eget handlingsvokabulär.</p>
+      <p>Att byta lins kostar &Omega; och en <b>mörkläggning</b> medan krisen fortgår oobserverad. Den lins du börjar med kan inte se allt som spelar roll.</p>
+      <button class="btn" id="begin">Börja</button>`;
+    $("overlay").classList.add("show");
+    $("begin").addEventListener("click",startGame);
+  }
+
+  function startGame(){
+    clearInterval(timer); clearInterval(scrambleT); clearInterval(jitterTimer);
+    $("overlay").classList.remove("show"); $("blackout").classList.remove("show");
+    fresh(); render();
+    timer=setInterval(tickLoop,TICK_MS);
+    jitterTimer=setInterval(()=>{          // sub-tick shimmer: the refresh-rate stutter
+      if(mode==="threshold" && phase==="playing"){
+        const e=$("compVal"); if(e) e.textContent=compDisplay();
+      }
+    },220);
+  }
+
+  // init
+  fresh();
+  bindSeg("segPerm","perm",v=>v);
+  bindSeg("segBlack","black",v=>+v);
+  $("restartBtn").addEventListener("click",startGame);
+  render();
+  showIntro();
+})();
+</script>
+</body>
+</html>

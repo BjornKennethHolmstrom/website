@@ -4,9 +4,8 @@
 	import SEO from '$lib/components/SEO.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
 
-	// --- FIX: Renamed '$t' to 't' ---
-	// '$t' is an illegal variable name for a reactive assignment.
 	$: t = allTranslations[$language].apps;
+ $: currentLang = $language; // 'en' or 'sv'
 </script>
 
 <SEO
@@ -43,7 +42,7 @@
        class="flex flex-wrap gap-4 rounded-b-lg border-t border-[var(--color-separator)] bg-[var(--color-page-bg)] p-4"
      >
        <a
-         href="/play/three-lenses.html"
+         href="/play/three-lenses{currentLang === 'sv' ? '-sv' : ''}.html"
          target="_blank"
          rel="noopener noreferrer"
          class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-amber-700"
@@ -72,7 +71,7 @@
        class="flex flex-wrap gap-4 rounded-b-lg border-t border-[var(--color-separator)] bg-[var(--color-page-bg)] p-4"
      >
        <a
-         href="/play/three-tickers.html"
+         href="/play/three-tickers{currentLang === 'sv' ? '-sv' : ''}.html"
          target="_blank"
          rel="noopener noreferrer"
          class="rounded-md bg-amber-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-amber-700"

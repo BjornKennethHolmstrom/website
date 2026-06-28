@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { t } from '$lib/stores/languageStore';
+  import { t, language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
+
+  $: currentLang = $language; // 'en' or 'sv'
 </script>
 
 <SEO
@@ -33,6 +35,49 @@
       </span>
     </div>
   </a>
+
+  <!-- Interactive Simulations Hub -->
+  <div class="mb-10 rounded-2xl border border-[var(--color-separator)] bg-[var(--color-card-bg)] p-6 md:p-8 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+      <div class="flex-1">
+        <span class="block text-xs font-bold uppercase tracking-wider mb-2 text-teal-600 dark:text-teal-400">
+          {$t.interactiveFeature.badge}
+        </span>
+        <h2 class="text-2xl font-bold mb-2 text-[var(--color-card-text)]">{$t.interactiveFeature.title}</h2>
+        <p class="text-sm md:text-base opacity-80 text-[var(--color-card-text)] max-w-2xl mb-6">
+          {$t.interactiveFeature.desc}
+        </p>
+
+        <!-- Secondary Appetizer Link -->
+        <div class="pt-4 border-t border-[var(--color-separator)] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h4 class="text-sm font-bold text-[var(--color-card-text)]">{$t.interactiveFeature.secondaryTitle}</h4>
+            <p class="text-xs opacity-70 text-[var(--color-card-text)]">{$t.interactiveFeature.secondaryDesc}</p>
+          </div>
+          <a
+            href="/play/three-tickers{currentLang === 'sv' ? '-sv' : ''}.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center text-xs font-semibold text-[var(--color-page-accent)] hover:underline self-start sm:self-center"
+          >
+            {$t.interactiveFeature.secondaryCta}
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Game CTA -->
+      <a
+        href="/play/three-lenses{currentLang === 'sv' ? '-sv' : ''}.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-xl bg-teal-600 dark:bg-teal-500 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-teal-500 dark:hover:bg-teal-400 transition-colors whitespace-nowrap self-start md:self-center"
+      >
+        {$t.interactiveFeature.cta}
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+  </div>
 
   <details class="mb-12 rounded-lg border border-[var(--color-separator)] group">
     <summary class="cursor-pointer select-none px-4 py-3 font-medium flex items-center justify-between">
