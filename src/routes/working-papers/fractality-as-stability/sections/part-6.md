@@ -36,7 +36,7 @@ These are not analogies. They are existence proofs: evidence that the fractal co
 
 ## The complexity ceiling and what lies beyond it
 
-There is a limit to how much complexity any governance architecture can absorb, regardless of how well-matched its control layers are. Ashby's Law of Requisite Variety states that a controller must possess at least as much variety as the system it governs. Fractal architecture increases the total variety of the governance system by distributing control — but the total variety of the governed system may grow faster than any realistic expansion of the governance system's variety can track.
+There is a limit to how much complexity any governance architecture can absorb, regardless of how well-matched its control layers are. Ashby's Law of Requisite Variety states that a controller must command at least as much variety as the disturbances it must reject (not as much as the governed system in its entirety). Fractal architecture increases the total variety of the governance system by distributing control — but the total variety of the governed system may grow faster than any realistic expansion of the governance system's variety can track.
 
 This is the honest boundary condition of the framework. Fractal architecture is stability-optimal within the range of tractable governance. Beyond a certain complexity threshold — in systems where the number and diversity of simultaneous disturbances exceeds the combined variety of all governance layers — no architecture can guarantee stability. The fractal architecture extends that boundary further than any alternative, but does not eliminate it.
 

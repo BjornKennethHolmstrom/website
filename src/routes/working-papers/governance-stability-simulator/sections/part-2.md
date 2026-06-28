@@ -8,7 +8,7 @@ Any governance system — from a municipal council to a continental federation �
 
 A node is any entity capable of receiving information, processing it, and producing an action. Nodes exist at every scale: an individual citizen, a local authority, a national ministry, an international body. The critical property of a node is its **processing capacity** — the complexity of signals it can interpret and respond to meaningfully.
 
-Ashby's Law of Requisite Variety states that a controller must possess at least as much variety (complexity) as the system it seeks to govern. A node whose processing capacity is smaller than the complexity of its domain cannot govern that domain stably, regardless of its formal authority.
+Ashby's Law of Requisite Variety, in its disturbance-relative form, states that a controller must command at least as much variety as the *disturbances it must reject* — not as much as the governed system as a whole, which is always larger and which no finite controller matches. A node whose variety is smaller than that of the disturbances arising in its domain cannot govern it stably, regardless of formal authority; the unmatched disturbance variety surfaces as uncontrolled variance.
 
 ### 2. State
 

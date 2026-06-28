@@ -8,7 +8,7 @@ Vilket styrningssystem som helst — från ett kommunfullmäktige till en kontin
 
 En nod är vilken enhet som helst som kan ta emot information, bearbeta den och producera en handling. Noder existerar på alla skalor: en enskild medborgare, en lokal myndighet, ett nationellt ministerium, ett internationellt organ. Den kritiska egenskapen hos en nod är dess **bearbetningskapacitet** (processing capacity) — komplexiteten hos de signaler den kan tolka och reagera på på ett meningsfullt sätt.
 
-Ashbys lag om nödvändig mångfald (Law of Requisite Variety) säger att en regulator måste besitta minst lika mycket mångfald (komplexitet) som det system den försöker styra. En nod vars bearbetningskapacitet är mindre än komplexiteten i dess domän kan inte styra den domänen stabilt, oavsett dess formella auktoritet.
+Ashbys lag om nödvändig variation, i sin störningsrelativa form, säger att en styrenhet måste förfoga över minst lika mycket variation som de *störningar den måste avvisa* — inte lika mycket som det styrda systemet i sin helhet, vilket alltid är större och som ingen ändlig styrenhet matchar. En nod vars variation är mindre än variationen hos de störningar som uppstår i dess domän kan inte styra den stabilt, oavsett formell auktoritet; den omatchade störningsvariationen framträder som okontrollerad varians.
 
 ### 2. Tillstånd (State)
 

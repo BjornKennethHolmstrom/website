@@ -406,7 +406,7 @@ export const papersData: Workingpaper[] = [
 			en: '45 min',
 			sv: '45 min'
 		},
-		version: '1.0',
+		version: '1.1',
 		pdfPath: {
 			en: `${localBase}/observability-democracy-connection.pdf`,
 			sv: `${localBase}/observability-democracy-connection-sv.pdf`,
@@ -427,7 +427,7 @@ export const papersData: Workingpaper[] = [
 			en: '50 min',
 			sv: '50 min'
 		},
-		version: '1.0',
+		version: '1.1',
 		pdfPath: {
 			en: `${localBase}/fractality-as-stability.pdf`,
 			sv: `${localBase}/fractality-as-stability-sv.pdf`,
@@ -448,7 +448,7 @@ export const papersData: Workingpaper[] = [
 			en: '40 min',
 			sv: '40 min'
 		},
-		version: '1.0',
+		version: '1.1',
 		pdfPath: {
 			en: `${localBase}/governance-stability-simulator.pdf`,
 			sv: `${localBase}/governance-stability-simulator-sv.pdf`,

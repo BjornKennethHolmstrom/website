@@ -8,7 +8,7 @@ Argumentet framskrider i tre explicita lager: en rigorös kärna som tillämpar 
 
 **Bidrag**
 - Etablerar **personliga målfunktioner som observationsarkitekturer**, och utvidgar ramverket governance‑as‑engineering till individen.
-- Formulerar **Goodhart–Ashby-syntesen för självet**: varje personlig värdefunktion med dimensionalitet lägre än självets variation bryter slutligen ned förmågan att uppfatta självets verkliga tillstånd.
+- Formulerar **Goodhart–Ashby-syntesen för självet**: en personlig värdefunktion försämrar sin förmåga att uppfatta självets verkliga tillstånd när den utelämnar en dimension som är kausalt kopplad till den proxy den optimerar — inte enbart genom att vara lägre-dimensionell än självet.
 - Introducerar **själv‑variationsgapet (G_self)** som ett operationaliserbart mått på psykologiska blinda fläckar och krissårbarhet.
 - Demonstrerar ramverket genom **evidens från självkomplexitetsteori, forskning om kognitiv dissonans och kontemplativ neurovetenskap**.
 - Artikulerar **imperativet för personlig metastyrning**: kapaciteten att granska och utveckla sin egen värderingsarkitektur innan gapet blir funktionsnedsättande.

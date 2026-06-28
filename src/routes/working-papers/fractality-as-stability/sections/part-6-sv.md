@@ -36,7 +36,7 @@ Dessa är inte analogier. De är existensbevis: bevis för att den fraktala styr
 
 ## Komplexitetstaket och vad som ligger bortom det
 
-Det finns en gräns för hur mycket komplexitet någon styrningsarkitektur kan absorbera, oavsett hur välmatchade dess styrningslager är. Ashbys lag om nödvändig mångfald säger att en regulator måste besitta minst lika mycket mångfald som det system den styr. Fraktal arkitektur ökar styrningssystemets totala mångfald genom att distribuera styrningen — men det styrda systemets totala mångfald kan växa snabbare än vad någon realistisk expansion av styrningssystemets mångfald kan följa.
+Det finns en gräns för hur mycket komplexitet någon styrningsarkitektur kan absorbera, oavsett hur välmatchade dess styrningslager är. Ashbys lag om nödvändig mångfald säger att en regulator måste förfoga över minst lika mycket variation som de störningar den måste avvisa (inte lika mycket som det styrda systemet i sin helhet). Fraktal arkitektur ökar styrningssystemets totala mångfald genom att distribuera styrningen — men det styrda systemets totala mångfald kan växa snabbare än vad någon realistisk expansion av styrningssystemets mångfald kan följa.
 
 Detta är ramverkets ärliga randvillkor. Fraktal arkitektur är stabilitetsoptimal inom ramen för hanterbar styrning. Bortom en viss komplexitetströskel — i system där antalet och mångfalden av samtidiga störningar överstiger den kombinerade mångfalden hos alla styrningslager — kan ingen arkitektur garantera stabilitet. Den fraktala arkitekturen flyttar fram den gränsen längre än något alternativ, men eliminerar den inte.
 

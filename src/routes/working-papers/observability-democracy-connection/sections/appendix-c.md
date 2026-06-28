@@ -56,7 +56,7 @@ Deliberative democracy as a theoretical response to the aggregation problem — 
 
 **Ashby, W. R. (1956).** *An Introduction to Cybernetics.* Chapman and Hall.
 
-The Law of Requisite Variety — a controller must have at least as much variety as the system it controls — is the general form of which the observability result is a specific case. A policy layer whose signal has been compressed through K aggregation stages has less variety than the citizen population it governs. Ashby's law predicts it cannot govern them accurately; the observability model quantifies exactly why.
+The Law of Requisite Variety — a controller must command at least as much variety as the disturbances it must reject — which is why a controller far simpler than its plant can still regulate it. A policy layer whose signal has been compressed through K aggregation stages has less variety than the citizen population it governs. Ashby's law predicts it cannot govern them accurately; the observability model quantifies exactly why.
 
 **Wiener, N. (1948).** *Cybernetics: Or Control and Communication in the Animal and the Machine.* MIT Press.
 

@@ -56,7 +56,7 @@ Deliberativ demokrati som ett teoretiskt svar på aggregeringsproblemet — ett 
 
 **Ashby, W. R. (1956).** *An Introduction to Cybernetics.* Chapman and Hall.
 
-Lagen om nödvändig mångfald (Law of Requisite Variety) — en regulator måste ha minst lika mycket mångfald som det system den styr — är den generella formen där observerbarhetsresultatet är ett specifikt fall. Ett policylager vars signal har komprimerats genom K aggregeringsstadier har mindre mångfald än den medborgarpopulation den styr. Ashbys lag förutsäger att den inte kan styra dem korrekt; observerbarhetsmodellen kvantifierar exakt varför.
+Lagen om nödvändig mångfald (Law of Requisite Variety) — en styrenhet måste förfoga över minst lika mycket variation som de störningar den måste avvisa — vilket är anledningen till att en styrenhet som är långt enklare än sin anläggning fortfarande kan reglera den. Ett policylager vars signal har komprimerats genom K aggregeringsstadier har mindre mångfald än den medborgarpopulation den styr. Ashbys lag förutsäger att den inte kan styra dem korrekt; observerbarhetsmodellen kvantifierar exakt varför.
 
 **Wiener, N. (1948).** *Cybernetics: Or Control and Communication in the Animal and the Machine.* MIT Press.
 

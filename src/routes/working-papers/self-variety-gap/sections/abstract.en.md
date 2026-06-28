@@ -8,7 +8,7 @@ The argument proceeds in three explicit layers: a rigorous core applying control
 
 **Contributions**
 - Establishes **personal objective functions as observation architectures**, extending the governance‑as‑engineering framework to the individual.
-- Formulates the **Goodhart–Ashby synthesis for the self**: any personal value function with dimensionality lower than the self’s variety eventually degrades the ability to perceive the self’s true state.
+- Formulates the **Goodhart–Ashby synthesis for the self**: a personal value function degrades its ability to perceive the self's true state when it omits a dimension causally coupled to the proxy it optimizes—not merely by being lower-dimensional than the self.
 - Introduces the **self‑variety gap (G_self)** as an operationalizable metric for psychological blind spots and crisis vulnerability.
 - Demonstrates the framework through **evidence from self‑complexity theory, cognitive dissonance research, and contemplative neuroscience**.
 - Articulates the **personal meta‑governance imperative**: the capacity to audit and evolve one’s own value architecture before the gap becomes incapacitating.

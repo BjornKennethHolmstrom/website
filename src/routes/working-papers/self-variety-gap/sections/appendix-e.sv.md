@@ -9,7 +9,7 @@ Bidrag markerade med † diskuteras i evidenssammanfattningstabellen i Appendix�
 ### Grundläggande kybernetik och styrteori
 
 **Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.**  
-Den kanoniska formuleringen av lagen om nödvändig variation. Grundläggande för argumentet att en personlig värderingsarkitektur måste matcha variationen i det själv den styr (Del I, II). **[R]**
+Den kanoniska formuleringen av lagen om nödvändig variation. Grundläggande för argumentet att en personlig värderingsarkitektur måste matcha variationen hos de störningar av självet som den måste reglera (inte självet i sin helhet) (Del I, II). **[R]**
 
 **Conant, R. C. & Ashby, W. R. (1970). "Every Good Regulator of a System Must Be a Model of That System." *International Journal of Systems Science*, 1(2), 89–97.**  
 Formellt bevis för att effektiv reglering kräver intern modelleringskapacitet. Underbygger påståendet att personliga värden fungerar som en modell av självet (Del II). **[R]**

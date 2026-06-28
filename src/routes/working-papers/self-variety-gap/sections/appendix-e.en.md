@@ -9,7 +9,7 @@ Entries marked with † are discussed in the evidence summary table in Appendix�
 ### Foundational Cybernetics and Control Theory
 
 **Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.**  
-The canonical statement of the Law of Requisite Variety. Foundational for the argument that a personal value architecture must match the variety of the self it governs (Parts I, II). **[R]**
+The canonical statement of the Law of Requisite Variety. Foundational for the argument that a personal value architecture must match the variety of the *disturbances of the self* it must regulate (not the self in its entirety) (Parts I, II). **[R]**
 
 **Conant, R. C. & Ashby, W. R. (1970). “Every Good Regulator of a System Must Be a Model of That System.” *International Journal of Systems Science*, 1(2), 89–97.**  
 Formal proof that effective regulation requires internal modelling capacity. Underpins the claim that personal values function as a model of the self (Part II). **[R]**
