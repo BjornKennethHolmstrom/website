@@ -54,7 +54,7 @@ const metadata = {
 		author: 'Björn Kenneth Holmström',
 		date: 'Juni 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/requisite-observer-diversity',
-		seriesNote: 'Rapport X i serien Styrning som ingenjörskonst',
+		seriesNote: 'Arbetsdokument X i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	}
 };
@@ -81,7 +81,7 @@ const pdfStyles = `
 		size: A4;
 		margin: 2.5cm 2cm;
 		@bottom-right {
-			content: "Page " counter(page) " of " counter(pages);
+			content: "${LANGUAGE === 'sv' ? 'Sida' : 'Page'} " counter(page) " ${LANGUAGE === 'sv' ? 'av' : 'of'} " counter(pages);
 			font-size: 9pt;
 			color: #666;
 		}
@@ -373,11 +373,7 @@ async function generatePDF(html) {
 					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series X' : 'Arbetsdokument · Serie X'}</span>
 				</div>
 			`,
-			footerTemplate: `
-				<div style="font-size: 9pt; color: #666; width: 100%; text-align: center; margin: 0 2cm;">
-					<span class="pageNumber"></span>
-				</div>
-			`,
+    footerTemplate: `<div></div>`,
 			timeout: 120000
 		});
 
