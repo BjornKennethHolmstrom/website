@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>En kris, tre perspektiv</title>
+<title>En kris, tre linser</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -150,6 +150,10 @@
   .blackout .bcount{font-family:var(--mono); font-size:40px; color:var(--warn); margin-top:16px; font-variant-numeric:tabular-nums;}
   .blackout .bwarn{font-family:var(--mono); font-size:11px; color:var(--crash); margin-top:14px;}
 
+  @media(max-width:600px){
+    .metrics{grid-template-columns:repeat(2,1fr);}
+    .top{flex-direction:column; align-items:flex-start; gap:6px;}
+  }
   @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
 </style>
 </head>
@@ -157,7 +161,7 @@
 <div class="wrap">
 
   <div class="top">
-    <h1>En kris, tre perspektiv <small>prototyp v0</small></h1>
+    <h1>En kris, tre linser <small>prototyp v0</small></h1>
     <div class="readouts">
       <span>DAG <b id="clk">0</b>/45</span>
       <span class="om">&Omega; <b id="omega">100</b></span>
@@ -266,7 +270,7 @@
     // blackout countdown
     if(phase==="blackout"){
       blackoutLeft--;
-      if(blackoutLeft<=0){ mode=pendingMode; pendingMode=null; phase="playing"; $("blackout").classList.remove("show"); }
+      if(blackoutLeft<=0){ mode=pendingMode; pendingMode=null; phase="playing"; espark=[]; $("blackout").classList.remove("show"); }  // lens boots blind: no history across the gap
     }
     // win?
     if(W.tick>=WINDOW && phase!=="blackout"){ return end(true); }
