@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,22 +108,22 @@
 <body>
 <div class="wrap">
   <div class="top">
-    <h1>The Ward <small>an outbreak probe &middot; v0</small></h1>
-    <div class="readouts"><span>DAY <b id="clk">0</b>/40</span><span>VIABILITY <b id="via">100</b></span><span>BUDGET <b id="bud">100</b></span></div>
+    <h1>The Ward <small>en utbrottsundersökning &middot; v0</small></h1>
+    <div class="readouts"><span>DAG <b id="clk">0</b>/40</span><span>LIVSKRAFT <b id="via">100</b></span><span>BUDGET <b id="bud">100</b></span></div>
   </div>
-  <div class="reality">&#128584; the dashboard you start with cannot see what&rsquo;s coming &mdash; only what you measure today</div>
+  <div class="reality">&#128584; instrumentpanelen du börjar med kan inte se vad som är på väg &mdash; bara det du mäter idag</div>
 
   <div class="lenses" id="lenses"></div>
   <div class="gracebar" id="gracebar">
-    <span>The ward is quiet. Switch lenses freely to see how each one reads the same departments &mdash; then open the day when ready.</span>
-    <button id="startCrisis">Open the day</button>
+    <span>Avdelningen är lugn. Växla fritt mellan linser för att se hur var och en avläser samma enheter &mdash; öppna dagen när du är redo.</span>
+    <button id="startCrisis">Öppna dagen</button>
   </div>
   <div class="stage" id="stage"></div>
   <div class="actions" id="actions"></div>
 
   <div class="footnote">
-    Same institutions, different stats per lens: what reads as overhead in the throughput view is sensing capacity in the weak-signal view.<br>
-    Loosely after sensing fidelity (<a href="https://www.bjornkennethholmstrom.org/working-papers/observability-democracy-connection" target="_blank" rel="noopener noreferrer">Paper III: The Observability&ndash;Democracy Connection</a> &middot; <a href="https://www.bjornkennethholmstrom.org/working-papers/the-variety-gap" target="_blank" rel="noopener noreferrer">Paper VI: The Variety Gap</a>) and observer decorrelation (<a href="https://www.bjornkennethholmstrom.org/working-papers/requisite-observer-diversity" target="_blank" rel="noopener noreferrer">Paper X: Requisite Observer Diversity</a>). No stage model used here.
+    Samma institutioner, olika nyckeltal per lins: det som i genomflödesvyn ser ut som omkostnad är detektionskapacitet i vyn för svaga signaler.<br>
+    Bygger löst på detektionstrohet (<a href="https://www.bjornkennethholmstrom.org/working-papers/observability-democracy-connection" target="_blank" rel="noopener noreferrer">Paper III: The Observability&ndash;Democracy Connection</a> &middot; <a href="https://www.bjornkennethholmstrom.org/working-papers/the-variety-gap" target="_blank" rel="noopener noreferrer">Paper VI: The Variety Gap</a>) och observatörsdekorrelation (<a href="https://www.bjornkennethholmstrom.org/working-papers/requisite-observer-diversity" target="_blank" rel="noopener noreferrer">Paper X: Requisite Observer Diversity</a>). Ingen stegmodell används här.
   </div>
 </div>
 
@@ -140,8 +140,8 @@
   const INCUBATE_START=6, ERUPT=26, INCUBATE_RATE=0.06, BASE_DAMAGE=13;
   const BUDGET0=60, BUDGET_REGEN=3;
   const C_REPORT=28, C_SLACK=24, C_SLACK_UP=2, C_REVIEW=26, C_RESPONSE=22, C_ENFORCE=8;
-  const LENS={ throughput:{name:"Throughput lens", c:"#5a9bd4", sub:"beds, compliance, cost"},
-               weak:{name:"Weak-signal lens", c:"#5fb98a", sub:"emerging-threat sensing"} };
+  const LENS={ throughput:{name:"Genomflödeslins", c:"#5a9bd4", sub:"bäddar, efterlevnad, kostnad"},
+               weak:{name:"Svaga-signaler-lins", c:"#5fb98a", sub:"detektion av gryende hot"} };
   const ORDER=["throughput","weak"];
 
   // ---------- state ----------
@@ -214,7 +214,7 @@
     const el=$("lenses"); el.innerHTML="";
     ORDER.forEach(k=>{ const L=LENS[k], a=(k===S.mode), b=document.createElement("button");
       b.className="lens-tab"; b.style.setProperty("--c",L.c); b.dataset.active=a?"1":"0";
-      b.innerHTML=`<div class="nm"><span class="sw"></span>${L.name}</div><div class="sub">${a?"active":(S.phase==="orient"?"view (free)":"switch (free)")}&middot; ${L.sub}</div>`;
+      b.innerHTML=`<div class="nm"><span class="sw"></span>${L.name}</div><div class="sub">${a?"aktiv":(S.phase==="orient"?"visa (gratis)":"byt (gratis)")}&middot; ${L.sub}</div>`;
       if(!a) b.addEventListener("click",()=>{ S.mode=k; render(); }); el.appendChild(b); });
   }
 
@@ -222,23 +222,23 @@
     const tp=S.mode==="throughput"; const dis=S.phase!=="playing"?"disabled":"";
     let nm,verdict,vcol,lines,btn="";
     if(which==="reporting"){
-      const r=S.reporting; nm="Frontline incident reporting";
-      if(tp){ verdict="overhead"; vcol="var(--muted)"; lines=`Cost: <b>4 staff-hrs/day</b><br>Measurable output: <b>0</b>`; }
-      else { verdict="early-warning system"; vcol="var(--safe)"; lines=`Sensing coverage: <b>${Math.round(r.readiness)}%</b><br>Threat lead time: <b>${Math.round(r.readiness/100*12)} days</b>`; }
+      const r=S.reporting; nm="Avvikelserapportering i frontlinjen";
+      if(tp){ verdict="omkostnad"; vcol="var(--muted)"; lines=`Kostnad: <b>4 persontimmar/dag</b><br>Mätbar produktion: <b>0</b>`; }
+      else { verdict="tidigvarningssystem"; vcol="var(--safe)"; lines=`Detektionstäckning: <b>${Math.round(r.readiness)}%</b><br>Förvarning: <b>${Math.round(r.readiness/100*12)} dagar</b>`; }
       btn = r.built ? `<div class="mbar"><div class="mf" style="width:${r.readiness}%"></div></div>` :
-        `<button class="ibtn" ${dis} data-build="reporting">establish &middot; ${C_REPORT}</button>`;
+        `<button class="ibtn" ${dis} data-build="reporting">upprätta &middot; ${C_REPORT}</button>`;
     } else if(which==="slack"){
-      const s=S.slack; nm="Protected slack reserve";
-      if(tp){ verdict="waste"; vcol="var(--crash)"; lines=`Idle beds & staff<br>Occupancy: <b>&minus;12%</b> &middot; biggest line item to cut`; }
-      else { verdict="surge buffer"; vcol="var(--safe)"; lines=`Reserve filled: <b>${Math.round(s.reserve)}%</b><br>Absorbs eruption load &middot; cannot be built late`; }
-      if(!s.built) btn=`<button class="ibtn" ${dis} data-build="slack">establish &middot; ${C_SLACK} (+${C_SLACK_UP}/day upkeep)</button>`;
-      else btn=`<button class="ibtn ${s.active?'on':''}" ${dis} data-toggle="1">${s.active?"reserve held (on)":"reserve released (off)"}</button>`;
+      const s=S.slack; nm="Skyddad slackreserv";
+      if(tp){ verdict="slöseri"; vcol="var(--crash)"; lines=`Tomma bäddar & personal<br>Beläggning: <b>&minus;12%</b> &middot; största besparingspost`; }
+      else { verdict="överspänningsbuffert"; vcol="var(--safe)"; lines=`Reserv fylld: <b>${Math.round(s.reserve)}%</b><br>Absorberar utbrottsbelastning &middot; kan inte byggas sent`; }
+      if(!s.built) btn=`<button class="ibtn" ${dis} data-build="slack">upprätta &middot; ${C_SLACK} (+${C_SLACK_UP}/dag underhåll)</button>`;
+      else btn=`<button class="ibtn ${s.active?'on':''}" ${dis} data-toggle="1">${s.active?"reserven hålls (på)":"reserven frisläppt (av)"}</button>`;
     } else {
-      const r=S.review; nm="Cross-department case review";
-      if(tp){ verdict="meeting overhead"; vcol="var(--muted)"; lines=`Clinician-hours in meetings<br>Throughput impact: <b>negative</b>`; }
-      else { verdict="response backbone"; vcol="var(--safe)"; lines=`Coordination readiness: <b>${Math.round(r.readiness)}%</b><br>Scales how well a response holds`; }
+      const r=S.review; nm="Tvärfunktionell fallgranskning";
+      if(tp){ verdict="mötesomkostnad"; vcol="var(--muted)"; lines={`Klinikertimmar i möten<br>Genomflödespåverkan: <b>negativ</b>`}; }
+      else { verdict="insatsens ryggrad"; vcol="var(--safe)"; lines={`Samordningsberedskap: <b>${Math.round(r.readiness)}%</b><br>Avgör hur väl en insats håller`}; }
       btn = r.built ? `<div class="mbar"><div class="mf" style="width:${r.readiness}%"></div></div>` :
-        `<button class="ibtn" ${dis} data-build="review">establish &middot; ${C_REVIEW}</button>`;
+        `<button class="ibtn" ${dis} data-build="review">upprätta &middot; ${C_REVIEW}</button>`;
     }
     return `<div class="inst"><div class="ihd"><div class="inm">${nm}</div>
       <div class="verdict" style="color:${vcol}">${verdict}</div></div>
@@ -250,27 +250,27 @@
     if(S.mode==="throughput"){
       const occ = S.tick<ERUPT ? 76 : Math.min(142, 76+(S.tick-ERUPT)*5);
       const comp = Math.min(99, 86+S.enforceBoost);
-      const ok=v=>`<div class="th" style="color:var(--safe)">within range \u2713</div>`;
-      const bad=`<div class="th" style="color:var(--crash)">overload \u2717</div>`;
-      st.innerHTML=`<div class="stage-head"><div class="stage-title">Throughput lens &middot; operations</div>
-        <div class="stage-note">Beds, compliance, cost. Reads current load.<br>Cannot resolve emerging threats.</div></div>
+      const ok=v=>`<div class="th" style="color:var(--safe)">inom intervall \u2713</div>`;
+      const bad=`<div class="th" style="color:var(--crash)">överbelastning \u2717</div>`;
+      st.innerHTML=`<div class="stage-head"><div class="stage-title">Genomflödeslins &middot; verksamhet</div>
+        <div class="stage-note">Bäddar, efterlevnad, kostnad. Visar aktuell belastning.<br>Kan inte upptäcka gryende hot.</div></div>
         <div class="metrics">
-          <div class="metric"><div class="lbl">Occupancy</div><div class="v" style="color:${occ>100?'var(--crash)':'var(--ink)'}">${Math.round(occ)}%</div>${occ>100?bad:ok()}</div>
-          <div class="metric"><div class="lbl">Compliance</div><div class="v">${Math.round(comp)}%</div>${ok()}</div>
-          <div class="metric"><div class="lbl">Avg stay</div><div class="v">4.1d</div>${ok()}</div>
-          <div class="metric"><div class="lbl">Cost/case</div><div class="v">1.0&times;</div>${ok()}</div>
+          <div class="metric"><div class="lbl">Beläggning</div><div class="v" style="color:${occ>100?'var(--crash)':'var(--ink)'}">${Math.round(occ)}%</div>${occ>100?bad:ok()}</div>
+          <div class="metric"><div class="lbl">Efterlevnad</div><div class="v">${Math.round(comp)}%</div>${ok()}</div>
+          <div class="metric"><div class="lbl">Medelvårdtid</div><div class="v">4,1d</div>${ok()}</div>
+          <div class="metric"><div class="lbl">Kostnad/fall</div><div class="v">1,0&times;</div>${ok()}</div>
         </div>
         <div class="insts">${instCard("reporting")}${instCard("slack")}${instCard("review")}</div>`;
     } else {
       const sg=seen(), pct=Math.round(sg*100);
       const col = pct>55?"var(--crash)":pct>25?"var(--warn)":"var(--safe)";
-      const cover = S.reporting.built ? Math.round(S.reporting.readiness)+"% sensing coverage" : "no sensing built \u2014 you are blind here";
-      st.innerHTML=`<div class="stage-head"><div class="stage-title">Weak-signal lens &middot; emerging threats</div>
-        <div class="stage-note">Shows only as much as your sensing covers.<br>Cannot resolve beds, cost, compliance.</div></div>
-        <div class="signal"><div class="glbl">Emerging threat signal (observed)</div>
+      const cover = S.reporting.built ? Math.round(S.reporting.readiness)+"% detektionstäckning" : "ingen detektion upprättad \u2014 du är blind här";
+      st.innerHTML=`<div class="stage-head"><div class="stage-title">Svaga-signaler-lins &middot; gryende hot</div>
+        <div class="stage-note">Visar bara så mycket som din detektion täcker.<br>Kan inte visa bäddar, kostnad eller efterlevnad.</div></div>
+        <div class="signal"><div class="glbl">Observerad gryende hotsignal</div>
           <div class="gv" style="color:${col}">${pct}%</div>
           <div class="gbar"><div class="fill" style="width:${pct}%;background:${col}"></div></div>
-          <div class="gnote">${cover}. The true threat may be larger than what you can see.</div></div>
+          <div class="gnote">${cover}. Det verkliga hotet kan vara större än vad du kan se.</div></div>
         <div class="insts">${instCard("reporting")}${instCard("slack")}${instCard("review")}</div>`;
     }
     st.querySelectorAll("[data-build]").forEach(b=>b.addEventListener("click",()=>build(b.dataset.build)));
@@ -280,20 +280,20 @@
   function renderActions(){
     const el=$("actions"); let acts=[];
     if(S.mode==="throughput"){
-      acts.push({an:"Enforce protocol compliance",ad:"Boosts compliance now &mdash; but staff stop filing reports.",c:C_ENFORCE,f:enforce});
+      acts.push({an:"Upprätthåll regelefterlevnad",ad:"Ökar efterlevnad nu &mdash; men personal slutar rapportera avvikelser.",c:C_ENFORCE,f:enforce});
     } else {
-      acts.push({an:S.response.mounted?"Response mounted":"Mount outbreak response",
-        ad:S.response.mounted?`Prepared at day ${S.response.tick}.`:"Effectiveness depends on coordination &mdash; and on how early you mount it.",
+      acts.push({an:S.response.mounted?"Insats monterad":"Montera utbrottsinsats",
+        ad:S.response.mounted?`Förbereddes dag ${S.response.tick}.`:"Effektiviteten beror på samordning &mdash; och på hur tidigt du monterar den.",
         c:C_RESPONSE,f:mountResponse,done:S.response.mounted});
     }
-    let html=`<div class="actions-lbl">Actions &mdash; <b style="color:var(--lens)">${LENS[S.mode].name}</b></div><div class="act-row">`;
+    let html=`<div class="actions-lbl">Åtgärder &mdash; <b style="color:var(--lens)">${LENS[S.mode].name}</b></div><div class="act-row">`;
     acts.forEach((a,i)=>{ const dis=(S.phase!=="playing"||a.done||S.budget<a.c)?"disabled":"";
-      html+=`<button class="act" ${dis} data-i="${i}"><div class="an">${a.an}</div><div class="ad">${a.ad}</div><div class="ac">cost ${a.c}</div></button>`; });
+      html+=`<button class="act" ${dis} data-i="${i}"><div class="an">${a.an}</div><div class="ad">${a.ad}</div><div class="ac">kostnad ${a.c}</div></button>`; });
     html+=`</div>`; el.innerHTML=html;
     el.querySelectorAll(".act").forEach(b=>b.addEventListener("click",()=>acts[+b.dataset.i].f()));
   }
 
-  // ---------- trace (failure/﻿win sparkline) ----------
+  // ---------- trace (failure/win sparkline) ----------
   function traceSVG(){
     const n=S.threatHist.length; if(n<2) return "";
     const W=300,H=80, x=i=>(i/(n-1))*W, y=v=>H-v*H;
@@ -303,7 +303,7 @@
       <line x1="${ex}" y1="0" x2="${ex}" y2="${H}" stroke="var(--line)" stroke-width="1"/>
       ${line(S.threatHist,"var(--crash)",false)}
       ${line(S.seenHist,"var(--lens)",true)}
-    </svg><div class="lg"><span style="color:var(--crash)">true threat</span><span style="color:var(--lens)">what you could see</span></div></div>`;
+    </svg><div class="lg"><span style="color:var(--crash)">verkligt hot</span><span style="color:var(--lens)">vad du kunde se</span></div></div>`;
   }
 
   // ---------- end / intro ----------
@@ -311,28 +311,28 @@
     S.phase=win?"won":"lost"; clearInterval(timer);
     const c=$("card");
     if(win){
-      const carried=[]; if(S.slack.built)carried.push("a surge buffer that was already full"); 
-      if(S.response.mounted&&S.response.prep>0.5)carried.push("a response mounted early enough to matter");
-      if(S.reporting.built&&S.reporting.readiness>50)carried.push("frontline sensing that saw it coming");
-      c.innerHTML=`<div class="verdict" style="color:var(--safe)">\u2713 THE WARD HELD</div><h2>Through the surge</h2>
+      const carried=[]; if(S.slack.built)carried.push("en överspänningsbuffert som redan var full");
+      if(S.response.mounted&&S.response.prep>0.5)carried.push("en insats som monterades tillräckligt tidigt för att ha effekt");
+      if(S.reporting.built&&S.reporting.readiness>50)carried.push("frontlinjedetektion som såg det komma");
+      c.innerHTML=`<div class="verdict" style="color:var(--safe)">\u2713 AVDELNINGEN HÖLL</div><h2>Genom anstormningen</h2>
         ${traceSVG()}
-        <p>${carried.length?"What carried you: "+carried.join(", ")+".":"You weathered it \u2014 barely."} The throughput dashboard never showed the threat; the institutions that looked like overhead were the ones that absorbed it.</p>
-        <button class="btn" id="again">Run again</button>`;
+        <p>${carried.length?"Vad bar dig: "+carried.join(", ")+".":"Du klarade det \u2014 med nöd och näppe."} Genomflödespanelen visade aldrig hotet; de institutioner som såg ut som omkostnad var de som absorberade det.</p>
+        <button class="btn" id="again">Kör igen</button>`;
     } else {
       const sawIt = S.reporting.built && S.reporting.readiness>40;
-      c.innerHTML=`<div class="verdict" style="color:var(--crash)">\u2717 WARD OVERWHELMED</div><h2>Day ${S.loseTick}</h2>
+      c.innerHTML=`<div class="verdict" style="color:var(--crash)">\u2717 AVDELNINGEN ÖVERVÄLDIGAD</div><h2>Dag ${S.loseTick}</h2>
         ${traceSVG()}
-        <p>The outbreak was building from day ${INCUBATE_START}. ${sawIt?"Your sensing saw it \u2014 but the buffer and response weren&rsquo;t enough when it hit.":"With frontline reporting matured, the weak-signal lens would have shown it in time to prepare. On the throughput dashboard it stayed green until day "+ERUPT+"."}</p>
-        <p style="color:var(--faint)">The signal was there the whole time, in a lens you weren&rsquo;t funded to read.</p>
-        <button class="btn" id="again">Try again</button>`;
+        <p>Utbrottet byggdes upp från dag ${INCUBATE_START}. ${sawIt?"Din detektion såg det \u2014 men bufferten och insatsen räckte inte när det slog till.":"Med mogen avvikelserapportering skulle svaga-signaler-linsen ha visat det i tid för att förbereda. På genomflödespanelen förblev allt grönt fram till dag "+ERUPT+"."}</p>
+        <p style="color:var(--faint)">Signalen fanns där hela tiden, i en lins du inte var finansierad att läsa.</p>
+        <button class="btn" id="again">Försök igen</button>`;
     }
     $("overlay").classList.add("show"); $("again").addEventListener("click",start);
   }
   function intro(){
-    $("card").innerHTML=`<div class="verdict" style="color:var(--lens)">THE WARD</div><h2>Hold the hospital for 40 days</h2>
-      <p>You run operations. Your dashboard &mdash; beds, compliance, cost &mdash; reads green, and your budget is finite. Something is incubating in a dimension that dashboard cannot see.</p>
-      <p>A second lens can see it, but only as well as the sensing you fund <i>ahead of time</i>. Some institutions look like pure overhead today and become the only thing that matters later &mdash; if you built them early enough.</p>
-      <button class="btn" id="begin">Begin</button>`;
+    $("card").innerHTML=`<div class="verdict" style="color:var(--lens)">THE WARD</div><h2>Håll sjukhuset i 40 dagar</h2>
+      <p>Du driver verksamheten. Din instrumentpanel &mdash; bäddar, efterlevnad, kostnad &mdash; visar grönt, och din budget är ändlig. Något inkuberar i en dimension som panelen inte kan se.</p>
+      <p>En andra lins kan se det, men bara så väl som den detektion du finansierar <i>i förväg</i>. Vissa institutioner ser ut som ren omkostnad idag och blir det enda som spelar roll senare &mdash; om du byggde dem tidigt nog.</p>
+      <button class="btn" id="begin">Börja</button>`;
     $("overlay").classList.add("show"); $("begin").addEventListener("click",start);
   }
   function start(){
