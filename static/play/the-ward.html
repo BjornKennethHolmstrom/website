@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ward</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#14171c; --panel:#1b2027; --raised:#222a33; --line:#2b333d;
+    --ink:#d7dee7; --muted:#727e8c; --faint:#4a545f;
+    --safe:#5fb98a; --warn:#e3a52f; --crash:#e0564a;
+    --lens:#5a9bd4;
+    --mono:'IBM Plex Mono',ui-monospace,monospace; --sans:'Space Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box} html,body{margin:0}
+  body{background:radial-gradient(130% 90% at 50% -10%, #1a1f27 0%, var(--bg) 60%) fixed, var(--bg);
+    color:var(--ink); font-family:var(--sans); min-height:100vh; display:flex; justify-content:center;
+    -webkit-font-smoothing:antialiased; line-height:1.45;}
+  .wrap{width:100%; max-width:780px; padding:22px 18px 48px;}
+
+  .top{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  h1{font-size:18px; font-weight:600; margin:0;} h1 small{color:var(--muted); font-weight:400; font-size:13px; margin-left:8px;}
+  .readouts{display:flex; gap:18px; font-family:var(--mono); font-size:12px; color:var(--muted);}
+  .readouts b{color:var(--ink); font-weight:600;}
+  .reality{margin-top:10px; font-family:var(--mono); font-size:11px; color:var(--faint);
+    border:1px dashed var(--line); border-radius:8px; padding:6px 10px; display:inline-flex; gap:8px;}
+
+  .lenses{display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:16px;}
+  .lens-tab{appearance:none; cursor:pointer; text-align:left; background:var(--panel); border:1px solid var(--line);
+    border-radius:11px; padding:12px 13px; transition:.15s; color:var(--ink); position:relative;}
+  .lens-tab .nm{font-size:13px; font-weight:600; display:flex; align-items:center; gap:7px;}
+  .lens-tab .nm .sw{width:9px; height:9px; border-radius:2px; background:var(--c);}
+  .lens-tab .sub{font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:3px;}
+  .lens-tab[data-active="1"]{border-color:var(--c); background:linear-gradient(180deg,#222a33,#1a1f26);}
+  .lens-tab:not([data-active="1"]):hover{border-color:var(--muted);}
+
+  .gracebar{margin-top:14px; display:none; align-items:center; justify-content:space-between; gap:12px;
+    background:#171c22; border:1px solid var(--lens); border-radius:11px; padding:11px 14px; flex-wrap:wrap;}
+  .gracebar span{font-size:12.5px; color:var(--ink);}
+  .gracebar button{appearance:none; cursor:pointer; font-family:var(--sans); font-weight:600; font-size:13px;
+    border-radius:9px; padding:9px 18px; border:1px solid var(--lens); background:var(--lens); color:#0c0e12;}
+
+  .stage{margin-top:14px; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:18px; border-top:2px solid var(--lens); transition:border-color .3s; min-height:300px;}
+  .stage-head{display:flex; align-items:baseline; justify-content:space-between; gap:10px;}
+  .stage-title{font-size:15px; font-weight:600; color:var(--lens);}
+  .stage-note{font-family:var(--mono); font-size:10.5px; color:var(--muted); text-align:right; max-width:42ch;}
+
+  .metrics{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:16px;}
+  .metric{background:#171c22; border:1px solid var(--line); border-radius:10px; padding:11px;}
+  .metric .lbl{font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);}
+  .metric .v{font-family:var(--mono); font-weight:600; font-size:23px; margin:5px 0 2px; font-variant-numeric:tabular-nums;}
+  .metric .th{font-family:var(--mono); font-size:9.5px;}
+
+  .signal{margin-top:16px;}
+  .signal .glbl{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
+  .signal .gv{font-family:var(--mono); font-weight:600; font-size:38px; margin:4px 0; font-variant-numeric:tabular-nums;}
+  .gbar{height:8px; background:#10141a; border-radius:5px; overflow:hidden;}
+  .gbar .fill{height:100%; transition:width .4s, background .3s;}
+  .gnote{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:8px; line-height:1.5;}
+
+  .insts{margin-top:18px; display:grid; gap:10px;}
+  .inst{border:1px solid var(--line); border-radius:11px; padding:12px 13px; background:#171c22;}
+  .inst .ihd{display:flex; justify-content:space-between; align-items:baseline; gap:8px;}
+  .inst .inm{font-size:13px; font-weight:600;}
+  .inst .verdict{font-family:var(--mono); font-size:10.5px; padding:2px 8px; border-radius:999px; border:1px solid currentColor;}
+  .inst .lines{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:8px; line-height:1.7;}
+  .inst .lines b{color:var(--ink); font-weight:600;}
+  .inst .ibtn{appearance:none; cursor:pointer; margin-top:10px; font-family:var(--mono); font-size:10.5px; font-weight:600;
+    border-radius:8px; padding:6px 12px; border:1px solid var(--line); background:var(--raised); color:var(--ink);}
+  .inst .ibtn:hover:not(:disabled){border-color:var(--lens);} .inst .ibtn:disabled{opacity:.4; cursor:not-allowed;}
+  .inst .ibtn.on{border-color:var(--safe); color:var(--safe);}
+  .mbar{height:5px; background:#10141a; border-radius:3px; margin-top:8px; overflow:hidden;}
+  .mbar .mf{height:100%; background:var(--lens); transition:width .4s;}
+
+  .actions{margin-top:16px;}
+  .actions-lbl{font-size:11px; color:var(--muted); margin-bottom:9px;}
+  .act-row{display:flex; gap:10px; flex-wrap:wrap;}
+  .act{appearance:none; cursor:pointer; flex:1; min-width:170px; text-align:left; background:var(--raised);
+    border:1px solid var(--line); border-radius:10px; padding:11px 13px; color:var(--ink); transition:.15s;}
+  .act:hover:not(:disabled){border-color:var(--lens);} .act:disabled{opacity:.4; cursor:not-allowed;}
+  .act .an{font-size:13px; font-weight:600;} .act .ad{font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:3px; line-height:1.4;}
+  .act .ac{font-family:var(--mono); font-size:10px; color:var(--warn); margin-top:5px;}
+
+  .footnote{margin-top:22px; font-size:10.5px; color:var(--faint); text-align:center; line-height:1.6;}
+
+  .overlay{position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+    background:rgba(14,17,22,.86); backdrop-filter:blur(4px); z-index:20; padding:20px;}
+  .overlay.show{display:flex;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:26px 28px; max-width:560px; text-align:center;}
+  .card h2{margin:0 0 8px; font-size:24px; font-weight:700;} .card p{font-size:13.5px; color:var(--muted); line-height:1.6; margin:8px 0;}
+  .card .verdict{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:.1em;}
+  .card .btn{appearance:none; cursor:pointer; margin-top:16px; font-family:var(--sans); font-weight:600; font-size:14px;
+    border-radius:11px; padding:12px 22px; border:1px solid #33414d; background:linear-gradient(180deg,#2a3540,#212a33); color:#fff;}
+  .trace{margin:14px 0 4px;} .trace svg{width:100%; height:90px;}
+  .trace .lg{font-family:var(--mono); font-size:10px; color:var(--muted); display:flex; gap:16px; justify-content:center; margin-top:4px;}
+  .trace .lg span::before{content:"\\2014  ";}
+
+  @media(max-width:600px){ .metrics{grid-template-columns:repeat(2,1fr);} .top{flex-direction:column; align-items:flex-start; gap:6px;} }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>The Ward <small>an outbreak probe &middot; v0</small></h1>
+    <div class="readouts"><span>DAY <b id="clk">0</b>/40</span><span>VIABILITY <b id="via">100</b></span><span>BUDGET <b id="bud">100</b></span></div>
+  </div>
+  <div class="reality">&#128584; the dashboard you start with cannot see what&rsquo;s coming &mdash; only what you measure today</div>
+
+  <div class="lenses" id="lenses"></div>
+  <div class="gracebar" id="gracebar">
+    <span>The ward is quiet. Switch lenses freely to see how each one reads the same departments &mdash; then open the day when ready.</span>
+    <button id="startCrisis">Open the day</button>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="actions" id="actions"></div>
+
+  <div class="footnote">
+    Same institutions, different stats per lens: what reads as overhead in the throughput view is sensing capacity in the weak-signal view.<br>
+    Sensing fidelity (Paper III / VI), requisite capacity, and observer decorrelation (Paper X). No stage model used here.
+  </div>
+</div>
+
+<div class="overlay" id="overlay"><div class="card" id="card"></div></div>
+
+<script>
+(function(){
+  "use strict";
+  const $=id=>document.getElementById(id);
+  const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+
+  // ---------- config ----------
+  const TICK_MS=1500, WINDOW=40, V0=100, V_COLLAPSE=40;
+  const INCUBATE_START=6, ERUPT=26, INCUBATE_RATE=0.06, BASE_DAMAGE=13;
+  const BUDGET0=60, BUDGET_REGEN=3;
+  const C_REPORT=28, C_SLACK=24, C_SLACK_UP=2, C_REVIEW=26, C_RESPONSE=22, C_ENFORCE=8;
+  const LENS={ throughput:{name:"Throughput lens", c:"#5a9bd4", sub:"beds, compliance, cost"},
+               weak:{name:"Weak-signal lens", c:"#5fb98a", sub:"emerging-threat sensing"} };
+  const ORDER=["throughput","weak"];
+
+  // ---------- state ----------
+  let S, timer;
+  function fresh(){
+    S={ tick:0, phase:"playing", mode:"throughput", V:V0, budget:BUDGET0,
+        threat:0, threatHist:[], seenHist:[], enforceBoost:0, loseTick:null,
+        reporting:{built:false, readiness:0},
+        slack:{built:false, active:false, reserve:0},
+        review:{built:false, readiness:0},
+        response:{mounted:false, prep:0, tick:null} };
+  }
+  const seen=()=> S.threat * (S.reporting.built ? S.reporting.readiness/100 : 0);
+
+  // ---------- world ----------
+  function advance(){
+    S.tick++; S.budget+=BUDGET_REGEN;
+    const incubating = (S.tick>=INCUBATE_START && S.tick<ERUPT);
+    if(incubating) S.threat=Math.min(1,S.threat+INCUBATE_RATE);
+    if(S.reporting.built) S.reporting.readiness=Math.min(100,S.reporting.readiness+(incubating?5:3));
+    if(S.review.built) S.review.readiness=Math.min(100,S.review.readiness+3);
+    if(S.slack.built){ S.slack.reserve=clamp(S.slack.reserve+(S.slack.active?6:-3),0,100); if(S.slack.active) S.budget-=C_SLACK_UP; }
+    if(S.enforceBoost>0) S.enforceBoost--;
+    if(S.tick>=ERUPT){
+      const slackAbs=(S.slack.reserve/100)*0.45;
+      const respMit=S.response.mounted ? S.response.prep*(0.30+0.25*S.review.readiness/100) : 0;
+      const mit=clamp(slackAbs+respMit,0,0.85);
+      S.V-=BASE_DAMAGE*(1-mit);
+    }
+    S.threatHist.push(S.threat); S.seenHist.push(seen());
+    if(S.V<V_COLLAPSE){ S.V=Math.max(0,S.V); S.loseTick=S.tick; return end(false); }
+  }
+  function tickLoop(){
+    if(S.phase==="won"||S.phase==="lost") return;
+    advance(); if(S.phase==="won"||S.phase==="lost") return;
+    if(S.tick>=WINDOW) return end(true);
+    render();
+  }
+
+  // ---------- actions ----------
+  function pay(c){ if(S.budget<c) return false; S.budget-=c; return true; }
+  function build(which){
+    if(S.phase!=="playing") return;
+    if(which==="reporting"&&!S.reporting.built&&pay(C_REPORT)) S.reporting.built=true;
+    if(which==="slack"&&!S.slack.built&&pay(C_SLACK)){ S.slack.built=true; S.slack.active=true; }
+    if(which==="review"&&!S.review.built&&pay(C_REVIEW)) S.review.built=true;
+    render();
+  }
+  function toggleSlack(){ if(S.phase!=="playing"||!S.slack.built) return; S.slack.active=!S.slack.active; render(); }
+  function mountResponse(){
+    if(S.phase!=="playing"||S.response.mounted) return;
+    if(!pay(C_RESPONSE)) return;
+    S.response.mounted=true; S.response.tick=S.tick;
+    S.response.prep=clamp((ERUPT-S.tick)/14,0.15,1);
+    render();
+  }
+  function enforce(){ if(S.phase!=="playing") return; if(!pay(C_ENFORCE)) return;
+    S.enforceBoost=12; S.reporting.readiness=Math.max(0,S.reporting.readiness-18); render(); }
+
+  // ---------- render ----------
+  function render(){
+    document.documentElement.style.setProperty("--lens", LENS[S.mode].c);
+    $("clk").textContent=S.tick;
+    const v=$("via"); v.textContent=Math.round(S.V); v.style.color=S.V<55?"var(--crash)":S.V<75?"var(--warn)":"var(--safe)";
+    $("bud").textContent=Math.round(S.budget);
+    $("gracebar").style.display = S.phase==="orient"?"flex":"none";
+    renderTabs(); renderStage(); renderActions();
+  }
+  function renderTabs(){
+    const el=$("lenses"); el.innerHTML="";
+    ORDER.forEach(k=>{ const L=LENS[k], a=(k===S.mode), b=document.createElement("button");
+      b.className="lens-tab"; b.style.setProperty("--c",L.c); b.dataset.active=a?"1":"0";
+      b.innerHTML=`<div class="nm"><span class="sw"></span>${L.name}</div><div class="sub">${a?"active":(S.phase==="orient"?"view (free)":"switch (free)")}&middot; ${L.sub}</div>`;
+      if(!a) b.addEventListener("click",()=>{ S.mode=k; render(); }); el.appendChild(b); });
+  }
+
+  function instCard(which){
+    const tp=S.mode==="throughput"; const dis=S.phase!=="playing"?"disabled":"";
+    let nm,verdict,vcol,lines,btn="";
+    if(which==="reporting"){
+      const r=S.reporting; nm="Frontline incident reporting";
+      if(tp){ verdict="overhead"; vcol="var(--muted)"; lines=`Cost: <b>4 staff-hrs/day</b><br>Measurable output: <b>0</b>`; }
+      else { verdict="early-warning system"; vcol="var(--safe)"; lines=`Sensing coverage: <b>${Math.round(r.readiness)}%</b><br>Threat lead time: <b>${Math.round(r.readiness/100*12)} days</b>`; }
+      btn = r.built ? `<div class="mbar"><div class="mf" style="width:${r.readiness}%"></div></div>` :
+        `<button class="ibtn" ${dis} data-build="reporting">establish &middot; ${C_REPORT}</button>`;
+    } else if(which==="slack"){
+      const s=S.slack; nm="Protected slack reserve";
+      if(tp){ verdict="waste"; vcol="var(--crash)"; lines=`Idle beds & staff<br>Occupancy: <b>&minus;12%</b> &middot; biggest line item to cut`; }
+      else { verdict="surge buffer"; vcol="var(--safe)"; lines=`Reserve filled: <b>${Math.round(s.reserve)}%</b><br>Absorbs eruption load &middot; cannot be built late`; }
+      if(!s.built) btn=`<button class="ibtn" ${dis} data-build="slack">establish &middot; ${C_SLACK} (+${C_SLACK_UP}/day upkeep)</button>`;
+      else btn=`<button class="ibtn ${s.active?'on':''}" ${dis} data-toggle="1">${s.active?"reserve held (on)":"reserve released (off)"}</button>`;
+    } else {
+      const r=S.review; nm="Cross-department case review";
+      if(tp){ verdict="meeting overhead"; vcol="var(--muted)"; lines=`Clinician-hours in meetings<br>Throughput impact: <b>negative</b>`; }
+      else { verdict="response backbone"; vcol="var(--safe)"; lines=`Coordination readiness: <b>${Math.round(r.readiness)}%</b><br>Scales how well a response holds`; }
+      btn = r.built ? `<div class="mbar"><div class="mf" style="width:${r.readiness}%"></div></div>` :
+        `<button class="ibtn" ${dis} data-build="review">establish &middot; ${C_REVIEW}</button>`;
+    }
+    return `<div class="inst"><div class="ihd"><div class="inm">${nm}</div>
+      <div class="verdict" style="color:${vcol}">${verdict}</div></div>
+      <div class="lines">${lines}</div>${btn}</div>`;
+  }
+
+  function renderStage(){
+    const st=$("stage");
+    if(S.mode==="throughput"){
+      const occ = S.tick<ERUPT ? 76 : Math.min(142, 76+(S.tick-ERUPT)*5);
+      const comp = Math.min(99, 86+S.enforceBoost);
+      const ok=v=>`<div class="th" style="color:var(--safe)">within range \u2713</div>`;
+      const bad=`<div class="th" style="color:var(--crash)">overload \u2717</div>`;
+      st.innerHTML=`<div class="stage-head"><div class="stage-title">Throughput lens &middot; operations</div>
+        <div class="stage-note">Beds, compliance, cost. Reads current load.<br>Cannot resolve emerging threats.</div></div>
+        <div class="metrics">
+          <div class="metric"><div class="lbl">Occupancy</div><div class="v" style="color:${occ>100?'var(--crash)':'var(--ink)'}">${Math.round(occ)}%</div>${occ>100?bad:ok()}</div>
+          <div class="metric"><div class="lbl">Compliance</div><div class="v">${Math.round(comp)}%</div>${ok()}</div>
+          <div class="metric"><div class="lbl">Avg stay</div><div class="v">4.1d</div>${ok()}</div>
+          <div class="metric"><div class="lbl">Cost/case</div><div class="v">1.0&times;</div>${ok()}</div>
+        </div>
+        <div class="insts">${instCard("reporting")}${instCard("slack")}${instCard("review")}</div>`;
+    } else {
+      const sg=seen(), pct=Math.round(sg*100);
+      const col = pct>55?"var(--crash)":pct>25?"var(--warn)":"var(--safe)";
+      const cover = S.reporting.built ? Math.round(S.reporting.readiness)+"% sensing coverage" : "no sensing built \u2014 you are blind here";
+      st.innerHTML=`<div class="stage-head"><div class="stage-title">Weak-signal lens &middot; emerging threats</div>
+        <div class="stage-note">Shows only as much as your sensing covers.<br>Cannot resolve beds, cost, compliance.</div></div>
+        <div class="signal"><div class="glbl">Emerging threat signal (observed)</div>
+          <div class="gv" style="color:${col}">${pct}%</div>
+          <div class="gbar"><div class="fill" style="width:${pct}%;background:${col}"></div></div>
+          <div class="gnote">${cover}. The true threat may be larger than what you can see.</div></div>
+        <div class="insts">${instCard("reporting")}${instCard("slack")}${instCard("review")}</div>`;
+    }
+    st.querySelectorAll("[data-build]").forEach(b=>b.addEventListener("click",()=>build(b.dataset.build)));
+    st.querySelectorAll("[data-toggle]").forEach(b=>b.addEventListener("click",toggleSlack));
+  }
+
+  function renderActions(){
+    const el=$("actions"); let acts=[];
+    if(S.mode==="throughput"){
+      acts.push({an:"Enforce protocol compliance",ad:"Boosts compliance now &mdash; but staff stop filing reports.",c:C_ENFORCE,f:enforce});
+    } else {
+      acts.push({an:S.response.mounted?"Response mounted":"Mount outbreak response",
+        ad:S.response.mounted?`Prepared at day ${S.response.tick}.`:"Effectiveness depends on coordination &mdash; and on how early you mount it.",
+        c:C_RESPONSE,f:mountResponse,done:S.response.mounted});
+    }
+    let html=`<div class="actions-lbl">Actions &mdash; <b style="color:var(--lens)">${LENS[S.mode].name}</b></div><div class="act-row">`;
+    acts.forEach((a,i)=>{ const dis=(S.phase!=="playing"||a.done||S.budget<a.c)?"disabled":"";
+      html+=`<button class="act" ${dis} data-i="${i}"><div class="an">${a.an}</div><div class="ad">${a.ad}</div><div class="ac">cost ${a.c}</div></button>`; });
+    html+=`</div>`; el.innerHTML=html;
+    el.querySelectorAll(".act").forEach(b=>b.addEventListener("click",()=>acts[+b.dataset.i].f()));
+  }
+
+  // ---------- trace (failure/﻿win sparkline) ----------
+  function traceSVG(){
+    const n=S.threatHist.length; if(n<2) return "";
+    const W=300,H=80, x=i=>(i/(n-1))*W, y=v=>H-v*H;
+    const line=(arr,col,dash)=>`<polyline fill="none" stroke="${col}" stroke-width="1.8" ${dash?'stroke-dasharray="4 3"':''} points="${arr.map((v,i)=>x(i).toFixed(1)+","+y(v).toFixed(1)).join(" ")}"/>`;
+    const ex=x(Math.min(n-1,ERUPT-1));
+    return `<div class="trace"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+      <line x1="${ex}" y1="0" x2="${ex}" y2="${H}" stroke="var(--line)" stroke-width="1"/>
+      ${line(S.threatHist,"var(--crash)",false)}
+      ${line(S.seenHist,"var(--lens)",true)}
+    </svg><div class="lg"><span style="color:var(--crash)">true threat</span><span style="color:var(--lens)">what you could see</span></div></div>`;
+  }
+
+  // ---------- end / intro ----------
+  function end(win){
+    S.phase=win?"won":"lost"; clearInterval(timer);
+    const c=$("card");
+    if(win){
+      const carried=[]; if(S.slack.built)carried.push("a surge buffer that was already full"); 
+      if(S.response.mounted&&S.response.prep>0.5)carried.push("a response mounted early enough to matter");
+      if(S.reporting.built&&S.reporting.readiness>50)carried.push("frontline sensing that saw it coming");
+      c.innerHTML=`<div class="verdict" style="color:var(--safe)">\u2713 THE WARD HELD</div><h2>Through the surge</h2>
+        ${traceSVG()}
+        <p>${carried.length?"What carried you: "+carried.join(", ")+".":"You weathered it \u2014 barely."} The throughput dashboard never showed the threat; the institutions that looked like overhead were the ones that absorbed it.</p>
+        <button class="btn" id="again">Run again</button>`;
+    } else {
+      const sawIt = S.reporting.built && S.reporting.readiness>40;
+      c.innerHTML=`<div class="verdict" style="color:var(--crash)">\u2717 WARD OVERWHELMED</div><h2>Day ${S.loseTick}</h2>
+        ${traceSVG()}
+        <p>The outbreak was building from day ${INCUBATE_START}. ${sawIt?"Your sensing saw it \u2014 but the buffer and response weren&rsquo;t enough when it hit.":"With frontline reporting matured, the weak-signal lens would have shown it in time to prepare. On the throughput dashboard it stayed green until day "+ERUPT+"."}</p>
+        <p style="color:var(--faint)">The signal was there the whole time, in a lens you weren&rsquo;t funded to read.</p>
+        <button class="btn" id="again">Try again</button>`;
+    }
+    $("overlay").classList.add("show"); $("again").addEventListener("click",start);
+  }
+  function intro(){
+    $("card").innerHTML=`<div class="verdict" style="color:var(--lens)">THE WARD</div><h2>Hold the hospital for 40 days</h2>
+      <p>You run operations. Your dashboard &mdash; beds, compliance, cost &mdash; reads green, and your budget is finite. Something is incubating in a dimension that dashboard cannot see.</p>
+      <p>A second lens can see it, but only as well as the sensing you fund <i>ahead of time</i>. Some institutions look like pure overhead today and become the only thing that matters later &mdash; if you built them early enough.</p>
+      <button class="btn" id="begin">Begin</button>`;
+    $("overlay").classList.add("show"); $("begin").addEventListener("click",start);
+  }
+  function start(){
+    clearInterval(timer); $("overlay").classList.remove("show");
+    fresh(); S.phase="orient"; render();
+  }
+  function beginCrisis(){ if(S.phase!=="orient")return; S.phase="playing"; render(); timer=setInterval(tickLoop,TICK_MS); }
+
+  $("startCrisis").addEventListener("click",beginCrisis);
+  fresh(); render(); intro();
+})();
+</script>
+</body>
+</html>

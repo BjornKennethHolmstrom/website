@@ -5,11 +5,11 @@ export const appsTranslations = {
 		apps: {
 			meta: {
 				title: 'Apps | Björn Kenneth Holmström',
-				description: 'A collection of useful, open-source web apps and tools.'
+				description: 'A collection of open-source games, web apps and tools.'
 			},
 			hero: {
 				title: 'Apps & Tools',
-				subtitle: 'A collection of useful web applications and code experiments.'
+				subtitle: 'A collection of games, web applications and code experiments.'
 			},
 			activeTitle: 'Active Projects',
 			archiveTitle: 'Archived Experiments',
@@ -20,6 +20,10 @@ export const appsTranslations = {
 			downloadZip: 'Download ZIP',
 
 			// --- App Cards ---
+   theward: {
+     title: 'The Ward',
+     tagline: 'A hospital-operations puzzle in two lenses: the institutions that read as wasteful overhead on the dashboard are the ones that absorb the crisis it can&rsquo;t see coming. Build them before you know why. You\'ll likely lose a few times before it clicks.'
+   },
    threelenses: {
      title: 'Three Lenses',
      tagline: 'A control-room puzzle played through three incompatible lenses on one hidden crisis — each resolves different things and can only act in its own language. Survive a collapse the dashboard cannot see coming.'
@@ -149,11 +153,11 @@ conceptexplorerDetail: {
 		apps: {
 			meta: {
 				title: 'Appar | Björn Kenneth Holmström',
-				description: 'En samling användbara webbappar och verktyg med öppen källkod.'
+				description: 'En samling spel, webbappar och verktyg med öppen källkod.'
 			},
 			hero: {
 				title: 'Appar och verktyg',
-				subtitle: 'En samling användbara webbapplikationer och kodexperiment.'
+				subtitle: 'En samling spel, webbapplikationer och kodexperiment.'
 			},
 			activeTitle: 'Aktiva projekt',
 			archiveTitle: 'Arkiverade experiment',
@@ -164,6 +168,10 @@ conceptexplorerDetail: {
 			downloadZip: 'Ladda ner ZIP',
 
 			// --- App Cards ---
+   theward: {
+     title: 'The Ward',
+     tagline: 'Ett pussel om sjukhusdrift i två linser: institutionerna som ser ut som rent slöseri på instrumentpanelen är de som dämpar krisen den inte kan se komma. Bygg dem innan du vet varför. Du kommer förmodligen att förlora några gånger innan det klickar.'
+   },
    threelenses: {
      title: 'Tre linser',
      tagline: 'Ett kontrollrumspussel som spelas genom tre oförenliga linser på en enda dold kris — var och en uppfattar olika saker och kan bara agera på sitt eget språk. Överlev en kollaps som instrumentpanelen inte kan se komma.'

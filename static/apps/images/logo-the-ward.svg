@@ -1,0 +1,14 @@
+<svg width="54" height="48" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Ward">
+  <!-- instrument bezel -->
+  <rect x="1.5" y="1.5" width="51" height="45" rx="7" stroke="#7C8893" stroke-opacity="0.45" stroke-width="1.5"/>
+  <!-- eruption marker -->
+  <line x1="34" y1="6" x2="34" y2="42" stroke="#7C8893" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="2 2.5"/>
+  <!-- the true threat, rising the whole time -->
+  <polyline points="7,33 13,32 19,32 25,30 30,27 35,20 41,12 47,8"
+    fill="none" stroke="#e0564a" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- the calm dashboard line: flat, reassuring -->
+  <polyline points="7,30 16,30 25,29 34,30 47,30"
+    fill="none" stroke="#5fb98a" stroke-width="1.8" stroke-dasharray="4 3" stroke-linecap="round" stroke-opacity="0.9"/>
+  <!-- ward marker -->
+  <path d="M10,13 h4 M12,11 v4" stroke="#5fb98a" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
