@@ -8,61 +8,61 @@
 
   // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
   // English
-  import AbstractEnRaw   from './sections/00-abstract.en.md?raw';
-  import Part1EnRaw      from './sections/01-part-1.en.md?raw';
-  import Part2EnRaw      from './sections/02-part-2.en.md?raw';
-  import Part3EnRaw      from './sections/03-part-3.en.md?raw';
-  import Part4EnRaw      from './sections/04-part-4.en.md?raw';
-  import Part5EnRaw      from './sections/05-part-5.en.md?raw';
-  import Part6EnRaw      from './sections/06-part-6.en.md?raw';
-  import AppendixAEnRaw  from './sections/07-appendix-a.en.md?raw';
-  import AppendixBEnRaw  from './sections/07-appendix-b.en.md?raw';
+  import AbstractEnRaw    from './sections/abstract.en.md?raw';
+  import Section1EnRaw    from './sections/section-1.en.md?raw';
+  import Section2EnRaw    from './sections/section-2.en.md?raw';
+  import Section3EnRaw    from './sections/section-3.en.md?raw';
+  import Section4EnRaw    from './sections/section-4.en.md?raw';
+  import Section5EnRaw    from './sections/section-5.en.md?raw';
+  import Section6EnRaw    from './sections/section-6.en.md?raw';
+  import AppendixAEnRaw   from './sections/appendix-a.en.md?raw';
+  import AppendixBEnRaw   from './sections/appendix-b.en.md?raw';
 
   // Swedish
-  import AbstractSvRaw   from './sections/00-abstract.sv.md?raw';
-  import Part1SvRaw      from './sections/01-part-1.sv.md?raw';
-  import Part2SvRaw      from './sections/02-part-2.sv.md?raw';
-  import Part3SvRaw      from './sections/03-part-3.sv.md?raw';
-  import Part4SvRaw      from './sections/04-part-4.sv.md?raw';
-  import Part5SvRaw      from './sections/05-part-5.sv.md?raw';
-  import Part6SvRaw      from './sections/06-part-6.sv.md?raw';
-  import AppendixASvRaw  from './sections/07-appendix-a.sv.md?raw';
-  import AppendixBSvRaw  from './sections/07-appendix-b.sv.md?raw';
+  import AbstractSvRaw    from './sections/abstract.sv.md?raw';
+  import Section1SvRaw    from './sections/section-1.sv.md?raw';
+  import Section2SvRaw    from './sections/section-2.sv.md?raw';
+  import Section3SvRaw    from './sections/section-3.sv.md?raw';
+  import Section4SvRaw    from './sections/section-4.sv.md?raw';
+  import Section5SvRaw    from './sections/section-5.sv.md?raw';
+  import Section6SvRaw    from './sections/section-6.sv.md?raw';
+  import AppendixASvRaw   from './sections/appendix-a.sv.md?raw';
+  import AppendixBSvRaw   from './sections/appendix-b.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
   const rawText: Record<string, Record<string, string>> = {
     en: {
-      'abstract':      AbstractEnRaw,
-      'part-1': Part1EnRaw, 'part-2': Part2EnRaw, 'part-3': Part3EnRaw,
-      'part-4': Part4EnRaw, 'part-5': Part5EnRaw, 'part-6': Part6EnRaw,
+      'abstract':    AbstractEnRaw,
+      'section-1': Section1EnRaw, 'section-2': Section2EnRaw, 'section-3': Section3EnRaw,
+      'section-4': Section4EnRaw, 'section-5': Section5EnRaw, 'section-6': Section6EnRaw,
       'appendix-a': AppendixAEnRaw, 'appendix-b': AppendixBEnRaw,
     },
     sv: {
-      'abstract':      AbstractSvRaw,
-      'part-1': Part1SvRaw, 'part-2': Part2SvRaw, 'part-3': Part3SvRaw,
-      'part-4': Part4SvRaw, 'part-5': Part5SvRaw, 'part-6': Part6SvRaw,
+      'abstract':    AbstractSvRaw,
+      'section-1': Section1SvRaw, 'section-2': Section2SvRaw, 'section-3': Section3SvRaw,
+      'section-4': Section4SvRaw, 'section-5': Section5SvRaw, 'section-6': Section6SvRaw,
       'appendix-a': AppendixASvRaw, 'appendix-b': AppendixBSvRaw,
     },
   };
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
-    { id: 'part-1',      titleEn: 'Part I: The Problem — The Triad Was Never Costed',                 titleSv: 'Del I: Problemet — Triaden var aldrig kostnadsberäknad' },
-    { id: 'part-2',      titleEn: 'Part II: Formal Framework',                                        titleSv: 'Del II: Formellt ramverk' },
-    { id: 'part-3',      titleEn: 'Part III: The Three Backlogs, and Where They Are Documented',      titleSv: 'Del III: De tre eftersläpningarna, och var de är dokumenterade' },
-    { id: 'part-4',      titleEn: 'Part IV: Boundaries and Objections',                               titleSv: 'Del IV: Gränser och invändningar' },
-    { id: 'part-5',      titleEn: 'Part V: Simulation',                                               titleSv: 'Del V: Simulering' },
-    { id: 'part-6',      titleEn: 'Part VI: Design Implications, and What the Series Does Next',      titleSv: 'Del VI: Designimplikationer, och vad serien gör härnäst' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Formal Derivations',                                   titleSv: 'Appendix A: Formella härledningar' },
-    { id: 'appendix-b',  titleEn: 'Appendix B: Simulation Specification',                             titleSv: 'Appendix B: Simuleringsspecifikation' },
+    { id: 'abstract',    titleEn: 'Abstract',                                                          titleSv: 'Sammanfattning' },
+    { id: 'section-1',   titleEn: '1. The Object That Keeps Moving',                                   titleSv: '1. Objektet som flyttar sig' },
+    { id: 'section-2',   titleEn: '2. Method: Adversarial Decay as Evidence',                          titleSv: '2. Metod: Adversarial Decay som evidens' },
+    { id: 'section-3',   titleEn: '3. The Four Self‑Contained Collapses',                              titleSv: '3. De fyra fristående kollapserna' },
+    { id: 'section-4',   titleEn: '4. The Shared Pattern, and the Corrected Order Parameter',          titleSv: '4. Det gemensamma mönstret och den korrigerade ordningsparametern' },
+    { id: 'section-5',   titleEn: '5. What This Does Not Show',                                        titleSv: '5. Vad detta inte visar' },
+    { id: 'section-6',   titleEn: '6. The Residual',                                                    titleSv: '6. Restposten' },
+    { id: 'appendix-a',  titleEn: 'Appendix A: Lens Prompts',                                           titleSv: 'Appendix A: Lins‑prompter' },
+    { id: 'appendix-b',  titleEn: 'Appendix B: Rejected Unifications',                                 titleSv: 'Appendix B: Förkastade unifieringar' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XV',
-      seriesNote: 'This is the fifteenth paper in the Governance as Engineering series. It closes the loop on Cycle Two.',
+      tag: 'Working Paper · Series XVI',
+      seriesNote: 'This is the sixteenth paper in the Governance as Engineering series. It asks the prior question of whether adaptive capacity is sustainable at all.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
@@ -78,11 +78,11 @@
         { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Paper XVI: Why Diversity Resists Formalization →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'The Sense–Learn–Execute triad was established across Cycle Two as three separately justified requirements — but never as three simultaneous claims on finite processing capacity. This paper treats the loop as a recursive, lossy pipeline and asks: what happens when the three legs compete for resources?',
-      contextOutro: 'The answer is a bottleneck theorem: effective adaptive throughput is gated by the slowest stage. Spend on any non‑bottleneck stage accumulates backlog rather than accelerating adaptation. Three backlogs are identified — information, innovation, reality — each with a documented governance instance. The dynamic dual of Paper V: where static failures multiply, dynamic capacities are throttled by their minimum.',
+      contextIntro: 'Four disciplines — control theory, evolutionary biology, institutional economics, and decision theory — were each asked the same structural question in strictly native vocabulary, with cross‑cutting terms forbidden. Their independently derived minimal formal statements share a single decay‑plus‑source‑term structure. The paper does not propose a unified theory of epistemic adaptivity, but a corrected order parameter: source‑term locality.',
+      contextOutro: 'The result is a cross‑framework failure atlas of exploration‑preservation under optimization pressure. The paper identifies where each formalism succeeds, where each breaks, and the single seam along which the breaks align.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -91,8 +91,8 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XV',
-      seriesNote: 'Detta är den femtonde rapporten i serien Styrning som ingenjörskonst. Den stänger loopen för Cykel Två.',
+      tag: 'Arbetsdokument · Serie XVI',
+      seriesNote: 'Detta är den sextonde rapporten i serien Styrning som ingenjörskonst. Den ställer den föregående frågan om adaptiv kapacitet överhuvudtaget är hållbar.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
@@ -108,11 +108,11 @@
         { href: '/working-papers/boundary-selection-deficits',            label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Sense–Learn–Execute-triaden etablerades under Cykel Två som tre separat motiverade krav — men aldrig som tre samtidiga anspråk på ändlig processorkapacitet. Denna rapport behandlar loopen som en rekursiv, förlustfylld pipeline och frågar: vad händer när de tre benen konkurrerar om resurser?',
-      contextOutro: 'Svaret är en flaskhalsteorem: effektiv adaptiv genomströmning begränsas av det långsammaste steget. Resurser på icke‑flaskhalssteg ackumulerar eftersläpning snarare än att accelerera anpassning. Tre eftersläpningar identifieras — information, innovation, verklighet — var och en med en dokumenterad styrningsinstans. Den dynamiska dualen till Rapport V: där statiska tillkortakommanden multipliceras, stryps dynamiska kapaciteter av sitt minimum.',
+      contextIntro: 'Fyra discipliner — reglerteknik, evolutionsbiologi, institutionell ekonomi och beslutsteori — fick samma strukturella fråga i strikt inhemsk vokabulär, med korsande termer förbjudna. Deras oberoende härledda minimala formella utsagor delar en enda förfalls‑plus‑källtermsstruktur. Artikeln föreslår ingen enhetlig teori om epistemisk adaptivitet, men en korrigerad ordningsparameter: källtermslokalitet.',
+      contextOutro: 'Resultatet är en tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Artikeln identifierar var varje formalism lyckas, var de bryts, och den enda sömmen längs vilken brytningarna sammanfaller.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -124,14 +124,14 @@
 
   const metadata = {
     en: {
-      title: 'The Adaptation Bottleneck',
-      subtitle: 'Throughput Constraints on the Sense–Learn–Execute Loop',
-      description: 'Treats the Sense–Learn–Execute triad as simultaneous claims on finite processing capacity. Shows that effective adaptive throughput is gated by the slowest stage. Identifies three backlogs and derives the dynamic dual of Paper V.',
+      title: 'Why Diversity Resists Formalization',
+      subtitle: 'A cross‑framework failure atlas of exploration‑preservation under optimization pressure',
+      description: 'Four disciplines independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter. Paper XVI in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Adaptationsflaskhalsen',
-      subtitle: 'Genomströmningsbegränsningar i Sense–Learn–Execute-loopen',
-      description: 'Behandlar Sense–Learn–Execute-triaden som samtidiga anspråk på ändlig processorkapacitet. Visar att effektiv adaptiv genomströmning begränsas av det långsammaste steget. Identifierar tre eftersläpningar och härleder den dynamiska dualen till Rapport V.',
+      title: 'Varför mångfald motstår formalisering',
+      subtitle: 'En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck',
+      description: 'Fyra discipliner konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern. Rapport XVI i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -140,13 +140,12 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'adaptation-bottleneck-sv.pdf' : 'adaptation-bottleneck.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'why-diversity-resists-formalization-sv.pdf' : 'why-diversity-resists-formalization.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  // Pre‑render LaTeX with KaTeX (supports $…$, $$…$$, \(…\), \[…\])
   function sectionHtml(section: typeof contentMap[0]): string {
     const lang = currentLang as 'en' | 'sv';
     const md = rawText[lang]?.[section.id] ?? '';
@@ -154,7 +153,6 @@
 
     const blocks: string[] = [];
 
-    // Display math: $$ ... $$ and \[ ... \]
     content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
@@ -168,7 +166,6 @@
       }
     });
 
-    // Inline math: $ ... $ and \( ... \)
     content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
@@ -182,12 +179,8 @@
       }
     });
 
-    // Convert markdown to HTML
     let html = marked.parse(content, { breaks: false, gfm: true }) as string;
-
-    // Restore pre‑rendered KaTeX HTML
     html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
-
     return html;
   }
 
@@ -199,8 +192,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Adaptationsflaskhalsen: Genomströmningsbegränsningar i Sense–Learn–Execute-loopen. Styrning som ingenjörskonst, Rapport XV.`
-      : `Holmström, B. K. (2026). The Adaptation Bottleneck: Throughput Constraints on the Sense–Learn–Execute Loop. Governance as Engineering, Paper XV.`;
+      ? `Holmström, B. K. (2026). Varför mångfald motstår formalisering: En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Styrning som ingenjörskonst, Rapport XVI.`
+      : `Holmström, B. K. (2026). Why Diversity Resists Formalization: A cross‑framework failure atlas of exploration‑preservation under optimization pressure. Governance as Engineering, Paper XVI.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

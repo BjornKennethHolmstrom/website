@@ -108,6 +108,12 @@ export const workingpapersTranslations = {
      description:
        'Closes the seam between the governance series and the Self papers. Derives Inherited Unobservability: an institution\'s capacity to perceive interior dimensions of the governed is upper-bounded by the perceptual capacity of the human operators through whom those dimensions must pass. Couples operator self‑opacity to distortion in estimating others\' interior states. Identifies the operator‑seeded legitimacy spiral. The final Self paper, bridging personal and institutional architecture.',
    },
+   whyDiversityResistsFormalization: {
+     title: 'Why Diversity Resists Formalization',
+     subtitle: 'A cross‑framework failure atlas of exploration‑preservation under optimization pressure',
+     description:
+       'Four disciplines — control theory, evolutionary biology, institutional economics, and decision theory — were each asked the same structural question in strictly native vocabulary. Their independently derived minimal formal statements share a single decay‑plus‑source‑term structure. The paper does not propose a unified theory, but a corrected order parameter: source‑term locality, the axis along which the four collapses align and differ. Paper XVI in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -296,6 +302,12 @@ export const workingpapersTranslations = {
      title: 'Själv III: Operatören — Hur institutioner ärver sina noders begränsningar',
      description:
        'Stänger sömmen mellan styrningsserien och Själv‑artiklarna. Härleder Ärvd oobserverbarhet: institutionens förmåga att uppfatta de styrdas inre dimensioner begränsas uppåt av den perceptuella kapaciteten hos de mänskliga operatörer genom vilka dessa dimensioner måste passera. Kopplar operatörens självopacitet till förvrängning i uppskattningen av andras inre tillstånd. Identifierar den operatörssådda legitimitetsnedåtgående spiralen. Den avslutande Själv‑artikeln, som överbryggar personlig och institutionell arkitektur.',
+   },
+   whyDiversityResistsFormalization: {
+     title: 'Varför mångfald motstår formalisering',
+     subtitle: 'En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck',
+     description:
+       'Fyra discipliner — reglerteknik, evolutionsbiologi, institutionell ekonomi och beslutsteori — fick samma strukturella fråga i strikt inhemsk vokabulär. Deras oberoende härledda minimala formella utsagor delar en enda förfalls‑plus‑källtermsstruktur. Artikeln föreslår ingen enhetlig teori, men en korrigerad ordningsparameter: källtermslokalitet, axeln längs vilken de fyra kollapserna sammanfaller och skiljer sig. Rapport XVI i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

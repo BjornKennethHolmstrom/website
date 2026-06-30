@@ -165,6 +165,10 @@ export const coreTranslations = {
     geSeriesPaperXV: {
       title: 'XV: The Adaptation Bottleneck',
       desc:  'Treats the Sense–Learn–Execute triad as simultaneous claims on finite capacity. Shows that effective adaptive throughput is gated by the slowest stage. Identifies three backlogs and derives the dynamic dual of Paper V. Closes the loop on Cycle Two.',
+    },
+    geSeriesPaperXVI: {
+      title: 'XVI: Why Diversity Resists Formalization',
+      desc:  'Four disciplines independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter.',
     }
   },
 
@@ -531,6 +535,10 @@ export const coreTranslations = {
     geSeriesPaperXV: {
       title: 'XV: Adaptationsflaskhalsen',
       desc:  'Behandlar Sense–Learn–Execute-triaden som samtidiga anspråk på ändlig kapacitet. Visar att effektiv adaptiv genomströmning begränsas av det långsammaste steget. Identifierar tre eftersläpningar och härleder den dynamiska dualen till Rapport V. Stänger loopen för Cykel Två.',
+    },
+    geSeriesPaperXVI: {
+      title: 'XVI: Varför mångfald motstår formalisering',
+      desc:  'Fyra discipliner konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern.',
     }
   },
 

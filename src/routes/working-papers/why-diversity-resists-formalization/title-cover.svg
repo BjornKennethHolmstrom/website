@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <!-- paper -->
+  <rect width="1200" height="1500" fill="#EFE9DB"/>
+
+  <!-- series margin rule -->
+  <rect x="96" y="96" width="1008" height="1308" fill="none" stroke="#20211D" stroke-width="1.5"/>
+  <rect x="108" y="108" width="984" height="1284" fill="none" stroke="#20211D" stroke-width="0.6"/>
+
+  <!-- ===================== GLYPH ===================== -->
+  <!-- "outside the control set": faint region right of the boundary -->
+  <rect x="724" y="566" width="300" height="520" fill="#20211D" fill-opacity="0.035"/>
+
+  <!-- zero / baseline -->
+  <line x1="196" y1="1016" x2="724" y2="1016" stroke="#20211D" stroke-width="1.2"/>
+  <!-- objective direction (under the objective →) -->
+  <line x1="196" y1="1062" x2="690" y2="1062" stroke="#9A9482" stroke-width="1.1"/>
+  <path d="M 690 1056 L 706 1062 L 690 1068 Z" fill="#9A9482"/>
+
+  <!-- the control boundary (membrane): inside | outside -->
+  <line x1="724" y1="560" x2="724" y2="1090" stroke="#20211D" stroke-width="1.6" stroke-dasharray="2 9" stroke-linecap="round"/>
+
+  <!-- Q without the source term: ghost branch decaying to zero -->
+  <path d="M 470 802 C 558 884, 642 962, 716 1014"
+        fill="none" stroke="#9A9482" stroke-width="2" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <circle cx="716" cy="1014" r="4.5" fill="#9A9482"/>
+
+  <!-- Q held by the source: decays, then plateaus above zero at the boundary -->
+  <path d="M 176 610 C 300 644, 398 738, 470 802 C 540 864, 612 878, 706 876"
+        fill="none" stroke="#20211D" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- source term: enters from outside, crosses the boundary, holds Q at the plateau -->
+  <path d="M 984 648 C 880 690, 800 770, 718 868"
+        fill="none" stroke="#B5482E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 728 854 L 712 874 L 736 880 Z" fill="#B5482E"/>
+  <circle cx="706" cy="876" r="6" fill="#B5482E"/>
+  <!-- source origin mark, outside the boundary -->
+  <circle cx="984" cy="648" r="5" fill="none" stroke="#B5482E" stroke-width="2.4"/>
+
+  <!-- micro-annotations (content-glyph legibility, kept minimal) -->
+  <text x="176" y="588" font-size="30" fill="#20211D" font-style="italic">Q</text>
+  <text x="800" y="612" font-size="20" letter-spacing="2" fill="#B5482E">SOURCE TERM</text>
+  <text x="754" y="1108" font-size="19" letter-spacing="2" fill="#20211D" fill-opacity="0.55">OUTSIDE THE</text>
+  <text x="754" y="1132" font-size="19" letter-spacing="2" fill="#20211D" fill-opacity="0.55">CONTROL SET</text>
+  <text x="206" y="1098" font-size="19" letter-spacing="2" fill="#9A9482">UNDER THE OBJECTIVE</text>
+
+  <!-- ===================== TYPE ===================== -->
+  <text x="156" y="320" font-size="78" fill="#20211D" font-weight="bold">Why Diversity</text>
+  <text x="156" y="404" font-size="78" fill="#20211D" font-weight="bold">Resists</text>
+  <text x="156" y="488" font-size="78" fill="#20211D" font-weight="bold">Formalization</text>
+
+  <text x="158" y="1232" font-size="27" fill="#20211D" font-style="italic">A cross-framework failure atlas of</text>
+  <text x="158" y="1270" font-size="27" fill="#20211D" font-style="italic">exploration-preservation under optimization pressure</text>
+
+  <!-- footer series line -->
+  <line x1="158" y1="1320" x2="1042" y2="1320" stroke="#20211D" stroke-width="0.8"/>
+  <text x="158" y="1360" font-size="20" letter-spacing="3" fill="#20211D">GOVERNANCE AS ENGINEERING</text>
+  <text x="1042" y="1360" font-size="20" letter-spacing="3" fill="#B5482E" text-anchor="end">PAPER XVI</text>
+  <text x="158" y="1388" font-size="16" letter-spacing="3" fill="#20211D" fill-opacity="0.55">LIMITS OF PERCEPTION</text>
+</svg>
