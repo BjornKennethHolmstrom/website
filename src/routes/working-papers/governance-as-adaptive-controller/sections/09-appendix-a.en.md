@@ -125,3 +125,44 @@ when \(r_l > r_f\). When \(r_l \leq r_f\), the uncertainty diverges: the system 
 The governance analogue is that the institutional forgetting rate is determined by personnel turnover, organisational restructuring, and the decay of knowledge management infrastructure. The effective sample size of institutional memory is the number of past administrations, reform cycles, or programme evaluations whose learning remains accessible to current decision‑makers. When this effective sample size is smaller than the number of observations required to identify the system's key parameters—given the noise in the governance environment and the rate of environmental change—the system is in the forgetting‑without‑learning trap.
 
 The mapping between the formal parameter \(\lambda_f\) and institutional characteristics is not exact. But the structural direction is clear. Democracies with short electoral cycles, high ministerial turnover, and weak civil service continuity operate with a low effective \(\lambda_f\). Systems with strong career bureaucracies, institutionalised evaluation repositories, and mandatory knowledge transfer protocols operate with a higher effective \(\lambda_f\). The difference in \(\lambda_f\) determines whether the system can accumulate the knowledge required to remain calibrated to a changing environment, or whether each generation of decision‑makers must rediscover what its predecessors already learned.
+
+## A.4 Rank Deficiency of the Operational Record and the Critical Probe Rate
+
+This appendix derives the identifiability result and the critical probe rate stated in §6.9.
+
+**Rank deficiency.** Let a regulator suppress a disturbance class with latent rate \(\lambda > 0\) and effectiveness \(e \in (0,1)\), both unknown to the observer. The operational record in period \(t\) is
+
+\[
+y_{\text{reg}}(t) \sim \text{Poisson}\bigl((1-p)\,\lambda\,(1-e)\bigr),
+\]
+
+where \(p\) is the fraction of the exposure base diverted to a probe channel. The likelihood depends on \((\lambda, e)\) only through the product \(\mu = \lambda(1-e)\). The Fisher information matrix in \((\log\lambda, \log(1-e))\) coordinates is therefore rank one for all \(T\): the direction along which \(\lambda\) and \(e\) vary with \(\mu\) held fixed — the direction the renewal decision must resolve — carries zero information regardless of observation duration. This is the condition of §A.2 in its most extreme form: the regressor never leaves a one‑dimensional subspace. A control simulation with \(e\) known to the observer confirms the mechanism: the dead‑letter regime disappears, because even the residual channel then identifies \(\lambda\), slowly. The unidentifiability is a joint property of unknown \((\lambda, e)\), not of low residual counts as such.
+
+**The probe channel.** A protected experimental space run at designed effectiveness \(e_{\text{probe}}\) contributes
+
+\[
+y_{\text{probe}}(t) \sim \text{Poisson}\bigl(p\,\lambda\,(1-e_{\text{probe}})\bigr),
+\]
+
+with \(e_{\text{probe}}\) known because the relaxation is engineered and instrumented — an assumption that is itself a design requirement on the probe. In log coordinates \(x = \log\lambda\), the per‑period Fisher information from this channel is \(I_x = c\,\lambda\) with \(c = p\,(1-e_{\text{probe}})\).
+
+**Steady state under drift.** Let \(x\) evolve as a driftless random walk with per‑period variance \(q = \sigma_d^{2}\) (the observer's model; the simulation uses a mean‑reverting truth, on which see below). The scalar predict–update recursion for the posterior variance,
+
+\[
+\sigma^{2}_{t+1} = \Bigl( \bigl(\sigma^{2}_{t} + q\bigr)^{-1} + I_x \Bigr)^{-1},
+\]
+
+has, for \(q I_x \ll 1\), the steady state \(\sigma^{2}_{\infty} \approx \sqrt{q / I_x}\).
+
+**Decidability.** The sunset review removes the regulator iff \(P(\lambda \le \lambda_{\text{safe}}) \ge 1 - \alpha\). With the posterior centred near the true post‑resolution level \(\lambda_{\text{low}} < \lambda_{\text{safe}}\), the condition is approximately \(z_{\alpha}\,\sigma_{\infty} \le \Delta\) with \(\Delta = \log(\lambda_{\text{safe}} / \lambda_{\text{low}})\). Substituting the steady state and solving for the probe rate gives the critical value
+
+\[
+p^{*} \;=\; \frac{q\, z_{\alpha}^{4}}{\lambda_{\text{low}}\,(1-e_{\text{probe}})\,\Delta^{4}}.
+\tag{A.4}
+\]
+
+For \(p < p^{*}\) the steady‑state uncertainty exceeds the margin and the removal condition is never met: the threshold lives in the decision layer, where continuously scaling uncertainty meets a fixed bound.
+
+**Simulation.** The companion file `paper_xiv_sunset.py` implements a grid filter over \((\log\lambda,\, e)\) with an informative prior centred at the historical threat level, annual reviews at \(\alpha = 0.05\), true effectiveness \(e = 0.97\), probe effectiveness \(e_{\text{probe}} = 0.5\), \(\lambda_{\text{safe}} = 1\), \(\lambda_{\text{low}} = 0.2\), and a mean‑reverting log‑threat process (\(\phi = 0.95\)) with innovation \(\sigma_d \in \{0.03, 0.06, 0.12\}\); 150 runs per cell, 300‑year horizon. Results: at \(p = 0\), removal occurred in zero runs at every drift level. The decidability transition sits at \(p \approx 0.02\)–\(0.04\) in all three cases; equation (A.4) predicts \(0.010\), \(0.039\), and \(0.157\) respectively, so the middle case agrees closely while the drift dependence is empirically flatter than the first‑order law — the mean‑reverting truth is kinder than the random‑walk assumption, and at low drift the binding constraint within the horizon is the transit time of the posterior from the informative prior rather than the steady state. Median years from resolution to justified removal: at \(p = 0.04\), roughly 200–280; at \(p = 0.15\), roughly 70–80; at \(p = 0.40\), roughly 32–34. With the regulator genuinely necessary (\(\lambda \approx 2\lambda_{\text{safe}}\)), the risk‑bounded rule produced false removals in at most one percent of runs at any probe rate, while cumulative probe‑channel incidents grew linearly in \(p\) — the cost side of the exploration trade‑off of Part II. Figures `sunset_time_to_removal.png` and `sunset_tradeoff.png` are kept in the simulation repository.
+
+**Limitations.** The derivation is first‑order and scalar: a single disturbance class, static true effectiveness, a Gaussian approximation to the Poisson posterior in log space, and a probe whose own effectiveness is known exactly. Each relaxation moves the result in a knowable direction — unknown \(e_{\text{probe}}\) reintroduces partial rank deficiency in the probe channel and raises \(p^{*}\); multiple coupled disturbance classes raise it further. Equation (A.4) is therefore best read as a lower bound and a scaling law, in the same first‑order spirit as the rest of this appendix.

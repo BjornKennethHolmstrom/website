@@ -125,3 +125,44 @@ när \(r_l > r_f\). När \(r_l \leq r_f\) divergerar osäkerheten: systemet glö
 Styrningsanalogin är att den institutionella glömskotakten bestäms av personalomsättning, organisatorisk omstrukturering och förfallet av infrastrukturen för kunskapshantering. Den effektiva urvalsstorleken för institutionellt minne är antalet tidigare administrationer, reformcykler eller programutvärderingar vars inlärning förblir tillgänglig för nuvarande beslutsfattare. När denna effektiva urvalsstorlek är mindre än antalet observationer som krävs för att identifiera systemets nyckelparametrar — givet bruset i styrningsmiljön och miljöförändringstakten — befinner sig systemet i glömska-utan-inlärningsfällan.
 
 Mappningen mellan den formella parametern \(\lambda_f\) och institutionella karakteristika är inte exakt. Men den strukturella riktningen är tydlig. Demokratier med korta valcykler, hög ministeromsättning och svag ämbetsmannakontinuitet opererar med en låg effektiv \(\lambda_f\). System med starka karriärsbyråkratier, institutionaliserade utvärderingsarkiv och obligatoriska kunskapsöverföringsprotokoll opererar med en högre effektiv \(\lambda_f\). Skillnaden i \(\lambda_f\) avgör om systemet kan ackumulera den kunskap som krävs för att förbli kalibrerat mot en föränderlig miljö, eller om varje generation av beslutsfattare måste återupptäcka vad dess föregångare redan lärde sig.
+
+## A.4 Operativa facits rangdefekt och den kritiska sondtakten
+
+Detta appendix härleder det identifierbarhetsresultat och den kritiska sondtakt som anges i §6.9.
+
+**Rangdefekt.** Låt en regulator undertrycka en störningsklass med latent takt \(\lambda > 0\) och effektivitet \(e \in (0,1)\), båda okända för observatören. Det operativa facit under period \(t\) är
+
+\[
+y_{\text{reg}}(t) \sim \text{Poisson}\bigl((1-p)\,\lambda\,(1-e)\bigr),
+\]
+
+där \(p\) är den andel av exponeringsbasen som leds in i en sondkanal. Likelihooden beror på \((\lambda, e)\) endast genom produkten \(\mu = \lambda(1-e)\). Fisherinformationsmatrisen i \((\log\lambda, \log(1-e))\)-koordinaterna är därför rang ett för alla \(T\): den riktning längs vilken \(\lambda\) och \(e\) varierar med \(\mu\) hållet konstant — den riktning som förnyelsebeslutet måste lösa upp — bär noll information oavsett observationslängd. Detta är villkoret i §A.2 i sin mest extrema form: regressorn lämnar aldrig ett endimensionellt underrum. En kontrollsimulering med \(e\) känd för observatören bekräftar mekanismen: död‑bokstav‑regimen försvinner, eftersom även restkanalen då identifierar \(\lambda\), om än långsamt. Oidentifierbarheten är en gemensam egenskap hos okänt \((\lambda, e)\), inte av låga restantal som sådana.
+
+**Sondkanalen.** Ett skyddat experimentutrymme som drivs med en designad effektivitet \(e_{\text{probe}}\) bidrar med
+
+\[
+y_{\text{probe}}(t) \sim \text{Poisson}\bigl(p\,\lambda\,(1-e_{\text{probe}})\bigr),
+\]
+
+där \(e_{\text{probe}}\) är känd eftersom lättnaden är konstruerad och instrumenterad — ett antagande som i sig är ett designkrav på sonden. I logkoordinater \(x = \log\lambda\) är per-period-Fisherinformationen från denna kanal \(I_x = c\,\lambda\) med \(c = p\,(1-e_{\text{probe}})\).
+
+**Stationärtillstånd under drift.** Låt \(x\) utvecklas som en driftlös slumpvandring med per-period-varians \(q = \sigma_d^{2}\) (observatörens modell; simuleringen använder en medelvärdesåtergående sanning, se nedan). Den skalära prediktera–uppdatera-rekursionen för posteriorvariansen,
+
+\[
+\sigma^{2}_{t+1} = \Bigl( \bigl(\sigma^{2}_{t} + q\bigr)^{-1} + I_x \Bigr)^{-1},
+\]
+
+har, för \(q I_x \ll 1\), stationärtillståndet \(\sigma^{2}_{\infty} \approx \sqrt{q / I_x}\).
+
+**Avgörbarhet.** Solnedgångsgranskningen avlägsnar regulatorn omm \(P(\lambda \le \lambda_{\text{safe}}) \ge 1 - \alpha\). Med posteriorn centrerad nära den sanna post‑upplösningsnivån \(\lambda_{\text{low}} < \lambda_{\text{safe}}\) blir villkoret approximativt \(z_{\alpha}\,\sigma_{\infty} \le \Delta\) med \(\Delta = \log(\lambda_{\text{safe}} / \lambda_{\text{low}})\). Insättning av stationärtillståndet och lösning för sondtakten ger det kritiska värdet
+
+\[
+p^{*} \;=\; \frac{q\, z_{\alpha}^{4}}{\lambda_{\text{low}}\,(1-e_{\text{probe}})\,\Delta^{4}}.
+\tag{A.4}
+\]
+
+För \(p < p^{*}\) överstiger stationärosäkerheten marginalen och avlägsnandevillkoret uppfylls aldrig: tröskeln lever i besluts skiktet, där kontinuerligt skalande osäkerhet möter en fast gräns.
+
+**Simulering.** Kompanjonfilen `paper_xiv_sunset.py` implementerar ett gridfilter över \((\log\lambda,\, e)\) med en informativ prior centrerad vid den historiska hotnivån, årliga granskningar vid \(\alpha = 0.05\), sann effektivitet \(e = 0.97\), sondeffektivitet \(e_{\text{probe}} = 0.5\), \(\lambda_{\text{safe}} = 1\), \(\lambda_{\text{low}} = 0.2\), och en medelvärdesåtergående log‑hotprocess (\(\phi = 0.95\)) med innovation \(\sigma_d \in \{0.03, 0.06, 0.12\}\); 150 körningar per cell, 300‑års horisont. Resultat: vid \(p = 0\) inträffade avlägsnande i noll körningar vid varje driftnivå. Avgörbarhetsövergången ligger vid \(p \approx 0.02\)–\(0.04\) i samtliga tre fall; ekvation (A.4) förutsäger \(0.010\), \(0.039\) respektive \(0.157\), så det mellersta fallet stämmer nära medan driftberoendet empiriskt är plattare än den första ordningens lag — den medelvärdesåtergående sanningen är mildare än slumpvandringsantagandet, och vid låg drift är den bindande restriktionen inom horisonten posteriorns transporttid från den informativa priorn snarare än stationärtillståndet. Medianår från upplösning till motiverat avlägsnande: vid \(p = 0.04\), ungefär 200–280; vid \(p = 0.15\), ungefär 70–80; vid \(p = 0.40\), ungefär 32–34. Med regulatorn genuint nödvändig (\(\lambda \approx 2\lambda_{\text{safe}}\)) producerade den riskbegränsade regeln falska avlägsnanden i högst en procent av körningarna vid någon sondtakt, medan kumulativa sondkanalsincidenter växte linjärt i \(p\) — kostnadssidan av Del II:s explorationsavvägning. Figurerna `sunset_time_to_removal.png` och `sunset_tradeoff.png` finns i simuleringsrepositoryt.
+
+**Begränsningar.** Härledningen är första ordningens och skalär: en enda störningsklass, statisk sann effektivitet, en Gaussisk approximation av Poisson‑posteriorn i logrymden, och en sond vars egen effektivitet är känd exakt. Varje lättnad flyttar resultatet i en känd riktning — okänt \(e_{\text{probe}}\) återinför partiell rangdefekt i sondkanalen och höjer \(p^{*}\); flera kopplade störningsklasser höjer den ytterligare. Ekvation (A.4) läses därför bäst som en undre gräns och en skalningslag, i samma första ordningens anda som resten av detta appendix.
