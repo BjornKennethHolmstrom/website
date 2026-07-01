@@ -14,6 +14,8 @@ export const papersEn = {
   XIII: { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain' },
   XIV:  { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller' },
   XV:   { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck' },
+  XVI:  { href: '/working-papers/why-diversity-resists-formalization',    label: 'Paper XVI: Why Diversity Resists Formalization' },
+  XVII: { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor' },
 };
 
 export const papersSv = {
@@ -32,4 +34,6 @@ export const papersSv = {
   XIII: { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning' },
   XIV:  { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant' },
   XV:   { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen' },
+  XVI:  { href: '/working-papers/why-diversity-resists-formalization',    label: 'Rapport XVI: Varför mångfald motstår formalisering' },
+  XVII: { href: '/working-papers/certification-floor',                    label: 'Rapport XVII: Certifieringsgolvet' },
 };
