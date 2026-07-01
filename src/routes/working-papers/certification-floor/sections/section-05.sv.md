@@ -1,0 +1,5 @@
+## 5. Alla irreducibla länkar är inte lika: diskret vs. omgivande
+
+Designkonsekvenserna hänger på en andra ordningens distinktion. En L_c = 1‑länk kan vara **diskret** – en specifik omröstning, en specifik signeringsnyckel, en specifik attestering – eller **omgivande** – ett stående villkor närvarande kontinuerligt snarare än vid identifierbara beslutspunkter. Proof‑of‑work illustrerar det senare: dess irreducibla beroende är inte ett enskilt beslut utan den kontinuerliga sociala konsensusen om att en given liggare *är* den kanoniska, ett faktum som om‑hävdas varje block.
+
+Distinktionen spelar roll eftersom en diskret länk kan isoleras, revideras och härdas; en omgivande länk kan inte det. Du kan rotera en nyckel och logga dess användning; du kan inte rotera eller revidera ”vad gemenskapen tar liggaren att betyda”. En del av ingenjörsproblemet är därför inte bara att minimera kedjelängd utan att tvinga den irreducibla länken att vara *diskret* snarare än omgivande – att koncentrera det oundvikliga förtroendet till en ansvarig handling snarare än att diffundera det till ett oisolerbart stående tillstånd.

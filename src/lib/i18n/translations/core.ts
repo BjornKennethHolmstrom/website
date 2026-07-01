@@ -169,6 +169,10 @@ export const coreTranslations = {
     geSeriesPaperXVI: {
       title: 'XVI: Why Diversity Resists Formalization',
       desc:  'Four disciplines independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter.',
+    },
+    geSeriesPaperXVII: {
+      title: 'XVII: The Certification Floor',
+      desc:  'Shows why world‑coupled coordination retains an irreducible certification link that automation relocates but never removes. Scope‑bounded: fails for self‑referential coordination.',
     }
   },
 
@@ -539,6 +543,10 @@ export const coreTranslations = {
     geSeriesPaperXVI: {
       title: 'XVI: Varför mångfald motstår formalisering',
       desc:  'Fyra discipliner konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern.',
+    },
+    geSeriesPaperXVII: {
+      title: 'XVII: Certifieringsgolvet',
+      desc:  'Visar varför världskopplad koordination behåller en irreducibel certifieringslänk som automatisering flyttar men aldrig tar bort. Räckviddsbegränsad: fallerar för självreferentiell koordination.',
     }
   },
 

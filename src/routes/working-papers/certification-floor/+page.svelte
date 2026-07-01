@@ -8,61 +8,68 @@
 
   // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
   // English
-  import AbstractEnRaw    from './sections/abstract.en.md?raw';
-  import Section1EnRaw    from './sections/section-1.en.md?raw';
-  import Section2EnRaw    from './sections/section-2.en.md?raw';
-  import Section3EnRaw    from './sections/section-3.en.md?raw';
-  import Section4EnRaw    from './sections/section-4.en.md?raw';
-  import Section5EnRaw    from './sections/section-5.en.md?raw';
-  import Section6EnRaw    from './sections/section-6.en.md?raw';
-  import AppendixAEnRaw   from './sections/appendix-a.en.md?raw';
-  import AppendixBEnRaw   from './sections/appendix-b.en.md?raw';
+  import AbstractEnRaw   from './sections/abstract.en.md?raw';
+  import Section01EnRaw  from './sections/section-01.en.md?raw';
+  import Section02EnRaw  from './sections/section-02.en.md?raw';
+  import Section03EnRaw  from './sections/section-03.en.md?raw';
+  import Section04EnRaw  from './sections/section-04.en.md?raw';
+  import Section05EnRaw  from './sections/section-05.en.md?raw';
+  import Section06EnRaw  from './sections/section-06.en.md?raw';
+  import Section07EnRaw  from './sections/section-07.en.md?raw';
+  import Section08EnRaw  from './sections/section-08.en.md?raw';
+  import Section09EnRaw  from './sections/section-09.en.md?raw';
 
   // Swedish
-  import AbstractSvRaw    from './sections/abstract.sv.md?raw';
-  import Section1SvRaw    from './sections/section-1.sv.md?raw';
-  import Section2SvRaw    from './sections/section-2.sv.md?raw';
-  import Section3SvRaw    from './sections/section-3.sv.md?raw';
-  import Section4SvRaw    from './sections/section-4.sv.md?raw';
-  import Section5SvRaw    from './sections/section-5.sv.md?raw';
-  import Section6SvRaw    from './sections/section-6.sv.md?raw';
-  import AppendixASvRaw   from './sections/appendix-a.sv.md?raw';
-  import AppendixBSvRaw   from './sections/appendix-b.sv.md?raw';
+  import AbstractSvRaw   from './sections/abstract.sv.md?raw';
+  import Section01SvRaw  from './sections/section-01.sv.md?raw';
+  import Section02SvRaw  from './sections/section-02.sv.md?raw';
+  import Section03SvRaw  from './sections/section-03.sv.md?raw';
+  import Section04SvRaw  from './sections/section-04.sv.md?raw';
+  import Section05SvRaw  from './sections/section-05.sv.md?raw';
+  import Section06SvRaw  from './sections/section-06.sv.md?raw';
+  import Section07SvRaw  from './sections/section-07.sv.md?raw';
+  import Section08SvRaw  from './sections/section-08.sv.md?raw';
+  import Section09SvRaw  from './sections/section-09.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
   const rawText: Record<string, Record<string, string>> = {
     en: {
       'abstract':    AbstractEnRaw,
-      'section-1': Section1EnRaw, 'section-2': Section2EnRaw, 'section-3': Section3EnRaw,
-      'section-4': Section4EnRaw, 'section-5': Section5EnRaw, 'section-6': Section6EnRaw,
-      'appendix-a': AppendixAEnRaw, 'appendix-b': AppendixBEnRaw,
+      'section-01': Section01EnRaw, 'section-02': Section02EnRaw,
+      'section-03': Section03EnRaw, 'section-04': Section04EnRaw,
+      'section-05': Section05EnRaw, 'section-06': Section06EnRaw,
+      'section-07': Section07EnRaw, 'section-08': Section08EnRaw,
+      'section-09': Section09EnRaw,
     },
     sv: {
       'abstract':    AbstractSvRaw,
-      'section-1': Section1SvRaw, 'section-2': Section2SvRaw, 'section-3': Section3SvRaw,
-      'section-4': Section4SvRaw, 'section-5': Section5SvRaw, 'section-6': Section6SvRaw,
-      'appendix-a': AppendixASvRaw, 'appendix-b': AppendixBSvRaw,
+      'section-01': Section01SvRaw, 'section-02': Section02SvRaw,
+      'section-03': Section03SvRaw, 'section-04': Section04SvRaw,
+      'section-05': Section05SvRaw, 'section-06': Section06SvRaw,
+      'section-07': Section07SvRaw, 'section-08': Section08SvRaw,
+      'section-09': Section09SvRaw,
     },
   };
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                          titleSv: 'Sammanfattning' },
-    { id: 'section-1',   titleEn: '1. The Object That Keeps Moving',                                   titleSv: '1. Objektet som flyttar sig' },
-    { id: 'section-2',   titleEn: '2. Method: Adversarial Decay as Evidence',                          titleSv: '2. Metod: Adversarial Decay som evidens' },
-    { id: 'section-3',   titleEn: '3. The Four Self‑Contained Collapses',                              titleSv: '3. De fyra fristående kollapserna' },
-    { id: 'section-4',   titleEn: '4. The Shared Pattern, and the Corrected Order Parameter',          titleSv: '4. Det gemensamma mönstret och den korrigerade ordningsparametern' },
-    { id: 'section-5',   titleEn: '5. What This Does Not Show',                                        titleSv: '5. Vad detta inte visar' },
-    { id: 'section-6',   titleEn: '6. The Residual',                                                    titleSv: '6. Restposten' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Lens Prompts',                                           titleSv: 'Appendix A: Lins‑prompter' },
-    { id: 'appendix-b',  titleEn: 'Appendix B: Rejected Unifications',                                 titleSv: 'Appendix B: Förkastade unifieringar' },
+    { id: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
+    { id: 'section-01',  titleEn: '1. The Tradeoff: Chain Length Against Adaptivity',                 titleSv: '1. Avvägningen: kedjelängd mot adaptivitet' },
+    { id: 'section-02',  titleEn: '2. The Deeper Object: The Certification / Processing Asymmetry',  titleSv: '2. Det djupare objektet: certifierings‑/bearbetningsasymmetrin' },
+    { id: 'section-03',  titleEn: '3. The Relocation Invariant',                                     titleSv: '3. Omlokaliseringsinvarianten' },
+    { id: 'section-04',  titleEn: '4. The Floor Mechanism: Irreducible World‑Certification',         titleSv: '4. Golvmekanismen: irreducibel världscertifiering' },
+    { id: 'section-05',  titleEn: '5. Not All Irreducible Links Are Equal: Discrete vs. Ambient',    titleSv: '5. Alla irreducibla länkar är inte lika: diskret vs. omgivande' },
+    { id: 'section-06',  titleEn: '6. The Scope Bound: World‑Coupled vs. Self‑Referential Coordination', titleSv: '6. Räckviddsgränsen: världskopplad vs. självreferentiell koordination' },
+    { id: 'section-07',  titleEn: '7. Design Implication',                                            titleSv: '7. Designimplikation' },
+    { id: 'section-08',  titleEn: '8. What This Does Not Show',                                       titleSv: '8. Vad detta inte visar' },
+    { id: 'section-09',  titleEn: '9. Method and Confidence',                                         titleSv: '9. Metod och konfidens' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XVI',
-      seriesNote: 'This is the sixteenth paper in the Governance as Engineering series. It asks the prior question of whether adaptive capacity is sustainable at all.',
+      tag: 'Working Paper · Series XVII',
+      seriesNote: 'This is the seventeenth paper in the Governance as Engineering series. It answers a question left open by Paper XVI.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
@@ -79,11 +86,11 @@
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
-        { href: '/working-papers/certification-floor', label: 'Paper XVII: The Certification Floor →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Four disciplines — control theory, evolutionary biology, institutional economics, and decision theory — were each asked the same structural question in strictly native vocabulary, with cross‑cutting terms forbidden. Their independently derived minimal formal statements share a single decay‑plus‑source‑term structure. The paper does not propose a unified theory of epistemic adaptivity, but a corrected order parameter: source‑term locality.',
-      contextOutro: 'The result is a cross‑framework failure atlas of exploration‑preservation under optimization pressure. The paper identifies where each formalism succeeds, where each breaks, and the single seam along which the breaks align.',
+      contextIntro: 'Paper XVI established source‑term locality: alternatives decay under optimization and survive only via a source term. This paper isolates the structural reason such a term can be irreducible: an asymmetry between processing (verifiable) and certification of reality (cannot be self‑verifying).',
+      contextOutro: 'The result is a relocation invariant: automating a coordination boundary relocates the irreducible world‑certification link upstream but never removes it. The invariant is scope‑bounded to world‑coupled coordination — governance — and demonstrably fails for self‑referential coordination (pure convention).',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -92,8 +99,8 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XVI',
-      seriesNote: 'Detta är den sextonde rapporten i serien Styrning som ingenjörskonst. Den ställer den föregående frågan om adaptiv kapacitet överhuvudtaget är hållbar.',
+      tag: 'Arbetsdokument · Serie XVII',
+      seriesNote: 'Detta är den sjuttonde rapporten i serien Styrning som ingenjörskonst. Den besvarar en fråga som lämnades öppen av Rapport XVI.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
@@ -110,11 +117,11 @@
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
-        { href: '/working-papers/certification-floor', label: 'Rapport XVII: Certifieringsgolvet →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Fyra discipliner — reglerteknik, evolutionsbiologi, institutionell ekonomi och beslutsteori — fick samma strukturella fråga i strikt inhemsk vokabulär, med korsande termer förbjudna. Deras oberoende härledda minimala formella utsagor delar en enda förfalls‑plus‑källtermsstruktur. Artikeln föreslår ingen enhetlig teori om epistemisk adaptivitet, men en korrigerad ordningsparameter: källtermslokalitet.',
-      contextOutro: 'Resultatet är en tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Artikeln identifierar var varje formalism lyckas, var de bryts, och den enda sömmen längs vilken brytningarna sammanfaller.',
+      contextIntro: 'Rapport XVI fastställde källtermens lokalitet: alternativ avtar under optimering och överlever endast via en källterm. Denna rapport isolerar den strukturella orsaken till att en sådan term kan vara irreducibel: en asymmetri mellan bearbetning (verifierbar) och certifiering av verklighet (kan inte självverifieras).',
+      contextOutro: 'Resultatet är en omlokaliseringsinvariant: automatisering av en koordinationsgräns flyttar den irreducibla världscertifieringslänken uppströms men tar aldrig bort den. Invarianten är räckviddsbegränsad till världskopplad koordination — styrning — och fallerar påvisbart för självreferentiell koordination (ren konvention).',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -126,14 +133,14 @@
 
   const metadata = {
     en: {
-      title: 'Why Diversity Resists Formalization',
-      subtitle: 'A cross‑framework failure atlas of exploration‑preservation under optimization pressure',
-      description: 'Four disciplines independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter. Paper XVI in the Governance as Engineering series.',
+      title: 'The Certification Floor',
+      subtitle: 'Why world‑coupled coordination retains an irreducible link, and self‑referential coordination does not',
+      description: 'Isolates the structural reason that an adaptive coordination boundary retains an irreducible certification link. Derives a relocation invariant: automating a coordination boundary relocates the irreducible world‑certification link upstream but never removes it. Paper XVII in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Varför mångfald motstår formalisering',
-      subtitle: 'En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck',
-      description: 'Fyra discipliner konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern. Rapport XVI i serien Styrning som ingenjörskonst.',
+      title: 'Certifieringsgolvet',
+      subtitle: 'Varför världskopplad koordination behåller en irreducibel länk, och självreferentiell koordination inte gör det',
+      description: 'Isolerar den strukturella orsaken till att en adaptiv koordinationsgräns behåller en irreducibel certifieringslänk. Härleder en omlokaliseringsinvariant: automatisering av en koordinationsgräns flyttar den irreducibla världscertifieringslänken uppströms men tar aldrig bort den. Rapport XVII i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -142,7 +149,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'why-diversity-resists-formalization-sv.pdf' : 'why-diversity-resists-formalization.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'certification-floor-sv.pdf' : 'certification-floor.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
@@ -155,6 +162,7 @@
 
     const blocks: string[] = [];
 
+    // Display math: $$ ... $$ and \[ ... \]
     content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
@@ -168,6 +176,7 @@
       }
     });
 
+    // Inline math: $ ... $ and \( ... \)
     content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
@@ -194,8 +203,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Varför mångfald motstår formalisering: En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Styrning som ingenjörskonst, Rapport XVI.`
-      : `Holmström, B. K. (2026). Why Diversity Resists Formalization: A cross‑framework failure atlas of exploration‑preservation under optimization pressure. Governance as Engineering, Paper XVI.`;
+      ? `Holmström, B. K. (2026). Certifieringsgolvet: Varför världskopplad koordination behåller en irreducibel länk, och självreferentiell koordination inte gör det. Styrning som ingenjörskonst, Rapport XVII.`
+      : `Holmström, B. K. (2026). The Certification Floor: Why world‑coupled coordination retains an irreducible link, and self‑referential coordination does not. Governance as Engineering, Paper XVII.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -206,7 +215,7 @@
   title="{meta.title} | BKH Working paper"
   description={meta.description}
   type="article"
-  publishedTime="2026-06"
+  publishedTime="2026-07"
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
@@ -320,7 +329,7 @@
             {@html sectionHtml(section)}
           </article>
         </div>
-        {#if section.id !== 'appendix-b'}
+        {#if section.id !== 'section-09'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

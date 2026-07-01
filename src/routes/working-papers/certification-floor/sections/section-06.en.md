@@ -1,0 +1,12 @@
+## 6. The scope bound: world-coupled vs. self-referential coordination
+
+The invariant is not universal, and establishing its boundary is as important as establishing the invariant. A counterexample probe asked two further disciplines — the theory of linguistic convention and the theory of coordination equilibria — whether a self-sustaining convention must refer to anything outside itself.
+
+The answer bounds the claim. A convention can be **self-sustaining with no external referent**: slang shifting meaning by usage alone; a repeated coordination equilibrium held by mutual expectation alone. Neither certifies any fact about the world. But the certification link *reappears* precisely when the convention must connect to something outside itself — a world-fact its meaning must track ("water" must track H₂O), or a selection among multiple equilibria resolved by a focal point that lives outside the strategy profile. Two vocabularies, one boundary:
+
+> **Self-referential coordination** — where the rule and the practice are the same thing and there is no external fact to certify — is exempt from the relocation invariant. **World-coupled coordination** — which must answer to some fact outside itself — carries the irreducible world-certification link. The invariant was never about coordination as such; it is about coordination that answers to something outside itself.
+
+Governance is world-coupled by construction: it certifies breaches, eligibility, harms, entitlements — facts about the world. That is why the invariant bites on governance and does not bite on pure convention. The naïve universal — that *every* adaptive coordination architecture contains an irreducible certification link — is false, and stating its falsity is what makes the bounded claim trustworthy.
+
+**One seam is left open [H].** Two lenses independently raised a temporal crack in the exemption: a self-referential convention may be certification-free *statically* yet require external coupling *dynamically* — to resist drift, to stay salient across generational turnover — because the community must observe *that it still coheres*. This is the difference between needing no external referent to *exist* and possibly needing one to *persist*. The field is split; this paper does not resolve it, and resolving it toward "so it needs certification after all" would be the convenient move that quietly restores the universal. The evidence does not support that move.
+

@@ -21,7 +21,8 @@
   { key: 'geSeriesPaperXIII', url: '/working-papers/legitimacy-as-emergent-gain', coverImage: '/working-papers/images/legitimacy-as-emergent-gain-cover.png' },
   { key: 'geSeriesPaperXIV', url: '/working-papers/governance-as-adaptive-controller', coverImage: '/working-papers/images/governance-as-adaptive-controller-cover.png' },
   { key: 'geSeriesPaperXV', url: '/working-papers/adaptation-bottleneck', coverImage: '/working-papers/images/adaptation-bottleneck-cover.png' },
-  { key: 'geSeriesPaperXVI', url: '/working-papers/why-diversity-resists-formalization', coverImage: '/working-papers/images/why-diversity-resists-formalization-cover.png' }
+  { key: 'geSeriesPaperXVI', url: '/working-papers/why-diversity-resists-formalization', coverImage: '/working-papers/images/why-diversity-resists-formalization-cover.png' },
+  { key: 'geSeriesPaperXVII', url: '/working-papers/certification-floor', coverImage: '/working-papers/images/certification-floor-cover.png' }
  ];
 
 	// Definiera vår projektdata.

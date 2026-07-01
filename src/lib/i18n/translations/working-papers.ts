@@ -114,6 +114,12 @@ export const workingpapersTranslations = {
      description:
        'Four disciplines — control theory, evolutionary biology, institutional economics, and decision theory — were each asked the same structural question in strictly native vocabulary. Their independently derived minimal formal statements share a single decay‑plus‑source‑term structure. The paper does not propose a unified theory, but a corrected order parameter: source‑term locality, the axis along which the four collapses align and differ. Paper XVI in the Governance as Engineering series.',
    },
+   certificationFloor: {
+     title: 'The Certification Floor',
+     subtitle: 'Why world‑coupled coordination retains an irreducible link, and self‑referential coordination does not',
+     description:
+       'Isolates the structural reason that an adaptive coordination boundary retains an irreducible certification link. Derives a relocation invariant: automating a coordination boundary relocates the irreducible world‑certification link upstream but never removes it. Shows the invariant is scope‑bounded to world‑coupled coordination and fails for self‑referential coordination. Paper XVII in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -308,6 +314,12 @@ export const workingpapersTranslations = {
      subtitle: 'En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck',
      description:
        'Fyra discipliner — reglerteknik, evolutionsbiologi, institutionell ekonomi och beslutsteori — fick samma strukturella fråga i strikt inhemsk vokabulär. Deras oberoende härledda minimala formella utsagor delar en enda förfalls‑plus‑källtermsstruktur. Artikeln föreslår ingen enhetlig teori, men en korrigerad ordningsparameter: källtermslokalitet, axeln längs vilken de fyra kollapserna sammanfaller och skiljer sig. Rapport XVI i serien Styrning som ingenjörskonst.',
+   },
+   certificationFloor: {
+     title: 'Certifieringsgolvet',
+     subtitle: 'Varför världskopplad koordination behåller en irreducibel länk, och självreferentiell koordination inte gör det',
+     description:
+       'Isolerar den strukturella orsaken till att en adaptiv koordinationsgräns behåller en irreducibel certifieringslänk. Härleder en omlokaliseringsinvariant: automatisering av en koordinationsgräns flyttar den irreducibla världscertifieringslänken uppströms men tar aldrig bort den. Visar att invarianten är räckviddsbegränsad till världskopplad koordination och fallerar för självreferentiell koordination. Rapport XVII i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

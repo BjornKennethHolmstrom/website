@@ -1,0 +1,9 @@
+## 3. Omlokaliseringsinvarianten
+
+Den starkaste kandidaten för att driva en adaptiv gräns till L_c = 0 är automatisering: ett system som uppdaterar sin egen regel utan mänsklig hand vid exekveringsögonblicket. Betrakta det skarpaste fallet – ett oföränderligt smart kontrakt som verkställer en omröstning på kedjan, eller en ”styrningsminimerad” DAO. Koden är deterministisk; ingen väktare rör spaken vid exekvering.
+
+Automatisering når inte L_c = 0. Den **flyttar den irreducibla länken uppströms snarare än tar bort den**. Det oföränderliga kontraktet stänger *exekverings*länken men återöppnar samma sårbarhet vid *specifikations*länken: vad som räknas som en giltig röst (polletter som står för intressenter), vad ett förslag betyder (dess text står för dess avsedda effekt), vad kvorum representerar (ett tröskelvärde som står för legitim konsensus). Att attackera ett sådant system kräver inte att röra den oföränderliga koden – bara att förvärva representationen (polletterna), eller utnyttja gapet mellan ett förslags lästa innebörd och dess bytekodseffekt. Det gapet *är* kedjan. Detta ger invarianten **[IP]**:
+
+> **Omlokaliseringsinvarianten.** Automatisering av en länk flyttar det irreducibla representationsberoendet; den tar inte bort det. Representation kan göras *deterministisk* (kod exekveras exakt som skriven) men inte *tolkningsfri* (vad koden borde säga, och huruvida polletterna representerar rätt parter, förblir redigerbart).
+
+En anmärkning om namngivning. Denna regelbundenhet kallas inte en konserveringslag. En konserveringslag härleds ur en symmetri; ingen har härletts här. Vad som observeras är att varje försök att ta bort ett certifieringsgränssnitt omlokaliserar det – en invarians under transformation, en empirisk regelbundenhet över formalismer. ”Omlokaliseringsinvariant” påstår exakt det och inget mer.

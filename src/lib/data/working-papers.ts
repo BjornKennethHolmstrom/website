@@ -28,6 +28,71 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'certificationFloor',
+   key: 'certificationFloor',
+   category: 'governance',
+   tags: [
+     'Certification Floor',
+     'World-Coupled Coordination',
+     'Self-Referential Coordination',
+     'Chain Length',
+     'Certification Asymmetry',
+     'Relocation Invariant',
+     'Trusted Computing',
+     'Contract Theory',
+     'Governance Engineering',
+     'Limits of Perception'
+   ],
+   year: '2026',
+   pages: '13',
+   readTime: {
+     en: '20 min',
+     sv: '20 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/certification-floor.pdf`,
+     sv: `${localBase}/certification-floor-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/certification-floor-cover.png',
+   readOnlinePath: '/working-papers/certification-floor',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-01'
+ },
+ {
+   id: 'whyDiversityResistsFormalization',
+   key: 'whyDiversityResistsFormalization',
+   category: 'governance',
+   tags: [
+     'Diversity',
+     'Formalization',
+     'Persistent Excitation',
+     'Standing Variance',
+     'Threat of Entry',
+     'Decision Theory',
+     'Source-Term Locality',
+     'Epistemic Adaptivity',
+     'Exploration-Preservation',
+     'Limits of Perception',
+     'Governance Engineering'
+   ],
+   year: '2026',
+   pages: '15',
+   readTime: {
+     en: '20 min',
+     sv: '20 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/why-diversity-resists-formalization.pdf`,
+     sv: `${localBase}/why-diversity-resists-formalization-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/why-diversity-resists-formalization-cover.png',
+   readOnlinePath: '/working-papers/why-diversity-resists-formalization',
+   readOnlineExternal: false,
+   releaseDate: '2026-06-30'
+ },
+ {
    id: 'selfOperator',
    key: 'selfOperator',
    category: 'governance',
@@ -57,39 +122,6 @@ export const papersData: Workingpaper[] = [
    readOnlinePath: '/working-papers/self-operator',
    readOnlineExternal: false,
    releaseDate: '2026-06-19'
- },
- {
-   id: 'whyDiversityResistsFormalization',
-   key: 'whyDiversityResistsFormalization',
-   category: 'governance',
-   tags: [
-     'Diversity',
-     'Formalization',
-     'Persistent Excitation',
-     'Standing Variance',
-     'Threat of Entry',
-     'Decision Theory',
-     'Source-Term Locality',
-     'Epistemic Adaptivity',
-     'Exploration-Preservation',
-     'Limits of Perception',
-     'Governance Engineering'
-   ],
-   year: '2026',
-   pages: 'TBD',
-   readTime: {
-     en: null,
-     sv: null
-   },
-   version: '1.0',
-   pdfPath: {
-     en: `${localBase}/why-diversity-resists-formalization.pdf`,
-     sv: `${localBase}/why-diversity-resists-formalization-sv.pdf`,
-   },
-   coverImage: '/working-papers/images/why-diversity-resists-formalization-cover.png',
-   readOnlinePath: '/working-papers/why-diversity-resists-formalization',
-   readOnlineExternal: false,
-   releaseDate: '2026-06-30'
  },
  {
    id: 'adaptationBottleneck',
