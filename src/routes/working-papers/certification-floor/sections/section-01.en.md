@@ -12,6 +12,17 @@ Each editable link added moves the system to **L_c ≥ 1** and buys adaptivity �
 
 The distinction matters because an earlier route to this claim was circular. "Governance coordinates agency; agency implies representation; therefore L_c ≥ 1" wins by defining governance to exclude the L_c = 0 cases (terrain, thermodynamic gradients, pure physical constraint), which do coordinate agency against counterfactuals with no representation. The non-circular route is the tradeoff: L_c = 0 coordination exists, but it cannot represent its own rule and therefore cannot adapt it. Governance is L_c ≥ 1 because governance is the kind of coordination that must update its rules — and updating requires representation, and representation is editable.
 
-This folds directly into Paper XVI's coupling rather than standing apart from it. Source-term locality concerned the capacity to *generate alternatives*; chain length concerns the capacity to *update the rule*; both are one coupling — **the property that makes a system adaptive (a source term inside the loop, a representation of its own rule) is the same property that makes it editable, erodible, or subornable.** L_c = 0 is the limiting case: un-editability purchased by surrendering adaptivity entirely, the geographic equivalent of a fully concentrated posterior that can no longer learn.
+This folds directly into Paper XVI's coupling rather than standing apart from it. Source-term locality concerned the capacity to *generate alternatives*; chain length concerns the capacity to *update the rule*; both are one coupling — **the property that makes a system adaptive (a source term inside the loop, a representation of its own rule) is the same property that makes it editable, erodible, or subornable.** 
+
+The in-between of that coupling — a rule editable in principle but costly enough
+to edit that ordinary pressure leaves it standing — is the protection class Paper
+XVI §6 leaves open and probes computationally. There the irreversible trap opens
+only when exit from the incumbent rule is nearly foreclosed, so a merely-costly
+`L_c ≥ 1` link is metastable, not absorbing: it decays back to contestability once
+the pressure lifts. Editability is therefore not binary. The certification floor
+fixes what cannot be removed at all; whether a removable-in-principle link behaves
+as removable depends on how close its switching cost sits to foreclosure. **[IP]**
+
+L_c = 0 is the limiting case: un-editability purchased by surrendering adaptivity entirely, the geographic equivalent of a fully concentrated posterior that can no longer learn.
 
 
