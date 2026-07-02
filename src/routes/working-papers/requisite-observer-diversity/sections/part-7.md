@@ -38,6 +38,11 @@ The conceptual framework of this paper is precise. The observer ensemble has an 
 
 The operationalisation of these concepts, however, faces the same measurement challenge that Paper VIII addresses for the variety gap. The quantities are latent. They must be estimated from observable proxies, and the estimates carry uncertainty that must be reported rather than suppressed.
 
+This latency is not merely a loss of precision: §2.5 shows a variance-optimal
+weighting built on the estimated $\Sigma$ concentrates its weight along exactly
+the dependence directions the proxies omit, converting an estimation gap into an
+adversarial target. **[IP]**
+
 Candidate proxies for *r*_ens include: the number of independent model architectures used for a given forecasting task; the structural diversity of training data sources; and the institutional independence of the organizations producing the estimates, as measured by the proxies for transition bandwidth developed in Paper IX — appointment processes, budget autonomy, and statutory data release authority. The effective rank is not the nominal count of models or organizations. It is a function of the overlap in their observation matrices, which can be estimated from the correlation structure of their outputs.
 
 Candidate proxies for ρ include: the pairwise prediction correlation between observer organizations on historical outcomes, computed over a rolling window; the sensitivity of different observers' estimates to common perturbations — if two observers always revise their estimates in the same direction by the same magnitude in response to new data, their errors are highly correlated; and the degree of shared infrastructure — common training data, common model architecture, common methodological guidelines — that would produce correlated errors even in the absence of direct coordination.

@@ -8,13 +8,14 @@
  * Example: node scripts/generate-observer-diversity-pdf.js sv
  *
  * Requirements:
- * npm install marked puppeteer
+ * npm install marked puppeteer katex
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { marked } from 'marked';
+import katex from 'katex';
 import puppeteer from 'puppeteer';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -74,14 +75,14 @@ const sections = [
 	{ file: 'part-8',   titleEn: 'Part VIII: Conclusion',                                      titleSv: 'Del VIII: Slutsats',                                  isAppendix: false },
 ];
 
-// ── CSS (identical in logic, only series info differs) ────────────────────
+// ── CSS (same as newer papers, 12pt base) ──────────────────────────────────
 const pdfStyles = `
 <style>
 	@page {
 		size: A4;
 		margin: 2.5cm 2cm;
 		@bottom-right {
-			content: "${LANGUAGE === 'sv' ? 'Sida' : 'Page'} " counter(page) " ${LANGUAGE === 'sv' ? 'av' : 'of'} " counter(pages);
+			content: "Page " counter(page) " of " counter(pages);
 			font-size: 9pt;
 			color: #666;
 		}
@@ -93,7 +94,7 @@ const pdfStyles = `
 
 	body {
 		font-family: 'Georgia', 'Times New Roman', serif;
-		font-size: 11pt;
+		font-size: 12pt;
 		line-height: 1.6;
 		color: #1a1a1a;
 		max-width: 100%;
@@ -123,58 +124,13 @@ const pdfStyles = `
 		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 	}
 
-	.cover h1 {
-		font-size: 22pt;
-		font-weight: bold;
-		margin-bottom: 0.3em;
-		line-height: 1.2;
-		color: #1a1a1a;
-	}
-
-	.cover .subtitle {
-		font-size: 13pt;
-		font-style: italic;
-		margin-bottom: 0.4em;
-		color: #555;
-		line-height: 1.4;
-		max-width: 560px;
-	}
-
-	.cover .series-note {
-		font-size: 9.5pt;
-		color: #888;
-		margin-bottom: 0.4em;
-		font-style: italic;
-	}
-
-	.cover .description {
-		font-size: 10.5pt;
-		margin-bottom: 0.6em;
-		color: #666;
-		max-width: 580px;
-		line-height: 1.4;
-	}
-
-	.cover .metadata {
-		font-size: 10.5pt;
-		color: #666;
-		margin-top: 0.6em;
-		line-height: 1.5;
-	}
-
-	.cover .url {
-		font-size: 8.5pt;
-		color: #888;
-		margin-top: 0.4em;
-		font-family: 'Courier New', monospace;
-	}
-
-	.cover .license {
-		font-size: 8.5pt;
-		color: #888;
-		margin-top: 0.2em;
-		font-style: italic;
-	}
+	.cover h1 { font-size: 24pt; font-weight: bold; margin-bottom: 0.3em; line-height: 1.2; color: #1a1a1a; }
+	.cover .subtitle { font-size: 14pt; font-style: italic; margin-bottom: 0.4em; color: #555; line-height: 1.3; max-width: 560px; }
+	.cover .series-note { font-size: 9.5pt; color: #888; margin-bottom: 0.4em; font-style: italic; }
+	.cover .description { font-size: 10.5pt; margin-bottom: 0.6em; color: #666; max-width: 580px; line-height: 1.4; }
+	.cover .metadata { font-size: 10.5pt; color: #666; margin-top: 0.6em; line-height: 1.5; }
+	.cover .url { font-size: 8.5pt; color: #888; margin-top: 0.4em; font-family: 'Courier New', monospace; }
+	.cover .license { font-size: 8.5pt; color: #888; margin-top: 0.2em; font-style: italic; }
 
 	h1 { font-size: 20pt; font-weight: bold; margin-top: 1.5em; margin-bottom: 0.5em; page-break-after: avoid; color: #1a1a1a; border-bottom: 2px solid #ccc; padding-bottom: 0.2em; }
 	h2 { font-size: 16pt; font-weight: bold; margin-top: 1.2em; margin-bottom: 0.5em; page-break-after: avoid; color: #2c2c2c; }
@@ -183,7 +139,6 @@ const pdfStyles = `
 	p { margin-bottom: 0.8em; text-align: justify; orphans: 3; widows: 3; }
 	ul, ol { margin-bottom: 0.8em; padding-left: 1.5em; }
 	li { margin-bottom: 0.3em; }
-	ul ul, ol ol, ul ol, ol ul { margin-top: 0.3em; margin-bottom: 0.3em; }
 	blockquote { margin: 1em 2em; padding: 0.5em 1em; border-left: 3px solid #ccc; font-style: italic; background: #f9f9f9; page-break-inside: avoid; }
 	pre { background: #f5f5f5; border: 1px solid #ddd; padding: 0.8em; font-size: 9pt; line-height: 1.4; page-break-inside: avoid; margin-bottom: 1em; border-radius: 4px; font-family: 'Courier New', monospace; color: #1a1a1a; }
 	code { background: #f5f5f5; padding: 0.1em 0.3em; font-family: 'Courier New', monospace; font-size: 9pt; border-radius: 2px; color: #1a1a1a; }
@@ -203,7 +158,13 @@ const pdfStyles = `
 	.figure-container { page-break-inside: avoid; break-inside: avoid; }
 	.figure { page-break-inside: avoid; margin: 1.5em 0; text-align: center; }
 	.figure img { max-width: 100%; max-height: 22cm; width: auto; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 4px; }
-	img, { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
+
+	img {
+		max-height: 20cm;
+		width: auto;
+		max-width: 100%;
+		object-fit: contain;
+	}
 	figure, .figure, .diagram-container { page-break-inside: avoid; break-inside: avoid; margin: 1.5em 0; }
 	h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
 	p, li { orphans: 3; widows: 3; }
@@ -256,6 +217,46 @@ function enhanceImageMarkup(content) {
 `);
 }
 
+// ── Pre‑render LaTeX with KaTeX (handles $…$, $$…$$, \(…\), \[…\]) ─────────
+function preRenderMath(mdContent) {
+	const blocks = [];
+	let processed = mdContent;
+
+	// Display math: $$ ... $$ and \[ ... \]
+	processed = processed.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
+		const tex = (tex1 ?? tex2 ?? '').trim();
+		try {
+			const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
+			blocks.push(rendered);
+			return `%%MATH${blocks.length - 1}%%`;
+		} catch (e) {
+			console.warn('KaTeX display error:', e);
+			blocks.push(match);
+			return `%%MATH${blocks.length - 1}%%`;
+		}
+	});
+
+	// Inline math: $ ... $ and \( ... \)
+	processed = processed.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
+		const tex = (tex1 ?? tex2 ?? '').trim();
+		try {
+			const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
+			blocks.push(rendered);
+			return `%%MATH${blocks.length - 1}%%`;
+		} catch (e) {
+			console.warn('KaTeX inline error:', e);
+			blocks.push(match);
+			return `%%MATH${blocks.length - 1}%%`;
+		}
+	});
+
+	return { processed, blocks };
+}
+
+function restoreMath(html, blocks) {
+	return html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+}
+
 // ── Read markdown files ──────────────────────────────────────────────────────
 function readMarkdownFiles() {
 	console.log(`\n📖 Reading working paper sections for language: ${LANGUAGE}`);
@@ -296,9 +297,10 @@ function getCoverImageUri() {
 }
 
 function generateHTML(sections) {
-	console.log('🔨 Converting markdown to HTML...');
+	console.log('🔨 Converting markdown to HTML (pre‑rendering LaTeX)...');
 	marked.setOptions({ breaks: false, gfm: true });
 	const coverImage = getCoverImageUri();
+	const katexCssUri = 'file://' + path.resolve(path.join(__dirname, '../node_modules/katex/dist/katex.min.css')).replace(/\\/g, '/');
 
 	let html = `
 <!DOCTYPE html>
@@ -306,6 +308,7 @@ function generateHTML(sections) {
 <head>
   <meta charset="UTF-8">
   <title>${meta.title}</title>
+  <link rel="stylesheet" href="${katexCssUri}" />
   ${pdfStyles}
 </head>
 <body>
@@ -329,11 +332,15 @@ function generateHTML(sections) {
 		if (index > 0) html += `\n<div class="section-divider"></div>\n`;
 		const sectionClass = section.isAppendix ? 'appendix' : '';
 		html += `<section class="${sectionClass}">\n`;
-		const enhancedContent = enhanceImageMarkup(section.content);
-		const sectionHtml = marked.parse(enhancedContent);
-		html += sectionHtml;
+
+		// Pre‑render LaTeX, then markdown parse
+		const { processed, blocks } = preRenderMath(section.content);
+		const imgEnhanced = enhanceImageMarkup(processed);
+		const rawHtml = marked.parse(imgEnhanced);
+		const finalHtml = restoreMath(rawHtml, blocks);
+		html += finalHtml;
 		html += `</section>\n`;
-		console.log(`✓ (${(sectionHtml.length / 1024).toFixed(1)} KB)`);
+		console.log(`✓ (${(finalHtml.length / 1024).toFixed(1)} KB)`);
 	});
 
 	html += `\n</body>\n</html>\n`;
@@ -373,7 +380,7 @@ async function generatePDF(html) {
 					<span style="float: right;">${LANGUAGE === 'en' ? 'Working paper · Series X' : 'Arbetsdokument · Serie X'}</span>
 				</div>
 			`,
-    footerTemplate: `<div></div>`,
+			footerTemplate: `<div></div>`,
 			timeout: 120000
 		});
 

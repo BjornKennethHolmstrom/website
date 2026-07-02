@@ -64,6 +64,17 @@ This suggests a natural definition of the *effective number of independent obser
 
 When ρ = 0, *N*_eff = *N*. When ρ = 0.5, *N*_eff approaches 2 as *N* grows. When ρ → 1, *N*_eff → 1. The nominal number of observers is a poor guide to the ensemble's effective capacity; what matters is the correlation structure.
 
+The definition generalizes to a weighted ensemble $\hat{x} = \sum_i w_i y_i$
+($w \ge 0$, $\mathbf{1}^\top w = 1$). Writing the effective count as the value
+that reproduces the realized variance under independence,
+$w^\top \Sigma\, w \equiv \sigma^2 / N_{\text{eff}}(w)$, gives
+$$N_{\text{eff}}(w) = \frac{\big(\sum_i w_i \sigma_i\big)^2}{w^\top \Sigma\, w},$$
+which recovers $N_{\text{eff}} = N/(1+(N-1)\rho)$ at $w = \mathbf{1}/N$ with equal
+$\sigma$. The numerator is the squared $\sigma$-weighted mass the estimator
+commits; the denominator is what that commitment actually costs given the
+correlation structure. Choosing $w$ to maximize $N_{\text{eff}}(w)$ is the
+minimum-variance program taken up in §2.5. **[R]**
+
 This result is not original to the present paper. The expression is algebraically equivalent to *N*_eff = *N* / (1 + (*N*−1)ρ), which is the standard effective-sample-size correction under intraclass correlation — Kish's *design effect* in survey statistics (Kish, 1965), with the same structure appearing in portfolio diversification under correlated returns and in the analysis of ensemble methods in machine learning. The contribution here is not the equation but its application: treating a civilization's observer organizations as a correlated sample of the latent state, and reading the design effect as a diagnostic of governance capacity rather than of survey efficiency.
 
 This has a direct and uncomfortable implication for contemporary governance. When all major observers query the same foundation model, when all regulatory agencies apply the same harmonised assessment methodology, when all climate models share the same parameterisation of cloud feedbacks, the pairwise error correlation ρ approaches one. The *N* is large — dozens of agencies, hundreds of model runs, thousands of published studies — but the effective *N*_eff is near one. The civilization is paying the full cost of its epistemic infrastructure — the satellites, the supercomputers, the conferences, the peer‑reviewed journals — while receiving the observational protection of a single sensor. And the sensor has blind spots that no one can see because every instrument they could check against shares the same architecture.
@@ -85,6 +96,98 @@ In contemporary AI-driven governance, these two pathways operate simultaneously 
 where ρ_model captures the error correlation attributable to shared architecture and ρ_data captures the correlation attributable to shared training distribution. When both ρ_model and ρ_data are non-negligible, ρ_total is driven toward one even if each individual pathway is only moderately constraining. The two mechanisms are multiplicative in their effect on *N*_eff.
 
 The practical implication is that maintaining model diversity alone — deploying different architectures — is insufficient if all architectures are trained on the same data. Conversely, maintaining data diversity alone — different training sets — is insufficient if all observers process their data through the same foundation model. Institutionalising observer diversity requires addressing both pathways: structurally independent observation matrices (different **C** matrices, per Section 2.1) *and* structurally independent data sources. The design principles of Part V address the model pathway through ensemble methods (Section 5.2) and the data pathway through subsidiarity of observation (Section 5.3), each of which must be present for the other to provide its full protective benefit.
+
+## 2.5 Weighted Allocation and the Exposure Inversion
+
+Section 2.3 pooled the ensemble with equal weights. In practice an ensemble is
+*weighted*: an estimator $\hat{x} = \sum_i w_i y_i$ with $w \ge 0$, $\mathbf{1}^\top w = 1$,
+and the natural design move is to choose $w$ to minimize error variance,
+$$\sigma^2_{\text{eff}}(w) = w^\top \Sigma\, w,$$
+which recovers §2.3 at $w = \mathbf{1}/N$ and is a convex quadratic program — the
+long-only global-minimum-variance (GMV) allocation, structurally identical to
+minimum-variance portfolio selection. This section shows that variance-optimal
+weighting, applied to the covariance one can actually *estimate*, is the
+allocation most exposed to the correlation it cannot estimate. **[R]** for the
+algebra; **[IP]** for the governance reading.
+
+**The estimate/reality gap.** Section 7.3 already concedes that $\Sigma$ is
+latent and must be estimated from observable proxies — shared architectures,
+corpora, funders, jurisdictions. Call that estimate $\Sigma_{\text{est}}$. Any
+dependence *not* visible in the proxies is absent from $\Sigma_{\text{est}}$ by
+construction. Let one such hidden common input (a shared reanalysis product, a
+shared timing signal) load on a subset $K$ of channels, so the true covariance
+is $\Sigma_0 = \Sigma_{\text{est}} + a a^\top$ with $a$ supported on $K$, while
+$\Sigma_{\text{est}}$ treats $K$ as independent. An adversary — or merely a
+correlated shock — that amplifies this input injects a shared error component,
+$$\Sigma_{\text{true}}(s) = \Sigma_0 + s\,v v^\top, \qquad v_i = \sigma_i \ (i \in K),\ 0 \ \text{else},$$
+giving realized variance
+$$\sigma^2_{\text{eff}}(w,s) = w^\top \Sigma_0\, w \;+\; s\,(w^\top v)^2 .$$
+The attack term is governed entirely by the **spoof exposure** $E(w) = (w^\top v)^2 = \big(\sum_{i\in K} w_i \sigma_i\big)^2$:
+the $\sigma$-weighted mass the allocation places on $K$.
+
+**Proposition (exposure inversion).** Take the two-block ensemble that isolates
+the mechanism: a *crowd* block $C$ ($n_C$ channels, variance $\sigma_C^2$,
+mutual correlation $\rho_C>0$ in $\Sigma_{\text{est}}$) and a *clean* block
+$K$ ($n_K$ channels, variance $\sigma_K^2 \le \sigma_C^2$, appearing mutually
+uncorrelated in $\Sigma_{\text{est}}$ but sharing the hidden input). Then the
+GMV allocation on $\Sigma_{\text{est}}$ places strictly greater $\sigma$-weighted
+mass on $K$ than the equal-weight allocation, and hence has strictly greater
+spoof exposure:
+$$\frac{W_K^{\text{GMV}}}{W_K^{\text{flat}}} = \frac{N\,a_K}{n_C a_C + n_K a_K} > 1, \qquad a_K = \frac{1}{\sigma_K^2},\ \ a_C = \frac{1}{\sigma_C^2\,[\,1+(n_C-1)\rho_C\,]} ,$$
+with the excess realized variance under the spoof equal to
+$s\big(E_{\text{GMV}} - E_{\text{flat}}\big) = s\,\sigma_K^2\big((W_K^{\text{GMV}})^2 - (W_K^{\text{flat}})^2\big) > 0.$
+
+*Proof.* With $\Sigma_{\text{est}} = \mathrm{blkdiag}(\Sigma_C, \sigma_K^2 I)$
+and $\Sigma_C = \sigma_C^2[(1-\rho_C)I + \rho_C \mathbf{1}\mathbf{1}^\top]$, the
+vector $\mathbf{1}$ is an eigenvector of $\Sigma_C$ with eigenvalue
+$\sigma_C^2[1+(n_C-1)\rho_C]$, so $\Sigma_C^{-1}\mathbf{1} = a_C \mathbf{1}$. The
+GMV weights $w^\star \propto \Sigma_{\text{est}}^{-1}\mathbf{1}$ are therefore
+uniform within each block: $a_C$ per crowd channel, $a_K$ per clean channel.
+Normalizing, $W_K^{\text{GMV}} = n_K a_K / (n_C a_C + n_K a_K)$, and
+$W_K^{\text{GMV}} > n_K/N = W_K^{\text{flat}} \iff a_K > a_C$, which holds
+whenever $\rho_C>0$ or $\sigma_C^2 > \sigma_K^2$. Both blocks weight $K$
+uniformly, so $\sum_{i\in K} w_i \sigma_i = W_K \sigma_K$ for each allocation,
+giving $E_{\text{GMV}}/E_{\text{flat}} = (W_K^{\text{GMV}}/W_K^{\text{flat}})^2$.
+$\square$
+
+The overweight factor $a_K/a_C = (\sigma_C^2/\sigma_K^2)[1+(n_C-1)\rho_C]$ is the
+crowd block's design effect times its variance ratio: **the more correlated and
+the larger the visible crowd, the harder GMV flees it and the more it concentrates
+on the clean block** — so the exposure grows with exactly the visible correlation
+§2.3 tells us to avoid. In the strong-crowd limit $W_K^{\text{GMV}} \to 1$ and the
+exposure ratio approaches $(N/n_K)^2$. This is the inversion: the features that
+make $K$ attractive to variance minimization (apparent decorrelation, low
+variance) are precisely what maximize its damage once the hidden correlation is
+activated. The allocation that is best before the shock is worst after it.
+
+**Corollary (robustness against measured dependence does not help).** Let the
+$\Gamma$-aware robust allocation minimize $\max_{f\in F}\,[\,w^\top \Sigma_{\text{est}} w + s(w^\top v_f)^2\,]$
+over the *observable* factors $f$ (all supported on $C$). Penalizing
+$(w^\top v_f)^2$ for crowd-supported $f$ pushes weight further off $C$ and onto
+$K$, so $W_K^{\text{robust}} \ge W_K^{\text{GMV}}$ and thus
+$E_{\text{robust}} \ge E_{\text{GMV}} > E_{\text{flat}}$. Hardening against the
+correlation one can see strictly does not reduce — and generically increases —
+exposure to the correlation one cannot. This is the operational content of
+"measure dependence, do not certify independence" being *necessary but not
+sufficient*: measurable structural overlap ($\Gamma$) is not realized error
+correlation ($\Sigma$), and optimizing against the former sculpts the ensemble
+into the latter's ideal target.
+
+The design reading is narrow and it cuts against the obvious lever. Maximizing
+$N_{\text{eff}}$ by variance-optimal weighting is safe only to the extent
+$\Sigma_{\text{est}}$ is complete; under the measurement latency §7.3 already
+grants, it is not, and the optimum concentrates weight exactly where the estimate
+is blind. The protective allocation is not the one that minimizes estimated
+variance but the one that bounds $\sup_{K}(w^\top v_K)^2$ over *candidate*
+unmeasured common-input sets — i.e. that caps per-subset $\sigma$-weighted
+concentration. Equal weighting is the crude version of that cap; "subsidize
+orthogonality" (Part V) is the sharp one. **[IP]**
+
+*(Verified numerically in `paper_x_echo_adversarial_fragility.py`: at $n_C{=}24,\,n_K{=}12$,
+GMV and robust place $0.97$–$0.99$ of weight on $K$ versus $0.33$ for flat, and
+both cross above flat's realized error at spoof strength $s\approx0.75$, reaching
+$\sim\!4\times$ by $s{=}8$, while remaining immune to attacks on the observable
+factors.)*
 
 ---
 

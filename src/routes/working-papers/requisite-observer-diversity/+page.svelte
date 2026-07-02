@@ -2,106 +2,63 @@
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import { marked } from 'marked';
+  import katex from 'katex';
+  import 'katex/dist/katex.min.css';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS ---
+  // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
+  // English
+  import AbstractEnRaw from './sections/abstract.md?raw';
+  import Part1EnRaw    from './sections/part-1.md?raw';
+  import Part2EnRaw    from './sections/part-2.md?raw';
+  import Part3EnRaw    from './sections/part-3.md?raw';
+  import Part4EnRaw    from './sections/part-4.md?raw';
+  import Part5EnRaw    from './sections/part-5.md?raw';
+  import Part6EnRaw    from './sections/part-6.md?raw';
+  import Part7EnRaw    from './sections/part-7.md?raw';
+  import Part8EnRaw    from './sections/part-8.md?raw';
 
-  import AbstractEn from './sections/abstract.md';
-  import AbstractSv from './sections/abstract-sv.md';
+  // Swedish
+  import AbstractSvRaw from './sections/abstract-sv.md?raw';
+  import Part1SvRaw    from './sections/part-1-sv.md?raw';
+  import Part2SvRaw    from './sections/part-2-sv.md?raw';
+  import Part3SvRaw    from './sections/part-3-sv.md?raw';
+  import Part4SvRaw    from './sections/part-4-sv.md?raw';
+  import Part5SvRaw    from './sections/part-5-sv.md?raw';
+  import Part6SvRaw    from './sections/part-6-sv.md?raw';
+  import Part7SvRaw    from './sections/part-7-sv.md?raw';
+  import Part8SvRaw    from './sections/part-8-sv.md?raw';
 
-  import Part1En from './sections/part-1.md';
-  import Part1Sv from './sections/part-1-sv.md';
+  // --- 2. RAW TEXT MAP ---
+  const rawText: Record<string, Record<string, string>> = {
+    en: {
+      'abstract': AbstractEnRaw,
+      'part-1': Part1EnRaw, 'part-2': Part2EnRaw, 'part-3': Part3EnRaw,
+      'part-4': Part4EnRaw, 'part-5': Part5EnRaw, 'part-6': Part6EnRaw,
+      'part-7': Part7EnRaw, 'part-8': Part8EnRaw,
+    },
+    sv: {
+      'abstract': AbstractSvRaw,
+      'part-1': Part1SvRaw, 'part-2': Part2SvRaw, 'part-3': Part3SvRaw,
+      'part-4': Part4SvRaw, 'part-5': Part5SvRaw, 'part-6': Part6SvRaw,
+      'part-7': Part7SvRaw, 'part-8': Part8SvRaw,
+    },
+  };
 
-  import Part2En from './sections/part-2.md';
-  import Part2Sv from './sections/part-2-sv.md';
-
-  import Part3En from './sections/part-3.md';
-  import Part3Sv from './sections/part-3-sv.md';
-
-  import Part4En from './sections/part-4.md';
-  import Part4Sv from './sections/part-4-sv.md';
-
-  import Part5En from './sections/part-5.md';
-  import Part5Sv from './sections/part-5-sv.md';
-
-  import Part6En from './sections/part-6.md';
-  import Part6Sv from './sections/part-6-sv.md';
-
-  import Part7En from './sections/part-7.md';
-  import Part7Sv from './sections/part-7-sv.md';
-
-  import Part8En from './sections/part-8.md';
-  import Part8Sv from './sections/part-8-sv.md';
-
-  // --- 2. CONTENT STRUCTURE ---
-
+  // --- 3. CONTENT MAP (titles only) ---
   const contentMap = [
-    {
-      id: 'abstract',
-      titleEn: 'Abstract',
-      titleSv: 'Sammanfattning',
-      compEn: AbstractEn,
-      compSv: AbstractSv,
-    },
-    {
-      id: 'part-1',
-      titleEn: 'Part I: The Problem the Series Has Not Yet Named',
-      titleSv: 'Del I: Problemet som serien ännu inte har namngett',
-      compEn: Part1En,
-      compSv: Part1Sv,
-    },
-    {
-      id: 'part-2',
-      titleEn: 'Part II: Formalizing Observer Diversity',
-      titleSv: 'Del II: Formalisering av observatörsmångfald',
-      compEn: Part2En,
-      compSv: Part2Sv,
-    },
-    {
-      id: 'part-3',
-      titleEn: 'Part III: The Collapse Dynamics of Observer Ensembles',
-      titleSv: 'Del III: Kollapsdynamik för observatörsensembler',
-      compEn: Part3En,
-      compSv: Part3Sv,
-    },
-    {
-      id: 'part-4',
-      titleEn: 'Part IV: Existence Proofs: Where Decentralized Epistemic Architecture Works',
-      titleSv: 'Del IV: Exempel på fungerande decentraliserad epistemisk arkitektur',
-      compEn: Part4En,
-      compSv: Part4Sv,
-    },
-    {
-      id: 'part-5',
-      titleEn: 'Part V: Design Principles for Institutionalizing Observer Diversity',
-      titleSv: 'Del V: Konstruktionsprinciper för att institutionalisera observatörsmångfald',
-      compEn: Part5En,
-      compSv: Part5Sv,
-    },
-    {
-      id: 'part-6',
-      titleEn: 'Part VI: Simulation D: Epistemic Monoculture Collapse',
-      titleSv: 'Del VI: Simulering D: Epistemisk monokulturkollaps',
-      compEn: Part6En,
-      compSv: Part6Sv,
-    },
-    {
-      id: 'part-7',
-      titleEn: 'Part VII: Implications, Limitations, and Connection to the Series',
-      titleSv: 'Del VII: Implikationer, begränsningar och koppling till serien',
-      compEn: Part7En,
-      compSv: Part7Sv,
-    },
-    {
-      id: 'part-8',
-      titleEn: 'Part VIII: Conclusion',
-      titleSv: 'Del VIII: Slutsats',
-      compEn: Part8En,
-      compSv: Part8Sv,
-    },
+    { id: 'abstract', titleEn: 'Abstract',                                                            titleSv: 'Sammanfattning' },
+    { id: 'part-1',   titleEn: 'Part I: The Problem the Series Has Not Yet Named',                    titleSv: 'Del I: Problemet som serien ännu inte har namngett' },
+    { id: 'part-2',   titleEn: 'Part II: Formalizing Observer Diversity',                             titleSv: 'Del II: Formalisering av observatörsmångfald' },
+    { id: 'part-3',   titleEn: 'Part III: The Collapse Dynamics of Observer Ensembles',              titleSv: 'Del III: Kollapsdynamik för observatörsensembler' },
+    { id: 'part-4',   titleEn: 'Part IV: Existence Proofs: Where Decentralized Epistemic Architecture Works', titleSv: 'Del IV: Exempel på fungerande decentraliserad epistemisk arkitektur' },
+    { id: 'part-5',   titleEn: 'Part V: Design Principles for Institutionalizing Observer Diversity', titleSv: 'Del V: Konstruktionsprinciper för att institutionalisera observatörsmångfald' },
+    { id: 'part-6',   titleEn: 'Part VI: Simulation D: Epistemic Monoculture Collapse',              titleSv: 'Del VI: Simulering D: Epistemisk monokulturkollaps' },
+    { id: 'part-7',   titleEn: 'Part VII: Implications, Limitations, and Connection to the Series',  titleSv: 'Del VII: Implikationer, begränsningar och koppling till serien' },
+    { id: 'part-8',   titleEn: 'Part VIII: Conclusion',                                               titleSv: 'Del VIII: Slutsats' },
   ];
 
-  // --- 3. TRANSLATIONS ---
-
+  // --- 4. UI TRANSLATIONS & METADATA (unchanged except removing old components) ---
   const ui = {
     en: {
       tag: 'Working Paper · Series X',
@@ -116,13 +73,13 @@
         { href: '/working-papers/architecture-of-governance-failure',      label: 'Paper VII: The Architecture of Governance Failure →' },
         { href: '/working-papers/measuring-the-variety-gap',               label: 'Paper VIII: Measuring the Variety Gap →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
-        { href: '/working-papers/reform-exhaustion', label: 'Paper XI: Reform Exhaustion →' },
-        { href: '/working-papers/boundary-selection-deficits', label: 'Paper XII: Boundary Selection Deficits →' },
-        { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Paper XIII: Legitimacy as Emergent Gain →' },
-        { href: '/working-papers/governance-as-adaptive-controller', label: 'Paper XIV: Governance as an Adaptive Controller →' },
-        { href: '/working-papers/adaptation-bottleneck', label: 'Paper XV: The Adaptation Bottleneck →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Paper XVI: Why Diversity Resists Formalization →' },
-        { href: '/working-papers/certification-floor', label: 'Paper XVII: The Certification Floor →' },
+        { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
+        { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
+        { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
+        { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
+        { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'While earlier papers established that a single controller can only govern what it can observe, this paper asks a deeper question: what happens when the entire civilisation relies on the same epistemic infrastructure? It argues that epistemic resilience requires an observer ensemble whose effective dimensionality exceeds the uncertainty it must monitor, and that today’s rush toward shared AI foundations, consolidated sensor networks, and harmonised regulatory science is collapsing that dimensionality exactly when it is most needed.',
@@ -150,13 +107,13 @@
         { href: '/working-papers/architecture-of-governance-failure',      label: 'Rapport VII: Styrningsmisslyckandets arkitektur →' },
         { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet →' },
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
-        { href: '/working-papers/reform-exhaustion', label: 'Rapport XI: Reformutmattning →' },
-        { href: '/working-papers/boundary-selection-deficits', label: 'Rapport XII: Gränsdragningsunderskott →' },
-        { href: '/working-papers/legitimacy-as-emergent-gain', label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
-        { href: '/working-papers/governance-as-adaptive-controller', label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
-        { href: '/working-papers/adaptation-bottleneck', label: 'Rapport XV: Adaptationsflaskhalsen →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
-        { href: '/working-papers/certification-floor', label: 'Rapport XVII: Certifieringsgolvet →' },
+        { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
+        { href: '/working-papers/boundary-selection-deficits',            label: 'Rapport XII: Gränsdragningsunderskott →' },
+        { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
+        { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
+        { href: '/working-papers/certification-floor',                    label: 'Rapport XVII: Certifieringsgolvet →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Medan tidigare rapporter fastställde att en enskild kontrollant bara kan styra det den kan observera, ställer denna rapport en djupare fråga: vad händer när hela civilisationen förlitar sig på samma epistemiska infrastruktur? Den argumenterar för att epistemisk resiliens kräver en observatörsensemble vars effektiva dimensionalitet överstiger den osäkerhet som måste övervakas, och att dagens rusning mot gemensamma AI-grundmodeller, konsoliderade sensornätverk och harmoniserad regulatorisk vetenskap kollapsar denna dimensionalitet precis när den som mest behövs.',
@@ -186,8 +143,7 @@
     },
   };
 
-  // --- 4. REACTIVE LOGIC ---
-
+  // --- 5. REACTIVE LOGIC ---
   let activeSection = $state('abstract');
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
@@ -198,8 +154,49 @@
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  function sectionComp(section: typeof contentMap[0]) {
-    return currentLang === 'sv' ? section.compSv : section.compEn;
+  // Pre‑render LaTeX with KaTeX, then parse markdown
+  function sectionHtml(section: typeof contentMap[0]): string {
+    const lang = currentLang as 'en' | 'sv';
+    const md = rawText[lang]?.[section.id] ?? '';
+    let content = md.replace(/^---[\s\S]*?---\n/, '');
+
+    const blocks: string[] = [];
+
+    // Display math: $$ ... $$ and \[ ... \]
+    content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
+      const tex = (tex1 ?? tex2 ?? '').trim();
+      try {
+        const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX display error:', e);
+        blocks.push(match);
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Inline math: $ ... $ and \( ... \)
+    content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
+      const tex = (tex1 ?? tex2 ?? '').trim();
+      try {
+        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX inline error:', e);
+        blocks.push(match);
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Convert markdown to HTML
+    let html = marked.parse(content, { breaks: false, gfm: true }) as string;
+
+    // Restore pre‑rendered KaTeX HTML
+    html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+
+    return html;
   }
 
   function scrollTo(id: string) {
@@ -218,6 +215,7 @@
   }
 </script>
 
+<!-- The template below is identical to the original except one line -->
 <SEO
   title="{meta.title} | GaE Working Paper"
   description={meta.description}
@@ -260,7 +258,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
           {t.downloadPDF}
         </a>
-        <!-- GitHub repository for Paper X -->
         <a
           href="https://github.com/BjornKennethHolmstrom/gae-governance-simulator"
           target="_blank"
@@ -364,7 +361,8 @@
               --tw-prose-pre-bg: var(--color-card-bg);
               --tw-prose-pre-code: #1a1a1a;
             ">
-            <svelte:component this={sectionComp(section)} />
+            <!-- This is the only line that changed -->
+            {@html sectionHtml(section)}
           </article>
         </div>
         {#if section.id !== 'part-8'}

@@ -306,12 +306,12 @@ export const papersData: Workingpaper[] = [
      'Observability'
    ],
    year: '2026',
-   pages: '50',
+   pages: '60',
    readTime: {
-     en: '45 min',
-     sv: '45 min'
+     en: '75 min',
+     sv: '75 min'
    },
-   version: '1.0',
+   version: '1.1',
    pdfPath: {
      en: `${localBase}/requisite-observer-diversity.pdf`,
      sv: `${localBase}/requisite-observer-diversity-sv.pdf`,
