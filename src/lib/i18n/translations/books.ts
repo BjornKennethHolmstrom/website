@@ -35,6 +35,11 @@ export const booksTranslations = {
         description:
           'The Governance‑as‑Engineering answer to the question the diagnosis raises. A structural argument for why truth, ecological integrity, love and connection, and the capacity to evolve what we value are not optional virtues but necessary conditions for a viable civilization.',
       },
+      redrawingTheLines: {
+        title: 'Redrawing the Lines',
+        description:
+          'A field guide to why competent institutions fail, and how to design them to survive their own learning. A practical design and diagnosis manual for institutional designers, senior public servants, regulators, and AI‑governance staff.',
+      },
       competentBlindness: {
         title: 'Competent Blindness',
         description:
@@ -143,6 +148,46 @@ export const booksTranslations = {
         conclusion: 'Conclusion',
         references: 'References',
         glossary: 'Glossary',
+      },
+    },
+    redrawingTheLinesBook: {
+      meta: {
+        title: 'Redrawing the Lines',
+        subtitle:
+          'A field guide to why competent institutions fail, and how to design them to survive their own learning',
+        description:
+          'A practical design and diagnosis manual for institutional designers, senior public servants, regulators, organisational leaders, and AI‑governance staff. Compresses the core diagnosis and spends its weight on the operational results: boundaries, legitimacy, learning speed limits, self‑blinding, boundary instability, and the certification floor.',
+      },
+      ui: {
+        backToBooks: '← All Books',
+        downloadPdfEn: 'Download PDF (English)',
+        downloadPdfSv: 'Download PDF (Swedish)',
+        previous: 'Previous',
+        nextChapter: 'Next Chapter →',
+      },
+      toc: {
+        howToRead: 'How to Read This Book',
+        chapter1: '1. The Carving Problem',
+        chapter2: '2. The Whispering Gallery and the Immune System',
+        chapter3: '3. Boundaries Are Load‑Bearing',
+        chapter4: '4. Legitimacy Is the Gain on Everything You Do',
+        chapter5: '5. The Speed Limits of Learning',
+        chapter6: '6. Success Launders Evidence',
+        chapter7: '7. The Entanglement Speed Limit',
+        chapter8: '8. The Certification Floor',
+        chapter9: '9. The Diagnostic Sequence',
+        chapter10: '10. The Design Principles, Consolidated',
+        chapter11: '11. What This Book Does Not Claim',
+        appendixA: 'Appendix A – Glossary and Term Map',
+        appendixB: 'Appendix B – The Tools',
+        appendixC: 'Appendix C – Paper Map and Further Reading',
+      },
+      parts: {
+        front: 'Front Matter',
+        part1: 'Part I – The Diagnosis, Compressed',
+        part2: 'Part II – The Design Results',
+        part3: 'Part III – Practice',
+        back: 'Back Matter',
       },
     },
     competentBlindnessBook: {
@@ -446,6 +491,11 @@ export const booksTranslations = {
         description:
           'Styrning‑som‑ingenjörskonst-svaret på frågan diagnosen väcker. Ett strukturellt argument för varför sanning, ekologisk integritet, kärlek och anknytning samt förmågan att utveckla vad vi värderar inte är valfria dygder utan nödvändiga villkor för en livskraftig civilisation.',
       },
+      redrawingTheLines: {
+        title: 'Rita om linjerna',
+        description:
+          'En fälthandbok för varför kompetenta institutioner misslyckas och hur man utformar dem för att överleva sitt eget lärande. En praktisk design- och diagnoshandbok för institutionella designers, högre tjänstemän, regulatorer och AI‑säkerhetspersonal.',
+      },
       competentBlindness: {
         title: 'Kompetent Blindhet',
         description:
@@ -554,6 +604,46 @@ export const booksTranslations = {
         conclusion: 'Slutsats',
         references: 'Referenser',
         glossary: 'Ordlista',
+      },
+    },
+    redrawingTheLinesBook: {
+      meta: {
+        title: 'Rita om linjerna',
+        subtitle:
+          'En fälthandbok för varför kompetenta institutioner misslyckas, och hur man utformar dem för att överleva sitt eget lärande',
+        description:
+          'En praktisk design- och diagnoshandbok för institutionella designers, högre tjänstemän, regulatorer, organisationsledare och AI‑säkerhetspersonal. Komprimerar kärndiagnosen och lägger vikten på de operativa resultaten: gränser, legitimitet, inlärningshastighetsgränser, självblindning, gränsinstabilitet och certifieringsgolvet.',
+      },
+      ui: {
+        backToBooks: '← Alla böcker',
+        downloadPdfEn: 'Ladda ner PDF (Engelska)',
+        downloadPdfSv: 'Ladda ner PDF (Svenska)',
+        previous: 'Föregående',
+        nextChapter: 'Nästa kapitel →',
+      },
+      toc: {
+        howToRead: 'Hur man läser denna bok',
+        chapter1: '1. Inskärningsproblemet',
+        chapter2: '2. Viskgalleriet och immunsystemet',
+        chapter3: '3. Gränser är bärande',
+        chapter4: '4. Legitimitet är förstärkningen på allt du gör',
+        chapter5: '5. Inlärningens hastighetsgränser',
+        chapter6: '6. Framgång tvättar bevis',
+        chapter7: '7. Sammanflätningens hastighetsgräns',
+        chapter8: '8. Certifieringsgolvet',
+        chapter9: '9. Den diagnostiska sekvensen',
+        chapter10: '10. Designprinciperna, samlade',
+        chapter11: '11. Vad denna bok inte påstår',
+        appendixA: 'Bilaga A – Ordlista och termkarta',
+        appendixB: 'Bilaga B – Verktygen',
+        appendixC: 'Bilaga C – Artikelkarta och vidare läsning',
+      },
+      parts: {
+        front: 'Inledning',
+        part1: 'Del I – Diagnosen, komprimerad',
+        part2: 'Del II – Designresultaten',
+        part3: 'Del III – Praktik',
+        back: 'Bilagor',
       },
     },
     competentBlindnessBook: {

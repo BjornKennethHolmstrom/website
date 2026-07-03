@@ -23,6 +23,21 @@ const localBase = '/books'; // För böcker i /static/books
 
 export const booksData: Book[] = [
  {
+   id: 'redrawing-the-lines',
+   key: 'redrawingTheLines',
+   year: 2026,
+   pages: '64',
+   category: 'governance',
+   cover: '/resources/book-cover-redrawing-the-lines.svg',
+   hasOnlineVersion: true,
+   readOnlinePath: '/books/redrawing-the-lines',
+   pdfPath: {
+     en: '/books/Redrawing_the_Lines.pdf',
+     sv: '/books/Redrawing_the_Lines_sv.pdf',
+   },
+   releaseDate: '2026-07-03',
+ },
+ {
    id: 'what-a-civilization-must-value',
    key: 'whatACivilizationMustValue',
    year: 2026,

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1536 2304"
+   width="1536"
+   height="2304"
+   version="1.1"
+   id="svg50"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark slate cybernetic background gradient -->
+    <radialGradient
+       id="bgGrad"
+       cx="50%"
+       cy="45%"
+       r="75%">
+      <stop
+         offset="0%"
+         stop-color="#0f172a" />
+      <stop
+         offset="60%"
+         stop-color="#090d16" />
+      <stop
+         offset="100%"
+         stop-color="#020617" />
+    </radialGradient>
+    
+    <!-- Adaptive Turquoise Glow -->
+    <filter
+       id="lineGlow"
+       x="-20%"
+       y="-20%"
+       width="140%"
+       height="140%">
+      <feGaussianBlur
+         stdDeviation="12"
+         result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Fading outmoded boundary blur -->
+    <filter
+       id="fadeBlur"
+       x="-10%"
+       y="-10%"
+       width="120%"
+       height="120%">
+      <feGaussianBlur
+         stdDeviation="4" />
+    </filter>
+
+    <!-- Disturbance cloud gradient -->
+    <linearGradient
+       id="cloudGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#ef4444"
+         stop-opacity="0.25" />
+      <stop
+         offset="40%"
+         stop-color="#f59e0b"
+         stop-opacity="0.15" />
+      <stop
+         offset="70%"
+         stop-color="#3b82f6"
+         stop-opacity="0.2" />
+      <stop
+         offset="100%"
+         stop-color="#2dd4bf"
+         stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Edge blur for complexity clouds -->
+    <filter
+       id="cloudBlur"
+       x="-10%"
+       y="-10%"
+       width="120%"
+       height="120%">
+      <feGaussianBlur
+         stdDeviation="40" />
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect
+     width="100%"
+     height="100%"
+     fill="url(#bgGrad)" />
+
+  <!-- The Underlying Observation Grid (Structural Invariant) -->
+  <g
+     stroke="#ffffff"
+     stroke-opacity="0.025"
+     stroke-width="1.5">
+    <!-- Horizontal matrix lines -->
+    <line x1="0" y1="200" x2="1536" y2="200" />
+    <line x1="0" y1="400" x2="1536" y2="400" />
+    <line x1="0" y1="600" x2="1536" y2="600" />
+    <line x1="0" y1="800" x2="1536" y2="800" />
+    <line x1="0" y1="1000" x2="1536" y2="1000" />
+    <line x1="0" y1="1200" x2="1536" y2="1200" />
+    <line x1="0" y1="1400" x2="1536" y2="1400" />
+    <line x1="0" y1="1600" x2="1536" y2="1600" />
+    <line x1="0" y1="1800" x2="1536" y2="1800" />
+    <line x1="0" y1="2000" x2="1536" y2="2000" />
+    <line x1="0" y1="2200" x2="1536" y2="2200" />
+    <!-- Vertical matrix lines -->
+    <line x1="200" y1="0" x2="200" y2="2304" />
+    <line x1="400" y1="0" x2="400" y2="2304" />
+    <line x1="600" y1="0" x2="600" y2="2304" />
+    <line x1="800" y1="0" x2="800" y2="2304" />
+    <line x1="1000" y1="0" x2="1000" y2="2304" />
+    <line x1="1200" y1="0" x2="1200" y2="2304" />
+    <line x1="1400" y1="0" x2="1400" y2="2304" />
+  </g>
+
+  <!-- Disturbance Clouds (The Unbounded Reality invading the core) -->
+  <g
+     filter="url(#cloudBlur)"
+     opacity="0.75">
+    <circle cx="250" cy="350" r="160" fill="url(#cloudGrad)" />
+    <circle cx="160" cy="1050" r="130" fill="#ef4444" opacity="0.15" />
+    <circle cx="1380" cy="850" r="180" fill="url(#cloudGrad)" />
+    <circle cx="1250" cy="1550" r="150" fill="#3b82f6" opacity="0.2" />
+    <circle cx="300" cy="1900" r="170" fill="url(#cloudGrad)" />
+  </g>
+
+  <!-- THE CENTRAL METAPHOR: REDRAWING THE STATE-SPACE -->
+  <g transform="translate(0, 100)">
+    
+    <!-- 1. The Expired, Rigid Factorization (The Old Line) -->
+    <!-- An outdated, collapsing institutional boundary system -->
+    <g opacity="0.25" filter="url(#fadeBlur)">
+      <rect
+         x="368"
+         y="700"
+         width="800"
+         height="500"
+         rx="8"
+         fill="none"
+         stroke="#f59e0b"
+         stroke-width="4"
+         stroke-dasharray="16,20" />
+      <!-- Legacy internal node partitions that are snapping -->
+      <line x1="368" y1="950" x2="1168" y2="950" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,12" />
+      <line x1="768" y1="700" x2="768" y2="1200" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,12" />
+    </g>
+
+    <!-- 2. The Dynamic Refactoring Vector (The New Line) -->
+    <!-- A clean, adaptive, non-linear cut redrawing the system perimeters -->
+    <g filter="url(#lineGlow)">
+      <!-- Outer adaptive perimeter envelope -->
+      <path
+         d="M 120,1050 C 120,750 450,620 768,620 C 1150,620 1420,800 1420,1000 C 1420,1250 1050,1380 768,1380 C 400,1380 320,1220 120,1050 Z"
+         fill="none"
+         stroke="#2dd4bf"
+         stroke-width="5" />
+         
+      <!-- Internal structural coordinates tracking the shift -->
+      <path
+         d="M 120,1050 Q 768,900 1420,1000"
+         fill="none"
+         stroke="#06b6d4"
+         stroke-width="2"
+         stroke-dasharray="6,10"
+         opacity="0.6" />
+      <path
+         d="M 768,620 Q 820,1000 768,1380"
+         fill="none"
+         stroke="#06b6d4"
+         stroke-width="2"
+         stroke-dasharray="6,10"
+         opacity="0.6" />
+
+      <!-- Vector Anchor/Attractor Points (Systems Nodes) -->
+      <circle cx="120" cy="1050" r="7" fill="#2dd4bf" />
+      <circle cx="768" cy="620" r="7" fill="#2dd4bf" />
+      <circle cx="1420" cy="1000" r="7" fill="#2dd4bf" />
+      <circle cx="768" cy="1380" r="7" fill="#2dd4bf" />
+      <circle cx="768" cy="900" r="5" fill="#e2e8f0" />
+    </g>
+
+    <!-- Subtle data metrics indicating adaptive calculation -->
+    <g font-family="monospace" font-size="12" fill="#2dd4bf" opacity="0.4" letter-spacing="1">
+      <text x="790" y="895">N_eff</text>
+      <text x="1440" y="1005">Δ → M</text>
+      <text x="130" y="1040">β_max</text>
+      <text x="785" y="615">t_0</text>
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY ARCHITECTURE -->
+
+  <!-- Main Title -->
+  <text
+     x="768"
+     y="420"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="100"
+     font-weight="bold"
+     fill="#f8fafc"
+     letter-spacing="5">
+    REDRAWING
+  </text>
+  <text
+     x="768"
+     y="525"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="100"
+     font-weight="bold"
+     fill="#f8fafc"
+     letter-spacing="5">
+    THE LINES
+  </text>
+
+  <!-- Precise Separation Rule -->
+  <line
+     x1="684"
+     y1="590"
+     x2="852"
+     y2="590"
+     stroke="#2dd4bf"
+     stroke-width="2"
+     opacity="0.5" />
+
+  <!-- Subtitle (Two-line configuration optimized for 42px clarity) -->
+  <text
+     x="768"
+     y="1520"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="42"
+     font-style="italic"
+     fill="#cbd5e1"
+     letter-spacing="1">
+    A field guide to why competent institutions fail,
+  </text>
+  <text
+     x="768"
+     y="1585"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="42"
+     font-style="italic"
+     fill="#cbd5e1"
+     letter-spacing="1">
+    and how to design them to survive their own learning
+  </text>
+
+  <!-- Author Panel -->
+  <text
+     x="768"
+     y="2030"
+     text-anchor="middle"
+     font-family="Georgia, 'Times New Roman', serif"
+     font-size="34"
+     fill="#94a3b8"
+     letter-spacing="3">
+    Björn Kenneth Holmström
+  </text>
+  
+  <!-- Framing baseline asset -->
+  <line
+     x1="636"
+     y1="2070"
+     x2="900"
+     y2="2070"
+     stroke="#334155"
+     stroke-width="1.5"
+     opacity="0.6" />
+</svg>
+

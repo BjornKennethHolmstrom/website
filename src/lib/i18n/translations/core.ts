@@ -216,6 +216,15 @@ export const coreTranslations = {
   bookLaunches: [
       {
         label: "Latest Publication",
+        title: "Redrawing the Lines",
+        desc: "A field guide to why competent institutions fail, and how to design them to survive their own learning. For institutional designers, public servants, regulators, and AI-governance staff.",
+        cta: "Read the Book",
+        url: "/books/redrawing-the-lines",
+        cover: "/resources/book-cover-redrawing-the-lines.svg",
+        colorClass: "bg-slate-100 text-slate-800"
+      },
+      {
+        label: "New Release",
         title: "Competent Blindness",
         desc: "Why successful institutions become blind to their own fragility—and what must be built instead. A unified diagnostic framework from twenty-one governance analyses.",
         cta: "Read the Book",
@@ -603,6 +612,15 @@ export const coreTranslations = {
   bookLaunches: [
       {
         label: "Senaste Utgivning",
+        title: "Rita om linjerna",
+        desc: "En fälthandbok för varför kompetenta institutioner misslyckas och hur man utformar dem för att överleva sitt eget lärande. För institutionella designers, högre tjänstemän, kontrollanter och AI‑säkerhetspersonal.",
+        cta: "Läs boken",
+        url: "/books/redrawing-the-lines",
+        cover: "/resources/book-cover-redrawing-the-lines.svg",
+        colorClass: "bg-slate-100 text-slate-800"
+      },
+      {
+        label: "Nyutgivning",
         title: "Kompetent Blindhet",
         desc: "Varför framgångsrika institutioner blir blinda för sin egen skörhet—och vad som måste byggas istället. Ett enhetligt diagnostiskt ramverk från tjugoen styrningsanalyser.",
         cta: "Läs Boken",
