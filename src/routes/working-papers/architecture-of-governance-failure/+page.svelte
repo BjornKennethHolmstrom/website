@@ -69,6 +69,7 @@
         { href: '/working-papers/adaptation-bottleneck', label: 'Paper XV: The Adaptation Bottleneck →' },
         { href: '/working-papers/why-diversity-resists-formalization', label: 'Paper XVI: Why Diversity Resists Formalization →' },
         { href: '/working-papers/certification-floor', label: 'Paper XVII: The Certification Floor →' },
+        { href: '/working-papers/boundary-instability', label: 'Paper XVIII: The Boundary Instability Principle →' },
       ],
       contextTitle: 'Context',
       contextIntro:

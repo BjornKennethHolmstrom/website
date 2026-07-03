@@ -1,0 +1,21 @@
+## 7. Implications and structural integration
+
+### 7.1 The maintained decomposability margin
+
+The paper's reframing can now be stated with its full content behind it. The governance question inherited from Paper XII — *what is the right boundary?* — presupposes that rightness, once achieved, persists. The theorem removes the presupposition: every fixed boundary is escaped by generic learning, so rightness is not a state but a rate problem, and the operative question becomes *how is a decomposability margin maintained under endogenous drift?* The margin has now been given coordinates. It is the distance to the fold in §3's phase space; the width of the viable window in §4; the numerator of $\eta_{\max}$; the residual detection lead of §5; the unexhausted reservoir of §6.3. The Decomposability Frontier generalizes the Information–Actuation Frontier and adds what a static trade-off lacks: an infeasible region, reachable, and reached in the model by reflexivity alone. Every governance architecture that learns occupies a point relative to that frontier, and most are unaware the coordinate exists — which is itself a §6.1 claim about what is currently being monitored.
+
+### 7.2 Unity with the series
+
+**Paper XII** supplied the static boundary analysis; this paper supplies its drift dynamics. The relation is exact rather than loose: XII's Scenario (d) already showed adaptive boundaries chasing *exogenous* coupling change and failing beyond a critical chase rate; here the coupling change is *endogenous to the chaser*, which is why no chase rate suffices and the analysis must move from tracking to margin maintenance. XII's small-gain certificate is, by Corollary 1, a statement about $\theta(0)$ only.
+
+**Paper XV** bounds learning from below; this paper bounds it from above; together they define the bandwidth, and the two failure modes remain distinguishable in kind — XV's is a throughput failure, this paper's a decomposition failure, and §4.2's green-dashboard regime shows a system passing every XV-style throughput test while failing the boundary completely. The leak-driven growth of $\eta_{\min}$ (§4.1) adds a small return contribution: holding an absorbed adaptation costs standing learning rate, so XV's lower bound rises with accumulated, not only ongoing, change.
+
+**Paper XVI** established that a quantity representing unused alternatives decays under optimization and persists only through a source term the optimizer does not set. The laundering result of §5.2 is a new instance of the schema with a diagnostic twist: the decaying quantity is the *informativeness of a signal* — the residual's correlation with coupling — and the optimizer consuming it is the institution's own adaptation, which is why the surviving signal (cross-boundary state covariance) is precisely the one outside every local objective's control set. Source-term locality, applied to evidence.
+
+**Paper XVII** and this paper exchange results at their respective tiers, in both directions. A.4.1 gives XVII's certification floor a within-model necessity proof it did not claim for itself; XVII gives A.4's exogenous anchor its institutional content and its standing warning (the relocation invariant) that apparent anchors are usually parameters one level up. Neither result inherits the other's tier, and §6.4 is written to keep it that way.
+
+**Papers V and XI** locate the collapse phase in the series' compounding results: the NF excursion is the regime where architectural deficits compound multiplicatively (V) while actuation chains, now operating across a dissolved boundary, deliver interventions into dynamics they no longer model (XI) — the phase in which acting competently and acting destructively cease to be distinguishable from inside.
+
+**Paper X**, finally, reaches this paper twice. The revised index of §5.3 inherits X's correlated-observer warning as an operational requirement — decorrelated channels on the two sides of the watched boundary. And the paper's own method inherits X's discipline: the falsification of P2 was produced by a registered prediction confronting a fixed external test, not by model diversity in the critique loop, which is the series' standing account of where decorrelation actually comes from.
+
+---

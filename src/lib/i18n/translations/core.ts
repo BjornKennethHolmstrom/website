@@ -173,6 +173,10 @@ export const coreTranslations = {
     geSeriesPaperXVII: {
       title: 'XVII: The Certification Floor',
       desc:  'Shows why world‑coupled coordination retains an irreducible certification link that automation relocates but never removes. Scope‑bounded: fails for self‑referential coordination.',
+    },
+    geSeriesPaperXVIII: {
+      title: 'XVIII: The Boundary Instability Principle',
+      desc:  'Shows that when governance learning acts through cross‑boundary channels, the boundary itself becomes reflexive — decomposability decays endogenously. Derives a non‑factorizability theorem, a critical learning bandwidth that closes by itself, and a failing early‑warning index.',
     }
   },
 
@@ -547,6 +551,10 @@ export const coreTranslations = {
     geSeriesPaperXVII: {
       title: 'XVII: Certifieringsgolvet',
       desc:  'Visar varför världskopplad koordination behåller en irreducibel certifieringslänk som automatisering flyttar men aldrig tar bort. Räckviddsbegränsad: fallerar för självreferentiell koordination.',
+    },
+    geSeriesPaperXVIII: {
+      title: 'XVIII: Principen om gränsinstabilitet',
+      desc:  'Visar att när styrningens lärande verkar genom gränsöverskridande kanaler blir gränsen själv reflexiv — nedbrytbarhet avtar endogent. Härleder ett icke‑faktoriserbarhetsteorem, en kritisk inlärningsbandbredd som stängs av sig själv och ett tidigt varningsindex som misslyckas.',
     }
   },
 

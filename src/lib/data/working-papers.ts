@@ -28,6 +28,36 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'boundaryInstability',
+   key: 'boundaryInstability',
+   category: 'governance',
+   tags: [
+     'Boundary',
+     'Coupling',
+     'Reflexivity',
+     'Non-Factorizability',
+     'Decomposability',
+     'Governance Engineering',
+     'Limits of Perception',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '27',
+   readTime: {
+     en: '40 min',
+     sv: '40 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/boundary-instability.pdf`,
+     sv: `${localBase}/boundary-instability-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/boundary-instability-cover.png',
+   readOnlinePath: '/working-papers/boundary-instability',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-03'
+ },
+ {
    id: 'certificationFloor',
    key: 'certificationFloor',
    category: 'governance',

@@ -8,61 +8,73 @@
 
   // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
   // English
-  import AbstractEnRaw   from './sections/00-abstract.en.md?raw';
-  import Part1EnRaw      from './sections/01-part-1.en.md?raw';
-  import Part2EnRaw      from './sections/02-part-2.en.md?raw';
-  import Part3EnRaw      from './sections/03-part-3.en.md?raw';
-  import Part4EnRaw      from './sections/04-part-4.en.md?raw';
-  import Part5EnRaw      from './sections/05-part-5.en.md?raw';
-  import Part6EnRaw      from './sections/06-part-6.en.md?raw';
-  import AppendixAEnRaw  from './sections/07-appendix-a.en.md?raw';
-  import AppendixBEnRaw  from './sections/07-appendix-b.en.md?raw';
+  import AbstractEnRaw    from './sections/00-abstract.en.md?raw';
+  import Section01EnRaw   from './sections/01-section-01.en.md?raw';
+  import Section02EnRaw   from './sections/02-section-02.en.md?raw';
+  import Section03EnRaw   from './sections/03-section-03.en.md?raw';
+  import Section04EnRaw   from './sections/04-section-04.en.md?raw';
+  import Section05EnRaw   from './sections/05-section-05.en.md?raw';
+  import Section06EnRaw   from './sections/06-section-06.en.md?raw';
+  import Section07EnRaw   from './sections/07-section-07.en.md?raw';
+  import Section08EnRaw   from './sections/08-section-08.en.md?raw';
+  import Section09EnRaw   from './sections/09-section-09.en.md?raw';
+  import AppendixAEnRaw   from './sections/appendix-a.en.md?raw';
 
   // Swedish
-  import AbstractSvRaw   from './sections/00-abstract.sv.md?raw';
-  import Part1SvRaw      from './sections/01-part-1.sv.md?raw';
-  import Part2SvRaw      from './sections/02-part-2.sv.md?raw';
-  import Part3SvRaw      from './sections/03-part-3.sv.md?raw';
-  import Part4SvRaw      from './sections/04-part-4.sv.md?raw';
-  import Part5SvRaw      from './sections/05-part-5.sv.md?raw';
-  import Part6SvRaw      from './sections/06-part-6.sv.md?raw';
-  import AppendixASvRaw  from './sections/07-appendix-a.sv.md?raw';
-  import AppendixBSvRaw  from './sections/07-appendix-b.sv.md?raw';
+  import AbstractSvRaw    from './sections/00-abstract.sv.md?raw';
+  import Section01SvRaw   from './sections/01-section-01.sv.md?raw';
+  import Section02SvRaw   from './sections/02-section-02.sv.md?raw';
+  import Section03SvRaw   from './sections/03-section-03.sv.md?raw';
+  import Section04SvRaw   from './sections/04-section-04.sv.md?raw';
+  import Section05SvRaw   from './sections/05-section-05.sv.md?raw';
+  import Section06SvRaw   from './sections/06-section-06.sv.md?raw';
+  import Section07SvRaw   from './sections/07-section-07.sv.md?raw';
+  import Section08SvRaw   from './sections/08-section-08.sv.md?raw';
+  import Section09SvRaw   from './sections/09-section-09.sv.md?raw';
+  import AppendixASvRaw   from './sections/appendix-a.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
   const rawText: Record<string, Record<string, string>> = {
     en: {
-      'abstract':      AbstractEnRaw,
-      'part-1': Part1EnRaw, 'part-2': Part2EnRaw, 'part-3': Part3EnRaw,
-      'part-4': Part4EnRaw, 'part-5': Part5EnRaw, 'part-6': Part6EnRaw,
-      'appendix-a': AppendixAEnRaw, 'appendix-b': AppendixBEnRaw,
+      'abstract':     AbstractEnRaw,
+      'section-01': Section01EnRaw, 'section-02': Section02EnRaw,
+      'section-03': Section03EnRaw, 'section-04': Section04EnRaw,
+      'section-05': Section05EnRaw, 'section-06': Section06EnRaw,
+      'section-07': Section07EnRaw, 'section-08': Section08EnRaw,
+      'section-09': Section09EnRaw,
+      'appendix-a': AppendixAEnRaw,
     },
     sv: {
-      'abstract':      AbstractSvRaw,
-      'part-1': Part1SvRaw, 'part-2': Part2SvRaw, 'part-3': Part3SvRaw,
-      'part-4': Part4SvRaw, 'part-5': Part5SvRaw, 'part-6': Part6SvRaw,
-      'appendix-a': AppendixASvRaw, 'appendix-b': AppendixBSvRaw,
+      'abstract':     AbstractSvRaw,
+      'section-01': Section01SvRaw, 'section-02': Section02SvRaw,
+      'section-03': Section03SvRaw, 'section-04': Section04SvRaw,
+      'section-05': Section05SvRaw, 'section-06': Section06SvRaw,
+      'section-07': Section07SvRaw, 'section-08': Section08SvRaw,
+      'section-09': Section09SvRaw,
+      'appendix-a': AppendixASvRaw,
     },
   };
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
-    { id: 'part-1',      titleEn: 'Part I: The Problem — The Triad Was Never Costed',                 titleSv: 'Del I: Problemet — Triaden var aldrig kostnadsberäknad' },
-    { id: 'part-2',      titleEn: 'Part II: Formal Framework',                                        titleSv: 'Del II: Formellt ramverk' },
-    { id: 'part-3',      titleEn: 'Part III: The Three Backlogs, and Where They Are Documented',      titleSv: 'Del III: De tre eftersläpningarna, och var de är dokumenterade' },
-    { id: 'part-4',      titleEn: 'Part IV: Boundaries and Objections',                               titleSv: 'Del IV: Gränser och invändningar' },
-    { id: 'part-5',      titleEn: 'Part V: Simulation',                                               titleSv: 'Del V: Simulering' },
-    { id: 'part-6',      titleEn: 'Part VI: Design Implications, and What the Series Does Next',      titleSv: 'Del VI: Designimplikationer, och vad serien gör härnäst' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Formal Derivations',                                   titleSv: 'Appendix A: Formella härledningar' },
-    { id: 'appendix-b',  titleEn: 'Appendix B: Simulation Specification',                             titleSv: 'Appendix B: Simuleringsspecifikation' },
+    { id: 'abstract',    titleEn: 'Abstract',                                                          titleSv: 'Sammanfattning' },
+    { id: 'section-01',  titleEn: '1. Introduction: From Fixed Boundaries to Reflexive Decompositions', titleSv: '1. Introduktion: Från fasta gränser till reflexiva dekompositioner' },
+    { id: 'section-02',  titleEn: '2. The Non‑Factorizability Theorem',                                 titleSv: '2. Icke‑faktoriserbarhetsteoremet' },
+    { id: 'section-03',  titleEn: '3. The Reflexive Boundary Cycle: A Minimal Model',                   titleSv: '3. Den reflexiva gränscykeln: En minimal modell' },
+    { id: 'section-04',  titleEn: '4. The Critical Learning Bandwidth',                                 titleSv: '4. Den kritiska inlärningsbandbredden' },
+    { id: 'section-05',  titleEn: '5. The Boundary Dissolution Index, Revised by Its Own Test',         titleSv: '5. Gränsupplösningsindexet, reviderat genom sitt eget test' },
+    { id: 'section-06',  titleEn: '6. Design Principles for Meta‑Stable Governance',                    titleSv: '6. Designprinciper för metastabil styrning' },
+    { id: 'section-07',  titleEn: '7. Implications and Structural Integration',                         titleSv: '7. Implikationer och strukturell integration' },
+    { id: 'section-08',  titleEn: '8. Conclusion: The Meta‑Stable Governance Attractor',                titleSv: '8. Slutsats: Den metastabila styrningsattraktorn' },
+    { id: 'section-09',  titleEn: '9. What This Paper Does Not Show',                                   titleSv: '9. Vad denna rapport inte visar' },
+    { id: 'appendix-a',  titleEn: 'Appendix A: Formal Development and Simulation',                      titleSv: 'Appendix A: Formell utveckling och simulering' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XV',
-      seriesNote: 'This is the fifteenth paper in the Governance as Engineering series. It closes the loop on Cycle Two.',
+      tag: 'Working Paper · Series XVIII',
+      seriesNote: 'This is the eighteenth paper in the Governance as Engineering series. It returns the results of Papers XVI and XVII to an engineering register.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
@@ -78,13 +90,13 @@
         { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Paper XVI: Why Diversity Resists Formalization →' },
-        { href: '/working-papers/certification-floor', label: 'Paper XVII: The Certification Floor →' },
-        { href: '/working-papers/boundary-instability', label: 'Paper XVIII: The Boundary Instability Principle →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
+        { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'The Sense–Learn–Execute triad was established across Cycle Two as three separately justified requirements — but never as three simultaneous claims on finite processing capacity. This paper treats the loop as a recursive, lossy pipeline and asks: what happens when the three legs compete for resources?',
-      contextOutro: 'The answer is a bottleneck theorem: effective adaptive throughput is gated by the slowest stage. Spend on any non‑bottleneck stage accumulates backlog rather than accelerating adaptation. Three backlogs are identified — information, innovation, reality — each with a documented governance instance. The dynamic dual of Paper V: where static failures multiply, dynamic capacities are throttled by their minimum.',
+      contextIntro: 'Paper XII modeled the gap between a controller\'s jurisdiction and the world as an M–Δ feedback interconnection, holding the coupling structure exogenous. This paper removes that assumption. When governance learning acts through channels that also carry cross‑boundary influence, decomposability becomes reflexive — coupling is policy‑dependent, and the boundary that was correct at design time does not stay correct.',
+      contextOutro: 'The paper proves a Non‑Factorizability Theorem, exhibits a reflexive boundary cycle (calm → hidden accumulation → collapse → miscalibrated recovery), derives a Critical Learning Bandwidth whose two bounds pinch endogenously, and documents a failing early‑warning index. The central governance challenge is reframed: not choosing the right boundary, but maintaining a decomposability margin under the drift that learning induces.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -93,8 +105,8 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XV',
-      seriesNote: 'Detta är den femtonde rapporten i serien Styrning som ingenjörskonst. Den stänger loopen för Cykel Två.',
+      tag: 'Arbetsdokument · Serie XVIII',
+      seriesNote: 'Detta är den artonde rapporten i serien Styrning som ingenjörskonst. Den för tillbaka resultaten från Rapport XVI och XVII till ett ingenjörsregister.',
       seriesLinks: [
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
@@ -110,13 +122,13 @@
         { href: '/working-papers/boundary-selection-deficits',            label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
-        { href: '/working-papers/certification-floor', label: 'Rapport XVII: Certifieringsgolvet →' },
-        { href: '/working-papers/boundary-instability', label: 'Rapport XVIII: Principen om gränsinstabilitet →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
+        { href: '/working-papers/certification-floor',                    label: 'Rapport XVII: Certifieringsgolvet →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Sense–Learn–Execute-triaden etablerades under Cykel Två som tre separat motiverade krav — men aldrig som tre samtidiga anspråk på ändlig processorkapacitet. Denna rapport behandlar loopen som en rekursiv, förlustfylld pipeline och frågar: vad händer när de tre benen konkurrerar om resurser?',
-      contextOutro: 'Svaret är en flaskhalsteorem: effektiv adaptiv genomströmning begränsas av det långsammaste steget. Resurser på icke‑flaskhalssteg ackumulerar eftersläpning snarare än att accelerera anpassning. Tre eftersläpningar identifieras — information, innovation, verklighet — var och en med en dokumenterad styrningsinstans. Den dynamiska dualen till Rapport V: där statiska tillkortakommanden multipliceras, stryps dynamiska kapaciteter av sitt minimum.',
+      contextIntro: 'Rapport XII modellerade gapet mellan en kontrollants jurisdiktion och världen som en M–Δ‑återkopplingssammankoppling, med kopplingsstrukturen exogent hållen. Denna rapport tar bort det antagandet. När styrningens lärande verkar genom kanaler som också bär gränsöverskridande inflytande blir nedbrytbarheten reflexiv — koppling är policyberoende, och den gräns som var korrekt vid konstruktionstillfället förblir inte korrekt.',
+      contextOutro: 'Rapporten bevisar ett icke‑faktoriserbarhetsteorem, uppvisar en reflexiv gränscykel (lugn → dold ackumulation → kollaps → felkalibrerad återhämtning), härleder en kritisk inlärningsbandbredd vars två gränser kläms endogent, och dokumenterar ett tidigt varningsindex som misslyckas. Den centrala styrningsutmaningen omformuleras: inte att välja rätt gräns, utan att upprätthålla en nedbrytbarhetsmarginal under den drift som lärande inducerar.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -128,14 +140,14 @@
 
   const metadata = {
     en: {
-      title: 'The Adaptation Bottleneck',
-      subtitle: 'Throughput Constraints on the Sense–Learn–Execute Loop',
-      description: 'Treats the Sense–Learn–Execute triad as simultaneous claims on finite processing capacity. Shows that effective adaptive throughput is gated by the slowest stage. Identifies three backlogs and derives the dynamic dual of Paper V.',
+      title: 'The Boundary Instability Principle',
+      subtitle: 'Reflexive governance and the endogenous drift of decomposability',
+      description: 'Extends Paper XII by removing the exogeneity assumption on coupling structure. Proves a Non‑Factorizability Theorem, exhibits a reflexive boundary cycle, and derives a Critical Learning Bandwidth. Paper XVIII in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Adaptationsflaskhalsen',
-      subtitle: 'Genomströmningsbegränsningar i Sense–Learn–Execute-loopen',
-      description: 'Behandlar Sense–Learn–Execute-triaden som samtidiga anspråk på ändlig processorkapacitet. Visar att effektiv adaptiv genomströmning begränsas av det långsammaste steget. Identifierar tre eftersläpningar och härleder den dynamiska dualen till Rapport V.',
+      title: 'Principen om gränsinstabilitet',
+      subtitle: 'Reflexiv styrning och den endogena driften av nedbrytbarhet',
+      description: 'Utvidgar Rapport XII genom att ta bort exogenitetsantagandet om kopplingsstruktur. Bevisar ett icke‑faktoriserbarhetsteorem, uppvisar en reflexiv gränscykel och härleder en kritisk inlärningsbandbredd. Rapport XVIII i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -144,13 +156,12 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'adaptation-bottleneck-sv.pdf' : 'adaptation-bottleneck.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'boundary-instability-sv.pdf' : 'boundary-instability.pdf');
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  // Pre‑render LaTeX with KaTeX (supports $…$, $$…$$, \(…\), \[…\])
   function sectionHtml(section: typeof contentMap[0]): string {
     const lang = currentLang as 'en' | 'sv';
     const md = rawText[lang]?.[section.id] ?? '';
@@ -186,12 +197,8 @@
       }
     });
 
-    // Convert markdown to HTML
     let html = marked.parse(content, { breaks: false, gfm: true }) as string;
-
-    // Restore pre‑rendered KaTeX HTML
     html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
-
     return html;
   }
 
@@ -203,8 +210,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Adaptationsflaskhalsen: Genomströmningsbegränsningar i Sense–Learn–Execute-loopen. Styrning som ingenjörskonst, Rapport XV.`
-      : `Holmström, B. K. (2026). The Adaptation Bottleneck: Throughput Constraints on the Sense–Learn–Execute Loop. Governance as Engineering, Paper XV.`;
+      ? `Holmström, B. K. (2026). Principen om gränsinstabilitet: Reflexiv styrning och den endogena driften av nedbrytbarhet. Styrning som ingenjörskonst, Rapport XVIII.`
+      : `Holmström, B. K. (2026). The Boundary Instability Principle: Reflexive governance and the endogenous drift of decomposability. Governance as Engineering, Paper XVIII.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -212,10 +219,10 @@
 </script>
 
 <SEO
-  title="{meta.title} | BKH Working paper"
+  title="{meta.title} | GaE Working Paper"
   description={meta.description}
   type="article"
-  publishedTime="2026-06"
+  publishedTime="2026-07"
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
@@ -329,7 +336,7 @@
             {@html sectionHtml(section)}
           </article>
         </div>
-        {#if section.id !== 'appendix-b'}
+        {#if section.id !== 'appendix-a'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

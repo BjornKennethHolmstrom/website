@@ -120,6 +120,12 @@ export const workingpapersTranslations = {
      description:
        'Isolates the structural reason that an adaptive coordination boundary retains an irreducible certification link. Derives a relocation invariant: automating a coordination boundary relocates the irreducible world‑certification link upstream but never removes it. Shows the invariant is scope‑bounded to world‑coupled coordination and fails for self‑referential coordination. Paper XVII in the Governance as Engineering series.',
    },
+   boundaryInstability: {
+     title: 'The Boundary Instability Principle',
+     subtitle: 'Reflexive governance and the endogenous drift of decomposability',
+     description:
+       'Extends Paper XII by removing the assumption that the coupling between a jurisdiction and its environment is fixed. Shows that when governance learning acts through channels that also carry cross‑boundary influence, decomposability becomes reflexive — the boundary that was correct at design time does not stay correct, and the un‑correcting process is the controller\'s own adaptation. Formalizes the Non‑Factorizability Theorem, a reflexive boundary cycle, a Critical Learning Bandwidth that closes endogenously, and a failing early‑warning index. Paper XVIII in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -320,6 +326,12 @@ export const workingpapersTranslations = {
      subtitle: 'Varför världskopplad koordination behåller en irreducibel länk, och självreferentiell koordination inte gör det',
      description:
        'Isolerar den strukturella orsaken till att en adaptiv koordinationsgräns behåller en irreducibel certifieringslänk. Härleder en omlokaliseringsinvariant: automatisering av en koordinationsgräns flyttar den irreducibla världscertifieringslänken uppströms men tar aldrig bort den. Visar att invarianten är räckviddsbegränsad till världskopplad koordination och fallerar för självreferentiell koordination. Rapport XVII i serien Styrning som ingenjörskonst.',
+   },
+   boundaryInstability: {
+     title: 'Principen om gränsinstabilitet',
+     subtitle: 'Reflexiv styrning och den endogena driften av nedbrytbarhet',
+     description:
+       'Utvidgar Rapport XII genom att ta bort antagandet att kopplingen mellan en jurisdiktion och dess miljö är fast. Visar att när styrningens lärande verkar genom kanaler som också bär gränsöverskridande inflytande blir nedbrytbarheten reflexiv — den gräns som var korrekt vid konstruktionstillfället förblir inte korrekt, och den process som förstör den är kontrollantens egen anpassning. Formaliserar icke‑faktoriserbarhetsteoremet, en reflexiv gränscykel, en kritisk inlärningsbandbredd som stängs endogent och ett tidigt varningsindex som misslyckas. Rapport XVIII i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {
