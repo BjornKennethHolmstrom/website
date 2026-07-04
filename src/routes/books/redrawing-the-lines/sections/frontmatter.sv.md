@@ -46,6 +46,10 @@ Del III är praktik. Kapitel 9 sätter samman den diagnostiska sekvensen och kö
 
 Bilagorna innehåller ordlistan som kartlägger bokens enkla ord till seriens tekniska termer, länkarna till den öppna simuleringskoden och de interaktiva inlärningsverktyg som följer med flera kapitel, samt den fullständiga dokumentkartan. Hela det tekniska korpusen, inklusive denna boks text, är fritt tillgänglig online; det tryckta exemplaret du håller säljs till produktionskostnad. Det finns inget att merförsälja. Syftet med boken är att de misstag den beskriver blir svårare att göra av misstag.
 
+## Hur den här boken skrevs
+
+Den här boken, liksom forskningsserien bakom den, producerades i ett långvarigt samarbete mellan en mänsklig författare och flera AI-system, som användes som utarbetande och kritiska partners genom hela boken.
+
 ## Ett läsförslag
 
 Kapitlen bygger på varandra, men de fängslar inte. Om du äger ett mandat och en fråga brinner, kommer den diagnostiska sekvensen i kapitel 9 att dirigera dig: den börjar med frågorna, och varje fråga pekar tillbaka in i det kapitel som rustar dig att besvara den. Läsare som börjar där tenderar att anlända tillbaka till kapitel 1 med bättre motivation än något förord kan leverera – inklusive detta.

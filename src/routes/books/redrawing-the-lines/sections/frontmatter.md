@@ -46,6 +46,10 @@ Part III is practice. Chapter 9 assembles the diagnostic sequence and runs it on
 
 The appendices hold the glossary that maps the book's plain words to the series' technical terms, the links to the open simulation code and interactive teaching tools that accompany several chapters, and the full paper map. The entire technical corpus, this book's text included, is freely available online; the printed copy you are holding is sold at production cost. There is nothing to upsell. The purpose of the book is that the mistakes it describes become harder to make by accident.
 
+## How this book was written
+
+This book, like the research series behind it, was produced in a sustained collaboration between one human author and several AI systems, used as drafting and critical partners throughout.
+
 ## One reading suggestion
 
 The chapters build, but they do not imprison. If you own a mandate and one question is burning, Chapter 9's diagnostic sequence will route you: it begins with the questions, and each question points back into the chapter that equips you to answer it. Readers who start there tend to arrive back at Chapter 1 with better motivation than any preface can supply — including this one.
