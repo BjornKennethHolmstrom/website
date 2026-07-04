@@ -2,7 +2,7 @@
 
 ## Källkod
 
-v4-simulatorn utökar v3-kodbasen från rapport ett till en miljö med flerskaliga störningar och en jämförelse av tre arkitekturer. Den är implementerad i Python med hjälp av NumPy och Matplotlib. Inga beroenden utöver den vanliga vetenskapliga Python-stacken krävs.
+paper_ii-simulatorn utökar paper_i_multinode-kodbasen från rapport ett till en miljö med flerskaliga störningar och en jämförelse av tre arkitekturer. Den är implementerad i Python med hjälp av NumPy och Matplotlib. Inga beroenden utöver den vanliga vetenskapliga Python-stacken krävs.
 
 Den fullständiga källkoden finns tillgänglig på:
 
@@ -12,10 +12,10 @@ Förvaret innehåller alla simulatorversioner i ordningsföljd:
 
 | Fil | Rapport | Beskrivning |
 | --- | --- | --- |
-| `gae-simulator-v2.py` | Rapport 1 | Skalär modell med en nod |
-| `gae-simulator-v3.py` | Rapport 1 | Vektormodell med tio noder, lokaliserad chock |
-| `gae-simulator-v3-unadjusted.py` | Rapport 1 | v3 med instabilt K_B — instabilitetsdemonstration |
-| `gae-simulator-v4.py` | Rapport 2 | Flerskalig störning, jämförelse av tre arkitekturer |
+| `paper_i_single_node_feedback.py` | Rapport 1 | Skalär modell med en nod |
+| `paper_i_multinode_subsidiarity.py` | Rapport 1 | Vektormodell med tio noder, lokaliserad chock |
+| `paper_i_multinode_unadjusted.py` | Rapport 1 | v3 med instabilt K_B — instabilitetsdemonstration |
+| `paper_ii_fractal_multiscale.py` | Rapport 2 | Flerskalig störning, jämförelse av tre arkitekturer |
 
 ## Att reproducera resultaten
 
@@ -25,7 +25,7 @@ Med Python 3.8+ och NumPy/Matplotlib installerat:
 git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
 cd gae-governance-simulator
 pip install numpy matplotlib
-python gae-simulator-v4.py
+python paper_ii_fractal_multiscale.py
 
 ```
 

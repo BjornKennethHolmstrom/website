@@ -4,7 +4,7 @@
 
 ## B.0 Convention
 
-One file: **`gae-simulator-v14-reform-exhaustion.py`**, alongside the shipped prototype (`gae-simulator-v13-chain-prototype.py`, frozen as run for Part V). NumPy + SciPy only. All parameters as named constants at the top of the file. A changelog comment block at the file head records any specification change made after the first full run, with date and reason — this replaces v1's formal deviation log at zero overhead. Figures to `outputs/` as `v14-*.png`; published values are medians with interquartile ranges over **100 seeds minimum** per condition; distributions shown as histogram panels rather than archived separately. One README line.
+One file: **`gae-simulator-v14-reform-exhaustion.py`**, alongside the shipped prototype (`paper_xi_chain_prototype.py`, frozen as run for Part V). NumPy + SciPy only. All parameters as named constants at the top of the file. A changelog comment block at the file head records any specification change made after the first full run, with date and reason — this replaces v1's formal deviation log at zero overhead. Figures to `outputs/` as `v14-*.png`; published values are medians with interquartile ranges over **100 seeds minimum** per condition; distributions shown as histogram panels rather than archived separately. One README line.
 
 ## B.1 The Six Simulations
 

@@ -2,7 +2,7 @@
 
 ## Source code
 
-The v4 simulator extends the v3 codebase from paper one to a multi-scale disturbance environment and three-architecture comparison. It is implemented in Python using NumPy and Matplotlib. No dependencies beyond the standard scientific Python stack are required.
+The paper_ii simulator extends the paper_i_multinode codebase from paper one to a multi-scale disturbance environment and three-architecture comparison. It is implemented in Python using NumPy and Matplotlib. No dependencies beyond the standard scientific Python stack are required.
 
 The full source code is available at:
 
@@ -12,10 +12,10 @@ The repository includes all simulator versions in sequence:
 
 | File | Paper | Description |
 |---|---|---|
-| `gae-simulator-v2.py` | Paper 1 | Single-node scalar model |
-| `gae-simulator-v3.py` | Paper 1 | Ten-node vector model, localized shock |
-| `gae-simulator-v3-unadjusted.py` | Paper 1 | v3 with unstable K_B — instability demonstration |
-| `gae-simulator-v4.py` | Paper 2 | Multi-scale disturbance, three-architecture comparison |
+| `paper_i_single_node_feedback.py` | Paper 1 | Single-node scalar model |
+| `paper_i_multinode_subsidiarity.py` | Paper 1 | Ten-node vector model, localized shock |
+| `paper_i_multinode_unadjusted.py` | Paper 1 | v3 with unstable K_B — instability demonstration |
+| `paper_ii_fractal_multiscale.py` | Paper 2 | Multi-scale disturbance, three-architecture comparison |
 
 ## Reproducing the results
 
@@ -25,7 +25,7 @@ With Python 3.8+ and NumPy/Matplotlib installed:
 git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
 cd gae-governance-simulator
 pip install numpy matplotlib
-python gae-simulator-v4.py
+python paper_ii_fractal_multiscale.py
 ```
 
 The simulation is seeded for reproducibility (`numpy.random.default_rng(seed=42)`). Running with default parameters exactly reproduces Figure 1 and the quantitative summary table in Part III.

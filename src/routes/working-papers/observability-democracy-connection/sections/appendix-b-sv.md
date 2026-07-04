@@ -2,7 +2,7 @@
 
 ## Källkod
 
-v5-simulatorn utökar serien från v4:s flerskaliga stabilitetsdemonstration till den informationsteoretiska domänen, och modellerar signaltroheten i preferensöverföring genom representationskedjor. Den är implementerad i Python med hjälp av NumPy och Matplotlib.
+paper_iii_representation_observability-simulatorn utökar serien från paper_ii_fractal_multiscale:s flerskaliga stabilitetsdemonstration till den informationsteoretiska domänen, och modellerar signaltroheten i preferensöverföring genom representationskedjor. Den är implementerad i Python med hjälp av NumPy och Matplotlib.
 
 Den fullständiga källkoden finns tillgänglig på:
 
@@ -12,11 +12,11 @@ Förvaret innehåller nu fem simulatorversioner:
 
 | Fil | Rapport | Beskrivning |
 | --- | --- | --- |
-| `gae-simulator-v2.py` | Rapport I | Skalär återkopplingsmodell med en nod |
-| `gae-simulator-v3.py` | Rapport I | Vektormodell med tio noder, lokaliserad chock |
-| `gae-simulator-v3-unadjusted.py` | Rapport I | v3 med instabil förstärkning — instabilitetsdemonstration |
-| `gae-simulator-v4.py` | Rapport II | Flerskalig störning, jämförelse av tre arkitekturer |
-| `gae-simulator-v5.py` | Rapport III | Representationskedjans observerbarhet, fyra arkitekturer |
+| `paper_i_single_node_feedback.py` | Rapport I | Skalär återkopplingsmodell med en nod |
+| `paper_i_multinode_subsidiarity.py` | Rapport I | Vektormodell med tio noder, lokaliserad chock |
+| `paper_i_multinode_unadjusted.py` | Rapport I | v3 med instabil förstärkning — instabilitetsdemonstration |
+| `paper_ii_fractal_multiscale.py` | Rapport II | Flerskalig störning, jämförelse av tre arkitekturer |
+| `paper_iii_representation_observability.py` | Rapport III | Representationskedjans observerbarhet, fyra arkitekturer |
 
 ## Att reproducera resultaten
 
@@ -24,7 +24,7 @@ Förvaret innehåller nu fem simulatorversioner:
 git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
 cd gae-governance-simulator
 pip install numpy matplotlib
-python gae-simulator-v5.py
+python paper_iii_representation_observability.py
 
 ```
 

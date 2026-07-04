@@ -10,8 +10,8 @@ Den fullständiga källkoden finns tillgänglig på:
 
 Förvaret innehåller:
 
-* `gae-simulator-v2.py` — en-nods skalär modell (demonstration av latens och signaltrohet)
-* `gae-simulator-v3.py` — tionods vektormodell (subsidiaritet och genomsnittsproblemet)
+* `paper_i_single_node_feedback.py` — en-nods skalär modell (demonstration av latens och signaltrohet)
+* `paper_i_multinode_subsidiarity.py` — tionods vektormodell (subsidiaritet och genomsnittsproblemet)
 * `README.md` — installationsinstruktioner och parameterdokumentation
 * `/outputs` — förgenererade figurer från den kanoniska parameteruppsättningen
 
@@ -22,7 +22,7 @@ Med Python 3.8+ och NumPy/Matplotlib installerat:
 ```bash
 git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
 cd gae-governance-simulator
-python gae-simulator-v3.py
+python paper_i_multinode_subsidiarity.py
 
 ```
 

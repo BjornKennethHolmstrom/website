@@ -2,7 +2,7 @@
 
 ## Källkod
 
-v6-simulatorn utökar serien till domänen för styrning av allmänningar, och ersätter v5:s modell för preferensöverföring med en dynamikmodell för resursbestånd som styrs av fem distinkta återkopplingsarkitekturer. Den är implementerad i Python med hjälp av NumPy och Matplotlib.
+paper_iv_commons_requisite_variety-simulatorn utökar serien till domänen för styrning av allmänningar, och ersätter paper_iii_representation_observability:s modell för preferensöverföring med en dynamikmodell för resursbestånd som styrs av fem distinkta återkopplingsarkitekturer. Den är implementerad i Python med hjälp av NumPy och Matplotlib.
 
 Den fullständiga källkoden finns tillgänglig på:
 
@@ -12,12 +12,12 @@ Lagringsplatsen innehåller nu sex simulatorversioner:
 
 | Fil | Artikel | Beskrivning |
 | --- | --- | --- |
-| `gae-simulator-v2.py` | Artikel I | Ennods skalär återkopplingsmodell |
-| `gae-simulator-v3.py` | Artikel I | Tionods vektormodell, lokaliserad chock |
-| `gae-simulator-v3-unadjusted.py` | Artikel I | v3 med instabil förstärkning — instabilitetsdemo |
-| `gae-simulator-v4.py` | Artikel II | Flerskalig störning, tre arkitekturer |
-| `gae-simulator-v5.py` | Artikel III | Representationskedjans observerbarhet, fyra arkitekturer |
-| `gae-simulator-v6.py` | Artikel IV | Styrning av allmänningar, erforderlig variation, fem arkitekturer |
+| `paper_i_single_node_feedback.py` | Artikel I | Ennods skalär återkopplingsmodell |
+| `paper_i_multinode_subsidiarity.py` | Artikel I | Tionods vektormodell, lokaliserad chock |
+| `paper_i_multinode_unadjusted.py` | Artikel I | v3 med instabil förstärkning — instabilitetsdemo |
+| `paper_ii_fractal_multiscale.py` | Artikel II | Flerskalig störning, tre arkitekturer |
+| `paper_iii_representation_observability.py` | Artikel III | Representationskedjans observerbarhet, fyra arkitekturer |
+| `paper_iv_commons_requisite_variety.py` | Artikel IV | Styrning av allmänningar, erforderlig variation, fem arkitekturer |
 
 ## Reproducera resultaten
 
@@ -25,7 +25,7 @@ Lagringsplatsen innehåller nu sex simulatorversioner:
 git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
 cd gae-governance-simulator
 pip install numpy matplotlib
-python gae-simulator-v6.py
+python paper_iv_commons_requisite_variety.py
 
 ```
 

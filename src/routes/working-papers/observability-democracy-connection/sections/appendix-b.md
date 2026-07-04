@@ -2,7 +2,7 @@
 
 ## Source code
 
-The v5 simulator extends the series from v4's multi-scale stability demonstration to the information-theoretic domain, modeling preference transmission fidelity through representation chains. It is implemented in Python using NumPy and Matplotlib.
+The paper_iii_representation_observability simulator extends the series from paper_ii_fractal_multiscale's multi-scale stability demonstration to the information-theoretic domain, modeling preference transmission fidelity through representation chains. It is implemented in Python using NumPy and Matplotlib.
 
 The full source code is available at:
 
@@ -12,11 +12,11 @@ The repository now includes five simulator versions:
 
 | File | Paper | Description |
 |---|---|---|
-| `gae-simulator-v2.py` | Paper I | Single-node scalar feedback model |
-| `gae-simulator-v3.py` | Paper I | Ten-node vector model, localized shock |
-| `gae-simulator-v3-unadjusted.py` | Paper I | v3 with unstable gain — instability demo |
-| `gae-simulator-v4.py` | Paper II | Multi-scale disturbance, three architectures |
-| `gae-simulator-v5.py` | Paper III | Representation chain observability, four architectures |
+| `paper_i_single_node_feedback.py` | Paper I | Single-node scalar feedback model |
+| `paper_i_multinode_subsidiarity.py` | Paper I | Ten-node vector model, localized shock |
+| `paper_i_multinode_unadjusted.py` | Paper I | v3 with unstable gain — instability demo |
+| `paper_ii_fractal_multiscale.py` | Paper II | Multi-scale disturbance, three architectures |
+| `paper_iii_representation_observability.py` | Paper III | Representation chain observability, four architectures |
 
 ## Reproducing the results
 
@@ -24,7 +24,7 @@ The repository now includes five simulator versions:
 git clone https://github.com/BjornKennethHolmstrom/gae-governance-simulator
 cd gae-governance-simulator
 pip install numpy matplotlib
-python gae-simulator-v5.py
+python paper_iii_representation_observability.py
 ```
 
 The simulation is seeded (`numpy.random.default_rng(seed=13)`). Default parameters exactly reproduce Figure 1 and the quantitative summary table in Part II.
