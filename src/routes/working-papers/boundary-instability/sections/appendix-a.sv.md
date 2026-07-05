@@ -1,6 +1,6 @@
 **Appendix A — Formell utveckling och simulering**
 
-**Konventioner.** Nivåerna följer serien: **[R]** rigorös, **[IP]** i princip, **[H]** heuristisk; ”**[R inom modellen]**” markerar resultat som är exakta eller bevisade för den angivna formella modellen, utan anspråk därutöver. Alla matrisderivatautsagor använder Frobenius inre produkt på vektoriserade operatorer, $\langle U, V\rangle_F = \operatorname{tr}(U^\top V)$ på $\operatorname{vec}(\cdot)$. Simuleringen är `paper_xviii_boundary_instability.py`, frö 20260703; varje siffra som citeras i detta appendix skrivs ut av det skriptets verifieringsblock. Figurer som refereras: `xviii_A_phase_cycle`, `xviii_A2_regime_map`, `xviii_B_early_warning`, `xviii_C_bandwidth_slice`, `xviii_C2_window_map`.
+**Konventioner.** Nivåerna följer serien: **[R]** rigorös, **[IP]** i princip, **[H]** heuristisk; ”**[R inom modellen]**” markerar resultat som är exakta eller bevisade för den angivna formella modellen, utan anspråk därutöver. Alla matrisderivatautsagor använder Frobenius inre produkt på vektoriserade operatorer, ${\langle U, V\rangle}_F = \operatorname{tr}(U^\top V)$ på $\operatorname{vec}(\cdot)$. Simuleringen är `paper_xviii_boundary_instability.py`, frö 20260703; varje siffra som citeras i detta appendix skrivs ut av det skriptets verifieringsblock. Figurer som refereras: `xviii_A_phase_cycle`, `xviii_A2_regime_map`, `xviii_B_early_warning`, `xviii_C_bandwidth_slice`, `xviii_C2_window_map`.
 
 ---
 
@@ -26,7 +26,7 @@ nollställemängden av $2d(n-d)$ glatta skalära funktioner av $\theta$. Faktori
 
 **(i) Icke‑degeneration.** $\partial\mathbf{\Delta}/\partial\theta$ har rang $\geq 1$ i varje punkt av $\mathcal{V}_\mathbf{\Pi}$ som besöks av trajektorian, så att $\mathcal{V}_\mathbf{\Pi}$ lokalt är en delmångfald av $\Theta$ med kodimension $\geq 1$.
 
-**(ii) Transversalitet.** Det medelvärdesbildade inlärningsfältet $\bar{\mathbf{L}}(\theta)=\mathbb{E}_{\mathbf{x}}[\mathbf{L}(\mathbf{x},\theta)]$ är inte tangent till $\mathcal{V}_\mathbf{\Pi}$ på någon relativt öppen delmängd av $\mathcal{V}_\mathbf{\Pi}$: ekvivalent, $\big\langle \partial\mathbf{\Delta}/\partial\theta\,[\bar{\mathbf{L}}(\theta)],\,\cdot\,\big\rangle_F\not\equiv 0$ där.
+**(ii) Transversalitet.** Det medelvärdesbildade inlärningsfältet $\bar{\mathbf{L}}(\theta)=\mathbb{E}_{\mathbf{x}}[\mathbf{L}(\mathbf{x},\theta)]$ är inte tangent till $\mathcal{V}_\mathbf{\Pi}$ på någon relativt öppen delmängd av $\mathcal{V}_\mathbf{\Pi}$: ekvivalent, ${\big\langle \partial\mathbf{\Delta}/\partial\theta\,[\bar{\mathbf{L}}(\theta)],\,\cdot\,\big\rangle}_F\not\equiv 0$ där.
 
 **(iii) Persistens.** Trajektorian konvergerar inte till en stationär punkt för inlärningsdynamiken som ligger inuti $\mathcal{V}_\mathbf{\Pi}$.
 

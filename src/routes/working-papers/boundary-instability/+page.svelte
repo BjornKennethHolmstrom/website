@@ -173,7 +173,7 @@
     content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
-        const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
+        const rendered = katex.renderToString(tex, { displayMode: true,  throwOnError: false, output: 'html' });
         blocks.push(rendered);
         return `%%MATH${blocks.length - 1}%%`;
       } catch (e) {
@@ -187,7 +187,7 @@
     content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
-        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
+        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false, output: 'html' });
         blocks.push(rendered);
         return `%%MATH${blocks.length - 1}%%`;
       } catch (e) {

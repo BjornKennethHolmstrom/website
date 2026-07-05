@@ -1,6 +1,6 @@
 # Appendix A — Formal Development and Simulation
 
-**Conventions.** Tiers follow the series: **[R]** rigorous, **[IP]** in principle, **[H]** heuristic; "**[R within the model]**" marks results that are exact or proven for the stated formal model, with no claim beyond it. All matrix-derivative statements use the Frobenius inner product on vectorised operators, $\langle U, V\rangle_F = \operatorname{tr}(U^\top V)$ on $\operatorname{vec}(\cdot)$. The simulation is `paper_xviii_boundary_instability.py`, seed 20260703; every number quoted in this appendix is printed by that script's verification block. Figures referenced: `xviii_A_phase_cycle`, `xviii_A2_regime_map`, `xviii_B_early_warning`, `xviii_C_bandwidth_slice`, `xviii_C2_window_map`.
+**Conventions.** Tiers follow the series: **[R]** rigorous, **[IP]** in principle, **[H]** heuristic; "**[R within the model]**" marks results that are exact or proven for the stated formal model, with no claim beyond it. All matrix-derivative statements use the Frobenius inner product on vectorised operators, ${\langle U, V\rangle}_F = \operatorname{tr}(U^\top V)$ on $\operatorname{vec}(\cdot)$. The simulation is `paper_xviii_boundary_instability.py`, seed 20260703; every number quoted in this appendix is printed by that script's verification block. Figures referenced: `xviii_A_phase_cycle`, `xviii_A2_regime_map`, `xviii_B_early_warning`, `xviii_C_bandwidth_slice`, `xviii_C2_window_map`.
 
 ---
 
@@ -26,7 +26,7 @@ the zero set of $2d(n-d)$ smooth scalar functions of $\theta$. Factorizability a
 
 **(i) Non-degeneracy.** $\partial\mathbf{\Delta}/\partial\theta$ has rank $\geq 1$ at every point of $\mathcal{V}_\mathbf{\Pi}$ visited by the trajectory, so that $\mathcal{V}_\mathbf{\Pi}$ is locally a submanifold of $\Theta$ of codimension $\geq 1$.
 
-**(ii) Transversality.** The averaged learning field $\bar{\mathbf{L}}(\theta)=\mathbb{E}_{\mathbf{x}}[\mathbf{L}(\mathbf{x},\theta)]$ is not tangent to $\mathcal{V}_\mathbf{\Pi}$ on any relatively open subset of $\mathcal{V}_\mathbf{\Pi}$: equivalently, $\big\langle \partial\mathbf{\Delta}/\partial\theta\,[\bar{\mathbf{L}}(\theta)],\,\cdot\,\big\rangle_F\not\equiv 0$ there.
+**(ii) Transversality.** The averaged learning field $\bar{\mathbf{L}}(\theta)=\mathbb{E}_{\mathbf{x}}[\mathbf{L}(\mathbf{x},\theta)]$ is not tangent to $\mathcal{V}_\mathbf{\Pi}$ on any relatively open subset of $\mathcal{V}_\mathbf{\Pi}$: equivalently, ${\big\langle \partial\mathbf{\Delta}/\partial\theta\,[\bar{\mathbf{L}}(\theta)],\,\cdot\,\big\rangle}_F\not\equiv 0$ there.
 
 **(iii) Persistence.** The trajectory does not converge to a stationary point of the learning dynamics lying inside $\mathcal{V}_\mathbf{\Pi}$.
 
