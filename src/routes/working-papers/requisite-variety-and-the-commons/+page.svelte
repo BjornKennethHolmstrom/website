@@ -166,6 +166,8 @@
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
   }
+
+  let seriesLinksOpen = $state(false);
 </script>
 
 <SEO
@@ -185,18 +187,32 @@
       </a>
     </div>
 
-    <!-- Series note -->
+    <!-- Series note + collapsible links in one box -->
     <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
       {t.seriesNote}
-      <div class="mt-2 space-y-1">
-        {#each t.seriesLinks as link}
-          <a href={link.href}
-            class="block font-medium hover:opacity-100"
-            style="color: var(--color-page-accent);">
-            {link.label}
-          </a>
-        {/each}
-      </div>
+
+      <button
+        onclick={() => seriesLinksOpen = !seriesLinksOpen}
+        class="flex items-center gap-1.5 mt-2 text-xs font-medium hover:opacity-100 transition-opacity w-full text-left"
+        style="color: var(--color-page-accent);"
+      >
+        <span>{seriesLinksOpen ? '▾' : '▸'}</span>
+        <span>{seriesLinksOpen ? (currentLang === 'sv' ? 'Dölj papperslänkar' : 'Hide paper links') : (currentLang === 'sv' ? 'Visa papperslänkar' : 'Show paper links')}</span>
+      </button>
+
+      {#if seriesLinksOpen}
+        <div class="mt-2 space-y-1">
+          {#each t.seriesLinks as link}
+            <a
+              href={link.href}
+              class="block font-medium hover:opacity-100"
+              style="color: var(--color-page-accent);"
+            >
+              {link.label}
+            </a>
+          {/each}
+        </div>
+      {/if}
     </div>
 
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
