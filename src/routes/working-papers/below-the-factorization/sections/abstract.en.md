@@ -1,9 +1,3 @@
-# Below the Factorization
-
-### Bounded prediction and the origin of the observation channel
-
-*Governance as Engineering — Paper 0 · foundations*
-
 > This paper sits beneath Cycle One. Every paper from I onward begins with a factorization already in place — an observation channel that selects some of the world's variables and discards the rest, a boundary between what a system models and what it does not. None of them asks where that channel comes from; each treats it as the primitive on which the rest is built. This paper supplies the missing floor. Its central claim is that factorization is not primitive: it emerges from two ingredients, bounded representational capacity and a temporal-prediction objective, with no action, reward, or survival pressure required. The derivation is an argument, tagged **[IP]**; the mechanism is exhibited in a minimal model and its claims are tagged **[R within the model]**, established across two preregistrations whose thresholds and nulls were fixed in advance. Section 7 states what a single environment and a single architecture family cannot license. Because this is Paper 0, it is written to be read first even though it was written late: the argument presumes no prior paper in the series, and the connections back to Cycle One are gathered in §6 rather than assumed throughout.
 
 ---

@@ -1,9 +1,3 @@
-# Under faktoriseringen
-
-### Begränsad prediktion och observationskanalens ursprung
-
-*Governance as Engineering — Artikel 0 · grunder*
-
 > Denna artikel ligger under Cykel 1. Varje artikel från I och framåt börjar med en redan etablerad faktorisering — en observationskanal som väljer ut några av världens variabler och förkastar resten, en gräns mellan vad ett system modellerar och vad det inte gör. Ingen av dem frågar var denna kanal kommer ifrån; var och en behandlar den som den primitiv på vilken resten byggs. Denna artikel tillhandahåller den saknade grunden. Dess centrala påstående är att faktorisering inte är primitiv: den uppstår ur två ingredienser, begränsad representationskapacitet och ett tidsprediktionsmål, utan att handling, belöning eller överlevnadstryck krävs. Härledningen är ett argument, märkt **[IP]**; mekanismen visas i en minimal modell och dess påståenden är märkta **[R within the model]**, fastställda över två förhandsregistreringar vars tröskelvärden och nollhypoteser fastställdes i förväg. Avsnitt 7 anger vad en enda miljö och en enda arkitekturfamilj inte kan berättiga. Eftersom detta är Artikel 0, är den skriven för att läsas först trots att den skrevs sent: argumentet förutsätter ingen tidigare artikel i serien, och kopplingarna tillbaka till Cykel 1 samlas i §6 snarare än förutsätts genomgående.
 
 ---
