@@ -1,0 +1,23 @@
+# Below the Factorization
+
+### Bounded prediction and the origin of the observation channel
+
+*Governance as Engineering — Paper 0 · foundations*
+
+> This paper sits beneath Cycle One. Every paper from I onward begins with a factorization already in place — an observation channel that selects some of the world's variables and discards the rest, a boundary between what a system models and what it does not. None of them asks where that channel comes from; each treats it as the primitive on which the rest is built. This paper supplies the missing floor. Its central claim is that factorization is not primitive: it emerges from two ingredients, bounded representational capacity and a temporal-prediction objective, with no action, reward, or survival pressure required. The derivation is an argument, tagged **[IP]**; the mechanism is exhibited in a minimal model and its claims are tagged **[R within the model]**, established across two preregistrations whose thresholds and nulls were fixed in advance. Section 7 states what a single environment and a single architecture family cannot license. Because this is Paper 0, it is written to be read first even though it was written late: the argument presumes no prior paper in the series, and the connections back to Cycle One are gathered in §6 rather than assumed throughout.
+
+---
+
+## Abstract
+
+The Governance as Engineering series treats an institution as a controller acting on a model of its world, and the gap between that model and the world — the variety gap of Paper VI — as the source of its characteristic failures. Underneath that picture lies an object every paper uses and none examines: the factorization, the choice of which variables exist for the system at all. This paper asks whether factorization is fundamental or derived, and argues that it is derived.
+
+Two ingredients suffice. A system with bounded representational capacity, trained only to predict its own future observations, is forced to compress; and compression under a prediction objective is not free coarse-graining but selection of the variables that carry predictive structure. We argue this **[IP]** against the standard candidate list — finite energy, locality, causality, symmetry breaking — showing that each supplies a necessary condition but not the selection, and that the minimal sufficient pair is bounded capacity together with temporal prediction. The claim is deliberately stronger than the framework needs: it requires neither action nor viability pressure. A passive predictor suffices.
+
+A minimal model exhibits the mechanism and, across forty seeds in two registered runs, three properties of it **[R within the model]**. First, *emergence*: a bottlenecked predictor trained on rendered video of a moving object recovers the object's latent causal variables — positions and velocities — as linearly addressable quantities, without ever being told they exist. Second, *structured blindness*: under capacity starvation the predictor does not degrade uniformly; it sacrifices a coherent causal subspace whole and keeps the rest, becoming a *static observer* that represents where things are and not where they are going. This is the variety gap mechanized — an institution at its representational limit keeps a coherent partial model and is structurally blind to the remainder, not evenly blurred across it. Third, *non-unique, symmetry-broken selection*: at the capacity margin the system commits discretely to one variable of a competing pair, and where the environment is symmetric the choice is made by training contingency rather than by the world. The first registered operationalization of structured blindness failed and was corrected under a second registered run; the correction is reported as part of the result.
+
+Two consequences organize the rest of the series' foundations. Factorization is non-unique: behaviorally equivalent factorizations form large equivalence classes, so the world constrains systems only at the behavioral boundary and does not fix an internal language — coordination is selection within a class, not discovery of a unique truth (§4). But non-uniqueness is not arbitrariness: within the space of equivalence classes, those preserving the environment's causal variables are objectively better on robustness, sample efficiency, and transfer, so institutions negotiate coordinate systems within a class that reality does constrain (§5). The paper closes by re-grounding four results of the series in these foundations (§6) and stating its limits (§7): the passive/active distinction is untested, the two-ingredient claim is demonstrated rather than proven general, and the trained-network-to-institution correspondence remains interpretive throughout.
+
+---
+
+

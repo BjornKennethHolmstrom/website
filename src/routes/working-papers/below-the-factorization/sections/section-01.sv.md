@@ -1,0 +1,19 @@
+## 1. Den oprövade primitiven
+
+### 1.1 Vad serien bygger på och aldrig bygger
+
+Governance as Engineering-serien har ett bärande objekt som den aldrig lägger direkt tyngd på. Från och med Artikel I är en institution en regulator: den har en modell av någon del av världen, den agerar på den modellen, och analysen handlar om vad som händer när modellen och världen divergerar. Artikel VI benämner divergensen varietetsgapet och gör det till motorn i seriens felmoder. Artikel XII drar en gräns mellan en regulators jurisdiktion och den miljö den utesluter, och studerar vad uteslutningen kostar. Artikel XVII frågar vad det innebär att certifiera att en modell är adekvat för sin värld. Var och en av dessa analyser börjar efter att ett tidigare steg redan har ägt rum: världens kontinuerliga, högdimensionella flöde har redan styckats upp i en ändlig uppsättning variabler — *dessa* räknas, *dessa* gör det inte — och regulators modell är en modell i *dessa* variabler. Denna uppstyckning är faktoriseringen. Den är observationskanalen, valet av tillståndsrymd, den ontologi som institutionen resonerar i. Och serien behandlar den som given.
+
+Att behandla den som given är inte en brist i de tidigare artiklarna; det är en arbetsfördelning. Man kan studera hur en regulator misslyckas gentemot sin värld utan att fråga var dess variabler kom ifrån, precis som man kan studera en marknad utan att härleda begreppet pris. Men frågan ligger där, och det är den sorts fråga som seriens egen metod — komprimera teorin, finn den mindre uppsättningen primitiver ur vilken resten följer — är skyldig att så småningom ställa. Om faktorisering kan härledas, vilar ramverket på färre axiom, och de egenskaper hos faktoriseringar som serien utnyttjar (att de kan vara felaktiga, att de kan delas, att de kan driva) blir egenskaper med en mekanism bakom sig snarare än stipulationer.
+
+### 1.2 Frågan, preciserad
+
+En faktorisering, i denna series användning, är en avbildning från ett systems råa sensoriska gränssnitt till en intern tillståndsrymd: en partition av världens flöde i de variabler som systemet förutsäger, beslutar och agerar i. Inom reglerteknik är det tillståndsrymdrepresentationen; inom maskininlärning den latenta variabelmodellen; inom kognition ontologin; i en institution den uppsättning storheter som den samlar in, rapporterar och styr efter. Frågan i denna artikel är huruvida den avbildningen är primitiv — en utgångspunkt som måste postuleras — eller om den är det oundvikliga resultatet av något enklare.
+
+Frågan har en form som är värd att ange noggrant, eftersom de uppenbara svaren är fällor. Det räcker inte att nämna en fysisk begränsning som *tillåter* faktorisering, eftersom nästan varje begränsning tillåter nästan varje partition. Det räcker inte heller att nämna en begränsning som *tvingar fram komprimering*, eftersom komprimering ensamt inte väljer ut en faktorisering — det kräver bara att *några* variabler utesluts, inte vilka. En framgångsrik härledning måste producera urvalet: den måste förklara inte bara att systemet styckar upp världen, utan att det styckar upp den vid leder som följer världens egen struktur. Det är ribban §2 sätter för kandidaterna.
+
+### 1.3 Plan
+
+Avsnitt 2 argumenterar för påståendet om två ingredienser mot standardlistan av djupare primitiver, och isolerar det specifika par som producerar urval snarare än blott komprimering. Avsnitt 3 uppvisar mekanismen i en minimal modell och rapporterar de tre registrerade egenskaperna. Avsnitt 4 utvecklar icke-unikhet: ekvivalensklassen av beteendemässigt identiska faktoriseringar, och vad det innebär för koordination. Avsnitt 5 löser den skenbara spänningen mellan icke-unikhet och det uppenbara faktum att vissa faktoriseringar är bättre — distinktionen mellan ontologisk och pragmatisk preferens. Avsnitt 6 återgrundar fyra resultat från serien i dessa grundvalar. Avsnitt 7 anger vad artikeln inte visar.
+
+---

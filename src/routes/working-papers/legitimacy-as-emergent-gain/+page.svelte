@@ -73,6 +73,7 @@
       tag: 'Working Paper · Series XIII',
       seriesNote: "This is the thirteenth paper in the Governance as Engineering series. It bridges the series' primitives to the outcomes they produce.",
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability-Democracy Connection →' },
@@ -108,6 +109,7 @@
       tag: 'Arbetsdokument · Serie XIII',
       seriesNote: 'Detta är den trettonde rapporten i serien Styrning som ingenjörskonst. Den överbryggar seriens primitiver till de utfall de producerar.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets-demokratikopplingen →' },

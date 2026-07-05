@@ -5,78 +5,77 @@
   import { marked } from 'marked';
   import katex from 'katex';
   import 'katex/dist/katex.min.css';
-  import { tick } from 'svelte';
 
   // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
-  import ExecSummaryEnRaw from './sections/00-executive-summary.en.md?raw';
-  import ExecSummarySvRaw from './sections/00-executive-summary.sv.md?raw';
-  import Part1EnRaw       from './sections/01-part-1.en.md?raw';
-  import Part1SvRaw       from './sections/01-part-1.sv.md?raw';
-  import Part2EnRaw       from './sections/02-part-2.en.md?raw';
-  import Part2SvRaw       from './sections/02-part-2.sv.md?raw';
-  import Part3EnRaw       from './sections/03-part-3.en.md?raw';
-  import Part3SvRaw       from './sections/03-part-3.sv.md?raw';
-  import Part4EnRaw       from './sections/04-part-4.en.md?raw';
-  import Part4SvRaw       from './sections/04-part-4.sv.md?raw';
-  import Part5EnRaw       from './sections/05-part-5.en.md?raw';
-  import Part5SvRaw       from './sections/05-part-5.sv.md?raw';
-  import Part6EnRaw       from './sections/06-part-6.en.md?raw';
-  import Part6SvRaw       from './sections/06-part-6.sv.md?raw';
-  import Part7EnRaw       from './sections/07-part-7.en.md?raw';
-  import Part7SvRaw       from './sections/07-part-7.sv.md?raw';
-  import Part8EnRaw       from './sections/08-part-8.en.md?raw';
-  import Part8SvRaw       from './sections/08-part-8.sv.md?raw';
-  import AppendixAEnRaw   from './sections/09-appendix-a.en.md?raw';
-  import AppendixASvRaw   from './sections/09-appendix-a.sv.md?raw';
-  import AppendixBEnRaw   from './sections/09-appendix-b.en.md?raw';
-  import AppendixBSvRaw   from './sections/09-appendix-b.sv.md?raw';
-  import AppendixCEnRaw   from './sections/09-appendix-c.en.md?raw';
-  import AppendixCSvRaw   from './sections/09-appendix-c.sv.md?raw';
+  // English
+  import AbstractEnRaw   from './sections/abstract.en.md?raw';
+  import Section01EnRaw  from './sections/section-01.en.md?raw';
+  import Section02EnRaw  from './sections/section-02.en.md?raw';
+  import Section03EnRaw  from './sections/section-03.en.md?raw';
+  import Section04EnRaw  from './sections/section-04.en.md?raw';
+  import Section05EnRaw  from './sections/section-05.en.md?raw';
+  import Section06EnRaw  from './sections/section-06.en.md?raw';
+  import Section07EnRaw  from './sections/section-07.en.md?raw';
+  import Section08EnRaw  from './sections/section-08.en.md?raw';
+  import AppendixAEnRaw  from './sections/appendix-a.en.md?raw';
+
+  // Swedish
+  import AbstractSvRaw   from './sections/abstract.sv.md?raw';
+  import Section01SvRaw  from './sections/section-01.sv.md?raw';
+  import Section02SvRaw  from './sections/section-02.sv.md?raw';
+  import Section03SvRaw  from './sections/section-03.sv.md?raw';
+  import Section04SvRaw  from './sections/section-04.sv.md?raw';
+  import Section05SvRaw  from './sections/section-05.sv.md?raw';
+  import Section06SvRaw  from './sections/section-06.sv.md?raw';
+  import Section07SvRaw  from './sections/section-07.sv.md?raw';
+  import Section08SvRaw  from './sections/section-08.sv.md?raw';
+  import AppendixASvRaw  from './sections/appendix-a.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
   const rawText: Record<string, Record<string, string>> = {
     en: {
-      'executive-summary': ExecSummaryEnRaw,
-      'part-1': Part1EnRaw, 'part-2': Part2EnRaw, 'part-3': Part3EnRaw,
-      'part-4': Part4EnRaw, 'part-5': Part5EnRaw, 'part-6': Part6EnRaw,
-      'part-7': Part7EnRaw, 'part-8': Part8EnRaw,
-      'appendix-a': AppendixAEnRaw, 'appendix-b': AppendixBEnRaw, 'appendix-c': AppendixCEnRaw,
+      'abstract':    AbstractEnRaw,
+      'section-01': Section01EnRaw, 'section-02': Section02EnRaw,
+      'section-03': Section03EnRaw, 'section-04': Section04EnRaw,
+      'section-05': Section05EnRaw, 'section-06': Section06EnRaw,
+      'section-07': Section07EnRaw, 'section-08': Section08EnRaw,
+      'appendix-a': AppendixAEnRaw,
     },
     sv: {
-      'executive-summary': ExecSummarySvRaw,
-      'part-1': Part1SvRaw, 'part-2': Part2SvRaw, 'part-3': Part3SvRaw,
-      'part-4': Part4SvRaw, 'part-5': Part5SvRaw, 'part-6': Part6SvRaw,
-      'part-7': Part7SvRaw, 'part-8': Part8SvRaw,
-      'appendix-a': AppendixASvRaw, 'appendix-b': AppendixBSvRaw, 'appendix-c': AppendixCSvRaw,
-    }
+      'abstract':    AbstractSvRaw,
+      'section-01': Section01SvRaw, 'section-02': Section02SvRaw,
+      'section-03': Section03SvRaw, 'section-04': Section04SvRaw,
+      'section-05': Section05SvRaw, 'section-06': Section06SvRaw,
+      'section-07': Section07SvRaw, 'section-08': Section08SvRaw,
+      'appendix-a': AppendixASvRaw,
+    },
   };
 
-  // --- 3. CONTENT MAP (titles) ---
+  // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'executive-summary', titleEn: 'Executive Summary',                                       titleSv: 'Sammanfattning' },
-    { id: 'part-1',             titleEn: 'Part I: The Learning Limit',                              titleSv: 'Del I: Lärandets gräns' },
-    { id: 'part-2',             titleEn: 'Part II: Formal Framework',                               titleSv: 'Del II: Formellt ramverk' },
-    { id: 'part-3',             titleEn: 'Part III: Failure Modes of Adaptive Governance',          titleSv: 'Del III: Felmoder för adaptiv styrning' },
-    { id: 'part-4',             titleEn: 'Part IV: Simulation: The Adaptive Controller',            titleSv: 'Del IV: Simulering: Den adaptiva kontrollanten' },
-    { id: 'part-5',             titleEn: 'Part V: Empirical Illustrations',                         titleSv: 'Del V: Empiriska illustrationer' },
-    { id: 'part-6',             titleEn: 'Part VI: Design Principles for Adaptive Governance Architectures', titleSv: 'Del VI: Designprinciper för adaptiva styrningsarkitekturer' },
-    { id: 'part-7',             titleEn: 'Part VII: Connection to the Series',                      titleSv: 'Del VII: Koppling till serien' },
-    { id: 'part-8',             titleEn: 'Part VIII: Limitations and Conclusion',                  titleSv: 'Del VIII: Begränsningar och slutsats' },
-    { id: 'appendix-a',         titleEn: 'Appendix A: Formal Derivations',                          titleSv: 'Appendix A: Formella härledningar' },
-    { id: 'appendix-b',         titleEn: 'Appendix B: Simulation Specification',                    titleSv: 'Appendix B: Simuleringsspecifikation' },
-    { id: 'appendix-c',         titleEn: 'Appendix C: Empirical Coding Notes',                      titleSv: 'Appendix C: Empiriska kodningsanteckningar' },
+    { id: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
+    { id: 'section-01',  titleEn: '1. The unexamined primitive',                                      titleSv: '1. Den oprövade primitiven' },
+    { id: 'section-02',  titleEn: '2. The two ingredients',                                           titleSv: '2. De två ingredienserna' },
+    { id: 'section-03',  titleEn: '3. The minimal model: factorization from bounded prediction',       titleSv: '3. Den minimala modellen: faktorisering från begränsad prediktion' },
+    { id: 'section-04',  titleEn: '4. Non‑uniqueness: the equivalence class',                         titleSv: '4. Icke‑unikhet: ekvivalensklassen' },
+    { id: 'section-05',  titleEn: '5. Pragmatic preference without ontological preference',           titleSv: '5. Pragmatisk preferens utan ontologisk preferens' },
+    { id: 'section-06',  titleEn: '6. What this re‑grounds',                                           titleSv: '6. Vad detta återgrundar' },
+    { id: 'section-07',  titleEn: '7. Conclusion',                                                     titleSv: '7. Slutsats' },
+    { id: 'section-08',  titleEn: '8. What this paper does not show',                                  titleSv: '8. Vad denna artikel inte visar' },
+    { id: 'appendix-a',  titleEn: 'Appendix A: Model, training, and outputs',                          titleSv: 'Appendix A: Modell, träning och utdata' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XIV',
-      seriesNote: 'This is the fourteenth paper in the Governance as Engineering series. It consolidates the theoretical arc of Cycle Two and opens the transition to engineering.',
+      tag: 'Working Paper · Series 0',
+      seriesNote: 'Foundations paper of the Governance as Engineering series. Sits beneath Cycle One and provides the floor every later paper builds on.',
+      seriesLinksShow: 'Show paper links',
+      seriesLinksHide: 'Hide paper links',
       seriesLinks: [
-        { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
-        { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability-Democracy Connection →' },
+        { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability‑Democracy Connection →' },
         { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Paper IV: Requisite Variety and the Commons →' },
         { href: '/working-papers/coordination-failure-tax',                label: 'Paper V: The Coordination Failure Tax →' },
         { href: '/working-papers/the-variety-gap',                         label: 'Paper VI: The Variety Gap →' },
@@ -87,18 +86,16 @@
         { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
         { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
-        { href: '/working-papers/adaptation-bottleneck', label: 'Paper XV: The Adaptation Bottleneck →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Paper XVI: Why Diversity Resists Formalization →' },
-        { href: '/working-papers/certification-floor', label: 'Paper XVII: The Certification Floor →' },
-        { href: '/working-papers/boundary-instability', label: 'Paper XVIII: The Boundary Instability Principle →' },
+        { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
+        { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor →' },
+        { href: '/working-papers/boundary-instability',                    label: 'Paper XVIII: The Boundary Instability Principle →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'The Governance as Engineering series has, across thirteen papers, developed a structural grammar for governance architecture. But that grammar has treated learning as implicit. This paper makes learning explicit as a design requirement. Can a governance system regulate itself—explore beyond its current model, retain what it discovers, discard what no longer holds—without the exploratory process destabilising the regime?',
-      relatedWork: 'Related work:',
-      architectureLink: 'The Architecture of Stability',
-      gsiLink: 'Global Subsidiarity Index',
-      contextOutro: 'The paper formalises dual control, institutional memory, and persistent excitation. It identifies five failure modes and derives design principles for adaptive governance architectures. It completes the Cycle Two adaptation triad and opens the transition to engineering.',
-      allWorkingpapers: '← All Working Papers',
+      contextIntro: 'Every paper from I onward begins with a factorization already in place — an observation channel, a choice of which variables exist for the system at all. This paper asks where that channel comes from. It argues that two ingredients, bounded representational capacity and a temporal‑prediction objective, suffice to produce a factorization — with no action, reward, or survival pressure required.',
+      contextOutro: 'A minimal model exhibits emergence, structured blindness, and non‑unique, symmetry‑broken selection across forty preregistered seeds. Non‑uniqueness is not relativism: the world constrains the class of viable factorizations without fixing a unique internal language, making coordination a selection problem within a privileged class rather than the discovery of a single truth.',
+      allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -106,13 +103,14 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XIV',
-      seriesNote: 'Detta är den fjortonde rapporten i serien Styrning som ingenjörskonst. Den konsoliderar Cykel Tvås teoretiska båge och öppnar övergången till ingenjörskonst.',
+      tag: 'Arbetsdokument · Serie 0',
+      seriesNote: 'Grundartikel i serien Styrning som ingenjörskonst. Ligger under Cykel Ett och tillhandahåller golvet som varje senare artikel bygger på.',
+      seriesLinksShow: 'Visa papperslänkar',
+      seriesLinksHide: 'Dölj papperslänkar',
       seriesLinks: [
-        { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
-        { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
+        { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets‑demokratikopplingen →' },
         { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Rapport IV: Nödvändig variation och allmänningen →' },
         { href: '/working-papers/coordination-failure-tax',                label: 'Rapport V: Samordningsmisslyckandets skatt →' },
         { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Varietetsgapet →' },
@@ -123,18 +121,16 @@
         { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
         { href: '/working-papers/boundary-selection-deficits',            label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
-        { href: '/working-papers/adaptation-bottleneck', label: 'Rapport XV: Adaptationsflaskhalsen →' },
-        { href: '/working-papers/why-diversity-resists-formalization', label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
-        { href: '/working-papers/certification-floor', label: 'Rapport XVII: Certifieringsgolvet →' },
-        { href: '/working-papers/boundary-instability', label: 'Rapport XVIII: Principen om gränsinstabilitet →' },
+        { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
+        { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
+        { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
+        { href: '/working-papers/certification-floor',                    label: 'Rapport XVII: Certifieringsgolvet →' },
+        { href: '/working-papers/boundary-instability',                    label: 'Rapport XVIII: Principen om gränsinstabilitet →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Serien Styrning som ingenjörskonst har under tretton rapporter utvecklat en strukturell grammatik för styrningsarkitektur. Men den grammatiken har behandlat lärande som implicit. Denna rapport gör lärande explicit som ett designkrav. Kan ett styrsystem reglera sig självt — utforska bortom sin nuvarande modell, behålla vad det upptäcker, förkasta det som inte längre håller — utan att den utforskande processen destabiliserar regimen?',
-      relatedWork: 'Relaterat arbete:',
-      architectureLink: 'Stabilitetens arkitektur',
-      gsiLink: 'Global subsidiaritetsindex',
-      contextOutro: 'Rapporten formaliserar dubbelkontroll, institutionellt minne och persistent excitation. Den identifierar fem felmoder och härleder designprinciper för adaptiva styrningsarkitekturer. Den fullbordar Cykel Tvås adaptationstriad och öppnar övergången till ingenjörskonst.',
-      allWorkingpapers: '← Alla arbetsdokument',
+      contextIntro: 'Varje artikel från I och framåt börjar med en faktorisering redan på plats — en observationskanal, ett val av vilka variabler som överhuvudtaget existerar för systemet. Denna artikel frågar var den kanalen kommer ifrån. Den argumenterar för att två ingredienser, begränsad representationskapacitet och ett tidsprediktionsmål, räcker för att producera en faktorisering — utan krav på handling, belöning eller överlevnadstryck.',
+      contextOutro: 'En minimal modell uppvisar emergens, strukturerad blindhet och icke‑unikt, symmetribrutet urval över fyrtio förregistrerade frön. Icke‑unikhet är inte relativism: världen begränsar klassen av livskraftiga faktoriseringar utan att fastställa ett unikt internt språk, vilket gör koordination till ett urvalsproblem inom en privilegierad klass snarare än upptäckten av en enda sanning.',
+      allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -145,29 +141,29 @@
 
   const metadata = {
     en: {
-      title: 'Governance as an Adaptive Controller: Exploration, Memory, and the Conditions for Institutional Learning',
-      subtitle: 'Exploration, Memory, and the Conditions for Institutional Learning',
-      description: 'Models governance learning as a dual control problem, formalising the exploration–exploitation trade‑off, institutional memory, and persistent excitation. Identifies five failure modes and derives design principles for adaptive governance architectures.',
+      title: 'Below the Factorization',
+      subtitle: 'Bounded prediction and the origin of the observation channel',
+      description: 'The foundations paper of the Governance as Engineering series. Argues that factorization — the observation channel every later paper relies on — emerges from bounded representational capacity plus a temporal‑prediction objective, without action or viability pressure.',
     },
     sv: {
-      title: 'Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande',
-      subtitle: 'Utforskning, minne och villkoren för institutionellt lärande',
-      description: 'Modellerar styrningens lärande som ett dubbelkontrollproblem, formaliserar avvägningen mellan utforskning och exploatering, institutionellt minne och persistent excitation. Identifierar fem felmoder och härleder designprinciper för adaptiva styrningsarkitekturer.',
+      title: 'Under faktoriseringen',
+      subtitle: 'Begränsad prediktion och observationskanalens ursprung',
+      description: 'Grundartikeln i serien Styrning som ingenjörskonst. Argumenterar för att faktorisering — observationskanalen varje senare artikel förlitar sig på — uppstår ur begränsad representationskapacitet plus ett tidsprediktionsmål, utan krav på handling eller överlevnadstryck.',
     },
   };
 
   // --- 5. REACTIVE LOGIC ---
-  let activeSection = $state('executive-summary');
+  let activeSection = $state('abstract');
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'governance-as-adaptive-controller-sv.pdf' : 'governance-as-adaptive-controller.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'below-the-factorization-sv.pdf' : 'below-the-factorization.pdf');
+  let seriesLinksOpen = $state(false);
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  // Pre‑render LaTeX and protect the rest before passing to marked
   function sectionHtml(section: typeof contentMap[0]): string {
     const lang = currentLang as 'en' | 'sv';
     const md = rawText[lang]?.[section.id] ?? '';
@@ -175,10 +171,11 @@
 
     const blocks: string[] = [];
 
-    // Display math \[ ... \]
-    content = content.replace(/\\\[([\s\S]*?)\\\]/g, (match, tex) => {
+    // Display math: $$ ... $$ and \[ ... \]
+    content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
+      const tex = (tex1 ?? tex2 ?? '').trim();
       try {
-        const rendered = katex.renderToString(tex.trim(), { displayMode: true, throwOnError: false });
+        const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
         blocks.push(rendered);
         return `%%MATH${blocks.length - 1}%%`;
       } catch (e) {
@@ -188,10 +185,11 @@
       }
     });
 
-    // Inline math \( ... \)
-    content = content.replace(/\\\(([\s\S]*?)\\\)/g, (match, tex) => {
+    // Inline math: $ ... $ and \( ... \)
+    content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
+      const tex = (tex1 ?? tex2 ?? '').trim();
       try {
-        const rendered = katex.renderToString(tex.trim(), { displayMode: false, throwOnError: false });
+        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
         blocks.push(rendered);
         return `%%MATH${blocks.length - 1}%%`;
       } catch (e) {
@@ -201,12 +199,8 @@
       }
     });
 
-    // Convert markdown to HTML
     let html = marked.parse(content, { breaks: false, gfm: true }) as string;
-
-    // Restore pre‑rendered KaTeX HTML
     html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
-
     return html;
   }
 
@@ -218,21 +212,19 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande. Styrning som ingenjörskonst, Rapport XIV.`
-      : `Holmström, B. K. (2026). Governance as an Adaptive Controller: Exploration, Memory, and the Conditions for Institutional Learning. Governance as Engineering, Paper XIV.`;
+      ? `Holmström, B. K. (2026). Under faktoriseringen: Begränsad prediktion och observationskanalens ursprung. Styrning som ingenjörskonst, Artikel 0.`
+      : `Holmström, B. K. (2026). Below the Factorization: Bounded prediction and the origin of the observation channel. Governance as Engineering, Paper 0.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
   }
-
-  let seriesLinksOpen = $state(false);
 </script>
 
 <SEO
-  title="{meta.title} | GaE Working paper"
+  title="{meta.title} | GaE Working Paper"
   description={meta.description}
   type="article"
-  publishedTime="2026-06"
+  publishedTime="2026-07"
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
@@ -241,7 +233,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWorkingpapers}
+        {t.allWhitepapers}
       </a>
     </div>
 
@@ -255,7 +247,7 @@
         style="color: var(--color-page-accent);"
       >
         <span>{seriesLinksOpen ? '▾' : '▸'}</span>
-        <span>{seriesLinksOpen ? (currentLang === 'sv' ? 'Dölj papperslänkar' : 'Hide paper links') : (currentLang === 'sv' ? 'Visa papperslänkar' : 'Show paper links')}</span>
+        <span>{seriesLinksOpen ? t.seriesLinksHide : t.seriesLinksShow}</span>
       </button>
 
       {#if seriesLinksOpen}
@@ -338,38 +330,8 @@
     <!-- Context Card -->
     <div class="mb-16 p-8 rounded-xl border border-[var(--color-separator)] bg-[var(--color-card-bg)] shadow-sm">
       <h3 class="text-xs font-bold uppercase tracking-wider mb-4 opacity-50">{t.contextTitle}</h3>
-      <div class="prose prose-sm max-w-none" style="--tw-prose-body: var(--color-page-text); --tw-prose-links: var(--color-page-accent);">
-        <p class="text-base">{t.contextIntro}</p>
-
-        <div class="flex flex-wrap gap-4 my-6">
-          <span class="text-sm font-bold opacity-70">{t.relatedWork}</span>
-          <a
-            href="/working-papers/architecture-of-stability"
-            class="text-sm hover:underline"
-            style="color: var(--color-page-accent);"
-          >
-            {t.architectureLink}
-          </a>
-          <a
-            href="https://www.svensksubsidiaritet.se/ramverk/gsi/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center gap-1 text-sm hover:underline"
-            style="color: var(--color-page-accent);"
-          >
-            {t.gsiLink}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-70">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </a>
-        </div>
-
-        <p class="mt-4 opacity-80 leading-relaxed">
-          {t.contextOutro}
-        </p>
-      </div>
+      <p class="text-base mb-4" style="color: var(--color-page-text);">{t.contextIntro}</p>
+      <p class="opacity-80 leading-relaxed" style="color: var(--color-page-text);">{t.contextOutro}</p>
     </div>
 
     <!-- Content Sections -->
@@ -390,7 +352,7 @@
             {@html sectionHtml(section)}
           </article>
         </div>
-        {#if section.id !== 'appendix-c'}
+        {#if section.id !== 'appendix-a'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}

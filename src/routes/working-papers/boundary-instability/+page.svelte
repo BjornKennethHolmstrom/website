@@ -76,6 +76,7 @@
       tag: 'Working Paper · Series XVIII',
       seriesNote: 'This is the eighteenth paper in the Governance as Engineering series. It returns the results of Papers XVI and XVII to an engineering register.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability‑Democracy Connection →' },
@@ -108,6 +109,7 @@
       tag: 'Arbetsdokument · Serie XVIII',
       seriesNote: 'Detta är den artonde rapporten i serien Styrning som ingenjörskonst. Den för tillbaka resultaten från Rapport XVI och XVII till ett ingenjörsregister.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets‑demokratikopplingen →' },

@@ -81,6 +81,7 @@
       ],
       seriesNote: 'This paper closes the seam between the Governance as Engineering series and the Self papers. It derives Inherited Unobservability and the operator‑seeded legitimacy spiral.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability‑Democracy Connection →' },
@@ -117,6 +118,7 @@
       ],
       seriesNote: 'Denna rapport stänger sömmen mellan serien Styrning som ingenjörskonst och Själv‑artiklarna. Den härleder Ärvd oobserverbarhet och den operatörssådda legitimitetsnedåtgående spiralen.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets‑demokratikopplingen →' },
@@ -228,6 +230,8 @@
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
   }
+
+  let seriesLinksOpen = $state(false);
 </script>
 
 <SEO
@@ -262,18 +266,32 @@
       </div>
     </div>
 
-    <!-- Series note (main GaE) -->
+    <!-- Series note + collapsible links in one box -->
     <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
       {t.seriesNote}
-      <div class="mt-2 space-y-1">
-        {#each t.seriesLinks as link}
-          <a href={link.href}
-            class="block font-medium hover:opacity-100"
-            style="color: var(--color-page-accent);">
-            {link.label}
-          </a>
-        {/each}
-      </div>
+
+      <button
+        onclick={() => seriesLinksOpen = !seriesLinksOpen}
+        class="flex items-center gap-1.5 mt-2 text-xs font-medium hover:opacity-100 transition-opacity w-full text-left"
+        style="color: var(--color-page-accent);"
+      >
+        <span>{seriesLinksOpen ? '▾' : '▸'}</span>
+        <span>{seriesLinksOpen ? (currentLang === 'sv' ? 'Dölj papperslänkar' : 'Hide paper links') : (currentLang === 'sv' ? 'Visa papperslänkar' : 'Show paper links')}</span>
+      </button>
+
+      {#if seriesLinksOpen}
+        <div class="mt-2 space-y-1">
+          {#each t.seriesLinks as link}
+            <a
+              href={link.href}
+              class="block font-medium hover:opacity-100"
+              style="color: var(--color-page-accent);"
+            >
+              {link.label}
+            </a>
+          {/each}
+        </div>
+      {/if}
     </div>
 
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">

@@ -127,6 +127,7 @@
       tag: 'Working Paper · Series I',
       seriesNote: 'This is the first paper in the Governance as Engineering series.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/fractality-as-stability',              label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',   label: 'Paper III: The Observability-Democracy Connection →' },
         { href: '/working-papers/requisite-variety-and-the-commons',    label: 'Paper IV: Requisite Variety and the Commons →' },
@@ -162,6 +163,7 @@
       tag: 'Arbetsdokument · Serie I',
       seriesNote: 'Detta är den första rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/fractality-as-stability',            label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
         { href: '/working-papers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },

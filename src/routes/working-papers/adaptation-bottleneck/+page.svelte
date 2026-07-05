@@ -64,6 +64,7 @@
       tag: 'Working Paper · Series XV',
       seriesNote: 'This is the fifteenth paper in the Governance as Engineering series. It closes the loop on Cycle Two.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability‑Democracy Connection →' },
@@ -96,6 +97,7 @@
       tag: 'Arbetsdokument · Serie XV',
       seriesNote: 'Detta är den femtonde rapporten i serien Styrning som ingenjörskonst. Den stänger loopen för Cykel Två.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets‑demokratikopplingen →' },

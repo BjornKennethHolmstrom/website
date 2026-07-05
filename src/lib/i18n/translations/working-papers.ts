@@ -126,6 +126,12 @@ export const workingpapersTranslations = {
      description:
        'Extends Paper XII by removing the assumption that the coupling between a jurisdiction and its environment is fixed. Shows that when governance learning acts through channels that also carry cross‑boundary influence, decomposability becomes reflexive — the boundary that was correct at design time does not stay correct, and the un‑correcting process is the controller\'s own adaptation. Formalizes the Non‑Factorizability Theorem, a reflexive boundary cycle, a Critical Learning Bandwidth that closes endogenously, and a failing early‑warning index. Paper XVIII in the Governance as Engineering series.',
    },
+   belowTheFactorization: {
+     title: 'Below the Factorization',
+     subtitle: 'Bounded prediction and the origin of the observation channel',
+     description:
+       'Every paper in the series begins with a factorization already in place — an observation channel, a choice of which variables exist for the system at all. This paper asks where that channel comes from. It argues that factorization emerges from bounded representational capacity plus a temporal‑prediction objective, with no action or viability pressure required. A minimal model exhibits emergence, structured blindness, and non‑unique, symmetry‑broken selection across forty preregistered seeds. The foundations paper of the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -332,6 +338,12 @@ export const workingpapersTranslations = {
      subtitle: 'Reflexiv styrning och den endogena driften av nedbrytbarhet',
      description:
        'Utvidgar Rapport XII genom att ta bort antagandet att kopplingen mellan en jurisdiktion och dess miljö är fast. Visar att när styrningens lärande verkar genom kanaler som också bär gränsöverskridande inflytande blir nedbrytbarheten reflexiv — den gräns som var korrekt vid konstruktionstillfället förblir inte korrekt, och den process som förstör den är kontrollantens egen anpassning. Formaliserar icke‑faktoriserbarhetsteoremet, en reflexiv gränscykel, en kritisk inlärningsbandbredd som stängs endogent och ett tidigt varningsindex som misslyckas. Rapport XVIII i serien Styrning som ingenjörskonst.',
+   },
+   belowTheFactorization: {
+     title: 'Under faktoriseringen',
+     subtitle: 'Begränsad prediktion och observationskanalens ursprung',
+     description:
+       'Varje artikel i serien börjar med en faktorisering redan på plats — en observationskanal, ett val av vilka variabler som överhuvudtaget existerar för systemet. Denna artikel frågar var den kanalen kommer ifrån. Den argumenterar för att faktorisering uppstår ur begränsad representationskapacitet plus ett tidsprediktionsmål, utan krav på handling eller överlevnadstryck. En minimal modell uppvisar emergens, strukturerad blindhet och icke‑unikt, symmetribrutet urval över fyrtio förregistrerade frön. Grundartikeln i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

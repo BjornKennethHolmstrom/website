@@ -1,0 +1,166 @@
+<svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="cyanGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="amberGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="1200" fill="#1E2633"/>
+
+  <!-- faint structural circuitry (series texture) -->
+  <g stroke="#2FD4E0" stroke-opacity="0.12" stroke-width="1" fill="none">
+    <path d="M 150 210 L 210 210 L 232 188"/>
+    <circle cx="232" cy="188" r="3" fill="#2FD4E0" fill-opacity="0.25" stroke="none"/>
+    <path d="M 1046 250 L 1010 214 L 958 214"/>
+    <path d="M 1040 1010 L 1004 1010 L 986 1030"/>
+    <circle cx="986" cy="1030" r="3" fill="#2FD4E0" fill-opacity="0.25" stroke="none"/>
+    <path d="M 158 962 L 158 998 L 196 1014"/>
+  </g>
+
+  <!-- ingredient 2: temporal-prediction objective (time runs forward, underneath everything) -->
+  <line x1="200" y1="952" x2="980" y2="952" stroke="#5C6B7E" stroke-width="1.2"/>
+  <path d="M 980 946 L 998 952 L 980 958 Z" fill="#5C6B7E"/>
+  <text x="204" y="940" font-size="17" letter-spacing="2.5" fill="#5C6B7E">PREDICTION OVER TIME</text>
+
+  <!-- LEFT: the observed world — a rendered 16x16 frame (high-dimensional flux) -->
+  <g stroke="#2FD4E0" stroke-opacity="0.06" stroke-width="0.7">
+    <line x1="168" y1="500" x2="168" y2="700"/>
+    <line x1="193" y1="500" x2="193" y2="700"/>
+    <line x1="218" y1="500" x2="218" y2="700"/>
+    <line x1="243" y1="500" x2="243" y2="700"/>
+    <line x1="268" y1="500" x2="268" y2="700"/>
+    <line x1="293" y1="500" x2="293" y2="700"/>
+    <line x1="318" y1="500" x2="318" y2="700"/>
+    <line x1="343" y1="500" x2="343" y2="700"/>
+    <line x1="368" y1="500" x2="368" y2="700"/>
+    <line x1="168" y1="500" x2="368" y2="500"/>
+    <line x1="168" y1="525" x2="368" y2="525"/>
+    <line x1="168" y1="550" x2="368" y2="550"/>
+    <line x1="168" y1="575" x2="368" y2="575"/>
+    <line x1="168" y1="600" x2="368" y2="600"/>
+    <line x1="168" y1="625" x2="368" y2="625"/>
+    <line x1="168" y1="650" x2="368" y2="650"/>
+    <line x1="168" y1="675" x2="368" y2="675"/>
+    <line x1="168" y1="700" x2="368" y2="700"/>
+  </g>
+  <rect x="168" y="500" width="200" height="200" fill="none" stroke="#2FD4E0" stroke-opacity="0.16" stroke-width="1"/>
+
+  <!-- flux / noise: the rest of the high-dimensional field -->
+  <g fill="#2FD4E0" stroke="none">
+    <circle cx="196" cy="536" r="1.6" fill-opacity="0.16"/>
+    <circle cx="232" cy="662" r="2.0" fill-opacity="0.13"/>
+    <circle cx="330" cy="520" r="1.5" fill-opacity="0.15"/>
+    <circle cx="348" cy="640" r="1.8" fill-opacity="0.11"/>
+    <circle cx="210" cy="606" r="1.4" fill-opacity="0.12"/>
+    <circle cx="300" cy="676" r="1.6" fill-opacity="0.14"/>
+    <circle cx="258" cy="516" r="1.3" fill-opacity="0.13"/>
+    <circle cx="336" cy="590" r="1.5" fill-opacity="0.10"/>
+    <circle cx="184" cy="668" r="1.4" fill-opacity="0.11"/>
+    <circle cx="276" cy="626" r="1.3" fill-opacity="0.12"/>
+    <circle cx="222" cy="556" r="1.2" fill-opacity="0.10"/>
+  </g>
+
+  <!-- the moving dot's past trajectory in the box (motion exists in the world) -->
+  <path d="M 200 528 C 232 548, 258 566, 278 586" fill="none" stroke="#04ECF6"
+        stroke-opacity="0.32" stroke-width="2" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <g fill="#04ECF6" stroke="none">
+    <circle cx="204" cy="530" r="2" fill-opacity="0.14"/>
+    <circle cx="232" cy="550" r="2.2" fill-opacity="0.20"/>
+    <circle cx="258" cy="568" r="2.4" fill-opacity="0.30"/>
+  </g>
+
+  <!-- the dot: a 3x3 lit neighborhood, the signal riding inside the flux -->
+  <rect x="277" y="582" width="16" height="16" rx="3" fill="#04ECF6" filter="url(#cyanGlow)"/>
+  <rect x="281.5" y="586.5" width="7" height="7" rx="1.5" fill="#CFFAFD"/>
+
+  <!-- the dot's true velocity in the world (amber): present here, lost on the right -->
+  <path d="M 296 588 C 316 578, 332 570, 348 562" fill="none" stroke="#E8943A"
+        stroke-width="2.4" stroke-linecap="round" filter="url(#amberGlow)"/>
+  <path d="M 346 556 L 352 560 L 344 568 Z" fill="#E8943A" filter="url(#amberGlow)"/>
+
+  <text x="170" y="486" font-size="17" letter-spacing="2.5" fill="#7E8A9A">OBSERVED FLUX</text>
+
+  <!-- CENTER: the high-dimensional input funnelled toward a narrow throat -->
+  <g fill="none" stroke="#2FD4E0" stroke-linecap="round">
+    <path d="M 372 512 C 462 540, 542 582, 578 596" stroke-opacity="0.14" stroke-width="1.2"/>
+    <path d="M 372 544 C 464 566, 544 588, 578 598" stroke-opacity="0.16" stroke-width="1.2"/>
+    <path d="M 372 576 C 466 588, 546 596, 578 600" stroke-opacity="0.18" stroke-width="1.3"/>
+    <path d="M 372 600 C 472 600, 546 600, 578 600" stroke-opacity="0.20" stroke-width="1.3"/>
+    <path d="M 372 624 C 466 612, 546 604, 578 602" stroke-opacity="0.18" stroke-width="1.3"/>
+    <path d="M 372 656 C 464 634, 544 612, 578 604" stroke-opacity="0.16" stroke-width="1.2"/>
+    <path d="M 372 688 C 462 660, 542 620, 578 606" stroke-opacity="0.14" stroke-width="1.2"/>
+  </g>
+
+  <!-- the bottleneck: bounded capacity, an hourglass throat (dashed teal boundary) -->
+  <path d="M 452 496 C 540 545, 582 578, 600 592 C 618 578, 660 545, 748 496"
+        fill="none" stroke="#2FD4E0" stroke-opacity="0.5" stroke-width="1.6"
+        stroke-dasharray="2 10" stroke-linecap="round"/>
+  <path d="M 452 704 C 540 655, 582 622, 600 608 C 618 622, 660 655, 748 704"
+        fill="none" stroke="#2FD4E0" stroke-opacity="0.5" stroke-width="1.6"
+        stroke-dasharray="2 10" stroke-linecap="round"/>
+  <text x="502" y="462" font-size="17" letter-spacing="2.5" fill="#7E8A9A">BOUNDED CAPACITY</text>
+
+  <!-- RIGHT: the factorization that emerges — positions kept, clean and addressable -->
+  <path d="M 610 597 C 700 590, 800 578, 946 576" fill="none" stroke="#04ECF6"
+        stroke-width="3.2" stroke-linecap="round" filter="url(#cyanGlow)"/>
+  <path d="M 610 597 C 700 590, 800 578, 946 576" fill="none" stroke="#CFFAFD"
+        stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 610 603 C 700 610, 800 620, 946 622" fill="none" stroke="#04ECF6"
+        stroke-width="3.2" stroke-linecap="round" filter="url(#cyanGlow)"/>
+  <path d="M 610 603 C 700 610, 800 620, 946 622" fill="none" stroke="#CFFAFD"
+        stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- addressable end-nodes (recovered, linearly readable) -->
+  <g filter="url(#cyanGlow)">
+    <circle cx="946" cy="576" r="7" fill="#04ECF6"/>
+    <circle cx="946" cy="622" r="7" fill="#04ECF6"/>
+  </g>
+  <g fill="#0B3A44">
+    <circle cx="946" cy="576" r="3"/>
+    <circle cx="946" cy="622" r="3"/>
+  </g>
+  <text x="968" y="584" font-size="26" font-style="italic" fill="#04ECF6" filter="url(#softGlow)">x</text>
+  <text x="968" y="632" font-size="26" font-style="italic" fill="#04ECF6" filter="url(#softGlow)">y</text>
+  <text x="852" y="546" font-size="15" letter-spacing="2.5" fill="#04ECF6" fill-opacity="0.8">EMERGENT</text>
+
+  <!-- the sacrificed subspace: both velocities dropped whole, decaying to nothing -->
+  <path d="M 610 610 C 686 636, 748 672, 796 716" fill="none" stroke="#E8943A"
+        stroke-opacity="0.5" stroke-width="2.2" stroke-dasharray="3 9"
+        stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M 610 615 C 692 648, 762 694, 812 742" fill="none" stroke="#E8943A"
+        stroke-opacity="0.38" stroke-width="2.0" stroke-dasharray="3 11"
+        stroke-linecap="round" filter="url(#softGlow)"/>
+  <g fill="#E8943A" stroke="none">
+    <circle cx="806" cy="730" r="2.0" fill-opacity="0.16"/>
+    <circle cx="822" cy="752" r="1.7" fill-opacity="0.12"/>
+    <circle cx="840" cy="772" r="1.5" fill-opacity="0.09"/>
+    <circle cx="856" cy="792" r="1.3" fill-opacity="0.06"/>
+    <circle cx="872" cy="812" r="1.1" fill-opacity="0.04"/>
+  </g>
+  <text x="642" y="640" font-size="24" font-style="italic" fill="#E8943A" fill-opacity="0.7">v</text>
+  <text x="784" y="838" font-size="17" letter-spacing="2.5" fill="#7E8A9A">STATIC</text>
+  <text x="784" y="862" font-size="17" letter-spacing="2.5" fill="#7E8A9A">OBSERVER</text>
+
+  <!-- the throat: commitment node + particle-cluster signature -->
+  <circle cx="600" cy="600" r="6" fill="#04ECF6" filter="url(#cyanGlow)"/>
+  <g filter="url(#softGlow)">
+    <circle cx="582" cy="584" r="2.4" fill="#E8943A"/>
+    <circle cx="620" cy="588" r="2.1" fill="#04ECF6"/>
+    <circle cx="588" cy="616" r="1.9" fill="#04ECF6"/>
+    <circle cx="616" cy="614" r="2.2" fill="#E8943A"/>
+    <circle cx="572" cy="602" r="1.6" fill="#04ECF6"/>
+    <circle cx="628" cy="600" r="1.5" fill="#E8943A"/>
+    <circle cx="600" cy="624" r="1.5" fill="#E8943A"/>
+    <circle cx="600" cy="576" r="1.4" fill="#2FD4E0"/>
+  </g>
+</svg>

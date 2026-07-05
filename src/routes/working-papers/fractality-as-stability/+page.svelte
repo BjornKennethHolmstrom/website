@@ -137,6 +137,7 @@
       tag: 'Working Paper · Series II',
       seriesNote: 'This is the second paper in the Governance as Engineering series.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/observability-democracy-connection',  label: 'Paper III: The Observability-Democracy Connection →' },
         { href: '/working-papers/requisite-variety-and-the-commons',   label: 'Paper IV: Requisite Variety and the Commons →' },
@@ -169,6 +170,7 @@
       tag: 'Arbetsdokument · Serie II',
       seriesNote: 'Detta är den andra rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
         { href: '/working-papers/requisite-variety-and-the-commons',  label: 'Rapport IV: Nödvändig variation och allmänningen →' },

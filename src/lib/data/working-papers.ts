@@ -28,6 +28,37 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'belowTheFactorization',
+   key: 'belowTheFactorization',
+   category: 'governance',
+   tags: [
+     'Foundations',
+     'Factorization',
+     'Bounded Prediction',
+     'Emergence',
+     'Structured Blindness',
+     'Non-Uniqueness',
+     'Variety Gap',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '27',
+   readTime: {
+     en: '35 min',
+     sv: '35 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/below-the-factorization.pdf`,
+     sv: `${localBase}/below-the-factorization-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/below-the-factorization-cover.png',
+   readOnlinePath: '/working-papers/below-the-factorization',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-05'
+ },
+ {
    id: 'boundaryInstability',
    key: 'boundaryInstability',
    category: 'governance',

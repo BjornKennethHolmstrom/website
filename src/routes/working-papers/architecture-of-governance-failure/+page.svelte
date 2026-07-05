@@ -53,6 +53,7 @@
       seriesNote:
         'This paper synthesises core findings from the Governance as Engineering series into a compact, self‑contained argument accessible to policymakers, institutional designers, and general readers.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator', label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability', label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection', label: 'Paper III: The Observability‑Democracy Connection →' },

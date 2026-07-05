@@ -1,4 +1,5 @@
 export const papersEn = {
+  0:    { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization' },
   I:    { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator' },
   II:   { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability' },
   III:  { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability-Democracy Connection' },
@@ -20,6 +21,7 @@ export const papersEn = {
 };
 
 export const papersSv = {
+  0:    { href: '/working-papers/below-the-factorization',                 label: 'Artikel 0: Under faktoriseringen' },
   I:    { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn' },
   II:   { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet' },
   III:  { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets-demokratikopplingen' },

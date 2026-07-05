@@ -1,0 +1,29 @@
+## 5. Pragmatisk preferens utan ontologisk preferens
+
+### 5.1 Spänningen, och dess upplösning
+
+Avsnitt 3 och 4 tycks tillsammans peka åt motsatta håll. Avsnitt 3 visade att vissa faktoriseringar är objektivt sämre: den statiska observatören vid $h=2$, blind för hastighet, kommer att misslyckas i samma stund som prediktion kräver att man vet vart saker är på väg, och ingen perspektivförändring reparerar det. Avsnitt 4 visade att faktorisering är icke-unik, det interna språket fritt. Om båda håller, i vilken mening är då en faktorisering bättre än en annan?
+
+Upplösningen är en distinktion som vetenskapsfilosofin i stort sett har avgjort, överförd till denna miljö. Separera två betydelser av en "föredragen" faktorisering:
+
+- **Ontologisk preferens**: verkligheten besitter en sann uppdelning, oberoende av varje observatör — ett enda korrekt sätt att stycka världen i objekt och orsaker. Detta är det metafysiska påståendet, och det är det man ska förkasta. Världen kommer inte företiketterad; till och med fundamental fysik erbjuder ekvivalenta formuleringar (Newtonsk, Lagrangisk, Hamiltonsk) av samma dynamik.
+
+- **Pragmatisk preferens**: givet en klass av system med särskilda sensorer, horisonter och mål, är vissa faktoriseringar objektivt bättre — mer robusta, mer sampleffektiva, mer överförbara under distributionsskiften. Detta är ett ingenjörsmässigt påstående, och det är sant.
+
+De två är förenliga eftersom pragmatisk preferens inte väljer ut en unik faktorisering. Den väljer ut en **privilegierad ekvivalensklass**. Verkligheten föredrar inte $(x, y, v_x, v_y)$ framför $(x+y,\ x-y,\ v_x+v_y,\ v_x-v_y)$ — båda bevarar samma interventionsrelevanta information, och varje system med prediktionsmålet kommer att klara sig lika bra i endera. Vad verkligheten privilegierar är den *klass* av faktoriseringar som bevarar de kausala variablerna, framför den klass som inte gör det. Inom den privilegierade klassen förblir det interna språket fritt; mellan klasserna diskriminerar världen skarpt. Faktoriseringen vid $h=2$ är sämre inte för att den valde fel koordinater utan för att den föll ut ur den privilegierade klassen helt och hållet — den tappade ett kausalt underrum, och ingen koordinattransform inuti dess utarmade representation kan återvinna vad kapaciteten aldrig kodade in.
+
+### 5.2 Kausal invarians som substitut för objektivitet
+
+Det som gör en klass privilegierad är att dess faktoriseringar följer miljöns *kausala* struktur — de relationer som håller över interventioner och distributionsskiften, inte bara över träningsdistributionen. Detta är det interventionistiska kausalitetsbegreppet som utför det arbete som metafysisk objektivitet inte kan. Den studsande prickens framtida position beror kausalt på dess nuvarande position och hastighet; en faktorisering som kodar in dessa variabler generaliserar till regimen den aldrig tränades på, medan en som förlitar sig på ytkorrelationer i de specifika träningspixlarna inte gör det. Vi kan inte ha observatörsoberoende objektivitet, men vi kan ha kausal invarians, och kausal invarians räcker för att göra "bättre" och "sämre" icke-godtyckliga utan att göra någon enskild faktorisering unikt korrekt.
+
+Den linje artikeln förbinder sig till är alltså denna: **det må inte finnas något unikt korrekt koordinatsystem, men det finns bättre och sämre invarianter.** Icke-unikhet är verklig och är inte relativism, eftersom friheten är frihet *inom* en klass som verkligheten begränsar, inte frihet att stycka världen hur man vill.
+
+### 5.3 Institutioner som förhandlare inom en begränsad klass
+
+Det är här grundvalarna möter serien. Om verkligheten inte har någon unik faktorisering men har privilegierade ekvivalensklasser, då är en institution varken en spegel som upptäcker världens sanna struktur eller en fri konvention som inte är ansvarig inför något. Den är en **förhandlare av ett delat koordinatsystem från inom en privilegierad klass** — fri i sitt val av internt språk, bunden av kravet att den klass den arbetar i fortfarande spårar de kausala variabler dess handlingar beror på.
+
+Tre läsningar som den senare serien gör faller direkt ur detta, och anges här endast tillräckligt långt för att visa grunden; §6 samlar den fullständiga uppsättningen. Certifiering (Artikel XVII) är lämplighetsprövning, inte sanningsprövning: den frågar om en faktorisering fortfarande spårar de relevanta kausala variablerna tillräckligt väl för att stödja livskraftig handling, en pragmatisk och falsifierbar fråga, inte om den är den sanna. Distinktionen mellan mått och substantiell (Artikel X) är precis distinktionen inom-klass kontra mellan-klass från §4.4, och observatörsoberoende är skyddet mot att missta den ena för den andra. Och signalerna om att en faktorisering har fallit ur sin privilegierade klass — att miljön har skiftat eller en ny kausal variabel har blivit relevant — är exakt vad serien på andra ställen kallar källtermer (Artikel XVI): de fel som tvingar fram en omfaktorisering, inte mot en sannare sanning utan mot ett verktyg som åter är adekvat för sin värld.
+
+Det finns en försiktighetsåtgärd som det explorativa arbetet insisterade på och som denna artikel antar: *ekvivalent* måste alltid indexeras till ett kriterium. Två institutionella faktoriseringar som producerar jämförbar makrostabilitet kan fördela röst, risk, tolkningsauktoritet, anpassningsbörda och felsynlighet mycket olika, och att kalla dem ekvivalenta för att de är ekvivalenta *med avseende på stabilitet* döljer exakt dessa skillnader. Den starkaste versionen av icke-unikhet är inte "många kartor fungerar, så välj en"; den är att valet bland beteendemässigt ekvivalenta kartor avgör vilka förluster som görs osynliga av den valda kartan. Det är inte en relativistisk slutsats. Det är motsatsen — ett insisterande på att kriteriet namnges, eftersom världens begränsning vid gränsen underbestämmer det och något måste bära tyngden av resten.
+
+---

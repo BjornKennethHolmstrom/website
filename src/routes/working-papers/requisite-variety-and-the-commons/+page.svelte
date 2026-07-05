@@ -61,6 +61,7 @@
       tag: 'Working Paper · Series IV',
       seriesNote: 'This is the fourth paper in the Governance as Engineering series.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',      label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',             label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',  label: 'Paper III: The Observability-Democracy Connection →' },
@@ -93,6 +94,7 @@
       tag: 'Arbetsdokument · Serie IV',
       seriesNote: 'Detta är den fjärde rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
+        { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',     label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',            label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection', label: 'Rapport III: Observerbarhets-demokratikopplingen →' },
