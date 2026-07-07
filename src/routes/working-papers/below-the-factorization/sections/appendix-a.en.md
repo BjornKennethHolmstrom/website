@@ -1,6 +1,6 @@
 ## Appendix A — Model, training, and outputs
 
-**Conventions.** Tiers follow the series: **[R]** rigorous, **[IP]** in principle, **[H]** heuristic; "**[R within the model]**" marks results exact for the stated model with no claim beyond it. The two registered runs are `01-4-multiseed_factorization.py` (seeds 0–19, hidden sizes {2, 4, 8, 16}) and `01-7-confirmation_run.py` (seeds 20–39, hidden sizes {2, 3}); their preregistrations, with committed thresholds and nulls, are `01-3-multiseed-preregistration.md` and `01-6-confirmation-preregistration.md`. Every number quoted below is printed by those scripts' analysis blocks into `multiseed_summary.txt` and `confirmation_summary.txt`.
+**Conventions.** Tiers follow the series: **[R]** rigorous, **[IP]** in principle, **[H]** heuristic; "**[R within the model]**" marks results exact for the stated model with no claim beyond it. The two registered runs are `paper_0-01-4-multiseed_factorization.py` (seeds 0–19, hidden sizes {2, 4, 8, 16}) and `paper_0-01-7-confirmation_run.py` (seeds 20–39, hidden sizes {2, 3}); their preregistrations, with committed thresholds and nulls, are `paper_0-01-3-multiseed-preregistration.md` and `paper_0-01-6-confirmation-preregistration.md`. Every number quoted below is printed by those scripts' analysis blocks into `multiseed_summary.txt` and `confirmation_summary.txt`.
 
 ### A.1 Environment
 

@@ -1,6 +1,6 @@
 ## Appendix A — Modell, träning och utdata
 
-**Konventioner.** Nivåerna följer serien: **[R]** rigorös, **[IP]** i princip, **[H]** heuristisk; "**[R inom modellen]**" markerar resultat som är exakta för den angivna modellen utan anspråk bortom den. De två registrerade körningarna är `01-4-multiseed_factorization.py` (frön 0–19, dolda storlekar {2, 4, 8, 16}) och `01-7-confirmation_run.py` (frön 20–39, dolda storlekar {2, 3}); deras förhandsregistreringar, med fastställda tröskelvärden och nollhypoteser, är `01-3-multiseed-preregistration.md` och `01-6-confirmation-preregistration.md`. Varje siffra som citeras nedan skrivs ut av dessa skripts analysblock i `multiseed_summary.txt` och `confirmation_summary.txt`.
+**Konventioner.** Nivåerna följer serien: **[R]** rigorös, **[IP]** i princip, **[H]** heuristisk; "**[R inom modellen]**" markerar resultat som är exakta för den angivna modellen utan anspråk bortom den. De två registrerade körningarna är `paper_0-01-4-multiseed_factorization.py` (frön 0–19, dolda storlekar {2, 4, 8, 16}) och `paper_0-01-7-confirmation_run.py` (frön 20–39, dolda storlekar {2, 3}); deras förhandsregistreringar, med fastställda tröskelvärden och nollhypoteser, är `paper_0-01-3-multiseed-preregistration.md` och `paper_0-01-6-confirmation-preregistration.md`. Varje siffra som citeras nedan skrivs ut av dessa skripts analysblock i `multiseed_summary.txt` och `confirmation_summary.txt`.
 
 ### A.1 Miljö
 
