@@ -71,6 +71,7 @@
         { href: '/working-papers/why-diversity-resists-formalization', label: 'Paper XVI: Why Diversity Resists Formalization →' },
         { href: '/working-papers/certification-floor', label: 'Paper XVII: The Certification Floor →' },
         { href: '/working-papers/boundary-instability', label: 'Paper XVIII: The Boundary Instability Principle →' },
+        { href: '/working-papers/governors-sentinels-bridges', label: 'Paper XIX: Governors, Sentinels, and Bridges →' },
       ],
       contextTitle: 'Context',
       contextIntro:

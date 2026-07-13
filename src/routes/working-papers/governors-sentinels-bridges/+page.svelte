@@ -8,35 +8,35 @@
 
   // --- 1. IMPORT ALL SECTIONS AS RAW TEXT ---
   // English
-  import AbstractEnRaw    from './sections/00-abstract.en.md?raw';
-  import Section01EnRaw   from './sections/01-section-01.en.md?raw';
-  import Section02EnRaw   from './sections/02-section-02.en.md?raw';
-  import Section03EnRaw   from './sections/03-section-03.en.md?raw';
-  import Section04EnRaw   from './sections/04-section-04.en.md?raw';
-  import Section05EnRaw   from './sections/05-section-05.en.md?raw';
-  import Section06EnRaw   from './sections/06-section-06.en.md?raw';
-  import Section07EnRaw   from './sections/07-section-07.en.md?raw';
-  import Section08EnRaw   from './sections/08-section-08.en.md?raw';
-  import Section09EnRaw   from './sections/09-section-09.en.md?raw';
-  import AppendixAEnRaw   from './sections/appendix-a.en.md?raw';
+  import AbstractEnRaw   from './sections/abstract.en.md?raw';
+  import Section01EnRaw  from './sections/section-01.en.md?raw';
+  import Section02EnRaw  from './sections/section-02.en.md?raw';
+  import Section03EnRaw  from './sections/section-03.en.md?raw';
+  import Section04EnRaw  from './sections/section-04.en.md?raw';
+  import Section05EnRaw  from './sections/section-05.en.md?raw';
+  import Section06EnRaw  from './sections/section-06.en.md?raw';
+  import Section07EnRaw  from './sections/section-07.en.md?raw';
+  import Section08EnRaw  from './sections/section-08.en.md?raw';
+  import Section09EnRaw  from './sections/section-09.en.md?raw';
+  import AppendixAEnRaw  from './sections/appendix-a.en.md?raw';
 
   // Swedish
-  import AbstractSvRaw    from './sections/00-abstract.sv.md?raw';
-  import Section01SvRaw   from './sections/01-section-01.sv.md?raw';
-  import Section02SvRaw   from './sections/02-section-02.sv.md?raw';
-  import Section03SvRaw   from './sections/03-section-03.sv.md?raw';
-  import Section04SvRaw   from './sections/04-section-04.sv.md?raw';
-  import Section05SvRaw   from './sections/05-section-05.sv.md?raw';
-  import Section06SvRaw   from './sections/06-section-06.sv.md?raw';
-  import Section07SvRaw   from './sections/07-section-07.sv.md?raw';
-  import Section08SvRaw   from './sections/08-section-08.sv.md?raw';
-  import Section09SvRaw   from './sections/09-section-09.sv.md?raw';
-  import AppendixASvRaw   from './sections/appendix-a.sv.md?raw';
+  import AbstractSvRaw   from './sections/abstract.sv.md?raw';
+  import Section01SvRaw  from './sections/section-01.sv.md?raw';
+  import Section02SvRaw  from './sections/section-02.sv.md?raw';
+  import Section03SvRaw  from './sections/section-03.sv.md?raw';
+  import Section04SvRaw  from './sections/section-04.sv.md?raw';
+  import Section05SvRaw  from './sections/section-05.sv.md?raw';
+  import Section06SvRaw  from './sections/section-06.sv.md?raw';
+  import Section07SvRaw  from './sections/section-07.sv.md?raw';
+  import Section08SvRaw  from './sections/section-08.sv.md?raw';
+  import Section09SvRaw  from './sections/section-09.sv.md?raw';
+  import AppendixASvRaw  from './sections/appendix-a.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
   const rawText: Record<string, Record<string, string>> = {
     en: {
-      'abstract':     AbstractEnRaw,
+      'abstract':    AbstractEnRaw,
       'section-01': Section01EnRaw, 'section-02': Section02EnRaw,
       'section-03': Section03EnRaw, 'section-04': Section04EnRaw,
       'section-05': Section05EnRaw, 'section-06': Section06EnRaw,
@@ -45,7 +45,7 @@
       'appendix-a': AppendixAEnRaw,
     },
     sv: {
-      'abstract':     AbstractSvRaw,
+      'abstract':    AbstractSvRaw,
       'section-01': Section01SvRaw, 'section-02': Section02SvRaw,
       'section-03': Section03SvRaw, 'section-04': Section04SvRaw,
       'section-05': Section05SvRaw, 'section-06': Section06SvRaw,
@@ -57,26 +57,27 @@
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                          titleSv: 'Sammanfattning' },
-    { id: 'section-01',  titleEn: '1. Introduction: From Fixed Boundaries to Reflexive Decompositions', titleSv: '1. Introduktion: Från fasta gränser till reflexiva dekompositioner' },
-    { id: 'section-02',  titleEn: '2. The Non‑Factorizability Theorem',                                 titleSv: '2. Icke‑faktoriserbarhetsteoremet' },
-    { id: 'section-03',  titleEn: '3. The Reflexive Boundary Cycle: A Minimal Model',                   titleSv: '3. Den reflexiva gränscykeln: En minimal modell' },
-    { id: 'section-04',  titleEn: '4. The Critical Learning Bandwidth',                                 titleSv: '4. Den kritiska inlärningsbandbredden' },
-    { id: 'section-05',  titleEn: '5. The Boundary Dissolution Index, Revised by Its Own Test',         titleSv: '5. Gränsupplösningsindexet, reviderat genom sitt eget test' },
-    { id: 'section-06',  titleEn: '6. Design Principles for Meta‑Stable Governance',                    titleSv: '6. Designprinciper för metastabil styrning' },
-    { id: 'section-07',  titleEn: '7. Implications and Structural Integration',                         titleSv: '7. Implikationer och strukturell integration' },
-    { id: 'section-08',  titleEn: '8. Conclusion: The Meta‑Stable Governance Attractor',                titleSv: '8. Slutsats: Den metastabila styrningsattraktorn' },
-    { id: 'section-09',  titleEn: '9. What This Paper Does Not Show',                                   titleSv: '9. Vad denna rapport inte visar' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Formal Development and Simulation',                      titleSv: 'Appendix A: Formell utveckling och simulering' },
+    { id: 'abstract',    titleEn: 'Abstract',                                                           titleSv: 'Sammanfattning' },
+    { id: 'section-01',  titleEn: '1. The architecture question',                                       titleSv: '1. Arkitekturfrågan' },
+    { id: 'section-02',  titleEn: '2. Phenomenon, not identity',                                        titleSv: '2. Fenomen, inte identitet' },
+    { id: 'section-03',  titleEn: '3. Adaptive pluralism approximates the oracle',                      titleSv: '3. Adaptiv pluralism approximerar oraklet' },
+    { id: 'section-04',  titleEn: '4. Governor and sentinel are different roles',                       titleSv: '4. Guvernör och vaktpost är olika roller' },
+    { id: 'section-05',  titleEn: '5. Portfolio construction: the effect is real but weak',             titleSv: '5. Portföljkonstruktion: effekten är verklig men svag' },
+    { id: 'section-06',  titleEn: '6. Governor and bridge are different roles',                         titleSv: '6. Guvernör och bro är olika roller' },
+    { id: 'section-07',  titleEn: '7. What this re‑grounds, and what it opens',                         titleSv: '7. Vad detta återgrundar, och vad det öppnar' },
+    { id: 'section-08',  titleEn: '8. What this paper does not show',                                   titleSv: '8. Vad denna artikel inte visar' },
+    { id: 'section-09',  titleEn: '9. Method and confidence',                                           titleSv: '9. Metod och konfidens' },
+    { id: 'appendix-a',  titleEn: 'Appendix A: Model zoo, stream, and role measures',                   titleSv: 'Appendix A: Modellzoo, ström och rollmått' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XVIII',
-      seriesNote: 'This is the eighteenth paper in the Governance as Engineering series. It returns the results of Papers XVI and XVII to an engineering register.',
+      tag: 'Working Paper · Series XIX',
+      seriesNote: 'This is the nineteenth paper in the Governance as Engineering series. It asks what winner‑take‑all selection leaves on the table.',
+      seriesLinksShow: 'Show paper links',
+      seriesLinksHide: 'Hide paper links',
       seriesLinks: [
-        { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Paper II: Fractality as Stability →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Paper III: The Observability‑Democracy Connection →' },
@@ -94,11 +95,11 @@
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
         { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
         { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor →' },
-        { href: '/working-papers/governors-sentinels-bridges', label: 'Paper XIX: Governors, Sentinels, and Bridges →' },
+        { href: '/working-papers/boundary-instability',                    label: 'Paper XVIII: The Boundary Instability Principle →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Paper XII modeled the gap between a controller\'s jurisdiction and the world as an M–Δ feedback interconnection, holding the coupling structure exogenous. This paper removes that assumption. When governance learning acts through channels that also carry cross‑boundary influence, decomposability becomes reflexive — coupling is policy‑dependent, and the boundary that was correct at design time does not stay correct.',
-      contextOutro: 'The paper proves a Non‑Factorizability Theorem, exhibits a reflexive boundary cycle (calm → hidden accumulation → collapse → miscalibrated recovery), derives a Critical Learning Bandwidth whose two bounds pinch endogenously, and documents a failing early‑warning index. The central governance challenge is reframed: not choosing the right boundary, but maintaining a decomposability margin under the drift that learning induces.',
+      contextIntro: 'Paper 0 showed that the best factorization is regime‑dependent. An adaptive institution can preserve several and govern through whichever currently performs best — a winner‑take‑all selection over a preserved portfolio. This paper asks what that selection leaves on the table.',
+      contextOutro: 'Using a model zoo of seven predictive factorizations evaluated across twenty independently trained ecologies, three roles are distinguished: the governor that acts well, the sentinel that warns early, and the bridge that keeps the ecology connected. They dissociate — the best governor is generally not the best sentinel or bridge — and winner‑take‑all selection, which rewards governing skill alone, sheds the other two as a side effect.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -107,10 +108,11 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XVIII',
-      seriesNote: 'Detta är den artonde rapporten i serien Styrning som ingenjörskonst. Den för tillbaka resultaten från Rapport XVI och XVII till ett ingenjörsregister.',
+      tag: 'Arbetsdokument · Serie XIX',
+      seriesNote: 'Detta är den nittonde rapporten i serien Styrning som ingenjörskonst. Den frågar vad vinnaren‑tar‑allt‑urval lämnar på bordet.',
+      seriesLinksShow: 'Visa papperslänkar',
+      seriesLinksHide: 'Dölj papperslänkar',
       seriesLinks: [
-        { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
         { href: '/working-papers/fractality-as-stability',                 label: 'Rapport II: Fraktalitet som stabilitet →' },
         { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets‑demokratikopplingen →' },
@@ -128,11 +130,11 @@
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
         { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
         { href: '/working-papers/certification-floor',                    label: 'Rapport XVII: Certifieringsgolvet →' },
-        { href: '/working-papers/governors-sentinels-bridges', label: 'Rapport XIX: Guvernörer, vaktposter och broar →' },
+        { href: '/working-papers/boundary-instability',                    label: 'Rapport XVIII: Principen om gränsinstabilitet →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Rapport XII modellerade gapet mellan en kontrollants jurisdiktion och världen som en M–Δ‑återkopplingssammankoppling, med kopplingsstrukturen exogent hållen. Denna rapport tar bort det antagandet. När styrningens lärande verkar genom kanaler som också bär gränsöverskridande inflytande blir nedbrytbarheten reflexiv — koppling är policyberoende, och den gräns som var korrekt vid konstruktionstillfället förblir inte korrekt.',
-      contextOutro: 'Rapporten bevisar ett icke‑faktoriserbarhetsteorem, uppvisar en reflexiv gränscykel (lugn → dold ackumulation → kollaps → felkalibrerad återhämtning), härleder en kritisk inlärningsbandbredd vars två gränser kläms endogent, och dokumenterar ett tidigt varningsindex som misslyckas. Den centrala styrningsutmaningen omformuleras: inte att välja rätt gräns, utan att upprätthålla en nedbrytbarhetsmarginal under den drift som lärande inducerar.',
+      contextIntro: 'Artikel 0 visade att den bästa faktoriseringen är regimberoende. En adaptiv institution kan bevara flera och styra genom den som för tillfället presterar bäst — ett vinnaren‑tar‑allt‑urval över en bevarad portfölj. Denna artikel frågar vad det urvalet lämnar på bordet.',
+      contextOutro: 'Med en modellzoo av sju prediktiva faktoriseringar utvärderade över tjugo oberoende tränade ekologier urskiljs tre roller: guvernören som agerar väl, vaktposten som varnar tidigt och bron som håller ekologin sammankopplad. De dissocierar — den bästa guvernören är i allmänhet inte den bästa vaktposten eller bron — och vinnaren‑tar‑allt‑urval, som bara belönar styrningsförmåga, tappar de andra två som en sidoeffekt.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -144,14 +146,14 @@
 
   const metadata = {
     en: {
-      title: 'The Boundary Instability Principle',
-      subtitle: 'Reflexive governance and the endogenous drift of decomposability',
-      description: 'Extends Paper XII by removing the exogeneity assumption on coupling structure. Proves a Non‑Factorizability Theorem, exhibits a reflexive boundary cycle, and derives a Critical Learning Bandwidth. Paper XVIII in the Governance as Engineering series.',
+      title: 'Governors, Sentinels, and Bridges',
+      subtitle: 'The institutional value that winner‑take‑all selection does not reward',
+      description: 'Shows that a factorization can govern, warn, or connect — and these roles dissociate. Winner‑take‑all selection rewards only governing skill, shedding early‑warning capacity and bridges as a side effect. Paper XIX in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Principen om gränsinstabilitet',
-      subtitle: 'Reflexiv styrning och den endogena driften av nedbrytbarhet',
-      description: 'Utvidgar Rapport XII genom att ta bort exogenitetsantagandet om kopplingsstruktur. Bevisar ett icke‑faktoriserbarhetsteorem, uppvisar en reflexiv gränscykel och härleder en kritisk inlärningsbandbredd. Rapport XVIII i serien Styrning som ingenjörskonst.',
+      title: 'Guvernörer, vaktposter och broar',
+      subtitle: 'Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar',
+      description: 'Visar att en faktorisering kan styra, varna eller förbinda — och att dessa roller dissocierar. Vinnaren‑tar‑allt‑urval belönar bara styrningsförmåga, och tappar tidig varningskapacitet och broar som en sidoeffekt. Rapport XIX i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -160,7 +162,8 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'boundary-instability-sv.pdf' : 'boundary-instability.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'governors-sentinels-bridges-sv.pdf' : 'governors-sentinels-bridges.pdf');
+  let seriesLinksOpen = $state(false);
 
   function sectionTitle(section: typeof contentMap[0]) {
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
@@ -177,7 +180,7 @@
     content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
-        const rendered = katex.renderToString(tex, { displayMode: true,  throwOnError: false, output: 'html' });
+        const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
         blocks.push(rendered);
         return `%%MATH${blocks.length - 1}%%`;
       } catch (e) {
@@ -191,7 +194,7 @@
     content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
       const tex = (tex1 ?? tex2 ?? '').trim();
       try {
-        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false, output: 'html' });
+        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
         blocks.push(rendered);
         return `%%MATH${blocks.length - 1}%%`;
       } catch (e) {
@@ -214,14 +217,12 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Principen om gränsinstabilitet: Reflexiv styrning och den endogena driften av nedbrytbarhet. Styrning som ingenjörskonst, Rapport XVIII.`
-      : `Holmström, B. K. (2026). The Boundary Instability Principle: Reflexive governance and the endogenous drift of decomposability. Governance as Engineering, Paper XVIII.`;
+      ? `Holmström, B. K. (2026). Guvernörer, vaktposter och broar: Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar. Styrning som ingenjörskonst, Rapport XIX.`
+      : `Holmström, B. K. (2026). Governors, Sentinels, and Bridges: The institutional value that winner‑take‑all selection does not reward. Governance as Engineering, Paper XIX.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
   }
-
-  let seriesLinksOpen = $state(false);
 </script>
 
 <SEO
@@ -241,7 +242,7 @@
       </a>
     </div>
 
-    <!-- Series note + collapsible links in one box -->
+    <!-- Series note + collapsible links -->
     <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
       {t.seriesNote}
 
@@ -251,7 +252,7 @@
         style="color: var(--color-page-accent);"
       >
         <span>{seriesLinksOpen ? '▾' : '▸'}</span>
-        <span>{seriesLinksOpen ? (currentLang === 'sv' ? 'Dölj papperslänkar' : 'Hide paper links') : (currentLang === 'sv' ? 'Visa papperslänkar' : 'Show paper links')}</span>
+        <span>{seriesLinksOpen ? t.seriesLinksHide : t.seriesLinksShow}</span>
       </button>
 
       {#if seriesLinksOpen}

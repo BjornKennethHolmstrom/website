@@ -28,6 +28,38 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'governorsSentinelsBridges',
+   key: 'governorsSentinelsBridges',
+   category: 'governance',
+   tags: [
+     'Factorization Pluralism',
+     'Governor',
+     'Sentinel',
+     'Bridge',
+     'Role Dissociation',
+     'Adaptive Audit',
+     'Source Terms',
+     'Certification',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '20',
+   readTime: {
+     en: '25 min',
+     sv: '25 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/governors-sentinels-bridges.pdf`,
+     sv: `${localBase}/governors-sentinels-bridges-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/governors-sentinels-bridges-cover.png',
+   readOnlinePath: '/working-papers/governors-sentinels-bridges',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-13'
+ },
+ {
    id: 'belowTheFactorization',
    key: 'belowTheFactorization',
    category: 'governance',

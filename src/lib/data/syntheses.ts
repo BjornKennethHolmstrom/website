@@ -18,6 +18,7 @@ export const papersEn = {
   XVI:  { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization' },
   XVII: { href: '/working-papers/certification-floor',                     label: 'Paper XVII: The Certification Floor' },
   XVIII: { href: '/working-papers/boundary-instability',                   label: 'Paper XVIII: The Boundary Instability Principle' },
+  XIX: { href: '/working-papers/governors-sentinels-bridges',              label: 'Paper XIX: Governors, Sentinels, and Bridges' },
 };
 
 export const papersSv = {
@@ -40,4 +41,5 @@ export const papersSv = {
   XVI:  { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering' },
   XVII: { href: '/working-papers/certification-floor',                     label: 'Rapport XVII: Certifieringsgolvet' },
   XVIII: { href: '/working-papers/boundary-instability',                   label: 'Rapport XVIII: Principen om gränsinstabilitet' },
+  XIX: { href: '/working-papers/governors-sentinels-bridges',              label: 'Rapport XIX: Guvernörer, vaktposter och broar' },
 };

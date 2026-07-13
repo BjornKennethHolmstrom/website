@@ -23,7 +23,8 @@
   { key: 'geSeriesPaperXV', url: '/working-papers/adaptation-bottleneck', coverImage: '/working-papers/images/adaptation-bottleneck-cover.png' },
   { key: 'geSeriesPaperXVI', url: '/working-papers/why-diversity-resists-formalization', coverImage: '/working-papers/images/why-diversity-resists-formalization-cover.png' },
   { key: 'geSeriesPaperXVII', url: '/working-papers/certification-floor', coverImage: '/working-papers/images/certification-floor-cover.png' },
-  { key: 'geSeriesPaperXVIII', url: '/working-papers/boundary-instability', coverImage: '/working-papers/images/boundary-instability-cover.png' }
+  { key: 'geSeriesPaperXVIII', url: '/working-papers/boundary-instability', coverImage: '/working-papers/images/boundary-instability-cover.png' },
+  { key: 'geSeriesPaperXIX', url: '/working-papers/governors-sentinels-bridges', coverImage: '/working-papers/images/governors-sentinels-bridges-cover.png' }
  ];
 
 	// Definiera vår projektdata.

@@ -177,6 +177,10 @@ export const coreTranslations = {
     geSeriesPaperXVIII: {
       title: 'XVIII: The Boundary Instability Principle',
       desc:  'Shows that when governance learning acts through cross‑boundary channels, the boundary itself becomes reflexive — decomposability decays endogenously. Derives a non‑factorizability theorem, a critical learning bandwidth that closes by itself, and a failing early‑warning index.',
+    },
+    geSeriesPaperXIX: {
+      title: 'XIX: Governors, Sentinels, and Bridges',
+      desc:  'Reveals that a factorization can govern, warn, or connect — and these roles dissociate. Winner‑take‑all selection rewards only governing skill, silently shedding early‑warning capacity and the bridges that hold the ecology together.',
     }
   },
 
@@ -564,6 +568,10 @@ export const coreTranslations = {
     geSeriesPaperXVIII: {
       title: 'XVIII: Principen om gränsinstabilitet',
       desc:  'Visar att när styrningens lärande verkar genom gränsöverskridande kanaler blir gränsen själv reflexiv — nedbrytbarhet avtar endogent. Härleder ett icke‑faktoriserbarhetsteorem, en kritisk inlärningsbandbredd som stängs av sig själv och ett tidigt varningsindex som misslyckas.',
+    },
+    geSeriesPaperXIX: {
+      title: 'XIX: Guvernörer, vaktposter och broar',
+      desc:  'Visar att en faktorisering kan styra, varna eller förbinda — och att dessa roller dissocierar. Vinnaren‑tar‑allt‑urval belönar bara styrningsförmåga, och tappar i tysthet tidig varningskapacitet och broarna som håller ihop ekologin.',
     }
   },
 

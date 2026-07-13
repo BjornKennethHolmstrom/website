@@ -132,6 +132,12 @@ export const workingpapersTranslations = {
      description:
        'Every paper in the series begins with a factorization already in place — an observation channel, a choice of which variables exist for the system at all. This paper asks where that channel comes from. It argues that factorization emerges from bounded representational capacity plus a temporal‑prediction objective, with no action or viability pressure required. A minimal model exhibits emergence, structured blindness, and non‑unique, symmetry‑broken selection across forty preregistered seeds. The foundations paper of the Governance as Engineering series.',
    },
+   governorsSentinelsBridges: {
+     title: 'Governors, Sentinels, and Bridges',
+     subtitle: 'The institutional value that winner‑take‑all selection does not reward',
+     description:
+       'Shows that a factorization can carry three functionally distinct kinds of value — governing well, warning early, or holding the ecology together — and that these dissociate: the one that governs best is generally not the one that warns best or connects best. Winner‑take‑all selection rewards only the first. Demonstrated across twenty independently retrained model ecologies. Paper XIX in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -344,6 +350,12 @@ export const workingpapersTranslations = {
      subtitle: 'Begränsad prediktion och observationskanalens ursprung',
      description:
        'Varje artikel i serien börjar med en faktorisering redan på plats — en observationskanal, ett val av vilka variabler som överhuvudtaget existerar för systemet. Denna artikel frågar var den kanalen kommer ifrån. Den argumenterar för att faktorisering uppstår ur begränsad representationskapacitet plus ett tidsprediktionsmål, utan krav på handling eller överlevnadstryck. En minimal modell uppvisar emergens, strukturerad blindhet och icke‑unikt, symmetribrutet urval över fyrtio förregistrerade frön. Grundartikeln i serien Styrning som ingenjörskonst.',
+   },
+   governorsSentinelsBridges: {
+     title: 'Guvernörer, vaktposter och broar',
+     subtitle: 'Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar',
+     description:
+       'Visar att en faktorisering kan bära tre funktionellt åtskilda sorters värde — att styra väl, varna tidigt eller hålla samman ekologin — och att dessa dissocierar: den som styr bäst är i allmänhet inte den som varnar bäst eller förbinder bäst. Vinnaren‑tar‑allt‑urval belönar endast den första. Demonstrerat över tjugo oberoende omskolade modellekologier. Rapport XIX i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {
