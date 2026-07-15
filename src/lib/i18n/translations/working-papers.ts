@@ -138,6 +138,12 @@ export const workingpapersTranslations = {
      description:
        'Shows that a factorization can carry three functionally distinct kinds of value — governing well, warning early, or holding the ecology together — and that these dissociate: the one that governs best is generally not the one that warns best or connects best. Winner‑take‑all selection rewards only the first. Demonstrated across twenty independently retrained model ecologies. Paper XIX in the Governance as Engineering series.',
    },
+   threeLawsFromOneBound: {
+     title: 'Three Laws from One Bound',
+     subtitle: 'Ashby, Goodhart, and certification cost as consequences of bounded representation',
+     description:
+       'Derives Ashby\'s law, Goodhart\'s law, and the monotone cost of certification from a single premise: a controller with a finite partition of its world. Ashby is a pigeonhole theorem, Goodhart is sharpened into an intervention‑set result with a registered demonstration, and certification cost is a non‑decreasing accounting quantity. The search for a stronger conservation law failed, and the failure is reported as part of the result. Paper XX in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -356,6 +362,12 @@ export const workingpapersTranslations = {
      subtitle: 'Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar',
      description:
        'Visar att en faktorisering kan bära tre funktionellt åtskilda sorters värde — att styra väl, varna tidigt eller hålla samman ekologin — och att dessa dissocierar: den som styr bäst är i allmänhet inte den som varnar bäst eller förbinder bäst. Vinnaren‑tar‑allt‑urval belönar endast den första. Demonstrerat över tjugo oberoende omskolade modellekologier. Rapport XIX i serien Styrning som ingenjörskonst.',
+   },
+   threeLawsFromOneBound: {
+     title: 'Tre lagar från en gräns',
+     subtitle: 'Ashby, Goodhart och certifieringskostnad som konsekvenser av begränsad representation',
+     description:
+       'Härleder Ashbys lag, Goodharts lag och den monotona certifieringskostnaden från en enda premiss: en kontrollant med en ändlig partition av sin värld. Ashby är ett duvslagsfacks­teorem, Goodhart skärps till ett interventionsmängdsresultat med en registrerad demonstration, och certifieringskostnaden är en icke‑avtagande redovisningsstorhet. Sökandet efter en starkare konserveringslag misslyckades, och misslyckandet rapporteras som en del av resultatet. Rapport XX i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

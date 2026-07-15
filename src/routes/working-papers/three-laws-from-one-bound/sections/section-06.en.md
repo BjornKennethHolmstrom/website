@@ -1,0 +1,11 @@
+## 6. Why one bound yields three laws
+
+The three derivations can now be seen as one. Each takes the same premise — a controller with finitely many internal states, one action per state — and views it under a different operation on the factorization.
+
+Ashby is the *static* face: the bound seen when the controller merely holds a factorization and must act through it at an instant. The constraint is on capacity — enough cells, carved at the right seams, to give distinct responses to conditions that demand them. Goodhart is the *optimization* face: the bound seen when the controller pushes to improve a measured projection of its target. The constraint is on which projections survive being pushed on — a proxy is safe only where its ordering refines the target's over the reachable set. Certification cost is the *dynamic* face: the bound seen when the controller must keep a factorization matched to a world whose task-quotient drifts. The constraint is that matching has a running cost that only accrues.
+
+The variety accounting of §5.3 is what ties the three together, because each is a statement about the same budget under a different question. Ashby asks whether the budget is large enough for the task now: $V_I + V_H + V_S + V_\epsilon \ge V_A$. Goodhart asks what happens when the covered part of the budget is optimized while an uncovered, reachable part remains: optimization finds the gap between what the proxy measures and what the target needs, and drives them apart. Certification cost asks what it takes to keep the budget matched to $V_A$ as $V_A$ moves: the price of detecting the drift and re-covering it, paid in increments that never refund. The static face says the budget must suffice; the optimization face says the covered budget cannot be pushed past what it faithfully represents; the dynamic face says keeping the budget matched is a cost that only grows.
+
+Stated this way, the three laws are not merely compatible — they are the same theorem asked three questions. What a controller can represent bounds what it can do (Ashby), what it can safely optimize (Goodhart), and what it must continually spend to stay adequate (certification). The economy the paper set out to buy is bought: the series need not assume three independent laws, only the one bound Paper 0 already established, and derive the rest.
+
+

@@ -1,0 +1,9 @@
+## 2. The single premise
+
+The premise is Paper 0's result, restated in the form the derivations need. A bounded controller cannot represent its world in full detail; it partitions the task-relevant world into a finite set of distinguishable internal states — a factorization — and its control policy maps each internal state to an action. Write $N$ for the number of distinguishable internal states. Two features of this setup carry the entire paper, and neither is an extra assumption: they are what "bounded representation" and "a control policy" already mean.
+
+The first is that $N$ is finite. This is bounded representation itself, and Paper 0 argued it is not a stipulation but the condition of any physically realized controller: finite capacity forces a partition, and the partition has a finite number of cells. The second is that the policy assigns *one action per internal state*. This is what it is to have a policy: a mapping from represented situations to responses. If two situations in the world fall into the same internal state, the controller has, by construction, no way to act differently in them — not because it chooses not to, but because the distinction it would need is one its representation does not contain. These two features — finite $N$, one action per cell — are the whole of what the following sections use. Everything downstream is a consequence of finitely many cells each committed to a single response.
+
+The empirical basis for taking this premise as more than an assumption is Paper 0's, imported here at its tier: **[R within the model]** for the demonstration that bounded prediction produces exactly such a factorization, **[IP]** for the reading of institutions as controllers of this kind. Within Paper XX the premise is taken as given, and the question is only what follows from it.
+
+

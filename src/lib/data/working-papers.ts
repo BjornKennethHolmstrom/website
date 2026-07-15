@@ -28,6 +28,37 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'threeLawsFromOneBound',
+   key: 'threeLawsFromOneBound',
+   category: 'governance',
+   tags: [
+     'Ashby',
+     'Goodhart',
+     'Certification Cost',
+     'Bounded Representation',
+     'Variety',
+     'Proxy Optimization',
+     'Conservation Law',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '19',
+   readTime: {
+     en: '25 min',
+     sv: '25 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/three-laws-from-one-bound.pdf`,
+     sv: `${localBase}/three-laws-from-one-bound-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/three-laws-from-one-bound-cover.png',
+   readOnlinePath: '/working-papers/three-laws-from-one-bound',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-15'
+ },
+ {
    id: 'governorsSentinelsBridges',
    key: 'governorsSentinelsBridges',
    category: 'governance',

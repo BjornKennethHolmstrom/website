@@ -19,6 +19,7 @@ export const papersEn = {
   XVII: { href: '/working-papers/certification-floor',                     label: 'Paper XVII: The Certification Floor' },
   XVIII: { href: '/working-papers/boundary-instability',                   label: 'Paper XVIII: The Boundary Instability Principle' },
   XIX: { href: '/working-papers/governors-sentinels-bridges',              label: 'Paper XIX: Governors, Sentinels, and Bridges' },
+  XX: { href: '/working-papers/three-laws-from-one-bound',                 label: 'Paper XX: Three Laws from One Bound' },
 };
 
 export const papersSv = {
@@ -42,4 +43,5 @@ export const papersSv = {
   XVII: { href: '/working-papers/certification-floor',                     label: 'Rapport XVII: Certifieringsgolvet' },
   XVIII: { href: '/working-papers/boundary-instability',                   label: 'Rapport XVIII: Principen om gränsinstabilitet' },
   XIX: { href: '/working-papers/governors-sentinels-bridges',              label: 'Rapport XIX: Guvernörer, vaktposter och broar' },
+  XX: { href: '/working-papers/three-laws-from-one-bound',                 label: 'Rapport XX: Tre lagar från en gräns' },
 };

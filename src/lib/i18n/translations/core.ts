@@ -181,6 +181,10 @@ export const coreTranslations = {
     geSeriesPaperXIX: {
       title: 'XIX: Governors, Sentinels, and Bridges',
       desc:  'Reveals that a factorization can govern, warn, or connect — and these roles dissociate. Winner‑take‑all selection rewards only governing skill, silently shedding early‑warning capacity and the bridges that hold the ecology together.',
+    },
+    geSeriesPaperXX: {
+      title: 'XX: Three Laws from One Bound',
+      desc:  'Derives Ashby\'s law, Goodhart\'s law, and certification cost from a single premise: a finite controller partitioning its world. Goodhart is sharpened into a result governed by the reachable intervention set.',
     }
   },
 
@@ -572,6 +576,10 @@ export const coreTranslations = {
     geSeriesPaperXIX: {
       title: 'XIX: Guvernörer, vaktposter och broar',
       desc:  'Visar att en faktorisering kan styra, varna eller förbinda — och att dessa roller dissocierar. Vinnaren‑tar‑allt‑urval belönar bara styrningsförmåga, och tappar i tysthet tidig varningskapacitet och broarna som håller ihop ekologin.',
+    },
+    geSeriesPaperXX: {
+      title: 'XX: Tre lagar från en gräns',
+      desc:  'Härleder Ashbys lag, Goodharts lag och certifieringskostnaden från en enda premiss: en ändlig kontrollant som partitionerar sin värld. Goodhart skärps till ett resultat styrt av den nåbara interventionsmängden.',
     }
   },
 

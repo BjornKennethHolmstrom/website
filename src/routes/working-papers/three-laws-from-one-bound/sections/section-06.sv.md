@@ -1,0 +1,12 @@
+## 6. Varför en gräns ger tre lagar
+
+De tre härledningarna kan nu ses som en. Var och en utgår från samma premiss — en kontrollant med ändligt många interna tillstånd, en handling per tillstånd — och betraktar den under en olik operation på faktoriseringen.
+
+Ashby är den *statiska* sidan: gränsen sedd när kontrollanten bara håller en faktorisering och måste handla genom den i ett ögonblick. Begränsningen gäller kapacitet — tillräckligt många celler, skurna vid rätt sömmar, för att ge distinkta responser till betingelser som kräver dem. Goodhart är *optimerings*sidan: gränsen sedd när kontrollanten driver på för att förbättra en uppmätt projektion av sitt mål. Begränsningen gäller vilka projektioner som överlever att bli föremål för pådrivning — en proxyvariabel är säker endast där dess ordning förfinar målets över den nåbara mängden. Certifieringskostnad är den *dynamiska* sidan: gränsen sedd när kontrollanten måste hålla en faktorisering matchad mot en värld vars uppgiftskvot driver. Begränsningen är att matchning har en löpande kostnad som bara ackumuleras.
+
+Variationsredovisningen i §5.3 är det som binder samman de tre, eftersom var och en är ett påstående om samma budget under en olik fråga. Ashby frågar om budgeten är tillräckligt stor för uppgiften nu: $V_I + V_H + V_S + V_\epsilon \ge V_A$. Goodhart frågar vad som händer när den täckta delen av budgeten optimeras medan en otäckt, nåbar del finns kvar: optimeringen finner gapet mellan vad proxyvariabeln mäter och vad målet behöver, och driver isär dem. Certifieringskostnad frågar vad som krävs för att hålla budgeten matchad mot $V_A$ när $V_A$ rör sig: priset för att upptäcka driften och åter täcka den, betalat i steg som aldrig återbetalas. Den statiska sidan säger att budgeten måste räcka till; optimeringssidan säger att den täckta budgeten inte kan pressas förbi vad den troget representerar; den dynamiska sidan säger att hålla budgeten matchad är en kostnad som bara växer.
+
+Uttryckt på detta vis är de tre lagarna inte bara förenliga — de är samma teorem ställt inför tre frågor. Vad en kontrollant kan representera begränsar vad den kan göra (Ashby), vad den säkert kan optimera (Goodhart) och vad den kontinuerligt måste spendera för att förbli tillräcklig (certifiering). Den ekonomi artikeln gav sig ut för att köpa är köpt: serien behöver inte anta tre oberoende lagar, bara den enda gräns Rapport 0 redan fastställde, och härleda resten.
+
+---
+
