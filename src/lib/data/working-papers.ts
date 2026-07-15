@@ -28,6 +28,38 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'whenToStopLearning',
+   key: 'whenToStopLearning',
+   category: 'governance',
+   tags: [
+     'Lifecycle',
+     'Learning',
+     'Adaptation',
+     'Absorptive Capacity',
+     'Meta-Learning',
+     'Invariants',
+     'Sunsetting',
+     'Coupling',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '24',
+   readTime: {
+     en: '30 min',
+     sv: '30 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/when-to-stop-learning.pdf`,
+     sv: `${localBase}/when-to-stop-learning-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/when-to-stop-learning-cover.png',
+   readOnlinePath: '/working-papers/when-to-stop-learning',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-15'
+ },
+ {
    id: 'threeLawsFromOneBound',
    key: 'threeLawsFromOneBound',
    category: 'governance',

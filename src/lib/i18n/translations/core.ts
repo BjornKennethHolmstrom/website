@@ -185,6 +185,10 @@ export const coreTranslations = {
     geSeriesPaperXX: {
       title: 'XX: Three Laws from One Bound',
       desc:  'Derives Ashby\'s law, Goodhart\'s law, and certification cost from a single premise: a finite controller partitioning its world. Goodhart is sharpened into a result governed by the reachable intervention set.',
+    },
+    geSeriesPaperXXI: {
+      title: 'XXI: When to Stop Learning, and When to Stop',
+      desc:  'Traces the lifecycle of a bounded controller: learning can break coupling, meta‑learning must close on invariants, and the terminal adaptive act may be to end rather than persist.',
     }
   },
 
@@ -580,6 +584,10 @@ export const coreTranslations = {
     geSeriesPaperXX: {
       title: 'XX: Tre lagar från en gräns',
       desc:  'Härleder Ashbys lag, Goodharts lag och certifieringskostnaden från en enda premiss: en ändlig kontrollant som partitionerar sin värld. Goodhart skärps till ett resultat styrt av den nåbara interventionsmängden.',
+    },
+    geSeriesPaperXXI: {
+      title: 'XXI: När man ska sluta lära sig, och när man ska sluta',
+      desc:  'Spårar livscykeln hos en begränsad regulator: lärande kan bryta kopplingen, meta‑lärande måste slutas på invarianter, och den terminala adaptiva handlingen kan vara att avsluta snarare än att bestå.',
     }
   },
 

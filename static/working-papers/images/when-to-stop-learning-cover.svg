@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 1200"
+   font-family="'Helvetica Neue', Arial, sans-serif"
+   version="1.1"
+   id="svg50"
+   sodipodi:docname="when-to-stop-learning-cover.svg"
+   inkscape:export-filename="when-to-stop-learning-cover.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview50"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.72333333"
+     inkscape:cx="600"
+     inkscape:cy="600"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg50" />
+  <defs
+     id="defs6">
+    <filter
+       id="cyanGlow"
+       x="-1.2923077"
+       y="-inf"
+       width="3.5846154"
+       height="inf">
+      <feGaussianBlur
+         stdDeviation="7"
+         result="b"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="b"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <filter
+       id="amberGlow"
+       x="-1.2"
+       y="-1.2"
+       width="3.4"
+       height="3.4">
+      <feGaussianBlur
+         stdDeviation="6"
+         result="b"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="b"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="softGlow"
+       x="-0.9"
+       y="-inf"
+       width="2.8"
+       height="inf">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="b"
+         id="feGaussianBlur4" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="b"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- background -->
+  <rect
+     width="1200"
+     height="1200"
+     fill="#1E2633"
+     id="rect6" />
+  <!-- faint structural circuitry (series texture) -->
+  <g
+     stroke="#2FD4E0"
+     stroke-opacity="0.12"
+     stroke-width="1"
+     fill="none"
+     id="g9">
+    <path
+       d="M 150 210 L 210 210 L 232 188"
+       id="path6" />
+    <circle
+       cx="232"
+       cy="188"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle6" />
+    <path
+       d="M 1046 250 L 1010 214 L 958 214"
+       id="path7" />
+    <path
+       d="M 1040 1010 L 1004 1010 L 986 1030"
+       id="path8" />
+    <circle
+       cx="986"
+       cy="1030"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle8" />
+    <path
+       d="M 158 962 L 158 998 L 196 1014"
+       id="path9" />
+  </g>
+  <!-- overarching thesis, quiet (rhymes with Paper XX) -->
+  <text
+     x="150"
+     y="188"
+     font-size="17"
+     letter-spacing="3"
+     fill="#7E8A9A"
+     id="text9">ONE CONFUSION · THREE REGISTERS</text>
+  <!-- ===================================================================== -->
+  <!-- STATION A — LEARNING is not ADAPTATION (the registered scissors)       -->
+  <!-- ===================================================================== -->
+  <line
+     x1="224"
+     y1="360"
+     x2="224"
+     y2="556"
+     stroke="#5C6B7E"
+     stroke-width="1.2"
+     id="line9" />
+  <line
+     x1="224"
+     y1="556"
+     x2="404"
+     y2="556"
+     stroke="#5C6B7E"
+     stroke-width="1.2"
+     id="line10" />
+  <!-- fidelity: internal map, monotone up (cyan) -->
+  <path
+     d="M 236 540 C 300 500, 352 452, 396 390"
+     fill="none"
+     stroke="#04ECF6"
+     stroke-width="3.2"
+     stroke-linecap="round"
+     filter="url(#cyanGlow)"
+     id="path10" />
+  <path
+     d="M 236 540 C 300 500, 352 452, 396 390"
+     fill="none"
+     stroke="#CFFAFD"
+     stroke-width="1.1"
+     stroke-linecap="round"
+     id="path11" />
+  <path
+     d="M 390 386 L 403 388 L 397 400 Z"
+     fill="#04ECF6"
+     filter="url(#cyanGlow)"
+     id="path12" />
+  <!-- coupling: external good, interior peak then fall (amber) -->
+  <path
+     d="M 236 506 C 270 448, 302 402, 322 401 C 350 400, 374 468, 398 528"
+     fill="none"
+     stroke="#E8943A"
+     stroke-width="3.0"
+     stroke-linecap="round"
+     filter="url(#amberGlow)"
+     id="path13" />
+  <circle
+     cx="322"
+     cy="401"
+     r="4"
+     fill="#E8943A"
+     filter="url(#softGlow)"
+     id="circle13" />
+  <path
+     d="M 392 522 L 400 534 L 386 534 Z"
+     fill="#E8943A"
+     filter="url(#amberGlow)"
+     id="path14" />
+  <text
+     x="412"
+     y="394"
+     font-size="18"
+     font-style="italic"
+     fill="#04ECF6"
+     filter="url(#softGlow)"
+     id="text14">fidelity</text>
+  <text
+     x="412"
+     y="534"
+     font-size="18"
+     font-style="italic"
+     fill="#E8943A"
+     id="text15">coupling</text>
+  <text
+     x="314"
+     y="598"
+     font-size="19"
+     letter-spacing="1"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text16">LEARNING ≠ ADAPTATION</text>
+  <text
+     x="314"
+     y="620"
+     font-size="14"
+     letter-spacing="1.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text17">MAP SHARPENS, GRIP FAILS</text>
+  <!-- ===================================================================== -->
+  <!-- STATION B — META-LEARNING closes on invariants (bounded ladder)        -->
+  <!-- ===================================================================== -->
+  <!-- the regress that cannot continue: dissolves into nothing, above -->
+  <g
+     fill="#E8943A"
+     stroke="none"
+     filter="url(#softGlow)"
+     id="g20">
+    <circle
+       cx="600"
+       cy="432"
+       r="2.0"
+       fill-opacity="0.30"
+       id="circle17" />
+    <circle
+       cx="591"
+       cy="416"
+       r="1.6"
+       fill-opacity="0.22"
+       id="circle18" />
+    <circle
+       cx="609"
+       cy="412"
+       r="1.5"
+       fill-opacity="0.20"
+       id="circle19" />
+    <circle
+       cx="600"
+       cy="398"
+       r="1.3"
+       fill-opacity="0.13"
+       id="circle20" />
+  </g>
+  <!-- narrowing rails -->
+  <path
+     d="M 556 544 L 582 448"
+     fill="none"
+     stroke="#2FD4E0"
+     stroke-opacity="0.40"
+     stroke-width="1.2"
+     id="path20" />
+  <path
+     d="M 644 544 L 618 448"
+     fill="none"
+     stroke="#2FD4E0"
+     stroke-opacity="0.40"
+     stroke-width="1.2"
+     id="path21" />
+  <!-- rungs: levels of learning-to-learn, fainter going up -->
+  <line
+     x1="582"
+     y1="448"
+     x2="618"
+     y2="448"
+     stroke="#2FD4E0"
+     stroke-opacity="0.45"
+     stroke-width="1.8"
+     stroke-dasharray="2 6"
+     id="line21" />
+  <line
+     x1="574"
+     y1="470"
+     x2="626"
+     y2="470"
+     stroke="#04ECF6"
+     stroke-opacity="0.6"
+     stroke-width="2.2"
+     filter="url(#softGlow)"
+     id="line22" />
+  <line
+     x1="566"
+     y1="494"
+     x2="634"
+     y2="494"
+     stroke="#04ECF6"
+     stroke-opacity="0.8"
+     stroke-width="2.6"
+     filter="url(#softGlow)"
+     id="line23" />
+  <line
+     x1="558"
+     y1="520"
+     x2="642"
+     y2="520"
+     stroke="#04ECF6"
+     stroke-width="3.0"
+     filter="url(#cyanGlow)"
+     id="line24" />
+  <!-- the invariant base: held still, anchored -->
+  <rect
+     x="550"
+     y="544"
+     width="100"
+     height="10"
+     rx="3"
+     fill="#04ECF6"
+     filter="url(#cyanGlow)"
+     id="rect24" />
+  <g
+     stroke="#04ECF6"
+     stroke-width="2"
+     stroke-linecap="round"
+     id="g26">
+    <line
+       x1="566"
+       y1="554"
+       x2="566"
+       y2="566"
+       id="line25" />
+    <line
+       x1="634"
+       y1="554"
+       x2="634"
+       y2="566"
+       id="line26" />
+  </g>
+  <text
+     x="662"
+     y="554"
+     font-size="13"
+     letter-spacing="1.5"
+     fill="#04ECF6"
+     fill-opacity="0.85"
+     id="text26">INVARIANTS</text>
+  <text
+     x="600"
+     y="598"
+     font-size="19"
+     letter-spacing="1"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text27">META-LEARNING</text>
+  <text
+     x="600"
+     y="620"
+     font-size="14"
+     letter-spacing="1.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text28">CLOSES ON INVARIANTS</text>
+  <!-- ===================================================================== -->
+  <!-- STATION C — PERSISTENCE is not PURPOSE (sunset)                        -->
+  <!-- ===================================================================== -->
+  <!-- rays -->
+  <g
+     stroke="#E8943A"
+     stroke-opacity="0.6"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     filter="url(#softGlow)"
+     id="g30">
+    <line
+       x1="900"
+       y1="430"
+       x2="900"
+       y2="442"
+       id="line28" />
+    <line
+       x1="866"
+       y1="440"
+       x2="858"
+       y2="432"
+       id="line29" />
+    <line
+       x1="934"
+       y1="440"
+       x2="942"
+       y2="432"
+       id="line30" />
+  </g>
+  <!-- the sun, half below the horizon -->
+  <path
+     d="M 866 486 A 34 34 0 0 0 934 486 Z"
+     fill="#E8943A"
+     fill-opacity="0.14"
+     stroke="#E8943A"
+     stroke-width="2"
+     filter="url(#amberGlow)"
+     id="path30" />
+  <line
+     x1="838"
+     y1="486"
+     x2="962"
+     y2="486"
+     stroke="#5C6B7E"
+     stroke-width="1.4"
+     id="line31" />
+  <text
+     x="900"
+     y="598"
+     font-size="19"
+     letter-spacing="1"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text31">PERSISTENCE ≠ PURPOSE</text>
+  <text
+     x="900"
+     y="620"
+     font-size="14"
+     letter-spacing="1.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text32">END OR TRANSFER</text>
+  <!-- ===================================================================== -->
+  <!-- THE LIFECYCLE RIBBON — the controller lived across its arc             -->
+  <!-- ===================================================================== -->
+  <path
+     d="M 196 842 C 300 826, 340 820, 380 806 C 480 770, 540 742, 600 722            C 700 690, 782 704, 852 740"
+     fill="none"
+     stroke="#04ECF6"
+     stroke-width="3.4"
+     stroke-linecap="round"
+     filter="url(#cyanGlow)"
+     id="path32" />
+  <path
+     d="M 196 842 C 300 826, 340 820, 380 806 C 480 770, 540 742, 600 722            C 700 690, 782 704, 852 740"
+     fill="none"
+     stroke="#CFFAFD"
+     stroke-width="1.2"
+     stroke-linecap="round"
+     id="path33" />
+  <!-- terminus: the controller reaches its end -->
+  <circle
+     cx="852"
+     cy="740"
+     r="7"
+     fill="#04ECF6"
+     filter="url(#cyanGlow)"
+     id="circle33" />
+  <circle
+     cx="852"
+     cy="740"
+     r="3"
+     fill="#0B3A44"
+     id="circle34" />
+  <!-- TRANSFER: the coupling (amber) handed to a fresh controller -->
+  <path
+     d="M 858 736 C 896 716, 924 702, 944 691"
+     fill="none"
+     stroke="#E8943A"
+     stroke-width="2.6"
+     stroke-linecap="round"
+     filter="url(#amberGlow)"
+     id="path34" />
+  <path
+     d="M 938 686 L 950 690 L 942 700 Z"
+     fill="#E8943A"
+     filter="url(#amberGlow)"
+     id="path35" />
+  <circle
+     cx="960"
+     cy="684"
+     r="8"
+     fill="#04ECF6"
+     filter="url(#cyanGlow)"
+     id="circle35" />
+  <circle
+     cx="960"
+     cy="684"
+     r="3.5"
+     fill="#0B3A44"
+     id="circle36" />
+  <text
+     x="930"
+     y="662"
+     font-size="15"
+     letter-spacing="2"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text36">TRANSFER</text>
+  <!-- END: the coupling released, decaying to nothing -->
+  <path
+     d="M 856 748 C 878 766, 898 784, 914 802"
+     fill="none"
+     stroke="#E8943A"
+     stroke-opacity="0.55"
+     stroke-width="2.2"
+     stroke-dasharray="3 9"
+     stroke-linecap="round"
+     filter="url(#softGlow)"
+     id="path36" />
+  <g
+     fill="#E8943A"
+     stroke="none"
+     id="g39">
+    <circle
+       cx="906"
+       cy="792"
+       r="2.0"
+       fill-opacity="0.24"
+       id="circle37" />
+    <circle
+       cx="922"
+       cy="812"
+       r="1.7"
+       fill-opacity="0.16"
+       id="circle38" />
+    <circle
+       cx="936"
+       cy="830"
+       r="1.4"
+       fill-opacity="0.09"
+       id="circle39" />
+  </g>
+  <text
+     x="950"
+     y="816"
+     font-size="15"
+     letter-spacing="2"
+     fill="#7E8A9A"
+     id="text39">END</text>
+  <!-- particle motif at the terminus (series signature) -->
+  <g
+     filter="url(#softGlow)"
+     id="g44">
+    <circle
+       cx="836"
+       cy="726"
+       r="2.2"
+       fill="#E8943A"
+       id="circle40" />
+    <circle
+       cx="868"
+       cy="728"
+       r="2.0"
+       fill="#04ECF6"
+       id="circle41" />
+    <circle
+       cx="840"
+       cy="754"
+       r="1.8"
+       fill="#04ECF6"
+       id="circle42" />
+    <circle
+       cx="866"
+       cy="756"
+       r="1.6"
+       fill="#E8943A"
+       id="circle43" />
+    <circle
+       cx="852"
+       cy="722"
+       r="1.4"
+       fill="#2FD4E0"
+       id="circle44" />
+  </g>
+  <!-- ===================================================================== -->
+  <!-- LIFECYCLE AXIS — the three phases of a bounded controller's life       -->
+  <!-- ===================================================================== -->
+  <line
+     x1="180"
+     y1="902"
+     x2="1010"
+     y2="902"
+     stroke="#5C6B7E"
+     stroke-width="1.2"
+     id="line44" />
+  <g
+     stroke="#5C6B7E"
+     stroke-width="1.2"
+     id="g47">
+    <line
+       x1="300"
+       y1="894"
+       x2="300"
+       y2="910"
+       id="line45" />
+    <line
+       x1="600"
+       y1="894"
+       x2="600"
+       y2="910"
+       id="line46" />
+    <line
+       x1="900"
+       y1="894"
+       x2="900"
+       y2="910"
+       id="line47" />
+  </g>
+  <g
+     fill="#7E8A9A"
+     font-size="16"
+     letter-spacing="2.5"
+     text-anchor="middle"
+     id="g49">
+    <text
+       x="300"
+       y="938"
+       id="text47">LEARN</text>
+    <text
+       x="600"
+       y="938"
+       id="text48">META-LEARN</text>
+    <text
+       x="900"
+       y="938"
+       id="text49">SUNSET</text>
+  </g>
+  <text
+     x="595"
+     y="972"
+     font-size="15"
+     letter-spacing="2.5"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text50">LIFECYCLE OF A BOUNDED CONTROLLER</text>
+</svg>

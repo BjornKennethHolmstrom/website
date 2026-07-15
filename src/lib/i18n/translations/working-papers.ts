@@ -144,6 +144,12 @@ export const workingpapersTranslations = {
      description:
        'Derives Ashby\'s law, Goodhart\'s law, and the monotone cost of certification from a single premise: a controller with a finite partition of its world. Ashby is a pigeonhole theorem, Goodhart is sharpened into an intervention‑set result with a registered demonstration, and certification cost is a non‑decreasing accounting quantity. The search for a stronger conservation law failed, and the failure is reported as part of the result. Paper XX in the Governance as Engineering series.',
    },
+   whenToStopLearning: {
+     title: 'When to Stop Learning, and When to Stop',
+     subtitle: 'Learning, adaptation, and the lifecycle of a bounded controller',
+     description:
+       'A governance architecture learns, adapts, and eventually confronts the question of whether it should still exist. This paper traces three separations along that lifecycle: learning from adaptation (improving the model is not the same as maintaining the coupling), meta‑learning from free improvement (the hierarchy of learning‑to‑learn must close on invariants), and persistence from purpose (the terminal adaptive act may be to end or transfer). A registered minimal model demonstrates learning breaking coupling by outrunning absorptive capacity. Paper XXI in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -368,6 +374,12 @@ export const workingpapersTranslations = {
      subtitle: 'Ashby, Goodhart och certifieringskostnad som konsekvenser av begränsad representation',
      description:
        'Härleder Ashbys lag, Goodharts lag och den monotona certifieringskostnaden från en enda premiss: en kontrollant med en ändlig partition av sin värld. Ashby är ett duvslagsfacks­teorem, Goodhart skärps till ett interventionsmängdsresultat med en registrerad demonstration, och certifieringskostnaden är en icke‑avtagande redovisningsstorhet. Sökandet efter en starkare konserveringslag misslyckades, och misslyckandet rapporteras som en del av resultatet. Rapport XX i serien Styrning som ingenjörskonst.',
+   },
+   whenToStopLearning: {
+     title: 'När man ska sluta lära sig, och när man ska sluta',
+     subtitle: 'Lärande, anpassning och livscykeln hos en begränsad kontrollant',
+     description:
+       'En styrningsarkitektur lär sig, anpassar sig och konfronterar till slut frågan om den fortfarande borde existera. Denna artikel spårar tre separationer längs den livscykeln: lärande från anpassning (att förbättra modellen är inte samma sak som att upprätthålla kopplingen), meta‑lärande från fri förbättring (hierarkin av lära‑att‑lära måste slutas på invarianter) och persistens från syfte (den terminala adaptiva handlingen kan vara att avsluta eller överföra). En registrerad minimal modell demonstrerar lärande som bryter kopplingen genom att springa ifrån absorptionskapaciteten. Rapport XXI i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {
