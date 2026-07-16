@@ -286,19 +286,25 @@
   // --- CAROUSEL LOGIC ---
 
   // Governance as Engineering carousel
-  let activeGEIndex = 0;
-  let geDirection = 1;
+  let activeGEIndex = $state(0);
+  let geDirection = $state(1);
   let geAutoSlideInterval: any;
   let geSlideDuration = 7000; // slightly faster than book carousel
+  let selectedImage: string | null = $state(null);
 
-  // Resolve the current paper's translations correctly
-  $: currentGEPaper = governanceEngineeringPapers[activeGEIndex];
-  $: currentPaper = {
+  function handleKeydown(e: KeyboardEvent) {
+    if (e.key === 'Escape') {
+      selectedImage = null;
+    }
+  }
+
+  // Resolve the current paper's translations correctly (reactive with $derived)
+  let currentPaper = $derived({
     title: $t.geCarouselSeries[governanceEngineeringPapers[activeGEIndex].key].title,
     desc:  $t.geCarouselSeries[governanceEngineeringPapers[activeGEIndex].key].desc,
     url:   governanceEngineeringPapers[activeGEIndex].url,
     coverImage: governanceEngineeringPapers[activeGEIndex].coverImage,
-  };
+  });
 
   function geNextSlide() {
     geDirection = 1;
@@ -324,12 +330,12 @@
   }
 
   // Book carousel
-  let activeIndex = 0;
-  let direction = 1; // 1 for right, -1 for left
+  let activeIndex = $state(0);
+  let direction = $state(1); // 1 for right, -1 for left
   let autoSlideInterval: any;
 
   // Compute the current book based on index
-  $: currentBook = $t.bookLaunches[activeIndex];
+  let currentBook = $derived($t.bookLaunches[activeIndex]);
 
   const nextSlide = () => {
     direction = 1;
@@ -405,6 +411,8 @@
 	image={'/social-preview.png'}
 	type={'website'}
 />
+
+<svelte:window on:keydown={handleKeydown} />
 
 {#if showWelcomeModal}
   <!-- Overlay -->
@@ -609,11 +617,14 @@
             </div>
 
             <!-- Cover image – scaled down on mobile, full size on desktop -->
-            <div class="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center">
+            <div 
+              class="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center cursor-pointer"
+              on:click={() => (selectedImage = currentPaper.coverImage)}
+            >
               <img 
                 src={currentPaper.coverImage} 
                 alt={currentPaper.title} 
-                class="w-full h-auto rounded shadow-md ring-1 ring-slate-200 dark:ring-slate-600" 
+                class="w-full h-auto rounded shadow-md ring-1 ring-slate-200 dark:ring-slate-600 hover:ring-amber-400 transition-shadow" 
               />
             </div>
           </div>
@@ -1024,3 +1035,34 @@
     <span class="text-2xl font-bold">?</span>
   </button>
 </div>
+
+{#if selectedImage}
+  <!-- Modal overlay -->
+  <div
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+    on:click={() => (selectedImage = null)}
+    role="dialog"
+    aria-modal="true"
+    aria-label={$t.common.ui.imagePreview || 'Image preview'}
+  >
+    <!-- Image container – stops clicks from closing the modal -->
+    <div class="relative max-h-[90vh] max-w-[90vw]" on:click|stopPropagation>
+      <!-- Close button -->
+      <button
+        class="absolute -top-4 -right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-white transition hover:bg-black/90"
+        on:click={() => (selectedImage = null)}
+        aria-label={$t.common.ui.close || 'Close'}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <img
+        src={selectedImage}
+        alt={$t.common.ui.fullCover || 'Full cover image'}
+        class="max-h-[85vh] max-w-[85vw] rounded-lg object-contain shadow-2xl"
+      />
+    </div>
+  </div>
+{/if}
