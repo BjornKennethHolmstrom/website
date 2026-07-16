@@ -28,6 +28,36 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'whatCannotBeGuaranteed',
+   key: 'whatCannotBeGuaranteed',
+   category: 'governance',
+   tags: [
+     'Limits',
+     'Certification',
+     'Undecidability',
+     'No Free Lunch',
+     'Reform Convergence',
+     'Incompleteness',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '74',
+   readTime: {
+     en: '90 min',
+     sv: '90 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/what-cannot-be-guaranteed.pdf`,
+     sv: `${localBase}/what-cannot-be-guaranteed-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/what-cannot-be-guaranteed-cover.png',
+   readOnlinePath: '/working-papers/what-cannot-be-guaranteed',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-16'
+ },
+ {
    id: 'whenToStopLearning',
    key: 'whenToStopLearning',
    category: 'governance',

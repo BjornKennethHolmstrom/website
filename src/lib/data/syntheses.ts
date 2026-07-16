@@ -20,7 +20,8 @@ export const papersEn = {
   XVIII: { href: '/working-papers/boundary-instability',                   label: 'Paper XVIII: The Boundary Instability Principle' },
   XIX: { href: '/working-papers/governors-sentinels-bridges',              label: 'Paper XIX: Governors, Sentinels, and Bridges' },
   XX: { href: '/working-papers/three-laws-from-one-bound',                 label: 'Paper XX: Three Laws from One Bound' },
-  XXI: { href: '/working-papers/when-to-stop-learning', label: 'Paper XXI: When to Stop Learning, and When to Stop' },
+  XXI: { href: '/working-papers/when-to-stop-learning',                    label: 'Paper XXI: When to Stop Learning, and When to Stop' },
+  XXII: { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Paper XXII: What Cannot Be Guaranteed' },
 };
 
 export const papersSv = {
@@ -45,5 +46,6 @@ export const papersSv = {
   XVIII: { href: '/working-papers/boundary-instability',                   label: 'Rapport XVIII: Principen om gränsinstabilitet' },
   XIX: { href: '/working-papers/governors-sentinels-bridges',              label: 'Rapport XIX: Guvernörer, vaktposter och broar' },
   XX: { href: '/working-papers/three-laws-from-one-bound',                 label: 'Rapport XX: Tre lagar från en gräns' },
-  XXI: { href: '/working-papers/when-to-stop-learning', label: 'Rapport XXI: När man ska sluta lära sig, och när man ska sluta' },
+  XXI: { href: '/working-papers/when-to-stop-learning',                    label: 'Rapport XXI: När man ska sluta lära sig, och när man ska sluta' },
+  XXII: { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Rapport XXII: Vad som inte kan garanteras' },
 };

@@ -189,6 +189,10 @@ export const coreTranslations = {
     geSeriesPaperXXI: {
       title: 'XXI: When to Stop Learning, and When to Stop',
       desc:  'Traces the lifecycle of a bounded controller: learning can break coupling, meta‑learning must close on invariants, and the terminal adaptive act may be to end rather than persist.',
+    },
+    geSeriesPaperXXII: {
+      title: 'XXII: What Cannot Be Guaranteed',
+      desc:  'Three demands for assurance — from inside, outside, and before the world — each fail for its own reason. A corrupted certification kernel makes institutions look healthier, not sicker, and the failure destroys the evidence of itself.',
     }
   },
 
@@ -588,6 +592,10 @@ export const coreTranslations = {
     geSeriesPaperXXI: {
       title: 'XXI: När man ska sluta lära sig, och när man ska sluta',
       desc:  'Spårar livscykeln hos en begränsad regulator: lärande kan bryta kopplingen, meta‑lärande måste slutas på invarianter, och den terminala adaptiva handlingen kan vara att avsluta snarare än att bestå.',
+    },
+    geSeriesPaperXXII: {
+      title: 'XXII: Vad som inte kan garanteras',
+      desc:  'Tre krav på garanti — inifrån, utifrån och före världen — misslyckas var och en av sitt eget skäl. En korrupt certifieringskärna får institutioner att se friskare ut, och misslyckandet förstör bevisen för sig självt.',
     }
   },
 
