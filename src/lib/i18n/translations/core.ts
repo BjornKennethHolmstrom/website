@@ -193,6 +193,10 @@ export const coreTranslations = {
     geSeriesPaperXXII: {
       title: 'XXII: What Cannot Be Guaranteed',
       desc:  'Three demands for assurance — from inside, outside, and before the world — each fail for its own reason. A corrupted certification kernel makes institutions look healthier, not sicker, and the failure destroys the evidence of itself.',
+    },
+    geSeriesPaperXXIII: {
+      title: 'XXIII: The Shape of Reform',
+      desc:  'Finds that behavioral distance between institutions is a symmetric metric, but the cost of reforming one into another is directed, non‑composing, and largely independent of the metric. Reform is not movement through a geometry.',
     }
   },
 
@@ -596,6 +600,10 @@ export const coreTranslations = {
     geSeriesPaperXXII: {
       title: 'XXII: Vad som inte kan garanteras',
       desc:  'Tre krav på garanti — inifrån, utifrån och före världen — misslyckas var och en av sitt eget skäl. En korrupt certifieringskärna får institutioner att se friskare ut, och misslyckandet förstör bevisen för sig självt.',
+    },
+    geSeriesPaperXXIII: {
+      title: 'XXIII: Reformens form',
+      desc:  'Finner att beteendemässigt avstånd mellan institutioner är en symmetrisk metrik, men kostnaden att reformera en till en annan är riktad, icke‑komponerande och till stor del oberoende av metriken. Reform är inte rörelse genom en geometri.',
     }
   },
 

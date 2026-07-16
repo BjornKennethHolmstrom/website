@@ -27,7 +27,8 @@
   { key: 'geSeriesPaperXIX', url: '/working-papers/governors-sentinels-bridges', coverImage: '/working-papers/images/governors-sentinels-bridges-cover.png' },
   { key: 'geSeriesPaperXX', url: '/working-papers/three-laws-from-one-bound', coverImage: '/working-papers/images/three-laws-from-one-bound-cover.png' },
   { key: 'geSeriesPaperXXI', url: '/working-papers/when-to-stop-learning', coverImage: '/working-papers/images/when-to-stop-learning-cover.png' },
-  { key: 'geSeriesPaperXXII', url: '/working-papers/what-cannot-be-guaranteed', coverImage: '/working-papers/images/what-cannot-be-guaranteed-cover.png' }
+  { key: 'geSeriesPaperXXII', url: '/working-papers/what-cannot-be-guaranteed', coverImage: '/working-papers/images/what-cannot-be-guaranteed-cover.png' },
+  { key: 'geSeriesPaperXXIII', url: '/working-papers/shape-of-reform', coverImage: '/working-papers/images/shape-of-reform-cover.png' }
  ];
 
 	// Definiera vår projektdata.

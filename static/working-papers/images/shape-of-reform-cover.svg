@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 1200"
+   font-family="'Helvetica Neue', Arial, sans-serif"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="shaper-of-reform-cover.svg"
+   inkscape:export-filename="shape-of-reform-cover.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.72333333"
+     inkscape:cx="600"
+     inkscape:cy="600"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg34" />
+  <defs
+     id="defs6">
+    <filter
+       id="cyanGlow"
+       x="-0.895"
+       y="-0.895"
+       width="2.79"
+       height="2.79">
+      <feGaussianBlur
+         stdDeviation="7"
+         result="b"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="b"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <filter
+       id="amberGlow"
+       x="-0.8"
+       y="-0.9"
+       width="2.6"
+       height="2.8">
+      <feGaussianBlur
+         stdDeviation="6"
+         result="b"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="b"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="softGlow"
+       x="-0.72"
+       y="-inf"
+       width="2.44"
+       height="inf">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="b"
+         id="feGaussianBlur4" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="b"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- background -->
+  <rect
+     width="1200"
+     height="1200"
+     fill="#1E2633"
+     id="rect6" />
+  <!-- faint structural circuitry (series texture) -->
+  <g
+     stroke="#2FD4E0"
+     stroke-opacity="0.12"
+     stroke-width="1"
+     fill="none"
+     id="g9">
+    <path
+       d="M 150 210 L 210 210 L 232 188"
+       id="path6" />
+    <circle
+       cx="232"
+       cy="188"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle6" />
+    <path
+       d="M 1046 250 L 1010 214 L 958 214"
+       id="path7" />
+    <path
+       d="M 1040 1010 L 1004 1010 L 986 1030"
+       id="path8" />
+    <circle
+       cx="986"
+       cy="1030"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle8" />
+    <path
+       d="M 158 962 L 158 998 L 196 1014"
+       id="path9" />
+  </g>
+  <!-- overarching thesis, quiet (the paper's own organizing line) -->
+  <text
+     x="150"
+     y="188"
+     font-size="17"
+     letter-spacing="3"
+     fill="#7E8A9A"
+     id="text9">THE MAP IS NOT THE TRAVEL</text>
+  <!-- ===================================================================== -->
+  <!-- THE MAP — a behavioral metric: a small zoo of factorizations, symmetric -->
+  <!-- ===================================================================== -->
+  <text
+     x="612"
+     y="374"
+     font-size="15"
+     letter-spacing="2.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text10">FACTORIZATION SPACE · BEHAVIORAL METRIC</text>
+  <!-- symmetric (arrowless) edges of the map -->
+  <g
+     stroke="#2FD4E0"
+     stroke-opacity="0.42"
+     stroke-width="1.3"
+     fill="none"
+     id="g14">
+    <line
+       x1="470"
+       y1="410"
+       x2="760"
+       y2="410"
+       id="line10" />
+    <line
+       x1="600"
+       y1="398"
+       x2="470"
+       y2="410"
+       id="line11" />
+    <line
+       x1="600"
+       y1="398"
+       x2="760"
+       y2="410"
+       id="line12" />
+    <line
+       x1="360"
+       y1="588"
+       x2="470"
+       y2="410"
+       id="line13" />
+    <line
+       x1="760"
+       y1="410"
+       x2="860"
+       y2="588"
+       id="line14" />
+  </g>
+  <!-- model nodes of the zoo -->
+  <g
+     fill="#0B3A44"
+     stroke="#2FD4E0"
+     stroke-opacity="0.6"
+     stroke-width="1.6"
+     id="g16">
+    <circle
+       cx="600"
+       cy="398"
+       r="6"
+       id="circle14" />
+    <circle
+       cx="470"
+       cy="410"
+       r="6"
+       id="circle15" />
+    <circle
+       cx="760"
+       cy="410"
+       r="6"
+       id="circle16" />
+  </g>
+  <!-- ===================================================================== -->
+  <!-- B's NEIGHBOURHOOD — B is a regime (a region), not a point               -->
+  <!-- ===================================================================== -->
+  <circle
+     cx="860"
+     cy="600"
+     r="54"
+     fill="#2FD4E0"
+     fill-opacity="0.07"
+     id="circle17" />
+  <circle
+     cx="860"
+     cy="600"
+     r="54"
+     fill="none"
+     stroke="#2FD4E0"
+     stroke-opacity="0.28"
+     stroke-width="1.3"
+     stroke-dasharray="2 8"
+     id="circle18" />
+  <!-- ===================================================================== -->
+  <!-- THE TRAVEL — directed reform cost, laid over the same points            -->
+  <!-- ===================================================================== -->
+  <!-- the direct leap: available, but costlier (faint, untaken) -->
+  <line
+     x1="392"
+     y1="600"
+     x2="828"
+     y2="600"
+     stroke="#E8943A"
+     stroke-opacity="0.38"
+     stroke-width="1.4"
+     stroke-dasharray="2 8"
+     id="line18" />
+  <text
+     x="600"
+     y="620"
+     font-size="12"
+     letter-spacing="1"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text18">direct leap · costlier</text>
+  <!-- forward reform A =&gt; B: the cheap route is OBLIQUE, via B's neighbourhood -->
+  <path
+     d="M 378 590 C 500 476, 620 452, 700 470 C 772 486, 812 540, 844 584"
+     fill="none"
+     stroke="#E8943A"
+     stroke-width="3.0"
+     stroke-linecap="round"
+     filter="url(#amberGlow)"
+     id="path18" />
+  <path
+     d="M 838 574 L 850 588 L 832 590 Z"
+     fill="#E8943A"
+     filter="url(#amberGlow)"
+     id="path19" />
+  <!-- the staging waypoint inside the neighbourhood -->
+  <circle
+     cx="804"
+     cy="524"
+     r="5"
+     fill="#E8943A"
+     filter="url(#softGlow)"
+     id="circle19" />
+  <text
+     x="612"
+     y="452"
+     font-size="14"
+     letter-spacing="1.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text19">CHEAPEST ROUTE IS OBLIQUE</text>
+  <text
+     x="792"
+     y="510"
+     font-size="12"
+     letter-spacing="0.5"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text20">via B’s neighbourhood</text>
+  <!-- return reform B =&gt; A: a different, lighter cost — leave is not return -->
+  <path
+     d="M 844 592 C 700 548, 520 548, 384 588"
+     fill="none"
+     stroke="#E8943A"
+     stroke-opacity="0.9"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     filter="url(#softGlow)"
+     id="path20" />
+  <path
+     d="M 392 580 L 380 590 L 396 594 Z"
+     fill="#E8943A"
+     filter="url(#softGlow)"
+     id="path21" />
+  <!-- ===================================================================== -->
+  <!-- THE TWO ENDPOINTS — a model (point) and a regime (region)               -->
+  <!-- ===================================================================== -->
+  <circle
+     cx="360"
+     cy="600"
+     r="10"
+     fill="#0B3A44"
+     stroke="#04ECF6"
+     stroke-width="2.2"
+     filter="url(#cyanGlow)"
+     id="circle21" />
+  <circle
+     cx="360"
+     cy="600"
+     r="3"
+     fill="#04ECF6"
+     id="circle22" />
+  <circle
+     cx="860"
+     cy="600"
+     r="10"
+     fill="#0B3A44"
+     stroke="#04ECF6"
+     stroke-width="2.2"
+     filter="url(#cyanGlow)"
+     id="circle23" />
+  <circle
+     cx="860"
+     cy="600"
+     r="3"
+     fill="#04ECF6"
+     id="circle24" />
+  <text
+     x="326"
+     y="607"
+     font-size="22"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text24">A</text>
+  <text
+     x="326"
+     y="626"
+     font-size="12"
+     letter-spacing="1"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text25">model</text>
+  <text
+     x="898"
+     y="607"
+     font-size="22"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text26">B</text>
+  <text
+     x="898"
+     y="626"
+     font-size="12"
+     letter-spacing="1"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text27">regime</text>
+  <!-- ===================================================================== -->
+  <!-- SYMMETRIC BEHAVIORAL DISTANCE — the map's ruler, direction-free         -->
+  <!-- ===================================================================== -->
+  <g
+     stroke="#04ECF6"
+     stroke-opacity="0.55"
+     stroke-width="1.4"
+     id="g28">
+    <line
+       x1="360"
+       y1="614"
+       x2="360"
+       y2="662"
+       id="line27" />
+    <line
+       x1="860"
+       y1="614"
+       x2="860"
+       y2="662"
+       id="line28" />
+  </g>
+  <line
+     x1="360"
+     y1="656"
+     x2="860"
+     y2="656"
+     stroke="#04ECF6"
+     stroke-width="1.7"
+     filter="url(#softGlow)"
+     id="line29" />
+  <g
+     stroke="#04ECF6"
+     stroke-width="1.7"
+     id="g31">
+    <line
+       x1="360"
+       y1="648"
+       x2="360"
+       y2="664"
+       id="line30" />
+    <line
+       x1="860"
+       y1="648"
+       x2="860"
+       y2="664"
+       id="line31" />
+  </g>
+  <text
+     x="610"
+     y="686"
+     font-size="15"
+     letter-spacing="1.5"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text31">d(A, B) = d(B, A)</text>
+  <text
+     x="610"
+     y="708"
+     font-size="13"
+     letter-spacing="2"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text32">SYMMETRIC · METRIC</text>
+  <!-- ===================================================================== -->
+  <!-- THE READING                                                            -->
+  <!-- ===================================================================== -->
+  <text
+     x="610"
+     y="748"
+     font-size="15"
+     letter-spacing="2"
+     fill="#E8943A"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text33">REFORM COST · DIRECTED, ASYMMETRIC</text>
+  <text
+     x="610"
+     y="770"
+     font-size="13"
+     letter-spacing="1.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text34">leave ≠ return · median 0.76</text>
+</svg>

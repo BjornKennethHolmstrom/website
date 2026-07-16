@@ -28,6 +28,38 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'shapeOfReform',
+   key: 'shapeOfReform',
+   category: 'governance',
+   tags: [
+     'Reform',
+     'Behavioral Distance',
+     'Adaptation Cost',
+     'Directed Cost',
+     'Metric',
+     'Asymmetry',
+     'Staging',
+     'Geometry',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '38',
+   readTime: {
+     en: '50 min',
+     sv: '50 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/shape-of-reform.pdf`,
+     sv: `${localBase}/shape-of-reform-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/shape-of-reform-cover.png',
+   readOnlinePath: '/working-papers/shape-of-reform',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-16'
+ },
+ {
    id: 'whatCannotBeGuaranteed',
    key: 'whatCannotBeGuaranteed',
    category: 'governance',

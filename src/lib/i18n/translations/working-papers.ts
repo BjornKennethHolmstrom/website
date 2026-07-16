@@ -156,6 +156,12 @@ export const workingpapersTranslations = {
      description:
        'Examines three demands for assurance — from inside, from outside, and before the world — and shows that each fails for a reason of its own. Certification incompleteness is a structural diagnosis; reform convergence undecidability and No Free Lunch are shallow but have useful contrapositives. A registered minimal model demonstrates a flooding mechanism that makes failing institutions look healthier, not sicker. Paper XXII in the Governance as Engineering series.',
    },
+   shapeOfReform: {
+     title: 'The Shape of Reform',
+     subtitle: 'Behavioral distance is a metric; reform cost is directed',
+     description:
+       'The sibling paper promised by Paper XIX. Reports that the descriptive geometry of factorization space mostly does not exist — stress rescales rather than reshapes the space, and no topological transition appears. What survives is a directed adaptation cost: asymmetric, non‑composing, and weakly predicted by behavioral distance. Reform stages through the target\'s neighbourhood, not along a geodesic, and the map of behaviors is not the travel between them. Paper XXIII in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -392,6 +398,12 @@ export const workingpapersTranslations = {
      subtitle: 'Certifieringsoförmåga, reformavgörbarhet och frånvaron av en universell arkitektur',
      description:
        'Undersöker tre krav på garanti — inifrån, utifrån och före världen — och visar att var och en misslyckas av sitt eget skäl. Certifieringsoförmåga är en strukturell diagnos; reformkonvergensens oavgörbarhet och No Free Lunch är grunda men har användbara kontrapositiv. En registrerad minimal modell demonstrerar en översvämningsmekanism som får fallerande institutioner att se friskare ut, inte sjukare. Rapport XXII i serien Styrning som ingenjörskonst.',
+   },
+   shapeOfReform: {
+     title: 'Reformens form',
+     subtitle: 'Beteendemässigt avstånd är en metrik; reformkostnad är riktad',
+     description:
+       'Systerartikeln utlovad av Rapport XIX. Rapporterar att den deskriptiva geometrin av faktoriseringsrum mestadels inte existerar — stress omskalar snarare än omformar rummet, och ingen topologisk övergång framträder. Vad som överlever är en riktad anpassningskostnad: asymmetrisk, icke‑komponerande och svagt förutsagd av beteendemässigt avstånd. Reform sker genom målets grannskap, inte längs en geodet, och kartan över beteenden är inte resan mellan dem. Rapport XXIII i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {
