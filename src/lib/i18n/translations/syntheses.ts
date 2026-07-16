@@ -26,7 +26,7 @@ export const synthesesTranslations = {
     },
     furtherReadingTitle: 'Technical Foundations',
     furtherReadingIntro: 'The working papers behind this essay, and what each one adds:',
-    digestTitle: 'The series in twentythree findings',
+    digestTitle: 'The series in twenty-three findings',
     papersDigest: [
       { ...papersEn[0], digest: 'The observation channel every later paper relies on is not a primitive. Bounded capacity plus a temporal‑prediction objective forces a system to compress, and the compression selects the variables that carry the world’s causal structure — with no action, reward, or survival pressure needed. When capacity starves, the system does not blur evenly; it sacrifices whole causal subspaces, becoming a static observer that sees where things are but not where they are going. And at the margin, the choice among symmetric variables is made by training contingency, not the world — factorization is non‑unique, and coordination is selection within a privileged class, not discovery of a unique truth.' },
       { ...papersEn.I, digest: 'A slow institution trying to manage a fast crisis always arrives out of phase — amplifying instability rather than correcting it. Response speed is a structural property of the architecture, not a matter of effort or political will.' },
