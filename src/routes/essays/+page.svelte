@@ -31,6 +31,14 @@
 
    // --- Priority 1: Governance ---
    { 
+     key: 'whenSensingDoesntHelp', 
+     url: '/essays/when-sensing-doesnt-help',
+     icon: '📡',  // satellite dish – sensing, signals
+     category: 'Governance',
+     categories: ['Governance', 'Philosophy'],  // also a methodological reflection
+     hasPDF: false
+   },
+   { 
      key: 'operatorCannotSee', 
      url: '/essays/what-the-operator-cannot-see',
      icon: '👁️', // eye – representing perception and its limits

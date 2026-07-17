@@ -14,6 +14,12 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     whenSensingDoesntHelp: {
+       title: 'When Sensing Doesn’t Help',
+       subtitle: 'A Retained‑Variety hypothesis, and how four simulations took it apart',
+       desc: 'A hypothesis that looked like the next paper in the Governance as Engineering series, produced a clean result, and then dissolved when the objection was modelled fairly.',
+       readTime: '10 min read'
+     },
      operatorCannotSee: {
        title: "What the Operator Cannot See",
        subtitle: "Structural conditions for perceiving well enough to govern",
@@ -315,6 +321,12 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     whenSensingDoesntHelp: {
+       title: 'När avkänning inte hjälper',
+       subtitle: 'En hypotes om kvarhållen variation, och hur fyra simuleringar plockade isär den',
+       desc: 'En hypotes som ett tag såg ut som nästa artikel i serien Styrning som ingenjörskonst, gav ett rent resultat, och sedan upplöstes när invändningen modellerades på rättvisa villkor.',
+       readTime: '15 min läsning'
+     },
      operatorCannotSee: {
        title: "Vad operatören inte kan se",
        subtitle: "Strukturella förutsättningar för att uppfatta tillräckligt väl för att styra",
