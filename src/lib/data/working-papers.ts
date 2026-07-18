@@ -28,6 +28,38 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'whereReformPushesDown',
+   key: 'whereReformPushesDown',
+   category: 'governance',
+   tags: [
+     'Bode Sensitivity Integral',
+     'CVaR',
+     'Strategic Adversary',
+     'Conservation Law',
+     'Proxy Governance',
+     'Goodhart',
+     'Risk Measure',
+     'Achievable Profile',
+     'Robust Control',
+     'Governance Engineering'
+   ],
+   year: '2026',
+   pages: '25',
+   readTime: {
+     en: '30 min',
+     sv: '30 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/where-reform-pushes-down.pdf`,
+     sv: `${localBase}/where-reform-pushes-down-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/where-reform-pushes-down-cover.png',
+   readOnlinePath: '/working-papers/where-reform-pushes-down',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-18'
+ },
+ {
    id: 'excitationStarvedObserver',
    key: 'excitationStarvedObserver',
    category: 'governance',

@@ -201,6 +201,10 @@ export const coreTranslations = {
     geSeriesPaperXXIV: {
       title: 'XXIV: The Observer You Cannot Afford to Excite',
       desc:  'Shows that optimizing a diversity proxy built on a learned observer destroys reachable alternatives — not by intent, but because task-centred data starves the periphery of the excitation the observer needs to resolve it.',
+    },
+    geSeriesPaperXXV: {
+      title: 'XXV: Where Reform Pushes Down, Strategy Pushes Back',
+      desc:  'Imports Bode\'s integral and CVaR to separate two geometries: conserved log‑sensitivity and strategic loss. Shows that deeper proxy suppression raises the exploitability floor, and robustness allowances govern the gap.',
     }
   },
 
@@ -612,6 +616,10 @@ export const coreTranslations = {
     geSeriesPaperXXIV: {
       title: 'XXIV: Observatören du inte har råd att excitera',
       desc:  'Visar att optimering av en diversitetsproxy byggd på en inlärd observatör förstör nåbara alternativ — inte avsiktligt, utan för att uppgiftscentrerad data svälter periferin på den excitering observatören behöver för att upplösa den.',
+    },
+    geSeriesPaperXXV: {
+      title: 'XXV: Där reform trycker ner, trycker strategi tillbaka',
+      desc:  'Importerar Bodes integral och CVaR för att separera två geometrier: konserverad log‑känslighet och strategisk förlust. Visar att djupare proxy‑undertryckning höjer exploaterbarhetsgolvet, och att robusthetsmarginaler styr gapet.',
     }
   },
 

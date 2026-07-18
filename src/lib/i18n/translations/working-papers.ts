@@ -168,6 +168,12 @@ export const workingpapersTranslations = {
      description:
        'Asks what changes when a diversity metric becomes an optimization target rather than a passive sensor. In a minimal gridworld, a learned observer allocates resolution to frequently visited regions and compresses the periphery; optimizing a diversity proxy built on that observer drives the proxy to its ceiling while destroying reachable access to peripheral options. The blind spot is not imposed — it is produced and maintained by the closed loop. Only structural exposure that guarantees observation of the margin, not broader exploration within existing pathways, repairs the decoupling. Paper XXIV in the Governance as Engineering series.',
    },
+   whereReformPushesDown: {
+     title: 'Where Reform Pushes Down, Strategy Pushes Back',
+     subtitle: 'Conserved sensitivity, an imported risk measure, and the geometry between them',
+     description:
+       'Examines the claim that suppressing a monitored measure relocates pressure into unmonitored channels. Imports Bode\'s sensitivity integral as a genuine conservation law and CVaR as an adversarial allocation benchmark, then separates the two geometries: conserved log‑sensitivity does not determine strategic loss. A synthesis sweep shows that deeper proxy suppression raises the accessible exploitability floor, and that robustness allowances narrow — and at maximal suppression close — the gap between risk‑blind and risk‑aware design. The governance transfer is split into two explicitly bounded layers. Paper XXV in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -416,6 +422,12 @@ export const workingpapersTranslations = {
      subtitle: 'Upplösningsbias, excitering och nåbara alternativ i ett minimalt adaptivt system',
      description:
        'Frågar vad som förändras när ett diversitetsmått blir ett optimeringsmål snarare än en passiv sensor. I en minimal gridvärld allokerar en inlärd observatör upplösning till ofta besökta regioner och komprimerar periferin; optimering av en diversitetsproxy byggd på den observatören driver proxyn till sitt tak samtidigt som den förstör nåbar tillgång till perifera alternativ. Den blinda fläcken är inte påtvingad — den produceras och upprätthålls av den slutna loopen. Endast strukturell exponering som garanterar observation av marginalen, inte bredare utforskning inom existerande vägar, reparerar frånkopplingen. Rapport XXIV i serien Styrning som ingenjörskonst.',
+   },
+   whereReformPushesDown: {
+     title: 'Där reform trycker ner, trycker strategi tillbaka',
+     subtitle: 'Konserverad känslighet, ett importerat riskmått och geometrin däremellan',
+     description:
+       'Undersöker påståendet att undertryckande av en övervakad kanal flyttar tryck till oövervakade kanaler. Importerar Bodes känslighetsintegral som en genuin konserveringslag och CVaR som ett adversariellt allokeringsriktmärke, och separerar sedan de två geometrierna: konserverad log‑känslighet bestämmer inte strategisk förlust. En syntes‑svepning visar att djupare proxy‑undertryckning höjer det nåbara exploaterbarhetsgolvet, och att robusthetsmarginaler minskar — och vid maximalt undertryck stänger — gapet mellan riskblind och riskmedveten design. Styrningsöverföringen delas i två explicit avgränsade lager. Rapport XXV i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

@@ -24,6 +24,7 @@ export const papersEn = {
   XXII: { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Paper XXII: What Cannot Be Guaranteed' },
   XXIII: { href: '/working-papers/shape-of-reform',                        label: 'Paper XXIII: The Shape of Reform' },
   XXIV: { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite' },
+  XXV: { href: '/working-papers/where-reform-pushes-down',                 label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back' },
 };
 
 export const papersSv = {
@@ -52,4 +53,5 @@ export const papersSv = {
   XXII: { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Rapport XXII: Vad som inte kan garanteras' },
   XXIII: { href: '/working-papers/shape-of-reform',                        label: 'Rapport XXIII: Reformens form' },
   XXIV: { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera' },
+  XXV: { href: '/working-papers/where-reform-pushes-down',                 label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka' },
 };

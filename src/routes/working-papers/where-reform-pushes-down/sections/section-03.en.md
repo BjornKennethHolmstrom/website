@@ -1,0 +1,27 @@
+## 3. Bode as an achievability constraint, and the geometry gap
+
+The allocation law of Section 2 takes the profile `f` as given. What determines `f` is the controller, and this is where Bode's integral enters — not as a statement about loss, but as a constraint on which profiles a controller can present.
+
+Let the loop transfer function be `L = PK` for plant `P` and controller `K`, with sensitivity `S = 1/(1+L)`. For a proper, internally stabilizing controller with no prohibited unstable cancellations, the Bode–Freudenberg–Looze integral gives
+
+    B_S = ∫₀^∞ log|S(jω)| dω = π · Σ Re(pₖ⁺) ≥ 0,          [R]
+
+the sum taken over open-loop right-half-plane poles of `L`; the integral is zero when there are none and the loop has relative degree at least two. Decompose the log-sensitivity into its positive and negative areas, `A₊ = ∫ [log|S|]₊` and `A₋ = ∫ [log|S|]₋`, so that `B_S = A₊ − A₋`. Then `A₊ = A₋` when `B_S = 0`, and `A₊ > A₋` when uncancelled unstable poles make `B_S` positive; in either case `A₊ ≥ A₋`. Now let `A_m ≤ A₋` denote the log-sensitivity suppressed inside a monitored band `Ω_m` — the "proxy" whose performance the controller is optimizing. Because monitored suppression is a component of total suppression,
+
+    A₊ ≥ A₋ ≥ A_m,          [R, architecture-independent]
+
+for *every* proper stabilizing controller. This is the honest, defensible core of the conservation intuition: a controller cannot suppress the monitored band for free, and the compensating amplification is at least as large as the suppression it bought. It holds regardless of controller architecture; it is an identity, not a feature of any particular design.
+
+But the identity is weaker than it looks, and the reason is the paper's central structural point. Bode's integral constrains a functional of the profile — the positive part of `log|S|` — while the adversary of Section 2 evaluates a *different* functional of the same profile, the upper tail of `|S|²`. Conservation lives in log-sensitivity geometry; harm lives in squared-magnitude tail geometry. Neither functional determines the other absent additional support, peak, or achievability constraints — the counterexample below shows only that they are not identified in general — and the immediate consequence is: **the accessible amplified area does not, by itself, determine the accessible loss** **[R]**.
+
+The point is sharp enough to warrant a bare counterexample. Consider two response profiles over a unit-measure reachable band. The first takes `|S|² = 4` on a quarter of the band and `1` on the rest; the second takes `|S|² = 2` on half the band and `1` on the rest. Both have identical accessible positive log-area, `A₊ = 0.1733`. Yet under a concentration factor `c = 2` the strategic losses differ — `J_strat/E = 2.50` for the first profile against `2.00` for the second — because the tail geometries differ even though the log-areas coincide. Equal conserved amplification, different realized harm.
+
+This counterexample must be labelled carefully, because it is doing less than it might appear to. The two profiles are arbitrary measurable functions; they are not the sensitivity functions of any stabilizable feedback loop, and they take no account of the Bode constraint that couples suppression to amplification. The demonstration is therefore one of *functional non-identifiability* — that the two functionals are not related in general — and not a claim that a controller can realize an arbitrary gap between them. Whether the gap survives inside the manifold of *achievable* sensitivity profiles, once Bode's budget and engineering constraints are imposed, is a separate and more demanding question, and it is the subject of Section 5. We flag here only the direction of the answer: the gap is real inside the achievable manifold but modest, and it collapses as proxy pressure and robustness constraints bind.
+
+The correct causal picture, then, is not a scalar chain running from monitored suppression to total amplification to loss. It is a two-stage structure in which the Bode budget constrains the achievable profile `f`, controller architecture shapes `f` within that budget, and only the triple `(f, Ω_a, c)` determines loss through the imported law. Conservation restricts the profile the defender may present; it does not restrict the tail functional the adversary applies to it. This separation — conservation constrains the profile, the harm metric is a different functional — is the canonical reading of fundamental limitations in Seron, Braslavsky and Goodwin, and we adopt it as the paper's organizing frame. The mechanism by which monitored-band suppression manufactures a compensating amplification peak, and the location of that peak relative to a reachable band, is shown in Figure 1.
+
+![Monitored-band suppression manufactures a compensating peak](/working-papers/images/where-reform-pushes-down/bode-adversary-mechanism.png)
+
+*Figure 1. Monitored-band suppression manufactures a compensating amplification peak. Sensitivity `|S|` for resonant controllers of increasing proxy gain `δ`; the monitored band `Ω_m` is shaded. Driving `|S|` below one inside `Ω_m` forces a taller peak just outside it, with the total log-sensitivity area conserved by Bode's integral. It is the accessible upper-tail distribution of `|S|²`, not the conserved log-area, that determines exploitability; location matters only because it changes that distribution (§3–§4).*
+
+---
