@@ -25,6 +25,7 @@ export const papersEn = {
   XXIII: { href: '/working-papers/shape-of-reform',                        label: 'Paper XXIII: The Shape of Reform' },
   XXIV: { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite' },
   XXV: { href: '/working-papers/where-reform-pushes-down',                 label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back' },
+  XXVI: { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning' },
 };
 
 export const papersSv = {
@@ -54,4 +55,5 @@ export const papersSv = {
   XXIII: { href: '/working-papers/shape-of-reform',                        label: 'Rapport XXIII: Reformens form' },
   XXIV: { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera' },
   XXV: { href: '/working-papers/where-reform-pushes-down',                 label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka' },
+  XXVI: { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända' },
 };

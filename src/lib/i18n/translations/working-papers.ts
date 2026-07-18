@@ -174,6 +174,12 @@ export const workingpapersTranslations = {
      description:
        'Examines the claim that suppressing a monitored measure relocates pressure into unmonitored channels. Imports Bode\'s sensitivity integral as a genuine conservation law and CVaR as an adversarial allocation benchmark, then separates the two geometries: conserved log‑sensitivity does not determine strategic loss. A synthesis sweep shows that deeper proxy suppression raises the accessible exploitability floor, and that robustness allowances narrow — and at maximal suppression close — the gap between risk‑blind and risk‑aware design. The governance transfer is split into two explicitly bounded layers. Paper XXV in the Governance as Engineering series.',
    },
+   costOfReturning: {
+     title: 'The Cost of Returning',
+     subtitle: 'Tail‑nucleated escape from epistemic monoculture',
+     description:
+       'Paper X modelled reversion from epistemic consolidation as a single small constant. This paper replaces the placeholder with an explicit mechanism: competence atrophies in disuse, return is nucleated by the best‑preserved channel and propagated by a cascade governed by an escape‑ladder theorem. The phase structure, the staircase plateaus, the duality of the forces that block and accelerate return, and the role of institutional time are all established within the model. Paper XXVI in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -428,6 +434,12 @@ export const workingpapersTranslations = {
      subtitle: 'Konserverad känslighet, ett importerat riskmått och geometrin däremellan',
      description:
        'Undersöker påståendet att undertryckande av en övervakad kanal flyttar tryck till oövervakade kanaler. Importerar Bodes känslighetsintegral som en genuin konserveringslag och CVaR som ett adversariellt allokeringsriktmärke, och separerar sedan de två geometrierna: konserverad log‑känslighet bestämmer inte strategisk förlust. En syntes‑svepning visar att djupare proxy‑undertryckning höjer det nåbara exploaterbarhetsgolvet, och att robusthetsmarginaler minskar — och vid maximalt undertryck stänger — gapet mellan riskblind och riskmedveten design. Styrningsöverföringen delas i två explicit avgränsade lager. Rapport XXV i serien Styrning som ingenjörskonst.',
+   },
+   costOfReturning: {
+     title: 'Kostnaden för att återvända',
+     subtitle: 'Svans‑nukleerad flykt från epistemisk monokultur',
+     description:
+       'Artikel X modellerade återgång från epistemisk konsolidering som en enda liten konstant. Denna artikel ersätter platshållaren med en explicit mekanism: kompetens förtvinar vid obruk, återgång nukleeras av den bäst bevarade kanalen och propageras genom en kaskad styrd av en flyktstege‑sats. Fasstrukturen, trappstegsplatåerna, dualiteten hos de krafter som blockerar och accelererar återgång, och den institutionella tidens roll etableras alla inom modellen. Rapport XXVI i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

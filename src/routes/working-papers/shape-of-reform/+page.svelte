@@ -87,22 +87,25 @@
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
         { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
-        { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
+        { href: '/working-papers/boundary-selection-deficits',             label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
         { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
-        { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor →' },
+        { href: '/working-papers/certification-floor',                     label: 'Paper XVII: The Certification Floor →' },
         { href: '/working-papers/boundary-instability',                    label: 'Paper XVIII: The Boundary Instability Principle →' },
         { href: '/working-papers/governors-sentinels-bridges',             label: 'Paper XIX: Governors, Sentinels, and Bridges →' },
         { href: '/working-papers/three-laws-from-one-bound',               label: 'Paper XX: Three Laws from One Bound →' },
         { href: '/working-papers/when-to-stop-learning',                   label: 'Paper XXI: When to Stop Learning, and When to Stop →' },
         { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Paper XXII: What Cannot Be Guaranteed →' },
+        { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
+        { href: '/working-papers/where-reform-pushes-down',                label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back →' },
+        { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'Paper XIX promised a sibling on the geometry and topology of factorization space. This paper opens by reporting that the promised object mostly does not exist — stress rescales rather than reshapes the space, and no topological transition appears. What survives is a different object: a directed adaptation cost that is asymmetric, non‑composing, and only weakly predicted by behavioral distance.',
       contextOutro: 'Reform does not move through the behavioral metric. It is a directed, update‑relative process whose costs are asymmetric, do not compose, and are often reduced by staging through the target\'s neighbourhood. The map of how institutions differ is not the travel of how they change.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -137,11 +140,14 @@
         { href: '/working-papers/three-laws-from-one-bound',               label: 'Rapport XX: Tre lagar från en gräns →' },
         { href: '/working-papers/when-to-stop-learning',                   label: 'Rapport XXI: När man ska sluta lära sig, och när man ska sluta →' },
         { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Rapport XXII: Vad som inte kan garanteras →' },
+        { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera →' },
+        { href: '/working-papers/where-reform-pushes-down',                label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka →' },
+        { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Rapport XIX utlovade en systerartikel om faktoriseringsrummets geometri och topologi. Denna artikel inleds med att rapportera att det utlovade objektet mestadels inte existerar — stress omskalar snarare än omformar rummet, och ingen topologisk övergång framträder. Vad som överlever är ett annat objekt: en riktad anpassningskostnad som är asymmetrisk, icke‑komponerande och bara svagt förutsagd av beteendemässigt avstånd.',
       contextOutro: 'Reform rör sig inte genom den beteendemässiga metriken. Det är en riktad, uppdateringsrelativ process vars kostnader är asymmetriska, inte komponerar och ofta reduceras genom att iscensätta via målets grannskap. Kartan över hur institutioner skiljer sig är inte resan över hur de förändras.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -244,7 +250,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

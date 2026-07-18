@@ -84,12 +84,12 @@
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Paper IX: The Political Economy of Requisite Governance →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Paper X: Requisite Observer Diversity →' },
         { href: '/working-papers/reform-exhaustion',                       label: 'Paper XI: Reform Exhaustion →' },
-        { href: '/working-papers/boundary-selection-deficits',            label: 'Paper XII: Boundary Selection Deficits →' },
+        { href: '/working-papers/boundary-selection-deficits',             label: 'Paper XII: Boundary Selection Deficits →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Paper XIII: Legitimacy as Emergent Gain →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Paper XIV: Governance as an Adaptive Controller →' },
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Paper XV: The Adaptation Bottleneck →' },
         { href: '/working-papers/why-diversity-resists-formalization',     label: 'Paper XVI: Why Diversity Resists Formalization →' },
-        { href: '/working-papers/certification-floor',                    label: 'Paper XVII: The Certification Floor →' },
+        { href: '/working-papers/certification-floor',                     label: 'Paper XVII: The Certification Floor →' },
         { href: '/working-papers/boundary-instability',                    label: 'Paper XVIII: The Boundary Instability Principle →' },
         { href: '/working-papers/governors-sentinels-bridges',             label: 'Paper XIX: Governors, Sentinels, and Bridges →' },
         { href: '/working-papers/three-laws-from-one-bound',               label: 'Paper XX: Three Laws from One Bound →' },
@@ -97,11 +97,12 @@
         { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Paper XXII: What Cannot Be Guaranteed →' },
         { href: '/working-papers/shape-of-reform',                         label: 'Paper XXIII: The Shape of Reform →' },
         { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
+        { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'A recurring claim in governance analysis is that suppressing a monitored metric does not remove the underlying pressure but relocates it into channels the measure no longer sees. The claim is almost always made informally — without a conserved quantity, a budget, or licensing conditions. This paper supplies those by importing two formal objects from control and risk theory.',
       contextOutro: 'Bode\'s sensitivity integral provides a genuine conservation law for the log‑sensitivity profile; CVaR provides an adversarial allocation benchmark for strategic loss. The paper\'s central finding is that the two geometries do not coincide: conserved amplification does not determine realized harm. A synthesis sweep shows that deeper proxy suppression raises the accessible exploitability floor, and that the gap between risk‑blind and risk‑aware design closes at maximal suppression.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -125,12 +126,12 @@
         { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning →' },
         { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald →' },
         { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
-        { href: '/working-papers/boundary-selection-deficits',            label: 'Rapport XII: Gränsdragningsunderskott →' },
+        { href: '/working-papers/boundary-selection-deficits',             label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
         { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv regulator →' },
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
         { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
-        { href: '/working-papers/certification-floor',                    label: 'Rapport XVII: Certifieringsgolvet →' },
+        { href: '/working-papers/certification-floor',                     label: 'Rapport XVII: Certifieringsgolvet →' },
         { href: '/working-papers/boundary-instability',                    label: 'Rapport XVIII: Principen om gränsinstabilitet →' },
         { href: '/working-papers/governors-sentinels-bridges',             label: 'Rapport XIX: Guvernörer, vaktposter och broar →' },
         { href: '/working-papers/three-laws-from-one-bound',               label: 'Rapport XX: Tre lagar från en gräns →' },
@@ -138,11 +139,12 @@
         { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Rapport XXII: Vad som inte kan garanteras →' },
         { href: '/working-papers/shape-of-reform',                         label: 'Rapport XXIII: Reformens form →' },
         { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera →' },
+        { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Ett återkommande påstående i styrningsanalys är att undertryckande av ett övervakat mått inte tar bort det underliggande trycket utan flyttar det till kanaler som måttet inte längre ser. Påståendet görs nästan alltid informellt — utan en konserverad storhet, en budget eller licensieringsvillkor. Denna artikel tillhandahåller dessa genom att importera två formella objekt från reglerteknik och riskteori.',
       contextOutro: 'Bodes känslighetsintegral ger en genuin konserveringslag för log‑känslighetsprofilen; CVaR ger ett adversariellt allokeringsriktmärke för strategisk förlust. Artikelns centrala fynd är att de två geometrierna inte sammanfaller: konserverad förstärkning bestämmer inte realiserad skada. En syntes‑svepning visar att djupare proxy‑undertryckning höjer det nåbara exploaterbarhetsgolvet, och att gapet mellan riskblind och riskmedveten design stängs vid maximalt undertryck.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -245,7 +247,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

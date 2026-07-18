@@ -205,6 +205,10 @@ export const coreTranslations = {
     geSeriesPaperXXV: {
       title: 'XXV: Where Reform Pushes Down, Strategy Pushes Back',
       desc:  'Imports Bode\'s integral and CVaR to separate two geometries: conserved log‑sensitivity and strategic loss. Shows that deeper proxy suppression raises the exploitability floor, and robustness allowances govern the gap.',
+    },
+    geSeriesPaperXXVI: {
+      title: 'XXVI: The Cost of Returning',
+      desc:  'Replaces the scalar reversion constant of Paper X with an explicit escape‑ladder mechanism. Return from epistemic monoculture is nucleated by the best‑preserved channel and propagated by a cascade governed by the ordered penalties of the survivors.',
     }
   },
 
@@ -620,6 +624,10 @@ export const coreTranslations = {
     geSeriesPaperXXV: {
       title: 'XXV: Där reform trycker ner, trycker strategi tillbaka',
       desc:  'Importerar Bodes integral och CVaR för att separera två geometrier: konserverad log‑känslighet och strategisk förlust. Visar att djupare proxy‑undertryckning höjer exploaterbarhetsgolvet, och att robusthetsmarginaler styr gapet.',
+    },
+    geSeriesPaperXXVI: {
+      title: 'XXVI: Kostnaden för att återvända',
+      desc:  'Ersätter den skalära återgångskonstanten i Rapport X med en explicit flyktstege‑mekanism. Återgång från epistemisk monokultur nukleeras av den bäst bevarade kanalen och propageras genom en kaskad styrd av de överlevandes ordnade kostnader.',
     }
   },
 

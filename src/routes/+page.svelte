@@ -30,7 +30,8 @@
   { key: 'geSeriesPaperXXII', url: '/working-papers/what-cannot-be-guaranteed', coverImage: '/working-papers/images/what-cannot-be-guaranteed-cover.png' },
   { key: 'geSeriesPaperXXIII', url: '/working-papers/shape-of-reform', coverImage: '/working-papers/images/shape-of-reform-cover.png' },
   { key: 'geSeriesPaperXXIV', url: '/working-papers/excitation-starved-observer', coverImage: '/working-papers/images/excitation-starved-observer-cover.png' },
-  { key: 'geSeriesPaperXXV', url: '/working-papers/where-reform-pushes-down', coverImage: '/working-papers/images/where-reform-pushes-down-cover.png' }
+  { key: 'geSeriesPaperXXV', url: '/working-papers/where-reform-pushes-down', coverImage: '/working-papers/images/where-reform-pushes-down-cover.png' },
+  { key: 'geSeriesPaperXXVI', url: '/working-papers/cost-of-returning', coverImage: '/working-papers/images/cost-of-returning-cover.png' }
  ];
 
 	// Definiera vår projektdata.

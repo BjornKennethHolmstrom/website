@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'costOfReturning',
+   key: 'costOfReturning',
+   category: 'governance',
+   tags: [
+     'Epistemic Monoculture',
+     'Observer Diversity',
+     'Competence Decay',
+     'Escape Ladder',
+     'Hysteresis',
+     'Tail-Nucleated Return',
+     'Cascade',
+     'Institutional Time',
+     'Recovery',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '40',
+   readTime: {
+     en: '50 min',
+     sv: '50 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/cost-of-returning.pdf`,
+     sv: `${localBase}/cost-of-returning-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/cost-of-returning-cover.png',
+   readOnlinePath: '/working-papers/cost-of-returning',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-18'
+ },
+ {
    id: 'whereReformPushesDown',
    key: 'whereReformPushesDown',
    category: 'governance',
