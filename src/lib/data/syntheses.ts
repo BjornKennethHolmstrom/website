@@ -23,6 +23,7 @@ export const papersEn = {
   XXI: { href: '/working-papers/when-to-stop-learning',                    label: 'Paper XXI: When to Stop Learning, and When to Stop' },
   XXII: { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Paper XXII: What Cannot Be Guaranteed' },
   XXIII: { href: '/working-papers/shape-of-reform',                        label: 'Paper XXIII: The Shape of Reform' },
+  XXIV: { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite' },
 };
 
 export const papersSv = {
@@ -50,4 +51,5 @@ export const papersSv = {
   XXI: { href: '/working-papers/when-to-stop-learning',                    label: 'Rapport XXI: När man ska sluta lära sig, och när man ska sluta' },
   XXII: { href: '/working-papers/what-cannot-be-guaranteed',               label: 'Rapport XXII: Vad som inte kan garanteras' },
   XXIII: { href: '/working-papers/shape-of-reform',                        label: 'Rapport XXIII: Reformens form' },
+  XXIV: { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera' },
 };

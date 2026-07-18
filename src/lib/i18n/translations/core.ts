@@ -197,6 +197,10 @@ export const coreTranslations = {
     geSeriesPaperXXIII: {
       title: 'XXIII: The Shape of Reform',
       desc:  'Finds that behavioral distance between institutions is a symmetric metric, but the cost of reforming one into another is directed, non‑composing, and largely independent of the metric. Reform is not movement through a geometry.',
+    },
+    geSeriesPaperXXIV: {
+      title: 'XXIV: The Observer You Cannot Afford to Excite',
+      desc:  'Shows that optimizing a diversity proxy built on a learned observer destroys reachable alternatives — not by intent, but because task-centred data starves the periphery of the excitation the observer needs to resolve it.',
     }
   },
 
@@ -604,6 +608,10 @@ export const coreTranslations = {
     geSeriesPaperXXIII: {
       title: 'XXIII: Reformens form',
       desc:  'Finner att beteendemässigt avstånd mellan institutioner är en symmetrisk metrik, men kostnaden att reformera en till en annan är riktad, icke‑komponerande och till stor del oberoende av metriken. Reform är inte rörelse genom en geometri.',
+    },
+    geSeriesPaperXXIV: {
+      title: 'XXIV: Observatören du inte har råd att excitera',
+      desc:  'Visar att optimering av en diversitetsproxy byggd på en inlärd observatör förstör nåbara alternativ — inte avsiktligt, utan för att uppgiftscentrerad data svälter periferin på den excitering observatören behöver för att upplösa den.',
     }
   },
 

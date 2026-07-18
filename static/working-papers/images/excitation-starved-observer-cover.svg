@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 1200"
+   font-family="'Helvetica Neue', Arial, sans-serif"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="excitation-starved-observer-cover.svg"
+   inkscape:export-filename="excitation-starved-observer-cover.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview51"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.72333333"
+     inkscape:cx="600"
+     inkscape:cy="600"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg51" />
+  <defs
+     id="defs6">
+    <filter
+       id="cyanGlow"
+       x="-0.25074627"
+       y="-0.25074627"
+       width="1.5014925"
+       height="1.5014925">
+      <feGaussianBlur
+         stdDeviation="7"
+         result="b"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="b"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <filter
+       id="amberGlow"
+       x="-0.8"
+       y="-0.8"
+       width="2.6"
+       height="2.6">
+      <feGaussianBlur
+         stdDeviation="6"
+         result="b"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="b"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="softGlow"
+       x="-0.8"
+       y="-0.8"
+       width="2.6"
+       height="2.6">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="b"
+         id="feGaussianBlur4" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="b"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- background -->
+  <rect
+     width="1200"
+     height="1200"
+     fill="#1E2633"
+     id="rect6" />
+  <!-- faint structural circuitry (series texture) -->
+  <g
+     stroke="#2FD4E0"
+     stroke-opacity="0.12"
+     stroke-width="1"
+     fill="none"
+     id="g9">
+    <path
+       d="M 150 210 L 210 210 L 232 188"
+       id="path6" />
+    <circle
+       cx="232"
+       cy="188"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle6" />
+    <path
+       d="M 1046 250 L 1010 214 L 958 214"
+       id="path7" />
+    <path
+       d="M 1040 1010 L 1004 1010 L 986 1030"
+       id="path8" />
+    <circle
+       cx="986"
+       cy="1030"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle8" />
+    <path
+       d="M 158 962 L 158 998 L 196 1014"
+       id="path9" />
+  </g>
+  <!-- overarching thesis, quiet (mirrors the series pattern) -->
+  <text
+     x="150"
+     y="188"
+     font-size="17"
+     letter-spacing="3"
+     fill="#7E8A9A"
+     id="text9">OPTIMISE THE OBSERVER · BLIND THE MARGIN</text>
+  <!-- ===================================================================== -->
+  <!-- THE SELF-REINFORCING LOOP — clockwise, closed on itself                -->
+  <!-- ===================================================================== -->
+  <g
+     fill="none"
+     stroke="#04ECF6"
+     stroke-width="2.6"
+     stroke-opacity="0.85"
+     filter="url(#cyanGlow)"
+     id="g13">
+    <path
+       d="M 616 304 A 298 298 0 0 1 896 584"
+       id="path10" />
+    <path
+       d="M 896 616 A 298 298 0 0 1 616 896"
+       id="path11" />
+    <path
+       d="M 584 896 A 298 298 0 0 1 304 616"
+       id="path12" />
+    <path
+       d="M 304 584 A 298 298 0 0 1 584 304"
+       id="path13" />
+  </g>
+  <!-- clockwise arrowheads into each node -->
+  <g
+     fill="#04ECF6"
+     filter="url(#cyanGlow)"
+     id="g17">
+    <path
+       d="M 886 582 L 899 592 L 884 596 Z"
+       id="path14" />
+    <path
+       d="M 618 886 L 608 899 L 604 884 Z"
+       id="path15" />
+    <path
+       d="M 314 618 L 301 608 L 316 604 Z"
+       id="path16" />
+    <path
+       d="M 582 314 L 592 301 L 596 316 Z"
+       id="path17" />
+  </g>
+  <!-- node markers -->
+  <g
+     fill="#0B3A44"
+     stroke="#04ECF6"
+     stroke-width="2"
+     filter="url(#softGlow)"
+     id="g20">
+    <circle
+       cx="600"
+       cy="302"
+       r="9"
+       id="circle17" />
+    <circle
+       cx="898"
+       cy="600"
+       r="9"
+       id="circle18" />
+    <circle
+       cx="600"
+       cy="898"
+       r="9"
+       id="circle19" />
+    <circle
+       cx="302"
+       cy="600"
+       r="9"
+       id="circle20" />
+  </g>
+  <!-- stage labels -->
+  <g
+     fill="#7E8A9A"
+     font-size="15"
+     letter-spacing="1.5"
+     text-anchor="middle"
+     id="g21">
+    <text
+       x="600"
+       y="266"
+       id="text20">OPTIMISER STAYS CENTRAL</text>
+    <text
+       x="600"
+       y="948"
+       id="text21">OBSERVER COMPRESSES THE MARGIN</text>
+  </g>
+  <g
+     fill="#7E8A9A"
+     font-size="15"
+     letter-spacing="1.5"
+     id="g23">
+    <text
+       x="920"
+       y="594"
+       id="text22">CENTRE EXCITED,</text>
+    <text
+       x="920"
+       y="616"
+       id="text23">MARGIN DARK</text>
+  </g>
+  <g
+     fill="#7E8A9A"
+     font-size="15"
+     letter-spacing="1.5"
+     text-anchor="end"
+     id="g25">
+    <text
+       x="280"
+       y="594"
+       id="text24">PROXY MAXIMISED</text>
+    <text
+       x="280"
+       y="616"
+       id="text25">IN THE CENTRE</text>
+  </g>
+  <!-- ===================================================================== -->
+  <!-- THE HUB — excitation geometry: lit centre, dark margin, bottleneck     -->
+  <!-- ===================================================================== -->
+  <!-- dark coarse periphery: one undivided category -->
+  <circle
+     cx="600"
+     cy="600"
+     r="120"
+     fill="#182633"
+     id="circle25" />
+  <circle
+     cx="600"
+     cy="600"
+     r="118"
+     fill="none"
+     stroke="#2FD4E0"
+     stroke-opacity="0.22"
+     stroke-width="1.4"
+     stroke-dasharray="2 9"
+     id="circle26" />
+  <text
+     x="600"
+     y="502"
+     font-size="12"
+     letter-spacing="1"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text26">periphery: coarse, dark</text>
+  <!-- unreached options in the dark margin -->
+  <g
+     fill="#E8943A"
+     fill-opacity="0.42"
+     filter="url(#softGlow)"
+     id="g30">
+    <circle
+       cx="512"
+       cy="572"
+       r="4"
+       id="circle27" />
+    <circle
+       cx="506"
+       cy="626"
+       r="4"
+       id="circle28" />
+    <circle
+       cx="534"
+       cy="676"
+       r="4"
+       id="circle29" />
+    <circle
+       cx="586"
+       cy="700"
+       r="4"
+       id="circle30" />
+  </g>
+  <!-- lit, finely-resolved centre (the meadow): densely excited -->
+  <g
+     fill="#04ECF6"
+     fill-opacity="0.9"
+     filter="url(#cyanGlow)"
+     id="g45">
+    <rect
+       x="567"
+       y="567"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect30" />
+    <rect
+       x="585"
+       y="567"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect31" />
+    <rect
+       x="603"
+       y="567"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect32" />
+    <rect
+       x="621"
+       y="567"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect33" />
+    <rect
+       x="567"
+       y="585"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect34" />
+    <rect
+       x="585"
+       y="585"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect35" />
+    <rect
+       x="603"
+       y="585"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect36" />
+    <rect
+       x="621"
+       y="585"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect37" />
+    <rect
+       x="567"
+       y="603"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect38" />
+    <rect
+       x="585"
+       y="603"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect39" />
+    <rect
+       x="603"
+       y="603"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect40" />
+    <rect
+       x="621"
+       y="603"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect41" />
+    <rect
+       x="567"
+       y="621"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect42" />
+    <rect
+       x="585"
+       y="621"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect43" />
+    <rect
+       x="603"
+       y="621"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect44" />
+    <rect
+       x="621"
+       y="621"
+       width="13"
+       height="13"
+       rx="2"
+       id="rect45" />
+  </g>
+  <!-- the costly bottleneck: the only channel out -->
+  <line
+     x1="636"
+     y1="636"
+     x2="672"
+     y2="672"
+     stroke="#04ECF6"
+     stroke-opacity="0.5"
+     stroke-width="1.6"
+     id="line45" />
+  <g
+     stroke="#E8943A"
+     stroke-width="2.2"
+     stroke-linecap="round"
+     filter="url(#softGlow)"
+     id="g47">
+    <line
+       x1="648"
+       y1="662"
+       x2="662"
+       y2="648"
+       id="line46" />
+    <line
+       x1="662"
+       y1="676"
+       x2="676"
+       y2="662"
+       id="line47" />
+  </g>
+  <text
+     x="712"
+     y="708"
+     font-size="12"
+     letter-spacing="0.5"
+     fill="#5C6B7E"
+     id="text47">bottleneck · costly</text>
+  <!-- ===================================================================== -->
+  <!-- THE CONSEQUENCE — sensor climbs, reach stays at zero                    -->
+  <!-- ===================================================================== -->
+  <text
+     x="600"
+     y="776"
+     font-size="15"
+     letter-spacing="1"
+     text-anchor="middle"
+     id="text49"><tspan
+       fill="#04ECF6"
+       id="tspan47">PROXY → CEILING</tspan><tspan
+       fill="#5C6B7E"
+       id="tspan48">     ·     </tspan><tspan
+       fill="#E8943A"
+       id="tspan49">REACH → 0</tspan></text>
+  <!-- ===================================================================== -->
+  <!-- THE FIX — structural exposure pierces the loop and reaches the margin  -->
+  <!-- ===================================================================== -->
+  <path
+     d="M 862 846 C 790 782, 730 726, 692 686"
+     fill="none"
+     stroke="#E8943A"
+     stroke-width="2.6"
+     stroke-linecap="round"
+     filter="url(#amberGlow)"
+     id="path49" />
+  <path
+     d="M 700 694 L 686 680 L 682 698 Z"
+     fill="#E8943A"
+     filter="url(#amberGlow)"
+     id="path50" />
+  <circle
+     cx="686"
+     cy="684"
+     r="4.5"
+     fill="#E8943A"
+     filter="url(#softGlow)"
+     id="circle50" />
+  <text
+     x="878"
+     y="862"
+     font-size="14"
+     letter-spacing="1.5"
+     fill="#E8943A"
+     fill-opacity="0.9"
+     text-anchor="middle"
+     id="text50">STRUCTURAL EXPOSURE</text>
+  <text
+     x="878"
+     y="882"
+     font-size="12"
+     letter-spacing="0.5"
+     fill="#5C6B7E"
+     text-anchor="middle"
+     id="text51">observe the margin, not explore harder</text>
+</svg>

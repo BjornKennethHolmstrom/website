@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'excitationStarvedObserver',
+   key: 'excitationStarvedObserver',
+   category: 'governance',
+   tags: [
+     'Excitation',
+     'Resolution Bias',
+     'Diversity Proxy',
+     'Goodhart',
+     'Reachable Alternatives',
+     'Persistent Excitation',
+     'Observer',
+     'Structural Exposure',
+     'Optimization',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '33',
+   readTime: {
+     en: '40 min',
+     sv: '40 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/excitation-starved-observer.pdf`,
+     sv: `${localBase}/excitation-starved-observer-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/excitation-starved-observer-cover.png',
+   readOnlinePath: '/working-papers/excitation-starved-observer',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-18'
+ },
+ {
    id: 'shapeOfReform',
    key: 'shapeOfReform',
    category: 'governance',

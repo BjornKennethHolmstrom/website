@@ -162,6 +162,12 @@ export const workingpapersTranslations = {
      description:
        'The sibling paper promised by Paper XIX. Reports that the descriptive geometry of factorization space mostly does not exist — stress rescales rather than reshapes the space, and no topological transition appears. What survives is a directed adaptation cost: asymmetric, non‑composing, and weakly predicted by behavioral distance. Reform stages through the target\'s neighbourhood, not along a geodesic, and the map of behaviors is not the travel between them. Paper XXIII in the Governance as Engineering series.',
    },
+   excitationStarvedObserver: {
+     title: 'The Observer You Cannot Afford to Excite',
+     subtitle: 'Resolution bias, excitation, and reachable alternatives in a minimal adaptive system',
+     description:
+       'Asks what changes when a diversity metric becomes an optimization target rather than a passive sensor. In a minimal gridworld, a learned observer allocates resolution to frequently visited regions and compresses the periphery; optimizing a diversity proxy built on that observer drives the proxy to its ceiling while destroying reachable access to peripheral options. The blind spot is not imposed — it is produced and maintained by the closed loop. Only structural exposure that guarantees observation of the margin, not broader exploration within existing pathways, repairs the decoupling. Paper XXIV in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -404,6 +410,12 @@ export const workingpapersTranslations = {
      subtitle: 'Beteendemässigt avstånd är en metrik; reformkostnad är riktad',
      description:
        'Systerartikeln utlovad av Rapport XIX. Rapporterar att den deskriptiva geometrin av faktoriseringsrum mestadels inte existerar — stress omskalar snarare än omformar rummet, och ingen topologisk övergång framträder. Vad som överlever är en riktad anpassningskostnad: asymmetrisk, icke‑komponerande och svagt förutsagd av beteendemässigt avstånd. Reform sker genom målets grannskap, inte längs en geodet, och kartan över beteenden är inte resan mellan dem. Rapport XXIII i serien Styrning som ingenjörskonst.',
+   },
+   excitationStarvedObserver: {
+     title: 'Observatören du inte har råd att excitera',
+     subtitle: 'Upplösningsbias, excitering och nåbara alternativ i ett minimalt adaptivt system',
+     description:
+       'Frågar vad som förändras när ett diversitetsmått blir ett optimeringsmål snarare än en passiv sensor. I en minimal gridvärld allokerar en inlärd observatör upplösning till ofta besökta regioner och komprimerar periferin; optimering av en diversitetsproxy byggd på den observatören driver proxyn till sitt tak samtidigt som den förstör nåbar tillgång till perifera alternativ. Den blinda fläcken är inte påtvingad — den produceras och upprätthålls av den slutna loopen. Endast strukturell exponering som garanterar observation av marginalen, inte bredare utforskning inom existerande vägar, reparerar frånkopplingen. Rapport XXIV i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {
