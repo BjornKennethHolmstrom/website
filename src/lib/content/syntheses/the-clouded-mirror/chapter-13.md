@@ -1,4 +1,4 @@
-## 11. The Civilizational Bet
+## 13. The Civilizational Bet
 
 Every governance architecture makes a wager, whether its designers know it or not. The wager is that the set of dimensions the system tracks—the indicators it monitors, the values it optimises, the disturbances it is calibrated to detect—will remain adequate to the environment it must govern. For most of human history, this was a reasonable bet. The world changed slowly enough that an observation architecture built in one generation could serve, with minor adjustments, for several more. The variety of the disturbance environment and the variety of the governance system remained in rough alignment, not because the system was perfectly designed, but because the rate of change in the environment was low enough that the gap between them never grew catastrophic.
 

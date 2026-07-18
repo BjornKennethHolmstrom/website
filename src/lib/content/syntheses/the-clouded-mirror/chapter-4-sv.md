@@ -1,4 +1,4 @@
-## Den andra halvan av loopen
+## 4. Den andra halvan av loopen
 
 Allt som hittills har beskrivits rör ena halvan av loopen. Ett styrsystem, påminner oss ingenjörens lins, observerar, beslutar, handlar och observerar igen – och de fyra sätten som kanalen bryts samman på, Dataillusionen, själva Varietetsgapet är alla redogörelser för det första steget: hur systemet *ser*. De säger ingenting om det tredje. De diagnostiserar en immig spegel, och en immig spegel är ett misslyckande i perception. Men en spegel, hur klar den än är, rör inte din hand. Även ett system som uppfattade sin värld perfekt skulle fortfarande behöva handla gentemot den – och vägen från ett beslut till ett levererat utfall är en kedja i sig, med sitt eget sätt att falla samman.
 

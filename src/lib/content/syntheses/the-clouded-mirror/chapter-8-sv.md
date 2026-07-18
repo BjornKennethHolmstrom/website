@@ -1,4 +1,4 @@
-## 6. Varför misslyckanden förvärras (och varför reformer gör en besviken)
+## 8. Varför misslyckanden förvärras (och varför reformer gör en besviken)
 
 Om de fyra felsätten verkade oberoende av varandra skulle reformarbetet vara överväldigande men okomplicerat. Man skulle identifiera vilket felsätt som orsakar mest skada, utforma en lösning, genomföra den och gå vidare till nästa. Varje framgång skulle göra systemet en aning bättre. Framstegen skulle vara långsamma men kumulativa.
 

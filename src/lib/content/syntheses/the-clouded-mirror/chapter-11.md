@@ -1,4 +1,4 @@
-## 9. A Sensory Prosthesis: What AI Could Be For
+## 11. A Sensory Prosthesis: What AI Could Be For
 
 No technology in human history has expanded the dimensionality of the disturbance environment as rapidly as artificial intelligence. It introduces new dimensions of risk—algorithmic bias, autonomous weapons, labour market disruption, epistemic erosion, concentration of unaccountable power—that governance systems barely have the vocabulary to name, let alone the institutional capacity to govern. It accelerates the emergence rate of other disturbance dimensions, from synthetic biology to cyber warfare to financial contagion. And it does all this at a speed that makes the characteristic response latency of democratic governance look not merely slow but categorically mismatched.
 

@@ -1,4 +1,4 @@
-## 8. Fragmenten finns redan här
+## 10. Fragmenten finns redan här
 
 Om föregående kapitel beskrev vad en styrningsarkitektur kapabel till medveten perceptuell evolution skulle kräva, erbjuder detta kapitel en mer jordad form av hopp. Byggstenarna är inte teoretiska. De existerar, i praktiken, i system över hela världen – ofta på platser som konventionella styrningsindex avfärdar som dysfunktionella eller underutvecklade. De är ofullständiga, isolerade och sårbara för de immunsvar som beskrevs i kapitel 5. Men de visar att de strukturella krav som identifierats i denna text inte är utopiska. De är uppnåbara. De har uppnåtts. Frågan är inte om fragmenten kan byggas. Den är varför de ännu inte kopplas samman.
 

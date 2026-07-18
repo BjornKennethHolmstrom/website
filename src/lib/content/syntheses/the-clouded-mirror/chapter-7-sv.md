@@ -1,4 +1,4 @@
-## 5. Varietetsgapet: en diagnos, många symptom
+## 7. Varietetsgapet: en diagnos, många symptom
 
 De fyra felsätt som beskrevs i kapitel 3 – rumslig blindhet, frekvensgap, preferensosynlighet och observationsbrist – ter sig på ytan som olika problem. De påverkar olika domäner, involverar olika mekanismer och producerar olika symptom. En centralbank som brottas med frekvensgap tycks stå inför en annan utmaning än ett parlament som brottas med preferensosynlighet. Ett fiskeridepartement som hanterar observationsbrist tycks stå inför en annan utmaning än ett regionalt utvecklingsorgan som hanterar rumslig blindhet.
 

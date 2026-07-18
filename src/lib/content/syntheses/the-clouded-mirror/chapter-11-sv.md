@@ -1,4 +1,4 @@
-## 9. En sensorisk protes: Vad AI skulle kunna vara till för
+## 11. En sensorisk protes: Vad AI skulle kunna vara till för
 
 Ingen teknologi i mänsklighetens historia har expanderat störningsmiljöns dimensionalitet så snabbt som artificiell intelligens. Den introducerar nya riskdimensioner – algoritmisk bias, autonoma vapen, omvälvning av arbetsmarknaden, epistemisk erosion, koncentration av ansvarslös makt – som styrsystem knappt har vokabulär för att benämna, än mindre institutionell kapacitet att styra. Den accelererar uppkomsttakten för andra störningsdimensioner, från syntetisk biologi till cyberkrigföring till finansiell smitta. Och den gör allt detta i en hastighet som får den demokratiska styrningens karakteristiska responslatens att framstå inte bara som långsam utan som kategoriskt felanpassad.
 

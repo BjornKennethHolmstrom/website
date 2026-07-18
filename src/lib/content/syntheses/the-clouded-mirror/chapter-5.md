@@ -1,4 +1,4 @@
-## The Third Question: Which System?
+## 5. The Third Question: Which System?
 
 The engineer's lens gave us three properties—latency, signal fidelity, dimensionality—and the failure modes that follow concern, at bottom, two questions any controller must answer: at what *speed* should it respond, and along how many *dimensions* should it perceive? Frequency gaps are failures of the first; the narrow dashboard is a failure of the second. But there is a third question, prior to both, that the analysis has quietly assumed away: *which system* is the controller governing? Where does the thing it is responsible for end, and the rest of the world begin? Every institution draws that line somewhere—around a municipality, a watershed, a nation—and then treats whatever crosses it as weather: external, given, someone else's. The trouble is that the line is a choice, and it can be drawn around the wrong system.
 

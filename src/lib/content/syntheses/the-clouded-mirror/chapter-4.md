@@ -1,4 +1,4 @@
-## The Other Half of the Loop
+## 4. The Other Half of the Loop
 
 Everything described so far concerns one half of the loop. A governance system, the engineer's lens reminds us, observes, decides, acts, and observes again—and the four ways the channel breaks, the Data Illusion, the Variety Gap itself are all accounts of the first step: how the system *sees*. They say nothing about the third. They diagnose a clouded mirror, and a clouded mirror is a failure of perception. But a mirror, however clear, does not move your hand. Even a system that perceived its world perfectly would still have to act on it—and the path from a decision to a delivered outcome is a chain of its own, with its own way of falling apart.
 

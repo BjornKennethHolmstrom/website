@@ -1,4 +1,4 @@
-## 8. The Fragments Are Already Here
+## 10. The Fragments Are Already Here
 
 If the previous chapter outlined what a governance architecture capable of conscious perceptual evolution would require, this chapter offers a more grounded form of hope. The building blocks are not theoretical. They exist, in practice, in systems across the world—often in places that conventional governance indices dismiss as dysfunctional or underdeveloped. They are incomplete, isolated, and vulnerable to the immune responses described in Chapter 5. But they demonstrate that the structural requirements identified in this paper are not utopian. They are achievable. They have been achieved. The question is not whether the fragments can be built. It is why they do not yet connect.
 

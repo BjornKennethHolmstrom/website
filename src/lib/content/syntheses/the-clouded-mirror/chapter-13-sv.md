@@ -1,4 +1,4 @@
-## 11. Det civilisatoriska vadet
+## 13. Det civilisatoriska vadet
 
 Varje styrningsarkitektur gör ett vad, vare sig dess konstruktörer vet det eller inte. Vadet är att den uppsättning dimensioner systemet följer – de indikatorer det övervakar, de värden det optimerar, de störningar det är kalibrerat att upptäcka – kommer att förbli adekvat för den miljö det måste styra. Under större delen av mänsklighetens historia var detta ett rimligt vad. Världen förändrades tillräckligt långsamt för att en observationsarkitektur byggd under en generation kunde tjäna, med mindre justeringar, i flera till. Variationen i störningsmiljön och variationen i styrsystemet förblev i grov samstämmighet, inte för att systemet var perfekt utformat, utan för att förändringstakten i miljön var tillräckligt låg för att gapet mellan dem aldrig blev katastrofalt.
 

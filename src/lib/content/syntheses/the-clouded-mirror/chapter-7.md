@@ -1,4 +1,4 @@
-## 5. The Variety Gap: One Diagnosis, Many Symptoms
+## 7. The Variety Gap: One Diagnosis, Many Symptoms
 
 The four failure modes described in Chapter 3—spatial blindness, frequency gaps, preference invisibility, and observational inadequacy—appear, on the surface, to be different problems. They affect different domains, involve different mechanisms, and produce different symptoms. A central bank struggling with frequency gaps seems to face a different challenge than a parliament struggling with preference invisibility. A fisheries ministry dealing with observational inadequacy seems to face a different challenge than a regional development agency dealing with spatial blindness.
 

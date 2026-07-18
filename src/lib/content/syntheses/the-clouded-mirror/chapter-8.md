@@ -1,4 +1,4 @@
-## 6. Why Failures Compound (And Why Reforms Disappoint)
+## 8. Why Failures Compound (And Why Reforms Disappoint)
 
 If the four failure modes operated independently, the task of reform would be daunting but straightforward. You would identify which failure mode is causing the most damage, design a solution, implement it, and move on to the next. Each success would make the system a little better. Progress would be slow but cumulative.
 

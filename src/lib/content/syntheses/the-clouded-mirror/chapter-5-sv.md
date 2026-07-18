@@ -1,4 +1,4 @@
-## Den tredje frågan: Vilket system?
+## 5. Den tredje frågan: Vilket system?
 
 Ingenjörens lins gav oss tre egenskaper – latens, signaltrohet, dimensionalitet – och de felmoder som följer rör, i grunden, två frågor som varje regulator måste besvara: med vilken *hastighet* ska den svara, och längs hur många *dimensioner* ska den uppfatta? Frekvensgap är misslyckanden i det första; den smala instrumentpanelen är ett misslyckande i det andra. Men det finns en tredje fråga, före båda, som analysen tyst har antagit bort: *vilket system* är det som regulatorn styr? Var slutar det den är ansvarig för, och var börjar resten av världen? Varje institution drar den linjen någonstans – kring en kommun, ett avrinningsområde, en nation – och behandlar sedan det som korsar den som väderlek: externt, givet, någon annans. Problemet är att linjen är ett val, och den kan dras kring fel system.
 

@@ -1,4 +1,4 @@
-## 7. The Meta-Governance Imperative: Learning to See What We’re Missing
+## 9. The Meta-Governance Imperative: Learning to See What We’re Missing
 
 The argument so far has been diagnostic. We have described four ways the observation channel breaks. We have shown that these failure modes compound, that the system’s own immune response resists correction, and that the most dangerous aspect of the condition is that the system cannot perceive the full extent of its own blindness. The question that remains is whether anything can be done about it.
 
@@ -35,6 +35,10 @@ This is the structural logic behind the first step proposed in nearly every coun
 
 
 These three mechanisms—value audits, deliberative dimension-surfacing bodies, and protected experimental spaces—are not a complete governance architecture. They are the components of a meta-governance system: a set of institutions whose function is not to achieve the current goals, but to question them. To perceive, before the gap becomes fatal, the dimensions that the current value architecture excludes.
+
+These three mechanisms share a direction: each expands what a governance system can perceive. But a system that can revise its objectives indefinitely raises a question the three do not answer, and it is the hardest question meta-governance contains. A structure built to maintain some coupling between the world and a valued outcome can outlive the coupling it was built for. The need it was created to meet can be met, or move, or pass to some other body better placed to hold it—and when that happens, the adaptive act is not to persist but to end, or to hand the function on. The characteristic failure here is a quiet substitution: a structure meant to keep the world coupled to a value comes instead to treat its own continuation as the value, and defends its survival with the energy it was supposed to spend on its purpose. It goes on functioning, passing every operational test, long after the reason for its functioning has lapsed. Perceiving *that*—that a perceiving structure has outlived its purpose—is as much a meta-governance capacity as perceiving a missing dimension, and it is rarer, because every incentive inside a structure runs toward its own preservation.
+
+This is why managed evolution has to include managed ending. A system that can add organs of perception but never retire them accumulates structure the way a narrow dashboard accumulates blind spots—each layer defensible in isolation, the whole growing heavier and less able to move. The same logic that argues for building the machinery of perception argues for building, alongside it, the machinery by which a structure asks whether its own continued form still serves the coupling it exists to maintain, and accepts that the answer is sometimes no. An architecture capable of its own evolution is one capable of its own obsolescence—not as a failure it suffers, but as a choice it is designed to be able to make.
 
 This is a design problem of extraordinary difficulty. It asks a system to institutionalise the capacity for its own self-transcendence—to build the machinery of its own obsolescence. The immune system will resist it. The Measurement Paradox will obscure the need for it. The existing political economy will generate a thousand reasons why it is impractical, premature, or unnecessary.
 
