@@ -96,7 +96,7 @@
       </li>
       <li>
         <a href="/working-papers" class="font-medium text-[var(--color-page-accent)] hover:underline">
-          {$language === 'sv' ? 'De fjorton arbetsdokumenten' : 'The fourteen working papers'} →
+          {$language === 'sv' ? 'Arbetsdokumenten' : 'The working papers'} →
         </a>
         <p class="text-sm opacity-70 mt-1">
           {$language === 'sv'
