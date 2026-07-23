@@ -1,404 +1,469 @@
-# Governance as Engineering — Dependency Atlas
+# Governance as Engineering — Dependency Atlas (v2)
 
-*Internal structural map of the series. Not public-facing. Where `brief.md` tells a reader what GaE says, this document records whether GaE hangs together: which claims rest on which, how strong each link is, which branches are closed, and which open dependency would unlock the most downstream work.*
+*Internal structural map of the series. Where `brief.md` tells a reader what GaE says, this document records whether GaE hangs together: which claims rest on which, by what kind of relation, how strong each is, which branches are closed, and which open dependency would unlock the most downstream work.*
 
-*Scope at this revision: Paper 0, Papers I–XXVII, Self I–III. The public `brief.md` is stale at eighteen papers and must be reconciled against this atlas (see §7). This atlas is organised by object and dependency, not by paper number; a paper-indexed lookup is in §8.*
+*Scope: Paper 0, Papers I–XXVII, Self I–III. Reconciled with the live `brief.md` / `brief-sv.md` (both current through XXVII, twenty-eight documents counting Paper 0). Organised by object and relation, not paper number; a paper-indexed lookup is in §10.*
+
+*v2 changes (from an external review of v1): tier scheme cleaned to `[R]`+scope / `[N]` / `[E]` / `[IP]` / `[H]`; edges now carry relation labels, not just strengths; Paper 0's role reclassified as retrospective grounding for most papers rather than a validity dependency; the single linear spine replaced by a process loop plus a constraint overlay; the pentad added as the candidate central object; a two-axis priority matrix and a Self transfer matrix added; the nulls "self-diagnosis" claim demoted from conclusion to a bounded candidate synthesis; and one live correction to XXVII's mutual-information claim flagged (§9).*
 
 ---
 
 ## 0. How to read this atlas
 
-Two conventions carry the whole document.
+**Evidence tiers.** The corpus uses `[R]` / `[IP]` / `[H]` plus the compound `[R within the model]`. That compound bundles two things a dependency graph must keep apart — a *theorem* that holds exactly inside a stated model, and a *simulation regularity* that holds only up to a numerical envelope. This atlas splits them and annotates scope:
 
-**Evidence tiers.** The corpus uses `[R]` / `[IP]` / `[H]`, plus the compound tags `[R within the model]` and `[R, numerical with envelope]`. Those two compounds bundle together two things that behave differently in a dependency graph — a theorem that holds exactly inside a stated model, and a simulation result that holds only up to a numerical envelope over a finite panel. This atlas splits them, so that a downstream claim inheriting from a proof and one inheriting from a seeded run are visibly different. The atlas tiers, and how they map onto the corpus tags:
+| Tier | Meaning |
+|---|---|
+| **[R]** | Analytic theorem or exact finite derivation. Add a `scope:` — a theorem inside a toy model is still `[R]`, but its domain *is* that model, and the atlas says so. |
+| **[N]** | Envelope-controlled numerical result: a preregistered simulation outcome over a finite panel, true up to the reported convergence/seed envelope. |
+| **[E]** | Empirical observation against out-of-model data under a frozen protocol. |
+| **[IP]** | In-principle: formal core sound, mapping onto institutions or the self is interpretive. |
+| **[H]** | Heuristic: estimated, illustrative, or loosely applied. |
 
-| Atlas tier | Meaning | Corpus tag it refines |
+The corpus's `[R within the model]` maps to atlas **`[R]` scope: `<model>`** when it names a theorem, and to **`[N]`** when it names a simulation result. This split is the atlas's job; the public brief may keep three tiers and note once that its `[R within the model]` covers atlas `[R]`(scoped) + `[N]`.
+
+**Edge relations.** v1 marked only arrow *strength*. That conflated distinct relations. v2 labels each edge by *kind* — strength alone could not distinguish "XXVII is derived from VI" (false) from "XXVII refines VI" (true). The vocabulary:
+
+- **assumes** — uses the source's object as a premise (e.g. "a finite state space exists"), without depending on the source's *derivation* of it.
+- **derives** — follows from the source by proof or exact construction.
+- **mechanizes** — supplies a concrete mechanism for something the source stated abstractly.
+- **motivates / positions** — the source frames or locates the target; no logical entailment.
+- **refines** — sharpens or adds a constraint to the source's result.
+- **empirically tests** — the target puts the source's prediction through a data gate.
+- **reuses-model** — the target inherits the source's simulation apparatus.
+- **transfers-by-analogy** — cross-scale correspondence, not invariance.
+- **retracts / contradicts** — the target overturns a claim the source advanced.
+
+A claim's own tier and the relation feeding it are independent: an `[IP]` reading can *derive* cleanly from an `[R]` core (rigorous mathematics, in-principle institutional reading), and a `[N]` result can *motivate* a later claim without entailing it.
+
+---
+
+## 1. The central object, the primitives, and the observation matrix
+
+### 1.1 What the object at the centre actually is
+
+v1 named **factorization** the series' central object. After XXVII that is only half right. Factorization is the *floor* — the thing every paper stands on — but the mature programme's recurring object is a *relation*, the coupling among five things:
+
+```
+   environmental          ┌── representation ──┐
+   distinction   ◀──────▶ │                    │ ◀──────▶  objective
+        ▲                 └─────────┬──────────┘               │
+        │                          │                          ▼
+     feedback  ◀───────────────────┴───────────────────▶   action
+```
+
+Most GaE failure modes are a broken link somewhere in this pentad: insufficient distinctions (VI, XX-Ashby), distorted representation (I, III), objective-induced blindness (VI, XXIV), inadequate action repertoire (XI), misaligned feedback (XXVII), failed certification of the whole relation to the world (XVII, XXII), or inability to revise the relations (XXI, XXIII). Factorization is where the pentad is instantiated; **the coupling among factorization, objective, action, and feedback is where the theory now lives.** This is a candidate organising frame, offered as a structural observation `[H]` — not a theorem, and not a claim that the five reduce to one.
+
+### 1.2 Primitive objects
+
+The smallest recurring objects, each with where it is made load-bearing. The honest status: GaE has *most* of one grammar, with two half-attached appendages — the **objective/loss** object and the **reform operator** are each realised differently in different papers (see §6.1, §6.2).
+
+- **Environment / plant** — true state space and dynamics (assumed from I; never derived).
+- **Disturbance** — the variety the controller must reject (II, IV, VI).
+- **Factorization** — the partition of the world into the variables that exist *for* the system. Derived from bounded capacity + temporal prediction in **Paper 0**; assumed from I onward.
+- **Observation channel** — plant state → decision layer; four separable adequacy axes (§1.3).
+- **Boundary** — the jurisdiction/environment cut (XII); whether it survives learning (XVIII).
+- **Objective / loss** — what the controller optimises; enters as an *observation architecture* (VI). *Not yet one formal object across the series* — the deepest integration gap (§6.1).
+- **Action repertoire** — the distinct responses available; one action per internal state (XX). What alignment aligns *to* (XXVII).
+- **Feedback target** — the distinction a signal actually resolves, possibly displaced from the action-relevant one (XXVII).
+- **Certification link** — where a rule's dependence on a world-fact is discharged by trusting an anchor unverified (XVII); the kernel an institution cannot self-monitor (XXII).
+- **Learning rule** — how the model updates (XIV); distinct from adaptation (XXI).
+- **Reform operator** — the costly, directed transformation between factorizations (XXIII); the least-developed primitive (§6.2).
+
+### 1.3 The observation-adequacy matrix
+
+XXVII is not a consciousness-derived appendage; placed here it fills the *action-relative* cell of a matrix the series had left with a hole. An observation channel is adequate only if all four hold:
+
+| Adequacy axis | Question | Papers |
 |---|---|---|
-| **[R]** | Analytic theorem or exact finite derivation; true wherever its stated premises hold. | `[R]`, the proof half of `[R within the model]` |
-| **[N]** | Envelope-controlled numerical result: a preregistered simulation outcome over a finite panel, true up to the reported convergence/seed envelope. | the numerical half of `[R within the model]`, `[R, numerical with envelope]` |
-| **[E]** | Empirical observation against out-of-model data under a frozen protocol. | Study 1 (Paper X); nothing else yet |
-| **[IP]** | In-principle: the formal core is sound, the mapping onto institutions or the self is an interpretive correspondence, not a derivation. | `[IP]` |
-| **[H]** | Heuristic: estimated, illustrative, or applied loosely. Orientation only. | `[H]` |
+| **Coverage / dimensionality** | Does it distinguish enough relevant conditions? | VI, XX-Ashby |
+| **Fidelity / latency** | Does the signal arrive intact and in time? | I, III |
+| **Action-relative alignment** | Does it distinguish conditions relevant to the *intervention*? | **XXVII** |
+| **Ensemble diversity** | Does the observer ecology preserve independent access to what any one channel misses? | X, XIX |
 
-The split is the atlas's one substantive addition to the tier scheme; `brief.md` need not adopt it, but the atlas cannot do its job without it. Adding `[N]` is the repair ChatGPT flagged for the "R within a model versus numerical evidence" ambiguity.
-
-**Arrow strengths.** In every dependency graph below, arrows are marked:
-
-- `═▶` **derivational** — the target follows from the source by proof or exact construction.
-- `─▶` **structural** — the target is built on the source and fails if the source fails, but the step is an argument, not a theorem.
-- `··▶` **thematic** — the target reuses, reinterprets, or gives a mechanism to the source without depending on it for validity.
-
-A claim's own tier and the strength of the arrow feeding it are independent: an `[IP]` governance reading can sit at the end of a `═▶` derivational arrow (the mathematics is rigorous; the reading is in-principle), and a `[N]` result can feed a later claim by a merely thematic `··▶` link.
+This is why XXVII *completes* Cycle One's observation-channel theory rather than opening a third cycle. A later *adaptive-alignment* paper would open one, because it moves from the properties of a fixed observation architecture to a system's capacity to infer and revise its own observation semantics.
 
 ---
 
-## 1. Primitive objects
+## 2. Structure: a process loop with a constraint overlay
 
-The smallest recurring objects the series reasons in. The test this list is meant to pass or fail: does GaE have one formal grammar, or a family resemblance? The honest answer at this revision is *most of one grammar with two half-attached appendages* (the objective/loss object and the reform operator are each realised differently in different papers). Each object is listed with where it is introduced or first made load-bearing.
+v1 drew one linear spine (factorization → observation → decision → actuation → certification → adaptation → reform). That reads well but is false to the theory: several load-bearing results are not *stages* in a chain. Multiplicative compounding (V) and the bottleneck (XV) are **composition laws**; legitimacy (XIII) is a **coupling state** spanning observation and actuation; source-term locality (XVI) is a **cross-cutting condition**; the conservation/harm mismatch (XXV) is a **performance constraint**; boundary selection (XII) determines *what the plant even is* rather than sitting at one point. So v2 uses two superimposed structures.
 
-- **Environment / plant** — the governed system's true state space and dynamics. Assumed from Paper I; never itself derived.
-- **Disturbance** — the variety the environment throws at the controller; its dimensionality is the thing requisite variety must match (II, IV, VI).
-- **Factorization** — the partition of the world's flux into the variables that exist *for* the system; the state space, ontology, or set of governed quantities. *The* central object. Derived from bounded capacity + temporal prediction in **Paper 0**; treated as given in every paper from I onward.
-- **Observation channel** — the map from plant state to what the decision layer receives. Carries four separable adequacy properties, and separating them is much of the series' content: **dimensional adequacy** (VI, XX-Ashby), **fidelity** (I, III), **alignment** (XXVII), **observer diversity** (X, XIX).
-- **Boundary** — the jurisdiction/environment cut; which dynamics are modelled and which are externalised (XII), and whether that cut survives the controller's own learning (XVIII).
-- **Objective / loss** — what the controller optimises. Enters as an *observation architecture* (VI): the loss selects what is seen. Realised as a scalar proxy (XX, XXIV, XXV), a fixed loss with action semantics (XXVII), or a personal value function (Self I). *Not yet a single formal object across the series* — an open integration item (§6).
-- **Action repertoire** — the set of distinct responses the controller can take; one action per internal state (XX). The thing alignment must align *to* (XXVII).
-- **Feedback target** — the distinction a signal actually resolves, which may be displaced from the action-relevant distinction (XXVII). Introduced by XXVII; retroactively names what VI and XXIV were circling.
-- **Certification link** — the point at which a rule's dependence on a world-fact must be discharged by trusting an anchor unverified (XVII). Reappears as the certification *kernel* an institution cannot self-monitor (XXII).
-- **Learning rule** — how the internal model updates from data (XIV); distinct from adaptation, which maintains coupling (XXI).
-- **Reform operator** — the (costly, directed) transformation from one factorization to another (XXIII). The series' least developed primitive — realised only as a retraining cost in one architecture, and explicitly *not* a metric (§6).
+### 2.1 The process loop
+
+```
+        ┌───────────────────────── world ◀─────────────────────────┐
+        │                                                          │
+        ▼                                                          │
+     OBSERVE ──▶ INFER / DECIDE ──▶ ACT ──────────────────────────┘
+        ▲               │
+        │               │
+     (learning changes the internal model) ── loops back to OBSERVE/DECIDE
+        │
+     (reform changes the architecture itself) ── loops back to the whole loop
+```
+
+Learning and reform are not terminal stages; they feed back. Learning revises the model inside a fixed factorization; reform changes the factorization. Both re-enter the loop rather than ending it.
+
+### 2.2 The constraint overlay
+
+These operate *across* the loop, not at a point in it:
+
+| Constraint | Where it bites | Paper |
+|---|---|---|
+| bounded factorization | the whole loop's representational floor | 0 |
+| latency | observe → act dead time | I |
+| fidelity | observe, and every internal chain | I, III |
+| dimensional adequacy | observe (coverage) | VI, XX |
+| action-relative alignment | observe → decide (does the signal match the action?) | XXVII |
+| observer correlation | observe (ensemble) | X, XIX |
+| boundary mismatch | defines the plant; drifts under learning | XII, XVIII |
+| certification floor | act → world (is the world-fact real?) | XVII, XXII |
+| legitimacy | couples observe-noise and act-gain | XIII |
+| multiplicative compounding | how static deficits combine | V |
+| bottleneck | how loop stages combine dynamically | XV |
+| transition cost | reform's price and direction | IX, XXIII |
+
+Reading the two together: the loop is what a controller *does*; the overlay is the set of structural taxes it pays wherever it does them. A paper belongs to the overlay row it constrains, not to a stage it "comes after."
 
 ---
 
-## 2. The dependency spine
+## 3. Claim dependency graph (relation-audited)
 
-The load-bearing skeleton, object by object. Everything in §3 hangs off this.
+Grouped by object. Edges carry relation labels (§0). This section supersedes v1's arrow-strength-only graph.
 
-```
-                    ┌─────────────────────────────────────────────┐
-                    │  Paper 0 · bounded capacity + prediction     │
-                    │  ═▶ FACTORIZATION (derived, non-unique)      │
-                    └───────────────────────┬─────────────────────┘
-                                            │ ═▶
-                                            ▼
-                    ┌─────────────────────────────────────────────┐
-                    │  OBSERVATION CHANNEL adequacy — four axes    │
-                    │   dimensional (VI, XX)                       │
-                    │   fidelity     (I, III)                      │
-                    │   alignment    (XXVII)          ◀── newest   │
-                    │   diversity    (X, XIX)                      │
-                    └───────────────────────┬─────────────────────┘
-                                            │ ─▶
-                                            ▼
-                    DECISION / SELECTION  (V compounding · XV bottleneck)
-                                            │ ─▶
-                                            ▼
-                    ACTUATION  (XI codimension law · XIII legitimacy gain)
-                                            │ ─▶
-                                            ▼
-                    WORLD CERTIFICATION  (XVII relocation invariant · XXII kernel)
-                                            │ ─▶
-                                            ▼
-                    LEARNING / ADAPTATION  (XIV · XV · XVI · XVIII · XXI · XXVI)
-                                            │ ─▶
-                                            ▼
-                    REFORM / FACTORIZATION TRANSITION  (IX · XXIII · XXV)
-```
+### 3.1 Factorization — and Paper 0's actual load
 
-The spine reads: a bounded system must factorize; a factorization is an observation channel with four independently failable adequacy properties; what the channel delivers is decided and acted on through chains that compound and bottleneck; action must eventually certify against a world it cannot self-verify; the whole loop must learn without dissolving; and when the factorization itself must change, that change is directed and costly. Cycle One builds the top half (static architecture); Cycle Two and the later clusters build the bottom half (dynamics).
+**Paper 0** derives factorization from bounded capacity + a temporal-prediction objective. `[IP]` for the derivation; `[N]` for the three exhibited properties (emergence of latent causal variables; structured blindness — a coherent causal subspace lost whole; non-unique symmetry-broken selection). First structured-blindness operationalization failed, corrected under a second registered run (§5).
 
----
+**Reclassification (v2).** v1 called Paper 0 "the most-depended-on node." That overstated its *validity* load. Three distinct relations were being conflated:
 
-## 3. Claim dependency graph
+- **object dependency** — a paper uses *a* factorization (a finite representation exists). Nearly every paper has this, and it needs only "a bounded controller partitions its world," *not* Paper 0's stronger two-ingredient derivation.
+- **origin dependency** — a paper depends on Paper 0's specific claim that *bounded prediction alone* generates factorization. Very few papers need this.
+- **retrospective grounding** — Paper 0 supplies, after the fact, a mechanism for an object earlier papers assumed.
 
-Grouped by object. Each entry: the claim, its tier, the arrows into it, and the arrows out (what later work uses it).
-
-### 3.1 Factorization (the floor)
-
-**Paper 0 — factorization is derived, not primitive.** Bounded representational capacity + a temporal-prediction objective force compression that *selects* the world's predictive variables; no action, reward, or survival pressure required. `[IP]` for the derivation; `[N]` for the three exhibited properties (emergence of latent causal variables; structured blindness — a coherent causal subspace sacrificed whole under capacity starvation; non-unique symmetry-broken selection). First registered operationalization of structured blindness *failed*, corrected under a second registered run (§5).
+For most papers Paper 0 is the *third*. If its two-ingredient argument failed generally, the latency, delegation, observer-correlation, boundary, certification, and alignment results would **stand** — they would lose a proposed origin story, not their formal objects. XXVII, for instance, has an explicit finite state space whether or not passive prediction is the origin of all factorizations. **This makes GaE less brittle than v1's graph implied.** Edges from Paper 0 are therefore relabelled *grounds* / *mechanizes*, not *derives*.
 
 ```
-bounded capacity + prediction  ═▶  factorization exists                [IP]
-                               ═▶  structured blindness (whole subspace lost)  [N]
-                               ═▶  non-uniqueness → equivalence classes  [R-in-model]
-                                        │
-                                        ├─▶  coordination = selection within a class (not discovery of truth)
-                                        └─▶  privileged classes: causal-variable-preserving factorizations
-                                             objectively better on robustness/transfer
+0 ── mechanizes ──▶ VI (structured blindness IS the variety gap, now with a mechanism)
+0 ── grounds ─────▶ XIX, XX, XXIII, XXVII   (retrospective; these assume a factorization, not 0's derivation)
+0 ── derives ─────▶ (its own three properties only)
 ```
 
-Out (this is the most-depended-on node in the series):
-- structured blindness `··▶` **VI** variety gap (mechanised: an institution at its limit keeps a coherent partial model, is blind to the rest, *not* evenly blurred)
-- non-uniqueness `─▶` **XIX** (portfolio question: what to preserve when no one factorization fits every regime)
-- bounded representation premise `═▶` **XX** (Ashby, Goodhart, certification cost all re-derived from it)
-- privileged-class result `─▶` **XXIII** (behavioral distance metric presupposes behaviorally-equivalent classes)
-- factorization-as-object `─▶` **XXVII** (the state space whose distinctions alignment operates on)
+### 3.2 Observation — dimensional adequacy
 
-### 3.2 Observation channel — dimensional adequacy
-
-**VI — objective functions are observation architectures; the variety gap G.** What a system does not value, it ceases to see; optimisation erodes sensing of the dimensions the objective omits *when the omitted dimension is causally coupled to the proxy*. `[IP]`. The static condition (perceived variety ≥ disturbance variety net of the objective's reach) is `[R]` within the model.
-
-**XX-Ashby — requisite variety as pigeonhole theorem.** With N internal states and Vₐ task-relevant conditions, N < Vₐ forces some state to collapse conditions needing different actions. `[R]`, flagged by the paper itself as near-definitional. Non-shallow content: *distinguish enough / distinguish the right things / re-distinguish when the quotient shifts.*
+**VI** — objective functions are observation architectures; the variety gap `G`. Optimisation erodes sensing of omitted dimensions *causally coupled to the proxy*. `[IP]`; static condition `[R]` scope: the VI model.
+**XX-Ashby** — requisite variety as pigeonhole: `N ≥ Vₐ`. `[R]` (near-definitional, flagged shallow). Non-shallow content: *distinguish enough / the right things / re-distinguish when the quotient shifts.*
 
 ```
-Paper 0 bounded rep  ═▶  XX-Ashby: N ≥ Vₐ                       [R, shallow]
-VI variety gap  ─▶  VIII composite index G                       [IP index / H weights]
-VI  ··▶  XXIV (resolution starved on rarely-visited periphery = variety gap in a learned observer)  [N]
-XX-Ashby "distinguish the right things"  ··▶  XXVII requisite alignment (the sufficiency gap Ashby leaves open)
+0 ── mechanizes ──▶ VI
+VI ── refines-into ──▶ XXVII (variety gap → the sufficiency question alignment answers)
+XX-Ashby ── motivates ──▶ XXVII ("distinguish the right things" is the gap XXVII fills)
+VI ── mechanizes ──▶ XXIV (learned observer starves resolution on the rare periphery)
 ```
 
-### 3.3 Observation channel — fidelity
+### 3.3 Observation — fidelity
 
-**I — latency and fidelity ceilings; the averaging problem.** Centralised controllers respond to the mean, not the distribution. `[IP]`.
-**III — representation-chain attenuation; constitutional unobservability.** Beyond a critical chain depth the policy layer cannot reconstruct the source signal, regardless of the quality of either endpoint. `[IP]`.
-
-```
-III constitutional unobservability  ═▶  XI constitutional uncontrollability (exact dual, actuation side)  [R codim]
-III representation chain  ─▶  Self III inherited unobservability (human node is a chain layer)  [R]
-```
-
-### 3.4 Observation channel — alignment  ◀ newest object
-
-**XXVII — requisite alignment.** For an observable to have decision value it must not only carry sufficient variety and transmit it without compression; the distinction it resolves must be *aligned* with the distinction the controller's action turns on, and alignment has geometry (which distinction, not how many).
-
-Tiered results:
-- displaced feedback channel not representable by any scalar reliability q `[R]`
-- at m=0 displaced solve reduces exactly to the matched solve; exact-inert planes stay Aπ=0 `[R]`
-- the two registered geometries carry identical marginal MI at every displacement level → any value difference is information-independent `[R]`
-- 486/592 (82.1%) resolved substantive attenuation, 0 enrichment, unanimous among resolved `[N]`
-- geometry dependence with sign reversal in displacement probability `[N]`
-- worst case is intermediate ambiguity, not maximal displacement `[N]` (registered as a possible shape, confirmed)
+**I** — latency/fidelity ceilings; averaging problem. `[IP]`.
+**III** — representation-chain attenuation; constitutional unobservability, bounded by chain depth regardless of endpoint quality. `[IP]`.
 
 ```
-Paper 0 factorization  ─▶  ┐
-VI observation-as-architecture  ─▶  ├═▶  XXVII requisite alignment
-XX sharpened Goodhart  ─▶  ┘
-
-XXVII  ══▶  REFINES the Goodhart–Ashby synthesis:
-        requisite variety (dimensionality) is necessary but NOT sufficient;
-        requisite alignment (geometry of the resolved distinction) is a second,
-        independently binding constraint.
+III ── derives (dual) ──▶ XI (constitutional uncontrollability, actuation side) [R]
+III ── derives ─────────▶ Self-III inherited unobservability (human node = chain layer) [R]
 ```
 
-Out — XXVII is the current frontier node; every §6.1–6.5 open branch descends from an assumption it fixes from outside (loss, action semantics, hidden classes).
+### 3.4 Observation — alignment  ◀ newest axis
 
-### 3.5 Observation channel — diversity
+**XXVII** — requisite alignment: an observable's decision value requires its resolved distinction to line up with the action-relevant distinction, and alignment has geometry (which distinction, not how many).
 
-**X — distributed sensing fails through correlation, not individual error.** Ensemble error variance scales as σ²·[(1−ρ)/N + ρ]; a correlation floor caps the benefit of adding observers. `[R]` for the variance law. Its central prediction — contemporary AI observers are near-perfectly correlated — is the series' one `[E]` result (Study 1: ρ_eff ≈ 0.97; six-model ensemble ≈ single-model error). Secondary prediction (tail correlation strongest) *not* supported (§5).
-
-**XIX — governor / sentinel / bridge dissociation.** A factorization can govern well, warn early, or hold the ecology connected, and these dissociate; winner-take-all selection rewards only the first. `[N]` for the phenomenon (registered at role-structure level, not model identity); `[IP]` for the institutional reading.
-
-```
-Paper 0 non-uniqueness  ─▶  XIX portfolio roles
-X correlation floor  ─▶  XXVI (replaces X's exogenous return-probability constant with a mechanism)
-XIX governor≠sentinel dissociation  ══▶  gives XVI source terms a MECHANISM
-        (optimization sheds warning capacity because warning is uncorrelated with governing, not because it is costly)
-XIX bridge role  ··▶  new failure mode: loss of connectivity in factorization space
-XIX  ─▶  XVII certification must test all three roles, not governing adequacy alone
-XIX advertised geometry  ══▶  audited and mostly RETRACTED by XXIII (§5)
-```
-
-### 3.6 Decision / selection & the compounding results
-
-**V — the coordination-failure tax.** Deficits of I–IV do not add; they compound multiplicatively. `[R]` (arithmetic) / `[IP]`.
-**XV — the adaptation bottleneck.** Sense/Learn/Execute share one recursive loop whose adaptive rate is the *minimum* of its stage rates. `[R]` (arithmetic) / `[IP]`. The dynamic dual of V.
+- scalar-`q` non-representability of the displaced channel — `[R]`
+- at `m=0` the displaced solve reduces exactly to the matched solve; exact-inert planes stay `Aπ=0` — `[R]` scope: the ES-2.x model
+- 486/592 (82%) resolved substantive attenuation, 0 enrichment, unanimous among resolved — `[N]`
+- geometry dependence with sign reversal in displacement probability — `[N]`
+- worst case is intermediate ambiguity, not maximal displacement — `[N]`
+- **information-geometry contrast — under revision, see §9.** The strong v1 rendering ("identical marginal MI at every displacement, so the value gap is information-independent") is being narrowed; the safe statement is that the two geometries share output cardinality, `q`, `m`, likelihood spectrum, and *uniform-prior one-observation* MI, but can differ in belief-conditioned MI and sequential value. The general alignment claim stays `[IP]`.
 
 ```
-V multiplicative compounding  ══▶  Self II composite failure (primitives multiplicatively coupled → sealed self)
-XV min-rate bottleneck  ─▶  XVIII Critical Learning Bandwidth (lower bound = XV in local form)
-XV  ─▶  XXI absorptive-capacity inequality (adaptation holds only while learning's demand stays within loop capacity)
+VI ── refines-into ──▶ XXVII
+XX ── motivates ─────▶ XXVII
+0  ── grounds ───────▶ XXVII (assumes a finite state space; does NOT depend on 0's derivation)
+XXVII ── refines ────▶ the Goodhart–Ashby synthesis
+        (requisite variety necessary but not sufficient; requisite alignment a second, geometric constraint)
 ```
 
-### 3.7 Actuation
+### 3.5 Observation — diversity
 
-**XI — the codimension law.** A delegation chain loses exactly one cleanly transmitted dimension per deficient layer; control effort grows superlinearly with depth. `[R]` (codimension) / `[IP]` (energy → political capital, deliberately never rigorous).
-**XIII — legitimacy as the first endogenous coupling state.** Multiplies actuation, divides observation noise, cannot be set directly, collapses with hysteresis when borrowed. `[IP]`.
-
-```
-XI codimension  ═▶  Self II constitutional self-uncontrollability (dual of III via observer–plant identity)
-XIII legitimacy gain  ─▶  Self III operator-seeded legitimacy spiral (single node can trigger XIII collapse)
-XIII multiplicative gain  ─▶  Self II sequencing claim (rebuild self-legitimacy first)
-```
-
-### 3.8 World certification
-
-**XVII — the relocation invariant.** Processing can be made arbitrarily verifiable; certification of reality cannot be self-verifying. Automating a coordination boundary relocates the irreducible world-certification link upstream but cannot delete it — for world-coupled coordination (governance by construction); pure convention escapes it. `[IP]`.
+**X** — ensemble variance `σ²·[(1−ρ)/N + ρ]`; a correlation floor caps added observers. `[R]` (variance law). Central prediction is the series' one **`[E]`** result (Study 1: ρ_eff ≈ 0.97). Secondary prediction (tail correlation) **not** supported.
+**XIX** — governor/sentinel/bridge dissociation; winner-take-all rewards only governing. `[N]` (phenomenon-level, 20 seeds); `[IP]` reading.
 
 ```
-XVII regress  ─▶  XXII certification incompleteness (one of three demands; source = XVII + XXI meta-ladder, NOT XX pigeonhole)
-XVII  ─▶  XIX (certification must audit sentinel and bridge value, not just governing)
-XVII certification cost  ─▶  XX third law (certification cost as monotone accounting quantity)
+0   ── grounds ──────▶ XIX
+XIX ── mechanizes ───▶ XVI (optimization sheds warning because warning is UNCORRELATED with governing)
+XIX ── reuses-model ─▶ XXIII (which then AUDITS and RETRACTS XIX's advertised geometry — §5)
+X   ── refines ──────▶ XXVI (replaces X's exogenous return-probability constant with a competence mechanism)
 ```
 
-**XXII — three demands, three sources, one refused unification.** Inside (self-validate the basis of correction), outside (decide convergence before acting), before-the-world (justify an architecture without a claim about which world). Each fails, *for a different reason*: reform undecidability needs computational universality (the *negation* of bounded representation); No Free Lunch needs only absence of a prior; only certification incompleteness traces to the bound. Two clean theorems, both declared shallow; the content is the contrapositive (*name your assumed dynamics class; name your bet on the environment class*). Sharpest practical claim: **an institution cannot monitor its own certification kernel with instruments that depend on that kernel** — a corrupt kernel makes health indicators *improve*. `[IP]`; five registered predictions failed (§5).
+### 3.6 Composition laws (not stages)
+
+**V** — coordination-failure tax: I–IV compound multiplicatively. `[R]`.
+**XV** — adaptation bottleneck: loop adaptive rate = min of stage rates. `[R]`. Dynamic dual of V.
 
 ```
-XVII + XXI  ─▶  XXII certification incompleteness
-XXII  ══▶  explicitly REFUSES XX-style "three limits from one bound" unification
-XXII kernel-blindness  ··▶  XVIII laundering (same shape: the diagnostic measures the corruption's success)
+V  ── transfers ──▶ Self-II composite failure (multiplicatively coupled primitives → sealed self)
+XV ── derives (local form) ──▶ XVIII Critical Learning Bandwidth (lower bound)
+XV ── constrains ─▶ XXI absorptive-capacity inequality
+```
+
+### 3.7 Actuation & the legitimacy coupling state
+
+**XI** — codimension law: one dimension lost per deficient layer; effort superlinear in depth. `[R]` (codimension) / `[IP]` (energy).
+**XIII** — legitimacy: the first endogenous coupling state; multiplies actuation, divides observation noise, collapses with hysteresis when borrowed. `[IP]`. *A coupling state, not an actuation stage.*
+
+```
+XI  ── derives (dual) ──▶ Self-II constitutional self-uncontrollability (via observer–plant identity)
+XIII ── transfers ─────▶ Self-III operator-seeded legitimacy spiral
+```
+
+### 3.8 Certification
+
+**XVII** — relocation invariant: certification of reality cannot be self-verifying; automating a boundary relocates the world-certification link upstream, cannot delete it (world-coupled coordination only). `[IP]`.
+**XXII** — three demands (inside / outside / before-the-world) fail from *three different sources*; refuses XX-style unification. Sharpest claim: an institution cannot monitor its certification kernel with instruments that depend on it — a corrupt kernel makes health indicators *improve*. `[IP]`; five registered predictions failed (§5).
+
+```
+XVII ── grounds ──▶ XXII certification incompleteness (with XXI's closed meta-ladder — NOT XX's pigeonhole)
+XVII ── grounds ──▶ XX third law (certification cost, monotone)
+XXII ── contradicts ──▶ XX's "three limits from one bound" symmetry (explicitly refused)
+XXII ── rhymes-with ──▶ XVIII laundering (candidate synthesis §5.1)
 ```
 
 ### 3.9 Learning / adaptation
 
-**XIV — stable learning.** Dual control, exploration–exploitation, persistent excitation as the rigorous content of "antifragility." `[IP]`.
-**XVI — exploration-preservation resists formalization.** Across four disciplines, a quantity of unused alternatives decays under optimisation and persists only through a *source term the optimiser does not set*; the order parameter is **source-term locality** (inside vs outside the control set). A deliberately bounded negative result. `[IP]`.
-**XVIII — the Non-Factorizability Theorem.** Under generic persistent learning, no time-invariant jurisdiction/environment decomposition survives. `[R within the model]`. **Critical Learning Bandwidth** bounds learning from both sides; the two bounds pinch shut on part of parameter space — the **Decomposability Frontier**. `[R-in-model] / [IP]`.
-**XXI — lifecycle.** Learning ≠ adaptation (the fastest learner can hold the best model and the worst grip) `[N]`; the meta-learning ladder must close on invariants in a bounded system `[R]`; sunsetting — persistence ≠ purpose `[IP]`.
-**XXVI — tail-nucleated escape from monoculture.** Replaces Paper X's placeholder return-probability with a retained-competence mechanism; escape is nucleated by the best-preserved channel and propagated by a ladder condition on ordered penalties. Escape-ladder theorem `[R-in-model]`; stochastic first-passage account confirmed over tested range `[N]`; transfer `[IP]`.
+**XIV** — dual control, persistent excitation. `[IP]`.
+**XVI** — source-term locality: unused-alternatives decay under optimisation, persist only via a source term outside the control set. Bounded negative result. `[IP]`.
+**XVIII** — Non-Factorizability Theorem `[R]` scope: the XVIII model; Critical Learning Bandwidth; Decomposability Frontier `[R]`(scoped)/`[IP]`.
+**XXI** — learning ≠ adaptation `[N]`; meta-ladder closes on invariants `[R]`; persistence ≠ purpose `[IP]`.
+**XXIV** — optimising a diversity proxy maxes it while peripheral reach collapses; a *learned* observer compresses the periphery on its own. `[N]`; administrative prediction is `[H]` hypothesis, not result.
+**XXVI** — tail-nucleated escape from monoculture; escape-ladder theorem `[R]` scope: the XXVI model; first-passage account `[N]`; transfer `[IP]`.
 
 ```
-XIV persistent excitation  ══▶  XXIV (persistent-excitation failure closed into an objective)
-XVI source-term locality  ◀══  XIX (mechanism supplied) ; ◀── XXIV (excitation instance)
-XVIII learning reshapes boundary  ◀─  XII (removes XII's exogenous-coupling assumption)
-XVIII laundering  ─▶  XXV (one instance of conserved-pressure relocation)
-XXI closure-on-invariants  ─▶  XXII (closed meta-ladder feeds certification incompleteness)
-X placeholder constant  ══▶  XXVI mechanism
+XIV ── mechanizes ──▶ XXIV (persistent-excitation failure closed into an objective)
+XVI ◀── mechanizes ── XIX ; ◀── instantiates ── XXIV
+XII ── relaxed-by ──▶ XVIII (removes XII's exogenous-coupling assumption)
+XVIII ── instantiates ──▶ XXV (laundering as one case of conserved-pressure relocation)
+XXI ── grounds ──▶ XXII (closed meta-ladder)
+X   ── refines ──▶ XXVI
 ```
 
-**XXIV — the observer you cannot afford to excite.** Optimising a diversity proxy drives it to ceiling while peripheral reach collapses; a *learned* observer spends resolution on the frequently-visited centre and compresses the periphery on its own. `[N]` for the gridworld mechanism; the administrative prediction is stated as `[H]` hypothesis, *not* a result.
+### 3.10 Reform (directed, not a metric)
 
-### 3.10 Reform / factorization transition
-
-**IX — transition bandwidth.** Architectural change as contested control; the latency asymmetry between reformers and incumbents; a race losable before it is visible. `[IP]` (Ω ratio `[H]`).
-**XXIII — the shape of reform.** Behavioral distance is symmetric and metric; **reform cost is neither**. Directed transition cost strongly asymmetric (median 0.76); behavioral distance predicts reform cost only weakly; cost does not compose (triangle inequality not even well-posed). Routing through an intermediate lowers cost, but the best intermediate depends on the *destination*, not the origin — reform is oblique. `[N] / [IP]`.
-**XXV — conserved sensitivity vs realized harm.** Imports Bode's integral (genuine conservation law, `[R]` inside LTI/fixed-controller/non-strategic licensing) and shows the conserved quantity (positive part of log|S|) and the harm functional (upper tail of |S|²) inhabit *different geometries*: conserved pressure does not determine realized harm. Exploitation licensed by three separable capacities — concentration, accessibility, discovery. `[R] within licensing / [IP]`.
+**IX** — transition bandwidth; reformer/incumbent latency asymmetry. `[IP]`.
+**XXIII** — behavioral distance is a symmetric metric, but reform cost is directed (asymmetric, non-composing, weakly predicted by distance), and oblique (cheapest through the target's neighbourhood). `[N]`/`[IP]`.
+**XXV** — Bode conservation vs realized-harm geometry gap: conserved log-area does not determine accessible loss; exploitation needs concentration, accessibility, discovery. `[R]` scope: LTI / fixed-controller / non-strategic licensing / `[IP]`.
 
 ```
-IX transition bandwidth  ─▶  XXIII reform cost (IX asked whether reform is fast enough; XXIII prices the move)
-XIX map  ══▶  XXIII: audit kills the advertised geometry, relocates the paper to travel-not-map
-XVIII laundering + "pressure relocates" corollary  ══▶  XXV formalises and BOUNDS it
-        (relocation is real but conserved-area ≠ accessible-loss)
+IX  ── priced-by ──▶ XXIII
+XIX ── audited-by / retracted-by ──▶ XXIII
+XVIII+"pressure relocates" ── formalized/bounded-by ──▶ XXV
 ```
 
-### 3.11 The Self sub-series (cross-scale application)
-
-Applies the same grammar at the individual scale. Almost entirely `[IP]` by the sub-series' own statement — the series' softest empirical territory.
+### 3.11 Self sub-series (cross-scale; mostly `[IP]`)
 
 ```
-Cycle One (I–VI)  ─▶  Self I : personal value function = observation architecture; self-variety gap G_self;
-                              Goodhart–Ashby for the self   [R core / IP / H]
-Cycle Two (X–XIV) ─▶  Self II : five primitives + observer–plant identity (controller = plant);
-                              ══▶ measurement–disturbance coupling (separation principle fails for a self)
-                              ══▶ constitutional self-uncontrollability = dual of III via XI
-                              ══▶ composite failure via V ; "sealed self"
-III + Self I/II   ─▶  Self III : inherited unobservability (institution's interior observability
-                              upper-bounded by its human nodes' interior capacity) — corollary of III  [R]
-                              ─▶ operator-seeded legitimacy spiral (XIII)  [I]
+Cycle One (I–VI)  ── transfers ──▶ Self-I : value function = observation architecture; G_self
+Cycle Two (X–XIV) ── transfers ──▶ Self-II : five primitives + observer–plant identity
+                          Self-II ── derives ──▶ measurement–disturbance coupling (separation principle fails)
+                          Self-II ── derives (dual of III via XI) ──▶ constitutional self-uncontrollability
+III + Self-I/II   ── derives ──▶ Self-III : inherited unobservability [R]
 ```
 
-Note the tier drift to repair: Self I still uses the old `[R]/[I]/[S]` scheme and Self III uses `[I]/[S]`; Self II already migrated to corpus-standard `[R]/[IP]/[H]`. Reconcile Self I and Self III to the standard scheme (§7).
+Transfer strengths are ranked *within* the Self line (§8). Self I still uses `[R]/[I]/[S]` and Self III `[I]/[S]`; reconcile to corpus-standard (§9).
 
 ---
 
 ## 4. Evidence ledger
 
-What kind of thing each load-bearing result actually is. This is the table to consult before letting any claim lend authority to another.
+The kind of thing each load-bearing result is — consult before letting any claim lend authority to another. Scope is stated for every `[R]` that is model-bound.
 
-| Result | Object | Tier | Evidence type |
+| Result | Object | Tier | Scope / evidence |
 |---|---|---|---|
-| Factorization is derived from bounded prediction | factorization | [IP] | argument against candidate list |
+| Factorization derived from bounded prediction | factorization | [IP] | argument vs candidate primitives |
 | Emergence / structured blindness / broken selection | factorization | [N] | 40 seeds, 2 registered runs |
-| Ensemble variance σ²·[(1−ρ)/N+ρ] | diversity | [R] | analytic |
+| Ensemble variance σ²·[(1−ρ)/N+ρ] | diversity | [R] | general (linear error combination) |
 | ρ_eff ≈ 0.97 for AI observers | diversity | [E] | Study 1, frozen protocol, external critique |
-| Codimension law (1 dim / deficient layer) | actuation | [R] | theorem |
-| Multiplicative compounding (V) | decision | [R] | arithmetic |
-| Adaptation bottleneck = min stage rate (XV) | adaptation | [R] | arithmetic |
-| Ashby N ≥ Vₐ | dimensional adequacy | [R] | pigeonhole (shallow, flagged) |
-| Sharpened Goodhart = reachable intervention set | dimensional adequacy | [R] + [N] | theorem + 30 registered worlds |
+| Codimension law | actuation | [R] | general (delegation chains) |
+| Multiplicative compounding (V) | composition | [R] | general (arithmetic) |
+| Adaptation bottleneck (XV) | composition | [R] | general (arithmetic) |
+| Ashby N ≥ Vₐ | dimensional adequacy | [R] | general (pigeonhole; shallow) |
+| Sharpened Goodhart = reachable intervention set | dimensional adequacy | [R]+[N] | theorem + 30 registered worlds |
 | Relocation invariant | certification | [IP] | regress argument |
-| Non-Factorizability Theorem | boundary | [R-in-model] | proof within minimal model |
-| Critical Learning Bandwidth / Decomposability Frontier | boundary | [R-in-model] / [IP] | model + reading |
+| Non-Factorizability Theorem | boundary | [R] | scope: the XVIII learning model |
+| Critical Learning Bandwidth / Decomposability Frontier | boundary | [R]/[IP] | scope: the XVIII model |
 | Governor/sentinel/bridge dissociation | diversity | [N] | 20-seed registered replication |
 | Learning ≠ adaptation | adaptation | [N] | 30-seed registered model |
-| Meta-ladder closes on invariants | adaptation | [R] | regress argument |
+| Meta-ladder closes on invariants | adaptation | [R] | general (regress argument) |
 | Reform cost directed/asymmetric/non-composing | reform | [N] | retrain-cost measurement |
-| Bode conservation vs harm geometry gap | reform | [R] within licensing | imported theorem + derivation |
-| Escape-ladder theorem | adaptation | [R-in-model] | proof + 55/56 grid |
-| Scalar-q non-representability | alignment | [R] | exact |
-| Identical-MI geometry contrast | alignment | [R] | exact (information held equal) |
-| Attenuation 82.1%, 0 enrichment, geometry sign reversal | alignment | [N] | frozen 74-cell panel, run 16bc675b |
+| Bode conservation vs harm geometry gap | reform | [R] | scope: LTI, fixed controller, non-strategic |
+| Escape-ladder theorem | adaptation | [R] | scope: the XXVI model (+55/56 grid, [N]) |
+| Scalar-q non-representability | alignment | [R] | scope: the ES-2.x channel |
+| Attenuation 82%, 0 enrichment, geometry sign reversal | alignment | [N] | frozen 74-cell panel, run 16bc675b |
+| Information-geometry contrast | alignment | **under revision** | see §9 |
 | Inherited unobservability | fidelity (operator) | [R] | corollary of III |
 | Almost all Self-scale primitives | self | [IP] | structural transfer, unconfirmed |
 
-The one `[E]` row is the entire empirical spine of the series to date. Everything else is theorem, model, or interpretation. This is the single most important fact the atlas records: **GaE is, empirically, a one-prediction programme so far.** Weight the frontier map (§6) accordingly.
+The one `[E]` row is the entire out-of-model empirical spine to date. Everything else is theorem, model, or interpretation. **GaE is, empirically, a one-prediction programme** — the single most important fact the atlas records, and the driver of the priority matrix (§7).
 
 ---
 
 ## 5. Nulls and abandoned branches
 
-Retained deliberately; the series treats a documented null as worth more than an untested elaboration. This is where the atlas earns its keep — it records not only what exists but which possibility space is *closed*.
+Retained deliberately; a documented null outranks an untested elaboration. This is where the atlas records not just what exists but which possibility space is *closed*.
 
-- **XVIII — registered early-warning index failed.** Rising cross-boundary prediction-error correlation was committed in advance as a boundary-dissolution alarm, with a binding cost. At a strict false-alarm budget it caught ≈1 collapse in 5. Mechanism *is* the result: local adaptation launders coupling evidence out of the residuals a well-run institution watches. Index rewritten on state covariance, demoted to `[H]`.
-- **XX — conservation-law search failed.** No conserved budget of representational complexity moving between institution and individual. Only the *cost of staying aligned* is monotone; representational complexity itself can rise or fall. Reported rather than smoothed.
-- **XIX — two registered claims did not survive retraining.** "Blind closure is the worst architecture" was a single-zoo artifact (bottom position trades by seed). The clean portfolio result (coverage-selected sentinel sets beat individually-best) confirmed in *direction* but below registered threshold — sentinel dissociation only weakly exploitable at tested sizes.
-- **XXIII — falsifiability audit killed two XIX-inherited claims *before drafting*.** The cross-regime "reshaping" correlations were a small-sample artifact (SE ≈ 0.22 on 21 pairwise distances; the 0.09 tail meant "cannot tell," not "unrelated"). The connectivity threshold was algebraically the MST bottleneck edge — a restatement of distance magnitude, not a measurement. No topological transition under continuous stress sweep. The clearest case in the series of an audit doing decisive work.
-- **XXII — five registered predictions failed; two controller builds failed.** Three agents with hard complementarity and truthful signalling converged on a no-trade equilibrium (the generalist survives alone). The surviving mechanism was found after the fact, re-registered, confirmed on 20 fresh seeds: inverting a need-certification kernel *floods* the misidentified party, so unmet need reads a perfect zero while allocation is corrupt.
-- **XXVI — three registered failures.** Strong logarithmic dwell law failed its fit criterion (replaced by measured-hazard composition). Naive order-statistic law for population-size dependence falsified (explained by the theorem it prompted). Predicted liability–decay interaction sits an order of magnitude below feasible test resolution → retained as an *open* registered prediction, not a result.
-- **X / Study 1 — secondary prediction not supported.** Correlation was *not* strongest in the tails. Reported as such.
-- **XXVII — no enrichment.** A registered possibility that displaced feedback might *exceed* matched feedback in value was permitted by the design and did *not* occur. Attenuation-only.
-- **Paper 0 — first structured-blindness operationalization failed**, corrected under a second registered run; the correction is part of the result.
+- **XVIII** — registered early-warning index failed (caught ≈1 collapse in 5); local adaptation launders coupling evidence out of watched residuals. Rewritten on state covariance, demoted `[H]`.
+- **XX** — conservation-law search failed; only the cost of staying aligned is monotone, not representational complexity.
+- **XIX** — two registered claims did not survive retraining ("blind closure is worst" = single-zoo artifact; sentinel-portfolio result confirmed in direction, below threshold).
+- **XXIII** — pre-drafting audit killed two XIX-inherited claims (stress "reshaping" = small-sample artifact; connectivity threshold = MST bottleneck edge, an identity); no topological transition under continuous stress sweep.
+- **XXII** — five registered predictions failed; two controller builds failed (no-trade equilibrium); the surviving mechanism (kernel inversion *floods* the misidentified party) was found after the fact, re-registered, confirmed on 20 seeds.
+- **XXVI** — strong logarithmic dwell law failed; naive order-statistic law falsified; predicted liability–decay interaction below feasible test resolution → retained as an *open* registered prediction.
+- **X / Study 1** — secondary prediction (tail correlation strongest) not supported.
+- **XXVII** — no enrichment: a registered possibility that displaced feedback might *exceed* matched feedback was permitted and did not occur.
+- **Paper 0** — first structured-blindness operationalization failed, corrected under a second run.
 
-Pattern worth noting: the nulls cluster on *self-diagnosis* claims (XVIII index, XXII kernel, XXVI dwell law). The series repeatedly predicts an institution can instrument its own adaptive health and repeatedly finds it cannot — which is itself the content of XVII/XXII. The failures are not scattered; they trace the same boundary.
+### 5.1 Candidate synthesis: endogenous diagnostic laundering (not yet a conclusion)
+
+Several of the *most consequential* nulls share a possible shape:
+
+> An adaptive system modifies the very channels used to diagnose its adaptation, so health measures come to track successful internal accommodation rather than continued world-coupling.
+
+The candidate members are **XVIII** (adaptation launders the early-warning residual), **XXII** (a corrupt certification kernel makes health indicators improve), **XXIV** (an optimised observer loses the reach its proxy claims to represent), and **XXVII's** future unknown-semantics work. This is a candidate family, **not** an atlas conclusion, and it is explicitly bounded: XXIII's topology null, X's tail-correlation null, and Paper 0's first-operationalization failure do **not** belong to it — they are ordinary falsifications, not diagnostic laundering. The open question is XVI's question turned on the series itself: do these four share a formal structure, or merely rhyme? Resolving that could be a genuine cross-paper synthesis; asserting it now would be exactly the over-reach the series guards against.
 
 ---
 
 ## 6. Open dependencies
 
-Where the graph has a dangling premise. Ordered by how much downstream work each unlock would license.
+Where the graph has a dangling premise, ordered by downstream leverage.
 
-### 6.1 Externally-fixed alignment (highest leverage)
-XXVII fixes the loss function, action semantics, and hidden classes *from outside*. Real governance does not. This single assumption gates at least four branches:
-- **adaptive alignment** — can a controller learn that its feedback answers a displaced question, and at what calibration cost? (The cleanest direct successor; should begin as a *feasibility gate*, not Paper XXVIII — a two-regime {matched, one fixed displacement} test before any full POMDP over hidden semantics.)
-- **contested alignment** — alignment with *whose* loss, action repertoire, representation? Moves requisite alignment from sensor design into governance proper. Likely a theoretical paper or game, not a large simulation.
-- **observer ecology** — can individually misaligned observers be collectively aligned? Is requisite alignment a property of a channel or of the ecology? (Connects XXVII to X, XIX.)
-- **endogenous power / strategic feedback** — who selects π, m, or the reported observation? "Observation failure → observation governance." Probably more important for real institutions than a finer attenuation surface.
+### 6.1 The objective/loss object is unintegrated — the deepest gap
+`objective/loss` appears as an observation architecture (VI), a task-relevant action quotient (XX), a scalar proxy (XXIV, XXV), a fixed action-loss structure (XXVII), a personal value function (Self I), and a contested social purpose (the governance reading). These are related, not identical, and until they are one object "the objective selects what is seen" is a shared slogan over several constructs. This matters most because **XXVII defines alignment relative to a loss-induced distinction**: once the loss is contested or endogenously selected, alignment is contested too, and *power* enters as the ability to fix which outcomes count as loss, which distinctions are action-relevant, whose losses enter, which action repertoire exists, and which boundary sets inclusion. The implied upstream sequence:
 
-### 6.2 The reform operator is narrow
-XXIII priced reform in exactly one architecture (retraining cost against a capacity-matched reference). The reform operator (§1) is realised nowhere else. Factorization-transition geometry is *not* a metric space (XXIII), but the constructive object — which transitions are reversible, which factorizations are locally incomparable but connected through a third — is unbuilt. Next useful result is *small*: two or three explicit factorizations of one environment with a directional/path-dependent transition cost, not a universal geometry.
+```
+objective formation → action-relevant partition → feedback alignment → decision value
+```
 
-### 6.3 Multi-observer decision architecture is missing
-X gives the correlation law and XIX the role dissociation, but neither supplies a decision architecture that *allocates authority* across observers informative about different intervention-relevant distinctions. Held fixed everywhere it appears.
+XXVII treats the last two links with the first two fixed from outside. The highest-value *conceptual* next paper may therefore not be "adaptive alignment" but **how objectives induce action-relevant distinctions, and what happens when several objectives induce incompatible ones** — connecting VI, XX, XXIV, XXVII and the governance/moral work in one move.
 
-### 6.4 Governance transfer is [IP] almost everywhere
-Every governance reading past the formal cores is in-principle. Only Study 1 has crossed the empirical gate. The specified-but-open program: variety-gap pilot audit; delegation-depth vs implementation-fidelity study at proper N; prospective variety-gap panel across 20–30 systems; legitimacy-estimation protocol on a representative sample.
+### 6.2 The reform operator is weak — and the atlas shows why
+IX, XXIII, XXV, VII answer *different* questions (can reform occur fast enough? what does one transition cost in one learning architecture? what exposure does suppressive control manufacture? what strategy opens reform space?). None is the reform operator itself:
 
-### 6.5 Cross-scale invariance is asserted, not tested
-The Self sub-series assumes structures transfer across scale; Self II ranks its mappings but the passive/active distinction (Paper 0 §7) and the group-belief-state question are untested. A synthesis distinguishing *formally invariant / plausible analogy / metaphor / non-transferable* would keep the Consciousness-as-Engineering and Governance-as-Engineering lines coupled without collapsing them.
+```
+R : (architecture, resources, political conditions) ↦ new architecture
+```
 
-### 6.6 The objective/loss object is not unified
-Realised as scalar proxy (XX, XXIV, XXV), fixed loss with action semantics (XXVII), and personal value function (Self I) with no single formal object across them. Until unified, "the objective selects what is seen" (VI) is a shared slogan over three different constructs.
+GaE does not yet model which components change independently, when a reform alters parameters vs factorization, whether reforms commute, which transitions are reversible, how legitimacy and certification constrain feasible transitions, or how actors strategically alter the reform path. Too large for one paper; the disciplined first step is to construct two or three explicit factorization transformations and show a directional/path-dependent cost, not a universal geometry.
+
+### 6.3 Observer diversity has no authority-allocation architecture
+X gives a correlation law and XIX a role dissociation, but neither tells a governance system **what to do with disagreement**. Maintaining diverse observers is only sensing. Governance also needs rules for which observer can trigger reconsideration, which receives authority in which state, whether a minority warning can override the current governor, how sentinel evidence is certified, how a bridge preserves translation without a permanent veto, and how to avoid replacing monoculture with indecision. The missing engineering object:
+
+```
+observer ecology + authority allocation + provisional commitment
+```
+
+XIX's "preserve many for sensing, commit one for action, reopen on evidence" is the embryo, not yet a general decision architecture. This may be more practically consequential than any further result about the internal properties of observers.
+
+### 6.4 Externally-fixed alignment (XXVII's boundary)
+XXVII fixes loss, action semantics, and hidden classes from outside. This gates *adaptive alignment* (can a controller learn its feedback is displaced, and at what calibration cost? — begin as a two-regime feasibility gate, not Paper XXVIII), *contested alignment*, *observer ecology*, and *endogenous power / strategic feedback*. Note that §6.1 sits upstream of all of these.
+
+### 6.5 Governance transfer is `[IP]` almost everywhere; cross-scale invariance is asserted, not tested
+Only Study 1 has crossed the empirical gate. The specified-but-open program: variety-gap pilot audit; delegation-depth vs fidelity at proper N; prospective variety-gap panel; legitimacy-estimation protocol. Separately, the Self line assumes cross-scale transfer; a formal-invariant / analogy / metaphor / non-transferable classification (§8) would keep the Consciousness-as-Engineering and Governance-as-Engineering lines coupled without collapsing them.
 
 ---
 
-## 7. Housekeeping the atlas forces
+## 7. Priority matrix
 
-Consequences of bringing the corpus up to XXVII that `brief.md` and the tier scheme have not yet absorbed.
+Two rankings that should not be collapsed. The atlas's job here is to stop an attractive internal mechanism from automatically outranking a structurally necessary integration or a credibility-critical test.
 
-- **Paper count.** `brief.md` states eighteen. Current corpus is Paper 0 + I–XXVII = **28 documents counting Paper 0**, plus Self I–III as a parallel sub-series. The brief's paper table and its "remaining eleven papers" prose are both stale.
-- **Cluster placement of XIX–XXVII is an open editorial decision, not a settled fact.** The brief's two-cycle + limits-cluster (XVI–XVIII) structure has no slot for XIX–XXVII. Three honest options: (a) extend a factorization cluster to XIX–XXVI with XXVII as a computational-mechanistic bridge; (b) treat XXVII as the opening of a third theoretical cycle (its own self-description — "the series' first computational-mechanistic paper"); (c) regroup by object rather than cycle, as this atlas does. Recommend deciding via the atlas rather than forcing XXVII into the existing narrative.
-- **Tier-scheme drift in the Self line.** Self I (`[R]/[I]/[S]`) and Self III (`[I]/[S]`) predate the corpus-standard `[R]/[IP]/[H]`; Self II already migrated. Reconcile.
-- **Add `[N]` to the public tier vocabulary, or don't — but decide.** The brief uses three tiers; the atlas needs four to keep proof and simulation distinct. If the brief keeps three, note explicitly that its `[R]` covers the atlas's `[R]` + `[N]`.
+**Theoretical leverage** (what unlocks the most downstream claims):
+1. Objective/loss integration (§6.1) — upstream of alignment, power, and the governance reading.
+2. Observer authority allocation (§6.3) — the missing decision architecture.
+3. The reform operator (§6.2) — the least-developed primitive.
+
+**Programme credibility** (what the one-prediction imbalance makes urgent, §4):
+1. Delegation-depth vs implementation-fidelity at proper sample size.
+2. A variety-gap audit of one willing institution.
+3. An operational alignment case (XXVII's mechanism made institutional).
+4. Ecological replication of the AI-observer correlation using current events.
+
+The marginal value of another internally elegant mechanism is now *falling*; the marginal value of a competent external test is *rising*. On the current balance, **external contact matters more for the health of the programme than selecting the next numbered paper** — and the two rankings are deliberately separate so that neither is quietly satisfied by work on the other.
 
 ---
 
-## 8. Paper-indexed lookup
+## 8. Self ↔ governance transfer matrix
 
-For when you know the number and want the object. Full claims are in §3.
+The Self line is a cross-scale *application*, not another branch of proven GaE; its mappings are ranked *within* Self II under an explicit scale-invariance-vs-analogy test. The matrix records transfer status per that ranking, strongest to weakest.
 
-| # | Short title | Primary object | Headline claim | Top tier |
+| Structure | Individual | Institution | Transfer status |
+|---|---|---|---|
+| constitutional (un)observability / (un)controllability | states one cannot perceive / reach in oneself | III unobservability / XI uncontrollability | **formal correspondence** — self-uncontrollability is the exact dual of III via XI |
+| representation depth | self-narrative layers | representation chain (III) | partial formal correspondence |
+| action repertoire | behavioural capacity | policy instruments | strong structural correspondence |
+| observation bottleneck | attention / interoception | reporting channel | plausible analogy |
+| legitimacy | self-trust | public compliance / reporting | analogy, not invariant |
+| self/other boundary | boundary with others | jurisdiction/environment cut (XII) | **weakest** — fails formally once the far side becomes agents modelling the controller back (Self II) |
+| group belief state | unclear | distributed institutional state | non-transferable as currently stated |
+
+The single feature with *no* institutional analogue is **observer–plant identity** (controller = plant), which Self II introduces as the differentiator in kind, not scale — its consequence (self-observation is never only observation; the separation principle fails) is what makes the self-scale results diverge from their institutional originals rather than merely restating them.
+
+---
+
+## 9. Housekeeping and live corrections
+
+- **Paper count / cluster placement — resolved.** Brief now reads twenty-eight (Paper 0 + I–XXVII); XXVII added as factorization-cluster capstone (XIX–XXVII), flagged as the first computational-mechanistic paper so it can later be promoted, with adaptive/contested-alignment successors, into a distinct third cycle (§1.3 supports keeping XXVII in Cycle One's observation theory for now).
+
+- **XXVII mutual-information claim — LIVE CORRECTION, affects the paper and the brief.** External review reports that the strong claim — *the two geometries carry identical marginal MI at every displacement level, so any value difference is information-independent* — is false at nonuniform POMDP beliefs. The defensible statement: the geometries share output cardinality, `q`, `m`, likelihood spectrum, and **uniform-prior one-observation** MI, but can differ in **belief-conditioned** MI and sequential value, because they assign the likelihood levels to different latent classes. Tier consequences: scalar-`q` non-representability stays `[R]`; attenuation and geometry dependence stay `[N]`; the *general* alignment claim stays `[IP]`; the "cannot be an information-quantity effect" *inference* must be narrowed or dropped. **This is not merely an atlas edit.** XXVII's key-claims list and §5.2 assert the strong version, and `brief.md`'s XXVII paragraph carries it as "information content is held exactly equal … the difference cannot be an information-quantity effect." If the correction holds, that sentence overstates the headline and both need revising. The atlas has adopted the safe wording (§3.4, §4) and flags the paper/brief reconciliation as **your call against the actual simulation** — not propagated silently, because it weakens a published-facing `[R]` claim.
+
+- **Tier-scheme drift in the Self line — open.** Self I (`[R]/[I]/[S]`) and Self III (`[I]/[S]`) predate corpus-standard `[R]/[IP]/[H]`; Self II migrated. Reconcile.
+
+- **`[N]` in the public brief — decision pending.** The brief keeps three tiers; recommend a single note in "How to Read the Claims" that its `[R within the model]` covers atlas `[R]`(scoped) + `[N]`, rather than adding a fourth public tier.
+
+---
+
+## 10. Paper-indexed lookup
+
+Full claims in §3; this is number → object.
+
+| # | Short title | Primary object | Headline | Top tier |
 |---|---|---|---|---|
 | 0 | Below the Factorization | factorization | factorization derived from bounded prediction | IP / N |
 | I | (latency/fidelity) | fidelity | responsiveness ceilings; averaging problem | IP |
-| II | (multi-frequency) | disturbance | single-speed architecture mismatched to most frequencies | IP |
+| II | (multi-frequency) | disturbance | single-speed mismatch | IP |
 | III | (representation chain) | fidelity | constitutional unobservability | IP |
-| IV | (point of contact) | dimensional adequacy | requisite variety lives at contact | IP |
-| V | (coordination tax) | decision | deficits compound multiplicatively | R / IP |
+| IV | (point of contact) | dimensional adequacy | requisite variety at contact | IP |
+| V | (coordination tax) | composition | multiplicative compounding | R |
 | VI | (variety gap) | objective/loss | objective = observation architecture; G | IP |
-| VII | (reform) | reform | reform disappoints structurally; protected experimental space | H |
-| VIII | (measurement) | objective/loss | G made estimable; composite index | IP / H |
-| IX | (transition) | reform | transition bandwidth; reformer/incumbent latency asymmetry | IP |
+| VII | (reform) | reform | reform disappoints; protected experimental space | H |
+| VIII | (measurement) | objective/loss | G made estimable | IP / H |
+| IX | (transition) | reform | transition bandwidth | IP |
 | X | (distributed sensing) | diversity | correlation tax; ρ_eff≈0.97 tested | R / **E** |
-| XI | (actuation) | actuation | codimension law; constitutional uncontrollability | R / IP |
-| XII | (boundary) | boundary | boundary as design variable; small-gain; pooling paradox | IP |
-| XIII | (legitimacy) | actuation | legitimacy as endogenous coupling state | IP |
+| XI | (actuation) | actuation | codimension law; uncontrollability | R / IP |
+| XII | (boundary) | boundary | boundary as design variable; pooling paradox | IP |
+| XIII | (legitimacy) | coupling state | legitimacy as endogenous coupling | IP |
 | XIV | (learning) | learning | dual control; persistent excitation | IP |
-| XV | (bottleneck) | adaptation | adaptation rate = min stage rate | R / IP |
-| XVI | (exploration) | learning | source-term locality; bounded negative result | IP |
+| XV | (bottleneck) | composition | adaptive rate = min stage rate | R |
+| XVI | (exploration) | learning | source-term locality; bounded null | IP |
 | XVII | (certification) | certification | relocation invariant | IP |
-| XVIII | (non-factorizability) | boundary | Non-Factorizability Theorem; Decomposability Frontier; failed index | R-in-model / IP |
-| XIX | Governors, Sentinels, Bridges | diversity | governor/sentinel/bridge dissociation | N / IP |
-| XX | Three Laws from One Bound | dimensional adequacy | Ashby/Goodhart/certification from bounded rep; sharpened Goodhart | R / IP |
-| XXI | When to Stop Learning | adaptation | learning≠adaptation; meta-ladder closure; sunsetting | N / R / IP |
+| XVIII | (non-factorizability) | boundary | Non-Factorizability Theorem; Decomposability Frontier | R (scoped) / IP |
+| XIX | Governors, Sentinels, Bridges | diversity | three-role dissociation | N / IP |
+| XX | Three Laws from One Bound | dimensional adequacy | Ashby/Goodhart/certification from bounded rep | R / IP |
+| XXI | When to Stop Learning | adaptation | learning≠adaptation; meta-ladder; sunsetting | N / R / IP |
 | XXII | (three demands) | certification | three demands, three sources; kernel unself-monitorable | IP |
-| XXIII | The Shape of Reform | reform | behavioral distance metric; reform cost directed/oblique | N / IP |
+| XXIII | The Shape of Reform | reform | distance metric; reform cost directed/oblique | N / IP |
 | XXIV | The Observer You Cannot Afford to Excite | diversity | excitation closed into an objective | N / H |
-| XXV | Reform Pushes Down, Strategy Pushes Back | reform | Bode conservation vs harm geometry gap | R-licensed / IP |
-| XXVI | The Cost of Returning | adaptation | tail-nucleated escape; escape-ladder theorem | R-in-model / IP |
+| XXV | Reform Pushes Down, Strategy Pushes Back | reform | Bode conservation vs harm geometry gap | R (scoped) / IP |
+| XXVI | The Cost of Returning | adaptation | tail-nucleated escape; escape-ladder | R (scoped) / IP |
 | XXVII | Requisite Alignment | alignment | alignment as second constraint; geometry sign reversal | R / N |
 | Self I | Variety Gap in the Self | objective/loss | value function = observation architecture; G_self | R / IP |
-| Self II | (adaptive self) | adaptation | observer–plant identity; self-uncontrollability; sealed self | IP |
+| Self II | The Adaptive Self | adaptation | observer–plant identity; self-uncontrollability; sealed self | IP |
 | Self III | The Operator | fidelity | inherited unobservability | R / I |
 
 ---
 
-*Maintenance note: this atlas is the intended internal system of record. The natural next step, if the load justifies it, is a `papers.yaml` holding the per-paper metadata (depends_on / establishes / nulls / successors) as structured data, so that the brief's paper table and this atlas can both be audited against one source and cannot silently disagree. Not built here; the §8 table is its seed.*
+*Maintenance: `papers.yaml` is the canonical per-paper metadata; the brief table and this atlas are audited against it. When the §9 corrections are settled, propagate them there first, then here, then to the brief.*

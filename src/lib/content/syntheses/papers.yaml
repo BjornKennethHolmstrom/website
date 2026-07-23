@@ -1,0 +1,498 @@
+# Governance as Engineering — canonical paper metadata
+#
+# Source of truth for the series' structure. The brief's paper table and the
+# dependency atlas's cards should be generated from — or at minimum audited
+# against — this file, so the three documents cannot silently disagree.
+#
+# TIER VOCABULARY (atlas four-tier scheme; the public brief folds R+N into "R within the model"):
+#   R  = analytic theorem or exact finite derivation; true wherever its premises hold
+#   N  = envelope-controlled numerical result; preregistered simulation over a finite panel
+#   E  = empirical observation against out-of-model data under a frozen protocol
+#   IP = in-principle; formal core sound, institutional/self mapping is interpretive
+#   H  = heuristic; estimated, illustrative, or loosely applied
+#
+# DEPENDENCY ARROW STRENGTH (in depends_on / successors, prefix the target):
+#   "=" derivational (follows by proof/exact construction)
+#   "-" structural   (built on it; fails if it fails; argument not theorem)
+#   "~" thematic     (reuses/reinterprets/gives-mechanism-to; no validity dependence)
+#
+# status: published | draft
+# cluster: foundation | cycle-one | cycle-two | limits | factorization | self
+
+meta:
+  series_count_incl_paper0: 28          # Paper 0 + I..XXVII
+  self_subseries_count: 3
+  brief_reconciled_through: "XXVII"
+  atlas_reconciled_through: "XXVII"
+  atlas_version: "v2"
+  last_updated: "2026-07-23"
+  notes:
+    - "formal_tier [R] is scope-bound where a result is model-internal; see each paper's evidence line for the model."
+    - "depends_on prefixes: = derives | - assumes/structural | ~ grounds/thematic. The atlas carries finer relation labels (mechanizes, refines, motivates, retracts, transfers-by-analogy)."
+    - "OPEN: XXVII MI correction (see XXVII.corrections) is unreconciled against paper and brief."
+
+papers:
+
+  - id: "0"
+    title: Below the Factorization
+    cluster: foundation
+    status: published
+    question: Is factorization primitive, or derived from something simpler?
+    depends_on: []
+    establishes:
+      - factorization derived from bounded capacity + bare temporal prediction (no action/reward/survival)
+      - "emergence: bottlenecked predictor recovers latent causal variables unprompted"
+      - "structured blindness: a coherent causal subspace sacrificed whole under capacity starvation"
+      - "non-unique, symmetry-broken selection at the capacity margin"
+      - behaviorally-equivalent classes -> coordination is selection within a class, not discovery of truth
+      - causal-variable-preserving classes objectively better (robustness, sample efficiency, transfer)
+    formal_tier: [R, N]        # IP for the two-ingredient argument; R/N for the mechanism
+    governance_tier: IP
+    evidence: [argument against candidate primitives, 40 seeds across 2 preregistrations]
+    nulls: [first structured-blindness operationalization failed; corrected under 2nd registered run]
+    unresolved: [passive/active distinction untested, two-ingredient claim demonstrated not proven general]
+    successors: ["~VI", "-XIX", "=XX", "-XXIII", "-XXVII", "-Self-I"]
+
+  - id: "I"
+    title: Latency and signal fidelity
+    cluster: cycle-one
+    status: published
+    question: What do dead time and signal degradation cap in a governance loop?
+    depends_on: []
+    establishes:
+      - latency and fidelity set hard ceilings on responsiveness
+      - "averaging problem: centralised controllers respond to the mean, not the distribution"
+    formal_tier: []
+    governance_tier: IP
+    successors: ["-III", "=XI"]
+
+  - id: "II"
+    title: Multi-frequency disturbance
+    cluster: cycle-one
+    status: published
+    question: What happens when disturbances span many frequencies but the architecture has one speed?
+    depends_on: []
+    establishes: [single-speed architecture structurally mismatched to most disturbance frequencies]
+    formal_tier: []
+    governance_tier: IP
+
+  - id: "III"
+    title: The representation chain
+    cluster: cycle-one
+    status: published
+    question: How far can a preference signal travel through a chain before it cannot be reconstructed?
+    depends_on: ["-I"]
+    establishes:
+      - representation chains attenuate the signal
+      - "constitutional unobservability: beyond a critical depth the policy layer cannot reconstruct the source"
+      - chain fidelity bounded by its layers regardless of endpoint quality
+    formal_tier: []
+    governance_tier: IP
+    successors: ["=XI", "=Self-II", "=Self-III"]
+
+  - id: "IV"
+    title: Requisite variety at the point of contact
+    cluster: cycle-one
+    status: published
+    question: Where does requisite variety actually have to live?
+    depends_on: []
+    establishes: [requisite variety lives at the point of contact; proximity is an engineering requirement]
+    formal_tier: []
+    governance_tier: IP
+
+  - id: "V"
+    title: The coordination-failure tax
+    cluster: cycle-one
+    status: published
+    question: Do the deficits of I-IV add or compound?
+    depends_on: ["-I", "-II", "-III", "-IV"]
+    establishes: [deficits of I-IV compound multiplicatively, not additively]
+    formal_tier: [R]
+    governance_tier: IP
+    successors: ["=XV", "-Self-II"]
+
+  - id: "VI"
+    title: Objective functions as observation architectures
+    cluster: cycle-one
+    status: published
+    question: How does what a system values determine what it can see?
+    depends_on: ["~0"]
+    establishes:
+      - the objective function is an observation architecture
+      - "variety gap G: objective-relative unobserved disturbance variety"
+      - optimisation erodes sensing of omitted dimensions causally coupled to the proxy
+    formal_tier: [R]           # static condition R-in-model; institutional reading IP
+    governance_tier: IP
+    successors: ["-VIII", "~XXIV", "-XXVII", "-Self-I"]
+
+  - id: "VII"
+    title: Why reform disappoints
+    cluster: cycle-one
+    status: published
+    question: Why does structural reform disappoint across national cases?
+    depends_on: []
+    establishes:
+      - reform disappoints structurally (immune system, bypass trap, legibility problem)
+      - convergent first step is the protected experimental space
+    formal_tier: []
+    governance_tier: H
+    evidence: [fifteen national studies]
+    successors: ["-XXII"]      # XXII shows protected experiment is unavoidable, not merely wise
+
+  - id: "VIII"
+    title: The variety gap made estimable
+    cluster: cycle-one
+    status: published
+    question: Can the variety gap be measured?
+    depends_on: ["-VI"]
+    establishes: [structural primitives + proxies + composite index G with stated uncertainty]
+    formal_tier: []
+    governance_tier: IP        # index IP; weights and threshold H
+    unresolved: [tier weights and critical threshold calibrated not derived]
+
+  - id: "IX"
+    title: Transition bandwidth
+    cluster: cycle-two
+    status: published
+    question: When is architectural change a race that can be lost before it is visible?
+    depends_on: []
+    establishes:
+      - architectural change as contested control
+      - latency asymmetry between reformers and incumbents
+      - transition bandwidth as a losable race
+    formal_tier: []            # governance IP; Omega ratio H
+    governance_tier: IP
+    successors: ["-XXIII"]
+
+  - id: "X"
+    title: Distributed sensing and the correlation tax
+    cluster: cycle-two
+    status: published
+    question: Does adding observers help if their errors are correlated?
+    depends_on: []
+    establishes:
+      - "ensemble error variance = sigma^2 * [(1-rho)/N + rho]"
+      - a correlation floor caps the benefit of adding observers
+      - central prediction, tested (Study 1)
+    formal_tier: [R, E]
+    governance_tier: IP
+    evidence:
+      - "Study 1: 6 AI observers, 50 items, frozen protocol, external critique; rho_eff ~ 0.97"
+    nulls: [secondary prediction (tail correlation strongest) NOT supported]
+    successors: ["~XXVI", "-Self-II"]
+
+  - id: "XI"
+    title: The actuation channel
+    cluster: cycle-two
+    status: published
+    question: What does a delegation chain lose per deficient layer?
+    depends_on: ["=III"]       # exact dual of III
+    establishes:
+      - "codimension law: one cleanly transmitted dimension lost per deficient layer"
+      - control effort grows superlinearly with depth
+      - "constitutional uncontrollability: exact dual of III's unobservability"
+    formal_tier: [R]           # codimension R; energy->political-capital IP
+    governance_tier: IP
+    successors: ["=Self-II"]
+
+  - id: "XII"
+    title: Boundary selection
+    cluster: cycle-one         # tagged One/Two in the brief
+    status: published
+    question: How should the jurisdiction/environment boundary be drawn?
+    depends_on: []
+    establishes:
+      - boundary as an independent design variable
+      - small-gain theorem sets when unmodelled cross-boundary dynamics destabilise
+      - "pooling paradox: the trade-off is inescapable for any single boundary"
+    formal_tier: []
+    governance_tier: IP
+    successors: ["-XVIII"]     # XVIII removes XII's exogenous-coupling assumption
+
+  - id: "XIII"
+    title: Legitimacy as endogenous coupling state
+    cluster: cycle-two
+    status: published
+    question: What kind of variable is legitimacy in the loop?
+    depends_on: []
+    establishes:
+      - legitimacy is the first endogenous coupling state
+      - multiplies actuation, divides observation noise, cannot be set directly
+      - collapses with hysteresis when borrowed rather than built
+    formal_tier: []
+    governance_tier: IP
+    successors: ["-Self-II", "-Self-III"]
+
+  - id: "XIV"
+    title: Stable learning
+    cluster: cycle-two
+    status: published
+    question: What does keeping a model identifiable require?
+    depends_on: []
+    establishes:
+      - dual control and the exploration-exploitation tension
+      - persistent excitation as the rigorous content of "antifragility"
+    formal_tier: []
+    governance_tier: IP
+    successors: ["~XXIV", "-XXI", "-Self-II"]
+
+  - id: "XV"
+    title: The adaptation bottleneck
+    cluster: cycle-two
+    status: published
+    question: What paces a recursive sense-learn-execute loop?
+    depends_on: ["=V"]        # dynamic dual of V
+    establishes:
+      - "adaptation rate = minimum of stage rates (sense/learn/execute)"
+      - information, innovation, and reality backlogs are its failure signatures
+    formal_tier: [R]
+    governance_tier: IP
+    successors: ["-XVIII", "-XXI"]
+
+  - id: "XVI"
+    title: Exploration-preservation resists formalization
+    cluster: limits
+    status: published
+    question: Do the domain-specific warnings that success erodes adaptability name one object?
+    depends_on: []
+    establishes:
+      - "shared skeleton: unused-alternatives quantity decays under the objective, persists only via an external source term"
+      - "order parameter: source-term locality (inside vs outside the control set)"
+    formal_tier: []
+    governance_tier: IP
+    nulls: [refuses a unified theory, a measurable index, and a no-go theorem by design]
+    successors: ["~XIX", "~XXIV"]   # XIX supplies the mechanism; XXIV an instance
+
+  - id: "XVII"
+    title: The relocation invariant
+    cluster: limits
+    status: published
+    question: Can certification of reality be made self-verifying?
+    depends_on: []
+    establishes:
+      - processing verifiable; certification of reality not self-verifying (verifier regress)
+      - "relocation invariant: automating a boundary relocates the world-certification link upstream, cannot delete it"
+      - binds world-coupled coordination; fails for pure convention
+    formal_tier: []
+    governance_tier: IP
+    successors: ["-XIX", "-XX", "-XXII"]
+
+  - id: "XVIII"
+    title: The Non-Factorizability Theorem
+    cluster: limits
+    status: published
+    question: Does a jurisdiction stay separable from its environment once the controller learns?
+    depends_on: ["-XII", "-XV"]
+    establishes:
+      - "Non-Factorizability Theorem: under generic persistent learning no time-invariant decomposition survives"
+      - "Critical Learning Bandwidth: two-sided bound on learning rate"
+      - "Decomposability Frontier: the bounds pinch shut on part of parameter space"
+    formal_tier: [R]           # R within the model
+    governance_tier: IP
+    nulls:
+      - registered early-warning index failed (caught ~1 collapse in 5); demoted to H; rewritten on state covariance
+    successors: ["~XXV"]       # laundering mechanism formalized/bounded by XXV
+
+  - id: "XIX"
+    title: Governors, Sentinels, and Bridges
+    cluster: factorization
+    status: published
+    question: What does winner-take-all selection discard when it keeps only the best governor?
+    depends_on: ["~0"]      # assumes a factorization; does not depend on 0's derivation (grounds, not derives)
+    establishes:
+      - "a factorization carries three dissociable values: govern, warn (sentinel), bridge"
+      - governing skill predicts neither warning nor connective value
+      - adaptive audit beats monoculture and tracks an unattainable oracle across 20 zoos
+      - "new failure mode: fragmentation of factorization space"
+    formal_tier: [N]
+    governance_tier: IP
+    evidence: [20-seed registered replication of retrained model zoos]
+    nulls:
+      - "blind-closure-is-worst was a single-zoo artifact"
+      - coverage-selected sentinel portfolio confirmed in direction but below registered threshold
+    successors: ["~XVI", "-XVII", "-XXIII"]   # gives XVI a mechanism; XXIII audits its geometry
+
+  - id: "XX"
+    title: Three Laws from One Bound
+    cluster: factorization
+    status: published
+    question: Are Ashby, Goodhart, and certification cost independent posits or one bound?
+    depends_on: ["-0", "-XVII"]   # assumes the bounded-representation premise (would stand if it were merely posited), not 0's derivation of it
+    establishes:
+      - "Ashby (pigeonhole, N>=V_A), Goodhart, certification cost = one bound under holding/optimizing/maintaining"
+      - "sharpened Goodhart: degradation iff the projection discards a target-relevant dimension the optimizer can REACH"
+    formal_tier: [R, N]        # Ashby R (shallow); sharpened Goodhart R + 30 registered worlds
+    governance_tier: IP
+    nulls: [conservation-law search failed; only cost-of-alignment is monotone, not representational complexity]
+    successors: ["-XXI", "-XXII", "-XXVII"]
+
+  - id: "XXI"
+    title: When to Stop Learning, and When to Stop
+    cluster: factorization
+    status: published
+    question: What governs the lifecycle of a bounded controller?
+    depends_on: ["-XIV", "-XV", "-XVI", "-XVIII", "-XX"]
+    establishes:
+      - "learning != adaptation (fastest learner: best model, worst grip); absorptive-capacity inequality"
+      - "meta-learning ladder must close on invariants in a bounded system"
+      - "persistence != purpose (terminal adaptive act may be to end/transfer coupling)"
+    formal_tier: [R, N]        # separation N; regress R; sunsetting IP
+    governance_tier: IP
+    successors: ["-XXII"]      # closed meta-ladder feeds certification incompleteness
+
+  - id: "XXII"
+    title: Three demands, three sources
+    cluster: factorization
+    status: published
+    question: Can an institution self-assure from inside, from outside, and before the world?
+    depends_on: ["-XVII", "-XXI", "-VII", "-V"]
+    establishes:
+      - "three assurances fail from three DIFFERENT sources (refuses XX-style unification)"
+      - "reform undecidability needs computational universality (negation of bounded rep)"
+      - No Free Lunch needs only absence of a prior; binds bounded and unbounded alike
+      - only certification incompleteness traces to the bound
+      - an institution cannot monitor its certification kernel with instruments that depend on it
+    formal_tier: [R]           # two shallow theorems; the load-bearing claim is not a theorem
+    governance_tier: IP
+    nulls:
+      - all four registered predictions failed
+      - two attempts to build the required adaptive controller failed (no-trade equilibrium)
+      - "replacement mechanism (kernel inversion FLOODS the misidentified party) found after the fact, re-registered, confirmed on 20 seeds"
+
+  - id: "XXIII"
+    title: The Shape of Reform
+    cluster: factorization
+    status: published
+    question: When reform is not free, what governs its cost?
+    depends_on: ["-XIX", "-IX", "~0"]
+    establishes:
+      - behavioral distance is a symmetric metric
+      - "reform cost is directed: strongly asymmetric (median 0.76), non-composing, weakly predicted by distance"
+      - "reform is oblique: cheapest route runs through the target's neighbourhood, not endpoint-to-endpoint"
+    formal_tier: [N]
+    governance_tier: IP
+    nulls:
+      - "pre-drafting audit killed two XIX-inherited claims: stress rescaling was small-sample artifact; connectivity threshold = MST bottleneck edge (identity)"
+      - no topological transition under continuous stress sweep
+
+  - id: "XXIV"
+    title: The Observer You Cannot Afford to Excite
+    cluster: factorization
+    status: published
+    question: What changes when a diversity measure is optimized rather than observed?
+    depends_on: ["-XIV", "-XVI", "-VI"]
+    establishes:
+      - "diversity proxy: informative as a sensor, treacherous as an objective"
+      - optimizing the proxy maxes it while peripheral reach collapses
+      - a learned observer compresses the rarely-visited periphery on its own
+      - "mechanism: persistent-excitation failure closed into an objective"
+    formal_tier: [N]
+    governance_tier: IP        # administrative prediction stated as H hypothesis, not result
+    unresolved: [administrative-measurement prediction untested]
+
+  - id: "XXV"
+    title: Where Reform Pushes Down, Strategy Pushes Back
+    cluster: factorization
+    status: published
+    question: Does suppressed pressure really relocate, and is the relocation dangerous?
+    depends_on: ["~XVIII"]     # XVIII laundering as one instance
+    establishes:
+      - imports Bode's sensitivity integral as a genuine conservation law
+      - "geometry gap: conserved log|S| positive part != harm functional (upper tail of |S|^2)"
+      - "conserved pressure does NOT determine realized harm"
+      - "exploitation licensed by three separable capacities: concentration, accessibility, discovery"
+      - deeper monitored-band suppression raises the exploitability floor
+    formal_tier: [R]           # R only inside LTI / fixed-controller / non-strategic licensing
+    governance_tier: IP
+
+  - id: "XXVI"
+    title: The Cost of Returning
+    cluster: factorization
+    status: published
+    question: Once independent capacity has decayed, what determines whether return can begin/propagate/complete?
+    depends_on: ["~X"]         # replaces X's placeholder escape-probability constant
+    establishes:
+      - homogeneous mean-field loop solved in closed form (consensus + competence-decay + liability terms)
+      - "competence decay moves the RETURN threshold, provably not the ENTRY threshold"
+      - "escape is nucleated by the best-preserved channel and propagated by a ladder condition on ordered penalties"
+      - "escape-ladder theorem; finite-N quantile criterion classifies 55/56 grid cells"
+      - institutional time enters as accumulated escape opportunity (measured-hazard composition)
+    formal_tier: [R, N]
+    governance_tier: IP
+    nulls:
+      - strong logarithmic dwell law failed its fit criterion (replaced by measured-hazard composition)
+      - naive order-statistic law for population-size dependence falsified
+      - "predicted liability-decay interaction below feasible test resolution -> open registered prediction"
+
+  - id: "XXVII"
+    title: Requisite Alignment
+    cluster: factorization      # capstone; candidate opener of a third cycle (see atlas §7)
+    status: draft
+    question: Is dimensional sufficiency (requisite variety) enough for an observation to have decision value?
+    depends_on: ["~0", "-VI", "-XX"]   # ~0: has an explicit finite state space; assumes a factorization, not 0's derivation. VI refined-into, XX motivates.
+    establishes:
+      - "requisite alignment: the resolved distinction must align with the action-relevant distinction; alignment has geometry"
+      - "requisite variety is necessary but NOT sufficient (refines the Goodhart-Ashby synthesis)"
+      - "displaced feedback channel not representable by any scalar reliability q"
+      - "two geometries with the same uniform-prior one-observation MI impose different value costs; ordering reverses with displacement (belief-conditioned MI may differ — see corrections)"
+      - "worst case is intermediate ambiguity, not maximal displacement"
+      - series' first computational-mechanistic paper
+    formal_tier: [R, N]        # scalar-q non-rep is R (scope: ES-2.x channel); attenuation/geometry are N
+    governance_tier: IP
+    evidence: ["preregistered dynamic programming; frozen 74-cell panel; run_id 16bc675b; 486/592 (82%) resolved attenuation"]
+    nulls: ["registered enrichment possibility (displaced > matched) permitted by design, did NOT occur"]
+    corrections:
+      - "LIVE: v1 'identical marginal MI at every displacement -> value gap is information-independent' narrowed. Geometries share cardinality, q, m, likelihood spectrum, and uniform-prior one-observation MI, but may differ in belief-conditioned MI and sequential value. The 'cannot be an information-quantity effect' inference must be narrowed/dropped. Reconcile paper key-claims + §5.2 AND brief.md XXVII paragraph against the actual simulation before treating as settled."
+    unresolved:
+      - loss function, action semantics, and hidden classes fixed from outside
+    successors:
+      - adaptive alignment (can a controller learn its feedback is displaced?)
+      - contested alignment (alignment with whose loss/actions/representation?)
+      - observer ecology (is alignment a channel property or an ecology property?)
+      - endogenous power / strategic feedback (who selects the target?)
+
+  # ---- Self sub-series (cross-scale application; almost entirely IP) ----
+
+  - id: "Self-I"
+    title: The Variety Gap in the Self
+    cluster: self
+    status: published
+    question: Do low-dimensional personal values collapse self-observation the way low-dimensional metrics collapse governance?
+    depends_on: ["-I", "-II", "-III", "-IV", "-V", "-VI"]
+    establishes:
+      - personal value function is an observation architecture
+      - "self-variety gap G_self; Goodhart-Ashby synthesis for the self"
+      - beyond a critical G_self the ego cannot perceive the sources of its own distress
+      - personal meta-governance imperative
+    formal_tier: [R]           # rigorous core inherited; applications interpretive
+    governance_tier: IP
+    unresolved: [tier scheme still R/I/S; reconcile to R/IP/H]
+
+  - id: "Self-II"
+    title: The Adaptive Self
+    cluster: self
+    status: published
+    question: What must a self do to keep perceiving, acting, trusting, learning across a changing life?
+    depends_on: ["-X", "-XI", "-XIII", "-XIV", "=III", "-V"]
+    establishes:
+      - "observer-plant identity (controller = plant) as the distinguishing structural feature"
+      - "measurement-disturbance coupling: control theory's separation principle fails for a self"
+      - "constitutional self-uncontrollability = dual of III's unobservability via XI"
+      - five primitives under an explicit scale-invariance vs analogy test
+      - "composite failure via V's tax: the sealed self"
+    formal_tier: []
+    governance_tier: IP
+
+  - id: "Self-III"
+    title: The Operator
+    cluster: self
+    status: published
+    question: How does an institution inherit the perceptual limits of the humans at its nodes?
+    depends_on: ["=III", "-Self-I", "-Self-II", "-XIII"]
+    establishes:
+      - "inherited unobservability: institutional interior observability upper-bounded by human nodes' interior capacity (corollary of III)"
+      - uncompensated operator self-opacity propagates as uncorrectable distortion in estimating others
+      - "operator-seeded legitimacy spiral (can trigger XIII collapse from a single node)"
+    formal_tier: [R]           # inherited unobservability R; couplings I/S in original tags
+    governance_tier: IP
+    unresolved: [tier scheme still I/S; reconcile to R/IP/H]
