@@ -14,9 +14,7 @@
   import Section03EnRaw  from './sections/section-03.en.md?raw';
   import Section04EnRaw  from './sections/section-04.en.md?raw';
   import Section05EnRaw  from './sections/section-05.en.md?raw';
-  import Section06EnRaw  from './sections/section-06.en.md?raw';
-  import Section07EnRaw  from './sections/section-07.en.md?raw';
-  import Section08EnRaw  from './sections/section-08.en.md?raw';
+  import ReferencesEnRaw from './sections/references.en.md?raw';
   import AppendixAEnRaw  from './sections/appendix-a.en.md?raw';
 
   // Swedish
@@ -26,9 +24,7 @@
   import Section03SvRaw  from './sections/section-03.sv.md?raw';
   import Section04SvRaw  from './sections/section-04.sv.md?raw';
   import Section05SvRaw  from './sections/section-05.sv.md?raw';
-  import Section06SvRaw  from './sections/section-06.sv.md?raw';
-  import Section07SvRaw  from './sections/section-07.sv.md?raw';
-  import Section08SvRaw  from './sections/section-08.sv.md?raw';
+  import ReferencesSvRaw from './sections/references.sv.md?raw';
   import AppendixASvRaw  from './sections/appendix-a.sv.md?raw';
 
   // --- 2. RAW TEXT MAP ---
@@ -37,39 +33,35 @@
       'abstract':    AbstractEnRaw,
       'section-01': Section01EnRaw, 'section-02': Section02EnRaw,
       'section-03': Section03EnRaw, 'section-04': Section04EnRaw,
-      'section-05': Section05EnRaw, 'section-06': Section06EnRaw,
-      'section-07': Section07EnRaw, 'section-08': Section08EnRaw,
+      'section-05': Section05EnRaw, 'references': ReferencesEnRaw,
       'appendix-a': AppendixAEnRaw,
     },
     sv: {
       'abstract':    AbstractSvRaw,
       'section-01': Section01SvRaw, 'section-02': Section02SvRaw,
       'section-03': Section03SvRaw, 'section-04': Section04SvRaw,
-      'section-05': Section05SvRaw, 'section-06': Section06SvRaw,
-      'section-07': Section07SvRaw, 'section-08': Section08SvRaw,
+      'section-05': Section05SvRaw, 'references': ReferencesSvRaw,
       'appendix-a': AppendixASvRaw,
     },
   };
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
-    { id: 'section-01',  titleEn: '1. The unexamined primitive',                                      titleSv: '1. Den oprövade primitiven' },
-    { id: 'section-02',  titleEn: '2. The two ingredients',                                           titleSv: '2. De två ingredienserna' },
-    { id: 'section-03',  titleEn: '3. The minimal model: factorization from bounded prediction',       titleSv: '3. Den minimala modellen: faktorisering från begränsad prediktion' },
-    { id: 'section-04',  titleEn: '4. Non‑uniqueness: the equivalence class',                         titleSv: '4. Icke‑unikhet: ekvivalensklassen' },
-    { id: 'section-05',  titleEn: '5. Pragmatic preference without ontological preference',           titleSv: '5. Pragmatisk preferens utan ontologisk preferens' },
-    { id: 'section-06',  titleEn: '6. What this re‑grounds',                                           titleSv: '6. Vad detta återgrundar' },
-    { id: 'section-07',  titleEn: '7. Conclusion',                                                     titleSv: '7. Slutsats' },
-    { id: 'section-08',  titleEn: '8. What this paper does not show',                                  titleSv: '8. Vad denna artikel inte visar' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Model, training, and outputs',                          titleSv: 'Appendix A: Modell, träning och utdata' },
+    { id: 'abstract',    titleEn: 'Abstract',                                                           titleSv: 'Sammanfattning' },
+    { id: 'section-01',  titleEn: '1. Introduction',                                                    titleSv: '1. Introduktion' },
+    { id: 'section-02',  titleEn: '2. Relation to the series: a refinement of the synthesis',            titleSv: '2. Relation till serien: en förfining av syntesen' },
+    { id: 'section-03',  titleEn: '3. Methods',                                                         titleSv: '3. Metoder' },
+    { id: 'section-04',  titleEn: '4. Results',                                                         titleSv: '4. Resultat' },
+    { id: 'section-05',  titleEn: '5. Discussion',                                                      titleSv: '5. Diskussion' },
+    { id: 'references',  titleEn: 'References',                                                         titleSv: 'Referenser' },
+    { id: 'appendix-a',  titleEn: 'Appendix A: Reproducibility',                                        titleSv: 'Appendix A: Reproducerbarhet' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series 0',
-      seriesNote: 'Foundations paper of the Governance as Engineering series. Sits beneath Cycle One and provides the floor every later paper builds on.',
+      tag: 'Working Paper · Series XXVII',
+      seriesNote: 'This is the twenty‑seventh paper in the Governance as Engineering series. It asks whether dimensional sufficiency is enough.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
       seriesLinks: [
@@ -99,11 +91,10 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
-        { href: '/working-papers/requisite-alignment',                     label: 'Paper XXVII: Requisite Alignment →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Every paper from I onward begins with a factorization already in place — an observation channel, a choice of which variables exist for the system at all. This paper asks where that channel comes from. It argues that two ingredients, bounded representational capacity and a temporal‑prediction objective, suffice to produce a factorization — with no action, reward, or survival pressure required.',
-      contextOutro: 'A minimal model exhibits emergence, structured blindness, and non‑unique, symmetry‑broken selection across forty preregistered seeds. Non‑uniqueness is not relativism: the world constrains the class of viable factorizations without fixing a unique internal language, making coordination a selection problem within a privileged class rather than the discovery of a single truth.',
+      contextIntro: 'The Governance as Engineering series diagnoses institutional failure as insufficient requisite variety — an observation architecture whose dimensionality falls below that of the disturbance environment it governs. This paper asks whether dimensional sufficiency is enough.',
+      contextOutro: 'In a single exactly‑solved partially‑observed control problem, a fully informative feedback signal that evaluates a systematically wrong target loses substantial decision value — and two displacements of identical information content but different geometric structure impose different, oppositely‑ordered costs. The result isolates a second constraint, requisite alignment: the distinction an observable resolves must be aligned with the distinction the controller\'s action turns on, and alignment has geometry.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -112,8 +103,8 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie 0',
-      seriesNote: 'Grundartikel i serien Styrning som ingenjörskonst. Ligger under Cykel Ett och tillhandahåller golvet som varje senare artikel bygger på.',
+      tag: 'Arbetsdokument · Serie XXVII',
+      seriesNote: 'Detta är den tjugosjunde rapporten i serien Styrning som ingenjörskonst. Den frågar om dimensionell tillräcklighet är nog.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
       seriesLinks: [
@@ -130,7 +121,7 @@
         { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning →' },
         { href: '/working-papers/boundary-selection-deficits',             label: 'Rapport XII: Gränsdragningsunderskott →' },
         { href: '/working-papers/legitimacy-as-emergent-gain',             label: 'Rapport XIII: Legitimitet som emergent förstärkning →' },
-        { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv kontrollant →' },
+        { href: '/working-papers/governance-as-adaptive-controller',       label: 'Rapport XIV: Styrning som en adaptiv regulator →' },
         { href: '/working-papers/adaptation-bottleneck',                   label: 'Rapport XV: Adaptationsflaskhalsen →' },
         { href: '/working-papers/why-diversity-resists-formalization',     label: 'Rapport XVI: Varför mångfald motstår formalisering →' },
         { href: '/working-papers/certification-floor',                     label: 'Rapport XVII: Certifieringsgolvet →' },
@@ -143,11 +134,10 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända →' },
-        { href: '/working-papers/requisite-alignment',                     label: 'Rapport XXVII: Nödvändig inriktning →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Varje artikel från I och framåt börjar med en faktorisering redan på plats — en observationskanal, ett val av vilka variabler som överhuvudtaget existerar för systemet. Denna artikel frågar var den kanalen kommer ifrån. Den argumenterar för att två ingredienser, begränsad representationskapacitet och ett tidsprediktionsmål, räcker för att producera en faktorisering — utan krav på handling, belöning eller överlevnadstryck.',
-      contextOutro: 'En minimal modell uppvisar emergens, strukturerad blindhet och icke‑unikt, symmetribrutet urval över fyrtio förregistrerade frön. Icke‑unikhet är inte relativism: världen begränsar klassen av livskraftiga faktoriseringar utan att fastställa ett unikt internt språk, vilket gör koordination till ett urvalsproblem inom en privilegierad klass snarare än upptäckten av en enda sanning.',
+      contextIntro: 'Serien Styrning som ingenjörskonst diagnostiserar institutionella misslyckanden som otillräcklig nödvändig variation — en observationsarkitektur vars dimensionalitet understiger den hos den störningsmiljö den reglerar. Denna rapport frågar om dimensionell tillräcklighet är nog.',
+      contextOutro: 'I ett enda exakt löst partiellt observerbart kontrollproblem förlorar en fullt informativ återkopplingssignal som utvärderar ett systematiskt fel mål betydande beslutsvärde — och två förskjutningar med identiskt informationsinnehåll men olika geometrisk struktur medför olika, motsatt ordnade, kostnader. Resultatet isolerar en andra begränsning, nödvändig inriktning: den distinktion en observerbar storhet upplöser måste vara inriktad mot den distinktion regulators handling beror på, och inriktning har geometri.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -159,14 +149,14 @@
 
   const metadata = {
     en: {
-      title: 'Below the Factorization',
-      subtitle: 'Bounded prediction and the origin of the observation channel',
-      description: 'The foundations paper of the Governance as Engineering series. Argues that factorization — the observation channel every later paper relies on — emerges from bounded representational capacity plus a temporal‑prediction objective, without action or viability pressure.',
+      title: 'Requisite Alignment',
+      subtitle: 'The Geometry of Informative Feedback in a Solved Control Problem',
+      description: 'Asks whether dimensional sufficiency is enough. In a solved POMDP, a misaligned signal loses value even when fully informative, and the geometry of misalignment determines the cost. Paper XXVII in the Governance as Engineering series.',
     },
     sv: {
-      title: 'Under faktoriseringen',
-      subtitle: 'Begränsad prediktion och observationskanalens ursprung',
-      description: 'Grundartikeln i serien Styrning som ingenjörskonst. Argumenterar för att faktorisering — observationskanalen varje senare artikel förlitar sig på — uppstår ur begränsad representationskapacitet plus ett tidsprediktionsmål, utan krav på handling eller överlevnadstryck.',
+      title: 'Nödvändig inriktning',
+      subtitle: 'Geometrin hos informativ återkoppling i ett löst kontrollproblem',
+      description: 'Frågar om dimensionell tillräcklighet är nog. I ett löst POMDP förlorar en felinriktad signal värde även när den är fullt informativ, och geometrin hos felinriktningen bestämmer kostnaden. Rapport XXVII i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -175,7 +165,7 @@
   let currentLang = $derived($language);
   let t = $derived(ui[currentLang] ?? ui.en);
   let meta = $derived(metadata[currentLang] ?? metadata.en);
-  let pdfFilename = $derived(currentLang === 'sv' ? 'below-the-factorization-sv.pdf' : 'below-the-factorization.pdf');
+  let pdfFilename = $derived(currentLang === 'sv' ? 'requisite-alignment-sv.pdf' : 'requisite-alignment.pdf');
   let seriesLinksOpen = $state(false);
 
   function sectionTitle(section: typeof contentMap[0]) {
@@ -230,8 +220,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Under faktoriseringen: Begränsad prediktion och observationskanalens ursprung. Styrning som ingenjörskonst, Artikel 0.`
-      : `Holmström, B. K. (2026). Below the Factorization: Bounded prediction and the origin of the observation channel. Governance as Engineering, Paper 0.`;
+      ? `Holmström, B. K. (2026). Nödvändig inriktning: Geometrin hos informativ återkoppling i ett löst kontrollproblem. Styrning som ingenjörskonst, Rapport XXVII.`
+      : `Holmström, B. K. (2026). Requisite Alignment: The Geometry of Informative Feedback in a Solved Control Problem. Governance as Engineering, Paper XXVII.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -255,7 +245,7 @@
       </a>
     </div>
 
-    <!-- Series note + collapsible links in one box -->
+    <!-- Series note + collapsible links -->
     <div class="mb-6 p-3 rounded-lg text-xs leading-relaxed border border-[var(--color-separator)] opacity-70">
       {t.seriesNote}
 

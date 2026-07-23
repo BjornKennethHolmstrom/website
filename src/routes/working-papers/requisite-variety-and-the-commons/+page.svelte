@@ -87,7 +87,7 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
-
+        { href: '/working-papers/requisite-alignment',                     label: 'Paper XXVII: Requisite Alignment →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'The tragedy of the commons has a standard explanation: individual incentives to extract exceed collective incentives to conserve. This paper offers a different diagnosis: the tragedy of the commons is an architectural failure before it is a motivational one. Individual extraction decisions made without feedback from the collective resource state constitute an open-loop system — an actuator with no sensor.',
@@ -129,6 +129,7 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända →' },
+        { href: '/working-papers/requisite-alignment',                     label: 'Rapport XXVII: Nödvändig inriktning →' },
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Allmänningens tragedi har en standardförklaring: individuella incitament att utvinna överstiger kollektiva incitament att bevara. Denna vitbok erbjuder en annan diagnos: allmänningens tragedi är ett arkitektoniskt misslyckande innan det är ett motivationsmisslyckande. Individuella utvinningsbeslut utan återkoppling från det kollektiva resurstillståndet utgör ett öppet system — ett styrorgan utan sensor.',

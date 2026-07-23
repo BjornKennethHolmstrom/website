@@ -180,6 +180,12 @@ export const workingpapersTranslations = {
      description:
        'Paper X modelled reversion from epistemic consolidation as a single small constant. This paper replaces the placeholder with an explicit mechanism: competence atrophies in disuse, return is nucleated by the best‑preserved channel and propagated by a cascade governed by an escape‑ladder theorem. The phase structure, the staircase plateaus, the duality of the forces that block and accelerate return, and the role of institutional time are all established within the model. Paper XXVI in the Governance as Engineering series.',
    },
+   requisiteAlignment: {
+     title: 'Requisite Alignment',
+     subtitle: 'The Geometry of Informative Feedback in a Solved Control Problem',
+     description:
+       'Asks whether dimensional sufficiency is enough. In an exactly‑solved partially‑observed control problem, a fully informative feedback signal that evaluates a systematically wrong target loses substantial decision value — and two displacements of identical information content but different geometric structure impose different, even oppositely‑ordered, costs. The result isolates a second constraint orthogonal to requisite variety: the distinction an observable resolves must be aligned with the distinction the controller\'s action turns on, and alignment has geometry. Paper XXVII in the Governance as Engineering series.',
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -440,6 +446,12 @@ export const workingpapersTranslations = {
      subtitle: 'Svans‑nukleerad flykt från epistemisk monokultur',
      description:
        'Artikel X modellerade återgång från epistemisk konsolidering som en enda liten konstant. Denna artikel ersätter platshållaren med en explicit mekanism: kompetens förtvinar vid obruk, återgång nukleeras av den bäst bevarade kanalen och propageras genom en kaskad styrd av en flyktstege‑sats. Fasstrukturen, trappstegsplatåerna, dualiteten hos de krafter som blockerar och accelererar återgång, och den institutionella tidens roll etableras alla inom modellen. Rapport XXVI i serien Styrning som ingenjörskonst.',
+   },
+   requisiteAlignment: {
+     title: 'Nödvändig inriktning',
+     subtitle: 'Geometrin hos informativ återkoppling i ett löst kontrollproblem',
+     description:
+       'Frågar om dimensionell tillräcklighet är nog. I ett exakt löst partiellt observerbart kontrollproblem förlorar en fullt informativ återkopplingssignal som utvärderar ett systematiskt fel mål betydande beslutsvärde — och två förskjutningar med identiskt informationsinnehåll men olika geometrisk struktur medför olika, till och med motsatt ordnade, kostnader. Resultatet isolerar en andra begränsning ortogonal mot nödvändig variation: den distinktion en observerbar storhet upplöser måste vara inriktad mot den distinktion regulatorns handling beror på, och inriktning har geometri. Rapport XXVII i serien Styrning som ingenjörskonst.',
    },
 			// --- GGF Papers ---
 			preventing1933: {

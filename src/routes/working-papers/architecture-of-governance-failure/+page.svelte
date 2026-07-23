@@ -79,6 +79,7 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
+        { href: '/working-papers/requisite-alignment',                     label: 'Paper XXVII: Requisite Alignment →' },
       ],
       contextTitle: 'Context',
       contextIntro:

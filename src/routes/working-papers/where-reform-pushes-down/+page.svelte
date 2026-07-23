@@ -98,6 +98,7 @@
         { href: '/working-papers/shape-of-reform',                         label: 'Paper XXIII: The Shape of Reform →' },
         { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
+        { href: '/working-papers/requisite-alignment',                     label: 'Paper XXVII: Requisite Alignment →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'A recurring claim in governance analysis is that suppressing a monitored metric does not remove the underlying pressure but relocates it into channels the measure no longer sees. The claim is almost always made informally — without a conserved quantity, a budget, or licensing conditions. This paper supplies those by importing two formal objects from control and risk theory.',
@@ -140,6 +141,8 @@
         { href: '/working-papers/shape-of-reform',                         label: 'Rapport XXIII: Reformens form →' },
         { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända →' },
+        { href: '/working-papers/requisite-alignment',                     label: 'Rapport XXVII: Nödvändig inriktning →' },
+
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Ett återkommande påstående i styrningsanalys är att undertryckande av ett övervakat mått inte tar bort det underliggande trycket utan flyttar det till kanaler som måttet inte längre ser. Påståendet görs nästan alltid informellt — utan en konserverad storhet, en budget eller licensieringsvillkor. Denna artikel tillhandahåller dessa genom att importera två formella objekt från reglerteknik och riskteori.',

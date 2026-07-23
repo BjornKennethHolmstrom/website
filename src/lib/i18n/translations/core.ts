@@ -209,6 +209,10 @@ export const coreTranslations = {
     geSeriesPaperXXVI: {
       title: 'XXVI: The Cost of Returning',
       desc:  'Replaces the scalar reversion constant of Paper X with an explicit escape‑ladder mechanism. Return from epistemic monoculture is nucleated by the best‑preserved channel and propagated by a cascade governed by the ordered penalties of the survivors.',
+    },
+    geSeriesPaperXXVII: {
+      title: 'XXVII: Requisite Alignment',
+      desc:  'Shows in a solved control problem that requisite variety is not sufficient: an informative signal evaluating the wrong target loses value, and the geometry of the misalignment — not only its extent — determines the cost.',
     }
   },
 
@@ -628,6 +632,10 @@ export const coreTranslations = {
     geSeriesPaperXXVI: {
       title: 'XXVI: Kostnaden för att återvända',
       desc:  'Ersätter den skalära återgångskonstanten i Rapport X med en explicit flyktstege‑mekanism. Återgång från epistemisk monokultur nukleeras av den bäst bevarade kanalen och propageras genom en kaskad styrd av de överlevandes ordnade kostnader.',
+    },
+    geSeriesPaperXXVII: {
+      title: 'XXVII: Nödvändig inriktning',
+      desc:  'Visar i ett löst kontrollproblem att nödvändig variation inte är tillräcklig: en informativ signal som utvärderar fel mål förlorar värde, och geometrin hos felinriktningen — inte bara dess omfattning — bestämmer kostnaden.',
     }
   },
 

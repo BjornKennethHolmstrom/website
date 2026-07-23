@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 1200"
+   font-family="'Helvetica Neue', Arial, sans-serif"
+   version="1.1"
+   id="svg55"
+   sodipodi:docname="requisite-alignment-cover.svg"
+   inkscape:export-filename="requisite-alignment-cover.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview55"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.72333333"
+     inkscape:cx="600"
+     inkscape:cy="600"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg55" />
+  <defs
+     id="defs6">
+    <filter
+       id="cyanGlow"
+       x="-0.13984375"
+       y="-0.13984375"
+       width="1.2796875"
+       height="1.2796875">
+      <feGaussianBlur
+         stdDeviation="7"
+         result="b"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="b"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <filter
+       id="amberGlow"
+       x="-0.12109375"
+       y="-0.12109375"
+       width="1.2421875"
+       height="1.2421875">
+      <feGaussianBlur
+         stdDeviation="6"
+         result="b"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="b"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="softGlow"
+       x="-0.675"
+       y="-0.675"
+       width="2.35"
+       height="2.35">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="b"
+         id="feGaussianBlur4" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="b"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- background -->
+  <rect
+     width="1200"
+     height="1200"
+     fill="#1E2633"
+     id="rect6" />
+  <!-- faint structural circuitry (series texture) -->
+  <g
+     stroke="#2FD4E0"
+     stroke-opacity="0.12"
+     stroke-width="1"
+     fill="none"
+     id="g9">
+    <path
+       d="M 150 210 L 210 210 L 232 188"
+       id="path6" />
+    <circle
+       cx="232"
+       cy="188"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle6" />
+    <path
+       d="M 1046 250 L 1010 214 L 958 214"
+       id="path7" />
+    <path
+       d="M 1040 1010 L 1004 1010 L 986 1030"
+       id="path8" />
+    <circle
+       cx="986"
+       cy="1030"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle8" />
+    <path
+       d="M 158 962 L 158 998 L 196 1014"
+       id="path9" />
+  </g>
+  <!-- overarching thesis, quiet -->
+  <text
+     x="150"
+     y="188"
+     font-size="17"
+     letter-spacing="3"
+     fill="#7E8A9A"
+     id="text9">REQUISITE VARIETY IS NOT ENOUGH</text>
+  <!-- ===================================================================== -->
+  <!-- TWO DISPLACEMENT GEOMETRIES — identical information, different structure -->
+  <!-- ===================================================================== -->
+  <text
+     x="600"
+     y="300"
+     font-size="15"
+     letter-spacing="2"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text10">identical marginal information</text>
+  <!-- pi_4 : connected four-cycle (one orbit) -->
+  <g
+     stroke="#04ECF6"
+     stroke-width="2.4"
+     fill="none"
+     filter="url(#softGlow)"
+     id="g13">
+    <path
+       d="M 360 372 L 424 372"
+       id="path10" />
+    <path
+       d="M 442 390 L 442 454"
+       id="path11" />
+    <path
+       d="M 424 472 L 360 472"
+       id="path12" />
+    <path
+       d="M 342 454 L 342 390"
+       id="path13" />
+  </g>
+  <g
+     fill="#04ECF6"
+     filter="url(#softGlow)"
+     id="g17">
+    <path
+       d="M 416 366 L 430 372 L 416 378 Z"
+       id="path14" />
+    <path
+       d="M 436 446 L 442 460 L 448 446 Z"
+       id="path15" />
+    <path
+       d="M 368 466 L 354 472 L 368 478 Z"
+       id="path16" />
+    <path
+       d="M 348 398 L 342 384 L 336 398 Z"
+       id="path17" />
+  </g>
+  <g
+     fill="#0B3A44"
+     stroke="#04ECF6"
+     stroke-width="2.2"
+     filter="url(#cyanGlow)"
+     id="g20">
+    <circle
+       cx="342"
+       cy="372"
+       r="14"
+       id="circle17" />
+    <circle
+       cx="442"
+       cy="372"
+       r="14"
+       id="circle18" />
+    <circle
+       cx="442"
+       cy="472"
+       r="14"
+       id="circle19" />
+    <circle
+       cx="342"
+       cy="472"
+       r="14"
+       id="circle20" />
+  </g>
+  <g
+     fill="#04ECF6"
+     font-size="13"
+     text-anchor="middle"
+     font-style="italic"
+     id="g23">
+    <text
+       x="342"
+       y="377"
+       id="text20">a</text>
+    <text
+       x="442"
+       y="377"
+       id="text21">b</text>
+    <text
+       x="442"
+       y="477"
+       id="text22">c</text>
+    <text
+       x="342"
+       y="477"
+       id="text23">d</text>
+  </g>
+  <text
+     x="392"
+     y="524"
+     font-size="16"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text24">π₄ · four-cycle</text>
+  <text
+     x="392"
+     y="544"
+     font-size="12"
+     letter-spacing="1"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text25">one orbit</text>
+  <!-- equal-information link -->
+  <line
+     x1="486"
+     y1="422"
+     x2="714"
+     y2="422"
+     stroke="#5C6B7E"
+     stroke-opacity="0.5"
+     stroke-width="1.2"
+     stroke-dasharray="2 8"
+     id="line25" />
+  <text
+     x="600"
+     y="416"
+     font-size="17"
+     font-style="italic"
+     fill="#CFFAFD"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text26">I₄ = I₂₊₂</text>
+  <!-- pi_2+2 : two disjoint transpositions (two orbits) -->
+  <g
+     stroke="#E8943A"
+     stroke-width="2.4"
+     fill="none"
+     filter="url(#softGlow)"
+     id="g27">
+    <path
+       d="M 776 372 L 840 372"
+       id="path26" />
+    <path
+       d="M 776 472 L 840 472"
+       id="path27" />
+  </g>
+  <g
+     fill="#E8943A"
+     filter="url(#softGlow)"
+     id="g31">
+    <path
+       d="M 832 366 L 846 372 L 832 378 Z"
+       id="path28" />
+    <path
+       d="M 784 366 L 770 372 L 784 378 Z"
+       id="path29" />
+    <path
+       d="M 832 466 L 846 472 L 832 478 Z"
+       id="path30" />
+    <path
+       d="M 784 466 L 770 472 L 784 478 Z"
+       id="path31" />
+  </g>
+  <g
+     fill="#0B3A44"
+     stroke="#E8943A"
+     stroke-width="2.2"
+     filter="url(#amberGlow)"
+     id="g34">
+    <circle
+       cx="758"
+       cy="372"
+       r="14"
+       id="circle31" />
+    <circle
+       cx="858"
+       cy="372"
+       r="14"
+       id="circle32" />
+    <circle
+       cx="758"
+       cy="472"
+       r="14"
+       id="circle33" />
+    <circle
+       cx="858"
+       cy="472"
+       r="14"
+       id="circle34" />
+  </g>
+  <g
+     fill="#E8943A"
+     font-size="13"
+     text-anchor="middle"
+     font-style="italic"
+     id="g37">
+    <text
+       x="758"
+       y="377"
+       id="text34">a</text>
+    <text
+       x="858"
+       y="377"
+       id="text35">b</text>
+    <text
+       x="758"
+       y="477"
+       id="text36">c</text>
+    <text
+       x="858"
+       y="477"
+       id="text37">d</text>
+  </g>
+  <text
+     x="808"
+     y="524"
+     font-size="16"
+     fill="#E8943A"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text38">π₂₊₂ · two transpositions</text>
+  <text
+     x="808"
+     y="544"
+     font-size="12"
+     letter-spacing="1"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text39">two orbits</text>
+  <!-- crux -->
+  <text
+     x="600"
+     y="586"
+     font-size="15"
+     letter-spacing="1.5"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text40">different decision value · the difference is geometry, not information</text>
+  <!-- ===================================================================== -->
+  <!-- THE VALUE CROSSOVER — the ordering reverses as displacement deepens     -->
+  <!-- ===================================================================== -->
+  <line
+     x1="280"
+     y1="626"
+     x2="280"
+     y2="850"
+     stroke="#5C6B7E"
+     stroke-width="1.4"
+     id="line40" />
+  <path
+     d="M 274 638 L 280 622 L 286 638 Z"
+     fill="#5C6B7E"
+     id="path40" />
+  <line
+     x1="280"
+     y1="850"
+     x2="948"
+     y2="850"
+     stroke="#5C6B7E"
+     stroke-width="1.4"
+     id="line41" />
+  <path
+     d="M 936 844 L 952 850 L 936 856 Z"
+     fill="#5C6B7E"
+     id="path41" />
+  <text
+     x="288"
+     y="620"
+     font-size="14"
+     letter-spacing="0.5"
+     fill="#7E8A9A"
+     id="text41">decision value</text>
+  <!-- intermediate ambiguity worst-case marker -->
+  <line
+     x1="612"
+     y1="640"
+     x2="612"
+     y2="850"
+     stroke="#7E8A9A"
+     stroke-opacity="0.4"
+     stroke-width="1.2"
+     stroke-dasharray="3 7"
+     id="line42" />
+  <!-- pi_4 curve: preserves more value at low displacement -->
+  <path
+     d="M 280 636 C 400 690, 470 740, 612 780 C 720 772, 820 796, 944 800"
+     fill="none"
+     stroke="#04ECF6"
+     stroke-width="3.2"
+     stroke-linecap="round"
+     filter="url(#cyanGlow)"
+     id="path42" />
+  <!-- pi_2+2 curve: preserves more value at high displacement -->
+  <path
+     d="M 280 636 C 400 712, 470 772, 612 800 C 720 776, 820 720, 944 690"
+     fill="none"
+     stroke="#E8943A"
+     stroke-width="3.2"
+     stroke-linecap="round"
+     filter="url(#amberGlow)"
+     id="path43" />
+  <!-- the crossover: ordering reverses -->
+  <circle
+     cx="784"
+     cy="774"
+     r="6"
+     fill="#1E2633"
+     stroke="#CFFAFD"
+     stroke-width="1.8"
+     filter="url(#softGlow)"
+     id="circle43" />
+  <g
+     filter="url(#softGlow)"
+     id="g47">
+    <circle
+       cx="770"
+       cy="762"
+       r="2.1"
+       fill="#04ECF6"
+       id="circle44" />
+    <circle
+       cx="800"
+       cy="762"
+       r="2.0"
+       fill="#E8943A"
+       id="circle45" />
+    <circle
+       cx="796"
+       cy="788"
+       r="1.7"
+       fill="#04ECF6"
+       id="circle46" />
+    <circle
+       cx="772"
+       cy="788"
+       r="1.6"
+       fill="#E8943A"
+       id="circle47" />
+  </g>
+  <text
+     x="812"
+     y="742"
+     font-size="14"
+     letter-spacing="0.5"
+     fill="#CFFAFD"
+     filter="url(#softGlow)"
+     id="text47">ordering reverses</text>
+  <!-- curve identifiers -->
+  <text
+     x="958"
+     y="804"
+     font-size="15"
+     fill="#04ECF6"
+     id="text48">π₄</text>
+  <text
+     x="958"
+     y="694"
+     font-size="15"
+     fill="#E8943A"
+     id="text49">π₂₊₂</text>
+  <!-- axis annotations -->
+  <g
+     font-size="13"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="g52">
+    <text
+       x="280"
+       y="872"
+       id="text50">matched</text>
+    <text
+       x="612"
+       y="872"
+       id="text51">½ · max ambiguity</text>
+    <text
+       x="944"
+       y="872"
+       id="text52">consistent</text>
+  </g>
+  <text
+     x="614"
+     y="898"
+     font-size="14"
+     letter-spacing="1"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text53">displacement  m  →</text>
+  <!-- ===================================================================== -->
+  <!-- THE CONCEPT                                                            -->
+  <!-- ===================================================================== -->
+  <text
+     x="600"
+     y="944"
+     font-size="20"
+     letter-spacing="2"
+     fill="#04ECF6"
+     text-anchor="middle"
+     filter="url(#softGlow)"
+     id="text54">REQUISITE ALIGNMENT</text>
+  <text
+     x="600"
+     y="968"
+     font-size="14"
+     letter-spacing="2"
+     fill="#7E8A9A"
+     text-anchor="middle"
+     id="text55">which distinction, not how many</text>
+</svg>

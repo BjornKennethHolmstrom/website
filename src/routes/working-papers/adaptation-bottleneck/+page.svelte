@@ -90,6 +90,7 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Paper XXIV: The Observer You Cannot Afford to Excite →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
+        { href: '/working-papers/requisite-alignment',                     label: 'Paper XXVII: Requisite Alignment →' },
       ],
       contextTitle: 'Context',
       contextIntro: 'The Sense–Learn–Execute triad was established across Cycle Two as three separately justified requirements — but never as three simultaneous claims on finite processing capacity. This paper treats the loop as a recursive, lossy pipeline and asks: what happens when the three legs compete for resources?',
@@ -131,6 +132,8 @@
         { href: '/working-papers/excitation-starved-observer',             label: 'Rapport XXIV: Observatören du inte har råd att excitera →' },
         { href: '/working-papers/where-reform-pushes-down',                label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända →' },
+        { href: '/working-papers/requisite-alignment',                     label: 'Rapport XXVII: Nödvändig inriktning →' },
+
       ],
       contextTitle: 'Kontext',
       contextIntro: 'Sense–Learn–Execute-triaden etablerades under Cykel Två som tre separat motiverade krav — men aldrig som tre samtidiga anspråk på ändlig processorkapacitet. Denna rapport behandlar loopen som en rekursiv, förlustfylld pipeline och frågar: vad händer när de tre benen konkurrerar om resurser?',

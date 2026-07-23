@@ -28,6 +28,37 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'requisiteAlignment',
+   key: 'requisiteAlignment',
+   category: 'governance',
+   tags: [
+     'Requisite Alignment',
+     'Requisite Variety',
+     'Goodhart-Ashby Synthesis',
+     'Value of Information',
+     'Feedback Misalignment',
+     'Partially Observed Control',
+     'Observation Architecture',
+     'Governance Engineering',
+     'Dynamic Programming'
+   ],
+   year: '2026',
+   pages: '33',
+   readTime: {
+     en: '40 min',
+     sv: '40 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/requisite-alignment.pdf`,
+     sv: `${localBase}/requisite-alignment-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/requisite-alignment-cover.png',
+   readOnlinePath: '/working-papers/requisite-alignment',
+   readOnlineExternal: false,
+   releaseDate: '2026-07-23'
+ },
+ {
    id: 'costOfReturning',
    key: 'costOfReturning',
    category: 'governance',
