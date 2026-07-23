@@ -104,7 +104,7 @@ export const coreTranslations = {
 
   // Governance as Engineering — Carousel
   geCarouselButton: 'Read the Paper ',
-  geCarouselBadge: 'Featured Research',
+  geCarouselBadge: 'Featured Research — Governance as Engineering',
   geCarouselSeries: {
     geSeriesPaperI: {
       title: 'I: Governance Stability Simulator',
@@ -527,7 +527,7 @@ export const coreTranslations = {
   reportsStandardSettingTagline: 'Varför institutionerna som bestämmer vad andra kan se själva är strukturellt blinda.',
 
   geCarouselButton: 'Läs artikeln ',
-  geCarouselBadge: 'Utvald forskning',
+  geCarouselBadge: 'Utvald forskning — Styrning som ingenjörskonst',
   geCarouselSeries: {
     geSeriesPaperI: {
       title: 'I: Styrstabilitetssimulatorn',
