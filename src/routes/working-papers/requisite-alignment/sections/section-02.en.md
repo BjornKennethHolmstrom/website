@@ -37,11 +37,13 @@ dimensional sense, and it is not a noisier q. It carries information about a rea
 changes is only *which* distinction — whether the signal evaluates the class the controller acted on or a
 permuted image of it. The cleanest separation comes from the two permutation geometries, which carry
 *exactly equal* marginal information about the state at every displacement level yet differ in decision
-value: because information content is held identical by construction, the value difference isolates
-alignment as an axis fully orthogonal to information quantity. (The displacement probability m does also
-change the channel's total mutual information at interior values — the value cost as m rises is therefore
-partly confounded with an information-quantity effect, which is why the geometry contrast, not the raw
-m-attenuation, is the load-bearing evidence; §5.2 treats this carefully.)
+value under a uniform prior: because variety is held identical by construction, the value difference
+isolates alignment as an axis distinct from variety. Whether it is additionally distinct from information 
+*quantity* along a trajectory is an open question registered in §5.2, since the uniform-prior equality 
+does not extend to the beliefs the controller occupies after the first observation. (The displacement 
+probability m does also change the channel's total mutual information at interior values — the value 
+cost as m rises is therefore partly confounded with an information-quantity effect, which is why the 
+geometry contrast, not the raw m-attenuation, is the load-bearing evidence; §5.2 treats this carefully.)
 
 Three findings sharpen the synthesis. First, requisite variety in the dimensional sense is necessary but
 not sufficient: a correctly-modelled signal, non-reducible to added noise, loses most of its value under
@@ -87,9 +89,9 @@ The correspondence admits a *partial* order but not a total one, and this is the
 be compared by refinement — whether one is a coarsening of the other — but the signal-resolved and
 action-relevant partitions here are generally incomparable under refinement, and, crucially, alignment is
 **not** reducible to any information ordering between them. The two registered geometries are the proof:
-they are information-equivalent (identical mutual information at every m, §3.4) yet alignment-distinct
+they are variety-equivalent, and information-equivalent under a uniform prior (§3.4), yet alignment-distinct
 (different decision value, with a sign reversal). An information measure, by construction, cannot separate
-them; alignment does. Requisite alignment is therefore a *finer* object than any information quantity —
+them; alignment does. Requisite alignment is therefore a *finer* object than variety —
 it is the geometry of how the signal-resolved and action-relevant partitions differ, not the amount of
 information the signal carries. This model exhibits three properties of that correspondence, each
 established here [R, within-model]: (i) misalignment reduces decision value at fixed information content
@@ -149,17 +151,17 @@ Against this backdrop the contribution is not the general claim that information
 context-dependent. It is specific and constructive: (i) a preregistered, exactly-derived family of
 action-coupled *target-displacement* channels, analytically shown to be non-representable by any scalar
 reliability; (ii) a solved sequential POMDP value surface for those channels; (iii) the comparison of two
-*non-conjugate* permutation geometries at matched information content; (iv) the resulting non-monotone
-value profile with partial recovery at full displacement; and (v) a resolved, spatially replicated
-geometry-by-displacement crossover. The requisite-alignment framing then integrates these into the
-Governance as Engineering programme, where the pertinent question is not whether information value is
-context-dependent in general, but which *structural* property of an observation channel — beyond variety
-and beyond transmission fidelity — a governance architecture must satisfy. The good regulator theorem
-locates that property in the regulator's model of the system; requisite alignment locates a companion
-property in the observation channel's target, and shows in a solved case that it is geometrically
+*non-conjugate* permutation geometries at matched variety and matched uniform-prior information
+content; (iv) the resulting non-monotone value profile with partial recovery at full displacement; and (v) a resolved, spatially replicated geometry-by-displacement crossover. The requisite-alignment framing then integrates 
+these into the Governance as Engineering programme, where the pertinent question is not whether information 
+value is context-dependent in general, but which *structural* property of an observation channel — beyond 
+variety and beyond transmission fidelity — a governance architecture must satisfy. The good regulator 
+theorem locates that property in the regulator's model of the system; requisite alignment locates a 
+companion property in the observation channel's target, and shows in a solved case that it is geometrically
 structured. Relatedly, the problem of choosing *what* to observe is the subject of POMDP sensor selection
 and observation design (Kaelbling, Littman & Cassandra, 1998, for the POMDP setting); this paper differs
-in fixing the channel's information content and varying only its action-relative target geometry.
+in fixing the channel's variety and its uniform-prior information content, and varying only its
+action-relative target geometry.
 
 ---
 

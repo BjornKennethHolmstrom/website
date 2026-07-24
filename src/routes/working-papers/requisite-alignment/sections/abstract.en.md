@@ -15,19 +15,19 @@ reliability. The decisive result concerns the *geometry* of the displacement. Tw
 with identical marginal information about the state — a connected four-cycle through the class space and
 two disjoint transpositions — impose different value costs, and the ordering reverses as displacement
 deepens: at low displacement the four-cycle preserves more value, at higher displacement the
-transpositions do. Because information content is held exactly equal across the two geometries, this
-difference cannot be an information-quantity effect; it isolates a constraint orthogonal to variety. We
-name it **requisite alignment**: for an observable to have decision value it is not enough that it carry
-sufficient variety and transmit it without compression — the distinction it resolves must be aligned with
-the distinction the controller's action turns on, and alignment has geometry (which distinction, not how
-many). The worst case is not maximal displacement but maximal *ambiguity* (intermediate displacement),
-because a consistently wrong signal can be partially inverted while an unpredictable one cannot. The study
-establishes that this failure mode is structurally real and geometrically structured in at least one
-exactly-analysable case; it does not estimate its prevalence in any governance system, and a registered
-possibility — that displaced feedback might exceed matched feedback in value — was permitted by the design
-but did not occur. This is the series' first computational-mechanistic paper, and its result refines the
-Goodhart–Ashby synthesis: requisite variety is necessary but not sufficient, and requisite alignment is a
-second, independently binding, geometrically structured constraint.
+transpositions do. The two geometries are identical in variety by construction — same output
+cardinality, same reliability, same displacement probability, same likelihood multiset — so the
+difference is not a variety effect. We name it **requisite alignment**: for an observable to have decision 
+value it is not enough that it carry sufficient variety and transmit it without compression — the distinction 
+it resolves must be aligned with the distinction the controller's action turns on, and alignment has geometry
+ (which distinction, not how many). The worst case is not maximal displacement but maximal *ambiguity* 
+(intermediate displacement), because a consistently wrong signal can be partially inverted while an 
+unpredictable one cannot. The study establishes that this failure mode is structurally real and geometrically 
+structured in at least one exactly-analysable case; it does not estimate its prevalence in any governance 
+system, and a registered possibility — that displaced feedback might exceed matched feedback in value — 
+was permitted by the design but did not occur. This is the series' first computational-mechanistic paper, 
+and its result refines the Goodhart–Ashby synthesis: requisite variety is necessary but not sufficient, 
+and requisite alignment is a second, independently binding, geometrically structured constraint.
 
 **Keywords:** requisite alignment, requisite variety, Goodhart–Ashby synthesis, value of information,
 partially observed control, feedback misalignment, observation architecture, Governance as Engineering.
@@ -41,9 +41,15 @@ partially observed control, feedback misalignment, observation architecture, Gov
   the rest, neither reproducible by a two-level q-channel. (§3.4, V5)
 - **[R]** At m = 0 the displaced solve reduces exactly to the matched Gate-1 solve; dominance A_π ≥ 0
   holds; exact-inert planes remain A_π = 0 for all m and both geometries. (§3.6, V1–V3)
-- **[R]** The two registered geometries π₄ and π₂₊₂ carry identical marginal mutual information about the
-  state at every displacement level; any difference in their decision value is therefore independent of
-  information quantity. (§5.2)
+- **[R]** Under a uniform belief, the two registered geometries π₄ and π₂₊₂ carry identical
+  single-observation marginal mutual information about the state at every displacement level, because
+  their likelihood vectors are relabelings of one multiset. The equality is prior-dependent and does not
+  extend to the non-uniform beliefs the controller occupies after t = 0. (§3.4)
+- **[R]** The geometry contrast holds the channel's *variety* fixed by construction — identical output
+  cardinality, q, m, and likelihood multiset — so no account in terms of how many distinctions the
+  channel can make separates π₄ from π₂₊₂. (§3.4, §5.2)
+- **[open, registered]** Whether the geometry effect is additionally free of any information-quantity
+  explanation along realized belief trajectories is untested. See RP-XXVII-1 (§5.2).
 - **[R]** For K = 4 the fixed-point-free permutations comprise exactly two conjugacy classes (four-cycle,
   double-transposition); under the model's class-relabel symmetry one representative of each is
   exhaustive. (§3.4)

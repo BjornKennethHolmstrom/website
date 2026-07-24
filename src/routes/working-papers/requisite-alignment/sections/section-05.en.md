@@ -30,18 +30,55 @@ fall in how much the channel tells the controller about the state. A critic coul
 this component of the effect is consistent with a variety/information account and does not, on its own,
 demonstrate a distinct alignment constraint.
 
-Two things rescue the alignment claim from this objection. First, the attenuation is disproportionate to
-and differently-shaped from the MI loss: MI is symmetric about m = 0.5 (it falls then recovers
-symmetrically), whereas the value profile, though also non-monotone, is not the image of the MI curve —
-value depends on how the surviving information maps onto the *action-relevant* distinction, not only on
-its quantity. Second, and decisively, the **geometry effect occurs at fixed marginal information
-content**. The two registered geometries, π₄ and π₂₊₂, displace every action to exactly one other class,
-so their single-observation mutual information is identical at every m (verified: equal per-action and on
-average). Any difference in decision value between them therefore cannot be an information-quantity
-effect — the quantity is equal by construction. Yet the value differs, and its sign reverses with m.
-This is the paper's strongest evidence for requisite alignment as a constraint orthogonal to variety:
-holding information content exactly fixed, the *arrangement* of the misalignment across the state space
-changes what the signal is worth.
+Two things bear on this objection, and only one of them is settled.
+
+First, the attenuation is disproportionate to and differently-shaped from the MI loss: MI is symmetric
+about m = 0.5 (it falls then recovers symmetrically), whereas the value profile, though also
+non-monotone, is not the image of the MI curve — value depends on how the surviving information maps
+onto the *action-relevant* distinction, not only on its quantity.
+
+Second, the geometry contrast holds information content fixed in a specific and limited sense. The two
+registered geometries displace every action to exactly one other class, so their likelihood vectors are
+relabelings of a common multiset and their single-observation mutual information under a *uniform*
+prior is identical at every m (§3.4). It does not follow that they are informationally equivalent along
+a trajectory. At non-uniform beliefs the geometries assign the same likelihood levels to different
+latent classes and their per-observation MI diverges — by up to 0.22 bits at q = 0.85, m = 0.75, which
+exceeds the channel's entire uniform-prior information content in parts of the parameter range. The
+controller's belief is uniform only at t = 0. The geometry contrast is therefore conducted almost
+entirely at beliefs where the §3.4 equality does not hold.
+
+An earlier version of this section drew the stronger inference — that the value difference between the
+geometries could not be an information-quantity effect, since the quantity was equal by construction.
+That inference is withdrawn. It relies on a single-observation, uniform-prior equality to license a
+claim about a sequential problem, and the equality does not survive the transition.
+
+What the geometry contrast establishes without qualification is that the difference is not a *variety*
+effect. Output cardinality, reliability q, displacement probability m, and the likelihood multiset are
+identical across π₄ and π₂₊₂ by construction, so no account in terms of how many distinctions the
+channel can make can separate them. This is the claim the requisite-alignment refinement of the
+Goodhart–Ashby synthesis requires — that requisite variety is necessary but not sufficient — and it is
+untouched by the correction. Note also that the paper does not need the stronger claim to be novel
+against value-of-information theory (§2.4): that information quantity underdetermines decision value is
+a settled starting point in that literature, and the contribution here was never the general claim but
+the solved, geometrically structured case.
+
+Whether the difference is additionally free of any information-quantity explanation is now an empirical
+question rather than a construction, and it is registered as one.
+
+> **RP-XXVII-1 (registered; posterior to the value run, prior to this test).** Along the realized belief
+> trajectories of run 16bc675b, accumulate per-step belief-conditioned mutual information separately for
+> π₄ and π₂₊₂ over each condition's horizon. *Prediction:* the accumulated-information gap does not
+> reproduce the value gap — in particular it does not exhibit a sign reversal near m = 0.75.
+> *Falsification:* if accumulated information differs between the geometries with the same sign as the
+> value difference and reverses at the same displacement level, the geometry effect is not separable
+> from an information-quantity account within this model, and the orthogonality claim is withdrawn
+> rather than narrowed.
+
+The asymmetry of the test is worth stating. Marginal MI is symmetric about m = 0.5 while the value
+trough falls near m = 0.75; an information-quantity account of the geometry effect would have to
+explain a reversal at a displacement level where no information measure in this model reverses. A
+confirmed RP-XXVII-1 would therefore establish the dissociation by demonstration rather than by
+construction, which is a stronger result than the one being withdrawn.
 
 The framing (§1–2) should therefore lead with the geometry result as the load-bearing evidence and
 present the m-attenuation as supporting but partially confounded, rather than treating all 82% as
@@ -53,8 +90,9 @@ equally clean demonstration of an alignment-not-variety effect.
 trough at m = 0.5 and recovers by m = 1, whereas the median resolved value cost D_π (right axis,
 orange) troughs later, near m = 0.75. The two curves have different shapes in m, so the value
 attenuation is not a simple image of the information loss — and the geometry contrast (Figure 3),
-which holds MI exactly equal, isolates the component of the effect that no information measure can
-explain.
+which holds variety and uniform-prior MI exactly equal, isolates the component of the effect that no
+variety measure can explain. Whether any information measure can explain it is registered as an open
+test (RP-XXVII-1, §5.2).
 
 ### 5.3 What the study does not establish
 

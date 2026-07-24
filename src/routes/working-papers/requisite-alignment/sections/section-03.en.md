@@ -93,15 +93,32 @@ displacement therefore cannot be recovered by reading a reliability slice off th
 permutation acts on the comparison *target* in K-dimensional class space, upstream of the binary output,
 and that structure survives the collapse of the signal to a single bit.
 
-**Lemma (information invariance of the displacement) [R].** For fixed q and m, the single-observation
-mutual information between the true class and the binary signal is invariant across *all* fixed-point-free
-permutations π and all actions a. The likelihood vector P(match | z) is, for every such π and a, a
-relabeling of the same multiset {q − m(2q−1), 1 − q + m(2q−1), 1 − q, 1 − q}; mutual information is
-invariant under relabeling of the conditioning outcomes, so it depends only on (q, m). In particular the
-two registered geometries π₄ and π₂₊₂ carry identical marginal information at every m. (Verified across
-all nine K = 4 derangements and four actions.) This is the fact that makes the geometry contrast a test
-of alignment at *fixed* information content: any difference in decision value between π₄ and π₂₊₂ cannot
-be an information-quantity effect, since the quantity is equal by this lemma.
+**Lemma (uniform-prior information invariance of the displacement) [R].** For fixed q and m, and for a
+controller belief that is uniform over the K classes, the single-observation mutual information between
+the true class and the binary signal is invariant across *all* fixed-point-free permutations π and all
+actions a. The likelihood vector P(match | z) is, for every such π and a, a relabeling of the same
+multiset {q − m(2q−1), 1 − q + m(2q−1), 1 − q, 1 − q}. Writing the mutual information at belief b as
+I(b, L) = H(b·L) − b·H(L), both terms are symmetric functions of the likelihood multiset whenever b is
+exchangeable over the classes; the quantity therefore depends only on (q, m). In particular the two
+registered geometries π₄ and π₂₊₂ carry identical marginal information at every m under a uniform
+prior. (Verified across all nine K = 4 derangements and four actions; max deviation 3.3 × 10⁻¹⁶ bits.)
+
+**Scope, stated explicitly.** The exchangeability condition is load-bearing and was left implicit in an
+earlier version of this lemma. Mutual information is a functional of the belief as well as the
+likelihood, and at non-uniform beliefs the two geometries are *not* informationally equivalent: they
+assign the same likelihood levels to different latent classes, so b·L and b·H(L) both differ. At
+q = 0.85, m = 0.75, per-observation MI differs between π₄ and π₂₊₂ by up to 0.22 bits across the belief
+simplex — larger, in parts of the parameter range, than the channel's entire uniform-prior information
+content. A worked instance: at q = 0.7, m = 0.5, a = 2 and belief (0.05, 0.05, 0.45, 0.45), π₄ yields
+likelihoods (0.3, 0.5, 0.5, 0.3) and π₂₊₂ yields (0.5, 0.5, 0.3, 0.3) — the same multiset — for MI of
+0.0303 and 0.0112 bits respectively, against a common uniform-prior value of 0.0303 bits.
+
+Since the controller's belief is uniform only at t = 0, the geometry contrast is conducted almost
+entirely at beliefs where the equality above does not hold. What the contrast holds fixed without
+qualification is the channel's *variety*: output cardinality, q, m, and the likelihood multiset are
+identical by construction. What it does not establish by construction is freedom from any
+information-quantity account along a trajectory. That question is treated in §5.2 and registered there
+as an open prediction rather than settled here.
 
 Two permutation geometries are registered as co-primary. For K = 4 the fixed-point-free permutations
 fall into exactly two conjugacy classes: the connected **4-cycle π₄ = (1 2 3 4)** and the
