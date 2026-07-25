@@ -233,7 +233,7 @@ XIII ── transfers ─────▶ Self-III operator-seeded legitimacy spi
 XVII ── grounds ──▶ XXII certification incompleteness (with XXI's closed meta-ladder — NOT XX's pigeonhole)
 XVII ── grounds ──▶ XX third law (certification cost, monotone)
 XXII ── contradicts ──▶ XX's "three limits from one bound" symmetry (explicitly refused)
-XXII ── rhymes-with ──▶ XVIII laundering (candidate synthesis §5.1)
+XXII ── excluded-from ──▶ §5.1 (measurement-dependency, not laundering)
 ```
 
 ### 3.9 Learning / adaptation
@@ -328,13 +328,38 @@ Retained deliberately; a documented null outranks an untested elaboration. This 
 - **XXVII** — no enrichment: a registered possibility that displaced feedback might *exceed* matched feedback was permitted and did not occur.
 - **Paper 0** — first structured-blindness operationalization failed, corrected under a second run.
 
-### 5.1 Candidate synthesis: endogenous diagnostic laundering (not yet a conclusion)
+### 5.1 Resolved: the laundering candidate is two members, not four
 
-Several of the *most consequential* nulls share a possible shape:
+An earlier version of this section proposed a candidate family of four nulls sharing the shape *an adaptive system modifies the very channels used to diagnose its adaptation*, and left open XVI's question turned on the series itself: one structure, or four rhymes? The question is now closed against the family. Two members, one exclusion, one empty slot.
 
-> An adaptive system modifies the very channels used to diagnose its adaptation, so health measures come to track successful internal accommodation rather than continued world-coupling.
+The criterion is not new. **XVI** already supplies it: a quantity representing currently-unused alternatives decays under the primary objective and persists only through a source term the optimiser does not set, with **source-term locality** as the order parameter. Membership requires four slots to fill without stretching — a watched signal `W`; an optimiser `O` with objective `J` that does not include degrading `W`; an *entailment*, such that pursuing `J` successfully reduces `I(W; F)`; and a source term `S` with a determinate answer on whether it lies inside or outside `O`'s control set. The third slot does the discriminating work.
 
-The candidate members are **XVIII** (adaptation launders the early-warning residual), **XXII** (a corrupt certification kernel makes health indicators improve), **XXIV** (an optimised observer loses the reach its proxy claims to represent), and **XXVII's** future unknown-semantics work. This is a candidate family, **not** an atlas conclusion, and it is explicitly bounded: XXIII's topology null, X's tail-correlation null, and Paper 0's first-operationalization failure do **not** belong to it — they are ordinary falsifications, not diagnostic laundering. The open question is XVI's question turned on the series itself: do these four share a formal structure, or merely rhyme? Resolving that could be a genuine cross-paper synthesis; asserting it now would be exactly the over-reach the series guards against.
+**XVIII — member, self-declared `[IP]`.** `W` = the prediction-error residual; `O` = local adaptation minimising local error; the entailment holds because absorbing coupling into gain *is* successful local adaptation; `S` = cross-boundary state covariance, outside every local objective's control set. XVIII §236 makes the schema claim itself.
+
+**XXIV — member, derived here `[IP]`.** `W` = the diversity proxy; `O` = the agent optimising it; the entailment holds because the cheapest way to raise the proxy is to generate variation in the finely-resolved centre; `S` = structural exposure, which XXIV §95 characterises as *independent of the task-directed policy* — the locality condition in the paper's own words. XXIV never cites XVI and makes no schema claim; the mapping is the atlas's, and is flagged as such. XXIV instantiates the schema twice, once for exercisable reach and once for the learned observer's resolution allocation.
+
+**XXII — excluded, on the paper's own grounds.** Slot three fails. XXII §474: the certification kernel is corrupted *exogenously*, "endogenous generation is requirement (b) of §3.2," and "this section does not launder it." Under a sound kernel the same allocation process leaves unmet-need statistics fully informative; the degradation requires a fault rather than following from success. Nor is there a source term — the remedy is an independent instrument, not replenishment.
+
+**XXVII — empty.** The slot named "XXVII's future unknown-semantics work" refers to work that does not exist. The nearest candidate claim was withdrawn in the XXVII mutual-information correction (§9).
+
+The prior exclusions stand: XXIII's topology null, X's tail-correlation null, and Paper 0's first-operationalization failure are ordinary falsifications, not laundering.
+
+**What the exercise yields is the discriminator, not the family `[IP]`.** Slot three separates two failures that present identically on a dashboard and take opposite remedies:
+
+> **Byproduct-of-success laundering** (XVIII, XXIV). Nothing is broken; the diagnostic degrades because the system is functioning. Remedy: monitor a channel no local objective touches. Fault-detection cannot help, there being no fault.
+>
+> **Measurement-dependency blindness** (XXII). Something is broken, and the instrument that would reveal it is causally downstream of the break. Remedy: an instrument not descended from the audited kernel. An untouched channel does not help if it remains downstream.
+
+Applying the first remedy to the second failure installs an independent-looking sensor that is still downstream; applying the second to the first sends an institution hunting a fault that does not exist.
+
+```
+XVI  ── schema ──▶ XVIII        (self-declared, XVIII §236)
+XVI  ── schema ──▶ XXIV         (derived here; XXIV does not cite XVI)
+XXII ── excluded-from ──▶ 5.1   (measurement-dependency, not laundering; XXII §474)
+XVIII ── bounded-by ──▶ XXV     (Layer B conserved-burden test, XXV §141)
+```
+
+**Disposition.** This does not carry paper weight. Two members tracing to a common parent is not a synthesis, and a paper whose central move is *refuse the unification, name the axis* would be the fourth in the series after XVI, XXII and XXIII — a pattern worth noticing before it becomes a house style. The discriminator belongs as a section, most naturally attached to XXV, which already places XVIII as the closest thing the series has to a domain instance of a conserved burden.
 
 ---
 
