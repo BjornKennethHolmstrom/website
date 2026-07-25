@@ -447,8 +447,6 @@ The single feature with *no* institutional analogue is **observer–plant identi
 
 - **Tier-scheme drift in the Self line — open.** Self I (`[R]/[I]/[S]`) and Self III (`[I]/[S]`) predate corpus-standard `[R]/[IP]/[H]`; Self II migrated. Reconcile.
 
-- **`[N]` in the public brief — decision pending.** The brief keeps three tiers; recommend a single note in "How to Read the Claims" that its `[R within the model]` covers atlas `[R]`(scoped) + `[N]`, rather than adding a fourth public tier.
-
 ---
 
 ## 10. Paper-indexed lookup

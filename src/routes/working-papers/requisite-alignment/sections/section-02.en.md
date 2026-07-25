@@ -35,25 +35,26 @@ channel in Gate 2 is constructed so that its marginal reliability parameter is u
 provably non-reducible to a change in channel reliability: it is not a lower-variety channel in the
 dimensional sense, and it is not a noisier q. It carries information about a real class distinction. What
 changes is only *which* distinction — whether the signal evaluates the class the controller acted on or a
-permuted image of it. The cleanest separation comes from the two permutation geometries, which carry
-*exactly equal* marginal information about the state at every displacement level yet differ in decision
-value under a uniform prior: because variety is held identical by construction, the value difference
-isolates alignment as an axis distinct from variety. Whether it is additionally distinct from information 
-*quantity* along a trajectory is an open question registered in §5.2, since the uniform-prior equality 
-does not extend to the beliefs the controller occupies after the first observation. (The displacement 
-probability m does also change the channel's total mutual information at interior values — the value 
-cost as m rises is therefore partly confounded with an information-quantity effect, which is why the 
-geometry contrast, not the raw m-attenuation, is the load-bearing evidence; §5.2 treats this carefully.)
+permuted image of it. The cleanest separation comes from the two permutation geometries, which are identical in
+variety by construction — same output cardinality, q, m, and likelihood multiset — yet differ in decision 
+value: because variety is held exactly fixed, the value difference isolates alignment as an axis distinct 
+from variety. (Their single-observation marginal information is also equal, but only under a uniform prior; 
+§3.4.). Whether it is additionally distinct from information *quantity* along a trajectory is an open 
+question registered in §5.2, since the uniform-prior equality does not extend to the beliefs the controller 
+occupies after the first observation. (The displacement probability m does also change the channel's total 
+mutual information at interior values — the value cost as m rises is therefore partly confounded with an 
+information-quantity effect, which is why the geometry contrast, not the raw m-attenuation, is the 
+load-bearing evidence; §5.2 treats this carefully.)
 
 Three findings sharpen the synthesis. First, requisite variety in the dimensional sense is necessary but
 not sufficient: a correctly-modelled signal, non-reducible to added noise, loses most of its value under
 misalignment. Second, alignment is continuous, not binary — value degrades by degrees as the displacement
 probability rises, and non-monotonically, recovering somewhat at full displacement where the signal
 becomes a clean report about a fixed (if wrong) target. Third, and most consequential for the series,
-alignment has *geometry*: at identical information content, the cost of misalignment depends on the
+alignment has *geometry*: at identical channel variety, the cost of misalignment depends on the
 structure of the mismatch — how the wrong targets are arranged across the state space — with a reversal
 in which geometry is less costly as the displacement deepens. The third finding is the one that carries
-the argument, because it is the one that holds information quantity exactly fixed; the first two are
+the argument, because it is the one that holds the channel's variety exactly fixed; the first two are
 consistent with, but do not by themselves prove, a constraint distinct from variety (§5.2).
 
 The third finding is the one that most extends the framework, because it shows that "which distinction"
@@ -80,21 +81,21 @@ and the action-relevant distinction.** A channel is aligned when the partition i
 agrees with the partition the loss depends on, and misaligned to the degree they diverge. Requisite
 variety asks whether the channel's partition is fine enough (whether it carries enough information about
 the state); requisite alignment asks whether that information is about the *right* partition — the one
-the action turns on. The two are independent: displacement holds the channel's marginal information
-content fixed (exactly so across the two geometries, by the lemma of §3.4) while moving the
-signal-resolved distinction away from the action-relevant one, and decision value falls even though
-information content does not.
+the action turns on. The two are independent: displacement moves the signal-resolved distinction away from the
+action-relevant one while leaving the channel's variety untouched, and decision value falls even though 
+variety does not. The two registered geometries make the separation exact — they are built from a common 
+likelihood multiset and differ only in which latent class each level is attached to (§3.4).
 
 The correspondence admits a *partial* order but not a total one, and this is the crux. Two partitions can
 be compared by refinement — whether one is a coarsening of the other — but the signal-resolved and
 action-relevant partitions here are generally incomparable under refinement, and, crucially, alignment is
 **not** reducible to any information ordering between them. The two registered geometries are the proof:
 they are variety-equivalent, and information-equivalent under a uniform prior (§3.4), yet alignment-distinct
-(different decision value, with a sign reversal). An information measure, by construction, cannot separate
-them; alignment does. Requisite alignment is therefore a *finer* object than variety —
-it is the geometry of how the signal-resolved and action-relevant partitions differ, not the amount of
-information the signal carries. This model exhibits three properties of that correspondence, each
-established here [R, within-model]: (i) misalignment reduces decision value at fixed information content
+(different decision value, with a sign reversal). No variety measure can separate them, by construction; 
+alignment does. Requisite alignment is therefore a *finer* object than variety —
+it is the geometry of how the signal-resolved and action-relevant partitions differ, not the number of 
+distinctions the signal can make. This model exhibits three properties of that correspondence, each
+established here [R, within-model]: (i) misalignment reduces decision value at fixed variety
 (the geometry contrast); (ii) alignment is graded — in the displacement probability m and in the
 geometry — and its cost is non-monotone, maximal at intermediate ambiguity rather than at maximal
 displacement, because a consistently misaligned signal is partially invertible where an ambiguous one is
@@ -108,9 +109,9 @@ observable resolves and the distinction an intervention turns on — is a bindin
 of information in control problems of this kind, independent of and additional to requisite variety. That
 conjecture is in-principle: it is motivated by the model but not proved beyond it, and this paper
 establishes no necessary or sufficient conditions for it in the general case. What is established [R] is
-that the constraint is real, independent of information quantity, and geometrically structured in at least
-one exactly-solvable instance. Whether "which distinction, not how many" generalises into a law with the
-standing of Ashby's is left open.
+that the constraint is real, independent of channel variety, and geometrically structured in at least one 
+exactly-solvable instance. Whether it is additionally independent of information quantity is registered 
+as an open test (RP-XXVII-1, §5.2).
 
 ### 2.4 Why this is a governance result, at the scale of a single observer
 

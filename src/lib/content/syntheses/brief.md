@@ -10,9 +10,11 @@ It is **not a manifesto**, and it is not a finished theory. The work is recent, 
 
 Every load-bearing claim in the series carries one of three confidence labels. They are used in this brief and throughout the papers.
 
-- **[R] Rigorous** — proven within a formal model, or a direct consequence of an established result in control theory or information theory.
+- **[R] Rigorous** — established within a stated formal model: proven, or a direct consequence of an established result in control theory or information theory, or a preregistered simulation outcome holding within its reported numerical envelope. The model is named where the claim is made, and it is the claim's domain.
 - **[IP] In-principle** — the formal core is solid, but its translation into institutions is an interpretive correspondence, not a derivation. Most of the series' governance claims sit here: the mathematics is real; the mapping from mathematics to ministries is an argument, not a theorem.
 - **[H] Heuristic** — estimated, illustrative, or applied loosely. Useful for orientation, not for adjudication. Index weights, the variety-ratio shorthand, and several cross-case analogies are explicitly of this kind.
+
+One collapse in that scheme is deliberate. **[R]** covers two different kinds of result: a theorem, which holds exactly wherever its premises hold but whose premises are frequently a particular model, and a preregistered simulation outcome, which holds only up to the seed and convergence envelope reported alongside it. Both are rigorous *within a stated model*, and neither is by itself a claim about the world outside it. The series' internal dependency atlas separates them — `[R]` with an explicit scope, `[N]` for envelope-controlled numerical results — because a dependency graph has to know which kind of thing is holding up which. A public brief does not need a fourth label to say the same thing, provided the reader knows to ask of any [R] claim which model it holds inside.
 
 The distinction matters because the framework's most seductive failure mode is to let a rigorous formal result lend borrowed authority to a heuristic political reading. Naming the tier on each claim is the discipline that prevents this. Where a paper's formal interior is rigorous but its governance reading is in-principle, both labels appear.
 

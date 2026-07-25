@@ -10,9 +10,11 @@ Det är **inte ett manifest**, och det är inte en färdig teori. Arbetet är ny
 
 Varje bärande anspråk i serien bär en av tre tillförlitlighetsetiketter. De används i denna översikt och genomgående i artiklarna.
 
-- **[R] Rigorös** — bevisad inom en formell modell, eller en direkt följd av ett etablerat resultat i reglerteori eller informationsteori.
+- **[R] Rigorös** — fastställd inom en angiven formell modell: bevisad, eller en direkt följd av ett etablerat resultat i reglerteori eller informationsteori, eller ett förhandsregistrerat simuleringsutfall som håller inom sin rapporterade numeriska envelopp. Modellen namnges där påståendet görs, och den utgör påståendets domän.
 - **[IP] I princip** — den formella kärnan är solid, men dess översättning till institutioner är en tolkande motsvarighet, inte en härledning. De flesta av seriens styrningsanspråk ligger här: matematiken är verklig; överföringen från matematik till ministerier är ett argument, inte ett teorem.
 - **[H] Heuristisk** — uppskattad, illustrerande eller löst tillämpad. Användbar för orientering, inte för avgörande. Indexvikter, varietetskvotens kortform och flera analogier mellan fall är uttryckligen av detta slag.
+
+En sammanslagning i det schemat är avsiktlig. **[R]** täcker två olika slags resultat: ett teorem, som gäller exakt överallt där dess premisser håller men vars premisser ofta är en särskild modell, och ett förhandsregistrerat simuleringsutfall, som endast gäller upp till det frö och den konvergensenvelopp som rapporteras tillsammans med det. Båda är rigorösa *inom en angiven modell*, och ingetdera är i sig ett påstående om världen utanför den. Seriens interna beroendeatlas separerar dem — `[R]` med en explicit räckvidd, `[N]` för enveloppkontrollerade numeriska resultat — eftersom en beroendegraf måste veta vilken typ av sak som håller uppe vilken. En offentlig översikt behöver ingen fjärde etikett för att säga samma sak, förutsatt att läsaren vet att för varje [R]-påstående fråga vilken modell det gäller inuti.
 
 Distinktionen är viktig eftersom ramverkets mest förföriska felläge är att låta ett rigoröst formellt resultat låna ut auktoritet till en heuristisk politisk läsning. Att namnge nivån på varje anspråk är den disciplin som förhindrar detta. Där ett arbetsdokuments formella inre är rigoröst men dess styrningsläsning är i princip, anges båda etiketterna.
 

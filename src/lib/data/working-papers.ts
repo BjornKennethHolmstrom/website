@@ -48,7 +48,7 @@ export const papersData: Workingpaper[] = [
      en: '40 min',
      sv: '40 min'
    },
-   version: '1.0',
+   version: '1.1',
    pdfPath: {
      en: `${localBase}/requisite-alignment.pdf`,
      sv: `${localBase}/requisite-alignment-sv.pdf`,

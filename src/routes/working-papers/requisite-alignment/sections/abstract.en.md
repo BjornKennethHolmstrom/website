@@ -11,10 +11,9 @@ establishes a large, connected region of the parameter space in which purchased 
 positive value. A second study, restricted to that region, finds that displaced-target feedback loses
 substantial value: resolved, substantive attenuation in 486 of 592 tested conditions (82.1%), unanimous
 among all conditions whose numerics resolved, and provably not reducible to a reduction in channel
-reliability. The decisive result concerns the *geometry* of the displacement. Two displacement geometries
-with identical marginal information about the state — a connected four-cycle through the class space and
-two disjoint transpositions — impose different value costs, and the ordering reverses as displacement
-deepens: at low displacement the four-cycle preserves more value, at higher displacement the
+reliability. The decisive result concerns the *geometry* of the displacement. Two displacement
+geometries differing only in how the wrong targets are arranged across the class space —
+a connected four-cycle and two disjoint transpositions — impose different value costs, and the ordering reverses as displacement deepens: at low displacement the four-cycle preserves more value, at higher displacement the
 transpositions do. The two geometries are identical in variety by construction — same output
 cardinality, same reliability, same displacement probability, same likelihood multiset — so the
 difference is not a variety effect. We name it **requisite alignment**: for an observable to have decision 

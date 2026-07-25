@@ -95,7 +95,7 @@
       contextTitle: 'Context',
       contextIntro: 'The Governance as Engineering series diagnoses institutional failure as insufficient requisite variety — an observation architecture whose dimensionality falls below that of the disturbance environment it governs. This paper asks whether dimensional sufficiency is enough.',
       contextOutro: 'In a single exactly‑solved partially‑observed control problem, a fully informative feedback signal that evaluates a systematically wrong target loses substantial decision value — and two displacements of identical information content but different geometric structure impose different, oppositely‑ordered costs. The result isolates a second constraint, requisite alignment: the distinction an observable resolves must be aligned with the distinction the controller\'s action turns on, and alignment has geometry.',
-      allWhitepapers: '← All Whitepapers',
+      allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -138,7 +138,7 @@
       contextTitle: 'Kontext',
       contextIntro: 'Serien Styrning som ingenjörskonst diagnostiserar institutionella misslyckanden som otillräcklig nödvändig variation — en observationsarkitektur vars dimensionalitet understiger den hos den störningsmiljö den reglerar. Denna rapport frågar om dimensionell tillräcklighet är nog.',
       contextOutro: 'I ett enda exakt löst partiellt observerbart kontrollproblem förlorar en fullt informativ återkopplingssignal som utvärderar ett systematiskt fel mål betydande beslutsvärde — och två förskjutningar med identiskt informationsinnehåll men olika geometrisk struktur medför olika, motsatt ordnade, kostnader. Resultatet isolerar en andra begränsning, nödvändig inriktning: den distinktion en observerbar storhet upplöser måste vara inriktad mot den distinktion regulators handling beror på, och inriktning har geometri.',
-      allWhitepapers: '← Alla vitböcker',
+      allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -241,7 +241,7 @@
   <aside class="hidden lg:block w-80 flex-shrink-0 pr-8 pt-16 sticky top-0 h-screen overflow-y-auto">
     <div class="mb-8">
       <a href="/working-papers" class="text-sm opacity-60 hover:opacity-100 transition-opacity font-medium">
-        {t.allWhitepapers}
+        {t.allWorkingpapers}
       </a>
     </div>
 

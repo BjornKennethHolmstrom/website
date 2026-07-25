@@ -47,15 +47,18 @@ The result is that requisite variety is not sufficient. A signal that carries in
 controller cannot recover by treating it as mere noise — one provably not reducible to a change in
 channel reliability — loses substantial decision value when it is aligned to the wrong distinction:
 resolved, substantively meaningful attenuation in 82% of tested conditions, and unanimous attenuation
-among every condition whose numerics resolved. The cleanest form of the claim comes from the *geometry*
-of the misalignment. Two displacements of equal probability *and identical marginal information content*
-but different geometric structure — whether the wrong targets form one connected cycle through the class
-space or two disjoint swaps — impose different value costs, and, across the range of displacement,
-oppositely ordered ones: at low displacement a connected 4-cycle preserves more value than two disjoint
-swaps, and by higher displacement the ordering reverses. Because the two geometries carry exactly equal
-mutual information about the state at every displacement level, this difference in value cannot be an
-information-quantity effect; it is a pure effect of *which* distinction the signal resolves relative to
-the controller's action. The value of an informative signal depends on the geometry of the latent
+among every condition whose numerics resolved. The cleanest form of the claim comes from the *geometry* of the misalignment. Two displacements of equal probability and identical channel variety but different geometric
+structure — whether the wrong targets form one connected cycle through the class space or
+two disjoint swaps — impose different value costs, and, across the range of displacement,
+oppositely ordered ones: at low displacement a connected 4-cycle preserves more value than
+two disjoint swaps, and by higher displacement the ordering reverses. The two channels have
+the same output cardinality, the same reliability, the same displacement probability, and
+the same likelihood multiset; they differ only in which latent class each likelihood level
+is attached to. No account of how many distinctions the channel can make can therefore
+separate them, and the difference in value is an effect of *which* distinction the signal
+resolves relative to the controller's action. Whether it is additionally separable from any
+information-quantity account is a narrower question, registered as an open test in §5.2. 
+The value of an informative signal depends on the geometry of the latent
 distinction it reports, not only on how reliably, how often, or along how many dimensions it reports.
 
 We name this second constraint **requisite alignment**: for an observable to have decision value, it is
