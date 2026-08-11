@@ -40,7 +40,7 @@ Den minsta observations- och responsdimensionalitet ett styrsystem måste ha fö
 **Samordningsmisslyckandets skatt**
 *Varianter: "ackumulerande misslyckandekostnad", "multiplikativ misslyckandeeffekt".*
 
-Den dolda, kontinuerliga kostnad som åläggs varje styrsystem som samtidigt opererar under nödvändig variation över flera arkitektoniska dimensioner. Skatten ackumuleras multiplikativt snarare än additivt: varje felsätt verkar på det som återstår efter att tidigare felsätt har försämrat styrningskapaciteten. Ett system med fyra samtidiga felsätt, vart och ett förstör hälften av kapaciteten, opererar inte vid noll utan vid ungefär sex procent av baslinjen. Små förbättringar över flera felsätt samtidigt ger oproportionerliga vinster genom omvänd ackumulering. Skatten introduceras i kapitel 8 och dess formella härledning ges i bilaga E.
+Den dolda, kontinuerliga kostnad som åläggs varje styrsystem som samtidigt opererar under nödvändig variation över flera arkitektoniska dimensioner. Skatten sammansätts snarare än adderas, under antagandet att varje felmodus verkar på det som återstår efter att de tidigare misslyckandena har försämrat styrningskapaciteten – ett antagande om interaktionsstruktur, som argumenteras för i kapitel 8 snarare än observeras. Enligt den modellen opererar ett system med fyra samtidiga misslyckanden, där vart och ett förstör hälften av den kapacitet som återstår, inte vid noll utan vid ungefär sex procent av baslinjen; siffran illustrerar sammansättningens form under antagna värden och är inte en mätning. Små förbättringar över flera felmodi samtidigt ger oproportionerlig avkastning genom omvänd sammansättning. Skatten introduceras i kapitel 8, och modellen och dess status redovisas i bilaga E.
 
 ---
 
@@ -60,7 +60,7 @@ Observationskanaler dissekeras i kapitel 5.
 **Latens (τ)**
 *Varianter: "responsfördröjning", "beslutsförskjutning", "dödtid".*
 
-Den totala fördröjningen mellan att en störning inträffar och att en korrigerande åtgärd får effekt. I styrsystem ackumuleras latens över upptäckt, rapportering, aggregering, överläggning, beslut, lagstiftning och implementering. Latens sätter ett hårt matematiskt tak för den maximala responsförstärkning ett stabilt system kan använda; den kan inte övervinnas med politisk vilja eller institutionell kvalitet. En regulator med latens τ kan inte stabilisera störningar snabbare än ungefär 1/(2τ), vilket innebär att varje enskaligt styrsystem har ett karakteristiskt frekvensgap. Latens introduceras i kapitel 2 och formaliseras i bilaga E.
+Den totala fördröjningen mellan att en störning inträffar och att en korrigerande åtgärd får effekt. I styrsystem ackumuleras latens över upptäckt, rapportering, aggregering, överläggning, beslut, lagstiftning och implementering. Latens sätter ett tak för den maximala responsförstärkning ett stabilt system kan använda, och taket kan inte höjas av politisk vilja eller institutionell kvalitet. Takets höjd beror på systemets egen dynamik och på regulatorns konstruktion; 1/(2τ) är en första ordningens approximation av den snabbaste störning en regulator med latens τ kan undertrycka. Varje enskaligt styrsystem har därför ett karakteristiskt frekvensgap. Latens introduceras i kapitel 2 och formaliseras i bilaga E.
 
 ---
 

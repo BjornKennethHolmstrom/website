@@ -40,7 +40,7 @@ The minimum observation and response dimensionality a governance system must pos
 **Coordination Failure Tax**
 *Variants: “compounding failure cost,” “multiplicative failure effect.”*
 
-The hidden, continuous cost imposed on any governance system operating below requisite variety across multiple architectural dimensions simultaneously. The tax compounds multiplicatively rather than additively: each failure mode acts on what remains after the previous failures have degraded governance capacity. A system with four simultaneous failures, each destroying half of capacity, operates not at zero but at roughly six per cent of baseline. Small improvements across multiple failure modes simultaneously produce disproportionate returns through compounding in reverse. The tax is introduced in Chapter 8 and its formal derivation is given in Appendix E.
+The hidden, continuous cost imposed on any governance system operating below requisite variety across multiple architectural dimensions simultaneously. The tax compounds rather than adds, on the assumption that each failure mode acts on what remains after the previous failures have degraded governance capacity—an assumption about interaction structure, argued for in Chapter 8 rather than observed. Under that model, a system with four simultaneous failures, each destroying half of the capacity remaining to it, operates not at zero but at roughly six per cent of baseline; the figure illustrates the shape of compounding under assumed values and is not a measurement. Small improvements across multiple failure modes simultaneously produce disproportionate returns through compounding in reverse. The tax is introduced in Chapter 8, and the model and its status are set out in Appendix E.
 
 ---
 
@@ -60,7 +60,7 @@ Observation channels are dissected in Chapter 5.
 **Latency (τ)**
 *Variants: “response delay,” “decision lag,” “dead‑time.”*
 
-The total delay between a disturbance occurring and a corrective response taking effect. In governance systems, latency accumulates across detection, reporting, aggregation, deliberation, decision, legislation, and implementation. Latency places a hard mathematical ceiling on the maximum response gain a stable system can deploy; it cannot be overcome by political will or institutional quality. A controller with latency τ cannot stabilise disturbances faster than roughly 1/(2τ), which means every single‑scale governance system has a characteristic frequency gap. Latency is introduced in Chapter 2 and formalised in Appendix E.
+The total delay between a disturbance occurring and a corrective response taking effect. In governance systems, latency accumulates across detection, reporting, aggregation, deliberation, decision, legislation, and implementation. Latency places a ceiling on the maximum response gain a stable system can deploy, and the ceiling cannot be raised by political will or institutional quality. The ceiling's height depends on the system's own dynamics and on the controller's design; 1/(2τ) is a first-order approximation of the fastest disturbance a controller of latency τ can reject. Every single-scale governance system therefore has a characteristic frequency gap. Latency is introduced in Chapter 2 and formalised in Appendix E.
 
 ---
 
