@@ -186,6 +186,12 @@ export const workingpapersTranslations = {
      description:
        'Asks whether dimensional sufficiency is enough. In an exactly‑solved partially‑observed control problem, a fully informative feedback signal that evaluates a systematically wrong target loses substantial decision value — and two displacements of identical information content but different geometric structure impose different, even oppositely‑ordered, costs. The result isolates a second constraint orthogonal to requisite variety: the distinction an observable resolves must be aligned with the distinction the controller\'s action turns on, and alignment has geometry. Paper XXVII in the Governance as Engineering series.',
    },
+   fourYearRamp: {
+       title: 'The Four-Year Ramp',
+       subtitle: 'Legislative production and the electoral clock in the Swedish Riksdag, 2002–2026',
+       description:
+           'Legislative volume in the Riksdag rises 73% from a mandate\'s first riksmöte to its fourth, accounting for 82% of all variance in output. Which parties govern accounts for 1.4%. Latency is flat at 71–72 days regardless of load, the additional propositions are not smaller, and rejection rates are constant across 23 of 24 riksmöten — the exception being one year of governmental collapse. The end-of-term surge is well documented in the political legislation cycle literature; its invariance to government identity is difficult to reconcile with the vote-seeking mechanism that literature ascribes to it.'
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -452,6 +458,12 @@ export const workingpapersTranslations = {
      subtitle: 'Geometrin hos informativ återkoppling i ett löst kontrollproblem',
      description:
        'Frågar om dimensionell tillräcklighet är nog. I ett exakt löst partiellt observerbart kontrollproblem förlorar en fullt informativ återkopplingssignal som utvärderar ett systematiskt fel mål betydande beslutsvärde — och två förskjutningar med identiskt informationsinnehåll men olika geometrisk struktur medför olika, till och med motsatt ordnade, kostnader. Resultatet isolerar en andra begränsning ortogonal mot nödvändig variation: den distinktion en observerbar storhet upplöser måste vara inriktad mot den distinktion regulatorns handling beror på, och inriktning har geometri. Rapport XXVII i serien Styrning som ingenjörskonst.',
+   },
+   fourYearRamp: {
+       title: 'Den fyraåriga rampen',
+       subtitle: 'Lagstiftningsproduktion och valklockan i Sveriges riksdag 2002–2026',
+       description:
+           'Propositionsvolymen i riksdagen stiger 73 procent från mandatperiodens första riksmöte till dess fjärde, vilket förklarar 82 procent av all variation i utflödet. Vilka partier som regerar förklarar 1,4 procent. Beredningstiden ligger stilla på 71–72 dagar oavsett belastning, de tillkommande propositionerna är inte mindre, och avslagsfrekvensen är konstant under 23 av 24 riksmöten — undantaget är ett år av regeringskollaps. Ökningen mot mandatperiodens slut är väldokumenterad i litteraturen om politiska lagstiftningscykler; att den är oberoende av vilken regering som sitter är svårt att förena med det röstmaximerande mekanism som litteraturen tillskriver den.'
    },
 			// --- GGF Papers ---
 			preventing1933: {

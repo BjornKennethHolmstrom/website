@@ -28,6 +28,37 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'fourYearRamp',
+   key: 'fourYearRamp',
+   category: 'governance',
+   tags: [
+     'Political Legislation Cycles',
+     'Legislative Production',
+     'Riksdag',
+     'Electoral Cycle',
+     'Swedish Politics',
+     'Open Data',
+     'Minority Government',
+     'Empirical',
+     'Reproducible Research'
+   ],
+   year: '2026',
+   pages: '14',
+   readTime: {
+     en: '20 min',
+     sv: '20 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/four-year-ramp.pdf`,
+     sv: `${localBase}/four-year-ramp-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/four-year-ramp-cover.png',
+   readOnlinePath: '/working-papers/four-year-ramp',
+   readOnlineExternal: false,
+   releaseDate: '2026-08-19'
+ },
+ {
    id: 'requisiteAlignment',
    key: 'requisiteAlignment',
    category: 'governance',
