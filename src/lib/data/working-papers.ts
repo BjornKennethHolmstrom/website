@@ -43,7 +43,7 @@ export const papersData: Workingpaper[] = [
      'Reproducible Research'
    ],
    year: '2026',
-   pages: '14',
+   pages: '16',
    readTime: {
      en: '20 min',
      sv: '20 min'

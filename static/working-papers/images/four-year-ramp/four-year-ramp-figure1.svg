@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 620"
+   width="1000"
+   height="620"
+   role="img"
+   aria-label="Six mandate trajectories of proposition counts by year in mandate, all rising from year one to year four"
+   version="1.1"
+   id="svg39"
+   sodipodi:docname="four-year-ramp-figure1.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs39" />
+  <sodipodi:namedview
+     id="namedview39"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4"
+     inkscape:cx="500"
+     inkscape:cy="310"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg39" />
+  <rect
+     width="1000"
+     height="620"
+     fill="#ffffff"
+     id="rect1" />
+  <line
+     x1="92"
+     y1="511.1"
+     x2="750"
+     y2="511.1"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line1" />
+  <text
+     x="80"
+     y="515.1"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text1">125</text>
+  <line
+     x1="92"
+     y1="453.0"
+     x2="750"
+     y2="453.0"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line2" />
+  <text
+     x="80"
+     y="457.0"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text2">150</text>
+  <line
+     x1="92"
+     y1="395.0"
+     x2="750"
+     y2="395.0"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line3" />
+  <text
+     x="80"
+     y="399.0"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text3">175</text>
+  <line
+     x1="92"
+     y1="336.9"
+     x2="750"
+     y2="336.9"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line4" />
+  <text
+     x="80"
+     y="340.9"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text4">200</text>
+  <line
+     x1="92"
+     y1="278.8"
+     x2="750"
+     y2="278.8"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line5" />
+  <text
+     x="80"
+     y="282.8"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text5">225</text>
+  <line
+     x1="92"
+     y1="220.7"
+     x2="750"
+     y2="220.7"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line6" />
+  <text
+     x="80"
+     y="224.7"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text6">250</text>
+  <line
+     x1="92"
+     y1="162.6"
+     x2="750"
+     y2="162.6"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line7" />
+  <text
+     x="80"
+     y="166.6"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text7">275</text>
+  <line
+     x1="92"
+     y1="104.5"
+     x2="750"
+     y2="104.5"
+     stroke="#e8eef3"
+     stroke-width="1"
+     id="line8" />
+  <text
+     x="80"
+     y="108.5"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#8899a6"
+     text-anchor="end"
+     id="text8">300</text>
+  <line
+     x1="92"
+     y1="58"
+     x2="92"
+     y2="546"
+     stroke="#c3cfd8"
+     stroke-width="1.5"
+     id="line9" />
+  <line
+     x1="92"
+     y1="546"
+     x2="750"
+     y2="546"
+     stroke="#c3cfd8"
+     stroke-width="1.5"
+     id="line10" />
+  <text
+     x="92.0"
+     y="572"
+     font-family="Georgia, serif"
+     font-size="13"
+     fill="#5a6b78"
+     text-anchor="middle"
+     id="text10">Year 1</text>
+  <text
+     x="311.3"
+     y="572"
+     font-family="Georgia, serif"
+     font-size="13"
+     fill="#5a6b78"
+     text-anchor="middle"
+     id="text11">Year 2</text>
+  <text
+     x="530.7"
+     y="572"
+     font-family="Georgia, serif"
+     font-size="13"
+     fill="#5a6b78"
+     text-anchor="middle"
+     id="text12">Year 3</text>
+  <text
+     x="750.0"
+     y="572"
+     font-family="Georgia, serif"
+     font-size="13"
+     fill="#5a6b78"
+     text-anchor="middle"
+     id="text13">Year 4</text>
+  <path
+     d="M92.0,441.8 L311.3,379.1 L530.7,311.3 L750.0,178.5"
+     fill="none"
+     stroke="#c07a3e"
+     stroke-width="3.5"
+     stroke-dasharray="9 6"
+     opacity="0.9"
+     id="path13" />
+  <path
+     d="M92.0,406.6 L311.3,322.9 L530.7,357.8 L750.0,281.1"
+     fill="none"
+     stroke="#7fa3c4"
+     stroke-width="2.2"
+     opacity="0.95"
+     id="path14" />
+  <circle
+     cx="92.0"
+     cy="406.6"
+     r="3.6"
+     fill="#7fa3c4"
+     id="circle14" />
+  <circle
+     cx="311.3"
+     cy="322.9"
+     r="3.6"
+     fill="#7fa3c4"
+     id="circle15" />
+  <circle
+     cx="530.7"
+     cy="357.8"
+     r="3.6"
+     fill="#7fa3c4"
+     id="circle16" />
+  <circle
+     cx="750.0"
+     cy="281.1"
+     r="3.6"
+     fill="#7fa3c4"
+     id="circle17" />
+  <text
+     x="762.0"
+     y="285.1"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#4a5c68"
+     id="text17">Persson II</text>
+  <path
+     d="M92.0,485.6 L311.3,418.2 L530.7,230.0 L750.0,197.4"
+     fill="none"
+     stroke="#8fb4d4"
+     stroke-width="2.2"
+     opacity="0.95"
+     id="path17" />
+  <circle
+     cx="92.0"
+     cy="485.6"
+     r="3.6"
+     fill="#8fb4d4"
+     id="circle18" />
+  <circle
+     cx="311.3"
+     cy="418.2"
+     r="3.6"
+     fill="#8fb4d4"
+     id="circle19" />
+  <circle
+     cx="530.7"
+     cy="230.0"
+     r="3.6"
+     fill="#8fb4d4"
+     id="circle20" />
+  <circle
+     cx="750.0"
+     cy="197.4"
+     r="3.6"
+     fill="#8fb4d4"
+     id="circle21" />
+  <text
+     x="762"
+     y="207.39999"
+     font-family="Georgia, serif"
+     font-size="12px"
+     fill="#4a5c68"
+     id="text21">Reinfeldt I</text>
+  <path
+     d="M92.0,381.0 L311.3,395.0 L530.7,339.2 L750.0,195.1"
+     fill="none"
+     stroke="#6d97bb"
+     stroke-width="2.2"
+     opacity="0.95"
+     id="path21" />
+  <circle
+     cx="92.0"
+     cy="381.0"
+     r="3.6"
+     fill="#6d97bb"
+     id="circle22" />
+  <circle
+     cx="311.3"
+     cy="395.0"
+     r="3.6"
+     fill="#6d97bb"
+     id="circle23" />
+  <circle
+     cx="530.7"
+     cy="339.2"
+     r="3.6"
+     fill="#6d97bb"
+     id="circle24" />
+  <circle
+     cx="750.0"
+     cy="195.1"
+     r="3.6"
+     fill="#6d97bb"
+     id="circle25" />
+  <text
+     x="762"
+     y="195.10001"
+     font-family="Georgia, serif"
+     font-size="12px"
+     fill="#4a5c68"
+     id="text25">Reinfeldt II</text>
+  <path
+     d="M92.0,469.3 L311.3,346.2 L530.7,288.1 L750.0,113.8"
+     fill="none"
+     stroke="#96bcd9"
+     stroke-width="2.2"
+     opacity="0.95"
+     id="path25" />
+  <circle
+     cx="92.0"
+     cy="469.3"
+     r="3.6"
+     fill="#96bcd9"
+     id="circle26" />
+  <circle
+     cx="311.3"
+     cy="346.2"
+     r="3.6"
+     fill="#96bcd9"
+     id="circle27" />
+  <circle
+     cx="530.7"
+     cy="288.1"
+     r="3.6"
+     fill="#96bcd9"
+     id="circle28" />
+  <circle
+     cx="750.0"
+     cy="113.8"
+     r="3.6"
+     fill="#96bcd9"
+     id="circle29" />
+  <text
+     x="762.0"
+     y="117.8"
+     font-family="Georgia, serif"
+     font-size="12"
+     fill="#4a5c68"
+     id="text29">Löfven I</text>
+  <path
+     d="M92.0,427.5 L311.3,362.4 L530.7,315.9 L750.0,171.9"
+     fill="none"
+     stroke="#5c86a8"
+     stroke-width="2.2"
+     opacity="0.95"
+     id="path29" />
+  <circle
+     cx="92.0"
+     cy="427.5"
+     r="3.6"
+     fill="#5c86a8"
+     id="circle30" />
+  <circle
+     cx="311.3"
+     cy="362.4"
+     r="3.6"
+     fill="#5c86a8"
+     id="circle31" />
+  <circle
+     cx="530.7"
+     cy="315.9"
+     r="3.6"
+     fill="#5c86a8"
+     id="circle32" />
+  <circle
+     cx="750.0"
+     cy="171.9"
+     r="3.6"
+     fill="#5c86a8"
+     id="circle33" />
+  <text
+     x="762"
+     y="169.89999"
+     font-family="Georgia, serif"
+     font-size="12px"
+     fill="#4a5c68"
+     id="text33">Löfven II/III + Andersson</text>
+  <path
+     d="M92.0,480.9 L311.3,429.8 L530.7,336.9 L750.0,111.4"
+     fill="none"
+     stroke="#a5c6df"
+     stroke-width="2.2"
+     opacity="0.95"
+     id="path33" />
+  <circle
+     cx="92.0"
+     cy="480.9"
+     r="3.6"
+     fill="#a5c6df"
+     id="circle34" />
+  <circle
+     cx="311.3"
+     cy="429.8"
+     r="3.6"
+     fill="#a5c6df"
+     id="circle35" />
+  <circle
+     cx="530.7"
+     cy="336.9"
+     r="3.6"
+     fill="#a5c6df"
+     id="circle36" />
+  <circle
+     cx="750.0"
+     cy="111.4"
+     r="3.6"
+     fill="#a5c6df"
+     id="circle37" />
+  <text
+     x="762"
+     y="107.4"
+     font-family="Georgia, serif"
+     font-size="12px"
+     fill="#4a5c68"
+     id="text37">Kristersson</text>
+  <text
+     x="762.0"
+     y="182.5"
+     font-family="Georgia, serif"
+     font-size="12"
+     font-weight="bold"
+     fill="#a3672f"
+     id="text38">Mean</text>
+  <text
+     x="26"
+     y="302.0"
+     font-family="Georgia, serif"
+     font-size="13"
+     fill="#5a6b78"
+     text-anchor="middle"
+     transform="rotate(-90 26 302.0)"
+     id="text39">Non-budget propositions</text>
+</svg>
