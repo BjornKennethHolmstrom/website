@@ -45,10 +45,10 @@ export const papersData: Workingpaper[] = [
      'Simulation'
    ],
    year: '2026',
-   pages: '40',
+   pages: '47',
    readTime: {
-     en: '50 min',
-     sv: '50 min'
+     en: '60 min',
+     sv: '60 min'
    },
    version: '1.0',
    pdfPath: {
