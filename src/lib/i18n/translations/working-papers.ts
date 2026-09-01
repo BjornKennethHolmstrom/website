@@ -192,6 +192,12 @@ export const workingpapersTranslations = {
        description:
            'Legislative volume in the Riksdag rises 73% from a mandate\'s first riksmöte to its fourth, accounting for 82% of all variance in output. Which parties govern accounts for 1.4%. Latency is flat at 71–72 days regardless of load, the additional propositions are not smaller, and rejection rates are constant across 23 of 24 riksmöten — the exception being one year of governmental collapse. The end-of-term surge is well documented in the political legislation cycle literature; its invariance to government identity is difficult to reconcile with the vote-seeking mechanism that literature ascribes to it.'
    },
+   closureAdaptation: {
+     title: 'Closure–Adaptation Dynamics',
+     subtitle: 'A Minimal Model of Institutional Rigidification Under Uncertainty',
+     description:
+       'Paper XXVIII in the Governance as Engineering series. A five‑variable dynamical model of institutional closure and adaptation under uncertainty. Exhibits bistability, hysteresis, noise‑induced tipping, cascade collapse in coupled populations, and a critical constitutional permeability floor that prevents permanent closure. Formal results are reported as [R within model]; governance interpretations as [IP].'
+   },
 			// --- GGF Papers ---
 			preventing1933: {
 				title: 'Preventing 1933: The Architecture of Democratic Resilience',
@@ -464,6 +470,12 @@ export const workingpapersTranslations = {
        subtitle: 'Lagstiftningsproduktion och valklockan i Sveriges riksdag 2002–2026',
        description:
            'Propositionsvolymen i riksdagen stiger 73 procent från mandatperiodens första riksmöte till dess fjärde, vilket förklarar 82 procent av all variation i utflödet. Vilka partier som regerar förklarar 1,4 procent. Beredningstiden ligger stilla på 71–72 dagar oavsett belastning, de tillkommande propositionerna är inte mindre, och avslagsfrekvensen är konstant under 23 av 24 riksmöten — undantaget är ett år av regeringskollaps. Ökningen mot mandatperiodens slut är väldokumenterad i litteraturen om politiska lagstiftningscykler; att den är oberoende av vilken regering som sitter är svårt att förena med det röstmaximerande mekanism som litteraturen tillskriver den.'
+   },
+   closureAdaptation: {
+     title: 'Slutenhet–anpassningsdynamik',
+     subtitle: 'En minimal modell av institutionell stelning under osäkerhet',
+     description:
+       'Rapport XXVIII i serien Styrning som ingenjörskonst. En femvariabel dynamisk modell av institutionell slutenhet och anpassning under osäkerhet. Uppvisar bistabilitet, hysteres, brusinducerad tippning, kaskadkollaps i kopplade populationer och ett kritiskt konstitutionellt permeabilitetsgolv som förhindrar permanent slutenhet. Formella resultat rapporteras som [R inom modellen]; styrningstolkningar som [IP].'
    },
 			// --- GGF Papers ---
 			preventing1933: {

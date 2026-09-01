@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 1200"
+   font-family="'Helvetica Neue', Arial, sans-serif"
+   version="1.1"
+   id="svg38"
+   sodipodi:docname="closure-adaptation-cover.svg"
+   inkscape:export-filename="closure-adaptation.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.72333333"
+     inkscape:cx="600"
+     inkscape:cy="600"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg38" />
+  <defs
+     id="defs11">
+    <filter
+       id="cyanGlow"
+       x="-1.4"
+       y="-1.4"
+       width="3.8"
+       height="3.8">
+      <feGaussianBlur
+         stdDeviation="7"
+         result="b"
+         id="feGaussianBlur1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="b"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <filter
+       id="amberGlow"
+       x="-0.55384615"
+       y="-0.6"
+       width="2.1076923"
+       height="2.2">
+      <feGaussianBlur
+         stdDeviation="6"
+         result="b"
+         id="feGaussianBlur2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="b"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="softGlow"
+       x="-0.4082392"
+       y="-0.37376052"
+       width="1.8164784"
+       height="1.747521">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="b"
+         id="feGaussianBlur4" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="b"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       id="fadeLeft"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#04ECF6"
+         stop-opacity="0.05"
+         id="stop6" />
+      <stop
+         offset="0.75"
+         stop-color="#04ECF6"
+         stop-opacity="0.025"
+         id="stop7" />
+      <stop
+         offset="1"
+         stop-color="#04ECF6"
+         stop-opacity="0"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="fadeRight"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#E8943A"
+         stop-opacity="0.05"
+         id="stop9" />
+      <stop
+         offset="0.75"
+         stop-color="#E8943A"
+         stop-opacity="0.025"
+         id="stop10" />
+      <stop
+         offset="1"
+         stop-color="#E8943A"
+         stop-opacity="0"
+         id="stop11" />
+    </linearGradient>
+  </defs>
+  <!-- background -->
+  <rect
+     width="1200"
+     height="1200"
+     fill="#1E2633"
+     id="rect11" />
+  <!-- faint structural circuitry (series texture) -->
+  <g
+     stroke="#2FD4E0"
+     stroke-opacity="0.12"
+     stroke-width="1"
+     fill="none"
+     id="g14">
+    <path
+       d="M 150 210 L 210 210 L 232 188"
+       id="path11" />
+    <circle
+       cx="232"
+       cy="188"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle11" />
+    <path
+       d="M 1046 250 L 1010 214 L 958 214"
+       id="path12" />
+    <path
+       d="M 1040 1010 L 1004 1010 L 986 1030"
+       id="path13" />
+    <circle
+       cx="986"
+       cy="1030"
+       r="3"
+       fill="#2FD4E0"
+       fill-opacity="0.25"
+       stroke="none"
+       id="circle13" />
+    <path
+       d="M 158 962 L 158 998 L 196 1014"
+       id="path14" />
+  </g>
+  <!-- the two regimes: faint tints, open (left) vs closed (right) -->
+  <rect
+     x="150"
+     y="150"
+     width="440"
+     height="850"
+     fill="url(#fadeLeft)"
+     id="rect14" />
+  <rect
+     x="610"
+     y="150"
+     width="440"
+     height="850"
+     fill="url(#fadeRight)"
+     id="rect15" />
+  <!-- the separatrix: boundary permeability as the variable that decides which regime is reached -->
+  <text
+     x="588"
+     y="128"
+     font-size="28"
+     fill="#2FD4E0"
+     font-style="italic"
+     filter="url(#softGlow)"
+     id="text15">P</text>
+  <line
+     x1="600"
+     y1="150"
+     x2="600"
+     y2="1080"
+     stroke="#2FD4E0"
+     stroke-opacity="0.22"
+     stroke-width="1.4"
+     stroke-dasharray="2 14"
+     stroke-linecap="round"
+     id="line15" />
+  <!-- state-space baseline -->
+  <line
+     x1="180"
+     y1="1080"
+     x2="1000"
+     y2="1080"
+     stroke="#5C6B7E"
+     stroke-width="1.2"
+     id="line16" />
+  <path
+     d="M 1000 1074 L 1018 1080 L 1000 1086 Z"
+     fill="#5C6B7E"
+     id="path16" />
+  <text
+     x="184"
+     y="1068"
+     font-size="16"
+     letter-spacing="2.5"
+     fill="#5C6B7E"
+     id="text16">GOVERNANCE STATE SPACE</text>
+  <!-- HYSTERESIS: two different paths between the same two regimes -->
+  <text
+     x="486"
+     y="452"
+     font-size="20"
+     letter-spacing="3"
+     fill="#7E8A9A"
+     id="text17">HYSTERESIS</text>
+  <!-- collapse path: short, direct, upper route (open -> closed) -->
+  <path
+     d="M 300 628 C 450 500, 750 500, 898 628"
+     fill="none"
+     stroke="#E8943A"
+     stroke-width="3"
+     stroke-linecap="round"
+     filter="url(#amberGlow)"
+     id="path17" />
+  <path
+     d="M 894 610 L 912 632 L 886 634 Z"
+     fill="#E8943A"
+     filter="url(#amberGlow)"
+     id="path18" />
+  <text
+     x="546"
+     y="500"
+     font-size="17"
+     letter-spacing="2.5"
+     fill="#E8943A"
+     fill-opacity="0.9"
+     id="text18">COLLAPSE</text>
+  <!-- recovery path: long, looping, lower route (closed -> open) -->
+  <path
+     d="M 898 672 C 750 862, 450 862, 300 672"
+     fill="none"
+     stroke="#2FD4E0"
+     stroke-width="2.6"
+     stroke-dasharray="2 9"
+     stroke-linecap="round"
+     filter="url(#cyanGlow)"
+     id="path19" />
+  <path
+     d="M 306 690 L 288 668 L 314 666 Z"
+     fill="#2FD4E0"
+     filter="url(#cyanGlow)"
+     id="path20" />
+  <text
+     x="512"
+     y="890"
+     font-size="17"
+     letter-spacing="2.5"
+     fill="#2FD4E0"
+     fill-opacity="0.9"
+     id="text20">RECOVERY</text>
+  <text
+     x="452"
+     y="912"
+     font-size="14"
+     font-style="italic"
+     fill="#7E8A9A"
+     id="text21">needs substantially safer conditions</text>
+  <!-- OPEN REGIME node -->
+  <text
+     x="190"
+     y="600"
+     font-size="18"
+     letter-spacing="2.5"
+     fill="#7E8A9A"
+     id="text22">OPEN REGIME</text>
+  <g
+     filter="url(#cyanGlow)"
+     id="g22">
+    <circle
+       cx="280"
+       cy="650"
+       r="19"
+       fill="#04ECF6"
+       id="circle22" />
+  </g>
+  <circle
+     cx="280"
+     cy="650"
+     r="7"
+     fill="#0B3A44"
+     id="circle23" />
+  <!-- CLOSED REGIME node -->
+  <text
+     x="798"
+     y="600"
+     font-size="18"
+     letter-spacing="2.5"
+     fill="#7E8A9A"
+     id="text23">CLOSED REGIME</text>
+  <g
+     filter="url(#amberGlow)"
+     id="g24">
+    <circle
+       cx="920"
+       cy="650"
+       r="19"
+       fill="#E8943A"
+       id="circle24" />
+  </g>
+  <circle
+     cx="920"
+     cy="650"
+     r="7"
+     fill="#3A2410"
+     id="circle25" />
+  <!-- current state / particle cluster (series signature) -->
+  <circle
+     cx="600"
+     cy="662"
+     r="6"
+     fill="#04ECF6"
+     filter="url(#cyanGlow)"
+     id="circle26" />
+  <g
+     filter="url(#softGlow)"
+     id="g32">
+    <circle
+       cx="580"
+       cy="648"
+       r="2.2"
+       fill="#E8943A"
+       id="circle27" />
+    <circle
+       cx="618"
+       cy="650"
+       r="2"
+       fill="#04ECF6"
+       id="circle28" />
+    <circle
+       cx="588"
+       cy="678"
+       r="1.8"
+       fill="#04ECF6"
+       id="circle29" />
+    <circle
+       cx="614"
+       cy="678"
+       r="2.1"
+       fill="#E8943A"
+       id="circle30" />
+    <circle
+       cx="568"
+       cy="664"
+       r="1.5"
+       fill="#04ECF6"
+       id="circle31" />
+    <circle
+       cx="630"
+       cy="664"
+       r="1.4"
+       fill="#E8943A"
+       id="circle32" />
+  </g>
+  <!-- the permeability floor: a constitutional minimum that intercepts the fall into closure -->
+  <path
+     d="M 900 690 C 908 780, 916 860, 920 950"
+     fill="none"
+     stroke="#E8943A"
+     stroke-opacity="0.35"
+     stroke-width="2"
+     stroke-dasharray="3 8"
+     stroke-linecap="round"
+     id="path32" />
+  <line
+     x1="800"
+     y1="962"
+     x2="1010"
+     y2="962"
+     stroke="#2FD4E0"
+     stroke-opacity="0.55"
+     stroke-width="1.8"
+     stroke-dasharray="2 10"
+     stroke-linecap="round"
+     id="line32" />
+  <line
+     x1="800"
+     y1="954"
+     x2="800"
+     y2="972"
+     stroke="#2FD4E0"
+     stroke-opacity="0.55"
+     stroke-width="1.8"
+     id="line33" />
+  <line
+     x1="1010"
+     y1="954"
+     x2="1010"
+     y2="972"
+     stroke="#2FD4E0"
+     stroke-opacity="0.55"
+     stroke-width="1.8"
+     id="line34" />
+  <text
+     x="800"
+     y="944"
+     font-size="15"
+     letter-spacing="2.5"
+     fill="#04ECF6"
+     fill-opacity="0.85"
+     id="text34">PERMEABILITY FLOOR</text>
+  <text
+     x="800"
+     y="994"
+     font-size="15"
+     font-style="italic"
+     fill="#7E8A9A"
+     id="text35">P₀ ≈ 0.4</text>
+  <!-- what the floor prevents: the deeper trap, fading out below the line -->
+  <g
+     fill="#E8943A"
+     stroke="none"
+     id="g38">
+    <circle
+       cx="922"
+       cy="998"
+       r="1.8"
+       fill-opacity="0.14"
+       id="circle35" />
+    <circle
+       cx="928"
+       cy="1020"
+       r="1.5"
+       fill-opacity="0.10"
+       id="circle36" />
+    <circle
+       cx="918"
+       cy="1042"
+       r="1.3"
+       fill-opacity="0.07"
+       id="circle37" />
+    <circle
+       cx="924"
+       cy="1062"
+       r="1.1"
+       fill-opacity="0.04"
+       id="circle38" />
+  </g>
+</svg>

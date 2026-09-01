@@ -32,7 +32,8 @@
   { key: 'geSeriesPaperXXIV', url: '/working-papers/excitation-starved-observer', coverImage: '/working-papers/images/excitation-starved-observer-cover.png' },
   { key: 'geSeriesPaperXXV', url: '/working-papers/where-reform-pushes-down', coverImage: '/working-papers/images/where-reform-pushes-down-cover.png' },
   { key: 'geSeriesPaperXXVI', url: '/working-papers/cost-of-returning', coverImage: '/working-papers/images/cost-of-returning-cover.png' },
-  { key: 'geSeriesPaperXXVII', url: '/working-papers/requisite-alignment', coverImage: '/working-papers/images/requisite-alignment-cover.png' }
+  { key: 'geSeriesPaperXXVII', url: '/working-papers/requisite-alignment', coverImage: '/working-papers/images/requisite-alignment-cover.png' },
+  { key: 'geSeriesPaperXXVIII', url: '/working-papers/closure-adaptation', coverImage: '/working-papers/images/closure-adaptation-cover.png' },
  ];
 
 	// Definiera vår projektdata.

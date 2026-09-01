@@ -28,6 +28,39 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'closureAdaptation',
+   key: 'closureAdaptation',
+   category: 'governance',
+   tags: [
+     'Closure-Adaptation Dynamics',
+     'Institutional Rigidification',
+     'Bistability',
+     'Hysteresis',
+     'Noise-Induced Tipping',
+     'Cascade Collapse',
+     'Constitutional Permeability Floor',
+     'Boundary Permeability',
+     'Trust-Exploration Loop',
+     'Governance Engineering',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '40',
+   readTime: {
+     en: '50 min',
+     sv: '50 min'
+   },
+   version: '1.0',
+   pdfPath: {
+     en: `${localBase}/closure-adaptation.pdf`,
+     sv: `${localBase}/closure-adaptation-sv.pdf`,
+   },
+   coverImage: '/working-papers/images/closure-adaptation-cover.png',
+   readOnlinePath: '/working-papers/closure-adaptation',
+   readOnlineExternal: false,
+   releaseDate: '2026-09-01'
+ },
+ {
    id: 'fourYearRamp',
    key: 'fourYearRamp',
    category: 'governance',

@@ -80,6 +80,7 @@
         { href: '/working-papers/where-reform-pushes-down',                label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back →' },
         { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning →' },
         { href: '/working-papers/requisite-alignment',                     label: 'Paper XXVII: Requisite Alignment →' },
+        { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
       contextIntro:

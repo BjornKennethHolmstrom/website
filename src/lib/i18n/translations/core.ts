@@ -213,6 +213,10 @@ export const coreTranslations = {
     geSeriesPaperXXVII: {
       title: 'XXVII: Requisite Alignment',
       desc:  'Shows in a solved control problem that requisite variety is not sufficient: an informative signal evaluating the wrong target loses value, and the geometry of the misalignment — not only its extent — determines the cost.',
+    },
+    geSeriesPaperXXVIII: {
+      title: 'XXVIII: Closure–Adaptation Dynamics',
+      desc:  'A five‑variable model of institutional rigidification under uncertainty. Shows bistability, hysteresis, noise‑induced tipping, cascade collapse, and a constitutional permeability floor that prevents permanent closure.'
     }
   },
 
@@ -636,6 +640,10 @@ export const coreTranslations = {
     geSeriesPaperXXVII: {
       title: 'XXVII: Nödvändig inriktning',
       desc:  'Visar i ett löst kontrollproblem att nödvändig variation inte är tillräcklig: en informativ signal som utvärderar fel mål förlorar värde, och geometrin hos felinriktningen — inte bara dess omfattning — bestämmer kostnaden.',
+    },
+    geSeriesPaperXXVIII: {
+      title: 'XXVIII: Slutenhet–anpassningsdynamik',
+      desc:  'En femvariabel modell av institutionell stelning under osäkerhet. Visar bistabilitet, hysteres, brusinducerad tippning, kaskadkollaps och ett konstitutionellt permeabilitetsgolv som förhindrar permanent slutenhet.'
     }
   },
 

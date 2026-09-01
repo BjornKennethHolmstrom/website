@@ -27,6 +27,7 @@ export const papersEn = {
   XXV: { href: '/working-papers/where-reform-pushes-down',                 label: 'Paper XXV: Where Reform Pushes Down, Strategy Pushes Back' },
   XXVI: { href: '/working-papers/cost-of-returning',                       label: 'Paper XXVI: The Cost of Returning' },
   XXVII: { href: '/working-papers/requisite-alignment',                    label: 'Paper XXVII: Requisite Alignment' },
+  XXVIII: { href: '/working-papers/closure-adaptation',                    label: 'Paper XXVIII: Closure-Adaptation Dynamics' },
 };
 
 export const papersSv = {
@@ -58,4 +59,5 @@ export const papersSv = {
   XXV: { href: '/working-papers/where-reform-pushes-down',                 label: 'Rapport XXV: Där reform trycker ner, trycker strategi tillbaka' },
   XXVI: { href: '/working-papers/cost-of-returning',                       label: 'Rapport XXVI: Kostnaden för att återvända' },
   XXVII: { href: '/working-papers/requisite-alignment',                    label: 'Rapport XXVII: Nödvändig inriktning' },
+  XXVIII: { href: '/working-papers/closure-adaptation',                    label: 'Rapport XXVIII: Slutenhet-anpassningsdynamik' },
 };
