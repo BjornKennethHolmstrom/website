@@ -6,73 +6,83 @@ export const aboutTranslations = {
 			meta: {
 				title: 'About | Björn Kenneth Holmström',
 				description:
-					'The story behind the work: from engineering physics to mystical experiences, depression, and the drive to build systems for a flourishing world.'
+					'About Björn Kenneth Holmström and the ideas, projects, and questions he explores around governance, coordination, collective intelligence, consciousness, and flourishing.'
 			},
 			hero: {
-				title: 'About Me',
-				subtitle: 'The Story Behind The Systems'
+				title: 'About',
+				subtitle: 'The person behind the ideas'
 			},
+
 			introTitle: 'Who I Am',
-			intro: `I’m a curious thinker, passionate creator, and dedicated systems designer working to bridge the gap between ideas and action. With a background in engineering physics and mathematical optimization, my work centers on re-imagining what’s possible for individuals, communities, and the planet through research on governance and coordination.`,
-			journeyTitle: 'My Journey',
-			journey_physics: `My journey started in software development, but my curiosity has taken me from Sweden to the Basque Country and Japan, gaining perspectives that shape my approach to life. I've explored everything from Viking crafts to advanced mathematics.`,
-			journey_mystic: `Around 2014, after deep work with yoga and meditation, I began having mystical experiences. While living in the Basque Country, this questioning of reality intensified. I lived with almost no money for two years, exploring art and mysticism. Eventually, this spiraled out of control. I lost my apartment, lived in an abandoned house for a month, and ultimately returned to "ordinary" life.`,
-			journey_return: `With the help of family, I moved back to Sweden. This was followed by a deep, long-term depression and in-organic psychosis that lasted over five years. This painful journey became foundational. It gave me the perspective of the "depressed mystic" and clarified my mission: to build systems that support *all* of life, including the parts that are broken, healing, or simply being. This perspective is the "why" behind my work, including <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
-			missionTitle: 'My Mission & Core Projects',
-			mission_ggf: `My most ambitious contribution is initiating <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, a collaborative platform to rethink how we steward our planet. It’s a labor of hope, complexity, and care.`,
-			mission_quartet: `To support this vision, I’m building <a href="/">a quartet of tools</a>—Spiralize.org, Nondualize.org, Communize.org, and Universalize.org—alongside a political party, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, focused on systemic societal transformation.`,
-			mission_question: `A driving question informs everything I do: <strong>How can we improve ourselves and the planet while avoiding the mistakes of the past and staying true to our essence?</strong>`,
-			inspirationsTitle: 'Inspirations',
+			intro: `I’m Björn Kenneth Holmström. My background is in engineering physics and mathematical optimization, and I’m interested in governance, coordination, collective intelligence, consciousness, and complex systems—and in how they might contribute to a more flourishing world.`,
+
+			explorationTitle: 'What I Explore',
+			exploration: `Much of my current exploration is connected to <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, where I investigate ways of designing more adaptive, resilient, participatory, and life-supporting systems of governance. This includes <em>Governance as Engineering</em>: an approach that treats institutional design as something that can be explored through models, evidence, simulation, experimentation, and iterative improvement.`,
+			currentFocus: `Right now, I’m particularly focused on developing evidence for how Sweden can respond to the increasing complexity of our world by gradually evolving its system of government. I publish this exploration at <a href="https://svensksubsidiaritet.se" target="_blank" rel="noopener">SvenskSubsidiaritet.se</a>.`,
+			exploration_projects: `I also explore related questions through several smaller projects, including <a href="/">Spiralize.org</a>, <a href="/">Nondualize.org</a>, <a href="/">Communize.org</a>, and <a href="/">Universalize.org</a>, as well as through ideas connected to <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>.`,
+
+			approachTitle: 'How I Approach These Questions',
+			approach: `I’m drawn to questions that sit between disciplines. I combine systems thinking and mathematical reasoning with philosophy, science, experimentation, and lived experience. I try to remain open to being wrong, and I’m more interested in discovering what holds up under evidence, criticism, and reality than in defending a fixed worldview.`,
+			approach_question: `A recurring question behind these explorations is: <strong>How can we make systems more capable of supporting life without reproducing the failures and assumptions that brought us here?</strong>`,
+
+			backgroundTitle: 'A Little Background',
+			background: `My path has moved through software development, engineering physics, mathematics, art, contemplative practice, and periods of profound personal difficulty. These experiences have influenced how I see the world, particularly my interest in uncertainty, vulnerability, interconnectedness, and how systems respond to breakdown and change.`,
+			background_closing: `I don’t see this as a neat origin story, and these ideas are not intended as expressions of a single personal philosophy. This site is primarily a place to share and document questions, ideas, experiments, and projects that I find worth exploring.`,
+
+			inspirationTitle: 'What Inspires Me',
 			inspirations: [
-				'The beauty of interconnected systems in nature, society, and reality as a whole.',
-				'The potential for technology to empower and uplift humanity.',
-				'The pursuit of philosophy, art, science, and spirituality.',
-				'The endless expressions of life and consciousness in nature.',
-				'The possibility of harmony between all living beings.'
+				'The intelligence and interconnectedness found in natural and social systems.',
+				'The possibility of using technology to expand human and ecological flourishing.',
+				'The meeting points between science, mathematics, philosophy, art, and spirituality.',
+				'The diversity of ways life and consciousness can express themselves.',
+				'The possibility of building systems that make greater cooperation and freedom possible.'
 			],
-			interestsTitle: 'Other Passions',
-			interests_music: `I love music and have played piano, drums, bass, and guitar in several bands (Raskolnikov, Devil Killers, Fistful of Heart).`,
-			interests_gaming: `On platforms like Steam, I’m known as <strong>Pwnytale</strong>. I've played a lot of GeoGuessr and other community games.`,
-			interests_nature: `My connection with nature and animals runs deep, which led me to get involved with animal rights movements like Anonymous for the Voiceless.`,
-			cta: `Thank you for reading. I’d love to connect.`,
-			cta_button: `Get in Touch`
+
+			cta: `Most of the substance is in the ideas and projects themselves, so feel free to explore the site.`,
+			cta_button: `Explore`
 		}
 	},
+
 	sv: {
 		about: {
 			meta: {
-				title: 'Om mig | Björn Kenneth Holmström',
+				title: 'Om | Björn Kenneth Holmström',
 				description:
-					'Berättelsen bakom arbetet: från teknisk fysik till mystiska upplevelser, depression och drivkraften att bygga system för en blomstrande värld.'
+					'Om Björn Kenneth Holmström och de idéer, projekt och frågor han utforskar kring samhällsstyrning, samordning, kollektiv intelligens, medvetande och blomstrande.'
 			},
 			hero: {
-				title: 'Om Mig',
-				subtitle: 'Berättelsen bakom systemen'
+				title: 'Om',
+				subtitle: 'Personen bakom idéerna'
 			},
+
 			introTitle: 'Vem jag är',
-			intro: `Jag är en nyfiken tänkare, passionerad skapare och dedikerad systemdesigner som arbetar för att överbrygga klyftan mellan idéer och handling. Med en bakgrund inom teknisk fysik och matematisk optimering, centrerar mitt arbete kring att främja samarbete och omforma vad som är möjligt för individer, samhällen och planeten genom forskning på samhällstyrning.`,
-			journeyTitle: 'Min Resa',
-			journey_physics: `Min resa började inom mjukvaruutveckling, men min nyfikenhet har tagit mig från Sverige till Baskien och Japan, vilket gett mig perspektiv som formar min syn på livet. Jag har utforskat allt från vikingahantverk till avancerad matematik.`,
-			journey_mystic: `Runt 2014, efter djupt arbete med yoga och meditation, började jag få mystiska upplevelser. När jag bodde i Baskien intensifierades detta ifrågasättande av verkligheten. Jag levde nästan utan pengar i två år och utforskade konst och mystik. Till slut spårade detta ur. Jag förlorade min lägenhet, bodde i ett övergivet hus i en månad och återvände till slut till det "vanliga" livet.`,
-			journey_return: `Med hjälp av familj flyttade jag tillbaka till Sverige. Detta följdes av en djup, långvarig depression och oorganisk psykos som varade i över fem år. Denna smärtsamma resa blev grundläggande. Den gav mig "den deprimerade mystikerns" perspektiv och klargjorde mitt uppdrag: att bygga system som stöder *allt* liv, inklusive de delar som är trasiga, helande eller bara är. Detta perspektiv är "varför" bakom mitt arbete, inklusive <a href="https://spiritualized.org" target="_blank" rel="noopener">Spiritualized.org</a>.`,
-			missionTitle: 'Mitt Uppdrag & Kärnprojekt',
-			mission_ggf: `Mitt mest ambitiösa bidrag är initiativet till <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, en samarbetsplattform för att ompröva hur vi förvaltar vår planet. Det är ett arbete fyllt av hopp, komplexitet och omsorg.`,
-			mission_quartet: `För att stödja denna vision bygger jag <a href="/">en kvartett av verktyg</a>—Spiralize.org, Nondualize.org, Communize.org och Universalize.org—tillsammans med ett politisk parti, <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>, fokuserad på systemtänkande samhällsomvandling.`,
-			mission_question: `En drivande fråga genomsyrar allt jag gör: <strong>Hur kan vi förbättra oss själva och planeten samtidigt som vi undviker tidigare misstag och förblir sanna mot vår essens?</strong>`,
-			inspirationsTitle: 'Inspiration',
+			intro: `Jag är Björn Kenneth Holmström. Min bakgrund är inom teknisk fysik och matematisk optimering, och jag är intresserad av samhällsstyrning, samordning, kollektiv intelligens, medvetande och komplexa system – och av hur de kan bidra till en värld där fler kan blomstra.`,
+
+			explorationTitle: 'Det jag utforskar',
+			exploration: `Mycket av mitt nuvarande utforskande är kopplat till <a href="https://globalgovernanceframeworks.org" target="_blank" rel="noopener">GlobalGovernanceFrameworks.org</a>, där jag undersöker hur vi kan utforma mer adaptiva, motståndskraftiga, deltagande och livsfrämjande styrsystem. Detta inkluderar <em>Governance as Engineering</em>: ett angreppssätt där institutionell design kan utforskas genom modeller, evidens, simulering, experiment och iterativ förbättring.`,
+			currentFocus: `Just nu fokuserar jag särskilt på att ta fram evidens för hur Sverige kan möta den ökande komplexiteten i vår värld genom att gradvis utveckla sitt styrelseskick. Jag publicerar detta utforskande på <a href="https://svensksubsidiaritet.se" target="_blank" rel="noopener">SvenskSubsidiaritet.se</a>.`,
+			exploration_projects: `Jag utforskar också relaterade frågor genom flera mindre projekt, bland annat <a href="/">Spiralize.org</a>, <a href="/">Nondualize.org</a>, <a href="/">Communize.org</a> och <a href="/">Universalize.org</a>, samt genom idéer kopplade till <a href="https://fjarilspartiet.se" target="_blank" rel="noopener">Fjärilspartiet</a>.`,
+
+			approachTitle: 'Hur jag närmar mig dessa frågor',
+			approach: `Jag dras till frågor som befinner sig mellan olika discipliner. Jag kombinerar systemtänkande och matematiska resonemang med filosofi, vetenskap, experiment och levd erfarenhet. Jag försöker förbli öppen för att ha fel och är mer intresserad av att upptäcka vad som håller under evidens, kritik och verklighet än av att försvara en fast världsbild.`,
+			approach_question: `En återkommande fråga bakom dessa utforskanden är: <strong>Hur kan vi göra system bättre på att stödja liv utan att återskapa de misslyckanden och antaganden som förde oss hit?</strong>`,
+
+			backgroundTitle: 'Lite bakgrund',
+			background: `Min väg har gått genom mjukvaruutveckling, teknisk fysik, matematik, konst, kontemplativ praktik och perioder av djupa personliga svårigheter. Dessa erfarenheter har påverkat hur jag ser på världen, särskilt mitt intresse för osäkerhet, sårbarhet, sammanlänkning och hur system reagerar på sammanbrott och förändring.`,
+			background_closing: `Jag ser inte detta som en enkel ursprungsberättelse, och idéerna är inte tänkta som uttryck för en enda personlig filosofi. Den här webbplatsen är framför allt en plats där jag delar och dokumenterar frågor, idéer, experiment och projekt som jag tycker är värda att utforska.`,
+
+			inspirationTitle: 'Det som inspirerar mig',
 			inspirations: [
-				'Skönheten i sammankopplade system i naturen, samhället och verkligheten som helhet.',
-				'Potentialen för teknik att stärka och lyfta mänskligheten.',
-				'Strävan efter filosofi, konst, vetenskap och andlighet.',
-				'De oändliga uttrycken för liv och medvetande i naturen.',
-				'Möjligheten till harmoni mellan alla levande varelser.'
+				'Den intelligens och sammanlänkning som finns i naturliga och sociala system.',
+				'Möjligheten att använda teknik för att främja mänskligt och ekologiskt blomstrande.',
+				'Mötespunkterna mellan vetenskap, matematik, filosofi, konst och andlighet.',
+				'Mångfalden av sätt som liv och medvetande kan uttrycka sig.',
+				'Möjligheten att bygga system som gör större samarbete och frihet möjliga.'
 			],
-			interestsTitle: 'Andra Passioner',
-			interests_music: `Jag älskar musik och har spelat piano, trummor, bas och gitarr i flera band (Raskolnikov, Devil Killers, Fistful of Heart).`,
-			interests_gaming: `På plattformar som Steam är jag känd som <strong>Pwnytale</strong>. Jag har spelat mycket GeoGuessr och andra community-spel.`,
-			interests_nature: `Min koppling till naturen och djuren är djup, vilket ledde till att jag engagerade mig i djurrättsrörelser som Anonymous for the Voiceless.`,
-			cta: `Tack för att du har läst. Jag skulle uppskatta att få kontakt.`,
-			cta_button: `Hör av dig`
+
+			cta: `Det mesta av innehållet finns i idéerna och projekten själva, så utforska gärna resten av webbplatsen.`,
+			cta_button: `Utforska`
 		}
 	}
 };
+
