@@ -1,7 +1,3 @@
-# När avkänning inte hjälper
-
-*En hypotes om kvarhållen variation, och hur fyra simuleringar plockade isär den*
-
 Det mesta som serien Styrning som ingenjörskonst dokumenterar är sådant som överlevde granskning. Det här är en anteckning om något som inte gjorde det — en hypotes som ett tag såg ut som nästa artikel i serien, gav ett rent och kvantifierat resultat, och sedan upplöstes när jag till slut modellerade invändningen mot den på rättvisa villkor. Jag skriver ner det inte trots misslyckandet utan på grund av det. Ett ramverk som bara rapporterar sina bekräftelser gör inte det som det påstår sig värdesätta, och sättet som just den här idén föll isär på är, tror jag, mer användbart än idén skulle ha varit om den hållit.
 
 ## Idén, och varför den var lockande

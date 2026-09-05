@@ -1,7 +1,3 @@
-# When Sensing Doesn't Help
-
-*A Retained-Variety hypothesis, and how four simulations took it apart*
-
 Most of what the Governance-as-Engineering series records is what survived scrutiny. This is a note about something that didn't — a hypothesis that looked, for a while, like the next paper in the series, produced a clean and quantified result, and then dissolved when I finally modelled the objection to it fairly. I am writing it up not despite the failure but because of it. A framework that only reports its confirmations is not doing the thing it claims to value, and the way this particular idea came apart is, I think, more useful than the idea would have been if it had held.
 
 ## The idea, and why it was attractive

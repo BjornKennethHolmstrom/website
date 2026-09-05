@@ -31,6 +31,14 @@
 
    // --- Priority 1: Governance ---
    { 
+     key: 'optimumDependedOnRuler', 
+     url: '/essays/the-optimum-that-depended-on-the-ruler',
+     icon: '📏',  // ruler – measuring coordination capacity
+     category: 'Governance',
+     categories: ['Governance', 'Philosophy'], // it's also about modeling philosophy
+     hasPDF: false
+   },
+   { 
      key: 'whenSensingDoesntHelp', 
      url: '/essays/when-sensing-doesnt-help',
      icon: '📡',  // satellite dish – sensing, signals

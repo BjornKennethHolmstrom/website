@@ -14,6 +14,14 @@ export const essaysTranslations = {
 			},
    cards: {
 			  // --- Individual Essays ---
+     optimumDependedOnRuler: {
+       title: 'The Optimum That Depended on the Ruler',
+       subtitle: 'A multilevel-governance allocation hypothesis, and how twenty simulations took it apart',
+       desc: 'A computational exploration that started from a metaphor, produced a clean result, and then dissolved when a robustness check changed the definition of coordination capacity.',
+       published: 'August 2026',
+       readTime: '20 min read',
+       tags: ['Governance', 'Simulation', 'Subsidiarity', 'Coordination', 'Robustness']
+     },
      whenSensingDoesntHelp: {
        title: 'When Sensing Doesn’t Help',
        subtitle: 'A Retained‑Variety hypothesis, and how four simulations took it apart',
@@ -321,6 +329,14 @@ export const essaysTranslations = {
 
 			// --- Individuella essäer ---
    cards: {
+     optimumDependedOnRuler: {
+       title: 'Det optimum som berodde på linjalen',
+       subtitle: 'En allokeringshypotes för flernivåstyrning – och hur tjugo simuleringar plockade isär den',
+       desc: 'Ett beräkningsinriktat utforskande som började i en metafor, gav ett rent resultat, och sedan upplöstes när en robusthetskontroll ändrade definitionen av koordinationskapacitet.',
+       published: 'augusti 2026',
+       readTime: '20 min läsning',
+       tags: ['Styrning', 'Simulering', 'Subsidiaritet', 'Koordination', 'Robusthet']
+     },
      whenSensingDoesntHelp: {
        title: 'När avkänning inte hjälper',
        subtitle: 'En hypotes om kvarhållen variation, och hur fyra simuleringar plockade isär den',
