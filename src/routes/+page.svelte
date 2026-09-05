@@ -535,10 +535,10 @@
         {$t.title}
     </h1>
 
-    <!-- Personlig ingress -->
+    <!-- Personlig ingress
     <p class="text-lg text-slate-300 sm:text-xl mb-6 italic border-l-4 border-amber-500 pl-4">
         {$t.ingress}
-    </p>
+    </p>  -->
 
     <!-- Professionell rollbeskrivning -->
     <p class="text-base text-slate-400">

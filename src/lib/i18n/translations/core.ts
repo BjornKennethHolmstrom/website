@@ -4,9 +4,9 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO start page
 		meta: {
-			title: 'Björn Kenneth Holmström | Systems Thinker & Governance Architect',
+			title: 'Björn Kenneth Holmström | Researching Governance and Developing Global Governance Frameworks',
 			description:
-				'Thoughtful, long-form analysis at the intersection of governance, complexity, and consciousness. Home of the Country Reports series and the Governance as Engineering working-papers.'
+				'AI-assisted analysis at the intersection of governance, complexity, and consciousness. Home of the Country Reports series and the Governance as Engineering working-papers.'
 		},
   // Header nav
 		navBlog: 'Blog',
@@ -32,9 +32,9 @@ export const coreTranslations = {
   dark: 'DARK',
   light: 'LIGHT',
 		// Hero
-  title: 'Exploring Governance, Systems & Consciousness',
+  title: 'Governance, Systems & Consciousness',
   ingress: 'From engineering physics to mysticism, from psychosis to systems design – my journey has taught me that the deepest problems require the integration of the personal, the political and the existential.',
-  description: 'I write about governance architectures, collective intelligence, societal feedback systems and consciousness development — including the Governance as Engineering series and the Global Governance Frameworks project.',
+  description: 'I write about governance architectures, collective intelligence, societal feedback systems, and consciousness development.',
   help: 'Show welcome guide',
 
   // Reader's Guide
@@ -460,9 +460,9 @@ export const coreTranslations = {
   dark: 'MÖRK',
   light: 'LJUS',
 		// Hero
-  title: 'Utforskar styrning, system och medvetande',
+  title: 'Samhällsstyrning, system och medvetande',
 		ingress: 'Från teknisk fysik till mystik, från psykos till systemdesign – min resa har lärt mig att de djupaste problemen kräver integration av det personliga, det politiska och det existentiella.',
-  description: 'Jag skriver om styrningsarkitekturer, kollektiv intelligens, samhälleliga feedbacksystem och medvetandeutveckling – inklusive serien Styrning som ingenjörskonst och projektet Global Governance Frameworks.',
+  description: 'Jag skriver om styrningsarkitekturer, kollektiv intelligens, samhälleliga feedbacksystem och medvetandeutveckling.',
   help: 'Visa vägledning',
 
   // Reader's Guide
