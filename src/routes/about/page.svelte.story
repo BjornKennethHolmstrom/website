@@ -23,11 +23,11 @@
   
   <div class="w-full md:w-1/3 flex justify-center md:justify-start shrink-0">
     <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[var(--color-page-accent)] shadow-lg">
-      <img 
-        src="/portrait-bw.jpg" 
-        alt="Björn Kenneth Holmström" 
-        class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-110 m-0 p-0 block" 
-        style="object-position: 50% 0%; transform: translateY(-13%);" 
+      <img
+	      src="/portrait-bw.jpg"
+	      alt="Björn Kenneth Holmström"
+	      class="absolute inset-0 m-0 block h-full w-full object-cover"
+	      style="object-position: 50% 0%; transform: translateY(-13%);"
       />
     </div>
   </div>

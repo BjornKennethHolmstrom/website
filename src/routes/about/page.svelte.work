@@ -25,12 +25,12 @@
 				<div
 					class="relative mx-auto h-48 w-48 overflow-hidden rounded-full border-4 border-[var(--color-page-accent)] shadow-lg md:mx-0 md:h-56 md:w-56"
 				>
-					<img
-						src="/portrait-bw.jpg"
-						alt="Björn Kenneth Holmström"
-						class="absolute inset-0 m-0 block h-full w-full object-cover grayscale contrast-110"
-						style="object-position: 50% 0%; transform: translateY(-13%);"
-					/>
+     <img
+	     src="/portrait-bw.jpg"
+	     alt="Björn Kenneth Holmström"
+	     class="absolute inset-0 m-0 block h-full w-full object-cover"
+	     style="object-position: 50% 0%; transform: translateY(-13%);"
+     />
 				</div>
 			</div>
 
