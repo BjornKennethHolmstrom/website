@@ -24,7 +24,7 @@
 <SEO
 	title={$t.reports.meta.title}
 	description={$t.reports.meta.description}
-	keywords="country reports, systemic analysis, adaptive capacity, governance, Germany, Björn Kenneth Holmström"
+	keywords="country reports, systemic analysis, adaptive capacity, governance, Björn Kenneth Holmström"
 />
 
 <PageHero

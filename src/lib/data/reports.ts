@@ -514,6 +514,27 @@ export const reportsData: Report[] = [
 			it: '/reports/switzerland-boundary-expansion-deficit-it.pdf'
 		},
 		readOnlineExternal: false
+	},
+	{
+		id: 'south-korea-tournament-trap',
+		key: 'southKoreaTournamentTrap',
+		emoji: '🇰🇷',
+		category: 'country',
+		year: 2026,
+		pages: 73,
+		readTime: {
+			en: '75–90 min',
+			sv: '75–90 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-09-18',
+		coverImage: '/images/reports/south-korea-tournament-trap/cover.png',
+		readOnlinePath: '/reports/south-korea-tournament-trap',
+		pdfPath: {
+			en: '/reports/south-korea-tournament-trap-en.pdf',
+			ko: '/reports/south-korea-tournament-trap-ko.pdf'
+		},
+		readOnlineExternal: false
 	}
 ];
 

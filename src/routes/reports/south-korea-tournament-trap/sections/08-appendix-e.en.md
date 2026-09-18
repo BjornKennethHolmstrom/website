@@ -1,0 +1,24 @@
+## Appendix E: About the Author and Method
+
+### The Author
+
+This report was written from a position of comparative engagement with governance systems across many countries, but not from within Korea's institutional life. The author is not Korean, does not live in Korea and does not claim the authority of lived experience within the Korean tournament. The perspective offered here draws on a background in civil engineering and mathematical optimisation, and on sustained engagement with complexity science, developmental psychology, governance theory and control-theoretic approaches to institutional design. The most useful diagnoses sometimes come from outside the system being diagnosed, where questions can be asked that insiders have learned not to hear. The corresponding limitation is equally real: much of the texture of Korean family life, school culture and policy-making is inaccessible from outside, and Korean readers will see what this report misses.
+
+The author has also contributed to governance design through the Global Governance Frameworks, the Governance as Engineering whitepaper series and the Country Reports for Systemic Change. The report is offered in the spirit of collaborative sense-making, not definitive pronouncement. Feedback, criticism and dialogue are welcomed.
+
+### A Note on Method
+
+This report was developed through a structured, multi-model synthesis process in which several large language models analysed Korea's governance architecture from different angles, and their contributions were compared, challenged for contradictions and integrated by the author. The AI served as a research partner and a perspective engine; the editorial judgment and the intellectual responsibility are entirely human.
+
+The Korea report added an evidentiary discipline that earlier reports in the series applied less formally. The diagnosis began as a hypothesis and was tested against an explicit falsification matrix before drafting. Three evidence passes revised it substantially: an early version centred on fertility was demoted when the evidence identified career–family incompatibility as the primary mechanism; a version claiming that Korea is more extreme than its neighbours on every gradient was retired when Taiwanese and Japanese comparisons contradicted it; and a claim that suppressed competition is conserved was withdrawn as unsupported. The surviving claims were recorded in a claim-and-evidence ledger, which assigned each one a status—*established*, *supported*, *provisional* or *internal to the series*—and a ceiling on the wording the report could use. The draft was held to that ledger: it could become simpler than the evidence, but not more certain.
+
+Two consequences follow for the reader. First, where the report says "evidence shows", it refers to external empirical findings; where it says "the report interprets", it refers to synthesis within the Governance as Engineering framework; and where it cites Paper VIII, it refers to an internal pilot estimate. Second, the report registers predictions that could weaken or overturn its diagnosis, and it proposes an institution designed to test them. Like any work of synthesis, it is provisional. It claims only that its lens merits testing against reality.
+
+### The Country Reports Series
+
+This report is the seventeenth in the series of Country Reports for Systemic Change. The earlier reports examined Germany through the lens of an execution deficit, France through an integration deficit, Sweden through a feedback deficit, India through a synchronisation deficit, the European Union through a coherence deficit, the United Kingdom through a control-delivery deficit, Brazil through an accumulation deficit, Russia through a power-vertical deficit, the United States through an integration deficit, Finland through a throughput constraint, China through a calibration deficit, Japan through a continuity trap, Nigeria through a substrate deficit, Israel through a boundary deficit, Spain through a transition trap, and Switzerland through a boundary-expansion deficit.
+
+Together, the reports form a diagnostic framework spanning first-order deficits of execution and integration, second-order constraints of velocity and paradigm lock-in, the foundational challenge of substrate construction and the challenge of constitutional incompleteness. South Korea adds a further category: a system that can correct its controllers with remarkable speed while the opportunity architecture beneath them changes slowly. The series does not claim to be complete. South Korea, the champion of the tournament at the frontier of plurality, is the case that asks how a society that learned to compete fairly for a future can learn to offer its people more than one.
+
+---
+

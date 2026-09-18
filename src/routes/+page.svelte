@@ -274,10 +274,15 @@
 	      url: '/reports/spain-transition-trap',
       },
       {
-          key: 'reportsSwitzerland',
-          emoji: '🇨🇭',
-          url: '/reports/switzerland-boundary-expansion-deficit',
-          badge: 'NEW'
+       key: 'reportsSwitzerland',
+       emoji: '🇨🇭',
+       url: '/reports/switzerland-boundary-expansion-deficit',
+      },
+      {
+       key: 'reportsSouthKorea',
+       emoji: '🇰🇷',
+       url: '/reports/south-korea-tournament-trap',
+       badge: 'NEW'
       }
 
   ];

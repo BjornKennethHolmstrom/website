@@ -104,6 +104,11 @@ export const reportsTranslations = {
        description:
            'Switzerland does not lack governance capacity — it lacks the boundary adequacy to match its internal excellence to global interdependence. This report diagnoses a Boundary Expansion Deficit produced by asymmetric observation, the neutrality Faraday cage, and the Sonderfall immune response, and proposes a Global Footprint Dashboard and a Citizens\' Assembly on Switzerland\'s Global Role as the concrete first step.'
    },
+   southKoreaTournamentTrap: {
+       title: 'South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity',
+       description:
+           'South Korea is not failing. It observes well, acts fast and has shown that its democracy can correct even a president who turns on the constitution. Yet on one Thursday every November the country grounds its aircraft for an eight-hour examination, and too many futures depend on winning it. This report diagnoses the Tournament Trap — consequence coupling under effective scarcity — and proposes a transition architecture that lowers what winning buys, so that losing one tournament becomes survivable.'
+   },
    aiCoherenceVelocityTrap: {
 	   title: 'The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance',
 	   description:
@@ -243,6 +248,11 @@ export const reportsTranslations = {
        title: 'Schweiz: Gränsutvidgningsunderskottet — När intern excellens möter globalt ömsesidigt beroende',
        description:
            'Schweiz saknar inte styrningskapacitet — det saknar den gränsdragning som krävs för att anpassa sin interna excellens till globalt ömsesidigt beroende. Rapporten diagnosticerar ett gränsutvidgningsunderskott skapat av asymmetrisk observation, neutralitetens Faradays bur och Sonderfall‑immunresponsen, och föreslår en global fotavtryckspanel och en medborgarassembly om Schweiz globala roll som det konkreta första steget.'
+   },
+   southKoreaTournamentTrap: {
+       title: 'Sydkorea: Turneringfällan — konsekvenskoppling under effektiv knapphet',
+       description:
+           'Sydkorea misslyckas inte. Det observerar väl, agerar snabbt och har visat att dess demokrati kan korrigera även en president som vänder sig mot konstitutionen. Ändå stänger landet en torsdag varje november sin flygtrafik för ett åtta timmar långt prov, och alltför många framtider hänger på att vinna det. Rapporten diagnostiserar turneringfällan — konsekvenskoppling under effektiv knapphet — och föreslår en övergångsarkitektur som sänker vad vinsten köper, så att förlora en turnering blir överlevbart.'
    },
    aiCoherenceVelocityTrap: {
 	   title: 'Koherens–hastighetsfällan: En cybernetisk analys av styrningen av frontier AI',
