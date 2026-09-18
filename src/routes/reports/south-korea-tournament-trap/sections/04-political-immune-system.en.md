@@ -88,13 +88,13 @@ The series names the beneficiaries of each immune system, and Korea's deserve th
 
 **The elite universities** benefit from a system in which selectivity itself is a source of prestige. Their standing rests partly on the quality of their teaching and research, and partly on the number of applicants they turn away.
 
-**The private-education industry** benefits directly from the intensity of the contest. An industry turning over nearly ₩30 trillion a year has an obvious stake in the continued value of fine rank distinctions, and in the frequent rule changes that create demand for new preparation.
+**The private-education industry** benefits directly from the intensity of the contest. An industry turning over nearly ₩30 trillion a year has an obvious stake in the continued value of fine rank distinctions, and frequent rule changes can generate new demand for preparation.
 
 **Owners of capital-region property**, particularly in the neighbourhoods with the most sought-after schools and the densest access to good employment, benefit from the concentration of opportunity that the tournament reinforces.
 
 **Insiders of the dual labour market**—regular employees in large firms and the public sector—benefit from the security and progression that the gradient confers, and from the barriers that keep that security scarce.
 
-**Professions with controlled entry** benefit, whatever their stated reasons, from the scarcity of their credential.
+**Professions with controlled entry.** Controlled entry can confer scarcity value on professional credentials, alongside legitimate concerns about training quality, standards, working conditions and service capacity. This creates a potential material interest in entry rules without establishing that scarcity preservation is the motive for opposing reform.
 
 And the qualification: these groups overlap heavily with the people the tournament exhausts. The parent in Daechi-dong who pays for three hagwons is both a beneficiary of the system's rewards and its most anxious contributor. The regular employee at a conglomerate has children entering the same contest. The immune system is not a coalition of winners against losers. It is a population that has learned to invest in the architecture because the architecture punishes those who do not, and that therefore experiences any change to it as a threat to what it has already paid. This is why reform cannot be framed as taking something away from a privileged few. In the Korean tournament, almost everyone is holding a stake.
 
