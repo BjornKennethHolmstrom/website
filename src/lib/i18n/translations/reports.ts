@@ -114,6 +114,11 @@ export const reportsTranslations = {
        description:
            'Bhutan has not abandoned Gross National Happiness, and its institutions are not out of control. It is accelerating its economic machinery for good reason — to create the opportunities that might persuade its educated young people to stay — while building the interfaces that connect that machinery to its constitutional objective. This report diagnoses the Interface Race and proposes an Actuator Interface Register as the concrete first step.'
    },
+   netherlandsFeasibilityDebt: {
+       title: 'The Netherlands: The Feasibility Debt — Commitment Before Durable Feasibility',
+       description:
+           'The Netherlands is not failing. It has built one of the most sophisticated systems in the world for governing an uncertain future, above all in water. Yet outside its mature water architecture, it has repeatedly committed to futures before securing them: nitrogen permits resting on ecological gains that had not yet occurred, renewable subsidies awarded before grid capacity was checked, and a national airport operating for roughly a decade ahead of the legal regime meant to govern it. This report diagnoses the Feasibility Debt and proposes a Feasibility Balance Sheet as the concrete first step.'
+   },
    aiCoherenceVelocityTrap: {
 	   title: 'The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance',
 	   description:
@@ -263,6 +268,11 @@ export const reportsTranslations = {
        title: 'Bhutan: Gränssnittsracet — mål–aktuatorkoppling under acceleration',
        description:
            'Bhutan har inte övergett bruttonationallycka, och dess institutioner är inte utom kontroll. Landet accelererar sin ekonomiska maskin av goda skäl — för att skapa de möjligheter som kan övertyga dess utbildade unga att stanna — samtidigt som det bygger de gränssnitt som kopplar maskineriet till det konstitutionella målet. Denna rapport diagnostiserar gränssnittsracet och föreslår ett aktuatörs-gränssnittsregister som det konkreta första steget.'
+   },
+   netherlandsFeasibilityDebt: {
+       title: 'Nederländerna: Genomförbarhetsskulden — åtaganden före varaktig genomförbarhet',
+       description:
+           'Nederländerna misslyckas inte. Landet har byggt ett av världens mest sofistikerade system för att styra en osäker framtid, framför allt på vattenområdet. Men utanför sin mogna vattenarkitektur har det upprepade gånger förbundit sig till framtider innan de säkrats: kvävetillstånd som vilade på ekologiska förbättringar som ännu inte hade inträffat, förnybara subventioner som beviljades innan nätkapaciteten kontrollerats, och en nationell flygplats som drevs i ungefär ett decennium före det rättsliga regelverk som skulle styra den. Denna rapport diagnostiserar genomförbarhetsskulden och föreslår en genomförbarhetsbalansräkning som det konkreta första steget.'
    },
    aiCoherenceVelocityTrap: {
 	   title: 'Koherens–hastighetsfällan: En cybernetisk analys av styrningen av frontier AI',

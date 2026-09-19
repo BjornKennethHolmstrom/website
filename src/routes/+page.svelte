@@ -289,6 +289,12 @@
           emoji: '🇧🇹',
           url: '/reports/bhutan-interface-race',
           badge: 'NEW'
+      },
+      {
+          key: 'reportsNetherlands',
+          emoji: '🇳🇱',
+          url: '/reports/netherlands-feasibility-debt',
+          badge: 'NEW'
       }
 
   ];

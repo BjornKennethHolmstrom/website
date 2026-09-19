@@ -555,6 +555,27 @@ export const reportsData: Report[] = [
 			en: '/reports/bhutan-interface-race-en.pdf'
 		},
 		readOnlineExternal: false
+	},
+	{
+		id: 'netherlands-feasibility-debt',
+		key: 'netherlandsFeasibilityDebt',
+		emoji: '🇳🇱',
+		category: 'country',
+		year: 2026,
+		pages: 63,
+		readTime: {
+			en: '65–75 min',
+			sv: '65–75 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-09-19',
+		coverImage: '/images/reports/netherlands-feasibility-debt/cover.png',
+		readOnlinePath: '/reports/netherlands-feasibility-debt',
+		pdfPath: {
+			en: '/reports/netherlands-feasibility-debt-en.pdf',
+			nl: '/reports/netherlands-feasibility-debt-nl.pdf'
+		},
+		readOnlineExternal: false
 	}
 ];
 
