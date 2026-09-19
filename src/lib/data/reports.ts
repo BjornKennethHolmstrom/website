@@ -535,6 +535,26 @@ export const reportsData: Report[] = [
 			ko: '/reports/south-korea-tournament-trap-ko.pdf'
 		},
 		readOnlineExternal: false
+	},
+	{
+		id: 'bhutan-interface-race',
+		key: 'bhutanInterfaceRace',
+		emoji: '🇧🇹',
+		category: 'country',
+		year: 2026,
+		pages: 67,
+		readTime: {
+			en: '75–90 min',
+			sv: '75–90 min'
+		},
+		version: '1.0',
+		releaseDate: '2026-09-19',
+		coverImage: '/images/reports/bhutan-interface-race/cover.png',
+		readOnlinePath: '/reports/bhutan-interface-race',
+		pdfPath: {
+			en: '/reports/bhutan-interface-race-en.pdf'
+		},
+		readOnlineExternal: false
 	}
 ];
 

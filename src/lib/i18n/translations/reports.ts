@@ -109,6 +109,11 @@ export const reportsTranslations = {
        description:
            'South Korea is not failing. It observes well, acts fast and has shown that its democracy can correct even a president who turns on the constitution. Yet on one Thursday every November the country grounds its aircraft for an eight-hour examination, and too many futures depend on winning it. This report diagnoses the Tournament Trap — consequence coupling under effective scarcity — and proposes a transition architecture that lowers what winning buys, so that losing one tournament becomes survivable.'
    },
+   bhutanInterfaceRace: {
+       title: 'Bhutan: The Interface Race — Objective–Actuator Coupling Under Acceleration',
+       description:
+           'Bhutan has not abandoned Gross National Happiness, and its institutions are not out of control. It is accelerating its economic machinery for good reason — to create the opportunities that might persuade its educated young people to stay — while building the interfaces that connect that machinery to its constitutional objective. This report diagnoses the Interface Race and proposes an Actuator Interface Register as the concrete first step.'
+   },
    aiCoherenceVelocityTrap: {
 	   title: 'The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance',
 	   description:
@@ -253,6 +258,11 @@ export const reportsTranslations = {
        title: 'Sydkorea: Turneringfällan — konsekvenskoppling under effektiv knapphet',
        description:
            'Sydkorea misslyckas inte. Det observerar väl, agerar snabbt och har visat att dess demokrati kan korrigera även en president som vänder sig mot konstitutionen. Ändå stänger landet en torsdag varje november sin flygtrafik för ett åtta timmar långt prov, och alltför många framtider hänger på att vinna det. Rapporten diagnostiserar turneringfällan — konsekvenskoppling under effektiv knapphet — och föreslår en övergångsarkitektur som sänker vad vinsten köper, så att förlora en turnering blir överlevbart.'
+   },
+   bhutanInterfaceRace: {
+       title: 'Bhutan: Gränssnittsracet — mål–aktuatorkoppling under acceleration',
+       description:
+           'Bhutan har inte övergett bruttonationallycka, och dess institutioner är inte utom kontroll. Landet accelererar sin ekonomiska maskin av goda skäl — för att skapa de möjligheter som kan övertyga dess utbildade unga att stanna — samtidigt som det bygger de gränssnitt som kopplar maskineriet till det konstitutionella målet. Denna rapport diagnostiserar gränssnittsracet och föreslår ett aktuatörs-gränssnittsregister som det konkreta första steget.'
    },
    aiCoherenceVelocityTrap: {
 	   title: 'Koherens–hastighetsfällan: En cybernetisk analys av styrningen av frontier AI',

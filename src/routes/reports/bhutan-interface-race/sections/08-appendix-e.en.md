@@ -1,0 +1,24 @@
+## Appendix E: About the Author and Method
+
+### The Author
+
+This report was written from a position of comparative engagement with governance systems across many countries, but not from within Bhutan's institutional life. The author is not Bhutanese, does not live in Bhutan, and does not claim the authority of lived experience within its institutions, its culture or its history. The perspective offered here draws on a background in engineering physics and mathematical optimisation, and on sustained engagement with complexity science, developmental psychology, governance theory and control-theoretic approaches to institutional design. The limitation is real: much of the texture of Bhutanese public life, religious culture and policy-making is inaccessible from outside, and Bhutanese readers will see what this report misses.
+
+The author has also contributed to governance design through the Global Governance Frameworks, the Governance as Engineering whitepaper series and the Country Reports for Systemic Change. The report is offered in the spirit of collaborative sense-making, not definitive pronouncement. Feedback, criticism and dialogue are welcomed.
+
+### A Note on Method
+
+This report was developed through a structured, multi-model synthesis process in which several large language models analysed Bhutan's governance architecture from different angles, and their contributions were compared, challenged for contradictions and integrated by the author. The AI served as a research partner and a perspective engine; the editorial judgment and the intellectual responsibility are entirely human.
+
+The Bhutan report extended the evidentiary discipline introduced in the South Korea report. Research began not with a diagnosis but with a baseline map of how Gross National Happiness travels from constitution to measurement, screening, planning, budgeting and implementation. A falsification matrix then set competing hypotheses against each other, and three evidence passes revised them substantially. The hypothesis that the GNH Index directly triggered the recent economic turn was weakened when the 2022 survey proved not to identify living standards as the lagging domain. The hypothesis that Bhutan had recentred on economic growth was not established. A hypothesis of objective–actuator decoupling was refined, after comparison with Norway and Singapore, into a question of interface maturity; a systematic census of Bhutan's major institutions then partially falsified the stronger claim of an interface deficit, leaving the race described in this report. Targeted closures tested the rate claim against a dated timeline, established that national environmental law and audit reach the Gelephu Mindfulness City, and confirmed that the population-boundary question remains current. The surviving claims were recorded in a claim-and-evidence ledger with wording ceilings, and the report was held to it.
+
+Where the report says "evidence shows", it refers to external empirical findings; where it says "this report interprets" or uses the language of the framework, it refers to synthesis within Governance as Engineering. The report registers predictions that could weaken or overturn its diagnosis. Like any work of synthesis, it is provisional.
+
+### The Country Reports Series
+
+This report is the eighteenth in the series of Country Reports for Systemic Change. The earlier reports examined Germany through the lens of an execution deficit, France through an integration deficit, Sweden through a feedback deficit, India through a synchronisation deficit, the European Union through a coherence deficit, the United Kingdom through a control-delivery deficit, Brazil through an accumulation deficit, Russia through a power-vertical deficit, the United States through an integration deficit, Finland through a throughput constraint, China through a calibration deficit, Japan through a continuity trap, Nigeria through a substrate deficit, Israel through a boundary deficit, Spain through a transition trap, Switzerland through a boundary-expansion deficit, and South Korea through a tournament trap.
+
+Together, the reports span first-order deficits of execution and integration, second-order constraints of velocity and paradigm lock-in, the foundational challenge of substrate construction, the challenge of constitutional incompleteness, and the compression of a society's objectives onto a few rankings. Bhutan adds a further category: a system whose objective is rich and explicit, and whose challenge is keeping that objective in command of institutions that are growing faster, larger and more autonomous than the ones that built it. The keeper of the whole at the frontier of speed, Bhutan is the case that asks whether knowing what a country values is enough to make its institutions serve it.
+
+---
+

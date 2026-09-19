@@ -283,6 +283,12 @@
        emoji: '🇰🇷',
        url: '/reports/south-korea-tournament-trap',
        badge: 'NEW'
+      },
+      {
+          key: 'reportsBhutan',
+          emoji: '🇧🇹',
+          url: '/reports/bhutan-interface-race',
+          badge: 'NEW'
       }
 
   ];
