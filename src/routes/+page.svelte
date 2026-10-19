@@ -564,6 +564,13 @@
 		</div>
 	</section>
 
+ <aside class="bg-[var(--color-page-bg)] py-8">
+	 <div class="mx-auto max-w-3xl rounded-lg border-l-4 border-amber-500 bg-[var(--color-card-bg)] px-6 py-5 text-[var(--color-card-text)] shadow">
+		 <h2 class="mb-2 text-lg font-semibold">{$t.aiNotice.title}</h2>
+		 <p class="text-sm leading-relaxed opacity-90">{$t.aiNotice.body}</p>
+	 </div>
+ </aside>
+
  <!-- Reader's Guide Banner -->
  <section class="bg-[var(--color-page-bg)] border-b border-[var(--color-separator)]">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">

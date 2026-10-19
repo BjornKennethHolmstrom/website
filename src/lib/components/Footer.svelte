@@ -19,6 +19,8 @@
 			</a>
 			</div>
 
+  <p class="mt-4 font-medium">{$t.aiFooterNote}</p>
+
 		<p class="mt-4">{$t.ethos}</p>
 		<p>{$t.copyright}</p>
 	</div>
