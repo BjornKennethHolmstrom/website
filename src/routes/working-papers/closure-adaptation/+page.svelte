@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -71,7 +72,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXVIII',
+      tag: 'AI-generated working paper · Series XXVIII',
       seriesNote: 'This is the twenty‑eighth paper in the Governance as Engineering series. It introduces a minimal dynamical model of institutional closure and adaptation under uncertainty.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -115,7 +116,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXVIII',
+      tag: 'AI-genererat arbetsdokument · Serie XXVIII',
       seriesNote: 'Detta är den tjugoåttonde rapporten i serien Styrning som ingenjörskonst. Den introducerar en minimal dynamisk modell av institutionell slutenhet och anpassning under osäkerhet.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -233,8 +234,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Slutenhet–anpassningsdynamik: En minimal modell av institutionell stelning under osäkerhet. Styrning som ingenjörskonst, Rapport XXVIII.`
-      : `Holmström, B. K. (2026). Closure–Adaptation Dynamics: A Minimal Model of Institutional Rigidification Under Uncertainty. Governance as Engineering, Paper XXVIII.`;
+      ? `Holmström, B. K. (2026). Slutenhet–anpassningsdynamik: En minimal modell av institutionell stelning under osäkerhet. Styrning som ingenjörskonst, Rapport XXVIII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Closure–Adaptation Dynamics: A Minimal Model of Institutional Rigidification Under Uncertainty. Governance as Engineering, Paper XXVIII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -346,6 +347,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

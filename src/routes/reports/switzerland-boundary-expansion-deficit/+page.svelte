@@ -341,10 +341,10 @@
   };
 
   const citations = {
-    en: 'Holmström, B. K. (2026). Switzerland: The Boundary Expansion Deficit — When Internal Excellence Meets Global Interdependence. Strategic Country Report.',
-    de: 'Holmström, B. K. (2026). Schweiz: Das Grenzerweiterungsdefizit — Wenn interne Exzellenz auf globale Interdependenz trifft. Strategischer Länderbericht.',
-    fr: 'Holmström, B. K. (2026). Suisse : Le déficit d\'expansion des frontières — Quand l\'excellence interne rencontre l\'interdépendance mondiale. Rapport stratégique national.',
-    it: 'Holmström, B. K. (2026). Svizzera: Il deficit di espansione del confine — Quando l\'eccellenza interna incontra l\'interdipendenza globale. Rapporto strategico nazionale.',
+    en: 'Holmström, B. K. (2026). Switzerland: The Boundary Expansion Deficit — When Internal Excellence Meets Global Interdependence. Strategic Country Report. AI-generated; not peer-reviewed.',
+    de: 'Holmström, B. K. (2026). Schweiz: Das Grenzerweiterungsdefizit — Wenn interne Exzellenz auf globale Interdependenz trifft. Strategischer Länderbericht. KI-generiert; nicht begutachtet.',
+    fr: 'Holmström, B. K. (2026). Suisse : Le déficit d\'expansion des frontières — Quand l\'excellence interne rencontre l\'interdépendance mondiale. Rapport stratégique national. Généré par IA ; non évalué par les pairs.',
+    it: 'Holmström, B. K. (2026). Svizzera: Il deficit di espansione del confine — Quando l\'eccellenza interna incontra l\'interdipendenza globale. Rapporto strategico nazionale. Generato dall\'IA; non sottoposto a revisione paritaria.',
   };
 
   let t = $derived(ui[reportLang] ?? ui.en);
@@ -490,10 +490,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -165,7 +166,7 @@
 
   const ui = {
     en: {
-      tag: 'Working Paper · Series VI',
+      tag: 'AI-generated working paper · Series VI',
       seriesNote: 'This is the sixth paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
@@ -208,7 +209,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie VI',
+      tag: 'AI-genererat arbetsdokument · Serie VI',
       seriesNote: 'Detta är den sjätte rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -289,8 +290,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se. Serien Styrning som ingenjörskonst, rapport VI.`
-      : `Holmström, B. K. (2026). The Variety Gap: What We Don’t Optimize For, We Lose the Ability to See. Governance as Engineering Series, Paper VI.`;
+      ? `Holmström, B. K. (2026). Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se. Serien Styrning som ingenjörskonst, rapport VI. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Variety Gap: What We Don’t Optimize For, We Lose the Ability to See. Governance as Engineering Series, Paper VI. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -404,6 +405,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -86,7 +87,7 @@
 
   const ui = {
     en: {
-      tag: 'Working Paper · Series XI',
+      tag: 'AI-generated working paper · Series XI',
       seriesNote: 'This is the eleventh paper in the Governance as Engineering series. It closes the first theoretical cycle.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
@@ -132,7 +133,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XI',
+      tag: 'AI-genererat arbetsdokument · Serie XI',
       seriesNote: 'Detta är den elfte rapporten i serien Styrning som ingenjörskonst. Den avslutar den första teoretiska cykeln.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -224,8 +225,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Reformutmattning: Delegationsdjup och styrningens styrbarhet. Styrning som ingenjörskonst, Rapport XI.`
-      : `Holmström, B. K. (2026). Reform Exhaustion: Delegation Depth and the Controllability of Governance. Governance as Engineering, Paper XI.`;
+      ? `Holmström, B. K. (2026). Reformutmattning: Delegationsdjup och styrningens styrbarhet. Styrning som ingenjörskonst, Rapport XI. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Reform Exhaustion: Delegation Depth and the Controllability of Governance. Governance as Engineering, Paper XI. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -341,6 +342,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

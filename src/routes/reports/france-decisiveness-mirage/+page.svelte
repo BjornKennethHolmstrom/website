@@ -256,8 +256,8 @@
     <button
       onclick={() => {
         const cite = reportLang === 'fr'
-          ? 'Holmström, B. K. (2026). Le mirage de la décision : Pourquoi la France gouverne par décret mais ne parvient pas à faire tenir ses décisions. Rapport stratégique pays.'
-          : 'Holmström, B. K. (2026). The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). Le mirage de la décision : Pourquoi la France gouverne par décret mais ne parvient pas à faire tenir ses décisions. Rapport stratégique pays. AI-generated; not peer-reviewed.'
+          : 'Holmström, B. K. (2026). The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'fr' ? 'Citation copiée !' : 'Citation copied!');
       }}
@@ -318,8 +318,8 @@
       <button
         onclick={() => {
           const cite = reportLang === 'fr'
-            ? 'Holmström, B. K. (2026). Le mirage de la décision : Pourquoi la France gouverne par décret mais ne parvient pas à faire tenir ses décisions. Rapport stratégique pays.'
-            : 'Holmström, B. K. (2026). The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). Le mirage de la décision : Pourquoi la France gouverne par décret mais ne parvient pas à faire tenir ses décisions. Rapport stratégique pays. AI-generated; not peer-reviewed.'
+            : 'Holmström, B. K. (2026). The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'fr' ? 'Citation copiée !' : 'Citation copied!');
         }}
@@ -356,10 +356,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

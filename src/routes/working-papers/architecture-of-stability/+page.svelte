@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -207,7 +208,7 @@
 
   // Citation function
   function copyCitation() {
-    const citation = `Holmström, B. K. (2026). The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance. Working paper.`;
+    const citation = `Holmström, B. K. (2026). The Architecture of Stability: A Systems-Theoretic Framework for Power and Governance. Working paper. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert('Citation copied to clipboard!');
     });
@@ -286,6 +287,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

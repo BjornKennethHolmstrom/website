@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -68,7 +69,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XVII',
+      tag: 'AI-generated working paper · Series XVII',
       seriesNote: 'This is the seventeenth paper in the Governance as Engineering series. It answers a question left open by Paper XVI.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
@@ -111,7 +112,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XVII',
+      tag: 'AI-genererat arbetsdokument · Serie XVII',
       seriesNote: 'Detta är den sjuttonde rapporten i serien Styrning som ingenjörskonst. Den besvarar en fråga som lämnades öppen av Rapport XVI.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
@@ -227,8 +228,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Certifieringsgolvet: Varför världskopplad koordination behåller en irreducibel länk, och självreferentiell koordination inte gör det. Styrning som ingenjörskonst, Rapport XVII.`
-      : `Holmström, B. K. (2026). The Certification Floor: Why world‑coupled coordination retains an irreducible link, and self‑referential coordination does not. Governance as Engineering, Paper XVII.`;
+      ? `Holmström, B. K. (2026). Certifieringsgolvet: Varför världskopplad koordination behåller en irreducibel länk, och självreferentiell koordination inte gör det. Styrning som ingenjörskonst, Rapport XVII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Certification Floor: Why world‑coupled coordination retains an irreducible link, and self‑referential coordination does not. Governance as Engineering, Paper XVII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -342,6 +343,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

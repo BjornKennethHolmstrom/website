@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -76,7 +77,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXII',
+      tag: 'AI-generated working paper · Series XXII',
       seriesNote: 'This is the twenty‑second paper in the Governance as Engineering series. It examines three demands for assurance and shows each fails for its own reason.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -120,7 +121,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXII',
+      tag: 'AI-genererat arbetsdokument · Serie XXII',
       seriesNote: 'Detta är den tjugoandra rapporten i serien Styrning som ingenjörskonst. Den undersöker tre krav på garanti och visar att vart och ett misslyckas av sitt eget skäl.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -238,8 +239,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Vad som inte kan garanteras: Certifieringsoförmåga, reformavgörbarhet och frånvaron av en universell arkitektur. Styrning som ingenjörskonst, Rapport XXII.`
-      : `Holmström, B. K. (2026). What Cannot Be Guaranteed: Certification incompleteness, reform undecidability, and the absence of a universal architecture. Governance as Engineering, Paper XXII.`;
+      ? `Holmström, B. K. (2026). Vad som inte kan garanteras: Certifieringsoförmåga, reformavgörbarhet och frånvaron av en universell arkitektur. Styrning som ingenjörskonst, Rapport XXII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). What Cannot Be Guaranteed: Certification incompleteness, reform undecidability, and the absence of a universal architecture. Governance as Engineering, Paper XXII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -351,6 +352,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

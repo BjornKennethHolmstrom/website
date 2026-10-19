@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -68,7 +69,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series 0',
+      tag: 'AI-generated working paper · Series 0',
       seriesNote: 'Foundations paper of the Governance as Engineering series. Sits beneath Cycle One and provides the floor every later paper builds on.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -113,7 +114,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie 0',
+      tag: 'AI-genererat arbetsdokument · Serie 0',
       seriesNote: 'Grundartikel i serien Styrning som ingenjörskonst. Ligger under Cykel Ett och tillhandahåller golvet som varje senare artikel bygger på.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -232,8 +233,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Under faktoriseringen: Begränsad prediktion och observationskanalens ursprung. Styrning som ingenjörskonst, Artikel 0.`
-      : `Holmström, B. K. (2026). Below the Factorization: Bounded prediction and the origin of the observation channel. Governance as Engineering, Paper 0.`;
+      ? `Holmström, B. K. (2026). Under faktoriseringen: Begränsad prediktion och observationskanalens ursprung. Styrning som ingenjörskonst, Artikel 0. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Below the Factorization: Bounded prediction and the origin of the observation channel. Governance as Engineering, Paper 0. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -345,6 +346,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -68,7 +69,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXV',
+      tag: 'AI-generated working paper · Series XXV',
       seriesNote: 'This is the twenty‑fifth paper in the Governance as Engineering series. It separates the geometry of Bode conservation from the geometry of strategic loss.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -112,7 +113,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXV',
+      tag: 'AI-genererat arbetsdokument · Serie XXV',
       seriesNote: 'Detta är den tjugofemte rapporten i serien Styrning som ingenjörskonst. Den separerar geometrin för Bodes konservering från geometrin för strategisk förlust.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -230,8 +231,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Där reform trycker ner, trycker strategi tillbaka: Konserverad känslighet, ett importerat riskmått och geometrin däremellan. Styrning som ingenjörskonst, Rapport XXV.`
-      : `Holmström, B. K. (2026). Where Reform Pushes Down, Strategy Pushes Back: Conserved sensitivity, an imported risk measure, and the geometry between them. Governance as Engineering, Paper XXV.`;
+      ? `Holmström, B. K. (2026). Där reform trycker ner, trycker strategi tillbaka: Konserverad känslighet, ett importerat riskmått och geometrin däremellan. Styrning som ingenjörskonst, Rapport XXV. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Where Reform Pushes Down, Strategy Pushes Back: Conserved sensitivity, an imported risk measure, and the geometry between them. Governance as Engineering, Paper XXV. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -343,6 +344,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

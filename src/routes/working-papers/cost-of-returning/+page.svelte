@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -76,7 +77,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXVI',
+      tag: 'AI-generated working paper · Series XXVI',
       seriesNote: 'This is the twenty‑sixth paper in the Governance as Engineering series. It replaces Paper X\'s scalar reversion constant with an explicit escape mechanism.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -120,7 +121,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXVI',
+      tag: 'AI-genererat arbetsdokument · Serie XXVI',
       seriesNote: 'Detta är den tjugosjätte rapporten i serien Styrning som ingenjörskonst. Den ersätter artikel X:s skalära återgångskonstant med en explicit flyktmekanism.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -238,8 +239,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Kostnaden för att återvända: Svans‑nukleerad flykt från epistemisk monokultur. Styrning som ingenjörskonst, Rapport XXVI.`
-      : `Holmström, B. K. (2026). The Cost of Returning: Tail‑nucleated escape from epistemic monoculture. Governance as Engineering, Paper XXVI.`;
+      ? `Holmström, B. K. (2026). Kostnaden för att återvända: Svans‑nukleerad flykt från epistemisk monokultur. Styrning som ingenjörskonst, Rapport XXVI. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Cost of Returning: Tail‑nucleated escape from epistemic monoculture. Governance as Engineering, Paper XXVI. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -351,6 +352,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

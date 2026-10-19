@@ -153,7 +153,7 @@
   };
 
   const citeText =
-    'Holmström, B. K. (2026). Bhutan: The Interface Race — Objective–Actuator Coupling Under Acceleration. Strategic Country Report.';
+    'Holmström, B. K. (2026). Bhutan: The Interface Race — Objective–Actuator Coupling Under Acceleration. Strategic Country Report. AI-generated; not peer-reviewed.';
 
   // ------------------------------------------
   // 5. Reactive logic
@@ -368,13 +368,13 @@
       >
         {meta.title}
       </h1>
-      <Provenance />
       <p
         class="text-xl md:text-2xl opacity-70 font-light leading-relaxed"
         style="color: var(--color-page-text);"
       >
         {meta.subtitle}
       </p>
+      <Provenance lang="en" align="start" />
     </header>
 
     <!-- Content Sections -->

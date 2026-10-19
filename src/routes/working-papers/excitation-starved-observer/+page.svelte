@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -89,7 +90,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXIV',
+      tag: 'AI-generated working paper · Series XXIV',
       seriesNote: 'This is the twenty‑fourth paper in the Governance as Engineering series. It isolates a self‑reinforcing loop between an observer and the excitation that trains it.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -133,7 +134,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXIV',
+      tag: 'AI-genererat arbetsdokument · Serie XXIV',
       seriesNote: 'Detta är den tjugofjärde rapporten i serien Styrning som ingenjörskonst. Den isolerar en självförstärkande loop mellan en observatör och den excitering som tränar den.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -251,8 +252,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Observatören du inte har råd att excitera: Upplösningsbias, excitering och nåbara alternativ i ett minimalt adaptivt system. Styrning som ingenjörskonst, Rapport XXIV.`
-      : `Holmström, B. K. (2026). The Observer You Cannot Afford to Excite: Resolution bias, excitation, and reachable alternatives in a minimal adaptive system. Governance as Engineering, Paper XXIV.`;
+      ? `Holmström, B. K. (2026). Observatören du inte har råd att excitera: Upplösningsbias, excitering och nåbara alternativ i ett minimalt adaptivt system. Styrning som ingenjörskonst, Rapport XXIV. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Observer You Cannot Afford to Excite: Resolution bias, excitation, and reachable alternatives in a minimal adaptive system. Governance as Engineering, Paper XXIV. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -364,6 +365,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

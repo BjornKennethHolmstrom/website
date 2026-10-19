@@ -282,7 +282,7 @@
       onclick={() => {
         const cite = reportLang === 'he'
           ? 'הולמסטרום, ב. ק. (2026). גירעון הגבולות: מדוע ארכיטקטורת ההישרדות של ישראל אינה יכולה לייצר הסדר מדיני. דו"ח אסטרטגי על מדינה.'
-          : 'Holmström, B. K. (2026). The Boundary Deficit: Why Israel\'s Survival Architecture Cannot Generate Political Settlement. Strategic Country Report.';
+          : 'Holmström, B. K. (2026). The Boundary Deficit: Why Israel\'s Survival Architecture Cannot Generate Political Settlement. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'he' ? 'הציטוט הועתק!' : 'Citation copied!');
       }}
@@ -344,7 +344,7 @@
         onclick={() => {
           const cite = reportLang === 'he'
             ? 'הולמסטרום, ב. ק. (2026). גירעון הגבולות: מדוע ארכיטקטורת ההישרדות של ישראל אינה יכולה לייצר הסדר מדיני. דו"ח אסטרטגי על מדינה.'
-            : 'Holmström, B. K. (2026). The Boundary Deficit: Why Israel\'s Survival Architecture Cannot Generate Political Settlement. Strategic Country Report.';
+            : 'Holmström, B. K. (2026). The Boundary Deficit: Why Israel\'s Survival Architecture Cannot Generate Political Settlement. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'he' ? 'הציטוט הועתק!' : 'Citation copied!');
         }}
@@ -381,10 +381,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

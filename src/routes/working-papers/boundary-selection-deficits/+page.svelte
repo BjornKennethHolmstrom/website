@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -84,7 +85,7 @@
   // --- 4. TRANSLATIONS ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XII',
+      tag: 'AI-generated working paper · Series XII',
       seriesNote: 'This is the twelfth paper in the Governance as Engineering series. It opens Cycle Two.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
@@ -130,7 +131,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XII',
+      tag: 'AI-genererat arbetsdokument · Serie XII',
       seriesNote: 'Detta är den tolfte rapporten i serien Styrning som ingenjörskonst. Den inleder Cykel Två.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -217,8 +218,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Gränsdragningsunderskott: Hur fel systemgräns besegrar perfekt intern styrning. Styrning som ingenjörskonst, Rapport XII.`
-      : `Holmström, B. K. (2026). Boundary Selection Deficits: How the Wrong System Boundary Defeats Perfect Internal Governance. Governance as Engineering, Paper XII.`;
+      ? `Holmström, B. K. (2026). Gränsdragningsunderskott: Hur fel systemgräns besegrar perfekt intern styrning. Styrning som ingenjörskonst, Rapport XII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Boundary Selection Deficits: How the Wrong System Boundary Defeats Perfect Internal Governance. Governance as Engineering, Paper XII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -332,6 +333,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

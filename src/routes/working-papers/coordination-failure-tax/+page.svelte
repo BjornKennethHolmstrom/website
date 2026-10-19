@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -84,7 +85,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie V',
+      tag: 'AI-genererat arbetsdokument · Serie V',
       seriesNote: 'Detta är den femte rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -164,8 +165,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Samordningsmisslyckandets skatt: Arkitektonisk förstärkning och vägen mot nödvändig styrning. Serien Styrning som ingenjörskonst, rapport V.`
-      : `Holmström, B. K. (2026). The Coordination Failure Tax: Architectural Compounding and the Path to Requisite Governance. Governance as Engineering Series, Paper V.`;
+      ? `Holmström, B. K. (2026). Samordningsmisslyckandets skatt: Arkitektonisk förstärkning och vägen mot nödvändig styrning. Serien Styrning som ingenjörskonst, rapport V. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Coordination Failure Tax: Architectural Compounding and the Path to Requisite Governance. Governance as Engineering Series, Paper V. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -271,6 +272,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -88,7 +89,7 @@
   // --- 4. UI TRANSLATIONS & METADATA (unchanged) ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series VIII',
+      tag: 'AI-generated working paper · Series VIII',
       seriesNote: 'This is the eighth paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
@@ -130,7 +131,7 @@
       share: 'Share this paper',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie VIII',
+      tag: 'AI-genererat arbetsdokument · Serie VIII',
       seriesNote: 'Detta är den åttonde rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -248,8 +249,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden. Serien Styrning som ingenjörskonst, rapport VIII.`
-      : `Holmström, B. K. (2026). Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure. Governance as Engineering Series, Paper VIII.`;
+      ? `Holmström, B. K. (2026). Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden. Serien Styrning som ingenjörskonst, rapport VIII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure. Governance as Engineering Series, Paper VIII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -354,6 +355,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

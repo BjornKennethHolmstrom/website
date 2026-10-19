@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -61,7 +62,7 @@
   // --- 4. UI TRANSLATIONS & METADATA (unchanged except removing old components) ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series X',
+      tag: 'AI-generated working paper · Series X',
       seriesNote: 'This is the tenth paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
@@ -107,7 +108,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie X',
+      tag: 'AI-genererat arbetsdokument · Serie X',
       seriesNote: 'Detta är den tionde rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -231,8 +232,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Nödvändig observatörsmångfald: Varför civilisationer behöver flera, oberoende epistemiska system. Styrning som ingenjörskonst, Rapport X.`
-      : `Holmström, B. K. (2026). Requisite Observer Diversity: Why Civilizations Need Multiple, Independently‑Constituted Epistemic Systems. Governance as Engineering, Paper X.`;
+      ? `Holmström, B. K. (2026). Nödvändig observatörsmångfald: Varför civilisationer behöver flera, oberoende epistemiska system. Styrning som ingenjörskonst, Rapport X. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Requisite Observer Diversity: Why Civilizations Need Multiple, Independently‑Constituted Epistemic Systems. Governance as Engineering, Paper X. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -347,6 +348,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

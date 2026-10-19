@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -61,7 +62,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XV',
+      tag: 'AI-generated working paper · Series XV',
       seriesNote: 'This is the fifteenth paper in the Governance as Engineering series. It closes the loop on Cycle Two.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
@@ -104,7 +105,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XV',
+      tag: 'AI-genererat arbetsdokument · Serie XV',
       seriesNote: 'Detta är den femtonde rapporten i serien Styrning som ingenjörskonst. Den stänger loopen för Cykel Två.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
@@ -225,8 +226,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Adaptationsflaskhalsen: Genomströmningsbegränsningar i Sense–Learn–Execute-loopen. Styrning som ingenjörskonst, Rapport XV.`
-      : `Holmström, B. K. (2026). The Adaptation Bottleneck: Throughput Constraints on the Sense–Learn–Execute Loop. Governance as Engineering, Paper XV.`;
+      ? `Holmström, B. K. (2026). Adaptationsflaskhalsen: Genomströmningsbegränsningar i Sense–Learn–Execute-loopen. Styrning som ingenjörskonst, Rapport XV. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Adaptation Bottleneck: Throughput Constraints on the Sense–Learn–Execute Loop. Governance as Engineering, Paper XV. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -340,6 +341,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

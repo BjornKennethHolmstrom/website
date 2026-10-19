@@ -160,7 +160,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind. Organizational Report.';
+        const cite = 'Holmström, B. K. (2026). The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind. Organizational Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -199,7 +199,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind. Organizational Report.';
+          const cite = 'Holmström, B. K. (2026). The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind. Organizational Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
@@ -236,10 +236,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {metadata.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {metadata.subtitle}
       </p>
+      <Provenance lang="en" align="start" />
     </header>
 
     <!-- Content Sections -->

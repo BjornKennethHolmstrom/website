@@ -264,8 +264,8 @@
     <button
       onclick={() => {
         const cite = reportLang === 'zh'
-          ? 'Holmström, B. K. (2026). 校准赤字：为什么中国非凡的治理能力无法纠正自身航向. 战略国家报告.'
-          : "Holmström, B. K. (2026). The Calibration Deficit: Why China's Extraordinary Capacity Cannot Correct Its Own Course. Strategic Country Report.";
+          ? 'Holmström, B. K. (2026). 校准赤字：为什么中国非凡的治理能力无法纠正自身航向. 战略国家报告. AI 生成；未经同行评审。'
+          : "Holmström, B. K. (2026). The Calibration Deficit: Why China's Extraordinary Capacity Cannot Correct Its Own Course. Strategic Country Report. AI-generated; not peer-reviewed.";
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'zh' ? '引用已复制！' : 'Citation copied!');
       }}
@@ -361,8 +361,8 @@
       <button
         onclick={() => {
           const cite = reportLang === 'zh'
-            ? 'Holmström, B. K. (2026). 校准赤字：为什么中国非凡的治理能力无法纠正自身航向. 战略国家报告.'
-            : "Holmström, B. K. (2026). The Calibration Deficit: Why China's Extraordinary Capacity Cannot Correct Its Own Course. Strategic Country Report.";
+            ? 'Holmström, B. K. (2026). 校准赤字：为什么中国非凡的治理能力无法纠正自身航向. 战略国家报告. AI 生成；未经同行评审。'
+            : "Holmström, B. K. (2026). The Calibration Deficit: Why China's Extraordinary Capacity Cannot Correct Its Own Course. Strategic Country Report. AI-generated; not peer-reviewed.";
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'zh' ? '引用已复制！' : 'Citation copied!');
         }}
@@ -407,7 +407,6 @@
       >
         {meta.title}
       </h1>
-      <Provenance />
 
       <p
         class="text-xl md:text-2xl opacity-70 font-light leading-relaxed"
@@ -415,6 +414,7 @@
       >
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

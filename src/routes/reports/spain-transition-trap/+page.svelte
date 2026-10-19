@@ -345,10 +345,10 @@
     <button
       onclick={() => {
         const cite = reportLang === 'es'
-          ? 'Holmström, B. K. (2026). La Trampa de la Transición: Por Qué el Dominio Español de la Transición Democrática Impide la Finalización Constitucional. Informe Estratégico de País.'
+          ? 'Holmström, B. K. (2026). La Trampa de la Transición: Por Qué el Dominio Español de la Transición Democrática Impide la Finalización Constitucional. Informe Estratégico de País. AI-generated; not peer-reviewed.'
           : reportLang === 'eu'
-          ? 'Holmström, B. K. (2026). Trantsizioaren Tranpa: Zergatik Espainiak Trantsizio Demokratikoan duen Trebetasunak Konstituzioa Amaitzea eragozten duen. Herrialde Txosten Estrategikoa.'
-          : 'Holmström, B. K. (2026). The Transition Trap: Why Spain\'s Mastery of Democratic Transition Prevents Constitutional Completion. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). Trantsizioaren Tranpa: Zergatik Espainiak Trantsizio Demokratikoan duen Trebetasunak Konstituzioa Amaitzea eragozten duen. Herrialde Txosten Estrategikoa. AI-generated; not peer-reviewed.'
+          : 'Holmström, B. K. (2026). The Transition Trap: Why Spain\'s Mastery of Democratic Transition Prevents Constitutional Completion. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'es' ? '¡Cita copiada!' : reportLang === 'eu' ? 'Aipua kopiatu da!' : 'Citation copied!');
       }}
@@ -419,10 +419,10 @@
       <button
         onclick={() => {
           const cite = reportLang === 'es'
-            ? 'Holmström, B. K. (2026). La Trampa de la Transición: Por Qué el Dominio Español de la Transición Democrática Impide la Finalización Constitucional. Informe Estratégico de País.'
+            ? 'Holmström, B. K. (2026). La Trampa de la Transición: Por Qué el Dominio Español de la Transición Democrática Impide la Finalización Constitucional. Informe Estratégico de País. AI-generated; not peer-reviewed.'
             : reportLang === 'eu'
-            ? 'Holmström, B. K. (2026). Trantsizioaren Tranpa: Zergatik Espainiak Trantsizio Demokratikoan duen Trebetasunak Konstituzioa Amaitzea eragozten duen. Herrialde Txosten Estrategikoa.'
-            : 'Holmström, B. K. (2026). The Transition Trap: Why Spain\'s Mastery of Democratic Transition Prevents Constitutional Completion. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). Trantsizioaren Tranpa: Zergatik Espainiak Trantsizio Demokratikoan duen Trebetasunak Konstituzioa Amaitzea eragozten duen. Herrialde Txosten Estrategikoa. AI-generated; not peer-reviewed.'
+            : 'Holmström, B. K. (2026). The Transition Trap: Why Spain\'s Mastery of Democratic Transition Prevents Constitutional Completion. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'es' ? '¡Cita copiada!' : reportLang === 'eu' ? 'Aipua kopiatu da!' : 'Citation copied!');
         }}
@@ -459,10 +459,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

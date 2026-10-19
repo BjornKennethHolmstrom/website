@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -71,7 +72,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXIII',
+      tag: 'AI-generated working paper · Series XXIII',
       seriesNote: 'This is the twenty‑third paper in the Governance as Engineering series. The sibling paper promised by Paper XIX.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -115,7 +116,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXIII',
+      tag: 'AI-genererat arbetsdokument · Serie XXIII',
       seriesNote: 'Detta är den tjugotredje rapporten i serien Styrning som ingenjörskonst. Systerartikeln utlovad av Rapport XIX.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -233,8 +234,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Reformens form: Beteendemässigt avstånd är en metrik; reformkostnad är riktad. Styrning som ingenjörskonst, Rapport XXIII.`
-      : `Holmström, B. K. (2026). The Shape of Reform: Behavioral distance is a metric; reform cost is directed. Governance as Engineering, Paper XXIII.`;
+      ? `Holmström, B. K. (2026). Reformens form: Beteendemässigt avstånd är en metrik; reformkostnad är riktad. Styrning som ingenjörskonst, Rapport XXIII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Shape of Reform: Behavioral distance is a metric; reform cost is directed. Governance as Engineering, Paper XXIII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -346,6 +347,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

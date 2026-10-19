@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Provenance from '$lib/components/Provenance.svelte';
     let { data } = $props(); // ← Now data contains content and metadata from SERVER
     
     import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -25,6 +26,7 @@
         style="--tw-prose-body: var(--color-page-text); --tw-prose-headings: var(--color-page-text); --tw-prose-links: var(--color-page-accent); --tw-prose-bold: var(--color-page-text); --tw-prose-captions: var(--color-page-text); --tw-prose-code: var(--color-page-text); --tw-prose-pre-code: var(--color-page-text); --tw-prose-pre-bg: var(--color-card-bg); --tw-prose-th-borders: var(--color-separator); --tw-prose-td-borders: var(--color-separator);"
     >
         <h1>{data.metadata.title}</h1>
+        <Provenance />
         <p class="text-lg opacity-70">
             Published: {new Date(data.metadata.date).toLocaleDateString('en-US', { dateStyle: 'long' })}
         </p>

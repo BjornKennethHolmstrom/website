@@ -220,8 +220,8 @@
   };
 
   const citations = {
-    en: 'Holmström, B. K. (2026). South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity. Strategic Country Report.',
-    ko: 'Holmström, B. K. (2026). 한국: 토너먼트 함정 — 유효 희소성 아래의 결과 연동. 전략적 국가 보고서.',
+    en: 'Holmström, B. K. (2026). South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity. Strategic Country Report. AI-generated; not peer-reviewed.',
+    ko: 'Holmström, B. K. (2026). 한국: 토너먼트 함정 — 유효 희소성 아래의 결과 연동. 전략적 국가 보고서. AI 생성, 동료 검토를 거치지 않음.',
   };
 
   // ------------------------------------------
@@ -494,13 +494,13 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p
         class="text-xl md:text-2xl opacity-70 font-light leading-relaxed"
         style="color: var(--color-page-text);"
       >
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

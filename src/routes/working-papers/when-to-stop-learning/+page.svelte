@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -73,7 +74,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXI',
+      tag: 'AI-generated working paper · Series XXI',
       seriesNote: 'This is the twenty‑first paper in the Governance as Engineering series. It traces the lifecycle of a bounded controller.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -117,7 +118,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXI',
+      tag: 'AI-genererat arbetsdokument · Serie XXI',
       seriesNote: 'Detta är den tjugoförsta rapporten i serien Styrning som ingenjörskonst. Den spårar livscykeln hos en begränsad regulator.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -235,8 +236,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). När man ska sluta lära sig, och när man ska sluta: Lärande, anpassning och livscykeln hos en begränsad regulator. Styrning som ingenjörskonst, Rapport XXI.`
-      : `Holmström, B. K. (2026). When to Stop Learning, and When to Stop: Learning, adaptation, and the lifecycle of a bounded controller. Governance as Engineering, Paper XXI.`;
+      ? `Holmström, B. K. (2026). När man ska sluta lära sig, och när man ska sluta: Lärande, anpassning och livscykeln hos en begränsad regulator. Styrning som ingenjörskonst, Rapport XXI. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). When to Stop Learning, and When to Stop: Learning, adaptation, and the lifecycle of a bounded controller. Governance as Engineering, Paper XXI. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -348,6 +349,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

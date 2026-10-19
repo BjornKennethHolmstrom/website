@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -73,7 +74,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XVIII',
+      tag: 'AI-generated working paper · Series XVIII',
       seriesNote: 'This is the eighteenth paper in the Governance as Engineering series. It returns the results of Papers XVI and XVII to an engineering register.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
@@ -116,7 +117,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XVIII',
+      tag: 'AI-genererat arbetsdokument · Serie XVIII',
       seriesNote: 'Detta är den artonde rapporten i serien Styrning som ingenjörskonst. Den för tillbaka resultaten från Rapport XVI och XVII till ett ingenjörsregister.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
@@ -232,8 +233,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Principen om gränsinstabilitet: Reflexiv styrning och den endogena driften av nedbrytbarhet. Styrning som ingenjörskonst, Rapport XVIII.`
-      : `Holmström, B. K. (2026). The Boundary Instability Principle: Reflexive governance and the endogenous drift of decomposability. Governance as Engineering, Paper XVIII.`;
+      ? `Holmström, B. K. (2026). Principen om gränsinstabilitet: Reflexiv styrning och den endogena driften av nedbrytbarhet. Styrning som ingenjörskonst, Rapport XVIII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). The Boundary Instability Principle: Reflexive governance and the endogenous drift of decomposability. Governance as Engineering, Paper XVIII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -347,6 +348,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

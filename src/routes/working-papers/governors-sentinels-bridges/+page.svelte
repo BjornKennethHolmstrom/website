@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -73,7 +74,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XIX',
+      tag: 'AI-generated working paper · Series XIX',
       seriesNote: 'This is the nineteenth paper in the Governance as Engineering series. It asks what winner‑take‑all selection leaves on the table.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -117,7 +118,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XIX',
+      tag: 'AI-genererat arbetsdokument · Serie XIX',
       seriesNote: 'Detta är den nittonde rapporten i serien Styrning som ingenjörskonst. Den frågar vad vinnaren‑tar‑allt‑urval lämnar på bordet.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -235,8 +236,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Guvernörer, vaktposter och broar: Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar. Styrning som ingenjörskonst, Rapport XIX.`
-      : `Holmström, B. K. (2026). Governors, Sentinels, and Bridges: The institutional value that winner‑take‑all selection does not reward. Governance as Engineering, Paper XIX.`;
+      ? `Holmström, B. K. (2026). Guvernörer, vaktposter och broar: Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar. Styrning som ingenjörskonst, Rapport XIX. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Governors, Sentinels, and Bridges: The institutional value that winner‑take‑all selection does not reward. Governance as Engineering, Paper XIX. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -348,6 +349,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

@@ -209,7 +209,7 @@
       onclick={() => {
         const cite = reportLang === 'ru'
           ? 'Хольмстрём, Б. К. (2026). Дефицит читаемости: Когда архитектура управления уничтожает возможность управлять. Граничный случай стратегических страновых докладов.'
-          : 'Holmström, B. K. (2026). The Legibility Deficit: When Governance Architecture Eliminates the Possibility of Governance. Boundary Case, Strategic Country Reports.';
+          : 'Holmström, B. K. (2026). The Legibility Deficit: When Governance Architecture Eliminates the Possibility of Governance. Boundary Case, Strategic Country Reports. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'ru' ? 'Цитата скопирована!' : 'Citation copied!');
       }}
@@ -271,7 +271,7 @@
         onclick={() => {
           const cite = reportLang === 'ru'
             ? 'Хольмстрём, Б. К. (2026). Дефицит читаемости: Когда архитектура управления уничтожает возможность управлять. Граничный случай стратегических страновых докладов.'
-            : 'Holmström, B. K. (2026). The Legibility Deficit: When Governance Architecture Eliminates the Possibility of Governance. Boundary Case, Strategic Country Reports.';
+            : 'Holmström, B. K. (2026). The Legibility Deficit: When Governance Architecture Eliminates the Possibility of Governance. Boundary Case, Strategic Country Reports. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'ru' ? 'Цитата скопирована!' : 'Citation copied!');
         }}
@@ -308,10 +308,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

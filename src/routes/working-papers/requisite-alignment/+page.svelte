@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -60,7 +61,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XXVII',
+      tag: 'AI-generated working paper · Series XXVII',
       seriesNote: 'This is the twenty‑seventh paper in the Governance as Engineering series. It asks whether dimensional sufficiency is enough.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
@@ -104,7 +105,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XXVII',
+      tag: 'AI-genererat arbetsdokument · Serie XXVII',
       seriesNote: 'Detta är den tjugosjunde rapporten i serien Styrning som ingenjörskonst. Den frågar om dimensionell tillräcklighet är nog.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
@@ -222,8 +223,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Nödvändig inriktning: Geometrin hos informativ återkoppling i ett löst kontrollproblem. Styrning som ingenjörskonst, Rapport XXVII.`
-      : `Holmström, B. K. (2026). Requisite Alignment: The Geometry of Informative Feedback in a Solved Control Problem. Governance as Engineering, Paper XXVII.`;
+      ? `Holmström, B. K. (2026). Nödvändig inriktning: Geometrin hos informativ återkoppling i ett löst kontrollproblem. Styrning som ingenjörskonst, Rapport XXVII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Requisite Alignment: The Geometry of Informative Feedback in a Solved Control Problem. Governance as Engineering, Paper XXVII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -335,6 +336,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

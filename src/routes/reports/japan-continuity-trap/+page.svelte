@@ -270,8 +270,8 @@
     <button
       onclick={() => {
         const cite = reportLang === 'ja'
-          ? 'Holmström, B. K. (2026). 連続性の罠：日本の文明的奇跡が自己再生できない理由. 戦略的国別報告書.'
-          : 'Holmström, B. K. (2026). The Continuity Trap: Why Japan\'s Civilizational Miracle Cannot Renew Itself. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). 連続性の罠：日本の文明的奇跡が自己再生できない理由. 戦略的国別報告書. AI生成、査読なし。'
+          : 'Holmström, B. K. (2026). The Continuity Trap: Why Japan\'s Civilizational Miracle Cannot Renew Itself. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'ja' ? '引用をコピーしました！' : 'Citation copied!');
       }}
@@ -332,8 +332,8 @@
       <button
         onclick={() => {
           const cite = reportLang === 'ja'
-            ? 'Holmström, B. K. (2026). 連続性の罠：日本の文明的奇跡が自己再生できない理由. 戦略的国別報告書.'
-            : 'Holmström, B. K. (2026). The Continuity Trap: Why Japan\'s Civilizational Miracle Cannot Renew Itself. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). 連続性の罠：日本の文明的奇跡が自己再生できない理由. 戦略的国別報告書. AI生成、査読なし。'
+            : 'Holmström, B. K. (2026). The Continuity Trap: Why Japan\'s Civilizational Miracle Cannot Renew Itself. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'ja' ? '引用をコピーしました！' : 'Citation copied!');
         }}
@@ -370,10 +370,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

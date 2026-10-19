@@ -328,10 +328,10 @@
     <button
       onclick={() => {
         const cite = reportLang === 'fi'
-          ? 'Holmström, B. K. (2026). Läpäisykyvyn rajoite: Miksi Suomen maailmanluokan hallinto ei vieläkään pysty muuttumaan tarpeeksi nopeasti. Strateginen maaraportti.'
+          ? 'Holmström, B. K. (2026). Läpäisykyvyn rajoite: Miksi Suomen maailmanluokan hallinto ei vieläkään pysty muuttumaan tarpeeksi nopeasti. Strateginen maaraportti. AI-generated; not peer-reviewed.'
           : reportLang === 'sv'
-          ? 'Holmström, B. K. (2026). Genomströmningsbegränsningen: Varför Finlands styrning i världsklass fortfarande inte kan transformeras tillräckligt snabbt. Strategisk landrapport.'
-          : 'Holmström, B. K. (2026). The Throughput Constraint: Why Finland\'s World‑Class Governance Still Cannot Transform Fast Enough. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). Genomströmningsbegränsningen: Varför Finlands styrning i världsklass fortfarande inte kan transformeras tillräckligt snabbt. Strategisk landrapport. AI-generated; not peer-reviewed.'
+          : 'Holmström, B. K. (2026). The Throughput Constraint: Why Finland\'s World‑Class Governance Still Cannot Transform Fast Enough. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'fi' ? 'Viite kopioitu!' : reportLang === 'sv' ? 'Citat kopierat!' : 'Citation copied!');
       }}
@@ -402,10 +402,10 @@
       <button
         onclick={() => {
           const cite = reportLang === 'fi'
-            ? 'Holmström, B. K. (2026). Läpäisykyvyn rajoite: Miksi Suomen maailmanluokan hallinto ei vieläkään pysty muuttumaan tarpeeksi nopeasti. Strateginen maaraportti.'
+            ? 'Holmström, B. K. (2026). Läpäisykyvyn rajoite: Miksi Suomen maailmanluokan hallinto ei vieläkään pysty muuttumaan tarpeeksi nopeasti. Strateginen maaraportti. AI-generated; not peer-reviewed.'
             : reportLang === 'sv'
-            ? 'Holmström, B. K. (2026). Genomströmningsbegränsningen: Varför Finlands styrning i världsklass fortfarande inte kan transformeras tillräckligt snabbt. Strategisk landrapport.'
-            : 'Holmström, B. K. (2026). The Throughput Constraint: Why Finland\'s World‑Class Governance Still Cannot Transform Fast Enough. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). Genomströmningsbegränsningen: Varför Finlands styrning i världsklass fortfarande inte kan transformeras tillräckligt snabbt. Strategisk landrapport. AI-generated; not peer-reviewed.'
+            : 'Holmström, B. K. (2026). The Throughput Constraint: Why Finland\'s World‑Class Governance Still Cannot Transform Fast Enough. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'fi' ? 'Viite kopioitu!' : reportLang === 'sv' ? 'Citat kopierat!' : 'Citation copied!');
         }}
@@ -442,10 +442,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

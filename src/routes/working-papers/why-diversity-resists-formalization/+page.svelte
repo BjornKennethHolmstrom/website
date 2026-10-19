@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -61,7 +62,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XVI',
+      tag: 'AI-generated working paper · Series XVI',
       seriesNote: 'This is the sixteenth paper in the Governance as Engineering series. It asks the prior question of whether adaptive capacity is sustainable at all.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
@@ -104,7 +105,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XVI',
+      tag: 'AI-genererat arbetsdokument · Serie XVI',
       seriesNote: 'Detta är den sextonde rapporten i serien Styrning som ingenjörskonst. Den ställer den föregående frågan om adaptiv kapacitet överhuvudtaget är hållbar.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
@@ -218,8 +219,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Varför mångfald motstår formalisering: En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Styrning som ingenjörskonst, Rapport XVI.`
-      : `Holmström, B. K. (2026). Why Diversity Resists Formalization: A cross‑framework failure atlas of exploration‑preservation under optimization pressure. Governance as Engineering, Paper XVI.`;
+      ? `Holmström, B. K. (2026). Varför mångfald motstår formalisering: En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Styrning som ingenjörskonst, Rapport XVI. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Why Diversity Resists Formalization: A cross‑framework failure atlas of exploration‑preservation under optimization pressure. Governance as Engineering, Paper XVI. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -333,6 +334,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

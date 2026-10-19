@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -70,7 +71,7 @@
   // --- 4. UI TRANSLATIONS ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XIII',
+      tag: 'AI-generated working paper · Series XIII',
       seriesNote: "This is the thirteenth paper in the Governance as Engineering series. It bridges the series' primitives to the outcomes they produce.",
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
@@ -116,7 +117,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XIII',
+      tag: 'AI-genererat arbetsdokument · Serie XIII',
       seriesNote: 'Detta är den trettonde rapporten i serien Styrning som ingenjörskonst. Den överbryggar seriens primitiver till de utfall de producerar.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
@@ -239,8 +240,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Legitimitet som emergent förstärkning: Förtroendets tvåkanalskoppling i styrningsarkitektur. Styrning som ingenjörskonst, Rapport XIII.`
-      : `Holmström, B. K. (2026). Legitimacy as Emergent Gain: The Dual-Channel Coupling of Trust in Governance Architecture. Governance as Engineering, Paper XIII.`;
+      ? `Holmström, B. K. (2026). Legitimitet som emergent förstärkning: Förtroendets tvåkanalskoppling i styrningsarkitektur. Styrning som ingenjörskonst, Rapport XIII. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Legitimacy as Emergent Gain: The Dual-Channel Coupling of Trust in Governance Architecture. Governance as Engineering, Paper XIII. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -354,6 +355,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

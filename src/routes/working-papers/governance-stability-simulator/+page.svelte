@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -124,7 +125,7 @@
 
   const ui = {
     en: {
-      tag: 'Working Paper · Series I',
+      tag: 'AI-generated working paper · Series I',
       seriesNote: 'This is the first paper in the Governance as Engineering series.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Paper 0: Below the Factorization →' },
@@ -170,7 +171,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie I',
+      tag: 'AI-genererat arbetsdokument · Serie I',
       seriesNote: 'Detta är den första rapporten i serien Styrning som ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization', label: 'Rapport 0: Under faktoriseringen →' },
@@ -254,8 +255,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning. Working paper series.`
-      : `Holmström, B. K. (2026). Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation. Working paper series.`;
+      ? `Holmström, B. K. (2026). Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning. Working paper series. AI-generated working paper; not peer-reviewed.`
+      : `Holmström, B. K. (2026). Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation. Working paper series. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -369,6 +370,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

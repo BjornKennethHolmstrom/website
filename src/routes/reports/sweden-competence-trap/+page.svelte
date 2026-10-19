@@ -261,8 +261,8 @@
     <button
       onclick={() => {
         const cite = reportLang === 'sv'
-          ? 'Holmström, B. K. (2026). Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras. Strategisk landrapport.'
-          : 'Holmström, B. K. (2026). The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras. Strategisk landrapport. AI-generated; not peer-reviewed.'
+          : 'Holmström, B. K. (2026). The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'sv' ? 'Citat kopierat!' : 'Citation copied!');
       }}
@@ -323,8 +323,8 @@
       <button
         onclick={() => {
           const cite = reportLang === 'sv'
-            ? 'Holmström, B. K. (2026). Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras. Strategisk landrapport.'
-            : 'Holmström, B. K. (2026). The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras. Strategisk landrapport. AI-generated; not peer-reviewed.'
+            : 'Holmström, B. K. (2026). The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'sv' ? 'Citat kopierat!' : 'Citation copied!');
         }}
@@ -361,10 +361,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

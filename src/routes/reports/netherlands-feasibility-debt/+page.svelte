@@ -230,8 +230,8 @@
   };
 
   const citations = {
-    en: 'Holmström, B. K. (2026). The Netherlands: The Feasibility Debt — Commitment Before Durable Feasibility. Strategic Country Report.',
-    nl: 'Holmström, B. K. (2026). Nederland: De Haalbaarheidsschuld — Toezegging vóór Duurzame Haalbaarheid. Strategisch Landenrapport.',
+    en: 'Holmström, B. K. (2026). The Netherlands: The Feasibility Debt — Commitment Before Durable Feasibility. Strategic Country Report. AI-generated; not peer-reviewed.',
+    nl: 'Holmström, B. K. (2026). Nederland: De Haalbaarheidsschuld — Toezegging vóór Duurzame Haalbaarheid. Strategisch Landenrapport. AI-gegenereerd; niet peer-reviewed.',
   };
 
   // ------------------------------------------
@@ -532,13 +532,13 @@
       >
         {meta.title}
       </h1>
-      <Provenance />
       <p
         class="text-xl md:text-2xl opacity-70 font-light leading-relaxed"
         style="color: var(--color-page-text);"
       >
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

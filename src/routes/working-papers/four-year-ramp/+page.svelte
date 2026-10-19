@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -18,13 +19,17 @@
   // --- 2. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Empirical',
+      tag: 'AI-generated working paper · Empirical',
       contextTitle: 'Context',
       contextIntro:
         'Swedish election campaigns are argued in part over governing capacity — reformtempo, handlingskraft, regeringsduglighet. These are empirical claims about what a legislature produces, and the Riksdag publishes enough structured data to test them: 24 riksmöten, 5,715 government propositions, chamber outcomes at förslagspunkt resolution.',
       contextOutro:
-        'Volume is governed by position in the electoral cycle (82.4% of variance) rather than by which parties govern (1.4%). The year-four surge carries no latency penalty and no reduction in instrument size. Rejection rates are homogeneous across 23 of 24 riksmöten. The one exception is 2021/22 — a government coming apart, not a governing arrangement performing differently.',
-      allWhitepapers: '← All Whitepapers',
+        'In this analysis, volume is governed by position in the electoral cycle (82.4% of variance) rather than by which parties govern (1.4%). The year-four surge carries no latency penalty and no reduction in instrument size. Rejection rates are homogeneous across 23 of 24 riksmöten. The one exception is 2021/22, which the paper interprets as a government coming apart rather than a governing arrangement performing differently.',
+      methodNote:
+        'The data and analysis code are public. The statistical results were produced with AI-written code and have not yet been independently reproduced; the repository lets anyone check them.',
+      interests:
+        'Björn Kenneth Holmström has founded a Swedish political party, Fjärilspartiet. The paper touches on claims made in Swedish election campaigns.',
+      allWhitepapers: '← All working papers',
       onThisPage: 'On this page',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -34,12 +39,16 @@
       citationCopied: 'Citation copied to clipboard!',
     },
     sv: {
-      tag: 'Arbetsdokument · Empiri',
+      tag: 'AI-genererat arbetsdokument · Empiri',
       contextTitle: 'Sammanhang',
       contextIntro:
         'Svenska valrörelser förs delvis om regeringsduglighet — reformtempo, handlingskraft. Det är empiriska påståenden om vad en lagstiftande församling producerar, och riksdagen publicerar tillräckligt med strukturerade data för att pröva dem: 24 riksmöten, 5 715 propositioner, kammarbeslut på förslagspunktsnivå.',
       contextOutro:
-        'Volymen styrs av placeringen i valcykeln (82,4 procent av variationen), inte av vilka partier som regerar (1,4 procent). Ökningen under mandatperiodens fjärde år medför varken längre beredningstid eller mindre propositioner. Avslagsfrekvensen är homogen under 23 av 24 riksmöten. Undantaget är 2021/22 — en regering i upplösning, inte en styrform som fungerar annorlunda.',
+        'I den här analysen styrs volymen av placeringen i valcykeln (82,4 procent av variationen), inte av vilka partier som regerar (1,4 procent). Ökningen under mandatperiodens fjärde år medför varken längre beredningstid eller mindre propositioner. Avslagsfrekvensen är homogen under 23 av 24 riksmöten. Undantaget är 2021/22, som dokumentet tolkar som en regering i upplösning snarare än en styrform som fungerar annorlunda.',
+      methodNote:
+        'Data och analyskod är öppna. De statistiska resultaten har tagits fram med AI-skriven kod och har ännu inte reproducerats oberoende; via kodförrådet kan vem som helst kontrollera dem.',
+      interests:
+        'Björn Kenneth Holmström har grundat ett svenskt politiskt parti, Fjärilspartiet. Dokumentet berör påståenden som förekommer i svenska valrörelser.',
       allWhitepapers: '← Alla arbetsdokument',
       onThisPage: 'På denna sida',
       share: 'Dela detta dokument',
@@ -56,13 +65,13 @@
       title: 'The Four-Year Ramp',
       subtitle: 'Legislative production and the electoral clock in the Swedish Riksdag, 2002–2026',
       description:
-        'Legislative volume in the Riksdag rises 73% across a mandate while government identity explains 1.4% of variance. Latency, instrument size, and rejection rates are flat. An invariance result awkward for the political legislation cycle literature.',
+        'AI-generated analysis: legislative volume in the Riksdag rises 73% across a mandate while government identity explains 1.4% of variance. Latency, instrument size, and rejection rates are flat. The paper argues this sits awkwardly with the political legislation cycle literature.',
     },
     sv: {
       title: 'Den fyraåriga rampen',
       subtitle: 'Lagstiftningsproduktion och valklockan i Sveriges riksdag 2002–2026',
       description:
-        'Propositionsvolymen i riksdagen stiger 73 procent under en mandatperiod medan regeringens identitet förklarar 1,4 procent av variationen. Beredningstid, propositionsstorlek och avslagsfrekvens ligger stilla.',
+        'AI-genererad analys: propositionsvolymen i riksdagen stiger 73 procent under en mandatperiod medan regeringens identitet förklarar 1,4 procent av variationen. Beredningstid, propositionsstorlek och avslagsfrekvens ligger stilla.',
     },
   };
 
@@ -200,14 +209,14 @@
   function copyCitation() {
     const citation =
       currentLang === 'sv'
-        ? 'Holmström, B. K. (2026). Den fyraåriga rampen: Lagstiftningsproduktion och valklockan i Sveriges riksdag 2002–2026. Arbetsdokument.'
-        : 'Holmström, B. K. (2026). The Four-Year Ramp: Legislative production and the electoral clock in the Swedish Riksdag, 2002–2026. Working paper.';
+        ? 'Holmström, B. K. (2026). Den fyraåriga rampen: Lagstiftningsproduktion och valklockan i Sveriges riksdag 2002–2026. AI-genererat arbetsdokument; ej fackgranskat.'
+        : 'Holmström, B. K. (2026). The Four-Year Ramp: Legislative production and the electoral clock in the Swedish Riksdag, 2002–2026. AI-generated working paper; not peer-reviewed.';
     navigator.clipboard.writeText(citation).then(() => alert(t.citationCopied));
   }
 </script>
 
 <SEO
-  title="{meta.title} | BKH Working paper"
+  title="{meta.title} | AI-generated working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-08"
@@ -286,6 +295,11 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" />
+      <div class="mt-3 max-w-2xl space-y-1 text-sm opacity-80 text-left" style="color: var(--color-page-text);">
+        <p>{t.methodNote} <a href={REPO} target="_blank" rel="noopener noreferrer" class="underline">GitHub →</a></p>
+        <p>{t.interests}</p>
+      </div>
     </header>
 
     <!-- Context Card -->

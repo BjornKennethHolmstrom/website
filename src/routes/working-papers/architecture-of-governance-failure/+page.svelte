@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -49,7 +50,7 @@
 
   const ui = {
     en: {
-      tag: 'Working Paper · Synthesis',
+      tag: 'AI-generated working paper · Synthesis',
       seriesNote:
         'This paper synthesises core findings from the Governance as Engineering series into a compact, self‑contained argument accessible to policymakers, institutional designers, and general readers.',
       seriesLinks: [
@@ -84,10 +85,10 @@
       ],
       contextTitle: 'Context',
       contextIntro:
-        'This paper unifies the diagnostic architecture developed across the Governance as Engineering series into a single, accessible narrative. It shows how four distinct failure modes — spatial blindness, frequency gaps, preference invisibility, and observational inadequacy — share a common root in the observation channel between the governed system and the governing layer.',
+        'This paper unifies the diagnostic architecture developed across the Governance as Engineering series into a single, accessible narrative. It argues that four distinct failure modes — spatial blindness, frequency gaps, preference invisibility, and observational inadequacy — share a common root in the observation channel between the governed system and the governing layer.',
       contextOutro:
-        'The conclusion is structural, not political: governance architectures that destroy information before it reaches decision‑makers cannot be repaired by improving the quality of those decision‑makers. The architecture must change.',
-      allWorkingpapers: '← All Working Papers',
+        'Its central claim is structural rather than political: governance architectures that destroy information before it reaches decision‑makers cannot be repaired by improving the quality of those decision‑makers. The architecture must change.',
+      allWorkingpapers: '← All working papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
       citeThis: 'Cite This Work',
@@ -100,7 +101,7 @@
       title: 'The Architecture of Governance Failure',
       subtitle: 'Requisite Variety, Coordination Failure, and the Limits of Modern States',
       description:
-        'A unified framework diagnosing why governance systems become blind to their own fragility. Connects Ashby\'s Law of Requisite Variety, Goodhart\'s Law, and the coordination failure tax into a single architecture of institutional collapse, and derives the architectural prerequisites for adaptive governance.',
+        'An AI-generated synthesis proposing a unified framework for why governance systems become blind to their own fragility. Connects Ashby\'s Law of Requisite Variety, Goodhart\'s Law, and the coordination failure tax into a single account of institutional collapse, and argues for architectural prerequisites for adaptive governance.',
     },
   };
 
@@ -127,7 +128,7 @@
 
   function copyCitation() {
     const citation =
-      'Holmström, B. K. (2026). The Architecture of Governance Failure: Requisite Variety, Coordination Failure, and the Limits of Modern States. Working Paper.';
+      'Holmström, B. K. (2026). The Architecture of Governance Failure: Requisite Variety, Coordination Failure, and the Limits of Modern States. AI-generated working paper; not peer-reviewed.';
     navigator.clipboard.writeText(citation).then(() => {
       alert('Citation copied to clipboard!');
     });
@@ -138,7 +139,7 @@
 </script>
 
 <SEO
-  title="{meta.title} | Working Paper"
+  title="{meta.title} | AI-generated working paper"
   description={meta.description}
   type="article"
   publishedTime="2026-05"
@@ -256,6 +257,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang="en" align="start" paper />
     </header>
 
     <!-- Context Card -->

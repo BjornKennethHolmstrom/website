@@ -256,8 +256,8 @@
     <button
       onclick={() => {
         const cite = reportLang === 'pt_br'
-          ? 'Holmström, B. K. (2026). O Déficit de Acumulação: Por que os Avanços Brilhantes do Brasil Não Conseguem se Consolidar. Relatório Estratégico de País.'
-          : 'Holmström, B. K. (2026). The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). O Déficit de Acumulação: Por que os Avanços Brilhantes do Brasil Não Conseguem se Consolidar. Relatório Estratégico de País. AI-generated; not peer-reviewed.'
+          : 'Holmström, B. K. (2026). The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'pt_br' ? 'Citação copiada!' : 'Citation copied!');
       }}
@@ -318,8 +318,8 @@
       <button
         onclick={() => {
           const cite = reportLang === 'pt_br'
-            ? 'Holmström, B. K. (2026). O Déficit de Acumulação: Por que os Avanços Brilhantes do Brasil Não Conseguem se Consolidar. Relatório Estratégico de País.'
-            : 'Holmström, B. K. (2026). The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). O Déficit de Acumulação: Por que os Avanços Brilhantes do Brasil Não Conseguem se Consolidar. Relatório Estratégico de País. AI-generated; not peer-reviewed.'
+            : 'Holmström, B. K. (2026). The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'pt_br' ? 'Citação copiada!' : 'Citation copied!');
         }}
@@ -356,10 +356,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

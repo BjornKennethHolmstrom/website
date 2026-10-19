@@ -344,10 +344,10 @@
     <button
       onclick={() => {
         const cite = reportLang === 'hi'
-          ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट।'
+          ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट। एआई-जनित; सहकर्मी-समीक्षित नहीं।'
           : reportLang === 'ta'
-          ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை.'
-          : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report.';
+          ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை. செயற்கை நுண்ணறிவால் உருவாக்கப்பட்டது; சக மதிப்பாய்வு செய்யப்படவில்லை.'
+          : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'hi' ? 'उद्धरण कॉपी किया गया!' : reportLang === 'ta' ? 'மேற்கோள் நகலெடுக்கப்பட்டது!' : 'Citation copied!');
       }}
@@ -418,10 +418,10 @@
       <button
         onclick={() => {
           const cite = reportLang === 'hi'
-            ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट।'
+            ? 'Holmström, B. K. (2026). लीप‑लैग चक्र: भारत की शानदार अग्रिम पंक्ति अब भी तालमेल क्यों नहीं बिठा पाती. सामरिक देश रिपोर्ट। एआई-जनित; सहकर्मी-समीक्षित नहीं।'
             : reportLang === 'ta'
-            ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை.'
-            : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report.';
+            ? 'Holmström, B. K. (2026). முன்னேற்ற‑பின்னடைவு சுழற்சி: இந்தியாவின் புத்திசாலித்தனமான முன்வரிசை ஏன் இன்னும் ஒத்திசைக்க முடியவில்லை. மூலோபாய நாட்டு அறிக்கை. செயற்கை நுண்ணறிவால் உருவாக்கப்பட்டது; சக மதிப்பாய்வு செய்யப்படவில்லை.'
+            : 'Holmström, B. K. (2026). The Leap‑Lag Cycle: Why India\'s Brilliant Front‑Row Still Can\'t Synchronise with the Rest of the Theatre. Strategic Country Report. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'hi' ? 'उद्धरण कॉपी किया गया!' : reportLang === 'ta' ? 'மேற்கோள் நகலெடுக்கப்பட்டது!' : 'Citation copied!');
         }}
@@ -458,10 +458,10 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
-      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance lang={reportLang} align="start" />
     </header>
 
     <!-- Content Sections -->

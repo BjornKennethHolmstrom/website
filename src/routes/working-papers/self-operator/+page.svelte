@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -72,7 +73,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Self III — Companion to the Governance as Engineering Series',
+      tag: 'AI-generated working paper · Self III — Companion to the Governance as Engineering Series',
       companionNote: 'Third paper in the Self trilogy, bridging personal and institutional architecture.',
       companionLinksLabel: 'Self Series',
       companionLinks: [
@@ -120,7 +121,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Själv III — Kompanjon till serien Styrning som ingenjörskonst',
+      tag: 'AI-genererat arbetsdokument · Själv III — Kompanjon till serien Styrning som ingenjörskonst',
       companionNote: 'Tredje rapporten i Själv‑trilogin, som överbryggar personlig och institutionell arkitektur.',
       companionLinksLabel: 'Självserien',
       companionLinks: [
@@ -246,8 +247,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Själv III: Operatören — Hur institutioner ärver sina noders begränsningar. GGF Vitboksserie, kompanjonvolym.`
-      : `Holmström, B. K. (2026). Self III: The Operator — How Institutions Inherit the Limits of Their Nodes. GaE Working Paper Series, companion volume.`;
+      ? `Holmström, B. K. (2026). Själv III: Operatören — Hur institutioner ärver sina noders begränsningar. GGF Vitboksserie, kompanjonvolym. AI-generated working paper; not peer-reviewed.`
+      : `Holmström, B. K. (2026). Self III: The Operator — How Institutions Inherit the Limits of Their Nodes. GaE Working Paper Series, companion volume. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -376,6 +377,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

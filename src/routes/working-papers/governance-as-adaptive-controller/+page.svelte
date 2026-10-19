@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Provenance from '$lib/components/Provenance.svelte';
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
@@ -70,7 +71,7 @@
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
-      tag: 'Working Paper · Series XIV',
+      tag: 'AI-generated working paper · Series XIV',
       seriesNote: 'This is the fourteenth paper in the Governance as Engineering series. It consolidates the theoretical arc of Cycle Two and opens the transition to engineering.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
@@ -116,7 +117,7 @@
       citeThis: 'Cite This Work',
     },
     sv: {
-      tag: 'Arbetsdokument · Serie XIV',
+      tag: 'AI-genererat arbetsdokument · Serie XIV',
       seriesNote: 'Detta är den fjortonde rapporten i serien Styrning som ingenjörskonst. Den konsoliderar Cykel Tvås teoretiska båge och öppnar övergången till ingenjörskonst.',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
@@ -238,8 +239,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande. Styrning som ingenjörskonst, Rapport XIV.`
-      : `Holmström, B. K. (2026). Governance as an Adaptive Controller: Exploration, Memory, and the Conditions for Institutional Learning. Governance as Engineering, Paper XIV.`;
+      ? `Holmström, B. K. (2026). Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande. Styrning som ingenjörskonst, Rapport XIV. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Governance as an Adaptive Controller: Exploration, Memory, and the Conditions for Institutional Learning. Governance as Engineering, Paper XIV. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });
@@ -353,6 +354,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <Provenance align="start" paper />
     </header>
 
     <!-- Context Card -->

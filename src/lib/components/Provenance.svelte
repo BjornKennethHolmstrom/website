@@ -5,6 +5,7 @@
 	  <Provenance kind="human" />         a text you wrote yourself
 	  <Provenance compact />              byline only, for cards and lists
 	  <Provenance align="start" />        left-aligned box, for left-aligned headers (essays)
+	  <Provenance paper />                adds the "derivations not checked" line (working papers)
 -->
 <script lang="ts">
 	import { language } from '$lib/stores/languageStore';
@@ -14,12 +15,14 @@
 		lang = undefined,
 		kind = 'ai',
 		compact = false,
-		align = 'center'
+		align = 'center',
+		paper = false
 	}: {
 		lang?: string;
 		kind?: 'ai' | 'human';
 		compact?: boolean;
 		align?: 'center' | 'start';
+		paper?: boolean;
 	} = $props();
 
 	let p = $derived(getProvenance(lang ?? $language, kind));
@@ -38,6 +41,7 @@
 		<p class="provenance-byline">{p.byline}</p>
 		<p class="provenance-note">
 			{p.note}
+			{#if paper && p.paper}{p.paper}{/if}
 			<a href="/#ai-notice">{p.more} →</a>
 		</p>
 	</aside>
