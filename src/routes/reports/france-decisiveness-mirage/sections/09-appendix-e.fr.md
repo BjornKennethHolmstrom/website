@@ -1,21 +1,21 @@
-## Annexe E : À propos de l'auteur et de la méthode
+## Annexe E : À propos de ce rapport et de son élaboration
 
-### L'auteur
+### Comment il a été élaboré
 
-Ce rapport a été écrit depuis l'extérieur de l'establishment politique français. Son auteur n'est ni un ancien ministre, ni un haut fonctionnaire, ni un expert accrédité de l'administration publique française. La perspective offerte ici s'appuie sur un engagement soutenu avec la science de la complexité, la psychologie du développement, la théorie de la gouvernance et une étude comparative des systèmes politiques européens — poursuivi non pas depuis l'intérieur d'un noyau institutionnel unique, mais depuis une position de curiosité systémique.
+Ce rapport a été généré par des modèles de langage d'IA (Claude, ChatGPT, DeepSeek) à partir de requêtes de Björn Kenneth Holmström. Plusieurs modèles ont été sollicités en parallèle pour aborder la situation de la France, et leurs productions ont été combinées en un seul texte. Il a choisi le sujet, posé les questions et décidé de publier le résultat, mais il a lui-même écrit peu du texte.
 
-La distance vis-à-vis du pouvoir institutionnel est à la fois une limite et une ressource. Elle limite l'accès à la texture granulaire et quotidienne de l'élaboration des politiques françaises. Mais elle permet aussi une liberté de diagnostic que la proximité du pouvoir décourage souvent. Le rapport ne revendique pas une connaissance d'initié. Il revendique une lentille cohérente — une lentille qui peut s'avérer utile à ceux qui occupent des positions institutionnelles et qui cherchent des cadres donnant du sens à ce qu'ils vivent.
+Le rapport n'a pas fait l'objet d'une vérification systématique des faits. Les affirmations concernant les institutions, les lois, les événements, les chiffres et les sources français peuvent être inexactes ou inventées, et doivent être vérifiées auprès de sources primaires avant d'être utilisées ou citées. Comme toute œuvre de synthèse, il est provisoire. Il ne prétend pas à la finalité. Il prétend seulement que la lentille qu'il offre mérite d'être testée contre la réalité — et que l'épreuve du réel, en fin de compte, est ce qui compte le plus.
 
-Les retours, les critiques et le dialogue sont les bienvenus. L'argument est offert dans l'esprit d'une construction collective de sens, non d'une proclamation définitive.
+### Perspective et limites
 
-### Une note sur la méthode
+Ni les modèles ni la personne qui les a sollicités n'écrivent depuis l'intérieur de l'establishment politique français. Björn Kenneth Holmström a étudié la physique de l'ingénieur et s'intéresse depuis longtemps, à titre personnel, à la pensée systémique, à la complexité et à la gouvernance. Il n'a ni formation ni expérience professionnelle en administration publique française ou en science politique. Le cadre appliqué ici s'appuie sur la science de la complexité, la psychologie du développement et la théorie de la gouvernance.
 
-Ce rapport a été élaboré au moyen d'un processus structuré de synthèse multi-modèles. J'ai sollicité plusieurs grands modèles de langage en parallèle, chacun invité à aborder la situation de la France. J'ai ensuite tissé ensemble leurs contributions.
+Cette distance limite l'accès à la texture granulaire et quotidienne de l'élaboration des politiques françaises. Un regard extérieur peut parfois soulever des questions que les initiés ont appris à ne plus entendre, mais il peut tout aussi facilement passer à côté de ce que savent les initiés. Le rapport ne revendique pas une connaissance d'initié. Il propose une lentille qui pourra, ou non, s'avérer utile à ceux qui occupent des positions institutionnelles et qui cherchent des cadres donnant du sens à ce qu'ils vivent.
 
-Cette méthode est une expérience d'amplification cognitive : utiliser l'IA non pas pour automatiser l'analyse, mais pour juxtaposer délibérément de multiples intelligences stratégiques, faisant émerger des motifs et des tensions qui autrement pourraient rester invisibles. Le rapport est plus riche de cette polyphonie. Il est aussi, comme toute œuvre de synthèse, provisoire. Il ne prétend pas à la finalité. Il prétend seulement que la lentille qu'il offre mérite d'être testée contre la réalité — et que l'épreuve du réel, en fin de compte, est ce qui compte le plus.
+Les retours, les critiques et les corrections sont les bienvenus. L'argument est offert dans l'esprit d'une construction collective de sens, non d'une proclamation définitive.
 
 ### La série des rapports nationaux
 
-Ce rapport est le deuxième d'une série de rapports nationaux pour le changement systémique. Le premier examinait l'Allemagne à travers la lentille d'un double déficit d'exécution et proposait des régions pilotes de gouvernance adaptative. Les rapports à venir examineront la Suède, l'Inde, l'Union européenne et d'autres, chacun posant la même question sous-jacente : *Le véritable goulet d'étranglement est-il l'argent et les décisions, ou est-ce la capacité du système à les utiliser judicieusement ?* Ensemble, la série vise à construire un cadre comparatif et intégratif pour diagnostiquer et traiter les déficits de capacité adaptative qui retiennent les nations.
+Ce rapport était le deuxième d'une série de rapports nationaux pour le changement systémique, tous élaborés de la même manière. Le premier examinait l'Allemagne à travers la lentille d'un double déficit d'exécution et proposait des régions pilotes de gouvernance adaptative. Les rapports suivants ont examiné la Suède, l'Inde, l'Union européenne et d'autres, chacun posant la même question sous-jacente : *Le véritable goulet d'étranglement est-il l'argent et les décisions, ou est-ce la capacité du système à les utiliser judicieusement ?* Ensemble, la série vise à construire un cadre comparatif et intégratif pour diagnostiquer et traiter les déficits de capacité adaptative qui retiennent les nations.
 
 ---
