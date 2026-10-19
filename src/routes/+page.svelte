@@ -564,7 +564,7 @@
 		</div>
 	</section>
 
- <aside class="bg-[var(--color-page-bg)] py-8">
+ <aside class="bg-[var(--color-page-bg)] py-8" id="ai-notice">
 	 <div class="mx-auto max-w-3xl rounded-lg border-l-4 border-amber-500 bg-[var(--color-card-bg)] px-6 py-5 text-[var(--color-card-text)] shadow">
 		 <h2 class="mb-2 text-lg font-semibold">{$t.aiNotice.title}</h2>
 		 <p class="text-sm leading-relaxed opacity-90">{$t.aiNotice.body}</p>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
   import { t, language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
 
@@ -186,6 +187,7 @@
       <h1 class="text-3xl font-bold text-[var(--color-page-accent)]">
         {$t.whatACivilizationMustValueBook.meta.title}
       </h1>
+      <Provenance />
       <p class="text-sm opacity-70 mt-2">
         {$t.whatACivilizationMustValueBook.meta.subtitle}
       </p>

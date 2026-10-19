@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
   import { t, language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import { marked } from 'marked';
@@ -297,6 +298,7 @@
       <h1 class="text-3xl font-bold text-[var(--color-page-accent)]">
         {$t.redrawingTheLinesBook.meta.title}
       </h1>
+      <Provenance />
       {#if $t.redrawingTheLinesBook.meta.subtitle}
         <p class="text-sm opacity-70 mt-2">{$t.redrawingTheLinesBook.meta.subtitle}</p>
       {/if}

@@ -14,6 +14,7 @@ import { fileURLToPath } from 'url';
 import { marked } from 'marked';
 import puppeteer from 'puppeteer';
 
+import { applyProvenance } from './provenance-pdf.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -423,6 +424,7 @@ async function generatePDF(html) {
     await page.goto(tempHtmlUri, { waitUntil: ['domcontentloaded', 'networkidle0'], timeout: 180000 });
 
     console.log('Generating PDF...');
+    await applyProvenance(page);
     await page.pdf({
       path: OUTPUT_FILE,
       format: 'A4',

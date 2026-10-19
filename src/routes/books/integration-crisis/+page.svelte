@@ -1,5 +1,6 @@
 <!-- src/routes/books/integration-crisis/+page.svelte -->
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
   import { t, language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import { base } from '$app/paths';
@@ -509,6 +510,7 @@
     
     <div class="lg:hidden mb-8">
       <h1 class="text-3xl font-bold text-[var(--color-page-accent)]">{$t.integrationCrisisBook.meta.title}</h1>
+      <Provenance />
       <p class="text-sm opacity-70 mt-2">{$t.integrationCrisisBook.meta.subtitle}</p>
     </div>
 

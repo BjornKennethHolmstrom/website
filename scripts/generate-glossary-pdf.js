@@ -14,6 +14,7 @@ import { fileURLToPath } from 'url';
 import { marked } from 'marked';
 import puppeteer from 'puppeteer';
 
+import { applyProvenance } from './provenance-pdf.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -171,6 +172,7 @@ async function generateOnePDF(html, outputPath, locale) {
     page.setDefaultNavigationTimeout(120000);
     await page.goto(tempUri, { waitUntil: ['domcontentloaded', 'networkidle0'], timeout: 120000 });
 
+    await applyProvenance(page);
     await page.pdf({
       path: outputPath,
       format: 'A4',

@@ -1,5 +1,6 @@
 <!-- src/routes/reports/netherlands-feasibility-debt/+page.svelte -->
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
   import { marked } from 'marked';
@@ -531,6 +532,7 @@
       >
         {meta.title}
       </h1>
+      <Provenance />
       <p
         class="text-xl md:text-2xl opacity-70 font-light leading-relaxed"
         style="color: var(--color-page-text);"

@@ -18,6 +18,7 @@ import { marked } from 'marked';
 import katex from 'katex';
 import puppeteer from 'puppeteer';
 
+import { applyProvenance } from './provenance-pdf.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -374,6 +375,7 @@ async function generatePDF(lang, html) {
     });
 
     console.log('Generating PDF...');
+    await applyProvenance(page);
     await page.pdf({
       path: outputFile,
       format: 'A4',

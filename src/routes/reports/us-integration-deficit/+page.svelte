@@ -1,5 +1,6 @@
 <!-- src/routes/reports/us-integration-deficit/+page.svelte -->
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
 
@@ -231,6 +232,7 @@
       <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: var(--color-page-text);">
         {meta.title}
       </h1>
+      <Provenance />
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
