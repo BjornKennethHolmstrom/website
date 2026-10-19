@@ -1,0 +1,53 @@
+📄 Starting PDF generation for The Variety Gap working paper...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/the-variety-gap.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/the-variety-gap/sections
+
+Reading abstract.en.md... ✓ (2.7 KB)
+   Processing images... Reading part-1.en.md... ✓ (7.3 KB)
+   Processing images... Reading part-2.en.md... ✓ (14.5 KB)
+   Processing images... Reading part-3.en.md... ✓ (12.9 KB)
+   Processing images... Reading part-4.en.md... ✓ (10.8 KB)
+   Processing images... Reading part-5.en.md... ✓ (14.6 KB)
+   Processing images... Reading part-6.en.md... ✓ (17.5 KB)
+   Processing images... Reading part-7.en.md... ✓ (17.3 KB)
+   Processing images... Reading appendix-a.en.md... ✓ (5.9 KB)
+   Processing images... Reading appendix-b.en.md... ✓ (10.6 KB)
+   Processing images... Reading appendix-c.en.md... ✓ (6.8 KB)
+   Processing images... ✅ Linked image: appendix-c-simulation.png
+Reading appendix-d.en.md... ✓ (3.8 KB)
+   Processing images... Reading appendix-f.en.md... ✓ (11.2 KB)
+   Processing images... Reading appendix-g.en.md... ✓ (13.0 KB)
+   Processing images... Reading appendix-h.en.md... ✓ (9.4 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Abstract... ✓ (2.9 KB)
+  Processing Part I: The Engineering Grammar and Its Generalization... ✓ (7.5 KB)
+  Processing Part II: The Optimization Turn — Value Functions as Observation Architectures... ✓ (15.2 KB)
+  Processing Part III: The Variety Gap — Dynamics and the Dissolution Threshold... ✓ (13.6 KB)
+  Processing Part IV: The Missing Dimensions — Truth, Meaning, Connection, and Wellbeing as Signal Channels... ✓ (11.1 KB)
+  Processing Part V: The Country Reports Re‑interpreted Through the Variety Gap... ✓ (15.3 KB)
+  Processing Part VI: Meta‑Governance — Designing for Open‑Ended Value Evolution... ✓ (17.9 KB)
+  Processing Part VII: Conclusion — From Diagnosis to Imperative... ✓ (18.1 KB)
+  Processing Appendix A: Formal Derivation of the Minimum Value Dimensionality Condition (Static)... ✓ (6.8 KB)
+  Processing Appendix B: Extension to Time‑Varying Dimensionality... ✓ (12.2 KB)
+  Processing Appendix C: Simulation Architecture for Value‑Function Collapse... ✓ (8.0 KB)
+  Processing Appendix D: Country Report Variety‑Gap Estimation Table... ✓ (4.6 KB)
+  Processing Appendix F: Annotated Reference List... ✓ (13.1 KB)
+  Processing Appendix G: Operational Definitions and Measurement Protocols... ✓ (14.9 KB)
+  Processing Appendix H: Testable Predictions and Falsification Protocols... ✓ (10.4 KB)
+
+✅ HTML generated (178.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

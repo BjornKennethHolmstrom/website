@@ -1,0 +1,48 @@
+📄 Starting PDF generation for France Decisiveness Mirage report...
+
+Language: fr
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/france-decisiveness-mirage-fr.pdf
+
+
+📖 Reading report sections for language: fr
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/france-decisiveness-mirage/sections
+
+Reading 01-executive-summary.fr.md... ✓ (4.6 KB)
+   Processing images... Reading 02-decisiveness-mirage.fr.md... ✓ (13.6 KB)
+   Processing images... Reading 03-integration-deficit.fr.md... ✓ (17.2 KB)
+   Processing images... Reading 04-building-integration.fr.md... ✓ (15.7 KB)
+   Processing images... Reading 05-political-immune-system.fr.md... ✓ (17.3 KB)
+   Processing images... Reading 06-transition-architecture.fr.md... ✓ (18.0 KB)
+   Processing images... Reading 07-pilots.fr.md... ✓ (16.7 KB)
+   Processing images... Reading 08-coda.fr.md... ✓ (10.5 KB)
+   Processing images... Reading 09-appendix-a.fr.md... ✓ (6.6 KB)
+   Processing images... Reading 09-appendix-b.fr.md... ✓ (5.6 KB)
+   Processing images... Reading 09-appendix-c.fr.md... ✓ (4.2 KB)
+   Processing images... Reading 09-appendix-d.fr.md... ✓ (5.9 KB)
+   Processing images... Reading 09-appendix-e.fr.md... ✓ (3.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Résumé exécutif... ✓ (4.9 KB)
+  Processing 1. Le mirage de la décision... ✓ (14.4 KB)
+  Processing 2. Le déficit d'intégration : Un Nouveau Diagnostic... ✓ (18.2 KB)
+  Processing 3. À quoi ressemble la construction de la capacité d'intégration... ✓ (16.6 KB)
+  Processing 4. Le système immunitaire politique : Pourquoi l'Intégration Échoue... ✓ (18.3 KB)
+  Processing 5. Travailler avec le système : Architecture de transition pour la France... ✓ (18.8 KB)
+  Processing 6. Un premier pas concret : Les territoires d'intégration adaptative... ✓ (17.7 KB)
+  Processing 7. Coda : De la décision à l'intégration... ✓ (11.1 KB)
+  Processing Annexe A : Systèmes de valeurs & logiques politiques... ✓ (7.0 KB)
+  Processing Annexe B : Analogies internationales & précédents... ✓ (5.8 KB)
+  Processing Annexe C : Bibliographie & sources... ✓ (4.6 KB)
+  Processing Annexe D : Objections anticipées... ✓ (6.3 KB)
+  Processing Annexe E : À Propos de l'auteur & méthode... ✓ (3.2 KB)
+
+✅ HTML generated (153.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

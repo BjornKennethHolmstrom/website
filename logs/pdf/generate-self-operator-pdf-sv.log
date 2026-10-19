@@ -1,0 +1,58 @@
+📄 Starting PDF generation for Self III: The Operator...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/self-operator-sv.pdf
+
+
+📖 Reading Self III sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/self-operator/sections
+
+Reading 00-abstract.sv.md... ✓ (3.3 KB)
+   Processing images... done.
+Reading 01-part-0.sv.md... ✓ (5.8 KB)
+   Processing images... done.
+Reading 02-part-1.sv.md... ✓ (5.4 KB)
+   Processing images... done.
+Reading 03-part-2.sv.md... ✓ (6.0 KB)
+   Processing images... done.
+Reading 04-part-3.sv.md... ✓ (8.9 KB)
+   Processing images... done.
+Reading 05-part-4.sv.md... ✓ (10.8 KB)
+   Processing images... done.
+Reading 06-part-5.sv.md... ✓ (7.9 KB)
+   Processing images... done.
+Reading 07-part-6.sv.md... ✓ (6.7 KB)
+   Processing images... done.
+Reading 08-part-7.sv.md... ✓ (7.2 KB)
+   Processing images... done.
+Reading 09-part-8.sv.md... ✓ (14.0 KB)
+   Processing images... done.
+Reading 10-appendix-a.sv.md... ✓ (7.0 KB)
+   Processing images... done.
+Reading 10-appendix-b.sv.md... ✓ (6.6 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (3.6 KB)
+  Processing Del 0: Operatörssömmen... ✓ (5.9 KB)
+  Processing Del I: Ärvd oobserverbarhet... ✓ (5.6 KB)
+  Processing Del II: En tillståndsvektor... ✓ (6.2 KB)
+  Processing Del III: Själv‑till‑andra‑förvrängningen... ✓ (9.1 KB)
+  Processing Del IV: Den operatörssådda legitimitetsnedåtgående spiralen... ✓ (11.0 KB)
+  Processing Del V: Mot lånad formell auktoritet... ✓ (8.2 KB)
+  Processing Del VI: Medkänsla som konsekvens, och kompensationens gräns... ✓ (6.9 KB)
+  Processing Del VII: Gränsen vid operatören... ✓ (7.4 KB)
+  Processing Del VIII: Observatörens formation... ✓ (14.3 KB)
+  Processing Bilaga A: Simuleringsspecifikation... ✓ (7.9 KB)
+  Processing Bilaga B: Arvsasymmetrin... ✓ (8.2 KB)
+
+✅ HTML generated (100.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,46 @@
+📄 Starting PDF generation for Finland Throughput Constraint report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/finland-throughput-constraint-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/finland-throughput-constraint/sections
+
+Reading 00-executive-summary.en.md... ✓ (12.0 KB)
+   Processing images... Reading 01-throughput-constraint.en.md... ✓ (20.6 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (31.5 KB)
+   Processing images... Reading 03-building-transformational-velocity.en.md... ✓ (29.8 KB)
+   Processing images... Reading 04-stability-bias.en.md... ✓ (21.7 KB)
+   Processing images... Reading 05-first-step.en.md... ✓ (13.8 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (11.7 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (6.7 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (4.7 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (4.6 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (4.0 KB)
+   Processing images... Reading 07-appendix-e.en.md... ✓ (3.2 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (12.5 KB)
+  Processing 1. The Throughput Constraint... ✓ (21.0 KB)
+  Processing 2. The Throughput Constraint: Structural Mechanisms... ✓ (32.2 KB)
+  Processing 3. What Building Transformational Velocity Would Look Like... ✓ (30.5 KB)
+  Processing 4. The Political Immune System: The Stability Bias... ✓ (22.0 KB)
+  Processing 5. A Concrete First Step... ✓ (14.1 KB)
+  Processing 6. Coda: The Prototype at the Frontier... ✓ (11.9 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (6.9 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (4.8 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (4.8 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (4.2 KB)
+  Processing Appendix E: About the Author & Method... ✓ (3.3 KB)
+
+✅ HTML generated (175.1 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

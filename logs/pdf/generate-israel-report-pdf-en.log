@@ -1,0 +1,50 @@
+📄 Starting PDF generation for Israel Boundary Deficit report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/israel-boundary-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/israel-boundary-deficit/sections
+
+Reading 00-authors-note.en.md... ✓ (1.7 KB)
+   Processing images... Reading 00-executive-summary.en.md... ✓ (20.6 KB)
+   Processing images... Reading 01-boundary-deficit.en.md... ✓ (28.8 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (44.7 KB)
+   Processing images... Reading 03-building-boundary-resolution-capacity.en.md... ✓ (23.9 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (17.3 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (21.1 KB)
+   Processing images... Reading 06-first-step.en.md... ✓ (18.0 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (16.1 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (8.0 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (4.8 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (5.5 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (6.6 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (4.1 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing A Note on Language and Audience... ✓ (1.8 KB)
+  Processing Executive Summary... ✓ (22.3 KB)
+  Processing 1. The Boundary Deficit... ✓ (29.3 KB)
+  Processing 2. The Boundary Deficit: Structural Mechanisms... ✓ (45.6 KB)
+  Processing 3. What Building Boundary Resolution Capacity Would Look Like... ✓ (24.3 KB)
+  Processing 4. The Political Immune System: The Security First Responder... ✓ (17.6 KB)
+  Processing 5. Working with the Grain: Transition Architecture for Israel... ✓ (21.6 KB)
+  Processing 6. A Concrete First Step: The Basic Law: Equality and the National Deliberative Commission... ✓ (18.2 KB)
+  Processing 7. Coda: The Resilience Paradox... ✓ (16.4 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (8.3 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (4.8 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (5.7 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (6.8 KB)
+  Processing Appendix E: About the Author & Method... ✓ (4.2 KB)
+
+✅ HTML generated (233.9 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

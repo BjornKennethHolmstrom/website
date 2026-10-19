@@ -1,0 +1,72 @@
+📄 Starting PDF generation for Adaptive Self‑Governance (Self II)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/adaptive-self-governance.pdf
+
+
+📖 Reading companion paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/adaptive-self-governance/sections
+
+Reading 00-abstract-contributions.en.md... ✓ (7.0 KB)
+   Processing images... done.
+Reading 00-part-0.en.md... ✓ (7.6 KB)
+   Processing images... done.
+Reading 01-part-1.en.md... ✓ (11.9 KB)
+   Processing images... done.
+Reading 02-part-2.en.md... ✓ (13.9 KB)
+   Processing images... done.
+Reading 03-part-3.en.md... ✓ (14.6 KB)
+   Processing images... done.
+Reading 04-part-4.en.md... ✓ (14.3 KB)
+   Processing images... done.
+Reading 05-part-5.en.md... ✓ (11.4 KB)
+   Processing images... done.
+Reading 06-part-6.en.md... ✓ (15.4 KB)
+   Processing images... done.
+Reading 07-part-7.en.md... ✓ (6.4 KB)
+   Processing images... done.
+Reading 08-part-8.en.md... ✓ (7.5 KB)
+   Processing images... done.
+Reading 09-part-9.en.md... ✓ (6.6 KB)
+   Processing images... done.
+Reading 10-appendix-a.en.md... ✓ (11.5 KB)
+   Processing images... done.
+Reading 10-appendix-b.en.md... ✓ (9.3 KB)
+   Processing images... done.
+Reading 10-appendix-c.en.md... ✓ (10.5 KB)
+   Processing images... done.
+Reading 10-appendix-d.en.md... ✓ (9.9 KB)
+   Processing images... done.
+Reading 10-appendix-e.en.md... ✓ (8.6 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract and Contributions... ✓ (7.4 KB)
+  Processing Part 0: Epistemic Frame... ✓ (7.8 KB)
+  Processing Part I: The Adaptive Problem and the Reflexive Self... ✓ (14.5 KB)
+  Processing Part II: Observer Diversity... ✓ (59.8 KB)
+  Processing Part III: Actuation Integrity... ✓ (19.2 KB)
+  Processing Part IV: Self‑Legitimacy... ✓ (31.9 KB)
+  Processing Part V: Boundary Calibration... ✓ (11.8 KB)
+  Processing Part VI: Adaptive Learning... ✓ (25.3 KB)
+  Processing Part VII: Composite Failure Modes... ✓ (6.6 KB)
+  Processing Part VIII: Design Principles... ✓ (7.8 KB)
+  Processing Part IX: The Limit of the Framework... ✓ (8.1 KB)
+  Processing Appendix A: The Self‑Observation Ensemble and the Correlation Tax... ✓ (157.2 KB)
+  Processing Appendix B: The Actuation Chain and the Energy Law... ✓ (94.7 KB)
+  Processing Appendix C: Self‑Legitimacy Dynamics... ✓ (69.4 KB)
+  Processing Appendix D: Adaptive Learning and the Two‑Sided Bound... LaTeX-incompatible input and strict mode is set to 'warn': Unrecognized Unicode character "‑" (8209) [unknownSymbol]
+No character metrics for '‑' in style 'Main-Regular' and mode 'text'
+✓ (81.7 KB)
+  Processing Appendix E: Observer–Plant Identity and the Measurement–Disturbance Coupling... ✓ (30.5 KB)
+
+✅ HTML generated (640.6 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

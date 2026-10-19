@@ -1,5 +1,6 @@
 <!-- src/routes/essays/continuity-of-life/+page.svelte -->
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	import SEO from '$lib/components/SEO.svelte';
 	import { language } from '$lib/stores/languageStore';
@@ -59,12 +60,11 @@
 			{t.subtitle}
 		</p>
 		<div class="flex flex-wrap items-center gap-4 text-sm" style="color: var(--color-page-text); opacity: 0.6;">
-			<span>{t.author}</span>
-			<span>•</span>
 			<span>{t.published}</span>
 			<span>•</span>
 			<span>{t.readTime}</span>
 		</div>
+		<Provenance align="start" />
 	</header>
 
 	<!-- Essay Content -->

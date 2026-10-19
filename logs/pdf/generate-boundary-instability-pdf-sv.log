@@ -1,0 +1,60 @@
+📄 Starting PDF generation for The Boundary Instability Principle (Paper XVIII)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/boundary-instability-sv.pdf
+
+
+📖 Reading Paper XVIII sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/boundary-instability/sections
+
+Reading 00-abstract.sv.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading 01-section-01.sv.md... ✓ (6.1 KB)
+   Processing images... done.
+Reading 02-section-02.sv.md... ✓ (7.0 KB)
+   Processing images... done.
+Reading 03-section-03.sv.md... ✓ (7.4 KB)
+   Processing images... ✅ Linked image: xviii_A_phase_cycle.png
+✅ Linked image: xviii_A2_regime_map.png
+done.
+Reading 04-section-04.sv.md... ✓ (5.3 KB)
+   Processing images... ✅ Linked image: xviii_C_bandwidth_slice.png
+✅ Linked image: xviii_C2_window_map.png
+done.
+Reading 05-section-05.sv.md... ✓ (6.0 KB)
+   Processing images... ✅ Linked image: xviii_B_early_warning.png
+done.
+Reading 06-section-06.sv.md... ✓ (8.1 KB)
+   Processing images... done.
+Reading 07-section-07.sv.md... ✓ (4.3 KB)
+   Processing images... done.
+Reading 08-section-08.sv.md... ✓ (2.9 KB)
+   Processing images... done.
+Reading 09-section-09.sv.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading appendix-a.sv.md... ✓ (23.5 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (9.7 KB)
+  Processing 1. Introduktion: Från fasta gränser till reflexiva dekompositioner... ✓ (8.0 KB)
+  Processing 2. Icke‑faktoriserbarhetsteoremet... ✓ (33.6 KB)
+  Processing 3. Den reflexiva gränscykeln: En minimal modell... ✓ (62.0 KB)
+  Processing 4. Den kritiska inlärningsbandbredden... ✓ (44.3 KB)
+  Processing 5. Gränsupplösningsindexet, reviderat genom sitt eget test... ✓ (18.2 KB)
+  Processing 6. Designprinciper för metastabil styrning... ✓ (18.9 KB)
+  Processing 7. Implikationer och strukturell integration... ✓ (7.2 KB)
+  Processing 8. Slutsats: Den metastabila styrningsattraktorn... ✓ (4.3 KB)
+  Processing 9. Vad denna rapport inte visar... ✓ (7.1 KB)
+  Processing Appendix A: Formell utveckling och simulering... ✓ (330.4 KB)
+
+✅ HTML generated (549.9 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

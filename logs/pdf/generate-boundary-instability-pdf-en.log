@@ -1,0 +1,60 @@
+📄 Starting PDF generation for The Boundary Instability Principle (Paper XVIII)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/boundary-instability.pdf
+
+
+📖 Reading Paper XVIII sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/boundary-instability/sections
+
+Reading 00-abstract.en.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading 01-section-01.en.md... ✓ (6.0 KB)
+   Processing images... done.
+Reading 02-section-02.en.md... ✓ (6.9 KB)
+   Processing images... done.
+Reading 03-section-03.en.md... ✓ (7.1 KB)
+   Processing images... ✅ Linked image: xviii_A_phase_cycle.png
+✅ Linked image: xviii_A2_regime_map.png
+done.
+Reading 04-section-04.en.md... ✓ (5.2 KB)
+   Processing images... ✅ Linked image: xviii_C_bandwidth_slice.png
+✅ Linked image: xviii_C2_window_map.png
+done.
+Reading 05-section-05.en.md... ✓ (5.8 KB)
+   Processing images... ✅ Linked image: xviii_B_early_warning.png
+done.
+Reading 06-section-06.en.md... ✓ (8.0 KB)
+   Processing images... done.
+Reading 07-section-07.en.md... ✓ (4.2 KB)
+   Processing images... done.
+Reading 08-section-08.en.md... ✓ (2.8 KB)
+   Processing images... done.
+Reading 09-section-09.en.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading appendix-a.en.md... ✓ (22.9 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (9.7 KB)
+  Processing 1. Introduction: From Fixed Boundaries to Reflexive Decompositions... ✓ (8.0 KB)
+  Processing 2. The Non‑Factorizability Theorem... ✓ (33.0 KB)
+  Processing 3. The Reflexive Boundary Cycle: A Minimal Model... ✓ (61.7 KB)
+  Processing 4. The Critical Learning Bandwidth... ✓ (44.1 KB)
+  Processing 5. The Boundary Dissolution Index, Revised by Its Own Test... ✓ (18.0 KB)
+  Processing 6. Design Principles for Meta‑Stable Governance... ✓ (18.3 KB)
+  Processing 7. Implications and Structural Integration... ✓ (7.1 KB)
+  Processing 8. Conclusion: The Meta‑Stable Governance Attractor... ✓ (4.2 KB)
+  Processing 9. What This Paper Does Not Show... ✓ (7.0 KB)
+  Processing Appendix A: Formal Development and Simulation... ✓ (329.4 KB)
+
+✅ HTML generated (547.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

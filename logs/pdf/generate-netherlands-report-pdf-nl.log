@@ -1,0 +1,52 @@
+📄 Starting PDF generation for Netherlands Feasibility Debt report...
+
+Language: nl
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/netherlands-feasibility-debt-nl.pdf
+
+
+📖 Reading report sections for language: nl
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/netherlands-feasibility-debt/sections
+
+Reading 00-executive-summary.nl.md... ✓ (16.4 KB)
+   Processing images... Reading 01-feasibility-debt.nl.md... ✓ (19.0 KB)
+   Processing images... Reading 02-structural-mechanisms.nl.md... ✓ (30.4 KB)
+   Processing images... Reading 03-building-recursive-feasibility.nl.md... ✓ (15.6 KB)
+   Processing images... Reading 04-political-immune-system.nl.md... ✓ (14.3 KB)
+   Processing images... Reading 05-transtition-architecture.nl.md... ✓ (10.9 KB)
+   Processing images... Reading 06-first-step.nl.md... ✓ (13.4 KB)
+   Processing images... Reading 07-coda.nl.md... ✓ (9.4 KB)
+   Processing images... Reading 08-appendix-a.nl.md... ✓ (4.6 KB)
+   Processing images... Reading 08-appendix-b.nl.md... ✓ (3.5 KB)
+   Processing images... Reading 08-appendix-c.nl.md... ✓ (4.1 KB)
+   Processing images... Reading 08-appendix-d.nl.md... ✓ (3.9 KB)
+   Processing images... Reading 08-appendix-e.nl.md... ✓ (5.5 KB)
+   Processing images... Reading 08-appendix-f.nl.md... ✓ (4.0 KB)
+   Processing images... Reading 08-appendix-g.nl.md... ✓ (3.1 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Samenvatting... ✓ (18.3 KB)
+  Processing 1. De Haalbaarheidsschuld... ✓ (19.5 KB)
+  Processing 2. De Haalbaarheidsschuld: Structurele Mechanismen... ✓ (31.4 KB)
+  Processing 3. Hoe het Bouwen van Recursieve Haalbaarheid eruit zou zien... ✓ (16.3 KB)
+  Processing 4. Het Politieke Immuunsysteem: Wat Schulden Blijft Produceren... ✓ (14.7 KB)
+  Processing 5. Met de Stroom Mee: Transitiearchitectuur voor Nederland... ✓ (11.3 KB)
+  Processing 6. Een Concrete Eerste Stap: De Haalbaarheidsbalans... ✓ (13.9 KB)
+  Processing 7. Coda: De Landmakers op de Grens van de Belofte... ✓ (9.5 KB)
+  Processing Bijlage A: Waardesystemen en beleidsmindset... ✓ (4.8 KB)
+  Processing Bijlage B: Internationale en binnenlandse analogen... ✓ (3.6 KB)
+  Processing Bijlage C: De verbinding met Governance as Engineering... ✓ (4.2 KB)
+  Processing Bijlage D: Verwachte tegenwerpingen... ✓ (4.0 KB)
+  Processing Bijlage E: Over de auteur en de methode... ✓ (5.5 KB)
+  Processing Bijlage F: Dossier — Stikstof en het cohort hernieuwbare subsidies... ✓ (4.3 KB)
+  Processing Bijlage G: Dossier — Schiphol en Lelystad... ✓ (3.4 KB)
+
+✅ HTML generated (172.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

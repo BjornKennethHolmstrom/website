@@ -1,0 +1,40 @@
+📄 Starting PDF generation for Requisite Observer Diversity (Paper X)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/requisite-observer-diversity.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/requisite-observer-diversity/sections
+
+Reading abstract.md... ✓ (1.9 KB)
+   Processing images... Reading part-1.md... ✓ (15.1 KB)
+   Processing images... Reading part-2.md... ✓ (22.6 KB)
+   Processing images... Reading part-3.md... ✓ (16.3 KB)
+   Processing images... Reading part-4.md... ✓ (17.0 KB)
+   Processing images... Reading part-5.md... ✓ (28.3 KB)
+   Processing images... Reading part-6.md... ✓ (18.9 KB)
+   Processing images... Reading part-7.md... ✓ (19.8 KB)
+   Processing images... Reading part-8.md... ✓ (9.3 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (1.9 KB)
+  Processing Part I: The Problem the Series Has Not Yet Named... ✓ (15.4 KB)
+  Processing Part II: Formalizing Observer Diversity... ✓ (184.3 KB)
+  Processing Part III: The Collapse Dynamics of Observer Ensembles... ✓ (16.9 KB)
+  Processing Part IV: Existence Proofs: Where Decentralized Epistemic Architecture Works... ✓ (17.4 KB)
+  Processing Part V: Design Principles for Institutionalizing Observer Diversity... ✓ (29.7 KB)
+  Processing Part VI: Simulation D: Epistemic Monoculture Collapse... ✓ (20.2 KB)
+  Processing Part VII: Implications, Limitations, and Connection to the Series... ✓ (20.8 KB)
+  Processing Part VIII: Conclusion... ✓ (9.5 KB)
+
+✅ HTML generated (322.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

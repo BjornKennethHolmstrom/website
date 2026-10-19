@@ -1,0 +1,49 @@
+📄 Starting PDF generation for The Variety Gap in the Self...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/self-variety-gap-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/self-variety-gap/sections
+
+Reading abstract.sv.md... ✓ (2.5 KB)
+   Processing images... Reading part-1.sv.md... ✓ (7.3 KB)
+   Processing images... Reading part-2.sv.md... ✓ (12.6 KB)
+   Processing images... Reading part-3.sv.md... ✓ (10.9 KB)
+   Processing images... Reading part-4.sv.md... ✓ (12.1 KB)
+   Processing images... Reading part-5.sv.md... ✓ (12.7 KB)
+   Processing images... Reading part-6.sv.md... ✓ (12.7 KB)
+   Processing images... Reading part-7.sv.md... ✓ (10.1 KB)
+   Processing images... Reading appendix-a.sv.md... ✓ (8.8 KB)
+   Processing images... Reading appendix-b.sv.md... ✓ (12.1 KB)
+   Processing images... Reading appendix-c.sv.md... ✓ (6.3 KB)
+   Processing images... Reading appendix-d.sv.md... ✓ (10.0 KB)
+   Processing images... ✅ Linked image: self-stability-simulator.png
+Reading appendix-e.sv.md... ✓ (7.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sammanfattning... ✓ (2.7 KB)
+  Processing Del I: Den enhetliga principen — Hur snäva värderingar förstör själv‑observerbarhet... ✓ (7.7 KB)
+  Processing Del II: Optimeringens vändning — Personliga värderingar som observationsarkitekturer... ✓ (13.3 KB)
+  Processing Del III: De saknade dimensionerna — Sanning, mening, gemenskap och hälsa som signalkanaler... ✓ (11.1 KB)
+  Processing Del IV: Bevis från psykologi och neurovetenskap... ✓ (12.5 KB)
+  Processing Del V: Meta‑självstyrning — Design för värdeevolution... ✓ (13.1 KB)
+  Processing Del VI: Den spekulativa horisonten — Transcendens, icke‑dualitet och gränsen G_self → 0... ✓ (13.2 KB)
+  Processing Del VII: Slutsats — Det holistiska imperativet för självet... ✓ (10.4 KB)
+  Processing Appendix A: Formell härledning av själv‑variationsgapet (statisk)... ✓ (9.7 KB)
+  Processing Appendix B: Utvidgning till tidsvarierande personlig dimensionalitet... ✓ (13.4 KB)
+  Processing Appendix C: Sammanfattningstabell över psykologiska bevis... ✓ (7.1 KB)
+  Processing Appendix D: Simuleringsarkitektur — Självstabilitetssimulatorn... ✓ (11.2 KB)
+  Processing Appendix E: Kommenterad referenslista... ✓ (8.0 KB)
+
+✅ HTML generated (140.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

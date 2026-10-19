@@ -1,0 +1,49 @@
+📄 Starting PDF generation for The Variety Gap in the Self...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/self-variety-gap.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/self-variety-gap/sections
+
+Reading abstract.en.md... ✓ (2.5 KB)
+   Processing images... Reading part-1.en.md... ✓ (7.1 KB)
+   Processing images... Reading part-2.en.md... ✓ (12.6 KB)
+   Processing images... Reading part-3.en.md... ✓ (10.6 KB)
+   Processing images... Reading part-4.en.md... ✓ (12.0 KB)
+   Processing images... Reading part-5.en.md... ✓ (12.4 KB)
+   Processing images... Reading part-6.en.md... ✓ (12.8 KB)
+   Processing images... Reading part-7.en.md... ✓ (9.9 KB)
+   Processing images... Reading appendix-a.en.md... ✓ (8.6 KB)
+   Processing images... Reading appendix-b.en.md... ✓ (11.8 KB)
+   Processing images... Reading appendix-c.en.md... ✓ (6.2 KB)
+   Processing images... Reading appendix-d.en.md... ✓ (9.7 KB)
+   Processing images... ✅ Linked image: self-stability-simulator.png
+Reading appendix-e.en.md... ✓ (7.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Abstract... ✓ (2.7 KB)
+  Processing Part I: The Unifying Principle — How Narrow Values Destroy Self‑Observability... ✓ (7.4 KB)
+  Processing Part II: The Optimization Turn — Personal Values as Observation Architectures... ✓ (13.3 KB)
+  Processing Part III: The Missing Dimensions — Truth, Meaning, Connection, and Health as Signal Channels... ✓ (10.9 KB)
+  Processing Part IV: Evidence from Psychology and Neuroscience... ✓ (12.2 KB)
+  Processing Part V: Meta‑Self‑Governance — Designing for Value Evolution... ✓ (12.8 KB)
+  Processing Part VI: The Speculative Horizon — Transcendence, Nonduality, and the Limit G_self → 0... ✓ (13.1 KB)
+  Processing Part VII: Conclusion — The Wholistic Imperative for the Self... ✓ (10.2 KB)
+  Processing Appendix A: Formal Derivation of the Self‑Variety Gap (Static)... ✓ (9.4 KB)
+  Processing Appendix B: Extension to Time‑Varying Personal Dimensionality... ✓ (13.1 KB)
+  Processing Appendix C: Psychological Evidence Summary Table... ✓ (7.0 KB)
+  Processing Appendix D: Simulation Architecture — The Self Stability Simulator... ✓ (10.9 KB)
+  Processing Appendix E: Annotated Reference List... ✓ (7.8 KB)
+
+✅ HTML generated (137.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

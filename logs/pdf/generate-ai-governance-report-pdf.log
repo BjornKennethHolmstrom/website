@@ -1,0 +1,47 @@
+📄 Starting PDF generation for AI Coherence–Velocity Trap report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/ai-coherence-velocity-trap-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/ai-coherence-velocity-trap/sections
+
+Reading 00-executive-summary.en.md... ✓ (11.6 KB)
+   Processing images... Reading 01-coherence-velocity-trap.en.md... ✓ (23.7 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (37.6 KB)
+   Processing images... ✅ Linked image: coherence_velocity_trap_mechanism.svg
+Reading 03-building-adaptive-coherence.en.md... ✓ (27.5 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (18.2 KB)
+   Processing images... Reading 05-first-step.en.md... ✓ (22.0 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (16.2 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (6.2 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (6.4 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (4.7 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (8.0 KB)
+   Processing images... Reading 07-appendix-e.en.md... ✓ (1.9 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (12.0 KB)
+  Processing 1. The Coherence–Velocity Trap... ✓ (24.5 KB)
+  Processing 2. Structural Mechanisms: How Frontier AI Organisations Become Blind... ✓ (38.4 KB)
+  Processing 3. What Building Adaptive Coherence Would Look Like... ✓ (28.0 KB)
+  Processing 4. The Political Immune System: The Deployment Imperative... ✓ (18.5 KB)
+  Processing 5. A Concrete First Step: The AI Commons Governance Protocol... ✓ (22.6 KB)
+  Processing 6. Coda: The Alignment Frontier... ✓ (16.4 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (6.4 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (6.5 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (4.9 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (8.1 KB)
+  Processing Appendix E: About the Author & Method... ✓ (2.0 KB)
+
+✅ HTML generated (195.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

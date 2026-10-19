@@ -1,0 +1,58 @@
+📄 Starting PDF generation for Governance as an Adaptive Controller (Paper XIV)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/governance-as-adaptive-controller.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/governance-as-adaptive-controller/sections
+
+Reading 00-executive-summary.en.md... ✓ (8.1 KB)
+   Processing images... done.
+Reading 01-part-1.en.md... ✓ (7.9 KB)
+   Processing images... done.
+Reading 02-part-2.en.md... ✓ (18.1 KB)
+   Processing images... done.
+Reading 03-part-3.en.md... ✓ (24.0 KB)
+   Processing images... done.
+Reading 04-part-4.en.md... ✓ (17.5 KB)
+   Processing images... done.
+Reading 05-part-5.en.md... ✓ (20.8 KB)
+   Processing images... done.
+Reading 06-part-6.en.md... ✓ (37.0 KB)
+   Processing images... done.
+Reading 07-part-7.en.md... ✓ (17.7 KB)
+   Processing images... done.
+Reading 08-part-8.en.md... ✓ (9.5 KB)
+   Processing images... done.
+Reading 09-appendix-a.en.md... ✓ (16.7 KB)
+   Processing images... done.
+Reading 09-appendix-b.en.md... ✓ (17.9 KB)
+   Processing images... done.
+Reading 09-appendix-c.en.md... ✓ (14.1 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Executive Summary... ✓ (8.4 KB)
+  Processing Part I: The Learning Limit... ✓ (8.2 KB)
+  Processing Part II: Formal Framework... ✓ (61.1 KB)
+  Processing Part III: Failure Modes of Adaptive Governance... ✓ (38.5 KB)
+  Processing Part IV: Simulation: The Adaptive Controller... ✓ (136.7 KB)
+  Processing Part V: Empirical Illustrations... ✓ (22.4 KB)
+  Processing Part VI: Design Principles for Adaptive Governance Architectures... ✓ (53.7 KB)
+  Processing Part VII: Connection to the Series... ✓ (18.2 KB)
+  Processing Part VIII: Limitations and Conclusion... ✓ (10.7 KB)
+  Processing Appendix A: Formal Derivations... ✓ (219.3 KB)
+  Processing Appendix B: Simulation Specification... ✓ (183.7 KB)
+  Processing Appendix C: Empirical Coding Notes... ✓ (15.1 KB)
+
+✅ HTML generated (782.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

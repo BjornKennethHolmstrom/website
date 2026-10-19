@@ -1,0 +1,103 @@
+📚 Starting PDF generation for Redrawing the Lines
+
+
+━━━ EN ━━━
+
+📖 Reading sections for EN from: /home/bjorn/Code/bjornkennethholmstrom/src/routes/books/redrawing-the-lines/sections
+
+Reading frontmatter.md... ✓ (8.9 KB)
+Reading chapter-01.md... ✓ (11.8 KB)
+Reading chapter-02.md... ✓ (12.4 KB)
+Reading chapter-03.md... ✓ (12.6 KB)
+Reading chapter-04.md... ✓ (12.3 KB)
+Reading chapter-05.md... ✓ (12.2 KB)
+Reading chapter-06.md... ✓ (10.7 KB)
+Reading chapter-07.md... ✓ (12.2 KB)
+Reading chapter-08.md... ✓ (12.5 KB)
+Reading chapter-09.md... ✓ (13.3 KB)
+Reading chapter-10.md... ✓ (13.5 KB)
+Reading chapter-11.md... ✓ (10.5 KB)
+Reading appendix-a.md... ✓ (13.5 KB)
+Reading appendix-b.md... ✓ (11.0 KB)
+Reading appendix-c.md... ✓ (11.2 KB)
+
+✅ 15 sections loaded
+
+📷 Using cover image for en
+🔨 Converting Markdown to HTML (with KaTeX)...
+   How to Read This Book → HTML (9.2 KB)
+   1. The Carving Problem → HTML (12.0 KB)
+   2. The Whispering Gallery and the Immune System → HTML (12.7 KB)
+   3. Boundaries Are Load‑Bearing → HTML (13.1 KB)
+   4. Legitimacy Is the Gain on Everything You Do → HTML (12.8 KB)
+   5. The Speed Limits of Learning → HTML (12.7 KB)
+   6. Success Launders Evidence → HTML (11.2 KB)
+   7. The Entanglement Speed Limit → HTML (12.7 KB)
+   8. The Certification Floor → HTML (13.0 KB)
+   9. The Diagnostic Sequence → HTML (13.9 KB)
+   10. The Design Principles, Consolidated → HTML (14.2 KB)
+   11. What This Book Does Not Claim → HTML (10.9 KB)
+   Appendix A: Glossary and Term Map → HTML (15.1 KB)
+   Appendix B: The Tools → HTML (12.0 KB)
+   Appendix C: Paper Map and Further Reading → HTML (12.2 KB)
+
+✅ HTML generated (191.3 KB total)
+
+📄 Generating PDF: Redrawing_the_Lines.pdf
+Loading HTML...
+Generating PDF...
+🏷️  Provenance label: after-image-cover (author lines replaced: 0)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/books/Redrawing_the_Lines.pdf
+Cleaning up...
+
+━━━ SV ━━━
+
+📖 Reading sections for SV from: /home/bjorn/Code/bjornkennethholmstrom/src/routes/books/redrawing-the-lines/sections
+
+Reading frontmatter.sv.md... ✓ (9.3 KB)
+Reading chapter-01.sv.md... ✓ (12.0 KB)
+Reading chapter-02.sv.md... ✓ (12.8 KB)
+Reading chapter-03.sv.md... ✓ (12.6 KB)
+Reading chapter-04.sv.md... ✓ (12.5 KB)
+Reading chapter-05.sv.md... ✓ (12.8 KB)
+Reading chapter-06.sv.md... ✓ (11.0 KB)
+Reading chapter-07.sv.md... ✓ (12.6 KB)
+Reading chapter-08.sv.md... ✓ (12.8 KB)
+Reading chapter-09.sv.md... ✓ (13.6 KB)
+Reading chapter-10.sv.md... ✓ (13.7 KB)
+Reading chapter-11.sv.md... ✓ (10.8 KB)
+Reading appendix-a.sv.md... ✓ (14.0 KB)
+Reading appendix-b.sv.md... ✓ (11.1 KB)
+Reading appendix-c.sv.md... ✓ (11.2 KB)
+
+✅ 15 sections loaded
+
+📷 Using cover image for sv
+🔨 Converting Markdown to HTML (with KaTeX)...
+   Hur man läser denna bok → HTML (9.5 KB)
+   1. Inskärningsproblemet → HTML (12.2 KB)
+   2. Viskgalleriet och immunsystemet → HTML (13.1 KB)
+   3. Gränser är bärande → HTML (12.9 KB)
+   4. Legitimitet är förstärkningen på allt du gör → HTML (12.8 KB)
+   5. Inlärningens hastighetsgränser → HTML (13.2 KB)
+   6. Framgång tvättar bevis → HTML (11.4 KB)
+   7. Sammanflätningens hastighetsgräns → HTML (13.0 KB)
+   8. Certifieringsgolvet → HTML (13.2 KB)
+   9. Den diagnostiska sekvensen → HTML (13.9 KB)
+   10. Designprinciperna, samlade → HTML (14.3 KB)
+   11. Vad denna bok inte påstår → HTML (11.2 KB)
+   Bilaga A: Ordlista och termkarta → HTML (15.5 KB)
+   Bilaga B: Verktygen → HTML (11.9 KB)
+   Bilaga C: Artikelkarta och vidare läsning → HTML (12.1 KB)
+
+✅ HTML generated (194.0 KB total)
+
+📄 Generating PDF: Redrawing_the_Lines_sv.pdf
+Loading HTML...
+Generating PDF...
+🏷️  Provenance label: after-image-cover (author lines replaced: 0)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/books/Redrawing_the_Lines_sv.pdf
+Cleaning up...
+
+✅ All PDFs generated successfully!
+

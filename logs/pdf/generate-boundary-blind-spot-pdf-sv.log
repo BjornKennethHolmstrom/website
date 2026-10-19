@@ -1,0 +1,19 @@
+📄 Starting PDF generation for "The Boundary and the Blind Spot"...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/essays/boundary-blind-spot-sv.pdf
+
+
+📖 Reading essay file for language: sv
+Input file: /home/bjorn/Code/bjornkennethholmstrom/src/routes/essays/boundary-blind-spot/boundary-blind-spot-sv.md
+
+✓ Read 14.1 KB
+🔨 Converting markdown to HTML...
+✅ HTML generated (3718.0 KB total)
+
+📄 Generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/essays/boundary-blind-spot-sv.pdf
+📄 File size: 3.22 MB
+
+✨ Done!

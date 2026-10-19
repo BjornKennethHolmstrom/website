@@ -1,0 +1,46 @@
+📄 Starting PDF generation for Finland Throughput Constraint report...
+
+Language: fi
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/finland-throughput-constraint-fi.pdf
+
+
+📖 Reading report sections for language: fi
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/finland-throughput-constraint/sections
+
+Reading 00-executive-summary.fi.md... ✓ (12.7 KB)
+   Processing images... Reading 01-throughput-constraint.fi.md... ✓ (21.7 KB)
+   Processing images... Reading 02-structural-mechanisms.fi.md... ✓ (33.2 KB)
+   Processing images... Reading 03-building-transformational-velocity.fi.md... ✓ (30.9 KB)
+   Processing images... Reading 04-stability-bias.fi.md... ✓ (22.3 KB)
+   Processing images... Reading 05-first-step.fi.md... ✓ (14.3 KB)
+   Processing images... Reading 06-coda.fi.md... ✓ (12.2 KB)
+   Processing images... Reading 07-appendix-a.fi.md... ✓ (7.3 KB)
+   Processing images... Reading 07-appendix-b.fi.md... ✓ (5.0 KB)
+   Processing images... Reading 07-appendix-c.fi.md... ✓ (4.8 KB)
+   Processing images... Reading 07-appendix-d.fi.md... ✓ (4.4 KB)
+   Processing images... Reading 07-appendix-e.fi.md... ✓ (3.4 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Tiivistelmä... ✓ (13.1 KB)
+  Processing 1. Läpäisykyvyn rajoite... ✓ (22.1 KB)
+  Processing 2. Läpäisykyvyn rajoite: Rakenteelliset mekanismit... ✓ (33.8 KB)
+  Processing 3. Miltä transformaationopeuden rakentaminen näyttäisi... ✓ (31.5 KB)
+  Processing 4. Poliittinen immuunijärjestelmä: Vakausvinouma... ✓ (22.6 KB)
+  Processing 5. Konkreettinen ensimmäinen askel... ✓ (14.6 KB)
+  Processing 6. Koda: Prototyyppi rajalla... ✓ (12.3 KB)
+  Processing Liite A: Arvojärjestelmät ja politiikan ajattelutavat... ✓ (7.4 KB)
+  Processing Liite B: Kansainväliset analogiat ja ennakkotapaukset... ✓ (5.1 KB)
+  Processing Liite C: Governance as Engineering ‑yhteys... ✓ (4.9 KB)
+  Processing Liite D: Ennakoidut vastaväitteet... ✓ (4.5 KB)
+  Processing Liite E: Kirjoittajasta ja menetelmästä... ✓ (3.5 KB)
+
+✅ HTML generated (182.2 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

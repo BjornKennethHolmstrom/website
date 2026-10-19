@@ -1,0 +1,43 @@
+📄 Starting PDF generation for The Observability-Democracy Connection working paper...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/observability-democracy-connection.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/observability-democracy-connection/sections
+
+Reading executive-summary.md... ✓ (3.1 KB)
+   Processing images... Reading part-1.md... ✓ (7.2 KB)
+   Processing images... Reading part-2.md... ✓ (7.7 KB)
+   Processing images... ✅ Linked image: ggf-simulator-v5.png
+Reading part-3.md... ✓ (7.1 KB)
+   Processing images... Reading part-4.md... ✓ (5.5 KB)
+   Processing images... Reading part-5.md... ✓ (10.5 KB)
+   Processing images... Reading part-6.md... ✓ (4.3 KB)
+   Processing images... Reading appendix-a.md... ✓ (5.5 KB)
+   Processing images... Reading appendix-b.md... ✓ (5.2 KB)
+   Processing images... Reading appendix-c.md... ✓ (8.8 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (3.1 KB)
+  Processing Part I: The Observability Problem... ✓ (7.4 KB)
+  Processing Part II: The Simulation... ✓ (8.3 KB)
+  Processing Part III: Structural Observations... ✓ (7.3 KB)
+  Processing Part IV: Limitations... ✓ (5.7 KB)
+  Processing Part V: Implications... ✓ (10.7 KB)
+  Processing Part VI: Conclusion... ✓ (4.4 KB)
+  Processing Appendix A: Mathematical Formulations... ✓ (6.4 KB)
+  Processing Appendix B: Code and Reproduction... ✓ (5.9 KB)
+  Processing Appendix C: References and Sources... ✓ (9.5 KB)
+
+✅ HTML generated (75.1 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

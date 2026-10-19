@@ -1,0 +1,49 @@
+📄 Starting PDF generation for The Adaptation Bottleneck (Paper XV)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/adaptation-bottleneck-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/adaptation-bottleneck/sections
+
+Reading 00-abstract.sv.md... ✓ (3.2 KB)
+   Processing images... done.
+Reading 01-part-1.sv.md... ✓ (11.3 KB)
+   Processing images... done.
+Reading 02-part-2.sv.md... ✓ (17.8 KB)
+   Processing images... done.
+Reading 03-part-3.sv.md... ✓ (8.8 KB)
+   Processing images... done.
+Reading 04-part-4.sv.md... ✓ (11.5 KB)
+   Processing images... done.
+Reading 05-part-5.sv.md... ✓ (10.1 KB)
+   Processing images... done.
+Reading 06-part-6.sv.md... ✓ (9.7 KB)
+   Processing images... done.
+Reading 07-appendix-a.sv.md... ✓ (11.1 KB)
+   Processing images... done.
+Reading 07-appendix-b.sv.md... ✓ (5.0 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (3.3 KB)
+  Processing Del I: Problemet — Triaden var aldrig kostnadsberäknad... ✓ (11.6 KB)
+  Processing Del II: Formellt ramverk... ✓ (97.5 KB)
+  Processing Del III: De tre eftersläpningarna, och var de är dokumenterade... ✓ (29.1 KB)
+  Processing Del IV: Gränser och invändningar... ✓ (18.1 KB)
+  Processing Del V: Simulering... ✓ (72.0 KB)
+  Processing Del VI: Designimplikationer, och vad serien gör härnäst... ✓ (17.8 KB)
+  Processing Appendix A: Formella härledningar... ✓ (223.6 KB)
+  Processing Appendix B: Simuleringsspecifikation... ✓ (96.1 KB)
+
+✅ HTML generated (575.4 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

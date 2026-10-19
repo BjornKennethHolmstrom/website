@@ -1,0 +1,89 @@
+📄 Starting PDF generation for Architecture of Stability working paper...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/architecture-of-stability.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/architecture-of-stability/sections
+
+Reading executive-summary.md... ✓ (9.1 KB)
+   Processing images... ✅ Linked image: figure_es_1_stability_curve.png
+✅ Linked image: figure_es_2_six_layers.png
+✅ Linked image: figure_es_3_fractal_structure.png
+✅ Linked image: figure_es_4_transition_timeline.png
+✅ Linked image: figure_es_5_the_choice.png
+Reading part-1.md... ✓ (12.6 KB)
+   Processing images... ✅ Linked image: figure_1_1_aliasing.png
+✅ Linked image: figure_1_2_acceleration.png
+✅ Linked image: figure_1_3_mismatch.png
+✅ Linked image: figure_1_4_symptoms.png
+✅ Linked image: figure_1_5_roadmap.png
+Reading part-2.md... ✓ (21.7 KB)
+   Processing images... ✅ Linked image: figure_2_1_stack.png
+✅ Linked image: figure_2_2_energy.png
+✅ Linked image: figure_2_3_information.png
+✅ Linked image: figure_2_4_networks.png
+✅ Linked image: figure_2_5_rules.png
+✅ Linked image: figure_2_6_belief.png
+✅ Linked image: figure_2_7_attractors.png
+✅ Linked image: figure_2_8_full_stack.png
+Reading part-3.md... ✓ (14.2 KB)
+   Processing images... ✅ Linked image: figure_3_1_bode.png
+✅ Linked image: figure_3_2_sensitivity.png
+✅ Linked image: figure_3_3_escalator.png
+Reading part-4.md... ✓ (17.7 KB)
+   Processing images... ✅ Linked image: figure_4_1_principles.png
+✅ Linked image: figure_4_2_fractal_bandwidth.png
+✅ Linked image: figure_4_3_thermodynamic_efficiency.png
+✅ Linked image: figure_4_4_topology.png
+Reading part-5.md... ✓ (18.5 KB)
+   Processing images... ✅ Linked image: figure_5_1_sweden_bode.png
+✅ Linked image: figure_5_2_empirical_oscillation.png
+✅ Linked image: figure_5_3_municipal_network.png
+✅ Linked image: figure_5_4_transition_timeline.png
+✅ Linked image: figure_5_5_comparative_advantage.png
+Reading part-6.md... ✓ (16.6 KB)
+   Processing images... ✅ Linked image: figure_6_1_diagnostic_matrix.png
+✅ Linked image: figure_6_2_design_principles.png
+✅ Linked image: figure_6_3_applications.png
+✅ Linked image: figure_6_4_spectrum.png
+✅ Linked image: figure_6_5_requisite_variety.png
+✅ Linked image: figure_6_6_evolutionary_advantage.png
+Reading part-7.md... ✓ (11.6 KB)
+   Processing images... ✅ Linked image: figure_7_1_journey.png
+✅ Linked image: figure_7_2_the_choice.png
+✅ Linked image: figure_7_3_generations.png
+✅ Linked image: figure_7_4_power_literate_society.png
+Reading appendix-a.md... ✓ (20.7 KB)
+   Processing images... Reading appendix-b.md... ✓ (30.8 KB)
+   Processing images... Reading appendix-c.md... ✓ (24.3 KB)
+   Processing images... Reading appendix-d.md... ✓ (25.8 KB)
+   Processing images... Reading appendix-e.md... ✓ (21.5 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+Cover page HTML: 7.7 KB
+  Processing Executive Summary... ✓ (12.0 KB)
+  Processing Part I: The Bandwidth Problem... ✓ (15.0 KB)
+  Processing Part II: The Six-Layer Model of Systemic Power... ✓ (28.4 KB)
+  Processing Part III: The Physics of Failure... ✓ (17.5 KB)
+  Processing Part IV: The Protocol of Resilience... ✓ (21.4 KB)
+  Processing Part V: The Sweden Prototype... ✓ (22.9 KB)
+  Processing Part VI: Implications and Generalizations... ✓ (20.9 KB)
+  Processing Part VII: Conclusion... ✓ (13.8 KB)
+  Processing Appendix A: Mathematical Formulations... ✓ (25.7 KB)
+  Processing Appendix B: The Fractal Constitution (Full Text)... ✓ (35.3 KB)
+  Processing Appendix C: The Insändare (Swedish Original + English Translation)... ✓ (27.5 KB)
+  Processing Appendix D: Glossary of Terms... ✓ (28.3 KB)
+  Processing Appendix E: Further Reading... ✓ (24.5 KB)
+
+✅ HTML generated successfully (301.6 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up and closing browser...

@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Sweden Competence Trap report...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/sweden-competence-trap-sv.pdf
+
+
+📖 Reading report sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/sweden-competence-trap/sections
+
+Reading 00-executive-summary.sv.md... ✓ (6.3 KB)
+   Processing images... Reading 01-competence-trap.sv.md... ✓ (13.9 KB)
+   Processing images... Reading 02-feedback-deficit.sv.md... ✓ (18.2 KB)
+   Processing images... Reading 03-feedback-infrastructure.sv.md... ✓ (19.3 KB)
+   Processing images... Reading 04-political-immune-system.sv.md... ✓ (12.6 KB)
+   Processing images... Reading 05-transition-architecture.sv.md... ✓ (14.3 KB)
+   Processing images... Reading 06-framtidskommuner.sv.md... ✓ (15.9 KB)
+   Processing images... Reading 07-coda.sv.md... ✓ (11.6 KB)
+   Processing images... Reading 08-appendix-a.sv.md... ✓ (6.8 KB)
+   Processing images... Reading 08-appendix-b.sv.md... ✓ (4.4 KB)
+   Processing images... Reading 08-appendix-c.sv.md... ✓ (4.9 KB)
+   Processing images... Reading 08-appendix-d.sv.md... ✓ (4.6 KB)
+   Processing images... Reading 08-appendix-e.sv.md... ✓ (2.9 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sammanfattning... ✓ (6.6 KB)
+  Processing 1. Kompetensfällan... ✓ (14.2 KB)
+  Processing 2. Återkopplingsunderskottet: En ny diagnos... ✓ (18.5 KB)
+  Processing 3. Hur byggandet av återkopplingsinfrastruktur ser ut... ✓ (19.7 KB)
+  Processing 4. Det politiska immunsystemet: Varför återkopplingen misslyckas... ✓ (12.8 KB)
+  Processing 5. Att arbeta med kornet: Övergångsarkitektur för Sverige... ✓ (14.6 KB)
+  Processing 6. Ett konkret första steg: Framtidskommuner... ✓ (16.4 KB)
+  Processing 7. Koda: Från kompetens till anpassningsförmåga... ✓ (11.8 KB)
+  Processing Bilaga A: Värderingssystem & policymentaliteter... ✓ (7.1 KB)
+  Processing Bilaga B: Internationella analogier... ✓ (4.4 KB)
+  Processing Bilaga C: Kopplingen till Governance as Engineering... ✓ (5.0 KB)
+  Processing Bilaga D: Förväntade invändningar... ✓ (4.8 KB)
+  Processing Bilaga E: Om författaren & metod... ✓ (3.0 KB)
+
+✅ HTML generated (145.6 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

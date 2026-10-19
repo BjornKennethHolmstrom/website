@@ -1,0 +1,36 @@
+📄 Starting PDF generation for Beyond Integration essay...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/beyond-integration.pdf
+
+Reading essay parts for language: en
+Converting markdown to HTML...
+Cover image size: 4.34 MB
+⚠️  Cover image is large, skipping to reduce HTML size
+   Consider optimizing the image for web
+Cover page HTML: 5.1 KB
+  Part 0: The Story: 15.2 KB
+  Part I: The Problem: 27.2 KB
+  Part II: The Aperture Theory: 37.8 KB
+  Part III: Historical and Cultural Context: 19.4 KB
+  Part IV: The Janus Integration: 22.4 KB
+  Part V: Practical Implications: 25.1 KB
+  Part VI: The Specific Question: 23.4 KB
+  Part VII: Research Agenda: 25.3 KB
+  Part VIII: Conclusion: 24.0 KB
+  Epilogue: Beginning the Practice: 8.1 KB
+Generating PDF...
+HTML size: 233.3 KB
+Loading HTML content...
+Content loaded, waiting for rendering...
+Generating PDF file...
+🏷️  Provenance label: cover-text (author lines replaced: 2)
+Closing browser...
+✅ PDF generated successfully: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/beyond-integration.pdf
+📄 File size: 1.76 MB
+📖 Approximate pages: 80
+
+✨ Done!
+
+To view the essay online:
+https://bjornkennethholmstrom.org/working-papers/beyond-integration

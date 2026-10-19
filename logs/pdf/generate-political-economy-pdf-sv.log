@@ -1,0 +1,44 @@
+📄 Starting PDF generation for Political Economy of Requisite Governance (Paper IX)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/political-economy-of-requisite-governance-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/political-economy-of-requisite-governance/sections
+
+Reading part-1-sv.md... ✓ (11.9 KB)
+   Processing images... Reading part-2-sv.md... ✓ (17.7 KB)
+   Processing images... Reading part-3-sv.md... ✓ (15.2 KB)
+   Processing images... Reading part-4-sv.md... ✓ (24.4 KB)
+   Processing images... Reading part-5-sv.md... ✓ (20.9 KB)
+   Processing images... Reading part-6-sv.md... ✓ (15.3 KB)
+   Processing images... Reading part-7-sv.md... ✓ (11.0 KB)
+   Processing images... Reading part-8-sv.md... ✓ (12.5 KB)
+   Processing images... Reading appendix-a-sv.md... ✓ (15.2 KB)
+   Processing images... Reading appendix-b-sv.md... ✓ (12.9 KB)
+   Processing images... Reading appendix-c-sv.md... ✓ (23.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Del I: Från kvalitativ diagnos till formell modell... ✓ (12.1 KB)
+  Processing Del II: Modellering av övergången som ett kontrollerat kontrollproblem... ✓ (18.8 KB)
+  Processing Del III: De tre strukturella fällorna... ✓ (16.5 KB)
+  Processing Del IV: Konstruktionsprinciper för övergångsmekanismer... ✓ (25.2 KB)
+  Processing Del V: Dynamisk modell: övergångsbandbredd... ✓ (21.4 KB)
+  Processing Del VI: Simuleringsarkitektur... ✓ (18.2 KB)
+  Processing Del VII: Begränsningar och öppna frågor... ✓ (11.2 KB)
+  Processing Del VIII: Slutsats... ✓ (12.7 KB)
+  Processing Appendix A: Heuristisk härledning av övergångsvarietetskvoten Ω... ✓ (16.6 KB)
+  Processing Appendix B: Förbikopplingsfällans dynamiska system... ✓ (15.1 KB)
+  Processing Appendix C: Historisk kalibrering av utköpseffektivitet... ✓ (24.0 KB)
+
+✅ HTML generated (198.4 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

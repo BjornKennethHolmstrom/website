@@ -1,0 +1,157 @@
+📚 Starting PDF generation for Competent Blindness / Kompetent Blindhet
+
+
+━━━ EN ━━━
+
+📖 Reading chapters from: /home/bjorn/Code/bjornkennethholmstrom/src/routes/books/competent-blindness/sections/en
+
+Reading table-of-contents.md... ✓ (1.3 KB)
+Reading introduction.md... ✓ (11.2 KB)
+Reading chapter-01.md... ✓ (13.9 KB)
+Reading chapter-02.md... ✓ (26.2 KB)
+Reading chapter-03.md... ✓ (22.6 KB)
+   ✓ Linked image: canonical-diagram.svg
+Reading chapter-04.md... ✓ (24.8 KB)
+Reading chapter-05.md... ✓ (25.9 KB)
+Reading chapter-06.md... ✓ (22.9 KB)
+Reading chapter-07.md... ✓ (20.4 KB)
+Reading chapter-08.md... ✓ (25.3 KB)
+Reading chapter-09.md... ✓ (17.3 KB)
+Reading chapter-10.md... ✓ (25.9 KB)
+Reading chapter-11.md... ✓ (26.0 KB)
+Reading chapter-12.md... ✓ (25.5 KB)
+Reading chapter-13.md... ✓ (29.4 KB)
+Reading chapter-14.md... ✓ (22.3 KB)
+Reading chapter-15.md... ✓ (19.8 KB)
+Reading chapter-16.md... ✓ (31.5 KB)
+Reading chapter-17.md... ✓ (27.2 KB)
+Reading chapter-18.md... ✓ (45.4 KB)
+Reading chapter-19.md... ✓ (21.8 KB)
+Reading conclusion.md... ✓ (23.2 KB)
+Reading appendix-a.md... ✓ (18.4 KB)
+Reading appendix-b.md... ✓ (10.4 KB)
+Reading appendix-c.md... ✓ (8.9 KB)
+Reading appendix-d.md... ✓ (6.7 KB)
+Reading appendix-e.md... ✓ (21.1 KB)
+Reading appendix-f.md... ✓ (23.9 KB)
+
+✅ All chapters read successfully (28 chapters)
+
+🔨 Converting markdown to HTML...
+📷 Using cover for en
+  Converting Contents... ✓ (1.8 KB)
+  Converting Introduction: The Day the Dashboard Still Looked Green... ✓ (11.4 KB)
+  Converting 1. The Competence Trap... ✓ (14.0 KB)
+  Converting 2. The World Became More Complex Than Our Institutions... ✓ (26.6 KB)
+  Converting 3. The Variety Gap... ✓ (23.2 KB)
+  Converting 4. Why Smart People Cannot See the Failure... ✓ (25.2 KB)
+  Converting 5. Observation Channels... ✓ (26.4 KB)
+  Converting 6. The Immune System... ✓ (23.1 KB)
+  Converting 7. Resolution Lock‑In... ✓ (20.8 KB)
+  Converting 8. The Compounding Failure Tax, and Why It Is Structural... ✓ (25.7 KB)
+  Converting 9. AI Labs and the Coherence–Velocity Trap... ✓ (17.7 KB)
+  Converting 10. Hospitals and the Clinical Observability Gap... ✓ (26.5 KB)
+  Converting 11. Universities and the Integration Deficit... ✓ (26.5 KB)
+  Converting 12. Courts and the Adjudication–Governance Gap... ✓ (26.0 KB)
+  Converting 13. Central Banks and the Monetary Variety Gap... ✓ (29.9 KB)
+  Converting 14. Democracies, Authoritarianism, and the Feedback Problem... ✓ (22.6 KB)
+  Converting 15. The Shadow Systems Already Emerging... ✓ (20.2 KB)
+  Converting 16. Adaptive Coherence... ✓ (32.2 KB)
+  Converting 17. The Logic of Structural Constraints... ✓ (27.6 KB)
+  Converting 18. Multi‑Scale Adaptive Governance... ✓ (46.3 KB)
+  Converting 19. The Civilisational Threshold... ✓ (22.1 KB)
+  Converting Conclusion: The Future Can Still Be Perceived... ✓ (23.5 KB)
+  Converting Appendix A: The Eight Structural Primitives... ✓ (19.5 KB)
+  Converting Appendix B: The Immune System Taxonomy... ✓ (11.3 KB)
+  Converting Appendix C: The Resolution Lock‑In Table... ✓ (9.9 KB)
+  Converting Appendix D: The Series Coherence Table... ✓ (8.3 KB)
+  Converting Appendix E: The Logic of Structural Constraints... ✓ (22.3 KB)
+  Converting Appendix F: Stable Glossary... ✓ (25.9 KB)
+
+✅ HTML generated (622.1 KB total)
+
+📄 Generating PDF: Competent_Blindness.pdf...
+Loading HTML...
+Generating PDF...
+🏷️  Provenance label: after-image-cover (author lines replaced: 0)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/books/Competent_Blindness.pdf
+Cleaning up...
+
+━━━ SV ━━━
+
+📖 Reading chapters from: /home/bjorn/Code/bjornkennethholmstrom/src/routes/books/competent-blindness/sections/sv
+
+Reading table-of-contents.md... ✓ (1.3 KB)
+Reading introduction.md... ✓ (11.4 KB)
+Reading chapter-01.md... ✓ (14.0 KB)
+Reading chapter-02.md... ✓ (26.1 KB)
+Reading chapter-03.md... ✓ (22.5 KB)
+   ✓ Linked image: canonical-diagram.svg
+Reading chapter-04.md... ✓ (24.8 KB)
+Reading chapter-05.md... ✓ (25.6 KB)
+Reading chapter-06.md... ✓ (23.0 KB)
+Reading chapter-07.md... ✓ (20.4 KB)
+Reading chapter-08.md... ✓ (25.9 KB)
+Reading chapter-09.md... ✓ (17.3 KB)
+Reading chapter-10.md... ✓ (25.9 KB)
+Reading chapter-11.md... ✓ (26.3 KB)
+Reading chapter-12.md... ✓ (25.7 KB)
+Reading chapter-13.md... ✓ (29.0 KB)
+Reading chapter-14.md... ✓ (22.3 KB)
+Reading chapter-15.md... ✓ (20.1 KB)
+Reading chapter-16.md... ✓ (31.5 KB)
+Reading chapter-17.md... ✓ (26.9 KB)
+Reading chapter-18.md... ✓ (45.8 KB)
+Reading chapter-19.md... ✓ (21.7 KB)
+Reading conclusion.md... ✓ (23.3 KB)
+Reading appendix-a.md... ✓ (18.5 KB)
+Reading appendix-b.md... ✓ (10.7 KB)
+Reading appendix-c.md... ✓ (9.1 KB)
+Reading appendix-d.md... ✓ (6.9 KB)
+Reading appendix-e.md... ✓ (21.3 KB)
+Reading appendix-f.md... ✓ (24.0 KB)
+
+✅ All chapters read successfully (28 chapters)
+
+🔨 Converting markdown to HTML...
+📷 Using cover for sv
+  Converting Innehåll... ✓ (1.7 KB)
+  Converting Introduktion: Dagen då instrumentpanelen fortfarande var grön... ✓ (11.6 KB)
+  Converting 1. Kompetensfällan... ✓ (14.1 KB)
+  Converting 2. Världen blev mer komplex än våra institutioner... ✓ (26.4 KB)
+  Converting 3. Varietetsgapet... ✓ (23.0 KB)
+  Converting 4. Varför smarta människor inte kan se misslyckandet... ✓ (25.1 KB)
+  Converting 5. Observationskanaler... ✓ (26.0 KB)
+  Converting 6. Immunsystemet... ✓ (23.2 KB)
+  Converting 7. Upplösningslåsning... ✓ (20.7 KB)
+  Converting 8. Samordningsmisslyckandets skatt, och varför den är strukturell... ✓ (26.2 KB)
+  Converting 9. AI-labb och koherens–hastighetsfällan... ✓ (17.6 KB)
+  Converting 10. Sjukhus och det kliniska observerbarhetsgapet... ✓ (26.4 KB)
+  Converting 11. Universitet och integrationsunderskottet... ✓ (26.7 KB)
+  Converting 12. Domstolar och styrningsgapet... ✓ (26.1 KB)
+  Converting 13. Centralbanker och det penningpolitiska varietetsgapet... ✓ (29.4 KB)
+  Converting 14. Demokratier, auktoritära stater och återkopplingsproblemet... ✓ (22.5 KB)
+  Converting 15. Skuggsystemen som redan växer fram... ✓ (20.4 KB)
+  Converting 16. Adaptiv koherens... ✓ (32.1 KB)
+  Converting 17. De strukturella begränsningarnas logik... ✓ (27.3 KB)
+  Converting 18. Flerskalig adaptiv styrning... ✓ (46.5 KB)
+  Converting 19. Den civilisatoriska tröskeln... ✓ (22.0 KB)
+  Converting Slutsats: Framtiden kan fortfarande uppfattas... ✓ (23.5 KB)
+  Converting Bilaga A: De åtta strukturella primitiverna... ✓ (19.6 KB)
+  Converting Bilaga B: Immunsystemets taxonomi... ✓ (11.6 KB)
+  Converting Bilaga C: Upplösningslåsningstabellen... ✓ (10.0 KB)
+  Converting Bilaga D: Seriens koherenstabell... ✓ (8.4 KB)
+  Converting Bilaga E: De strukturella begränsningarnas logik... ✓ (22.4 KB)
+  Converting Bilaga F: Stabil ordlista... ✓ (26.7 KB)
+
+✅ HTML generated (622.8 KB total)
+
+📄 Generating PDF: Kompetent_Blindhet.pdf...
+Loading HTML...
+Generating PDF...
+🏷️  Provenance label: after-image-cover (author lines replaced: 0)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/books/Kompetent_Blindhet.pdf
+Cleaning up...
+
+✅ All done!
+

@@ -1,0 +1,50 @@
+📄 Starting PDF generation for Germany Spending Mirage report...
+
+Language: de
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/germany-spending-mirage-de.pdf
+
+
+📖 Reading report sections for language: de
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/germany-spending-mirage/sections
+
+Reading executive-summary.de.md... ✓ (2.8 KB)
+   Processing images... Reading 01-invisible-deficit.de.md... ✓ (6.4 KB)
+   Processing images... Reading 02-spending-mirage.de.md... ✓ (8.1 KB)
+   Processing images... Reading 03-twin-deficit.de.md... ✓ (12.0 KB)
+   Processing images... Reading 04-capacity-building.de.md... ✓ (15.4 KB)
+   Processing images... Reading 05-political-immune.de.md... ✓ (13.7 KB)
+   Processing images... Reading 06-transition.de.md... ✓ (13.5 KB)
+   Processing images... Reading 07-pilot.de.md... ✓ (15.1 KB)
+   Processing images... Reading 08-coda.de.md... ✓ (9.4 KB)
+   Processing images... Reading 09-appendix-a.de.md... ✓ (5.9 KB)
+   Processing images... Reading 09-appendix-b.de.md... ✓ (4.0 KB)
+   Processing images... Reading 09-appendix-c.de.md... ✓ (3.6 KB)
+   Processing images... Reading 09-appendix-d.de.md... ✓ (3.8 KB)
+   Processing images... Reading 09-appendix-e.de.md... ✓ (1.8 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Zusammenfassung... ✓ (3.0 KB)
+  Processing 1. Das unsichtbare Defizit... ✓ (6.6 KB)
+  Processing 2. Die Ausgabenmirage... ✓ (8.3 KB)
+  Processing 3. Das doppelte Defizit: Eine neue Diagnose... ✓ (12.4 KB)
+  Processing 4. Wie Kapazitätsaufbau tatsächlich aussieht... ✓ (15.7 KB)
+  Processing 5. Das politische Immunsystem... ✓ (14.1 KB)
+  Processing 6. Mit dem System arbeiten: Übergangsarchitektur... ✓ (13.8 KB)
+  Processing 7. Ein konkreter erster Schritt: Die adaptiven Governance-Pilotregionen... ✓ (15.5 KB)
+  Processing 8. Koda: Vom Ausgeben zum Wahrnehmen... ✓ (9.6 KB)
+  Processing Anhang A: Wertesysteme & Politiklogiken... ✓ (6.1 KB)
+  Processing Anhang B: Internationale Analogien & Präzedenzfälle... ✓ (4.1 KB)
+  Processing Anhang C: Bibliographie & Quellenangaben... ✓ (4.1 KB)
+  Processing Anhang D: Häufig erwartete Fragen... ✓ (3.9 KB)
+  Processing Anhang E: Über den Autor... ✓ (1.8 KB)
+
+✅ HTML generated (125.6 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

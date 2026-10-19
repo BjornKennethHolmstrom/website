@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Subsidiarity Deficit synthesis report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/subsidiarity-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/subsidiarity-deficit/sections
+
+Reading 00-executive-summary.en.md... ✓ (8.5 KB)
+   Processing images... Reading 01-westphalian-achievement-and-limits.en.md... ✓ (19.8 KB)
+   Processing images... Reading 02-six-countries.en.md... ✓ (17.3 KB)
+   Processing images... Reading 03-immune-system.en.md... ✓ (14.8 KB)
+   Processing images... Reading 04-establish.en.md... ✓ (3.2 KB)
+   Processing images... Reading 05-trade-offs.en.md... ✓ (2.0 KB)
+   Processing images... Reading 06-ggf.en.md... ✓ (14.4 KB)
+   Processing images... Reading 07-genesis-protocol.en.md... ✓ (18.3 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (2.1 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (3.3 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (3.1 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (3.0 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (4.3 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (8.7 KB)
+  Processing 1. The Westphalian Achievement and Its Limits... ✓ (20.1 KB)
+  Processing 2. Six Countries, Six Failure Modes, Three Broken Layers... ✓ (17.8 KB)
+  Processing 3. The Immune System That Resists Correction... ✓ (15.2 KB)
+  Processing 4. What the Diagnostics Establish — and What They Do Not... ✓ (3.4 KB)
+  Processing 5. The Trade‑Offs of Subsidiarity... ✓ (2.1 KB)
+  Processing 6. An Architectural Response: The Global Governance Frameworks... ✓ (15.0 KB)
+  Processing 7. The Genesis Protocol: Demonstrated Value Before Formal Authority... ✓ (18.8 KB)
+  Processing Appendix A: The Country Reports Series — Summary Table... ✓ (2.5 KB)
+  Processing Appendix B: The Global Governance Frameworks — Key Design Features... ✓ (3.4 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (3.2 KB)
+  Processing Appendix D: About the Author and Method... ✓ (3.1 KB)
+  Processing Appendix E: References and Further Reading... ✓ (5.0 KB)
+
+✅ HTML generated (125.4 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

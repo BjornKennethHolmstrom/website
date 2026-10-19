@@ -1,0 +1,49 @@
+📄 Starting PDF generation for Why Diversity Resists Formalization (Paper XVI)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/why-diversity-resists-formalization.pdf
+
+
+📖 Reading Paper XVI sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/why-diversity-resists-formalization/sections
+
+Reading abstract.en.md... ✓ (1.8 KB)
+   Processing images... done.
+Reading section-1.en.md... ✓ (1.6 KB)
+   Processing images... done.
+Reading section-2.en.md... ✓ (4.2 KB)
+   Processing images... done.
+Reading section-3.en.md... ✓ (3.6 KB)
+   Processing images... done.
+Reading section-4.en.md... ✓ (4.1 KB)
+   Processing images... done.
+Reading section-5.en.md... ✓ (1.4 KB)
+   Processing images... done.
+Reading section-6.en.md... ✓ (5.6 KB)
+   Processing images... done.
+Reading appendix-a.en.md... ✓ (0.7 KB)
+   Processing images... done.
+Reading appendix-b.en.md... ✓ (1.2 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (1.9 KB)
+  Processing 1. The Object That Keeps Moving... ✓ (1.8 KB)
+  Processing 2. Method: Adversarial Decay as Evidence... ✓ (4.5 KB)
+  Processing 3. The Four Self‑Contained Collapses... ✓ (4.2 KB)
+  Processing 4. The Shared Pattern, and the Corrected Order Parameter... ✓ (4.7 KB)
+  Processing 5. What This Does Not Show... ✓ (1.6 KB)
+  Processing 6. The Residual... ✓ (6.0 KB)
+  Processing Appendix A: Lens Prompts... ✓ (0.7 KB)
+  Processing Appendix B: Rejected Unifications... ✓ (1.4 KB)
+
+✅ HTML generated (33.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

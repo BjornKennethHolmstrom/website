@@ -1,0 +1,55 @@
+📄 Starting PDF generation for The Shape of Reform (Paper XXIII)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/shape-of-reform-sv.pdf
+
+
+📖 Reading Paper XXIII sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/shape-of-reform/sections
+
+Reading abstract.sv.md... ✓ (3.5 KB)
+   Processing images... done.
+Reading section-01.sv.md... ✓ (11.2 KB)
+   Processing images... done.
+Reading section-02.sv.md... ✓ (13.6 KB)
+   Processing images... done.
+Reading section-03.sv.md... ✓ (21.2 KB)
+   Processing images... done.
+Reading section-04.sv.md... ✓ (26.5 KB)
+   Processing images... done.
+Reading section-05.sv.md... ✓ (13.1 KB)
+   Processing images... done.
+Reading section-06.sv.md... ✓ (13.6 KB)
+   Processing images... done.
+Reading section-07.sv.md... ✓ (5.5 KB)
+   Processing images... done.
+Reading section-08.sv.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading appendix-a.sv.md... ✓ (3.0 KB)
+   Processing images... done.
+Reading appendix-b.sv.md... ✓ (4.0 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (3.7 KB)
+  Processing 1. En utlovad geometri, granskad innan den byggdes... ✓ (12.0 KB)
+  Processing 2. Rummet, och de två storheter som inte får förväxlas... ✓ (110.5 KB)
+  Processing 3. Den deskriptiva geometrin replikerar inte... ✓ (23.3 KB)
+  Processing 4. Tre förtjänta resultat: den riktade kostnadsstrukturen... ✓ (132.7 KB)
+  Processing 5. Vad objektet är... ✓ (114.5 KB)
+  Processing 6. Institutionella tolkningar, och vad som inte överlever... ✓ (17.4 KB)
+  Processing 7. Vad denna artikel inte visar... ✓ (11.5 KB)
+  Processing 8. Integration med serien... ✓ (5.4 KB)
+  Processing Appendix A: Identiteten hos anslutningströskeln och objektets typdisciplin... ✓ (31.5 KB)
+  Processing Appendix B: Mätningen av övergångskostnad... ✓ (12.1 KB)
+
+✅ HTML generated (480.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

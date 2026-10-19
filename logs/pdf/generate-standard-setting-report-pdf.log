@@ -1,0 +1,44 @@
+📄 Starting PDF generation for "The Standard‑Setting Variety Gap"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/standard-setting-variety-gap-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/standard-setting-variety-gap/sections
+
+Reading 00-executive-summary.en.md... ✓ (14.3 KB)
+   Processing images... Reading 01-the-standard-setting-variety-gap.en.md... ✓ (27.9 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (43.9 KB)
+   Processing images... Reading 03-building-requisite-standard-setting-architecture.en.md... ✓ (29.7 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (18.0 KB)
+   Processing images... Reading 05-first-step.en.md... ✓ (21.6 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (23.2 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (5.4 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (3.9 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (2.7 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (4.1 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (14.9 KB)
+  Processing 1. The Standard‑Setting Variety Gap... ✓ (28.7 KB)
+  Processing 2. Structural Mechanisms: How Standard‑Setting Bodies Become Blind to the Economies They Govern... ✓ (44.5 KB)
+  Processing 3. What Building Requisite Standard‑Setting Architecture Would Look Like... ✓ (30.2 KB)
+  Processing 4. The Political Immune System: Investor Primacy and the Pretence of Objectivity... ✓ (18.3 KB)
+  Processing 5. A Concrete First Step: The Multi‑Capital Materiality Audit and the Integrated Reporting Sandbox... ✓ (22.4 KB)
+  Processing 6. Coda: The Cost of Invisible Capital... ✓ (23.5 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (5.6 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (4.0 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (2.8 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (4.3 KB)
+
+✅ HTML generated (205.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

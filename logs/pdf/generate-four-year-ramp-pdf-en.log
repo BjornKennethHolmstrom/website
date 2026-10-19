@@ -1,0 +1,22 @@
+📄 Starting PDF generation for The Four-Year Ramp...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/four-year-ramp.pdf
+
+
+📖 Reading paper for language: en
+Input file: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/four-year-ramp/four-year-ramp.en.md
+
+✓ Read 28.8 KB
+   Processing images... done.
+   14 sections, ~4446 words, 26 table rows
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+✅ HTML generated (37.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,40 @@
+📄 Starting PDF generation for Requisite Observer Diversity (Paper X)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/requisite-observer-diversity-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/requisite-observer-diversity/sections
+
+Reading abstract-sv.md... ✓ (2.0 KB)
+   Processing images... Reading part-1-sv.md... ✓ (14.4 KB)
+   Processing images... Reading part-2-sv.md... ✓ (22.7 KB)
+   Processing images... Reading part-3-sv.md... ✓ (16.4 KB)
+   Processing images... Reading part-4-sv.md... ✓ (17.0 KB)
+   Processing images... Reading part-5-sv.md... ✓ (29.0 KB)
+   Processing images... Reading part-6-sv.md... ✓ (19.2 KB)
+   Processing images... Reading part-7-sv.md... ✓ (20.1 KB)
+   Processing images... Reading part-8-sv.md... ✓ (9.5 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (2.1 KB)
+  Processing Del I: Problemet som serien ännu inte har namngett... ✓ (14.8 KB)
+  Processing Del II: Formalisering av observatörsmångfald... ✓ (184.8 KB)
+  Processing Del III: Kollapsdynamik för observatörsensembler... ✓ (17.0 KB)
+  Processing Del IV: Exempel på fungerande decentraliserad epistemisk arkitektur... ✓ (17.3 KB)
+  Processing Del V: Konstruktionsprinciper för att institutionalisera observatörsmångfald... ✓ (29.9 KB)
+  Processing Del VI: Simulering D: Epistemisk monokulturkollaps... ✓ (20.4 KB)
+  Processing Del VII: Implikationer, begränsningar och koppling till serien... ✓ (21.1 KB)
+  Processing Del VIII: Slutsats... ✓ (9.7 KB)
+
+✅ HTML generated (323.4 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,46 @@
+📄 Starting PDF generation for "The Integration Deficit"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/universities-integration-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/universities-integration-deficit/sections
+
+Reading 00-executive-summary.en.md... ✓ (14.8 KB)
+   Processing images... Reading 01-integration-deficit.en.md... ✓ (18.8 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (30.8 KB)
+   Processing images... Reading 03-building-integrative-capacity.en.md... ✓ (27.5 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (16.1 KB)
+   Processing images... Reading 05-first-step.en.md... ✓ (21.0 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (13.3 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (6.5 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (4.3 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (3.4 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (4.2 KB)
+   Processing images... Reading 07-appendix-e.en.md... ✓ (2.8 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (15.6 KB)
+  Processing 1. The Integration Deficit... ✓ (19.5 KB)
+  Processing 2. Structural Mechanisms: How Universities Become Blind to Complexity... ✓ (31.3 KB)
+  Processing 3. What Building Integrative Capacity Would Look Like... ✓ (28.1 KB)
+  Processing 4. The Political Immune System: The Performative Reform Trap... ✓ (16.5 KB)
+  Processing 5. A Concrete First Step: The Integrative Capacity Audit and the Grand Challenge Pilot... ✓ (21.5 KB)
+  Processing 6. Coda: The University at the Crossroads... ✓ (13.4 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (6.7 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (4.4 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (3.5 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (4.3 KB)
+  Processing Appendix E: About the Author & Method... ✓ (2.9 KB)
+
+✅ HTML generated (174.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

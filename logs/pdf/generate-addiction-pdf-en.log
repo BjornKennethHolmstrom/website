@@ -1,0 +1,34 @@
+📄 Starting PDF generation for working paper...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/addiction-as-integration-failure.pdf
+
+Reading markdown files for language: en
+Converting markdown to HTML...
+Cover image size: 1.64 MB
+Base64 encoded size: 2243.7 KB
+Cover page HTML: 2248.7 KB
+  Abstract: 1.5 KB
+  1. Introduction: 10.3 KB
+  2. The Project Janus Framework: 11.0 KB
+  3. Multi-Domain Diagnosis: 34.8 KB
+  4. Why Interventions Fail: 28.4 KB
+  5. Minimum Viable Civilizational Rehab: 43.3 KB
+  6. Research and Action Agenda: 26.0 KB
+  7. Conclusion: 7.3 KB
+  Appendices: 35.3 KB
+Generating PDF...
+HTML size: 2447.0 KB
+Loading HTML content...
+Content loaded, waiting for rendering...
+Generating PDF file...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+Closing browser...
+✅ PDF generated successfully: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/addiction-as-integration-failure.pdf
+📄 File size: 3.23 MB
+📖 Approximate pages: 836
+
+✨ Done!
+
+To generate the other language, run:
+node scripts/generate-addiction-pdf.js sv

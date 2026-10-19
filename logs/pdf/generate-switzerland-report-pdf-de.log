@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Switzerland Boundary Expansion Deficit report...
+
+Language: de
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/switzerland-boundary-expansion-deficit-de.pdf
+
+
+📖 Reading report sections for language: de
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/switzerland-boundary-expansion-deficit/sections
+
+Reading executive-summary.de.md... ✓ (11.6 KB)
+   Processing images... Reading 01-boundary-expansion-deficit.de.md... ✓ (28.2 KB)
+   Processing images... Reading 02-structural-mechanisms.de.md... ✓ (33.5 KB)
+   Processing images... Reading 03-empirical-cases.de.md... ✓ (27.2 KB)
+   Processing images... Reading 04-building-boundary-adequacy.de.md... ✓ (28.5 KB)
+   Processing images... Reading 05-concrete-first-step.de.md... ✓ (16.0 KB)
+   Processing images... Reading 06-coda.de.md... ✓ (10.1 KB)
+   Processing images... Reading 07-appendix-a.de.md... ✓ (10.2 KB)
+   Processing images... Reading 08-appendix-b.de.md... ✓ (9.2 KB)
+   Processing images... Reading 09-appendix-c.de.md... ✓ (9.8 KB)
+   Processing images... Reading 10-appendix-d.de.md... ✓ (8.9 KB)
+   Processing images... Reading 11-appendix-e.de.md... ✓ (6.0 KB)
+   Processing images... Reading 12-appendix-f.de.md... ✓ (10.3 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Zusammenfassung... ✓ (11.9 KB)
+  Processing 1. Das Grenzerweiterungsdefizit... ✓ (28.9 KB)
+  Processing 2. Strukturelle Mechanismen... ✓ (34.1 KB)
+  Processing 3. Empirische Fälle... ✓ (27.7 KB)
+  Processing 4. Wie der Aufbau von Grenzadäquanz aussehen würde... ✓ (29.2 KB)
+  Processing 5. Ein konkreter erster Schritt: Das Grenzerweiterungspilotprojekt... ✓ (16.5 KB)
+  Processing 6. Koda: Der Prototyp an der Grenze... ✓ (10.4 KB)
+  Processing Anhang A: Wertesysteme und politische Denkweisen... ✓ (10.4 KB)
+  Processing Anhang B: Internationale Analogien... ✓ (9.4 KB)
+  Processing Anhang C: Die Verbindung zu Governance as Engineering... ✓ (10.0 KB)
+  Processing Anhang D: Erwartete Einwände... ✓ (9.0 KB)
+  Processing Anhang E: Über den Autor und die Methode... ✓ (6.1 KB)
+  Processing Anhang F: Glossar... ✓ (10.9 KB)
+
+✅ HTML generated (221.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

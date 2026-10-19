@@ -1,0 +1,44 @@
+📄 Starting PDF generation for Political Economy of Requisite Governance (Paper IX)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/political-economy-of-requisite-governance.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/political-economy-of-requisite-governance/sections
+
+Reading part-1.md... ✓ (11.7 KB)
+   Processing images... Reading part-2.md... ✓ (17.5 KB)
+   Processing images... Reading part-3.md... ✓ (14.9 KB)
+   Processing images... Reading part-4.md... ✓ (23.8 KB)
+   Processing images... Reading part-5.md... ✓ (21.1 KB)
+   Processing images... Reading part-6.md... ✓ (15.1 KB)
+   Processing images... Reading part-7.md... ✓ (10.9 KB)
+   Processing images... Reading part-8.md... ✓ (12.3 KB)
+   Processing images... Reading appendix-a.md... ✓ (15.2 KB)
+   Processing images... Reading appendix-b.md... ✓ (12.3 KB)
+   Processing images... Reading appendix-c.md... ✓ (23.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Part I: From Qualitative Diagnosis to Formal Model... ✓ (11.9 KB)
+  Processing Part II: Modeling the Transition as a Contested Control Problem... ✓ (18.6 KB)
+  Processing Part III: The Three Structural Traps... ✓ (16.3 KB)
+  Processing Part IV: Design Principles for Transition Mechanisms... ✓ (24.9 KB)
+  Processing Part V: Dynamic Model: Transition Bandwidth... ✓ (21.6 KB)
+  Processing Part VI: Simulation Architecture... ✓ (18.1 KB)
+  Processing Part VII: Limitations and Open Questions... ✓ (11.1 KB)
+  Processing Part VIII: Conclusion... ✓ (12.5 KB)
+  Processing Appendix A: Heuristic Derivation of the Transition Variety Ratio Ω... ✓ (16.8 KB)
+  Processing Appendix B: The Bypass‑Trap Dynamical System... ✓ (14.5 KB)
+  Processing Appendix C: Historical Calibration of Buy‑Out Effectiveness... ✓ (24.2 KB)
+
+✅ HTML generated (197.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,32 @@
+📄 Starting PDF generation for "The Architecture of Governance Failure"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/architecture-of-governance-failure.pdf
+
+
+📖 Reading paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/architecture-of-governance-failure/sections
+
+Reading preface.en.md... ✓ (3.3 KB)
+   Processing images... Reading part-1.en.md... ✓ (15.6 KB)
+   Processing images... Reading part-2.en.md... ✓ (20.8 KB)
+   Processing images... Reading part-3.en.md... ✓ (18.1 KB)
+   Processing images... Reading part-4.en.md... ✓ (28.4 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Preface... ✓ (3.4 KB)
+  Processing Part I: The Pattern Nobody Named... ✓ (16.4 KB)
+  Processing Part II: Four Ways the Channel Breaks... ✓ (21.1 KB)
+  Processing Part III: Why Reforms Disappoint... ✓ (18.4 KB)
+  Processing Part IV: What Requisite Governance Looks Like — and Where to Begin... ✓ (29.6 KB)
+
+✅ HTML generated (95.2 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

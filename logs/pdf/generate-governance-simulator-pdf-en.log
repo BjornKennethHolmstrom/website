@@ -1,0 +1,45 @@
+📄 Starting PDF generation for Governance Stability Simulator working paper...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/governance-stability-simulator.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/governance-stability-simulator/sections
+
+Reading executive-summary.md... ✓ (1.7 KB)
+   Processing images... Reading part-1.md... ✓ (3.8 KB)
+   Processing images... Reading part-2.md... ✓ (6.5 KB)
+   Processing images... Reading part-3.md... ✓ (6.4 KB)
+   Processing images... ✅ Linked image: governance-simulator-v3.png
+Reading part-4.md... ✓ (5.1 KB)
+   Processing images... Reading part-5.md... ✓ (5.6 KB)
+   Processing images... Reading part-6.md... ✓ (7.5 KB)
+   Processing images... Reading part-7.md... ✓ (3.4 KB)
+   Processing images... Reading appendix-a.md... ✓ (3.3 KB)
+   Processing images... Reading appendix-b.md... ✓ (2.0 KB)
+   Processing images... Reading appendix-c.md... ✓ (5.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (1.8 KB)
+  Processing Part I: Governance as a Feedback System... ✓ (4.2 KB)
+  Processing Part II: A Formal Grammar for Governance... ✓ (7.0 KB)
+  Processing Part III: The Simulation... ✓ (7.0 KB)
+  Processing Part IV: Structural Observations... ✓ (5.2 KB)
+  Processing Part V: Limitations... ✓ (5.7 KB)
+  Processing Part VI: Implications... ✓ (7.6 KB)
+  Processing Part VII: Conclusion... ✓ (3.4 KB)
+  Processing Appendix A: Mathematical Formulations... ✓ (4.4 KB)
+  Processing Appendix B: Code and Reproduction... ✓ (2.2 KB)
+  Processing Appendix C: References and Sources... ✓ (5.5 KB)
+
+✅ HTML generated (60.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

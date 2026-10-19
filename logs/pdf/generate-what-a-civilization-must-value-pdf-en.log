@@ -1,0 +1,48 @@
+📚 Starting PDF generation for What a Civilization Must Value
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/books/What_a_Civilization_Must_Value.pdf
+
+
+📖 Reading book chapters from: /home/bjorn/Code/bjornkennethholmstrom/src/routes/books/what-a-civilization-must-value/sections/en
+
+Reading table-of-contents.md... ✓ (0.6 KB)
+Reading introduction.md... ✓ (10.0 KB)
+Reading chapter-1.md... ✓ (8.8 KB)
+Reading chapter-2.md... ✓ (14.6 KB)
+Reading chapter-3.md... ✓ (14.9 KB)
+Reading chapter-4.md... ✓ (13.3 KB)
+Reading chapter-5.md... ✓ (5.7 KB)
+Reading chapter-6.md... ✓ (15.7 KB)
+Reading chapter-7.md... ✓ (7.8 KB)
+Reading conclusion.md... ✓ (4.5 KB)
+Reading references.md... ✓ (6.2 KB)
+Reading glossary.md... ✓ (12.0 KB)
+
+✅ All chapters read successfully (12 chapters)
+
+🔨 Converting markdown to HTML...
+  Converting Contents... ✓ (0.8 KB)
+  Converting Introduction: The Question the Diagnosis Raises... ✓ (10.2 KB)
+  Converting 1. The Self‑Defeat Argument... ✓ (9.0 KB)
+  Converting 2. Truth as Signal Fidelity... ✓ (14.8 KB)
+  Converting 3. Ecological Integrity as the Boundary Condition... ✓ (15.1 KB)
+  Converting 4. Love and Connection as Relational Infrastructure... ✓ (13.5 KB)
+  Converting 5. Meaning — Where the Framework’s Grip Loosens... ✓ (5.9 KB)
+  Converting 6. The Meta‑Governance Imperative... ✓ (15.9 KB)
+  Converting 7. The Dimensions the Framework Cannot Name... ✓ (8.1 KB)
+  Converting Conclusion: What the Reader Now Sees... ✓ (4.5 KB)
+  Converting References... ✓ (6.8 KB)
+  Converting Glossary... ✓ (12.5 KB)
+
+✅ HTML generated (121.8 KB total)
+
+📄 Generating PDF...
+Loading HTML...
+Generating PDF...
+🏷️  Provenance label: after-image-cover (author lines replaced: 0)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/books/What_a_Civilization_Must_Value.pdf
+Cleaning up...
+
+✅ Done!
+

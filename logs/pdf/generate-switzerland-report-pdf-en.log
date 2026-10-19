@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Switzerland Boundary Expansion Deficit report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/switzerland-boundary-expansion-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/switzerland-boundary-expansion-deficit/sections
+
+Reading executive-summary.en.md... ✓ (10.1 KB)
+   Processing images... Reading 01-boundary-expansion-deficit.en.md... ✓ (24.8 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (29.9 KB)
+   Processing images... Reading 03-empirical-cases.en.md... ✓ (24.1 KB)
+   Processing images... Reading 04-building-boundary-adequacy.en.md... ✓ (25.0 KB)
+   Processing images... Reading 05-concrete-first-step.en.md... ✓ (13.8 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (9.0 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (9.1 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (8.1 KB)
+   Processing images... Reading 09-appendix-c.en.md... ✓ (8.7 KB)
+   Processing images... Reading 10-appendix-d.en.md... ✓ (7.7 KB)
+   Processing images... Reading 11-appendix-e.en.md... ✓ (5.2 KB)
+   Processing images... Reading 12-appendix-f.en.md... ✓ (9.8 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (10.4 KB)
+  Processing 1. The Boundary Expansion Deficit... ✓ (25.6 KB)
+  Processing 2. Structural Mechanisms... ✓ (30.6 KB)
+  Processing 3. Empirical Cases... ✓ (24.8 KB)
+  Processing 4. What Building Boundary Adequacy Would Look Like... ✓ (25.9 KB)
+  Processing 5. A Concrete First Step: The Boundary Expansion Pilot... ✓ (14.4 KB)
+  Processing 6. Coda: The Prototype at the Boundary... ✓ (9.3 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (9.4 KB)
+  Processing Appendix B: International Analogues... ✓ (8.4 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (9.0 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (8.0 KB)
+  Processing Appendix E: About the Author & Method... ✓ (5.3 KB)
+  Processing Appendix F: Glossary... ✓ (10.4 KB)
+
+✅ HTML generated (198.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

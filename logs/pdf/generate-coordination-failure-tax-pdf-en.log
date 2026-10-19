@@ -1,0 +1,17 @@
+
+📄 Generating PDF: The Coordination Failure Tax [en]
+
+📖 Reading sections [en]
+
+  abstract.md ... ✓
+  part-1.md ... ✓
+  part-2.md ...   ✅ figure-1-information-flow.svg
+✓
+  part-3.md ...   ✅ figure-2-ggf-mapping.svg
+✓
+  part-4.md ... ✓
+  part-5.md ... ✓
+  part-6.md ... ✓
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+
+✅ PDF written to /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/coordination-failure-tax.pdf

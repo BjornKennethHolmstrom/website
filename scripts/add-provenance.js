@@ -92,17 +92,35 @@ function patchPages(groups) {
 			if (src.includes('Provenance')) { stats.skipped++; continue; }
 
 			const scriptOpen = src.match(/<script(?![^>]*context=["']module["'])(?![^>]*module)[^>]*>/);
-			const h1Close = src.indexOf('</h1>');
-			if (!scriptOpen || h1Close < 0) {
-				stats.manual.push(`${rel(file)} — ${!scriptOpen ? 'no <script> block' : 'no </h1>'}; place <Provenance /> by hand`);
+			if (!scriptOpen) {
+				stats.manual.push(`${rel(file)} — no <script> block; place <Provenance /> by hand`);
 				continue;
 			}
 
-			// Component after the first </h1>, keeping that line's indentation
-			const lineStart = src.lastIndexOf('\n', h1Close) + 1;
-			const indent = src.slice(lineStart).match(/^[ \t]*/)[0];
-			const afterH1 = h1Close + '</h1>'.length;
-			let out = src.slice(0, afterH1) + `\n${indent}<Provenance />` + src.slice(afterH1);
+			let out;
+			// Essay-style header: "<span>{t.author}</span> • date • read time" inside <header>
+			const authorSpan = /[ \t]*<span>\{t\.author\}<\/span>\s*\n[ \t]*<span>•<\/span>\s*\n/;
+			const headerClose = src.indexOf('</header>');
+			if (authorSpan.test(src) && headerClose > 0) {
+				const lineStart = src.lastIndexOf('\n', headerClose) + 1;
+				const indent = src.slice(lineStart).match(/^[ \t]*/)[0];
+				out =
+					src.slice(0, lineStart) +
+					`${indent}\t<Provenance align="start" />\n` +
+					src.slice(lineStart);
+				out = out.replace(authorSpan, '');
+			} else {
+				// Otherwise: after the first </h1>, keeping that line's indentation
+				const h1Close = src.indexOf('</h1>');
+				if (h1Close < 0) {
+					stats.manual.push(`${rel(file)} — no </h1>; place <Provenance /> by hand`);
+					continue;
+				}
+				const lineStart = src.lastIndexOf('\n', h1Close) + 1;
+				const indent = src.slice(lineStart).match(/^[ \t]*/)[0];
+				const afterH1 = h1Close + '</h1>'.length;
+				out = src.slice(0, afterH1) + `\n${indent}<Provenance />` + src.slice(afterH1);
+			}
 
 			const at = out.indexOf(scriptOpen[0]) + scriptOpen[0].length;
 			out = out.slice(0, at) + `\n\timport Provenance from '$lib/components/Provenance.svelte';` + out.slice(at);

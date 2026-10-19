@@ -1,0 +1,48 @@
+📄 Starting PDF generation for India Leap‑Lag Cycle report...
+
+Language: ta
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/india-leap-lag-cycle-ta.pdf
+
+
+📖 Reading report sections for language: ta
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/india-leap-lag-cycle/sections
+
+Reading executive-summary.ta.md... ✓ (9.2 KB)
+   Processing images... Reading 01-leap-lag-cycle.ta.md... ✓ (18.0 KB)
+   Processing images... Reading 02-synchronisation-deficit.ta.md... ✓ (20.5 KB)
+   Processing images... Reading 03-building-synchronisation-capacity.ta.md... ✓ (21.5 KB)
+   Processing images... Reading 04-political-immune-system.ta.md... ✓ (14.5 KB)
+   Processing images... Reading 05-transition-architecture.ta.md... ✓ (14.2 KB)
+   Processing images... Reading 06-synchronisation-sandbox.ta.md... ✓ (17.9 KB)
+   Processing images... Reading 07-coda.ta.md... ✓ (9.8 KB)
+   Processing images... Reading 08-appendix-a.ta.md... ✓ (6.8 KB)
+   Processing images... Reading 08-appendix-b.ta.md... ✓ (4.7 KB)
+   Processing images... Reading 08-appendix-c.ta.md... ✓ (5.4 KB)
+   Processing images... Reading 08-appendix-d.ta.md... ✓ (4.7 KB)
+   Processing images... Reading 08-appendix-e.ta.md... ✓ (4.6 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing செயலாக்க சுருக்கம்... ✓ (9.5 KB)
+  Processing 1. முன்னேற்ற‑பின்னடைவு சுழற்சி... ✓ (18.3 KB)
+  Processing 2. ஒத்திசைவு குறைபாடு: ஒரு புதிய நோயறிதல்... ✓ (20.9 KB)
+  Processing 3. ஒத்திசைவு திறன் மேம்பாடு எப்படி இருக்கும்... ✓ (22.0 KB)
+  Processing 4. அரசியல் நோயெதிர்ப்பு அமைப்பு: ஒத்திசைவு ஏன் தோல்வியடைகிறது... ✓ (14.7 KB)
+  Processing 5. இயற்கைக்கு இசைவாக: இந்தியாவுக்கான மாற்றுக் கட்டமைப்பு... ✓ (14.6 KB)
+  Processing 6. ஒரு உறுதியான முதல் படி: ஒத்திசைவு சேண்ட்பாக்ஸ்... ✓ (18.3 KB)
+  Processing 7. முடிவுரை: முன்னேற்ற‑பின்னடைவிலிருந்து முன்னேற்ற‑ஒத்திசைவுக்கு... ✓ (10.0 KB)
+  Processing இணைப்பு அ: மதிப்பு அமைப்புகள் மற்றும் கொள்கை மனப்பான்மைகள்... ✓ (7.0 KB)
+  Processing இணைப்பு ஆ: சர்வதேச ஒப்புமைகள்... ✓ (4.8 KB)
+  Processing இணைப்பு இ: ஆளுகை பொறியியல் இணைப்பு... ✓ (5.5 KB)
+  Processing இணைப்பு ஈ: எதிர்பார்க்கப்படும் எதிர்ப்புகள்... ✓ (4.8 KB)
+  Processing இணைப்பு உ: ஆசிரியர் மற்றும் முறை பற்றி... ✓ (4.7 KB)
+
+✅ HTML generated (162.1 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 0)
+✅ PDF generated successfully
+Cleaning up...

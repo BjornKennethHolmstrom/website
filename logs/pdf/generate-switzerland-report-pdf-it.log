@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Switzerland Boundary Expansion Deficit report...
+
+Language: it
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/switzerland-boundary-expansion-deficit-it.pdf
+
+
+📖 Reading report sections for language: it
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/switzerland-boundary-expansion-deficit/sections
+
+Reading executive-summary.it.md... ✓ (11.3 KB)
+   Processing images... Reading 01-boundary-expansion-deficit.it.md... ✓ (27.1 KB)
+   Processing images... Reading 02-structural-mechanisms.it.md... ✓ (32.8 KB)
+   Processing images... Reading 03-empirical-cases.it.md... ✓ (27.0 KB)
+   Processing images... Reading 04-building-boundary-adequacy.it.md... ✓ (27.8 KB)
+   Processing images... Reading 05-concrete-first-step.it.md... ✓ (15.5 KB)
+   Processing images... Reading 06-coda.it.md... ✓ (9.8 KB)
+   Processing images... Reading 07-appendix-a.it.md... ✓ (10.0 KB)
+   Processing images... Reading 08-appendix-b.it.md... ✓ (9.0 KB)
+   Processing images... Reading 09-appendix-c.it.md... ✓ (9.6 KB)
+   Processing images... Reading 10-appendix-d.it.md... ✓ (8.4 KB)
+   Processing images... Reading 11-appendix-e.it.md... ✓ (5.8 KB)
+   Processing images... Reading 12-appendix-f.it.md... ✓ (11.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sintesi... ✓ (11.6 KB)
+  Processing 1. Il deficit di espansione del confine... ✓ (28.2 KB)
+  Processing 2. Meccanismi strutturali... ✓ (33.5 KB)
+  Processing 3. Casi empirici... ✓ (27.4 KB)
+  Processing 4. Come sarebbe costruire l'adeguatezza dei confini... ✓ (28.5 KB)
+  Processing 5. Un primo passo concreto: il progetto pilota di espansione del confine... ✓ (16.0 KB)
+  Processing 6. Coda: Il prototipo al confine... ✓ (10.0 KB)
+  Processing Appendice A: Sistemi di valori e mentalità politiche... ✓ (10.2 KB)
+  Processing Appendice B: Analogie internazionali... ✓ (9.2 KB)
+  Processing Appendice C: Il collegamento con Governance as Engineering... ✓ (9.8 KB)
+  Processing Appendice D: Obiezioni previste... ✓ (8.7 KB)
+  Processing Appendice E: L'autore e il metodo... ✓ (5.9 KB)
+  Processing Appendice F: Glossario... ✓ (11.6 KB)
+
+✅ HTML generated (217.6 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

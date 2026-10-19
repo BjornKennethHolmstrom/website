@@ -1,0 +1,38 @@
+📄 Starting PDF generation for Russia Legibility Deficit report...
+
+Language: ru
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/russia-legibility-deficit-ru.pdf
+
+
+📖 Reading report sections for language: ru
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/russia-legibility-deficit/sections
+
+Reading 00-executive-summary.ru.md... ✓ (6.1 KB)
+   Processing images... Reading 01-legibility-deficit.ru.md... ✓ (19.0 KB)
+   Processing images... Reading 02-structural-mechanisms.ru.md... ✓ (30.9 KB)
+   Processing images... Reading 03-reform-is-impossible.ru.md... ✓ (15.6 KB)
+   Processing images... Reading 04-dark-mirror.ru.md... ✓ (15.3 KB)
+   Processing images... Reading 05-appendix-a.ru.md... ✓ (7.7 KB)
+   Processing images... Reading 05-appendix-b.ru.md... ✓ (6.6 KB)
+   Processing images... Reading 05-appendix-c.ru.md... ✓ (3.9 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Аннотация... ✓ (6.4 KB)
+  Processing 1. Дефицит читаемости... ✓ (19.4 KB)
+  Processing 2. Структурные механизмы... ✓ (31.4 KB)
+  Processing 3. Почему реформы невозможны при текущем режиме — и что может последовать... ✓ (15.8 KB)
+  Processing 4. Кода: Тёмное зеркало... ✓ (15.6 KB)
+  Processing Приложение A: Системы ценностей и политические установки... ✓ (7.9 KB)
+  Processing Приложение B: Связь с Governance as Engineering... ✓ (6.7 KB)
+  Processing Приложение C: Об авторе и методе... ✓ (4.0 KB)
+
+✅ HTML generated (113.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 0)
+✅ PDF generated successfully
+Cleaning up...

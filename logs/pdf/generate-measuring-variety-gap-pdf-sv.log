@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Measuring the Variety Gap working paper...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/measuring-the-variety-gap-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/measuring-the-variety-gap/sections
+
+Reading 01-introduction.sv.md... ✓ (6.1 KB)
+   Processing images... Reading 02-dimensionality-estimation-problem.sv.md... ✓ (7.8 KB)
+   Processing images... Reading 03-eight-parameters.sv.md... ✓ (24.0 KB)
+   Processing images... Reading 04-measurement-paradox.sv.md... ✓ (11.7 KB)
+   Processing images... Reading 05-composite-variety-gap-index.sv.md... ✓ (18.1 KB)
+   Processing images... Reading 06-dynamic-extension.sv.md... ✓ (14.3 KB)
+   Processing images... Reading 07-calibration.sv.md... ✓ (13.0 KB)
+   Processing images... Reading 08-empirical-application.sv.md... ✓ (13.4 KB)
+   Processing images... Reading 09-limitations-and-next-steps.sv.md... ✓ (12.4 KB)
+   Processing images... Reading 10-appendix-a.sv.md... ✓ (29.2 KB)
+   Processing images... Reading 10-appendix-b.sv.md... ✓ (6.2 KB)
+   Processing images... Reading 10-appendix-c.sv.md... ✓ (14.0 KB)
+   Processing images... Reading 10-appendix-d.sv.md... ✓ (17.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing 1. Introduktion: Från diagnos till mätning... ✓ (6.1 KB)
+  Processing 2. Dimensionalitetsuppskattningsproblemet... ✓ (7.9 KB)
+  Processing 3. De åtta parametrarna... ✓ (25.0 KB)
+  Processing 4. Mätparadoxen... ✓ (11.9 KB)
+  Processing 5. Det sammansatta varietetsgap-indexet... ✓ (18.6 KB)
+  Processing 6. Dynamisk utvidgning: Mätning av gapets förändringshastighet... ✓ (14.8 KB)
+  Processing 7. Kalibrering mot de tjugoen fallen... ✓ (14.5 KB)
+  Processing 8. Empirisk tillämpning: En pilotvalidering... ✓ (13.8 KB)
+  Processing 9. Begränsningar och nästa steg... ✓ (12.7 KB)
+  Processing Appendix A: Guide för parameteruppskattning... ✓ (30.8 KB)
+  Processing Appendix B: Landkalibreringstabell... ✓ (8.1 KB)
+  Processing Appendix C: Datakällor och tillgänglighetsmatris... ✓ (16.1 KB)
+  Processing Appendix D: Matematiskt appendix... ✓ (18.1 KB)
+
+✅ HTML generated (205.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,48 @@
+📄 Starting PDF generation for "The Monetary Policy Variety Gap"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/central-banks-monetary-policy-variety-gap-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/central-banks-monetary-policy-variety-gap/sections
+
+Reading 00-executive-summary.en.md... ✓ (14.3 KB)
+   Processing images... Reading 01-monetary-policy-variety-gap.en.md... ✓ (16.2 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (36.8 KB)
+   Processing images... Reading 03-building-requisite-monetary-governance.en.md... ✓ (22.7 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (15.3 KB)
+   Processing images... Reading 05-first-step.en.md... ✓ (18.3 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (16.4 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (7.0 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (4.7 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (3.9 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (6.3 KB)
+   Processing images... Reading 07-appendix-e.en.md... ✓ (3.1 KB)
+   Processing images... Reading 07-appendix-f.en.md... ✓ (5.4 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (15.1 KB)
+  Processing 1. The Monetary Policy Variety Gap... ✓ (16.6 KB)
+  Processing 2. Structural Mechanisms: How Central Banks Become Blind to the Economies They Govern... ✓ (37.4 KB)
+  Processing 3. What Building Requisite Monetary Governance Would Look Like... ✓ (23.1 KB)
+  Processing 4. The Political Immune System: The Pretence of Knowledge... ✓ (15.6 KB)
+  Processing 5. A Concrete First Step: The Monetary Policy Distributional Impact Assessment... ✓ (18.7 KB)
+  Processing 6. Coda: The Engineers at the Table... ✓ (16.6 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (7.2 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (4.8 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (4.0 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (6.5 KB)
+  Processing Appendix E: About the Author & Method... ✓ (3.2 KB)
+  Processing Appendix F: Key Concepts and Abbreviations... ✓ (5.7 KB)
+
+✅ HTML generated (181.2 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

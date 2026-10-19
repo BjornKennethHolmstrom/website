@@ -1,0 +1,52 @@
+📄 Starting PDF generation for Three Laws from One Bound (Paper XX)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/three-laws-from-one-bound.pdf
+
+
+📖 Reading Paper XX sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/three-laws-from-one-bound/sections
+
+Reading abstract.en.md... ✓ (3.5 KB)
+   Processing images... done.
+Reading section-01.en.md... ✓ (2.5 KB)
+   Processing images... done.
+Reading section-02.en.md... ✓ (1.8 KB)
+   Processing images... done.
+Reading section-03.en.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading section-04.en.md... ✓ (6.6 KB)
+   Processing images... done.
+Reading section-05.en.md... ✓ (5.7 KB)
+   Processing images... done.
+Reading section-06.en.md... ✓ (2.3 KB)
+   Processing images... done.
+Reading section-07.en.md... ✓ (3.4 KB)
+   Processing images... done.
+Reading section-08.en.md... ✓ (1.7 KB)
+   Processing images... done.
+Reading appendix-a.en.md... ✓ (1.9 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (3.6 KB)
+  Processing 1. Three laws, one suspicion... ✓ (2.6 KB)
+  Processing 2. The single premise... ✓ (3.1 KB)
+  Processing 3. Ashby as theorem — the First Law... ✓ (16.0 KB)
+  Processing 4. Goodhart as structural theorem — the optimization face... ✓ (29.6 KB)
+  Processing 5. Certification cost as monotone accounting — the maintenance face... ✓ (16.8 KB)
+  Processing 6. Why one bound yields three laws... ✓ (8.7 KB)
+  Processing 7. What this re‑grounds, and what it does not show... ✓ (7.1 KB)
+  Processing 8. Method and confidence... ✓ (4.3 KB)
+  Processing Appendix A: Notation and the Goodhart demonstration... ✓ (46.0 KB)
+
+✅ HTML generated (144.1 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,48 @@
+📚 Starting PDF generation for Vad en civilisation måste värdera
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/books/What_a_Civilization_Must_Value-sv.pdf
+
+
+📖 Reading book chapters from: /home/bjorn/Code/bjornkennethholmstrom/src/routes/books/what-a-civilization-must-value/sections/sv
+
+Reading table-of-contents.md... ✓ (0.5 KB)
+Reading introduction.md... ✓ (10.1 KB)
+Reading chapter-1.md... ✓ (9.1 KB)
+Reading chapter-2.md... ✓ (14.4 KB)
+Reading chapter-3.md... ✓ (15.3 KB)
+Reading chapter-4.md... ✓ (13.8 KB)
+Reading chapter-5.md... ✓ (5.8 KB)
+Reading chapter-6.md... ✓ (15.8 KB)
+Reading chapter-7.md... ✓ (7.9 KB)
+Reading conclusion.md... ✓ (4.5 KB)
+Reading references.md... ✓ (6.3 KB)
+Reading glossary.md... ✓ (11.9 KB)
+
+✅ All chapters read successfully (12 chapters)
+
+🔨 Converting markdown to HTML...
+  Converting Innehåll... ✓ (0.7 KB)
+  Converting Introduktion: Frågan diagnosen väcker... ✓ (10.3 KB)
+  Converting 1. Självförlustargumentet... ✓ (9.2 KB)
+  Converting 2. Sanning som signaltrohet... ✓ (14.6 KB)
+  Converting 3. Ekologisk integritet som gränsvillkor... ✓ (15.5 KB)
+  Converting 4. Kärlek och anknytning som relationell infrastruktur... ✓ (14.0 KB)
+  Converting 5. Mening — där ramverket tappar greppet... ✓ (5.9 KB)
+  Converting 6. Meta‑styrningsimperativet... ✓ (16.0 KB)
+  Converting 7. De dimensioner ramverket inte kan namnge... ✓ (8.0 KB)
+  Converting Slutsats: Vad läsaren nu ser... ✓ (4.6 KB)
+  Converting Referenser... ✓ (6.9 KB)
+  Converting Ordlista... ✓ (12.3 KB)
+
+✅ HTML generated (122.6 KB total)
+
+📄 Generating PDF...
+Loading HTML...
+Generating PDF...
+🏷️  Provenance label: after-image-cover (author lines replaced: 0)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/books/What_a_Civilization_Must_Value-sv.pdf
+Cleaning up...
+
+✅ Done!
+

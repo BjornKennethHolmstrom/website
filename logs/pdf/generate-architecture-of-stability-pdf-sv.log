@@ -1,0 +1,12 @@
+📄 Starting PDF generation for Architecture of Stability working paper...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/architecture-of-stability-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/architecture-of-stability/sections
+
+Reading executive-summary-sv.md... 
+❌ File not found: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/architecture-of-stability/sections/executive-summary-sv.md
+   Make sure you have executive-summary-sv.md in the sections directory

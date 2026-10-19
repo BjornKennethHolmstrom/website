@@ -1,0 +1,49 @@
+📄 Starting PDF generation for Boundary Selection Deficits (Paper XII)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/boundary-selection-deficits-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/boundary-selection-deficits/sections
+
+Reading 00-executive-summary.sv.md... ✓ (3.9 KB)
+   Processing images... Reading 01-part-1.sv.md... ✓ (14.3 KB)
+   Processing images... Reading 02-part-2.sv.md... ✓ (18.3 KB)
+   Processing images... Reading 03-part-3.sv.md... ✓ (14.3 KB)
+   Processing images... Reading 04-part-4.sv.md... ✓ (14.9 KB)
+   Processing images... Reading 05-part-5.sv.md... ✓ (18.8 KB)
+   Processing images... Reading 06-part-6.sv.md... ✓ (23.5 KB)
+   Processing images... Reading 07-part-7.sv.md... ✓ (17.4 KB)
+   Processing images... Reading 08-part-8.sv.md... ✓ (11.5 KB)
+   Processing images... Reading 09-appendix-a.sv.md... ✓ (10.5 KB)
+   Processing images... Reading 09-appendix-b.sv.md... ✓ (17.8 KB)
+   Processing images... ✅ Linked image: v14-stability-loopgain.png
+✅ Linked image: v14-adaptive-sweep.png
+✅ Linked image: v14-adaptive-trajectory.png
+Reading 09-appendix-c.sv.md... ✓ (19.4 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sammanfattning... ✓ (4.0 KB)
+  Processing Del I: Gränsproblemet... ✓ (14.6 KB)
+  Processing Del II: Formellt ramverk... ✓ (19.5 KB)
+  Processing Del III: Felmoder... ✓ (14.5 KB)
+  Processing Del IV: Simulering: Gränsmatchningsfel och stabilitet... ✓ (15.7 KB)
+  Processing Del V: Empiriska illustrationer... ✓ (19.0 KB)
+  Processing Del VI: Designprinciper... ✓ (23.8 KB)
+  Processing Del VII: Koppling till serien... ✓ (17.9 KB)
+  Processing Del VIII: Begränsningar och slutsats... ✓ (11.7 KB)
+  Processing Appendix A: Härledning av M-Δ och stabilitetsvillkor... ✓ (12.6 KB)
+  Processing Appendix B: Simuleringsspecifikation... ✓ (20.9 KB)
+  Processing Appendix C: Kodningsanteckningar för fallen... ✓ (20.9 KB)
+
+✅ HTML generated (201.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

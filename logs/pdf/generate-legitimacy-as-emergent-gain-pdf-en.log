@@ -1,0 +1,58 @@
+📄 Starting PDF generation for Legitimacy as Emergent Gain (Paper XIII)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/legitimacy-as-emergent-gain.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/legitimacy-as-emergent-gain/sections
+
+Reading 00-executive-summary.en.md... ✓ (7.0 KB)
+   Processing images... done.
+Reading 01-part-1.en.md... ✓ (14.2 KB)
+   Processing images... done.
+Reading 02-part-2.en.md... ✓ (23.8 KB)
+   Processing images... done.
+Reading 03-part-3.en.md... ✓ (23.2 KB)
+   Processing images... done.
+Reading 04-part-4.en.md... ✓ (13.6 KB)
+   Processing images... done.
+Reading 05-part-5.en.md... ✓ (19.0 KB)
+   Processing images... done.
+Reading 06-part-6.en.md... ✓ (23.9 KB)
+   Processing images... done.
+Reading 07-part-7.en.md... ✓ (14.3 KB)
+   Processing images... done.
+Reading 08-part-8.en.md... ✓ (11.7 KB)
+   Processing images... done.
+Reading 09-appendix-a.en.md... ✓ (12.9 KB)
+   Processing images... done.
+Reading 09-appendix-b.en.md... ✓ (20.6 KB)
+   Processing images... done.
+Reading 09-appendix-c.en.md... ✓ (15.3 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Executive Summary... ✓ (7.3 KB)
+  Processing Part I: The Legitimacy Gap... ✓ (14.5 KB)
+  Processing Part II: Formal Framework... ✓ (25.7 KB)
+  Processing Part III: Failure Modes of Legitimacy... ✓ (23.7 KB)
+  Processing Part IV: Simulation: The Legitimacy-Driven Controller... ✓ (15.0 KB)
+  Processing Part V: Empirical Illustrations... ✓ (19.3 KB)
+  Processing Part VI: Design Principles for Legitimacy-Sensitive Architectures... ✓ (24.8 KB)
+  Processing Part VII: Connection to the Series... ✓ (14.6 KB)
+  Processing Part VIII: Limitations and Conclusion... ✓ (12.0 KB)
+  Processing Appendix A: Formal Derivations... ✓ (182.7 KB)
+  Processing Appendix B: Simulation Specification... ✓ (215.0 KB)
+  Processing Appendix C: Empirical Coding Notes... ✓ (22.3 KB)
+
+✅ HTML generated (583.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

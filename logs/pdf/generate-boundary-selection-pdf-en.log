@@ -1,0 +1,49 @@
+📄 Starting PDF generation for Boundary Selection Deficits (Paper XII)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/boundary-selection-deficits.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/boundary-selection-deficits/sections
+
+Reading 00-executive-summary.en.md... ✓ (3.8 KB)
+   Processing images... Reading 01-part-1.en.md... ✓ (13.9 KB)
+   Processing images... Reading 02-part-2.en.md... ✓ (18.0 KB)
+   Processing images... Reading 03-part-3.en.md... ✓ (13.9 KB)
+   Processing images... Reading 04-part-4.en.md... ✓ (14.7 KB)
+   Processing images... Reading 05-part-5.en.md... ✓ (18.8 KB)
+   Processing images... Reading 06-part-6.en.md... ✓ (23.4 KB)
+   Processing images... Reading 07-part-7.en.md... ✓ (17.1 KB)
+   Processing images... Reading 08-part-8.en.md... ✓ (11.5 KB)
+   Processing images... Reading 09-appendix-a.en.md... ✓ (10.3 KB)
+   Processing images... Reading 09-appendix-b.en.md... ✓ (17.7 KB)
+   Processing images... ✅ Linked image: v14-stability-loopgain.png
+✅ Linked image: v14-adaptive-sweep.png
+✅ Linked image: v14-adaptive-trajectory.png
+Reading 09-appendix-c.en.md... ✓ (19.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (4.0 KB)
+  Processing Part I: The Boundary Problem... ✓ (14.4 KB)
+  Processing Part II: Formal Framework... ✓ (19.3 KB)
+  Processing Part III: Failure Modes... ✓ (14.2 KB)
+  Processing Part IV: Simulation: Boundary Mismatch and Stability... ✓ (15.6 KB)
+  Processing Part V: Empirical Illustrations... ✓ (19.1 KB)
+  Processing Part VI: Design Principles... ✓ (23.7 KB)
+  Processing Part VII: Connection to the Series... ✓ (17.6 KB)
+  Processing Part VIII: Limitations and Conclusion... ✓ (11.8 KB)
+  Processing Appendix A: M-Δ Derivation and Stability Conditions... ✓ (12.5 KB)
+  Processing Appendix B: Simulation Specification... ✓ (20.8 KB)
+  Processing Appendix C: Case Coding Notes... ✓ (20.6 KB)
+
+✅ HTML generated (200.2 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

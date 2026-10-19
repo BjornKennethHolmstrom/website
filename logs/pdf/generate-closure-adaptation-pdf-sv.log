@@ -1,0 +1,55 @@
+📄 Starting PDF generation for Closure–Adaptation Dynamics (Paper XXVIII)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/closure-adaptation-sv.pdf
+
+
+📖 Reading Paper XXVIII sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/closure-adaptation/sections
+
+Reading 00-abstract.sv.md... ✓ (2.8 KB)
+   Processing images... done.
+Reading 01-introduction.sv.md... ✓ (5.5 KB)
+   Processing images... done.
+Reading 02-definition-interpretation.sv.md... ✓ (8.1 KB)
+   Processing images... done.
+Reading 03-analytical-structure.sv.md... ✓ (8.1 KB)
+   Processing images... done.
+Reading 04-phase-diagram-and-robustness.sv.md... ✓ (10.3 KB)
+   Processing images... done.
+Reading 05-stochastic-dynamics.sv.md... ✓ (8.2 KB)
+   Processing images... done.
+Reading 06-coupled-populations.sv.md... ✓ (12.0 KB)
+   Processing images... done.
+Reading 07-governance-intervention.sv.md... ✓ (8.8 KB)
+   Processing images... done.
+Reading 08-discussion.sv.md... ✓ (11.4 KB)
+   Processing images... done.
+Reading 09-conclusion.sv.md... ✓ (5.2 KB)
+   Processing images... done.
+Reading 10-appendix-a.sv.md... ✓ (3.8 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (4.3 KB)
+  Processing 1. Introduktion... ✓ (9.1 KB)
+  Processing 2. Modelldefinition och styrningstolkning... ✓ (89.4 KB)
+  Processing 3. Analytisk struktur: snabb–långsam dekomposition och attraktorregimer... ✓ (124.9 KB)
+  Processing 4. Fasdiagram och robusthet hos slutenhetsfällan... ✓ (56.5 KB)
+  Processing 5. Stokastisk dynamik: brusinducerad tippning och kvarvarande skörhet... ✓ (38.4 KB)
+  Processing 6. Kopplade populationer: polarisering och kaskadkollaps... ✓ (94.0 KB)
+  Processing 7. Styrningsintervention: konstitutionellt permeabilitetsgolv... ✓ (48.5 KB)
+  Processing 8. Diskussion... ✓ (24.4 KB)
+  Processing 9. Slutsats... ✓ (6.8 KB)
+  Processing Appendix A: Simulerings- och reproducerbarhetsanteckningar... ✓ (39.7 KB)
+
+✅ HTML generated (542.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

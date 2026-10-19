@@ -1,0 +1,49 @@
+📄 Starting PDF generation for The Adaptation Bottleneck (Paper XV)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/adaptation-bottleneck.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/adaptation-bottleneck/sections
+
+Reading 00-abstract.en.md... ✓ (3.0 KB)
+   Processing images... done.
+Reading 01-part-1.en.md... ✓ (10.9 KB)
+   Processing images... done.
+Reading 02-part-2.en.md... ✓ (17.0 KB)
+   Processing images... done.
+Reading 03-part-3.en.md... ✓ (8.3 KB)
+   Processing images... done.
+Reading 04-part-4.en.md... ✓ (11.2 KB)
+   Processing images... done.
+Reading 05-part-5.en.md... ✓ (9.6 KB)
+   Processing images... done.
+Reading 06-part-6.en.md... ✓ (9.4 KB)
+   Processing images... done.
+Reading 07-appendix-a.en.md... ✓ (10.7 KB)
+   Processing images... done.
+Reading 07-appendix-b.en.md... ✓ (4.7 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (3.1 KB)
+  Processing Part I: The Problem — The Triad Was Never Costed... ✓ (11.3 KB)
+  Processing Part II: Formal Framework... ✓ (90.5 KB)
+  Processing Part III: The Three Backlogs, and Where They Are Documented... ✓ (28.7 KB)
+  Processing Part IV: Boundaries and Objections... ✓ (17.4 KB)
+  Processing Part V: Simulation... ✓ (64.4 KB)
+  Processing Part VI: Design Implications, and What the Series Does Next... ✓ (17.1 KB)
+  Processing Appendix A: Formal Derivations... ✓ (218.7 KB)
+  Processing Appendix B: Simulation Specification... ✓ (87.2 KB)
+
+✅ HTML generated (544.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

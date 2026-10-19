@@ -1,0 +1,55 @@
+📄 Starting PDF generation for Closure–Adaptation Dynamics (Paper XXVIII)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/closure-adaptation.pdf
+
+
+📖 Reading Paper XXVIII sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/closure-adaptation/sections
+
+Reading 00-abstract.en.md... ✓ (2.7 KB)
+   Processing images... done.
+Reading 01-introduction.en.md... ✓ (5.4 KB)
+   Processing images... done.
+Reading 02-definition-interpretation.en.md... ✓ (8.0 KB)
+   Processing images... done.
+Reading 03-analytical-structure.en.md... ✓ (7.8 KB)
+   Processing images... done.
+Reading 04-phase-diagram-and-robustness.en.md... ✓ (10.1 KB)
+   Processing images... done.
+Reading 05-stochastic-dynamics.en.md... ✓ (7.9 KB)
+   Processing images... done.
+Reading 06-coupled-populations.en.md... ✓ (12.1 KB)
+   Processing images... done.
+Reading 07-governance-intervention.en.md... ✓ (8.7 KB)
+   Processing images... done.
+Reading 08-discussion.en.md... ✓ (11.2 KB)
+   Processing images... done.
+Reading 09-conclusion.en.md... ✓ (5.1 KB)
+   Processing images... done.
+Reading 10-appendix-a.en.md... ✓ (3.7 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (4.1 KB)
+  Processing 1. Introduction... ✓ (9.0 KB)
+  Processing 2. Model Definition and Governance Interpretation... ✓ (89.3 KB)
+  Processing 3. Analytical Structure: Fast–Slow Decomposition and Attractor Regimes... ✓ (120.9 KB)
+  Processing 4. Phase Diagram and Robustness of the Closure Trap... ✓ (52.8 KB)
+  Processing 5. Stochastic Dynamics: Noise-Induced Tipping and Residual Fragility... ✓ (35.9 KB)
+  Processing 6. Coupled Populations: Polarization and Cascade Collapse... ✓ (91.1 KB)
+  Processing 7. Governance Intervention: Constitutional Permeability Floor... ✓ (46.0 KB)
+  Processing 8. Discussion... ✓ (24.1 KB)
+  Processing 9. Conclusion... ✓ (6.6 KB)
+  Processing Appendix A: Simulation and Reproducibility Notes... ✓ (36.0 KB)
+
+✅ HTML generated (522.4 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,52 @@
+📄 Starting PDF generation for Bhutan Interface Race report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/bhutan-interface-race-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/bhutan-interface-race/sections
+
+Reading 00-executive-summary.en.md... ✓ (14.5 KB)
+   Processing images... Reading 01-the-interface-race.en.md... ✓ (19.2 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (29.7 KB)
+   Processing images... Reading 03-building-interface-capacity.en.md... ✓ (16.4 KB)
+   Processing images... Reading 04-what-slows-interface-building.en.md... ✓ (12.3 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (12.0 KB)
+   Processing images... Reading 06-first-step.en.md... ✓ (11.0 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (9.1 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (4.9 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (4.5 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (4.4 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (4.0 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (2.6 KB)
+   Processing images... Reading 08-appendix-f.en.md... ✓ (3.1 KB)
+   Processing images... Reading 08-appendix-g.en.md... ✓ (2.8 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (16.3 KB)
+  Processing 1. The Interface Race... ✓ (19.9 KB)
+  Processing 2. The Interface Race: Structural Mechanisms... ✓ (31.3 KB)
+  Processing 3. What Building Interface Capacity Would Look Like... ✓ (17.1 KB)
+  Processing 4. What Slows Interface Building... ✓ (12.8 KB)
+  Processing 5. Working with the Grain: Transition Architecture for Bhutan... ✓ (12.4 KB)
+  Processing 6. A Concrete First Step: The Actuator Interface Register... ✓ (11.5 KB)
+  Processing 7. Coda: The Keeper of the Whole at the Frontier of Speed... ✓ (9.3 KB)
+  Processing Appendix A: Value Systems and Policy Mindsets... ✓ (5.1 KB)
+  Processing Appendix B: International Analogues and Precedents... ✓ (4.6 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (6.7 KB (1 math blocks))
+  Processing Appendix D: Anticipated Objections... ✓ (4.2 KB)
+  Processing Appendix E: About the Author and Method... ✓ (2.7 KB)
+  Processing Appendix F: The Crypto–Pay Case File... ✓ (3.4 KB)
+  Processing Appendix G: The Gelephu Mindfulness City — Legal and Accountability Architecture... ✓ (2.9 KB)
+
+✅ HTML generated (167.6 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

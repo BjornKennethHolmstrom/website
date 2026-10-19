@@ -1,0 +1,58 @@
+📄 Starting PDF generation for What Cannot Be Guaranteed (Paper XXII)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/what-cannot-be-guaranteed.pdf
+
+
+📖 Reading Paper XXII sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/what-cannot-be-guaranteed/sections
+
+Reading abstract.en.md... ✓ (3.7 KB)
+   Processing images... done.
+Reading section-01.en.md... ✓ (10.7 KB)
+   Processing images... done.
+Reading section-02.en.md... ✓ (11.1 KB)
+   Processing images... done.
+Reading section-03.en.md... ✓ (16.7 KB)
+   Processing images... done.
+Reading section-04.en.md... ✓ (15.5 KB)
+   Processing images... done.
+Reading section-05.en.md... ✓ (13.8 KB)
+   Processing images... done.
+Reading section-06.en.md... ✓ (11.2 KB)
+   Processing images... done.
+Reading section-07.en.md... ✓ (8.6 KB)
+   Processing images... done.
+Reading section-08.en.md... ✓ (11.7 KB)
+   Processing images... done.
+Reading section-09.en.md... ✓ (9.4 KB)
+   Processing images... done.
+Reading appendix-a.en.md... ✓ (11.5 KB)
+   Processing images... done.
+Reading appendix-b.en.md... ✓ (13.4 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (3.9 KB)
+  Processing 1. Introduction... ✓ (12.0 KB)
+  Processing 2. Three limits, three sources, and why they do not reduce to one... ✓ (15.7 KB)
+  Processing 3. The first limit: a system cannot certify the basis of its own correction... ✓ (19.9 KB)
+  Processing 4. The registered demonstration: a certification crisis... ✓ (18.3 KB)
+  Processing 5. The second limit: no one can decide from outside whether a reform converges... ✓ (75.0 KB)
+  Processing 6. The third limit: no architecture is right without a world... ✓ (22.9 KB)
+  Processing 7. From guarantee to hedge: what the three limits buy... ✓ (9.5 KB)
+  Processing 8. Integration with the series... ✓ (12.6 KB)
+  Processing 9. What this paper does not show... ✓ (10.4 KB)
+  Processing Appendix A: Formal development and simulation... ✓ (58.0 KB)
+  Processing Appendix B: The undecidability reduction... ✓ (35.2 KB)
+
+✅ HTML generated (299.9 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,58 @@
+📄 Starting PDF generation for Self III: The Operator...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/self-operator.pdf
+
+
+📖 Reading Self III sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/self-operator/sections
+
+Reading 00-abstract.en.md... ✓ (3.2 KB)
+   Processing images... done.
+Reading 01-part-0.en.md... ✓ (5.6 KB)
+   Processing images... done.
+Reading 02-part-1.en.md... ✓ (5.4 KB)
+   Processing images... done.
+Reading 03-part-2.en.md... ✓ (5.9 KB)
+   Processing images... done.
+Reading 04-part-3.en.md... ✓ (8.8 KB)
+   Processing images... done.
+Reading 05-part-4.en.md... ✓ (10.6 KB)
+   Processing images... done.
+Reading 06-part-5.en.md... ✓ (7.9 KB)
+   Processing images... done.
+Reading 07-part-6.en.md... ✓ (6.5 KB)
+   Processing images... done.
+Reading 08-part-7.en.md... ✓ (7.1 KB)
+   Processing images... done.
+Reading 09-part-8.en.md... ✓ (13.7 KB)
+   Processing images... done.
+Reading 10-appendix-a.en.md... ✓ (7.2 KB)
+   Processing images... done.
+Reading 10-appendix-b.en.md... ✓ (6.6 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (3.5 KB)
+  Processing Part 0: The Operator Seam... ✓ (5.8 KB)
+  Processing Part I: Inherited Unobservability... ✓ (5.6 KB)
+  Processing Part II: One State Vector... ✓ (6.1 KB)
+  Processing Part III: The Self-to-Other Distortion... ✓ (9.1 KB)
+  Processing Part IV: The Operator-Seeded Legitimacy Spiral... ✓ (11.0 KB)
+  Processing Part V: Against Borrowed Formal Authority... ✓ (8.2 KB)
+  Processing Part VI: Compassion as Consequence, and the Limit of Compensation... ✓ (6.8 KB)
+  Processing Part VII: The Boundary at the Operator... ✓ (7.3 KB)
+  Processing Part VIII: The Formation of the Observer... ✓ (14.2 KB)
+  Processing Appendix A: Simulation Specification... ✓ (8.0 KB)
+  Processing Appendix B: The Inheritance Asymmetry... ✓ (8.2 KB)
+
+✅ HTML generated (100.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

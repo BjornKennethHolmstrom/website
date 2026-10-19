@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Nigeria Substrate Deficit report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/nigeria-substrate-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/nigeria-substrate-deficit/sections
+
+Reading 00-executive-summary.en.md... ✓ (20.5 KB)
+   Processing images... Reading 01-substrate-deficit.en.md... ✓ (28.3 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (46.6 KB)
+   Processing images... Reading 03-building-governance-substrate.en.md... ✓ (29.4 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (17.3 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (16.9 KB)
+   Processing images... Reading 06-first-step.en.md... ✓ (15.2 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (16.9 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (8.3 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (5.7 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (6.6 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (7.0 KB)
+   Processing images... Reading 09-appendix-e.en.md... ✓ (4.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (22.1 KB)
+  Processing 1. The Substrate Deficit... ✓ (28.8 KB)
+  Processing 2. The Substrate Deficit: Structural Mechanisms... ✓ (47.7 KB)
+  Processing 3. What Building Governance Substrate Would Look Like... ✓ (30.2 KB)
+  Processing 4. The Political Immune System: The Extraction Coalition... ✓ (17.7 KB)
+  Processing 5. Working with the Grain: Transition Architecture for Nigeria... ✓ (17.2 KB)
+  Processing 6. A Concrete First Step: The Fiscal Accountability Compact and the Demography-Climate Commission... ✓ (15.4 KB)
+  Processing 7. Coda: The Post-Westphalian Prototype — or the Pre-Westphalian Warning... ✓ (17.2 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (8.6 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (5.8 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (6.8 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (7.2 KB)
+  Processing Appendix E: About the Author & Method... ✓ (4.1 KB)
+
+✅ HTML generated (235.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

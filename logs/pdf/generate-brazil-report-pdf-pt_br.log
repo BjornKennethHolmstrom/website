@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Brazil Accumulation Deficit report...
+
+Language: pt_br
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/brazil-accumulation-deficit-pt_br.pdf
+
+
+📖 Reading report sections for language: pt_br
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/brazil-accumulation-deficit/sections
+
+Reading 00-executive-summary.pt_br.md... ✓ (13.4 KB)
+   Processing images... Reading 01-accumulation-deficit.pt_br.md... ✓ (16.7 KB)
+   Processing images... Reading 02-capture-equilibrium.pt_br.md... ✓ (29.6 KB)
+   Processing images... Reading 03-building-accumulation-capacity.pt_br.md... ✓ (22.0 KB)
+   Processing images... Reading 04-political-immune-system.pt_br.md... ✓ (15.8 KB)
+   Processing images... Reading 05-transition-architecture.pt_br.md... ✓ (19.9 KB)
+   Processing images... Reading 06-first-step.pt_br.md... ✓ (21.4 KB)
+   Processing images... Reading 07-coda.pt_br.md... ✓ (15.2 KB)
+   Processing images... Reading 08-appendix-a.pt_br.md... ✓ (6.5 KB)
+   Processing images... Reading 08-appendix-b.pt_br.md... ✓ (4.0 KB)
+   Processing images... Reading 08-appendix-c.pt_br.md... ✓ (4.2 KB)
+   Processing images... Reading 08-appendix-d.pt_br.md... ✓ (4.2 KB)
+   Processing images... Reading 08-appendix-e.pt_br.md... ✓ (4.3 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sumário Executivo... ✓ (13.7 KB)
+  Processing 1. O Déficit de Acumulação... ✓ (16.9 KB)
+  Processing 2. O Equilíbrio de Captura: Um Novo Diagnóstico... ✓ (30.1 KB)
+  Processing 3. Como Construir a Capacidade de Acumulação... ✓ (22.5 KB)
+  Processing 4. O Sistema Imunológico Político... ✓ (16.0 KB)
+  Processing 5. Trabalhando com a Estrutura: Arquitetura de Transição para o Brasil... ✓ (20.1 KB)
+  Processing 6. Um Primeiro Passo Concreto: O Bypass Algorítmico e os Laboratórios Municipais... ✓ (22.1 KB)
+  Processing 7. Coda: Da Captura de Avanços à Composição de Avanços... ✓ (15.3 KB)
+  Processing Apêndice A: Sistemas de Valores e Mentalidades Políticas... ✓ (6.7 KB)
+  Processing Apêndice B: Analogias Internacionais e Precedentes... ✓ (4.1 KB)
+  Processing Apêndice C: A Conexão com a Série Governance as Engineering... ✓ (4.3 KB)
+  Processing Apêndice D: Objeções Antecipadas... ✓ (4.4 KB)
+  Processing Apêndice E: Sobre o Autor e o Método... ✓ (4.4 KB)
+
+✅ HTML generated (187.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

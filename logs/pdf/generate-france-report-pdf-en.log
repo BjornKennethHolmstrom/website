@@ -1,0 +1,48 @@
+📄 Starting PDF generation for France Decisiveness Mirage report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/france-decisiveness-mirage-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/france-decisiveness-mirage/sections
+
+Reading 01-executive-summary.en.md... ✓ (4.0 KB)
+   Processing images... Reading 02-decisiveness-mirage.en.md... ✓ (12.1 KB)
+   Processing images... Reading 03-integration-deficit.en.md... ✓ (15.4 KB)
+   Processing images... Reading 04-building-integration.en.md... ✓ (13.7 KB)
+   Processing images... Reading 05-political-immune-system.en.md... ✓ (15.5 KB)
+   Processing images... Reading 06-transition-architecture.en.md... ✓ (15.7 KB)
+   Processing images... Reading 07-pilots.en.md... ✓ (14.7 KB)
+   Processing images... Reading 08-coda.en.md... ✓ (9.5 KB)
+   Processing images... Reading 09-appendix-a.en.md... ✓ (5.8 KB)
+   Processing images... Reading 09-appendix-b.en.md... ✓ (4.8 KB)
+   Processing images... Reading 09-appendix-c.en.md... ✓ (3.9 KB)
+   Processing images... Reading 09-appendix-d.en.md... ✓ (5.2 KB)
+   Processing images... Reading 09-appendix-e.en.md... ✓ (2.5 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (4.2 KB)
+  Processing 1. The Decisiveness Mirage... ✓ (12.4 KB)
+  Processing 2. The Integration Deficit: A New Diagnosis... ✓ (15.8 KB)
+  Processing 3. What Building Integration Capacity Looks Like... ✓ (14.1 KB)
+  Processing 4. The Political Immune System: Why Integration Fails... ✓ (15.8 KB)
+  Processing 5. Working with the Grain: Transition Architecture for France... ✓ (16.0 KB)
+  Processing 6. A Concrete First Step: Territorial Integration Pilots... ✓ (15.2 KB)
+  Processing 7. Coda: From Deciding to Integrating... ✓ (9.6 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (6.0 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (5.0 KB)
+  Processing Appendix C: Bibliography & Source Notes... ✓ (4.3 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (5.3 KB)
+  Processing Appendix E: About the Author & Method... ✓ (2.6 KB)
+
+✅ HTML generated (133.1 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

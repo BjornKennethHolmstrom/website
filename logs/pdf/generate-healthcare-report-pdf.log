@@ -1,0 +1,48 @@
+📄 Starting PDF generation for "The Clinical Observability Gap"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/healthcare-clinical-observability-gap-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/healthcare-clinical-observability-gap/sections
+
+Reading 00-executive-summary.en.md... ✓ (14.2 KB)
+   Processing images... Reading 01-clinical-observability-gap.en.md... ✓ (26.3 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (38.5 KB)
+   Processing images... Reading 03-building-clinical-observability.en.md... ✓ (25.2 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (14.6 KB)
+   Processing images... Reading 05-concrete-first-step.en.md... ✓ (40.8 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (13.8 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (7.5 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (9.7 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (5.7 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (4.6 KB)
+   Processing images... Reading 07-appendix-e.en.md... ✓ (4.7 KB)
+   Processing images... Reading 07-appendix-f.en.md... ✓ (4.5 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (14.9 KB)
+  Processing 1. The Clinical Observability Gap... ✓ (27.1 KB)
+  Processing 2. Structural Mechanisms: How Healthcare Systems Become Blind to the Patient... ✓ (39.2 KB)
+  Processing 3. What Building Clinical Observability Would Look Like... ✓ (25.5 KB)
+  Processing 4. The Political Immune System: The Administrative Imperative... ✓ (14.8 KB)
+  Processing 5. A Concrete First Step: The Clinical Observability Audit and the Information Sandbox... ✓ (41.8 KB)
+  Processing 6. Coda: The Patient in the System... ✓ (13.9 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (7.7 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (9.8 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (6.0 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (4.7 KB)
+  Processing Appendix E: About the Author & Method... ✓ (4.8 KB)
+  Processing Appendix F: Key Concepts and Abbreviations... ✓ (4.9 KB)
+
+✅ HTML generated (222.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,50 @@
+📄 Starting PDF generation for Germany Spending Mirage report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/germany-spending-mirage-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/germany-spending-mirage/sections
+
+Reading executive-summary.en.md... ✓ (2.3 KB)
+   Processing images... Reading 01-invisible-deficit.en.md... ✓ (5.4 KB)
+   Processing images... Reading 02-spending-mirage.en.md... ✓ (6.9 KB)
+   Processing images... Reading 03-twin-deficit.en.md... ✓ (10.3 KB)
+   Processing images... Reading 04-capacity-building.en.md... ✓ (13.4 KB)
+   Processing images... Reading 05-political-immune.en.md... ✓ (11.9 KB)
+   Processing images... Reading 06-transition.en.md... ✓ (11.9 KB)
+   Processing images... Reading 07-pilot.en.md... ✓ (13.0 KB)
+   Processing images... Reading 08-coda.en.md... ✓ (8.2 KB)
+   Processing images... Reading 09-appendix-a.en.md... ✓ (5.3 KB)
+   Processing images... Reading 09-appendix-b.en.md... ✓ (3.5 KB)
+   Processing images... Reading 09-appendix-c.en.md... ✓ (3.4 KB)
+   Processing images... Reading 09-appendix-d.en.md... ✓ (3.1 KB)
+   Processing images... Reading 09-appendix-e.en.md... ✓ (1.6 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (2.4 KB)
+  Processing 1. The Invisible Deficit... ✓ (5.6 KB)
+  Processing 2. The Spending Mirage... ✓ (7.1 KB)
+  Processing 3. The Twin Deficit: A New Diagnosis... ✓ (10.7 KB)
+  Processing 4. What Building Capacity Actually Looks Like... ✓ (13.7 KB)
+  Processing 5. The Political Immune System... ✓ (12.3 KB)
+  Processing 6. Working with the Grain: Transition Architecture... ✓ (12.2 KB)
+  Processing 7. A Concrete First Step: The Adaptive Governance Pilot Regions... ✓ (13.4 KB)
+  Processing 8. Coda: From Spending to Sensing... ✓ (8.5 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (5.5 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (3.6 KB)
+  Processing Appendix C: Bibliography & Source Notes... ✓ (3.9 KB)
+  Processing Appendix D: Frequently Anticipated Questions... ✓ (3.3 KB)
+  Processing Appendix E: About the Author... ✓ (1.6 KB)
+
+✅ HTML generated (110.5 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,57 @@
+📄 Starting PDF generation for "Coordination Failure as Structural Condition"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/coordination-failure-structural-condition-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/coordination-failure-structural-condition/sections
+
+Reading 01-variety-gap.en.md... ✓ (22.6 KB)
+   Processing images... Reading 02-resolution-lock-in.en.md... ✓ (22.0 KB)
+   Processing images... Reading 03-immune-system.en.md... ✓ (18.9 KB)
+   Processing images... Reading 04-in-between-parts.en.md... ✓ (5.3 KB)
+   Processing images... ✅ Linked image: canonical_diagram_governance_failure_en.svg
+Reading 05-historical-argument.en.md... ✓ (16.7 KB)
+   Processing images... Reading 06-civilisational-threshold-claim.en.md... ✓ (19.4 KB)
+   Processing images... Reading 07-central-question.en.md... ✓ (27.5 KB)
+   Processing images... Reading 08-from-diagnosis-to-design.en.md... ✓ (38.4 KB)
+   Processing images... Reading 09-what-the-series-itself-demonstrates.en.md... ✓ (13.4 KB)
+   Processing images... Reading 10-invitation.en.md... ✓ (18.7 KB)
+   Processing images... Reading 11-appendix-a.en.md... ✓ (19.4 KB)
+   Processing images... Reading 11-appendix-b.en.md... ✓ (16.0 KB)
+   Processing images... Reading 11-appendix-c.en.md... ✓ (15.2 KB)
+   Processing images... Reading 11-appendix-d.en.md... ✓ (4.6 KB)
+   Processing images... Reading 11-appendix-e.en.md... ✓ (16.5 KB)
+   Processing images... Reading 11-appendix-f.en.md... ✓ (13.6 KB)
+   Processing images... Reading 11-appendix-g.en.md... ✓ (17.6 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing 1. The Variety Gap: The Structural Mismatch... ✓ (23.0 KB)
+  Processing 2. Resolution Lock‑In: The Dynamic Trap... ✓ (22.4 KB)
+  Processing 3. The Immune System: The Adaptive Stabiliser... ✓ (19.4 KB)
+  Processing The Canonical Formula and Diagram... ✓ (5.6 KB)
+  Processing 4. The Historical Argument: Why the Variety Gap Has Widened... ✓ (16.9 KB)
+  Processing 5. The Civilisational Threshold Claim... ✓ (19.6 KB)
+  Processing 6. The Central Question: Adaptive Coherence... ✓ (27.9 KB)
+  Processing 7. From Diagnosis to Design... ✓ (39.0 KB)
+  Processing 8. What the Series Itself Demonstrates About the Framework’s Claims... ✓ (13.5 KB)
+  Processing 9. The Invitation... ✓ (18.9 KB)
+  Processing Appendix A: The Primitive Catalogue... ✓ (20.6 KB)
+  Processing Appendix B: The Immune System Taxonomy... ✓ (17.5 KB)
+  Processing Appendix C: The Resolution Lock‑In Table... ✓ (16.9 KB)
+  Processing Appendix D: The Series Coherence Table... ✓ (6.1 KB)
+  Processing Appendix E: The Governance as Engineering Connection... ✓ (17.0 KB)
+  Processing Appendix F: Methodology and Limits... ✓ (13.9 KB)
+  Processing Appendix G: Existence Proofs of Adaptive Coherence... ✓ (18.3 KB)
+
+✅ HTML generated (323.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

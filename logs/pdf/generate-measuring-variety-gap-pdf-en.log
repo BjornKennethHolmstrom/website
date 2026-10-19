@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Measuring the Variety Gap working paper...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/measuring-the-variety-gap.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/measuring-the-variety-gap/sections
+
+Reading 01-introduction.en.md... ✓ (6.1 KB)
+   Processing images... Reading 02-dimensionality-estimation-problem.en.md... ✓ (8.0 KB)
+   Processing images... Reading 03-eight-parameters.en.md... ✓ (23.7 KB)
+   Processing images... Reading 04-measurement-paradox.en.md... ✓ (11.8 KB)
+   Processing images... Reading 05-composite-variety-gap-index.en.md... ✓ (18.1 KB)
+   Processing images... Reading 06-dynamic-extension.en.md... ✓ (14.4 KB)
+   Processing images... Reading 07-calibration.en.md... ✓ (12.8 KB)
+   Processing images... Reading 08-empirical-application.en.md... ✓ (15.2 KB)
+   Processing images... Reading 09-limitations-and-next-steps.en.md... ✓ (12.5 KB)
+   Processing images... Reading 10-appendix-a.en.md... ✓ (29.4 KB)
+   Processing images... Reading 10-appendix-b.en.md... ✓ (6.2 KB)
+   Processing images... Reading 10-appendix-c.en.md... ✓ (13.8 KB)
+   Processing images... Reading 10-appendix-d.en.md... ✓ (16.9 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing 1. Introduction: From Diagnosis to Measurement... ✓ (6.2 KB)
+  Processing 2. The Dimensionality Estimation Problem... ✓ (8.1 KB)
+  Processing 3. The Eight Parameters... ✓ (24.8 KB)
+  Processing 4. The Measurement Paradox... ✓ (12.0 KB)
+  Processing 5. The Composite Variety Gap Index... ✓ (18.7 KB)
+  Processing 6. Dynamic Extension: Measuring the Rate of Gap Change... ✓ (15.0 KB)
+  Processing 7. Calibration Against the Twenty‑One Cases... ✓ (14.4 KB)
+  Processing 8. Empirical Application: A Pilot Validation... ✓ (15.7 KB)
+  Processing 9. Limitations and Next Steps... ✓ (12.9 KB)
+  Processing Appendix A: Parameter Estimation Guide... ✓ (31.2 KB)
+  Processing Appendix B: Country Calibration Table... ✓ (8.0 KB)
+  Processing Appendix C: Data Sources and Availability Matrix... ✓ (16.0 KB)
+  Processing Appendix D: Mathematical Appendix... ✓ (18.1 KB)
+
+✅ HTML generated (207.9 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

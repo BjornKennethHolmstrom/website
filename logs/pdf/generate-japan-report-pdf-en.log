@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Japan Continuity Trap report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/japan-continuity-trap-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/japan-continuity-trap/sections
+
+Reading 00-executive-summary.en.md... ✓ (18.3 KB)
+   Processing images... Reading 01-continuity-trap.en.md... ✓ (21.4 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (39.4 KB)
+   Processing images... Reading 03-building-paradigm-replacement.en.md... ✓ (26.3 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (37.9 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (16.0 KB)
+   Processing images... Reading 06-concrete-first-step.en.md... ✓ (12.5 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (13.1 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (8.6 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (7.0 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (7.1 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (8.6 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (3.7 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (19.9 KB)
+  Processing 1. The Continuity Trap... ✓ (21.9 KB)
+  Processing 2. The Continuity Trap: Structural Mechanisms... ✓ (40.2 KB)
+  Processing 3. What Building Paradigm Replacement Capacity Would Look Like... ✓ (27.0 KB)
+  Processing 4. The Political Immune System: The Stability Bias... ✓ (38.6 KB)
+  Processing 5. Working with the Grain: Transition Architecture for Japan... ✓ (16.3 KB)
+  Processing 6. A Concrete First Step: The Sunset Legislation and a Demography Commission... ✓ (12.7 KB)
+  Processing 7. Coda: The Master of Continuity at the Frontier of Renewal... ✓ (13.3 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (8.9 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (7.2 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (7.3 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (8.8 KB)
+  Processing Appendix E: About the Author & Method... ✓ (3.8 KB)
+
+✅ HTML generated (232.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

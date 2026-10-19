@@ -1,0 +1,58 @@
+📄 Starting PDF generation for Legitimacy as Emergent Gain (Paper XIII)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/legitimacy-as-emergent-gain-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/legitimacy-as-emergent-gain/sections
+
+Reading 00-executive-summary.sv.md... ✓ (7.1 KB)
+   Processing images... done.
+Reading 01-part-1.sv.md... ✓ (14.2 KB)
+   Processing images... done.
+Reading 02-part-2.sv.md... ✓ (23.8 KB)
+   Processing images... done.
+Reading 03-part-3.sv.md... ✓ (23.6 KB)
+   Processing images... done.
+Reading 04-part-4.sv.md... ✓ (13.7 KB)
+   Processing images... done.
+Reading 05-part-5.sv.md... ✓ (19.3 KB)
+   Processing images... done.
+Reading 06-part-6.sv.md... ✓ (23.8 KB)
+   Processing images... done.
+Reading 07-part-7.sv.md... ✓ (14.8 KB)
+   Processing images... done.
+Reading 08-part-8.sv.md... ✓ (11.7 KB)
+   Processing images... done.
+Reading 09-appendix-a.sv.md... ✓ (13.1 KB)
+   Processing images... done.
+Reading 09-appendix-b.sv.md... ✓ (21.0 KB)
+   Processing images... done.
+Reading 09-appendix-c.sv.md... ✓ (15.6 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (7.3 KB)
+  Processing Del I: Legitimitetsgapet... ✓ (14.6 KB)
+  Processing Del II: Formellt ramverk... ✓ (25.6 KB)
+  Processing Del III: Legitimitetsfelmoder... ✓ (24.0 KB)
+  Processing Del IV: Simulering: Den legitimitetsdrivna kontrollanten... ✓ (15.1 KB)
+  Processing Del V: Empiriska illustrationer... ✓ (19.6 KB)
+  Processing Del VI: Designprinciper för legitimitetskänsliga arkitekturer... ✓ (24.1 KB)
+  Processing Del VII: Koppling till serien... ✓ (15.0 KB)
+  Processing Del VIII: Begränsningar och slutsats... ✓ (12.0 KB)
+  Processing Appendix A: Formella härledningar... ✓ (196.9 KB)
+  Processing Appendix B: Simuleringsspecifikation... ✓ (232.6 KB)
+  Processing Appendix C: Empiriska kodningsanteckningar... ✓ (22.6 KB)
+
+✅ HTML generated (615.9 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

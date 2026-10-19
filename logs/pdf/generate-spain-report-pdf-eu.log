@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Spain Transition Trap report...
+
+Language: eu
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/spain-transition-trap-eu.pdf
+
+
+📖 Reading report sections for language: eu
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/spain-transition-trap/sections
+
+Reading 00-executive-summary.eu.md... ✓ (17.8 KB)
+   Processing images... Reading 01-transition-trap.eu.md... ✓ (20.7 KB)
+   Processing images... Reading 02-structural-mechanisms.eu.md... ✓ (39.2 KB)
+   Processing images... Reading 03-building-integrative-closure.eu.md... ✓ (22.4 KB)
+   Processing images... Reading 04-political-immune-system.eu.md... ✓ (15.4 KB)
+   Processing images... Reading 05-transition-architecture.eu.md... ✓ (20.2 KB)
+   Processing images... Reading 06-first-step.eu.md... ✓ (18.9 KB)
+   Processing images... Reading 07-coda.eu.md... ✓ (18.6 KB)
+   Processing images... Reading 08-appendix-a.eu.md... ✓ (7.5 KB)
+   Processing images... Reading 08-appendix-b.eu.md... ✓ (5.5 KB)
+   Processing images... Reading 08-appendix-c.eu.md... ✓ (7.8 KB)
+   Processing images... Reading 08-appendix-d.eu.md... ✓ (6.7 KB)
+   Processing images... Reading 08-appendix-e.eu.md... ✓ (4.6 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Laburpen Exekutiboa... ✓ (19.4 KB)
+  Processing 1. Trantsizioaren Tranpa... ✓ (21.3 KB)
+  Processing 2. Itxiera Integratzailearen Defizita: Egiturazko Mekanismoak... ✓ (40.0 KB)
+  Processing 3. Nolakoa Izango Litzateke Itxiera Integratzailerako Gaitasuna Eraikitzea... ✓ (22.7 KB)
+  Processing 4. Sistema Immunologiko Politikoa: Adostasunaren Makina... ✓ (15.7 KB)
+  Processing 5. Alearekin Lan Eginez: Trantsizio Arkitektura Espainiarentzat... ✓ (20.5 KB)
+  Processing 6. Lehen Urrats Zehatz Bat: Eskualde Arteko Itunen Funtsa eta Herritarren Batzarra... ✓ (19.1 KB)
+  Processing 7. Koda: Anbiguotasun Eraikitzailearen Mugak... ✓ (18.8 KB)
+  Processing A Eranskina: Balio-Sistemak eta Politika Mentalitateak... ✓ (7.7 KB)
+  Processing B Eranskina: Nazioarteko Analogiak eta Aurrekariak... ✓ (5.6 KB)
+  Processing C Eranskina: Gobernantza Ingeniaritza gisa Konexioa... ✓ (7.9 KB)
+  Processing D Eranskina: Aurrez Aurreko Objekzioak... ✓ (6.8 KB)
+  Processing E Eranskina: Egileari eta Metodoari Buruz... ✓ (4.6 KB)
+
+✅ HTML generated (217.2 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

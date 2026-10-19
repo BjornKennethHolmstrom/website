@@ -1,0 +1,58 @@
+📄 Starting PDF generation for Governance as an Adaptive Controller (Paper XIV)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/governance-as-adaptive-controller-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/governance-as-adaptive-controller/sections
+
+Reading 00-executive-summary.sv.md... ✓ (8.1 KB)
+   Processing images... done.
+Reading 01-part-1.sv.md... ✓ (8.2 KB)
+   Processing images... done.
+Reading 02-part-2.sv.md... ✓ (18.3 KB)
+   Processing images... done.
+Reading 03-part-3.sv.md... ✓ (24.0 KB)
+   Processing images... done.
+Reading 04-part-4.sv.md... ✓ (17.3 KB)
+   Processing images... done.
+Reading 05-part-5.sv.md... ✓ (20.8 KB)
+   Processing images... done.
+Reading 06-part-6.sv.md... ✓ (37.7 KB)
+   Processing images... done.
+Reading 07-part-7.sv.md... ✓ (18.0 KB)
+   Processing images... done.
+Reading 08-part-8.sv.md... ✓ (9.6 KB)
+   Processing images... done.
+Reading 09-appendix-a.sv.md... ✓ (16.5 KB)
+   Processing images... done.
+Reading 09-appendix-b.sv.md... ✓ (17.7 KB)
+   Processing images... done.
+Reading 09-appendix-c.sv.md... ✓ (14.4 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (8.4 KB)
+  Processing Del I: Lärandets gräns... ✓ (8.5 KB)
+  Processing Del II: Formellt ramverk... ✓ (61.3 KB)
+  Processing Del III: Felmoder för adaptiv styrning... ✓ (38.4 KB)
+  Processing Del IV: Simulering: Den adaptiva kontrollanten... ✓ (136.4 KB)
+  Processing Del V: Empiriska illustrationer... ✓ (22.3 KB)
+  Processing Del VI: Designprinciper för adaptiva styrningsarkitekturer... ✓ (54.3 KB)
+  Processing Del VII: Koppling till serien... ✓ (18.4 KB)
+  Processing Del VIII: Begränsningar och slutsats... ✓ (10.7 KB)
+  Processing Appendix A: Formella härledningar... ✓ (219.1 KB)
+  Processing Appendix B: Simuleringsspecifikation... ✓ (183.5 KB)
+  Processing Appendix C: Empiriska kodningsanteckningar... ✓ (15.3 KB)
+
+✅ HTML generated (783.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

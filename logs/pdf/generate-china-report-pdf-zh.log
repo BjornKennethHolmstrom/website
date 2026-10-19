@@ -1,0 +1,38 @@
+📄 Starting PDF generation for China Calibration Deficit report...\n
+Language: zh
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/china-calibration-deficit-zh.pdf\n
+\n📖 Reading report sections for language: zh
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/china-calibration-deficit/sections\n
+Reading 00-executive-summary.zh.md... ✓ (3.8 KB)
+   Processing images... Reading 01-calibration-deficit.zh.md... ✓ (4.6 KB)
+   Processing images... Reading 02-structural-mechanisms.zh.md... ✓ (6.4 KB)
+   Processing images... Reading 03-functional-calibration.zh.md... ✓ (6.7 KB)
+   Processing images... Reading 04-political-immune-system.zh.md... ✓ (2.9 KB)
+   Processing images... Reading 05-first-step.zh.md... ✓ (2.4 KB)
+   Processing images... Reading 06-coda.zh.md... ✓ (1.6 KB)
+   Processing images... Reading 08-appendix-a.zh.md... ✓ (2.1 KB)
+   Processing images... Reading 08-appendix-b.zh.md... ✓ (1.6 KB)
+   Processing images... Reading 08-appendix-c.zh.md... ✓ (1.8 KB)
+   Processing images... Reading 08-appendix-d.zh.md... ✓ (2.2 KB)
+   Processing images... Reading 08-appendix-e.zh.md... ✓ (2.2 KB)
+   Processing images... \n✅ All sections read successfully\n
+🔨 Converting markdown to HTML...
+  Processing 执行摘要... ✓ (4.1 KB)
+  Processing 1. 校准赤字... ✓ (4.8 KB)
+  Processing 2. 结构性机制... ✓ (6.8 KB)
+  Processing 3. 功能性校准将是什么样子... ✓ (7.0 KB)
+  Processing 4. 政治免疫系统... ✓ (3.2 KB)
+  Processing 5. 一个具体的第一步... ✓ (2.7 KB)
+  Processing 6. 尾声... ✓ (1.8 KB)
+  Processing 附录 A：价值系统与政策思维模式... ✓ (2.7 KB)
+  Processing 附录 B：国际类比与先例... ✓ (1.8 KB)
+  Processing 附录 C：作为工程学的治理... ✓ (2.0 KB)
+  Processing 附录 D：预期中的反对意见... ✓ (2.4 KB)
+  Processing 附录 E：关于作者与方法... ✓ (2.7 KB)
+\n✅ HTML generated (47.8 KB total)\n
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 0)
+✅ PDF generated successfully
+Cleaning up...

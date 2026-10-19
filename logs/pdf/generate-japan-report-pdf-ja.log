@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Japan Continuity Trap report...
+
+Language: ja
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/japan-continuity-trap-ja.pdf
+
+
+📖 Reading report sections for language: ja
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/japan-continuity-trap/sections
+
+Reading 00-executive-summary.ja.md... ✓ (8.1 KB)
+   Processing images... Reading 01-continuity-trap.ja.md... ✓ (9.0 KB)
+   Processing images... Reading 02-structural-mechanisms.ja.md... ✓ (15.8 KB)
+   Processing images... Reading 03-building-paradigm-replacement.ja.md... ✓ (10.5 KB)
+   Processing images... Reading 04-political-immune-system.ja.md... ✓ (7.5 KB)
+   Processing images... Reading 05-transition-architecture.ja.md... ✓ (6.2 KB)
+   Processing images... Reading 06-concrete-first-step.ja.md... ✓ (4.9 KB)
+   Processing images... Reading 07-coda.ja.md... ✓ (5.6 KB)
+   Processing images... Reading 08-appendix-a.ja.md... ✓ (3.4 KB)
+   Processing images... Reading 08-appendix-b.ja.md... ✓ (2.7 KB)
+   Processing images... Reading 08-appendix-c.ja.md... ✓ (2.8 KB)
+   Processing images... Reading 08-appendix-d.ja.md... ✓ (3.4 KB)
+   Processing images... Reading 08-appendix-e.ja.md... ✓ (1.7 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing エグゼクティブ・サマリー... ✓ (9.6 KB)
+  Processing 1. 連続性の罠... ✓ (9.4 KB)
+  Processing 2. 連続性の罠：構造的メカニズム... ✓ (16.5 KB)
+  Processing 3. パラダイム置換能力の構築とは... ✓ (11.0 KB)
+  Processing 4. 政治免疫システム：安定性バイアス... ✓ (7.8 KB)
+  Processing 5. 日本の特性に沿った移行アーキテクチャ... ✓ (6.4 KB)
+  Processing 6. 具体的な第一歩：サンセット法と人口統計委員会... ✓ (5.0 KB)
+  Processing 7. コーダ：再生の最前線に立つ連続性の達人... ✓ (5.7 KB)
+  Processing 付録A：価値体系と政策マインドセット... ✓ (3.5 KB)
+  Processing 付録B：国際的な類似例と先例... ✓ (2.8 KB)
+  Processing 付録C：ガバナンス・アズ・エンジニアリングとの関連... ✓ (3.0 KB)
+  Processing 付録D：想定される反論... ✓ (3.6 KB)
+  Processing 付録E：著者と方法について... ✓ (1.7 KB)
+
+✅ HTML generated (92.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,48 @@
+📄 Starting PDF generation for UK Control Mirage report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/uk-control-mirage-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/uk-control-mirage/sections
+
+Reading 00-executive-summary.en.md... ✓ (9.1 KB)
+   Processing images... Reading 01-control-mirage.en.md... ✓ (17.3 KB)
+   Processing images... Reading 02-diagnosis.en.md... ✓ (25.9 KB)
+   Processing images... Reading 03-building-alignment.en.md... ✓ (24.0 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (18.5 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (14.9 KB)
+   Processing images... Reading 06-trailblazer-2.0.en.md... ✓ (17.3 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (10.9 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (6.4 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (3.5 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (4.3 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (5.8 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (3.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (9.5 KB)
+  Processing 1. The Control Mirage... ✓ (17.6 KB)
+  Processing 2. The Control-Delivery Mismatch: A New Diagnosis... ✓ (26.4 KB)
+  Processing 3. What Building Control-Delivery Alignment Would Look Like... ✓ (24.6 KB)
+  Processing 4. The Political Immune System: Why the UK Centralises... ✓ (18.8 KB)
+  Processing 5. Working with the Grain: Transition Architecture for the UK... ✓ (15.3 KB)
+  Processing 6. A Concrete First Step: Trailblazer Regions 2.0... ✓ (17.9 KB)
+  Processing 7. Coda: From Centralising to Connecting... ✓ (11.1 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (6.6 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (3.7 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (4.4 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (5.9 KB)
+  Processing Appendix E: About the Author & Method... ✓ (3.2 KB)
+
+✅ HTML generated (171.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

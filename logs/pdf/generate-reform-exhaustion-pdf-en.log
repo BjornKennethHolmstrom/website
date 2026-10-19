@@ -1,0 +1,46 @@
+📄 Starting PDF generation for Reform Exhaustion (Paper XI)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/reform-exhaustion.pdf
+
+
+📖 Reading working paper sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/reform-exhaustion/sections
+
+Reading 00-abstract.en.md... ✓ (2.4 KB)
+   Processing images... Reading 01-part-1.en.md... ✓ (15.8 KB)
+   Processing images... Reading 02-part-2.en.md... ✓ (17.3 KB)
+   Processing images... Reading 03-part-3.en.md... ✓ (12.0 KB)
+   Processing images... Reading 04-part-4.en.md... ✓ (10.5 KB)
+   Processing images... Reading 05-part-5.en.md... ✓ (8.2 KB)
+   Processing images... Reading 06-part-6.en.md... ✓ (10.9 KB)
+   Processing images... Reading 07-part-7.en.md... ✓ (11.6 KB)
+   Processing images... Reading 08-part-8.en.md... ✓ (9.8 KB)
+   Processing images... Reading 09-appendix-a.en.md... ✓ (8.9 KB)
+   Processing images... Reading 10-appendix-b.en.md... ✓ (4.5 KB)
+   Processing images... Reading 11-appendix-c.en.md... ✓ (10.8 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Abstract... ✓ (2.4 KB)
+  Processing Part I: The Problem — The Untreated Channel... ✓ (16.4 KB)
+  Processing Part II: Formal Framework... ✓ (17.9 KB)
+  Processing Part III: Three Mechanisms, Each Paired With Its Evidence... ✓ (12.3 KB)
+  Processing Part IV: Boundaries and Objections... ✓ (10.8 KB)
+  Processing Part V: Simulation... ✓ (8.6 KB)
+  Processing Part VI: Empirical Anchor... ✓ (11.3 KB)
+  Processing Part VII: Design Implications... ✓ (12.0 KB)
+  Processing Part VIII: Limitations and Conclusion... ✓ (10.1 KB)
+  Processing Appendix A: Chain Model Derivations... ✓ (9.9 KB)
+  Processing Appendix B: Simulation Specification... ✓ (5.3 KB)
+  Processing Appendix C: Case Coding Protocol... ✓ (12.0 KB)
+
+✅ HTML generated (135.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

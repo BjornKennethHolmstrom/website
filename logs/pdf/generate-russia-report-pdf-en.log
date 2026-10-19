@@ -1,0 +1,38 @@
+📄 Starting PDF generation for Russia Legibility Deficit report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/russia-legibility-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/russia-legibility-deficit/sections
+
+Reading 00-executive-summary.en.md... ✓ (5.8 KB)
+   Processing images... Reading 01-legibility-deficit.en.md... ✓ (18.8 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (30.3 KB)
+   Processing images... Reading 03-reform-is-impossible.en.md... ✓ (15.2 KB)
+   Processing images... Reading 04-dark-mirror.en.md... ✓ (14.7 KB)
+   Processing images... Reading 05-appendix-a.en.md... ✓ (7.4 KB)
+   Processing images... Reading 05-appendix-b.en.md... ✓ (6.2 KB)
+   Processing images... Reading 05-appendix-c.en.md... ✓ (3.6 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (6.1 KB)
+  Processing 1. The Legibility Deficit... ✓ (19.3 KB)
+  Processing 2. The Structural Mechanisms... ✓ (31.0 KB)
+  Processing 3. Why Reform Is Impossible Under the Current Regime — and What Might Follow... ✓ (15.4 KB)
+  Processing 4. Coda: The Dark Mirror... ✓ (15.1 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (7.7 KB)
+  Processing Appendix B: The Governance as Engineering Connection... ✓ (6.4 KB)
+  Processing Appendix C: About the Author & Method... ✓ (3.7 KB)
+
+✅ HTML generated (111.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

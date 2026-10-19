@@ -1,0 +1,44 @@
+📄 Starting PDF generation for Fractal-Cybernetic Model working paper...
+
+Language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/fractal-cybernetic-consciousness/sections
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/fractal-cybernetic-consciousness.pdf
+
+Reading working paper sections for language: en
+Converting markdown to HTML...
+Cover image size: 0.73 MB
+Base64 encoded size: 999.3 KB
+Cover page HTML: 1006.4 KB
+  Abstract: 2.1 KB
+  1. Introduction: The Problem of Integration: 4.8 KB
+  2. Conceptual Foundations: 5.8 KB
+  3. The Fractal-Cybernetic Model: Core Synthesis: 21.0 KB
+  4. The Awareness-Focus Dynamic: 8.0 KB
+  5. Revisiting Key Mystical Questions: 8.0 KB
+  6. Testable Implications and Research Proposals: 12.1 KB
+  7. Philosophical and Existential Implications: 7.8 KB
+  8. Limitations and Future Directions: 17.7 KB
+  9. Conclusion: Toward a Unified Science of Awakening: 5.8 KB
+  Appendix A: Glossary of Key Terms: 4.5 KB
+  Appendix B: The Fractal-Cybernetic Consciousness Map: 6.5 KB
+  Appendix C: Meditative Exercises Based on the Model: 9.5 KB
+  Acknowledgements: 2.4 KB
+  References: 6.8 KB
+Generating PDF...
+HTML size: 1129.8 KB
+Loading HTML content...
+Content loaded, waiting for rendering...
+Generating PDF file...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+Closing browser...
+✅ PDF generated successfully: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/fractal-cybernetic-consciousness.pdf
+📄 File size: 1.50 MB
+📖 Estimated pages: 463
+
+✨ Working paper generated successfully!
+
+📚 To view the working paper online:
+https://bjornkennethholmstrom.org/working-papers/fractal-cybernetic-consciousness
+
+🔧 For Swedish version:
+node scripts/generate-fractal-cybernetic-pdf.js sv

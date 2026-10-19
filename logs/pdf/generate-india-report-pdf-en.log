@@ -1,0 +1,48 @@
+📄 Starting PDF generation for India Leap‑Lag Cycle report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/india-leap-lag-cycle-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/india-leap-lag-cycle/sections
+
+Reading executive-summary.en.md... ✓ (8.3 KB)
+   Processing images... Reading 01-leap-lag-cycle.en.md... ✓ (16.7 KB)
+   Processing images... Reading 02-synchronisation-deficit.en.md... ✓ (19.0 KB)
+   Processing images... Reading 03-building-synchronisation-capacity.en.md... ✓ (19.9 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (13.8 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (13.4 KB)
+   Processing images... Reading 06-synchronisation-sandbox.en.md... ✓ (16.5 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (9.4 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (6.2 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (4.2 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (5.0 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (4.4 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (4.1 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (8.6 KB)
+  Processing 1. The Leap‑Lag Cycle... ✓ (17.1 KB)
+  Processing 2. The Synchronisation Deficit: A New Diagnosis... ✓ (19.5 KB)
+  Processing 3. What Building Synchronisation Capacity Looks Like... ✓ (20.5 KB)
+  Processing 4. The Political Immune System: Why Synchronisation Fails... ✓ (14.1 KB)
+  Processing 5. Working with the Grain: Transition Architecture for India... ✓ (13.8 KB)
+  Processing 6. A Concrete First Step: The Synchronisation Sandbox... ✓ (16.9 KB)
+  Processing 7. Coda: From Leap‑Lag to Leap‑Sync... ✓ (9.6 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (6.5 KB)
+  Processing Appendix B: International Analogues... ✓ (4.4 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (5.2 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (4.5 KB)
+  Processing Appendix E: About the Author & Method... ✓ (4.2 KB)
+
+✅ HTML generated (151.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

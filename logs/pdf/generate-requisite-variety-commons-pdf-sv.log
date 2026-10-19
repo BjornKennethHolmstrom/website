@@ -1,0 +1,31 @@
+📄 Starting PDF generation for Requisite Variety and the Commons...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/requisite-variety-and-the-commons-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/requisite-variety-and-the-commons/sections
+
+Reading executive-summary-sv.md... ✓ (4.0 KB)
+   Processing images... Reading part-1-sv.md... ✓ (8.4 KB)
+   Processing images... Reading part-2-sv.md... ✓ (11.1 KB)
+   Processing images... Reading part-3-sv.md... ✓ (10.0 KB)
+   Processing images... ✅ Linked image: ggf-simulator-v6.png
+Reading part-4-sv.md... ✓ (9.7 KB)
+   Processing images... Reading part-5-sv.md... ✓ (6.4 KB)
+   Processing images... Reading part-6-sv.md... ✓ (9.3 KB)
+   Processing images... Reading part-7-sv.md... ✓ (4.1 KB)
+   Processing images... Reading appendix-a-sv.md... ✓ (5.1 KB)
+   Processing images... Reading appendix-b-sv.md... ✓ (6.1 KB)
+   Processing images... Reading appendix-c-sv.md... ✓ (9.1 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+
+✅ HTML generated (94.7 KB total)
+
+📄 Generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully

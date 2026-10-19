@@ -1,0 +1,52 @@
+📄 Starting PDF generation for Where Reform Pushes Down, Strategy Pushes Back (Paper XXV)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/where-reform-pushes-down.pdf
+
+
+📖 Reading Paper XXV sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/where-reform-pushes-down/sections
+
+Reading abstract.en.md... ✓ (2.9 KB)
+   Processing images... done.
+Reading section-01.en.md... ✓ (4.6 KB)
+   Processing images... done.
+Reading section-02.en.md... ✓ (3.4 KB)
+   Processing images... done.
+Reading section-03.en.md... ✓ (5.3 KB)
+   Processing images... done.
+Reading section-04.en.md... ✓ (6.1 KB)
+   Processing images... done.
+Reading section-05.en.md... ✓ (5.4 KB)
+   Processing images... done.
+Reading section-06.en.md... ✓ (7.0 KB)
+   Processing images... done.
+Reading section-07.en.md... ✓ (2.7 KB)
+   Processing images... done.
+Reading appendix-a.en.md... ✓ (1.5 KB)
+   Processing images... done.
+Reading appendix-b.en.md... ✓ (3.4 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (3.1 KB)
+  Processing 1. Introduction... ✓ (4.7 KB)
+  Processing 2. The imported allocation law... ✓ (4.0 KB)
+  Processing 3. Bode as an achievability constraint, and the geometry gap... ✓ (6.0 KB)
+  Processing 4. Licensing conditions... ✓ (6.7 KB)
+  Processing 5. What architecture can and cannot buy: an achievability result... ✓ (5.8 KB)
+  Processing 6. Governance transfer, in two separated layers... ✓ (7.3 KB)
+  Processing 7. Limits and open problems... ✓ (2.8 KB)
+  Processing Appendix A: The allocation lemma... ✓ (2.0 KB)
+  Processing Appendix B: Model, simulators, and reproducibility... ✓ (4.8 KB)
+
+✅ HTML generated (53.7 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

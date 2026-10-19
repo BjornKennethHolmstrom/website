@@ -1,0 +1,46 @@
+📄 Starting PDF generation for Finland Throughput Constraint report...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/finland-throughput-constraint-sv.pdf
+
+
+📖 Reading report sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/finland-throughput-constraint/sections
+
+Reading 00-executive-summary.sv.md... ✓ (12.2 KB)
+   Processing images... Reading 01-throughput-constraint.sv.md... ✓ (20.8 KB)
+   Processing images... Reading 02-structural-mechanisms.sv.md... ✓ (31.8 KB)
+   Processing images... Reading 03-building-transformational-velocity.sv.md... ✓ (30.4 KB)
+   Processing images... Reading 04-stability-bias.sv.md... ✓ (21.9 KB)
+   Processing images... Reading 05-first-step.sv.md... ✓ (13.9 KB)
+   Processing images... Reading 06-coda.sv.md... ✓ (11.9 KB)
+   Processing images... Reading 07-appendix-a.sv.md... ✓ (6.9 KB)
+   Processing images... Reading 07-appendix-b.sv.md... ✓ (4.7 KB)
+   Processing images... Reading 07-appendix-c.sv.md... ✓ (4.7 KB)
+   Processing images... Reading 07-appendix-d.sv.md... ✓ (4.2 KB)
+   Processing images... Reading 07-appendix-e.sv.md... ✓ (3.4 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sammanfattning... ✓ (12.6 KB)
+  Processing 1. Genomströmningsbegränsningen... ✓ (21.2 KB)
+  Processing 2. Genomströmningsbegränsningen: Strukturella mekanismer... ✓ (32.3 KB)
+  Processing 3. Hur byggandet av transformationshastighet skulle se ut... ✓ (31.0 KB)
+  Processing 4. Det politiska immunsystemet: Stabilitetsbiasen... ✓ (22.2 KB)
+  Processing 5. Ett konkret första steg... ✓ (14.2 KB)
+  Processing 6. Koda: Prototypen vid frontlinjen... ✓ (12.1 KB)
+  Processing Bilaga A: Värdesystem och policy‑mentaliteter... ✓ (7.0 KB)
+  Processing Bilaga B: Internationella analogier och prejudikat... ✓ (4.8 KB)
+  Processing Bilaga C: Kopplingen till Governance as Engineering... ✓ (4.8 KB)
+  Processing Bilaga D: Förväntade invändningar... ✓ (4.3 KB)
+  Processing Bilaga E: Om författaren och metoden... ✓ (3.5 KB)
+
+✅ HTML generated (176.8 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

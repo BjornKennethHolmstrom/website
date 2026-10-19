@@ -1,5 +1,6 @@
 <!-- src/routes/essays/architecture-of-the-open-hand/+page.svelte -->
 <script lang="ts">
+	import Provenance from '$lib/components/Provenance.svelte';
 	import ShareButtons from '$lib/components/ShareButtons.svelte';
 	import SEO from '$lib/components/SEO.svelte';
 	import { language } from '$lib/stores/languageStore';
@@ -219,8 +220,6 @@
 			{t.subtitle}
 		</p>
 		<div class="flex flex-wrap items-center gap-4 mb-6 text-sm" style="color: var(--color-page-text); opacity: 0.6;">
-			<span>{t.author}</span>
-			<span>•</span>
 			<span>{t.published}</span>
 			<span>•</span>
 			<span>{t.readTime}</span>
@@ -245,6 +244,7 @@
 				{/if}
 			</span>
 		</a>
+		<Provenance align="start" />
 	</header>
 
 	<!-- Table of Contents Toggle -->

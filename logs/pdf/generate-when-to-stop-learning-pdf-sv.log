@@ -1,0 +1,55 @@
+📄 Starting PDF generation for When to Stop Learning, and When to Stop (Paper XXI)...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/when-to-stop-learning-sv.pdf
+
+
+📖 Reading Paper XXI sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/when-to-stop-learning/sections
+
+Reading abstract.sv.md... ✓ (3.9 KB)
+   Processing images... done.
+Reading section-01.sv.md... ✓ (3.5 KB)
+   Processing images... done.
+Reading section-02.sv.md... ✓ (6.8 KB)
+   Processing images... done.
+Reading section-03.sv.md... ✓ (6.0 KB)
+   Processing images... done.
+Reading section-04.sv.md... ✓ (2.8 KB)
+   Processing images... done.
+Reading section-05.sv.md... ✓ (3.5 KB)
+   Processing images... done.
+Reading section-06.sv.md... ✓ (4.1 KB)
+   Processing images... done.
+Reading section-07.sv.md... ✓ (3.4 KB)
+   Processing images... done.
+Reading section-08.sv.md... ✓ (3.2 KB)
+   Processing images... done.
+Reading section-09.sv.md... ✓ (1.7 KB)
+   Processing images... done.
+Reading appendix-a.sv.md... ✓ (2.3 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Sammanfattning... ✓ (4.0 KB)
+  Processing 1. Livscykelfrågan... ✓ (3.6 KB)
+  Processing 2. Lärande är inte anpassning... ✓ (10.9 KB)
+  Processing 3. En modell där lärande bryter kopplingen... ✓ (13.6 KB)
+  Processing 4. Meta‑lärande måste stängas... ✓ (10.2 KB)
+  Processing 5. Stängning kräver invarianter... ✓ (3.6 KB)
+  Processing 6. Beständighet är inte målet — avveckling... ✓ (4.2 KB)
+  Processing 7. Den förenande strukturen... ✓ (3.4 KB)
+  Processing 8. Vad detta återgrundar, och vad det inte visar... ✓ (3.3 KB)
+  Processing 9. Metod och konfidens... ✓ (2.1 KB)
+  Processing Appendix A: Modellen för lärande/anpassning... ✓ (44.0 KB)
+
+✅ HTML generated (109.4 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

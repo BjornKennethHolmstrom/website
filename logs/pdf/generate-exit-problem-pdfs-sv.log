@@ -1,0 +1,23 @@
+✓ KaTeX CSS loaded from node_modules
+📄 Starting PDF generation for "The Exit Problem"...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/essays/exitProblem-sv.pdf
+
+
+📖 Reading essay file for language: sv
+Input file: /home/bjorn/Code/bjornkennethholmstrom/src/routes/essays/the-exit-problem/the-exit-problem-sv.md
+
+✓ Read 61.7 KB
+🔨 Converting markdown to HTML (with KaTeX)...
+🖼️ Resolving image references...
+  ↳ resolving image: /essays/images/the-exit-problem/two-channels-sv.svg -> /home/bjorn/Code/bjornkennethholmstrom/static/essays/images/the-exit-problem/two-channels-sv.svg
+  ↳ resolving image: /essays/images/the-exit-problem/pooling-vs-exit-sv.svg -> /home/bjorn/Code/bjornkennethholmstrom/static/essays/images/the-exit-problem/pooling-vs-exit-sv.svg
+✅ HTML generated (156.7 KB total)
+
+📄 Generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated: /home/bjorn/Code/bjornkennethholmstrom/static/essays/exitProblem-sv.pdf
+📄 File size: 0.39 MB
+
+✨ Done!

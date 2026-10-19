@@ -1,0 +1,48 @@
+📄 Starting PDF generation for US Integration Deficit report...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/us-integration-deficit-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/us-integration-deficit/sections
+
+Reading 00-executive-summary.en.md... ✓ (10.5 KB)
+   Processing images... Reading 01-integration-deficit.en.md... ✓ (20.5 KB)
+   Processing images... Reading 02-structural-mechanics.en.md... ✓ (35.9 KB)
+   Processing images... Reading 03-building-integration-capacity.en.md... ✓ (32.3 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (23.0 KB)
+   Processing images... Reading 05-transition-architecture.en.md... ✓ (21.2 KB)
+   Processing images... Reading 06-first-step.en.md... ✓ (17.1 KB)
+   Processing images... Reading 07-coda.en.md... ✓ (14.1 KB)
+   Processing images... Reading 08-appendix-a.en.md... ✓ (6.9 KB)
+   Processing images... Reading 08-appendix-b.en.md... ✓ (4.4 KB)
+   Processing images... Reading 08-appendix-c.en.md... ✓ (3.7 KB)
+   Processing images... Reading 08-appendix-d.en.md... ✓ (3.3 KB)
+   Processing images... Reading 08-appendix-e.en.md... ✓ (3.7 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (11.0 KB)
+  Processing 1. The Integration Deficit... ✓ (20.9 KB)
+  Processing 2. The Integration Deficit: Structural Mechanics... ✓ (36.4 KB)
+  Processing 3. What Building Integration Capacity Would Look Like... ✓ (33.0 KB)
+  Processing 4. The Political Immune System: The Veto Industrial Complex and the Permanent Campaign... ✓ (23.4 KB)
+  Processing 5. Working with the Grain: Transition Architecture for the United States... ✓ (21.7 KB)
+  Processing 6. A Concrete First Step: Cross‑State Compacts and Municipal Laboratories... ✓ (17.7 KB)
+  Processing 7. Coda: From Archipelago to Continent... ✓ (14.3 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (7.1 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (4.6 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (3.8 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (3.4 KB)
+  Processing Appendix E: About the Author & Method... ✓ (3.7 KB)
+
+✅ HTML generated (208.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

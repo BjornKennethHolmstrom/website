@@ -4,6 +4,7 @@
 	  <Provenance lang="pt_br" />         force a content language
 	  <Provenance kind="human" />         a text you wrote yourself
 	  <Provenance compact />              byline only, for cards and lists
+	  <Provenance align="start" />        left-aligned box, for left-aligned headers (essays)
 -->
 <script lang="ts">
 	import { language } from '$lib/stores/languageStore';
@@ -12,8 +13,14 @@
 	let {
 		lang = undefined,
 		kind = 'ai',
-		compact = false
-	}: { lang?: string; kind?: 'ai' | 'human'; compact?: boolean } = $props();
+		compact = false,
+		align = 'center'
+	}: {
+		lang?: string;
+		kind?: 'ai' | 'human';
+		compact?: boolean;
+		align?: 'center' | 'start';
+	} = $props();
 
 	let p = $derived(getProvenance(lang ?? $language, kind));
 </script>
@@ -21,7 +28,13 @@
 {#if compact || kind === 'human'}
 	<p class="provenance-byline" lang={p.lang} dir={p.dir}>{p.byline}</p>
 {:else}
-	<aside class="provenance" lang={p.lang} dir={p.dir} aria-label={p.byline}>
+	<aside
+		class="provenance"
+		class:start={align === 'start'}
+		lang={p.lang}
+		dir={p.dir}
+		aria-label={p.byline}
+	>
 		<p class="provenance-byline">{p.byline}</p>
 		<p class="provenance-note">
 			{p.note}
@@ -40,6 +53,9 @@
 		background: color-mix(in srgb, currentColor 7%, transparent);
 		padding: 0.75rem 1rem;
 		text-align: start;
+	}
+	.provenance.start {
+		margin-inline: 0;
 	}
 	.provenance-byline {
 		margin: 0;

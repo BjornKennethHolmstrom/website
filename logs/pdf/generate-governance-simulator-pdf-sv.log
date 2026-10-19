@@ -1,0 +1,45 @@
+📄 Starting PDF generation for Governance Stability Simulator working paper...
+
+Language: sv
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/governance-stability-simulator-sv.pdf
+
+
+📖 Reading working paper sections for language: sv
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/governance-stability-simulator/sections
+
+Reading executive-summary-sv.md... ✓ (1.7 KB)
+   Processing images... Reading part-1-sv.md... ✓ (4.1 KB)
+   Processing images... Reading part-2-sv.md... ✓ (6.9 KB)
+   Processing images... Reading part-3-sv.md... ✓ (6.5 KB)
+   Processing images... ✅ Linked image: governance-simulator-v3.png
+Reading part-4-sv.md... ✓ (5.1 KB)
+   Processing images... Reading part-5-sv.md... ✓ (5.6 KB)
+   Processing images... Reading part-6-sv.md... ✓ (7.7 KB)
+   Processing images... Reading part-7-sv.md... ✓ (3.4 KB)
+   Processing images... Reading appendix-a-sv.md... ✓ (3.4 KB)
+   Processing images... Reading appendix-b-sv.md... ✓ (2.0 KB)
+   Processing images... Reading appendix-c-sv.md... ✓ (5.1 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Sammanfattning... ✓ (1.8 KB)
+  Processing Del I: Styrning som ett återkopplingssystem... ✓ (4.5 KB)
+  Processing Del II: En formell grammatik för styrning... ✓ (7.4 KB)
+  Processing Del III: Simuleringen... ✓ (7.1 KB)
+  Processing Del IV: Strukturella observationer... ✓ (5.3 KB)
+  Processing Del V: Begränsningar... ✓ (5.8 KB)
+  Processing Del VI: Implikationer... ✓ (7.8 KB)
+  Processing Del VII: Slutsats... ✓ (3.5 KB)
+  Processing Appendix A: Matematiska formuleringar... ✓ (4.5 KB)
+  Processing Appendix B: Kod och reproducerbarhet... ✓ (2.3 KB)
+  Processing Appendix C: Referenser och källor... ✓ (5.6 KB)
+
+✅ HTML generated (62.0 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

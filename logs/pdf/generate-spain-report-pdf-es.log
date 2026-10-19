@@ -1,0 +1,48 @@
+📄 Starting PDF generation for Spain Transition Trap report...
+
+Language: es
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/spain-transition-trap-es.pdf
+
+
+📖 Reading report sections for language: es
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/spain-transition-trap/sections
+
+Reading 00-executive-summary.es.md... ✓ (18.5 KB)
+   Processing images... Reading 01-transition-trap.es.md... ✓ (21.8 KB)
+   Processing images... Reading 02-structural-mechanisms.es.md... ✓ (41.4 KB)
+   Processing images... Reading 03-building-integrative-closure.es.md... ✓ (23.6 KB)
+   Processing images... Reading 04-political-immune-system.es.md... ✓ (16.7 KB)
+   Processing images... Reading 05-transition-architecture.es.md... ✓ (21.1 KB)
+   Processing images... Reading 06-first-step.es.md... ✓ (19.7 KB)
+   Processing images... Reading 07-coda.es.md... ✓ (19.9 KB)
+   Processing images... Reading 08-appendix-a.es.md... ✓ (8.1 KB)
+   Processing images... Reading 08-appendix-b.es.md... ✓ (5.8 KB)
+   Processing images... Reading 08-appendix-c.es.md... ✓ (8.3 KB)
+   Processing images... Reading 08-appendix-d.es.md... ✓ (7.2 KB)
+   Processing images... Reading 08-appendix-e.es.md... ✓ (4.6 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Resumen Ejecutivo... ✓ (20.0 KB)
+  Processing 1. La Trampa de la Transición... ✓ (22.3 KB)
+  Processing 2. El Déficit de Cierre Integrativo: Mecanismos Estructurales... ✓ (42.1 KB)
+  Processing 3. Cómo Sería Construir la Capacidad de Cierre Integrativo... ✓ (23.9 KB)
+  Processing 4. El Sistema Inmunológico Político: La Máquina del Consenso... ✓ (16.9 KB)
+  Processing 5. Trabajando con la Fibra: Arquitectura de Transición para España... ✓ (21.4 KB)
+  Processing 6. Un Primer Paso Concreto: El Fondo de Pactos Interregionales y la Asamblea Ciudadana... ✓ (19.9 KB)
+  Processing 7. Coda: Los Límites de la Ambigüedad Constructiva... ✓ (20.1 KB)
+  Processing Apéndice A: Sistemas de Valores y Mentalidades Políticas... ✓ (8.2 KB)
+  Processing Apéndice B: Análogos y Precedentes Internacionales... ✓ (5.9 KB)
+  Processing Apéndice C: La Conexión con la Gobernanza como Ingeniería... ✓ (8.5 KB)
+  Processing Apéndice D: Objeciones Anticipadas... ✓ (7.3 KB)
+  Processing Apéndice E: Sobre el Autor y el Método... ✓ (4.7 KB)
+
+✅ HTML generated (228.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

@@ -1,0 +1,48 @@
+📄 Starting PDF generation for India Leap‑Lag Cycle report...
+
+Language: hi
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/india-leap-lag-cycle-hi.pdf
+
+
+📖 Reading report sections for language: hi
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/india-leap-lag-cycle/sections
+
+Reading executive-summary.hi.md... ✓ (8.2 KB)
+   Processing images... Reading 01-leap-lag-cycle.hi.md... ✓ (16.0 KB)
+   Processing images... Reading 02-synchronisation-deficit.hi.md... ✓ (18.0 KB)
+   Processing images... Reading 03-building-synchronisation-capacity.hi.md... ✓ (19.4 KB)
+   Processing images... Reading 04-political-immune-system.hi.md... ✓ (13.5 KB)
+   Processing images... Reading 05-transition-architecture.hi.md... ✓ (13.0 KB)
+   Processing images... Reading 06-synchronisation-sandbox.hi.md... ✓ (15.8 KB)
+   Processing images... Reading 07-coda.hi.md... ✓ (8.9 KB)
+   Processing images... Reading 08-appendix-a.hi.md... ✓ (5.9 KB)
+   Processing images... Reading 08-appendix-b.hi.md... ✓ (4.0 KB)
+   Processing images... Reading 08-appendix-c.hi.md... ✓ (4.9 KB)
+   Processing images... Reading 08-appendix-d.hi.md... ✓ (4.3 KB)
+   Processing images... Reading 08-appendix-e.hi.md... ✓ (4.0 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing कार्यकारी सारांश... ✓ (8.4 KB)
+  Processing 1. लीप‑लैग चक्र... ✓ (16.4 KB)
+  Processing 2. तालमेल की कमी: एक नया निदान... ✓ (18.3 KB)
+  Processing 3. तालमेल क्षमता निर्माण कैसा दिखता है... ✓ (19.9 KB)
+  Processing 4. राजनीतिक प्रतिरक्षा प्रणाली: तालमेल क्यों विफल होता है... ✓ (13.7 KB)
+  Processing 5. प्रकृति के अनुरूप: भारत के लिए संक्रमण वास्तुकला... ✓ (13.4 KB)
+  Processing 6. एक ठोस पहला कदम: तालमेल सैंडबॉक्स... ✓ (16.2 KB)
+  Processing 7. उपसंहार: लीप‑लैग से लीप‑सिंक तक... ✓ (9.0 KB)
+  Processing परिशिष्ट क: मूल्य प्रणालियाँ और नीति मानसिकताएँ... ✓ (6.1 KB)
+  Processing परिशिष्ट ख: अंतर्राष्ट्रीय समानताएँ... ✓ (4.2 KB)
+  Processing परिशिष्ट ग: गवर्नेंस ऐज़ इंजीनियरिंग कनेक्शन... ✓ (5.0 KB)
+  Processing परिशिष्ट घ: अपेक्षित आपत्तियाँ... ✓ (4.4 KB)
+  Processing परिशिष्ट ङ: लेखक और विधि के बारे में... ✓ (4.2 KB)
+
+✅ HTML generated (146.1 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 0)
+✅ PDF generated successfully
+Cleaning up...

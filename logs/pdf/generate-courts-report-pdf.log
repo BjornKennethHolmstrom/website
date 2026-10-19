@@ -1,0 +1,48 @@
+📄 Starting PDF generation for "The Adjudication–Governance Variety Gap"...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/reports/courts-adjudication-governance-variety-gap-en.pdf
+
+
+📖 Reading report sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/reports/courts-adjudication-governance-variety-gap/sections
+
+Reading 00-executive-summary.en.md... ✓ (15.7 KB)
+   Processing images... Reading 01-adjudication-governance-variety-gap.en.md... ✓ (16.5 KB)
+   Processing images... Reading 02-structural-mechanisms.en.md... ✓ (39.3 KB)
+   Processing images... Reading 03-building-requisite-judicial-governance.en.md... ✓ (27.9 KB)
+   Processing images... Reading 04-political-immune-system.en.md... ✓ (22.3 KB)
+   Processing images... Reading 05-concrete-first-step.en.md... ✓ (18.1 KB)
+   Processing images... Reading 06-coda.en.md... ✓ (17.2 KB)
+   Processing images... Reading 07-appendix-a.en.md... ✓ (7.4 KB)
+   Processing images... Reading 07-appendix-b.en.md... ✓ (5.6 KB)
+   Processing images... Reading 07-appendix-c.en.md... ✓ (4.4 KB)
+   Processing images... Reading 07-appendix-d.en.md... ✓ (4.6 KB)
+   Processing images... Reading 07-appendix-e.en.md... ✓ (3.0 KB)
+   Processing images... Reading 07-appendix-f.en.md... ✓ (3.5 KB)
+   Processing images... 
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML...
+  Processing Executive Summary... ✓ (16.5 KB)
+  Processing 1. The Adjudication–Governance Variety Gap... ✓ (16.8 KB)
+  Processing 2. Structural Mechanisms: How Courts Become Blind to the Systems They Govern... ✓ (39.9 KB)
+  Processing 3. What Building Requisite Judicial Governance Would Look Like... ✓ (28.4 KB)
+  Processing 4. The Political Immune System: Adversarial Epistemology... ✓ (22.6 KB)
+  Processing 5. A Concrete First Step: The Systemic Effects Registry... ✓ (18.4 KB)
+  Processing 6. Coda: The Retrospective Stabiliser... ✓ (17.4 KB)
+  Processing Appendix A: Value Systems & Policy Mindsets... ✓ (7.6 KB)
+  Processing Appendix B: International Analogues & Precedents... ✓ (5.7 KB)
+  Processing Appendix C: The Governance as Engineering Connection... ✓ (4.5 KB)
+  Processing Appendix D: Anticipated Objections... ✓ (4.8 KB)
+  Processing Appendix E: About the Author & Method... ✓ (3.1 KB)
+  Processing Appendix F: Key Concepts and Abbreviations... ✓ (3.8 KB)
+
+✅ HTML generated (196.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...

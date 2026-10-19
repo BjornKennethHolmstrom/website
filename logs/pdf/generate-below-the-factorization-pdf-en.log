@@ -1,0 +1,52 @@
+📄 Starting PDF generation for Below the Factorization (Paper 0)...
+
+Language: en
+Output: /home/bjorn/Code/bjornkennethholmstrom/static/working-papers/below-the-factorization.pdf
+
+
+📖 Reading Paper 0 sections for language: en
+Input directory: /home/bjorn/Code/bjornkennethholmstrom/src/routes/working-papers/below-the-factorization/sections
+
+Reading abstract.en.md... ✓ (4.5 KB)
+   Processing images... done.
+Reading section-01.en.md... ✓ (3.8 KB)
+   Processing images... done.
+Reading section-02.en.md... ✓ (6.6 KB)
+   Processing images... done.
+Reading section-03.en.md... ✓ (10.9 KB)
+   Processing images... done.
+Reading section-04.en.md... ✓ (5.5 KB)
+   Processing images... done.
+Reading section-05.en.md... ✓ (5.6 KB)
+   Processing images... done.
+Reading section-06.en.md... ✓ (3.9 KB)
+   Processing images... done.
+Reading section-07.en.md... ✓ (2.2 KB)
+   Processing images... done.
+Reading section-08.en.md... ✓ (3.3 KB)
+   Processing images... done.
+Reading appendix-a.en.md... ✓ (5.5 KB)
+   Processing images... done.
+
+✅ All sections read successfully
+
+🔨 Converting markdown to HTML (pre‑rendering LaTeX)...
+  Processing Abstract... ✓ (4.6 KB)
+  Processing 1. The unexamined primitive... ✓ (3.9 KB)
+  Processing 2. The two ingredients... ✓ (6.9 KB)
+  Processing 3. The minimal model: factorization from bounded prediction... ✓ (39.5 KB)
+  Processing 4. Non‑uniqueness: the equivalence class... ✓ (10.3 KB)
+  Processing 5. Pragmatic preference without ontological preference... ✓ (14.0 KB)
+  Processing 6. What this re‑grounds... ✓ (4.1 KB)
+  Processing 7. Conclusion... ✓ (2.2 KB)
+  Processing 8. What this paper does not show... ✓ (4.1 KB)
+  Processing Appendix A: Model, training, and outputs... ✓ (69.4 KB)
+
+✅ HTML generated (165.3 KB total)
+
+📄 Generating PDF...
+Loading HTML file locally...
+Content loaded, generating PDF...
+🏷️  Provenance label: cover-text (author lines replaced: 1)
+✅ PDF generated successfully
+Cleaning up...
