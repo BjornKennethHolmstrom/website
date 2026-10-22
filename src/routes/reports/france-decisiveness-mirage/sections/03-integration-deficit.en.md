@@ -6,7 +6,7 @@ The term "integration" has a bureaucratic ring. In European policy circles, it o
 
 Integration capacity, in the sense that matters for France's current situation, is the ability of a governance system to connect. To connect the centre to the territory—so that national decisions are informed by local knowledge and adapted to local conditions. To connect decision to legitimacy—so that those affected by a policy have meaningful input into its design and feel ownership of its outcomes. To connect critique to co‑creation—so that the energy of dissent, which France possesses in abundance, becomes a resource for better policy rather than a veto on all change. And to connect symbolic ambition to functional delivery—so that what is announced in Paris becomes what is experienced in the lives of citizens.
 
-When integration capacity is high, a society can absorb conflict, translate abstract goals into concrete improvements, and sustain reforms long enough for them to work. When it is low, even the most intelligent policy collapses under the weight of its own imposition. The reform is announced, the street fills, and the government retreats. Not because the policy was wrong, but because the system lacked the connective tissue to make it legitimate, local, and durable.
+When integration capacity is high, a society can absorb conflict, translate abstract goals into concrete improvements, and sustain reforms long enough for them to work. When it is low, even the most intelligent policy collapses under the weight of its own imposition. The reform is announced, the street fills, and the government retreats. Sometimes because the policy was wrong. But often, even when it was sound, because the system lacked the connective tissue to make it legitimate, local, and durable.
 
 The central metaphor of this report is that France is a **high‑energy system with no integration layer**. The energy is everywhere. It is in the intellectual brilliance of the *grandes écoles* graduates who design the reforms. It is in the passion of the street protests that oppose them. It is in the ambition of the President who stakes his mandate on transformation. It is in the civic engagement of citizens who feel deeply about the direction of their country. This is not a society suffering from apathy, passivity, or a shortage of ideas. It is a society crackling with intensity.
 
@@ -80,6 +80,44 @@ In response, the centre typically does not decentralise or invest in translation
 
 Breaking this cycle requires addressing both dimensions simultaneously. Upgrading the outer hardware without upgrading the inner operating system would produce better‑designed policies that still collide with the wall of systemic mistrust. Cultivating a more deliberative political culture without the institutional infrastructure to translate deliberation into implementation would produce more frustration, not less. The integration deficit is a single thing with two faces. It must be met with a coherent response.
 
-The next section describes what that response looks like in practice: how France can build the outer translation layer, cultivate the inner deliberative capacity, and create living testbeds where integration proves itself.
+Yet even a fully integrated system would face a further question: whether the reforms it is asked to implement are the right ones, and whether the constraints that make them seem necessary are as fixed as they appear. That question completes the diagnosis.
+
+---
+
+### 2.6 The Possibility Gap: Questioning Necessity
+
+The diagnosis so far concerns how France implements decisions. It does not yet ask why particular decisions are considered necessary in the first place. That omission matters, because not every conflict in the Reform Loop is an integration failure.
+
+Three distinct problems can produce the same street protest:
+
+- **A policy‑content problem.** The reform may distribute costs unfairly, misidentify the problem, or pursue objectives that are legitimately contested.
+- **An integration problem.** Even a well‑designed reform may fail when it ignores local knowledge, affected populations or institutional dependencies.
+- **A possibility‑space problem.** Decision‑makers may present one economic or institutional arrangement as unavoidable when other feasible choices exist.
+
+The preceding sections address the second problem. The first and third cannot be set aside, because better integration does not dissolve genuine disagreement. If citizens oppose a reform because they judge its distribution of costs and benefits unacceptable, better consultation will reveal that judgement more clearly. It will not, by itself, make the reform desirable.
+
+**The fiscal context.** Nowhere is this clearer than in public finance. In 2025 France’s deficit was 5.1% of GDP and its public debt 115.6%, with interest costs rising faster than almost any other item of spending. France is subject to the EU’s excessive deficit procedure. In July 2026 the IMF urged credible, expenditure‑led consolidation to bring the deficit below 3% of GDP by 2029, a view shared by France’s own fiscal watchdogs. Others—economists in the post‑Keynesian tradition, most trade unions, much of the political left—argue that repeated consolidation erodes public services and investment, weakens growth, and drains the legitimacy that every subsequent reform needs. This report does not settle that dispute. It observes that the dispute is real, and that French governance rarely presents it to citizens as a choice.
+
+**The pension reform as an example.** The 2023 pension reform was presented as financially necessary, passed without a parliamentary vote, and then, in autumn 2025, suspended until 2028 by a government that needed opposition votes to pass a budget. Neither the original decision nor its suspension rested on a public, structured examination of the necessity claims involved: how large the financing gap actually was, which combinations of contributions, taxation, working lives and benefits could close it, and who would bear the cost of each. The question was settled first by executive authority and then by parliamentary arithmetic. In both cases, the range of possible choices remained largely invisible.
+
+**The local dimension.** The same pattern reinforces the outer deficit described above. Over the past decade, local authorities have lost much of their own tax base—the residence tax on main homes has been abolished, and the local share of the business value‑added contribution replaced—largely in exchange for fractions of national taxes and compensating transfers. Their revenue is therefore increasingly decided in Paris, and recent national budgets have asked them to contribute to national consolidation. A territory told that it "cannot afford" a public service is often facing a constraint set elsewhere, for purposes it had no part in defining.
+
+**The euro constraint.** The French fiscal debate also differs from the debate in countries with their own currencies. Some economists, notably those associated with Modern Monetary Theory, argue that governments issuing their own currency face real resource limits—labour, productive capacity, the environment, inflation—rather than purely financial ones. Whatever the merits of that argument elsewhere, France cannot apply it directly. It uses the euro; monetary policy is set within the Eurosystem; and Article 123 of the Treaty on the Functioning of the European Union prohibits direct central‑bank financing of governments. Those rules can be challenged and reformed politically, but they cannot simply be disregarded within the existing legal framework.
+
+That still leaves a wider range of choices than the national debate usually acknowledges:
+
+- **Within existing rules:** reprioritising expenditure, reviewing tax expenditures, reshaping the distribution of the tax burden, protecting productive investment, and making fuller use of European instruments.
+- **Through European reform:** different treatment of public investment in fiscal rules, expanded common European financing, and coordinated stabilisation. The reformed EU fiscal framework already allows the adjustment period to be extended from four to seven years in return for qualifying reforms and investment commitments.
+- **Through deeper monetary reform:** alternatives inspired by MMT or other monetary traditions—provided their treaty implications, inflation risks, governance requirements and financial‑stability consequences are stated explicitly.
+
+None of these pathways automatically solves France’s problems, and each carries risks that its advocates tend to understate. But treating the current arrangement as the only possible one is itself a choice—and an unexamined one.
+
+**What this adds to the diagnosis.** France’s integration deficit cannot be separated entirely from the economic choices it is asked to implement. Some conflicts arise because national policies are poorly adapted to territorial realities. Others arise because the policies themselves impose contested costs, protect existing distributions of income and wealth, or treat particular fiscal arrangements as unavoidable. The eurozone’s monetary architecture, European fiscal rules, national taxation and public investment priorities all shape France’s practical options. These institutions serve real purposes—price stability, financial credibility, fiscal coordination. But they are institutional arrangements, not laws of nature.
+
+A governance system capable of learning must therefore be able to examine not only how a policy is implemented, but why it was chosen over the alternatives. It must distinguish genuine scarcity of real resources from financial, legal and political constraints; investigate what changing those constraints would cost and risk; and allow citizens to scrutinise the assumptions behind claims of economic necessity. The objective is neither fiscal expansion for its own sake nor austerity for its own sake. It is to make the full range of feasible choices visible, democratically contestable and empirically assessable.
+
+This is what the report calls the **possibility gap**. It is distinct from the integration deficit, but the two interact: a system that cannot integrate cannot test alternatives, and a system that cannot see alternatives integrates only what it was told was necessary. The architecture proposed in the following sections is designed to address both.
+
+The next section describes what that response looks like in practice: how France can build the outer translation layer, cultivate the inner deliberative capacity, and create living testbeds where integration—and the testing of alternatives—can prove itself.
 
 ---

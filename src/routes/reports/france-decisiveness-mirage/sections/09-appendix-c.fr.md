@@ -38,4 +38,14 @@
 - Duit, A., & Galaz, V. (2008). « Governance and Complexity. » *Governance*, 21(3), 311–335.
 - Folke, C., et al. (2005). « Adaptive Governance of Social-Ecological Systems. » *Annual Review of Environment and Resources*, 30, 441–473.
 
+### C.7 Sur les finances publiques, l'austérité et les alternatives monétaires
+
+- Blyth, M. (2013). *Austerity: The History of a Dangerous Idea*. Oxford University Press. Une histoire intellectuelle critique de l'austérité comme doctrine économique.
+- Alesina, A., Favero, C., & Giavazzi, F. (2019). *Austerity: When It Works and When It Doesn't*. Princeton University Press. Un argumentaire empirique selon lequel les consolidations fondées sur la dépense sont moins coûteuses que celles fondées sur l'impôt.
+- Kelton, S. (2020). *The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy*. PublicAffairs. Une présentation accessible de la théorie monétaire moderne.
+- Blanchard, O. (2023). *Fiscal Policy under Low Interest Rates*. MIT Press. Une réévaluation de référence de la soutenabilité de la dette et des coûts de la dette publique.
+- Insee (2026). « En 2025, le déficit public s'élève à 5,1 % du PIB, la dette publique à 115,6 % du PIB. » *Informations rapides* n° 78, 27 mars 2026. Source des données de finances publiques 2025 utilisées dans ce rapport.
+- Fonds monétaire international (2026). *France: 2026 Article IV Consultation*. IMF Country Report n° 26/187.
+- Traité sur le fonctionnement de l'Union européenne, article 123 (interdiction du financement monétaire).
+
 ---
