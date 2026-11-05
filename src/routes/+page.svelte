@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { t } from '$lib/stores/languageStore.ts';
 	import SEO from '$lib/components/SEO.svelte';
+ import ResearchSeriesCarousel, { type ResearchSeries } from '$lib/components/ResearchSeriesCarousel.svelte';
  import { fly } from 'svelte/transition';
  import { onMount } from 'svelte';
 
@@ -34,7 +35,17 @@
   { key: 'geSeriesPaperXXVI', url: '/working-papers/cost-of-returning', coverImage: '/working-papers/images/cost-of-returning-cover.png' },
   { key: 'geSeriesPaperXXVII', url: '/working-papers/requisite-alignment', coverImage: '/working-papers/images/requisite-alignment-cover.png' },
   { key: 'geSeriesPaperXXVIII', url: '/working-papers/closure-adaptation', coverImage: '/working-papers/images/closure-adaptation-cover.png' },
- ];
+ ] as const;
+
+ // Systemic Optimization — append future papers here; the newest paper is featured first.
+ const systemicOptimizationPapers = [
+   {
+     key: 'soSeriesPaper0',
+     number: '0',
+     url: '/working-papers/what-should-we-optimize',
+     coverImage: '/working-papers/images/what-should-we-optimize-cover.png'
+   }
+ ] as const;
 
 	// Definiera vår projektdata.
 	const projects = {
@@ -308,48 +319,48 @@
 
   // --- CAROUSEL LOGIC ---
 
-  // Governance as Engineering carousel
-  let activeGEIndex = $state(0);
-  let geDirection = $state(1);
-  let geAutoSlideInterval: any;
-  let geSlideDuration = 7000; // slightly faster than book carousel
+  // Keep both paper series in one responsive region, with a shared component.
+  // Item translations are derived from the current language so changing locale
+  // updates the currently visible slides without resetting the carousel.
+  const geSlides = $derived(governanceEngineeringPapers.map((paper) => ({
+    ...paper,
+    title: $t.geCarouselSeries[paper.key].title,
+    description: $t.geCarouselSeries[paper.key].desc
+  })));
+  const soSlides = $derived(systemicOptimizationPapers.map((paper) => ({
+    ...paper,
+    title: $t.soCarouselSeries[paper.key].title,
+    description: $t.soCarouselSeries[paper.key].desc
+  })));
+
+  // Tab order = display order; the first series is selected on load.
+  const researchSeries: ResearchSeries[] = $derived([
+    {
+      id: 'so',
+      title: $t.soCarouselTitle,
+      subtitle: $t.soCarouselSubtitle,
+      cta: $t.soCarouselButton,
+      tone: 'indigo',
+      isNew: true,
+      note: $t.soCarouselMoreToCome,
+      initialIndex: systemicOptimizationPapers.length - 1,
+      items: soSlides
+    },
+    {
+      id: 'ge',
+      title: $t.geCarouselTitle,
+      subtitle: $t.geCarouselSubtitle,
+      cta: $t.geCarouselButton,
+      tone: 'amber',
+      initialIndex: governanceEngineeringPapers.length - 1,
+      items: geSlides
+    }
+  ]);
+
   let selectedImage: string | null = $state(null);
 
   function handleKeydown(e: KeyboardEvent) {
-    if (e.key === 'Escape') {
-      selectedImage = null;
-    }
-  }
-
-  // Resolve the current paper's translations correctly (reactive with $derived)
-  let currentPaper = $derived({
-    title: $t.geCarouselSeries[governanceEngineeringPapers[activeGEIndex].key].title,
-    desc:  $t.geCarouselSeries[governanceEngineeringPapers[activeGEIndex].key].desc,
-    url:   governanceEngineeringPapers[activeGEIndex].url,
-    coverImage: governanceEngineeringPapers[activeGEIndex].coverImage,
-  });
-
-  function geNextSlide() {
-    geDirection = 1;
-    activeGEIndex = (activeGEIndex + 1) % governanceEngineeringPapers.length;
-    geResetTimer();
-  }
-
-  function gePrevSlide() {
-    geDirection = -1;
-    activeGEIndex = (activeGEIndex - 1 + governanceEngineeringPapers.length) % governanceEngineeringPapers.length;
-    geResetTimer();
-  }
-
-  function geResetTimer() {
-    clearInterval(geAutoSlideInterval);
-    geStartTimer();
-  }
-
-  function geStartTimer() {
-    geAutoSlideInterval = setInterval(() => {
-      geNextSlide();
-    }, geSlideDuration);
+    if (e.key === 'Escape') selectedImage = null;
   }
 
   // Book carousel
@@ -384,19 +395,13 @@
   };
 
   onMount(() => {
-    // Start the book carousel timer (existing)
+    // Series carousels manage their own timers. Only the book timer lives here.
     startTimer();
-    // Start the GE carousel timer (new)
-    geStartTimer();
-
-    return () => {
-      clearInterval(autoSlideInterval);
-      clearInterval(geAutoSlideInterval);
-    };
+    return () => clearInterval(autoSlideInterval);
   });
 
-  let showWelcomeModal = false;
-  let dontShowAgain = false;
+  let showWelcomeModal = $state(false);
+  let dontShowAgain = $state(false);
   
   onMount(() => {
       // Never show the modal on first visit — only via the floating button
@@ -602,95 +607,19 @@
    </div>
  </section>
 
-<!-- Governance as Engineering Carousel -->
-<section class="py-12 bg-[var(--color-page-bg)] border-b border-[var(--color-separator)] overflow-hidden relative">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div class="flex items-center gap-3 mb-2">
-    <h2 class="text-2xl font-semibold text-[var(--color-page-accent)]">
-      {$t.geCarouselTitle}
-    </h2>
-    <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full bg-amber-500 text-white shadow">
-      {$t.geCarouselBadge}
-    </span>
-  </div>
-    <p class="text-[var(--color-page-text)] opacity-60 mb-8">
-      {$t.geCarouselSubtitle}
-    </p>
-
-    <div class="relative min-h-[400px] sm:min-h-[320px] md:min-h-[260px]">
-      {#key activeGEIndex}
-        <div
-          in:fly={{ x: 200 * geDirection, duration: 400, delay: 100 }}
-          out:fly={{ x: -200 * geDirection, duration: 400 }}
-          class="absolute inset-0 w-full"
-        >
-          <div class="bg-[var(--color-card-bg)] rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 shadow-sm border border-[var(--color-separator)] h-full">
-            
-            <!-- Text content -->
-            <div class="flex-1 text-center md:text-left w-full">
-              <span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase rounded-full mb-4 bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300">
-                Working paper
-              </span>
-              <h3 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-[var(--color-page-text)] mb-4 leading-tight">
-                {currentPaper.title}
-              </h3>
-              <p class="text-sm sm:text-base md:text-lg text-[var(--color-page-text)] opacity-80 mb-6 leading-relaxed max-w-2xl">
-                {currentPaper.desc}
-              </p>
-              <a
-                href={currentPaper.url}
-                class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-amber-600 hover:bg-amber-700 transition-colors shadow-sm"
-              >
-                {$t.geCarouselButton} 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 -mr-1"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </a>
-            </div>
-
-            <!-- Cover image – scaled down on mobile, full size on desktop -->
-            <div 
-              class="w-32 sm:w-40 md:w-48 lg:w-56 flex-shrink-0 flex items-center justify-center cursor-pointer"
-              on:click={() => (selectedImage = currentPaper.coverImage)}
-            >
-              <img 
-                src={currentPaper.coverImage} 
-                alt={currentPaper.title} 
-                class="w-full h-auto rounded shadow-md ring-1 ring-slate-200 dark:ring-slate-600 hover:ring-amber-400 transition-shadow" 
-              />
-            </div>
-          </div>
-        </div>
-      {/key}
-    </div>
-
-    <!-- Navigation buttons -->
-    <button
-      on:click={gePrevSlide}
-      class="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
-      aria-label="Previous paper"
-    >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-    </button>
-    <button
-      on:click={geNextSlide}
-      class="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/80 dark:bg-slate-800/80 shadow-lg hover:bg-white dark:hover:bg-slate-700 transition-all text-slate-600 dark:text-slate-300"
-      aria-label="Next paper"
-    >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-    </button>
-
-    <!-- Dots -->
-    <div class="flex justify-center space-x-2 mt-6">
-      {#each governanceEngineeringPapers as _, i}
-        <button
-          class="w-2.5 h-2.5 rounded-full transition-colors {i === activeGEIndex ? 'bg-amber-600' : 'bg-slate-300 dark:bg-slate-600'}"
-          on:click={() => { geDirection = i > activeGEIndex ? 1 : -1; activeGEIndex = i; geResetTimer(); }}
-          aria-label="Go to paper {i + 1}"
-        ></button>
-      {/each}
-    </div>
-  </div>
-</section>
-
+<ResearchSeriesCarousel
+  series={researchSeries}
+  heading={$t.researchSeriesTitle}
+  subtitle={$t.researchSeriesSubtitle}
+  labels={{
+    paper: $t.seriesCarouselPaperLabel,
+    previous: $t.seriesCarouselPrevious,
+    next: $t.seriesCarouselNext,
+    preview: $t.seriesCarouselPreview,
+    isNew: $t.seriesCarouselNew
+  }}
+  onPreview={(src) => (selectedImage = src)}
+/>
 	<section class="space-y-12 py-16 md:py-24">
    <div>
     <h2 class="mb-6 text-2xl font-semibold text-[var(--color-page-accent)] sm:text-3xl">

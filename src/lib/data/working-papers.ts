@@ -28,6 +28,34 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'whatShouldWeOptimize',
+   key: 'whatShouldWeOptimize',
+   category: 'systems',
+   tags: [
+     'Systemic Optimization',
+     'Model Misspecification',
+     'Robust Optimization',
+     'Uncertain Future Goals',
+     'Option Value',
+     'Value of Information',
+     'Decision Theory',
+     'Reproducible Research',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '16',
+   readTime: { en: '25 min', sv: '25 min' },
+   version: '0.2',
+   pdfPath: {
+     en: `${localBase}/what-should-we-optimize/what-should-we-optimize-en.pdf`,
+     sv: `${localBase}/what-should-we-optimize/what-should-we-optimize-sv.pdf`
+   },
+   coverImage: '/working-papers/images/what-should-we-optimize-cover.png',
+   readOnlinePath: '/working-papers/what-should-we-optimize',
+   readOnlineExternal: false,
+   releaseDate: '2026-11-05'
+ },
+ {
    id: 'closureAdaptation',
    key: 'closureAdaptation',
    category: 'governance',

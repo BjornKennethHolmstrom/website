@@ -6,7 +6,7 @@ export const coreTranslations = {
 		meta: {
 			title: 'Björn Kenneth Holmström | Researching Governance and Developing Global Governance Frameworks',
 			description:
-				'AI-generated analysis at the intersection of governance, complexity, and consciousness. Home of the Country Reports series and the Governance as Engineering working-papers.'
+				'AI-assisted explorations of governance, complexity, and consciousness, including the Country Reports, Governance as Engineering, and Systemic Optimization research series.'
 		},
   aiNotice: {
     title: 'About the texts on this site',
@@ -113,8 +113,30 @@ export const coreTranslations = {
   reportsStandardSettingTitle: 'Standard‑Setting: The Protocol‑Layer Variety Gap',
   reportsStandardSettingTagline: 'Why the institutions that define what others can see are themselves structurally blind.',
 
+  // Featured research series on the homepage
+  researchSeriesTitle: 'Research series',
+  researchSeriesSubtitle: 'Two complementary explorations: how systems are governed, and what they should optimize.',
+  seriesCarouselPaperLabel: 'Working paper',
+  seriesCarouselPrevious: 'Previous paper',
+  seriesCarouselNext: 'Next paper',
+  seriesCarouselPreview: 'Enlarge cover',
+  seriesCarouselNew: 'New',
+  geCarouselTitle: 'Governance as Engineering',
+  geCarouselSubtitle: 'Governance architectures through control theory, systems thinking and computational models.',
+  soCarouselTitle: 'Systemic Optimization',
+  soCarouselSubtitle: 'Choosing what to optimize when the world model, future goals, and value of learning are uncertain.',
+  soCarouselBadge: 'New research series',
+  soCarouselButton: 'Read the paper',
+  soCarouselMoreToCome: 'A new series, with more papers to come.',
+  soCarouselSeries: {
+    soSeriesPaper0: {
+      title: 'What Should We Optimize, and What Must We Know?',
+      desc: 'Three computational experiments examine model error, future-goal uncertainty, and when learning is worth its cost. Confirmatory results and subsequent reproducibility audits are clearly distinguished.'
+    }
+  },
+
   // Governance as Engineering — Carousel
-  geCarouselButton: 'Read the Paper ',
+  geCarouselButton: 'Read the paper',
   geCarouselBadge: 'Featured Research — Governance as Engineering',
   geCarouselSeries: {
     geSeriesPaperI: {
@@ -445,7 +467,7 @@ export const coreTranslations = {
 		meta: {
 			title: 'Björn Kenneth Holmström | Systemtänkare och styrningsarkitekt',
 			description:
-				'AI-genererad analys i skärningspunkten mellan styrning, komplexitet och medvetande. Hemvist för serien Country Reports och arbetsdokumenten Governance as Engineering.'
+				'AI-assisterade utforskningar av styrning, komplexitet och medvetande, inklusive Country Reports, Styrning som ingenjörskonst och Systemisk optimering.'
 		},
   aiNotice: {
     title: 'Om texterna på den här webbplatsen',
@@ -552,7 +574,29 @@ export const coreTranslations = {
   reportsStandardSettingTitle: 'Standardisering: Varietetsgapet vid protokollagret',
   reportsStandardSettingTagline: 'Varför institutionerna som bestämmer vad andra kan se själva är strukturellt blinda.',
 
-  geCarouselButton: 'Läs artikeln ',
+  // Forskningsserier på startsidan
+  researchSeriesTitle: 'Forskningsserier',
+  researchSeriesSubtitle: 'Två kompletterande utforskningar: hur system styrs och vad de bör optimera.',
+  seriesCarouselPaperLabel: 'Arbetsdokument',
+  seriesCarouselPrevious: 'Föregående arbetsdokument',
+  seriesCarouselNext: 'Nästa arbetsdokument',
+  seriesCarouselPreview: 'Visa omslaget större',
+  seriesCarouselNew: 'Ny',
+  geCarouselTitle: 'Styrning som ingenjörskonst',
+  geCarouselSubtitle: 'Styrningsarkitekturer genom reglerteori, systemtänkande och beräkningsmodeller.',
+  soCarouselTitle: 'Systemisk optimering',
+  soCarouselSubtitle: 'Vad bör vi optimera när världsmodellen, framtida mål och värdet av lärande är osäkra?',
+  soCarouselBadge: 'Ny forskningsserie',
+  soCarouselButton: 'Läs arbetsdokumentet',
+  soCarouselMoreToCome: 'En ny serie där fler arbetsdokument planeras.',
+  soCarouselSeries: {
+    soSeriesPaper0: {
+      title: 'Vad bör vi optimera, och vad måste vi veta?',
+      desc: 'Tre beräkningsexperiment undersöker modellfel, osäkerhet om framtida mål och när lärande är värt sin kostnad. Bekräftande resultat hålls åtskilda från senare reproducerbarhetsgranskningar.'
+    }
+  },
+
+  geCarouselButton: 'Läs arbetsdokumentet',
   geCarouselBadge: 'Utvald forskning — Styrning som ingenjörskonst',
   geCarouselSeries: {
     geSeriesPaperI: {

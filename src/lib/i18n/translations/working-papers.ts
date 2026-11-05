@@ -22,6 +22,13 @@ export const workingpapersTranslations = {
 				philosophy: 'Philosophy',
 				methodology: 'Methodology'
 			},
+   whatShouldWeOptimize: {
+     title: 'What Should We Optimize, and What Must We Know?',
+     subtitle: 'Three Computational Experiments on Model Error, Future Goals, and the Cost of Learning',
+     description:
+       'Working Paper 0 in the Systemic Optimization series. Three synthetic computational experiments examine model misspecification, uncertain future goals, and the cost of learning. Robustness helps under specific conditions; generic measures of future options need not improve decisions over matched controls, and the value of information depends on its opportunity cost. The paper distinguishes confirmatory, inconclusive, and exploratory findings.',
+     seriesLabel: 'Working Paper 0 · Systemic Optimization'
+   },
 			governanceSimulator: {
 				title: 'Governance Stability Simulator: A Control-Theoretic Model of Institutional Adaptation',
 				description:
@@ -301,6 +308,13 @@ export const workingpapersTranslations = {
 				philosophy: 'Filosofi',
 				methodology: 'Metodik'
 			},
+   whatShouldWeOptimize: {
+    title: 'Vad bör vi optimera, och vad måste vi veta?',
+    subtitle: 'Tre beräkningsexperiment om modellfel, framtida mål och kostnaden för lärande',
+    description:
+      'Arbetsrapport 0 i serien Systemisk optimering. Tre syntetiska beräkningsexperiment undersöker modellspecifikationsfel, osäkra framtida mål och kostnaden för lärande. Robusthet hjälper under vissa förutsättningar; generella mått på framtida handlingsmöjligheter behöver inte förbättra beslut jämfört med matchade kontrollstrategier, och informationens värde beror på dess alternativkostnad. Rapporten skiljer mellan konfirmerande, inkonklusiva och explorativa resultat.',
+    seriesLabel: 'Arbetsrapport 0 · Systemisk optimering'
+   },
 			governanceSimulator: {
 				title: 'Styrstabilitetssimulatorn: En reglerteoretisk modell för institutionell anpassning',
 				description:

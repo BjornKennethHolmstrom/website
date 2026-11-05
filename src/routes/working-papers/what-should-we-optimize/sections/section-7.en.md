@@ -1,0 +1,15 @@
+## 7. The programme's unanswered question: mutual benefit
+
+Mutual benefit is not a scalar objective unless one has already specified whose benefits matter and how conflicting outcomes will be compared. A policy can reduce total harm while imposing disproportionate costs on a particular community. A technically synergistic pair of interventions may be politically unacceptable; a non-synergistic or substitutive pair may still be jointly beneficial under a suitable compensation scheme.
+
+A1's strict ledger is a valuable first discipline precisely because it does not hide these tensions. It reports the financial and harm consequences separately across upstream and downstream municipalities, with ecological sentinels. Its negative intersection of synergy and Pareto improvement should prompt **mechanism design**, not despair. A fixed combination of wetlands, levees and pooling may fail to satisfy every account, while contingent co-financing, transfers, timing or negotiated rules could change the feasible set. None of those institutional arrangements was tested in the fixed-programme map.
+
+**[H1 — Conditional mutual benefit.]** Under heterogeneous physical externalities, the set of Pareto-improving joint programmes will depend not only on engineering synergies but on compensation, timing, cost assignment and the set of rights or accounts that must be protected. A follow-up study should specify alternative rules *before* evaluation and check the distribution of gains, not merely the aggregate.
+
+**[H2 — Cost-adjusted adaptable capacity.]** A measure of adaptable capacity that jointly accounts for response cost, prior damage avoided, and unrealized needs will distinguish resilient preparation from deferred repair more faithfully than A1's raw value-of-action statistic. It should be tested against deliberate underinvestment counterexamples.
+
+**[H3 — Goal-weighted optionality.]** Possibility-preserving planners that weight retained capabilities by an explicit, uncertainty-aware model of *plausible goals* will perform better than unweighted reachability in some regimes, but can still lose when their goal model is wrong or the cost of preservation is high. This requires new worlds and new hypotheses, not post hoc tuning of B.
+
+**[H4 — Integrated learning.]** With comparable signal quality, institutions able to gather and use feedback during ordinary operations will have a greater region of positive net learning value than institutions that must halt core activities to acquire information. This does not imply that protected, dedicated learning is never worth its cost; that alternative belongs in the comparison.
+
+Each hypothesis is falsifiable in a constructed model but remains untested in this paper. The step from synthetic experiments to an empirical institutional claim would require operational measures, field data, explicit welfare judgments, and attention to legitimacy and asymmetric power. The review chain here is AI-assisted throughout; no independent human solver-and-evaluator audit has yet been reported.
