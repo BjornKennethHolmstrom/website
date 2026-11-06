@@ -28,6 +28,36 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'whatIfModelIncomplete',
+   key: 'whatIfModelIncomplete',
+   category: 'systems',
+   tags: [
+     'Systemic Optimization',
+     'Model Incompleteness',
+     'Causal Representation',
+     'Ecological Objectives',
+     'Model Misspecification',
+     'Value of Information',
+     'Identifiability',
+     'Adaptive Management',
+     'Decision Theory',
+     'Reproducible Research',
+     'Simulation'
+   ],
+   year: '2026',
+   pages: '30',
+   readTime: { en: '45 min', sv: '45 min' },
+   version: '0.2',
+   pdfPath: {
+     en: `${localBase}/what-if-the-model-is-incomplete/what-if-the-model-is-incomplete-en.pdf`,
+     sv: `${localBase}/what-if-the-model-is-incomplete/what-if-the-model-is-incomplete-sv.pdf`
+   },
+   coverImage: '/working-papers/images/what-if-the-model-is-incomplete-cover.png',
+   readOnlinePath: '/working-papers/what-if-the-model-is-incomplete',
+   readOnlineExternal: false,
+   releaseDate: '2026-11-06'
+ },
+ {
    id: 'whatShouldWeOptimize',
    key: 'whatShouldWeOptimize',
    category: 'systems',

@@ -44,7 +44,13 @@
      number: '0',
      url: '/working-papers/what-should-we-optimize',
      coverImage: '/working-papers/images/what-should-we-optimize-cover.png'
-   }
+   },
+  {
+    key: 'soSeriesPaper1',
+    number: '1',
+    url: '/working-papers/what-if-the-model-is-incomplete',
+    coverImage: '/working-papers/images/what-if-the-model-is-incomplete-cover.png'
+  }
  ] as const;
 
 	// Definiera vår projektdata.

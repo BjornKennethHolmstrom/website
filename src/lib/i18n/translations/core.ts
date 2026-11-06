@@ -132,6 +132,10 @@ export const coreTranslations = {
     soSeriesPaper0: {
       title: 'What Should We Optimize, and What Must We Know?',
       desc: 'Three computational experiments examine model error, future-goal uncertainty, and when learning is worth its cost. Confirmatory results and subsequent reproducibility audits are clearly distinguished.'
+    },
+    soSeriesPaper1: {
+      title: 'What If the Model Is Incomplete?',
+      desc: 'A synthetic flood-management study examines three responses to incomplete understanding: re-model, re-value, and learn. Confirmatory results reveal a trade-off between conventional costs and ecological outcomes, while exploratory experiments expose the limits of learning.'
     }
   },
 
@@ -593,6 +597,10 @@ export const coreTranslations = {
     soSeriesPaper0: {
       title: 'Vad bör vi optimera, och vad måste vi veta?',
       desc: 'Tre beräkningsexperiment undersöker modellfel, osäkerhet om framtida mål och när lärande är värt sin kostnad. Bekräftande resultat hålls åtskilda från senare reproducerbarhetsgranskningar.'
+    },
+    soSeriesPaper1: {
+      title: 'Vad händer om modellen är ofullständig?',
+      desc: 'En syntetisk översvämningsstudie undersöker tre svar på ofullständig förståelse: ändra modellen, ändra målet eller lära sig mer. Konfirmatoriska resultat visar en målkonflikt mellan konventionella kostnader och ekologiska utfall, medan explorativa experiment belyser lärandets begränsningar.'
     }
   },
 

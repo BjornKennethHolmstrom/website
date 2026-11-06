@@ -22,6 +22,14 @@ export const workingpapersTranslations = {
 				philosophy: 'Philosophy',
 				methodology: 'Methodology'
 			},
+   whatIfModelIncomplete: {
+     title: 'What If the Model Is Incomplete?',
+     subtitle:
+       'Computational Experiments on Causal Representation, Ecological Objectives, and the Limits of Learning',
+     description:
+       'Working Paper 1 in the Systemic Optimization series. Using a synthetic flood-management model, the paper examines three responses to an incomplete causal model: assuming a missing mechanism, changing the objective, and acting to learn. A confirmatory 40-world comparison finds a trade-off: assuming retention reduces conventional costs, while an ecological objective improves wetland outcomes. Exploratory studies reveal how model errors, observability, and learning opportunities interact.',
+     seriesLabel: 'Working Paper 1 · Systemic Optimization'
+   },
    whatShouldWeOptimize: {
      title: 'What Should We Optimize, and What Must We Know?',
      subtitle: 'Three Computational Experiments on Model Error, Future Goals, and the Cost of Learning',
@@ -308,6 +316,14 @@ export const workingpapersTranslations = {
 				philosophy: 'Filosofi',
 				methodology: 'Metodik'
 			},
+   whatIfModelIncomplete: {
+     title: 'Vad händer om modellen är ofullständig?',
+     subtitle:
+       'Beräkningsexperiment om kausal representation, ekologiska mål och lärandets begränsningar',
+     description:
+       'Arbetsrapport 1 i serien Systemisk optimering. Med hjälp av en syntetisk översvämningsmodell undersöker rapporten tre sätt att hantera en ofullständig kausal modell: att anta en saknad mekanism, ändra målfunktionen och agera för att lära. En konfirmatorisk jämförelse med 40 simulerade världar visar en målkonflikt: antagandet om vattenretention minskar de konventionella kostnaderna, medan ett ekologiskt mål förbättrar våtmarkernas tillstånd. Explorativa studier belyser samspelet mellan modellfel, observerbarhet och möjligheter till lärande.',
+     seriesLabel: 'Arbetsrapport 1 · Systemisk optimering'
+   },
    whatShouldWeOptimize: {
     title: 'Vad bör vi optimera, och vad måste vi veta?',
     subtitle: 'Tre beräkningsexperiment om modellfel, framtida mål och kostnaden för lärande',

@@ -1,0 +1,4 @@
+> **Revisionsanmärkning (v0.2).** Denna utgåva bygger på den integrerade revisionen av A2-S1 till seriens andra rapport. Den rättar sammanblandningen mellan fullständig förhandskunskap (O\*) och oraklet efter en fast sondering (X\*), införlivar evidensbilagorna och bevarar de frysta experimentresultaten. Inga experiment, estimand eller testutfall har ändrats. Forskningsprogrammets beteckning är **A2**.
+
+> **Evidenskonvention.** Som i arbetsrapport 0 betecknar **[R]** ett resultat inom den angivna beräkningsmodellen, med status angiven som *konfirmatoriskt*, *förhandsdefinierat deskriptivt*, *explorativt* eller *strukturellt*. **[IP]** är en tolkande proposition och **[H]** en hypotes för framtida prövning. De finare statuskoderna finns i bilaga A. Resultat från syntetiska modeller är inte i sig belägg för effekter i verkliga avrinningsområden eller institutioner.
+
