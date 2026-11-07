@@ -75,7 +75,7 @@
       contextTitle: 'Om rapporten',
       context: 'En fortsättning på arbetsrapport 0: en syntetisk översvämningsstudie som jämför kausala modellantaganden, ekologiska mål och möjligheterna till lärande som en policy skapar.',
       evidence: 'Policypaketsjämförelsen på 40 världar är konfirmatorisk. Exponering, lärande, parameterfel och alternativa policyer redovisas separat som strukturella, deskriptiva eller explorativa. Inget resultat visar direkta effekter i verkliga avrinningsområden.',
-      back: '← Alla arbetsrapporter', download: 'Ladda ned engelsk PDF', viewCode: 'Källkod och experiment', cite: 'Kopiera referens',
+      back: '← Alla arbetsrapporter', download: 'Ladda ned svensk PDF', viewCode: 'Källkod och experiment', cite: 'Kopiera referens',
       copied: 'Referens kopierad', notes: 'Revisions- och evidensanmärkningar',
     },
   };
@@ -91,7 +91,7 @@
       title: 'Vad händer om modellen är ofullständig?',
       subtitle: 'Beräkningsexperiment om kausal representation, ekologiska mål och lärandets begränsningar',
       description: 'Systemisk optimering, arbetsrapport 1: kausal modellrepresentation, ekologiska målkonflikter och policyberoende lärande i en syntetisk översvämningsmodell.',
-      pdf: '/working-papers/what-if-the-model-is-incomplete/what-if-the-model-is-incomplete-en.pdf',
+      pdf: '/working-papers/what-if-the-model-is-incomplete/what-if-the-model-is-incomplete-sv.pdf',
     },
   };
 

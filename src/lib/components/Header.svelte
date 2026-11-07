@@ -57,6 +57,9 @@
         </button>
         
         <div class="invisible absolute left-0 top-full z-20 mt-2 flex w-56 flex-col overflow-hidden rounded-md border border-[var(--color-separator)] bg-[var(--color-page-bg)] opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+            <a href="/systemic-optimization" class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]">
+                {$t.navSystemicOptimization}
+            </a>
             <a 
                 href="/variety-gap-framework"
                 class="block px-4 py-3 text-sm text-[var(--color-page-text)] transition-colors hover:bg-[var(--color-separator)]"
@@ -227,8 +230,11 @@
         
         {#if frameworksMobileOpen}
             <div class="mt-3 flex flex-col gap-4 border-l-2 border-[var(--color-separator)] pl-4">
+                <a href="/systemic-optimization" class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100" onclick={closeMobileMenu}>
+                    {$t.navSystemicOptimization}
+                </a>
                 <a
-                    href="variety-gap-framework"
+                    href="/variety-gap-framework"
                     class="text-lg font-medium text-[var(--color-page-text)] opacity-70 transition-opacity hover:opacity-100"
                     onclick={closeMobileMenu}
                 >

@@ -1,0 +1,1072 @@
+.
+├── apps
+│   └── images
+│       ├── logo-conceptexplorer.svg
+│       ├── logo-echo.svg
+│       ├── logo-mycel.svg
+│       ├── logo-the-ward.svg
+│       ├── logo-three-lenses.svg
+│       ├── logo-three-tickers.svg
+│       ├── logo-tito.svg
+│       ├── tito-extended-view.png
+│       └── tito-main-view.png
+├── blog
+│   ├── 2018-03-26-fruit-bowl
+│   │   └── images
+│   │       └── fruit_bowl_1080p.jpg
+│   ├── 2018-04-11-reclaim-the-keyboard-and-your-fingers
+│   │   └── images
+│   │       └── img_1892.jpg
+│   ├── 2018-06-03-cabbage-salad-with-spirulina-paste
+│   │   └── images
+│   │       ├── img_0972.jpg
+│   │       └── img_0974.jpg
+│   ├── 2018-10-03-walk-in-vallentuna
+│   │   └── images
+│   │       ├── 20181001095142_img_22951698461449.jpg
+│   │       ├── 20181001095159_img_2296-1569931312.jpg
+│   │       ├── 20181001095254_img_232493104987.jpg
+│   │       ├── 20181001095325_img_22981554772307.jpg
+│   │       ├── 20181001095354_img_2325-405348357.jpg
+│   │       ├── 20181001102600_img_2308126332147.jpg
+│   │       ├── 20181001102648_img_2309426850206.jpg
+│   │       ├── 20181001102726_img_23101608916050.jpg
+│   │       ├── 20181001103427_img_2315391969963.jpg
+│   │       └── 20181001112755_img_23191269991662.jpg
+│   ├── 2018-10-03-yoga-and-brunch
+│   │   └── images
+│   │       ├── 20181003102550_img_2326-2061890317.jpg
+│   │       ├── 20181003102720_img_2328-516841370.jpg
+│   │       ├── 20181003102734_img_2329-45785693.jpg
+│   │       ├── 20181003103000_img_2332-1554533308.jpg
+│   │       ├── 20181003110734_img_2335581854856.jpg
+│   │       ├── 20181003110818_img_23371187176922.jpg
+│   │       ├── 20181003110901_img_2338391717682.jpg
+│   │       ├── 20181003134414_img_2342-1165314430.jpg
+│   │       ├── 20181003135255_img_2343-719908732.jpg
+│   │       ├── 20181003135542_img_2346940458977.jpg
+│   │       ├── 20181003135654_img_2416-59382750.jpg
+│   │       ├── 20181003135752_img_2348-209726454.jpg
+│   │       ├── 20181003140027_img_2351-1651788237.jpg
+│   │       ├── 20181003140043_img_2352-361507507.jpg
+│   │       ├── 20181003140101_img_2353673142844.jpg
+│   │       ├── 20181003140551_img_2355-728089647.jpg
+│   │       ├── 20181003140632_img_23571431527313.jpg
+│   │       ├── 20181003140659_img_2358431422667.jpg
+│   │       ├── 20181003140913_img_23592141359432.jpg
+│   │       ├── 20181003141504_img_23601901338239.jpg
+│   │       ├── 20181003141750_img_23611989574071.jpg
+│   │       ├── 20181003142626_img_2417-562775340.jpg
+│   │       ├── 20181003142717_img_24181715266105.jpg
+│   │       ├── 20181003142724_img_2366-1891916750.jpg
+│   │       ├── 20181003143219_img_23671191636745.jpg
+│   │       ├── 20181003143948_img_23681552767710.jpg
+│   │       ├── 20181003144031_img_2370-1728935995.jpg
+│   │       ├── 20181003144326_img_2373-1519168561.jpg
+│   │       ├── 20181003144515_img_2374-69583639.jpg
+│   │       ├── 20181003144543_img_23751806977496.jpg
+│   │       ├── 20181003144834_img_23771385656614.jpg
+│   │       ├── 20181003145231_img_2378870272048.jpg
+│   │       ├── 20181003145347_img_2379-249366183.jpg
+│   │       ├── 20181003145702_img_2380971860986.jpg
+│   │       ├── 20181003150412_img_2385-880889171.jpg
+│   │       ├── 20181003150738_img_2386-700103483.jpg
+│   │       ├── 20181003150943_img_23912027778319.jpg
+│   │       ├── 20181003151846_img_2395-313596539.jpg
+│   │       ├── 20181003151902_img_2396-969912103.jpg
+│   │       ├── 20181003151942_img_23971793339094.jpg
+│   │       ├── 20181003152009_img_23981485436132.jpg
+│   │       ├── 20181003152610_img_2419304074803.jpg
+│   │       ├── 20181003152946_img_2402-1247675259.jpg
+│   │       ├── 20181003153048_img_240331162970.jpg
+│   │       ├── 20181003153421_img_2406-163728458.jpg
+│   │       ├── 20181003153535_img_2420-1908184779.jpg
+│   │       ├── 20181003154235_img_24141028279808.jpg
+│   │       ├── 20181003164416_img_24241583554018.jpg
+│   │       ├── 20181003164832_img_2432-1642741918.jpg
+│   │       ├── 20181003165137_img_24471097047645.jpg
+│   │       ├── 20181003165143_img_2446138826782.jpg
+│   │       ├── 20181003165516_img_24431745727142.jpg
+│   │       ├── 20181003172955_img_2449-1044337055.jpg
+│   │       ├── 20181003173053_img_2452-436635982.jpg
+│   │       ├── 20181003173057_img_2453732599252.jpg
+│   │       └── 20181003173131_img_2455300436957.jpg
+│   ├── 2018-10-10-vegan-tapas-for-a-light-lunch
+│   │   └── images
+│   │       ├── 20181004134142_img_2474_20181004145828389-1-358452718.jpg
+│   │       ├── img_20181010_120933-946592766.jpg
+│   │       └── wp-1539181034822-1770184156.jpg
+│   ├── 2018-11-05-biking-and-walking-website-updates-dinner
+│   │   └── images
+│   │       ├── img_20181103_1358101277720106.jpg
+│   │       ├── img_20181103_135832-1587707190.jpg
+│   │       └── img_20181103_145206-1596808220.jpg
+│   ├── 2018-11-07-wednesday-wisdom
+│   │   └── images
+│   │       ├── wp-1541626723730-1444396015.jpg
+│   │       └── wp-1541626752870374994165.jpg
+│   ├── 2018-11-08-moving-day
+│   │   └── images
+│   │       ├── cabbage-banana.jpg
+│   │       ├── cottage-w1000px.jpg
+│   │       ├── everything-goes-bananas.jpg
+│   │       ├── lunch.jpg
+│   │       ├── treeside.jpg
+│   │       ├── wp-1541712574075628908476.jpg
+│   │       ├── wp-15417126465661845187691.jpg
+│   │       ├── wp-15417127055861914900559.jpg
+│   │       ├── wp-15417127572011611495043.jpg
+│   │       └── wp-1541712805436-1359461607.jpg
+│   ├── 2018-11-12-managing-monday
+│   │   └── images
+│   │       ├── img_2685-1754193831.jpg
+│   │       ├── img_2686_20181112210739376711053547.jpg
+│   │       ├── img_26871318718239.jpg
+│   │       └── img_2688_201811122110569551332690866.jpg
+│   ├── 2018-11-13-timeless-tuesday
+│   │   └── images
+│   │       ├── 00-exterior-view-from-afar-1540828461.png
+│   │       └── pumpkin-ep-5.png
+│   ├── 2018-11-21-music-and-mathematics
+│   │   └── images
+│   │       └── a2457a7ef3c77831e34e06a1fe17a80b84a03181
+│   ├── 2018-11-25-making-a-minecraft-skin
+│   │   └── images
+│   │       ├── robot-back.png
+│   │       ├── robot-front.png
+│   │       ├── screenshot-from-2018-11-25-17-23-41.png
+│   │       └── screenshot-from-2018-11-25-17-35-03.png
+│   ├── 2018-11-28-first-day-of-frost-a-celebratory-photowalk
+│   │   └── images
+│   │       ├── birches-and-pines-w400px.jpg
+│   │       ├── first-day-of-frost-excellent-quality-1-w600.jpg
+│   │       ├── first-day-of-frost-excellent-quality-2.jpg
+│   │       ├── first-day-of-frost-excellent-quality-2-w600.jpg
+│   │       ├── first-day-of-frost-excellent-quality-3-w600.jpg
+│   │       ├── first-day-of-frost-excellent-quality-4-w600.jpg
+│   │       ├── first-day-of-frost-high-quality-1-w600.jpg
+│   │       ├── first-day-of-frost-high-quality-2-w600-465277088-e1723461357375.jpg
+│   │       ├── first-day-of-frost-high-quality-3-w600.jpg
+│   │       ├── first-day-of-frost-high-quality-4-w600.jpg
+│   │       ├── first-day-of-frost-high-quality-5-w600.jpg
+│   │       ├── first-day-of-frost-high-quality-6-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-1-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-2-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-3-w900.jpg
+│   │       ├── first-day-of-frost-medium-quality-4-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-5-w900.jpg
+│   │       ├── first-day-of-frost-medium-quality-6-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-7-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-8-w600.jpg
+│   │       ├── first-day-of-frost-medium-quality-9-w600.jpg
+│   │       ├── img_2756-w600px.jpg
+│   │       ├── img_2757-w900px.jpg
+│   │       ├── img_2758-w900px.jpg
+│   │       ├── img_2759-w600px.jpg
+│   │       ├── img_2768_cropped-w562px.jpg
+│   │       ├── img_2780_stamp_fix-w900px.jpg
+│   │       └── img_2799_stamp_fix-w900px.jpg
+│   ├── 2018-12-05-shopping-sustainable-vegan-art-supplies-and-outfit
+│   │   └── images
+│   │       ├── brunch-closeup.jpg
+│   │       ├── brunch-medium.jpg
+│   │       ├── brunch-top-close.jpg
+│   │       ├── brunch-top-far.jpg
+│   │       ├── dedicated-art-jacket-complete.jpg
+│   │       ├── dedicated-art-jacket-fabric.jpg
+│   │       ├── vegan-shoes-1.jpg
+│   │       └── vegan-shoes-2.jpg
+│   ├── 2018-12-07-balanced-breakfast-brunch
+│   │   └── images
+│   │       ├── img_2891.jpg
+│   │       ├── img_2892.jpg
+│   │       └── img_2893.jpg
+│   ├── 2018-12-14-lakeside-photos-the-ultimate-nut-berry-taste-combo-we-all-deserve-love-profound-eating-exercise
+│   │   └── images
+│   │       ├── img_20181214_142311791044184.jpg
+│   │       ├── img_20181214_1423362106805764.jpg
+│   │       ├── img_20181214_142352265405517.jpg
+│   │       ├── snowy-trees-1.jpg
+│   │       ├── snowy-trees-2.jpg
+│   │       ├── snowy-trees-3.jpg
+│   │       ├── snowy-trees-4.jpg
+│   │       └── snowy-trees-5.jpg
+│   ├── 2018-12-28-frozen-friday
+│   │   └── images
+│   │       ├── IMG_2923.jpg
+│   │       ├── IMG_2926.jpg
+│   │       └── IMG_2933.jpg
+│   ├── 2019-01-09-snowy-jog-run-and-green-brunch
+│   │   └── images
+│   │       ├── fallen-tree-1.jpg
+│   │       ├── fallen-tree-2.jpg
+│   │       ├── fallen-tree-3.jpg
+│   │       ├── fallen-tree-4.jpg
+│   │       ├── fallen-tree-on-path.jpg
+│   │       ├── fallen-tree-roots-1.jpg
+│   │       ├── fallen-tree-roots-2.jpg
+│   │       ├── fallen-tree-roots-3.jpg
+│   │       ├── fallen-tree-roots-4.jpg
+│   │       ├── forest-path.jpg
+│   │       └── snowy-bridge.jpg
+│   ├── 2019-02-17-sunday-activism
+│   │   └── images
+│   │       ├── av-cube-of-truth-sthlm-2019-02-17-14_33.jpg
+│   │       ├── av-cube-of-truth-sthlm-2019-02-17-14_34-1.jpg
+│   │       ├── av-cube-of-truth-sthlm-2019-02-17-14_34-2.jpg
+│   │       └── av-cube-of-truth-sthlm-2019-02-17-14_34-3.jpg
+│   ├── 2019-03-01-appreciating-trees
+│   │   └── images
+│   │       ├── 3-sequoia.png
+│   │       ├── 4-unknown-species.png
+│   │       ├── 5-birch-tree.png
+│   │       ├── 6-mangrove.png
+│   │       └── img_3062.jpg
+│   ├── 2019-03-11-tree-trunks-and-advice
+│   │   └── images
+│   │       ├── ash-trunk_h1000px-e1552262035712.jpg
+│   │       ├── beech-trunk_h1000px-e1552261810215.jpg
+│   │       ├── bird-cherry-trunk_h1000px-e1552262022585.jpg
+│   │       ├── black-alder-trunk_h1000px-e1552262013767.jpg
+│   │       ├── common-aspen-trunk_w1000px.jpg
+│   │       ├── crack-willow-trunk_h1000px-e1552262003199.jpg
+│   │       ├── downy-birch-trunk_h1000px-e1552261994696.jpg
+│   │       ├── english-oak-trunk_h1000px-e1552261986833.jpg
+│   │       ├── european-hornbeam-trunk_w1000px.jpg
+│   │       ├── goat-willog-trunk_h1000px-e1552261973274.jpg
+│   │       ├── hazel-trunk_h1000px-e1552261964374.jpg
+│   │       ├── rowan-trunk_h1000px-e1552261954613.jpg
+│   │       ├── scots-pine-trunk_h1000px-e1552261946679.jpg
+│   │       ├── silver-birch-trunk_h1000px-e1552261931335.jpg
+│   │       ├── small-leaved-lime-trunk_w1000px.jpg
+│   │       ├── spruce-trunk_h1000px-e1552261919671.jpg
+│   │       ├── wild-cherry-trunk_h1000px-e1552261908248.jpg
+│   │       └── wych-elm-trunk_h1000px-e1552261901413.jpg
+│   ├── 2019-03-20-5578
+│   │   └── images
+│   │       ├── 2019-03-20-lunch.jpg
+│   │       ├── img_20190319_115156409280142.jpg
+│   │       └── img_20190320_1603251469041776.jpg
+│   ├── 2019-03-24-8th-time-with-av-and-the-cube-of-truth-a-journal-of-an-animal-activist
+│   │   └── images
+│   │       └── 8th-cube.jpg
+│   ├── 2019-04-05-signs-of-spring
+│   │   └── images
+│   │       ├── first-leaves.jpg
+│   │       ├── mossy-forest.jpg
+│   │       ├── spring-signs-1.jpg
+│   │       └── spring-signs-2.jpg
+│   ├── 2024-08-14-tito-1-02-has-been-released
+│   │   └── images
+│   │       ├── tito-v-1.02-screenshot-chart-time-spent-on-projects.png
+│   │       ├── tito-v-1.02-screenshot-column-1-title-link-timer-and-database-functionality.png
+│   │       ├── tito-v-1.02-screenshot-column-2-project-view.png
+│   │       └── tito-v-1.02-screenshot-column-3-time-entry-view.png
+│   ├── 2024-08-21-tito-1-03-released
+│   │   └── images
+│   │       ├── tito-1.05-center-column.png
+│   │       ├── tito-1.05-left-column.png
+│   │       ├── tito-1.05-right-column.png
+│   │       ├── tito-range-chart-view.png
+│   │       └── tito-v-1.02-screenshot-chart-time-spent-on-projects.png
+│   ├── 2024-09-11-tito-1-06-released
+│   │   └── images
+│   │       └── image.png
+│   ├── 2024-09-25-tito-v1-08-1-released
+│   │   └── images
+│   │       └── tito-v1.08-dark-mode-japanese-main-view.png
+│   ├── 2024-10-24-tito-v1-10-0-released
+│   │   └── images
+│   │       └── tito-v1.10.0-main-view.png
+│   ├── 2024-12-01-understanding-infinite-intelligence-a-systems-perspective
+│   │   └── images
+│   │       ├── fractal-pattern.png
+│   │       └── network-pattern.png
+│   ├── 2025-05-17-the-system-that-makes-the-rich-richer-and-the-poor-poorer
+│   │   └── images
+│   │       ├── income-divergence-chart.png
+│   │       ├── spiral-dynamics.png
+│   │       └── wealth-distribution-infographic.png
+│   ├── 2025-06-18-beyond-the-brink-a-blueprint-for-solving-the-polycrisis-and-building-a-resilient-future
+│   │   └── images
+│   │       ├── dual-track-approach.png
+│   │       ├── five-pillars.png
+│   │       ├── header.png
+│   │       └── seven-core-principles.png
+│   ├── 2025-06-18-bortom-avgrunden-en-plan-for-att-losa-polykrisen-och-bygga-en-motstandskraftig-framtid
+│   │   └── images
+│   │       ├── dual-track-approach-sv.png
+│   │       ├── five-pillars-sv.png
+│   │       └── seven-core-principles-sv.png
+│   ├── 2025-08-17-beyond-ownership-how-a-deeper-reality-can-reshape-our-world
+│   │   └── images
+│   │       └── beyond-ownership-the-mycelial-network.png
+│   ├── 2025-09-23-the-polycrisis-why-everything-feels-like-its-falling-apart-and-what-it-really-means
+│   │   └── images
+│   │       ├── five-system-flaws-diagram.png
+│   │       └── polycrisis-web-diagram.png
+│   ├── 2025-09-25-the-polycrisis-a-blueprint-for-action-turning-diagnosis-into-empowered-change
+│   │   └── images
+│   │       ├── levels-of-engagement-diagram.png
+│   │       └── three-step-pathway-diagram.png
+│   ├── 2025-09-30-the-materialists-hidden-paradox
+│   │   ├── images
+│   │   │   └── materialist's-paradox-header-by-gemini.png
+│   │   └── the-materialists-hidden-paradox.pdf
+│   ├── 2025-10-16-when-mathematics-points-beyond-itself
+│   │   ├── images
+│   │   │   ├── finite-vs-infinite-fourier-transform-windows.png
+│   │   │   ├── from-mathematical-necessity-to-metaphysical-infinity-1.png
+│   │   │   └── mathematical-infinity-header.png
+│   │   └── when-mathematics-points-beyond-itself.pdf
+│   ├── 2025-11-06-the-symbiotic-century-co-creating-a-future-with-technology-the-planets-newest-lifeform
+│   │   └── images
+│   │       └── the-symbotic-century-header-image-1.png
+│   ├── 2025-11-07-the-ai-mirror-what-our-distrust-reveals-about-the-nature-of-self
+│   │   └── images
+│   │       └── ai-mirror-header-image-1.png
+│   ├── 2025-11-09-depression-as-a-thistle-what-your-pain-is-trying-to-heal
+│   │   └── images
+│   │       └── depression-as-a-thiste-header-image-1.png
+│   ├── 2025-11-10-physics-finally-catches-up-to-philosophy-why-the-universe-cant-be-a-simulation
+│   │   └── images
+│   │       ├── simulation-theory-header-image-1.png
+│   │       └── simulation-theory-in-between-shattering-image.png
+│   ├── 2025-11-11-why-ai-consciousness-demands-governance-not-drift
+│   │   └── images
+│   │       └── ai-governance-header.png
+│   ├── 2025-11-12-the-ai-that-cant-know-its-wrong
+│   │   └── images
+│   │       └── ai-blind-spot-header.png
+│   ├── 2025-11-13-when-science-catches-metaphysics
+│   │   └── images
+│   │       └── unified-intelligence-octopus-header.png
+│   ├── 2025-11-16-the-spiritual-vacuum-at-the-heart-of-silicon-valleys-ai-utopia
+│   │   └── images
+│   │       ├── header-spiritual-vacuum.png
+│   │       ├── the-spiral-of-development.svg
+│   │       └── the-spiral-of-development-sv.svg
+│   ├── 2025-11-19-project-janus
+│   │   └── images
+│   │       └── header-project-janus.png
+│   ├── 2025-11-20-beyond-the-interface
+│   │   └── images
+│   │       └── header-consciousness-interface.png
+│   ├── 2025-11-21-blueprints-for-a-gentle-web
+│   │   └── images
+│   │       └── header-blueprints-for-a-gentle-web.png
+│   ├── 2025-11-21-the-change-paradox
+│   │   └── images
+│   │       ├── header-burning-shore.jpeg
+│   │       └── header-burning-shore.png
+│   ├── 2025-11-25-the-heavy-head-and-the-spontaneous-dance
+│   │   └── images
+│   │       └── cover-image.png
+│   ├── 2025-11-26-i-lost-the-ability-to-just-be
+│   │   └── images
+│   │       └── header-image-addiction-post-1.png
+│   ├── 2025-11-28-cognitive-scaffolding-for-stillness
+│   │   └── images
+│   │       └── header-image-addiction-post-2.png
+│   ├── 2025-11-30-from-personal-practice-to-civilizational-rehab
+│   │   └── images
+│   │       └── header-image-addiction-post-3.png
+│   ├── 2026-01-30-why-ml-isnt-yellow
+│   │   └── images
+│   │       ├── header-spiral-revolution.png
+│   │       └── header-spiral-revolution-smaller.png
+│   ├── 2026-03-05-sysselsattningsterapi-for-vuxna
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-03-18-uk-greens-stage-green-politics
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-04-06-itp-ibn-arabi-ashby
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-04-10-meeting-the-irc-fundraiser
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-04-14-hungary-spiral-shift
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-04-24-palantir-path-forks
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-05-09-after-the-federation
+│   │   └── images
+│   │       └── header.png
+│   ├── 2026-06-05-global-justice-report
+│   │   └── images
+│   │       ├── header-chatgpt.png
+│   │       └── header.png
+│   ├── 2026-06-27-echo-observer-correlation
+│   │   └── images
+│   │       ├── header.png
+│   │       └── header.svg
+│   ├── basque-flag.svg
+│   ├── id-7806
+│   │   └── images
+│   │       ├── 8.1-regenerative-comparison.png
+│   │       ├── 8.2-regenerative-principles.png
+│   │       ├── 8.4-measurement-levels.png
+│   │       └── 8.5-implementation-cycle.png
+│   ├── images
+│   │   └── 8th-cube.jpg
+│   └── stuga-manifesto
+│       └── images
+│           ├── stuga-manifesto-header.png
+│           └── stuga-manifesto-header.png~
+├── books
+│   ├── Beyond_Separation_Systems_Thinking_and_Nonduality.pdf
+│   ├── Competent_Blindness.pdf
+│   ├── Kompetent_Blindhet.pdf
+│   ├── Mystical_Mathematics_Where_Number_Meets_Being.pdf
+│   ├── Redrawing_the_Lines.pdf
+│   ├── Redrawing_the_Lines_sv.pdf
+│   ├── The_Divine_System_A_Systems_Thinking_Approach_to_God.pdf
+│   ├── The_Integration_Crisis.pdf
+│   ├── What_a_Civilization_Must_Value.pdf
+│   └── What_a_Civilization_Must_Value-sv.pdf
+├── creations
+│   └── images
+│       ├── 2017-09-15-photography
+│       │   ├── bumblebee.png
+│       │   ├── butterfly.png
+│       │   ├── chia-plant-flowering.png
+│       │   ├── from-a-tree-2.png
+│       │   ├── from-a-tree.png
+│       │   ├── grass-in-train-construction-site.png
+│       │   ├── orange-flower.jpg
+│       │   ├── pink-flowers.jpg
+│       │   ├── portfoliage-resized.png
+│       │   ├── red-brown-wall.jpg
+│       │   ├── releaf-resized.png
+│       │   ├── rock.jpg
+│       │   ├── stone-wall.jpg
+│       │   ├── sunflower.png
+│       │   └── waterfall.jpg
+│       ├── 2019-03-11-photo-walk-in-upplands-vasby-botanical-tree-park-sweden
+│       │   ├── ash-trunk_h1000px-e1552262035712.jpg
+│       │   ├── beech-trunk_h1000px-e1552261810215.jpg
+│       │   ├── bird-cherry-trunk_h1000px-e1552262022585.jpg
+│       │   ├── black-alder-trunk_h1000px-e1552262013767.jpg
+│       │   ├── common-aspen-trunk_w1000px.jpg
+│       │   ├── crack-willow-trunk_h1000px-e1552262003199.jpg
+│       │   ├── downy-birch-trunk_h1000px-e1552261994696.jpg
+│       │   ├── english-oak-trunk_h1000px-e1552261986833.jpg
+│       │   ├── european-hornbeam-trunk_w1000px.jpg
+│       │   ├── goat-willog-trunk_h1000px-e1552261973274.jpg
+│       │   ├── hazel-trunk_h1000px-e1552261964374.jpg
+│       │   ├── rowan-trunk_h1000px-e1552261954613.jpg
+│       │   ├── scots-pine-trunk_h1000px-e1552261946679.jpg
+│       │   ├── silver-birch-trunk_h1000px-e1552261931335.jpg
+│       │   ├── small-leaved-lime-trunk_w1000px.jpg
+│       │   ├── spruce-trunk_h1000px-e1552261919671.jpg
+│       │   ├── wild-cherry-trunk_h1000px-e1552261908248.jpg
+│       │   └── wych-elm-trunk_h1000px-e1552261901413.jpg
+│       ├── acacianAscendancy.png
+│       ├── alia.png
+│       ├── amets.png
+│       ├── delayed-conscious-experience-graph.png
+│       ├── food
+│       │   ├── a-simple-wok-then-fruits-and-berries-for-dessert_1.jpeg
+│       │   ├── a-simple-wok-then-fruits-and-berries-for-dessert_2.jpeg
+│       │   ├── a-simple-wok-then-fruits-and-berries-for-dessert_3.jpeg
+│       │   ├── a-simple-wok-then-fruits-and-berries-for-dessert_4.jpeg
+│       │   ├── better-almond-spread-than-eating-someone-dead_1.jpeg
+│       │   ├── better-almond-spread-than-eating-someone-dead_2.jpeg
+│       │   ├── bring-fourth-a-number-drill_1.jpeg
+│       │   ├── bring-fourth-a-number-drill_2.jpeg
+│       │   ├── can-you-beet-this-colorful-variation_1.jpeg
+│       │   ├── can-you-beet-this-colorful-variation_2.jpeg
+│       │   ├── lettuce-sail-for-new-experiences_1.jpeg
+│       │   ├── lettuce-sail-for-new-experiences_2.jpeg
+│       │   ├── vegan-energy-bar-baked.png
+│       │   ├── vegan-energy-bars-baking.png
+│       │   ├── vegan-energy-bars-dry-mix.png
+│       │   ├── vegan-energy-bars-dry-wet-mixed.png
+│       │   ├── vegan-energy-bars-header.png
+│       │   └── vegan-energy-bars-wrapped.png
+│       ├── gaia.png
+│       ├── gry.png
+│       ├── landscape.png
+│       ├── moonWish.png
+│       ├── mushroomClouds.png
+│       └── owlsVision.png
+├── downloads
+│   └── coordination-imperative
+│       ├── The-Coordination-Imperative-v0.1.pdf
+│       ├── The-Coordination-Imperative-v0.1-sv.pdf
+│       ├── The-Coordination-Imperative-v0.2.pdf
+│       ├── The-Coordination-Imperative-v0.2-sv.pdf
+│       ├── The-Coordination-Imperative-v0.3.pdf
+│       └── The-Coordination-Imperative-v0.3-sv.pdf
+├── essays
+│   ├── aiOptimizationMismatch.pdf
+│   ├── aiOptimizationMismatch-sv.pdf
+│   ├── alchemists-dilemma.pdf
+│   ├── alchemistsDilemma.pdf
+│   ├── alchemists-dilemma-sv.pdf
+│   ├── alchemistsDilemma-sv.pdf
+│   ├── architecture-of-the-open-hand-cover.jpg
+│   ├── architecture-of-the-open-hand.pdf
+│   ├── architecture-of-the-open-hand-sv.pdf
+│   ├── architectureOpenHand.pdf
+│   ├── architectureOpenHand-sv.pdf
+│   ├── between-two-articles-cover-optimized.png
+│   ├── between-two-articles-cover.png
+│   ├── between-two-articles.pdf
+│   ├── betweenTwoArticles.pdf
+│   ├── between-two-articles-sv.pdf
+│   ├── betweenTwoArticles-sv.pdf
+│   ├── boundary-blind-spot-cover.png
+│   ├── boundary-blind-spot.pdf
+│   ├── boundaryBlindSpot.pdf
+│   ├── boundary-blind-spot-sv.pdf
+│   ├── boundaryBlindSpot-sv.pdf
+│   ├── exit-problem-cover.svg
+│   ├── exitProblem.pdf
+│   ├── exitProblem-sv.pdf
+│   ├── holding-contradictions.pdf
+│   ├── holdingContradictions.pdf
+│   ├── holding-contradictions-sv.pdf
+│   ├── holdingContradictions-sv.pdf
+│   └── images
+│       └── the-exit-problem
+│           ├── pooling-vs-exit.svg
+│           ├── pooling-vs-exit-sv.svg
+│           ├── two-channels.svg
+│           └── two-channels-sv.svg
+├── favicon.ico
+├── favicon.svg
+├── files
+│   ├── bilaga.pdf
+│   ├── gunnes.pdf
+│   ├── paypal.pdf
+│   └── TiTo-1.11.0.zip
+├── images
+│   ├── eu-architecture-map.png
+│   ├── gae-paper-dependency-atlas-claude.svg
+│   ├── gae-paper-dependency-atlas.png
+│   ├── gae-paper-dependency-atlas.svg
+│   ├── gae-paper-dependency-atlas-updated.png
+│   ├── gae-paper-dependency-atlas-updated.svg
+│   ├── itl-architecture.svg
+│   ├── reports
+│   │   ├── ai-coherence-velocity-trap
+│   │   │   ├── coherence_velocity_trap_mechanism.svg
+│   │   │   └── cover.png
+│   │   ├── bhutan-interface-race
+│   │   │   └── cover.png
+│   │   ├── brazil-accumulation-deficit
+│   │   │   ├── cover-gemini.png
+│   │   │   └── cover.png
+│   │   ├── central-banks-monetary-policy-variety-gap
+│   │   │   ├── cover-gemini.png
+│   │   │   └── cover.png
+│   │   ├── china-calibration-deficit
+│   │   │   ├── cover-gemini.png
+│   │   │   └── cover.png
+│   │   ├── coordination-failure-structural-condition
+│   │   │   ├── canonical_diagram_governance_failure_en.svg
+│   │   │   ├── canonical_diagram_governance_failure_sv.svg
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   ├── courts-adjudication-governance-variety-gap
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   ├── eu-coherence-mirage
+│   │   │   └── cover.png
+│   │   ├── finland-throughput-constraint
+│   │   │   └── cover.png
+│   │   ├── france-decisiveness-mirage
+│   │   │   └── cover.png
+│   │   ├── germany-spending-mirage
+│   │   │   └── cover.png
+│   │   ├── healthcare-clinical-observability-gap
+│   │   │   ├── cover-gemini.png
+│   │   │   └── cover.png
+│   │   ├── india-leap-lag-cycle
+│   │   │   └── cover.png
+│   │   ├── israel-boundary-deficit
+│   │   │   ├── cover-gemini.png
+│   │   │   └── cover.png
+│   │   ├── japan-continuity-trap
+│   │   │   └── cover.png
+│   │   ├── netherlands-feasibility-debt
+│   │   │   └── cover.png
+│   │   ├── nigeria-substrate-deficit
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   ├── russia-legibility-deficit
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   ├── south-korea-tournament-trap
+│   │   │   ├── consequence-coupling-bundle-en.svg
+│   │   │   ├── consequence-coupling-bundle-ko.svg
+│   │   │   ├── cover-gemini.png
+│   │   │   ├── cover.png
+│   │   │   ├── tournament-trap-mechanism-en.svg
+│   │   │   └── tournament-trap-mechanism-ko.svg
+│   │   ├── spain-transition-trap
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   ├── standard-setting-variety-gap
+│   │   │   ├── cover-gemini.png
+│   │   │   └── cover.png
+│   │   ├── subsidiarity-deficit
+│   │   │   └── cover.png
+│   │   ├── sweden-competence-trap
+│   │   │   └── cover.png
+│   │   ├── switzerland-boundary-expansion-deficit
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   ├── uk-control-mirage
+│   │   │   └── cover.png
+│   │   ├── universities-integration-deficit
+│   │   │   ├── cover-chatgpt.png
+│   │   │   └── cover.png
+│   │   └── us-integration-deficit
+│   │       ├── cover-chatgpt.png
+│   │       └── cover.png
+│   └── variety-gap-framework
+│       └── cover.png
+├── logo-blog.svg
+├── logo-communize.svg
+├── logo-fjarilspartiet.svg
+├── logo-ggf.svg
+├── logo-nondualize.svg
+├── logo-project
+├── logo-project-janus.svg
+├── logo-shared-spheres-simplified.svg
+├── logo-shared-spheres.svg
+├── logo-spiralize.svg
+├── logo-spiritualized.svg
+├── logo-subsidiarity.svg
+├── logo.svg
+├── logo-universalize.svg
+├── pdfs
+│   ├── european-subsidiarity-protocol-architecture-map.pdf
+│   ├── european-subsidiarity-protocol-executive-briefing.pdf
+│   ├── european-subsidiarity-protocol-v1.2-full.pdf
+│   ├── eu-subsidiarity-protocol-how-to-use.pdf
+│   ├── india-dpi-2.0-architecture-map.pdf
+│   ├── india-dpi-2.0-executive-briefing.pdf
+│   ├── india-dpi-2.0-v0.3.pdf
+│   ├── informal-trust-ledger-v0.3.pdf
+│   └── itl-architecture.pdf
+├── play
+│   ├── the-ward.html
+│   ├── the-ward-sv.html
+│   ├── three-lenses.html
+│   ├── three-lenses-sv.html
+│   ├── three-tickers.html
+│   └── three-tickers-sv.html
+├── portrait-2.jpg
+├── portrait-bw.jpg
+├── reports
+│   ├── ai-coherence-velocity-trap-en.pdf
+│   ├── bhutan-interface-race-en.pdf
+│   ├── brazil-accumulation-deficit-en.pdf
+│   ├── brazil-accumulation-deficit-pt_br.pdf
+│   ├── central-banks-monetary-policy-variety-gap-en.pdf
+│   ├── china-calibration-deficit-en.pdf
+│   ├── china-calibration-deficit-zh.pdf
+│   ├── coordination-failure-structural-condition-en.pdf
+│   ├── courts-adjudication-governance-variety-gap-en.pdf
+│   ├── eu-coherence-mirage-en.pdf
+│   ├── finland-throughput-constraint-en.pdf
+│   ├── finland-throughput-constraint-fi.pdf
+│   ├── finland-throughput-constraint-sv.pdf
+│   ├── france-decisiveness-mirage-en.pdf
+│   ├── france-decisiveness-mirage-fr.pdf
+│   ├── germany-spending-mirage-de.pdf
+│   ├── germany-spending-mirage-en.pdf
+│   ├── healthcare-clinical-observability-gap-en.pdf
+│   ├── india-leap-lag-cycle-en.pdf
+│   ├── india-leap-lag-cycle-hi.pdf
+│   ├── india-leap-lag-cycle-ta.pdf
+│   ├── israel-boundary-deficit-en.pdf
+│   ├── israel-boundary-deficit-he.pdf
+│   ├── japan-continuity-trap-en.pdf
+│   ├── japan-continuity-trap-ja.pdf
+│   ├── netherlands-feasibility-debt-en.pdf
+│   ├── netherlands-feasibility-debt-nl.pdf
+│   ├── nigeria-substrate-deficit-en.pdf
+│   ├── russia-legibility-deficit-en.pdf
+│   ├── russia-legibility-deficit-ru.pdf
+│   ├── south-korea-tournament-trap-en.pdf
+│   ├── south-korea-tournament-trap-ko.pdf
+│   ├── spain-transition-trap-en.pdf
+│   ├── spain-transition-trap-es.pdf
+│   ├── spain-transition-trap-eu.pdf
+│   ├── standard-setting-variety-gap-en.pdf
+│   ├── subsidiarity-deficit-en.pdf
+│   ├── sweden-competence-trap-en.pdf
+│   ├── sweden-competence-trap-sv.pdf
+│   ├── switzerland-boundary-expansion-deficit-de.pdf
+│   ├── switzerland-boundary-expansion-deficit-en.pdf
+│   ├── switzerland-boundary-expansion-deficit-fr.pdf
+│   ├── switzerland-boundary-expansion-deficit-it.pdf
+│   ├── uk-control-mirage-en.pdf
+│   ├── universities-integration-deficit-en.pdf
+│   └── us-integration-deficit-en.pdf
+├── resources
+│   ├── book-cover-ai.svg
+│   ├── book-cover-aubi.svg
+│   ├── book-cover-aubi-sv.svg
+│   ├── book-cover-being.svg
+│   ├── book-cover-beyond-separation.svg
+│   ├── book-cover-competent-blindness.svg
+│   ├── book-cover-competent-blindness-sv.svg
+│   ├── book-cover-global-governance.svg
+│   ├── book-cover-integration-crisis.svg
+│   ├── book-cover-lmci.svg
+│   ├── book-cover-mystical-mathematics.svg
+│   ├── book-cover-optimizing-reality.svg
+│   ├── book-cover-radical-competence.svg
+│   ├── book-cover-reality-sovereignty-and-consciousness.svg
+│   ├── book-cover-redrawing-the-lines.svg
+│   ├── book-cover-redrawing-the-lines-sv.svg
+│   ├── book-cover-regenerative-reciprocity.svg
+│   ├── book-cover-the-capital-weaver.svg
+│   ├── book-cover-the-divine-system.svg
+│   ├── book-cover-what-a-civilization-must-value.svg
+│   └── book-cover-what-a-civilization-must-value-sv.svg
+├── robots.txt
+├── social-preview.png
+├── social-preview.svg
+├── static-tree.txt
+├── syntheses
+│   ├── brief.pdf
+│   ├── brief-sv.pdf
+│   ├── from-goodhart-to-governance.pdf
+│   ├── the-blindness-of-power.pdf
+│   ├── the-clouded-mirror.pdf
+│   ├── the-clouded-mirror-sv.pdf
+│   ├── the-dashboard-was-green.pdf
+│   ├── the-democracy-that-cant-hear-you.pdf
+│   ├── the-mirror-of-the-earth.pdf
+│   ├── the-perception-threshold.pdf
+│   ├── the-spirits-the-state-cannot-hear.pdf
+│   ├── undefined.pdf
+│   ├── undefined-sv.pdf
+│   └── we-see-you.pdf
+├── twitter-background.png
+├── variety-gap-framework
+│   ├── diagnostic-field-guide-en.pdf
+│   ├── diagnostic-field-guide-sv.pdf
+│   ├── stable-glossary-en.pdf
+│   └── stable-glossary-sv.pdf
+└── working-papers
+    ├── adaptation-bottleneck.pdf
+    ├── adaptation-bottleneck-sv.pdf
+    ├── adaptive-self-governance.pdf
+    ├── adaptive-self-governance-sv.pdf
+    ├── addiction-as-integration-failure.pdf
+    ├── addiction-as-integration-failure-sv.pdf
+    ├── architecture-of-governance-failure.pdf
+    ├── architecture-of-stability.pdf
+    ├── below-the-factorization.pdf
+    ├── below-the-factorization-sv.pdf
+    ├── beyond-integration.pdf
+    ├── beyond-integration-sv.pdf
+    ├── beyond-states.pdf
+    ├── beyond-the-duopoly.pdf
+    ├── boundary-instability.pdf
+    ├── boundary-instability-sv.pdf
+    ├── boundary-selection-deficits.pdf
+    ├── boundary-selection-deficits-sv.pdf
+    ├── certification-floor.pdf
+    ├── certification-floor-sv.pdf
+    ├── closure-adaptation.pdf
+    ├── closure-adaptation-sv.pdf
+    ├── collaborative-map-of-awakening.pdf
+    ├── coordination-failure-tax.pdf
+    ├── coordination-failure-tax-sv.pdf
+    ├── cost-of-returning.pdf
+    ├── cost-of-returning-sv.pdf
+    ├── excitation-starved-observer.pdf
+    ├── excitation-starved-observer-sv.pdf
+    ├── four-year-ramp.pdf
+    ├── four-year-ramp-sv.pdf
+    ├── fractal-cybernetic-consciousness.pdf
+    ├── fractal-cybernetic-consciousness-sv.pdf
+    ├── fractality-as-stability.pdf
+    ├── fractality-as-stability-sv.pdf
+    ├── governance-as-adaptive-controller.pdf
+    ├── governance-as-adaptive-controller-sv.pdf
+    ├── governance-stability-simulator.pdf
+    ├── governance-stability-simulator-sv.pdf
+    ├── governors-sentinels-bridges.pdf
+    ├── governors-sentinels-bridges-sv.pdf
+    ├── images
+    │   ├── adaptation-bottleneck
+    │   │   ├── xv_A_allocation.png
+    │   │   ├── xv_B_backlogs.png
+    │   │   ├── xv_C_closure_delay.png
+    │   │   └── xv_D_self_blinding.png
+    │   ├── adaptation-bottleneck-cover-original.png
+    │   ├── adaptation-bottleneck-cover.png
+    │   ├── adaptive-self-governance-cover.png
+    │   ├── addiction-cover-optimized.png
+    │   ├── addiction-cover.png
+    │   ├── architecture-of-governance-failure-cover.png
+    │   ├── architecture-of-stability
+    │   │   ├── figure_1_1_aliasing.png
+    │   │   ├── figure_1_2_acceleration.png
+    │   │   ├── figure_1_3_mismatch.png
+    │   │   ├── figure_1_4_symptoms.png
+    │   │   ├── figure_1_5_roadmap.png
+    │   │   ├── figure_2_1_stack.png
+    │   │   ├── figure_2_2_energy.png
+    │   │   ├── figure_2_3_information.png
+    │   │   ├── figure_2_4_networks.png
+    │   │   ├── figure_2_5_rules.png
+    │   │   ├── figure_2_6_belief.png
+    │   │   ├── figure_2_7_attractors.png
+    │   │   ├── figure_2_8_full_stack.png
+    │   │   ├── figure_3_1_bode.png
+    │   │   ├── figure_3_2_sensitivity.png
+    │   │   ├── figure_3_3_escalator.png
+    │   │   ├── figure_4_1_principles.png
+    │   │   ├── figure_4_2_fractal_bandwidth.png
+    │   │   ├── figure_4_3_thermodynamic_efficiency.png
+    │   │   ├── figure_4_4_topology.png
+    │   │   ├── figure_4_5_comparison.png
+    │   │   ├── figure_5_1_sweden_bode.png
+    │   │   ├── figure_5_2_empirical_oscillation.png
+    │   │   ├── figure_5_3_municipal_network.png
+    │   │   ├── figure_5_4_transition_timeline.png
+    │   │   ├── figure_5_5_comparative_advantage.png
+    │   │   ├── figure_6_1_diagnostic_matrix.png
+    │   │   ├── figure_6_2_design_principles.png
+    │   │   ├── figure_6_3_applications.png
+    │   │   ├── figure_6_4_spectrum.png
+    │   │   ├── figure_6_5_requisite_variety.png
+    │   │   ├── figure_6_6_evolutionary_advantage.png
+    │   │   ├── figure_7_1_journey.png
+    │   │   ├── figure_7_2_the_choice.png
+    │   │   ├── figure_7_3_generations.png
+    │   │   ├── figure_7_4_power_literate_society.png
+    │   │   ├── figure_es_1_stability_curve.png
+    │   │   ├── figure_es_2_six_layers.png
+    │   │   ├── figure_es_3_fractal_structure.png
+    │   │   ├── figure_es_4_transition_timeline.png
+    │   │   └── figure_es_5_the_choice.png
+    │   ├── architecture-of-stability-cover-full.png
+    │   ├── architecture-of-stability-cover.png
+    │   ├── below-the-factorization-cover.png
+    │   ├── below-the-factorization-cover.svg
+    │   ├── beyond-fragmented-truth-cover.png
+    │   ├── beyond-integration-cover.png
+    │   ├── beyond-states-cover.png
+    │   ├── beyond-the-duopoly-cover.png
+    │   ├── boundary-instability
+    │   │   ├── xviii_A2_regime_map.png
+    │   │   ├── xviii_A_phase_cycle.png
+    │   │   ├── xviii_B_early_warning.png
+    │   │   ├── xviii_C2_window_map.png
+    │   │   └── xviii_C_bandwidth_slice.png
+    │   ├── boundary-instability-cover.png
+    │   ├── boundary-instability-cover.svg
+    │   ├── boundary-selection-deficits
+    │   │   ├── v14-adaptive-sweep.png
+    │   │   ├── v14-adaptive-trajectory.png
+    │   │   └── v14-stability-loopgain.png
+    │   ├── boundary-selection-deficits-cover.png
+    │   ├── certification-floor-cover.png
+    │   ├── certification-floor-cover.svg
+    │   ├── change-paradox-cover.png
+    │   ├── closure-adaptation
+    │   │   ├── figure1_phase_diagram_rhoP_002.png
+    │   │   ├── figure2_bistable_fractions.png
+    │   │   ├── figure3_hysteresis_loop.png
+    │   │   ├── figure4_stochastic_heatmap.png
+    │   │   ├── figure5_polarization_time_series.png
+    │   │   ├── figure6_cascade_collapse_time_series.png
+    │   │   └── figure7_Pmin_intervention.png
+    │   ├── closure-adaptation-cover.png
+    │   ├── closure-adaptation-cover.svg
+    │   ├── cognitive-scaffolding-cover.png
+    │   ├── community-solutions-lab-session-timeline.svg
+    │   ├── coordination-failure-tax
+    │   │   ├── figure-1-information-flow.svg
+    │   │   ├── figure-1-information-flow-sv.svg
+    │   │   ├── figure-2-ggf-mapping.svg
+    │   │   └── figure-2-ggf-mapping-sv.svg
+    │   ├── coordination-failure-tax-cover.png
+    │   ├── cost-of-returning
+    │   │   ├── final-binding-rank-map.png
+    │   │   ├── final-hazard-curves.png
+    │   │   ├── final-hazard-validation.png
+    │   │   ├── final-phase-map.png
+    │   │   ├── final-sweep-composition.png
+    │   │   ├── ladder-h-sweep.png
+    │   │   ├── ladder-N-sweep.png
+    │   │   ├── ladder-staircase.png
+    │   │   ├── recovery-boundary-gap.png
+    │   │   ├── recovery-fixed.png
+    │   │   ├── recovery-full-gated.png
+    │   │   ├── recovery-subsidy-gated.png
+    │   │   └── tail-main-branches.png
+    │   ├── cost-of-returning-cover.png
+    │   ├── cost-of-returning-cover.svg
+    │   ├── currency-of-care-cover.png
+    │   ├── excitation-starved-observer
+    │   │   ├── paper_xxiv_fig_exp1_sensor_objective.png
+    │   │   ├── paper_xxiv_fig_exp2_resolution_cost.png
+    │   │   ├── paper_xxiv_fig_exp3_learned_allocation.png
+    │   │   └── paper_xxiv_figure_4_feedback_loop.svg
+    │   ├── excitation-starved-observer-cover.png
+    │   ├── excitation-starved-observer-cover.svg
+    │   ├── four-year-ramp
+    │   │   └── four-year-ramp-figure1.svg
+    │   ├── four-year-ramp-cover.png
+    │   ├── four-year-ramp-cover.svg
+    │   ├── fractal-cybernetic-consciousness-map.svg
+    │   ├── fractal-cybernetic-consciousness-map-sv.svg
+    │   ├── fractal-cybernetic-cover-optimized.png
+    │   ├── fractal-cybernetic-cover-optimized-rotated.png
+    │   ├── fractal-cybernetic-cover.png
+    │   ├── fractality-as-stability
+    │   │   └── ggf-simulator-v4.png
+    │   ├── fractality-as-stability-cover.png
+    │   ├── governance-as-adaptive-controller
+    │   │   ├── v16-exploitation-lockin.png
+    │   │   ├── v16-forgetting-sweep.png
+    │   │   ├── v16-phase-diagram.png
+    │   │   └── v16-starvation-vs-optimal.png
+    │   ├── governance-as-adaptive-controller-cover.png
+    │   ├── governance-simulator
+    │   │   └── governance-simulator-v3.png
+    │   ├── governance-simulator-cover.png
+    │   ├── governors-sentinels-bridges-cover.png
+    │   ├── governors-sentinels-bridges-cover.svg
+    │   ├── infinite-paradox-cover.png
+    │   ├── legitimacy-as-emergent-gain
+    │   │   ├── v15-asymmetry-sweep.png
+    │   │   ├── v15-borrowed-collapse.png
+    │   │   ├── v15-collapse-heatmap.png
+    │   │   ├── v15-phase-diagram.png
+    │   │   └── v15-trap-and-recovery.png
+    │   ├── legitimacy-as-emergent-gain-cover-chatgpt.png
+    │   ├── legitimacy-as-emergent-gain-cover.png
+    │   ├── map-of-awakening-cover.png
+    │   ├── measuring-the-variety-gap-cover.png
+    │   ├── measuring-the-variety-gap-cover-with-text-2.png
+    │   ├── measuring-the-variety-gap-cover-with-text.png
+    │   ├── observability-democracy
+    │   │   └── ggf-simulator-v5.png
+    │   ├── observability-democracy-cover.png
+    │   ├── political-economy-requisite-governance-cover-chatgpt.png
+    │   ├── political-economy-requisite-governance-cover.png
+    │   ├── preventing-1933-cover.png
+    │   ├── reform-exhaustion-cover.png
+    │   ├── regenerative-governance-cover.png
+    │   ├── requisite-alignment
+    │   │   ├── dpi-panel-heatmap.png
+    │   │   ├── gate1-activation-surface.png
+    │   │   ├── geometry-signflip.png
+    │   │   └── mi-vs-value.png
+    │   ├── requisite-alignment-cover.png
+    │   ├── requisite-alignment-cover.svg
+    │   ├── requisite-observer-diversity-cover-gemini.png
+    │   ├── requisite-observer-diversity-cover.png
+    │   ├── requisite-variety-and-the-commons
+    │   │   └── ggf-simulator-v6.png
+    │   ├── requisite-variety-commons-cover.png
+    │   ├── responsive-society-cover.png
+    │   ├── self-operator
+    │   │   ├── self3-interior-and-gap.png
+    │   │   ├── self3-legitimacy-trajectories.png
+    │   │   └── self3-phi-sweep.png
+    │   ├── self-operator-cover.png
+    │   ├── self-variety-gap
+    │   │   └── self-stability-simulator.png
+    │   ├── self-variety-gap-cover.png
+    │   ├── shape-of-reform-cover.png
+    │   ├── shape-of-reform-cover.svg
+    │   ├── stream-development-over-time.svg
+    │   ├── the-axis-of-awareness.svg
+    │   ├── the-five-streams-of-holistic-co-flourishing.svg
+    │   ├── the-mountain-range-of-facets.svg
+    │   ├── the-variety-gap
+    │   │   └── appendix-c-simulation.png
+    │   ├── the-variety-gap-cover.png
+    │   ├── three-laws-from-one-bound-cover.png
+    │   ├── three-laws-from-one-bound-cover.svg
+    │   ├── what-cannot-be-guaranteed-cover.png
+    │   ├── what-cannot-be-guaranteed-cover.svg
+    │   ├── what-if-the-model-is-incomplete-cover.png
+    │   ├── what-should-we-optimize-cover.png
+    │   ├── when-to-stop-learning-cover.png
+    │   ├── when-to-stop-learning-cover.svg
+    │   ├── where-reform-pushes-down
+    │   │   ├── bode-adversary-boundaries.png
+    │   │   ├── bode-adversary-delta-sweep.png
+    │   │   ├── bode-adversary-mechanism.png
+    │   │   ├── bode-synthesis-achievability.png
+    │   │   └── bode-synthesis-sweep.png
+    │   ├── where-reform-pushes-down-cover.png
+    │   ├── where-reform-pushes-down-cover.svg
+    │   ├── why-diversity-resists-formalization-cover.png
+    │   └── why-diversity-resists-formalization-cover.svg
+    ├── legitimacy-as-emergent-gain.pdf
+    ├── legitimacy-as-emergent-gain-sv.pdf
+    ├── measuring-the-variety-gap.pdf
+    ├── measuring-the-variety-gap-sv.pdf
+    ├── observability-democracy-connection.pdf
+    ├── observability-democracy-connection-sv.pdf
+    ├── political-economy-of-requisite-governance.pdf
+    ├── political-economy-of-requisite-governance-sv.pdf
+    ├── reform-exhaustion.pdf
+    ├── reform-exhaustion-sv.pdf
+    ├── requisite-alignment.pdf
+    ├── requisite-alignment-sv.pdf
+    ├── requisite-observer-diversity.pdf
+    ├── requisite-observer-diversity-sv.pdf
+    ├── requisite-variety-and-the-commons.pdf
+    ├── requisite-variety-and-the-commons-sv.pdf
+    ├── self-operator.pdf
+    ├── self-operator-sv.pdf
+    ├── self-variety-gap.pdf
+    ├── self-variety-gap-sv.pdf
+    ├── shape-of-reform.pdf
+    ├── shape-of-reform-sv.pdf
+    ├── the-variety-gap.pdf
+    ├── the-variety-gap-sv.pdf
+    ├── three-laws-from-one-bound.pdf
+    ├── three-laws-from-one-bound-sv.pdf
+    ├── what-cannot-be-guaranteed.pdf
+    ├── what-cannot-be-guaranteed-sv.pdf
+    ├── what-if-the-model-is-incomplete
+    │   ├── figures
+    │   │   ├── wp1_fig1_primary_delta.png
+    │   │   ├── wp1_fig1_primary_delta_sv.png
+    │   │   ├── wp1_fig2_criterion_contrasts.png
+    │   │   ├── wp1_fig2_criterion_contrasts_sv.png
+    │   │   ├── wp1_fig3_robustness_price.png
+    │   │   ├── wp1_fig3_robustness_price_sv.png
+    │   │   ├── wp1_fig4_exposure_learning.png
+    │   │   ├── wp1_fig4_exposure_learning_sv.png
+    │   │   ├── wp1_fig5_oracle_vs_learner.png
+    │   │   └── wp1_fig5_oracle_vs_learner_sv.png
+    │   ├── what-if-the-model-is-incomplete-en.pdf
+    │   └── what-if-the-model-is-incomplete-sv.pdf
+    ├── what-should-we-optimize
+    │   ├── figures
+    │   │   ├── b5_learning_cost.png
+    │   │   ├── b5_learning_cost_sv.png
+    │   │   └── figure_source_sv.py
+    │   ├── what-should-we-optimize-en.pdf
+    │   └── what-should-we-optimize-sv.pdf
+    ├── when-to-stop-learning.pdf
+    ├── when-to-stop-learning-sv.pdf
+    ├── where-reform-pushes-down.pdf
+    ├── where-reform-pushes-down-sv.pdf
+    ├── why-diversity-resists-formalization.pdf
+    └── why-diversity-resists-formalization-sv.pdf
+
+212 directories, 857 files
