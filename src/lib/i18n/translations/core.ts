@@ -471,7 +471,7 @@ export const coreTranslations = {
 		wordmark: 'Björn Kenneth Holmström',
   // SEO för startsidan
 		meta: {
-			title: 'Björn Kenneth Holmström | Systemtänkare och styrningsarkitekt',
+			title: 'Björn Kenneth Holmström | Forskar om samhällstyrning och utvecklar ramverk',
 			description:
 				'AI-assisterade utforskningar av styrning, komplexitet och medvetande, inklusive Country Reports, Styrning som ingenjörskonst och Systemisk optimering.'
 		},
