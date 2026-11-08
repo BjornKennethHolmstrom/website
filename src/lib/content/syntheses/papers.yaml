@@ -16,20 +16,35 @@
 #   "-" structural   (built on it; fails if it fails; argument not theorem)
 #   "~" thematic     (reuses/reinterprets/gives-mechanism-to; no validity dependence)
 #
+# CROSS-SERIES LINKS: edges to the companion series *Systemic Optimization* (SO)
+# live once, canonically, in `cross_series_links` at the end of this file. A paper
+# entry carries only `so_links: [edge ids]` as a pointer. SO results are synthetic
+# within-model results under SO's own evidence convention (confirmatory /
+# prespecified descriptive / exploratory / structural); they never upgrade a GaE
+# governance claim above IP.
+#
 # status: published | draft
 # cluster: foundation | cycle-one | cycle-two | limits | factorization | self
 
 meta:
-  series_count_incl_paper0: 28          # Paper 0 + I..XXVII
+  series_count_incl_paper0: 29          # Paper 0 + I..XXVIII
   self_subseries_count: 3
   brief_reconciled_through: "XXVII"
-  atlas_reconciled_through: "XXVII"
-  atlas_version: "v2"
-  last_updated: "2026-07-23"
+  atlas_reconciled_through: "XXVIII"
+  atlas_version: "v2.1"
+  last_updated: "2026-11-08"
+  companion_series:
+    - id: SO
+      title: Systemic Optimization
+      papers: [SO-WP0, SO-WP1]
+      relation: "complement, not continuation: GaE = the architecture through which institutions observe/decide/adapt; SO = how the optimization problem itself is constructed and evaluated"
   notes:
     - "formal_tier [R] is scope-bound where a result is model-internal; see each paper's evidence line for the model."
-    - "depends_on prefixes: = derives | - assumes/structural | ~ grounds/thematic. The atlas carries finer relation labels (mechanizes, refines, motivates, retracts, transfers-by-analogy)."
+    - "depends_on prefixes: = derives | - assumes/structural | ~ grounds/thematic. The atlas carries finer relation labels (mechanizes, refines, motivates, retracts, transfers-by-analogy, corroborates-cross-model, bounds)."
     - "OPEN: XXVII MI correction (see XXVII.corrections) is unreconciled against paper and brief."
+    - "OPEN: brief.md not yet reconciled for XXVIII (paper table, cluster text, count 'twenty-eight' -> 'twenty-nine'). The brief presents cycle two as closed (the triad, XV); placing XXVIII there means the brief must say the cycle has a later paper that dynamizes its boundary/trust elements."
+    - "DECIDED 2026-11-08: XXVIII titled 'Closure Adaptation Dynamics'; cluster cycle-two as a late addition (rationale in the XXVIII entry and atlas §9)."
+    - "PROPOSAL: N does not distinguish confirmatory from exploratory simulation results. SO's status vocabulary (C / PD / ED / EP / ST) is finer; consider adopting it as a sub-label on N."
 
 papers:
 
@@ -64,7 +79,7 @@ papers:
       - "averaging problem: centralised controllers respond to the mean, not the distribution"
     formal_tier: []
     governance_tier: IP
-    successors: ["-III", "=XI"]
+    successors: ["-III", "=XI", "~XXVIII"]
 
   - id: "II"
     title: Multi-frequency disturbance
@@ -123,6 +138,9 @@ papers:
       - optimisation erodes sensing of omitted dimensions causally coupled to the proxy
     formal_tier: [R]           # static condition R-in-model; institutional reading IP
     governance_tier: IP
+    so_links: [SO-L1]
+    unresolved:
+      - "SO-L1: an objective term can do two distinct jobs VI treats as one — substitute for a missing model (insurance) vs generate the exposure that makes the omitted mechanism learnable — and re-valuing carries a price paid whether or not the omitted mechanism operates. VI's implied remedy ('widen the objective, restore sight') needs a cost line and this distinction."
     successors: ["-VIII", "~XXIV", "-XXVII", "-Self-I"]
 
   - id: "VII"
@@ -137,6 +155,9 @@ papers:
     formal_tier: []
     governance_tier: H
     evidence: [fifteen national studies]
+    so_links: [SO-L5]
+    unresolved:
+      - "SO-L5: specify whether 'protected experimental space' means learning that DISPLACES core activity (SO-WP0 condition E: almost never chosen by an optimal learner) or learning CONCURRENT with it (positive recovery). Different designs, different verdicts."
     successors: ["-XXII"]      # XXII shows protected experiment is unavoidable, not merely wise
 
   - id: "VIII"
@@ -179,7 +200,7 @@ papers:
     evidence:
       - "Study 1: 6 AI observers, 50 items, frozen protocol, external critique; rho_eff ~ 0.97"
     nulls: [secondary prediction (tail correlation strongest) NOT supported]
-    successors: ["~XXVI", "-Self-II"]
+    successors: ["~XXVI", "-Self-II", "~XXVIII"]
 
   - id: "XI"
     title: The actuation channel
@@ -207,7 +228,8 @@ papers:
       - "pooling paradox: the trade-off is inescapable for any single boundary"
     formal_tier: []
     governance_tier: IP
-    successors: ["-XVIII"]     # XVIII removes XII's exogenous-coupling assumption
+    so_links: [SO-L8]
+    successors: ["-XVIII", "-XXVIII"]     # XVIII removes XII's exogenous-coupling assumption; XXVIII makes the boundary fear-driven
 
   - id: "XIII"
     title: Legitimacy as endogenous coupling state
@@ -221,7 +243,7 @@ papers:
       - collapses with hysteresis when borrowed rather than built
     formal_tier: []
     governance_tier: IP
-    successors: ["-Self-II", "-Self-III"]
+    successors: ["-Self-II", "-Self-III"]   # XXVIII's trust T overlaps without citing — see XXVIII.unresolved
 
   - id: "XIV"
     title: Stable learning
@@ -234,6 +256,7 @@ papers:
       - persistent excitation as the rigorous content of "antifragility"
     formal_tier: []
     governance_tier: IP
+    so_links: [SO-L2, SO-L5]
     successors: ["~XXIV", "-XXI", "-Self-II"]
 
   - id: "XV"
@@ -247,7 +270,7 @@ papers:
       - information, innovation, and reality backlogs are its failure signatures
     formal_tier: [R]
     governance_tier: IP
-    successors: ["-XVIII", "-XXI"]
+    successors: ["-XVIII", "-XXI", "~XXVIII"]
 
   - id: "XVI"
     title: Exploration-preservation resists formalization
@@ -261,7 +284,8 @@ papers:
     formal_tier: []
     governance_tier: IP
     nulls: [refuses a unified theory, a measurable index, and a no-go theorem by design]
-    successors: ["~XIX", "~XXIV"]   # XIX supplies the mechanism; XXIV an instance
+    so_links: [SO-L3]
+    successors: ["~XIX", "~XXIV", "~XXVIII"]   # XIX supplies the mechanism; XXIV an instance; XXVIII a constructed source term (P floor)
 
   - id: "XVII"
     title: The relocation invariant
@@ -291,7 +315,7 @@ papers:
     governance_tier: IP
     nulls:
       - registered early-warning index failed (caught ~1 collapse in 5); demoted to H; rewritten on state covariance
-    successors: ["~XXV"]       # laundering mechanism formalized/bounded by XXV
+    successors: ["~XXV", "~XXVIII"]       # laundering mechanism formalized/bounded by XXV; XXVIII reaches an analogous locked state via fear, not learning
 
   - id: "XIX"
     title: Governors, Sentinels, and Bridges
@@ -388,7 +412,10 @@ papers:
       - "mechanism: persistent-excitation failure closed into an objective"
     formal_tier: [N]
     governance_tier: IP        # administrative prediction stated as H hypothesis, not result
-    unresolved: [administrative-measurement prediction untested]
+    so_links: [SO-L3]
+    unresolved:
+      - administrative-measurement prediction untested
+      - "SO-L3: check whether the sensor/objective split survives a premium-matched control (a policy with the same foregone primary-objective value that simply holds reserves). SO-WP0 Experiment B found that structural option measures add almost nothing over such a control."
 
   - id: "XXV"
     title: Where Reform Pushes Down, Strategy Pushes Back
@@ -441,6 +468,7 @@ papers:
     governance_tier: IP
     evidence: ["preregistered dynamic programming; frozen 74-cell panel; run_id 16bc675b; 486/592 (82%) resolved attenuation"]
     nulls: ["registered enrichment possibility (displaced > matched) permitted by design, did NOT occur"]
+    so_links: [SO-L4]
     corrections:
       - "LIVE: v1 'identical marginal MI at every displacement -> value gap is information-independent' narrowed. Geometries share cardinality, q, m, likelihood spectrum, and uniform-prior one-observation MI, but may differ in belief-conditioned MI and sequential value. The 'cannot be an information-quantity effect' inference must be narrowed/dropped. Reconcile paper key-claims + §5.2 AND brief.md XXVII paragraph against the actual simulation before treating as settled."
     unresolved:
@@ -450,6 +478,41 @@ papers:
       - contested alignment (alignment with whose loss/actions/representation?)
       - observer ecology (is alignment a channel property or an ecology property?)
       - endogenous power / strategic feedback (who selects the target?)
+
+  - id: "XXVIII"
+    title: Closure Adaptation Dynamics
+    cluster: cycle-two          # late addition (cf. XII's One/Two tag). Content is cycle-two's: trust ~ XIII legitimacy, exploration ~ XIV, slow permeability loop mechanizes XV. Not limits (no adversarial multi-model protocol, positive results, design recommendation); not factorization (no bounded-representation content, not preregistered).
+    status: draft
+    question: What happens when the boundary is driven by felt uncertainty and its quality (permeability), not only its strength, can degrade under stress?
+    depends_on: ["-XII", "~XV", "~XVI", "~XVIII", "~I", "~X"]
+    establishes:
+      - "five-variable model (U, B, T, E, P); boundary strength B separated from boundary permeability P; suppression block Q = (1-P)B"
+      - "bistability: same environment supports open and closed attractors; strong bistability ~32-33% of a 20x20 (s, theta) grid, weak ~57-59%, across rho_P in {0.01..0.10}"
+      - "hysteresis: collapse and recovery thresholds differ (institutional scarring)"
+      - "slow permeability buffers transient perceptual noise; residual noise-induced tipping at high stakes + high noise (<=10% of 30 runs)"
+      - "two populations coupled only through shared U: stable polarization; cascade collapse of an unshocked population"
+      - "constitutional permeability floor: for the tested combined shock, P_min >= 0.4 recovers, P_min <= 0.3 locks closed (threshold in (0.3, 0.4))"
+    formal_tier: [N]           # deterministic Euler sweeps + 30-run stochastic cells; NOT preregistered, no committed nulls — falls short of the N definition as written. Fast-slow analysis in §3 is qualitative, not a theorem.
+    governance_tier: IP        # some readings self-labelled H (§8.2)
+    evidence:
+      - "Euler dt=0.05 with clipping to [0,1]; phase grid 20x20 x 4 rho_P from two initial conditions; stochastic 30 seeds per (s, sigma) cell; one shock profile for cascade and floor experiments"
+      - "2026-11-08 spot re-simulation reproduced the open state at s=1.5 exactly (U 0.339, B 0.147, T 1.0, E 0.179, P 0.698)"
+    nulls: []                  # none registered
+    so_links: [SO-L6]
+    corrections:
+      - "OPEN — F_open: §3.3 states F_open ~ 0.077; re-simulation gives 0.108 at s=1.5 (still below theta_P = 0.15, so the argument holds; P ~ 0.70 is consistent with 0.108, not 0.077)."
+      - "OPEN — closed attractor: §3.1.1 gives (B,T,E,U) ~ (1,0,0,1) and F_closed = s/(1+mu) ~ 0.528. Re-simulation from the closed start at s=1.5 gives U 0.81, T 0.03, E 0.05, F 0.39 — E is not driven to zero, so U does not reach 1. Qualitative conclusion unchanged (F stays above theta); the stated fixed point and F value need correcting."
+      - "OPEN — Table 4.2: reported mean hysteresis widths (0.22-0.29) do not equal mean collapse s minus mean recovery s (0.023, 0.023, 0.008, -0.002); at rho_P=0.10 the difference of means is negative. Likely the widths average over bistable theta rows only while the means do not — state the definition or fix."
+      - "OPEN — abstract and §7 say the floor 'guarantees' recovery; evidence is one deterministic shock profile. Narrow to 'for the tested shock'."
+      - "MINOR — sigma used both for the logistic sigmoid and the noise intensity (§5.1)."
+    unresolved:
+      - "trust T overlaps XIII's legitimacy (endogenous coupling state, hysteresis) without citing it; relate or distinguish. Stronger now that XXVIII sits in cycle two beside XIII."
+      - "SO-L6: exploration reduces actual uncertainty frictionlessly (alpha*E*U); SO-WP1 shows learning is exposure-gated and lagged. Gate the term by exposure."
+      - "SO-L6: the permeability floor is evaluated without a price. Test it under no-shock conditions and against a matched comparator (SO-WP0: a safety-looking reserve floor lost by delaying needed protection)."
+      - "§8.3 own list: analytic separatrix/critical floor, parameter sensitivity of P_min*, direct coupling, networks, adaptive floors, operationalisation, historical hysteresis, synthesis with XVIII."
+    successors:
+      - "fear-driven + learning-driven boundary synthesis (XVIII)"
+      - "objective-driven closure (SO-WP1 exposure trap) as a third route alongside fear (XXVIII) and learning (XVIII)"
 
   # ---- Self sub-series (cross-scale application; almost entirely IP) ----
 
@@ -496,3 +559,101 @@ papers:
     formal_tier: [R]           # inherited unobservability R; couplings I/S in original tags
     governance_tier: IP
     unresolved: [tier scheme still I/S; reconcile to R/IP/H]
+
+# ---- Companion series: Systemic Optimization (SO) ----
+#
+# SO evidence statuses: C = confirmatory (prespecified test on sealed worlds);
+# PD = prespecified descriptive; ED = exploratory, declared; EP = exploratory,
+# post hoc; ST = structural (exact property of the model). All SO results are
+# synthetic and within-model. Mapping to atlas tiers: ST -> [R] scope: the SO
+# model; C -> [N]; PD/ED/EP -> [N] marked exploratory.
+
+companion_papers:
+
+  - id: SO-WP0
+    title: "What Should We Optimize, and What Must We Know?"
+    series: Systemic Optimization — Working Paper 0
+    status: draft              # v0.2, 4 Nov 2026, revised after technical audit
+    establishes:
+      - "four inadequacies kept apart: objective, model, goal-information, learning/adaptation"
+      - "A1 [C]: wetland objective substitutes for a BUNDLED structural omission (DiD 0.343 of narrow regret); no reliable hedge against unknown-direction parameter error (inconclusive)"
+      - "A1 [C]: ambiguity aversion recovers 0.831 under wetter shift at exact parameters; weakens with parameter error, reverses under drier shift; shift lies outside its ambiguity ball"
+      - "A1 [ED, post-G5]: 'value of acting after a shock' rewards unfinished protective work"
+      - "A1 [ED]: no tested programme pair both mutually beneficial (strict 9-account) and synergistic"
+      - "B [C]: reachability/diversity rank states well (HB3, rho ~0.73) but no measure passes the joint HB1 test against premium-matched reserves (measurement-objective separation)"
+      - "B [ED]: uniform belief over the exact goal support recovers 0.69"
+      - "B5 [C]: support knowledge 0.591 (inconclusive vs 0.5); period-displacing polling ~0 (refuted)"
+      - "B5 [ED]: concurrent polling 0.209 free / 0.105 at cost 0.075"
+    nulls: ["H1' wetland hedge inconclusive", "F1-eq (equity term) negligible", "HB1 failed for all four measures", "H5-2 refuted; H5-3 inconclusive"]
+
+  - id: SO-WP1
+    title: "What If the Model Is Incomplete?"
+    series: Systemic Optimization — Working Paper 1 (programme id A2)
+    status: draft              # v0.2, 6 Nov 2026, for text audit
+    establishes:
+      - "[C] re-model (REP: F0 on retention-assuming model) has lower mean U1 than re-value (COMP: ecological objective on retention-omitting model): -1.112 [-1.737, -0.487], n=40; precision target missed"
+      - "[C] COMP better on wetland deficit and terminal stock; [C-derived] neither uniformly preferable"
+      - "[PD] ecological objective nearly insensitive to omitting retention (+0.014 vs +1.851) but pays +1.085 U1 when the model is right ('robustness is a purchase')"
+      - "[ED] REP advantage nearly vanishes under parameter error; which omission matters depends on what else is wrong"
+      - "[ST] no upstream wetland -> R/S transitions identical; [ED] 7 exact exposure traps — a passive policy maintains its own blind spot"
+      - "[ED] exact probe-then-commit learner: best kappa 0.107/0.179 of fixed-probe oracle margin; gains from state-contingent commitment, not belief updating"
+      - "[IP] unit of evaluation is the package: what is represented, optimised, and observable under the resulting policy"
+    nulls: ["REP's advantage fragile (10/40 reverse; parameter error)", "MIX heuristic beats both pure plans on U1", "learner screen kappa>=0.5 met in 0/9", "two verification gates rejected correct code"]
+
+cross_series_links:
+
+  - id: SO-L1
+    from: SO-WP1 §2.2, §5.1-5.2, §6.1; SO-WP0 §6.4 (F1-eq)
+    to: VI
+    relation: instantiates + refines
+    claim: "Objective-induced unobservability shown exactly: F0 never builds wetland, so retention is unexposed and the log Bayes factor is exactly 0 [ST]; world d05 carries a 2.36 U1 omission cost the policy can never see [ED]. Refinement: an objective term may (a) substitute for the missing model or (b) generate exposure that makes it learnable; re-valuing has a price paid in both branches [PD]. An equity-sounding term barely moved outcomes (SO-WP0)."
+    tier_of_link: "[R] scope: A2 model (structural null); [N]/[IP] for the refinement"
+
+  - id: SO-L2
+    from: SO-WP1 §5
+    to: XIV
+    relation: instantiates
+    claim: "Persistent-excitation failure in an exactly solved flood model: passive operation leaves the mechanism unidentifiable; probing creates exposure long before evidence (d05: exposure 0.95 at k=2, posterior moved 0.00). Close to Paper 0's structured blindness, but policy-induced rather than capacity-induced."
+    tier_of_link: "[R] scope: A2 model (k=1 null) / [N] exploratory"
+
+  - id: SO-L3
+    from: SO-WP0 §4 (Experiment B, HB1/HB3)
+    to: [XXIV, XVI]
+    relation: corroborates-cross-model + bounds
+    claim: "XXIV's 'informative sensor, treacherous objective' reproduced in a different formalism (exact DP, 1,080-state community model). Adds the premium-matched reserve control that GaE's exploration claims lack: diversity beat it by only 0.6% of the gap. Same author and AI-assisted pipeline -> correlated provenance (Study 1 logic); weaker corroboration than independent replication."
+    tier_of_link: "[N] confirmatory (HB1, HB3)"
+
+  - id: SO-L4
+    from: SO-WP0 §5.4; SO-WP1 H9
+    to: XXVII
+    relation: corroborates-cross-model (conceptual)
+    claim: "Information value is decision-relative: an accurate signal has no value if every posterior implies the same action — XXVII's alignment point from the value-of-information side. SO-WP1 H9 (a direct downstream flow gauge beats longer probes) is an aligned-channel design hypothesis."
+    tier_of_link: "[IP]; H9 is [H]"
+
+  - id: SO-L5
+    from: SO-WP0 §5 (B5); SO-WP1 §5.4
+    to: [VII, XIV]
+    relation: bounds
+    claim: "Learning is an action with opportunity cost. A survey that displaces a production period was almost never chosen (H5-2 refuted, 9/800 worlds); concurrent learning recovered 0.209 free, 0.105 at a small cost. WP0 expressly does not show protected inquiry is never worth it. GaE's 'protected experimental space' must say whether it displaces or accompanies core activity."
+    tier_of_link: "[N] confirmatory (E) / [N] exploratory (C, F)"
+
+  - id: SO-L6
+    from: SO-WP1 §5; SO-WP0 §6.1 (reserve floor), SO-WP1 §4.2
+    to: XXVIII
+    relation: bounds
+    claim: "(1) XXVIII's alpha*E*U assumes exploration reduces uncertainty frictionlessly; SO-WP1 shows it is exposure-gated and lagged. (2) 'Robustness is a purchase': XXVIII's permeability floor is evaluated without a price; a safety-looking reserve floor in SO-WP0 lost by delaying protection. (3) SO-WP1's exposure trap is a third route to closure — objective-driven — beside XXVIII's fear-driven and XVIII's learning-driven routes."
+    tier_of_link: "[IP] (cross-model bridge)"
+
+  - id: SO-L7
+    from: SO-WP0 §3.3 (G6), §4.2 (HB1)
+    to: atlas §5.1 (laundering discriminator)
+    relation: tested-against-criterion
+    claim: "Neither SO diagnostic failure is a laundering member. G6 fails slot three (no optimiser whose success degrades the signal) and has no kernel fault: it is a stock confound — accumulated need read as capacity. HB1 shows valid-diagnostic/poor-objective without demonstrating that optimisation degrades I(W;F). Recorded as a third presentation, not a family member."
+    tier_of_link: "[IP]"
+
+  - id: SO-L8
+    from: SO-WP0 §3.4, §7 (H1), §8 (A3)
+    to: XII
+    relation: positions (test bed)
+    claim: "A1's upstream/downstream municipalities with a regional relief pool are a computational test bed for the pooling paradox and cross-boundary externalities. Wetland x levee was substitutive in 42% of worlds; no pair both Pareto-improving and synergistic. Planned A3 (adaptive programmes, transfers, co-financing) would test whether mechanism design opens the feasible set."
+    tier_of_link: "[N] exploratory; governance reading [IP]"
