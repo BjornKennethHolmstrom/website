@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1188" viewBox="0 0 840 1188">
+ <rect width="840" height="1188" fill="#131D31"/>
+ <rect x="36" y="36" width="768" height="1116" rx="17" fill="none" stroke="#54738B" stroke-opacity=".58" stroke-width="2"/>
+ <g fill="none" stroke-width="8">
+  <circle cx="420" cy="422" r="176" stroke="#81D9C6" stroke-dasharray="600 180" transform="rotate(-34 420 422)"/>
+  <circle cx="420" cy="422" r="116" stroke="#94AAE7" stroke-dasharray="240 110" transform="rotate(65 420 422)"/>
+  <path d="M245 422 H595 M420 246 V598" stroke="#54738B" stroke-width="2"/>
+  <path d="M308 308 L532 536 M532 308 L308 536" stroke="#54738B" stroke-width="2"/>
+ </g>
+ <g fill="#81D9C6"><circle cx="245" cy="422" r="16"/><circle cx="540" cy="422" r="16"/><circle cx="420" cy="248" r="13"/></g>
+ <g fill="#94AAE7"><circle cx="420" cy="584" r="16"/><circle cx="310" cy="309" r="13"/><circle cx="530" cy="531" r="13"/></g>
+ <circle cx="420" cy="422" r="25" fill="#FAF1DB"/>
+ <text x="82" y="104" fill="#81D9C6" font-family="DejaVu Sans, sans-serif" font-size="24" letter-spacing="3">SYSTEMIC OPTIMIZATION</text>
+ <text x="82" y="718" fill="#94AAE7" font-family="DejaVu Sans, sans-serif" font-size="27">WORKING PAPER B1 · V0.5.1</text>
+ <text x="82" y="804" fill="#FFFFFF" font-family="DejaVu Sans, sans-serif" font-size="55" font-weight="bold">CONTESTABLE</text>
+ <text x="82" y="873" fill="#FFFFFF" font-family="DejaVu Sans, sans-serif" font-size="55" font-weight="bold">COOPERATION</text>
+ <text x="82" y="946" fill="#D0D9E7" font-family="DejaVu Sans, sans-serif" font-size="27">Operational capacity, corrective capacity,</text>
+ <text x="82" y="987" fill="#D0D9E7" font-family="DejaVu Sans, sans-serif" font-size="27">and the politics of evaluation</text>
+ <path d="M82 1039 H758" stroke="#54738B" stroke-width="2"/>
+ <text x="82" y="1094" fill="#A1B6C8" font-family="DejaVu Sans, sans-serif" font-size="22">Björn Kenneth Holmström · 2026</text>
+</svg>

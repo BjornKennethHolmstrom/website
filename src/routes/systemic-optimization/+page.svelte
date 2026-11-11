@@ -70,6 +70,24 @@
         en: 'A synthetic flood-management study examines three responses to incomplete understanding: re-model, re-value, and learn. Confirmatory results reveal a trade-off between conventional costs and ecological outcomes, while exploratory experiments expose the limits of learning.',
         sv: 'En syntetisk översvämningsstudie undersöker tre svar på ofullständig förståelse: ändra modellen, ändra målet eller lära sig mer. Konfirmatoriska resultat visar en målkonflikt mellan konventionella kostnader och ekologiska utfall, medan explorativa experiment belyser lärandets begränsningar.'
       }
+    },
+    {
+      number: 'B1',
+      url: '/working-papers/contestable-cooperation',
+      cover: '/working-papers/images/contestable-cooperation-cover.png',
+      pdf: {
+        en: '/working-papers/contestable-cooperation/contestable-cooperation-en.pdf',
+        sv: '/working-papers/contestable-cooperation/contestable-cooperation-sv.pdf'
+      },
+      title: { en: 'Contestable Cooperation', sv: 'Prövbar samverkan' },
+      subtitle: {
+        en: 'Operational capacity, corrective capacity, and the politics of evaluation',
+        sv: 'Operativ förmåga, korrigeringsförmåga och utvärderingens politik'
+      },
+      desc: {
+        en: 'A conceptual paper on evaluating cooperation without conflating effective services with legitimacy. Proposes a provisional Contestability Module; not empirically validated.',
+        sv: 'En begreppslig rapport om att utvärdera samverkan utan att förväxla välfungerande tjänster med legitimitet. Föreslår en preliminär prövbarhetsmodul som ännu inte validerats empiriskt.'
+      }
     }
   ] as const;
 

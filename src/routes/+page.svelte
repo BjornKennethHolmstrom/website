@@ -45,12 +45,18 @@
      url: '/working-papers/what-should-we-optimize',
      coverImage: '/working-papers/images/what-should-we-optimize-cover.png'
    },
-  {
-    key: 'soSeriesPaper1',
-    number: '1',
-    url: '/working-papers/what-if-the-model-is-incomplete',
-    coverImage: '/working-papers/images/what-if-the-model-is-incomplete-cover.png'
-  }
+   {
+     key: 'soSeriesPaper1',
+     number: '1',
+     url: '/working-papers/what-if-the-model-is-incomplete',
+     coverImage: '/working-papers/images/what-if-the-model-is-incomplete-cover.png'
+   },
+   {
+     key: 'soSeriesPaperB1',
+     number: 'B1',
+     url: '/working-papers/contestable-cooperation',
+     coverImage: '/working-papers/images/contestable-cooperation-cover.png'
+   }
  ] as const;
 
 	// Definiera vår projektdata.

@@ -22,6 +22,12 @@ export const workingpapersTranslations = {
 				philosophy: 'Philosophy',
 				methodology: 'Methodology'
 			},
+   contestableCooperation: {
+     title: 'Contestable Cooperation',
+     subtitle: 'Operational capacity, corrective capacity, and the politics of evaluation',
+     description: 'A conceptual Systemic Optimization working paper distinguishing operational performance, corrective capacity, and normative acceptability. Proposes a testable Contestability Module and examines how evaluation and grievance interpretation can undermine institutional correction.',
+     seriesLabel: 'Working Paper B1 · Systemic Optimization'
+   },
    whatIfModelIncomplete: {
      title: 'What If the Model Is Incomplete?',
      subtitle:
@@ -316,6 +322,12 @@ export const workingpapersTranslations = {
 				philosophy: 'Filosofi',
 				methodology: 'Metodik'
 			},
+   contestableCooperation: {
+     title: 'Prövbar samverkan',
+     subtitle: 'Operativ förmåga, korrigeringsförmåga och utvärderingens politik',
+     description: 'En begreppslig arbetsrapport inom Systemisk optimering som skiljer mellan operativ prestationsförmåga, korrigeringsförmåga och normativ godtagbarhet. Föreslår en prövbarhetsmodul och undersöker hur utvärderingar och tolkningar av klagomål kan hindra institutionell korrigering.',
+     seriesLabel: 'Arbetsrapport B1 · Systemisk optimering'
+   },
    whatIfModelIncomplete: {
      title: 'Vad händer om modellen är ofullständig?',
      subtitle:

@@ -1,0 +1,3 @@
+## Forskningsstatus och gränser för nästa undersökning
+
+Detta är ett begreppsligt **diskussionsutkast**, inte ett validerat verktyg, en empirisk longitudinell modell, ett rättsutlåtande eller ett anspråk på originalitet för etablerade distinktioner inom fredsbyggande. Versionen integrerar villkorliga kopplingar till GaE och *Self*-trilogin och diskuterar möjliga tolkningsflaskhalsar; den hävdar inte att dessa källor från samma författare oberoende validerar varandra. Påståenden om mervärde i utvärdering kräver prövning med kunniga praktiker; normativa och institutionella resonemang kräver fortsatt kritisk granskning i konkreta sammanhang. Dessa gränser sammanfattas här i stället för att upprepas efter varje avsnitt.

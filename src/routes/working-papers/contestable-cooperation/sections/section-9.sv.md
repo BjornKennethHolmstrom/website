@@ -1,0 +1,9 @@
+## 9. Slutsats
+
+Samarbete är en prestation värd att bevara, särskilt när misstro och verkliga skillnader består. Men ett samverkanssystem förstås inte fullt ut genom att bara se vad det levererar i dag. Vi måste också fråga om de som styrs av dess regler tryggt kan utmana dem och om besluten som följer uppfyller försvarbara standarder för rättigheter och icke-dominans. En protest kan försämra den operativa prestationsförmågan samtidigt som möjligheten till legitim korrigering förbättras; smidig leverans kan samexistera med okontrollerad godtycklig makt. Inget av mönstren berättigar en automatisk slutsats.
+
+**Operativ prestationsförmåga, korrigeringsförmåga och normativ godtagbarhet är skilda men samspelande egenskaper.** Korrigeringsförmåga omfattar möjligheten att ifrågasätta inte bara beslut utan även institutionens beskrivning av vad ett klagomål *betyder*. Rapportens viktigaste systemiska påstående är att utvärdering kan förändra alla tre egenskaper genom att påverka vad som syns, vad som belönas, vem som får definiera problemet och vilka klagomål som kan leda till åtgärder. Den föreslagna prövbarhetsmodulen gör insikten till ett praktiskt och falsifierbart designförslag. Den kan förbättra vanlig institutionsutvärdering; den kan tillföra föga till redan kompetent konfliktkänslig praxis. Båda utfallen bör vi lära av i stället för att dölja.
+
+Den djupare frågan kvarstår: hur människor kan handla tillsammans utan att behöva en fiende och vara oense utan att tvingas in i fientlighet. Rapporten erbjuder en institutionell motsvarighet: hur värdefull samordning kan upprätthållas **utan att möjligheten att ändra dess villkor avskaffas**. Den yttersta prövningen av systemisk optimering är inte en indikator som förblir jämn för alltid. Det är den fortlöpande möjligheten att fråga – och låta berörda svara och korrigera resultatet: **vad optimerar vi, på vems villkor och vem kan rätta oss när målet är fel?**
+
+---

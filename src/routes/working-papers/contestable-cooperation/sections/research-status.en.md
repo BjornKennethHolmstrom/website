@@ -1,0 +1,3 @@
+## Research status and next investigation boundaries
+
+This is a conceptual **discussion draft**, not a validated tool, an empirical longitudinal model, a legal opinion or a claim of originality for established peacebuilding distinctions. This iteration integrates conditional connections to GaE and the *Self* trilogy and diagnoses possible interpretive bottlenecks; it does not claim that those author-origin sources independently validate one another. Claims of incremental assessment value require testing with skilled practitioners; normative and institutional arguments require further challenge in concrete settings. These boundaries are consolidated here rather than repeated as a disclaimer in every section.

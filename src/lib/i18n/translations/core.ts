@@ -138,6 +138,10 @@ export const coreTranslations = {
     soSeriesPaper1: {
       title: 'What If the Model Is Incomplete?',
       desc: 'A synthetic flood-management study examines three responses to incomplete understanding: re-model, re-value, and learn. Confirmatory results reveal a trade-off between conventional costs and ecological outcomes, while exploratory experiments expose the limits of learning.'
+    },
+    soSeriesPaperB1: {
+      title: 'Contestable Cooperation',
+      desc: 'Cooperation can function while its governing terms remain unjust. A conceptual study of operational performance, political correctability, and an assessment process designed to remain contestable.'
     }
   },
 
@@ -605,6 +609,10 @@ export const coreTranslations = {
     soSeriesPaper1: {
       title: 'Vad händer om modellen är ofullständig?',
       desc: 'En syntetisk översvämningsstudie undersöker tre svar på ofullständig förståelse: ändra modellen, ändra målet eller lära sig mer. Konfirmatoriska resultat visar en målkonflikt mellan konventionella kostnader och ekologiska utfall, medan explorativa experiment belyser lärandets begränsningar.'
+    },
+    soSeriesPaperB1: {
+      title: 'Prövbar samverkan',
+      desc: 'Samverkan kan fungera trots orättvisa styrningsvillkor. En begreppslig studie av operativa resultat, politisk korrigerbarhet och ett utvärderingsförfarande som självt kan ifrågasättas.'
     }
   },
 

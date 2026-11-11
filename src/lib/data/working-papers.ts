@@ -28,6 +28,28 @@ const localBase = '/working-papers';
 
 export const papersData: Workingpaper[] = [
  {
+   id: 'contestableCooperation',
+   key: 'contestableCooperation',
+   category: 'systems',
+   tags: [
+     'Systemic Optimization', 'Cooperation', 'Contestability',
+     'Corrective Capacity', 'Non-Domination', 'Institutional Learning',
+     'Evaluation', 'Conflict Sensitivity', 'Epistemic Injustice'
+   ],
+   year: '2026',
+   pages: '15',
+   readTime: { en: '35 min', sv: '35 min' },
+   version: '0.5.1',
+   pdfPath: {
+     en: `${localBase}/contestable-cooperation/contestable-cooperation-en.pdf`,
+     sv: `${localBase}/contestable-cooperation/contestable-cooperation-sv.pdf`
+   },
+   coverImage: '/working-papers/images/contestable-cooperation-cover.png',
+   readOnlinePath: '/working-papers/contestable-cooperation',
+   readOnlineExternal: false,
+   releaseDate: '2026-11-11'
+ },
+ {
    id: 'whatIfModelIncomplete',
    key: 'whatIfModelIncomplete',
    category: 'systems',

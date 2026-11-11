@@ -1,0 +1,9 @@
+## 9. Conclusion
+
+Cooperation is an achievement worth preserving, especially where distrust and real differences persist. But a cooperative system is not fully understood by observing what it delivers today. We must also ask whether those governed by its rules can safely challenge them and whether the resulting decisions satisfy defensible rights and non-domination standards. A protest may reduce operational performance while improving the possibility of legitimate correction; smooth delivery may coexist with unchecked arbitrary authority. Neither pattern warrants an automatic verdict.
+
+**Operational performance, corrective capacity and normative acceptability are distinct but interacting properties.** Corrective capacity includes the ability to challenge not only decisions but also an institution's account of what a grievance *means*. This paper's principal systemic claim is that evaluation can alter all three properties by influencing what is visible, what earns reward, who holds framing power and which grievances become actionable. The proposed Contestability Module makes that insight into a practical, falsifiable design proposal. It may improve routine institutional evaluation; it may add little to competent existing conflict-sensitive practice. Either outcome should be learned from rather than concealed.
+
+The deeper question remains how people can act together without requiring an enemy, and disagree without being forced into hostility. This paper offers an institutional counterpart: how to sustain valuable coordination **without disabling the capacity to change its terms**. The final test of systemic optimization is not a permanently smooth indicator. It is the continuing ability to ask, with affected people able to answer and correct the result: **what are we optimizing, on whose terms, and who can correct us when the objective is wrong?**
+
+---
