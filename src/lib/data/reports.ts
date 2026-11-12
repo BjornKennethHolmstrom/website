@@ -329,6 +329,7 @@ export const reportsData: Report[] = [
  {
      id: 'finland-throughput-constraint',
      key: 'finlandThroughputConstraint',
+     emoji: '🇫🇮',
      category: 'country',
      year: 2026,
      pages: 58,
@@ -350,6 +351,7 @@ export const reportsData: Report[] = [
  {
      id: 'russia-legibility-deficit',
      key: 'russiaLegibilityDeficit',
+     emoji: '🇷🇺',
      category: 'country',
      year: 2026,
      pages: 32,
