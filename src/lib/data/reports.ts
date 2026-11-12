@@ -188,13 +188,13 @@ export const reportsData: Report[] = [
      emoji: '🇸🇪',
      category: 'country',
      year: 2026,
-     pages: 56,
+     pages: 52,
      readTime: {
          en: '40–50 min',
          sv: '40–50 min'
      },
-     version: '1.0',
-     releaseDate: '2026-07-12',
+     version: '1.1',
+     releaseDate: '2026-11-12',
      coverImage: '/images/reports/sweden-competence-trap/cover.png',
      readOnlinePath: '/reports/sweden-competence-trap',
      pdfPath: {

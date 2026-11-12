@@ -4,7 +4,7 @@
 
 Denna rapport har genererats av AI-språkmodeller (Claude, ChatGPT, DeepSeek) utifrån instruktioner från Björn Kenneth Holmström. Flera modeller instruerades parallellt att närma sig Sveriges situation, och deras svar fogades samman till en text med hjälp av det systemtänkande-ramverk som han hade formulerat. Han valde ämnet, ställde frågorna och beslutade att publicera resultatet, men har skrivit lite av texten själv.
 
-Rapporten har inte faktagranskats systematiskt. Uppgifter om svenska myndigheter, lagar, händelser, siffror och källor kan vara felaktiga eller påhittade och bör kontrolleras mot primärkällor innan de används eller citeras. Som alla syntesarbeten är den provisorisk. Den gör inget anspråk på slutgiltighet. Den gör endast anspråk på att den lins den erbjuder förtjänar att prövas mot verkligheten – och att prövningen, i slutändan, är det som betyder mest.
+Denna utgåva genomgick en **riktad redaktionell granskning och källkontroll (12 november 2026)** med fokus på 2025 års reformer av informationsutbyte, Natokronologin, kommunal utjämning och försöksverksamhet, samisk konsultation samt integritetsskydd. Detta är inte en heltäckande faktagranskning eller en oberoende prövning av rapportens orsakshypoteser. Många jämförelser, kulturella tolkningar, förväntade effekter och budgetantaganden är fortsatt preliminära. Bilaga F redovisar kontrollerade källor och kvarstående verifieringsarbete.
 
 ### Perspektiv och begränsningar
 
