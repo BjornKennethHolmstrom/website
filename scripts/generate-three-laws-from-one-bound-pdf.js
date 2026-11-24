@@ -41,20 +41,20 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/three-
 const metadata = {
 	en: {
 		title: 'Three Laws from One Bound',
-		subtitle: 'Ashby, Goodhart, and certification cost as consequences of bounded representation',
-		description: 'Derives Ashby\'s law, Goodhart\'s law, and the monotone cost of certification from a single premise: a finite controller partitioning its world. Ashby is a pigeonhole theorem, Goodhart is sharpened into an intervention‑set result with a registered demonstration, and certification cost is a non‑decreasing accounting quantity. The search for a stronger conservation law failed, and the failure is reported as part of the result.',
+		subtitle: 'Ashby, Goodhart, and certification cost under bounded representation',
+		description: 'Examines Ashby\'s requisite variety, Goodhart\'s law, and certification cost under bounded representation. Consolidates a deterministic action-cover bound, an established proxy–target ordering criterion illustrated by a registered budget-allocation demonstration, and conditional cost accounting. Reports the unsuccessful search for a stronger conservation law.',
 		author: 'Björn Kenneth Holmström',
-		date: 'July 2026',
+		date: 'July 2026 · Revised November 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/three-laws-from-one-bound',
 		seriesNote: 'Paper XX in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
 		title: 'Tre lagar från en gräns',
-		subtitle: 'Ashby, Goodhart och certifieringskostnad som konsekvenser av begränsad representation',
-		description: 'Härleder Ashbys lag, Goodharts lag och den monotona certifieringskostnaden från en enda premiss: en ändlig kontrollant som partitionerar sin värld. Ashby är ett duvslagsfacksteorem, Goodhart skärps till ett interventionsmängdsresultat med en registrerad demonstration, och certifieringskostnaden är en icke‑avtagande redovisningsstorhet. Sökandet efter en starkare konserveringslag misslyckades, och misslyckandet rapporteras som en del av resultatet.',
+		subtitle: 'Ashby, Goodhart och certifieringskostnad under begränsad representation',
+		description: 'Undersöker Ashbys lag om nödvändig variation, Goodharts lag och certifieringskostnad under begränsad representation. Konsoliderar en deterministisk räknegräns baserad på handlingstäckning, ett etablerat ordningskriterium för proxyvariabel och mål illustrerat med en registrerad budgetallokeringsdemonstration samt villkorad kostnadsredovisning. Redovisar det misslyckade sökandet efter en starkare konserveringslag.',
 		author: 'Björn Kenneth Holmström',
-		date: 'Juli 2026',
+		date: 'Juli 2026 · Reviderad november 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/three-laws-from-one-bound',
 		seriesNote: 'Rapport XX i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -67,14 +67,14 @@ const meta = metadata[LANGUAGE];
 const sections = [
 	{ file: 'abstract',    titleEn: 'Abstract',                                                   titleSv: 'Sammanfattning' },
 	{ file: 'section-01',  titleEn: '1. Three laws, one suspicion',                                titleSv: '1. Tre lagar, en misstanke' },
-	{ file: 'section-02',  titleEn: '2. The single premise',                                       titleSv: '2. Den enda premissen' },
-	{ file: 'section-03',  titleEn: '3. Ashby as theorem — the First Law',                         titleSv: '3. Ashby som teorem — den första lagen' },
-	{ file: 'section-04',  titleEn: '4. Goodhart as structural theorem — the optimization face',   titleSv: '4. Goodhart som strukturellt teorem — optimeringssidan' },
+	{ file: 'section-02',  titleEn: '2. Shared setting and additional premises',                  titleSv: '2. Gemensam utgångspunkt och ytterligare premisser' },
+	{ file: 'section-03',  titleEn: '3. Ashby as a deterministic counting bound — the First Law', titleSv: '3. Ashby som deterministisk räknegräns — den första lagen' },
+	{ file: 'section-04',  titleEn: '4. Goodhart as an ordering criterion — the optimization face', titleSv: '4. Goodhart som ordningskriterium — optimeringssidan' },
 	{ file: 'section-05',  titleEn: '5. Certification cost as monotone accounting — the maintenance face', titleSv: '5. Certifieringskostnad som monoton redovisning — underhållssidan' },
-	{ file: 'section-06',  titleEn: '6. Why one bound yields three laws',                           titleSv: '6. Varför en gräns ger tre lagar' },
+	{ file: 'section-06',  titleEn: '6. How the three faces relate',                              titleSv: '6. Hur de tre sidorna hänger samman' },
 	{ file: 'section-07',  titleEn: '7. What this re‑grounds, and what it does not show',           titleSv: '7. Vad detta återgrundar, och vad det inte visar' },
-	{ file: 'section-08',  titleEn: '8. Method and confidence',                                     titleSv: '8. Metod och konfidens' },
-	{ file: 'appendix-a',  titleEn: 'Appendix A: Notation and the Goodhart demonstration',          titleSv: 'Appendix A: Notation och Goodhart‑demonstrationen', isAppendix: true },
+	{ file: 'section-08',  titleEn: '8. Method and confidence',                                   titleSv: '8. Metod och konfidens' },
+	{ file: 'appendix-a',  titleEn: 'Appendix A: Notation and the Goodhart demonstration',         titleSv: 'Appendix A: Notation och Goodhart‑demonstrationen', isAppendix: true },
 ];
 
 // ── CSS (12pt base, identical to other recent papers) ────────────────────────

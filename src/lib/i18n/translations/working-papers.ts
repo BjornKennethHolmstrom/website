@@ -161,9 +161,9 @@ export const workingpapersTranslations = {
    },
    threeLawsFromOneBound: {
      title: 'Three Laws from One Bound',
-     subtitle: 'Ashby, Goodhart, and certification cost as consequences of bounded representation',
+     subtitle: 'Ashby, Goodhart, and certification cost under bounded representation',
      description:
-       'Derives Ashby\'s law, Goodhart\'s law, and the monotone cost of certification from a single premise: a controller with a finite partition of its world. Ashby is a pigeonhole theorem, Goodhart is sharpened into an intervention‑set result with a registered demonstration, and certification cost is a non‑decreasing accounting quantity. The search for a stronger conservation law failed, and the failure is reported as part of the result. Paper XX in the Governance as Engineering series.',
+       'Examines Ashby\'s requisite variety, Goodhart\'s law, and certification cost under bounded representation. Consolidates a deterministic action-cover bound, an established proxy–target ordering criterion illustrated by a registered budget-allocation demonstration, and conditional cost accounting. Reports the unsuccessful search for a stronger conservation law. Paper XX in the Governance as Engineering series.',
    },
    whenToStopLearning: {
      title: 'When to Stop Learning, and When to Stop',
@@ -461,9 +461,9 @@ export const workingpapersTranslations = {
    },
    threeLawsFromOneBound: {
      title: 'Tre lagar från en gräns',
-     subtitle: 'Ashby, Goodhart och certifieringskostnad som konsekvenser av begränsad representation',
+     subtitle: 'Ashby, Goodhart och certifieringskostnad under begränsad representation',
      description:
-       'Härleder Ashbys lag, Goodharts lag och den monotona certifieringskostnaden från en enda premiss: en kontrollant med en ändlig partition av sin värld. Ashby är ett duvslagsfacks­teorem, Goodhart skärps till ett interventionsmängdsresultat med en registrerad demonstration, och certifieringskostnaden är en icke‑avtagande redovisningsstorhet. Sökandet efter en starkare konserveringslag misslyckades, och misslyckandet rapporteras som en del av resultatet. Rapport XX i serien Styrning som ingenjörskonst.',
+       'Undersöker Ashbys lag om nödvändig variation, Goodharts lag och certifieringskostnad under begränsad representation. Konsoliderar en deterministisk räknegräns baserad på handlingstäckning, ett etablerat ordningskriterium för proxyvariabel och mål illustrerat med en registrerad budgetallokeringsdemonstration samt villkorad kostnadsredovisning. Redovisar det misslyckade sökandet efter en starkare konserveringslag. Rapport XX i serien Styrning som ingenjörskonst.',
    },
    whenToStopLearning: {
      title: 'När man ska sluta lära sig, och när man ska sluta',

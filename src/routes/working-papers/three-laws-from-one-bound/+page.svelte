@@ -56,11 +56,11 @@
   const contentMap = [
     { id: 'abstract',    titleEn: 'Abstract',                                                   titleSv: 'Sammanfattning' },
     { id: 'section-01',  titleEn: '1. Three laws, one suspicion',                                titleSv: '1. Tre lagar, en misstanke' },
-    { id: 'section-02',  titleEn: '2. The single premise',                                       titleSv: '2. Den enda premissen' },
-    { id: 'section-03',  titleEn: '3. Ashby as theorem — the First Law',                         titleSv: '3. Ashby som teorem — den första lagen' },
-    { id: 'section-04',  titleEn: '4. Goodhart as structural theorem — the optimization face',   titleSv: '4. Goodhart som strukturellt teorem — optimeringssidan' },
+    { id: 'section-02',  titleEn: '2. Shared setting and additional premises',                                       titleSv: '2. Gemensam utgångspunkt och ytterligare premisser' },
+    { id: 'section-03',  titleEn: '3. Ashby as a deterministic counting bound — the First Law',                         titleSv: '3. Ashby som deterministisk räknegräns — den första lagen' },
+    { id: 'section-04',  titleEn: '4. Goodhart as an ordering criterion — the optimization face',   titleSv: '4. Goodhart som ordningskriterium — optimeringssidan' },
     { id: 'section-05',  titleEn: '5. Certification cost as monotone accounting — the maintenance face', titleSv: '5. Certifieringskostnad som monoton redovisning — underhållssidan' },
-    { id: 'section-06',  titleEn: '6. Why one bound yields three laws',                           titleSv: '6. Varför en gräns ger tre lagar' },
+    { id: 'section-06',  titleEn: '6. How the three faces relate',                           titleSv: '6. Hur de tre sidorna hänger samman' },
     { id: 'section-07',  titleEn: '7. What this re‑grounds, and what it does not show',           titleSv: '7. Vad detta återgrundar, och vad det inte visar' },
     { id: 'section-08',  titleEn: '8. Method and confidence',                                     titleSv: '8. Metod och konfidens' },
     { id: 'appendix-a',  titleEn: 'Appendix A: Notation and the Goodhart demonstration',          titleSv: 'Appendix A: Notation och Goodhart‑demonstrationen' },
@@ -70,7 +70,7 @@
   const ui = {
     en: {
       tag: 'AI-generated working paper · Series XX',
-      seriesNote: 'This is the twentieth paper in the Governance as Engineering series. It derives three of the series\' foundational laws from a single premise.',
+      seriesNote: 'This is the twentieth paper in the Governance as Engineering series. It brings three of the series\' foundational arguments together under bounded representation, with distinct assumptions for each.',
       seriesLinksShow: 'Show paper links',
       seriesLinksHide: 'Hide paper links',
       seriesLinks: [
@@ -103,8 +103,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'The Governance as Engineering series imports two laws it does not derive — Ashby\'s law of requisite variety and Goodhart\'s law — and constructs a third, the certification cost of Paper XVII. This paper shows that all three follow from the single premise Paper 0 established: bounded representation, a finite controller that partitions its world into a bounded number of internal states.',
-      contextOutro: 'Ashby is a pigeonhole theorem, Goodhart is sharpened into an intervention‑set result with a registered demonstration across thirty worlds, and certification cost is a monotone accounting quantity. A search for a stronger conservation law failed, and the failure is reported as part of the result. The economy the paper buys: the series need not assume three independent laws, only the one bound Paper 0 already established.',
+      contextIntro: 'The Governance as Engineering series uses Ashby\'s law of requisite variety, Goodhart\'s law, and the certification cost introduced in Paper XVII. This paper examines their relationship through Paper 0\'s setting of bounded representation: a finite controller partitions its task-relevant world into a bounded set of internal states.',
+      contextOutro: 'Ashby is treated through a deterministic counting bound, Goodhart through an established proxy–target ordering criterion illustrated by a registered budget-allocation demonstration across thirty worlds, and certification cost through conditional accounting. The three arguments share an organizing premise, but do not follow from finitude alone. The earlier claim of a novel general Goodhart theorem is withdrawn, and the unsuccessful search for a stronger conservation law is retained.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -114,7 +114,7 @@
     },
     sv: {
       tag: 'AI-genererat arbetsdokument · Serie XX',
-      seriesNote: 'Detta är den tjugonde rapporten i serien Styrning som ingenjörskonst. Den härleder tre av seriens grundläggande lagar från en enda premiss.',
+      seriesNote: 'Detta är den tjugonde rapporten i serien Styrning som ingenjörskonst. Den sammanför tre av seriens grundläggande argument under begränsad representation, med skilda antaganden för varje argument.',
       seriesLinksShow: 'Visa papperslänkar',
       seriesLinksHide: 'Dölj papperslänkar',
       seriesLinks: [
@@ -147,8 +147,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Serien Styrning som ingenjörskonst importerar två lagar den inte härleder — Ashbys lag om nödvändig variation och Goodharts lag — och konstruerar en tredje, certifieringskostnaden från Rapport XVII. Denna artikel visar att alla tre följer av den enda premiss som Artikel 0 fastställde: begränsad representation, en ändlig kontrollant som partitionerar sin värld i ett begränsat antal interna tillstånd.',
-      contextOutro: 'Ashby är ett fackteorem, Goodhart skärps till ett interventionsmängdsresultat med en registrerad demonstration över trettio världar, och certifieringskostnaden är en monoton redovisningsstorhet. Ett sökande efter en starkare konserveringslag misslyckades, och misslyckandet rapporteras som en del av resultatet. Den ekonomi artikeln köper: serien behöver inte anta tre oberoende lagar, bara den enda gräns Artikel 0 redan fastställde.',
+      contextIntro: 'Serien Styrning som ingenjörskonst använder Ashbys lag om nödvändig variation, Goodharts lag och certifieringskostnaden som introducerades i Rapport XVII. Denna rapport undersöker deras samband utifrån Rapport 0:s ram för begränsad representation: en ändlig kontrollant partitionerar den uppgiftsrelevanta världen i en begränsad mängd interna tillstånd.',
+      contextOutro: 'Ashby behandlas genom en deterministisk räknegräns, Goodhart genom ett etablerat ordningskriterium för proxyvariabel och mål illustrerat med en registrerad budgetallokeringsdemonstration över trettio världar, och certifieringskostnad genom villkorad redovisning. De tre argumenten har en gemensam utgångspunkt, men följer inte av enbart ändlighet. Det tidigare anspråket på ett nytt allmänt Goodhart-teorem dras tillbaka, och det misslyckade sökandet efter en starkare konserveringslag redovisas även fortsättningsvis.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -161,13 +161,13 @@
   const metadata = {
     en: {
       title: 'Three Laws from One Bound',
-      subtitle: 'Ashby, Goodhart, and certification cost as consequences of bounded representation',
-      description: 'Derives Ashby\'s law, Goodhart\'s law, and the monotone cost of certification from a single premise: a finite controller partitioning its world. Paper XX in the Governance as Engineering series.',
+      subtitle: 'Ashby, Goodhart, and certification cost under bounded representation',
+      description: 'Examines Ashby\'s requisite variety, Goodhart\'s law, and certification cost under bounded representation. Consolidates a deterministic action-cover bound, an established proxy–target ordering criterion illustrated by a registered budget-allocation demonstration, and conditional cost accounting. Reports the unsuccessful search for a stronger conservation law. Paper XX in the Governance as Engineering series.',
     },
     sv: {
       title: 'Tre lagar från en gräns',
-      subtitle: 'Ashby, Goodhart och certifieringskostnad som konsekvenser av begränsad representation',
-      description: 'Härleder Ashbys lag, Goodharts lag och den monotona certifieringskostnaden från en enda premiss: en ändlig kontrollant som partitionerar sin värld. Rapport XX i serien Styrning som ingenjörskonst.',
+      subtitle: 'Ashby, Goodhart och certifieringskostnad under begränsad representation',
+      description: 'Undersöker Ashbys lag om nödvändig variation, Goodharts lag och certifieringskostnad under begränsad representation. Konsoliderar en deterministisk räknegräns baserad på handlingstäckning, ett etablerat ordningskriterium för proxyvariabel och mål illustrerat med en registrerad budgetallokeringsdemonstration samt villkorad kostnadsredovisning. Redovisar det misslyckade sökandet efter en starkare konserveringslag. Rapport XX i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -231,8 +231,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Tre lagar från en gräns: Ashby, Goodhart och certifieringskostnad som konsekvenser av begränsad representation. Styrning som ingenjörskonst, Rapport XX. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). Three Laws from One Bound: Ashby, Goodhart, and certification cost as consequences of bounded representation. Governance as Engineering, Paper XX. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Styrning som ingenjörskonst, Rapport XX. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Governance as Engineering, Paper XX. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

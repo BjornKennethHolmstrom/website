@@ -415,7 +415,7 @@ export const papersData: Workingpaper[] = [
      en: '25 min',
      sv: '25 min'
    },
-   version: '1.0',
+   version: '1.1',
    pdfPath: {
      en: `${localBase}/three-laws-from-one-bound.pdf`,
      sv: `${localBase}/three-laws-from-one-bound-sv.pdf`,
@@ -423,7 +423,7 @@ export const papersData: Workingpaper[] = [
    coverImage: '/working-papers/images/three-laws-from-one-bound-cover.png',
    readOnlinePath: '/working-papers/three-laws-from-one-bound',
    readOnlineExternal: false,
-   releaseDate: '2026-07-15'
+   releaseDate: '2026-07-15',
  },
  {
    id: 'governorsSentinelsBridges',
