@@ -3,54 +3,57 @@
   import { language } from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import { marked } from 'marked';
+  import katex from 'katex';
+  import 'katex/dist/katex.min.css';
 
-  // --- 1. IMPORT MARKDOWN SECTIONS (Paper VI: The Variety Gap) ---
+  // --- 1. IMPORT MARKDOWN SECTIONS AS RAW TEXT (Paper VI: The Variety Gap) ---
   // Note: There is no separate executive summary; the abstract serves as the opening section.
 
-  import AbstractEn from './sections/abstract.en.md';
-  import AbstractSv from './sections/abstract.sv.md';
+  import AbstractEn from './sections/abstract.en.md?raw';
+  import AbstractSv from './sections/abstract.sv.md?raw';
 
-  import Part1En from './sections/part-1.en.md';
-  import Part1Sv from './sections/part-1.sv.md';
+  import Part1En from './sections/part-1.en.md?raw';
+  import Part1Sv from './sections/part-1.sv.md?raw';
 
-  import Part2En from './sections/part-2.en.md';
-  import Part2Sv from './sections/part-2.sv.md';
+  import Part2En from './sections/part-2.en.md?raw';
+  import Part2Sv from './sections/part-2.sv.md?raw';
 
-  import Part3En from './sections/part-3.en.md';
-  import Part3Sv from './sections/part-3.sv.md';
+  import Part3En from './sections/part-3.en.md?raw';
+  import Part3Sv from './sections/part-3.sv.md?raw';
 
-  import Part4En from './sections/part-4.en.md';
-  import Part4Sv from './sections/part-4.sv.md';
+  import Part4En from './sections/part-4.en.md?raw';
+  import Part4Sv from './sections/part-4.sv.md?raw';
 
-  import Part5En from './sections/part-5.en.md';
-  import Part5Sv from './sections/part-5.sv.md';
+  import Part5En from './sections/part-5.en.md?raw';
+  import Part5Sv from './sections/part-5.sv.md?raw';
 
-  import Part6En from './sections/part-6.en.md';
-  import Part6Sv from './sections/part-6.sv.md';
+  import Part6En from './sections/part-6.en.md?raw';
+  import Part6Sv from './sections/part-6.sv.md?raw';
 
-  import Part7En from './sections/part-7.en.md';
-  import Part7Sv from './sections/part-7.sv.md';
+  import Part7En from './sections/part-7.en.md?raw';
+  import Part7Sv from './sections/part-7.sv.md?raw';
 
-  import AppendixAEn from './sections/appendix-a.en.md';
-  import AppendixASv from './sections/appendix-a.sv.md';
+  import AppendixAEn from './sections/appendix-a.en.md?raw';
+  import AppendixASv from './sections/appendix-a.sv.md?raw';
 
-  import AppendixBEn from './sections/appendix-b.en.md';
-  import AppendixBSv from './sections/appendix-b.sv.md';
+  import AppendixBEn from './sections/appendix-b.en.md?raw';
+  import AppendixBSv from './sections/appendix-b.sv.md?raw';
 
-  import AppendixCEn from './sections/appendix-c.en.md';
-  import AppendixCSv from './sections/appendix-c.sv.md';
+  import AppendixCEn from './sections/appendix-c.en.md?raw';
+  import AppendixCSv from './sections/appendix-c.sv.md?raw';
 
-  import AppendixDEn from './sections/appendix-d.en.md';
-  import AppendixDSv from './sections/appendix-d.sv.md';
+  import AppendixDEn from './sections/appendix-d.en.md?raw';
+  import AppendixDSv from './sections/appendix-d.sv.md?raw';
 
-  import AppendixFEn from './sections/appendix-f.en.md';
-  import AppendixFSv from './sections/appendix-f.sv.md';
+  import AppendixFEn from './sections/appendix-f.en.md?raw';
+  import AppendixFSv from './sections/appendix-f.sv.md?raw';
 
-  import AppendixGEn from './sections/appendix-g.en.md';
-  import AppendixGSv from './sections/appendix-g.sv.md';
+  import AppendixGEn from './sections/appendix-g.en.md?raw';
+  import AppendixGSv from './sections/appendix-g.sv.md?raw';
 
-  import AppendixHEn from './sections/appendix-h.en.md';
-  import AppendixHSv from './sections/appendix-h.sv.md';
+  import AppendixHEn from './sections/appendix-h.en.md?raw';
+  import AppendixHSv from './sections/appendix-h.sv.md?raw';
 
   // --- 2. CONTENT STRUCTURE ---
 
@@ -59,106 +62,106 @@
       id: 'abstract',
       titleEn: 'Abstract',
       titleSv: 'Sammanfattning',   // Swedish for "Summary"
-      compEn: AbstractEn,
-      compSv: AbstractSv,
+      rawEn: AbstractEn,
+      rawSv: AbstractSv,
     },
     {
       id: 'part-1',
       titleEn: 'Part I — The Engineering Grammar and Its Generalization',
       titleSv: 'Del I — Styrningens grammatik och dess generalisering',
-      compEn: Part1En,
-      compSv: Part1Sv,
+      rawEn: Part1En,
+      rawSv: Part1Sv,
     },
     {
       id: 'part-2',
       titleEn: 'Part II — The Optimization Turn: Objectives, Observations and Policies',
       titleSv: 'Del II — Optimeringens vändning: mål, observationer och beslutsregler',
-      compEn: Part2En,
-      compSv: Part2Sv,
+      rawEn: Part2En,
+      rawSv: Part2Sv,
     },
     {
       id: 'part-3',
       titleEn: 'Part III — The Variety Gap: Task-Relative Adequacy and Dynamics',
       titleSv: 'Del III — Variationsgapet: uppgiftsrelaterad tillräcklighet och dynamik',
-      compEn: Part3En,
-      compSv: Part3Sv,
+      rawEn: Part3En,
+      rawSv: Part3Sv,
     },
     {
       id: 'part-4',
       titleEn: 'Part IV — Neglected Dimensions: Truth, Meaning, Connection and Wellbeing',
       titleSv: 'Del IV — Förbisedda dimensioner: sanning, mening, gemenskap och välbefinnande',
-      compEn: Part4En,
-      compSv: Part4Sv,
+      rawEn: Part4En,
+      rawSv: Part4Sv,
     },
     {
       id: 'part-5',
       titleEn: 'Part V — The Country Reports Re-interpreted Through the Variety Gap',
       titleSv: 'Del V — Landsrapporterna tolkade genom variationsgapet',
-      compEn: Part5En,
-      compSv: Part5Sv,
+      rawEn: Part5En,
+      rawSv: Part5Sv,
     },
     {
       id: 'part-6',
       titleEn: 'Part VI — Meta-Governance: Designing for Open-Ended Value Evolution',
       titleSv: 'Del VI — Meta-styrning: design för öppen värdeevolution',
-      compEn: Part6En,
-      compSv: Part6Sv,
+      rawEn: Part6En,
+      rawSv: Part6Sv,
     },
     {
       id: 'part-7',
       titleEn: 'Part VII — Conclusion: From Diagnosis to Research and Design',
       titleSv: 'Del VII — Slutsats: från diagnos till forskning och design',
-      compEn: Part7En,
-      compSv: Part7Sv,
+      rawEn: Part7En,
+      rawSv: Part7Sv,
     },
     {
       id: 'appendix-a',
       titleEn: 'Appendix A: Static Linear Regulation — Rank and Alignment',
       titleSv: 'Appendix A: Statisk linjär reglering — rang och inriktning',
-      compEn: AppendixAEn,
-      compSv: AppendixASv,
+      rawEn: AppendixAEn,
+      rawSv: AppendixASv,
     },
     {
       id: 'appendix-b',
       titleEn: 'Appendix B: Effective Gap Dynamics and Conditional Thresholds',
       titleSv: 'Appendix B: Dynamik hos effektiva gap och villkorade trösklar',
-      compEn: AppendixBEn,
-      compSv: AppendixBSv,
+      rawEn: AppendixBEn,
+      rawSv: AppendixBSv,
     },
     {
       id: 'appendix-c',
       titleEn: 'Appendix C: Historical Investment-Policy Simulation — Corrected Specification',
       titleSv: 'Appendix C: Historisk simulering av investeringsregler — korrigerad specifikation',
-      compEn: AppendixCEn,
-      compSv: AppendixCSv,
+      rawEn: AppendixCEn,
+      rawSv: AppendixCSv,
     },
     {
       id: 'appendix-d',
       titleEn: 'Appendix D: Country Report Diagnostic Hypotheses',
       titleSv: 'Appendix D: Diagnostiska hypoteser från landsrapporterna',
-      compEn: AppendixDEn,
-      compSv: AppendixDSv,
+      rawEn: AppendixDEn,
+      rawSv: AppendixDSv,
     },
     {
       id: 'appendix-f',
       titleEn: 'Appendix F: Reference List and Scope Notes',
       titleSv: 'Appendix F: Referenslista och räckviddsnoter',
-      compEn: AppendixFEn,
-      compSv: AppendixFSv,
+      rawEn: AppendixFEn,
+      rawSv: AppendixFSv,
     },
     {
       id: 'appendix-g',
       titleEn: 'Appendix G: Operational Definitions and Measurement Protocols',
       titleSv: 'Appendix G: Operationella definitioner och mätprotokoll',
-      compEn: AppendixGEn,
-      compSv: AppendixGSv,
+      rawEn: AppendixGEn,
+      rawSv: AppendixGSv,
     },
     {
       id: 'appendix-h',
       titleEn: 'Appendix H: Testable Hypotheses and Evaluation Protocols',
       titleSv: 'Appendix H: Testbara hypoteser och utvärderingsprotokoll',
-      compEn: AppendixHEn,
-      compSv: AppendixHSv,
+      rawEn: AppendixHEn,
+      rawSv: AppendixHSv,
     },
   ];
 
@@ -278,8 +281,43 @@
     return currentLang === 'sv' ? section.titleSv : section.titleEn;
   }
 
-  function sectionComp(section: typeof contentMap[0]) {
-    return currentLang === 'sv' ? section.compSv : section.compEn;
+  function sectionHtml(section: typeof contentMap[0]): string {
+    const md = currentLang === 'sv' ? section.rawSv : section.rawEn;
+    let content = md.replace(/^---[ \t]*\r?\n[\s\S]*?\r?\n---[ \t]*(?:\r?\n|$)/, '');
+
+    const blocks: string[] = [];
+
+    // Display math: $$ ... $$ and \[ ... \]
+    content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
+      const tex = (tex1 ?? tex2 ?? '').trim();
+      try {
+        const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false, trust: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX display error:', e);
+        blocks.push(match.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    // Inline math: $ ... $ and \( ... \)
+    content = content.replace(/(?<!\$)\$(?!\$)([^\r\n$]+?)(?<!\$)\$(?!\$)|\\\(([^\r\n]*?)\\\)/g, (match, tex1, tex2) => {
+      const tex = (tex1 ?? tex2 ?? '').trim();
+      try {
+        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false, trust: false });
+        blocks.push(rendered);
+        return `%%MATH${blocks.length - 1}%%`;
+      } catch (e) {
+        console.warn('KaTeX inline error:', e);
+        blocks.push(match.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+        return `%%MATH${blocks.length - 1}%%`;
+      }
+    });
+
+    let html = marked.parse(content, { breaks: false, gfm: true }) as string;
+    html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+    return html;
   }
 
   function scrollTo(id: string) {
@@ -430,7 +468,7 @@
               --tw-prose-pre-bg: var(--color-card-bg);
               --tw-prose-pre-code: #1a1a1a;
             ">
-            <svelte:component this={sectionComp(section)} />
+            {@html sectionHtml(section)}
           </article>
         </div>
         {#if section.id !== 'appendix-h'}

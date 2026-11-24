@@ -186,40 +186,33 @@
   function sectionHtml(section: typeof contentMap[0]): string {
     const lang = currentLang as 'en' | 'sv';
     const md = rawText[lang]?.[section.id] ?? '';
-    let content = md.replace(/^---[\s\S]*?---\n/, '');
-
+    const content = md.replace(/^---[ \t]*\r?\n[\s\S]*?\r?\n---[ \t]*(?:\r?\n|$)/, '');
     const blocks: string[] = [];
-
-    // Display math: $$ ... $$ and \[ ... \]
-    content = content.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
-      const tex = (tex1 ?? tex2 ?? '').trim();
+    const prefix = '%%XXMATH';
+    if (content.includes(prefix)) throw new Error(`Math placeholder collision in ${section.id}`);
+    const pattern = /(^[ \t]{0,3}(`{3,}|~{3,})[^\r\n]*\r?\n[\s\S]*?^\s*\2[ \t]*(?=\r?$)|(`+)[^\r\n]*?\3)|\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]|(?<![\\$])\$(?!\$)([^\r\n$]+?)(?<!\\)\$(?!\$)|\\\(([^\r\n]*?)\\\)/gm;
+    const processed = content.replace(pattern, (match, code, fence, ticks, displayDollar, displayBracket, inlineDollar, inlineParen) => {
+      if (code !== undefined) return match;
+      const displayMode = displayDollar !== undefined || displayBracket !== undefined;
+      // Compatibility with legacy Markdown-escaped superscript stars.
+      const tex = (displayDollar ?? displayBracket ?? inlineDollar ?? inlineParen).trim().replace(/\^\\\*/g, () => '^{\\ast}');
       try {
-        const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
-        blocks.push(rendered);
-        return `%%MATH${blocks.length - 1}%%`;
-      } catch (e) {
-        console.warn('KaTeX display error:', e);
-        blocks.push(match);
-        return `%%MATH${blocks.length - 1}%%`;
+        blocks.push(katex.renderToString(tex, { displayMode, throwOnError: true, trust: false }));
+      } catch (error) {
+        console.error(`KaTeX error in ${section.id}: ${tex}`, error);
+        const escaped = match.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        blocks.push(`<span class="math-render-error" role="alert">${escaped}</span>`);
       }
+      return `${prefix}${blocks.length - 1}%%`;
     });
-
-    // Inline math: $ ... $ and \( ... \)
-    content = content.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
-      const tex = (tex1 ?? tex2 ?? '').trim();
-      try {
-        const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
-        blocks.push(rendered);
-        return `%%MATH${blocks.length - 1}%%`;
-      } catch (e) {
-        console.warn('KaTeX inline error:', e);
-        blocks.push(match);
-        return `%%MATH${blocks.length - 1}%%`;
-      }
+    let restored = 0;
+    const html = (marked.parse(processed, { breaks: false, gfm: true }) as string).replace(/%%XXMATH(\d+)%%/g, (_, idx) => {
+      const block = blocks[Number(idx)];
+      if (block === undefined) throw new Error(`Unknown math placeholder: ${idx}`);
+      restored++;
+      return block;
     });
-
-    let html = marked.parse(content, { breaks: false, gfm: true }) as string;
-    html = html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+    if (restored !== blocks.length) throw new Error(`Math restoration mismatch in ${section.id}`);
     return html;
   }
 
@@ -358,7 +351,7 @@
     <div class="space-y-16">
       {#each contentMap as section}
         <div id={section.id} class="scroll-mt-24">
-          <article class="prose prose-lg max-w-none"
+          <article class="prose prose-lg max-w-none [&_.katex-display]:overflow-x-auto"
             style="
               --tw-prose-headings: var(--color-page-text);
               --tw-prose-body: var(--color-page-text);

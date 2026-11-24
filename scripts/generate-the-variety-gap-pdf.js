@@ -3,23 +3,28 @@
 /**
  * Generate PDF for The Variety Gap working paper (Paper VI)
  *
- * Usage: node scripts/generate-variety-gap-pdf.js [language]
- * Example: node scripts/generate-variety-gap-pdf.js en
- * Example: node scripts/generate-variety-gap-pdf.js sv
+ * Usage: node scripts/generate-the-variety-gap-pdf.js [language]
+ * Example: node scripts/generate-the-variety-gap-pdf.js en
+ * Example: node scripts/generate-the-variety-gap-pdf.js sv
  *
  * Requirements:
- * npm install marked puppeteer
+ * npm install marked puppeteer katex
  */
 
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
+import { createRequire } from 'module';
 import { marked } from 'marked';
+import katex from 'katex';
 import puppeteer from 'puppeteer';
 
 import { applyProvenance } from './provenance-pdf.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const require = createRequire(import.meta.url);
+// Resolve from the installed package, so the stylesheet can load its local fonts.
+const KATEX_CSS = pathToFileURL(require.resolve('katex/dist/katex.min.css')).href;
 
 const LANGUAGE = process.argv[2] || 'en';
 const VALID_LANGUAGES = ['en', 'sv'];
@@ -363,7 +368,7 @@ const pdfStyles = `
 		font-size: 10pt;
 	}
 
-	th, td { border: 1px solid #ddd; padding: 0.5em; text-align: left; vertical-align: top; }
+	th, td { border: 1px solid #ddd; padding: 0.5em; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
 	th { background: #f5f5f5; font-weight: bold; }
 
 	a { color: #0066cc; text-decoration: none; }
@@ -382,7 +387,7 @@ const pdfStyles = `
 
 	.figure-container { page-break-inside: avoid; break-inside: avoid; }
 	.figure { page-break-inside: avoid; margin: 1.5em 0; text-align: center; }
-	.figure img { max-width: 100%; max-height: 22cm; width: auto; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 4px; }
+	.figure img { max-width: 100%; max-height: 20cm; width: auto; height: auto; object-fit: contain; border: 1px solid #ddd; border-radius: 4px; }
 
 	img, .cover-image { max-height: 20cm; width: auto; max-width: 100%; object-fit: contain; }
 	figure, .figure, .diagram-container { page-break-inside: avoid; break-inside: avoid; margin: 1.5em 0; }
@@ -393,6 +398,11 @@ const pdfStyles = `
 	.page-break-before { page-break-before: always; }
 	.page-break-after  { page-break-after: always;  }
 	.page-break-avoid  { page-break-inside: avoid; break-inside: avoid; }
+
+	/* Keep math together; never hide overflowing equations in a printed PDF. */
+	.katex-display { break-inside: avoid; page-break-inside: avoid; overflow: visible; }
+	.katex { font-size: 1.05em; }
+	pre { white-space: pre-wrap; overflow-wrap: anywhere; }
 </style>
 `;
 
@@ -419,11 +429,11 @@ function processMarkdownImagesSync(content) {
 		}
 
 		if (foundPath) {
-			const fileUri = 'file://' + path.resolve(foundPath).replace(/\\/g, '/');
+			const fileUri = pathToFileURL(path.resolve(foundPath)).href;
 			processedContent = processedContent.replace(fullMatch, `![${altText}](${fileUri})`);
 			console.log(`✅ Linked image: ${path.basename(foundPath)}`);
 		} else {
-			console.warn(`⚠️  Image not found: ${imagePath}`);
+			throw new Error(`Required section image not found: ${imagePath}`);
 		}
 	}
 	return processedContent;
@@ -437,6 +447,41 @@ function enhanceImageMarkup(content) {
   </div>
 </div>
 `);
+}
+
+// ── Math rendering (same pipeline as Paper XXVII / the Svelte page) ──────────
+function preRenderMath(content, sectionTitle) {
+	const blocks = [];
+	const prefix = '%%VGPDFMATH';
+	if (content.includes(prefix)) throw new Error(`Math placeholder collision in ${sectionTitle}`);
+
+	// Protect fenced code and inline code; then match display before inline math.
+	// The inline forms cannot span lines. Escaped dollar signs are left alone.
+	const pattern = /(^[ \t]{0,3}(`{3,}|~{3,})[^\r\n]*\r?\n[\s\S]*?^\s*\2[ \t]*(?=\r?$)|(`+)[^\r\n]*?\3)|\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]|(?<![\\$])\$(?!\$)([^\r\n$]+?)(?<!\\)\$(?!\$)|\\\(([^\r\n]*?)\\\)/gm;
+	const processed = content.replace(pattern, (match, code, fence, ticks, displayDollar, displayBracket, inlineDollar, inlineParen) => {
+		if (code !== undefined) return match;
+		const displayMode = displayDollar !== undefined || displayBracket !== undefined;
+		const tex = (displayDollar ?? displayBracket ?? inlineDollar ?? inlineParen).trim();
+		try {
+			const rendered = katex.renderToString(tex, { displayMode, throwOnError: true, trust: false });
+			blocks.push(rendered);
+			return `${prefix}${blocks.length - 1}%%`;
+		} catch (error) {
+			throw new Error(`KaTeX error in ${sectionTitle}: ${tex}`, { cause: error });
+		}
+	});
+	return { processed, blocks };
+}
+
+function restoreMath(html, blocks) {
+	let restored = 0;
+	const result = html.replace(/%%VGPDFMATH(\d+)%%/g, (_, idx) => {
+		if (blocks[Number(idx)] === undefined) throw new Error(`Unknown math placeholder: ${idx}`);
+		restored++;
+		return blocks[Number(idx)];
+	});
+	if (restored !== blocks.length) throw new Error(`Restored ${restored} of ${blocks.length} math expressions`);
+	return result;
 }
 
 function readMarkdownFiles() {
@@ -456,7 +501,7 @@ function readMarkdownFiles() {
 
 		let content = fs.readFileSync(filepath, 'utf-8');
 		console.log(`✓ (${(content.length / 1024).toFixed(1)} KB)`);
-		content = content.replace(/^---\n[\s\S]*?\n---\n/, '');
+		content = content.replace(/^---[ \t]*\r?\n[\s\S]*?\r?\n---[ \t]*(?:\r?\n|$)/, '');
 		process.stdout.write(`   Processing images... `);
 		content = processMarkdownImagesSync(content);
 		contents.push({ title: section.title, content, isAppendix: section.isAppendix });
@@ -468,14 +513,14 @@ function readMarkdownFiles() {
 
 function getCoverImageUri() {
 	if (fs.existsSync(COVER_IMAGE)) {
-		return 'file://' + path.resolve(COVER_IMAGE).replace(/\\/g, '/');
+		return pathToFileURL(path.resolve(COVER_IMAGE)).href;
 	}
 	console.log('📝 Cover image not found, proceeding without it');
 	return null;
 }
 
 function generateHTML(sections) {
-	console.log('🔨 Converting markdown to HTML...');
+	console.log('🔨 Converting Markdown to HTML with KaTeX...');
 	marked.setOptions({ breaks: false, gfm: true });
 	const coverImage = getCoverImageUri();
 
@@ -485,6 +530,7 @@ function generateHTML(sections) {
 <head>
   <meta charset="UTF-8">
   <title>${meta.title}</title>
+  <link rel="stylesheet" href="${KATEX_CSS}" />
   ${pdfStyles}
 </head>
 <body>
@@ -508,11 +554,12 @@ function generateHTML(sections) {
 		if (index > 0) html += `\n<div class="section-divider"></div>\n`;
 		const sectionClass = section.isAppendix ? 'appendix' : '';
 		html += `<section class="${sectionClass}">\n`;
-		const enhancedContent = enhanceImageMarkup(section.content);
-		const sectionHtml = marked.parse(enhancedContent);
+		const { processed, blocks } = preRenderMath(section.content, section.title);
+		const enhancedContent = enhanceImageMarkup(processed);
+		const sectionHtml = restoreMath(marked.parse(enhancedContent), blocks);
 		html += sectionHtml;
 		html += `</section>\n`;
-		console.log(`✓ (${(sectionHtml.length / 1024).toFixed(1)} KB)`);
+		console.log(`✓ (${(sectionHtml.length / 1024).toFixed(1)} KB; ${blocks.length} math expressions)`);
 	});
 
 	html += `\n</body>\n</html>\n`;
@@ -526,7 +573,7 @@ async function generatePDF(html) {
 
 	const tempHtmlFile = path.join(OUTPUT_DIR, `temp-render-variety-gap-${LANGUAGE}.html`);
 	fs.writeFileSync(tempHtmlFile, html);
-	const tempHtmlUri = 'file://' + path.resolve(tempHtmlFile).replace(/\\/g, '/');
+	const tempHtmlUri = pathToFileURL(path.resolve(tempHtmlFile)).href;
 
 	const browser = await puppeteer.launch({
 		headless: 'new',
@@ -541,6 +588,17 @@ async function generatePDF(html) {
 		console.log('Content loaded, generating PDF...');
 
 		await applyProvenance(page);
+		// Wait for the local KaTeX font files and figures before printing.
+		await page.emulateMediaType('print');
+		await page.evaluate(async () => {
+			await document.fonts.ready;
+			await Promise.all(Array.from(document.images, img => img.decode()));
+			if (!document.querySelector('link[rel="stylesheet"]')?.sheet) {
+				throw new Error('KaTeX stylesheet did not load');
+			}
+		});
+		const overflow = await page.evaluate(() => Array.from(document.querySelectorAll('.katex-display')).filter(el => el.scrollWidth > el.clientWidth + 2).map(el => el.textContent.slice(0, 100)));
+		if (overflow.length) console.warn('Check wide equations in the printed PDF:', overflow);
 		await page.pdf({
 			path: OUTPUT_FILE,
 			format: 'A4',
@@ -581,12 +639,13 @@ async function main() {
 		const sections = readMarkdownFiles();
 		const html = generateHTML(sections);
 
-		if (process.env.DEBUG) {
+		if (process.env.DEBUG || process.env.HTML_ONLY === '1') {
 			const debugFile = path.join(__dirname, `../debug-variety-gap-${LANGUAGE}.html`);
 			fs.writeFileSync(debugFile, html);
 			console.log(`Debug HTML saved to: ${debugFile}`);
 		}
 
+		if (process.env.HTML_ONLY === '1') return;
 		await generatePDF(html);
 	} catch (error) {
 		console.error('\n❌ Error generating PDF:', error);

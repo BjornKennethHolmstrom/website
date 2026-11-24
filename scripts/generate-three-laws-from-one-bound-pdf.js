@@ -13,7 +13,8 @@
 
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
+import { createRequire } from 'module';
 import { marked } from 'marked';
 import katex from 'katex';
 import puppeteer from 'puppeteer';
@@ -21,6 +22,8 @@ import puppeteer from 'puppeteer';
 import { applyProvenance } from './provenance-pdf.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const require = createRequire(import.meta.url);
+const KATEX_CSS = pathToFileURL(require.resolve('katex/dist/katex.min.css')).href;
 
 const LANGUAGE = process.argv[2] || 'en';
 const VALID_LANGUAGES = ['en', 'sv'];
@@ -172,6 +175,7 @@ const pdfStyles = `
 	p, li { orphans: 3; widows: 3; }
 	.page-break-before { page-break-before: always; }
 	.page-break-after  { page-break-after: always;  }
+	.katex-display { break-inside: avoid; page-break-inside: avoid; overflow: visible; }
 	.page-break-avoid  { page-break-inside: avoid; break-inside: avoid; }
 </style>
 `;
@@ -213,43 +217,38 @@ function enhanceImageMarkup(content) {
 }
 
 // ── Pre‑render LaTeX with KaTeX (handles $…$, $$…$$, \(…\), \[…\]) ─────────
-function preRenderMath(mdContent) {
+function preRenderMath(content, sectionTitle) {
 	const blocks = [];
-	let processed = mdContent;
+	const prefix = '%%XXPDFMATH';
+	if (content.includes(prefix)) throw new Error(`Math placeholder collision in ${sectionTitle}`);
 
-	// Display math: $$ ... $$ and \[ ... \]
-	processed = processed.replace(/\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]/g, (match, tex1, tex2) => {
-		const tex = (tex1 ?? tex2 ?? '').trim();
+	// Protect fenced code and inline code; then match display before inline math.
+	// The inline forms cannot span lines. Escaped dollar signs are left alone.
+	const pattern = /(^[ \t]{0,3}(`{3,}|~{3,})[^\r\n]*\r?\n[\s\S]*?^\s*\2[ \t]*(?=\r?$)|(`+)[^\r\n]*?\3)|\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]|(?<![\\$])\$(?!\$)([^\r\n$]+?)(?<!\\)\$(?!\$)|\\\(([^\r\n]*?)\\\)/gm;
+	const processed = content.replace(pattern, (match, code, fence, ticks, displayDollar, displayBracket, inlineDollar, inlineParen) => {
+		if (code !== undefined) return match;
+		const displayMode = displayDollar !== undefined || displayBracket !== undefined;
+		const tex = (displayDollar ?? displayBracket ?? inlineDollar ?? inlineParen).trim().replace(/\^\\\*/g, () => '^{\\ast}');
 		try {
-			const rendered = katex.renderToString(tex, { displayMode: true, throwOnError: false });
+			const rendered = katex.renderToString(tex, { displayMode, throwOnError: true, trust: false });
 			blocks.push(rendered);
-			return `%%MATH${blocks.length - 1}%%`;
-		} catch (e) {
-			console.warn('KaTeX display error:', e);
-			blocks.push(match);
-			return `%%MATH${blocks.length - 1}%%`;
+			return `${prefix}${blocks.length - 1}%%`;
+		} catch (error) {
+			throw new Error(`KaTeX error in ${sectionTitle}: ${tex}`, { cause: error });
 		}
 	});
-
-	// Inline math: $ ... $ and \( ... \)
-	processed = processed.replace(/(?<!\$)\$(?!\$)([\s\S]*?)(?<!\$)\$(?!\$)|\\\(([\s\S]*?)\\\)/g, (match, tex1, tex2) => {
-		const tex = (tex1 ?? tex2 ?? '').trim();
-		try {
-			const rendered = katex.renderToString(tex, { displayMode: false, throwOnError: false });
-			blocks.push(rendered);
-			return `%%MATH${blocks.length - 1}%%`;
-		} catch (e) {
-			console.warn('KaTeX inline error:', e);
-			blocks.push(match);
-			return `%%MATH${blocks.length - 1}%%`;
-		}
-	});
-
 	return { processed, blocks };
 }
 
 function restoreMath(html, blocks) {
-	return html.replace(/%%MATH(\d+)%%/g, (_, idx) => blocks[parseInt(idx)] ?? '');
+	let restored = 0;
+	const result = html.replace(/%%XXPDFMATH(\d+)%%/g, (_, idx) => {
+		if (blocks[Number(idx)] === undefined) throw new Error(`Unknown math placeholder: ${idx}`);
+		restored++;
+		return blocks[Number(idx)];
+	});
+	if (restored !== blocks.length) throw new Error(`Restored ${restored} of ${blocks.length} math expressions`);
+	return result;
 }
 
 // ── Read markdown files ──────────────────────────────────────────────────────
@@ -295,7 +294,7 @@ function generateHTML(sections) {
 	console.log('🔨 Converting markdown to HTML (pre‑rendering LaTeX)...');
 	marked.setOptions({ breaks: false, gfm: true });
 	const coverImage = getCoverImageUri();
-	const katexCssUri = 'file://' + path.resolve(path.join(__dirname, '../node_modules/katex/dist/katex.min.css')).replace(/\\/g, '/');
+	const katexCssUri = KATEX_CSS;
 
 	let html = `
 <!DOCTYPE html>
@@ -328,7 +327,7 @@ function generateHTML(sections) {
 		const sectionClass = section.isAppendix ? 'appendix' : '';
 		html += `<section class="${sectionClass}">\n`;
 
-		const { processed, blocks } = preRenderMath(section.content);
+		const { processed, blocks } = preRenderMath(section.content, section.title);
 		const imgEnhanced = enhanceImageMarkup(processed);
 		const rawHtml = marked.parse(imgEnhanced);
 		const finalHtml = restoreMath(rawHtml, blocks);
@@ -363,6 +362,14 @@ async function generatePDF(html) {
 		console.log('Content loaded, generating PDF...');
 
 		await applyProvenance(page);
+		await page.emulateMediaType('print');
+		await page.evaluate(async () => {
+			await document.fonts.ready;
+			await Promise.all(Array.from(document.images, img => img.decode()));
+			if (!document.querySelector('link[rel="stylesheet"]')?.sheet) throw new Error('KaTeX stylesheet did not load');
+		});
+		const overflow = await page.evaluate(() => Array.from(document.querySelectorAll('.katex-display')).filter(el => el.scrollWidth > el.clientWidth + 2).map(el => el.textContent.slice(0, 100)));
+		if (overflow.length) console.warn('Check wide equations in the printed PDF:', overflow);
 		await page.pdf({
 			path: OUTPUT_FILE,
 			format: 'A4',
@@ -399,12 +406,13 @@ async function main() {
 		const sections = readMarkdownFiles();
 		const html = generateHTML(sections);
 
-		if (process.env.DEBUG) {
+		if (process.env.DEBUG || process.env.HTML_ONLY === '1') {
 			const debugFile = path.join(__dirname, `../debug-three-laws-from-one-bound-${LANGUAGE}.html`);
 			fs.writeFileSync(debugFile, html);
 			console.log(`Debug HTML saved to: ${debugFile}`);
 		}
 
+		if (process.env.HTML_ONLY === '1') return;
 		await generatePDF(html);
 	} catch (error) {
 		console.error('\n❌ Error generating PDF:', error);
