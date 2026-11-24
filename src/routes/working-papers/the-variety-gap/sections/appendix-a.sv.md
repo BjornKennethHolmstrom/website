@@ -1,61 +1,37 @@
-## Appendix A: Formell härledning av villkoret för minsta värdedimensionalitet (statisk)
-
-Detta appendix formaliserar utvidgningen av Ashbys lag om nödvändig variation från fysiska styrenheter till värderingsarkitekturer, vilket ger villkoret **dim(V) ≥ dim(D) − dim(G)** som används i huvudtexten. Härledningen är statisk: den behandlar störningsrummet och värderingsarkitekturen som fixa, utan att modellera deras temporala evolution (se Appendix B för den dynamiska utvidgningen).
+## Appendix A: Statisk linjär reglering — rang och inriktning
 
 ### A.1 System, störning och mål
 
-Betrakta ett system **S** vars tillstånd vid varje tidpunkt är en vektor **x** ∈ **X**, där **X** är ett ändligdimensionellt vektorrum över de reella talen. Systemet är utsatt för en störningsvektor **d** ∈ **D**, där **D** är störningsrummet. Systemets dynamik modelleras inte direkt; vi abstraherar den till avbildningen från störningar till utfall.
+Låt $X$ vara ett ändligtdimensionellt reellt vektorrum, $D\subseteq X$ ett linjärt störningsdelrum och $L\subseteq X$ ett linjärt delrum av tolererade avvikelser. En störning $d\in D$ ger den brusfria observationen $y=Cd$, där $C$ är linjär. En deterministisk policy i ett steg väljer additiv korrigering $u=f(y)$. Reglering kräver $d+f(Cd)\in L$ för varje $d\in D$. För tillräcklighet antas alla korrigeringar i $-D$ vara tillåtna. Modellen saknar temporal inferens, brus, probabilistisk uppmjukning och begränsad aktuator. Målfunktionen specificerar inte $C$ utan en sådan koppling som extra premiss.
 
-En *styrningsregulator* (en värderingsarkitektur) försöker hålla systemet inom en utsedd målmängd **G** ⊂ **X**. Målmängden representerar de acceptabla tillstånden i världen såsom de definieras av värderingsarkitekturen. Om exempelvis värderingsarkitekturen följer BNP och arbetslöshet är **G** mängden av tillstånd där båda är inom acceptabla gränser.
+### A.2 Exakt villkor för adekvat observation
 
-Regulatorn observerar inte det fulla tillståndet **x**. Den observerar en projektion:
+Definiera $K=D\cap\ker C$. En reglerande policy existerar om och endast om $K\subseteq L$.
 
-**y = C x + ε**
+Nödvändighet: för varje $k\in K$ ger $k$ och noll samma observation. Reglering vid noll ger $f(0)\in L$ och vid $k$ ger den $k+f(0)\in L$. Subtraktion ger $k\in L$. Tillräcklighet: välj för varje möjlig observation $y$ en representant $d_y\in D$ med $Cd_y=y$; använd $f(y)=-d_y$. Varje faktisk störning med den observationen skiljer sig från representanten med ett element i $K$, som ligger i $L$. Med begränsade handlingar kvarstår nödvändigheten men tillräckligheten kan falla. Detta är ett standardargument i linjär algebra, inte ett nyhetsanspråk.
 
-där **C**: **X** → **Y** är en linjär observationsmatris och **ε** är brus. Valet av **C** bestäms av värderingsarkitekturen: den väljer vilka dimensioner av tillståndsrummet som är operationellt synliga.
+### A.3 Nödvändig ranggräns
 
-### A.2 Variation som dimensionalitet
+Om reglering är möjlig gäller $\dim K\leq\dim(D\cap L)$. Rang-nullitetssatsen ger
 
-Ashby definierade variation som logaritmen av antalet särskiljbara tillstånd. I ett kontinuerligt tillståndsrum anpassar vi detta som den *effektiva dimensionaliteten* — rangen av det relevanta vektorrummet. Specifikt:
+$$\operatorname{rank}(C|_D)=\dim D-\dim K\geq\dim D-\dim(D\cap L)\geq\dim D-\dim L.$$
 
-- **dim(D)** = störningsrummets rang: antalet oberoende sätt på vilka systemet kan knuffas bort från sitt mål.
-- **dim(G)** = målmängdens rang: antalet oberoende riktningar i vilka systemet tillåts variera och fortfarande betraktas som "acceptabelt." Om målet är en enda punkt är dim(G) = 0.
-- **dim(V)** = observationsrummets **Y** rang, dvs. antalet oberoende signaldimensioner som värderingsarkitekturen kan särskilja.
+Detta bevarar den tidigare dimensionsolikheten om regulatorns variation betecknar effektiv observationsrang och måldimensionen betecknar $\dim L$. Det är en statisk nödvändig gräns, inte den allmänna entropiska lagen om nödvändig variation. Observationsrummets omgivande dimension och målantal ersätter inte rang.
 
-Detta är en förenkling: verkliga störningar kan vara ickelinjära, icke-Gaussiska och dynamiskt kopplade. Rangvillkoret fångar det linjära fallet; utvidgningar är möjliga men bortom det aktuella omfånget.
+### A.4 Inriktning och det dolda betydelsefulla gapet
 
-### A.3 Ashbys lag i dimensionell form
+Låt $D=\mathbb R^2$, $L=\operatorname{span}(e_2)$. För $C=(1,0)$ är $K=L$ och reglering möjlig; för $C=(0,1)$ är $K=\operatorname{span}(e_1)$ och reglering omöjlig. Båda har rang ett och uppfyller den nödvändiga räknegränsen. Definiera
 
-Ashbys lag i sin ursprungliga formulering: **V(R) ≥ V(D) − V(G)**, där **V(·)** är variation. Genom att avbilda variation på dimensionalitet (för tillräckligt reguljära rum, med variation som logaritmen av antalet särskiljbara tillstånd, skalar variation med rang) erhåller vi:
+$$g_{\mathrm{hidden}}=\dim K-\dim(K\cap L),$$
 
-**dim(V) ≥ dim(D) − dim(G)**  (1)
+$$g_{\mathrm{count}}=\dim D-\dim(D\cap L)-\operatorname{rank}(C|_D).$$
 
-Detta är det statiska villkoret för nödvändig variation för en regulator vars observationskanal har rang dim(V). Det fastställer: antalet oberoende signaldimensioner som regulatorn kan observera måste vara minst antalet oberoende störningsdimensioner minus antalet oberoende dimensioner som systemet tillåts ockupera inom målmängden.
+Den första är kvotrumsdimensionen hos $K/(K\cap L)$; den är basoberoende och noll precis när $K\subseteq L$. Eftersom $K\cap L\subseteq D\cap L$ gäller $g_{\mathrm{count}}\leq g_{\mathrm{hidden}}$. I exemplet är räkneunderskottet noll i båda fallen men det dolda gapet noll respektive ett. Ingen av storheterna mäter magnituder, välfärd eller korrigeringskostnad; $L$ ingår i uppgiften och kan vara normativt.
 
-Om dim(V) `<` dim(D) − dim(G) existerar störningsdimensioner som ligger i nollrummet för observationsmatrisen **C**. Dessa störningar kan knuffa systemet ut ur målmängden utan att regulatorn någonsin registrerar en avvikelse, eftersom regulatorns observationsrum är ortogonalt mot dem.
+### A.5 Tolkning och förbehåll
 
-### A.4 Tillämpning på värderingsarkitekturer
+För en ändlig deterministisk uppgift betecknar $A(w)$ adekvata handlingar för tillstånd $w$. I Rapport XX:s korrigerade formulering är minsta handlingstäckning den minsta handlingsmängd som skär varje $A(w)$. En regulator måste ha tillräckligt många tillstånd för att realisera en täckning, men varje observationscell måste också medge en gemensam adekvat handling och policyn måste välja en sådan. Detta är en ändlig motsvarighet, inte en likhet mellan mått.
 
-En *värderingsarkitektur* fungerar som regulatorn i detta schema. Den definieras av en målfunktion **J(x)** som minimeras eller maximeras, men för stabilitetsändamål är den relevanta egenskapen *vilka avvikelser från det önskade tillståndet som är synliga som kostnader*. Värderingsarkitekturens effektiva observationsmatris **C** väljer de dimensioner av tillståndet som ingår i målfunktionen.
-
-En värderingsarkitektur med **dim(V) = k** följer **k** oberoende dimensioner av systemets tillstånd och är blind för resten. Det minimala dimensionalitetsvillkoret (1) blir:
-
-**dim(Värderingsarkitektur) ≥ dim(Störningsrum) − dim(Målmängd)**
-
-I huvudtexten förenklas detta till **dim(V) ≥ dim(D) − dim(G)**, med förståelsen att **dim(D)** — störningsmiljöns effektiva dimensionalitet — är stor och öppen i praktiken.
-
-### A.5 Tolkning och brasklappar
-
-Denna härledning tillhandahåller en konceptuell brygga från Ashbys lag till variationsgapet. Det är inte ett operationellt mätprotokoll. De viktigaste begränsningarna är:
-
-1. **Linjäritet:** Verkliga observationskanaler är ickelinjära. Rangvillkoret fångar första ordningens informationsförlust; högre ordningens interaktioner mellan dimensioner modelleras inte.
-
-2. **Dimensionalitetsuppskattning:** dim(D) och dim(G) är inte direkt observerbara i de flesta styrningssammanhang. Att uppskatta den effektiva dimensionaliteten hos en störningsmiljö kräver tidsserieanalys av historiska chocker, vilket är genomförbart i princip men icke-trivialt.
-
-3. **Statiskt antagande:** Villkoret säger ingenting om hur **dim(D)** eller **dim(V)** förändras över tid. Det gäller för en fix ögonblicksbild. Det dynamiska fallet, där **dim(D)** expanderar och **dim(V)** måste anpassas, behandlas i Appendix B.
-
-4. **Målmängdsdimensionalitet:** Termen **dim(G)** kan misstolkas. Om målmängden är en enda punkt (t.ex. exakt 2% inflation) är dim(G) = 0 och villkoret är dim(V) ≥ dim(D). Om målet tillåter ett brett spektrum av acceptabel variation är dim(G) större och kravet på dim(V) är avslappnat. Detta fångar intuitionen att ett system med lösa mål behöver mindre precis observation.
-
-Med förbehåll för dessa begränsningar uttrycker ekvation (1) artikelns arkitektoniska insikt i en kompakt, falsifierbar form: en värderingsarkitektur som följer för få dimensioner i förhållande till den störningsmiljö den möter är strukturellt oförmögen att stabilisera det system den styr. Variationsgapet **G = dim(D) − dim(G) − dim(V)** kvantifierar underskottet; när **G > G_crit** överskrider systemet den upplösningströskel som beskrivs i Del III.
+Dynamisk observation skiljer sig från momentan rang. Låt $x_{t+1}=Fx_t$, där $F$ byter plats på två koordinater, och $C=(1,0)$. Observationerna $Cx_0$ och $Cx_1$ återger båda koordinaterna trots att momentan rang är ett. Brus, okänd dynamik och begränsningar komplicerar resultatet. Det statiska villkoret är inte en teori om dynamisk observerbarhet eller legitima samhällsmål.
 
 ---

@@ -38,47 +38,137 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/the-va
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
 const metadata = {
-	en: {
-		title: 'The Variety Gap',
-		subtitle: 'What We Don’t Optimize For, We Lose the Ability to See',
-		description: 'Objective functions are observation architectures. Low-dimensional value functions produce the same structural collapse as low-dimensional governance channels. The variety gap — the mismatch between the dimensionality of reality and the value architecture — is a unifying diagnostic for systemic blindness.',
-		author: 'Björn Kenneth Holmström',
-		date: 'May 2026',
-		url: 'https://bjornkennethholmstrom.org/working-papers/the-variety-gap',
-		seriesNote: 'Paper VI in the Governance as Engineering series',
-		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
-	},
-	sv: {
-		title: 'Variationsgapet',
-		subtitle: 'Vad vi inte optimerar för, förlorar vi förmågan att se',
-		description: 'Målfunktioner är observationsarkitekturer. Lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler. Variationsgapet — skillnaden mellan verklighetens dimensionalitet och värdearkitekturens — är ett enhetligt diagnostiskt verktyg för systemisk blindhet.',
-		author: 'Björn Kenneth Holmström',
-		date: 'Maj 2026',
-		url: 'https://bjornkennethholmstrom.org/sv/working-papers/the-variety-gap',
-		seriesNote: 'Rapport VI i serien Styrning som ingenjörskonst',
-		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
-	}
+  en: {
+    title: 'The Variety Gap',
+    subtitle: 'Objectives, observation architectures, and the limits of systemic perception',
+    description: 'Distinguishes objectives, observation, causal models, policies and feasible actions. Establishes a restricted static rank bound, examines policy-dependent exposure and documents a corrected historical simulation. Country interpretations and measurement proposals remain hypotheses.',
+    author: 'Björn Kenneth Holmström',
+    date: 'May 2026 · Revised November 2026',
+    url: 'https://bjornkennethholmstrom.org/working-papers/the-variety-gap',
+    seriesNote: 'Paper VI in the Governance as Engineering series',
+    license: 'Creative Commons Attribution-ShareAlike 4.0 International'
+  },
+  sv: {
+    title: 'Variationsgapet',
+    subtitle: 'Mål, observationsarkitekturer och den systemiska perceptionens gränser',
+    description: 'Skiljer mål, observation, kausala modeller, policyer och möjliga handlingar. Etablerar en avgränsad statisk ranggräns, undersöker policyberoende exponering och dokumenterar en korrigerad historisk simulering. Landstolkningar och mätförslag förblir hypoteser.',
+    author: 'Björn Kenneth Holmström',
+    date: 'Maj 2026 · Reviderad november 2026',
+    url: 'https://bjornkennethholmstrom.org/sv/working-papers/the-variety-gap',
+    seriesNote: 'Rapport VI i serien Styrning som ingenjörskonst',
+    license: 'Creative Commons Attribution-ShareAlike 4.0 International'
+  }
 };
 
 const meta = metadata[LANGUAGE];
 
-// ── Section definitions (order as per the Svelte page) ──────────────────────
+// ── Section definitions (matches the Svelte page) ─────────────────────────────
 const sections = [
-	{ file: 'abstract',    title: LANGUAGE === 'en' ? 'Abstract'                                                            : 'Sammanfattning',                                              isAppendix: false },
-	{ file: 'part-1',      title: LANGUAGE === 'en' ? 'Part I: The Engineering Grammar and Its Generalization'               : 'Del I: Styrningens grammatik och dess generalisering',        isAppendix: false },
-	{ file: 'part-2',      title: LANGUAGE === 'en' ? 'Part II: The Optimization Turn — Value Functions as Observation Architectures' : 'Del II: Optimeringens vändning — Värdefunktioner som observationsarkitekturer', isAppendix: false },
-	{ file: 'part-3',      title: LANGUAGE === 'en' ? 'Part III: The Variety Gap — Dynamics and the Dissolution Threshold'   : 'Del III: Variationsgapet — Dynamik och upplösningströskeln',   isAppendix: false },
-	{ file: 'part-4',      title: LANGUAGE === 'en' ? 'Part IV: The Missing Dimensions — Truth, Meaning, Connection, and Wellbeing as Signal Channels' : 'Del IV: De saknade dimensionerna — Sanning, mening, gemenskap och välbefinnande som signalkanaler', isAppendix: false },
-	{ file: 'part-5',      title: LANGUAGE === 'en' ? 'Part V: The Country Reports Re‑interpreted Through the Variety Gap'   : 'Del V: Landsrapporterna tolkade genom variationsgapet',        isAppendix: false },
-	{ file: 'part-6',      title: LANGUAGE === 'en' ? 'Part VI: Meta‑Governance — Designing for Open‑Ended Value Evolution' : 'Del VI: Meta-styrning — Design för öppen värdeevolution',      isAppendix: false },
-	{ file: 'part-7',      title: LANGUAGE === 'en' ? 'Part VII: Conclusion — From Diagnosis to Imperative'                 : 'Del VII: Slutsats — Från diagnos till imperativ',              isAppendix: false },
-	{ file: 'appendix-a',  title: LANGUAGE === 'en' ? 'Appendix A: Formal Derivation of the Minimum Value Dimensionality Condition (Static)' : 'Appendix A: Formell härledning av minimidimensionen för värde (statisk)', isAppendix: true  },
-	{ file: 'appendix-b',  title: LANGUAGE === 'en' ? 'Appendix B: Extension to Time‑Varying Dimensionality'                 : 'Appendix B: Utvidgning till tidsvarierande dimensionalitet',   isAppendix: true  },
-	{ file: 'appendix-c',  title: LANGUAGE === 'en' ? 'Appendix C: Simulation Architecture for Value‑Function Collapse'     : 'Appendix C: Simuleringsarkitektur för värdefunktionskollaps', isAppendix: true  },
-	{ file: 'appendix-d',  title: LANGUAGE === 'en' ? 'Appendix D: Country Report Variety‑Gap Estimation Table'              : 'Appendix D: Landsrapportens variationsgapsbedömningstabell',  isAppendix: true  },
-	{ file: 'appendix-f',  title: LANGUAGE === 'en' ? 'Appendix F: Annotated Reference List'                                : 'Appendix F: Kommenterad referenslista',                        isAppendix: true  },
-	{ file: 'appendix-g',   title: LANGUAGE === 'en' ? 'Appendix G: Operational Definitions and Measurement Protocols' : 'Appendix G: Operationella definitioner och mätprotokoll', isAppendix: true },
-	{ file: 'appendix-h',   title: LANGUAGE === 'en' ? 'Appendix H: Testable Predictions and Falsification Protocols' : 'Appendix H: Testbara förutsägelser och falsifieringsprotokoll', isAppendix: true },
+  {
+    file: 'abstract',
+    title: LANGUAGE === 'en'
+      ? 'Abstract'
+      : 'Sammanfattning',
+    isAppendix: false
+  },
+  {
+    file: 'part-1',
+    title: LANGUAGE === 'en'
+      ? 'Part I — The Engineering Grammar and Its Generalization'
+      : 'Del I — Styrningens grammatik och dess generalisering',
+    isAppendix: false
+  },
+  {
+    file: 'part-2',
+    title: LANGUAGE === 'en'
+      ? 'Part II — The Optimization Turn: Objectives, Observations and Policies'
+      : 'Del II — Optimeringens vändning: mål, observationer och beslutsregler',
+    isAppendix: false
+  },
+  {
+    file: 'part-3',
+    title: LANGUAGE === 'en'
+      ? 'Part III — The Variety Gap: Task-Relative Adequacy and Dynamics'
+      : 'Del III — Variationsgapet: uppgiftsrelaterad tillräcklighet och dynamik',
+    isAppendix: false
+  },
+  {
+    file: 'part-4',
+    title: LANGUAGE === 'en'
+      ? 'Part IV — Neglected Dimensions: Truth, Meaning, Connection and Wellbeing'
+      : 'Del IV — Förbisedda dimensioner: sanning, mening, gemenskap och välbefinnande',
+    isAppendix: false
+  },
+  {
+    file: 'part-5',
+    title: LANGUAGE === 'en'
+      ? 'Part V — The Country Reports Re-interpreted Through the Variety Gap'
+      : 'Del V — Landsrapporterna tolkade genom variationsgapet',
+    isAppendix: false
+  },
+  {
+    file: 'part-6',
+    title: LANGUAGE === 'en'
+      ? 'Part VI — Meta-Governance: Designing for Open-Ended Value Evolution'
+      : 'Del VI — Meta-styrning: design för öppen värdeevolution',
+    isAppendix: false
+  },
+  {
+    file: 'part-7',
+    title: LANGUAGE === 'en'
+      ? 'Part VII — Conclusion: From Diagnosis to Research and Design'
+      : 'Del VII — Slutsats: från diagnos till forskning och design',
+    isAppendix: false
+  },
+  {
+    file: 'appendix-a',
+    title: LANGUAGE === 'en'
+      ? 'Appendix A: Static Linear Regulation — Rank and Alignment'
+      : 'Appendix A: Statisk linjär reglering — rang och inriktning',
+    isAppendix: true
+  },
+  {
+    file: 'appendix-b',
+    title: LANGUAGE === 'en'
+      ? 'Appendix B: Effective Gap Dynamics and Conditional Thresholds'
+      : 'Appendix B: Dynamik hos effektiva gap och villkorade trösklar',
+    isAppendix: true
+  },
+  {
+    file: 'appendix-c',
+    title: LANGUAGE === 'en'
+      ? 'Appendix C: Historical Investment-Policy Simulation — Corrected Specification'
+      : 'Appendix C: Historisk simulering av investeringsregler — korrigerad specifikation',
+    isAppendix: true
+  },
+  {
+    file: 'appendix-d',
+    title: LANGUAGE === 'en'
+      ? 'Appendix D: Country Report Diagnostic Hypotheses'
+      : 'Appendix D: Diagnostiska hypoteser från landsrapporterna',
+    isAppendix: true
+  },
+  {
+    file: 'appendix-f',
+    title: LANGUAGE === 'en'
+      ? 'Appendix F: Reference List and Scope Notes'
+      : 'Appendix F: Referenslista och räckviddsnoter',
+    isAppendix: true
+  },
+  {
+    file: 'appendix-g',
+    title: LANGUAGE === 'en'
+      ? 'Appendix G: Operational Definitions and Measurement Protocols'
+      : 'Appendix G: Operationella definitioner och mätprotokoll',
+    isAppendix: true
+  },
+  {
+    file: 'appendix-h',
+    title: LANGUAGE === 'en'
+      ? 'Appendix H: Testable Hypotheses and Evaluation Protocols'
+      : 'Appendix H: Testbara hypoteser och utvärderingsprotokoll',
+    isAppendix: true
+  }
 ];
 
 // ── CSS (same as original, tweaked for new paper) ───────────────────────────

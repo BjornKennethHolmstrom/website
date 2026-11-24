@@ -64,85 +64,85 @@
     },
     {
       id: 'part-1',
-      titleEn: 'Part I: The Engineering Grammar and Its Generalization',
-      titleSv: 'Del I: Styrningens grammatik och dess generalisering',
+      titleEn: 'Part I — The Engineering Grammar and Its Generalization',
+      titleSv: 'Del I — Styrningens grammatik och dess generalisering',
       compEn: Part1En,
       compSv: Part1Sv,
     },
     {
       id: 'part-2',
-      titleEn: 'Part II: The Optimization Turn — Value Functions as Observation Architectures',
-      titleSv: 'Del II: Optimeringens vändning — Värdefunktioner som observationsarkitekturer',
+      titleEn: 'Part II — The Optimization Turn: Objectives, Observations and Policies',
+      titleSv: 'Del II — Optimeringens vändning: mål, observationer och beslutsregler',
       compEn: Part2En,
       compSv: Part2Sv,
     },
     {
       id: 'part-3',
-      titleEn: 'Part III: The Variety Gap — Dynamics and the Dissolution Threshold',
-      titleSv: 'Del III: Variationsgapet — Dynamik och upplösningströskeln',
+      titleEn: 'Part III — The Variety Gap: Task-Relative Adequacy and Dynamics',
+      titleSv: 'Del III — Variationsgapet: uppgiftsrelaterad tillräcklighet och dynamik',
       compEn: Part3En,
       compSv: Part3Sv,
     },
     {
       id: 'part-4',
-      titleEn: 'Part IV: The Missing Dimensions — Truth, Meaning, Connection, and Wellbeing as Signal Channels',
-      titleSv: 'Del IV: De saknade dimensionerna — Sanning, mening, gemenskap och välbefinnande som signalkanaler',
+      titleEn: 'Part IV — Neglected Dimensions: Truth, Meaning, Connection and Wellbeing',
+      titleSv: 'Del IV — Förbisedda dimensioner: sanning, mening, gemenskap och välbefinnande',
       compEn: Part4En,
       compSv: Part4Sv,
     },
     {
       id: 'part-5',
-      titleEn: 'Part V: The Country Reports Re‑interpreted Through the Variety Gap',
-      titleSv: 'Del V: Landsrapporterna tolkade genom variationsgapet',
+      titleEn: 'Part V — The Country Reports Re-interpreted Through the Variety Gap',
+      titleSv: 'Del V — Landsrapporterna tolkade genom variationsgapet',
       compEn: Part5En,
       compSv: Part5Sv,
     },
     {
       id: 'part-6',
-      titleEn: 'Part VI: Meta‑Governance — Designing for Open‑Ended Value Evolution',
-      titleSv: 'Del VI: Meta-styrning — Design för öppen värdeevolution',
+      titleEn: 'Part VI — Meta-Governance: Designing for Open-Ended Value Evolution',
+      titleSv: 'Del VI — Meta-styrning: design för öppen värdeevolution',
       compEn: Part6En,
       compSv: Part6Sv,
     },
     {
       id: 'part-7',
-      titleEn: 'Part VII: Conclusion — From Diagnosis to Imperative',
-      titleSv: 'Del VII: Slutsats — Från diagnos till imperativ',
+      titleEn: 'Part VII — Conclusion: From Diagnosis to Research and Design',
+      titleSv: 'Del VII — Slutsats: från diagnos till forskning och design',
       compEn: Part7En,
       compSv: Part7Sv,
     },
     {
       id: 'appendix-a',
-      titleEn: 'Appendix A: Formal Derivation of the Minimum Value Dimensionality Condition (Static)',
-      titleSv: 'Appendix A: Formell härledning av minimidimensionen för värde (statisk)',
+      titleEn: 'Appendix A: Static Linear Regulation — Rank and Alignment',
+      titleSv: 'Appendix A: Statisk linjär reglering — rang och inriktning',
       compEn: AppendixAEn,
       compSv: AppendixASv,
     },
     {
       id: 'appendix-b',
-      titleEn: 'Appendix B: Extension to Time‑Varying Dimensionality',
-      titleSv: 'Appendix B: Utvidgning till tidsvarierande dimensionalitet',
+      titleEn: 'Appendix B: Effective Gap Dynamics and Conditional Thresholds',
+      titleSv: 'Appendix B: Dynamik hos effektiva gap och villkorade trösklar',
       compEn: AppendixBEn,
       compSv: AppendixBSv,
     },
     {
       id: 'appendix-c',
-      titleEn: 'Appendix C: Simulation Architecture for Value‑Function Collapse',
-      titleSv: 'Appendix C: Simuleringsarkitektur för värdefunktionskollaps',
+      titleEn: 'Appendix C: Historical Investment-Policy Simulation — Corrected Specification',
+      titleSv: 'Appendix C: Historisk simulering av investeringsregler — korrigerad specifikation',
       compEn: AppendixCEn,
       compSv: AppendixCSv,
     },
     {
       id: 'appendix-d',
-      titleEn: 'Appendix D: Country Report Variety‑Gap Estimation Table',
-      titleSv: 'Appendix D: Landsrapportens variationsgapsbedömningstabell',
+      titleEn: 'Appendix D: Country Report Diagnostic Hypotheses',
+      titleSv: 'Appendix D: Diagnostiska hypoteser från landsrapporterna',
       compEn: AppendixDEn,
       compSv: AppendixDSv,
     },
     {
       id: 'appendix-f',
-      titleEn: 'Appendix F: Annotated Reference List',
-      titleSv: 'Appendix F: Kommenterad referenslista',
+      titleEn: 'Appendix F: Reference List and Scope Notes',
+      titleSv: 'Appendix F: Referenslista och räckviddsnoter',
       compEn: AppendixFEn,
       compSv: AppendixFSv,
     },
@@ -155,8 +155,8 @@
     },
     {
       id: 'appendix-h',
-      titleEn: 'Appendix H: Testable Predictions and Falsification Protocols',
-      titleSv: 'Appendix H: Testbara förutsägelser och falsifieringsprotokoll',
+      titleEn: 'Appendix H: Testable Hypotheses and Evaluation Protocols',
+      titleSv: 'Appendix H: Testbara hypoteser och utvärderingsprotokoll',
       compEn: AppendixHEn,
       compSv: AppendixHSv,
     },
@@ -199,8 +199,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Every governance system operates under an explicit or implicit objective function. That function selects which dimensions of reality the system attends to — and, by omission, which it cannot perceive. Treating objective functions as observation architectures, this paper shows that low‑dimensional value functions produce the same structural collapse as low‑dimensional governance channels: the excluded dimensions eventually re‑enter as unresolvable crises.',
-      contextOutro: 'The paper introduces the variety gap (G) — the mismatch between the dimensionality of reality and the value architecture — as a unifying diagnostic. When G exceeds a critical threshold, the system becomes constitutionally blind to existential threats. Long‑run viability requires not just better metrics but an enduring capacity for value evolution.',
+      contextIntro: 'Objectives and incentives can shape what institutions measure and which evidence their policies encounter, but objectives are not observation architectures. This revised paper separates evaluation, observation, modeling, decisions and actuation.',
+      contextOutro: 'The variety gap is a family of task-relative inadequacies. A restricted static linear model provides an exact observational adequacy condition; no universal dissolution threshold is established. The corrected Appendix C documents partial recovery, not prevention of collapse.',
       allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -242,8 +242,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Varje styrsystem fungerar under en explicit eller implicit målfunktion. Den funktionen väljer vilka dimensioner av verkligheten systemet uppmärksammar — och, genom utelämnande, vilka det inte kan uppfatta. Genom att behandla målfunktioner som observationsarkitekturer visar denna rapport att lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler: de uteslutna dimensionerna återkommer så småningom som olösliga kriser.',
-      contextOutro: 'Rapporten introducerar variationsgapet (G) — avståndet mellan verklighetens dimensionalitet och värdearkitekturens dimensionalitet — som ett enhetligt diagnostiskt verktyg. När G överskrider en kritisk tröskel blir systemet konstitutionellt blint för existentiella hot. Långsiktig överlevnad kräver inte bara bättre mätetal, utan en varaktig förmåga att utveckla värdegrunden.',
+      contextIntro: 'Mål och incitament kan påverka vad institutioner mäter och vilken evidens deras policyer möter, men mål är inte observationsarkitekturer. Den reviderade rapporten skiljer utvärdering, observation, modellering, beslut och aktuering.',
+      contextOutro: 'Variationsgapet är en familj av uppgiftsrelaterade otillräckligheter. En avgränsad statisk linjär modell ger ett exakt villkor för adekvata observationer; ingen universell upplösningströskel etableras. Korrigerat Appendix C dokumenterar partiell återhämtning, inte kollapsprevention.',
       allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -256,13 +256,13 @@
   const metadata = {
     en: {
       title: 'The Variety Gap',
-      subtitle: 'What We Don’t Optimize For, We Lose the Ability to See',
-      description: 'Objective functions are observation architectures. This paper introduces the variety gap — the mismatch between the dimensionality of reality and the value architecture — as a unifying diagnostic for systemic blindness. Paper VI in the Governance as Engineering series.',
+      subtitle: 'Objectives, observation architectures, and the limits of systemic perception',
+      description: 'Distinguishes objectives, observation, causal models, policies and feasible actions. Establishes a restricted static rank bound, examines policy-dependent exposure and documents a corrected historical simulation. Country interpretations and measurement proposals remain hypotheses. Paper VI in the Governance as Engineering series.',
     },
     sv: {
       title: 'Variationsgapet',
-      subtitle: 'Vad vi inte optimerar för, förlorar vi förmågan att se',
-      description: 'Målfunktioner är observationsarkitekturer. Denna rapport introducerar variationsgapet — diskrepansen mellan verklighetens dimensionalitet och värdearkitekturen — som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.',
+      subtitle: 'Mål, observationsarkitekturer och den systemiska perceptionens gränser',
+      description: 'Skiljer mål, observation, kausala modeller, policyer och möjliga handlingar. Etablerar en avgränsad statisk ranggräns, undersöker policyberoende exponering och dokumenterar en korrigerad historisk simulering. Landstolkningar och mätförslag förblir hypoteser. Rapport VI i serien Styrning som ingenjörskonst.',
     },
   };
 
@@ -290,8 +290,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se. Serien Styrning som ingenjörskonst, rapport VI. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). The Variety Gap: What We Don’t Optimize For, We Lose the Ability to See. Governance as Engineering Series, Paper VI. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Reviderad november 2026. Serien Styrning som ingenjörskonst, rapport VI. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Revised November 2026. Governance as Engineering Series, Paper VI. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

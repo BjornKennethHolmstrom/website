@@ -1,92 +1,77 @@
-## Appendix C: Simuleringsarkitektur för värdefunktionskollaps
-
-Detta appendix definierar en minimal dynamisk modell som gör Goodhart–Ashby-syntesen och variationsgapet konkret synliga. Simuleringen är medvetet enkel så att den strukturella mekanismen förblir transparent.
+## Appendix C: Historisk simulering av investeringsregler — korrigerad specifikation
 
 ### C.1 Systembeskrivning
 
-Betrakta ett samhälle med två kopplade tillståndsvariabler:
+Detta appendix dokumenterar det av författaren återfunna skriptet `paper_vi_value_function_collapse.py`. De tidigare tryckta ekvationerna motsvarade inte implementationen. Följande specifikation är koden som kördes om i november 2026, inte en rekonstruerad eller anpassad modell.
 
-- **W(t)** : ekonomisk produktion (välstånd), den *observerade dimensionen*.
-- **E(t)** : miljömässig integritet (ekosystemhälsa), den *exkluderade dimensionen*.
+Låt $W_t$ beteckna modellerat välstånd, $E_t$ modellerad miljöintegritet och $I_t$ investering. Definiera $m_t=\min_{0\leq s\leq t}E_s$, med regenerationsfaktorn $q_t=1$ om $m_t>40$ och annars $q_t=0,\!2$. Skriv $E_{\mathrm{base}}=100$ för kodens `E0`, skilt från initialtillståndet $E_{t=0}=90$. Uppdateringarna är
 
-Systemet utvecklas i diskreta tidssteg enligt:
+$$W_{t+1}=\max\{0,(1-\delta_W)W_t+\alpha E_t I_t\},$$
 
-W(t+1) = W(t) + α · E(t) · I(t) − δ_W · W(t)
-E(t+1) = E(t) − β · I(t) + γ · (E₀ − E(t)) + η · W(t)
+$$E_{t+1}=\max\{0,E_t-\beta I_t+\gamma q_t(E_{\mathrm{base}}-E_t)-\eta W_t\}.$$
 
-där:
+Skadan är samtidig och negativ. Hysteresen är permanent i den modellerade historiken; golven är explicita. Detta är syntetisk dynamik, inte kalibrerade ekologiska eller ekonomiska lagar.
 
-- **I(t)** är styrinsatsen (ekonomisk investering) vald av policysystemet.
-- **α** översätter aktuell miljökvalitet till investeringens produktivitet. När E degraderas ger samma I mindre W i framtiden.
-- **δ_W** är välståndets naturliga depreciering.
-- **β** är miljökostnaden per investeringsenhet.
-- **γ** är miljöns naturliga regenereringshastighet mot dess baslinje E₀.
-- **η** fångar en fördröjd negativ återkoppling: högt tidigare välstånd (vilket implicerar tidigare investeringar) eroderar så småningom miljön ytterligare (t.ex. genom ackumulerad förorening, resursutarmning).
+### C.2 Sammansatta regulatorer
 
-Avgörande är att kopplingen verkar i båda riktningarna: **E** stödjer **W**, men jakten på **W** degraderar **E**, och en degraderad **E** reducerar så småningom framtida **W**.
+Låt $W_{\mathrm{obs}}=W_t+\epsilon_W$ och, enbart för den miljömedvetna regeln, $E_{\mathrm{obs}}=E_t+\epsilon_E$. Bruset är Gaussiskt. De fasta reglerna är
 
-### C.2 Värderingsarkitekturer (Styrenheter)
+$$I_1=\max\{0,I_0+K(W^*-W_{\mathrm{obs}})\},$$
 
-Vi jämför två styrningsarkitekturer som endast skiljer sig åt i sin *värdefunktionsdimensionalitet*, inte i sin kompetens.
+$$I_2=\max\{0,[I_0+K(W^*-W_{\mathrm{obs}})](E_{\mathrm{obs}}/E_{\mathrm{base}})^2\}.$$
 
-**Arkitektur 1D (Endast BNP)**
-- Målfunktion: **J₁ = W(t)**.
-- Styrenheten observerar **W(t)** (med visst brus) och observerar inte **E(t)**. Den tror att maximering av W alltid är bra.
-- Styrlag: I(t) = I₀ + K · (W_mål − W_obs(t)), där I₀ är en baslinje och K är en förstärkning. Styrenheten investerar mer när W ligger under det önskade målet och försöker driva W uppåt.
+Dessa är inte lösningar till ett optimeringsproblem. De tidigare etiketterna $J_1=W$ och $J_2=W+\lambda E$ är nominella utvärderingar; deklarerat $\lambda$ används inte. Jämförelsen ändrar både observation och policy, utan lärande eller modellrevision. Dämpningen multiplicerar hela uttrycket och är kvadratisk, inte sigmoid. I körningen begränsar den investering vid lågt $E$; den är ingen allmän säkerhetsgaranti.
 
-**Arkitektur 2D (Välmåendemedveten)**
-- Målfunktion: **J₂ = W(t) + λ · E(t)** (med λ > 0).
-- Styrenheten observerar både **W(t)** och **E(t)**. Den erkänner att E har värde och att degradering av E skadar framtida W.
-- Styrlag: I(t) väljs för att hålla båda variablerna inom en önskad region. Konkret dämpas investeringen när E faller under ett tröskelvärde: I(t) = I₀ + K · (W_mål − W_obs(t)) · f(E), där f(E) är en sigmoid som reducerar investeringen när E sjunker, vilket förhindrar att den skadliga återkopplingsslingan utlöses.
+### C.3 Parametrisering och körning
 
-Båda styrenheterna har tillgång till samma finansiella resurser; den enda skillnaden är dimensionaliteten i deras värderingsarkitektur.
+| Parameter | Implementerat värde |
+|---|---:|
+| Registrerade tillstånd / övergångar | 500 / 499 |
+| Initialt välstånd / miljö | 60 / 90 |
+| $\alpha,\delta_W,\beta$ | 0,3; 0,05; 0,25 |
+| $\gamma,\eta$ | 0,05; 0,02 |
+| $E_{\mathrm{base}},W^*,I_0,K$ | 100; 120; 5; 0,5 |
+| Observationsbrusets standardavvikelser $\sigma_W,\sigma_E$ | 1; 0,5 |
+| Deklarerat oanvänt $\lambda$ | 1,5 |
+| Slumpfrö | 2024 |
 
-### C.3 Parameterisering
+En NumPy-generator delas sekventiellt, först av regel 1, sedan av regel 2; dragningarna är inte matchade mellan armarna. Brus ingår i observationerna, inte i tillståndsuppdateringarna. Investering och tillstånd har nedre golv noll och inga övre tak. Sista värdet i investeringsarrayen är en oexekverad nollplatshållare. Kollapsmarkören är första $E<30$, skild från permanenta regenerationsskiftet vid $E\leq40$.
 
-| Parameter | Värde | Betydelse |
-|-----------|-------|-----------|
-| α | 0,3 | Investeringsproduktivitet per enhet av E |
-| δ_W | 0,05 | Välståndsdepreciering |
-| β | 0,25 | Miljökostnad per enhet av I |
-| γ | 0,1 | Miljöns regenereringshastighet |
-| η | 0,02 | Fördröjd skada från tidigare välstånd |
-| E₀ | 100 | Miljömässig baslinjeintegritet |
-| W_mål | 120 | Önskad välståndsnivå |
-| I₀ | 5 | Baslinjeinvestering |
-| K | 2,0 | Förstärkning (identisk för båda arkitekturerna) |
-| λ | 1,5 | Vikt för miljö i 2D-målfunktionen |
-| Brus σ_W, σ_E | 1,0, 0,5 | Observationsbrus (1D observerar endast W) |
+### C.4 Reproducerade utfall och diagnostik
 
-Initialtillstånd: **W(0)=60, E(0)=90**.
+![Figur C.1](/working-papers/images/the-variety-gap/appendix-c-simulation.sv.png)
 
-### C.4 Förväntat beteende
+*Figur C.1.* Omritade banor från den nya körningen av återfunnet skript; en separat deterministisk jämförelse med konstant investering använder samma systemdynamik. Ingen historisk arm bibehåller god miljöintegritet. Värdena är modellenheter.
 
-**Arkitektur 1D** lyckas initialt: investering höjer W, och eftersom E fortfarande är frisk är produktiviteten hög. Styrenheten "lär sig" att investering är effektiv och fortsätter att driva W mot målet. Under tiden degraderas E tyst eftersom den inte observeras. När E faller sjunker investeringsproduktiviteten (α·E minskar), så mer I behövs för att upprätthålla W, vilket accelererar E:s nedgång. Så småningom utlöser den ackumulerade miljöskulden ett kraftigt fall i W som styrenheten inte kan förstå — dess egna handlingar orsakade kollapsen, men dess värderingsarkitektur gav den ingen kategori i vilken den kunde uppfatta E som en relevant variabel. Banan visar ett klassiskt överskridnings-och-kollapsmönster.
+| Mått | Välståndsregel | Miljömedveten regel |
+|---|---:|---:|
+| Högsta $W$ | 988,11 | 798,93 |
+| Första $E<30$ | 4 | 6 |
+| Första $E=0$ | 6 | 8 |
+| Tillstånd med $E<30$ | 496/500 | 494/500 |
+| Medel-$W$, sista 50 | ungefär 0 | 37,29 |
+| Medel-$E$, sista 50 | 0 | 11,06 |
+| Slutligt $E$ | 0 | 11,12 |
+| Skriptets kollapsmått | 1,00 | 0,79 |
 
-**Arkitektur 2D**, som observerar E, börjar moderera investeringen när E närmar sig farliga nivåer. W växer långsammare men kollapsar aldrig. Systemet når ett stabilt, lägre jämviktstillstånd där båda dimensionerna är balanserade.
+Kollapsmåttet tar medelvärdet av de icke-negativa underskotten i de sista 50 tillståndens medelvälstånd relativt $W^*$ och miljö relativt $E_{\mathrm{base}}$, vartdera dividerat med sin referens. Det är en beskrivande statistik, inte en välfärdsfunktion. Båda reglerna når noll miljöintegritet; den andra återgår aldrig till $E\geq30$. Dess partiella återhämtning till ett degraderat tillstånd är inte kollapsprevention.
 
-### C.5 Relevans för variationsgapet
+Initialinvesteringarna är 34,49 och 27,48. De första välståndshoppen placerar båda reglerna över målet; båda investerar exakt noll från $t=1$ till och med $t=40$ (välståndsregeln) respektive $t=36$ (den miljömedvetna regeln), långt efter sin första tröskelpassage. Under detta fönster drivs miljöns nedgång av termen $-\eta W_t$, inte av skillnad i aktiv dämpning. Initialinvesteringarna skiljer sig på grund av dämpning och olika brusdragningar; senare investeringsregler spelar roll under återhämtningen. Vid $E=0$ och lågt $W$ investerar den första regeln ungefär 65: investeringsskadan ensam är ungefär 16,25 mot ungefär en enhet regeneration. Utan investering vid detta tillstånd, och med försumbart välstånd, är regenerationen positiv. Den första regeln upprätthåller inlåsningen; hysteres ensam tvingar inte fram den. Den andra regeln begränsar investering vid lågt $E$ och möjliggör partiell återhämtning.
 
-Denna simulering är en direkt instansiering av Goodhart–Ashby-syntesen:
+En diagnostisk negativ efterhandskontroll, inte en optimerad policy eller ett förregistrerat experiment: konstant investering $I_t=0,\!5$ utan observation under samma systemdynamik och initialvillkor ger lägsta $E=41,\!19$ och slutligt $(W;E)\approx(132,\!95;44,\!32)$. Den aktiverar aldrig regenerationsskiftet och överträffar båda historiska armarna i slutligt välstånd och miljö. Direkt miljöobservation är inte nödvändig för just dessa utfall. Dess odiskonterade välståndssumma är 67059,92, men summorna med diskonteringsfaktorerna 0,99 och 0,95 är 13585,06 respektive 2609,69, lägre än för båda historiska reglerna. Dess kumulativa odiskonterade välstånd överstiger regel 1 respektive 2 för första gången vid steg 144 respektive 126. I ytterligare deterministiska punktkontroller undviker konstanta investeringar på 0,3, 0,4 och 0,5 regenerationsskiftet, men 0,55 når noll miljöintegritet. Den framgångsrika jämförelseregeln är alltså känslig för en liten parameterändring; varken generell robusthet eller optimalitet är etablerad.
 
-- Den 1D målfunktionen är en observationskanal med dimensionaliteten **dim(V)=1**. Den projicerar det fulla tillståndsrummet (W, E) på en enda axel.
-- Den exkluderade dimensionen E är kausalt kopplad till målvariabeln W. Att optimera proxyvariabeln W utan att övervaka E förstör så småningom den korrelation som gjorde W till en bra proxy.
-- Kollapsen följer variationsgapets logik: **G = dim(R) − dim(V) = 2 − 1 = 1 > 0**. Gapet växer när E försämras, och när kopplingen slår tillbaka skapade systemets egen optimeringslogik den kris det inte kunde förutse.
+### C.5 Vad jämförelsen etablerar
 
-Samma mekanism ligger till grund för de misslyckanden på landsnivå som beskrivs i Del V: varje fall är en högre dimensionell version av denna grundläggande loop.
+Den andra regelns punktvisa välstånd överstiger den förstas från $t=80$ till slutet; kumulativt odiskonterat välstånd överstiger det första vid $t=191$. Över alla 500 tillstånd är odiskonterade summor 19822,21 och 31338,49. Med diskonteringsfaktor 0,99 per steg är summorna 16500,83 och 14837,02; med 0,95 är de 9687,74 och 7852,30. De inkluderar initialtillståndet. Rangordningen beror på horisont och utvärdering. Regel 2 är tillåten för en utvärderare med enbart välståndsmål som får samma observationer och handlingsmängd; den är inte evidens för nödvändigheten av ett miljömål.
 
-### C.6 Reproducerbarhet
+Med kända parametrar och brusfria välståndsavläsningar, om $I_t>0$, implicerar välståndsuppdateringen
 
-Python-skriptet som genererar simuleringen och visualiseringen finns tillgängligt i det medföljande repositoriet (se "Simulation Code" i det kompletterande materialet). Skriptet använder standard NumPy och Matplotlib; inga proprietära paket krävs.
+$$E_t=\frac{W_{t+1}-(1-\delta_W)W_t}{\alpha I_t}.$$
 
-**Figur C.1: Värdefunktionskollaps i ett minimalt tvåtillståndssystem**
+Välståndsgolvet förändrar inte denna icke-negativa uppdatering. Med oberoende additiva observationsfel av fast standardavvikelse $\sigma_W$ och fast icke-noll insats är standardavvikelsen för skattningsfelet $\sigma_W\sqrt{1+(1-\delta_W)^2}/(\alpha I_t)$. Eftersom insatsen beror på den brusiga observationen är formeln för fast insats en approximation i sluten slinga; vid nollinvestering är direkt inversion inte tillgänglig. Ingen historisk regel implementerar skattaren. Avsaknad av direkt observation etablerar inte avsaknad av dynamisk information.
 
-![Figur C.1](/working-papers/images/the-variety-gap/appendix-c-simulation.png)
+### C.6 Reproducerbarhet och räckvidd
 
-1D-styrenheten (som endast observerar W) lyckas initialt och driver välståndet till ~1000 genom aggressiv investering. Detta utarmar miljöintegriteten E till nära noll. När E väl kollapsar försvinner produktiviteten (α·E·I) och systemet går in i en terminal nedgång — W faller till noll trots fortsatt styrinsats. Styrenheten kan inte uppfatta den miljöförstöring som orsakade dess eget misslyckande; den exkluderade dimensionen återvänder som oförklarlig kollaps.
+Det återfunna skriptet arkiveras oförändrat. Nya körningar utan grafiskt gränssnitt reproducerar rapporterade topp- och slutnivåer. Historisk commit, ursprunglig PNG och ursprungliga banarrayer återfanns inte, så detta är inte strikt historisk figurreproduktion. Den reviderade figuren använder arkiverade arrayer från den nya körningen; genereringskod och diagnostiska beräkningar medföljer korrigeringen. Ingen ny faktoriell optimeringsexperimentserie genomfördes. Jämförelsen med konstant investering är en avgränsad efterhandskontroll. Slutsatserna begränsas till dessa regler, parametrar och utvärderingskonventioner.
 
-2D-styrenheten (som observerar både W och E) modererar investeringen när E sjunker och upprätthåller båda variablerna på degraderade men stabila nivåer (W≈37, E≈11). Systemet når aldrig 1D-målet på W=120, men det överlever.
-
-Fasporträttet (nederst till vänster) visar banorna i tillståndsrummet: 1D spiralerar mot systemdöd i origo, medan 2D hittar en låg-jämviktsattraktor. Det kritiska fyndet (överst till höger): även mätt med 1D-målfunktionen (endast W) presterar 2D-arkitekturen bättre efter t≈100. BNP-systemet optimerar bort sin egen förmåga att generera BNP.
-
-Detta är Goodhart–Ashby-syntesen i sin enklaste form: en värderingsarkitektur med dim(V)=1 kan inte upprätthålla stabilitet i ett system med dim(R)=2 när dimensionerna är kausalt kopplade. Hysteresmekanismen (degraderade ekosystem regenererar med 20% av normal hastighet) återspeglar den ekologiska verkligheten och säkerställer att differentieringen är permanent, inte övergående.
+---

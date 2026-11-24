@@ -70,9 +70,10 @@ export const workingpapersTranslations = {
      seriesLabel: 'Paper V · Governance as Engineering',
    },
    theVarietyGap: {
-       title: 'The Variety Gap: What We Don\'t Optimize For, We Lose the Ability to See',
-       description:
-           'Objective functions are observation architectures. Low-dimensional value functions produce the same structural collapse as low-dimensional governance channels. The variety gap — the mismatch between the dimensionality of reality and the value architecture — is introduced as a unifying diagnostic for systemic blindness. Paper VI in the Governance as Engineering series.'
+     title: 'The Variety Gap',
+     subtitle: 'Objectives, observation architectures, and the limits of systemic perception',
+     description:
+       'Develops a task-relative diagnostic framework distinguishing five forms of systemic inadequacy: evaluation, observation, causal modelling, decision-making, and actuation. Establishes a scoped linear regulation condition and examines how policy-dependent exposure can shape available evidence. A corrected wealth–environment simulation illustrates policy-maintained lock-in, partial recovery, and the limits of attributing failure to objective dimensionality alone. Paper VI in the Governance as Engineering series.'
    },
    selfVarietyGap: {
        title: 'The Variety Gap in the Self: What a Person Optimizes For Determines What They Can Perceive',
@@ -370,9 +371,10 @@ export const workingpapersTranslations = {
      seriesLabel: 'Rapport V · Styrning som ingenjörskonst',
    },
    theVarietyGap: {
-       title: 'Variationsgapet: Vad vi inte optimerar för, förlorar vi förmågan att se',
-       description:
-           'Målfunktioner är observationsarkitekturer. Lågdimensionella värdefunktioner producerar samma strukturella kollaps som lågdimensionella styrkanaler. Variationsgapet — skillnaden mellan verklighetens dimensionalitet och värdearkitekturens — introduceras som ett enhetligt diagnostiskt verktyg för systemisk blindhet. Rapport VI i serien Styrning som ingenjörskonst.'
+     title: 'Variationsgapet',
+     subtitle: 'Mål, observationsarkitekturer och den systemiska perceptionens gränser',
+     description:
+       'Utvecklar ett uppgiftsrelaterat diagnostiskt ramverk som skiljer mellan fem former av systemisk otillräcklighet: utvärdering, observation, kausal modellering, beslutsfattande och aktivering. Etablerar ett avgränsat linjärt regleringsvillkor och undersöker hur policyberoende exponering kan forma tillgänglig evidens. En korrigerad simulering av samspelet mellan välstånd och miljö illustrerar policyupprätthållen inlåsning, partiell återhämtning och begränsningarna i att tillskriva misslyckanden enbart målfunktionens dimensionalitet. Rapport VI i serien Styrning som ingenjörskonst.'
    },
    selfVarietyGap: {
        title: 'Variationsgapet i självet: Vad en person optimerar för avgör vad de kan uppfatta',

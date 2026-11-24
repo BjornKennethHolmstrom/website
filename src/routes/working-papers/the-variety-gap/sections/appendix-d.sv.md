@@ -1,19 +1,21 @@
-## Appendix D: Tabell för uppskattning av variationsgapet i landrapporterna
+## Appendix D: Diagnostiska hypoteser från landsrapporterna
 
-Följande tabell tillhandahåller illustrativa uppskattningar av variationsgapet för de styrningsarkitekturer som analyserats i Landrapportserien. Värdena för **dim(V)**, **dim(R)** och **G** är heuristiska och avsedda att göra ramverket gripbart, inte att tjäna som precisa empiriska mätningar. Kolumnen **G_crit-status** anger om det uppskattade gapet överskrider den kritiska tröskel vid vilken observerbarheten kollapsar, såsom diskuterats i Del III och Appendix B. **Kollapsmoden** beskriver det karaktäristiska sätt på vilket de exkluderade dimensionerna återinträder som systemiska kriser.
+Den tidigare tabellen tilldelade heuristiska målantal, gapvärden och kritiska tröskelstatusar till elva system. Dessa tal och statusar dras tillbaka som aktuella påståenden: de mättes inte och den föreslagna gemensamma tröskeln är inte etablerad. De bevaras i den arkiverade originalutgåvan. Denna ersättning bevarar falltäckningen och det diagnostiska vokabuläret, inte de numeriska rangordningarna. Detta är hypoteser utifrån tidigare rapporter, inte uppdaterade landsbedömningar.
 
-| Land / System | Kärnvärde som optimeras | Ungef. dim(V) | Viktigaste exkluderade dim(R) | Uppskattad dim(R) − dim(G) | G | G_crit-status | Kollapsmod |
-|------------------|------------------------------|----------------|-----------------------------------------------|---------------------------|------|---------------|------------------------------------------------|
-| Japan | Stabilitet / Kontinuitet | 1 | Anpassningsförmåga, förnyelse, demografisk dynamik | ≥ 3 | ≥ 2 | > G_crit | Gradvis systemisk frysning (demografisk stagnation, zombieföretag, värdig nedgång) |
-| Ryssland | Kontroll / Regimöverlevnad | 1 | Sanning, distribuerad intelligens, legitimitet | ≥ 4 | ≥ 3 | ≫ G_crit | Strategisk blindhet → plötsliga chocker (Kontroll–Blindhet–Chock‑slinga) |
-| Storbritannien | Centraliserad leverans / Kontrollsken | 1 | Lokal kontext, relationell tillit, stressfördelningsinfrastruktur | ≥ 4 | ≥ 3 | > G_crit | Implementeringsmisslyckande, demokratisk frånkoppling (Centralisera–Misslyckas–Centralisera) |
-| Brasilien | Koalitionsöverlevnad / Styrbarhet | 1 | Medborgarpreferenser, demokratisk ansvarsskyldighet, rumslig rättvisa | ≥ 4 | ≥ 3 | > G_crit | Genombrott–Infångningscykler, ackumuleringsunderskott |
-| Europeiska unionen | Medlemsstatskonsensus | 1 | Hastighet, rumslig koherens, temporal samstämmighet | ≥ 3 | ≥ 2 | > G_crit | Polykris, Förhandlings–Utspädningsspiral |
-| USA | Integration / Federal koordination | ~2 (federalism distribuerar viss variation, men integration saknas) | Systemövergripande koherens, lärande över delstatsgränser, distributiv rättvisa | ≥ 3 | ≥ 1 | > G_crit | Eskalera–Blockera–Kringgå–Delegitimera-spiral |
-| Tyskland | Verkställighet / Policyimplementering | ~1 (ingenjörsmässig rigor fokuserar på implementeringskvalitet) | Strategisk agilitet, riskkapital, digital transformation | ≥ 3 | ≥ 2 | > G_crit | Förlamade utgifter, implementeringsgap |
-| Frankrike | Integration / Social sammanhållning | ~1 (Jakobinsk enhetlighet) | Reformhållbarhet, perifer integration, återkoppling från implementering | ≥ 3 | ≥ 2 | > G_crit | Reform–explosion–reträtt-cykel |
-| Sverige | Återkoppling / Meningsskapande | ~1 (konsensus, saklighet) | Snabb avkänning, läglig respons, integration över silogränser | ≥ 2 | ≥ 1 | Närmar sig G_crit | Driftslinga (signalundertryckning, fördröjd anpassning) |
-| Finland | Framsynthet / Anticipatorisk kapacitet | ~2 (stark framsynthet, men kapacitetsbegränsad) | Transformationshastighet, paradigmersättningskapacitet | ≥ 3 | ≥ 1 | Närmar sig G_crit | Kapacitetsbegränsning (kan se framtiden, kan inte nå den i tid) |
-| Indien | Synkronisering / Flerskalig koordination | ~1 (centralism och informell anpassning) | Formell institutionell kapacitet, rumslig och temporal synkronisering | ≥ 4 | ≥ 3 | > G_crit | Språng–eftersläpningscykler, informell kompensation |
+| Land/system | Tidigare rapports betoning | Möjlig diagnostisk fråga |
+|---|---|---|
+| Japan | Stabilitet/kontinuitet | Begränsas förnyelse trots tillgängliga demografiska signaler? |
+| Ryssland | Kontroll/regimöverlevnad | Undertrycks oberoende evidens, används den inte eller är den otillgänglig? |
+| Storbritannien | Centraliserad leverans | Når lokal evidens besluten, och kan lokala aktörer genomföra responser? |
+| Brasilien | Koalitionsöverlevnad | Observeras preferenser men åsidosätts i förhandlingar, eller förmedlas de inte? |
+| EU | Medlemsstatskonsensus | Uppstår samordningsfördröjning genom information, rättslig kompetens eller veton? |
+| USA | Federal integration | Misslyckas samordning och lärande mellan delstater trots tillgänglig information? |
+| Tyskland | Genomförande | Begränsas genomförandet av kapacitet, finansiering, information eller strategiskt val? |
+| Frankrike | Integration | Förändrar reformåterkoppling och perifert deltagande genomförandet? |
+| Sverige | Återkoppling/meningsskapande | Beror fördröjning på observation, bearbetning, incitament eller responsbegränsningar? |
+| Finland | Framsyn | Kan förutsedda förändringar hanteras inom erforderlig tid och resurser? |
+| Indien | Synkronisering | Var skiljer sig information över skalor, formell kapacitet och timing? |
 
-**Not om uppskattning:** Värdena i denna tabell är inte härledda från empirisk mätning. De representerar plausibla storleksordningsbedömningar som är förenliga med de detaljerade landrapporterna. Syftet är att illustrera variationsgapets logik över olika styrningsarkitekturer och att motivera den empiriska forskning som skulle ersätta dessa heuristiker med uppmätta kvantiteter. Artikelns centrala påstående — att lågdimensionella värderingsarkitekturer tillåter variationsgapet att vidgas förbi den kritiska tröskeln — är inte beroende av precisionen i dessa specifika siffror. Det är beroende av den strukturella relation de illustrerar.
+Identifiera för varje rad en specifik tjänste- eller beslutsväg, dess mål och begränsningar, konkurrerande mekanismer och oberoende uppmätta utfall. En kris i originalrapporten får inte både definiera prediktorn och validera den. Inget numeriskt gap, rang eller tröskelpassage följer av denna tabell. Fullständig källgranskning av länderna ligger utanför korrigeringen.
+
+---

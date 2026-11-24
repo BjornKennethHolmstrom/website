@@ -171,7 +171,7 @@ export const coreTranslations = {
     },
     geSeriesPaperVI: {
       title: 'VI: The Variety Gap',
-      desc:  'Shows that objective functions are observation architectures — low‑dimensional value functions blind systems to the dimensions that eventually destroy them.'
+      desc: 'Distinguishes what systems value, perceive, understand, decide, and can change. Examines how optimization priorities and policy choices can shape available evidence, and why adequate perception depends on the task rather than dimensionality alone.'
     },
     geSeriesPaperVII: {
       title: 'VII: The Architecture of Governance Failure',
@@ -227,7 +227,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXX: {
       title: 'XX: Three Laws from One Bound',
-      desc:  'Derives Ashby\'s law, Goodhart\'s law, and certification cost from a single premise: a finite controller partitioning its world. Goodhart is sharpened into a result governed by the reachable intervention set.',
+      desc: 'Examines three faces of bounded representation: requisite variety, proxy–target ordering, and the cost of certification. Consolidates their mathematical foundations, distinguishes their assumptions, and reports the unsuccessful search for a stronger conservation law.'
     },
     geSeriesPaperXXI: {
       title: 'XXI: When to Stop Learning, and When to Stop',
@@ -641,7 +641,7 @@ export const coreTranslations = {
     },
     geSeriesPaperVI: {
       title: 'VI: Variationsgapet',
-      desc:  'Visar att målfunktioner är observationsarkitekturer — lågdimensionella värdefunktioner gör system blinda för de dimensioner som till slut förgör dem.'
+      desc: 'Skiljer mellan vad system värderar, uppfattar, förstår, beslutar och kan förändra. Undersöker hur optimeringsprioriteringar och policyval kan forma tillgänglig evidens, och varför tillräcklig perception beror på uppgiften snarare än enbart dimensionaliteten.'
     },
     geSeriesPaperVII: {
       title: 'VII: Styrningens misslyckandes arkitektur',
@@ -697,7 +697,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXX: {
       title: 'XX: Tre lagar från en gräns',
-      desc:  'Härleder Ashbys lag, Goodharts lag och certifieringskostnaden från en enda premiss: en ändlig kontrollant som partitionerar sin värld. Goodhart skärps till ett resultat styrt av den nåbara interventionsmängden.',
+      desc: 'Undersöker tre sidor av begränsad representation: nödvändig variation, ordningen mellan proxy och mål samt certifieringskostnad. Konsoliderar deras matematiska grunder, skiljer mellan deras antaganden och redovisar det misslyckade sökandet efter en starkare konserveringslag.'
     },
     geSeriesPaperXXI: {
       title: 'XXI: När man ska sluta lära sig, och när man ska sluta',

@@ -1,93 +1,77 @@
-## Appendix C: Simulation Architecture for Value‑Function Collapse
-
-This appendix defines a minimal dynamical model that makes the Goodhart‑Ashby synthesis and the variety gap concretely visible. The simulation is deliberately simple so that the structural mechanism remains transparent.
+## Appendix C: Historical Investment-Policy Simulation — Corrected Specification
 
 ### C.1 System Description
 
-Consider a society with two coupled state variables:
+This appendix documents the recovered `paper_vi_value_function_collapse.py` supplied by the author. The original printed equations did not match the implementation. The following specification is the code rerun in November 2026, not a reconstructed or fitted model.
 
-- **W(t)** : economic output (wealth), the *observed dimension*.
-- **E(t)** : environmental integrity (ecosystem health), the *excluded dimension*.
+Let $W_t$ denote modeled wealth, $E_t$ modeled environmental integrity, $I_t$ investment. Define $m_t=\min_{0\leq s\leq t}E_s$, with regeneration multiplier $q_t=1$ if $m_t>40$, and $q_t=0.2$ otherwise. Write $E_{\mathrm{base}}=100$ for the code's `E0`, distinct from the initial state $E_{t=0}=90$. The updates are
 
-The system evolves in discrete time steps according to:
+$$W_{t+1}=\max\{0,(1-\delta_W)W_t+\alpha E_t I_t\},$$
 
-W(t+1) = W(t) + α · E(t) · I(t) − δ_W · W(t)
-E(t+1) = E(t) − β · I(t) + γ · (E₀ − E(t)) + η · W(t)
+$$E_{t+1}=\max\{0,E_t-\beta I_t+\gamma q_t(E_{\mathrm{base}}-E_t)-\eta W_t\}.$$
 
-where:
+Damage is contemporaneous and negative. Hysteresis is permanent in the modeled history; the floors are explicit. These are synthetic dynamics, not calibrated ecological or economic laws.
 
-- **I(t)** is the control input (economic investment) chosen by the policy system.
-- **α** translates current environmental quality into the productivity of investment. As E degrades, the same I yields less W in the future.
-- **δ_W** is the natural depreciation of wealth.
-- **β** is the environmental cost per unit of investment.
-- **γ** is the natural regeneration rate of the environment toward its baseline E₀.
-- **η** captures a delayed negative feedback: high past wealth (which implies past investment) eventually erodes the environment further (e.g., through accumulated pollution, resource depletion).
+### C.2 Bundled Controllers
 
-Crucially, the coupling works in both directions: **E** supports **W**, but the pursuit of **W** degrades **E**, and a degraded **E** eventually reduces future **W**.
+Let $W_{\mathrm{obs}}=W_t+\epsilon_W$ and, for the environment-aware rule only, $E_{\mathrm{obs}}=E_t+\epsilon_E$. Noise is Gaussian. The fixed rules are
 
-### C.2 Value Architectures (Controllers)
+$$I_1=\max\{0,I_0+K(W^*-W_{\mathrm{obs}})\},$$
 
-We compare two governance architectures that differ only in their *value function dimensionality*, not in their competence.
+$$I_2=\max\{0,[I_0+K(W^*-W_{\mathrm{obs}})](E_{\mathrm{obs}}/E_{\mathrm{base}})^2\}.$$
 
-**Architecture 1D (GDP‑only)**
-- Objective function: **J₁ = W(t)**.
-- The controller observes **W(t)** (with some noise) and does not observe **E(t)**. It believes maximising W is always good.
-- Control law: I(t) = I₀ + K · (W_target − W_obs(t)), where I₀ is a baseline and K is a gain. The controller invests more when W is below the desired target, trying to push W upward.
+These are not solutions to an optimization problem. The earlier labels $J_1=W$ and $J_2=W+\lambda E$ are nominal evaluations; the declared $\lambda$ is unused. The comparison changes both sensing and policy, with no learning or model revision. Damping multiplies the whole expression and is quadratic, not sigmoidal. In this run it restrains investment at low $E$; it is not a general safety guarantee.
 
-**Architecture 2D (Wellbeing‑aware)**
-- Objective function: **J₂ = W(t) + λ · E(t)** (with λ > 0).
-- The controller observes both **W(t)** and **E(t)**. It recognises that E has value and that degrading E harms future W.
-- Control law: I(t) is chosen to keep both variables within a desired region. Concretely, the investment is damped when E falls below a threshold: I(t) = I₀ + K · (W_target − W_obs(t)) · f(E), where f(E) is a sigmoid that reduces investment as E declines, preventing the damaging feedback loop from being triggered.
+### C.3 Parameterisation and Run
 
-Both controllers have access to the same financial resources; the only difference is the dimensionality of their value architecture.
+| Parameter | Implemented value |
+|---|---:|
+| Recorded states / transitions | 500 / 499 |
+| Initial wealth / environment | 60 / 90 |
+| $\alpha,\delta_W,\beta$ | 0.3, 0.05, 0.25 |
+| $\gamma,\eta$ | 0.05, 0.02 |
+| $E_{\mathrm{base}},W^*,I_0,K$ | 100, 120, 5, 0.5 |
+| Observation noise SDs $\sigma_W,\sigma_E$ | 1, 0.5 |
+| Declared unused $\lambda$ | 1.5 |
+| Seed | 2024 |
 
-### C.3 Parameterisation
+One NumPy generator is shared sequentially, first by rule 1, then by rule 2; draws are not matched across arms. Noise enters observations, not state updates. Investment and states have lower floors of zero and no upper caps. The final investment entry is an unexecuted zero placeholder. The collapse marker is first $E<30$, distinct from the permanent regeneration switch at $E\leq40$.
 
-| Parameter | Value | Meaning |
-|-----------|-------|---------|
-| α | 0.3 | Investment productivity per unit of E |
-| δ_W | 0.05 | Wealth depreciation |
-| β | 0.25 | Environmental cost per unit of I |
-| γ | 0.1 | Environmental regeneration rate |
-| η | 0.02 | Delayed damage from past wealth |
-| E₀ | 100 | Baseline environmental integrity |
-| W_target | 120 | Desired wealth level |
-| I₀ | 5 | Baseline investment |
-| K | 2.0 | Gain (identical for both architectures) |
-| λ | 1.5 | Weight of environment in 2D objective |
-| Noise σ_W, σ_E | 1.0, 0.5 | Observation noise (1D only observes W) |
-
-Initial conditions: **W(0)=60, E(0)=90**.
-
-### C.4 Expected Behaviour
-
-**Architecture 1D** initially succeeds: investment raises W, and because E is still healthy, productivity is high. The controller “learns” that investment is effective and continues to push W toward the target. Meanwhile, E degrades silently because it is not observed. As E falls, the productivity of investment drops (α·E decreases), so more I is needed to maintain W, which accelerates E’s decline. Eventually, the accumulated environmental debt triggers a sharp fall in W that the controller cannot understand—its own actions caused the collapse, but its value architecture gave it no category in which to perceive E as a relevant variable. The trajectory shows a classic overshoot‑and‑collapse pattern.
-
-**Architecture 2D**, observing E, begins to moderate investment as E approaches dangerous levels. W grows more slowly but never collapses. The system reaches a stable, lower steady state where both dimensions are balanced.
-
-### C.5 Relevance to the Variety Gap
-
-This simulation is a direct instantiation of the Goodhart‑Ashby synthesis:
-
-- The 1D objective function is an observation channel of dimensionality **dim(V)=1**. It projects the full state space (W, E) onto a single axis.
-- The excluded dimension E is causally coupled to the target W. Optimizing the proxy W without monitoring E eventually destroys the correlation that made W a good proxy.
-- The collapse follows the variety gap logic: **G = dim(R) − dim(V) = 2 − 1 = 1 > 0**. The gap grows as E deteriorates, and when the coupling feeds back, the system’s own optimization logic created the crisis it could not foresee.
-
-The same mechanism underlies the country‑level failures described in Part V: each case is a higher‑dimensional version of this basic loop.
-
-### C.6 Reproducibility
-
-The Python script that generates the simulation and the visualisation is available in the companion repository (see “Simulation Code” in the supplementary materials). The script uses standard NumPy and Matplotlib; no proprietary packages are required.
-
-**Figure C.1: Value-function collapse in a minimal two-state system**
+### C.4 Reproduced Outcomes and Diagnostics
 
 ![Figure C.1](/working-papers/images/the-variety-gap/appendix-c-simulation.png)
 
-The 1D controller (observing only W) initially succeeds, driving wealth to ~1000 by aggressive investment. This depletes environmental integrity E to near-zero. Once E collapses, productivity (α·E·I) vanishes and the system enters terminal decline—W falls to zero despite continued control effort. The controller cannot perceive the environmental degradation that caused its own failure; the excluded dimension returns as inexplicable collapse.
+*Figure C.1.* Replotted fresh-run trajectories of the recovered script; the separate deterministic constant-investment comparator uses the same plant. Neither legacy arm maintains healthy environmental integrity. Values are model units.
 
-The 2D controller (observing both W and E) moderates investment when E declines, maintaining both variables at degraded but stable levels (W≈37, E≈11). The system never reaches the 1D target of W=120, but it survives.
+| Metric | Wealth-only rule | Environment-aware rule |
+|---|---:|---:|
+| Peak $W$ | 988.11 | 798.93 |
+| First $E<30$ | 4 | 6 |
+| First $E=0$ | 6 | 8 |
+| States with $E<30$ | 496/500 | 494/500 |
+| Mean $W$, last 50 | approximately 0 | 37.29 |
+| Mean $E$, last 50 | 0 | 11.06 |
+| Final $E$ | 0 | 11.12 |
+| Script severity score | 1.00 | 0.79 |
 
-The phase portrait (bottom left) shows the trajectories in state space: 1D spirals to system death at the origin, while 2D finds a low-equilibrium attractor. The critical finding (top right): even measured by the 1D objective function (W alone), the 2D architecture outperforms after t≈100. The GDP-only system optimizes away its own ability to generate GDP.
+The severity score averages the nonnegative shortfalls of final-50-state mean wealth relative to $W^*$ and environment relative to $E_{\mathrm{base}}$, each divided by its reference. It is a descriptive statistic, not a welfare function. Both rules reach zero environmental integrity; the second never returns to $E\geq30$. Its partial recovery to a degraded regime is not prevention of collapse.
 
-This is the Goodhart-Ashby synthesis in its simplest form: a value architecture with dim(V)=1 cannot maintain stability in a system with dim(R)=2 when the dimensions are causally coupled. The hysteresis mechanism (degraded ecosystems regenerate at 20% normal rate) reflects ecological reality and ensures the differentiation is permanent, not transient.
+Initial investments are 34.49 and 27.48. The initial wealth jumps put both rules above target; both invest exactly zero at $t=1$ through $t=40$ (wealth-only) and $t=36$ (environment-aware), respectively, well beyond their first threshold crossing. During this window the $-\eta W_t$ term drives environmental decline, not a difference in active damping. Initial investments differ because of damping and different noise draws; later investment rules matter during recovery. At $E=0$ and low $W$, the first rule invests about 65: investment damage alone is about 16.25 against about one unit of regeneration. Without investment at that state, and with negligible wealth, regeneration is positive. The first rule maintains the lock-in; hysteresis alone does not force it. The second rule restrains investment at low $E$ and permits partial recovery.
 
+A post-hoc diagnostic negative control, not an optimized policy or preregistered experiment: constant investment $I_t=0.5$ with no sensing under the same plant and initial conditions gives minimum $E=41.19$ and final $(W,E)\approx(132.95,44.32)$. It never activates the regeneration switch and exceeds both legacy arms in final wealth and environment. Direct environmental sensing is not necessary for these particular outcomes. Its undiscounted wealth sum is 67059.92, but its sums with discounts 0.99 and 0.95 are 13585.06 and 2609.69, respectively, below both legacy rules. Its cumulative undiscounted wealth first exceeds rules 1 and 2 at steps 144 and 126, respectively. In additional deterministic spot checks, constant investments 0.3, 0.4 and 0.5 avoid the regeneration switch, but 0.55 reaches zero environmental integrity. Thus the successful comparator is sensitive to a small parameter change; neither general robustness nor optimality is established.
+
+### C.5 What the Comparison Establishes
+
+Pointwise wealth of rule 2 exceeds rule 1 from $t=80$ through the end; cumulative undiscounted wealth first exceeds it at $t=191$. Across all 500 states undiscounted sums are 19822.21 and 31338.49. With per-step discount 0.99 the sums are 16500.83 and 14837.02; with 0.95 they are 9687.74 and 7852.30. These include the initial state. Ranking depends on horizon and evaluation. Rule 2 is admissible for a wealth-only evaluator granted the same observations and action set; it is not evidence for the necessity of an environmental objective.
+
+Given known parameters and noiseless wealth readings, if $I_t>0$ the wealth update implies
+
+$$E_t=\frac{W_{t+1}-(1-\delta_W)W_t}{\alpha I_t}.$$
+
+The wealth floor does not change this nonnegative update. With independent additive observation errors of fixed SD $\sigma_W$ and fixed nonzero input, the plug-in error SD is $\sigma_W\sqrt{1+(1-\delta_W)^2}/(\alpha I_t)$. Because input depends on the noisy observation, the fixed-input formula is an approximation in closed loop; at zero investment direct inversion is unavailable. Neither legacy rule implements this estimator. Lack of direct sensing does not establish lack of dynamic information.
+
+### C.6 Reproducibility and Scope
+
+The recovered script is archived unchanged. Fresh headless runs reproduce the reported peak and tail levels. The historical commit, original PNG and original trajectory arrays were not recovered, so this is not strict historical figure reproduction. The revised figure uses archived fresh-run arrays; generating code and diagnostic computations are supplied with the correction. No new factorial optimization experiment was undertaken. The constant-investment comparison is a bounded post-hoc check. Conclusions are restricted to these rules, parameters and scoring conventions.
+
+---
