@@ -97,7 +97,7 @@
     },
     {
       id: 'appendix-e',
-      title: 'Appendix E: About the Author & Method',
+      title: 'Appendix E: About this report and how it was made',
       comp: AppendixEEn,
     },
   ];
@@ -125,11 +125,11 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const metadata = {
-    title: "The Integration Deficit: Why Universities Cannot See the Problems They Are Supposed to Solve",
+    title: "The Integration Deficit: Evidence, Plurality and Coordination in University Governance",
     subtitle:
-      'A cybernetic diagnosis of the modern university — and how to build institutions that can assemble knowledge across the boundaries that define them',
+      'A task-relative diagnosis of university integration — and candidate designs for preserving depth while enabling exchange',
     description:
-      'Universities possess extraordinary distributed intelligence and cannot assemble it. This report diagnoses an Integration Deficit produced by departmental silos, disciplinary incentive architectures, and a Performative Reform Trap that signals commitment to interdisciplinarity while preventing it.',
+      'English dependency-correction candidate v0.2 (publication HOLD). Examines conditional hypotheses about knowledge integration, disciplinary incentives and institutional coordination; empirical claims remain unverified.',
   };
 
   const ui = {
@@ -166,7 +166,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Integration Deficit: Why Universities Cannot See the Problems They Are Supposed to Solve. Organizational Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Integration Deficit: Evidence, Plurality and Coordination in University Governance. Organizational Report. AI-generated dependency-correction candidate v0.2; not peer-reviewed; publication HOLD.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -205,7 +205,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Integration Deficit: Why Universities Cannot See the Problems They Are Supposed to Solve. Organizational Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Integration Deficit: Evidence, Plurality and Coordination in University Governance. Organizational Report. AI-generated dependency-correction candidate v0.2; not peer-reviewed; publication HOLD.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}

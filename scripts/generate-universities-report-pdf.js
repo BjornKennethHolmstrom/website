@@ -30,8 +30,8 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const meta = {
     title: "The Integration Deficit",
-    subtitle: "Why Universities Cannot See the Problems They Are Supposed to Solve",
-    description: "Universities possess extraordinary distributed intelligence and cannot assemble it. This report diagnoses an Integration Deficit produced by departmental silos, disciplinary incentive architectures, and a Performative Reform Trap that signals commitment to interdisciplinarity while preventing it.",
+    subtitle: "Evidence, Plurality and Coordination in University Governance",
+    description: "English dependency-correction candidate v0.2 (publication HOLD). Examines conditional hypotheses about knowledge integration, disciplinary incentives and institutional coordination; empirical claims remain unverified.",
     author: "Björn Kenneth Holmström",
     date: "May 2026",
     url: "https://bjornkennethholmstrom.org/reports/universities-integration-deficit",
@@ -52,7 +52,7 @@ const sections = [
     { file: '07-appendix-b',                    title: 'Appendix B: International Analogues & Precedents',                            isAppendix: true  },
     { file: '07-appendix-c',                    title: 'Appendix C: The Governance as Engineering Connection',                         isAppendix: true  },
     { file: '07-appendix-d',                    title: 'Appendix D: Anticipated Objections',                                         isAppendix: true  },
-    { file: '07-appendix-e',                    title: 'Appendix E: About the Author & Method',                                      isAppendix: true  },
+    { file: '07-appendix-e',                    title: 'Appendix E: About this report and how it was made',                                      isAppendix: true  },
 ];
 
 // ── CSS (identical to other reports) ─────────────────────────────────────────
