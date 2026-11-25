@@ -4,7 +4,7 @@
 
 ### 4.1 The Legitimacy Lock Defined
 
-Every governance architecture develops an immune system: a set of institutions, incentives and norms that protect the existing order from challenge. In Germany the series found bureaucratic inertia; in Russia, the deliberate destruction of feedback channels; in the United States, a veto industry that profits from gridlock; in Japan, a Stability Bias woven through party, bureaucracy and corporate culture. In most of these cases the immune system can be traced, at least in part, to interests that benefit from the status quo and have the power to defend it.
+Institutional resistance is a candidate mechanism, not an inevitable immune system. Earlier reports proposed bureaucratic inertia in Germany, feedback suppression in Russia, veto incentives in the United States and Stability Bias in Japan. These are historical interpretive comparisons, not independently confirmed facts; legitimate safeguards and opposition must be distinguished from obstruction.
 
 Korea's is different in one important respect. If the Tournament Trap were sustained only by vested interests, its reform problem would be conventional: identify who benefits, change the incentives, compensate the losers where that is justified, and proceed. Vested interests exist, and Section 4.6 names them. But the architecture is protected by something more unusual as well. At least part of it is defended by the very public that bears its costs, and it is defended in the name of fairness.
 
@@ -36,15 +36,15 @@ Koreans do not unanimously prefer exams, and this report does not claim they do.
 
 The Legitimacy Lock exposes a genuine tension inside the Governance as Engineering framework, and the tension is worth stating precisely because it changes what reform should aim for.
 
-Paper VI treats an objective function as an observation architecture. A system that compresses many relevant dimensions onto a few narrow measures becomes blind to whatever those measures cannot represent. Read alone, Paper VI prescribes an obvious remedy for Korea: raise the effective dimensionality of allocation. Observe more.
+Corrected Paper VI separates an objective from the observation architecture. A narrow selection criterion can omit consequential outcomes without making them unobservable; even an informative signal does not confer authority or capacity to respond. Adding criteria is therefore not itself a remedy. The relevant question is whether the revised selection rule and available information improve specified outcomes under feasible actions and rights constraints.
 
-Paper XIII adds a constraint. It treats legitimacy operationally, as a property of the control loop rather than a moral ornament on it. The effectiveness of governance depends partly on whether people regard institutional signals and procedures as credible enough to comply with them and report into them honestly. Legitimacy behaves like a gain parameter: when it falls, the same institutional machinery achieves less.
+Paper XIII historically models legitimacy as operational gain. Its derivation has not been audited here. Procedural credibility, willingness to comply and reporting behaviour are possible mechanisms; they are not a single measured multiplier and cannot substitute for lawful authority or rights.
 
-Put the two papers together and a higher-dimensional architecture is no longer automatically a higher-capacity one. If the added dimensions are discretionary, opaque, corruptible, inaccessible to outsiders or systematically favourable to families with more resources, the system gains information while losing legitimacy, and the net effect on its capacity to govern allocation can be negative. The design problem is therefore not a choice between low-dimensional and high-dimensional selection. It is:
+A richer selector may add information, change incentives or affect perceived fairness; none of these effects follows from the number of criteria. The trade-off between predictive usefulness, auditability, access and discretion needs independent evaluation. The design question is:
 
-> **How can useful dimensionality be increased without increasing gameable discretion?**
+> **How can task-relevant evidence and fair selection be improved without increasing gameable discretion?**
 
-The problem is sharpest where stakes are highest, and here the Legitimacy Lock connects back to consequence coupling. The more a university place determines later opportunity, the more rationally families invest in mastering whatever signals the selector accepts—and the more dimensions a selector has, the more surfaces there are to master. Increasing dimensionality in a high-stakes tournament can simply create more dimensions to game. This is why the Tournament Trap cannot be solved by improving the tournament. Reducing the stakes, through the supply, gradient, coupling and reversibility levers of Section 3, is what makes richer selection affordable in legitimacy terms. The order of operations matters: lower what winning buys, and the case for judging contestants more fully becomes far easier to make.
+High stakes may make families invest in mastering the signals a selector accepts. More criteria may create more opportunities for strategic behaviour, but may also improve selection; the balance is empirical. Lowering what winning buys through supply, gradient, coupling and reversibility reforms is one proposed way to make alternative selection more acceptable. Compare that sequence with credible alternatives, including procedural reform alone.
 
 ---
 
@@ -60,7 +60,7 @@ They are *legible*. A change to the exam is something every family understands i
 
 And they are *procedurally safe*. Because they operate on the ranking rather than on the rewards, discriminator reforms leave the relative value of existing credentials, jobs and assets largely intact. They rarely produce identifiable losers. Structural reforms almost always do.
 
-None of this makes procedural reform pointless. It means its expected effect should be judged against what remains unchanged beneath it. It also suggests one way the Tournament Trap may contribute to the pattern Paper VIII observed: a declining ratio of structural to symbolic reform in a state whose capacity to act is not in doubt. When the levers within reach are the ones that change least, a highly responsive government can produce a great deal of reform while the architecture it is reforming stays recognisably the same. Whether this accounts for Paper VIII's finding would require a systematic coding of Korea's reform portfolio. It is offered here as a candidate mechanism, not a demonstrated one.
+Procedural reform is not pointless. Its effect should be evaluated against what changes and what remains unchanged. The former Paper VIII claim of a declining structural-to-symbolic reform ratio is withdrawn as a premise. Systematic coding should first test whether such a decline occurred, then examine whether discriminator-centred reforms are associated with persistent opportunity constraints. Changes in policy mix, implementation and outcomes should be coded separately.
 
 ---
 
@@ -110,19 +110,19 @@ This gives Korea's reform problem a distinctive shape. The architecture persists
 
 ### 4.8 The Narrative Strategy
 
-How reform is framed will determine whether it triggers the immune system or passes beneath it. Five principles follow from the analysis.
+Reform framing may affect acceptance. Culturally legible communication is legitimate only when material objectives, costs, risks and changes of authority are disclosed. It must not evade scrutiny or treat legitimate opposition as pathology. Five candidate communication principles follow.
 
 **Frame reform as an extension of fairness, not a retreat from it.** Any proposal presented as "reducing competition" or "easing pressure on students" will be heard as lowering standards or opening a backdoor for privilege. The case should be made in the language of *gongjeong* itself: the fairest system is not merely one in which a single race is run cleanly, but one in which there is more than one fair route to a good life, and in which losing at eighteen does not decide the rest.
 
 **Do not attack the winners.** The elite universities, the professions and the families who invested under the existing rules did what the architecture asked of them. Reform that singles them out converts a structural problem into a moral contest and unites every stakeholder in defence. The objective is not to make the top less excellent, but to make it less exclusive as a gateway to everything else.
 
-**Lead with Korean evidence.** The strongest arguments for structural reform are Korea's own: the 1995 capacity deregulation that reduced tutoring at scale, the local-talent hiring rule that narrowed the regional wage gap. These are not imported theories. They are demonstrations, on Korean ground, that changing what winning buys changes behaviour.
+**Lead with Korean evidence.** The cited 1995 capacity deregulation and local-talent hiring rule are starting points for verification of whether changing what winning buys changes behaviour. Verify their effects, comparators and alternative explanations before relying on them as demonstrations.
 
 **Protect expectations during transition.** Because a rule changed after the race is itself a fairness violation, reforms to selection should be announced well ahead of the cohorts they affect, phased, and designed so that families who invested under the existing rules are not retrospectively penalised. Structural reforms to supply, gradients and coupling carry less of this risk, which is one more reason to lead with them.
 
 **Present the transition as the next stage of development.** Korea's national story is one of deliberate, collective ascent. The tournament was an instrument of that ascent, and the case for changing it should be framed not as a repudiation but as the same developmental ambition applied one level higher: from mobilising a nation through scarce gates to building enough gates that its capability no longer has to crowd through them.
 
-The immune system cannot be defeated by argument alone. But it can be reassured, and much of it can be recruited. Most of the people who defend the tournament do so because they cannot see a fair alternative. The task of the transition is to show them one.
+Opposition may reflect fairness concerns, distributive interests, practical difficulties or legitimate safeguards; motives should not be assumed. A transparent transition should make alternatives and their trade-offs open to scrutiny, respond to objections and respect the possibility that a proposal is rejected.
 
 ---
 

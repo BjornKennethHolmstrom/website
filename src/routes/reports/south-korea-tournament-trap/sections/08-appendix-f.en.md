@@ -30,7 +30,7 @@ Whatever the weight of these interpretations, the case illustrates three structu
 
 ### F.5 The Prospective Test
 
-The regional-doctor track is a natural experiment in whether conditioned supply becomes effective supply. The report registers the prediction in Section 6.5. If applications, entry scores, specialty choices and subsequent careers on the regional track converge with those on the unconditioned track, Korea will have expanded effective supply in its most coveted profession. If a persistent gap opens, the reform will have created a new tier within the tournament. The first cohorts enter in 2027; the answer will emerge over the following decade.
+The September 2026 edition proposed the regional-doctor track as a prospective test of effective supply (Section 6.5). It is not an independently registered prediction or a verified natural experiment; participation and track assignment may be selective. The original comparison of applications, entry scores, specialty choices and later careers is retained in §6.5. Before evaluation verify the schedule and rules, specify comparators and account for selection, training capacity and service obligations. Convergence or divergence alone cannot identify a causal effect.
 
 ---
 

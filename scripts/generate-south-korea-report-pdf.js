@@ -45,9 +45,9 @@ const metadata = {
 		title: "South Korea: The Tournament Trap",
 		subtitle: "Consequence Coupling Under Effective Scarcity",
 		description:
-			"South Korea is not failing. It observes well, acts fast and has shown that its democracy can correct even a president who turns on the constitution. Yet on one Thursday every November the country grounds its aircraft for an eight-hour examination, and too many futures depend on winning it. This report diagnoses the Tournament Trap — consequence coupling under effective scarcity — and proposes a transition architecture that lowers what winning buys, so that losing one tournament becomes survivable.",
+			"A hypothesis about how early rankings, effective scarcity and consequence coupling may shape education, employment and regional pathways. Revised November 2026 (GA-R02-R1 v0.3); dependency correction accepted by independent AI review; country evidence not re-audited.",
 		author: "Björn Kenneth Holmström",
-		date: "September 2026",
+		date: "September 2026 · Revised November 2026 (GA-R02-R1 v0.3)",
 		url: "https://bjornkennethholmstrom.org/reports/south-korea-tournament-trap",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Country Report · South Korea"
@@ -56,9 +56,9 @@ const metadata = {
 		title: "한국: 토너먼트 함정",
 		subtitle: "유효 희소성 아래의 결과 연동",
 		description:
-			"한국은 실패하고 있지 않다. 한국은 잘 관찰하고, 빠르게 행동하며, 헌법에 등을 돌린 대통령조차 바로잡을 수 있음을 보여주었다. 그런데도 매년 11월 어느 목요일이면 나라는 8시간짜리 시험을 위해 항공기를 착륙시키고, 너무 많은 미래가 그 시험에서 이기는 데 달려 있다. 이 보고서는 토너먼트 함정 — 유효 희소성 아래의 결과 연동 — 을 진단하고, 이기는 것이 사들이는 것을 낮추어 하나의 토너먼트에서 지는 것이 생존 가능해지도록 하는 전환 아키텍처를 제안한다.",
+			"이른 서열, 유효 희소성 및 기회 연동이 교육, 고용 및 지역 경로에 어떻게 영향을 줄 수 있는지에 관한 가설. 2026년 11월 개정(GA-R02-R1 v0.3). 독립 AI 검토에서 의존성 교정이 승인되었으며, 국가 관련 증거는 재감사되지 않았다.",
 		author: "Björn Kenneth Holmström",
-		date: "2026년 9월",
+		date: "2026년 9월 · 2026년 11월 개정(GA-R02-R1 v0.3)",
 		url: "https://bjornkennethholmstrom.org/reports/south-korea-tournament-trap",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "국가 보고서 · 한국"

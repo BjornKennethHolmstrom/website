@@ -184,17 +184,17 @@
       title:
         'South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity',
       subtitle:
-        'A governance-as-engineering diagnosis of a society that became the world’s most accomplished tournament — and the structural challenge of turning capability into plurality',
+        'A comparative hypothesis about consequence coupling, selection and institutional reform',
       description:
-        'South Korea is not failing. It observes well, acts fast and has shown that its democracy can correct even a president who turns on the constitution. Yet on one Thursday every November the country grounds its aircraft for an eight-hour examination, and too many futures depend on winning it. This report diagnoses the Tournament Trap—consequence coupling under effective scarcity—and proposes a transition architecture that lowers what winning buys, so that losing one tournament becomes survivable.',
+        'A hypothesis about how early rankings, effective scarcity and consequence coupling may shape education, employment and regional pathways. Revised November 2026 (GA-R02-R1 v0.3); dependency correction accepted by independent AI review; country evidence not re-audited.',
     },
     ko: {
       title:
         '한국: 토너먼트 함정 — 유효 희소성 아래의 결과 연동',
       subtitle:
-        '세계에서 가장 뛰어난 토너먼트가 된 사회에 대한 공학으로서의 거버넌스 진단 — 그리고 능력을 다원성으로 바꾸는 구조적 과제',
+        '기회 연동, 선발 및 제도 개혁에 관한 비교 가설',
       description:
-        '한국은 실패하고 있지 않다. 한국은 잘 관찰하고, 빠르게 행동하며, 헌법에 등을 돌린 대통령조차 바로잡을 수 있음을 보여주었다. 그런데도 매년 11월 어느 목요일이면 나라는 8시간짜리 시험을 위해 항공기를 착륙시키고, 너무 많은 미래가 그 시험에서 이기는 데 달려 있다. 이 보고서는 토너먼트 함정—유효 희소성 아래의 결과 연동—을 진단하고, 이기는 것이 사들이는 것을 낮추어 하나의 토너먼트에서 지는 것이 생존 가능해지도록 하는 전환 아키텍처를 제안한다.',
+        '이른 서열, 유효 희소성 및 기회 연동이 교육, 고용 및 지역 경로에 어떻게 영향을 줄 수 있는지에 관한 가설. 2026년 11월 개정(GA-R02-R1 v0.3). 독립 AI 검토에서 의존성 교정이 승인되었으며, 국가 관련 증거는 재감사되지 않았다.',
     },
   };
 
@@ -220,8 +220,8 @@
   };
 
   const citations = {
-    en: 'Holmström, B. K. (2026). South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity. Strategic Country Report. AI-generated; not peer-reviewed.',
-    ko: 'Holmström, B. K. (2026). 한국: 토너먼트 함정 — 유효 희소성 아래의 결과 연동. 전략적 국가 보고서. AI 생성, 동료 검토를 거치지 않음.',
+    en: 'Holmström, B. K. (2026). South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity. Strategic Country Report. Revised November 2026, GA-R02-R1 v0.3. AI-generated; dependency correction accepted by independent AI review; not peer-reviewed.',
+    ko: 'Holmström, B. K. (2026). 한국: 토너먼트 함정 — 유효 희소성 아래의 결과 연동. 전략적 국가 보고서. 2026년 11월 개정, GA-R02-R1 v0.3. AI 생성; 독립 AI 검토에서 의존성 교정 승인, 통상적인 동료 심사를 거치지 않음.',
   };
 
   // ------------------------------------------
@@ -500,6 +500,7 @@
       >
         {meta.subtitle}
       </p>
+      <p class="text-sm mt-4">{reportLang === 'ko' ? '2026년 11월 개정 · 독립 AI 검토에서 의존성 교정 승인 · 국가 관련 증거 미검증' : 'November 2026 revision · dependency correction accepted by independent AI review · country evidence not re-audited'}</p>
       <Provenance lang={reportLang} align="start" />
     </header>
 

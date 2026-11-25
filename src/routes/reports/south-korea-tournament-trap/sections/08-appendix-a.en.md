@@ -2,7 +2,7 @@
 
 ### A Note on This Appendix
 
-The main body of this report avoids specialised terminology from developmental psychology or cultural theory. It speaks the language of governance architecture, effective prize supply and consequence coupling. This appendix offers a complementary lens for readers who wish to understand the value-system dynamics beneath the Tournament Trap. It is optional, but it makes the report's underlying logic transparent.
+This optional appendix uses Spiral Dynamics terminology as an interpretive vocabulary for tensions among belonging, order, achievement, inclusion and systemic redesign. It is an unaudited external framework, not a validated measure of Korean individuals, institutions or developmental stages. The following portraits are historical interpretive hypotheses; do not use stage labels as causal evidence, national rankings or grounds for concealment or withholding rights. Evaluate specific value conflicts using evidence and affected people's accounts.
 
 ### A.1 The Basic Insight
 
