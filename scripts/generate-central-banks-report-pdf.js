@@ -30,29 +30,29 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const meta = {
     title: "The Monetary Policy Variety Gap",
-    subtitle: "Why Central Banks Cannot See the Economies They Are Steering",
-    description: "Central banks are the most explicitly control‑theoretic governance institutions ever built — yet their models cannot perceive the financial, distributional, fiscal, and ecological dimensions that determine the outcomes of their actions. This report diagnoses a Monetary Policy Variety Gap and proposes a Distributional Impact Assessment as the concrete first step toward requisite monetary governance.",
+    subtitle: "Evidence, authority and action in monetary governance",
+    description: "A task-relative research draft on monetary governance, distributional evidence and candidate institutional reforms. Institution-specific findings on hold pending verification and human review.",
     author: "Björn Kenneth Holmström",
-    date: "May 2026",
+    date: "Original: May 2026 · Correction candidate v0.2: 25 November 2026",
     url: "https://bjornkennethholmstrom.org/reports/central-banks-monetary-policy-variety-gap",
     license: "Creative Commons Attribution-ShareAlike 4.0 International",
-    type: "Organizational Report · Central Banks"
+    type: "Research draft v0.2 · Central Banks · Publication hold"
 };
 
 // ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
     { file: '00-executive-summary',                         title: 'Executive Summary',                                                              isAppendix: false },
     { file: '01-monetary-policy-variety-gap',              title: '1. The Monetary Policy Variety Gap',                                               isAppendix: false },
-    { file: '02-structural-mechanisms',                    title: '2. Structural Mechanisms: How Central Banks Become Blind to the Economies They Govern', isAppendix: false },
+    { file: '02-structural-mechanisms',                    title: '2. Structural Mechanisms: Potential Deficits in Monetary Governance', isAppendix: false },
     { file: '03-building-requisite-monetary-governance',    title: '3. What Building Requisite Monetary Governance Would Look Like',                    isAppendix: false },
     { file: '04-political-immune-system',                  title: '4. The Political Immune System: The Pretence of Knowledge',                         isAppendix: false },
     { file: '05-first-step',                               title: '5. A Concrete First Step: The Monetary Policy Distributional Impact Assessment',    isAppendix: false },
     { file: '06-coda',                                    title: '6. Coda: The Engineers at the Table',                                              isAppendix: false },
-    { file: '07-appendix-a',                               title: 'Appendix A: Value Systems & Policy Mindsets',                                      isAppendix: true  },
-    { file: '07-appendix-b',                               title: 'Appendix B: International Analogues & Precedents',                                 isAppendix: true  },
+    { file: '07-appendix-a',                               title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the Central Banking Context',                                      isAppendix: true  },
+    { file: '07-appendix-b',                               title: 'Appendix B: International Analogues and Precedents',                                 isAppendix: true  },
     { file: '07-appendix-c',                               title: 'Appendix C: The Governance as Engineering Connection',                              isAppendix: true  },
     { file: '07-appendix-d',                               title: 'Appendix D: Anticipated Objections',                                              isAppendix: true  },
-    { file: '07-appendix-e',                               title: 'Appendix E: About the Author & Method',                                           isAppendix: true  },
+    { file: '07-appendix-e',                               title: 'Appendix E: About this report and how it was made',                                           isAppendix: true  },
     { file: '07-appendix-f',                               title: 'Appendix F: Key Concepts and Abbreviations',                                      isAppendix: true  },
 ];
 

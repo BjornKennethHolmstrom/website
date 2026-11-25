@@ -1,33 +1,33 @@
 ## Appendix F: Key Concepts and Abbreviations
 
-This appendix defines the key concepts and abbreviations used throughout the report for readers unfamiliar with the central banking and macroeconomic literature.
+Definitions distinguish general concepts from this report's hypotheses. Institution-specific details require dated primary-source verification.
 
-**CPI (Consumer Price Index):** The primary measure of inflation targeted by most central banks. The CPI tracks the price of a representative basket of goods and services purchased by households. It excludes asset prices (equities, bonds, real estate) and therefore cannot perceive the build‑up of financial imbalances that may threaten economic stability.
+**CPI (Consumer Price Index):** An index measuring changes in prices of a specified consumer basket. Targeted price indices and housing treatment vary by jurisdiction. Asset valuations, leverage and other risks require separate evidence when relevant; a price index is not an institution's entire observation system.
 
-**Distributional Impact Assessment:** A proposed mechanism by which the central bank would publish, alongside each major policy decision, an independently produced analysis of the likely distributional consequences of that decision across income groups, wealth quintiles, regions, and demographic categories.
+**Distributional Impact Assessment:** A proposed independent scenario analysis of the distributional consequences of monetary actions across relevant income, wealth, regional and demographic groups, with secure predecision delivery if intended to inform the decision, separate public release and candidate reason-giving obligations subject to lawful authority.
 
-**DSGE (Dynamic Stochastic General Equilibrium) models:** The primary analytical framework used by central banks for macroeconomic forecasting and policy analysis. DSGE models are built on microeconomic foundations, with optimising households and firms interacting in general equilibrium. Standard DSGE models do not include a financial sector, heterogeneous agents, nonlinear dynamics, or the possibility of endogenous crises.
+**DSGE (Dynamic Stochastic General Equilibrium) models:** A class of models of economic interactions over time under uncertainty, often with microeconomic foundations. Specifications differ; representative agents, financial frictions, heterogeneous agents and nonlinear dynamics vary by model. Actual institutional portfolios and uses need verification.
 
-**ECB (European Central Bank):** The central bank for the euro area, responsible for monetary policy in the nineteen member states that have adopted the euro. The ECB's primary mandate is price stability, defined as inflation below but close to 2 percent over the medium term.
+**ECB (European Central Bank):** The central bank for the euro area. Verify dated membership, mandate, target definition and specific legal powers; do not assume the original membership count or inflation formulation remains applicable.
 
-**FOMC (Federal Open Market Committee):** The body within the Federal Reserve System responsible for setting US monetary policy, including the federal funds rate and asset purchases. The FOMC consists of the seven members of the Board of Governors and a rotating group of five Reserve Bank presidents.
+**FOMC (Federal Open Market Committee):** The Federal Reserve System's monetary-policy committee. Verify dated membership, voting and instrument responsibilities against primary records.
 
-**Forward guidance:** A central bank communication tool in which the institution signals its likely future policy intentions to influence market expectations and long‑term interest rates. Forward guidance has become less effective as algorithmic trading systems model the central bank's reaction function and position themselves ahead of policy announcements.
+**Forward guidance:** Communication intended to influence expectations about future policy. Anticipation may be part of transmission; degradation, gaming and market effects require evidence.
 
-**The Great Moderation:** The period from the mid‑1980s to 2007 characterised by low, stable inflation and reduced macroeconomic volatility across developed economies. The Great Moderation was widely attributed to improved monetary policy, particularly the adoption of inflation targeting. It ended with the 2008 global financial crisis.
+**The Great Moderation:** A term associated in the original with reduced macroeconomic volatility and inflation in the decades preceding the 2008 crisis. Dates, geography and causal contribution of monetary policy require verification.
 
-**Legibility Compression Principle:** A cross‑series insight formalised in this report: every governance system reduces environmental dimensionality to remain computationally tractable. The compression is necessary but lossy. The information lost in compression accumulates as externalities until it forces itself into visibility through crisis.
+**Legibility Compression Principle:** The original universal compression-to-crisis claim is withdrawn. Selective representation can omit task-relevant information under specified conditions; omission does not necessarily cause harm or establish blindness. See Appendix C.
 
-**Macroprudential policy:** Regulatory and supervisory policies designed to address systemic risk in the financial system as a whole, rather than the safety and soundness of individual institutions. Macroprudential tools include countercyclical capital buffers, loan‑to‑value limits, and stress tests.
+**Macroprudential policy:** Policies addressing systemic financial risk, including possible countercyclical capital buffers and loan-to-value measures; stress tests are analytical or supervisory tools rather than automatically independent actuators. Competent owners and effects vary.
 
-**Monetary Policy Variety Gap:** The structural mismatch between the dimensionality of the central bank's observation architecture (approximately two to three dimensions, targeting inflation, output, and employment) and the dimensionality of the economy it governs (enormous, spanning financial, distributional, fiscal, and ecological dimensions).
+**Monetary Policy Variety Gap:** Research label for a potential task-relative deficit in monetary governance, distinguishing evidence, attention, objectives, legitimate authority, instruments, coordination and action. Not a numerical dimensionality estimate or proof that one institution must govern every dimension.
 
-**MPC (Monetary Policy Committee):** The body within the Bank of England responsible for setting UK monetary policy, including the Bank Rate and asset purchases. The MPC consists of nine members: the Governor, three Deputy Governors, the Chief Economist, and four external members appointed by the Chancellor.
+**MPC (Monetary Policy Committee):** In the original UK example, the Bank of England's monetary-policy committee. Verify current or historical composition, authority and responsibilities for the relevant period.
 
-**Pretence of Knowledge:** Friedrich Hayek's phrase, coined in his 1974 Nobel Prize lecture, describing the tendency of economists and policymakers to act with confidence on models that cannot capture the complexity of the economic system. In this report, the Pretence of Knowledge is identified as the cultural anchor of central banking—the institutional tendency that makes the Monetary Policy Variety Gap liveable for those who operate within it.
+**Pretence of Knowledge:** A phrase attributed by the original to Hayek's 1974 lecture (verify). Here a hypothesis of institutional closure against consequential challenge, not a psychological diagnosis. Apply the same test to proposed reforms.
 
-**QE (Quantitative Easing):** A monetary policy instrument in which the central bank purchases financial assets—typically government bonds, but also mortgage‑backed securities and corporate bonds—to inject liquidity into the financial system and lower long‑term interest rates. QE expands the central bank's balance sheet and blurs the boundary between monetary and fiscal policy.
+**QE (Quantitative Easing):** Asset-purchase operations intended to affect financial conditions, with effects depending on assets, counterparties, reserve remuneration and legal arrangements. Balance-sheet expansion does not by itself establish fiscal financing, dominance or net distributional transfer.
 
-**Stability–Instability Spiral:** The signature pattern of monetary governance diagnosed in this report: successful stabilisation encourages risk‑taking, which generates financial fragility in dimensions the central bank does not target, which eventually produces a crisis, which triggers emergency intervention, which restores stability while leaving the system more indebted and more fragile than before.
+**Stability–Instability Spiral:** A conditional hypothesised chain from stabilisation through risk-taking, fragility, crisis, intervention, recovery and institutional strain to possible renewed fragility. Each transition has separate disconfirmers; no monotone trajectory is assumed.
 
-**Taylor Rule:** A monetary policy rule, proposed by economist John Taylor in 1993, that specifies how the central bank should adjust the policy interest rate in response to deviations of inflation from target and output from potential. The Taylor Rule is a proportional feedback controller—the foundational control‑theoretic model of modern central banking.
+**Taylor Rule:** A stylised relationship between a policy rate and variables such as inflation deviations and output gaps, associated in the original with John Taylor (1993, attribution to verify). Not the entire central-bank observer, policy process or instrument set.

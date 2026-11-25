@@ -53,7 +53,7 @@
     },
     {
       id: 'structural-mechanisms',
-      title: '2. Structural Mechanisms: How Central Banks Become Blind to the Economies They Govern',
+      title: '2. Structural Mechanisms: Potential Deficits in Monetary Governance',
       comp: StructuralMechanismsEn,
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       id: 'appendix-a',
-      title: 'Appendix A: Value Systems & Policy Mindsets',
+      title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the Central Banking Context',
       comp: AppendixAEn,
     },
     {
       id: 'appendix-b',
-      title: 'Appendix B: International Analogues & Precedents',
+      title: 'Appendix B: International Analogues and Precedents',
       comp: AppendixBEn,
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       id: 'appendix-e',
-      title: 'Appendix E: About the Author & Method',
+      title: 'Appendix E: About this report and how it was made',
       comp: AppendixEEn,
     },
     {
@@ -131,15 +131,15 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const metadata = {
-    title: "The Monetary Policy Variety Gap: Why Central Banks Cannot See the Economies They Are Steering",
+    title: "The Monetary Policy Variety Gap: Evidence, Authority and Action in Monetary Governance",
     subtitle:
-      'A cybernetic diagnosis of the most sophisticated governance institutions on earth — and how to build monetary architectures that can perceive what they currently exclude',
+      'Evidence, authority and action in monetary governance',
     description:
-      'Central banks are the most explicitly control‑theoretic governance institutions ever built — yet their models cannot perceive the financial, distributional, fiscal, and ecological dimensions that determine the outcomes of their actions. This report diagnoses a Monetary Policy Variety Gap and proposes a Distributional Impact Assessment as the concrete first step.',
+      'A task-relative research draft on monetary governance, distributional evidence and candidate institutional reforms. Institution-specific findings on hold pending verification and human review.',
   };
 
   const ui = {
-    tag: 'Organizational Report · Central Banks',
+    tag: 'Research draft v0.2 · Central Banks · Publication hold',
     allReports: '← All Reports',
     downloads: 'Downloads',
     share: 'Share',
@@ -172,7 +172,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Monetary Policy Variety Gap: Why Central Banks Cannot See the Economies They Are Steering. Organizational Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Monetary Policy Variety Gap: Evidence, Authority and Action in Monetary Governance. Organizational Report, correction candidate v0.2 (25 November 2026). Research draft; institution-specific findings on hold; AI-generated, not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -211,7 +211,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Monetary Policy Variety Gap: Why Central Banks Cannot See the Economies They Are Steering. Organizational Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Monetary Policy Variety Gap: Evidence, Authority and Action in Monetary Governance. Organizational Report, correction candidate v0.2 (25 November 2026). Research draft; institution-specific findings on hold; AI-generated, not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
@@ -251,6 +251,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {metadata.subtitle}
       </p>
+      <p class="text-sm opacity-80">Correction candidate v0.2 · Independent correction review pending · Institution-specific findings on HOLD.</p>
       <Provenance lang="en" align="start" />
     </header>
 
