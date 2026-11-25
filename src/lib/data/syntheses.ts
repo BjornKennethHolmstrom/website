@@ -37,7 +37,7 @@ export const papersSv = {
   III:  { href: '/working-papers/observability-democracy-connection',      label: 'Rapport III: Observerbarhets-demokratikopplingen' },
   IV:   { href: '/working-papers/requisite-variety-and-the-commons',       label: 'Rapport IV: Nödvändig variation och allmänningen' },
   V:    { href: '/working-papers/coordination-failure-tax',                label: 'Rapport V: Samordningsmisslyckandets skatt' },
-  VI:   { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Varietetsgapet' },
+  VI:   { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Variationsgapet' },
   VII:  { href: '/working-papers/architecture-of-governance-failure',      label: 'Rapport VII: Styrningsmisslyckandets arkitektur' },
   VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet' },
   IX:   { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning' },
