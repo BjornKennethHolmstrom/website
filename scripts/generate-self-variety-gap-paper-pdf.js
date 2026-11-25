@@ -15,9 +15,20 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { marked } from 'marked';
+import katex from 'katex';
+import { createRequire } from 'module';
 import puppeteer from 'puppeteer';
 
 import { applyProvenance } from './provenance-pdf.js';
+const require = createRequire(import.meta.url);
+const katexCssPath = require.resolve('katex/dist/katex.min.css');
+const katexCss = fs.readFileSync(katexCssPath, 'utf8').replace(/url\(([^)]+)\)/g, (match, raw) => {
+  const rel = raw.replace(/^['"]|['"]$/g, '');
+  if (!rel.startsWith('fonts/')) return match;
+  const ext = path.extname(rel).slice(1);
+  const mime = ext === 'ttf' ? 'font/ttf' : `font/${ext}`;
+  return `url(data:${mime};base64,${fs.readFileSync(path.join(path.dirname(katexCssPath), rel)).toString('base64')})`;
+});
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -39,21 +50,21 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/self-v
 // ── Metadata ──────────────────────────────────────────────────────────────────
 const metadata = {
 	en: {
-		title: 'The Variety Gap in the Self',
-		subtitle: 'What a Person Optimizes For Determines What They Can Perceive',
-		description: 'Extends the variety‑gap framework from governance institutions to the individual self. The ego is a low‑dimensional controller; narrow personal values create blind spots that eventually return as crises. Introduces the self‑variety gap (G_self) as a diagnostic for psychological blind spots and a guide to the practices that can close it.',
+		title: "The Variety Gap in the Self",
+		subtitle: "Values, awareness and the limits of a feedback analogy",
+		description: "A philosophical and model-scoped exploration of values, awareness and feasible action. The former personal gap index and dissolution predictions are withdrawn.",
 		author: 'Björn Kenneth Holmström',
-		date: 'May 2026',
+		date: 'May 2026 · Revised November 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/self-variety-gap',
 		seriesNote: 'Companion to the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
-		title: 'Variationsgapet i självet',
-		subtitle: 'Vad en person optimerar för avgör vad de kan uppfatta',
-		description: 'Utvidgar variationsgap-ramverket från styrningsinstitutioner till det individuella självet. Egot fungerar som en lågdimensionell regulator; snäva personliga värderingar skapar blinda fläckar som till slut återvänder som kriser. Introducerar själv‑variationsgapet (G_self) som ett diagnostiskt verktyg för psykologiska blinda fläckar och en guide till de praktiker som kan minska det.',
+		title: "Variationsgapet i självet",
+		subtitle: "Värderingar, medvetenhet och återkopplingsanalogins gränser",
+		description: "En filosofisk och modellavgränsad undersökning av värderingar, medvetenhet och genomförbar handling. Det tidigare personliga gapindexet och upplösningsprediktionerna dras tillbaka.",
 		author: 'Björn Kenneth Holmström',
-		date: 'Maj 2026',
+		date: 'Maj 2026 · Reviderad november 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/self-variety-gap',
 		seriesNote: 'Kompanjon till serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -64,19 +75,19 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions (order as per the Svelte page) ──────────────────────
 const sections = [
-	{ file: 'abstract',     title: LANGUAGE === 'en' ? 'Abstract'                                                            : 'Sammanfattning',                                              isAppendix: false },
-	{ file: 'part-1',       title: LANGUAGE === 'en' ? 'Part I: The Unifying Principle — How Narrow Values Destroy Self‑Observability' : 'Del I: Den enhetliga principen — Hur snäva värderingar förstör själv‑observerbarhet', isAppendix: false },
-	{ file: 'part-2',       title: LANGUAGE === 'en' ? 'Part II: The Optimization Turn — Personal Values as Observation Architectures' : 'Del II: Optimeringens vändning — Personliga värderingar som observationsarkitekturer', isAppendix: false },
-	{ file: 'part-3',       title: LANGUAGE === 'en' ? 'Part III: The Missing Dimensions — Truth, Meaning, Connection, and Health as Signal Channels' : 'Del III: De saknade dimensionerna — Sanning, mening, gemenskap och hälsa som signalkanaler', isAppendix: false },
-	{ file: 'part-4',       title: LANGUAGE === 'en' ? 'Part IV: Evidence from Psychology and Neuroscience'                   : 'Del IV: Bevis från psykologi och neurovetenskap',              isAppendix: false },
-	{ file: 'part-5',       title: LANGUAGE === 'en' ? 'Part V: Meta‑Self‑Governance — Designing for Value Evolution'        : 'Del V: Meta‑självstyrning — Design för värdeevolution',       isAppendix: false },
-	{ file: 'part-6',       title: LANGUAGE === 'en' ? 'Part VI: The Speculative Horizon — Transcendence, Nonduality, and the Limit G_self → 0' : 'Del VI: Den spekulativa horisonten — Transcendens, icke‑dualitet och gränsen G_self → 0', isAppendix: false },
-	{ file: 'part-7',       title: LANGUAGE === 'en' ? 'Part VII: Conclusion — The Wholistic Imperative for the Self'        : 'Del VII: Slutsats — Det holistiska imperativet för självet',  isAppendix: false },
-	{ file: 'appendix-a',   title: LANGUAGE === 'en' ? 'Appendix A: Formal Derivation of the Self‑Variety Gap (Static)'       : 'Appendix A: Formell härledning av själv‑variationsgapet (statisk)', isAppendix: true },
-	{ file: 'appendix-b',   title: LANGUAGE === 'en' ? 'Appendix B: Extension to Time‑Varying Personal Dimensionality'        : 'Appendix B: Utvidgning till tidsvarierande personlig dimensionalitet', isAppendix: true },
-	{ file: 'appendix-c',   title: LANGUAGE === 'en' ? 'Appendix C: Psychological Evidence Summary Table'                     : 'Appendix C: Sammanfattningstabell över psykologiska bevis',    isAppendix: true },
-	{ file: 'appendix-d',   title: LANGUAGE === 'en' ? 'Appendix D: Simulation Architecture — The Self Stability Simulator'   : 'Appendix D: Simuleringsarkitektur — Självstabilitetssimulatorn', isAppendix: true },
-	{ file: 'appendix-e',   title: LANGUAGE === 'en' ? 'Appendix E: Annotated Reference List'                                 : 'Appendix E: Kommenterad referenslista',                        isAppendix: true },
+	{ file: 'abstract',     title: LANGUAGE === 'en' ? "Abstract" : "Sammanfattning",                                              isAppendix: false },
+	{ file: 'part-1',       title: LANGUAGE === 'en' ? "Part I: The self as a conditional feedback analogy" : "Del I: Självet som en villkorad återkopplingsanalogi", isAppendix: false },
+	{ file: 'part-2',       title: LANGUAGE === 'en' ? "Part II: Values, observation and feasible action" : "Del II: Värderingar, observation och genomförbar handling", isAppendix: false },
+	{ file: 'part-3',       title: LANGUAGE === 'en' ? "Part III: Domains of reflection" : "Del III: Områden för reflektion", isAppendix: false },
+	{ file: 'part-4',       title: LANGUAGE === 'en' ? "Part IV: Psychological hypotheses and evidential limits" : "Del IV: Psykologiska hypoteser och evidensens gränser",              isAppendix: false },
+	{ file: 'part-5',       title: LANGUAGE === 'en' ? "Part V: Personal meta-governance as a voluntary practice" : "Del V: Personlig metastyrning som frivillig praktik",       isAppendix: false },
+	{ file: 'part-6',       title: LANGUAGE === 'en' ? "Part VI: The speculative horizon — transcendence and nonduality" : "Del VI: Den spekulativa horisonten — transcendens och icke-dualitet", isAppendix: false },
+	{ file: 'part-7',       title: LANGUAGE === 'en' ? "Part VII: Conclusion — adequacy without an imperative" : "Del VII: Slutsats — tillräcklighet utan imperativ",  isAppendix: false },
+	{ file: 'appendix-a',   title: LANGUAGE === 'en' ? "Appendix A: Static task-relative adequacy" : "Appendix A: Statisk uppgiftsrelativ tillräcklighet", isAppendix: true },
+	{ file: 'appendix-b',   title: LANGUAGE === 'en' ? "Appendix B: Changing tasks and the limits of timing" : "Appendix B: Föränderliga uppgifter och tidsberäkningens gränser", isAppendix: true },
+	{ file: 'appendix-c',   title: LANGUAGE === 'en' ? "Appendix C: Research leads, not validation" : "Appendix C: Forskningsuppslag, inte validering",    isAppendix: true },
+	{ file: 'appendix-d',   title: LANGUAGE === 'en' ? "Appendix D: Legacy simulator and controlled replay" : "Appendix D: Tidigare simulator och kontrollerad återkörning", isAppendix: true },
+	{ file: 'appendix-e',   title: LANGUAGE === 'en' ? "Appendix E: Bibliographic leads" : "Appendix E: Bibliografiska uppslag",                        isAppendix: true },
 ];
 
 // ── CSS (same as original, tweaked for new paper) ───────────────────────────
@@ -382,6 +393,19 @@ function getCoverImageUri() {
 	return null;
 }
 
+function renderSectionMarkdown(content) {
+  const blocks = [];
+  content = content.replace(/\\\[([\s\S]*?)\\\]/g, (_, tex) => {
+    blocks.push(katex.renderToString(tex.trim(), { displayMode: true, throwOnError: true }));
+    return `%%MATH${blocks.length - 1}%%`;
+  });
+  content = content.replace(/\\\(([\s\S]*?)\\\)/g, (_, tex) => {
+    blocks.push(katex.renderToString(tex.trim(), { displayMode: false, throwOnError: true }));
+    return `%%MATH${blocks.length - 1}%%`;
+  });
+  return marked.parse(content, { breaks: false, gfm: true }).replace(/%%MATH(\d+)%%/g, (_, i) => blocks[Number(i)] ?? '');
+}
+
 function generateHTML(sections) {
 	console.log('🔨 Converting markdown to HTML...');
 	marked.setOptions({ breaks: false, gfm: true });
@@ -394,6 +418,7 @@ function generateHTML(sections) {
   <meta charset="UTF-8">
   <title>${meta.title}</title>
   ${pdfStyles}
+  <style>${katexCss}</style>
 </head>
 <body>
   <div class="cover">
@@ -417,7 +442,7 @@ function generateHTML(sections) {
 		const sectionClass = section.isAppendix ? 'appendix' : '';
 		html += `<section class="${sectionClass}">\n`;
 		const enhancedContent = enhanceImageMarkup(section.content);
-		const sectionHtml = marked.parse(enhancedContent);
+		const sectionHtml = renderSectionMarkdown(enhancedContent);
 		html += sectionHtml;
 		html += `</section>\n`;
 		console.log(`✓ (${(sectionHtml.length / 1024).toFixed(1)} KB)`);

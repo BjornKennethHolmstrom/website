@@ -31,7 +31,7 @@ meta:
   self_subseries_count: 3
   brief_reconciled_through: "XXVIII"   # registry-derived overview only; source checks of XXVIII remain open
   atlas_reconciled_through: "XXVIII"
-  atlas_version: "v2.2-GA-R01-draft"
+  atlas_version: "v2.3-GA-R02-integration-draft"
   last_updated: "2026-11-25"
   companion_series:
     - id: SO
@@ -42,7 +42,7 @@ meta:
     - "formal_tier [R] is scope-bound where a result is model-internal; see each paper's evidence line for the model."
     - "depends_on prefixes: = derives | - assumes/structural | ~ grounds/thematic. The atlas carries finer relation labels (mechanizes, refines, motivates, retracts, transfers-by-analogy, corroborates-cross-model, bounds)."
     - "OPEN: XXVII MI correction (see XXVII.corrections): brief table and prose now use the qualified statement; paper and simulation verification remain open."
-    - "GA-R01 draft: central files reconciled with six accepted source corrections; XXVIII added to briefs from existing registry, not independently verified. Dependent paper sources, builds, XXVII and XXVIII open issues remain pending."
+    - "GA-R01 v0.2 accepted: central files reconciled with six accepted source corrections; XXVIII added to briefs from existing registry, not independently verified. Dependent paper sources, builds, XXVII and XXVIII open issues remain pending."
     - "PROPOSAL: consider SO status sub-labels for numerical evidence; see atlas §9. No new global tier schema adopted."
     - "GA-R01: restored structural edges into unaudited dependents preserve legacy dependence and flag unresolved validity, not a claim that revised premises suffice."
     - "DECIDED 2026-11-08: XXVIII titled 'Closure Adaptation Dynamics'; cluster cycle-two as a late addition (rationale in the XXVIII entry and atlas §9)."
@@ -81,7 +81,7 @@ papers:
       - "averaging problem: centralised controllers respond to the mean, not the distribution"
     formal_tier: []
     governance_tier: IP
-    successors: ["-III", "=XI", "~XXVIII"]
+    successors: ["-III", "=XI", "~XXVIII", "~Self-I"]
 
   - id: "II"
     title: Multi-frequency disturbance
@@ -92,6 +92,7 @@ papers:
     establishes: [single-speed architecture structurally mismatched to most disturbance frequencies]
     formal_tier: []
     governance_tier: IP
+    successors: ["~Self-I"]
 
   - id: "III"
     title: The representation chain
@@ -105,7 +106,7 @@ papers:
       - chain fidelity bounded by its layers regardless of endpoint quality
     formal_tier: []
     governance_tier: IP
-    successors: ["=XI", "=Self-II", "=Self-III"]
+    successors: ["=XI", "=Self-II", "=Self-III", "~Self-I"]
 
   - id: "IV"
     title: Requisite variety at the point of contact
@@ -116,6 +117,7 @@ papers:
     establishes: [requisite variety lives at the point of contact; proximity is an engineering requirement]
     formal_tier: []
     governance_tier: IP
+    successors: ["~Self-I"]
 
   - id: "V"
     title: The coordination-failure tax
@@ -126,7 +128,7 @@ papers:
     establishes: [deficits of I-IV compound multiplicatively, not additively]
     formal_tier: [R]
     governance_tier: IP
-    successors: ["=XV", "-Self-II"]
+    successors: ["=XV", "-Self-II", "~Self-I"]
 
   - id: "VI"
     title: The Variety Gap
@@ -144,7 +146,7 @@ papers:
     nulls: ["universal objective-observation identity, collapse mechanism and critical gap withdrawn"]
     so_links: [SO-L1]
     unresolved:
-      - measurement proposals and country interpretations unvalidated; VIII's composite index requires reconciliation
+      - measurement proposals and country interpretations unvalidated; VIII v0.2 withdraws composite scores and proposes a task-relative profile
       - "SO-L1: insurance versus exposure generation and its price; test within an explicit policy and observation model"
     successors: ["-VIII", "-XXIV", "-XXVII", "-Self-I"]
 
@@ -166,15 +168,20 @@ papers:
     successors: ["-XXII"]      # XXII shows protected experiment is unavoidable, not merely wise
 
   - id: "VIII"
-    title: The variety gap made estimable
+    title: Measuring the Variety Gap
     cluster: cycle-one
     status: published
-    question: Can the variety gap be measured?
-    depends_on: ["-VI"]  # upstream premise revised; dependent audit pending (GA-R01)
-    establishes: ["legacy proposal: structural primitives, proxies and composite G; not validated by corrected VI"]
-    formal_tier: []
-    governance_tier: IP        # index IP; weights and threshold H
-    unresolved: ["GA-R01 source audit pending: reconcile composite measurement with five distinct gaps; no universal threshold validated", "GA-R01: upstream premise revised; dependent audit pending for VI"]
+    question: How can task-relative inadequacy be investigated without presupposing a universal index?
+    depends_on: ["-VI"]  # revised premise explicitly used; GA-R02 source accepted
+    establishes:
+      - "five-axis diagnostic profile and worksheet: evaluation, observation, modelling, decision, actuation (proposal)"
+      - "equal-rank counterexample and conditional static adequacy result inherited from VI; counts cannot determine hidden consequential directions"
+      - "legacy weighted point evaluations differ from reported medians; medians cannot be reconstructed from supplied evidence; conditional Finland bound under D.6 support assumptions"
+    formal_tier: [R]           # scoped mathematics only, not validation of profile
+    governance_tier: IP
+    evidence: ["GA-R02 v0.2 accepted; independent arithmetic review, 20 published point sets; original joint Monte Carlo inputs unavailable"]
+    nulls: ["legacy scores, intervals, threshold bands, trajectory classes and pilot-validation claim withdrawn"]
+    unresolved: ["profile and prospective protocol unvalidated; no new sample size committed", "publication, calculator and country-score quarantine pending"]
 
   - id: "IX"
     title: Transition bandwidth
@@ -365,7 +372,7 @@ papers:
     governance_tier: IP
     evidence: ["GA-F01 v0.2 independently accepted; 30-world registered budget demonstration [R within the model in paper; N reported in atlas], not rerun; v0.3 local edits not independently reviewed"]
     nulls: [conservation-law search failed, novel general Goodhart theorem withdrawn]
-    successors: ["-XXI", "~XXII", "-XXVII"]
+    successors: ["-XXI", "~XXII", "-XXVII", "-Self-I"]
 
   - id: "XXI"
     title: When to Stop Learning, and When to Stop
@@ -546,14 +553,19 @@ papers:
     title: The Variety Gap in the Self
     cluster: self
     status: published
-    question: Do low-dimensional personal values collapse self-observation the way low-dimensional metrics collapse governance?
-    depends_on: ["-I", "-II", "-III", "-IV", "-V", "-VI"]  # upstream premise revised; dependent audit pending (GA-R01)
+    question: How can a conditional feedback analogy illuminate personal reflection without diagnosing the person?
+    depends_on: ["~I", "~II", "~III", "~IV", "~V", "-VI", "-XX"]  # VI and XX explicitly used in accepted revision; I–V historical thematic context
     establishes:
-      - "legacy proposals pending source review: personal values may shape attention and evidence; objective-observation identity and universal critical threshold not licensed by corrected VI"
-      - personal meta-governance as interpretive proposal
-    formal_tier: []            # inherited VI theorem does not establish self-scale result; source review pending
+      - "values, observation, interpretation, decision and feasible action are distinct; personal reflection is a conditional analogy"
+      - "VI static model and XX strict-reversal criterion are scoped mathematical imports, not psychological laws"
+      - "legacy simulator replay reveals asymmetric health debit, differing policies and a pooled state metric that can move counter to other outcomes"
+      - "voluntary reflection, authenticity boundary and contemplative inquiry are interpretive and non-clinical"
+    formal_tier: [R]           # scoped toy-model mathematics only
     governance_tier: IP
-    unresolved: [tier scheme still R/I/S; reconcile to R/IP/H, "GA-R01: audit Self-I objective/observation and threshold claims", "GA-R01: upstream premise revised; dependent audit pending for VI"]
+    evidence: ["GA-R02 v0.2 accepted; reproduced legacy replay and exploratory matched-seed ablation at original parameters"]
+    nulls: ["universal personal gap, dissolution threshold and time-to-crisis prediction withdrawn"]
+    unresolved: ["no psychological scale, diagnosis or efficacy established; publication integration pending"]
+    successors: ["-Self-III"]
 
   - id: "Self-II"
     title: The Adaptive Self
@@ -583,7 +595,7 @@ papers:
       - "operator-seeded legitimacy spiral (can trigger XIII collapse from a single node)"
     formal_tier: [R]           # inherited unobservability R; couplings I/S in original tags
     governance_tier: IP
-    unresolved: [tier scheme still I/S; reconcile to R/IP/H]
+    unresolved: [tier scheme still I/S; reconcile to R/IP/H, "GA-R02: Self-I premise revised; dependent audit pending"]
 
 # ---- Companion series: Systemic Optimization (SO) ----
 #

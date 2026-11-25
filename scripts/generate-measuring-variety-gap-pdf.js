@@ -15,9 +15,20 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { marked } from 'marked';
+import katex from 'katex';
+import { createRequire } from 'module';
 import puppeteer from 'puppeteer';
 
 import { applyProvenance } from './provenance-pdf.js';
+const require = createRequire(import.meta.url);
+const katexCssPath = require.resolve('katex/dist/katex.min.css');
+const katexCss = fs.readFileSync(katexCssPath, 'utf8').replace(/url\(([^)]+)\)/g, (match, raw) => {
+  const rel = raw.replace(/^['"]|['"]$/g, '');
+  if (!rel.startsWith('fonts/')) return match;
+  const ext = path.extname(rel).slice(1);
+  const mime = ext === 'ttf' ? 'font/ttf' : `font/${ext}`;
+  return `url(data:${mime};base64,${fs.readFileSync(path.join(path.dirname(katexCssPath), rel)).toString('base64')})`;
+});
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -40,21 +51,21 @@ const COVER_IMAGE = path.join(__dirname, `../static/working-papers/images/${SLUG
 // ── Metadata ──────────────────────────────────────────────────────────────────
 const metadata = {
 	en: {
-		title: 'Measuring the Variety Gap',
-		subtitle: 'A Parametric Framework for Diagnosing Governance Failure',
-		description: 'The Governance as Engineering series has established structural constraints on institutional perception, but has not yet provided a systematic method for measuring the central diagnostic concept: the Variety Gap. This paper develops a parametric framework that maps observable governance characteristics to the eight structural primitives, constructs a composite Variety Gap Index, and tests it against the twenty‑one cases in the series. It is offered as a diagnostic instrument, with all limitations stated, for empirical testing and refinement.',
+		title: "Measuring the Variety Gap",
+		subtitle: "Task-relative diagnostic profiles and the limits of composite measurement",
+		description: "Paper VIII proposes a task-relative diagnostic profile. Historical composite scores and threshold claims are withdrawn; the profile remains unvalidated.",
 		author: 'Björn Kenneth Holmström',
-		date: 'May 2026',
+		date: 'May 2026 · Revised November 2026',
 		url: `https://bjornkennethholmstrom.org/working-papers/${SLUG}`,
 		seriesNote: 'Paper VIII in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
-		title: 'Att mäta varietetsgapet',
-		subtitle: 'Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden',
-		description: 'Serien Styrning som ingenjörskonst har fastställt strukturella begränsningar för institutionell perception, men har ännu inte tillhandahållit en systematisk metod för att mäta det centrala diagnostiska konceptet: varietetsgapet. Denna rapport utvecklar ett parametriskt ramverk som kartlägger observerbara styrningsegenskaper till de åtta strukturella primitiverna, konstruerar ett sammansatt varietetsgapindex och testar det mot de tjugoen fallen i serien. Det erbjuds som ett diagnostiskt instrument, med alla begränsningar angivna, för empirisk testning och förfining.',
+		title: "Att mäta variationsgapet",
+		subtitle: "Uppgiftsrelativa diagnosprofiler och den sammansatta mätningens gränser",
+		description: "Rapport VIII föreslår en uppgiftsrelativ diagnosprofil. Historiska sammansatta poäng och tröskelanspråk dras tillbaka; profilen är ännu inte validerad.",
 		author: 'Björn Kenneth Holmström',
-		date: 'Maj 2026',
+		date: 'Maj 2026 · Reviderad november 2026',
 		url: `https://bjornkennethholmstrom.org/sv/working-papers/${SLUG}`,
 		seriesNote: 'Rapport VIII i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -65,19 +76,19 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions (order as per the Svelte page) ──────────────────────
 const sections = [
-	{ file: '01-introduction',                  title: LANGUAGE === 'en' ? '1. Introduction: From Diagnosis to Measurement'                     : '1. Introduktion: Från diagnos till mätning',                          isAppendix: false },
-	{ file: '02-dimensionality-estimation-problem', title: LANGUAGE === 'en' ? '2. The Dimensionality Estimation Problem'                        : '2. Dimensionalitetsuppskattningsproblemet',                            isAppendix: false },
-	{ file: '03-eight-parameters',               title: LANGUAGE === 'en' ? '3. The Eight Parameters'                                             : '3. De åtta parametrarna',                                              isAppendix: false },
-	{ file: '04-measurement-paradox',            title: LANGUAGE === 'en' ? '4. The Measurement Paradox'                                           : '4. Mätparadoxen',                                                      isAppendix: false },
-	{ file: '05-composite-variety-gap-index',    title: LANGUAGE === 'en' ? '5. The Composite Variety Gap Index'                                  : '5. Det sammansatta varietetsgap-indexet',                             isAppendix: false },
-	{ file: '06-dynamic-extension',              title: LANGUAGE === 'en' ? '6. Dynamic Extension: Measuring the Rate of Gap Change'             : '6. Dynamisk utvidgning: Mätning av gapets förändringshastighet',     isAppendix: false },
-	{ file: '07-calibration',                   title: LANGUAGE === 'en' ? '7. Calibration Against the Twenty‑One Cases'                         : '7. Kalibrering mot de tjugoen fallen',                                 isAppendix: false },
-	{ file: '08-empirical-application',          title: LANGUAGE === 'en' ? '8. Empirical Application: A Pilot Validation'                       : '8. Empirisk tillämpning: En pilotvalidering',                         isAppendix: false },
-	{ file: '09-limitations-and-next-steps',     title: LANGUAGE === 'en' ? '9. Limitations and Next Steps'                                      : '9. Begränsningar och nästa steg',                                     isAppendix: false },
-	{ file: '10-appendix-a',                     title: LANGUAGE === 'en' ? 'Appendix A: Parameter Estimation Guide'                              : 'Appendix A: Guide för parameteruppskattning',                         isAppendix: true  },
-	{ file: '10-appendix-b',                     title: LANGUAGE === 'en' ? 'Appendix B: Country Calibration Table'                               : 'Appendix B: Landkalibreringstabell',                                  isAppendix: true  },
-	{ file: '10-appendix-c',                     title: LANGUAGE === 'en' ? 'Appendix C: Data Sources and Availability Matrix'                   : 'Appendix C: Datakällor och tillgänglighetsmatris',                    isAppendix: true  },
-	{ file: '10-appendix-d',                     title: LANGUAGE === 'en' ? 'Appendix D: Mathematical Appendix'                                   : 'Appendix D: Matematiskt appendix',                                    isAppendix: true  },
+	{ file: '01-introduction',                  title: LANGUAGE === 'en' ? "1. Introduction: From diagnosis to measurement" : "1. Introduktion: Från diagnos till mätning",                          isAppendix: false },
+	{ file: '02-dimensionality-estimation-problem', title: LANGUAGE === 'en' ? "2. Task-relative distinctions" : "2. Uppgiftsrelativa distinktioner",                            isAppendix: false },
+	{ file: '03-eight-parameters',               title: LANGUAGE === 'en' ? "3. The indicator families" : "3. Indikatorfamiljerna",                                              isAppendix: false },
+	{ file: '04-measurement-paradox',            title: LANGUAGE === 'en' ? "4. Evidence access and selective missingness" : "4. Evidenstillgång och selektivt bortfall",                                                      isAppendix: false },
+	{ file: '05-composite-variety-gap-index',    title: LANGUAGE === 'en' ? "5. From composite index to diagnostic profile" : "5. Från sammansatt index till diagnosprofil",                             isAppendix: false },
+	{ file: '06-dynamic-extension',              title: LANGUAGE === 'en' ? "6. Tracking change without predicting collapse" : "6. Att följa förändring utan att förutsäga kollaps",     isAppendix: false },
+	{ file: '07-calibration',                   title: LANGUAGE === 'en' ? "7. Historical calibration: reproducibility audit" : "7. Historisk kalibrering: reproducerbarhetsgranskning",                                 isAppendix: false },
+	{ file: '08-empirical-application',          title: LANGUAGE === 'en' ? "8. From pilot claims to a prospective protocol" : "8. Från pilotanspråk till ett prospektivt protokoll",                         isAppendix: false },
+	{ file: '09-limitations-and-next-steps',     title: LANGUAGE === 'en' ? "9. Limitations and next steps" : "9. Begränsningar och nästa steg",                                     isAppendix: false },
+	{ file: '10-appendix-a',                     title: LANGUAGE === 'en' ? "Appendix A: Diagnostic profile worksheet" : "Appendix A: Arbetsblad för diagnosprofil",                         isAppendix: true  },
+	{ file: '10-appendix-b',                     title: LANGUAGE === 'en' ? "Appendix B: Historical score discrepancy" : "Appendix B: Historisk poängavvikelse",                                  isAppendix: true  },
+	{ file: '10-appendix-c',                     title: LANGUAGE === 'en' ? "Appendix C: Candidate data sources" : "Appendix C: Möjliga datakällor",                    isAppendix: true  },
+	{ file: '10-appendix-d',                     title: LANGUAGE === 'en' ? "Appendix D: Mathematical audit of the legacy index" : "Appendix D: Matematisk granskning av det tidigare indexet",                                    isAppendix: true  },
 ];
 
 // ── CSS (identical to Paper VI template) ────────────────────────────────────
@@ -386,6 +397,19 @@ function getCoverImageUri() {
 	return null;
 }
 
+function renderSectionMarkdown(content) {
+  const blocks = [];
+  content = content.replace(/\\\[([\s\S]*?)\\\]/g, (_, tex) => {
+    blocks.push(katex.renderToString(tex.trim(), { displayMode: true, throwOnError: true }));
+    return `%%MATH${blocks.length - 1}%%`;
+  });
+  content = content.replace(/\\\(([\s\S]*?)\\\)/g, (_, tex) => {
+    blocks.push(katex.renderToString(tex.trim(), { displayMode: false, throwOnError: true }));
+    return `%%MATH${blocks.length - 1}%%`;
+  });
+  return marked.parse(content, { breaks: false, gfm: true }).replace(/%%MATH(\d+)%%/g, (_, i) => blocks[Number(i)] ?? '');
+}
+
 function generateHTML(sections) {
 	console.log('🔨 Converting markdown to HTML...');
 	marked.setOptions({ breaks: false, gfm: true });
@@ -398,6 +422,7 @@ function generateHTML(sections) {
   <meta charset="UTF-8">
   <title>${meta.title}</title>
   ${pdfStyles}
+  <style>${katexCss}</style>
 </head>
 <body>
   <div class="cover">
@@ -421,7 +446,7 @@ function generateHTML(sections) {
 		const sectionClass = section.isAppendix ? 'appendix' : '';
 		html += `<section class="${sectionClass}">\n`;
 		const enhancedContent = enhanceImageMarkup(section.content);
-		const sectionHtml = marked.parse(enhancedContent);
+		const sectionHtml = renderSectionMarkdown(enhancedContent);
 		html += sectionHtml;
 		html += `</section>\n`;
 		console.log(`✓ (${(sectionHtml.length / 1024).toFixed(1)} KB)`);

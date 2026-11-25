@@ -71,19 +71,19 @@
 
   // --- 3. CONTENT MAP (titles only – no components) ---
   const contentMap = [
-    { id: '01-introduction',                      titleEn: '1. Introduction: From Diagnosis to Measurement',                titleSv: '1. Introduktion: Från diagnos till mätning' },
-    { id: '02-dimensionality-estimation-problem', titleEn: '2. The Dimensionality Estimation Problem',                     titleSv: '2. Dimensionalitetsuppskattningsproblemet' },
-    { id: '03-eight-parameters',                  titleEn: '3. The Eight Parameters',                                      titleSv: '3. De åtta parametrarna' },
-    { id: '04-measurement-paradox',               titleEn: '4. The Measurement Paradox',                                   titleSv: '4. Mätparadoxen' },
-    { id: '05-composite-variety-gap-index',       titleEn: '5. The Composite Variety Gap Index',                           titleSv: '5. Det sammansatta varietetsgap-indexet' },
-    { id: '06-dynamic-extension',                 titleEn: '6. Dynamic Extension: Measuring the Rate of Gap Change',       titleSv: '6. Dynamisk utvidgning: Mätning av gapets förändringshastighet' },
-    { id: '07-calibration',                       titleEn: '7. Calibration Against the Twenty-One Cases',                  titleSv: '7. Kalibrering mot de tjugoen fallen' },
-    { id: '08-empirical-application',             titleEn: '8. Empirical Application: A Pilot Validation',                 titleSv: '8. Empirisk tillämpning: En pilotvalidering' },
-    { id: '09-limitations-and-next-steps',        titleEn: '9. Limitations and Next Steps',                                titleSv: '9. Begränsningar och nästa steg' },
-    { id: 'appendix-a',                           titleEn: 'Appendix A: Parameter Estimation Guide',                       titleSv: 'Appendix A: Guide för parameteruppskattning' },
-    { id: 'appendix-b',                           titleEn: 'Appendix B: Country Calibration Table',                        titleSv: 'Appendix B: Landkalibreringstabell' },
-    { id: 'appendix-c',                           titleEn: 'Appendix C: Data Sources and Availability Matrix',             titleSv: 'Appendix C: Datakällor och tillgänglighetsmatris' },
-    { id: 'appendix-d',                           titleEn: 'Appendix D: Mathematical Appendix',                            titleSv: 'Appendix D: Matematiskt appendix' },
+    { id: '01-introduction',                      titleEn: "1. Introduction: From diagnosis to measurement",                titleSv: "1. Introduktion: Från diagnos till mätning" },
+    { id: '02-dimensionality-estimation-problem', titleEn: "2. Task-relative distinctions",                     titleSv: "2. Uppgiftsrelativa distinktioner" },
+    { id: '03-eight-parameters',                  titleEn: "3. The indicator families",                                      titleSv: "3. Indikatorfamiljerna" },
+    { id: '04-measurement-paradox',               titleEn: "4. Evidence access and selective missingness",                                   titleSv: "4. Evidenstillgång och selektivt bortfall" },
+    { id: '05-composite-variety-gap-index',       titleEn: "5. From composite index to diagnostic profile",                           titleSv: "5. Från sammansatt index till diagnosprofil" },
+    { id: '06-dynamic-extension',                 titleEn: "6. Tracking change without predicting collapse",       titleSv: "6. Att följa förändring utan att förutsäga kollaps" },
+    { id: '07-calibration',                       titleEn: "7. Historical calibration: reproducibility audit",                  titleSv: "7. Historisk kalibrering: reproducerbarhetsgranskning" },
+    { id: '08-empirical-application',             titleEn: "8. From pilot claims to a prospective protocol",                 titleSv: "8. Från pilotanspråk till ett prospektivt protokoll" },
+    { id: '09-limitations-and-next-steps',        titleEn: "9. Limitations and next steps",                                titleSv: "9. Begränsningar och nästa steg" },
+    { id: 'appendix-a',                           titleEn: "Appendix A: Diagnostic profile worksheet",                       titleSv: "Appendix A: Arbetsblad för diagnosprofil" },
+    { id: 'appendix-b',                           titleEn: "Appendix B: Historical score discrepancy",                        titleSv: "Appendix B: Historisk poängavvikelse" },
+    { id: 'appendix-c',                           titleEn: "Appendix C: Candidate data sources",             titleSv: "Appendix C: Möjliga datakällor" },
+    { id: 'appendix-d',                           titleEn: "Appendix D: Mathematical audit of the legacy index",                            titleSv: "Appendix D: Matematisk granskning av det tidigare indexet" },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA (unchanged) ---
@@ -122,8 +122,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'The Governance as Engineering series has established that governance failure follows structural constraints — but has not provided a systematic method for measuring the central diagnostic concept: the Variety Gap. This paper provides that method.',
-      contextOutro: 'The paper develops a parametric framework that maps observable governance characteristics to the eight structural primitives, constructs a composite Variety Gap Index, and tests it against the twenty-one cases in the series. It is not a predictive model — it is a diagnostic instrument, offered as an open invitation for empirical testing and refinement.',
+      contextIntro: "Paper VIII proposes a task-relative diagnostic profile. Historical composite scores and threshold claims are withdrawn; the profile remains unvalidated.",
+      contextOutro: "The revised methodology keeps the indicator families separate and documents task, provenance and uncertainty. The historical formula discrepancy is retained for audit, not ranking.",
       allWorkingpapers: '← All Working Papers',
       downloads: 'Downloads',
       downloadPDF: 'Download PDF',
@@ -164,8 +164,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Serien Styrning som ingenjörskonst har fastställt att styrningsmisslyckanden följer strukturella begränsningar — men har inte tillhandahållit en systematisk metod för att mäta det centrala diagnostiska konceptet: varietetsgapet. Denna rapport tillhandahåller den metoden.',
-      contextOutro: 'Rapporten utvecklar ett parametriskt ramverk som kartlägger observerbara styrningsegenskaper till de åtta strukturella primitiverna, konstruerar ett sammansatt varietetsgap-index och testar det mot de tjugoen fallen i serien. Det är inte en prediktiv modell — det är ett diagnostiskt instrument, erbjudet som en öppen inbjudan till empirisk testning och förfining.',
+      contextIntro: "Rapport VIII föreslår en uppgiftsrelativ diagnosprofil. Historiska sammansatta poäng och tröskelanspråk dras tillbaka; profilen är ännu inte validerad.",
+      contextOutro: "Den reviderade metodiken håller indikatorfamiljerna åtskilda och dokumenterar uppgift, proveniens och osäkerhet. Den historiska formelavvikelsen bevaras för granskning, inte rangordning.",
       allWorkingpapers: '← Alla arbetsdokument',
       downloads: 'Nedladdningar',
       downloadPDF: 'Ladda ner PDF',
@@ -176,14 +176,14 @@
 
   const metadata = {
     en: {
-      title: 'Measuring the Variety Gap',
-      subtitle: 'A Parametric Framework for Diagnosing Governance Failure',
-      description: 'Paper VIII in the Governance as Engineering series. Develops a systematic method for measuring the Variety Gap in governance systems, mapping observable characteristics to structural primitives and constructing a composite diagnostic index.',
+      title: "Measuring the Variety Gap",
+      subtitle: "Task-relative diagnostic profiles and the limits of composite measurement",
+      description: "Paper VIII proposes a task-relative diagnostic profile. Historical composite scores and threshold claims are withdrawn; the profile remains unvalidated.",
     },
     sv: {
-      title: 'Att mäta varietetsgapet',
-      subtitle: 'Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden',
-      description: 'Rapport VIII i serien Styrning som ingenjörskonst. Utvecklar en systematisk metod för att mäta varietetsgapet i styrsystem, kartlägger observerbara egenskaper till strukturella primitiver och konstruerar ett sammansatt diagnostiskt index.',
+      title: "Att mäta variationsgapet",
+      subtitle: "Uppgiftsrelativa diagnosprofiler och den sammansatta mätningens gränser",
+      description: "Rapport VIII föreslår en uppgiftsrelativ diagnosprofil. Historiska sammansatta poäng och tröskelanspråk dras tillbaka; profilen är ännu inte validerad.",
     },
   };
 
@@ -249,8 +249,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Att mäta varietetsgapet: Ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden. Serien Styrning som ingenjörskonst, rapport VIII. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). Measuring the Variety Gap: A Parametric Framework for Diagnosing Governance Failure. Governance as Engineering Series, Paper VIII. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Reviderad november 2026. Styrning som ingenjörskonst. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Revised November 2026. Governance as Engineering. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

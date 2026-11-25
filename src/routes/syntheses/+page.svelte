@@ -6,8 +6,8 @@
 </script>
 
 <SEO
-  title="The Clouded Mirror — Reader's Guide to Governance as Engineering"
-  description="Eight accessible pathways into a unified diagnosis of why our institutions can't see the crises they create—and what we can build instead."
+  title={currentLang === 'sv' ? 'The Clouded Mirror — En läsguide för Styrning som ingenjörskonst' : "The Clouded Mirror — Reader's Guide to Governance as Engineering"}
+  description={$t.synthesesHubIntro}
 />
 
 <div class="max-w-5xl mx-auto px-4 py-16">
@@ -103,7 +103,7 @@
         <!-- Main card: uses the same background as other site cards, thick colored left border -->
         <a
           href={`/syntheses/${synth.slug}`}
-          class="block rounded-xl p-6 border border-[var(--color-separator)] bg-[var(--color-card-bg)] hover:shadow-md transition-shadow h-full border-l-4 {synth.borderColor}"
+          class="block rounded-xl p-6 pb-14 border border-[var(--color-separator)] bg-[var(--color-card-bg)] hover:shadow-md transition-shadow h-full border-l-4 {synth.borderColor}"
         >
           <span class="block text-xs font-bold uppercase tracking-wider mb-2 opacity-80 text-[var(--color-card-text)]">
             {synth.audience}

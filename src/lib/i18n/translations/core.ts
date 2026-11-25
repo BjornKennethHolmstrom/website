@@ -175,11 +175,11 @@ export const coreTranslations = {
     },
     geSeriesPaperVII: {
       title: 'VII: The Architecture of Governance Failure',
-      desc:  'Unifies the series into a single diagnostic narrative — why governance architectures that destroy information before it reaches decision‑makers cannot be repaired by improving those decision‑makers.'
+      desc:  'A comparative synthesis of governance failure mechanisms in national case reports. Relates requisite variety, proxy optimization and compounding constraints as distinct diagnostic ideas. The cross-case interpretations and dependencies on earlier papers remain subject to source review.'
     },
     geSeriesPaperVIII: {
       title: 'VIII: Measuring the Variety Gap',
-      desc:  'Develops a parametric framework for diagnosing governance failure — measuring the Variety Gap through eight observable parameters, with calibration and pilot validation.',
+      desc:  'Paper VIII proposes a task-relative diagnostic profile. Historical composite scores and threshold claims are withdrawn; the profile remains unvalidated.',
     },
     geSeriesPaperIX: {
       title: 'IX: The Political Economy of Requisite Governance',
@@ -203,7 +203,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXIV: {
       title: 'XIV: Governance as an Adaptive Controller',
-      desc:  'Formalises governance learning as a dual control problem. Models the exploration–exploitation trade‑off, institutional memory, and persistent excitation. Derives design principles for systems that can learn to redesign themselves. Consolidates Cycle Two.',
+      desc:  'Distinguishes identification, excitation, learning and operational performance. Examines a finite-horizon adaptive-controller comparison, memory weights and the information requirements of sunset review.',
     },
     geSeriesPaperXV: {
       title: 'XV: The Adaptation Bottleneck',
@@ -211,7 +211,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXVI: {
       title: 'XVI: Why Diversity Resists Formalization',
-      desc:  'Four disciplines independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter.',
+      desc:  'Revisits four disciplinary analogies without asserting formal identity. Derives a stationary partition law for linear copying with switching barriers and quantifies a finite-population bottleneck.',
     },
     geSeriesPaperXVII: {
       title: 'XVII: The Certification Floor',
@@ -231,11 +231,11 @@ export const coreTranslations = {
     },
     geSeriesPaperXXI: {
       title: 'XXI: When to Stop Learning, and When to Stop',
-      desc:  'Traces the lifecycle of a bounded controller: learning can break coupling, meta‑learning must close on invariants, and the terminal adaptive act may be to end rather than persist.',
+      desc:  'Examines learning versus maintaining coupling, closure of meta-learning on invariants, and institutional termination or transfer as possible adaptive acts. A registered minimal model reports a learning–adaptation trade-off; imports from XIV, XVI and XX await source reconciliation.',
     },
     geSeriesPaperXXII: {
       title: 'XXII: What Cannot Be Guaranteed',
-      desc:  'Three demands for assurance — from inside, outside, and before the world — each fail for its own reason. A corrupted certification kernel makes institutions look healthier, not sicker, and the failure destroys the evidence of itself.',
+      desc:  'Examines three distinct assurance problems: self-certification, reform convergence and architecture choice. Reports a model of a corrupted certification kernel and its effect on monitored indicators. Dependencies and the detailed registered outcomes remain under source review.',
     },
     geSeriesPaperXXIII: {
       title: 'XXIII: The Shape of Reform',
@@ -243,7 +243,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXXIV: {
       title: 'XXIV: The Observer You Cannot Afford to Excite',
-      desc:  'Shows that optimizing a diversity proxy built on a learned observer destroys reachable alternatives — not by intent, but because task-centred data starves the periphery of the excitation the observer needs to resolve it.',
+      desc:  'Studies a gridworld in which a learned diversity indicator allocates resolution according to sampled experience. Reports a policy-dependent exposure trap and a structural-exposure intervention in that model; the scope of the mechanism and imports from VI and XIV await source review.',
     },
     geSeriesPaperXXV: {
       title: 'XXV: Where Reform Pushes Down, Strategy Pushes Back',
@@ -255,11 +255,11 @@ export const coreTranslations = {
     },
     geSeriesPaperXXVII: {
       title: 'XXVII: Requisite Alignment',
-      desc:  'Shows in a solved control problem that requisite variety is not sufficient: an informative signal evaluating the wrong target loses value, and the geometry of the misalignment — not only its extent — determines the cost.',
+      desc:  'Examines action-relative feedback in a solved control problem. Different displacement structures can have different decision costs despite matching channel information under a uniform prior; belief-conditioned mutual information need not match. The manuscript correction and upstream imports remain open.',
     },
     geSeriesPaperXXVIII: {
       title: 'XXVIII: Closure–Adaptation Dynamics',
-      desc:  'A five‑variable model of institutional rigidification under uncertainty. Shows bistability, hysteresis, noise‑induced tipping, cascade collapse, and a constitutional permeability floor that prevents permanent closure.'
+      desc:  'A five-variable model of institutional closure and adaptation under uncertainty. Reports exploratory results on bistability, hysteresis, tipping and cascades; a permeability floor prevented lasting closure in the tested shock, not in general. Numerical and methodological source checks remain open.'
     }
   },
 
@@ -267,7 +267,7 @@ export const coreTranslations = {
   coordinationTitle: "The Coordination Imperative",
   coordinationTagline: "A protocol for planetary-scale cooperation.",
   varietyGapFrameworkTitle: 'Variety Gap Framework',
-  varietyGapFrameworkTagline: 'A cybernetic diagnostic for governance systems.',
+  varietyGapFrameworkTagline: 'Exploratory governance indicators; composite-gap measurement under review.',
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Frameworks for meta-governance and interoperability.',
   subsidiarityTitle: 'Svensk Subsidiaritet',
@@ -489,7 +489,7 @@ export const coreTranslations = {
   navEssays: 'Essäer',  // or 'Manifest'
   navFrameworks: 'Ramverk',
   navSystemicOptimization: 'Systemisk optimering',
-  navVarietyGap: 'Varietetsgapet',
+  navVarietyGap: 'Variationsgapet',
   navEUPilot: 'EU subsidiaritetsprotokoll',
   navAfricaPilot: 'Afrika — Informal Trust Ledger',
   navIndiaPilot: 'Indien — DPI 2.0',
@@ -645,11 +645,11 @@ export const coreTranslations = {
     },
     geSeriesPaperVII: {
       title: 'VII: Styrningens misslyckandes arkitektur',
-      desc:  'Förenar serien till en enda diagnostisk berättelse — varför styrningsarkitekturer som förstör information innan den når beslutsfattare inte kan repareras genom att förbättra dessa beslutsfattare.'
+      desc:  'En jämförande syntes av styrningsmisslyckandens mekanismer i landsrapporter. Relaterar nödvändig variation, proxyoptimering och samverkande begränsningar som skilda diagnostiska idéer. Falltolkningarna och beroendena av tidigare rapporter återstår att granska på källnivå.'
     },
     geSeriesPaperVIII: {
-      title: 'VIII: Att mäta varietetsgapet',
-      desc:  'Utvecklar ett parametriskt ramverk för att diagnostisera styrningsmisslyckanden — mäter varietetsgapet genom åtta observerbara parametrar, med kalibrering och pilotvalidering.',
+      title: 'VIII: Att mäta variationsgapet',
+      desc:  'Rapport VIII föreslår en uppgiftsrelativ diagnosprofil. Historiska sammansatta poäng och tröskelanspråk dras tillbaka; profilen är ännu inte validerad.',
     },
     geSeriesPaperIX: {
       title: 'IX: Den politiska ekonomin för nödvändig styrning',
@@ -673,7 +673,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXIV: {
       title: 'XIV: Styrning som en adaptiv kontrollant',
-      desc:  'Formaliserar styrningens lärande som ett dubbelkontrollproblem. Modellerar avvägningen mellan utforskning och exploatering, institutionellt minne och persistent excitation. Härleder designprinciper för system som kan lära sig att omforma sig själva. Konsoliderar Cykel Två.',
+      desc:  'Skiljer identifiering, excitation, lärande och operativ prestanda åt. Undersöker en jämförelse av adaptiva regulatorer över ändlig horisont, minnesvikter och informationskrav vid omprövning.',
     },
     geSeriesPaperXV: {
       title: 'XV: Adaptationsflaskhalsen',
@@ -681,7 +681,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXVI: {
       title: 'XVI: Varför mångfald motstår formalisering',
-      desc:  'Fyra discipliner konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern.',
+      desc:  'Omprövar fyra disciplinära analogier utan att hävda formell identitet. Härleder en stationär partitionsfördelning för linjär kopiering med bytesbarriärer och kvantifierar en flaskhals i ändlig population.',
     },
     geSeriesPaperXVII: {
       title: 'XVII: Certifieringsgolvet',
@@ -701,11 +701,11 @@ export const coreTranslations = {
     },
     geSeriesPaperXXI: {
       title: 'XXI: När man ska sluta lära sig, och när man ska sluta',
-      desc:  'Spårar livscykeln hos en begränsad regulator: lärande kan bryta kopplingen, meta‑lärande måste slutas på invarianter, och den terminala adaptiva handlingen kan vara att avsluta snarare än att bestå.',
+      desc:  'Undersöker lärande kontra upprätthållande av koppling, metalärandets slutning på invarianter samt institutionellt avslut eller överföring som möjliga adaptiva handlingar. En registrerad minimal modell redovisar en avvägning mellan lärande och anpassning; kopplingarna till XIV, XVI och XX återstår att granska.',
     },
     geSeriesPaperXXII: {
       title: 'XXII: Vad som inte kan garanteras',
-      desc:  'Tre krav på garanti — inifrån, utifrån och före världen — misslyckas var och en av sitt eget skäl. En korrupt certifieringskärna får institutioner att se friskare ut, och misslyckandet förstör bevisen för sig självt.',
+      desc:  'Undersöker tre skilda garantiproblem: självcertifiering, reformkonvergens och arkitekturval. Redovisar en modell av en korrumperad certifieringskärna och dess effekt på övervakade indikatorer. Beroenden och detaljerade registrerade utfall återstår att granska.',
     },
     geSeriesPaperXXIII: {
       title: 'XXIII: Reformens form',
@@ -713,7 +713,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXXIV: {
       title: 'XXIV: Observatören du inte har råd att excitera',
-      desc:  'Visar att optimering av en diversitetsproxy byggd på en inlärd observatör förstör nåbara alternativ — inte avsiktligt, utan för att uppgiftscentrerad data svälter periferin på den excitering observatören behöver för att upplösa den.',
+      desc:  'Studerar en rutnätsvärld där en inlärd diversitetsindikator fördelar upplösning efter samplad erfarenhet. Redovisar en policyberoende exponeringsfälla och en intervention med strukturell exponering i modellen; mekanismens räckvidd och kopplingarna till VI och XIV återstår att granska.',
     },
     geSeriesPaperXXV: {
       title: 'XXV: Där reform trycker ner, trycker strategi tillbaka',
@@ -725,11 +725,11 @@ export const coreTranslations = {
     },
     geSeriesPaperXXVII: {
       title: 'XXVII: Nödvändig inriktning',
-      desc:  'Visar i ett löst kontrollproblem att nödvändig variation inte är tillräcklig: en informativ signal som utvärderar fel mål förlorar värde, och geometrin hos felinriktningen — inte bara dess omfattning — bestämmer kostnaden.',
+      desc:  'Undersöker handlingsrelativ återkoppling i ett löst reglerproblem. Olika förskjutningsstrukturer kan ge olika beslutskostnader trots samma kanalinformation vid likformig prior; den ömsesidiga informationen villkorad på trosfördelningen behöver inte vara densamma. Manuskriptkorrigeringen och kopplingarna till tidigare rapporter är fortfarande öppna.',
     },
     geSeriesPaperXXVIII: {
       title: 'XXVIII: Slutenhet–anpassningsdynamik',
-      desc:  'En femvariabel modell av institutionell stelning under osäkerhet. Visar bistabilitet, hysteres, brusinducerad tippning, kaskadkollaps och ett konstitutionellt permeabilitetsgolv som förhindrar permanent slutenhet.'
+      desc:  'En femvariabelmodell av institutionell slutenhet och anpassning under osäkerhet. Redovisar explorativa resultat om bistabilitet, hysteres, tippning och kaskader; ett permeabilitetsgolv förhindrade varaktig slutenhet i den prövade chocken, inte generellt. Numeriska och metodologiska källkontroller återstår.'
     }
   },
 
@@ -737,7 +737,7 @@ export const coreTranslations = {
   coordinationTitle: "The Coordination Imperative",
   coordinationTagline: "Ett protokoll för samarbete på planetär skala.",
   varietyGapFrameworkTitle: 'Variety Gap Framework',
-  varietyGapFrameworkTagline: 'Ett cybernetiskt diagnostiskt verktyg för styrsystem.',
+  varietyGapFrameworkTagline: 'Explorativa styrningsindikatorer; mätningen av det sammansatta gapet granskas.',
 		ggfTitle: 'Global Governance Frameworks',
 		ggfTagline: 'Ramverk för meta-styrning och interoperabilitet.',
   subsidiarityTitle: 'Svensk Subsidiaritet',
@@ -886,7 +886,7 @@ export const coreTranslations = {
         quote: '"Jag vill förstå hur vi kan designa om samhällets grundläggande strukturer."',
         links: {
           coordination: 'The Coordination Imperative',
-          varietyGapFramework: 'Varietetsgapet',
+          varietyGapFramework: 'Variationsgapet',
           reports: 'Rapporter',
           workingpapers: 'Arbetsdokument',
           subsidiarity: 'Svensk Subsidiaritet',

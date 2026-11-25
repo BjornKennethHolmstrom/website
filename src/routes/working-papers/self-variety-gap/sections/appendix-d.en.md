@@ -1,102 +1,32 @@
-## Appendix D: Simulation Architecture — The Self Stability Simulator
+## Appendix D: Legacy simulator and controlled replay
 
-This appendix outlines a simulation model that makes the self‑variety gap and the Goodhart–Ashby synthesis for the self concretely visible. The model extends the logic of the Governance Stability Simulator (Paper I) and the value‑function collapse demonstrator (Appendix C of *The Variety Gap*) to the domain of an individual life. 
+### D.1 Actual implementation [I]
 
-### D.1 System Description
+The unchanged script uses five states H, R, M, C and L (health, relationships, meaning, career and leisure), initial and reference values 70, 300 stored samples, retention 0.95, input coefficient 0.3 and Gaussian disturbances with standard deviations 1.5, 1.2, 1.0, 1.8 and 0.8. Both controllers receive full noisy state arrays, with observation noise standard deviations 0.3 times the disturbance standard deviations. The 1D policy uses only C; ND uses H, R and C, not leisure. Raw signed proportional errors use gain 0.05 and are normalized to absolute effort 10 whenever nonzero. In 1D this becomes sign-only control; in ND relative errors determine allocation. The common positive gain cancels. There is no optimized objective, learned sensor or changing representation.
 
-The simulation models a person as a dynamical system with **N** internal state dimensions, each representing a causally relevant aspect of wellbeing:
+Only 1D incurs the immediate signed health debit 0.12 times career action, overwriting the stored state before the next update; negative action credits health. Both plants include linear cross-coupling, a health-gated career retention term below 70% of baseline, a health-dependent leisure boost and a zero floor. There is no multiplicative relationship-to-meaning function. There is no explicit rest policy or increasing effort in response to crisis. Thus both the policy and plant differ. Original seed 42 is used sequentially, not as paired independent runs. The original script and PNG are archival artifacts; their titles and comments are not the revised scientific claims.
 
-- **H(t)** : physical health (energy, immune function, absence of illness)
-- **R(t)** : relational integrity (depth and authenticity of close relationships)
-- **M(t)** : existential meaning (sense of purpose, coherence, direction)
-- **C(t)** : career / contribution (productive engagement, recognition, growth)
-- **L(t)** : leisure / restoration (rest, play, aesthetic experience)
+### D.2 Replayed historical run [I/E]
 
-Additional dimensions can be added or removed. The dimensions are coupled: neglecting health reduces career performance over time; neglecting relationships reduces meaning; and so forth. The true state of the self at time *t* is the vector **x(t)** = [H(t), R(t), M(t), C(t), L(t)]ᵀ.
+| Statistic | 1D | ND |
+|---|---:|---:|
+| Last-50 pooled state mean | 67.19 | 68.72 |
+| Fraction of samples with any state below 14 | 0.11 | 0.00 |
+| Mean career (all samples) | 37.65 | 70.04 |
+| Total absolute effort | 2990 | 2990 |
+| Minimum health | 36.22 | 61.02 |
 
-The system evolves according to:
+The summary agrees with the original figure's rounded pooled means. Contrary to the earlier account, 1D relationships do not collapse toward 45: minimum is 61.42, last-50 mean 94.53. Last-50 meaning is 105.56, minimum career 6.66; 25 career actions are negative. ND's untracked leisure last-50 mean is 51.40. The former health claim of 15–20 is incorrect. State units are artificial; the sample fraction is not a clinical crisis rate. The plotted count of untracked coordinates (4 or 2) is constant, not the hidden gap. No belief accuracy or wellbeing is measured.
 
-**x(t+1) = A · x(t) + B · u(t) + d(t) + drift**
+### D.3 Matched-seed diagnostic [E]
 
-where:
-- **A** captures natural decay and cross‑dimensional coupling (e.g., health decays slowly without attention; meaning decays if relationships are poor).
-- **B** translates investments of time, energy, and attention (**u**) into changes in each dimension.
-- **d(t)** are disturbances — external shocks (illness, loss, conflict) and internal fluctuations (mood, energy).
-- **drift** maintains equilibrium in the absence of disturbance and control.
+The audit reuses the original functions, moves only the signed health debit outside the controller-specific branch and toggles it for both arms. Eight seeds 42–49 use common random draws per seed and condition. This is a post-hoc sensitivity check at the original parameters, not a preregistered causal study.
 
-### D.2 Value Architectures (Controllers)
+| Policy | Debit | Mean flagged fraction | Mean career | Last-50 pooled mean |
+|---|---|---:|---:|---:|
+| 1D | Off | 0.000833 | 61.303 | 61.7 |
+| 1D | On | 0.080417 | 41.332 | 65.7 |
+| ND | Off | 0 | 70.078 | 68.5 |
+| ND | On | 0 | 70.035 | 68.5 |
 
-The simulation compares two personal value architectures that differ only in their **dimensionality**, not in their effort or competence.
-
-**Architecture 1D (Single‑Metric)**
-- The person’s value function tracks only one dimension — for example, career success: **J₁ = C(t)**.
-- The observation channel **C_self** projects the full self‑state onto the career axis; all other dimensions are unobserved. The person attends only to signals about performance, recognition, and advancement.
-- Control law: **u(t) = K · (C_target − C_obs(t))**, where **K** is a gain and **C_obs** is the noisy observation of career. The person invests effort whenever career performance is below the target, with no awareness of the costs to other dimensions.
-
-**Architecture ND (Multi‑Dimensional)**
-- The person’s value function tracks *n* dimensions simultaneously, where *n* is adjustable by the user (e.g., *n* = 3: career, health, relationships).
-- The observation channel includes those dimensions, with some noise. The person attends to a richer set of signals.
-- Control law: **uᵢ(t) = Kᵢ · (xᵢ_target − xᵢ_obs(t))** for each tracked dimension *i*. Effort is allocated to close gaps in any dimension that is perceived as deficient.
-
-Both controllers have access to the same total effort budget per time step; the only difference is the dimensionality of their value architecture and the resulting allocation of attention and action.
-
-### D.3 Coupling and the Collapse Mechanism
-
-The critical structural feature is **cross‑dimensional coupling**. Health affects career productivity; relationships affect meaning; meaning affects motivation to maintain health. The simulation implements a simple linear coupling:
-
-- Career output at time *t* depends on **C(t) · f(H(t))**, where *f* is a monotonically increasing function that reduces productivity when health is low.
-- Meaning depends on **M(t) · g(R(t))**, where *g* captures the contribution of relational depth to a sense of purpose.
-
-The 1D controller, blind to health and relationships, initially succeeds: career investment yields career returns. But as health and relationships silently decline (because no effort is allocated to them), the coupling terms begin to degrade career performance. The controller responds by *increasing* career investment — the only lever it knows — which further accelerates the decline of the excluded dimensions. This is the Goodhart–Ashby mechanism: the narrow metric destroys the conditions on which its own success depends.
-
-Eventually, career performance collapses despite maximum effort, because the underlying health and relationship dimensions have fallen below critical thresholds. The collapse appears sudden and inexplicable to the 1D controller, which has no categories in which to perceive the causes.
-
-The ND controller, observing health and relationships alongside career, moderates its investment before the excluded dimensions reach dangerous levels. Career performance grows more slowly but does not collapse. The system reaches a stable, multidimensional equilibrium.
-
-### D.4 User‑Adjustable Parameters
-
-The simulation is designed as an interactive tool for exploring the self‑variety gap. Key parameters the user can adjust include:
-
-- **Number of tracked dimensions (n)** : from 1 (narrow) to N (full).
-- **Gain (K)** : the intensity of corrective effort. High gain with low dimensionality accelerates collapse.
-- **Coupling strength** : how strongly excluded dimensions feed back on the tracked metric. Stronger coupling produces faster collapse for narrow architectures.
-- **Disturbance level** : the frequency and magnitude of external shocks. Higher disturbance levels require higher dimensionality to maintain stability.
-- **Initial conditions** : starting values for each dimension, allowing exploration of different life configurations.
-
-### D.5 Expected Outputs
-
-The simulation produces time‑series plots showing:
-
-1. **Trajectories of all N dimensions** under each architecture, with the collapse of untracked dimensions and the eventual collapse of the tracked metric in the 1D case clearly visible.
-2. **The self‑variety gap G_self over time**, computed as the difference between the effective dimensionality of the disturbance environment and the dimensionality of the active value architecture.
-3. **A “crisis detector”** that flags when any dimension falls below a critical threshold.
-4. **A summary comparison** of mean wellbeing, crisis frequency, and total effort expended under each architecture.
-
-### D.6 Relevance to the Variety Gap
-
-This simulation is a direct instantiation of the self‑variety gap model:
-
-- The 1D controller has **dim(V_self) = 1**; the disturbance space has **dim(D_self) = N** (plus couplings). **G_self** is large.
-- The excluded dimensions (health, relationships, meaning) are causally coupled to the tracked metric (career). Optimizing the proxy without monitoring the excluded dimensions eventually destroys the correlation.
-- The collapse follows the Goodhart–Ashby dynamics: the narrow metric optimizes away its own informational basis.
-- The ND controller, with a higher **dim(V_self)**, manages **G_self** and avoids collapse.
-
-The simulation makes the abstract mechanics of the self‑variety gap tangible. It allows users to see, in simplified form, how a life governed by a single metric inevitably destabilizes — and how expanding the dimensionality of what one values can restore stability.
-
-### D.7 Reproducibility
-
-A reference implementation of the Self Stability Simulator is available in the companion repository (see “Simulation Code” in the supplementary materials). The simulation uses standard Python with NumPy and Matplotlib; no specialized packages are required. Users can run the simulation, adjust parameters through a simple interface, and generate the figures described above. 
-
-**Figure D.1: Self-variety gap collapse in a five-dimensional personal system**
-
-![Figure D.1](/working-papers/images/self-variety-gap/self-stability-simulator.png)
-
-The 1D controller (tracking only career) initially applies maximum effort to career advancement. This effort directly drains health through overwork (physiological cost of sustained high performance). As health falls below 70% of baseline, career productivity enters exponential decline—the same effort yields progressively less output. The controller, unable to perceive health, responds by increasing effort further, accelerating health depletion. This creates recurring boom-bust cycles visible in the career trajectory (middle panel): brief recoveries when accumulated rest allows temporary health restoration, followed by deeper crashes as the controller immediately re-depletes the recovered capacity.
-
-Health stabilizes near collapse (~15-20), relationships decay to ~45, and career oscillates between 10 and 70 despite continuous maximum effort. The system enters a chronic crisis state with crisis fraction = 0.1. The person is working as hard as possible but achieving progressively worse outcomes—the canonical burnout pattern.
-
-The ND controller (tracking health, relationships, career, and leisure) distributes effort across dimensions. By maintaining health above the 70% threshold, it avoids triggering the career penalty entirely. All tracked dimensions stabilize near baseline with low variance. Career performance is steady at ~70—lower than 1D's peaks but without the catastrophic troughs. Crisis fraction = 0.0.
-
-The summary comparison (bottom left) shows nearly identical mean wellbeing (67.2 vs 68.7) because 1D's brief peaks compensate for its deep troughs when averaged. But the *lived experience* differs radically: ND provides stable, predictable functioning; 1D produces chronic instability and recurring crises. The identical effort budgets (bottom right) demonstrate this is architectural failure, not motivational deficit.
-
-This is the personal Goodhart-Ashby synthesis: a value architecture with dim(V_self)=1 cannot maintain stability when the excluded dimension (health) is causally coupled to the tracked metric (career). The narrow optimization destroys its own informational and physiological basis.
+The 1D pooled measure rises when the debit worsens career outcomes: negative career coupling to R and M contributes to that reversal. It cannot be interpreted as wellbeing. Removing the debit substantially reduces the flagged fraction; the residual career difference is about 8.8 points. The untracked health coordinate, negative C-to-H coupling and health-gated career dynamics are part of the model-internal explanation, not separately identified causal effects. In the legacy asymmetric comparison with matched seeds, the independent reviewer reports 1D fractions from 0.04 to 0.12 in every seed versus zero ND, so the contrast is not merely an artifact of using different random streams. This is not evidence about people or a general objective-dimensionality effect. Other parameters, control laws and outcomes are untested. The original replay and factorial ablation are documented in the accepted audit. The separate matched-seed legacy comparison comes from the independent correction reviewer’s replay; its reproducing script and per-seed output are archived with correction v0.2, not in the original audit.

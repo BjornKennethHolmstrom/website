@@ -1,4 +1,4 @@
-# Governance as Engineering — Dependency Atlas (v2.2, GA-R01 draft)
+# Governance as Engineering — Dependency Atlas (v2.3, GA-R02 integration draft)
 
 *Internal structural map of the series. Where `brief.md` tells a reader what GaE says, this document records whether GaE hangs together: which claims rest on which, by what kind of relation, how strong each is, which branches are closed, and which open dependency would unlock the most downstream work.*
 
@@ -8,7 +8,9 @@
 
 *v2.1 changes (2026-11-08): Paper XXVIII, *Closure Adaptation Dynamics*, added (§3.9, §4, §10) and placed in cycle two as a late addition (§9), with numerical corrections from a spot re-simulation (§9); companion-series section added (§3.12) with eight canonical links mirrored from `papers.yaml` `cross_series_links`; edge vocabulary extended (`instantiates`, `corroborates-cross-model`, `bounds`, `tested-against-criterion`); SO's diagnostic failures tested against the §5.1 discriminator and recorded as a third presentation, not new members; §6.1 gains its first exactly-solved objective→observability case.*
 
-*v2.2 draft (2026-11-25): GA-F01–04 accepted source corrections propagated to the central registry, atlas and briefs. Historical reported values, exact mathematics, stored-table replays and exploratory diagnostics are separated. Dependent paper texts are not yet audited; see §9 and the GA-R01 handoff.*
+*v2.2 accepted (2026-11-25): GA-F01–04 accepted source corrections propagated to the central registry, atlas and briefs. Historical reported values, exact mathematics, stored-table replays and exploratory diagnostics are separated. Dependent paper texts were not audited at that gate; see §9 and the GA-R01 handoff.*
+
+*v2.3 draft: VIII and Self I v0.2 accepted; their corrected VI dependency is explicit, not a validation of institutional or personal measures. The Self I imports from I–V are historical thematic context; XX supplies the scoped ordering criterion. Other dependent sources remain open.*
 
 ---
 
@@ -303,14 +305,15 @@ XVIII+"pressure relocates" ── formalized/bounded-by ──▶ XXV
 ### 3.11 Self sub-series (cross-scale; mostly `[IP]`)
 
 ```
-Cycle One (I–VI)  ── transfers ──▶ Self-I : legacy value/attention analogy; source reconciliation pending
+VI, XX ── scoped imports ──▶ Self-I : conditional feedback analogy; toy mathematics, not psychological laws
+I–V ── motivates ──▶ Self-I (historical context)
 Cycle Two (X–XIV) ── transfers ──▶ Self-II : five primitives + observer–plant identity
                           Self-II ── derives ──▶ measurement–disturbance coupling (separation principle fails)
                           Self-II ── derives (dual of III via XI) ──▶ constitutional self-uncontrollability
-III + Self-I/II   ── derives ──▶ Self-III : inherited unobservability [R]
+III + Self-I/II   ── legacy dependency ──▶ Self-III : inherited unobservability [R as originally claimed; source audit pending]
 ```
 
-Transfer strengths are ranked *within* the Self line (§8). Self I still uses `[R]/[I]/[S]` and Self III `[I]/[S]`; reconcile to corpus-standard (§9).
+Transfer strengths are ranked *within* the Self line (§8). Self I v0.2 separates scoped mathematics from interpretive proposals and descriptive replay; Self III still needs review (§9).
 
 ### 3.12 Companion series: Systemic Optimization
 
@@ -448,7 +451,9 @@ So the dashboard can present at least three ways — byproduct-of-success, measu
 Where the graph has a dangling premise, ordered by downstream leverage.
 
 ### 6.1 The objective/loss object is unintegrated — the deepest gap
-`objective/loss` is distinct from observations and model (VI); it relates to action adequacy and ordering (XX), scalar proxies (XXIV, XXV), fixed action-loss structure (XXVII), personal values (Self I, source review pending), and contested social purpose. These are related, not identical. **XXVII defines alignment relative to an explicit task/loss**: once the loss is contested or endogenously selected, alignment is contested too. Power enters through which outcomes count, whose losses enter, which actions are feasible and which boundary sets inclusion. The candidate upstream sequence:
+**Measurement update (VIII v0.2).** Corrected VI supplies the task-relative adequacy criterion and equal-rank witness; VIII translates the five axes into candidate evidence profiles, not an estimated common latent scalar. No scores, thresholds or validated country classifications survive. The prospective protocol has no committed panel size.
+
+`objective/loss` is distinct from observations and model (VI); it relates to action adequacy and ordering (XX), scalar proxies (XXIV, XXV), fixed action-loss structure (XXVII), personal values (Self I v0.2, conditional analogy), and contested social purpose. These are related, not identical. **XXVII defines alignment relative to an explicit task/loss**: once the loss is contested or endogenously selected, alignment is contested too. Power enters through which outcomes count, whose losses enter, which actions are feasible and which boundary sets inclusion. The candidate upstream sequence:
 
 ```
 objective formation → action-relevant partition → feedback alignment → decision value
@@ -529,7 +534,7 @@ The single feature with *no* institutional analogue is **observer–plant identi
 
 | Priority | Source-review and integration queue |
 |---|---|
-| 1 | VIII and Self I (measurement and threshold); current public listings (`working-papers.ts`, `core.ts`, framework pages) — check against accepted sources and hub text immediately. |
+| 1 | VIII and Self I sources accepted v0.2; final listing reconciliation prepared, publication checks pending. Prioritize the Variety Gap tool/calculator and country reports publishing withdrawn scores, intervals or classifications; quarantine rather than rescale. |
 | 2 | XXI/XXII (learning, ordering, certification); verify the XXII registered-failure count. |
 | 3 | XXIV/XXVII (exposure, alignment and MI). |
 | 4 | XVII, XVIII, XXVI, XXVIII, Self II–III; Paper 0, VII and X; IX and X imports in XIV (review references and scope, do not reopen accepted XIV by default). Inspect all remaining handoff edges. |
@@ -538,7 +543,7 @@ The single feature with *no* institutional analogue is **observer–plant identi
 
 Source-level verification of exact claims and anchors is required before closing each edge. Historical sources and accepted revisions remain immutable.
 
-**Pending structural edges (dependent → upstream):** VIII → VI; Self I → VI; XXI → XIV, XVI, XX; XXVII → VI, XX; XXIV → XIV, VI; Self II → XIV. All carry the status “upstream premise revised; dependent audit pending” in the canonical registry. Existing thematic edges into the accepted corrected XX and XXIII, and the uncited XVI relationship in XXIV, remain thematic.
+**Pending structural edges (dependent → upstream):** Self III → Self I; XXI → XIV, XVI, XX; XXVII → VI, XX; XXIV → XIV, VI; Self II → XIV. All carry the status “upstream premise revised; dependent audit pending” in the canonical registry. Existing thematic edges into the accepted corrected XX and XXIII, and the uncited XVI relationship in XXIV, remain thematic.
 
 ## 9. Housekeeping and live corrections
 
@@ -558,7 +563,7 @@ Source-level verification of exact claims and anchors is required before closing
 
 - **XXVII mutual-information claim — LIVE CORRECTION, affects the paper and the brief.** External review reports that the strong claim — *the two geometries carry identical marginal MI at every displacement level, so any value difference is information-independent* — is false at nonuniform POMDP beliefs. The defensible statement: the geometries share output cardinality, `q`, `m`, likelihood spectrum, and **uniform-prior one-observation** MI, but can differ in **belief-conditioned** MI and sequential value, because they assign the likelihood levels to different latent classes. Tier consequences: scalar-`q` non-representability stays `[R]`; attenuation and geometry dependence stay `[N]`; the *general* alignment claim stays `[IP]`; the "cannot be an information-quantity effect" *inference* must be narrowed or dropped. Both brief tables and prose now use the qualified formulation. The paper key-claims and §5.2 and the actual simulation remain to be checked; the source-level correction is not closed.
 
-- **Tier-scheme drift in the Self line — open.** Self I (`[R]/[I]/[S]`) and Self III (`[I]/[S]`) predate corpus-standard `[R]/[IP]/[H]`; Self II migrated. Reconcile.
+- **Tier-scheme drift in the Self line — open.** Self I v0.2 uses local provenance labels and scoped mathematical/interpretive distinctions; Self III (`[I]/[S]`) remains open. Self II migrated.
 
 - **Public evidence labels.** Both briefs distinguish exact results and registered numerical outcomes within their scope, with explicit historical/exploratory provenance. No new global tier scheme is adopted.
 
@@ -578,7 +583,7 @@ Full claims in §3; this is number → object.
 | V | (coordination tax) | composition | multiplicative compounding | R |
 | VI | The Variety Gap | task-relative adequacy | distinct evaluation/observation/model/decision/actuation; static hidden-direction condition | R (scoped) / IP |
 | VII | (reform) | reform | reform disappoints; protected experimental space | H |
-| VIII | (measurement) | objective/loss | legacy G index; source reconciliation and validation pending | IP / H |
+| VIII | Measuring the Variety Gap | task-relative measurement | five-axis diagnostic profile and prospective protocol; legacy composite scores and threshold withdrawn | R (scoped VI model) / IP / H; unvalidated |
 | IX | (transition) | reform | transition bandwidth | IP |
 | X | (distributed sensing) | diversity | correlation tax; ρ_eff≈0.97 tested | R / **E** |
 | XI | (actuation) | actuation | codimension law; uncontrollability | R / IP |
@@ -599,7 +604,7 @@ Full claims in §3; this is number → object.
 | XXVI | The Cost of Returning | adaptation | tail-nucleated escape; escape-ladder | R (scoped) / IP |
 | XXVII | Requisite Alignment | alignment | alignment as second constraint; geometry sign reversal; VI/XX imports and MI correction pending | R / N |
 | XXVIII | Closure Adaptation Dynamics (cycle two, late) | boundary | strength ≠ permeability; bistability, hysteresis, cascade; permeability floor | H / IP (exploratory) |
-| Self I | Variety Gap in the Self | objective/loss | legacy value/attention analogy; critical gap and inherited proof not licensed by VI | IP / H (source review pending) |
+| Self I | Variety Gap in the Self | values, observation and feasible action | conditional analogy; original personal index and crisis predictions withdrawn | R (toy model only) / IP / H |
 | Self II | The Adaptive Self | adaptation | observer–plant identity; self-uncontrollability; sealed self; XIV import pending | IP |
 | Self III | The Operator | fidelity | inherited unobservability | R / I |
 | SO-WP0 | What Should We Optimize… (companion) | objective/loss | four inadequacies; measurement–objective separation; learning has opportunity cost | N (C) / IP |
