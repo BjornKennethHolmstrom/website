@@ -101,7 +101,7 @@
       id: 'boundary-expansion-deficit',
       titleEn: '1. The Boundary Expansion Deficit',
       titleDe: '1. Das Grenzerweiterungsdefizit',
-      titleFr: '1. Le déficit d\'expansion des frontières',
+      titleFr: '1. Le déficit d’expansion des frontières',
       titleIt: '1. Il deficit di espansione del confine',
       compEn: BoundaryExpansionEn,
       compDe: BoundaryExpansionDe,
@@ -134,8 +134,8 @@
       id: 'building-boundary-adequacy',
       titleEn: '4. What Building Boundary Adequacy Would Look Like',
       titleDe: '4. Wie der Aufbau von Grenzadäquanz aussehen würde',
-      titleFr: '4. À quoi ressemblerait l\'adéquation des frontières',
-      titleIt: '4. Come sarebbe costruire l\'adeguatezza dei confini',
+      titleFr: '4. À quoi ressemblerait l’adéquation des frontières',
+      titleIt: '4. Come sarebbe costruire l’adeguatezza dei confini',
       compEn: BuildingAdequacyEn,
       compDe: BuildingAdequacyDe,
       compFr: BuildingAdequacyFr,
@@ -145,7 +145,7 @@
       id: 'first-step',
       titleEn: '5. A Concrete First Step: The Boundary Expansion Pilot',
       titleDe: '5. Ein konkreter erster Schritt: Das Grenzerweiterungspilotprojekt',
-      titleFr: '5. Une première étape concrète : le projet pilote d\'expansion des frontières',
+      titleFr: '5. Une première étape concrète : le projet pilote d’expansion des frontières',
       titleIt: '5. Un primo passo concreto: il progetto pilota di espansione del confine',
       compEn: FirstStepEn,
       compDe: FirstStepDe,
@@ -154,10 +154,10 @@
     },
     {
       id: 'coda',
-      titleEn: '6. Coda: The Prototype at the Boundary',
-      titleDe: '6. Koda: Der Prototyp an der Grenze',
-      titleFr: '6. Coda : le prototype à la frontière',
-      titleIt: '6. Coda: Il prototipo al confine',
+      titleEn: '6. Coda: The Boundary as a Design Question',
+      titleDe: '6. Koda: Die Grenze als Gestaltungsfrage',
+      titleFr: '6. Coda : la frontière comme question de conception',
+      titleIt: '6. Coda: il confine come questione di progettazione',
       compEn: CodaEn,
       compDe: CodaDe,
       compFr: CodaFr,
@@ -209,10 +209,10 @@
     },
     {
       id: 'appendix-e',
-      titleEn: 'Appendix E: About the Author & Method',
-      titleDe: 'Anhang E: Über den Autor und die Methode',
-      titleFr: 'Annexe E : À propos de l\'auteur et de la méthode',
-      titleIt: 'Appendice E: L\'autore e il metodo',
+      titleEn: 'Appendix E: About this report and how it was made',
+      titleDe: 'Anhang E: Über diesen Bericht und seine Entstehung',
+      titleFr: 'Annexe E : À propos de ce rapport et de son élaboration',
+      titleIt: 'Appendice E: Questo rapporto e come è stato realizzato',
       compEn: AppendixEEn,
       compDe: AppendixEDe,
       compFr: AppendixEFr,
@@ -223,7 +223,7 @@
       titleEn: 'Appendix F: Glossary',
       titleDe: 'Anhang F: Glossar',
       titleFr: 'Annexe F : Glossaire',
-      titleIt: 'Appendice E: Glossario',
+      titleIt: 'Appendice F: Glossario',
       compEn: AppendixFEn,
       compDe: AppendixFDe,
       compFr: AppendixFFr,
@@ -267,35 +267,15 @@
   // 4. Metadata & UI texts
   // ------------------------------------------
   const metadata = {
-    en: {
-      title: 'Switzerland: The Boundary Expansion Deficit — When Internal Excellence Meets Global Interdependence',
-      subtitle: 'A governance-as-engineering diagnosis of the world’s most internally adaptive democracy — and the structural challenge of expanding the system boundary',
-      description:
-        'Switzerland does not lack governance capacity — it lacks the boundary adequacy to match its internal excellence to global interdependence. This report diagnoses the Boundary Expansion Deficit and proposes a Global Footprint Dashboard, a Cantonal Pilot Programme, and a Citizens\' Assembly on Switzerland\'s Global Role.',
-    },
-    de: {
-      title: 'Schweiz: Das Grenzerweiterungsdefizit — Wenn interne Exzellenz auf globale Interdependenz trifft',
-      subtitle: 'Eine Governance-as-Engineering-Diagnose der weltweit intern anpassungsfähigsten Demokratie — und die strukturelle Herausforderung, die Systemgrenze zu erweitern',
-      description:
-        'Die Schweiz leidet nicht an mangelnder Governance-Kapazität, sondern an unzureichender Grenzadäquanz, um ihre interne Exzellenz mit globaler Interdependenz in Einklang zu bringen. Dieser Bericht diagnostiziert das Grenzerweiterungsdefizit und schlägt ein Global-Footprint-Dashboard, ein kantonales Pilotprogramm und eine Bürgerversammlung zur globalen Rolle der Schweiz vor.',
-    },
-    fr: {
-      title: 'Suisse : Le déficit d\'expansion des frontières — Quand l\'excellence interne rencontre l\'interdépendance mondiale',
-      subtitle: 'Un diagnostic de la gouvernance comme ingénierie de la démocratie la plus adaptative au monde — et le défi structurel d\'élargir la frontière du système',
-      description:
-        'La Suisse ne manque pas de capacité de gouvernance — elle manque d’une adéquation des frontières pour aligner son excellence interne sur l’interdépendance mondiale. Ce rapport diagnostique le déficit d’expansion des frontières et propose un tableau de bord de l’empreinte mondiale, un programme pilote cantonal et une Assemblée citoyenne sur le rôle mondial de la Suisse.',
-    },
-    it: {
-      title: 'Svizzera: Il deficit di espansione del confine — Quando l\'eccellenza interna incontra l\'interdipendenza globale',
-      subtitle: 'Una diagnosi di governance come ingegneria della democrazia più adattiva al mondo — e la sfida strutturale di espandere il confine del sistema',
-      description:
-        'La Svizzera non manca di capacità di governance — le manca l\'adeguatezza del confine per allineare la sua eccellenza interna all\'interdipendenza globale. Questo rapporto diagnostica il deficit di espansione del confine e propone un Dashboard dell\'impronta globale, un programma pilota cantonale e un\'Assemblea dei cittadini sul ruolo globale della Svizzera.',
-    },
+    en: { title: "Switzerland: The Boundary Expansion Deficit", subtitle: "Institutional boundaries, cross-border effects and the conditions for adequate response", description: "Task-relative hypotheses on cross-border governance, asymmetric observation and reactive adjustment. The Global Footprint Dashboard, cantonal pilots and citizens’ assembly are proposals for evaluation." },
+    de: { title: "Schweiz: Das Grenzerweiterungsdefizit", subtitle: "Institutionelle Grenzen, grenzüberschreitende Wirkungen und Bedingungen adäquater Reaktion", description: "Aufgabenbezogene Hypothesen zu grenzüberschreitender Governance, asymmetrischer Beobachtung und reaktiver Anpassung. Dashboard, kantonale Piloten und Bürgerversammlung sind zu evaluierende Vorschläge." },
+    fr: { title: "Suisse : Le déficit d'expansion des frontières", subtitle: "Frontières institutionnelles, effets transfrontaliers et conditions d’une réponse adéquate", description: "Hypothèses relatives aux tâches sur la gouvernance transfrontalière, l’observation asymétrique et l’ajustement réactif. Tableau de bord, pilotes cantonaux et assemblée citoyenne sont des propositions à évaluer." },
+    it: { title: "Svizzera: Il deficit di espansione del confine", subtitle: "Confini istituzionali, effetti transfrontalieri e condizioni per una risposta adeguata", description: "Ipotesi relative ai compiti su governance transfrontaliera, osservazione asimmetrica e aggiustamento reattivo. Dashboard, piloti cantonali e assemblea sono proposte da valutare." },
   };
 
   const ui = {
     en: {
-      tag: 'Country Report · Switzerland',
+      tag: 'Country Report · Switzerland · GA-R02-R2 v0.2',
       allReports: '← All Reports',
       downloads: 'Downloads',
       share: 'Share',
@@ -306,7 +286,7 @@
       pdfLabelIt: 'PDF (Italiano)',
     },
     de: {
-      tag: 'Länderbericht · Schweiz',
+      tag: 'Länderbericht · Schweiz · GA-R02-R2 v0.2',
       allReports: '← Alle Berichte',
       downloads: 'Downloads',
       share: 'Teilen',
@@ -317,7 +297,7 @@
       pdfLabelIt: 'PDF (Italiano)',
     },
     fr: {
-      tag: 'Rapport national · Suisse',
+      tag: 'Rapport national · Suisse · GA-R02-R2 v0.2',
       allReports: '← Tous les rapports',
       downloads: 'Téléchargements',
       share: 'Partager',
@@ -328,7 +308,7 @@
       pdfLabelIt: 'PDF (Italiano)',
     },
     it: {
-      tag: 'Rapporto nazionale · Svizzera',
+      tag: 'Rapporto nazionale · Svizzera · GA-R02-R2 v0.2',
       allReports: '← Tutti i rapporti',
       downloads: 'Download',
       share: 'Condividi',
@@ -341,10 +321,10 @@
   };
 
   const citations = {
-    en: 'Holmström, B. K. (2026). Switzerland: The Boundary Expansion Deficit — When Internal Excellence Meets Global Interdependence. Strategic Country Report. AI-generated; not peer-reviewed.',
-    de: 'Holmström, B. K. (2026). Schweiz: Das Grenzerweiterungsdefizit — Wenn interne Exzellenz auf globale Interdependenz trifft. Strategischer Länderbericht. KI-generiert; nicht begutachtet.',
-    fr: 'Holmström, B. K. (2026). Suisse : Le déficit d\'expansion des frontières — Quand l\'excellence interne rencontre l\'interdépendance mondiale. Rapport stratégique national. Généré par IA ; non évalué par les pairs.',
-    it: 'Holmström, B. K. (2026). Svizzera: Il deficit di espansione del confine — Quando l\'eccellenza interna incontra l\'interdipendenza globale. Rapporto strategico nazionale. Generato dall\'IA; non sottoposto a revisione paritaria.',
+    en: "Holmström, B. K. (2026). Switzerland: The Boundary Expansion Deficit — Institutional boundaries, cross-border effects and the conditions for adequate response. AI-generated and AI-assisted revision; not peer-reviewed; GA-R02-R2 v0.2.",
+    de: "Holmström, B. K. (2026). Schweiz: Das Grenzerweiterungsdefizit — Institutionelle Grenzen, grenzüberschreitende Wirkungen und Bedingungen adäquater Reaktion. KI-generiert und KI-unterstützt revidiert; nicht fachbegutachtet; GA-R02-R2 v0.2.",
+    fr: "Holmström, B. K. (2026). Suisse : Le déficit d'expansion des frontières — Frontières institutionnelles, effets transfrontaliers et conditions d’une réponse adéquate. Généré et révisé avec IA ; non évalué par les pairs ; GA-R02-R2 v0.2.",
+    it: "Holmström, B. K. (2026). Svizzera: Il deficit di espansione del confine — Confini istituzionali, effetti transfrontalieri e condizioni per una risposta adeguata. Generato e revisionato con IA; senza revisione paritaria; GA-R02-R2 v0.2.",
   };
 
   let t = $derived(ui[reportLang] ?? ui.en);

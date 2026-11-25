@@ -1,51 +1,49 @@
 ## Anhang F: Glossar
 
-Dieses Glossar umfasst zwei Kategorien von im Bericht verwendeten Begriffen: Ausdrücke aus dem Rahmenwerk «Governance as Engineering» (gekennzeichnet mit **GaE**) sowie schweizerische politische und institutionelle Begriffe (gekennzeichnet mit **CH**). Die Einträge sind alphabetisch nach deutscher Schreibweise geordnet.
+Begriffe sind diagnostisches oder historisches Vokabular, keine validierten Messungen. Schweizer Institutionenbeschreibungen sind quellenbedürftig. Modellgeltung in Anhang C.
 
----
+**Ashbys Gesetz der erforderlichen Varietät** (GaE) — Modellabhängige Beziehung zwischen Störungen, verfügbaren Antworten und tolerierten Ergebnissen; kein universelles Dimensions- oder Geografiekriterium.
 
-**Ashbys Gesetz der erforderlichen Varietät** (GaE) — Das kybernetische Prinzip, wonach ein Regler mindestens so viel Varietät (Bandbreite möglicher Reaktionen) aufweisen muss wie das Störungsumfeld, das er zu regulieren sucht. Ein Governance-System, das weniger Dimensionen beobachtet, als sein Umfeld enthält, wird jene Dimensionen, die es nicht sehen kann, nicht stabilisieren können. Das Grundprinzip der Reihe «Governance as Engineering».
+**Asymmetrische Beobachtung** (GaE) — Hypothese aufgabenrelevanter privater Information mit unzureichender Verbindung zu öffentlichen Entscheidungen; Fehlen, Zugang, Nutzung und Befugnis unterscheiden.
 
-**Asymmetrische Beobachtung** (GaE) — Ein Zustand, in dem ein Governance-System bestimmte Dimensionen seines Umfelds instrumentell (als kommerzielle Chancen) wahrnimmt, aber nicht konsequentiell (als Kosten oder Verantwortlichkeiten, die in die Governance-Rückkopplungsschleife integriert werden). Abzugrenzen von einfacher Blindheit: Der Sensor existiert, doch die Verkabelung zum Regler ist selektiv unterbrochen. Der zentrale Mechanismus des schweizerischen Grenzerweiterungsdefizits.
+**Beobachtungskanal** (GaE) — Weg aufgabenrelevanter Information. Nutzen hängt von Inhalt, Zuverlässigkeit, Zeit, Zugang und Aufgabe ab; verschieden von Bewertung und Befugnis.
 
-**Bilaterale I / II / III** (CH) — Die drei Pakete bilateraler Abkommen zwischen der Schweiz und der Europäischen Union. Die Bilateralen I (1999) umfassten Personenfreizügigkeit, Luft- und Landverkehr, Landwirtschaft, technische Handelshemmnisse, Forschungszusammenarbeit und öffentliches Beschaffungswesen. Die Bilateralen II (2004) weiteten die Zusammenarbeit auf Bereiche wie Schengen/Dublin, die Besteuerung von Zinserträgen und Massnahmen zur Betrugsbekämpfung aus. Die Bilateralen III (unterzeichnet 2026) stabilisieren und erweitern die bilateralen Beziehungen mit neuen Abkommen zu Strom, Lebensmittelsicherheit, Gesundheitszusammenarbeit sowie institutionellen Mechanismen zur dynamischen Rechtsübernahme und Streitbeilegung.
+**Bilaterale I / II / III** (CH) — Pakete schweizerisch-europäischer Abkommen; datierter Bericht in Kapitel 3.
 
-***Binnenland*** (CH) — Wörtlich das Innere des Landes. In diesem Bericht verwendet, um den inneren Raum der schweizerischen Demokratie, des Wohlstands und der Stabilität zu bezeichnen – jenen umgrenzten Bereich, innerhalb dessen die schweizerische Governance-Architektur mit nahezu optimaler Wirksamkeit operiert.
+**Binnenland** (GaE) — Der interne institutionelle Bereich des Berichts, keine Leistungsbewertung.
 
-**Faraday-Käfig** (GaE, metaphorisch) — In diesem Bericht die Signaldämpfungsfunktion der schweizerischen Neutralität. Indem die Schweiz die Mitgliedschaft in supranationalen Blöcken (EU, NATO) ablehnt, reduziert sie die Dimensionalität der externen Signale, die ihr Governance-System verarbeiten muss – historisch adaptiv, zunehmend maladaptiv, da die blockierten Signale auch Informationen enthalten, die für die Anpassung notwendig sind.
+**Faraday-Käfig** (GaE) — Historische Metapher für mögliche Informationszugangsunterschiede unter Neutralität, kein physikalisches oder allgemeines Kausalgesetz.
 
-**Frequenzdiskrepanz** (GaE) — Ein Zustand, in dem die charakteristische Antwortfrequenz des Governance-Systems niedriger ist als die Frequenz der Störungen, die es zu beherrschen hat. In der Schweiz erzeugt die hohe deliberative Latenz der direktdemokratischen Architektur eine Frequenzdiskrepanz gegenüber schnelllebigen globalen Störungen (Pandemien, Finanzkaskaden, KI-Einführung).
+**Frequenzdiskrepanz** (GaE) — Mögliche Diskrepanz zwischen Reaktionszeit und Aufgabenfristen oder Störungsdynamik; Weg und akzeptable Antwort spezifizieren.
 
-**Goodhart-Ashby-Synthese** (GaE) — Der zentrale theoretische Beitrag der Reihe «Governance as Engineering». Goodharts Gesetz („Wenn ein Mass zu einem Ziel wird, hört es auf, ein gutes Mass zu sein“) erweist sich als Spezialfall eines tieferen kybernetischen Prinzips: Niedrigdimensionale Optimierung zerstört systematisch die Information, die benötigt wird, um das Auseinanderlaufen von Stellvertreter und Ziel zu erkennen. Im Fall der Schweiz zerstört die Optimierung auf schweizerischen Wohlstand unter Ausschluss globaler Externalitäten die Information, die die Kosten dieser Optimierung offenlegen würde.
+**Goodhart-Ashby-Synthese** (GaE) — Historische durch XX revidierte Synthese: Proxyordnung hängt von zulässiger Menge, Gleichständen und Domäne ab. Ausgelassene Ziele implizieren keinen Informationsverlust.
 
-**Governance-Problem-Hierarchie** (GaE) — Die in der gesamten Reihe identifizierte vierstufige Progression von Governance-Herausforderungen: (1) Beobachtungskapazität aufbauen; (2) Rückkopplungsschleifen schliessen und Autorität verteilen; (3) integrieren, ohne zu komprimieren; (4) die Systemgrenze erweitern. Die Schweiz hat die Stufen 1 bis 3 weitgehend gelöst und begegnet nun Stufe 4.
+**Governance-Problem-Hierarchie** (GaE) — Historische Gruppierung von Beobachtungs-, Reaktions-, Integrations- und Grenzfragen; keine notwendige Folge oder Stufenrangliste.
 
-**Grenzerweiterungsdefizit** (GaE) — Die Lücke zwischen der internen Beobachtungsgrenze eines Governance-Systems und der tatsächlichen Grenze des Störungsumfelds, das über seine Ergebnisse entscheidet. Die Kerndiagnose für die Schweiz: Das System regiert brillant innerhalb seines definierten Rahmens, kann aber die globalen Dimensionen, von denen sein Wohlstand abhängt und auf die es sich auswirkt, weder sehen noch Verantwortung dafür übernehmen.
+**Grenzerweiterungsdefizit** (GaE) — Hypothetische bindende Diskrepanz zwischen Wirkungsbereich einer Aufgabe und Mandaten oder Koordination; kein Skalar oder automatischer Ausweitungsgrund.
 
-**Guillotine-Klausel** (CH) — Eine Bestimmung in den Bilateralen I, welche die sieben Abkommen so miteinander verknüpft, dass die Kündigung eines einzelnen die Kündigung aller auslöst. Die Klausel verleiht dem bilateralen Rahmen eine systemische Fragilität: Ein Referendumsergebnis, das mit einem Abkommen (z. B. Personenfreizügigkeit) kollidiert, gefährdet das gesamte Paket.
+**Guillotine-Klausel** (CH) — Verknüpfung der Bilateralen I; Umfang und Kündigungsfolgen rechtlich prüfen.
 
-**Immunsystem** (GaE) — In der Reihe keine Metapher für politischen Widerstand, sondern eine strukturelle Eigenschaft einer Governance-Architektur: das vorhersagbare Verhalten rationaler Akteure, deren Interessen durch die gegenwärtige Ordnung bedient werden. In der Schweiz fungiert die *Sonderfall*-Identität als Immunsystem, das die Governance-Grenze gegen Erweiterung verteidigt.
+**Immunsystem** (GaE) — Metapher für mögliche Widerstandsmechanismen; Eigeninteressen, legitime Sicherungen und gewöhnliche Uneinigkeit unterscheiden.
 
-***Konkordanz*** (CH) — Das schweizerische Konsensprinzip. Wichtige Governance-Entscheide werden durch breite Übereinkunft aller bedeutenden politischen Kräfte getroffen, nicht durch Mehrheitsentscheid. Institutionalisiert in der *Zauberformel* (der Zusammensetzungsformel für den Bundesrat) und in der *Vernehmlassung* (der vorparlamentarischen Konsultation). Hervorragend für die interne Integration; kann zu einem Durchsatzengpass für die Grenzerweiterung werden.
+**Konkordanz** (CH) — Konsens- und Machtteilungstradition; tatsächliche Regeln episodenbezogen untersuchen.
 
-***Masseneinwanderungsinitiative*** (CH) — Die Volksinitiative «Gegen Masseneinwanderung», angenommen von den Schweizer Stimmbürgerinnen und Stimmbürgern am 9. Februar 2014 mit 50,3 Prozent Zustimmung. Sie verpflichtete den Bundesrat, jährliche Einwanderungskontingente festzulegen und das Personenfreizügigkeitsabkommen mit der EU neu zu verhandeln. Die Umsetzung wurde zu einem «Inländervorrang»-Mechanismus ohne feste Kontingente abgeschwächt, was das Muster des reaktiven Flickwerks illustriert.
+**Masseneinwanderungsinitiative** (CH) — Initiative von 2014 in Kapitel 3; Text und Umsetzung prüfen.
 
-**Reaktive Flickschleife** (GaE) — Das charakteristische Muster des Grenzerweiterungsdefizits: interne Optimierung → externer Schock → pragmatische, schrittweise Anpassung, die den unmittelbaren Druck lindert und gleichzeitig die Kernarchitektur bewahrt → Rückkehr zur internen Optimierung von einer etwas eingeschränkteren Position aus. Jeder Zyklus verengt den Korridor souveränen Handelns.
+**Reaktive Flickschleife** (GaE) — Mögliche Folge interner Prioritäten, externen Drucks, schrittweiser Anpassung und fortgesetzter interner Governance. Kein notwendiger Autonomieverlust.
 
-***Sonderfall*** (CH) — Die tief verwurzelte, breit geteilte Überzeugung, dass die Schweiz einzigartig ist, dass ihr Erfolg von der Aufrechterhaltung klarer Grenzen zwischen interner Governance und externen Verstrickungen abhängt und dass ihr Modell bewahrt statt ausgeweitet werden sollte. Fungiert im Rahmenwerk dieses Berichts als Immunsystem, das die Governance-Grenze gegen Erweiterung verteidigt.
+**Sonderfall** (GaE) — Sonderfallidentität und zugehörige politische Argumente; kein festes Motiv aller Schweizer Akteure.
 
-**Souveränitätserosion** (GaE) — Der fortschreitende Verlust faktischer Governance-Autonomie durch erzwungene reaktive Anpassung an externen Druck. Jeder Zyklus der reaktiven Flickschleife überträgt Autorität von schweizerischen demokratischen Institutionen an externe Akteure (USA, EU, OECD), deren Bedingungen die Schweiz akzeptieren muss, weil sie über weniger Verhandlungsmacht verfügt, als sie es bei einer proaktiven Grenzerweiterung getan hätte. Die strukturelle Ironie: Grenzverteidigung produziert mehr Souveränitätsverlust, als eine Grenzerweiterung es getan hätte.
+**Souveränitätserosion** (GaE) — Hypothetische Verschlechterung bestimmter Autonomie- oder Einflussdimensionen. Abkommen können manche Optionen erweitern und andere einschränken.
 
-**Umgehungsfalle** (GaE) — Das Paradox, bei dem eine Reform, die ein dysfunktionales Element der Governance-Architektur umgeht, den Druck auf dieses Element verringert und damit dessen Anreiz zur Reform senkt. Die Umgehung ist lokal erfolgreich, während das nicht reformierte Substrat fortbesteht. In der gesamten Reihe identifiziert (Indiens digitale Infrastruktur, Brasiliens algorithmischer Bypass) und auf die kantonalen Pilotprojekte der Schweiz anwendbar.
+**Umgehungsfalle** (GaE) — Hypothese, dass lokale Alternativen weiteren Reformdruck mindern; Ergänzung, Integration und kein weiterer Wandel sind ebenfalls möglich.
 
-**Varietätslücke** (GaE) — Das Missverhältnis zwischen der effektiven Dimensionalität des Störungsumfelds (dim(R)) und der Dimensionalität des Beobachtungs- und Wertefunktionsraums der Governance-Architektur (dim(V)). Wenn die Lücke einen kritischen Schwellenwert (G_krit) überschreitet, kann das System die Quellen seiner eigenen Instabilität nicht mehr wahrnehmen. Die Varietätslücke der Schweiz ist geteilt: sehr niedrig im Innern, moderat bis hoch im Äussern.
+**Varietätslücke** (GaE) — Aufgabenbezogene Diagnosefrage; getrennte Achsen nach korrigierten VI/VIII. Früherer Kompositindex und Varietätsschwelle sind zurückgezogen, keine nationale Messung.
 
-***Vernehmlassung*** (CH) — Das formelle vorparlamentarische Konsultationsverfahren, bei dem politische Parteien, Kantone, Branchenverbände, Gewerkschaften und weitere interessierte Kreise eingeladen werden, zu Gesetzesentwürfen Stellung zu nehmen, bevor diese ins Parlament gelangen. Fungiert sowohl als Mechanismus zur Legitimitätsbildung als auch als Vetofilter: Vorlagen, die die Vernehmlassung nicht überstehen, werden in der Regel überarbeitet oder zurückgezogen.
+**Vernehmlassung** (CH) — Konsultationsverfahren; Konsultation und rechtsverbindliches Veto unterscheiden.
 
-**Veto-Topologie** (GaE) — Die strukturelle Eigenschaft einer Governance-Architektur, bei der verteilte Akteure über Blockademacht bei systemweiten Anpassungen verfügen. Abzugrenzen von der Latenz (die sich auf Geschwindigkeit bezieht): Ein System mit unendlich viel Zeit, aber derselben Vetostruktur wäre weiterhin nicht in der Lage, dem lokalen Optimum, das die Vetos erzeugen, zu entkommen. In der Schweiz schaffen das Erfordernis des doppelten Mehrs, der Referendumsmechanismus und das Vernehmlassungsverfahren eine dichte Veto-Topologie, die vor innerer Tyrannei schützt, aber die Grenzerweiterung erschwert.
+**Veto-Topologie** (GaE) — Muster von Entscheidungsregeln und Blockaderechten; Rechtsveto, Konsultation und Einfluss sowie Zulässigkeit und Zeit unterscheiden.
 
-***Vorbild*** (CH/GaE) — In diesem Bericht die vorgeschlagene Weiterentwicklung der *Sonderfall*-Identität: von «wir sind einzigartig und in unserer Besonderheit gerechtfertigt» hin zu «wir sind in der einzigartigen Lage zu demonstrieren, wie interne Exzellenz auf globale Verantwortung ausgeweitet werden kann». Der kulturelle Übergang, den der Bericht als den schwierigsten und folgenreichsten Schritt bezeichnet.
+**Vorbild** (GaE) — Beispiel; eine offen vertretene mögliche Kooperationsorientierung, kein vorgeschriebenes Ziel.
 
-***Zauberformel*** (CH) — Die informelle, aber dauerhafte Machtteilungsvereinbarung, die seit 1959 die Zusammensetzung des Bundesrates (der siebenköpfigen Kollegialregierung der Schweiz) regelt. Stellt sicher, dass die grossen politischen Parteien etwa entsprechend ihrer Wählerstärke in der Exekutive vertreten sind, verhindert «The-Winner-Takes-It-All»-Dynamiken und institutionalisiert die *Konkordanz* auf höchster Regierungsebene.
-
----
+**Zauberformel** (CH) — Informelle Machtteilungsregel des Bundesrats laut ursprünglichem Bericht; historische und aktuelle Details prüfen.

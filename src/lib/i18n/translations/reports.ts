@@ -100,9 +100,9 @@ export const reportsTranslations = {
 		   'Spain is not a failing state — it is a state that succeeded brilliantly at democratic transition and is now constrained by that success. This report diagnoses an Integrative Closure Deficit produced by the 1978 Constitution\'s frozen ambiguity, the fiscal-territorial trap, and a cultural operating system that defers hard choices indefinitely, and proposes an Inter-Regional Compact Fund and a Citizens\' Assembly on Territorial Financing as the concrete first step.'
    },
    switzerlandBoundaryExpansionDeficit: {
-       title: 'Switzerland: The Boundary Expansion Deficit — When Internal Excellence Meets Global Interdependence',
+       title: 'Switzerland: The Boundary Expansion Deficit — Institutional boundaries, cross-border effects and the conditions for adequate response',
        description:
-           'Switzerland does not lack governance capacity — it lacks the boundary adequacy to match its internal excellence to global interdependence. This report diagnoses a Boundary Expansion Deficit produced by asymmetric observation, the neutrality Faraday cage, and the Sonderfall immune response, and proposes a Global Footprint Dashboard and a Citizens\' Assembly on Switzerland\'s Global Role as the concrete first step.'
+           'Task-relative hypotheses on cross-border governance, asymmetric observation and reactive adjustment. The Global Footprint Dashboard, cantonal pilots and citizens’ assembly are proposals for evaluation.'
    },
    southKoreaTournamentTrap: {
        title: 'South Korea: The Tournament Trap — Consequence Coupling Under Effective Scarcity',
@@ -255,9 +255,9 @@ export const reportsTranslations = {
 		   'Spanien är inte en misslyckad stat — det är en stat som lyckades briljant med demokratisk övergång och nu är begränsad av den framgången. Rapporten diagnosticerar ett integrativt slutningsunderskott skapat av 1978 års konstitutions frusna tvetydighet, den fiskal‑territoriella fällan och ett kulturellt operativsystem som skjuter upp svåra val på obestämd tid, och föreslår en interregional kompaktfond och en medborgarassembly om territoriell finansiering som det konkreta första steget.'
    },
    switzerlandBoundaryExpansionDeficit: {
-       title: 'Schweiz: Gränsutvidgningsunderskottet — När intern excellens möter globalt ömsesidigt beroende',
+       title: 'Schweiz: Gränsutvidgningsunderskottet — Institutionella gränser, gränsöverskridande effekter och villkor för adekvata åtgärder',
        description:
-           'Schweiz saknar inte styrningskapacitet — det saknar den gränsdragning som krävs för att anpassa sin interna excellens till globalt ömsesidigt beroende. Rapporten diagnosticerar ett gränsutvidgningsunderskott skapat av asymmetrisk observation, neutralitetens Faradays bur och Sonderfall‑immunresponsen, och föreslår en global fotavtryckspanel och en medborgarassembly om Schweiz globala roll som det konkreta första steget.'
+           'Uppgiftsrelativa hypoteser om gränsöverskridande styrning, asymmetrisk observation och reaktiv anpassning. En global fotavtryckspanel, kantonala pilotprojekt och en medborgarförsamling är förslag att utvärdera.'
    },
    southKoreaTournamentTrap: {
        title: 'Sydkorea: Turneringfällan — konsekvenskoppling under effektiv knapphet',

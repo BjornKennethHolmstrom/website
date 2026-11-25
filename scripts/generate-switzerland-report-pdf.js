@@ -43,40 +43,40 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 const metadata = {
 	en: {
 		title: "Switzerland: The Boundary Expansion Deficit",
-		subtitle: "When Internal Excellence Meets Global Interdependence",
-		description: "Switzerland does not lack governance capacity — it lacks the boundary adequacy to match its internal excellence to global interdependence. This report diagnoses the Boundary Expansion Deficit and proposes a Global Footprint Dashboard, a Cantonal Pilot Programme, and a Citizens' Assembly on Switzerland's Global Role.",
+		subtitle: "Institutional boundaries, cross-border effects and the conditions for adequate response",
+		description: "Task-relative hypotheses on cross-border governance, asymmetric observation and reactive adjustment. The Global Footprint Dashboard, cantonal pilots and citizens’ assembly are proposals for evaluation.",
 		author: "Björn Kenneth Holmström",
-		date: "June 2026",
+		date: "June 2026 · Revision November 2026 · GA-R02-R2 v0.2",
 		url: "https://bjornkennethholmstrom.org/reports/switzerland-boundary-expansion-deficit",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Country Report · Switzerland"
 	},
 	de: {
 		title: "Schweiz: Das Grenzerweiterungsdefizit",
-		subtitle: "Wenn interne Exzellenz auf globale Interdependenz trifft",
-		description: "Die Schweiz leidet nicht an mangelnder Governance-Kapazität, sondern an unzureichender Grenzadäquanz, um ihre interne Exzellenz mit globaler Interdependenz in Einklang zu bringen. Dieser Bericht diagnostiziert das Grenzerweiterungsdefizit und schlägt ein Global-Footprint-Dashboard, ein kantonales Pilotprogramm und eine Bürgerversammlung zur globalen Rolle der Schweiz vor.",
+		subtitle: "Institutionelle Grenzen, grenzüberschreitende Wirkungen und Bedingungen adäquater Reaktion",
+		description: "Aufgabenbezogene Hypothesen zu grenzüberschreitender Governance, asymmetrischer Beobachtung und reaktiver Anpassung. Dashboard, kantonale Piloten und Bürgerversammlung sind zu evaluierende Vorschläge.",
 		author: "Björn Kenneth Holmström",
-		date: "Juni 2026",
+		date: "Juni 2026 · Revision November 2026 · GA-R02-R2 v0.2",
 		url: "https://bjornkennethholmstrom.org/reports/switzerland-boundary-expansion-deficit",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Länderbericht · Schweiz"
 	},
 	fr: {
 		title: "Suisse : Le déficit d'expansion des frontières",
-		subtitle: "Quand l'excellence interne rencontre l'interdépendance mondiale",
-		description: "La Suisse ne manque pas de capacité de gouvernance — elle manque d’une adéquation des frontières pour aligner son excellence interne sur l’interdépendance mondiale. Ce rapport diagnostique le déficit d’expansion des frontières et propose un tableau de bord de l’empreinte mondiale, un programme pilote cantonal et une Assemblée citoyenne sur le rôle mondial de la Suisse.",
+		subtitle: "Frontières institutionnelles, effets transfrontaliers et conditions d’une réponse adéquate",
+		description: "Hypothèses relatives aux tâches sur la gouvernance transfrontalière, l’observation asymétrique et l’ajustement réactif. Tableau de bord, pilotes cantonaux et assemblée citoyenne sont des propositions à évaluer.",
 		author: "Björn Kenneth Holmström",
-		date: "Juin 2026",
+		date: "Juin 2026 · Révision novembre 2026 · GA-R02-R2 v0.2",
 		url: "https://bjornkennethholmstrom.org/reports/switzerland-boundary-expansion-deficit",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Rapport national · Suisse"
 	},
 	it: {
 		title: "Svizzera: Il deficit di espansione del confine",
-		subtitle: "Quando l'eccellenza interna incontra l'interdipendenza globale",
-		description: "La Svizzera non manca di capacità di governance — le manca l'adeguatezza del confine per allineare la sua eccellenza interna all'interdipendenza globale. Questo rapporto diagnostica il deficit di espansione del confine e propone un Dashboard dell'impronta globale, un programma pilota cantonale e un'Assemblea dei cittadini sul ruolo globale della Svizzera.",
+		subtitle: "Confini istituzionali, effetti transfrontalieri e condizioni per una risposta adeguata",
+		description: "Ipotesi relative ai compiti su governance transfrontaliera, osservazione asimmetrica e aggiustamento reattivo. Dashboard, piloti cantonali e assemblea sono proposte da valutare.",
 		author: "Björn Kenneth Holmström",
-		date: "Giugno 2026",
+		date: "Giugno 2026 · Revisione novembre 2026 · GA-R02-R2 v0.2",
 		url: "https://bjornkennethholmstrom.org/reports/switzerland-boundary-expansion-deficit",
 		license: "Creative Commons Attribution-ShareAlike 4.0 International",
 		type: "Rapporto nazionale · Svizzera"
@@ -88,17 +88,17 @@ const meta = metadata[LANGUAGE];
 // ── Section definitions (file base name without language suffix) ───────────
 const sections = [
 	{ file: 'executive-summary',                 titleEn: 'Executive Summary',                             titleDe: 'Zusammenfassung',                               titleFr: 'Résumé',                                titleIt: 'Sintesi',                              isAppendix: false },
-	{ file: '01-boundary-expansion-deficit',      titleEn: '1. The Boundary Expansion Deficit',             titleDe: '1. Das Grenzerweiterungsdefizit',               titleFr: '1. Le déficit d\'expansion des frontières', titleIt: '1. Il deficit di espansione del confine', isAppendix: false },
+	{ file: '01-boundary-expansion-deficit',      titleEn: '1. The Boundary Expansion Deficit',             titleDe: '1. Das Grenzerweiterungsdefizit',               titleFr: '1. Le déficit d’expansion des frontières', titleIt: '1. Il deficit di espansione del confine', isAppendix: false },
 	{ file: '02-structural-mechanisms',           titleEn: '2. Structural Mechanisms',                      titleDe: '2. Strukturelle Mechanismen',                  titleFr: '2. Mécanismes structurels',               titleIt: '2. Meccanismi strutturali',            isAppendix: false },
 	{ file: '03-empirical-cases',                 titleEn: '3. Empirical Cases',                            titleDe: '3. Empirische Fälle',                         titleFr: '3. Cas empiriques',                       titleIt: '3. Casi empirici',                     isAppendix: false },
-	{ file: '04-building-boundary-adequacy',      titleEn: '4. What Building Boundary Adequacy Would Look Like', titleDe: '4. Wie der Aufbau von Grenzadäquanz aussehen würde', titleFr: '4. À quoi ressemblerait l\'adéquation des frontières', titleIt: '4. Come sarebbe costruire l\'adeguatezza dei confini', isAppendix: false },
-	{ file: '05-concrete-first-step',             titleEn: '5. A Concrete First Step: The Boundary Expansion Pilot', titleDe: '5. Ein konkreter erster Schritt: Das Grenzerweiterungspilotprojekt', titleFr: '5. Une première étape concrète : le projet pilote d\'expansion des frontières', titleIt: '5. Un primo passo concreto: il progetto pilota di espansione del confine', isAppendix: false },
-	{ file: '06-coda',                            titleEn: '6. Coda: The Prototype at the Boundary',       titleDe: '6. Koda: Der Prototyp an der Grenze',         titleFr: '6. Coda : le prototype à la frontière',  titleIt: '6. Coda: Il prototipo al confine',      isAppendix: false },
+	{ file: '04-building-boundary-adequacy',      titleEn: '4. What Building Boundary Adequacy Would Look Like', titleDe: '4. Wie der Aufbau von Grenzadäquanz aussehen würde', titleFr: '4. À quoi ressemblerait l’adéquation des frontières', titleIt: '4. Come sarebbe costruire l’adeguatezza dei confini', isAppendix: false },
+	{ file: '05-concrete-first-step',             titleEn: '5. A Concrete First Step: The Boundary Expansion Pilot', titleDe: '5. Ein konkreter erster Schritt: Das Grenzerweiterungspilotprojekt', titleFr: '5. Une première étape concrète : le projet pilote d’expansion des frontières', titleIt: '5. Un primo passo concreto: il progetto pilota di espansione del confine', isAppendix: false },
+	{ file: '06-coda',                            titleEn: '6. Coda: The Boundary as a Design Question',       titleDe: '6. Koda: Die Grenze als Gestaltungsfrage',         titleFr: '6. Coda : la frontière comme question de conception',  titleIt: '6. Coda: il confine come questione di progettazione',      isAppendix: false },
 	{ file: '07-appendix-a',                      titleEn: 'Appendix A: Value Systems & Policy Mindsets',   titleDe: 'Anhang A: Wertesysteme und politische Denkweisen', titleFr: 'Annexe A : Systèmes de valeurs et mentalités politiques', titleIt: 'Appendice A: Sistemi di valori e mentalità politiche', isAppendix: true  },
 	{ file: '08-appendix-b',                      titleEn: 'Appendix B: International Analogues',           titleDe: 'Anhang B: Internationale Analogien',          titleFr: 'Annexe B : Analogies internationales',   titleIt: 'Appendice B: Analogie internazionali',  isAppendix: true  },
 	{ file: '09-appendix-c',                      titleEn: 'Appendix C: The Governance as Engineering Connection', titleDe: 'Anhang C: Die Verbindung zu Governance as Engineering', titleFr: 'Annexe C : Le lien avec la gouvernance comme ingénierie', titleIt: 'Appendice C: Il collegamento con Governance as Engineering', isAppendix: true  },
 	{ file: '10-appendix-d',                      titleEn: 'Appendix D: Anticipated Objections',           titleDe: 'Anhang D: Erwartete Einwände',                titleFr: 'Annexe D : Objections anticipées',       titleIt: 'Appendice D: Obiezioni previste',       isAppendix: true  },
-	{ file: '11-appendix-e',                      titleEn: 'Appendix E: About the Author & Method',        titleDe: 'Anhang E: Über den Autor und die Methode',    titleFr: 'Annexe E : À propos de l\'auteur et de la méthode', titleIt: 'Appendice E: L\'autore e il metodo',  isAppendix: true  },
+	{ file: '11-appendix-e',                      titleEn: 'Appendix E: About this report and how it was made',        titleDe: 'Anhang E: Über diesen Bericht und seine Entstehung',    titleFr: 'Annexe E : À propos de ce rapport et de son élaboration', titleIt: 'Appendice E: Questo rapporto e come è stato realizzato',  isAppendix: true  },
 { file: '12-appendix-f', titleEn: 'Appendix F: Glossary', titleDe: 'Anhang F: Glossar', titleFr: 'Annexe F : Glossaire', titleIt: 'Appendice F: Glossario', isAppendix: true },
 ];
 
