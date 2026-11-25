@@ -30,13 +30,13 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const metadata = {
     title: "The Coherence–Velocity Trap",
-    subtitle: "A Cybernetic Analysis of Frontier AI Governance — why the race to AGI cannot be won by any single governance architecture, and what a multi‑scalar framework would require",
-    description: "Frontier AI organizations are not merely technology companies — they are governance systems under extreme velocity conditions. This report diagnoses a Coherence–Velocity Trap produced by the capital architecture, founder‑centric compression, and safety‑washing mechanisms, and proposes an AI Commons Governance Protocol as the concrete first step toward multi‑scalar adaptive coherence.",
+    subtitle: "Conditional safety–viability trade-offs, decision authority and candidate multi-scale governance",
+    description: "Task-relative hypotheses on frontier AI governance and strategic safety–viability feasibility. The Commons is a candidate intervention; company-specific claims are unverified research leads.",
     author: "Björn Kenneth Holmström",
-    date: "May 2026",
+    date: "May 2026 · correction candidate 25 November 2026",
     url: "https://bjornkennethholmstrom.org/reports/ai-coherence-velocity-trap",
     license: "Creative Commons Attribution-ShareAlike 4.0 International",
-    type: "Organizational Report · AI Governance"
+    type: "Organizational Report · AI Governance · GA-R02-R4 v0.2 review candidate"
 };
 
 const meta = metadata;
@@ -45,16 +45,16 @@ const meta = metadata;
 const sections = [
     { file: '00-executive-summary',            title: 'Executive Summary',                                             isAppendix: false },
     { file: '01-coherence-velocity-trap',      title: '1. The Coherence–Velocity Trap',                               isAppendix: false },
-    { file: '02-structural-mechanisms',        title: '2. Structural Mechanisms: How Frontier AI Organisations Become Blind', isAppendix: false },
+    { file: '02-structural-mechanisms',        title: '2. Structural Mechanisms: How Frontier AI Governance May Fail', isAppendix: false },
     { file: '03-building-adaptive-coherence',  title: '3. What Building Adaptive Coherence Would Look Like',          isAppendix: false },
     { file: '04-political-immune-system',      title: '4. The Political Immune System: The Deployment Imperative',    isAppendix: false },
     { file: '05-first-step',                   title: '5. A Concrete First Step: The AI Commons Governance Protocol',  isAppendix: false },
     { file: '06-coda',                        title: '6. Coda: The Alignment Frontier',                               isAppendix: false },
-    { file: '07-appendix-a',                   title: 'Appendix A: Value Systems & Policy Mindsets',                   isAppendix: true  },
-    { file: '07-appendix-b',                   title: 'Appendix B: International Analogues & Precedents',              isAppendix: true  },
+    { file: '07-appendix-a',                   title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the AI Governance Context',                   isAppendix: true  },
+    { file: '07-appendix-b',                   title: 'Appendix B: International Analogues and Precedents',              isAppendix: true  },
     { file: '07-appendix-c',                   title: 'Appendix C: The Governance as Engineering Connection',          isAppendix: true  },
     { file: '07-appendix-d',                   title: 'Appendix D: Anticipated Objections',                           isAppendix: true  },
-    { file: '07-appendix-e',                   title: 'Appendix E: About the Author & Method',                        isAppendix: true  },
+    { file: '07-appendix-e',                   title: 'Appendix E: About this report and how it was made',                        isAppendix: true  },
 ];
 
 // ── CSS (identical to other reports) ─────────────────────────────────────────

@@ -52,7 +52,7 @@
     },
     {
       id: 'structural-mechanisms',
-      title: '2. Structural Mechanisms: How Frontier AI Organisations Become Blind',
+      title: '2. Structural Mechanisms: How Frontier AI Governance May Fail',
       comp: StructuralMechanismsEn,
     },
     {
@@ -77,12 +77,12 @@
     },
     {
       id: 'appendix-a',
-      title: 'Appendix A: Value Systems & Policy Mindsets',
+      title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the AI Governance Context',
       comp: AppendixAEn,
     },
     {
       id: 'appendix-b',
-      title: 'Appendix B: International Analogues & Precedents',
+      title: 'Appendix B: International Analogues and Precedents',
       comp: AppendixBEn,
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       id: 'appendix-e',
-      title: 'Appendix E: About the Author & Method',
+      title: 'Appendix E: About this report and how it was made',
       comp: AppendixEEn,
     },
   ];
@@ -119,13 +119,13 @@
   const metadata = {
     title: "The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance",
     subtitle:
-      'Why the race to AGI cannot be won by any single governance architecture — and what a multi‑scalar framework would require',
+      'Conditional safety–viability trade-offs, decision authority and candidate multi-scale governance',
     description:
-      'Frontier AI organizations are not merely technology companies — they are governance systems under extreme velocity conditions. This report diagnoses a Coherence–Velocity Trap produced by the capital architecture, founder‑centric compression, and safety‑washing mechanisms, and proposes an AI Commons Governance Protocol as the concrete first step.',
+      'Task-relative hypotheses on frontier AI governance and strategic safety–viability feasibility. The Commons is a candidate intervention; company-specific claims are unverified research leads.',
   };
 
   const ui = {
-    tag: 'Organizational Report · AI Governance',
+    tag: 'Organizational Report · AI Governance · GA-R02-R4 v0.2 review candidate',
     allReports: '← All Reports',
     downloads: 'Downloads',
     share: 'Share',
@@ -158,7 +158,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance. Organizational Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance. Organizational Report. GA-R02-R4 v0.2 review candidate; AI-generated; not peer-reviewed; company-specific findings held.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -197,7 +197,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance. Organizational Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Coherence–Velocity Trap: A Cybernetic Analysis of Frontier AI Governance. Organizational Report. GA-R02-R4 v0.2 review candidate; AI-generated; not peer-reviewed; company-specific findings held.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
@@ -237,6 +237,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {metadata.subtitle}
       </p>
+      <p class="text-sm opacity-75">Dependency correction review pending. Company-specific findings held pending primary-source verification and human domain review with disclosed conflicts.</p>
       <Provenance lang="en" align="start" />
     </header>
 
