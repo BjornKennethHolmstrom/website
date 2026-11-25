@@ -1,32 +1,26 @@
-## 4. Det gemensamma mönstret, och den korrigerade ordningsparametern
+## 4. Återbildning, uttömning och kontrollbefogenhet
 
-De fyra minimala formerna, skalade till skelett, är samma objekt:
+De fyra linserna har relaterade frågor men olika matematiska typer: ett matrisinformationsvillkor, en variansekvation, ett derivatatecken och en utsaga om handlings- eller trosvikter. Deras isomorfi har inte etablerats. En modell med förfall plus källterm är en möjlig abstraktion endast när relevant storhet och dynamik faktiskt anges.
 
-> En storhet **Q** som representerar för närvarande oanvända alternativ – excitationsrikedom, additiv varians, hot om inträde, strategi‑/posteriorstöd – **avtar monotont under det primära målet** via ett teckenvillkor, och hålls positiv **endast av en källterm som den optimerande processen inte själv sätter**.
+### 4.1 Lokalitet är inte ett kollapskriterium [M/IP]
 
-Det starka testet passerades: fyra oberoende härledda formella utsagor, fyra disjunkta vokabulärer, en struktur. Det svaga testet passerades också: varje lins undantagsvillkor (fält 3) namngav oberoende *icke‑stationäritet eller en externt hållen restriktion* som flykten, utan någon koordination. Enligt det kriterium som fastställdes i förväg är detta **identitetsutfallet**, inte rim **[IP]**.
+Även för en enkel extern positiv källa \(s>0\) och förlusttakt \(a>0\),
 
-Detta pensionerar det ord som gjorde illegitimt arbete. Ordningsparametern är **inte** optimera­rens ”räckvidd” – som alltid var fyra mekanismer (parameterkontroll, institutionell kontroll, representationsutrymme, selektionsomfång) i en enda rock. Den faktiska axeln är **källtermens lokalitet**: ligger den term som bevarar Q innanför eller utanför optimera­rens kontrollmängd?
+\[
+\dot Q=s-aQ,\qquad Q(t)=s/a+(Q(0)-s/a)e^{-at}.
+\]
 
-### 4.1 Två skikt
+Jämvikten \(s/a>0\) vederlägger implikationen att exogen återbildning garanterar kollaps. En skyddad extern källa kan i stället upprätthålla storheten. Omvänt är endogen återbildning inte automatiskt säker eller tillräcklig.
 
-De fyra linserna delar sig rent, och delningen är resultatet:
+| Fråga | Vad måste anges |
+|---|---|
+| Återbildning | Hur alternativ eller evidens skapas och bevaras |
+| Uttömning | Vilka uppdateringar som minskar tillgänglighet, vikt eller åtkomst |
+| Kontrollbefogenhet | Vilka parametrar och policyer som kan ändras av vem |
+| Skydd | Kostnader, begränsningar, upprätthållande och möjlighet till upphävande |
 
-| Lins | Källterm | Lokalitet | Kollaps |
-|---|---|---|---|
-| Reglerteknik | referensrikedom `r(t)` | **exogen** | robust – ingen intern flykt |
-| Institutioner | restriktion på barriärer `B` | **exogen** | robust – ingen intern flykt |
-| Evolution | mutationsinput `V_m` | **omstritt endogen** | betingad av andra ordningens optimering |
-| Beslut | VOI / icke‑stationäritet | **omstritt** | betingad / ramberoende |
+Källtermslokalitet är de två sista frågorna tillämpade på en särskild källa, inte en universell ordningsparameter. Olika begränsningar kan påverka förlusten snarare än tillföra nya alternativ. Den ursprungliga tvånivåklassificeringen av robust respektive villkorad kollaps dras tillbaka.
 
-När källtermen är **strikt exogen** (reglerteknik, institutioner) är kollapsen robust: optimeraren kan strukturellt inte nå den term som skulle rädda den. En regulator kan inte berika sin egen referens; en etablerad aktör kan inte lyfta det juridiska taket på sina egna barriärer. Q faller och det finns inget internt drag som stoppar det.
+### 4.2 Omedvetenhet och modellrevision [H]
 
-När källtermen är **endogen eller omstritt så** (evolution, beslut) blir kollapsen betingad av en *andra ordningens* fråga: optimerar optimeraren också källtermen? Mutationshastighet är ärftlig, så selektion *kan* agera på den – men den driver den inte alltid till noll, eftersom en låg mutationshastighet i en fluktuerande miljö själv missgynnas. Detta är exakt det vittne som dödade det tidigare omöjlighetspåståendet. Den interna beskyddaren överlever inte för att den är skyddad, utan för att det inte är monotont i fitness att ta bort den *givet en volatil miljö* – dvs. dess överlevnad är parasitär på ett bakgrundsvillkor (volatilitet) som populationen inte heller sätter.
-
-Detta är den precisering experimentet köpte: den verkligt interna källregimen är den *intressanta*, eftersom det är den enda plats där optimera­rens egna val avgör utfallet – och även där lutar sig stabiliteten mot en exogen bakgrund. Det exogena skiktet är avgjort och dystert. Det endogena skiktet är där varje designfråga som är värd att ställa nu lever.
-
-### 4.2 Beslutsteorisömmen (hålls öppen) [H]
-
-Beslutsteori är bistabil, och vi representerar det snarare än att medelvärdesbilda bort det. Över tre familjer: två lokaliserade persistens delvis i **VOI som en intern hedge** – agenten håller suboptimala handlingar viktade *som en del av* maximeringen, vilket gör källtermen endogen i förhållande till målet. En tredje återgav samma problem med **VOI som ett offer** för koncentration – informationsvärdet *faller med* posteriorn, och varje överlevande flykt (icke‑stationäritet, en felspecificerad prior, en oinformativ kanal) är strikt extern.
-
-Båda läsningarna är kompetent beslutsteori. Linsen tvingar inte fram en. Så beslutsteori är en *strikt* medlem av schemat under offerläsningen och en *nära‑isomorfi* under hedgeläsningen, och fältet har inte avgjort vilken som är korrekt. Denna bistabilitet är inte brus – den är den renaste tillgängliga demonstrationen att **källtermens lokalitet är, för vissa system, ett modelleringsval snarare än ett fast faktum.** Det hör hemma i resultatet med sin osäkerhet intakt.
+En hypotes med priorvikten noll förblir på noll under vanlig bayesiansk betingning när betingningen är definierad. En möjlighet som saknas i hypotesrummet är inte samma sak som en representerad hypotes med noll massa. Utvidgning av rummet, revision av priorer eller förvärv av en ny observationsmodell ändrar problemet. Den beslutsteoretiska skarven är fortfarande värd att undersöka; ingen universell omöjlighet att bevara eller upptäcka alternativ följer.

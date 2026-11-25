@@ -1,6 +1,5 @@
-## Appendix A — Lens prompts
+## Appendix A — Lens prompts and evidence limits
 
-Each was pasted standalone, no other context. Identical five-field output format across all four. Forbidden cross-cutting terms held constant. Full text available on request; structure summarized: *answer strictly as a [discipline]; use only [native] concepts; do not use [forbidden list]; consider [a system minimizing/maximizing an objective in a possibly-non-stationary setting]; return NATIVE TERM / DIRECTION / EXCEPTION CONDITIONS / MINIMAL FORMAL STATEMENT / CONFIDENCE + in-field disagreement.*
+The original source gives a summary, not full prompt transcripts. It reports standalone prompts in native disciplinary vocabulary with a common forbidden-term list (diversity, exploration, contestability, reach, adaptivity, corrigibility, absorption), a common scenario of an optimizing system in a possibly nonstationary setting, and five fields: native term, direction, exceptions, minimal formal statement, confidence plus in-field disagreement. The reported assignments were control (two families), evolution (two), institutions (two) and decision (three, including an additional seam test). The integrator was excluded as a lens.
 
-Model assignment: control (two families), evolution (two families), institutions (two families), decision (three families — one added to test the §4.2 seam). Integrator excluded from lensing.
-
+These are historical methodological reports [HR]. Full responses, prompt versions, round records and the dated decision rule are absent from the evidence archive. The summary is not a replication kit for the elicitation. Agreement of the observers is not a proof of identity, independence or world relevance. The four lenses are retained in §3 as a research vocabulary.

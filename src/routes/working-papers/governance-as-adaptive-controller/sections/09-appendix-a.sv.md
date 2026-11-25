@@ -1,168 +1,96 @@
 # Appendix A — Formella härledningar
 
-Detta appendix tillhandahåller de matematiska härledningar som ligger till grund för det duala regleringsramverket i Del II. Det formaliserar det duala regleringsproblemet för styrning som ett stokastiskt dynamiskt programmeringsproblem, härleder villkoret om ihållande excitation för identifierbarhet av styrningsparametrar och analyserar den glömskodynamik som styr institutionellt minnesförfall.
+## A.1 Formulering i informationstillståndet [M]
 
-## A.1 Dual regleringsformulering för styrsystem
-
-Betrakta ett styrsystem vars sanna dynamik ges av
+Låt \(K(dx',d\theta'\mid x,\theta,u)\) vara en Markovövergång och \(O(dy'\mid x',\theta',u)\) en observationskärna. Prediktera först den gemensamma fördelningen med \(K\), uppdatera den sedan med \(O\). Med täthetsnotation är den prediktiva likelihooden för \(y'\)
 
 \[
-\mathbf{x}(t+1) = \mathbf{f}\bigl(\mathbf{x}(t), \mathbf{u}(t), \boldsymbol{\theta}\bigr) + \mathbf{w}(t), \qquad \mathbf{w}(t) \sim \mathcal{N}(\mathbf{0}, \mathbf{W}),
+p(y'\mid b,u)=\int O(y'\mid x',\theta',u)K(dx',d\theta'\mid x,\theta,u)b(dx,d\theta).
 \]
 
-där \(\mathbf{x}(t) \in \mathbb{R}^n\) är tillståndsvektorn, \(\mathbf{u}(t) \in \mathbb{R}^m\) är styrsignalen, \(\boldsymbol{\theta} \in \mathbb{R}^p\) är en vektor av okända parametrar, och \(\mathbf{w}(t)\) är processbrus. Regulatorn observerar
+Den gemensamma uppdaterade fördelningen erhålls genom att multiplicera predikterad täthet med likelihooden och dividera med denna normaliseringsfaktor. Detta integrerar över latent tillstånd i stället för att behandla dess punktskattning som observerad. Med kostnaderna och slutvillkoret i §2.2 ger det beslutsrekursionen i informationstillståndet. Handlingens informationseffekt ingår i väntevärdet över \(Y_{t+1}\); positiv informationsvinst är inte nödvändigtvis positivt nettobeslutsvärde. Ingen allmän optimalitet hos säkerhetsekvivalens plus dither följer.
+
+## A.2 Persistent excitation och identifierbarhet [M]
+
+I obunden brusfri regression, \(Y=\Phi\theta\), är parametern entydig om och endast om designmatrisen har full kolonnrang. En minsta kvadratminimerare finns även vid rangbrist men behöver inte vara entydig. Betrakta \(x_{t+1}=ax_t+bu_t\), \(u_t=1\), \(x_0=0\), \(x_1=2\), \(x_2=3\). Då gäller
 
 \[
-\mathbf{y}(t) = \mathbf{C}\,\mathbf{x}(t) + \mathbf{v}(t), \qquad \mathbf{v}(t) \sim \mathcal{N}(\mathbf{0}, \mathbf{V}),
+\Phi=\begin{pmatrix}0&1\\2&1\end{pmatrix},\quad \det(\Phi^\top\Phi)=4,\quad (a,b)=(0.5,2).
 \]
 
-och upprätthåller en trosfördelning \(b_t = p(\boldsymbol{\theta} \mid \mathcal{I}_t)\), där \(\mathcal{I}_t = \{\mathbf{y}(0), \mathbf{u}(0), \dots, \mathbf{y}(t-1), \mathbf{u}(t-1), \mathbf{y}(t)\}\) är den information som finns tillgänglig vid tid \(t\). Tron uppdateras via Bayes regel:
+Konstant insignal har räckt eftersom transienten exciterar den gemensamma regressorn. För den skalära regressorn \(\phi_t=t^{-1/2}\) divergerar \(\sum_{t=1}^T\phi_t^2\) när \(T\) växer medan varje sent fönster med fast längd har en summa som går mot noll. Ackumulerad informationstillväxt kräver alltså inte en uniform fönstergräns. Statistisk konsistens kräver fortfarande antaganden om brus, återkoppling och observationsprocess.
+
+För \(y_t=\theta u_t+\epsilon_t\) med oberoende gaussiska fel av känd varians \(\sigma^2\) ger en genomförbar förutbestämd insignal skild från noll vid fast referens information \(u_t^2/\sigma^2\). Vid förutbestämda insignaler summeras informationen över tid. Extern referensvariation är således inte universellt nödvändig. Om prov är överkomliga, säkra eller användbara är ett separat beslut.
+
+## A.3 Glömska och inversinformation [M]
+
+För \(0<\lambda_f<1\) och \(P_0\succ0\) är RLS-rekursionen
 
 \[
-p(\boldsymbol{\theta} \mid \mathcal{I}_{t+1}) \propto p(\boldsymbol{\theta} \mid \mathcal{I}_t)\, p\bigl(\mathbf{y}(t+1) \mid \mathbf{x}(t), \mathbf{u}(t), \boldsymbol{\theta}\bigr).
+P_t=\lambda_f^{-1}\left(P_{t-1}-\frac{P_{t-1}\phi_t\phi_t^\top P_{t-1}}{\lambda_f+\phi_t^\top P_{t-1}\phi_t}\right).
 \]
 
-Regulatorns mål är att minimera den förväntade kumulativa diskonterade kostnaden över en horisont \(T\):
+Matrisinversionslemmat ger, med \(R_t=P_t^{-1}\),
 
 \[
-J = \mathbb{E}\!\left[ \sum_{t=0}^{T} \gamma^t\, c\bigl(\mathbf{x}(t), \mathbf{u}(t)\bigr) \right],
+R_t=\lambda_f R_{t-1}+\phi_t\phi_t^\top=\lambda_f^t R_0+\sum_{i=1}^t\lambda_f^{t-i}\phi_i\phi_i^\top.
 \]
 
-där \(c(\cdot)\) bestraffar avvikelser från måltillståndet och överdriven styrinsats, och \(\gamma \in (0,1]\) är diskonteringsfaktorn.
-
-Den optimala policyn för detta problem uppfyller Bellman-ekvationen:
+Om alla fönster med längd \(L\) har Grammatris minst \(\alpha I\) med \(\alpha>0\), gäller för \(t\ge L\),
 
 \[
-V_t(b) = \min_{\mathbf{u}} \mathbb{E}_{\mathbf{x},\boldsymbol{\theta}}\!\Bigl[ c(\mathbf{x}, \mathbf{u}) + \gamma\, V_{t+1}(b') \;\Big|\; b, \mathbf{u} \Bigr],
-\tag{A.1}
+R_t\succeq\lambda_f^{L-1}\alpha I,\qquad P_t\preceq (\lambda_f^{L-1}\alpha)^{-1}I.
 \]
 
-där \(b'\) är den posteriora tron efter att ha observerat utfallet av handlingen \(\mathbf{u}\). Förväntan tas över det aktuella tillståndet \(\mathbf{x}\), de okända parametrarna \(\boldsymbol{\theta}\) samt process- och mätbruset.
+För konstant skalär \(\phi=1\) går \(R_t\) mot \(1/(1-\lambda_f)\) och \(P_t\) mot \(1-\lambda_f\). Driftkovariansen \(W\) ingår inte explicit i denna inversinformationsuppdatering (även om drift kan ändra regressorerna). Den äldre formeln \(\operatorname{tr}(P_\infty)\approx\operatorname{tr}(W)/(r_l-r_f)\) och dess divergensregel dras tillbaka. Vid konstant förväntad regressors Grammatris \(G\) går den viktade informationsmatrisens väntevärde mot \(G/(1-\lambda_f)\); inversion och väntevärde kommuterar inte. Den faktiska parameterfelskovariansen under brus, drift, återkoppling och filterfelspecifikation är en annan storhet.
 
-Det kritiska draget hos (A.1) är att valet av \(\mathbf{u}\) påverkar inte bara den omedelbara kostnaden utan också det *framtida tros-tillståndet* \(b'\). Detta är den duala effekten: styrhandlingen påverkar både tillståndsutvecklingen (reglering) och informativiteten hos framtida observationer (identifiering). Den optimala policyn inkluderar därför ett explicit explorationsincitament.
+För vikter \(w_k=\lambda_f^k\) över oändlig historik:
 
-**Säkerhetsekvivalens och explorationsbonusen.**  
-När systemet är linjärt och kostnaden är kvadratisk, och när parameterosäkerheten är liten, kan den optimala duala regleringen approximeras genom att dekomponera värdefunktionen. Låt \(\hat{\boldsymbol{\theta}} = \mathbb{E}[\boldsymbol{\theta} \mid b]\) vara den aktuella parameterskattningen, och låt \(\mathbf{P} = \text{Cov}[\boldsymbol{\theta} \mid b]\) vara skattningsfelets kovarians. Värdefunktionen kan expanderas kring det säkerhetsekvivalenta värdet:
+| Storhet | Uttryck | Vid 0,99 |
+|---|---|---:|
+| Halveringstid | \(\log(1/2)/\log\lambda_f\) | 68,97 |
+| E-faldningstid | \(-1/\log\lambda_f\) | 99,50 |
+| Viktsumma | \(1/(1-\lambda_f)\) | 100 |
+| Kishs effektiva stickprovsstorlek | \((1+\lambda_f)/(1-\lambda_f)\) | 199 |
+
+Viktsumman approximerar e-faldningstiden nära ett. Kishs effektiva stickprovsstorlek är en egenskap hos vikter, inte en allmän informationsgräns. Ingen är ett direkt mått på institutionellt minne.
+
+## A.4 Rangbrist i den operativa historiken och provdesignkriteriet [M]
+
+För den statiska modellen i §6.9 låt \(m=(1-p)\lambda(1-e)>0\). I koordinater \((\log\lambda,\log(1-e))\) är Poissonlikelihoodens score-riktning \((1,1)\), så dess Fisherinformation är
 
 \[
-V(b) \approx V^{\text{SE}}(\hat{\boldsymbol{\theta}}) + \text{tr}\bigl(\mathbf{P}\,\mathbf{H}(\hat{\boldsymbol{\theta}})\bigr),
+\mathcal I_{\mathrm{reg}}=m\begin{pmatrix}1&1\\1&1\end{pmatrix}.
 \]
 
-där \(V^{\text{SE}}\) är värdet av den optimala policyn när \(\hat{\boldsymbol{\theta}}\) antas vara sanningen, och \(\mathbf{H}\) är en positivt semidefinit matris som kvantifierar känsligheten i framtida prestanda för parameterosäkerhet. Den andra termen är *osäkerhetskostnaden*: den förväntade prestandaförsämringen till följd av att inte känna till de sanna parametrarna.
+Ett oberoende prov med känd effektivitet lägger till \(\operatorname{diag}(h,0)\) med \(h=p\lambda(1-e_{\mathrm{probe}})\). Den gemensamma determinanten är \(mh>0\) för \(0<p<1\) och \(e_{\mathrm{probe}}<1\), givet positivt hot och kvarvarande andel incidenter. Vid \(p=1\) försvinner den operativa kanalen och gemensam rang är åter ett om provkoefficienten är positiv. En utformad reduktion är inte nödvändigtvis en känd koefficient i verkligheten.
 
-Den optimala handlingen kan då skrivas som
+Icke-identifierbarhet innebär inte oförmåga att besluta: vid \(p=0\) ger en exakt känd residualprodukt 0,1 och en oberoende gräns \(0\le e\le0.5\) att \(\lambda\le0.2\), under en säkerhetströskel på 1, trots att parametrarna inte är gemensamt identifierade. Beslut från ändliga data måste beakta osäkerhet i produkten och annan evidens.
+
+För en separat skalär gaussisk approximation i logaritmerat hot med innovationsvarians \(q>0\) i en slumppromenad och konstant information \(I>0\) per steg är posteriorvariansens uppdatering
 
 \[
-\mathbf{u}^*(t) = \mathbf{u}_{\text{SE}}(t) + \mathbf{u}_{\text{explore}}(t),
+P_{t+1}=\left(\frac{1}{P_t+q}+I\right)^{-1}.
 \]
 
-där \(\mathbf{u}_{\text{SE}}(t)\) minimerar den säkerhetsekvivalenta kostnaden och \(\mathbf{u}_{\text{explore}}(t)\) är en perturbation vald för att reducera \(\mathbf{P}\) i de riktningar som är mest betydelsefulla för framtida prestanda — dvs. de riktningar i vilka \(\mathbf{H}\) är störst. Magnituden av \(\mathbf{u}_{\text{explore}}\) skalar med den aktuella osäkerheten \(\mathbf{P}\) och med känsligheten \(\mathbf{H}\). När osäkerheten är stor är explorationen mer aggressiv; i takt med att parametrarna lärs in avklingar explorationen och regulatorn konvergerar mot säkerhetsekvivalens.
-
-I simuleringen i Del IV implementeras denna struktur med en konstant explorationsvarians \(\sigma^2_\eta\) för hanterbarhet. Den konstanta-varians-approximationen fångar den essentiella avvägningen — uthållig exploration är nödvändig när miljön fortsätter att förändras — samtidigt som den abstraherar från den optimala schemaläggningen av explorationsintensiteten.
-
-## A.2 Ihållande excitation och identifierbarhet
-
-För det linjära specialfallet \(\mathbf{x}(t+1) = \mathbf{A}\,\mathbf{x}(t) + \mathbf{B}\,\mathbf{u}(t) + \mathbf{w}(t)\) med okända matriser \(\mathbf{A}, \mathbf{B}\) kan parametrarna skattas från insignal–utsignal-data endast om insignalen uppfyller ett villkor om *ihållande excitation*.
-
-Låt \(\boldsymbol{\phi}(t) = [\mathbf{x}(t)^\top, \mathbf{u}(t)^\top]^\top \in \mathbb{R}^{n+m}\) vara regressorvektorn. Systemdynamiken kan skrivas som
+Vid den positiva fixpunkten gäller \(IP(P+q)=q\), alltså
 
 \[
-\mathbf{x}(t+1)^\top = \boldsymbol{\phi}(t)^\top \boldsymbol{\Theta} + \mathbf{w}(t)^\top,
+P_\infty=\frac{\sqrt{q^2+4q/I}-q}{2}.
 \]
 
-där \(\boldsymbol{\Theta} = [\mathbf{A} \mid \mathbf{B}]^\top \in \mathbb{R}^{(n+m) \times n}\) är parametermatrisen. Minsta-kvadrat-estimatorn av \(\boldsymbol{\Theta}\) efter \(T\) observationer löser
+Anta att posteriorns medelvärde är exakt \(\log\lambda_{\mathrm{low}}\) och att posteriorn är gaussisk, med säkerhetsmarginal \(\Delta=\log(\lambda_{\mathrm{safe}}/\lambda_{\mathrm{low}})>0\) och ensidig kvantil \(z_\alpha>0\). Sätt \(v=(\Delta/z_\alpha)^2\). Kriteriet \(P_\infty\le v\) gäller om och endast om \(I\ge q/[v(v+q)]\). Med \(I=p\kappa\), \(\kappa=\lambda_{\mathrm{low}}(1-e_{\mathrm{probe}})>0\),
 
 \[
-\hat{\boldsymbol{\Theta}}_T = \bigl(\boldsymbol{\Phi}_T^\top \boldsymbol{\Phi}_T\bigr)^{-1} \boldsymbol{\Phi}_T^\top \mathbf{X}_T,
+p_{\mathrm{exact}}=\frac{q}{\kappa v(v+q)},\qquad p_{\mathrm{approx}}=\frac{q}{\kappa v^2}=\frac{qz_\alpha^4}{\kappa\Delta^4}.
 \]
 
-där \(\boldsymbol{\Phi}_T = [\boldsymbol{\phi}(0), \dots, \boldsymbol{\phi}(T-1)]^\top\) och \(\mathbf{X}_T = [\mathbf{x}(1), \dots, \mathbf{x}(T)]^\top\). Estimatorn existerar och är unik endast om \(\boldsymbol{\Phi}_T^\top \boldsymbol{\Phi}_T\) är inverterbar. Mer allmänt är parametrarna *identifierbara* om informationsmatrisen växer linjärt med \(T\).
+Approximationen gäller för \(q\ll v\) och dess kvot mot den exakta tröskeln är \(1+q/v>1\). Den är en övre gräns för den idealiserade stationära variansdesigntröskeln, inte en undre gräns. Ett värde utanför det tillåtna intervallet för exponeringsandelar är inte en genomförbar design. För de äldre värdena \(\lambda_{\mathrm{low}}=0.2\), \(\lambda_{\mathrm{safe}}=1\), \(e_{\mathrm{probe}}=0.5\), \(\alpha=0.05\):
 
-Insignalen \(\mathbf{u}(t)\) är *ihållande exciterande* av ordning \(d\) om det existerar \(\alpha > 0\) och ett heltal \(m\) sådana att, för alla \(t\),
+| Driftstandardavvikelse | Approximation | Exakt skalär tröskel |
+|---|---:|---:|
+| 0,03 | 0,00982 | 0,00981 |
+| 0,06 | 0,03927 | 0,03913 |
+| 0,12 | 0,15710 | 0,15477 |
 
-\[
-\alpha \mathbf{I} \preceq \sum_{k=t}^{t+m} \boldsymbol{\phi}(k)\boldsymbol{\phi}(k)^\top.
-\tag{A.2}
-\]
-
-Villkor (A.2) säkerställer att regressorvektorn varierar tillräckligt i alla riktningar för att unikt bestämma parametrarna. Om insignalen är konstant eller varierar endast inom ett underrum av \(\mathbb{R}^{n+m}\) blir informationsmatrisen rangdefekt och vissa parametrar är oidentifierbara oavsett observationslängden.
-
-Styrningsanalogin är direkt. Betrakta ett styrsystem med \(p\) okända policyrelevanta parametrar — elasticiteter, multiplikatorer, efterlevnadsgrader, implementeringskapaciteter. För att identifiera dessa parametrar måste policyvektorn \(\mathbf{u}(t)\) variera över minst \(p\) oberoende riktningar över varje tillräckligt långt fönster. Ett system som tillämpar samma policyinstrument vid samma inställningar, år efter år, genererar en regressormatris vars kolumner är nästan kolinjära. De parametrar som styr systemets respons på förhållanden det aldrig har mött — responsen på en ny kris, effektiviteten hos ett oprövat instrument, kapaciteten hos en otestad leveranskedja — är oidentifierade. Regulatorn kan observera systemet i oändlighet och aldrig lära sig dessa parametrar.
-
-Den minimala explorationsvarians som krävs för identifierbarhet skalar med brusnivån \(\|\mathbf{W}\|\) och med den okända parametervektorns dimension. I simuleringen i Del IV måste explorationsdithret \(\sigma^2_\eta\) vara tillräckligt stort i förhållande till processbruset för att säkerställa att informationsmatrisen \(\boldsymbol{\Phi}^\top \boldsymbol{\Phi}\) förblir välkonditionerad. När \(\sigma^2_\eta\) faller under denna tröskel driver parameterskattningarna bort från de sanna värdena utan att regulatorn kan upptäcka glidningen — den formella mekanismen för explorationssvältsfällan.
-
-## A.3 Glömska och den effektiva urvalsstorleken
-
-I en icke-stationär miljö måste regulatorn följa långsamt föränderliga parametrar. Standardmetoden är rekursiv minsta kvadrat med en glömskefaktor. Estimatorn uppdaterar parameterskattningen \(\hat{\boldsymbol{\theta}}(t)\) och den inversa informationsmatrisen \(\mathbf{P}(t)\) som
-
-\[
-\begin{aligned}
-\mathbf{K}(t) &= \frac{\mathbf{P}(t-1)\,\boldsymbol{\phi}(t)}{\lambda_f + \boldsymbol{\phi}(t)^\top \mathbf{P}(t-1)\,\boldsymbol{\phi}(t)}, \\[4pt]
-\hat{\boldsymbol{\theta}}(t) &= \hat{\boldsymbol{\theta}}(t-1) + \mathbf{K}(t)\bigl(y(t) - \boldsymbol{\phi}(t)^\top \hat{\boldsymbol{\theta}}(t-1)\bigr), \\[4pt]
-\mathbf{P}(t) &= \frac{1}{\lambda_f}\bigl(\mathbf{I} - \mathbf{K}(t)\,\boldsymbol{\phi}(t)^\top\bigr)\,\mathbf{P}(t-1),
-\end{aligned}
-\]
-
-där \(\lambda_f \in (0,1]\) är glömskefaktorn. När \(\lambda_f = 1\) viktas alla tidigare observationer lika; den effektiva urvalsstorleken växer utan gräns, och estimatorn konvergerar mot de sanna parametrarna (om miljön är stationär). När \(\lambda_f < 1\) nedviktas tidigare observationer exponentiellt med en halveringstid på ungefär \(1/(1-\lambda_f)\) tidssteg.
-
-Den effektiva urvalsstorleken — antalet observationer som bidrar meningsfullt till den aktuella skattningen — begränsas uppåt av
-
-\[
-N_{\text{eff}} \leq \frac{1}{1 - \lambda_f}.
-\tag{A.3}
-\]
-
-När \(\lambda_f = 0.99\) är det effektiva minnet ungefär 100 tidssteg. När \(\lambda_f = 0.90\) är det effektiva minnet ungefär 10 tidssteg — regulatorn minns endast det senaste årtiondets erfarenhet, och all inlärning från tiden före det är i praktiken bortglömd.
-
-Nettoinlärningsvillkoret följer. Låt \(r_l\) vara informationsanskaffningstakten — den takt med vilken nya observationer reducerar parameterosäkerheten \(\text{tr}(\mathbf{P})\). Låt \(r_f = 1 - \lambda_f\) vara glömskotakten — den takt med vilken gammal information avklingar. Den stationära osäkerheten uppfyller
-
-\[
-\lim_{t \to \infty} \text{tr}(\mathbf{P}(t)) \approx \frac{\text{tr}(\mathbf{W})}{r_l - r_f},
-\]
-
-när \(r_l > r_f\). När \(r_l \leq r_f\) divergerar osäkerheten: systemet glömmer snabbare än det lär sig, och parameterskattningarna konvergerar aldrig.
-
-Styrningsanalogin är att den institutionella glömskotakten bestäms av personalomsättning, organisatorisk omstrukturering och förfallet av infrastrukturen för kunskapshantering. Den effektiva urvalsstorleken för institutionellt minne är antalet tidigare administrationer, reformcykler eller programutvärderingar vars inlärning förblir tillgänglig för nuvarande beslutsfattare. När denna effektiva urvalsstorlek är mindre än antalet observationer som krävs för att identifiera systemets nyckelparametrar — givet bruset i styrningsmiljön och miljöförändringstakten — befinner sig systemet i glömska-utan-inlärningsfällan.
-
-Mappningen mellan den formella parametern \(\lambda_f\) och institutionella karakteristika är inte exakt. Men den strukturella riktningen är tydlig. Demokratier med korta valcykler, hög ministeromsättning och svag ämbetsmannakontinuitet opererar med en låg effektiv \(\lambda_f\). System med starka karriärsbyråkratier, institutionaliserade utvärderingsarkiv och obligatoriska kunskapsöverföringsprotokoll opererar med en högre effektiv \(\lambda_f\). Skillnaden i \(\lambda_f\) avgör om systemet kan ackumulera den kunskap som krävs för att förbli kalibrerat mot en föränderlig miljö, eller om varje generation av beslutsfattare måste återupptäcka vad dess föregångare redan lärde sig.
-
-## A.4 Operativa facits rangdefekt och den kritiska sondtakten
-
-Detta appendix härleder det identifierbarhetsresultat och den kritiska sondtakt som anges i §6.9.
-
-**Rangdefekt.** Låt en regulator undertrycka en störningsklass med latent takt \(\lambda > 0\) och effektivitet \(e \in (0,1)\), båda okända för observatören. Det operativa facit under period \(t\) är
-
-\[
-y_{\text{reg}}(t) \sim \text{Poisson}\bigl((1-p)\,\lambda\,(1-e)\bigr),
-\]
-
-där \(p\) är den andel av exponeringsbasen som leds in i en sondkanal. Likelihooden beror på \((\lambda, e)\) endast genom produkten \(\mu = \lambda(1-e)\). Fisherinformationsmatrisen i \((\log\lambda, \log(1-e))\)-koordinaterna är därför rang ett för alla \(T\): den riktning längs vilken \(\lambda\) och \(e\) varierar med \(\mu\) hållet konstant — den riktning som förnyelsebeslutet måste lösa upp — bär noll information oavsett observationslängd. Detta är villkoret i §A.2 i sin mest extrema form: regressorn lämnar aldrig ett endimensionellt underrum. En kontrollsimulering med \(e\) känd för observatören bekräftar mekanismen: död‑bokstav‑regimen försvinner, eftersom även restkanalen då identifierar \(\lambda\), om än långsamt. Oidentifierbarheten är en gemensam egenskap hos okänt \((\lambda, e)\), inte av låga restantal som sådana.
-
-**Sondkanalen.** Ett skyddat experimentutrymme som drivs med en designad effektivitet \(e_{\text{probe}}\) bidrar med
-
-\[
-y_{\text{probe}}(t) \sim \text{Poisson}\bigl(p\,\lambda\,(1-e_{\text{probe}})\bigr),
-\]
-
-där \(e_{\text{probe}}\) är känd eftersom lättnaden är konstruerad och instrumenterad — ett antagande som i sig är ett designkrav på sonden. I logkoordinater \(x = \log\lambda\) är per-period-Fisherinformationen från denna kanal \(I_x = c\,\lambda\) med \(c = p\,(1-e_{\text{probe}})\).
-
-**Stationärtillstånd under drift.** Låt \(x\) utvecklas som en driftlös slumpvandring med per-period-varians \(q = \sigma_d^{2}\) (observatörens modell; simuleringen använder en medelvärdesåtergående sanning, se nedan). Den skalära prediktera–uppdatera-rekursionen för posteriorvariansen,
-
-\[
-\sigma^{2}_{t+1} = \Bigl( \bigl(\sigma^{2}_{t} + q\bigr)^{-1} + I_x \Bigr)^{-1},
-\]
-
-har, för \(q I_x \ll 1\), stationärtillståndet \(\sigma^{2}_{\infty} \approx \sqrt{q / I_x}\).
-
-**Avgörbarhet.** Solnedgångsgranskningen avlägsnar regulatorn omm \(P(\lambda \le \lambda_{\text{safe}}) \ge 1 - \alpha\). Med posteriorn centrerad nära den sanna post‑upplösningsnivån \(\lambda_{\text{low}} < \lambda_{\text{safe}}\) blir villkoret approximativt \(z_{\alpha}\,\sigma_{\infty} \le \Delta\) med \(\Delta = \log(\lambda_{\text{safe}} / \lambda_{\text{low}})\). Insättning av stationärtillståndet och lösning för sondtakten ger det kritiska värdet
-
-\[
-p^{*} \;=\; \frac{q\, z_{\alpha}^{4}}{\lambda_{\text{low}}\,(1-e_{\text{probe}})\,\Delta^{4}}.
-\tag{A.4}
-\]
-
-För \(p < p^{*}\) överstiger stationärosäkerheten marginalen och avlägsnandevillkoret uppfylls aldrig: tröskeln lever i besluts skiktet, där kontinuerligt skalande osäkerhet möter en fast gräns.
-
-**Simulering.** Kompanjonfilen `paper_xiv_sunset.py` implementerar ett gridfilter över \((\log\lambda,\, e)\) med en informativ prior centrerad vid den historiska hotnivån, årliga granskningar vid \(\alpha = 0.05\), sann effektivitet \(e = 0.97\), sondeffektivitet \(e_{\text{probe}} = 0.5\), \(\lambda_{\text{safe}} = 1\), \(\lambda_{\text{low}} = 0.2\), och en medelvärdesåtergående log‑hotprocess (\(\phi = 0.95\)) med innovation \(\sigma_d \in \{0.03, 0.06, 0.12\}\); 150 körningar per cell, 300‑års horisont. Resultat: vid \(p = 0\) inträffade avlägsnande i noll körningar vid varje driftnivå. Avgörbarhetsövergången ligger vid \(p \approx 0.02\)–\(0.04\) i samtliga tre fall; ekvation (A.4) förutsäger \(0.010\), \(0.039\) respektive \(0.157\), så det mellersta fallet stämmer nära medan driftberoendet empiriskt är plattare än den första ordningens lag — den medelvärdesåtergående sanningen är mildare än slumpvandringsantagandet, och vid låg drift är den bindande restriktionen inom horisonten posteriorns transporttid från den informativa priorn snarare än stationärtillståndet. Medianår från upplösning till motiverat avlägsnande: vid \(p = 0.04\), ungefär 200–280; vid \(p = 0.15\), ungefär 70–80; vid \(p = 0.40\), ungefär 32–34. Med regulatorn genuint nödvändig (\(\lambda \approx 2\lambda_{\text{safe}}\)) producerade den riskbegränsade regeln falska avlägsnanden i högst en procent av körningarna vid någon sondtakt, medan kumulativa sondkanalsincidenter växte linjärt i \(p\) — kostnadssidan av Del II:s explorationsavvägning. Figurerna `sunset_time_to_removal.png` och `sunset_tradeoff.png` finns i simuleringsrepositoryt.
-
-**Begränsningar.** Härledningen är första ordningens och skalär: en enda störningsklass, statisk sann effektivitet, en Gaussisk approximation av Poisson‑posteriorn i logrymden, och en sond vars egen effektivitet är känd exakt. Varje lättnad flyttar resultatet i en känd riktning — okänt \(e_{\text{probe}}\) återinför partiell rangdefekt i sondkanalen och höjer \(p^{*}\); flera kopplade störningsklasser höjer den ytterligare. Ekvation (A.4) läses därför bäst som en undre gräns och en skalningslag, i samma första ordningens anda som resten av detta appendix.
+Detta är en villkorad variansdesignberäkning, inte ett förstapassageresultat. Posteriorns medelvärde kan fluktuera och korsa en beslutsgräns vid andra varianser. Den historiska simuleringens rutnätsfilter skiljer sig från denna approximation. Ingen allmän riktning för en gräns etableras för det filtret, okänd proveffektivitet, flera hotklasser eller verkliga regulatorer.

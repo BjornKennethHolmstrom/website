@@ -54,25 +54,25 @@
 
   // --- 3. CONTENT MAP (titles) ---
   const contentMap = [
-    { id: 'executive-summary', titleEn: 'Executive Summary',                                       titleSv: 'Sammanfattning' },
-    { id: 'part-1',             titleEn: 'Part I: The Learning Limit',                              titleSv: 'Del I: Lärandets gräns' },
-    { id: 'part-2',             titleEn: 'Part II: Formal Framework',                               titleSv: 'Del II: Formellt ramverk' },
-    { id: 'part-3',             titleEn: 'Part III: Failure Modes of Adaptive Governance',          titleSv: 'Del III: Felmoder för adaptiv styrning' },
-    { id: 'part-4',             titleEn: 'Part IV: Simulation: The Adaptive Controller',            titleSv: 'Del IV: Simulering: Den adaptiva kontrollanten' },
-    { id: 'part-5',             titleEn: 'Part V: Empirical Illustrations',                         titleSv: 'Del V: Empiriska illustrationer' },
-    { id: 'part-6',             titleEn: 'Part VI: Design Principles for Adaptive Governance Architectures', titleSv: 'Del VI: Designprinciper för adaptiva styrningsarkitekturer' },
-    { id: 'part-7',             titleEn: 'Part VII: Connection to the Series',                      titleSv: 'Del VII: Koppling till serien' },
-    { id: 'part-8',             titleEn: 'Part VIII: Limitations and Conclusion',                  titleSv: 'Del VIII: Begränsningar och slutsats' },
-    { id: 'appendix-a',         titleEn: 'Appendix A: Formal Derivations',                          titleSv: 'Appendix A: Formella härledningar' },
-    { id: 'appendix-b',         titleEn: 'Appendix B: Simulation Specification',                    titleSv: 'Appendix B: Simuleringsspecifikation' },
-    { id: 'appendix-c',         titleEn: 'Appendix C: Empirical Coding Notes',                      titleSv: 'Appendix C: Empiriska kodningsanteckningar' },
+    { id: 'executive-summary', titleEn: 'Executive Summary', titleSv: 'Sammanfattning' },
+    { id: 'part-1',             titleEn: 'Part I — The learning limit', titleSv: 'Del I — Lärandets gräns' },
+    { id: 'part-2',             titleEn: 'Part II — Formal framework: dual control and identification', titleSv: 'Del II — Formellt ramverk: dual reglering och identifiering' },
+    { id: 'part-3',             titleEn: 'Part III — Failure modes of adaptive governance', titleSv: 'Del III — Felmoder för adaptiv styrning' },
+    { id: 'part-4',             titleEn: 'Part IV — Simulation: the adaptive controller', titleSv: 'Del IV — Simulering: den adaptiva regulatorn' },
+    { id: 'part-5',             titleEn: 'Part V — Empirical illustrations', titleSv: 'Del V — Empiriska illustrationer' },
+    { id: 'part-6',             titleEn: 'Part VI — Design principles for adaptive governance architectures', titleSv: 'Del VI — Designprinciper för adaptiva styrningsarkitekturer' },
+    { id: 'part-7',             titleEn: 'Part VII — Connection to the series', titleSv: 'Del VII — Koppling till serien' },
+    { id: 'part-8',             titleEn: 'Part VIII — Limitations and conclusion', titleSv: 'Del VIII — Begränsningar och slutsats' },
+    { id: 'appendix-a',         titleEn: 'Appendix A — Formal derivations', titleSv: 'Appendix A — Formella härledningar' },
+    { id: 'appendix-b',         titleEn: 'Appendix B — Simulation specification', titleSv: 'Appendix B — Simuleringsspecifikation' },
+    { id: 'appendix-c',         titleEn: 'Appendix C — Empirical coding notes for learning metrics', titleSv: 'Appendix C — Empiriska kodningsanteckningar för lärandemått' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
       tag: 'AI-generated working paper · Series XIV',
-      seriesNote: 'This is the fourteenth paper in the Governance as Engineering series. It consolidates the theoretical arc of Cycle Two and opens the transition to engineering.',
+      seriesNote: 'Paper XIV in the Governance as Engineering series · Revised November 2026',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
@@ -104,11 +104,11 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'The Governance as Engineering series has, across thirteen papers, developed a structural grammar for governance architecture. But that grammar has treated learning as implicit. This paper makes learning explicit as a design requirement. Can a governance system regulate itself—explore beyond its current model, retain what it discovers, discard what no longer holds—without the exploratory process destabilising the regime?',
+      contextIntro: 'How can an institution acquire decision-relevant evidence while acting under uncertainty and constraints? Adaptive control provides a vocabulary for this problem.',
       relatedWork: 'Related work:',
       architectureLink: 'The Architecture of Stability',
       gsiLink: 'Global Subsidiarity Index',
-      contextOutro: 'The paper formalises dual control, institutional memory, and persistent excitation. It identifies five failure modes and derives design principles for adaptive governance architectures. It completes the Cycle Two adaptation triad and opens the transition to engineering.',
+      contextOutro: 'The revised paper distinguishes information, estimation and performance, and offers nine conditional design proposals rather than a universal learning or survival theorem.',
       allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -118,7 +118,7 @@
     },
     sv: {
       tag: 'AI-genererat arbetsdokument · Serie XIV',
-      seriesNote: 'Detta är den fjortonde rapporten i serien Styrning som ingenjörskonst. Den konsoliderar Cykel Tvås teoretiska båge och öppnar övergången till ingenjörskonst.',
+      seriesNote: 'Rapport XIV i serien Styrning som ingenjörskonst · Reviderad november 2026',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -150,11 +150,11 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Serien Styrning som ingenjörskonst har under tretton rapporter utvecklat en strukturell grammatik för styrningsarkitektur. Men den grammatiken har behandlat lärande som implicit. Denna rapport gör lärande explicit som ett designkrav. Kan ett styrsystem reglera sig självt — utforska bortom sin nuvarande modell, behålla vad det upptäcker, förkasta det som inte längre håller — utan att den utforskande processen destabiliserar regimen?',
+      contextIntro: 'Hur kan en institution förvärva beslutsrelevant evidens samtidigt som den agerar under osäkerhet och begränsningar? Adaptiv reglering ger en vokabulär för problemet.',
       relatedWork: 'Relaterat arbete:',
       architectureLink: 'Stabilitetens arkitektur',
       gsiLink: 'Global subsidiaritetsindex',
-      contextOutro: 'Rapporten formaliserar dubbelkontroll, institutionellt minne och persistent excitation. Den identifierar fem felmoder och härleder designprinciper för adaptiva styrningsarkitekturer. Den fullbordar Cykel Tvås adaptationstriad och öppnar övergången till ingenjörskonst.',
+      contextOutro: 'Den reviderade rapporten skiljer information, skattning och prestanda åt och ger nio villkorade designförslag snarare än en universell lärande- eller överlevnadssats.',
       allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -166,14 +166,14 @@
 
   const metadata = {
     en: {
-      title: 'Governance as an Adaptive Controller: Exploration, Memory, and the Conditions for Institutional Learning',
-      subtitle: 'Exploration, Memory, and the Conditions for Institutional Learning',
-      description: 'Models governance learning as a dual control problem, formalising the exploration–exploitation trade‑off, institutional memory, and persistent excitation. Identifies five failure modes and derives design principles for adaptive governance architectures.',
+      title: 'Governance as an Adaptive Controller',
+      subtitle: 'Learning, identification, and the limits of adaptive governance',
+      description: 'Distinguishes identification, excitation, learning and operational performance. Examines a finite-horizon adaptive-controller comparison, memory weights and the information requirements of sunset review.',
     },
     sv: {
-      title: 'Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande',
-      subtitle: 'Utforskning, minne och villkoren för institutionellt lärande',
-      description: 'Modellerar styrningens lärande som ett dubbelkontrollproblem, formaliserar avvägningen mellan utforskning och exploatering, institutionellt minne och persistent excitation. Identifierar fem felmoder och härleder designprinciper för adaptiva styrningsarkitekturer.',
+      title: 'Styrning som en adaptiv kontrollant',
+      subtitle: 'Lärande, identifiering och den adaptiva styrningens gränser',
+      description: 'Skiljer identifiering, excitation, lärande och operativ prestanda åt. Undersöker en jämförelse av adaptiva regulatorer över ändlig horisont, minnesvikter och informationskrav vid omprövning.',
     },
   };
 
@@ -239,8 +239,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Styrning som en adaptiv kontrollant: Utforskning, minne och villkoren för institutionellt lärande. Styrning som ingenjörskonst, Rapport XIV. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). Governance as an Adaptive Controller: Exploration, Memory, and the Conditions for Institutional Learning. Governance as Engineering, Paper XIV. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). Styrning som en adaptiv kontrollant: Lärande, identifiering och den adaptiva styrningens gränser. Styrning som ingenjörskonst, Rapport XIV. Reviderad november 2026. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Governance as an Adaptive Controller: Learning, identification, and the limits of adaptive governance. Governance as Engineering, Paper XIV. Revised November 2026. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

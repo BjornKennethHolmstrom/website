@@ -41,20 +41,20 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/govern
 const metadata = {
 	en: {
 		title: 'Governance as an Adaptive Controller',
-		subtitle: 'Exploration, Memory, and the Conditions for Institutional Learning',
-		description: 'Models governance learning as a dual control problem, formalising the exploration–exploitation trade‑off, institutional memory, and persistent excitation. Identifies five failure modes and derives design principles for adaptive governance architectures. Completes the Cycle Two adaptation triad.',
+		subtitle: 'Learning, identification, and the limits of adaptive governance',
+		description: 'Distinguishes identification, excitation, learning and operational performance. Examines a finite-horizon adaptive-controller comparison, memory weights and the information requirements of sunset review.',
 		author: 'Björn Kenneth Holmström',
-		date: 'June 2026',
+		date: 'June 2026 · Revised November 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/governance-as-adaptive-controller',
 		seriesNote: 'Paper XIV in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
 		title: 'Styrning som en adaptiv kontrollant',
-		subtitle: 'Utforskning, minne och villkoren för institutionellt lärande',
-		description: 'Modellerar styrningens lärande som ett dubbelkontrollproblem, formaliserar avvägningen mellan utforskning och exploatering, institutionellt minne och persistent excitation. Identifierar fem felmoder och härleder designprinciper för adaptiva styrningsarkitekturer. Fullbordar Cykel Tvås adaptationstriad.',
+		subtitle: 'Lärande, identifiering och den adaptiva styrningens gränser',
+		description: 'Skiljer identifiering, excitation, lärande och operativ prestanda åt. Undersöker en jämförelse av adaptiva regulatorer över ändlig horisont, minnesvikter och informationskrav vid omprövning.',
 		author: 'Björn Kenneth Holmström',
-		date: 'Juni 2026',
+		date: 'Juni 2026 · Reviderad november 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/governance-as-adaptive-controller',
 		seriesNote: 'Rapport XIV i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -65,18 +65,18 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
-	{ file: '00-executive-summary', titleEn: 'Executive Summary',                                           titleSv: 'Sammanfattning' },
-	{ file: '01-part-1',            titleEn: 'Part I: The Learning Limit',                                  titleSv: 'Del I: Lärandets gräns' },
-	{ file: '02-part-2',            titleEn: 'Part II: Formal Framework',                                   titleSv: 'Del II: Formellt ramverk' },
-	{ file: '03-part-3',            titleEn: 'Part III: Failure Modes of Adaptive Governance',              titleSv: 'Del III: Felmoder för adaptiv styrning' },
-	{ file: '04-part-4',            titleEn: 'Part IV: Simulation: The Adaptive Controller',                titleSv: 'Del IV: Simulering: Den adaptiva kontrollanten' },
-	{ file: '05-part-5',            titleEn: 'Part V: Empirical Illustrations',                             titleSv: 'Del V: Empiriska illustrationer' },
-	{ file: '06-part-6',            titleEn: 'Part VI: Design Principles for Adaptive Governance Architectures', titleSv: 'Del VI: Designprinciper för adaptiva styrningsarkitekturer' },
-	{ file: '07-part-7',            titleEn: 'Part VII: Connection to the Series',                          titleSv: 'Del VII: Koppling till serien' },
-	{ file: '08-part-8',            titleEn: 'Part VIII: Limitations and Conclusion',                      titleSv: 'Del VIII: Begränsningar och slutsats' },
-	{ file: '09-appendix-a',        titleEn: 'Appendix A: Formal Derivations',                              titleSv: 'Appendix A: Formella härledningar',   isAppendix: true },
-	{ file: '09-appendix-b',        titleEn: 'Appendix B: Simulation Specification',                        titleSv: 'Appendix B: Simuleringsspecifikation', isAppendix: true },
-	{ file: '09-appendix-c',        titleEn: 'Appendix C: Empirical Coding Notes',                          titleSv: 'Appendix C: Empiriska kodningsanteckningar', isAppendix: true },
+	{ file: '00-executive-summary', titleEn: 'Executive Summary', titleSv: 'Sammanfattning' },
+	{ file: '01-part-1',            titleEn: 'Part I — The learning limit', titleSv: 'Del I — Lärandets gräns' },
+	{ file: '02-part-2',            titleEn: 'Part II — Formal framework: dual control and identification', titleSv: 'Del II — Formellt ramverk: dual reglering och identifiering' },
+	{ file: '03-part-3',            titleEn: 'Part III — Failure modes of adaptive governance', titleSv: 'Del III — Felmoder för adaptiv styrning' },
+	{ file: '04-part-4',            titleEn: 'Part IV — Simulation: the adaptive controller', titleSv: 'Del IV — Simulering: den adaptiva regulatorn' },
+	{ file: '05-part-5',            titleEn: 'Part V — Empirical illustrations', titleSv: 'Del V — Empiriska illustrationer' },
+	{ file: '06-part-6',            titleEn: 'Part VI — Design principles for adaptive governance architectures', titleSv: 'Del VI — Designprinciper för adaptiva styrningsarkitekturer' },
+	{ file: '07-part-7',            titleEn: 'Part VII — Connection to the series', titleSv: 'Del VII — Koppling till serien' },
+	{ file: '08-part-8',            titleEn: 'Part VIII — Limitations and conclusion', titleSv: 'Del VIII — Begränsningar och slutsats' },
+	{ file: '09-appendix-a',        titleEn: 'Appendix A — Formal derivations', titleSv: 'Appendix A — Formella härledningar',   isAppendix: true },
+	{ file: '09-appendix-b',        titleEn: 'Appendix B — Simulation specification', titleSv: 'Appendix B — Simuleringsspecifikation', isAppendix: true },
+	{ file: '09-appendix-c',        titleEn: 'Appendix C — Empirical coding notes for learning metrics', titleSv: 'Appendix C — Empiriska kodningsanteckningar för lärandemått', isAppendix: true },
 ];
 
 // ── CSS ─────────────────────────────────────────────────────────────────────

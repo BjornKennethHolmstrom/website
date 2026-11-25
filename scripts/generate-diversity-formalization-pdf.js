@@ -41,20 +41,20 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/why-di
 const metadata = {
 	en: {
 		title: 'Why Diversity Resists Formalization',
-		subtitle: 'A cross‑framework failure atlas of exploration‑preservation under optimization pressure',
-		description: 'Four disciplines — control theory, evolutionary biology, institutional economics, and decision theory — independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter. Paper XVI in the Governance as Engineering series.',
+		subtitle: 'Replenishment, switching barriers, and finite-population metastability',
+		description: 'Revisits four disciplinary analogies without asserting formal identity. Derives a stationary partition law for linear copying with switching barriers and quantifies a finite-population bottleneck.',
 		author: 'Björn Kenneth Holmström',
-		date: 'June 2026',
+		date: 'June 2026 · Revised November 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/why-diversity-resists-formalization',
 		seriesNote: 'Paper XVI in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
 		title: 'Varför mångfald motstår formalisering',
-		subtitle: 'En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck',
-		description: 'Fyra discipliner — reglerteknik, evolutionsbiologi, institutionell ekonomi och beslutsteori — konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern. Rapport XVI i serien Styrning som ingenjörskonst.',
+		subtitle: 'Återbildning, bytesbarriärer och metastabilitet i ändliga populationer',
+		description: 'Omprövar fyra disciplinära analogier utan att hävda formell identitet. Härleder en stationär partitionsfördelning för linjär kopiering med bytesbarriärer och kvantifierar en flaskhals i ändlig population.',
 		author: 'Björn Kenneth Holmström',
-		date: 'Juni 2026',
+		date: 'Juni 2026 · Reviderad november 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/why-diversity-resists-formalization',
 		seriesNote: 'Rapport XVI i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -65,15 +65,15 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
-	{ file: 'abstract',     titleEn: 'Abstract',                                          titleSv: 'Sammanfattning' },
-	{ file: 'section-1',    titleEn: '1. The Object That Keeps Moving',                   titleSv: '1. Objektet som flyttar sig' },
-	{ file: 'section-2',    titleEn: '2. Method: Adversarial Decay as Evidence',          titleSv: '2. Metod: Adversarial Decay som evidens' },
-	{ file: 'section-3',    titleEn: '3. The Four Self‑Contained Collapses',              titleSv: '3. De fyra fristående kollapserna' },
-	{ file: 'section-4',    titleEn: '4. The Shared Pattern, and the Corrected Order Parameter', titleSv: '4. Det gemensamma mönstret och den korrigerade ordningsparametern' },
-	{ file: 'section-5',    titleEn: '5. What This Does Not Show',                        titleSv: '5. Vad detta inte visar' },
-	{ file: 'section-6',    titleEn: '6. The Residual',                                   titleSv: '6. Restposten' },
-	{ file: 'appendix-a',   titleEn: 'Appendix A: Lens Prompts',                          titleSv: 'Appendix A: Lins‑prompter', isAppendix: true },
-	{ file: 'appendix-b',   titleEn: 'Appendix B: Rejected Unifications',                titleSv: 'Appendix B: Förkastade unifieringar', isAppendix: true },
+	{ file: 'abstract',     titleEn: 'Abstract', titleSv: 'Sammanfattning' },
+	{ file: 'section-1',    titleEn: '1. The object that keeps moving', titleSv: '1. Objektet som flyttar sig' },
+	{ file: 'section-2',    titleEn: '2. Method: adversarial narrowing as qualitative evidence', titleSv: '2. Metod: adversarial avgränsning som kvalitativ evidens' },
+	{ file: 'section-3',    titleEn: '3. Four distinct formal objects', titleSv: '3. Fyra skilda formella objekt' },
+	{ file: 'section-4',    titleEn: '4. Replenishment, depletion and control authority', titleSv: '4. Återbildning, uttömning och kontrollbefogenhet' },
+	{ file: 'section-5',    titleEn: '5. What this does not show', titleSv: '5. Vad detta inte visar' },
+	{ file: 'section-6',    titleEn: '6. The residual: finite-population entrenchment', titleSv: '6. Restposten: inlåsning i ändliga populationer' },
+	{ file: 'appendix-a',   titleEn: 'Appendix A — Lens prompts and evidence limits', titleSv: 'Appendix A — Linsprompter och evidensgränser', isAppendix: true },
+	{ file: 'appendix-b',   titleEn: 'Appendix B — Formal results and rejected unifications', titleSv: 'Appendix B — Formella resultat och förkastade unifieringar', isAppendix: true },
 ];
 
 // ── CSS ─────────────────────────────────────────────────────────────────────

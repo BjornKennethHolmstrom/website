@@ -48,22 +48,22 @@
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                          titleSv: 'Sammanfattning' },
-    { id: 'section-1',   titleEn: '1. The Object That Keeps Moving',                                   titleSv: '1. Objektet som flyttar sig' },
-    { id: 'section-2',   titleEn: '2. Method: Adversarial Decay as Evidence',                          titleSv: '2. Metod: Adversarial Decay som evidens' },
-    { id: 'section-3',   titleEn: '3. The Four Self‑Contained Collapses',                              titleSv: '3. De fyra fristående kollapserna' },
-    { id: 'section-4',   titleEn: '4. The Shared Pattern, and the Corrected Order Parameter',          titleSv: '4. Det gemensamma mönstret och den korrigerade ordningsparametern' },
-    { id: 'section-5',   titleEn: '5. What This Does Not Show',                                        titleSv: '5. Vad detta inte visar' },
-    { id: 'section-6',   titleEn: '6. The Residual',                                                    titleSv: '6. Restposten' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Lens Prompts',                                           titleSv: 'Appendix A: Lins‑prompter' },
-    { id: 'appendix-b',  titleEn: 'Appendix B: Rejected Unifications',                                 titleSv: 'Appendix B: Förkastade unifieringar' },
+    { id: 'abstract',    titleEn: 'Abstract', titleSv: 'Sammanfattning' },
+    { id: 'section-1',   titleEn: '1. The object that keeps moving', titleSv: '1. Objektet som flyttar sig' },
+    { id: 'section-2',   titleEn: '2. Method: adversarial narrowing as qualitative evidence', titleSv: '2. Metod: adversarial avgränsning som kvalitativ evidens' },
+    { id: 'section-3',   titleEn: '3. Four distinct formal objects', titleSv: '3. Fyra skilda formella objekt' },
+    { id: 'section-4',   titleEn: '4. Replenishment, depletion and control authority', titleSv: '4. Återbildning, uttömning och kontrollbefogenhet' },
+    { id: 'section-5',   titleEn: '5. What this does not show', titleSv: '5. Vad detta inte visar' },
+    { id: 'section-6',   titleEn: '6. The residual: finite-population entrenchment', titleSv: '6. Restposten: inlåsning i ändliga populationer' },
+    { id: 'appendix-a',  titleEn: 'Appendix A — Lens prompts and evidence limits', titleSv: 'Appendix A — Linsprompter och evidensgränser' },
+    { id: 'appendix-b',  titleEn: 'Appendix B — Formal results and rejected unifications', titleSv: 'Appendix B — Formella resultat och förkastade unifieringar' },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
   const ui = {
     en: {
       tag: 'AI-generated working paper · Series XVI',
-      seriesNote: 'This is the sixteenth paper in the Governance as Engineering series. It asks the prior question of whether adaptive capacity is sustainable at all.',
+      seriesNote: 'Paper XVI in the Governance as Engineering series · Revised November 2026',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Paper 0: Below the Factorization →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Paper I: Governance Stability Simulator →' },
@@ -95,8 +95,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Four disciplines — control theory, evolutionary biology, institutional economics, and decision theory — were each asked the same structural question in strictly native vocabulary, with cross‑cutting terms forbidden. Their independently derived minimal formal statements share a single decay‑plus‑source‑term structure. The paper does not propose a unified theory of epistemic adaptivity, but a corrected order parameter: source‑term locality.',
-      contextOutro: 'The result is a cross‑framework failure atlas of exploration‑preservation under optimization pressure. The paper identifies where each formalism succeeds, where each breaks, and the single seam along which the breaks align.',
+      contextIntro: 'How do replenishment and depletion interact, and what makes alternative configurations practically accessible? Four disciplinary lenses motivate model-specific questions.',
+      contextOutro: 'The exact finite-population partition law separates stationary concentration, first exit and slow relaxation. A fixed switching barrier does not demonstrate endogenous institutional protection.',
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -106,7 +106,7 @@
     },
     sv: {
       tag: 'AI-genererat arbetsdokument · Serie XVI',
-      seriesNote: 'Detta är den sextonde rapporten i serien Styrning som ingenjörskonst. Den ställer den föregående frågan om adaptiv kapacitet överhuvudtaget är hållbar.',
+      seriesNote: 'Rapport XVI i serien Styrning som ingenjörskonst · Reviderad november 2026',
       seriesLinks: [
         { href: '/working-papers/below-the-factorization',                 label: 'Rapport 0: Under faktoriseringen →' },
         { href: '/working-papers/governance-stability-simulator',          label: 'Rapport I: Styrstabilitetssimulatorn →' },
@@ -138,8 +138,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Fyra discipliner — reglerteknik, evolutionsbiologi, institutionell ekonomi och beslutsteori — fick samma strukturella fråga i strikt inhemsk vokabulär, med korsande termer förbjudna. Deras oberoende härledda minimala formella utsagor delar en enda förfalls‑plus‑källtermsstruktur. Artikeln föreslår ingen enhetlig teori om epistemisk adaptivitet, men en korrigerad ordningsparameter: källtermslokalitet.',
-      contextOutro: 'Resultatet är en tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Artikeln identifierar var varje formalism lyckas, var de bryts, och den enda sömmen längs vilken brytningarna sammanfaller.',
+      contextIntro: 'Hur samverkar återbildning och uttömning, och vad gör alternativa konfigurationer praktiskt tillgängliga? Fyra disciplinära linser motiverar modellspecifika frågor.',
+      contextOutro: 'Den exakta partitionsfördelningen i ändlig population skiljer stationär koncentration, första utträde och långsam relaxation. En fast bytesbarriär demonstrerar inte endogent institutionellt skydd.',
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -152,13 +152,13 @@
   const metadata = {
     en: {
       title: 'Why Diversity Resists Formalization',
-      subtitle: 'A cross‑framework failure atlas of exploration‑preservation under optimization pressure',
-      description: 'Four disciplines independently converge on a single decay‑plus‑source‑term structure for the erosion of alternatives under optimization. Proposes source‑term locality as the corrected order parameter. Paper XVI in the Governance as Engineering series.',
+      subtitle: 'Replenishment, switching barriers, and finite-population metastability',
+      description: 'Revisits four disciplinary analogies without asserting formal identity. Derives a stationary partition law for linear copying with switching barriers and quantifies a finite-population bottleneck.',
     },
     sv: {
       title: 'Varför mångfald motstår formalisering',
-      subtitle: 'En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck',
-      description: 'Fyra discipliner konvergerar oberoende mot en enda förfalls‑plus‑källtermsstruktur för erosion av alternativ under optimering. Föreslår källtermslokalitet som den korrigerade ordningsparametern. Rapport XVI i serien Styrning som ingenjörskonst.',
+      subtitle: 'Återbildning, bytesbarriärer och metastabilitet i ändliga populationer',
+      description: 'Omprövar fyra disciplinära analogier utan att hävda formell identitet. Härleder en stationär partitionsfördelning för linjär kopiering med bytesbarriärer och kvantifierar en flaskhals i ändlig population.',
     },
   };
 
@@ -219,8 +219,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Varför mångfald motstår formalisering: En tvär‑ramverks misslyckandeatlas över utforskningsbevarande under optimeringstryck. Styrning som ingenjörskonst, Rapport XVI. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). Why Diversity Resists Formalization: A cross‑framework failure atlas of exploration‑preservation under optimization pressure. Governance as Engineering, Paper XVI. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). Varför mångfald motstår formalisering: Återbildning, bytesbarriärer och metastabilitet i ändliga populationer. Styrning som ingenjörskonst, Rapport XVI. Reviderad november 2026. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). Why Diversity Resists Formalization: Replenishment, switching barriers, and finite-population metastability. Governance as Engineering, Paper XVI. Revised November 2026. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

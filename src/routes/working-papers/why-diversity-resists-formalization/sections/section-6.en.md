@@ -1,62 +1,60 @@
-## 6. The residual
+## 6. The residual: finite-population entrenchment
 
-Two things remain genuinely open, and both are reported as open.
+### 6.1 The actual switching rule [I]
 
-**The endogenous tier.** Where the source term is in the optimizer's control set (evolution, decision-under-hedge-reading), the outcome turns on whether the optimizer optimizes the source term, and on a background condition (volatility, channel informativeness) that the optimizer also does not set. The live design question — sharper than anything the syntheses produced — is whether there exists a *protection class between physically-uneditable and politically-revocable*: a constraint costly enough to repeal that it survives ordinary optimization pressure without being literally outside the system. Biology's invariant is physical and unrepealable; an institution's protected slack is a budget line a future cost-cutter can cut. Whether anything stable lives in between is unsettled, and it is the question this whole line of work now points at.
+The original institutional question was whether a protection mechanism could survive ordinary optimization without being literally uneditable. The experiments do not implement a choice or repeal of protection: they fix a switching barrier \(B\) externally. The barrier penalizes leaving a popular opinion and can suppress innovation as well as copying. It models entrenchment, not the political stability of a diversity-preserving institution.
 
-**A computational probe of the in-between class [IP], shading to [H].** The
-question just posed — whether a protection class exists between physically-
-uneditable and politically-revocable — admits a direct, if toy, computational
-form. Model a population of observers each holding one of many opinions; deplete
-diversity by letting agents copy others (the optimizing pressure), replenish it
-by letting new independent opinions enter at rate `r` (the source term), and give
-incumbency a *switching cost*: an agent abandons its current opinion with a
-probability that falls as that opinion's share rises, scaled by a barrier strength
-`B ∈ [0,1)`. `B` is exactly the in-between constraint — not external, not free to
-repeal, but costly-to-leave in proportion to entrenchment. The order parameter is
-the effective number of live opinions, `N_eff = 1/Σ p_k²`.
+In the standalone experiment \(N=120\) agents start either with distinct opinions or in consensus. A micro-update selects one agent uniformly. If its current block has size \(k\), it stays with probability \(Bk/N\); otherwise it leaves, innovates with probability \(r\) (a fresh label), or copies a remaining agent's opinion, with block weights proportional to size raised to \(\gamma\). Copying excludes the selected agent and the barrier uses the pre-removal count. A sweep comprises \(N\) micro-updates. The standalone figure uses 1,000 sweeps, burn-in 600 and two seeds per cell; the composite uses \(N=100\), 800 sweeps, burn-in 500 and two seeds, with different grids. Both compare separate fixed-parameter runs from two starts, not a parameter ramp and reversal. The legacy standalone cutoff labels a sampled cell separated if the two branch summaries straddle \(N/4\); the first such sampled barrier is not a structural critical value. The supplied figures are historical summaries [HR]; raw trajectories and the claimed horizon-extension evidence were not supplied.
 
-The result has a definite and somewhat deflating shape. For most of the parameter
-range the diversity/consensus trade-off is *continuous and reversible*: raising
-`r` raises `N_eff` smoothly, and a collapsed population recovers once `r` is
-restored — no trap. Two mechanisms that might be expected to manufacture a trap do
-not. Bounded imitation — agents weighting a crowd by apparent agreement, then
-saturating — yields a single attractor whose position slides with `r`; preferential
-copying, even super-linear, is ergodic and forgets its initial condition, giving
-genuine winner-take-all *condensation* but no hysteresis. A true fold — two stable
-states over one parameter range, the collapsed one absorbing, verified stable under
-horizon extension rather than merely slow to decay — appears only above a critical
-barrier `B* ≈ 0.95` (for this barrier form, at `N = 120`, `γ = 1`). Below `B*` a
-diverse start is merely *metastable*: it persists for a while, then decays to
-consensus, so restoring `r` still recovers it. Above `B*` the diverse and collapsed
-states coexist, and the collapsed state does not recover as `r` is lowered back
-through a hysteresis window (`r ≈ [0.30, 0.40]` at `B = 0.99`).
+### 6.2 First innovation and ergodicity [M]
 
-Read against the residual question, this is a bounded, mostly-negative answer. The
-in-between protection class *does* exist — `B` is neither external nor unrepealable
-— but the only version of it that produces the irreversible trap the design
-question worried about sits very close to the uneditable end: exit from the
-incumbent option must be nearly foreclosed (`1 − B ≲ 0.05` at full dominance)
-before hysteresis opens. A merely-strong switching cost buys metastability, not a
-trap; the diversity it costs is still reversible by restoring the source term. So
-the practically relevant variable is not the novelty-injection rate crossing a line
-but whether *exit* from the dominant option is nearly closed — and "nearly" is
-demanding. This locates where in the in-between class the lock-in becomes real
-without closing the question, and it withholds the comfortable reading in which a
-moderate, repealable protection would suffice.
+At consensus the next update leaves consensus with probability \((1-B)r\). For \(B<1\) and \(r>0\) the first-exit mean is
 
-The tiering stays honest. All of the above is [IP] at best, and [H] where the
-specific numbers (`B*`, the window) are concerned, since they are properties of one
-chosen barrier form in a toy population, not of any governed system. The one place
-a [R] claim could live is the mechanism behind the transition: the fold is the
-point at which the *mean escape time* from the consensus state diverges as `B → 1`,
-converting "metastable" into "absorbing." That is a derivable quantity — a
-first-passage calculation on the incumbent's share — and until it is derived rather
-than simulated, the threshold is illustrated, not established.
+\[
+\mathbb E[\tau]=\frac{1}{(1-B)r}.
+\]
 
-**The unpriceable, correctly scoped.** The decision-theory lens named its own frontier unprompted: not non-stationarity, but *unawareness of unforeseen states* — structural incompleteness of the hypothesis space, a state the prior assigned zero. This is the unconceived-alternative problem from the early decay curve, returning in its proper home. It is listed by the lens as a **failure mode**, not a manageable term: you cannot reserve mass along a dimension you do not have. The earlier investigation overclaimed this as a universal impossibility and had to retract it. Its calibrated form is narrow: among the four lenses, only the one that reasons over beliefs-about-hypotheses has an exception condition no formalization in the set could price — and that is where the genuinely unobservable residue lives, rather than everywhere.
+At \(B=0.99\), \(r=0.35\), this is about 286 updates, or 2.381 sweep equivalents at \(N=120\). It measures the first appearance of another opinion, not recovery to substantial diversity. At fixed positive \(r\) it diverges only at the endpoint \(B=1\); it gives no structural threshold below one. Consensus is absorbing at \(B=1\) or \(r=0\).
 
-The schema is settled enough to state **[IP]**. The order parameter is corrected. The two tiers are clean. What stays open is the endogenous tier's protection-class question and the decision-theoretic unpriceable — and a paper that closed either by fiat would be reproducing the exact frame-closure it set out to map.
+Ignoring the literal labels and retaining the partition of labelled agents, the chain is finite. For \(N\ge2\), \(0\le B<1\), \(0<r<1\) and finite \(\gamma\), every partition can reach the singleton partition via innovations of nonsingletons, and from there any prescribed partition via copying. Each required update has positive probability. A copy at consensus gives a self-loop. Hence the partition chain is irreducible and aperiodic, with a unique stationary law and convergence from every initial partition. No finite-population absorbing collapse or broken ergodicity occurs at interior parameters. This does not establish rapid mixing or exclude singular large-population limits.
 
----
+### 6.3 Exact stationary distribution for linear copying [M]
 
+For \(\gamma=1\) with the update rule above, let
+
+\[
+a(k)=1-Bk/N,\qquad \theta=\frac{r(N-1)}{1-r},\qquad w(k)=\frac{\theta(k-1)!}{\prod_{j=1}^k a(j)}.
+\]
+
+For a set partition \(\pi\) of labelled agents, the stationary probability is
+
+\[
+\Pi(\pi)=Z_N^{-1}\prod_{S\in\pi}w(|S|).
+\]
+
+Appendix B proves detailed balance and gives the partition-function recurrence. The law also applies to the composite model with \(N=100\) used throughout its weights. At \(B=0\) it reduces to the Ewens partition law; no priority or novelty claim is made for the barrier modification. The absolute innovation-label counter is not stationary.
+
+Let \(M\) be the largest block size. For \(N=120\), the numerical evaluation of the exact law (70-digit working precision, independently cross-checked) gives:
+
+| Barrier | Innovation | \(\Pr(M\le30)\) | \(\Pr(M>90)\) |
+|---|---:|---:|---:|
+| 0.95 | 0.35 | 0.999803689 | 0.000050917 |
+| 0.99 | 0.30 | 0.000000736 | 0.999999209 |
+| 0.99 | 0.35 | 0.487079610 | 0.512822540 |
+| 0.99 | 0.40 | 0.999987152 | 0.000000688 |
+
+At \(B=0.99\), \(r=0.35\), \(N=120\), consensus alone has mass 0.195025, and the intermediate region has mass about 0.00009785. The interval from innovation 0.30 to 0.40 brackets a sharp finite-population stationary crossover, not a measured hysteresis loop. At finite \(N\) the stationary probabilities are smooth in interior parameters. At \(B=0.95\) the diverse region carries almost all stationary mass, contrary to the original assertion of a general decay to consensus below a critical barrier. Individual paths can nevertheless visit consensus.
+
+### 6.4 A quantified bottleneck [M]
+
+A micro-update changes \(M\) by at most one. For \(S=\{M\le L\}\), the stationary flow \(Q(S,S^c)\) is bounded by \(\Pi(M=L)\). Let \(b=\Pi(M=L)/\min(\Pi(S),1-\Pi(S))\). By reversibility and the indicator-function variational bound, the ordinary spectral gap is at most \(2b\), hence the relaxation time is at least \(1/(2b)\) updates. If the initial distribution is the stationary law conditioned on the smaller side, the probability of exiting that side within \(t\) updates is at most \(\min(1,tb)\). Appendix B gives the proof.
+
+At \(N=120\), \(B=0.99\), \(r=0.35\), the cut \(L=66\) gives \(\Pi(S)\approx0.4871681922\), boundary mass about \(1.103870531\times10^{-7}\) and \(b\le2.265893\times10^{-7}\) with outward rounding. Relaxation is bounded below by about \(2.2066\times10^6\) updates (18,388.6 sweep equivalents). From the stationary law conditioned on \(S\), the probability of leaving \(S\) in 1,000 sweeps is at most 0.02720. This is a rigorous finite-population bottleneck between regions of substantial stationary mass, a precise sense of metastability. The relaxation bound is not a mean basin-to-basin passage time, and the exit bound does not apply automatically to an arbitrary diverse or singleton start.
+
+### 6.5 Historical separation and exploratory recovery
+
+At \(B=0.95\), \(r=0.35\), the corresponding relaxation lower bound is only about 3.604 sweep equivalents. In an independently reported count-based reimplementation, checked against the small-population stationary distribution, four collapsed starts first cross effective opinion count greater than 30 after 483, 1,233, 1,677 and 2,169 sweeps [E]. No crossing to largest block greater than 90 was reported from the diverse start at barrier 0.95 within 20,000 sweeps (four seeds) [E, censored]. At \(B=0.99\) no crossing was reported within 20,000 sweeps for either start in four seeds each [E, censored]. The diverse-to-concentrated criterion in that probe is largest block greater than 90; it is not the reverse of the other threshold or the conductance cut. These long exploratory runs were not replayed during reconciliation. They establish recovery at 0.95 in the sampled runs, not a general absence of all metastability. The old \(B^*\approx0.95\), irreversible-fold and horizon-robustness claims are withdrawn.
+
+### 6.6 Design implications [IP/H]
+
+A reachable state need not be practically accessible within the relevant decision horizon. The model gives one precise example, not a measure of real institutional entrenchment. A fixed barrier is not an endogenous protection class; a model of choosing, maintaining and repealing a constraint would be needed to investigate that question. Future work might compare policies that preserve genuinely useful alternatives, rather than maximizing raw opinion counts, and explicitly measure their costs and transition times. The unresolved issue of unconceived alternatives also remains distinct: a fixed partition model allows innovation by construction but does not generate semantic hypotheses or evaluate their quality.
