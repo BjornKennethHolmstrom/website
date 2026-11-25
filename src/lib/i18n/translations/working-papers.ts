@@ -155,11 +155,11 @@ export const workingpapersTranslations = {
        'Every paper in the series begins with a factorization already in place — an observation channel, a choice of which variables exist for the system at all. This paper asks where that channel comes from. It argues that factorization emerges from bounded representational capacity plus a temporal‑prediction objective, with no action or viability pressure required. A minimal model exhibits emergence, structured blindness, and non‑unique, symmetry‑broken selection across forty preregistered seeds. The foundations paper of the Governance as Engineering series.',
    },
    governorsSentinelsBridges: {
-     title: 'Governors, Sentinels, and Bridges',
-     subtitle: 'The institutional value that winner‑take‑all selection does not reward',
-     description:
-       'Shows that a factorization can carry three functionally distinct kinds of value — governing well, warning early, or holding the ecology together — and that these dissociate: the one that governs best is generally not the one that warns best or connects best. Winner‑take‑all selection rewards only the first. Demonstrated across twenty independently retrained model ecologies. Paper XIX in the Governance as Engineering series.',
-   },
+        title: 'Governors, Sentinels, and Bridges',
+        subtitle: 'Performance, warning, and connectivity in bounded model ecologies',
+        description:
+          'Examines governing performance, nominal warning scores and threshold-dependent connectivity in bounded model ecologies. Historical results are distinguished from causal and functional claims. The role triad is a research proposal, not a demonstrated independence result. Paper XIX in the Governance as Engineering series.',
+      },
    threeLawsFromOneBound: {
      title: 'Three Laws from One Bound',
      subtitle: 'Ashby, Goodhart, and certification cost under bounded representation',
@@ -180,9 +180,9 @@ export const workingpapersTranslations = {
    },
    shapeOfReform: {
      title: 'The Shape of Reform',
-     subtitle: 'Behavioral distance is a metric; reform cost is directed',
+     subtitle: 'Behavioral dissimilarity, directed adaptation cost, and staged transformation',
      description:
-       'The sibling paper promised by Paper XIX. Reports that the descriptive geometry of factorization space mostly does not exist — stress rescales rather than reshapes the space, and no topological transition appears. What survives is a directed adaptation cost: asymmetric, non‑composing, and weakly predicted by behavioral distance. Reform stages through the target\'s neighbourhood, not along a geodesic, and the map of behaviors is not the travel between them. Paper XXIII in the Governance as Engineering series.',
+       'Distinguishes behavioral dissimilarity from directed fixed-budget adaptation cost. Recovered tables support bounded negative geometry results, cost asymmetry and selected-route contrasts, with explicit benchmark and mechanism limitations. Paper XXIII in the Governance as Engineering series.',
    },
    excitationStarvedObserver: {
      title: 'The Observer You Cannot Afford to Excite',
@@ -457,9 +457,9 @@ export const workingpapersTranslations = {
    },
    governorsSentinelsBridges: {
      title: 'Guvernörer, vaktposter och broar',
-     subtitle: 'Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar',
+     subtitle: 'Prestanda, varning och konnektivitet i begränsade modellekologier',
      description:
-       'Visar att en faktorisering kan bära tre funktionellt åtskilda sorters värde — att styra väl, varna tidigt eller hålla samman ekologin — och att dessa dissocierar: den som styr bäst är i allmänhet inte den som varnar bäst eller förbinder bäst. Vinnaren‑tar‑allt‑urval belönar endast den första. Demonstrerat över tjugo oberoende omskolade modellekologier. Rapport XIX i serien Styrning som ingenjörskonst.',
+       'Undersöker styrningsprestanda, nominella varningspoäng och tröskelberoende konnektivitet i begränsade modellekologier. Historiska resultat skiljs från kausala och funktionella påståenden. Rolltriaden är ett forskningsförslag, inte ett påvisat oberoenderesultat. Rapport XIX i serien Styrning som ingenjörskonst.',
    },
    threeLawsFromOneBound: {
      title: 'Tre lagar från en gräns',
@@ -481,9 +481,9 @@ export const workingpapersTranslations = {
    },
    shapeOfReform: {
      title: 'Reformens form',
-     subtitle: 'Beteendemässigt avstånd är en metrik; reformkostnad är riktad',
+     subtitle: 'Beteendemässig olikhet, riktad anpassningskostnad och stegvis omvandling',
      description:
-       'Systerartikeln utlovad av Rapport XIX. Rapporterar att den deskriptiva geometrin av faktoriseringsrum mestadels inte existerar — stress omskalar snarare än omformar rummet, och ingen topologisk övergång framträder. Vad som överlever är en riktad anpassningskostnad: asymmetrisk, icke‑komponerande och svagt förutsagd av beteendemässigt avstånd. Reform sker genom målets grannskap, inte längs en geodet, och kartan över beteenden är inte resan mellan dem. Rapport XXIII i serien Styrning som ingenjörskonst.',
+       'Skiljer beteendemässig olikhet från riktad anpassningskostnad med fast budget. Återfunna tabeller stöder avgränsade negativa geometriresultat, kostnadsasymmetri och kontraster mellan utvalda rutter, med uttryckliga referens- och mekanismbegränsningar. Rapport XXIII i serien Styrning som ingenjörskonst.',
    },
    excitationStarvedObserver: {
      title: 'Observatören du inte har råd att excitera',

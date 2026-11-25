@@ -58,17 +58,17 @@
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                           titleSv: 'Sammanfattning' },
-    { id: 'section-01',  titleEn: '1. The architecture question',                                       titleSv: '1. Arkitekturfrågan' },
-    { id: 'section-02',  titleEn: '2. Phenomenon, not identity',                                        titleSv: '2. Fenomen, inte identitet' },
-    { id: 'section-03',  titleEn: '3. Adaptive pluralism approximates the oracle',                      titleSv: '3. Adaptiv pluralism approximerar oraklet' },
-    { id: 'section-04',  titleEn: '4. Governor and sentinel are different roles',                       titleSv: '4. Guvernör och vaktpost är olika roller' },
-    { id: 'section-05',  titleEn: '5. Portfolio construction: the effect is real but weak',             titleSv: '5. Portföljkonstruktion: effekten är verklig men svag' },
-    { id: 'section-06',  titleEn: '6. Governor and bridge are different roles',                         titleSv: '6. Guvernör och bro är olika roller' },
-    { id: 'section-07',  titleEn: '7. What this re‑grounds, and what it opens',                         titleSv: '7. Vad detta återgrundar, och vad det öppnar' },
-    { id: 'section-08',  titleEn: '8. What this paper does not show',                                   titleSv: '8. Vad denna artikel inte visar' },
-    { id: 'section-09',  titleEn: '9. Method and confidence',                                           titleSv: '9. Metod och konfidens' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: Model zoo, stream, and role measures',                   titleSv: 'Appendix A: Modellzoo, ström och rollmått' },
+    { id: "abstract", titleEn: "Abstract", titleSv: "Sammanfattning" },
+    { id: "section-01", titleEn: "1. The architecture question", titleSv: "1. Arkitekturfrågan" },
+    { id: "section-02", titleEn: "2. Phenomenon, not identity", titleSv: "2. Fenomen, inte identitet" },
+    { id: "section-03", titleEn: "3. Adaptive pluralism — historical offline comparison", titleSv: "3. Adaptiv pluralism — historisk offlinejämförelse" },
+    { id: "section-04", titleEn: "4. Governor and sentinel — nominal scores, not verified warnings", titleSv: "4. Guvernör och vaktpost — nominella poäng, inte verifierade varningar" },
+    { id: "section-05", titleEn: "5. Portfolio construction — a registered failure", titleSv: "5. Portföljkonstruktion — ett registrerat misslyckande" },
+    { id: "section-06", titleEn: "6. Governor and bridge — a graph statistic", titleSv: "6. Guvernör och bro — en grafstatistik" },
+    { id: "section-07", titleEn: "7. What the role triad opens", titleSv: "7. Vad rolltriaden öppnar" },
+    { id: "section-08", titleEn: "8. What this paper does not show", titleSv: "8. Vad denna artikel inte visar" },
+    { id: "section-09", titleEn: "9. Method and confidence", titleSv: "9. Metod och konfidens" },
+    { id: "appendix-a", titleEn: "Appendix A — Model zoo, stream, and role measures", titleSv: "Appendix A — Modellzoo, ström och rollmått" },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
@@ -108,8 +108,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Paper 0 showed that the best factorization is regime‑dependent. An adaptive institution can preserve several and govern through whichever currently performs best — a winner‑take‑all selection over a preserved portfolio. This paper asks what that selection leaves on the table.',
-      contextOutro: 'Using a model zoo of seven predictive factorizations evaluated across twenty independently trained ecologies, three roles are distinguished: the governor that acts well, the sentinel that warns early, and the bridge that keeps the ecology connected. They dissociate — the best governor is generally not the best sentinel or bridge — and winner‑take‑all selection, which rewards governing skill alone, sheds the other two as a side effect.',
+      contextIntro: "Paper 0 motivates the question of which alternatives to retain when predictive adequacy changes.",
+      contextOutro: "The historical scores are not verified online warnings or functional translation measures. The revised paper preserves the candidate roles and the scoped mathematical findings.",
       allWhitepapers: '← All Whitepapers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -152,8 +152,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Artikel 0 visade att den bästa faktoriseringen är regimberoende. En adaptiv institution kan bevara flera och styra genom den som för tillfället presterar bäst — ett vinnaren‑tar‑allt‑urval över en bevarad portfölj. Denna artikel frågar vad det urvalet lämnar på bordet.',
-      contextOutro: 'Med en modellzoo av sju prediktiva faktoriseringar utvärderade över tjugo oberoende tränade ekologier urskiljs tre roller: guvernören som agerar väl, vaktposten som varnar tidigt och bron som håller ekologin sammankopplad. De dissocierar — den bästa guvernören är i allmänhet inte den bästa vaktposten eller bron — och vinnaren‑tar‑allt‑urval, som bara belönar styrningsförmåga, tappar de andra två som en sidoeffekt.',
+      contextIntro: "Rapport 0 motiverar frågan vilka alternativ som bör bevaras när prediktiv tillräcklighet förändras.",
+      contextOutro: "De historiska poängen är inte verifierade onlinevarningar eller mått på funktionell översättning. Den reviderade rapporten bevarar möjliga roller och avgränsade matematiska resultat.",
       allWhitepapers: '← Alla vitböcker',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -166,13 +166,13 @@
   const metadata = {
     en: {
       title: 'Governors, Sentinels, and Bridges',
-      subtitle: 'The institutional value that winner‑take‑all selection does not reward',
-      description: 'Shows that a factorization can govern, warn, or connect — and these roles dissociate. Winner‑take‑all selection rewards only governing skill, shedding early‑warning capacity and bridges as a side effect. Paper XIX in the Governance as Engineering series.',
+      subtitle: "Performance, warning, and connectivity in bounded model ecologies",
+      description: "Examines governing performance, nominal warning scores and threshold-dependent connectivity in bounded model ecologies. Historical results are distinguished from causal and functional claims. The role triad is a research proposal, not a demonstrated independence result. Paper XIX in the Governance as Engineering series.",
     },
     sv: {
       title: 'Guvernörer, vaktposter och broar',
-      subtitle: 'Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar',
-      description: 'Visar att en faktorisering kan styra, varna eller förbinda — och att dessa roller dissocierar. Vinnaren‑tar‑allt‑urval belönar bara styrningsförmåga, och tappar tidig varningskapacitet och broar som en sidoeffekt. Rapport XIX i serien Styrning som ingenjörskonst.',
+      subtitle: "Prestanda, varning och konnektivitet i begränsade modellekologier",
+      description: "Undersöker styrningsprestanda, nominella varningspoäng och tröskelberoende konnektivitet i begränsade modellekologier. Historiska resultat skiljs från kausala och funktionella påståenden. Rolltriaden är ett forskningsförslag, inte ett påvisat oberoenderesultat. Rapport XIX i serien Styrning som ingenjörskonst.",
     },
   };
 
@@ -236,8 +236,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Guvernörer, vaktposter och broar: Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar. Styrning som ingenjörskonst, Rapport XIX. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). Governors, Sentinels, and Bridges: The institutional value that winner‑take‑all selection does not reward. Governance as Engineering, Paper XIX. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Styrning som ingenjörskonst, Rapport XIX. Reviderad november 2026. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Governance as Engineering, Paper XIX. Revised November 2026. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

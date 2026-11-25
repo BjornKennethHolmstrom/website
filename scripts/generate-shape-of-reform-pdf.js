@@ -41,20 +41,20 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/shape-
 const metadata = {
 	en: {
 		title: 'The Shape of Reform',
-		subtitle: 'Behavioral distance is a metric; reform cost is directed',
-		description: 'The sibling paper promised by Paper XIX. Finds that the descriptive geometry of factorization space mostly does not exist — stress rescales rather than reshapes the space, and no topological transition appears. What survives is a directed adaptation cost that is asymmetric, non‑composing, and only weakly predicted by behavioral distance. Reform stages through the target\'s neighbourhood. Paper XXIII in the Governance as Engineering series.',
+		subtitle: "Behavioral dissimilarity, directed adaptation cost, and staged transformation",
+		description: "Distinguishes behavioral dissimilarity from directed fixed-budget adaptation cost. Recovered tables support bounded negative geometry results, cost asymmetry and selected-route contrasts, with explicit benchmark and mechanism limitations. Paper XXIII in the Governance as Engineering series.",
 		author: 'Björn Kenneth Holmström',
-		date: 'July 2026',
+		date: 'July 2026 · Revised November 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/shape-of-reform',
 		seriesNote: 'Paper XXIII in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
 		title: 'Reformens form',
-		subtitle: 'Beteendemässigt avstånd är en metrik; reformkostnad är riktad',
-		description: 'Systerartikeln utlovad av Rapport XIX. Finner att den deskriptiva geometrin av faktoriseringsrum mestadels inte existerar — stress omskalar snarare än omformar rummet, och ingen topologisk övergång framträder. Vad som överlever är en riktad anpassningskostnad som är asymmetrisk, icke‑komponerande och bara svagt förutsagd av beteendemässigt avstånd. Reform iscensätts via målets grannskap. Rapport XXIII i serien Styrning som ingenjörskonst.',
+		subtitle: "Beteendemässig olikhet, riktad anpassningskostnad och stegvis omvandling",
+		description: "Skiljer beteendemässig olikhet från riktad anpassningskostnad med fast budget. Återfunna tabeller stöder avgränsade negativa geometriresultat, kostnadsasymmetri och kontraster mellan utvalda rutter, med uttryckliga referens- och mekanismbegränsningar. Rapport XXIII i serien Styrning som ingenjörskonst.",
 		author: 'Björn Kenneth Holmström',
-		date: 'Juli 2026',
+		date: 'Juli 2026 · Reviderad november 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/shape-of-reform',
 		seriesNote: 'Rapport XXIII i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -65,17 +65,17 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions (matches the Svelte page contentMap) ─────────────────
 const sections = [
-	{ file: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
-	{ file: 'section-01',  titleEn: '1. A promised geometry, audited before it was built',               titleSv: '1. En utlovad geometri, granskad innan den byggdes' },
-	{ file: 'section-02',  titleEn: '2. The space, and the two quantities that must not be confused',     titleSv: '2. Rummet, och de två storheter som inte får förväxlas' },
-	{ file: 'section-03',  titleEn: '3. The descriptive geometry does not replicate',                     titleSv: '3. Den deskriptiva geometrin replikerar inte' },
-	{ file: 'section-04',  titleEn: '4. Three earned results: the directed cost structure',               titleSv: '4. Tre förtjänta resultat: den riktade kostnadsstrukturen' },
-	{ file: 'section-05',  titleEn: '5. What the object is',                                             titleSv: '5. Vad objektet är' },
-	{ file: 'section-06',  titleEn: '6. Institutional readings, and what does not survive',               titleSv: '6. Institutionella tolkningar, och vad som inte överlever' },
-	{ file: 'section-07',  titleEn: '7. What this paper does not show',                                   titleSv: '7. Vad denna artikel inte visar' },
-	{ file: 'section-08',  titleEn: '8. Integration with the series',                                     titleSv: '8. Integration med serien' },
-	{ file: 'appendix-a',  titleEn: "Appendix A: The connectivity‑threshold identity, and the object's type discipline", titleSv: "Appendix A: Identiteten hos anslutningströskeln och objektets typdisciplin", isAppendix: true },
-	{ file: 'appendix-b',  titleEn: 'Appendix B: The transition‑cost measurement',                        titleSv: 'Appendix B: Mätningen av övergångskostnad', isAppendix: true },
+	{ file: "abstract", titleEn: "Abstract", titleSv: "Sammanfattning" },
+	{ file: "section-01", titleEn: "§1 — A promised geometry, audited before it was built", titleSv: "§1 — En utlovad geometri, granskad innan den byggdes" },
+	{ file: "section-02", titleEn: "§2 — The space, and the two quantities that must not be confused", titleSv: "§2 — Rummet, och de två storheter som inte får förväxlas" },
+	{ file: "section-03", titleEn: "§3 — Descriptive geometry: bounded negative results", titleSv: "§3 — Deskriptiv geometri: avgränsade negativa resultat" },
+	{ file: "section-04", titleEn: "§4 — Directed adaptation cost and selected routes", titleSv: "§4 — Riktad anpassningskostnad och utvalda rutter" },
+	{ file: "section-05", titleEn: "§5 — What the object is", titleSv: "§5 — Vad objektet är" },
+	{ file: "section-06", titleEn: "§6 — Institutional readings, and what does not survive", titleSv: "§6 — Institutionella tolkningar, och vad som inte överlever" },
+	{ file: "section-07", titleEn: "§7 — What this paper does not show", titleSv: "§7 — Vad denna artikel inte visar" },
+	{ file: "section-08", titleEn: "§8 — Integration with the series", titleSv: "§8 — Integration med serien" },
+	{ file: "appendix-a", titleEn: "Appendix A — The connectivity-threshold identity and typed costs", titleSv: "Appendix A — Anslutningströskelns identitet och typade kostnader", isAppendix: true },
+	{ file: "appendix-b", titleEn: "Appendix B — Transition-cost measurement and provenance", titleSv: "Appendix B — Mätning av övergångskostnad och proveniens", isAppendix: true },
 ];
 
 // ── CSS (12pt base, identical to other recent papers) ────────────────────────

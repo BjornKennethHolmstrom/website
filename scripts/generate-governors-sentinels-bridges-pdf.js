@@ -41,20 +41,20 @@ const COVER_IMAGE = path.join(__dirname, '../static/working-papers/images/govern
 const metadata = {
 	en: {
 		title: 'Governors, Sentinels, and Bridges',
-		subtitle: 'The institutional value that winner‑take‑all selection does not reward',
-		description: 'Shows that a factorization can carry three functionally distinct kinds of value — governing well, warning early, or holding the ecology together — and that these dissociate: the one that governs best is generally not the one that warns best or connects best. Winner‑take‑all selection rewards only the first. Demonstrated across twenty independently retrained model ecologies.',
+		subtitle: "Performance, warning, and connectivity in bounded model ecologies",
+		description: "Examines governing performance, nominal warning scores and threshold-dependent connectivity in bounded model ecologies. Historical results are distinguished from causal and functional claims. The role triad is a research proposal, not a demonstrated independence result. Paper XIX in the Governance as Engineering series.",
 		author: 'Björn Kenneth Holmström',
-		date: 'July 2026',
+		date: 'July 2026 · Revised November 2026',
 		url: 'https://bjornkennethholmstrom.org/working-papers/governors-sentinels-bridges',
 		seriesNote: 'Paper XIX in the Governance as Engineering series',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
 	},
 	sv: {
 		title: 'Guvernörer, vaktposter och broar',
-		subtitle: 'Det institutionella värde som vinnaren‑tar‑allt‑urval inte belönar',
-		description: 'Visar att en faktorisering kan bära tre funktionellt åtskilda sorters värde — att styra väl, varna tidigt eller hålla samman ekologin — och att dessa dissocierar: den som styr bäst är i allmänhet inte den som varnar bäst eller förbinder bäst. Vinnaren‑tar‑allt‑urval belönar endast den första. Demonstrerat över tjugo oberoende omskolade modellekologier.',
+		subtitle: "Prestanda, varning och konnektivitet i begränsade modellekologier",
+		description: "Undersöker styrningsprestanda, nominella varningspoäng och tröskelberoende konnektivitet i begränsade modellekologier. Historiska resultat skiljs från kausala och funktionella påståenden. Rolltriaden är ett forskningsförslag, inte ett påvisat oberoenderesultat. Rapport XIX i serien Styrning som ingenjörskonst.",
 		author: 'Björn Kenneth Holmström',
-		date: 'Juli 2026',
+		date: 'Juli 2026 · Reviderad november 2026',
 		url: 'https://bjornkennethholmstrom.org/sv/working-papers/governors-sentinels-bridges',
 		seriesNote: 'Rapport XIX i serien Styrning som ingenjörskonst',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International'
@@ -65,17 +65,17 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions (matches the Svelte page contentMap) ─────────────────
 const sections = [
-	{ file: 'abstract',    titleEn: 'Abstract',                                                           titleSv: 'Sammanfattning' },
-	{ file: 'section-01',  titleEn: '1. The architecture question',                                       titleSv: '1. Arkitekturfrågan' },
-	{ file: 'section-02',  titleEn: '2. Phenomenon, not identity',                                        titleSv: '2. Fenomen, inte identitet' },
-	{ file: 'section-03',  titleEn: '3. Adaptive pluralism approximates the oracle',                      titleSv: '3. Adaptiv pluralism approximerar oraklet' },
-	{ file: 'section-04',  titleEn: '4. Governor and sentinel are different roles',                       titleSv: '4. Guvernör och vaktpost är olika roller' },
-	{ file: 'section-05',  titleEn: '5. Portfolio construction: the effect is real but weak',             titleSv: '5. Portföljkonstruktion: effekten är verklig men svag' },
-	{ file: 'section-06',  titleEn: '6. Governor and bridge are different roles',                         titleSv: '6. Guvernör och bro är olika roller' },
-	{ file: 'section-07',  titleEn: '7. What this re‑grounds, and what it opens',                         titleSv: '7. Vad detta återgrundar, och vad det öppnar' },
-	{ file: 'section-08',  titleEn: '8. What this paper does not show',                                   titleSv: '8. Vad denna artikel inte visar' },
-	{ file: 'section-09',  titleEn: '9. Method and confidence',                                           titleSv: '9. Metod och konfidens' },
-	{ file: 'appendix-a',  titleEn: 'Appendix A: Model zoo, stream, and role measures',                   titleSv: 'Appendix A: Modellzoo, ström och rollmått', isAppendix: true },
+	{ file: "abstract", titleEn: "Abstract", titleSv: "Sammanfattning" },
+	{ file: "section-01", titleEn: "1. The architecture question", titleSv: "1. Arkitekturfrågan" },
+	{ file: "section-02", titleEn: "2. Phenomenon, not identity", titleSv: "2. Fenomen, inte identitet" },
+	{ file: "section-03", titleEn: "3. Adaptive pluralism — historical offline comparison", titleSv: "3. Adaptiv pluralism — historisk offlinejämförelse" },
+	{ file: "section-04", titleEn: "4. Governor and sentinel — nominal scores, not verified warnings", titleSv: "4. Guvernör och vaktpost — nominella poäng, inte verifierade varningar" },
+	{ file: "section-05", titleEn: "5. Portfolio construction — a registered failure", titleSv: "5. Portföljkonstruktion — ett registrerat misslyckande" },
+	{ file: "section-06", titleEn: "6. Governor and bridge — a graph statistic", titleSv: "6. Guvernör och bro — en grafstatistik" },
+	{ file: "section-07", titleEn: "7. What the role triad opens", titleSv: "7. Vad rolltriaden öppnar" },
+	{ file: "section-08", titleEn: "8. What this paper does not show", titleSv: "8. Vad denna artikel inte visar" },
+	{ file: "section-09", titleEn: "9. Method and confidence", titleSv: "9. Metod och konfidens" },
+	{ file: "appendix-a", titleEn: "Appendix A — Model zoo, stream, and role measures", titleSv: "Appendix A — Modellzoo, ström och rollmått", isAppendix: true },
 ];
 
 // ── CSS (12pt base, identical to other recent papers) ────────────────────────

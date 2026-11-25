@@ -56,17 +56,17 @@
 
   // --- 3. CONTENT MAP ---
   const contentMap = [
-    { id: 'abstract',    titleEn: 'Abstract',                                                         titleSv: 'Sammanfattning' },
-    { id: 'section-01',  titleEn: '1. A promised geometry, audited before it was built',               titleSv: '1. En utlovad geometri, granskad innan den byggdes' },
-    { id: 'section-02',  titleEn: '2. The space, and the two quantities that must not be confused',     titleSv: '2. Rummet, och de två storheter som inte får förväxlas' },
-    { id: 'section-03',  titleEn: '3. The descriptive geometry does not replicate',                     titleSv: '3. Den deskriptiva geometrin replikerar inte' },
-    { id: 'section-04',  titleEn: '4. Three earned results: the directed cost structure',               titleSv: '4. Tre förtjänta resultat: den riktade kostnadsstrukturen' },
-    { id: 'section-05',  titleEn: '5. What the object is',                                             titleSv: '5. Vad objektet är' },
-    { id: 'section-06',  titleEn: '6. Institutional readings, and what does not survive',               titleSv: '6. Institutionella tolkningar, och vad som inte överlever' },
-    { id: 'section-07',  titleEn: '7. What this paper does not show',                                   titleSv: '7. Vad denna artikel inte visar' },
-    { id: 'section-08',  titleEn: '8. Integration with the series',                                     titleSv: '8. Integration med serien' },
-    { id: 'appendix-a',  titleEn: 'Appendix A: The connectivity-threshold identity, and the object\'s type discipline', titleSv: 'Appendix A: Identiteten hos anslutningströskeln och objektets typdisciplin' },
-    { id: 'appendix-b',  titleEn: 'Appendix B: The transition-cost measurement',                        titleSv: 'Appendix B: Mätningen av övergångskostnad' },
+    { id: "abstract", titleEn: "Abstract", titleSv: "Sammanfattning" },
+    { id: "section-01", titleEn: "§1 — A promised geometry, audited before it was built", titleSv: "§1 — En utlovad geometri, granskad innan den byggdes" },
+    { id: "section-02", titleEn: "§2 — The space, and the two quantities that must not be confused", titleSv: "§2 — Rummet, och de två storheter som inte får förväxlas" },
+    { id: "section-03", titleEn: "§3 — Descriptive geometry: bounded negative results", titleSv: "§3 — Deskriptiv geometri: avgränsade negativa resultat" },
+    { id: "section-04", titleEn: "§4 — Directed adaptation cost and selected routes", titleSv: "§4 — Riktad anpassningskostnad och utvalda rutter" },
+    { id: "section-05", titleEn: "§5 — What the object is", titleSv: "§5 — Vad objektet är" },
+    { id: "section-06", titleEn: "§6 — Institutional readings, and what does not survive", titleSv: "§6 — Institutionella tolkningar, och vad som inte överlever" },
+    { id: "section-07", titleEn: "§7 — What this paper does not show", titleSv: "§7 — Vad denna artikel inte visar" },
+    { id: "section-08", titleEn: "§8 — Integration with the series", titleSv: "§8 — Integration med serien" },
+    { id: "appendix-a", titleEn: "Appendix A — The connectivity-threshold identity and typed costs", titleSv: "Appendix A — Anslutningströskelns identitet och typade kostnader" },
+    { id: "appendix-b", titleEn: "Appendix B — Transition-cost measurement and provenance", titleSv: "Appendix B — Mätning av övergångskostnad och proveniens" },
   ];
 
   // --- 4. UI TRANSLATIONS & METADATA ---
@@ -106,8 +106,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Paper XXVIII: Closure–Adaptation Dynamics →' },
       ],
       contextTitle: 'Context',
-      contextIntro: 'Paper XIX promised a sibling on the geometry and topology of factorization space. This paper opens by reporting that the promised object mostly does not exist — stress rescales rather than reshapes the space, and no topological transition appears. What survives is a different object: a directed adaptation cost that is asymmetric, non‑composing, and only weakly predicted by behavioral distance.',
-      contextOutro: 'Reform does not move through the behavioral metric. It is a directed, update‑relative process whose costs are asymmetric, do not compose, and are often reduced by staging through the target\'s neighbourhood. The map of how institutions differ is not the travel of how they change.',
+      contextIntro: "The sibling of Paper XIX distinguishes behavioral descriptions from the cost of updating a model.",
+      contextOutro: "The recovered evidence supports a typed adaptation system, not a universal refutation of geometry or an established optimal staging mechanism.",
       allWorkingpapers: '← All Working Papers',
       share: 'Share this paper',
       downloads: 'Downloads',
@@ -150,8 +150,8 @@
         { href: '/working-papers/closure-adaptation',                      label: 'Rapport XXVIII: Slutenhet–anpassningsdynamik →' },
       ],
       contextTitle: 'Kontext',
-      contextIntro: 'Rapport XIX utlovade en systerartikel om faktoriseringsrummets geometri och topologi. Denna artikel inleds med att rapportera att det utlovade objektet mestadels inte existerar — stress omskalar snarare än omformar rummet, och ingen topologisk övergång framträder. Vad som överlever är ett annat objekt: en riktad anpassningskostnad som är asymmetrisk, icke‑komponerande och bara svagt förutsagd av beteendemässigt avstånd.',
-      contextOutro: 'Reform rör sig inte genom den beteendemässiga metriken. Det är en riktad, uppdateringsrelativ process vars kostnader är asymmetriska, inte komponerar och ofta reduceras genom att iscensätta via målets grannskap. Kartan över hur institutioner skiljer sig är inte resan över hur de förändras.',
+      contextIntro: "Systerartikeln till rapport XIX skiljer beteendebeskrivningar från kostnaden för att uppdatera en modell.",
+      contextOutro: "Återfunnen evidens stöder ett typat anpassningssystem, inte ett universellt motbevis av geometri eller en etablerad optimal etappmekanism.",
       allWorkingpapers: '← Alla arbetsdokument',
       share: 'Dela detta dokument',
       downloads: 'Nedladdningar',
@@ -164,13 +164,13 @@
   const metadata = {
     en: {
       title: 'The Shape of Reform',
-      subtitle: 'Behavioral distance is a metric; reform cost is directed',
-      description: 'The sibling paper promised by Paper XIX. Finds that the descriptive geometry of factorization space mostly does not exist, and that reform cost is directed, asymmetric, and non‑composing. Paper XXIII in the Governance as Engineering series.',
+      subtitle: "Behavioral dissimilarity, directed adaptation cost, and staged transformation",
+      description: "Distinguishes behavioral dissimilarity from directed fixed-budget adaptation cost. Recovered tables support bounded negative geometry results, cost asymmetry and selected-route contrasts, with explicit benchmark and mechanism limitations. Paper XXIII in the Governance as Engineering series.",
     },
     sv: {
       title: 'Reformens form',
-      subtitle: 'Beteendemässigt avstånd är en metrik; reformkostnad är riktad',
-      description: 'Systerartikeln utlovad av Rapport XIX. Finner att den deskriptiva geometrin av faktoriseringsrum mestadels inte existerar, och att reformkostnad är riktad, asymmetrisk och icke‑komponerande. Rapport XXIII i serien Styrning som ingenjörskonst.',
+      subtitle: "Beteendemässig olikhet, riktad anpassningskostnad och stegvis omvandling",
+      description: "Skiljer beteendemässig olikhet från riktad anpassningskostnad med fast budget. Återfunna tabeller stöder avgränsade negativa geometriresultat, kostnadsasymmetri och kontraster mellan utvalda rutter, med uttryckliga referens- och mekanismbegränsningar. Rapport XXIII i serien Styrning som ingenjörskonst.",
     },
   };
 
@@ -234,8 +234,8 @@
 
   function copyCitation() {
     const citation = currentLang === 'sv'
-      ? `Holmström, B. K. (2026). Reformens form: Beteendemässigt avstånd är en metrik; reformkostnad är riktad. Styrning som ingenjörskonst, Rapport XXIII. AI-genererat arbetsdokument; ej fackgranskat.`
-      : `Holmström, B. K. (2026). The Shape of Reform: Behavioral distance is a metric; reform cost is directed. Governance as Engineering, Paper XXIII. AI-generated working paper; not peer-reviewed.`;
+      ? `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Styrning som ingenjörskonst, Rapport XXIII. Reviderad november 2026. AI-genererat arbetsdokument; ej fackgranskat.`
+      : `Holmström, B. K. (2026). ${meta.title}: ${meta.subtitle}. Governance as Engineering, Paper XXIII. Revised November 2026. AI-generated working paper; not peer-reviewed.`;
     navigator.clipboard.writeText(citation).then(() => {
       alert(currentLang === 'sv' ? 'Citat kopierat!' : 'Citation copied to clipboard!');
     });

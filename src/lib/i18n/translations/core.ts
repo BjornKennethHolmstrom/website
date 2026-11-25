@@ -223,7 +223,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXIX: {
       title: 'XIX: Governors, Sentinels, and Bridges',
-      desc:  'Reveals that a factorization can govern, warn, or connect — and these roles dissociate. Winner‑take‑all selection rewards only governing skill, silently shedding early‑warning capacity and the bridges that hold the ecology together.',
+      desc: 'Examines governing performance, nominal warning scores and threshold-dependent connectivity in model ecologies. The three roles remain candidate functions, not demonstrated independent sources of value.'
     },
     geSeriesPaperXX: {
       title: 'XX: Three Laws from One Bound',
@@ -239,7 +239,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXXIII: {
       title: 'XXIII: The Shape of Reform',
-      desc:  'Finds that behavioral distance between institutions is a symmetric metric, but the cost of reforming one into another is directed, non‑composing, and largely independent of the metric. Reform is not movement through a geometry.',
+      desc: 'Distinguishes behavioral dissimilarity from directed adaptation cost. Recovered results show asymmetry and selected-route advantages under the implemented cost measure, while the staging mechanism remains unresolved.'
     },
     geSeriesPaperXXIV: {
       title: 'XXIV: The Observer You Cannot Afford to Excite',
@@ -693,7 +693,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXIX: {
       title: 'XIX: Guvernörer, vaktposter och broar',
-      desc:  'Visar att en faktorisering kan styra, varna eller förbinda — och att dessa roller dissocierar. Vinnaren‑tar‑allt‑urval belönar bara styrningsförmåga, och tappar i tysthet tidig varningskapacitet och broarna som håller ihop ekologin.',
+      desc: 'Undersöker styrningsprestanda, nominella varningspoäng och tröskelberoende konnektivitet i modellekologier. De tre rollerna är föreslagna funktioner, inte påvisat oberoende värden.'
     },
     geSeriesPaperXX: {
       title: 'XX: Tre lagar från en gräns',
@@ -709,7 +709,7 @@ export const coreTranslations = {
     },
     geSeriesPaperXXIII: {
       title: 'XXIII: Reformens form',
-      desc:  'Finner att beteendemässigt avstånd mellan institutioner är en symmetrisk metrik, men kostnaden att reformera en till en annan är riktad, icke‑komponerande och till stor del oberoende av metriken. Reform är inte rörelse genom en geometri.',
+      desc: 'Skiljer beteendemässig olikhet från riktad anpassningskostnad. Återfunna resultat visar asymmetri och fördelar för utvalda rutter enligt det använda kostnadsmåttet, medan mekanismen bakom stegvis anpassning förblir oklar.'
     },
     geSeriesPaperXXIV: {
       title: 'XXIV: Observatören du inte har råd att excitera',

@@ -1,19 +1,17 @@
-# Appendix A — Identiteten hos anslutningströskeln och objektets typdisciplin
+# Appendix A — Anslutningströskelns identitet och typade kostnader
 
-## A.1 ε_c är flaskhalskanten i det minimala spännträdet (för §3.2)
+## A.1 MST-flaskhalsen [R]
 
-**Påstående.** För en mängd punkter med parvisa avstånd, vilka länkas till en graf närhelst deras avstånd är högst ett tröskelvärde τ, är det minsta τ för vilket grafen är sammanhängande (single-linkage-anslutning) lika med den största kanten i det minimala spännträdet.
+Låt $G$ vara en komplett oriktad ändlig viktad graf, $T$ ett minimalt uppspännande träd och $b$ dess största kantvikt. Vid tröskel $b$ innehåller grafen $T$ och är sammanhängande. Antag att tröskel $s<b$ gör den sammanhängande. Ta bort en kant med största vikt från $T$; de resulterande två komponenterna bildar ett snitt. En väg vid tröskel $s$ som korsar snittet innehåller en kant med vikt högst $s$, lättare än den borttagna kanten. Ersättning av kanten i $T$ ger ett uppspännande träd med lägre vikt, en motsägelse. Alltså
 
-*Bevis.* Låt $\tau^\ast$ vara den största kantvikten i det minimala spännträdet (MST). Vid varje $\tau < \tau^\ast$ uppdelas MST om alla kanter tyngre än τ avlägsnas (den tyngsta MST-kanten tas bort, vars två ändpunkter ligger i olika komponenter av den återstående skogen, och ingen lättare kant kan återförena dem utan att motsäga MST:s minimalitet); eftersom MST är en delgraf av den fulla trösklade grafen på samma nodmängd med samma sammanhängning, är den fulla grafen också osammanhängande. Vid $\tau = \tau^\ast$ finns varje MST-kant närvarande, så grafen är sammanhängande. Alltså är anslutningströskeln exakt $\tau^\ast$. $\square$
+$$\varepsilon_c=b=\max_{e\in T}w(e).$$
 
-**Konsekvens.** Den per-regim anslutningströskeln ε_c bär ingen information utöver flaskhalskanten i MST, vilken är ett sammandrag av avståndens *magnitud*. Replikationen bekräftar detta numeriskt: över regimer överstiger ε_c MST:s maximala kant med 0,5–3,8%, vilket är exakt granulariteten i tröskelsvepningen. Varje påstående som vilar på att ε_c varierar mellan regimer är ett påstående om §3.1, omformulerat i topologins vokabulär. Detta är registrerat som `[R]`.
+Ingen triangelolikhet eller unik MST krävs. Skalning av alla kantvikter med en positiv konstant skalar $b$; ändrat arrangemang kan ändra $b$ vid samma medelavstånd. Om endast en kant har vikt $b$ och minst tre noder finns är den en bryggkant och någon ändpunkt en artikulationspunkt. Vid lika vikter behöver detta inte gälla. Detta förklarar en konstruktionseffekt, inte motsvarande modells funktion (se XIX §6).
 
-## A.2 Varför triangelolikheten inte är formulerbar (för §4.4)
+## A.2 Typer, vägar och symmetrisk projektion [R]
 
-Reformkostnaden $C(M_A \Rightarrow R_B)$ har typen $M \times R \to \mathbb{R}$. En triangelolikhet $C(A,B) \leq C(A,C) + C(C,B)$ kräver att alla tre $A$, $B$, $C$ är objekt av en enda typ, så att var och en av de tre kostnaderna är en instans av samma tvåargumentfunktion och den mellersta termen $C$ uppträder en gång som huvud och en gång som svans.
+Låt $h:M\to R$ tilldela hemmauppgifter. En inducerad modellparsfunktion $F(m,n)=C(m,h(n))$ kan prövas för triangelolikheter, men i allmänhet använder andra etappen i faktisk stegvis anpassning $U(m,r_1,T_1;\omega_1)$ snarare än en kanonisk hemmamodell. §5 anger additiv kostnad på faktiskt uppdaterat tillstånd. Detta är den precisa räckvidden för att den tabellerade kostnadsuppslagningen inte komponeras.
 
-Här är argumenten typade $M$ (vänster) och $R$ (höger). I $C(M_A \Rightarrow R_C) + C(M_C \Rightarrow R_B)$ uppträder symbolen "C" först som en regim $R_C$ och sedan som en modell $M_C$ — två olika objekt som notationen sammanblandar. Även om man medger sammanblandningen, är $M_C$ inte den modell som produceras av den första operationen: $U(M_A, R_C, \tau)$ är en modell som *presterar som* $M_C$ på $R_C$ men är en distinkt punkt i $M$ (§4.4). Så den andra etappens verkliga kostnad är $C(U(M_A, R_C, \tau) \Rightarrow R_B)$, en empirisk storhet som i allmänhet är olik $C(M_C \Rightarrow R_B)$.
+Med icke-negativa kantkostnader ger konkatenering av två genomförbara vägar en genomförbar väg med summan av deras kostnader. Infimum (eller godtyckligt nära approximation av ändliga infimum) ger riktad triangelolikhet för optimal vägkostnad; ouppnåeliga par kan ha oändlig kostnad. Nollkostnad mellan skilda tillstånd tillåts. Konstruktionen kräver inte en symmetrisk metrik och certifierar inte existensen av en användbar inlärd tillståndsgeometri.
 
-**Den återanvändbara formen.** Kompositionella lagar kräver kompositionella operationer, inte bara kompatibelt utseende index. Den syntaktiska platsen för en triangelolikhet kan fyllas med tre uppmätta tal närhelst tre objekt existerar; huruvida det resulterande påståendet *betyder* något kräver att operationen som producerar den första kostnaden ger det objekt som den andra kostnaden är definierad på. För reformkostnad gör den inte det, och "brottsfrekvensen" på ~25% (§4.4) är därför inte ett brott mot någonting — det är ett kategorifel som tabellerats. `[R]`
-
----
+Ett träd med kanter A–C, D–C, E–C, C–B har kortaste vägar till B från alla tre källor genom C. Gemensamt mellansteg för en destination motbevisar därför inte geodesier. Den symmetriska projektionen för kvadratiskt fel i §4.1 följer genom utveckling av de två kvadrerade residualerna; dess irreducibla term är inte en gräns för rangkorrelation.

@@ -1,20 +1,17 @@
-# Appendix A — The connectivity-threshold identity, and the object's type discipline
+# Appendix A — The connectivity-threshold identity and typed costs
 
-## A.1 ε_c is the MST bottleneck edge (for §3.2)
+## A.1 The MST bottleneck [R]
 
-**Claim.** For a set of points with pairwise distances, linked into a graph whenever their distance is at most a threshold τ, the smallest τ at which the graph is connected (single-linkage connectivity) equals the largest edge of the minimum spanning tree.
+Let $G$ be a complete undirected finite weighted graph, $T$ a minimum spanning tree and $b$ its largest edge weight. At threshold $b$ the graph contains $T$ and is connected. Suppose a threshold $s<b$ connects it. Remove a largest-weight edge from $T$; the resulting two components form a cut. A threshold-$s$ path crossing the cut contains an edge of weight at most $s$, lighter than the removed edge. Replacing that edge in $T$ gives a spanning tree of smaller weight, a contradiction. Thus
 
-*Proof.* Let $\tau^\ast$ be the largest edge weight in the MST. At any $\tau < \tau^\ast$, removing all edges heavier than τ disconnects the MST (it removes the heaviest MST edge, whose two endpoints are in different components of the remaining forest, and no lighter edge can rejoin them without contradicting the MST's minimality); since the MST is a subgraph of the full thresholded graph on the same vertex set with the same connectivity, the full graph is disconnected too. At $\tau = \tau^\ast$, every MST edge is present, so the graph is connected. Hence the connectivity threshold is exactly $\tau^\ast$. $\square$
+$$\varepsilon_c=b=\max_{e\in T}w(e).$$
 
-**Consequence.** The per-regime connectivity threshold ε_c carries no information beyond the MST bottleneck edge, which is a summary of distance *magnitude*. The replication confirms this numerically: across regimes ε_c exceeds the MST maximum edge by 0.5–3.8%, exactly the granularity of the threshold sweep. Any claim resting on ε_c varying by regime is a claim about §3.1, restated in the vocabulary of topology. This is registered as `[R]`.
+No triangle inequality or unique MST is required. Scaling all edge weights by a positive constant scales $b$; changing their arrangement may change $b$ at the same mean distance. If only one edge has weight $b$ and there are at least three nodes, it is a bridge edge and some endpoint is an articulation point. With ties this need not hold. This explains a construction effect, not the function of the corresponding model (see XIX §6).
 
-## A.2 Why the triangle inequality is not statable (for §4.4)
+## A.2 Types, paths and symmetric projection [R]
 
-The reform cost $C(M_A \Rightarrow R_B)$ has type $M \times R \to \mathbb{R}$. A triangle inequality $C(A,B) \leq C(A,C) + C(C,B)$ requires all three of $A$, $B$, $C$ to be objects of one type, so that each of the three costs is an instance of the same two-argument function and the middle term $C$ appears once as a head and once as a tail.
+Let $h:M\to R$ assign home tasks. An induced model-pair function $F(m,n)=C(m,h(n))$ can be tested for triangle inequalities, but in general the second leg of actual staged adaptation uses $U(m,r_1,T_1;\omega_1)$ rather than a canonical home model. Section 5 states the additive cost on the actual updated state. This is the precise scope of the noncomposition of the tabulated cost lookup.
 
-Here the arguments are typed $M$ (left) and $R$ (right). In $C(M_A \Rightarrow R_C) + C(M_C \Rightarrow R_B)$, the token "C" appears first as a regime $R_C$ and then as a model $M_C$ — two different objects that the notation conflates. Even granting the conflation, $M_C$ is not the model produced by the first operation: $U(M_A, R_C, \tau)$ is a model that *performs like* $M_C$ on $R_C$ but is a distinct point of $M$ (§4.4). So the second leg's true cost is $C(U(M_A, R_C, \tau) \Rightarrow R_B)$, an empirical quantity generally unequal to $C(M_C \Rightarrow R_B)$.
+With nonnegative edge costs, concatenating two feasible paths gives a feasible path with the sum of their costs. Taking infima (or approximating finite infima arbitrarily closely) gives the directed triangle inequality for optimal path cost; unreachable pairs may have infinite cost. Zero cost between distinct states is allowed. This construction does not require a symmetric metric and does not certify the existence of a useful learned state geometry.
 
-**The reusable form.** Compositional laws require compositional operations, not compatible-looking indices. The syntactic slot for a triangle inequality can be filled with three measured numbers whenever three objects exist; whether the resulting statement *means* anything requires that the operation producing the first cost yield the object the second cost is defined on. For reform cost it does not, and the "violation rate" of ~25% (§4.4) is therefore not a violation of anything — it is a category error tabulated. `[R]`
-
----
-
+A tree with edges A–C, D–C, E–C, C–B has shortest paths to B from all three sources through C. Destination-common staging therefore does not refute geodesics. The symmetric squared-error projection in §4.1 follows by expanding the two squared residuals; its irreducible term is not a bound on rank correlation.
