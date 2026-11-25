@@ -1,21 +1,13 @@
-### Appendix B: The Global Governance Frameworks — Key Design Features
+### Appendix B: Historical GGF Design Proposals
 
-The Global Governance Frameworks are a constellation of interconnected documents specifying an architecture for planetary coordination. They were developed from first principles in systems thinking, control theory, Spiral Dynamics, and engagement with Indigenous governance traditions. This appendix provides a brief, non‑technical overview of the core components referenced in the synthesis.
+[HR/IP] The following is a reading guide to components named in the earlier synthesis. Their exact current versions, authority, costs and implementation status have not been verified. See §6 for the distinction between mapping and evaluation.
 
-**Bioregional Autonomous Zones (BAZs):** Self‑governing territories organised around watersheds, ecosystems, and traditional lands rather than colonial borders. BAZs serve as the primary implementing institutions of the GGF, with genuine territorial authority, fiscal capacity, and constitutional standing. They are the institutional response to the subsidiarity deficit — placing governance authority where ecological and community knowledge are richest.
+- **Bioregional Autonomous Zones (BAZs):** proposed self-governing territories organised around ecological and community relationships. Investigate legal powers, overlapping jurisdictions, resources, rights, consent and cross-boundary responsibilities.
+- **Citizens' Assemblies:** proposed deliberative bodies at multiple scales. Selection, representativeness, mandates, decision powers, reasoned responses and remedies need separate specification and evaluation.
+- **Multi-Level Council Structure:** proposed bioregional-to-global coordination with a Meta-Governance Coordination Council and Subsidiarity Protocol. Test actual allocation of tasks, costs and decision rules against alternatives.
+- **Hearts, Leaves and the Love Ledger:** proposed contribution recognition and exchange mechanisms, alongside AUBI as personal economic security. These are not equivalent to an institution's lawful fiscal authority or sufficient resources. Specify obligations, financing and enforceability.
+- **Treaty of the Circle:** proposed interface with Indigenous governance authority, described historically in terms of consent, economic sovereignty and veto protections. Verify version and the affected peoples' own decisions; technical records cannot replace consent, rights or remedy.
+- **Accountable Coordination Principle and governance integrity mechanisms:** proposed protections involving revocable authority, symmetric transparency, protected exit, self-limiting function and independent review. The historical Governance Integrity System also names System Sanity Audits, the Legitimacy Drift Detector, Pre-Genesis Power Dissolution Clause and Office of the Adversary. A stated safeguard is not a demonstrated safeguard; test its availability and enforceability under conflict.
+- **Genesis Protocol:** proposed demonstration and constitutional convening stages, with separate prior authorization and subsequent consent requirements. Verify the actual text and legal context; evidence of pilot benefit cannot itself create new authority.
 
-**Citizens’ Assemblies:** Standing deliberative bodies of randomly selected citizens, operating at multiple scales (municipal, bioregional, global), with binding authority and formal government‑response obligations. They provide the deliberative infrastructure that generates legitimacy through participation rather than top‑down imposition.
-
-**Multi‑Level Council Structure:** A fractal governance architecture with councils at bioregional, national, continental, and global levels, coordinated through a Meta‑Governance Coordination Council. The structure matches governance scale to problem scale, with a Subsidiarity Protocol that determines the appropriate level for specific challenges.
-
-**Hearts, Leaves, and the Love Ledger:** A complementary currency and value‑recognition system. *Hearts* recognise care work and social contribution; *Leaves* represent verified ecological restoration; the *Love Ledger* provides local value‑exchange infrastructure. Combined with AUBI (Adaptive Universal Basic Income) as baseline economic security, they provide the fiscal autonomy and capacity‑building that the diagnostics identify as structurally necessary.
-
-**The Treaty of the Circle:** A constitutional interface between BAZs and Indigenous governance authority. BAZs receive economic sovereignty (the right to issue *Hearts* currency) only through a Treaty with local Indigenous Custodians, who hold absolute veto power over economic activities violating ecological limits. This embeds Indigenous sovereignty as foundational rather than consultative, and creates cryptographic enforcement of ecological boundaries.
-
-**The Accountable Coordination Principle:** A four‑criteria test that every GGF body must satisfy: authority is delegated and revocable (not self‑justifying); information flows symmetrically (full transparency); exit is structurally protected (AUBI ensures no one’s survival depends on any single institution); and the body’s primary function is self‑limiting coordination, not self‑perpetuation. This is the structural immune response against the GGF itself becoming extractive.
-
-**The Governance Integrity System:** A set of mechanisms — Legitimacy Drift Detector, Pre‑Genesis Power Dissolution Clause, System Sanity Audits, Office of the Adversary — designed to detect and correct institutional capture, mission creep, and the subtle drift from accountable coordination toward extractive hierarchy.
-
----
-
-
+These proposals do not establish that a particular architecture meets all candidate design concerns. They should be evaluated with versioned documentation, specified requirements, credible comparisons, and participation by affected people.

@@ -1,5 +1,14 @@
 ### Appendix E: References and Further Reading
 
+The original bibliography is retained as historical reading leads [HR]. Bibliographic details, versions, cited propositions and country evidence have not been independently verified. The GGF version labels are those listed in the original, not current specifications. The latest Sweden report and companion analysis should be consulted before empirical reuse.
+
+**Corrected upstream sources used in this revision:**
+- Holmström, B. K. (2026). *The Variety Gap: Objectives, observation architectures, and the limits of systemic perception.* Paper VI, GA-F02 v0.2.
+- Holmström, B. K. (2026). *Measuring the Variety Gap: Task-relative diagnostic profiles and the limits of composite measurement.* Paper VIII, GA-R02 v0.2.
+- Holmström, B. K. (2026). *Three Laws from One Bound: Ashby, Goodhart, and certification cost under bounded representation.* Paper XX, accepted GA-F01 v0.2.
+- Holmström, B. K. (2026). *Coordination Failure as Structural Condition.* Accepted GA-R02-C correction v0.1, Appendix E.5.
+
+
 **The Country Reports Series (all available at bjornkennethholmstrom.org/reports):**
 - Holmström, B. K. (2026). *The Spending Mirage: Why Germany Has Money but No Capacity to Decide.* Strategic Country Report.
 - Holmström, B. K. (2026). *The Decisiveness Mirage: Why France Governs by Decree but Cannot Make Decisions Stick.* Strategic Country Report.

@@ -37,22 +37,22 @@
     },
     {
       id: 'six-countries',
-      title: '2. Six Countries, Six Failure Modes, Three Broken Layers',
+      title: '2. Six Jurisdictions, Six Candidate Failure Modes',
       comp: SixCountries,
     },
     {
       id: 'immune-system',
-      title: '3. The Immune System That Resists Correction',
+      title: '3. Institutional Resistance and Stabilisation',
       comp: ImmuneSystem,
     },
     {
       id: 'establish',
-      title: '4. What the Diagnostics Establish — and What They Do Not',
+      title: '4. What the Diagnostics Suggest — and What They Do Not Establish',
       comp: Establish,
     },
     {
       id: 'trade-offs',
-      title: '5. The Trade‑Offs of Subsidiarity',
+      title: '5. The Trade-Offs of Subsidiarity',
       comp: TradeOffs,
     },
     {
@@ -62,17 +62,17 @@
     },
     {
       id: 'genesis-protocol',
-      title: '7. The Genesis Protocol: Demonstrated Value Before Formal Authority',
+      title: '7. The Genesis Protocol: Demonstrated Value Before Seeking Further Authority',
       comp: GenesisProtocol,
     },
     {
       id: 'appendix-a',
-      title: 'Appendix A: The Country Reports Series — Summary Table',
+      title: 'Appendix A: Historical Country Reports Summary Table',
       comp: AppendixA,
     },
     {
       id: 'appendix-b',
-      title: 'Appendix B: The Global Governance Frameworks — Key Design Features',
+      title: 'Appendix B: Historical GGF Design Proposals',
       comp: AppendixB,
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       id: 'appendix-d',
-      title: 'Appendix D: About the Author and Method',
+      title: 'Appendix D: About this synthesis and how it was made',
       comp: AppendixD,
     },
     {
@@ -107,10 +107,10 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const meta = {
-    title: 'The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity',
-    subtitle: 'A synthesis of the Country Reports for Systemic Change and what they collectively imply for the redesign of governance architecture',
+    title: 'The Subsidiarity Deficit',
+    subtitle: 'Comparative hypotheses on scale-matching and institutional transition',
     description:
-      'Six countries, six distinct failure modes, one common structural pressure: governance authority is systematically mismatched to the scale of the problems it faces. This synthesis identifies the structural requirements for redesign.',
+      'Explores six historical governance hypotheses, task-relative scale-matching, design trade-offs and candidate transition strategies. The country evidence and GGF feasibility remain unverified.',
   };
 
   const ui = {
@@ -147,7 +147,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity. Synthesis Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Subsidiarity Deficit: Comparative hypotheses on scale-matching and institutional transition. Synthesis Report. Revised November 2026. AI-assisted; independently AI-reviewed for source correction; not conventionally peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -195,7 +195,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity. Synthesis Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Subsidiarity Deficit: Comparative hypotheses on scale-matching and institutional transition. Synthesis Report. Revised November 2026. AI-assisted; independently AI-reviewed for source correction; not conventionally peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
@@ -235,6 +235,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <p class="text-sm mt-4 opacity-80">Revised November 2026 — source correction accepted following independent AI review. Historical country material has not been re-audited. No claim of verified GGF feasibility or conventional peer review.</p>
       <Provenance lang="en" align="start" />
     </header>
 

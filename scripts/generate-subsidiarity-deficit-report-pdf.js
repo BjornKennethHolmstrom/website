@@ -3,7 +3,7 @@
 /**
  * Generate PDF for the Subsidiarity Deficit synthesis report
  * 
- * Usage: node scripts/generate-subsidiarity-deficit-pdf.js [language]
+ * Usage: node scripts/generate-subsidiarity-deficit-report-pdf.js [language]
  * Currently only 'en' is supported.
  * 
  * Requirements:
@@ -39,11 +39,11 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const metadata = {
     en: {
-        title: "The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity",
-        subtitle: "A synthesis of the Country Reports for Systemic Change and what they collectively imply for the redesign of governance architecture",
-        description: "Six countries, six distinct failure modes, one common structural pressure: governance authority is systematically mismatched to the scale of the problems it faces. This synthesis identifies the structural requirements for redesign.",
+        title: "The Subsidiarity Deficit",
+        subtitle: "Comparative hypotheses on scale-matching and institutional transition",
+        description: "Explores six historical governance hypotheses, task-relative scale-matching, design trade-offs and candidate transition strategies. The country evidence and GGF feasibility remain unverified.",
         author: "Björn Kenneth Holmström",
-        date: "May 2026",
+        date: "May 2026 · Revised November 2026",
         url: "https://bjornkennethholmstrom.org/reports/subsidiarity-deficit",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Synthesis Report"
@@ -56,16 +56,16 @@ const meta = metadata[LANGUAGE];
 const sections = [
     { file: '00-executive-summary',                    title: 'Executive Summary' },
     { file: '01-westphalian-achievement-and-limits',    title: '1. The Westphalian Achievement and Its Limits' },
-    { file: '02-six-countries',                         title: '2. Six Countries, Six Failure Modes, Three Broken Layers' },
-    { file: '03-immune-system',                         title: '3. The Immune System That Resists Correction' },
-    { file: '04-establish',                             title: '4. What the Diagnostics Establish — and What They Do Not' },
-    { file: '05-trade-offs',                            title: '5. The Trade‑Offs of Subsidiarity', noLangSuffix: true },
+    { file: '02-six-countries',                         title: '2. Six Jurisdictions, Six Candidate Failure Modes' },
+    { file: '03-immune-system',                         title: '3. Institutional Resistance and Stabilisation' },
+    { file: '04-establish',                             title: '4. What the Diagnostics Suggest — and What They Do Not Establish' },
+    { file: '05-trade-offs',                            title: '5. The Trade-Offs of Subsidiarity', noLangSuffix: true },
     { file: '06-ggf',                                   title: '6. An Architectural Response: The Global Governance Frameworks' },
-    { file: '07-genesis-protocol',                      title: '7. The Genesis Protocol: Demonstrated Value Before Formal Authority' },
-    { file: '08-appendix-a',                            title: 'Appendix A: The Country Reports Series — Summary Table',                isAppendix: true },
-    { file: '08-appendix-b',                            title: 'Appendix B: The Global Governance Frameworks — Key Design Features',    isAppendix: true },
+    { file: '07-genesis-protocol',                      title: '7. The Genesis Protocol: Demonstrated Value Before Seeking Further Authority' },
+    { file: '08-appendix-a',                            title: 'Appendix A: Historical Country Reports Summary Table',                isAppendix: true },
+    { file: '08-appendix-b',                            title: 'Appendix B: Historical GGF Design Proposals',    isAppendix: true },
     { file: '08-appendix-c',                            title: 'Appendix C: The Governance as Engineering Connection',                  isAppendix: true },
-    { file: '08-appendix-d',                            title: 'Appendix D: About the Author and Method',                              isAppendix: true },
+    { file: '08-appendix-d',                            title: 'Appendix D: About this synthesis and how it was made',                              isAppendix: true },
     { file: '08-appendix-e',                            title: 'Appendix E: References and Further Reading',                           isAppendix: true },
 ];
 

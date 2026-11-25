@@ -1,27 +1,22 @@
-## 4. What the Diagnostics Establish — and What They Do Not
+## 4. What the Diagnostics Suggest — and What They Do Not Establish
 
-The six country reports in this series were conducted independently. Each applied the same analytical framework — the twin deficit model, adapted to the specific context — to a different governance system. Each identified a specific failure mode. Each proposed a specific transition pathway. None was written with the Global Governance Frameworks in mind.
+The six reports applied the same analytical framework, adapted to particular settings. Their earlier claim to have been conducted independently is not established by the available record: distinct outputs and parallel prompts are not independent validation, especially when the questions, author and conceptual assumptions overlap. Dated source and prompt records would be needed to establish a stronger claim about the chronology and independence of the diagnostic and design work.
 
-**What the diagnostics establish with confidence:**
+A simple illustrative model clarifies the issue. If six diagnoses all copy a shared fair binary assumption, unanimity has probability 1 and an all-positive result has probability 1/2. Six independent fair binary draws give an all-positive result with probability 1/64 (unanimity in either direction has probability 1/32). Neither is a probability estimate for these reports. Shared assumptions can explain convergence without independent corroboration.
 
-Governance authority is systematically mismatched to the scale of the problems it faces. The subsidiarity principle — decisions at the level where information lives and consequences are felt — is structurally violated by Westphalian architecture, not occasionally through bad policy but continuously through constitutional design. Every country examined has a different variety of the same underlying condition, and the specific form each variety takes is the interaction between the generic Westphalian structure and the particular cultural, historical, and institutional substrate of that country. The immune systems that resist correction are predictable, structural, and resistant to reform from within.
+**Candidate design checks**
 
-From these findings, the diagnostics establish a set of **structural requirements** — design specifications that any viable governance architecture must satisfy:
+- **Distributed sensing:** can task-relevant local evidence reach those who need it under appropriate rights and access rules?
+- **Translation layers:** can common policy be adapted to heterogeneous local conditions without losing essential standards?
+- **Fiscal autonomy matched to responsibility:** are adequate resources and authorized discretion available, including equalisation where necessary?
+- **Deliberative infrastructure:** can affected people participate, contest and receive reasoned responses?
+- **Nested governance:** which tasks benefit from multilevel coordination, and where would simpler arrangements suffice?
+- **Cross-border coherence:** how are shared dependencies, harms and commitments handled?
+- **Peripheral capacity-building:** can local institutions exercise the responsibilities assigned to them, including access to technical assistance?
+- **Protection against capture:** can authority be reviewed, limited or withdrawn through effective safeguards and remedies?
 
-- **Distributed sensing** to detect local signals before they become systemic crises.
-- **Translation layers** that adapt central policy to local context.
-- **Fiscal autonomy matched to responsibility** so that the level carrying the heaviest burdens has the resources and discretion to act.
-- **Deliberative infrastructure** that generates legitimacy through participation rather than top-down imposition.
-- **Fractal, nested governance** that matches decision-making scale to problem scale.
-- **Cross-border coherence mechanisms** for challenges that exceed national borders.
-- **Peripheral capacity-building** so that authority is matched by the ability to exercise it.
-- **Protection against governance itself becoming extractive** — because any new architecture must contain mechanisms that prevent its own capture.
+These are candidate considerations, not a universal set of necessary and sufficient architectural requirements. Some tasks require little deliberation beyond existing authorization; others demand extensive participation. Some can be implemented within existing administrative structures without new territorial institutions. Define requirements in terms of outcomes and constraints, then compare concrete forms and record pass, fail or unknown with evidence.
 
-These are not policy preferences. They are architectural requirements derived from independent observation of six different systems. A governance architecture that lacks any of them will reproduce the failure modes that the series has documented, in one form or another.
+**What the diagnostics do not establish**
 
-**What the diagnostics do not establish:**
-
-They do not establish a single prescribed institutional design. They do not prove that any specific architecture — including the Global Governance Frameworks — is the only valid response to the diagnosed deficits. The diagnostics identify the requirements. They do not dictate the forms that should meet them. Other architectures — federal deepening, networked multilateralism, platform governance models, bioregional confederations — could satisfy the same requirements.
-
-The structural requirements are the common ground. The institutional forms are the design space. What follows is one coherent candidate within that space, offered not as the solution but as evidence that the requirements are not merely abstract — that an architecture can be specified that meets them.
-
+They do not establish a single prescribed institutional design. They do not prove that any specific architecture — including the Global Governance Frameworks — is the only valid response to the proposed deficits. Even where a particular requirement is established, the institutional form remains an open design choice. Federal deepening, networked multilateralism, platform governance models, bioregional confederations and improvements to existing institutions are among the alternatives to investigate. The suitability of each depends on the task, legal and ethical constraints, resources and comparative evidence. Section 6 presents one design mapping, not a feasibility proof.
