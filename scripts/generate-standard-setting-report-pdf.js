@@ -29,11 +29,11 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const meta = {
-    title: "The Standard‑Setting Variety Gap",
-    subtitle: "Why the Institutions That Define What Others Can See Are Themselves Structurally Blind",
-    description: "Standard‑setting bodies are the protocol layer of global governance, determining what the world can officially perceive about corporate reality — yet their observation architecture systematically excludes natural, human, and social capital. This report diagnoses a Standard‑Setting Variety Gap and proposes a Multi‑Capital Materiality Audit and Integrated Reporting Sandbox as the concrete first step.",
+    title: "The Standard-Setting Variety Gap",
+    subtitle: "Reporting boundaries, decision-relevant evidence and the case for testing multi-capital disclosure",
+    description: "Task-relative hypotheses about reporting boundaries, institutional evidence and downstream decisions, with proposals for an independent Audit, a comparative Sandbox and an authorized Review Procedure. AI-generated; not peer-reviewed; AI-reviewed v0.2 with author-side quotation repair.",
     author: "Björn Kenneth Holmström",
-    date: "May 2026",
+    date: "Original May 2026 · GA-R02-R3 v0.3 · 25 November 2026 · AI-generated; not peer-reviewed",
     url: "https://bjornkennethholmstrom.org/reports/standard-setting-variety-gap",
     license: "Creative Commons Attribution-ShareAlike 4.0 International",
     type: "Organizational Report · Standard‑Setting Bodies"
@@ -42,16 +42,17 @@ const meta = {
 // ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
     { file: '00-executive-summary',                                 title: 'Executive Summary',                                                                              isAppendix: false },
-    { file: '01-the-standard-setting-variety-gap',                  title: '1. The Standard‑Setting Variety Gap',                                                          isAppendix: false },
-    { file: '02-structural-mechanisms',                             title: '2. Structural Mechanisms: How Standard‑Setting Bodies Become Blind to the Economies They Govern', isAppendix: false },
-    { file: '03-building-requisite-standard-setting-architecture',  title: '3. What Building Requisite Standard‑Setting Architecture Would Look Like',                      isAppendix: false },
+    { file: '01-the-standard-setting-variety-gap',                  title: '1. The Standard-Setting Variety Gap',                                                          isAppendix: false },
+    { file: '02-structural-mechanisms',                             title: '2. Structural Mechanisms: Hypotheses About Reporting and Decision Boundaries', isAppendix: false },
+    { file: '03-building-requisite-standard-setting-architecture',  title: '3. What Building Requisite Standard-Setting Architecture Would Look Like',                      isAppendix: false },
     { file: '04-political-immune-system',                           title: '4. The Political Immune System: Investor Primacy and the Pretence of Objectivity',               isAppendix: false },
-    { file: '05-first-step',                                       title: '5. A Concrete First Step: The Multi‑Capital Materiality Audit and the Integrated Reporting Sandbox', isAppendix: false },
+    { file: '05-first-step',                                       title: '5. A Concrete First Step: The Multi-Capital Materiality Audit and the Integrated Reporting Sandbox', isAppendix: false },
     { file: '06-coda',                                             title: '6. Coda: The Cost of Invisible Capital',                                                       isAppendix: false },
-    { file: '07-appendix-a',                                       title: 'Appendix A: Value Systems & Policy Mindsets',                                                   isAppendix: true  },
-    { file: '07-appendix-b',                                       title: 'Appendix B: International Analogues & Precedents',                                              isAppendix: true  },
+    { file: '07-appendix-a',                                       title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the Standard‑Setting Context',                                                   isAppendix: true  },
+    { file: '07-appendix-b',                                       title: 'Appendix B: International Analogues and Precedents',                                              isAppendix: true  },
     { file: '07-appendix-c',                                       title: 'Appendix C: The Governance as Engineering Connection',                                           isAppendix: true  },
     { file: '07-appendix-d',                                       title: 'Appendix D: Anticipated Objections',                                                            isAppendix: true  },
+    { file: '07-appendix-e', title: 'Appendix E: About this report', isAppendix: true },
 ];
 
 // ── CSS (identical to other reports) ─────────────────────────────────────────

@@ -34,6 +34,7 @@
   import AppendixBEn from './sections/07-appendix-b.en.md';
   import AppendixCEn from './sections/07-appendix-c.en.md';
   import AppendixDEn from './sections/07-appendix-d.en.md';
+  import AppendixEEn from './sections/07-appendix-e.en.md';
 
   // ------------------------------------------
   // 2. Section map
@@ -46,17 +47,17 @@
     },
     {
       id: 'standard-setting-variety-gap',
-      title: '1. The Standard‑Setting Variety Gap',
+      title: '1. The Standard-Setting Variety Gap',
       comp: StandardSettingVarietyGapEn,
     },
     {
       id: 'structural-mechanisms',
-      title: '2. Structural Mechanisms: How Standard‑Setting Bodies Become Blind to the Economies They Govern',
+      title: '2. Structural Mechanisms: Hypotheses About Reporting and Decision Boundaries',
       comp: StructuralMechanismsEn,
     },
     {
       id: 'building-requisite-architecture',
-      title: '3. What Building Requisite Standard‑Setting Architecture Would Look Like',
+      title: '3. What Building Requisite Standard-Setting Architecture Would Look Like',
       comp: BuildingRequisiteArchitectureEn,
     },
     {
@@ -66,7 +67,7 @@
     },
     {
       id: 'first-step',
-      title: '5. A Concrete First Step: The Multi‑Capital Materiality Audit and the Integrated Reporting Sandbox',
+      title: '5. A Concrete First Step: The Multi-Capital Materiality Audit and the Integrated Reporting Sandbox',
       comp: FirstStepEn,
     },
     {
@@ -76,12 +77,12 @@
     },
     {
       id: 'appendix-a',
-      title: 'Appendix A: Value Systems & Policy Mindsets',
+      title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the Standard‑Setting Context',
       comp: AppendixAEn,
     },
     {
       id: 'appendix-b',
-      title: 'Appendix B: International Analogues & Precedents',
+      title: 'Appendix B: International Analogues and Precedents',
       comp: AppendixBEn,
     },
     {
@@ -93,6 +94,11 @@
       id: 'appendix-d',
       title: 'Appendix D: Anticipated Objections',
       comp: AppendixDEn,
+    },
+    {
+      id: 'appendix-e',
+      title: 'Appendix E: About this report',
+      comp: AppendixEEn,
     },
   ];
 
@@ -119,11 +125,11 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const metadata = {
-    title: "The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind",
+    title: "The Standard-Setting Variety Gap",
     subtitle:
-      'A cybernetic diagnosis of the protocol layer of global governance — and how to build observation architectures that perceive all forms of capital, not just the financial',
+      'Reporting boundaries, decision-relevant evidence and the case for testing multi-capital disclosure',
     description:
-      'Standard‑setting bodies are the protocol layer of global governance, determining what the world can officially perceive about corporate reality — yet their observation architecture systematically excludes natural, human, and social capital. This report diagnoses a Standard‑Setting Variety Gap and proposes a Multi‑Capital Materiality Audit and Integrated Reporting Sandbox as the concrete first step.',
+      'Task-relative hypotheses about reporting boundaries, institutional evidence and downstream decisions, with proposals for an independent Audit, a comparative Sandbox and an authorized Review Procedure. AI-generated; not peer-reviewed; AI-reviewed v0.2 with author-side quotation repair.',
   };
 
   const ui = {
@@ -160,7 +166,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind. Organizational Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Standard-Setting Variety Gap. Organizational Report. Original May 2026; GA-R02-R3 v0.3, 25 November 2026. AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -199,7 +205,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Standard‑Setting Variety Gap: Why the Institutions That Define What Others Can See Are Themselves Structurally Blind. Organizational Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Standard-Setting Variety Gap. Organizational Report. Original May 2026; GA-R02-R3 v0.3, 25 November 2026. AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
@@ -239,6 +245,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {metadata.subtitle}
       </p>
+      <p class="text-sm opacity-70">Original May 2026 · GA-R02-R3 v0.3 · 25 November 2026 · AI review of v0.2; quotation boundary repaired in v0.3</p>
       <Provenance lang="en" align="start" />
     </header>
 
@@ -260,7 +267,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-d'}
+        {#if section.id !== 'appendix-e'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}
