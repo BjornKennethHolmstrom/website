@@ -50,9 +50,9 @@ export const reportsTranslations = {
            'The UK does not lack ambition — it lacks the ability to place control where reality actually is. This report diagnoses a control-delivery mismatch produced by administrative hollowing, the Treasury trap, and the English Question, and proposes Trailblazer Regions 2.0 as the concrete first step.'
    },
    subsidiarityDeficit: {
-       title: 'The Subsidiarity Deficit: Why Six Governance Systems Fail Under Complexity',
+       title: 'The Subsidiarity Deficit: Comparative hypotheses on scale-matching and institutional transition',
        description:
-           'A synthesis of the Country Reports for Systemic Change, identifying the common structural pressure behind six distinct governance failure modes and the architectural requirements for redesign.'
+           'Revisits six historical governance hypotheses across five states and the European Union. Distinguishes task-relative scale-matching, institutional design trade-offs and proposed GGF and Genesis transition strategies. The country evidence and operational feasibility remain unverified.'
    },
    brazilAccumulationDeficit: {
        title: 'The Accumulation Deficit: Why Brazil\'s Brilliant Breakthroughs Cannot Compound',
@@ -205,9 +205,9 @@ export const reportsTranslations = {
            'Storbritannien saknar inte ambition — det saknar förmågan att placera kontroll där verkligheten faktiskt finns. Rapporten diagnosticerar ett kontroll‑genomförande‑glapp skapat av administrativ urholkning, finansdepartementets fälla och den engelska frågan, och föreslår Trailblazer Regions 2.0 som det konkreta första steget.'
    },
    subsidiarityDeficit: {
-       title: 'Subsidiaritetsunderskottet: Varför sex styrsystem misslyckas under komplexitet',
+       title: 'Subsidiaritetsunderskottet: Jämförande hypoteser om skalpassning och institutionell omställning',
        description:
-           'En syntes av Country Reports-serien som identifierar det gemensamma strukturella trycket bakom sex olika styrningsmisslyckanden och de arkitektoniska kraven för omgestaltning.'
+           'Omprövar sex historiska styrningshypoteser om fem stater och Europeiska unionen. Skiljer uppgiftsrelativ skalpassning från institutionella avvägningar och föreslagna omställningsstrategier inom GGF och Genesisprotokollet. Landunderlaget och den praktiska genomförbarheten är ännu inte verifierade.'
    },
    brazilAccumulationDeficit: {
        title: 'Ackumulationsunderskottet: Varför Brasiliens briljanta genombrott inte kan ackumuleras',

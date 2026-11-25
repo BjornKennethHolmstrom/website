@@ -271,10 +271,10 @@ export const reportsData: Report[] = [
      category: 'synthesis',
      emoji: '🧩',
      year: 2026,
-     pages: 60,
+     pages: 26,
      readTime: {
-         en: '60–75 min',
-         sv: '60–75 min'
+         en: '25–40 min',
+         sv: '25–40 min'
      },
      version: '1.0',
      releaseDate: '2026-10-01',
