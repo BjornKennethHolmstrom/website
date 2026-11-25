@@ -43,6 +43,8 @@ meta:
     - "depends_on prefixes: = derives | - assumes/structural | ~ grounds/thematic. The atlas carries finer relation labels (mechanizes, refines, motivates, retracts, transfers-by-analogy, corroborates-cross-model, bounds)."
     - "OPEN: XXVII MI correction (see XXVII.corrections): brief table and prose now use the qualified statement; paper and simulation verification remain open."
     - "GA-R01 draft: central files reconciled with six accepted source corrections; XXVIII added to briefs from existing registry, not independently verified. Dependent paper sources, builds, XXVII and XXVIII open issues remain pending."
+    - "PROPOSAL: consider SO status sub-labels for numerical evidence; see atlas §9. No new global tier schema adopted."
+    - "GA-R01: restored structural edges into unaudited dependents preserve legacy dependence and flag unresolved validity, not a claim that revised premises suffice."
     - "DECIDED 2026-11-08: XXVIII titled 'Closure Adaptation Dynamics'; cluster cycle-two as a late addition (rationale in the XXVIII entry and atlas §9)."
     - "Evidence provenance is orthogonal to tier: historical reports (HR) are not verified numerical evidence; exploratory diagnostics do not establish registered predictions; stored-table replay is not training reproduction. Local M/I/HR/E tags in revisions are not global tier names."
 
@@ -136,16 +138,15 @@ papers:
       - objectives and observation architectures are distinct; incentives and policies can conditionally change evidence and exposure
       - "static additive linear regulation: hidden disturbance directions K = D intersect ker C must lie in tolerated subspace L; sufficient when all corrections in -D are available"
       - "necessary rank bound: rank(C restricted to D) >= dim D - dim(D intersect L); counts alone are insufficient"
-      - recovered bundled investment-policy comparison shows collapse in both arms and partial recovery in the environment-aware arm
     formal_tier: [R]           # exact static model; simulation replay is descriptive, not a registered causal test
     governance_tier: IP
-    evidence: ["GA-F02 v0.2 accepted; recovered script replay, not historical figure reproduction"]
+    evidence: ["GA-F02 v0.2 accepted; exploratory descriptive recovered-script replay (not R, not a registered causal test): both bundled policies collapse; environment-aware arm partly recovers; not historical figure reproduction"]
     nulls: ["universal objective-observation identity, collapse mechanism and critical gap withdrawn"]
     so_links: [SO-L1]
     unresolved:
       - measurement proposals and country interpretations unvalidated; VIII's composite index requires reconciliation
       - "SO-L1: insurance versus exposure generation and its price; test within an explicit policy and observation model"
-    successors: ["~VIII", "~XXIV", "~XXVII", "~Self-I"]
+    successors: ["-VIII", "-XXIV", "-XXVII", "-Self-I"]
 
   - id: "VII"
     title: Why reform disappoints
@@ -169,11 +170,11 @@ papers:
     cluster: cycle-one
     status: published
     question: Can the variety gap be measured?
-    depends_on: ["~VI"]
+    depends_on: ["-VI"]  # upstream premise revised; dependent audit pending (GA-R01)
     establishes: ["legacy proposal: structural primitives, proxies and composite G; not validated by corrected VI"]
     formal_tier: []
     governance_tier: IP        # index IP; weights and threshold H
-    unresolved: ["GA-R01 source audit pending: reconcile composite measurement with five distinct gaps; no universal threshold validated"]
+    unresolved: ["GA-R01 source audit pending: reconcile composite measurement with five distinct gaps; no universal threshold validated", "GA-R01: upstream premise revised; dependent audit pending for VI"]
 
   - id: "IX"
     title: Transition bandwidth
@@ -187,7 +188,7 @@ papers:
       - transition bandwidth as a losable race
     formal_tier: []            # governance IP; Omega ratio H
     governance_tier: IP
-    successors: ["-XXIII"]
+    successors: ["~XXIII"]
 
   - id: "X"
     title: Distributed sensing and the correlation tax
@@ -266,7 +267,7 @@ papers:
     nulls: ["universal persistent-excitation necessity, net-learning divergence and measured self-concealment withdrawn; optimal dual control not implemented"]
     unresolved: [historical full panels and known-effectiveness control unverified, nine design principles are conditional proposals]
     so_links: [SO-L2, SO-L5]
-    successors: ["~XXIV", "~XXI", "~Self-II"]
+    successors: ["-XXIV", "-XXI", "-Self-II"]
 
   - id: "XV"
     title: The adaptation bottleneck
@@ -298,7 +299,7 @@ papers:
     nulls: ["irreversible fold, structural B* below 1, universal decay and endogenous protection claims withdrawn"]
     unresolved: [literature priority not claimed, no measured inter-mode mean passage time, complete historical elicitation unavailable]
     so_links: [SO-L3]
-    successors: ["~XIX", "~XXIV", "~XXVIII", "~XXVI"]
+    successors: ["~XIX", "~XXIV", "~XXVIII", "~XXVI", "-XXI"]
 
   - id: "XVII"
     title: The relocation invariant
@@ -360,18 +361,18 @@ papers:
       - "strict proxy improvement is safe exactly when feasible proxy-target pairs contain no strict order reversal; established criterion, not a new theorem"
       - "reachability of a discarded target-relevant dimension is not sufficient for reversal; ties and stochastic policies require separate checks"
       - nonrefundable paid certification costs are monotone under stated accounting assumptions; no common conservation law follows from finitude
-    formal_tier: [R]           # scoped counting and ordering results; 30-world demonstration retained as historical numerical report
+    formal_tier: [R, N]        # scoped exact results; N = reported registered 30-world demonstration, not rerun
     governance_tier: IP
-    evidence: ["GA-F01 v0.3 source revision (v0.2 independent acceptance plus local precision/editorial edits); 30-world registered budget demonstration, not rerun"]
+    evidence: ["GA-F01 v0.2 independently accepted; 30-world registered budget demonstration [R within the model in paper; N reported in atlas], not rerun; v0.3 local edits not independently reviewed"]
     nulls: [conservation-law search failed, novel general Goodhart theorem withdrawn]
-    successors: ["~XXI", "~XXII", "~XXVII"]
+    successors: ["-XXI", "~XXII", "-XXVII"]
 
   - id: "XXI"
     title: When to Stop Learning, and When to Stop
     cluster: factorization
     status: published
     question: What governs the lifecycle of a bounded controller?
-    depends_on: ["~XIV", "-XV", "~XVI", "-XVIII", "~XX"]  # affected imports require source check
+    depends_on: ["-XIV", "-XV", "-XVI", "-XVIII", "-XX"]  # upstream premise revised; dependent audit pending (GA-R01)
     establishes:
       - "learning != adaptation (fastest learner: best model, worst grip); absorptive-capacity inequality"
       - "meta-learning ladder must close on invariants in a bounded system"
@@ -379,6 +380,7 @@ papers:
     formal_tier: [R, N]        # separation N; regress R; sunsetting IP
     governance_tier: IP
     successors: ["-XXII"]      # closed meta-ladder feeds certification incompleteness
+    unresolved: ["GA-R01: upstream premise revised; dependent audit pending for XIV, XVI, XX"]
 
   - id: "XXII"
     title: Three demands, three sources
@@ -425,7 +427,7 @@ papers:
     cluster: factorization
     status: published
     question: What changes when a diversity measure is optimized rather than observed?
-    depends_on: ["~XIV", "~XVI", "~VI"]
+    depends_on: ["-XIV", "~XVI", "-VI"]  # upstream premise revised; dependent audit pending (GA-R01)
     establishes:
       - "diversity proxy: informative as a sensor, treacherous as an objective"
       - optimizing the proxy maxes it while peripheral reach collapses
@@ -435,6 +437,7 @@ papers:
     governance_tier: IP        # administrative prediction stated as H hypothesis, not result
     so_links: [SO-L3]
     unresolved:
+      - "GA-R01: upstream premise revised; dependent audit pending for XIV, VI"
       - administrative-measurement prediction untested
       - "GA-R01: inspect original XXIV for imports of VI/XIV/XVI; distinguish specific exposure failure from persistent-excitation theorem"
       - "SO-L3: check whether the sensor/objective split survives a premium-matched control (a policy with the same foregone primary-objective value that simply holds reserves). SO-WP0 Experiment B found that structural option measures add almost nothing over such a control."
@@ -459,7 +462,7 @@ papers:
     cluster: factorization
     status: published
     question: Once independent capacity has decayed, what determines whether return can begin/propagate/complete?
-    depends_on: ["~X"]         # replaces X's placeholder escape-probability constant
+    depends_on: ["~X", "~XVI"]         # replaces X's placeholder escape-probability constant
     establishes:
       - homogeneous mean-field loop solved in closed form (consensus + competence-decay + liability terms)
       - "competence decay moves the RETURN threshold, provably not the ENTRY threshold"
@@ -478,7 +481,7 @@ papers:
     cluster: factorization      # capstone; candidate opener of a third cycle (see atlas §7)
     status: draft
     question: Is dimensional sufficiency (requisite variety) enough for an observation to have decision value?
-    depends_on: ["~0", "~VI", "~XX"]   # explicit finite model; thematic links, not derivation from VI or XX
+    depends_on: ["~0", "-VI", "-XX"]   # upstream premise revised; dependent audit pending (GA-R01)
     establishes:
       - "requisite alignment: decision value in the specified model varies with action-relative signal geometry"
       - "in the stated model, decision value depends on action-relative distinctions, not cardinality alone"
@@ -494,6 +497,7 @@ papers:
     corrections:
       - "LIVE: v1 'identical marginal MI at every displacement -> value gap is information-independent' narrowed. Geometries share cardinality, q, m, likelihood spectrum, and uniform-prior one-observation MI, but may differ in belief-conditioned MI and sequential value. The 'cannot be an information-quantity effect' inference must be narrowed/dropped. Both brief versions now qualify the table and paragraph; reconcile paper key-claims + §5.2 against the actual simulation before treating as settled."
     unresolved:
+      - "GA-R01: upstream premise revised; dependent audit pending for VI, XX"
       - loss function, action semantics, and hidden classes fixed from outside
     successors:
       - adaptive alignment (can a controller learn its feedback is displaced?)
@@ -514,7 +518,7 @@ papers:
       - "slow permeability buffers transient perceptual noise; residual noise-induced tipping at high stakes + high noise (<=10% of 30 runs)"
       - "two populations coupled only through shared U: stable polarization; cascade collapse of an unshocked population"
       - "constitutional permeability floor: for the tested combined shock, P_min >= 0.4 recovers, P_min <= 0.3 locks closed (threshold in (0.3, 0.4))"
-    formal_tier: [N]           # deterministic Euler sweeps + 30-run stochastic cells; NOT preregistered, no committed nulls — falls short of the N definition as written. Fast-slow analysis in §3 is qualitative, not a theorem.
+    formal_tier: [H]           # reported exploratory unregistered numerical results; not N under the registered-panel definition. Fast-slow analysis is qualitative.
     governance_tier: IP        # some readings self-labelled H (§8.2)
     evidence:
       - "Euler dt=0.05 with clipping to [0,1]; phase grid 20x20 x 4 rho_P from two initial conditions; stochastic 30 seeds per (s, sigma) cell; one shock profile for cascade and floor experiments"
@@ -543,20 +547,20 @@ papers:
     cluster: self
     status: published
     question: Do low-dimensional personal values collapse self-observation the way low-dimensional metrics collapse governance?
-    depends_on: ["-I", "-II", "-III", "-IV", "-V", "~VI"]
+    depends_on: ["-I", "-II", "-III", "-IV", "-V", "-VI"]  # upstream premise revised; dependent audit pending (GA-R01)
     establishes:
       - "legacy proposals pending source review: personal values may shape attention and evidence; objective-observation identity and universal critical threshold not licensed by corrected VI"
       - personal meta-governance as interpretive proposal
     formal_tier: []            # inherited VI theorem does not establish self-scale result; source review pending
     governance_tier: IP
-    unresolved: [tier scheme still R/I/S; reconcile to R/IP/H, "GA-R01: audit Self-I objective/observation and threshold claims"]
+    unresolved: [tier scheme still R/I/S; reconcile to R/IP/H, "GA-R01: audit Self-I objective/observation and threshold claims", "GA-R01: upstream premise revised; dependent audit pending for VI"]
 
   - id: "Self-II"
     title: The Adaptive Self
     cluster: self
     status: published
     question: What must a self do to keep perceiving, acting, trusting, learning across a changing life?
-    depends_on: ["-X", "-XI", "-XIII", "~XIV", "=III", "-V"]
+    depends_on: ["-X", "-XI", "-XIII", "-XIV", "=III", "-V"]  # upstream premise revised; dependent audit pending (GA-R01)
     establishes:
       - "observer-plant identity (controller = plant) as the distinguishing structural feature"
       - "measurement-disturbance coupling: control theory's separation principle fails for a self"
@@ -565,6 +569,7 @@ papers:
       - "composite failure via V's tax: the sealed self"
     formal_tier: []
     governance_tier: IP
+    unresolved: ["GA-R01: upstream premise revised; dependent audit pending for XIV"]
 
   - id: "Self-III"
     title: The Operator
@@ -626,14 +631,14 @@ cross_series_links:
     from: SO-WP1 §2.2, §5.1-5.2, §6.1; SO-WP0 §6.4 (F1-eq)
     to: VI
     relation: instantiates + refines
-    claim: "Policy-dependent exposure: no upstream wetland implies identical retention-sensitive transitions [ST]; the evaluated passive observation likelihood gives zero log Bayes factor, not a theorem for all histories or policies. Seven policy-dependent traps were identified under the passive operator [ED]. An objective term can substitute for a missing model or induce exposure; exposure need not move the posterior. Re-valuing has a price paid in both branches [PD]."
+    claim: "Policy-dependent exposure: no upstream wetland implies identical retention-sensitive transitions [ST]; the evaluated passive observation likelihood gives zero log Bayes factor, not a theorem for all histories or policies. Seven policy-dependent traps were identified under the passive operator [ED]. An objective term can substitute for a missing model or induce exposure; exposure need not move the posterior. Re-valuing has a price paid in both branches [PD]. The previously reported d05 omission cost is 2.36 U1 [ED, SO-WP1 §5.2]; the SO-WP0 equity term barely changed outcomes (F1-eq)."
     tier_of_link: "[R] scope: A2 model (structural null); [N]/[IP] for the refinement"
 
   - id: SO-L2
     from: SO-WP1 §5
     to: XIV
     relation: instantiates
-    claim: "Policy-dependent information limitation in the specified flood model: passive operation does not expose the retention mechanism; probes can create exposure without posterior movement (d05: exposure 0.95 at k=2, posterior moved 0.00). This instantiates XIV's conditional information-acquisition problem, not universal persistent-excitation necessity."
+    claim: "Policy-dependent information limitation in the specified flood model: passive operation does not expose the retention mechanism; probes can create exposure without posterior movement (d05: exposure 0.95 at k=2, posterior moved 0.00). This instantiates XIV's conditional information-acquisition problem, not universal persistent-excitation necessity. Compare Paper 0: capacity-induced omission there, policy-dependent exposure limitation here; not an identity of mechanisms."
     tier_of_link: "[R] scope: A2 model (k=1 null) / [N] exploratory"
 
   - id: SO-L3
@@ -661,7 +666,7 @@ cross_series_links:
     from: SO-WP1 §5; SO-WP0 §6.1 (reserve floor), SO-WP1 §4.2
     to: XXVIII
     relation: bounds
-    claim: "(1) XXVIII's alpha*E*U assumes exploration reduces uncertainty frictionlessly; SO-WP1 shows it is exposure-gated and lagged. (2) 'Robustness is a purchase': XXVIII's permeability floor is evaluated without a price; a safety-looking reserve floor in SO-WP0 lost by delaying protection. (3) SO-WP1's exposure trap is a third route to closure — policy-dependent — beside XXVIII's fear-driven and XVIII's learning-driven candidate routes."
+    claim: "(1) XXVIII's alpha*E*U assumes exploration reduces uncertainty frictionlessly; SO-WP1 shows it is exposure-gated and lagged. (2) 'Robustness is a purchase': XXVIII's permeability floor is evaluated without a price; a safety-looking reserve floor in SO-WP0 lost by delaying protection. (3) SO-WP1's exposure trap is a third candidate route to reduced evidence — policy-dependent — beside XXVIII's fear-driven and XVIII's learning-driven candidate routes."
     tier_of_link: "[IP] (cross-model bridge)"
 
   - id: SO-L7

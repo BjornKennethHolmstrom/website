@@ -24,7 +24,7 @@
 | **[IP]** | In-principle: formal core sound, mapping onto institutions or the self is interpretive. |
 | **[H]** | Heuristic: estimated, illustrative, or loosely applied. |
 
-The corpus's `[R within the model]` maps to atlas **`[R]` scope: `<model>`** when it names a theorem, and to **`[N]`** when it names a simulation result. This split is the atlas's job; the public brief may keep three tiers and note once that its `[R within the model]` covers atlas `[R]`(scoped) + `[N]`. Historical reports (HR) are not verified numerical evidence; local revision labels M/I/HR/E are not atlas tiers. An exploratory replay or re-score is not a registered confirmation. The public brief retains its folded labels only for appropriately supported results.
+The corpus's `[R within the model]` maps to atlas **`[R]` scope: `<model>`** when it names a theorem, and to **`[N]`** when it names a simulation result. This split is the atlas's job; the public brief may keep three tiers and note once that its `[R within the model]` covers atlas `[R]`(scoped) + `[N]`. Historical reports (HR) are not verified numerical evidence; a registered result retained at [N] may be reported rather than rerun, as explicitly marked for XX v0.2; local revision labels M/I/HR/E are not atlas tiers. An exploratory replay or re-score is not a registered confirmation. The public brief retains its folded labels only for appropriately supported results.
 
 **Companion-series results.** SO uses its own statuses: confirmatory (C), prespecified descriptive (PD), exploratory declared (ED), exploratory post hoc (EP), structural (ST). Mapped here as ST → `[R]` scope: the SO model; C → `[N]`; PD/ED/EP → `[N]` marked *exploratory*. All are synthetic. None lifts a GaE governance claim above `[IP]`.
 
@@ -43,6 +43,8 @@ The corpus's `[R within the model]` maps to atlas **`[R]` scope: `<model>`** whe
 - **transfers-by-analogy** — cross-scale correspondence, not invariance.
 - **tested-against-criterion** — a candidate checked against an existing classification (e.g. §5.1's slots).
 - **retracts / contradicts** — the target overturns a claim the source advanced.
+
+For GA-R01, a legacy structural edge with an upstream premise revised remains structural **pending dependent audit**. This records an unresolved premise dependency rather than current validity; a thematic replacement is justified only by source review. See §9.
 
 A claim's own tier and the relation feeding it are independent: an `[IP]` reading can *derive* cleanly from an `[R]` core (rigorous mathematics, in-principle institutional reading), and a `[N]` result can *motivate* a later claim without entailing it.
 
@@ -172,9 +174,9 @@ For most papers Paper 0 is the *third*. If its two-ingredient argument failed ge
 
 ```
 0 ── motivates ───▶ VI (representational omission)
-VI ── motivates ──▶ XXVII (task-relative adequacy and decision value)
-XX-Ashby ── motivates ──▶ XXVII ("distinguish the right things" is the gap XXVII fills)
-VI ── motivates ──▶ XXIV (model-specific learned resolution; inspect source imports)
+VI ── structural, audit pending ──▶ XXVII (task-relative adequacy; premise revised)
+XX-Ashby ── structural, audit pending ──▶ XXVII (premise revised)
+VI ── structural, audit pending ──▶ XXIV (premise revised; inspect source imports)
 SO-WP1 ── instantiates + refines ──▶ VI   (SO-L1: scoped exposure limitation; objective term as insurance vs exposure generator)
 ```
 
@@ -201,8 +203,8 @@ I   ── motivates ───────▶ XXVIII (low signal fidelity as a t
 - **information-geometry contrast — under revision, see §9.** The strong v1 rendering ("identical marginal MI at every displacement, so the value gap is information-independent") is being narrowed; the safe statement is that the two geometries share output cardinality, `q`, `m`, likelihood spectrum, and *uniform-prior one-observation* MI, but can differ in belief-conditioned MI and sequential value. The general alignment claim stays `[IP]`.
 
 ```
-VI ── motivates ──▶ XXVII (task-relative adequacy and decision value)
-XX ── motivates ─────▶ XXVII
+VI ── structural, audit pending ──▶ XXVII (task-relative adequacy; premise revised)
+XX ── structural, audit pending ──▶ XXVII
 0  ── grounds ───────▶ XXVII (assumes a finite state space; does NOT depend on 0's derivation)
 XXVII ── motivates ──▶ task-relative observation adequacy
         (cardinality alone does not determine decision value in the tested model)
@@ -262,13 +264,13 @@ XXII ── excluded-from ──▶ §5.1 (measurement-dependency, not launderin
 **XIV** — finite identification, accumulating information, persistent excitation and tracking separated; endogenous experimentation possible. RLS inverse-information bound and static sunset rank/decision distinction `[R]` (scoped); historical controller runs HR and exploratory replay, design principles `[IP]`.
 **XVI** — replenishment, depletion, control authority and protection are distinct diagnostics `[IP/H]`. Finite switching-barrier partition chain is ergodic; linear copying has exact reversible product weights and a bottleneck at N=120, B=0.99, r=0.35 `[R]` (scoped). No irreversible fold below B=1.
 **XVIII** — Non-Factorizability Theorem `[R]` scope: the XVIII model; Critical Learning Bandwidth; Decomposability Frontier `[R]`(scoped)/`[IP]`.
-**XXI** — learning ≠ adaptation `[N]`; meta-ladder closes on invariants `[R]`; persistence ≠ purpose `[IP]`.
+**XXI** — reported learning ≠ adaptation `[N]`; meta-ladder closes on invariants `[R]`; persistence ≠ purpose `[IP]`. Legacy evidence tiers retained; imports from XIV, XVI and XX have revised premises and require dependent audit.
 **XXIV** — optimising a diversity proxy maxes it while peripheral reach collapses; a *learned* observer compresses the periphery on its own. `[N]`; administrative prediction is `[H]` hypothesis, not result.
 **XXVI** — tail-nucleated escape from monoculture; escape-ladder theorem `[R]` scope: the XXVI model; first-passage account `[N]`; transfer `[IP]`.
-**XXVIII** — *Closure Adaptation Dynamics* (cycle two, late addition): five variables (U, B, T, E, P); boundary *strength* separated from boundary *permeability*. Bistability, hysteresis, noise-buffering by slow permeability with residual tipping, two-population polarization and cascade collapse, and a sharp permeability-floor threshold (P_min* ∈ (0.3, 0.4) for one tested shock). `[N]`-*unregistered*: deterministic Euler sweeps and 30-run stochastic cells, no preregistration, no committed nulls — below the `[N]` definition as written. The §3 fast–slow analysis is qualitative, not a theorem. Governance readings `[IP]`, some `[H]`. Three stated fixed-point values do not reproduce (§9).
+**XXVIII** — *Closure Adaptation Dynamics* (cycle two, late addition): five variables (U, B, T, E, P); boundary *strength* separated from boundary *permeability*. Bistability, hysteresis, noise-buffering by slow permeability with residual tipping, two-population polarization and cascade collapse, and a sharp permeability-floor threshold (P_min* ∈ (0.3, 0.4) for one tested shock). `[H]` (reported exploratory numerical evidence): deterministic Euler sweeps and 30-run stochastic cells, no preregistration, no committed nulls — not `[N]` under the atlas definition. The §3 fast–slow analysis is qualitative, not a theorem. Governance readings `[IP]`, some `[H]`. Three stated fixed-point values do not reproduce (§9).
 
 ```
-XIV ── motivates ──▶ XXIV (conditional information acquisition; check specific exposure mechanism)
+XIV ── structural, audit pending ──▶ XXIV (premise revised; check specific exposure mechanism)
 XVI ◀── motivates ── XIX, XXIV (no demonstrated common mechanism)
 XII ── relaxed-by ──▶ XVIII (removes XII's exogenous-coupling assumption)
 XII ── relaxed-by ──▶ XXVIII (boundary driven by felt uncertainty; quality allowed to degrade)
@@ -277,6 +279,7 @@ XVIII ·· analogous locked state ·· XXVIII (fear + opacity, not learning)
 XVI ── motivates ──▶ XXVIII (fixed permeability floor as candidate protection; no inherited guarantee)
 XXI ── grounds ──▶ XXII (closed meta-ladder)
 X   ── refines ──▶ XXVI
+XVI ── motivates ──▶ XXVI (accessibility and entrenchment; no inherited theorem)
 SO-WP1 ── instantiates ──▶ XIV  (SO-L2)
 SO-WP0/WP1 ── bounds ──▶ VII, XIV  (SO-L5: learning has opportunity cost; displacement vs concurrency)
 SO-WP0 ── corroborates-cross-model ──▶ XXIV; motivates ──▶ XVI (SO-L3: premium-matched reserve control)
@@ -292,7 +295,7 @@ SO-WP0/WP1 ── bounds ──▶ XXVIII  (SO-L6)
 **XXV** — Bode conservation vs realized-harm geometry gap: conserved log-area does not determine accessible loss; exploitation needs concentration, accessibility, discovery. `[R]` scope: LTI / fixed-controller / non-strategic licensing / `[IP]`.
 
 ```
-IX  ── priced-by ──▶ XXIII
+IX  ── motivates ──▶ XXIII (related transition-cost problem; thematic)
 XIX ── motivates / qualified-by ──▶ XXIII (threshold sensitivity; not a P4 replication)
 XVIII+"pressure relocates" ── formalized/bounded-by ──▶ XXV
 ```
@@ -315,12 +318,12 @@ SO asks how an optimization problem should be *constructed and evaluated*; GaE a
 
 | Link | From | To | Relation | Content | Tier of link |
 |---|---|---|---|---|---|
-| SO-L1 | WP1 §2.2, §5.1–5.2; WP0 §6.4 | VI | instantiates + refines | No upstream wetland implies identical retention-sensitive transitions; evaluated passive observation likelihood gives zero log BF, not a theorem for all histories. Seven policy-dependent traps under passive operator. Objective term may insure against missing model or induce exposure, with a price; exposure need not move posterior. | `[R]` scope: A2 / `[N]` exploratory / `[IP]` |
-| SO-L2 | WP1 §5 | XIV | instantiates | Specified passive policy fails to expose the mechanism; probing can create exposure without posterior movement. Conditional information acquisition, not universal persistent-excitation necessity. | `[R]` scope: A2 / `[N]` exploratory |
+| SO-L1 | WP1 §2.2, §5.1–5.2; WP0 §6.4 | VI | instantiates + refines | No upstream wetland implies identical retention-sensitive transitions; evaluated passive observation likelihood gives zero log BF, not a theorem for all histories. Seven policy-dependent traps under passive operator. Objective term may insure against missing model or induce exposure, with a price; exposure need not move posterior. Prior reported d05 omission cost 2.36 U1 [ED]; WP0 F1-eq barely changed outcomes. | `[R]` scope: A2 / `[N]` exploratory / `[IP]` |
+| SO-L2 | WP1 §5 | XIV | instantiates | Specified passive policy fails to expose the mechanism; probing can create exposure without posterior movement. Conditional information acquisition, not universal persistent-excitation necessity. Compare Paper 0 capacity-induced omission versus policy-dependent exposure limitation. | `[R]` scope: A2 / `[N]` exploratory |
 | SO-L3 | WP0 §4 (B) | XXIV, XVI | corroborates-cross-model (XXIV) + motivates (XVI) | Sensor/objective split reproduced in a different formalism; adds a premium-matched reserve control that diversity beat by only 0.6% of the gap. No common mechanism established for XVI. Shared author and AI pipeline → correlated provenance. | `[N]` confirmatory for SO tests; `[IP/H]` for XVI link |
 | SO-L4 | WP0 §5.4; WP1 H9 | XXVII | corroborates-cross-model (conceptual) | Information value is decision-relative; a direct flow gauge as an aligned-channel hypothesis. | `[IP]` / `[H]` |
 | SO-L5 | WP0 B5; WP1 §5.4 | VII, XIV | bounds | Learning that displaces core activity almost never chosen; concurrent learning recovers some value. "Protected experimental space" must specify displacement vs concurrency. | `[N]` conf./expl. |
-| SO-L6 | WP1 §4.2, §5; WP0 §6.1 | XXVIII | bounds | Exploration is exposure-gated and lagged, not αE·U; the permeability floor is unpriced (robustness is a purchase; a reserve floor lost in WP0); policy-dependent non-exposure as a third route. | `[IP]` |
+| SO-L6 | WP1 §4.2, §5; WP0 §6.1 | XXVIII | bounds | Exploration is exposure-gated and lagged, not αE·U; the permeability floor is unpriced (robustness is a purchase; a reserve floor lost in WP0); policy-dependent non-exposure as a third candidate route to reduced evidence. | `[IP]` |
 | SO-L7 | WP0 §3.3 (G6), §4.2 (HB1) | §5.1 | tested-against-criterion | Neither is a laundering member; G6 is a stock confound. See §5.1 addendum. | `[IP]` |
 | SO-L8 | WP0 §3.4, §7–8 | XII | positions (test bed) | A1's upstream/downstream municipalities with a relief pool test the pooling paradox; wetland × levee substitutive in 42% of worlds; A3 would test mechanism design. | `[N]` expl. / `[IP]` |
 
@@ -345,7 +348,7 @@ The kind of thing each load-bearing result is — consult before letting any cla
 | Adaptation bottleneck (XV) | composition | [R] | general (arithmetic) |
 | Deterministic action-cover N ≥ Vₐ | action adequacy | [R] | scoped necessary counting bound; not sufficient |
 | Hidden consequential directions K ⊆ L | observation adequacy | [R] | VI static additive model; sufficient with unrestricted disturbance corrections |
-| Proxy–target ordering | optimization | [R] | established criterion, feasible intervention set; 30-world budget demonstration historical, not rerun |
+| Proxy–target ordering | optimization | [R] | established criterion, feasible intervention set; 30-world registered budget demonstration [N], reported, not rerun (XX v0.2 §4.3) |
 | Relocation invariant | certification | [IP] | regress argument |
 | Non-Factorizability Theorem | boundary | [R] | scope: the XVIII learning model |
 | Critical Learning Bandwidth / Decomposability Frontier | boundary | [R]/[IP] | scope: the XVIII model |
@@ -362,7 +365,7 @@ The kind of thing each load-bearing result is — consult before letting any cla
 | Scalar-q non-representability | alignment | [R] | scope: the ES-2.x channel |
 | Attenuation 82%, 0 enrichment, geometry sign reversal | alignment | [N] | frozen 74-cell panel, run 16bc675b |
 | Information-geometry contrast | alignment | **under revision** | see §9 |
-| Closure–adaptation bistability, hysteresis, P_min* ∈ (0.3, 0.4) | boundary | [N]-unregistered | deterministic sweeps; one shock profile; three fixed-point values under correction (§9) |
+| Closure–adaptation bistability, hysteresis, P_min* ∈ (0.3, 0.4) | boundary | [H] (reported exploratory) | deterministic sweeps; one shock profile; three fixed-point values under correction (§9) |
 | Inherited unobservability | fidelity (operator) | [R] | corollary of III |
 | Almost all Self-scale primitives | self | [IP] | structural transfer, unconfirmed |
 
@@ -522,7 +525,20 @@ The single feature with *no* institutional analogue is **observer–plant identi
 ---
 
 
-**GA-R01 source boundary.** Central summaries and edges are updated, but affected manuscripts are not revised by this atlas. Prioritize VIII and Self I (measurement and threshold), XXI/XXII (learning and ordering), XXIV/XXVII (exposure and alignment), then XVII/XVIII/XXVI/XXVIII and Self II–III. Verify exact imports, claims and anchors before closing each edge. Historical sources and accepted revisions remain immutable.
+**GA-R01 source boundary.** Central summaries are reconciled, not dependent manuscripts. A structural edge marked audit pending records an inherited premise whose revised form may no longer support the dependent. Its validity is unresolved, not certified and not demoted to thematic merely because the premise changed.
+
+| Priority | Source-review and integration queue |
+|---|---|
+| 1 | VIII and Self I (measurement and threshold); current public listings (`working-papers.ts`, `core.ts`, framework pages) — check against accepted sources and hub text immediately. |
+| 2 | XXI/XXII (learning, ordering, certification); verify the XXII registered-failure count. |
+| 3 | XXIV/XXVII (exposure, alignment and MI). |
+| 4 | XVII, XVIII, XXVI, XXVIII, Self II–III; Paper 0, VII and X; IX and X imports in XIV (review references and scope, do not reopen accepted XIV by default). Inspect all remaining handoff edges. |
+| 5 | Country-report references, composite-gap tools, the nine synthesis essays, the two research notes and the SO direction note; check current SO source editions and links; review *What a Civilization Must Value* against its actual source. |
+| 6 | Site and PDF integration of all six corrected papers: website copies, generated PDFs, covers, historical figure labels, correction archives, links and build checks. |
+
+Source-level verification of exact claims and anchors is required before closing each edge. Historical sources and accepted revisions remain immutable.
+
+**Pending structural edges (dependent → upstream):** VIII → VI; Self I → VI; XXI → XIV, XVI, XX; XXVII → VI, XX; XXIV → XIV, VI; Self II → XIV. All carry the status “upstream premise revised; dependent audit pending” in the canonical registry. Existing thematic edges into the accepted corrected XX and XXIII, and the uncited XVI relationship in XXIV, remain thematic.
 
 ## 9. Housekeeping and live corrections
 
@@ -575,16 +591,16 @@ Full claims in §3; this is number → object.
 | XVIII | (non-factorizability) | boundary | Non-Factorizability Theorem; Decomposability Frontier | R (scoped) / IP |
 | XIX | Governors, Sentinels, Bridges | diversity | candidate roles; graph construction counterexample; historical panel HR | R (scoped) / IP |
 | XX | Three Laws from One Bound | action adequacy / ordering | separate counting, proxy ordering and certification premises | R (scoped) / IP |
-| XXI | When to Stop Learning | adaptation | learning≠adaptation; meta-ladder; sunsetting | N / R / IP |
+| XXI | When to Stop Learning | adaptation | learning≠adaptation; meta-ladder; sunsetting; affected imports pending | N / R / IP |
 | XXII | (three demands) | certification | three demands, three sources; kernel unself-monitorable | IP |
 | XXIII | The Shape of Reform | reform | squared dissimilarity; directed cost proxy and typed staged updates | R (scoped) / N / IP |
 | XXIV | The Observer You Cannot Afford to Excite | diversity | specific proxy/observer exposure failure; source imports pending | N / H |
 | XXV | Reform Pushes Down, Strategy Pushes Back | reform | Bode conservation vs harm geometry gap | R (scoped) / IP |
 | XXVI | The Cost of Returning | adaptation | tail-nucleated escape; escape-ladder | R (scoped) / IP |
-| XXVII | Requisite Alignment | alignment | alignment as second constraint; geometry sign reversal | R / N |
-| XXVIII | Closure Adaptation Dynamics (cycle two, late) | boundary | strength ≠ permeability; bistability, hysteresis, cascade; permeability floor | N-unregistered / IP |
+| XXVII | Requisite Alignment | alignment | alignment as second constraint; geometry sign reversal; VI/XX imports and MI correction pending | R / N |
+| XXVIII | Closure Adaptation Dynamics (cycle two, late) | boundary | strength ≠ permeability; bistability, hysteresis, cascade; permeability floor | H / IP (exploratory) |
 | Self I | Variety Gap in the Self | objective/loss | legacy value/attention analogy; critical gap and inherited proof not licensed by VI | IP / H (source review pending) |
-| Self II | The Adaptive Self | adaptation | observer–plant identity; self-uncontrollability; sealed self | IP |
+| Self II | The Adaptive Self | adaptation | observer–plant identity; self-uncontrollability; sealed self; XIV import pending | IP |
 | Self III | The Operator | fidelity | inherited unobservability | R / I |
 | SO-WP0 | What Should We Optimize… (companion) | objective/loss | four inadequacies; measurement–objective separation; learning has opportunity cost | N (C) / IP |
 | SO-WP1 | What If the Model Is Incomplete? (companion) | objective/loss | re-model vs re-value trade-off; robustness is a purchase; exposure traps | N (C) / R (ST) / IP |

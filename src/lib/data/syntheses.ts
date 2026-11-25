@@ -39,7 +39,7 @@ export const papersSv = {
   V:    { href: '/working-papers/coordination-failure-tax',                label: 'Rapport V: Samordningsmisslyckandets skatt' },
   VI:   { href: '/working-papers/the-variety-gap',                         label: 'Rapport VI: Variationsgapet' },
   VII:  { href: '/working-papers/architecture-of-governance-failure',      label: 'Rapport VII: Styrningsmisslyckandets arkitektur' },
-  VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta varietetsgapet' },
+  VIII: { href: '/working-papers/measuring-the-variety-gap',               label: 'Rapport VIII: Att mäta variationsgapet' },
   IX:   { href: '/working-papers/political-economy-of-requisite-governance', label: 'Rapport IX: Den politiska ekonomin för nödvändig styrning' },
   X:    { href: '/working-papers/requisite-observer-diversity',            label: 'Rapport X: Nödvändig observatörsmångfald' },
   XI:   { href: '/working-papers/reform-exhaustion',                       label: 'Rapport XI: Reformutmattning' },
