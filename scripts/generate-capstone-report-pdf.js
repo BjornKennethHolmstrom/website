@@ -30,10 +30,10 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const meta = {
     title: "Coordination Failure as Structural Condition",
-    subtitle: "Why Competent Institutions Become Blind to Their Own Fragility",
-    description: "A unified diagnostic framework from twenty‑one governance analyses across nation‑states, organisations, and institutional domains. The capstone synthesis identifies eight structural primitives, the Variety Gap, Resolution Lock‑In, and the immune system as the cross‑domain invariants of coordination failure — and provides design principles for building institutions that can perceive what they currently exclude.",
+    subtitle: "Comparative institutional hypotheses and a task-relative design framework",
+    description: "A revised comparative synthesis of twenty historical governance case interpretations. Retains eight candidate primitives, Resolution Lock-In and institutional resistance as research hypotheses, and proposes task-relative diagnostic and design procedures. Corrected against Papers VI, VIII and XX; the underlying reports and early engineering papers remain unaudited.",
     author: "Björn Kenneth Holmström",
-    date: "May 2026",
+    date: "May 2026 · Revised November 2026",
     url: "https://bjornkennethholmstrom.org/reports/coordination-failure-structural-condition",
     license: "Creative Commons Attribution-ShareAlike 4.0 International",
     type: "Capstone Report · Synthesis"
@@ -43,30 +43,30 @@ const meta = {
 const sections = [
     // Part I: The Core Condition
     { file: '01-variety-gap',                                    title: '1. The Variety Gap: The Structural Mismatch',                                  isAppendix: false },
-    { file: '02-resolution-lock-in',                              title: '2. Resolution Lock‑In: The Dynamic Trap',                                      isAppendix: false },
+    { file: '02-resolution-lock-in',                              title: '2. Resolution Lock-In: The Dynamic Trap',                                      isAppendix: false },
     { file: '03-immune-system',                                   title: '3. The Immune System: The Adaptive Stabiliser',                                 isAppendix: false },
 
     // Between Parts I and II
-    { file: '04-in-between-parts',                                title: 'The Canonical Formula and Diagram',                                            isAppendix: false },
+    { file: '04-in-between-parts',                                title: 'A Conditional Diagnostic Schema',                                            isAppendix: false },
 
     // Part II: The Implications
-    { file: '05-historical-argument',                             title: '4. The Historical Argument: Why the Variety Gap Has Widened',                  isAppendix: false },
-    { file: '06-civilisational-threshold-claim',                  title: '5. The Civilisational Threshold Claim',                                        isAppendix: false },
+    { file: '05-historical-argument',                             title: '4. The Historical Argument: A Modernity Hypothesis',                  isAppendix: false },
+    { file: '06-civilisational-threshold-claim',                  title: '5. The Civilisational Adaptation Hypothesis',                                        isAppendix: false },
 
     // Part III: Design and Vision
     { file: '07-central-question',                                title: '6. The Central Question: Adaptive Coherence',                                  isAppendix: false },
     { file: '08-from-diagnosis-to-design',                        title: '7. From Diagnosis to Design',                                                 isAppendix: false },
-    { file: '09-what-the-series-itself-demonstrates',             title: '8. What the Series Itself Demonstrates About the Framework\u2019s Claims',     isAppendix: false },
+    { file: '09-what-the-series-itself-demonstrates',             title: '8. What the Series Contributes and What It Has Not Established',     isAppendix: false },
     { file: '10-invitation',                                      title: '9. The Invitation',                                                            isAppendix: false },
 
     // Appendices
     { file: '11-appendix-a',                                      title: 'Appendix A: The Primitive Catalogue',                                          isAppendix: true  },
     { file: '11-appendix-b',                                      title: 'Appendix B: The Immune System Taxonomy',                                      isAppendix: true  },
-    { file: '11-appendix-c',                                      title: 'Appendix C: The Resolution Lock‑In Table',                                     isAppendix: true  },
+    { file: '11-appendix-c',                                      title: 'Appendix C: The Resolution Lock-In Table',                                     isAppendix: true  },
     { file: '11-appendix-d',                                      title: 'Appendix D: The Series Coherence Table',                                      isAppendix: true  },
     { file: '11-appendix-e',                                      title: 'Appendix E: The Governance as Engineering Connection',                         isAppendix: true  },
     { file: '11-appendix-f',                                      title: 'Appendix F: Methodology and Limits',                                          isAppendix: true  },
-    { file: '11-appendix-g',                                      title: 'Appendix G: Existence Proofs of Adaptive Coherence',                           isAppendix: true  },
+    { file: '11-appendix-g',                                      title: 'Appendix G: Candidate Case Studies of Adaptive Coherence',                           isAppendix: true  },
 ];
 
 // ── CSS (identical to courts report) ─────────────────────────────────────────

@@ -1,6 +1,6 @@
 ## Appendix D: The Series Coherence Table
 
-This appendix provides a unified overview of all twenty governance analyses — fifteen country reports and five organisational reports — that constitute the empirical foundation of this series. The table maps each system to its core deficit, signature pattern, cultural anchor, transition feasibility, primary immune system form, and the resolution level at which it is locked. The table is the series’ index: a single‑frame summary of the territory the twenty reports have surveyed, and a demonstration that the same structural primitives organise the surface diversity across radically different domains.
+**Historical record [HR/H] — original May 2026 edition, not re-audited.** This historical index covers the twenty cases actually enumerated: fifteen jurisdictions including the EU, and five organisational domains. Its original transition-feasibility labels are not validated forecasts, classifications or current recommendations. The following table preserves the original row text for transparency, including terminology and interpretations now subject to revision. All cells, including numerical assertions, dates, cultural generalisations and alleged causal effects, are unverified historical reports or hypotheses. The original edition date dates the record, not the underlying observations; source dates and references remain to be recovered. In particular, the Japan debt figure and the courts settlement proportion must not be treated as current or verified facts. Cultural labels are not attributes established for a whole population. Do not use these tables for rankings, causal inference, or decisions about current institutional adequacy. Read them alongside the revised definitions and prospective protocol.
 
 | System | Core Deficit | Signature Pattern | Cultural Anchor | Transition Feasibility | Primary Immune System Form | Resolution Lock‑In Level |
 |--------|--------------|-------------------|-----------------|------------------------|---------------------------|--------------------------|
@@ -25,5 +25,4 @@ This appendix provides a unified overview of all twenty governance analyses — 
 | **Healthcare** | Clinical Observability Gap | Standardisation–Signal Destruction Spiral | Administrative Imperative | Possible via integrated care models and payment reform | Administrative Imperative | Standardised throughput |
 | **Universities** | Integration Deficit | Specialisation–Performance–Fragmentation–Irrelevance Spiral | Disciplinary Identity | Possible via tenure reform and Grand Challenge Pilots | Performative Reform Trap | Disciplinary depth |
 
----
-
+The table is preserved as discovery material, not independent confirmation. Individual report audits must establish the relevant tasks, sources, dates, alternatives and scope before any of its claims are reused.

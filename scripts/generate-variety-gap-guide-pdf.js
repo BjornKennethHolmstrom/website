@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF for the Variety Gap Framework Diagnostic Field Guide
+ * Generate PDFs for the Variety Gap Framework field guide or glossary
  * 
- * Usage: node scripts/generate-variety-gap-guide-pdf.js [language]
+ * Usage: node scripts/generate-variety-gap-guide-pdf.js [language] [guide|glossary]
  * Example: node scripts/generate-variety-gap-guide-pdf.js en
  * Example: node scripts/generate-variety-gap-guide-pdf.js sv
  * 
+ * Example: node scripts/generate-variety-gap-guide-pdf.js sv glossary
+ *
  * Requirements:
  * npm install marked puppeteer
  */
@@ -24,6 +26,12 @@ const __dirname = path.dirname(__filename);
 // ── Configuration ────────────────────────────────────────────────────────────
 const LANGUAGE = process.argv[2] || 'en';
 const VALID_LANGUAGES = ['en', 'sv'];
+const DOCUMENT = process.argv[3] || 'guide';
+if (!['guide', 'glossary'].includes(DOCUMENT) || process.argv.length > 4) {
+    console.error('Usage: node scripts/generate-variety-gap-guide-pdf.js [en|sv] [guide|glossary]');
+    process.exit(1);
+}
+const IS_GLOSSARY = DOCUMENT === 'glossary';
 
 if (!VALID_LANGUAGES.includes(LANGUAGE)) {
     console.error(`Invalid language: ${LANGUAGE}`);
@@ -31,36 +39,53 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
     process.exit(1);
 }
 
-const INPUT_FILE = path.join(__dirname, `../src/routes/variety-gap-framework/diagnostic-field-guide.${LANGUAGE}.md`);
+// The legacy glossary source filenames are kept for existing mdsvex imports.
+const INPUT_FILE = IS_GLOSSARY
+    ? path.join(__dirname, `../src/lib/content/stable-glossary-v1.0${LANGUAGE === 'sv' ? '-sv' : ''}.md`)
+    : path.join(__dirname, `../src/routes/variety-gap-framework/diagnostic-field-guide.${LANGUAGE}.md`);
 const OUTPUT_DIR = path.join(__dirname, `../static/variety-gap-framework`);
-const OUTPUT_FILE = path.join(OUTPUT_DIR, `diagnostic-field-guide-${LANGUAGE}.pdf`);
+const OUTPUT_FILE = path.join(OUTPUT_DIR, `${IS_GLOSSARY ? "stable-glossary" : "diagnostic-field-guide"}-${LANGUAGE}.pdf`);
 const COVER_IMAGE = path.join(__dirname, `../static/images/variety-gap-framework/cover.png`);
 
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const metadata = {
     en: {
         title: "Country Reports Diagnostic Field Guide",
-        subtitle: "A practical guide to analyzing governance systems through the lens of adaptive capacity",
-        description: "Part of the Variety Gap Framework — a cybernetic diagnostic for why governance systems become blind to their own fragility.",
+        subtitle: "Task-relative diagnostic profiles and practical institutional inquiry",
+        description: "Part of the Variety Gap Framework. A research guide based on corrected Papers VI and VIII; not a validated diagnostic instrument.",
         author: "Björn Kenneth Holmström",
-        date: "May 2026",
+        date: "Version 2.0 · November 2026",
         url: "https://bjornkennethholmstrom.org/variety-gap-framework",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Framework Guide"
     },
     sv: {
         title: "Diagnostisk fältguide för landrapporter",
-        subtitle: "En praktisk guide för att analysera styrsystem genom linsen av adaptiv kapacitet",
-        description: "Del av Varietetsgapet-ramverket — en cybernetisk diagnos för varför styrsystem blir blinda för sin egen skörhet.",
+        subtitle: "Uppgiftsrelativa diagnosprofiler och praktisk institutionsanalys",
+        description: "Del av ramverket kring variationsgapet. En forskningsguide grundad på korrigerade rapporter VI och VIII; inte ett validerat diagnosinstrument.",
         author: "Björn Kenneth Holmström",
-        date: "Maj 2026",
+        date: "Version 2.0 · November 2026",
         url: "https://bjornkennethholmstrom.org/variety-gap-framework",
         license: "Creative Commons Erkännande-DelaLika 4.0 Internationell",
         type: "Ramverksguide"
     }
 };
 
-const meta = metadata[LANGUAGE];
+const glossaryMetadata = {
+    en: {
+        title: 'Stable Glossary',
+        subtitle: 'Scoped definitions and historical cross-references',
+        description: 'Reconciled terminology; remaining report claims require separate review.',
+        type: 'Framework Glossary'
+    },
+    sv: {
+        title: 'Stabil ordlista',
+        subtitle: 'Avgränsade definitioner och historiska korsreferenser',
+        description: 'Avstämd terminologi; återstående rapportpåståenden kräver separat granskning.',
+        type: 'Ramverksordlista'
+    }
+};
+const meta = { ...metadata[LANGUAGE], ...(IS_GLOSSARY ? glossaryMetadata[LANGUAGE] : {}) };
 
 // ── CSS (minimal, adapted from report styles) ────────────────────────────────
 const pdfStyles = `
@@ -69,7 +94,7 @@ const pdfStyles = `
 		size: A4;
 		margin: 2.5cm 2cm;
 		@bottom-right {
-			content: "Page " counter(page) " of " counter(pages);
+			content: none;
 			font-size: 9pt;
 			color: #666;
 		}
@@ -97,7 +122,7 @@ const pdfStyles = `
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		min-height: 100vh;
+		min-height: 235mm;
 		text-align: center;
 		padding: 0.5cm 2cm;
 		margin-top: 0;
@@ -106,7 +131,7 @@ const pdfStyles = `
 
 	.cover-image {
 		width: auto;
-		height: 400px;
+		height: 85mm;
 		object-fit: contain;
 		margin-bottom: 1em;
 		border-radius: 8px;
@@ -262,10 +287,12 @@ const pdfStyles = `
 		width: 100%;
 		border-collapse: collapse;
 		margin-bottom: 1em;
-		page-break-inside: avoid;
+		page-break-inside: auto;
 		font-size: 10pt;
 	}
 	
+	thead { display: table-header-group; }
+	tr { break-inside: avoid; }
 	th, td {
 		border: 1px solid #ddd;
 		padding: 0.5em;
@@ -389,7 +416,7 @@ function enhanceImageMarkup(content) {
 
 // ── Read and convert markdown file ───────────────────────────────────────────
 function readMarkdownFile() {
-    console.log(`\n📖 Reading field guide for language: ${LANGUAGE}`);
+    console.log(`\n📖 Reading ${DOCUMENT} for language: ${LANGUAGE}`);
     console.log(`Input file: ${INPUT_FILE}\n`);
 
     if (!fs.existsSync(INPUT_FILE)) {
@@ -398,6 +425,9 @@ function readMarkdownFile() {
     }
 
     let content = fs.readFileSync(INPUT_FILE, 'utf-8');
+    if (!content.includes('Version 2.0')) {
+        throw new Error(`Expected reconciled Version 2.0 source: ${INPUT_FILE}`);
+    }
     console.log(`✓ Read ${(content.length / 1024).toFixed(1)} KB`);
 
     // Remove frontmatter if present
@@ -467,7 +497,7 @@ async function generatePDF(html) {
         fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
-    const tempHtmlFile = path.join(OUTPUT_DIR, `temp-render-field-guide-${LANGUAGE}.html`);
+    const tempHtmlFile = path.join(OUTPUT_DIR, `temp-render-${DOCUMENT}-${LANGUAGE}.html`);
     fs.writeFileSync(tempHtmlFile, html);
     const tempHtmlUri = 'file://' + path.resolve(tempHtmlFile).replace(/\\/g, '/');
 
@@ -531,7 +561,7 @@ async function generatePDF(html) {
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
     try {
-        console.log('📄 Starting PDF generation for Diagnostic Field Guide...\n');
+        console.log(`📄 Starting PDF generation for ${DOCUMENT}...\n`);
         console.log(`Language: ${LANGUAGE}`);
         console.log(`Output: ${OUTPUT_FILE}\n`);
 
@@ -539,7 +569,7 @@ async function main() {
         const html = generateHTML(markdown);
 
         if (process.env.DEBUG) {
-            const debugFile = path.join(__dirname, `../debug-field-guide-${LANGUAGE}.html`);
+            const debugFile = path.join(__dirname, `../debug-${DOCUMENT}-${LANGUAGE}.html`);
             fs.writeFileSync(debugFile, html);
             console.log(`Debug HTML saved to: ${debugFile}`);
         }

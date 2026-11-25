@@ -1,408 +1,272 @@
-## Kanoniska termer, precisa definitioner och korsreferenser mellan seriernas varianter
+## Termer, avgränsade definitioner och historiska korsreferenser
 
-*Version 1.0 — för användning i seriens alla delar: landrapporter, organisationsrapporter, tekniska rapporter, sammanfattning och härledda material.*
-
----
+**Version 2.0 — November 2026**
 
 ### Hur du använder detta dokument
 
-Denna ordlista fastställer ett kanoniskt ordförråd för serien. Där tidigare rapporter har använt varierande terminologi för samma begrepp anges den kanoniska termen här tillsammans med en kartläggning av varianterna. Framtida publikationer bör uteslutande använda den kanoniska termen. Befintliga rapporter kan behålla sina ursprungliga formuleringar där revidering är opraktisk, men bör notera den kanoniska motsvarigheten vid första användning.
-
----
+Denna ordlista stämmer av terminologin mot de accepterade källkorrigeringarna VI v0.2, VIII v0.2, XX v0.2, XIV v0.1, XVI v0.1, XIX v0.1, XXIII v0.2 samt Själv I v0.2. Den ersätter ordlistans tidigare definitioner, inte de ännu ogranskade rapporternas källtexter. Historiska varianter är sökhjälp, inte bevis för att begreppen är synonymer. [R] gäller ett angivet formellt resultat; [IP] är en principiell tolkning; [H] är en hypotes eller heuristik. Rapporterade numeriska resultat måste särskiljas från bevis och empirisk validering. Se den reviderade fältguiden för praktisk användning.
 
 ## Grundläggande strukturella begrepp
 
----
+### Variationsgapet
 
-### Varietetsgapet (G)
-**Kanonisk term.** *Varianter i serien: "observerbarhetsgap", "signalunderskott", "dimensionalitetsmissanpassning".*
+**Historiska beteckningar (v1.0):** "observerbarhetsgap", "signalunderskott", "dimensionalitetsmissanpassning".
 
-Den strukturella missanpassningen mellan den effektiva dimensionaliteten hos den störningsmiljö som ett styrsystem måste hantera (V_miljö) och den effektiva dimensionaliteten hos systemets observationsarkitektur (V_observation).
+Uppgiftsrelativ observationsbrist: betydelsefulla distinktioner som en angiven observationsarkitektur inte kan särskilja. I VI v0.2:s brusfria statiska additiva modell är D det linjära störningsrummet, L det tolererade underrummet, C observationsavbildningen och K = D ∩ ker C. Adekvat deterministisk reglering kräver K ⊆ L; villkoret är också tillräckligt om alla korrigeringar i −D är tillgängliga. Det dolda konsekvensbärande gapet är `g_hidden = dim K − dim(K ∩ L)`. Räknegränsen `g_count = dim D − dim(D ∩ L) − rank(C|D)` är en undre gräns för `g_hidden`; ett icke-positivt värde intygar inte adekvans. [R inom denna modell]
 
-**Formellt uttryckt:** G = V_miljö − V_observation
-
-När G > 0 kan styrsystemet inte uppfatta alla dimensioner längs med vilka det styrda systemet kan störas. De uteslutna dimensionerna upphör inte att verka; de ackumuleras som externaliteter tills de tvingar sig till synlighet genom kris.
-
-När G överstiger ett kritiskt tröskelvärde (G_krit) överstiger brusvariansen i styrsystemets observationskanal den överlevande signalvariansen. Systemet är då konstitutionellt oobserverbart: ingen förbättring av institutionell kvalitet kan återskapa den information som förlorats uppströms om beslutsfattningslagret.
-
-**Tillämpning över domäner:** I demokratisk representation manifesteras varietetsgapet som preferensosynlighet genom djupa representationskedjor. I allmänningsstyrning manifesteras det som observationsbrist i förhållande till resurssystemets flerskaliga dynamik. I organisationsstyrning manifesteras det som upplösningslåsning vid den skala som institutionen optimerades för.
-
-*Se även: Observerbarhetströskel, Läsbarhetskomprimeringsprincipen, Upplösningslåsning.*
-
----
+Det historiska `G = V_miljö − V_observation` är en kortform för en dimensionsräkning, inte det korrigerade gapet. Samma rang kan lämna olika betydelsefulla riktningar dolda. Dynamiska historiker, brusiga observationer och begränsade handlingar kräver separata analyser. VIII:s historiska sammansatta poängtal och trösklar har dragits tillbaka; inget nytt universellt skalärt mått ersätter dem.
 
 ### Observerbarhetströskel
-**Kanonisk term.** *Varianter i serien: "konstitutionell ooberserverbarhet", "SNR-tröskel", "signal-till-brus-korsning".*
 
-Det kritiska värdet på Varietetsgapet (G_krit) vid vilket signal-till-brusförhållandet i ett styrsystems observationskanal faller under ett. Under denna tröskel domineras informationen som når beslutsfattningslagret av brusegenskaperna hos styrningsapparaten snarare än av det styrda systemets verkliga tillstånd.
+**Historiska beteckningar (v1.0):** "konstitutionell ooberserverbarhet", "SNR-tröskel", "signal-till-brus-korsning".
 
-Över tröskeln: policylagret har en försämrad men informativ signal; statistiska och institutionella metoder kan utvinna genuin information ur den.
+En tröskel definierad för en viss observations- eller beslutsmodell, med uttryckligt kriterium och riktning. Ett signal-brusförhållande (SNR) på ett är inte en universell gräns för informationsförlust. För oberoende skalär gaussisk signal och brus i en additiv kanal ger SNR = 1 en ömsesidig information om signalen på 0,5 bit. [R inom detta exempel]
 
-Under tröskeln: policylagret responderar främst på de strukturella egenskaperna hos sina egna representations- och aggregeringsmekanismer. Förbättringar av institutionell kvalitet kan inte återskapa signalkvaliteten, eftersom informationen förstördes innan den nådde fram.
-
-Tröskeln är inget fast värde; den beror på brusegenskaperna hos varje aggregeringslager, de inblandade aggregeringskvoterna och graden av koppling mellan störningsdimensionerna.
-
-*Formellt härledd i teknisk rapport III (Kopplingen observerbarhet–demokrati). Tillämpad på allmänningsstyrning i teknisk rapport IV. Generaliserad till värdearkitekturer i teknisk rapport VI (Varietetsgapet).*
-
----
+Rapport III:s historiska kriterium för representationskedjor är modellbundet och dess källtext har inte granskats på nytt här. VI och VIII stöder inte längre en likställning av ett universellt `G_krit` med SNR = 1. Använd inte de tidigare landsklassificeringarna över eller under tröskeln.
 
 ### Läsbarhetskomprimeringsprincipen
-**Kanonisk term.** *Varianter i serien: "aggregeringsförlust", "komprimeringsmekanism", "informationsförstörelse genom aggregering".*
 
-Varje styrsystem måste reducera dimensionaliteten i sin miljö för att förbli beräkningsmässigt hanterbart. Denna komprimering är nödvändig — ingen ändlig institution kan uppfatta allt — men den är irreversibelt förlustbringande. Den information som förloras i komprimeringen ackumuleras som externaliteter tills den tvingar sig till synlighet genom kris.
+**Historiska beteckningar (v1.0):** "aggregeringsförlust", "komprimeringsmekanism", "informationsförstörelse genom aggregering".
 
-Principen har tre komponenter:
-1. **Komprimeringsnödvändighet:** All styrning kräver någon reduktion av miljökomplexitet.
-2. **Irreversibilitet:** Information som förstörs i aggregering kan inte återskapas nedströms, oavsett institutionell kvalitet.
-3. **Ackumulering:** Uteslutna dimensioner försvinner inte; de fortsätter att generera effekter som så småningom återinträder i det observerbara rummet som kriser systemet inte kan förklara.
+Ett historiskt namn för urval och aggregering av information till en hanterbar representation. En många-till-en-avbildning kan utplåna distinktioner i sin utdata; utdata ensam kan inte entydigt återskapa indata i samma ekvivalensklass. Sidoinformation, historik, en alternativ kanal eller intervention kan särskilja dessa fall. Komprimering kan också bevara allt som är relevant för en uppgift.
 
-Läsbarhetskomprimeringsprincipen är den sammanhållande mekanismen bakom Varietetsgapet över alla domäner: BNP-komprimering i centralbanker, diagnoskodskomprimering i hälso- och sjukvård, citeringsmåttskomprimering i universitet, representationskedjekomprimering i demokratier, aggregerad kvotkomprimering i fiskeförvaltning.
-
----
+En kris till följd av en utelämnad distinktion är en villkorad kausal hypotes, inte en oundviklig följd av komprimering. Rapport 0 och VI motiverar undersökning; rapporternas exempel (BNP, diagnoskoder, citeringsmått, kvoter) är tänkbara fall, inte bevis för en enda mekanism. [IP/H]
 
 ### Nödvändig variation
-**Kanonisk term.** *Inga betydande varianter i serien; härleds direkt från Ashby (1956).*
 
-Den minsta observations- och responsdimensionalitet ett styrsystem måste ha för att stabilisera ett styrt system. Formellt: en regulator kan inte stabilisera ett system vars variation överstiger regulatorns egen variation (Ashbys lag om nödvändig variation).
+**Historiska beteckningar (v1.0):** Inga betydande varianter i serien; härleds direkt från Ashby (1956).
 
-Tillämpat på styrning: en styrningsarkitektur vars observationsarkitektur har lägre dimensionalitet än den störningsmiljö den möter kommer att producera okontrollerad varians i utfallen — kriser, kollapser och misslyckanden som ter sig oväntade men är strukturellt förutsägbara.
+Ashbys störningsrelativa regleringsprincip: tillgängliga svar måste vara adekvata för de distinktioner som har betydelse för de angivna utfallen. Varken miljöns råa komplexitet eller antalet måltermer anger det relevanta antalet svar. XX v0.2 ger en deterministisk gräns baserad på handlingstäckning: låt A(w) vara de adekvata handlingarna i varje värld w; det minsta antalet handlingar i en mängd som skär varje A(w) ger en undre gräns för antalet urskiljbara meddelanden till regulatorn, under modellens angivna antaganden. [R inom modellen]
 
-**Styrningsimplikation:** Frågan "har detta styrsystem nödvändig variation?" är likvärdig med "är Varietetsgapet under Observerbarhetströskeln?"
-
----
+Observation, tillgängliga handlingar och tolerans för störningar måste bedömas tillsammans. Nödvändig variation är inte liktydig med att passera en SNR-tröskel eller ett landsindex.
 
 ### Samordningsmisslyckandets skatt
-**Kanonisk term.** *Varianter i serien: "ackumulerande misslyckandekostnad", "multiplikativ misslyckandeeffekt".*
 
-Den dolda, kontinuerliga kostnad som åläggs varje styrsystem som samtidigt opererar under nödvändig variation över flera arkitektoniska dimensioner. Skatten ackumuleras multiplikativt snarare än additivt: varje felsätt verkar på det som återstår efter att tidigare felsätt har försämrat styrningskapaciteten.
+**Historiska beteckningar (v1.0):** "ackumulerande misslyckandekostnad", "multiplikativ misslyckandeeffekt".
 
-**Formellt uttryckt:** G_effektiv = G_baslinje × (1−f₁) × (1−f₂) × (1−f₃) × (1−f₄)
+Rapport V:s föreslagna modell för samverkande begränsningar. Om vart och ett av fyra sekventiella led behåller andelen (1 − fᵢ) av den inkommande kapaciteten blir den återstående kapaciteten Q = Q₀ × (1 − f₁) × (1 − f₂) × (1 − f₃) × (1 − f₄). Fyra andelar på 0,5 ger 0,0625 av baslinjen. [R för den antagna produkten]
 
-Där varje fᵢ representerar den andel av kapaciteten som förstörs av varje samtidigt felsätt.
-
-**Viktig implikation:** Ett styrsystem med fyra samtidiga arkitektoniska misslyckanden, vart och ett förstör 50 % av kapaciteten, opererar inte med noll kapacitet — det opererar med cirka 6 % av baslinjen (0,5⁴ = 0,0625). Små förbättringar över flera felsätt samtidigt ger oproportionerliga vinster genom omvänd ackumulering.
-
-*Formellt härledd i teknisk rapport V (Samordningsmisslyckandets skatt).*
-
----
+Detta är inte en universell lag för institutionella förluster eller en härledning av VIII:s tidigare index. Beroenden, kompensationsmekanismer och gemensamma orsaker kan ändra funktionsformen. V:s institutionella överföring ligger utanför denna granskning.
 
 ## Begrepp inom styrningsarkitektur
 
----
-
 ### Observationskanal
-**Kanonisk term.** *Varianter i serien: "observationsarkitektur", "avkänningsinfrastruktur", "informationskanal".*
 
-Den fullständiga väg genom vilken information om tillståndet hos ett styrt system når de beslutsfattare som agerar på den. Observationskanalen omfattar sensorer (vad som mäts), överföringsmekanismer (hur mätningar färdas), aggregeringsstrukturer (hur mätningar kombineras) och filter (vad som förkastas i varje steg).
+**Historiska beteckningar (v1.0):** "observationsarkitektur", "avkänningsinfrastruktur", "informationskanal".
 
-Observationskanalen avgör vad styrningen kan se, och därmed vad den kan svara på. Kanalegenskaper — latens, signaltrohet, aggregeringskvot, dimensionalitet — sätter hårda strukturella tak för styrningsprestanda som inte kan höjas genom att förbättra kvaliteten på de beslut som fattas baserat på kanalens utdata.
+Den väg som förmedlar evidens från ett styrt system till en angiven observatör eller beslutsprocess: sensorer, rapportering, överföring, aggregering och filter. Dokumentera vad som är tillgängligt, för vem, vid vilken tidpunkt och med vilka fel. Observationsarkitekturen kan omfatta flera sådana kanaler och historiker.
 
-*Tre kritiska egenskaper hos varje observationskanal:*
-- **Latens (τ):** Fördröjningen mellan att ett tillstånd uppstår i det styrda systemet och att information om det når beslutsfattningslagret.
-- **Signaltrohet (σ):** Den noggrannhet med vilken kanalen överför det styrda systemets verkliga tillstånd. Försämras vid varje aggregeringssteg.
-- **Dimensionalitet:** Antalet oberoende signaldimensioner kanalen kan överföra. Avgör om Varietetsgapet ligger över eller under Observerbarhetströskeln.
-
----
+Latens, signaltrohet och relevanta distinktioner kännetecknar en kanal; de avgör inte ensamma beslutskvalitet eller genomförande. Mål och observation är skilda (VI v0.2).
 
 ### Latens (τ)
-**Kanonisk term.** *Varianter i serien: "responsfördröjning", "beslutsförskjutning", "dödtid".*
 
-Den totala fördröjningen mellan att en störning inträffar i ett styrt system och att en korrigerande åtgärd får effekt. I styrsystem ackumuleras latens över flera steg: upptäckt, rapportering, aggregering, överläggning, beslut, lagstiftning, implementering.
+**Historiska beteckningar (v1.0):** "responsfördröjning", "beslutsförskjutning", "dödtid".
 
-**Kritisk egenskap:** Latens sätter ett hårt tak för den maximala responsförstärkning som ett stabilt styrsystem kan använda. Specifikt: K_max ≈ 1/(τ × |A|), där A fångar systemdynamiken. Ett system med hög latens kan inte svara aggressivt på kriser utan att producera oscillation och instabilitet. Denna begränsning är matematisk, inte politisk — den kan inte övervinnas med politisk vilja, institutionell kvalitet eller ökade resurser.
+Förfluten tid mellan uttryckligt definierade händelser, såsom störningens början, upptäckt, beslut, genomförande eller verksam respons. Skilj mellan leden i stället för att använda observationsfördröjning och total responsfördröjning som synonymer. VIII v0.2 föreslår daterade händelsekohorter, förhandsbestämda slutpunkter och dokumentation av högercensurerade uteblivna svar.
 
-**Frekvensimplikation:** En regulator med latens τ kan inte stabilisera störningar snabbare än f_max ≈ 1/(2τ). Detta innebär att varje enskaligt styrsystem har ett karakteristiskt frekvensgap — klasser av störningar som det strukturellt inte kan svara på.
-
-*Formellt härledd i tekniska rapporter I och II.*
-
----
+Fördröjning kan begränsa stabil återkopplingsförstärkning och responsbandbredd i angivna modeller. Tidigare uttryck i I–II (`K_max ≈ 1/(τ × |A|)`, `f_max ≈ 1/(2τ)`) är historiska modellbundna uttryck, inte allmänna gränser; deras härledning har inte granskats på nytt här.
 
 ### Signaltrohet
-**Kanonisk term.** *Varianter i serien: "signalkvalitet", "informationsnoggrannhet", "observationsbrus (σ)".*
 
-Den grad i vilken signalen som når beslutsfattningslagret korrekt representerar det styrda systemets verkliga tillstånd. Signaltrohet försämras vid varje aggregeringssteg, med varje rapporteringslager och över tid när fördröjda signaler beskriver tillstånd som redan har förändrats.
+**Historiska beteckningar (v1.0):** "signalkvalitet", "informationsnoggrannhet", "observationsbrus (σ)".
 
-Formellt: y(t) = x(t) + ε, där x(t) är det sanna tillståndet, y(t) är det observerade tillståndet, och ε är brus med varians σ². Hög signaltrohet innebär att σ är liten; låg signaltrohet innebär att σ är stor och att regulatorn agerar på en förvrängd bild av verkligheten.
+Noggrannhet hos överförd evidens i förhållande till en angiven referens, tidpunkt och uppgift. Systematiska fel, brus, bortfall och förlust av distinktioner är olika problem. I det additiva exemplet y = x + ε kan σ² beteckna brusvarians; detta är inte VIII:s tidigare dimensionslösa trohetsparameter σ. Använd uttrycklig notation.
 
-**Kritisk interaktion:** Signaltrohet och latens förstärker varandra. Ett system som observerar felaktigt och agerar långsamt är dubbelt handikappat — när en förvrängd signal väl ger upphov till en försenad respons kan den underliggande verkligheten ha förändrats helt.
-
----
+Aggregering kan minska brus såväl som kasta bort detaljer. Offentlig insyn och intern tillgång till evidens är skilda. Inget fast samband mellan signaltrohet, rang och fördröjning antas.
 
 ### Frekvensgap
-**Kanonisk term.** *Varianter i serien: "tidsskale-missanpassning", "responshastighets-missanpassning", "bandbreddsbegränsning".*
 
-Den klass av störningar som en given styrningsarkitektur strukturellt inte kan stabilisera eftersom deras frekvens överstiger den maximalt kontrollerbara frekvensen för systemets karakteristiska latens (f_max ≈ 1/2τ).
+**Historiska beteckningar (v1.0):** "tidsskale-missanpassning", "responshastighets-missanpassning", "bandbreddsbegränsning".
 
-Varje enskaligt styrsystem har ett frekvensgap: störningar som rör sig snabbare än systemets responscykel (typiskt säkerhetskriser, finansiell smitta, akuta hälsohändelser) och störningar som rör sig långsammare än systemets förmåga att upprätthålla sammanhängande intervention (typiskt demografiska övergångar, institutionellt förfall, ekologisk nedbrytning, klimatförändringar).
+Ett intervall av störningstidsskalor där en angiven regulator inte uppfyller ett uttalat reglerings- eller responskriterium. Snabba och långsamma störningar kan skapa olika utmaningar; en långsam drift kan missas av andra skäl än bandbredd.
 
-**Frekvensgapet är topologiskt, inte parametriskt.** Det kan inte stängas genom att justera förstärkningen, resurserna eller den institutionella kvaliteten hos en enskalig regulator. Det kan endast stängas genom en flerskalig arkitektur där varje lager styr det frekvensband dess latens tillåter det att nå.
-
-*Formellt härledd i teknisk rapport II (Fraktalitet som stabilitet).*
-
----
+Rapport II motiverar flerskalig utformning [IP]. Gapet beror på system, regulator, information, genomförbara interventioner och prestationskriterium. Den historiska ordlistans universella topologiska och latensbaserade anspråk behålls inte som allmänna resultat; II inväntar eventuell källgranskning.
 
 ### Fraktal styrningsarkitektur
-**Kanonisk term.** *Varianter i serien: "flerskalig styrning", "nästlad styrning", "polycentrisk styrningsarkitektur".*
 
-En nästlad hierarki av styrningslager där varje lager matchas mot den tidsskala för de störningar det ansvarar för att hantera. Snabbare lager har lägre latens och högre signaltrohet; långsammare lager har högre latens och observerar bredare aggregeringar. Varje lager hanterar det frekvensband dess latens tillåter det att nå.
+**Historiska beteckningar (v1.0):** "flerskalig styrning", "nästlad styrning", "polycentrisk styrningsarkitektur".
 
-**Den kritiska egenskapen:** En fraktal arkitektur stänger alla frekvensgap samtidigt. Ingen enskalig arkitektur kan göra detta. Den fraktala arkitekturen är ingen styrningspreferens — den är det stabilitetsoptimala svaret på en flerfrekvent störningsmiljö, av samma strukturella skäl som det mänskliga nervsystemet, immunsystemet och internet är fraktala.
+En föreslagen nästlad eller återkommande ordning av styrningsfunktioner på flera skalor, där uppgifter fördelas till nivåer som passar deras information, befogenheter, resurser och tidsskalor. Polycentrisk, nästlad och fraktal beskriver närliggande men inte identiska ordningar.
 
-**Styrningens funktionsuppdelning:**
-- *Lokalt lager (låg τ):* Snabba, kontextspecifika störningar; hög signaltrohet; hög förstärkning.
-- *Regionalt lager (medel τ):* Medelfrekventa tryck; regional aggregering; måttlig förstärkning.
-- *Globalt lager (hög τ):* Långsam sekulär drift; systemomfattande aggregering; låg förstärkning.
-
-Varje lager styr vad dess latens tillåter och inget mer. Ett lager som försöker styra störningar utanför sin bandbredd missar dem antingen (hög-latens-lager som försöker hantera snabba chocker) eller producerar oscillation (låg-latens-lager som försöker spåra långsam drift).
-
-*Formellt härledd i teknisk rapport II.*
-
----
+Lokala, regionala och globala roller är designalternativ snarare än fasta frekvensband. Samordningskostnader, gränsöverskridande kopplingar och lokal kapacitet spelar roll. Ingen universell optimalitet eller stängning av alla frekvensgap fastställs här. [IP; rapport II:s källa har inte granskats på nytt]
 
 ### Subsidiaritet
-**Kanonisk term.** *Inga betydande varianter i serien; notera: används i både politisk och teknisk bemärkelse.*
 
-I sin styrteoretiska mening (som i de tekniska rapporterna): principen att beslutsrätt ska ligga på den lägsta styrningsnivå som är kapabel att hantera de relevanta störningarna — specifikt den nivå vars latens och signaltrohet tillåter den att styra den aktuella störningstypen.
+**Historiska beteckningar (v1.0):** Inga betydande varianter i serien; notera: används i både politisk och teknisk bemärkelse.
 
-Detta är ingen politisk preferens för lokal styrning. Det är ett strukturellt krav som härleds ur medelvärdesproblemet (teknisk rapport I): centraliserade regulatorer som aggregerar lokala signaler kan inte särskilja rumslig variation i tillstånd och tillämpar därför enhetliga svar på heterogena situationer, vilket producerar både underrespons där förhållandena är som värst och överrespons där förhållandena är acceptabla.
+En styrningsprincip där beslut läggs på den lägsta nivå som kan utföra uppgiften adekvat, med eskalering eller samarbete när uppgiften överstiger nivåns kapacitet eller korsar dess gränser. Adekvans omfattar rättigheter, resurser, befogenheter och samordning, inte bara avkänning.
 
-**Viktig distinktion:** Subsidiaritet som routingprotokoll (den tekniska användningen här) skiljer sig från subsidiaritet som sköld (den politiska användningen där subsidiaritet åberopas för att motstå samordning oavsett om lokal kapacitet är tillräcklig). Serien argumenterar för det förra och mot det senare.
-
-*Formellt härledd i teknisk rapport I (Styrstabilitetssimulatorn). Tillämpad på flernivåstyrning i teknisk rapport II och EU:s landrapport.*
-
----
+Subsidiaritet som vägval skiljer sig från subsidiaritet som skydd mot nödvändig samordning. I–II motiverar designargumentet; en viss befogenhetsfördelning härleds inte enbart ur informationsförlust. [IP]
 
 ### Medelvärdesproblemet
-**Kanonisk term.** *Varianter i serien: "rumslig blindhet", "aggregeringsinducerad rumslig blindhet", "lokaliseringsinformationsförlust".*
 
-Den strukturella konsekvensen av centraliserad observation: när en regulator endast observerar ett systemövergripande medelvärde förstörs den rumsliga variationen i tillstånd. En allvarlig kris vid två noder och stabilitet vid åtta noder registreras som en modest nedgång i systemgenomsnittet. Regulatorn svarar på den modesta nedgången, inte den allvarliga krisen — underresponderar samtidigt vid krisnoderna och stör friska noder med onödigt ingripande.
+**Historiska beteckningar (v1.0):** "rumslig blindhet", "aggregeringsinducerad rumslig blindhet", "lokaliseringsinformationsförlust".
 
-Medelvärdesproblemet är inget misslyckande från den centrala regulatorns sida gällande kompetens eller resurser. Det är en konsekvens av arkitekturen. Den rumsliga information som förstörs i aggregeringen kan inte återskapas genom någon förbättring av beslutsprocessen nedströms, eftersom informationen förkastades innan den nådde fram.
+Olika rumsliga fördelningar eller gruppfördelningar kan ha samma medelvärde. Ett beslut som enbart bygger på medelvärdet kan inte särskilja dem. Exempelvis kan allvarliga problem vid två noder döljas i ett medelvärde för tio noder; lämplig respons beror på uppgiften och tillgängliga differentierade handlingar.
 
-*Formellt härledd i teknisk rapport I (Styrstabilitetssimulatorn).*
-
----
+Förlusten är villkorad av de data som tillhandahålls, inte av centralisering i sig. Uppdelade data, ytterligare signaler eller en lämplig gemensam handling kan mildra problemet. Rapport I motiverar distinktionen. [IP för institutionell tillämpning]
 
 ## Demokratiska och representationsrelaterade begrepp
 
----
-
 ### Preferensosynlighet
-**Kanonisk term.** *Varianter i serien: "preferenssignal-dämpning", "representationskedjebrus", "demokratiskt observerbarhetsmisslyckande".*
 
-Det strukturella tillstånd där medborgarpreferenser inte kan överföras på ett tillförlitligt sätt genom djupa representationskedjor till policylagret, eftersom aggregeringsförlust och brusackumulering över flera lager förstör signaltroheten under Observerbarhetströskeln.
+**Historiska beteckningar (v1.0):** "preferenssignal-dämpning", "representationskedjebrus", "demokratiskt observerbarhetsmisslyckande".
 
-Varje representationslager utför två operationer samtidigt: det aggregerar signaler från lägre nivå (förstör inom-grupp-varians) och introducerar brus från ofullkomligheterna i varje verklig representationsmekanism. Aggregeringsförlusten är multiplikativ; brusackumuleringen är additiv. Efter tillräckligt många lager överstiger brusvariansen den överlevande signalvariansen och systemet överför inte längre preferenser — det överför brusegenskaperna hos sin egen maskin.
+Ett föreslaget tillstånd där beslutsfattare saknar tillgång till betydelsefulla distinktioner mellan preferenser eller erfarenheter hos dem som berörs av ett beslut. Aggregering, rapporteringsfel, selektiv uppmärksamhet, strategiska incitament eller uteslutning kan bidra.
 
-**Empirisk implikation:** System som opererar under Observerbarhetströskeln kommer att visa nära noll korrelation mellan genomsnittliga medborgarpreferenser och policyutfall. Detta är i första hand inte en berättelse om elitinfångning (även om infångning kan förekomma); det är en berättelse om strukturell informationsförlust som skulle inträffa även i fullständigt ärliga, välfinansierade representativa institutioner.
-
-*Formellt härledd i teknisk rapport III (Kopplingen observerbarhet–demokrati).*
-
----
+Skilj mellan tillgång, tolkning, inflytande och legitim oenighet. Rapport III:s kedjemodell har inte granskats oberoende på nytt här; varken SNR under ett eller en lång kedja fastställer nära noll empirisk korrelation mellan preferenser och politik. [IP/H]
 
 ### Representationskedjedjup
-**Kanonisk term.** *Varianter i serien: "lagerantal", "kedjelängd", "aggregeringsdjup".*
 
-Antalet mellanliggande lager mellan medborgarpreferenser och policylagret genom vilka dessa preferenser måste passera. Varje ytterligare lager introducerar aggregeringsförlust och brus. Representationskedjedjup är den primära bestämningsfaktorn för om ett demokratiskt system opererar över eller under Observerbarhetströskeln för preferensöverföring.
+**Historiska beteckningar (v1.0):** "lagerantal", "kedjelängd", "aggregeringsdjup".
 
-Observerbarhetströskeln för representationskedjor korsas vid ungefär två till tre lager under realistiska brusparametrar. De flesta nationella demokratiska system opererar genom fyra till sex lager (medborgare → lokal representant → regionalt organ → nationellt parlament → regering → genomförande myndighet).
+Antalet angivna mellanled genom vilka en preferenssignal färdas. Definiera slutpunkt, faktisk väg, alternativa vägar och vad varje led aggregerar eller förmedlar.
 
-**Implikation:** Institutionella reformer som förbättrar kvaliteten på varje lager utan att minska kedjedjupet kan inte lyfta ett under-tröskelsystem över tröskeln. Tröskeln är en egenskap hos kedjestrukturen, inte kvaliteten på enskilda lager.
-
----
+Den historiska tröskelpassagen vid två till tre led är ett rapporterat modellbundet resultat i III, inte en universell institutionell gräns. Ledens kvalitet, parallella kanaler och kodning kan ändra överföringen. Antalet ensamt avgör inte adekvans. [IP/H; källgranskning vid behov återstår]
 
 ## Institutionella dynamiska begrepp
 
----
-
 ### Upplösningslåsning
-**Kanonisk term.** *Varianter i serien: "institutionell skalfälla", "optimeringsstak", "paradigm-inlåsning" (Japan-specifik variant).*
 
-Tillståndet där en institution blir strukturellt fångad av den upplösningsnivå den optimerades för. Arkitekturen som möjliggjorde dess framgång på den nivån förhindrar dess funktion på någon annan.
+**Historiska beteckningar (v1.0):** "institutionell skalfälla", "optimeringsstak", "paradigm-inlåsning" (Japan-specifik variant).
 
-Upplösningslåsning har tre komponenter:
-1. **Kompetens vid avsedd upplösning:** Institutionen presterar utmärkt inom sin optimerade skala och omfattning.
-2. **Blindhet bortom den upplösningen:** Samma arkitektur som möjliggör kompetens inom den avsedda skalan utesluter systematiskt signaler utanför den.
-3. **Självförstärkande låsning:** Yrkesidentitet, incitamentsstrukturer, observationskanaler och kulturella narrativ förstärker alla den befintliga upplösningen, vilket gör avsteg från den allt mer kostsamt.
+En tänkbar mekanism där kompetens vid en vald upplösning eller uppgift åtföljs av kostsamma svårigheter att ändra representation eller praktik när en annan upplösning blir betydelsefull. Fastställ kompetens, relevanta utelämnanden och mekanismen som upprätthåller begränsningen var för sig.
 
-**Tvärdomäna exempel:**
-- *Domstolar:* Optimerade för individuell tvistlösning; kan inte uppfatta systemiska mönster.
-- *Centralbanker:* Optimerade för inflationsmål; kan inte uppfatta finansiell stabilitet, fördelnings- eller ekologiska dimensioner.
-- *Universitet:* Optimerade för disciplinärt djup; kan inte integrera över discipliner.
-- *Hälso- och sjukvårdssystem:* Optimerade för standardiserad genomströmning; kan inte uppfatta klinisk komplexitet.
-- *Frontier AI-organisationer:* Optimerade för driftsättningshastighet; kan inte upprätthålla anpassningskoherens.
-- *Japan (landsnivå):* Optimerat för efterkrigstidens stabilitetsparadigm; kan inte ersätta det.
-
-*Introducerad i sammanfattningsrapporten (Samordningsmisslyckande som strukturellt tillstånd) som en tvärserie-förenande mekanism.*
-
----
+Rapportsyntesen föreslår exempel inom domstolar, centralbanker, universitet, vård, AI och Japan. Dessa är hypoteser; framgång i en uppgift bevisar inte blindhet i andra. Närliggande men inte liktydigt med modellinlåsning eller XXIV:s särskilda mekanism för inlärda observatörer. [IP/H; granskning av syntesen och XXIV återstår]
 
 ### Immunsystem
-**Kanonisk term.** *Varianter i serien: "politiskt immunsystem", "reformresistensmekanism", "infångningsarkitektur".*
 
-De adaptiva stabiliseringsmekanismer som skyddar den befintliga styrningsarkitekturen från utmaningar. Avgörande: immunsystem är inte hinder som lagts till styrningsarkitekturer utifrån — de är utflöden från dessa arkitekturer. De är det förutsägbara beteendet hos rationella aktörer som svarar på de incitament den nuvarande arkitekturen tillhandahåller.
+**Historiska beteckningar (v1.0):** "politiskt immunsystem", "reformresistensmekanism", "infångningsarkitektur".
 
-**Denna distinktion är viktig för reformstrategi.** Ett immunsystem som är ett externt hinder kan utmanövreras. Ett immunsystem som är ett arkitektoniskt utflöde kommer att regenereras av arkitekturen efter varje utmanövrering, tills arkitekturen själv förändras.
+En metafor för mekanismer som upprätthåller en institutionell ordning inför föreslagen förändring. Incitament, vetorätt, yrkesnormer, resursbegränsningar och legitima skydd kan alla spela roll; deras effekter måste särskiljas.
 
-**Universell form — Symbolisk anpassning:** Det vanligaste immunsvaret över alla domäner är symbolisk anpassning: antagandet av reformspråk, symboler och procedurformer samtidigt som den underliggande arkitekturen lämnas oförändrad. Exempel: "grön QE" utan portföljförändring; tvärvetenskapliga centra utan reform av anställningstryggheten; säkerhetsteam utan bindande befogenhet; antikorruptionskampanjer inom oförändrade koalitionsstrukturer.
-
-*Diskuteras i varje land- och organisationsrapport. Teoretiseras systematiskt i sammanfattningsrapporten.*
-
----
+Symbolisk anpassning är en tänkbar respons, inte en universell eller nödvändigtvis dominerande form. Motstånd är inte i sig evidens för infångning eller dysfunktion. Pröva återkommande beteende mot alternativ och skilj ut legitim opposition. [H; VII/IX och rapporttolkningar återstår]
 
 ### Genombrotts-infångnings-cykeln
-**Kanonisk term.** *Brasilien-specifik instans av en mer allmän mekanism; varianter: "reformabsorptionscykel", "innovationsinfångning".*
 
-Det återkommande mönstret där ett styrningsgenombrott — en genuin demonstration av institutionell kapacitet som skapar verkligt värde — omringas, utvinns och konsumeras av den befintliga infångningsarkitekturen innan det kan ackumuleras till varaktig systemisk förbättring.
+**Historiska beteckningar (v1.0):** Brasilien-specifik instans av en mer allmän mekanism; varianter: "reformabsorptionscykel", "innovationsinfångning".
 
-Den allmänna mekanismen: genombrott → värdeskapande → infångningsarkitekturen utvinner värdet (utan att monteras ned av genombrottet) → vinsterna förflyktigas → systemet återgår till lågkapacitetsbaslinje → nästa genombrott måste börja från ungefär samma baslinje.
+Brasilienrapportens hypotes att vinster från en innovation kan tas i anspråk eller skingras innan de bygger varaktig institutionell kapacitet: genombrott → vinst → infångning eller förlust → förnyad begränsning. Pröva varje länk med daterad evidens.
 
-Brasiliens specifika version involverar koalitionspresidentialism som utvinningsmekanism, men analogier förekommer genom hela serien: Kinas kampanj-överslängs-cykel, Japans ackommodering av tryck utan paradigmförändring, EU:s förhandlingsutspädnings-loop.
-
----
+Jämförelser med Kina, Japan och EU är analogier, inte evidens för en gemensam cykel eller oundviklig återgång till baslinjen. [H; rapportkällor inte granskade här]
 
 ### Förbikopplingsarkitektur
-**Kanonisk term.** *Varianter i serien: "genväg", "skuggsystem", "omdirigering".*
 
-En institutionell väg som leder förbi en dysfunktionell kärna för att uppnå nödvändiga funktioner. Förbikopplingsarkitekturer är ett rationellt svar på blockerade institutionella kärnor, och många av de mest lovande reformförslagen i serien tar denna form.
+**Historiska beteckningar (v1.0):** "genväg", "skuggsystem", "omdirigering".
 
-**Förbikopplingsfällan:** Förbikopplingar minskar trycket på den dysfunktionella kärnan utan att reformera den. Med tiden begränsar det oreformerade underlaget förbikopplingens effektivitet medan förbikopplingens framgång tar bort det politiska tryck som skulle kunna tvinga fram kärnreform. Förbikopplingen måste därför utformas med explicita **solnedgångsvillkor** — mekanismer som säkerställer att den skapar ökande tryck på kärnan snarare än att permanent ersätta den.
+En alternativ institutionell väg som tillhandahåller en funktion som en befintlig väg inte levererar adekvat. Förbikopplingar kan tillföra kapacitet, bevara kontinuitet, splittra ansvar eller minska trycket på kärnreform.
 
-**Exempel:** Indiens digitala offentliga infrastruktur (förbi den oreformerade rättsliga och administrativa grunden); Brasiliens föreslagna algoritmiska förbikoppling (förbi infångningsarkitekturen för budgetallokering); USA:s delstatsöverskridande avtal (förbi federalt dödläge); Skuguniversitetet (förbi disciplinär integrationssvikt).
-
----
+Förbikopplingsfällan är ett tänkbart felläge, inte ett oundvikligt utfall. Omprövnings- eller tidsbegränsningsvillkor är designalternativ; XIV v0.1 behandlar identifiering och omprövning villkorat, och en tidsgräns får inte avbryta grundläggande tjänster utan ett säkert alternativ. Indiens digitala infrastruktur, Brasiliens föreslagna algoritmiska förbikoppling, amerikanska delstatsavtal och Skuguniversitetet är rapportexempel eller förslag. [IP/H]
 
 ### Adaptiv koherens
-**Kanonisk term.** *Varianter i serien: "nödvändig styrning", "flerskalig stabilitet".*
 
-Den strukturella egenskapen hos en styrningsarkitektur som samtidigt upprätthåller variation (förmågan att uppfatta den fulla dimensionaliteten hos störningsmiljön på varje relevant skala) och koherens (förmågan att samordna handling över dessa skalor utan att undertrycka den lokala signaltrohet som gör variation värdefull).
+**Historiska beteckningar (v1.0):** "nödvändig styrning", "flerskalig stabilitet".
 
-Adaptiv koherens är inget värde eller utfall — det är en mätbar egenskap hos styrningsarkitektur, uttryckbar som gapet mellan V_miljö och V_observation på varje skala samt latensen hos samordningsmekanismer över skalorna.
+Ett designmål: bevara uppgiftsrelevanta distinktioner och förmågan att samordna lärande och handling över relevanta skalor utan att i onödan utplåna lokal evidens. Samordning kan misslyckas trots god avkänning; lokal kapacitet kan samexistera med ineffektiv gemensam handling.
 
-**Varför båda egenskaperna är nödvändiga:**
-- Variation utan koherens: den distribuerade styrningskapaciteten kan inte sättas samman till samordnad handling (USA:s integrationsunderskott; EU:s koherensunderskott).
-- Koherens utan variation: den samordnade handlingen är kalibrerad mot en försämrad modell av verkligheten (Rysslands läsbarhetsunderskott; Kinas kalibreringsunderskott; Japans kontinuitetsfälla).
-
-*Introducerad i sammanfattningen som det organiserande begreppet för Del III (Design och vision).*
-
----
+Inget validerat skalärt mått eller likhet med variationsgapet har fastställts. Använd den uppgiftsrelativa profilen (VIII v0.2), inklusive beslut och genomförande, för att undersöka målet. Syntesrapportens tillämpning återstår att granska. [IP/H]
 
 ### Performativ reformfälla
-**Kanonisk term.** *Varianter i serien: "symbolisk anpassning" (som tillämpas specifikt på universitet), "reformabsorption".*
 
-Mekanismen genom vilken institutioner införlivar reformernas retorik, symboler och procedurformer samtidigt som den underliggande incitamentsarkitekturen lämnas oförändrad. Skiljer sig från enkelt reformmisslyckande: i den performativa reformfällan producerar institutionen aktivt reformformade resultat som lättar på yttre tryck utan att åstadkomma inre transformation.
+**Historiska beteckningar (v1.0):** "symbolisk anpassning" (som tillämpas specifikt på universitet), "reformabsorption".
 
-Fällan är mest utvecklad i universitetsrapporten men mekanismen förekommer i alla fem organisationsrapporter och många landrapporter. Det är det institutionella uttrycket för Symbolisk anpassning (se Immunsystem).
+En hypotes att reformliknande utdata (tillkännagivanden, procedurer, rapportering) tillfredsställer yttre krav utan att åstadkomma den avsedda förändringen i beteende eller utfall. Skilj medveten symbolik från ofullständigt genomförande, fördröjning, ogenomförbarhet och faktiska förbättringar.
 
----
+VIII v0.2 föreslår separat kodning av antagande, resurser och oberoende uppföljande utvärdering, med delvisa och okända fall. Universitetsrapporten motiverar termen; förekomsten bland organisationer är inte verifierad. [H]
 
 ## Ekosystem- och allmänningsbegrepp
 
----
-
 ### Observationsbrist
-**Kanonisk term.** *Varianter i serien: "övervakningsdimensionalitetsunderskott", "allmänningsobserverbarhetsmisslyckande".*
 
-Den specifika formen av Varietetsgapet som tillämpas på allmänning och resursstyrning: styrsystemets observationsarkitektur har färre oberoende signaldimensioner än resurssystemets störningsfrekvensband.
+**Historiska beteckningar (v1.0):** "övervakningsdimensionalitetsunderskott", "allmänningsobserverbarhetsmisslyckande".
 
-**Konsekvens:** Styrsystemet kan inte särskilja tillstånd som kräver olika svar. Det auktoriserar uttag eller användning i en takt som är lämplig för de observerade dimensionerna medan de icke-observerade dimensionerna försämras. Kollaps sker längs de omätta axlarna och framstår som oväntad.
+En brist där tillgängliga observationshistoriker inte särskiljer betydelsefulla distinktioner för en angiven uppgift, vid den tidpunkt och osäkerhetsnivå som krävs. I allmänningsstyrning undersöks villkor av betydelse för uttag, återväxt och intervention, i stället för att likställa antalet frekvensband med observationsrang.
 
-**Tre observationsgap i allmänningsstyrning:**
-1. *Snabba bandets gap:* Årliga aggregerade undersökningar kan inte uppfatta månatliga chocker som kräver snabb lokal respons.
-2. *Säsongsbandets gap:* Aggregerade biomassamått kan inte uppfatta fenologisk och reproduktiv dynamik.
-3. *Långsamma bandets gap:* Korta övervakningsprogram kan inte upptäcka dekadala bärkraftstrender som endast flergenerations observationsbaslinjer kan upplösa.
-
-*Formellt härledd i teknisk rapport IV (Nödvändig variation och allmänningen).*
-
----
+Snabba chocker, säsongsbunden reproduktion och långsamma förändringar i bärkraft är tänkbara övervakningsmål. Ett utelämnande behöver inte medföra kollaps: försiktighetsregler, buffertar och annan information kan räcka. IV:s särskilda allmänningsresultat har inte granskats på nytt här. [IP/H]
 
 ### Närhet (som styrningsbegrepp)
-**Kanonisk term.** *Varianter i serien: "ekologisk inbäddning", "territoriell styrningskapacitet".*
 
-Fysisk, säsongsmässig och relationell närhet till ett styrt system är den primära mekanismen genom vilken styrningsarkitekturer förvärvar observationsdimensionalitet över alla relevanta störningstidsskalor. Närhet är inte bara tillgång till data — det är den ackumulerade observationskapacitet som genereras genom kontinuerlig flerdimensionell närvaro i ett system över tid.
+**Historiska beteckningar (v1.0):** "ekologisk inbäddning", "territoriell styrningskapacitet".
 
-**Tre former:**
-- *Fysisk närhet:* Låg-latens, kontinuerlig, flerdimensionell lokal observation.
-- *Säsongsmässig närhet:* Tillgång till fenologiska och cykliska signaldimensioner som kräver flerårig närvaro.
-- *Relationell närhet:* Distribuerad avkänning genom nätverk av inbäddade observatörer, plus intergenerationell kunskap som kodar långsamma variabelsignaler i styrningsprotokoll.
+Fysisk, säsongsmässig och relationell förankring kan bidra till aktuell, kontextuell och ackumulerad kunskap. Skilj fysisk tillgång, långvarig observation och relationer som möjliggör vittnesmål och tolkning.
 
-**Styrningsimplikation:** Styrsystem som är positionerade inom sina resurs- eller sociala system har observationskapacitet som fjärradministrativa system strukturellt inte kan replikera, oavsett teknologisk investering. Detta grundar seriens behandling av ursprungsfolks styrningssuveränitet som ett strukturellt (inte bara kulturellt eller historiskt) argument.
-
----
+Lokal kunskap och urfolkskunskap kan vara viktiga; bedöm faktisk tillgång, befogenheter och utfall i stället för att anta att avlägsna system inte kan få relevant evidens. Rättigheter och suveränitet har självständiga normativa och rättsliga grunder och är inte villkorade av en observationsfördel. [IP; IV motiverar undersökning]
 
 ## Värdearkitekturbegrepp
 
----
-
 ### Värdearkitektur
-**Kanonisk term.** *Varianter i serien: "målfunktion", "värdefunktion", "optimeringsmål".*
 
-Den explicita eller implicita uppsättning mål som ett styrsystem optimerar för, vilken avgör vilka dimensioner av verkligheten som är operationellt synliga för det. En värdearkitektur är, strukturellt sett, en observationskanal: den väljer vilka tillstånd i världen som registreras som framgångar eller misslyckanden som kräver respons, och förpassar allt utanför sitt omfång till brus.
+**Historiska beteckningar (v1.0):** "målfunktion", "värdefunktion", "optimeringsmål".
 
-**Goodhart-Ashby-syntesen:** Varje värdearkitektur med lägre dimensionalitet än variationen i det system den styr kommer så småningom att optimera bort sin egen förmåga att uppfatta systemets verkliga tillstånd. Proxyn avviker från målet i första hand inte genom spel utan genom att komprimeringsmekanismen förstör den korrelationsstruktur som gjorde proxyn informativ.
+Mål, prioriteringar, begränsningar och utvärderingsregler som styr vad som räknas som ett önskvärt eller oacceptabelt utfall. En målfunktion är en möjlig formell representation av en del av en värdearkitektur, inte observationskanalen. Ett skalärt mål kan värdera många egenskaper; flera mål kan bygga på samma evidens.
 
-*Utvecklad i teknisk rapport VI (Varietetsgapet).*
+VI v0.2 skiljer utvärdering från observation, modellering, beslut och genomförande. Prioriteringar kan påverka exponering och sensorbudgetar, men detta är villkorat. Den gamla Goodhart–Ashby-identiteten och anspråket om oundviklig självblindhet har dragits tillbaka (VI; XX v0.2).
 
----
+### Variationsgapets dynamik
 
-### Varietetsgapets dynamik
-**Kanonisk term.** *Se även: Varietetsgapet.*
+Förändringar i uppgiftsrelativ adekvans när störningsmiljön, tolererade utfall, evidens, modeller eller genomförbara handlingar förändras. Policy kan påverka exponering och lärande; exponering är inte liktydigt med identifiering. Dynamisk observerbarhet och dolda riktningar vid en fast tidpunkt är skilda.
 
-Det tidsvarierande beteendet hos Varietetsgapet under förhållanden där störningsmiljön expanderar (genom teknologisk förändring, social förändring, ekologisk förändring) snabbare än styrsystemet utökar sin observationsdimensionalitet.
+Det historiska dG/dt = α − β·A(V) kan antas för ett deriverbart surrogat baserat på dimensionsräkning med separat definierade hastigheter; det är ingen allmän lag för `g_hidden` eller det tillbakadragna indexet. Positiv tillväxt behöver inte nå en tröskel. Metastyrning är den föreslagna förmågan att granska och revidera relevanta komponenter, inte en skyldighet att vidga varje mål eller representation. [IP/H; VI och VIII v0.2]
 
-**Formell modell:** dG/dt = α − β·A(V)
+## Kompletterande begrepp från korrigerade rapporter
 
-Där α är uppkomsttakten för nya störningsdimensioner, A(V) är värdearkitekturens anpassningstakt, och β är anpassningseffektivitet.
+### Uppgiftsrelativ diagnosprofil
 
-När β·A(V) `<` α: gapet växer; systemet förlorar successivt observationskontakt med sin miljö.
+VIII v0.2 föreslår separat dokumentation av evidens och osäkerhet för utvärdering, observation, modellering, beslut och genomförande, för en angiven uppgift, population, utfall, rättigheter, tidsgräns och genomförbara handlingar. De åtta historiska indikatorfamiljerna och uppmärksamhetsfördelning är tänkbara observationer. De behöver inte vara oberoende. Profilen är ett forskningsförslag, inte en validerad skala eller landsrangordning. [IP/H]
 
-När β·A(V) ≥ α: gapet hanteras; systemet följer den föränderliga störningsmiljön.
+### Ordning mellan proxy och mål
 
-**Meta-styrningsimperativet:** Eftersom α > 0 i varje föränderlig värld är en statisk värdearkitektur en självblindande sådan. Långsiktig livskraft kräver inte bara adekvat aktuell dimensionalitet utan en institutionell kapacitet att utvidga värdearkitekturen i takt med att nya störningsdimensioner uppstår — en asymptotisk rörelse mot en fullödigare verklighetsintegration som inget ändligt system kan fullborda men varje livskraftigt system måste sträva efter.
+På en angiven mängd genomförbara utfall X innebär svag monoton säkerhet att M(y) > M(x) medför T(y) ≥ T(x) för alla par. En strikt omkastning bryter mot villkoret. Lika proxyvärden kan dölja olika målvärden utan en strikt omkastning; säkerhet även vid likhet utesluter också skadliga likheter. Varken utelämnade egenskaper eller deras nåbarhet bevisar ensamma en strikt omkastning, och möjlig omkastning förutsäger inte en realiserad sökväg. XX v0.2; etablerat ordningskriterium. [R]
 
-*Formellt härledd i teknisk rapport VI.*
+### Policyberoende exponering och identifiering
 
----
+Exponering gäller vilka tillstånd, interventioner och vilken evidens en policy gör tillgängliga. Identifiering gäller om observationerna och modellen särskiljer relevanta alternativ. En annan policy kan ge evidens utan att lösa inferensen; en fast policy kan redan identifiera parametrar. Persistent excitation är ett tillräckligt villkor i angivna skattningsproblem, inte ett universellt krav för allt lärande. VI v0.2 och XIV v0.1; jämförelser med XXIV och SO är fortsatt avgränsade. [IP/H för institutionell överföring]
+
+### Reformgenomförande och symbolisk andel
+
+För en definierad kohort dokumenteras antagande, genomföranderesurser och oberoende utvärdering separat (uppfyllt, inte uppfyllt, okänt, ännu inte bedömbart). Den historiska binära kodningen har ρ = 1 − p, så p och ρ är inte oberoende indikatorer. Redovisa i allmänhet delvisa och okända utfall i stället för att tvinga fram ett binärt komplement. VIII v0.2. [R för komplementet; IP/H för protokollet]
+
+### Funktionella roller i modellekologier
+
+Guvernörer, vaktposter och broar benämner tänkbara funktioner: prestanda, varning och funktionell överföring. Historiska prediktiva rangordningar, retrospektiva varningsetiketter och centralitet i tröskelgrafer påvisar inte oberoende roller, framåtsyftande varning eller faktisk översättning. XIX v0.1. [IP/H]
+
+### Beteendemässig olikhet och anpassningskostnad
+
+Deskriptiva skillnader i modellutdata är skilda från den riktade kostnaden för att anpassa en modell under en viss uppdateringsregel och budget. En symmetrisk deskriptiv olikhet behöver inte vara en metrik (den historiska konstruktionen med kvadrerat avstånd är inte det); den behöver inte förutsäga kostnaden eller den optimala vägen. XXIII v0.2. [IP/H för styrning]
+
+### Återbildning och metastabilitet
+
+Återbildning tillför alternativ; utarmning avlägsnar dem. Tillgång till en källa och kontrollbefogenhet är skilda. XVI v0.1 ger en ändlig irreducibel partitionskedja under inre parametervillkor och en exakt stationär fördelning i fallet med linjär kopiering; långa bytestider fastställer inte irreversibel kollaps eller ett universellt krav på externa källor. [R inom modellen; IP/H för styrning]
 
 ## Land- och signaturmönstertermer
 
-Följande termer är specifika för enskilda landanalyser men definieras här för tydlighet i korsreferenser.
+Läsindex över rapporternas föreslagna teman. Tabellen omfattar de 19 jurisdiktionerna i den tillhandahållna rapportförteckningen (Frankrike och USA delar en rad). Den validerar inte diagnoserna, och inga rangordningar eller trösklar följer av etiketterna. De fyra senast tillagda svenska begreppen är arbetsöversättningar; publicerade titlar finns i rapportförteckningen.
 
-| Term | Land | Kanonisk innebörd |
-|------|------|-------------------|
-| **Ackumulationsunderskott** | Brasilien | Den strukturella oförmågan att ackumulera styrningsgenombrott till varaktig systemisk kapacitet. |
-| **Kalibreringsunderskott** | Kina | Den strukturella oförmågan att hålla statens verklighetsmodell i linje med verkligheten, eftersom den arkitektur som krävs för korrekt återkoppling är samma arkitektur som systemets överlevnadslogik kräver att det undertrycker. |
-| **Kontinuitetsfälla** | Japan | Tillståndet där en arkitektur optimerad för stabilitet inom ett paradigm blir strukturellt oförmögen att ersätta paradigmet även när det synbart misslyckas (en landspecifik instans av Upplösningslåsning). |
-| **Läsbarhetsunderskott** | Ryssland | Tillståndet där styrningsarkitekturen inte kan uppfatta verkligheten utan att hota sig själv; den mest akuta formen av Varietetsgapet där systemets överlevnadslogik aktivt förstör dess egen observationskanal. |
-| **Substratunderskott** | Nigeria | Avsaknaden av den grundläggande institutionella infrastruktur som andra styrningsarkitekturer är beroende av; förutsättningen för varje annan styrningsfunktion. |
-| **Genomströmningsbegränsning** | Finland | En andra ordningens styrningsutmaning: oförmågan att omvandla utmärkt framsyn och brett samförstånd till transformation i den hastighet som krävs. Skiljer sig från första ordningens misslyckanden (genomförande, integration, återkoppling) genom att den endast blir synlig när dessa är lösta. |
-| **Gränsdragningsunderskott** | Israel | Den strukturella oförmågan att etablera och stabilisera grundläggande gränser (territoriella, konstitutionella, demografiska, identitetsmässiga) som skulle möjliggöra en övergång från permanent undantagsstyrning till en hållbar politisk ordning. |
-| **Integrativt slutningsunderskott** | Spanien | Den strukturella oförmågan att omsätta konstitutionell pluralism i stabila gemensamma institutioner; tillståndet där avsiktlig tvetydighet, nödvändig för övergång, blir permanent uppskjutande. |
-| **Koherensunderskott** | EU | Den strukturella oförmågan att omsätta enighet i samordnad, punktlig, systemomfattande handling över suveräna medlemsstater — att anlända tillsammans, i tid. |
-| **Integrationsunderskott** | Frankrike, USA | I Frankrike: den saknade förbindelsearkitekturen mellan nationellt beslut och lokal verklighet. I USA: oförmågan att omvandla distribuerad kapacitet till samordnad handling trots ihållande legitim oenighet. (Observera: samma term, olika strukturella uttryck på olika skalor.) |
-| **Genomförandeunderskott** | Tyskland | Den strukturella oförmågan att omvandla tillgängliga resurser till effektiv leverans; sammanbrottet mellan beslut och implementering. |
-| **Återkopplingsunderskott** | Sverige | Den strukturella oförmågan att upptäcka störande signaler tidigt, dela dem över institutionella gränser, erkänna dem ärligt och agera innan de ackumuleras. |
-| **Synkroniseringsunderskott** | Indien | Den strukturella oförmågan att synkronisera styrningskapacitet över radikalt olika skalor, administrativa kvaliteter och formella/informella klyftor. |
-| **Kontroll–genomförande-missanpassning** | Storbritannien | Det strukturella tillstånd där beslutsrätt är koncentrerad där kontexten är svagast, och kontexten är rikast där kapacitet att agera är svagast. |
-
----
+| Term | Jurisdiktion | Tema att undersöka |
+|---|---|---|
+| Ackumulationsunderskott | Brasilien | Varaktighet hos institutionella vinster |
+| Kalibreringsunderskott | Kina | Modellkorrigering och återkoppling |
+| Kontinuitetsfälla | Japan | Paradigmrevidering |
+| Läsbarhetsunderskott | Ryssland | Incitament kring korrekt information |
+| Substratunderskott | Nigeria | Formell och informell försörjning |
+| Genomströmningsbegränsning | Finland | Förmåga att omsätta framsyn i handling |
+| Gränsdragningsunderskott | Israel | Institutionell och politisk uppgörelse |
+| Integrativt slutningsunderskott | Spanien | Konstitutionell integration och uppskjutande |
+| Koherensunderskott | EU | Samordning av genomförande |
+| Integrationsunderskott | Frankrike, USA | Översättning mellan nationell och lokal nivå (Frankrike); distribuerad samordning (USA) |
+| Genomförandeunderskott | Tyskland | Genomförande och meningsskapande |
+| Återkopplingsunderskott | Sverige | Återkopplings- och korrigeringsvägar |
+| Synkroniseringsunderskott | Indien | Samordning över skalor |
+| Kontroll–genomförande-missanpassning | Storbritannien | Befogenheters och genomförandekapacitets placering |
+| Gränsexpansionsunderskott | Schweiz | Ömsesidiga beroenden och gränsers adekvans |
+| Turneringsfälla | Sydkorea | Konkurrensens konsekvenser under effektiv knapphet |
+| Gränssnittskapplöpning | Bhutan | Koppling mellan mål och genomförande under acceleration |
+| Genomförbarhetsskuld | Nederländerna | Åtagande före varaktig genomförbarhet |
 
 ## Anteckningar om terminologihantering
 
-**Termer att pensionera eller markera som ersatta:**
-- "Observerbarhetsgap" → använd **Varietetsgapet**
-- "Observationsbrus" (när det syftar på signalkvalitet generellt) → använd **Signaltrohet** (låg signaltrohet = högt brus)
-- "Paradigm-inlåsning" (Japan) → använd **Upplösningslåsning** med Japan som landspecifik instans
-- "Politiskt immunsystem" → använd **Immunsystem** (kvalificeringen "politiskt" är onödig och antyder att mekanismen endast är av politisk karaktär)
-- "Skuggsystem" / "genväg" → använd **Förbikopplingsarkitektur**
+**Tillbakadraget eller avgränsat:** Den gamla dimensionsskillnaden är inte ett allmänt variationsgap; VIII:s poängtal, intervall, tröskelband, utvecklingsklasser och pilotvalidering är tillbakadragna. Identifiera inte värdearkitektur med observationskanal eller Goodhart med Ashby. Själv I:s gamla personliga gap och upplösningströskel är inte psykologiska diagnoser.
 
-**Termer som är genuint distinkta och inte bör slås samman:**
-- *Läsbarhetskomprimeringsprincipen* och *Varietetsgapet* är relaterade men distinkta: den förra beskriver mekanismen; det senare beskriver det strukturella tillstånd den producerar.
-- *Observationsbrist* och *Preferensosynlighet* är båda manifestationer av Varietetsgapet inom olika domäner (allmänningsstyrning respektive demokratisk representation), inte synonymer.
-- *Frekvensgap* och *Latens* är relaterade men distinkta: latens är en egenskap hos observationskanalen; frekvensgap är den klass av störningar som latensen gör ostyrbar.
-- *Upplösningslåsning* och *Kontinuitetsfällan* (Japan): den förra är den allmänna tvärserie-mekanismen; den senare är dess Japanspecifika kulturellt-institutionella uttryck.
-- *Immunsystem* och *Performativ reformfälla*: det förra namnger stabiliseringsmekanismen; det senare namnger en specifik teknik som immunsystemet använder.
+**Behåll skillnaderna:** Observationsbrist, signalbrus, preferensosynlighet och variationsgap är inte automatiska synonymer. Signaltrohet är inte brusvarians. Latens är inte frekvensgap. Upplösningslåsning och kontinuitetsfälla kan vara relaterade men behöver separata belägg. Immunsystem är en metafor; symbolisk reform är ett möjligt mönster. Förbikoppling är inte alltid infångning. Använd variationsgapet i nya svenska texter; varietetsgapet är en historisk stavningsvariant.
 
----
-
-*Denna ordlista bör behandlas som ett levande dokument. När nya rapporter introducerar nya termer, eller när befintliga termer visar sig otillräckliga för nya fall, bör revideringar göras här och spridas till övriga material.*
+Ordlistan är levande. Nya definitioner kräver källhänvisning, angiven räckvidd och vid behov oberoende granskning. Denna utgåva innebär inte att övriga rapporter eller deras empiriska underlag har granskats.

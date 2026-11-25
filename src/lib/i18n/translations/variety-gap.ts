@@ -1,24 +1,35 @@
 export const varietyGapTranslations = {
   en: {
+    statusHeading: "Research status",
+    statusText: "The original composite scores, uncertainty intervals, critical threshold, bands and trajectory classifications in Paper VIII have been withdrawn from active use. Do not use historical scores to rank jurisdictions or predict collapse. The glossary has been reconciled with the corrected papers; the underlying reports have not all been audited. Their titles and claims remain research material requiring individual review.",
+    guideJump: "Go to the revised field guide",
+    briefLink: "Read the synthesis brief",
+    synthesisTitle: "Report Syntheses",
+    synthesisDesc: "Earlier cross-case interpretations, retained for review rather than as established universal conclusions.",
+    guideVersion: "Version 2.0 · November 2026",
+    glossaryWarning: "Reconciled terminology — remaining report claims require separate review",
+    glossaryPdf: "Download PDF",
+    seoDescription: "Task-relative institutional inquiry, report library, Governance as Engineering papers and the revised diagnostic field guide.",
+
     hero: {
       title: 'The Variety Gap Framework',
       subtitle:
-        'A cybernetic diagnostic for why governance systems become blind to their own fragility',
+        'Task-relative inquiry into institutional observation, decisions and adaptive capacity',
     },
     intro: {
       heading: 'What is the Variety Gap Framework?',
-      p1: 'Every governance system measures some things and ignores others. The gap between what the system measures and what actually determines its survival is the <strong>variety gap</strong>. When that gap grows too wide, the system loses the ability to perceive the threats that will eventually destroy it.',
-      p2: 'The Variety Gap Framework unites two bodies of work: the <strong>Country Reports for Systemic Change</strong>, which diagnose specific governance deficits across thirteen nations; and the <strong>Governance as Engineering</strong> working-papers, which formalize the control‑theoretic foundations, including the Variety Gap paper itself, which extends Ashby’s Law of Requisite Variety to the architecture of values. Together they form a diagnostic toolkit for understanding why well‑resourced, well‑intentioned governance systems repeatedly fail to adapt.',
+      p1: 'A governance system can miss distinctions that matter for a particular task. The <strong>variety gap</strong> concerns such consequential omissions, not the difference between all of reality and a dashboard. Objectives, observation, causal modelling, decisions and feasible actions are distinct; each can constrain the outcome.',
+      p2: 'The framework connects the <strong>Country Reports for Systemic Change</strong> and organizational studies with the <strong>Governance as Engineering</strong> working papers. Revised Papers VI and VIII separate task-relative observational adequacy from other institutional constraints and propose a diagnostic profile rather than a universal score. The reports offer hypotheses and case material; the framework is a research and inquiry tool, not a validated diagnostic instrument.',
     },
     explore: {
       heading: 'Explore the Series',
       reportsTitle: 'Country Reports',
-      reportsDesc: 'Thirteen national governance diagnostics applying the framework.',
+      reportsDesc: 'Country and jurisdiction studies: proposed explanations and reform options.',
       reportsOverview: 'All Reports →',
       orgReportsTitle: 'Organizational Reports',
-      orgReportsDesc: 'Applying the framework to specific institutional domains.',
+      orgReportsDesc: 'Studies of specific institutional domains and their proposed mechanisms.',
       papersTitle: 'Governance as Engineering',
-      papersDesc: 'Seven working papers formalizing the control‑theoretic foundations.',
+      papersDesc: 'The main series, from Paper 0 onward. Formal results have stated model scopes; institutional interpretations require separate evidence.',
       papersOverview: 'All Working Papers →',
     },
     fieldGuide: {
@@ -54,31 +65,42 @@ export const varietyGapTranslations = {
     glossaryTab: 'Stable Glossary',
     glossary: {
       heading: 'Stable Glossary',
-      description: 'Standardised terminology for the Variety Gap Framework and the Governance as Engineering series. Use this as a reference when reading the country reports, organisational reports, or working papers.',
+      description: 'Scoped definitions and historical terminology mappings, reconciled with corrected working papers. Historical labels are not evidence of equivalence or validation of the country reports.',
       downloadPdf: 'Download PDF',
-      version: 'Version 1.0',
+      version: 'Version 2.0 · November 2026',
     },
   },
   sv: {
+    statusHeading: "Forskningsstatus",
+    statusText: "De ursprungliga sammansatta poängtalen, osäkerhetsintervallen, den kritiska tröskeln, tröskelbanden och klassificeringarna av utvecklingsbanor i rapport VIII har dragits tillbaka från aktiv användning. Använd inte historiska poängtal för att rangordna jurisdiktioner eller förutsäga kollaps. Ordlistan har stämts av mot de korrigerade rapporterna; de underliggande fallrapporterna har ännu inte granskats i sin helhet. Deras titlar och påståenden är forskningsmaterial som kräver individuell granskning.",
+    guideJump: "Gå till den reviderade fältguiden",
+    briefLink: "Läs syntesöversikten",
+    synthesisTitle: "Rapportsynteser",
+    synthesisDesc: "Tidigare tolkningar över flera fall, bevarade för granskning snarare än som fastställda universella slutsatser.",
+    guideVersion: "Version 2.0 · November 2026",
+    glossaryWarning: "Avstämd terminologi – återstående rapportpåståenden kräver separat granskning",
+    glossaryPdf: "Ladda ner PDF",
+    seoDescription: "Uppgiftsrelativ institutionsanalys, rapportbibliotek, Styrning som ingenjörskonst och den reviderade diagnostiska fältguiden.",
+
     hero: {
-      title: 'Varietetsgapet – ramverket',
+      title: 'Variationsgapet – ramverket',
       subtitle:
-        'En cybernetisk diagnos för varför styrsystem blir blinda för sin egen skörhet',
+        'Uppgiftsrelativ undersökning av institutioners observation, beslut och anpassningsförmåga',
     },
     intro: {
-      heading: 'Vad är ramverket kring varietetsgapet?',
-      p1: 'Varje styrsystem mäter vissa saker och ignorerar andra. Gapet mellan vad systemet mäter och vad som faktiskt avgör dess överlevnad är <strong>varietetsgapet</strong>. När gapet växer för mycket förlorar systemet förmågan att uppfatta de hot som till slut kommer att förgöra det.',
-      p2: 'Ramverket förenar två arbeten: <strong>Country Reports for Systemic Change</strong>, som diagnostiserar specifika styrningsbrister i tretton länder; och working-papers <strong>Governance as Engineering</strong>, som formaliserar de styrteoretiska grunderna, inklusive själva rapporten om varietetsgapet, vilken utvidgar Ashbys lag om nödvändig variation till värderingarnas arkitektur. Tillsammans bildar de en diagnostisk verktygslåda för att förstå varför välfinansierade, välsinnade styrsystem gång på gång misslyckas med att anpassa sig.',
+      heading: 'Vad är ramverket kring variationsgapet?',
+      p1: 'Ett styrsystem kan missa distinktioner som har betydelse för en viss uppgift. <strong>Variationsgapet</strong> gäller sådana betydelsefulla utelämnanden, inte skillnaden mellan hela verkligheten och en instrumentpanel. Mål, observation, kausal modellering, beslut och genomförbara handlingar är skilda saker; var och en kan begränsa utfallet.',
+      p2: 'Ramverket knyter samman <strong>Landanalyser för systemisk förändring</strong> och organisationsstudier med arbetsrapporterna i <strong>Styrning som ingenjörskonst</strong>. De reviderade rapporterna VI och VIII skiljer uppgiftsrelativ observationsadekvans från andra institutionella begränsningar och föreslår en diagnosprofil i stället för ett universellt poängtal. Rapporterna erbjuder hypoteser och fallmaterial; ramverket är ett undersökningsverktyg, inte ett validerat diagnosinstrument.',
     },
     explore: {
       heading: 'Utforska serien',
       reportsTitle: 'Landrapporter',
-      reportsDesc: 'Tretton nationella styrningsdiagnoser som tillämpar ramverket.',
+      reportsDesc: 'Studier av länder och jurisdiktioner: föreslagna förklaringar och reformalternativ.',
       reportsOverview: 'Alla rapporter →',
       orgReportsTitle: 'Organisationsrapporter',
-      orgReportsDesc: 'Tillämpning av ramverket på specifika institutionella domäner.',
+      orgReportsDesc: 'Studier av institutionella verksamhetsområden och föreslagna mekanismer.',
       papersTitle: 'Governance as Engineering',
-      papersDesc: 'Sju working papers som formaliserar de styrteoretiska grunderna.',
+      papersDesc: 'Huvudserien från rapport 0 och framåt. Formella resultat gäller inom angivna modeller; institutionella tolkningar kräver separat evidens.',
       papersOverview: 'Alla working papers →',
     },
     fieldGuide: {
@@ -108,15 +130,15 @@ export const varietyGapTranslations = {
       universities: 'Universitet: Integrationsunderskottet',
     },
     workingPapers: {
-      architectureOfFailure: 'Styrningens misslyckandes arkitektur',
+      architectureOfFailure: 'Styrningsmisslyckandets arkitektur',
     },
     fieldGuideTab: 'Diagnostisk fältguide',
     glossaryTab: 'Stabil ordlista',
     glossary: {
       heading: 'Stabil ordlista',
-      description: 'Standardiserad terminologi för Varietetsgap-ramverket och Governance as Engineering-serien. Använd som referens vid läsning av landrapporter, organisationsrapporter eller working papers.',
+      description: 'Avgränsade definitioner och historiska termmotsvarigheter, avstämda mot korrigerade arbetsrapporter. Historiska beteckningar bevisar inte likvärdighet eller validering av landrapporterna.',
       downloadPdf: 'Ladda ner PDF',
-      version: 'Version 1.0',
+      version: 'Version 2.0 · November 2026',
     },
   },
 };

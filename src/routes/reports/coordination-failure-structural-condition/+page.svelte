@@ -47,7 +47,7 @@
     },
     {
       id: 'resolution-lock-in',
-      title: '2. Resolution Lock‑In: The Dynamic Trap',
+      title: '2. Resolution Lock-In: The Dynamic Trap',
       comp: ResolutionLockInEn,
     },
     {
@@ -58,18 +58,18 @@
     // Between Parts
     {
       id: 'canonical-formula-diagram',
-      title: 'The Canonical Formula and Diagram',
+      title: 'A Conditional Diagnostic Schema',
       comp: BetweenPartsEn,
     },
     // Part II
     {
       id: 'historical-argument',
-      title: '4. The Historical Argument: Why the Variety Gap Has Widened',
+      title: '4. The Historical Argument: A Modernity Hypothesis',
       comp: HistoricalArgumentEn,
     },
     {
       id: 'civilisational-threshold',
-      title: '5. The Civilisational Threshold Claim',
+      title: '5. The Civilisational Adaptation Hypothesis',
       comp: CivilisationalThresholdEn,
     },
     // Part III
@@ -85,7 +85,7 @@
     },
     {
       id: 'what-the-series-demonstrates',
-      title: '8. What the Series Itself Demonstrates About the Framework’s Claims',
+      title: '8. What the Series Contributes and What It Has Not Established',
       comp: WhatTheSeriesDemonstratesEn,
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       id: 'appendix-c',
-      title: 'Appendix C: The Resolution Lock‑In Table',
+      title: 'Appendix C: The Resolution Lock-In Table',
       comp: AppendixCEn,
     },
     {
@@ -126,7 +126,7 @@
     },
     {
       id: 'appendix-g',
-      title: 'Appendix G: Existence Proofs of Adaptive Coherence',
+      title: 'Appendix G: Candidate Case Studies of Adaptive Coherence',
       comp: AppendixGEn,
     },
   ];
@@ -154,11 +154,11 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const metadata = {
-    title: "Coordination Failure as Structural Condition: Why Competent Institutions Become Blind to Their Own Fragility",
+    title: "Coordination Failure as Structural Condition",
     subtitle:
-      'A unified diagnostic framework from twenty‑one governance analyses across nation‑states, organisations, and institutional domains',
+      'Comparative institutional hypotheses and a task-relative design framework',
     description:
-      'The capstone synthesis of a series of twenty‑one reports. It identifies eight structural primitives, the Variety Gap, Resolution Lock‑In, and the immune system as the cross‑domain invariants of coordination failure — and provides design principles for building institutions that can perceive what they currently exclude.',
+      'A revised comparative synthesis of twenty historical governance case interpretations. Retains eight candidate primitives, Resolution Lock-In and institutional resistance as research hypotheses, and proposes task-relative diagnostic and design procedures. Corrected against Papers VI, VIII and XX; the underlying reports and early engineering papers remain unaudited.',
   };
 
   const ui = {
@@ -195,7 +195,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). Coordination Failure as Structural Condition: Why Competent Institutions Become Blind to Their Own Fragility. Capstone Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). Coordination Failure as Structural Condition: Comparative institutional hypotheses and a task-relative design framework. Capstone Report, revised November 2026 (GA-R02-C v0.1). AI-generated; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -234,7 +234,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). Coordination Failure as Structural Condition: Why Competent Institutions Become Blind to Their Own Fragility. Capstone Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). Coordination Failure as Structural Condition: Comparative institutional hypotheses and a task-relative design framework. Capstone Report, revised November 2026 (GA-R02-C v0.1). AI-generated; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
@@ -274,6 +274,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {metadata.subtitle}
       </p>
+      <p class="text-sm mt-4">Revised November 2026 · GA-R02-C v0.1. Corrected scientific sources independently reviewed; historical case claims remain unaudited. Not peer-reviewed.</p>
       <Provenance lang="en" align="start" />
     </header>
 
