@@ -30,29 +30,29 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const meta = {
     title: "The Adjudication–Governance Variety Gap",
-    subtitle: "Why Courts Cannot See the Systems They Govern",
-    description: "Courts are the most procedurally sophisticated governance institutions ever built — yet their observation architecture is calibrated to the individual dispute and structurally blind to the systemic consequences of their decisions. This report diagnoses an Adjudication–Governance Variety Gap and proposes a Systemic Effects Registry as the concrete first step toward multi‑scale judicial architecture.",
+    subtitle: "Evidence, Authority and Systemic Effects in Judicial Governance",
+    description: "Research draft examining task-relative evidence, lawful authority and judicial remedies; the proposed Systemic Effects Registry is conditional. Institution- and case-specific findings remain on HOLD.",
     author: "Björn Kenneth Holmström",
-    date: "May 2026",
+    date: "Original date May 2026; correction candidate v0.2, 25 November 2026",
     url: "https://bjornkennethholmstrom.org/reports/courts-adjudication-governance-variety-gap",
     license: "Creative Commons Attribution-ShareAlike 4.0 International",
-    type: "Organizational Report · Courts & Legal Systems"
+    type: "Organizational Research Draft · Courts & Legal Systems · HOLD"
 };
 
 // ── Section definitions ──────────────────────────────────────────────────────
 const sections = [
     { file: '00-executive-summary',                                 title: 'Executive Summary',                                                              isAppendix: false },
     { file: '01-adjudication-governance-variety-gap',              title: '1. The Adjudication–Governance Variety Gap',                                     isAppendix: false },
-    { file: '02-structural-mechanisms',                            title: '2. Structural Mechanisms: How Courts Become Blind to the Systems They Govern',   isAppendix: false },
+    { file: '02-structural-mechanisms',                            title: '2. Structural Mechanisms: Evidence, Procedure and Systemic Effects',   isAppendix: false },
     { file: '03-building-requisite-judicial-governance',           title: '3. What Building Requisite Judicial Governance Would Look Like',                 isAppendix: false },
     { file: '04-political-immune-system',                          title: '4. The Political Immune System: Adversarial Epistemology',                       isAppendix: false },
     { file: '05-concrete-first-step',                              title: '5. A Concrete First Step: The Systemic Effects Registry',                       isAppendix: false },
     { file: '06-coda',                                            title: '6. Coda: The Retrospective Stabiliser',                                        isAppendix: false },
-    { file: '07-appendix-a',                                       title: 'Appendix A: Value Systems & Policy Mindsets',                                   isAppendix: true  },
-    { file: '07-appendix-b',                                       title: 'Appendix B: International Analogues & Precedents',                              isAppendix: true  },
+    { file: '07-appendix-a',                                       title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the Legal Governance Context',                                   isAppendix: true  },
+    { file: '07-appendix-b',                                       title: 'Appendix B: International Analogues and Precedents',                              isAppendix: true  },
     { file: '07-appendix-c',                                       title: 'Appendix C: The Governance as Engineering Connection',                           isAppendix: true  },
     { file: '07-appendix-d',                                       title: 'Appendix D: Anticipated Objections',                                           isAppendix: true  },
-    { file: '07-appendix-e',                                       title: 'Appendix E: About the Author & Method',                                        isAppendix: true  },
+    { file: '07-appendix-e',                                       title: 'Appendix E: About this report and how it was made',                                        isAppendix: true  },
     { file: '07-appendix-f',                                       title: 'Appendix F: Key Concepts and Abbreviations',                                   isAppendix: true  },
 ];
 

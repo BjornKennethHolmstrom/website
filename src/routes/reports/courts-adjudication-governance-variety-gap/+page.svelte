@@ -53,7 +53,7 @@
     },
     {
       id: 'structural-mechanisms',
-      title: '2. Structural Mechanisms: How Courts Become Blind to the Systems They Govern',
+      title: '2. Structural Mechanisms: Evidence, Procedure and Systemic Effects',
       comp: StructuralMechanismsEn,
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       id: 'appendix-a',
-      title: 'Appendix A: Value Systems & Policy Mindsets',
+      title: 'Appendix A: Value Systems and Policy Mindsets — A Guide for the Legal Governance Context',
       comp: AppendixAEn,
     },
     {
       id: 'appendix-b',
-      title: 'Appendix B: International Analogues & Precedents',
+      title: 'Appendix B: International Analogues and Precedents',
       comp: AppendixBEn,
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       id: 'appendix-e',
-      title: 'Appendix E: About the Author & Method',
+      title: 'Appendix E: About this report and how it was made',
       comp: AppendixEEn,
     },
     {
@@ -131,15 +131,15 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const metadata = {
-    title: "The Adjudication–Governance Variety Gap: Why Courts Cannot See the Systems They Govern",
+    title: "The Adjudication–Governance Variety Gap: Evidence, Authority and Systemic Effects in Judicial Governance",
     subtitle:
-      'A cybernetic diagnosis of the most procedurally sophisticated governance institution — and how to build judicial architectures that can perceive the systemic consequences of individual decisions',
+      'Conditional research draft v0.2 — evidence, legal authority, fair procedure and systemic effects',
     description:
-      'Courts are the most procedurally sophisticated governance institutions ever built — yet their observation architecture is calibrated to the individual dispute and structurally blind to the systemic consequences of their decisions. This report diagnoses an Adjudication–Governance Variety Gap and proposes a Systemic Effects Registry as the concrete first step.',
+      'Research draft examining task-relative evidence, lawful authority and judicial remedies; the proposed Systemic Effects Registry is conditional. Institution- and case-specific findings remain on HOLD.',
   };
 
   const ui = {
-    tag: 'Organizational Report · Courts & Legal Systems',
+    tag: 'Organizational Research Draft · Courts & Legal Systems · HOLD',
     allReports: '← All Reports',
     downloads: 'Downloads',
     share: 'Share',
@@ -172,7 +172,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Adjudication–Governance Variety Gap: Why Courts Cannot See the Systems They Govern. Organizational Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Adjudication–Governance Variety Gap: Evidence, Authority and Systemic Effects in Judicial Governance. Organizational Report. AI-assisted dependency correction candidate v0.2; not peer-reviewed; findings on HOLD.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -211,7 +211,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Adjudication–Governance Variety Gap: Why Courts Cannot See the Systems They Govern. Organizational Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Adjudication–Governance Variety Gap: Evidence, Authority and Systemic Effects in Judicial Governance. Organizational Report. AI-assisted dependency correction candidate v0.2; not peer-reviewed; findings on HOLD.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}
