@@ -53,7 +53,7 @@
     },
     {
       id: 'structural-mechanisms',
-      title: '2. Structural Mechanisms: How Healthcare Systems Become Blind to the Patient',
+      title: '2. Structural Mechanisms: Evidence, Authority and Response in Healthcare',
       comp: StructuralMechanismsEn,
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       id: 'appendix-e',
-      title: 'Appendix E: About the Author & Method',
+      title: 'Appendix E: About this report and how it was made',
       comp: AppendixEEn,
     },
     {
@@ -131,11 +131,11 @@
   // 4. Metadata & UI texts (English only)
   // ------------------------------------------
   const metadata = {
-    title: "The Clinical Observability Gap: Why Healthcare Systems Lose the Signal Between the Bedside and the Boardroom",
+    title: "The Clinical Observability Gap",
     subtitle:
-      'A cybernetic diagnosis of modern healthcare governance — and how to build systems that can see the patient while managing the population',
+      'Evidence, Agency and Response in Healthcare Governance — dependency-correction candidate v0.2 (publication HOLD)',
     description:
-      'Healthcare systems are becoming more organisationally sophisticated while becoming less clinically coherent. This report diagnoses a Clinical Observability Gap produced by payment architectures, documentation burdens, and the Standardisation–Signal Destruction Spiral, and proposes a Clinical Observability Audit and an Information Sandbox as the concrete first step.',
+      'Research draft examining task-relative evidence, authority and response hypotheses in healthcare, with conditional Audit, monitoring and Information Sandbox proposals. Findings unverified; independent human clinical review required; publication on hold.',
   };
 
   const ui = {
@@ -172,7 +172,7 @@
     <!-- Cite button -->
     <button
       onclick={() => {
-        const cite = 'Holmström, B. K. (2026). The Clinical Observability Gap: Why Healthcare Systems Lose the Signal Between the Bedside and the Boardroom. Organizational Report. AI-generated; not peer-reviewed.';
+        const cite = 'Holmström, B. K. (2026). The Clinical Observability Gap: Evidence, Agency and Response in Healthcare Governance. Organizational Report, dependency-correction candidate v0.2. AI-generated; not peer-reviewed; unverified research draft, publication HOLD.';
         navigator.clipboard.writeText(cite);
         alert('Citation copied!');
       }}
@@ -211,7 +211,7 @@
     <div class="mb-8 pb-8 border-b border-[var(--color-separator)]">
       <button
         onclick={() => {
-          const cite = 'Holmström, B. K. (2026). The Clinical Observability Gap: Why Healthcare Systems Lose the Signal Between the Bedside and the Boardroom. Organizational Report. AI-generated; not peer-reviewed.';
+          const cite = 'Holmström, B. K. (2026). The Clinical Observability Gap: Evidence, Agency and Response in Healthcare Governance. Organizational Report, dependency-correction candidate v0.2. AI-generated; not peer-reviewed; unverified research draft, publication HOLD.';
           navigator.clipboard.writeText(cite);
           alert('Citation copied!');
         }}

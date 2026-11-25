@@ -30,8 +30,8 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 // ── Metadata ─────────────────────────────────────────────────────────────────
 const meta = {
     title: "The Clinical Observability Gap",
-    subtitle: "Why Healthcare Systems Lose the Signal Between the Bedside and the Boardroom",
-    description: "Healthcare systems are becoming more organisationally sophisticated while becoming less clinically coherent. This report diagnoses a Clinical Observability Gap produced by payment architectures, documentation burdens, and the Standardisation–Signal Destruction Spiral, and proposes a Clinical Observability Audit and an Information Sandbox as the concrete first step.",
+    subtitle: "Evidence, Agency and Response in Healthcare Governance — dependency-correction candidate v0.2 (publication HOLD)",
+    description: "Research draft examining task-relative evidence, authority and response hypotheses in healthcare, with conditional Audit, monitoring and Information Sandbox proposals. Findings unverified; independent human clinical review required; publication on hold.",
     author: "Björn Kenneth Holmström",
     date: "May 2026",
     url: "https://bjornkennethholmstrom.org/reports/healthcare-clinical-observability-gap",
@@ -43,7 +43,7 @@ const meta = {
 const sections = [
     { file: '00-executive-summary',                 title: 'Executive Summary',                                                            isAppendix: false },
     { file: '01-clinical-observability-gap',       title: '1. The Clinical Observability Gap',                                            isAppendix: false },
-    { file: '02-structural-mechanisms',             title: '2. Structural Mechanisms: How Healthcare Systems Become Blind to the Patient', isAppendix: false },
+    { file: '02-structural-mechanisms',             title: '2. Structural Mechanisms: Evidence, Authority and Response in Healthcare', isAppendix: false },
     { file: '03-building-clinical-observability',   title: '3. What Building Clinical Observability Would Look Like',                     isAppendix: false },
     { file: '04-political-immune-system',           title: '4. The Political Immune System: The Administrative Imperative',               isAppendix: false },
     { file: '05-concrete-first-step',               title: '5. A Concrete First Step: The Clinical Observability Audit and the Information Sandbox', isAppendix: false },
@@ -52,7 +52,7 @@ const sections = [
     { file: '07-appendix-b',                        title: 'Appendix B: International Analogues & Precedents',                            isAppendix: true  },
     { file: '07-appendix-c',                        title: 'Appendix C: The Governance as Engineering Connection',                         isAppendix: true  },
     { file: '07-appendix-d',                        title: 'Appendix D: Anticipated Objections',                                         isAppendix: true  },
-    { file: '07-appendix-e',                        title: 'Appendix E: About the Author & Method',                                      isAppendix: true  },
+    { file: '07-appendix-e',                        title: 'Appendix E: About this report and how it was made',                                      isAppendix: true  },
     { file: '07-appendix-f',                        title: 'Appendix F: Key Concepts and Abbreviations',                                 isAppendix: true  },
 ];
 
