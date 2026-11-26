@@ -1,6 +1,3 @@
-
----
-
 ## 3. What Building Feedback Infrastructure Looks Like
 
 The feedback deficit diagnosis carries a practical implication: if Sweden's core problem is not a lack of competence but an architecture that suppresses, silos, and delays the signals needed for adaptation, then the central task is not to produce another round of policy reforms. It is to build the infrastructure that makes early detection, honest acknowledgment, and rapid response possible — and then to let that infrastructure reveal what needs doing.
