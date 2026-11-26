@@ -21,3 +21,44 @@ The report refers to related material on this website—the Global Governance Fr
 This report is the fourteenth in a series of Country Reports for Systemic Change, all produced in the same way. The first examined Germany through the lens of an execution deficit. The second examined France through the lens of an integration deficit. The third examined Sweden through the lens of a feedback deficit. The fourth examined India through the lens of a synchronisation deficit. The fifth examined the European Union through the lens of a coherence deficit. The sixth examined the United Kingdom through the lens of a control‑delivery deficit. The seventh examined Brazil through the lens of an accumulation deficit. The eighth examined Russia through the lens of a power‑vertical deficit. The ninth examined the United States through the lens of an integration deficit. The tenth examined Finland through the lens of a throughput constraint. The eleventh examined Japan through the lens of a continuity trap. The twelfth examined Nigeria through the lens of a substrate deficit. The thirteenth examined Israel through the lens of a boundary deficit.
 
 Together, the fourteen reports propose a global diagnostic framework covering a wide range of adaptive capacity challenges—from first‑order deficits of execution and integration to second‑order constraints of velocity and paradigm lock‑in, to the foundational challenge of substrate construction, to the challenge of constitutional incompleteness that, in the series' view, Israel and Spain represent in different forms. The series does not claim to be complete. It is meant as a foundation on which further analysis, deeper testing, and better design can be built. The series frames Spain as a democracy that mastered transition but has not yet completed its own constitution, and uses it to pose a more hopeful question than the earlier reports: not how to prevent collapse, but how to finish what was brilliantly begun.
+
+
+---
+
+### Dependency correction note — November 2026
+
+Historical text above is verbatim. The original identifies Claude, ChatGPT and DeepSeek as generators; ChatGPT drafted the dependency audit and this English candidate, and Claude (Opus 5.5) reviewed the audit v0.1 and v0.2. Audit v0.2 received ACCEPT_AUDIT; correction candidate v0.1 received REVISE_CORRECTION; this candidate v0.2 is pending independent correction review. Both models contributed to the original, so correlated blind spots are possible. AI review does not satisfy binding human review. The historical perspective and provenance claims, contributor versions/dates and author position remain for author confirmation; this correction makes no new biographical claim.
+
+The original web title asserts that mastery of transition prevents constitutional completion, and the original PDF title is “The Transition Trap”; the proposed English title is “Spain: The Transition Trap — Constitutional Adaptability and Legitimate Coordination”. The historical subtitles and descriptions in both wrappers (including the four-stage English, Spanish and Basque loop formulations) are retained for citation continuity in PUBLIC_METADATA_CANDIDATE.md, not endorsed as findings. The wrappers and all 26 translations remain byte-identical to the original and are not deployable with this candidate.
+
+The historical series table has fifteen rows including Spain, while this appendix names the fourteenth report and thirteen predecessors, omitting China. Switzerland appears in neither list. Russia's “Legibility” label in the table differs from “power‑vertical deficit” here. The five-stage, four-stage and two different sixth-stage labels remain historical variants, pending author confirmation. The 10–15% compact pilot and 5–10% first-step funding proposals also remain distinct. All institutional, legal, empirical, human-review, participation, rights, authorization, author-confirmation, translation and publication gates remain outstanding.
+
+### Editorial and verification note
+
+The four historical section headings replaced by scoped headings in this edition are recorded here for author confirmation:
+
+- 2.12 Stress Amplifier: Water Rights and Climate-Driven Territorial Stress
+- 5.2 Trojan Horse Mechanisms: Carrying Transformation in Familiar Packaging
+- 5.3 Safe-to-Fail Pilots: The Democratic Laboratory Approach
+- 5.4 Scaling by Attraction: The Spanish Way
+
+Three typographical repairs in the attributed source blocks are disclosed: “ctizens” → “citizens”; “TheTagus” → “The Tagus”; “Galicians Andalusians” → “Galicians, Andalusians”. The frozen original and historical Appendix E remain unchanged.
+
+### Reviewer-supplied verification leads (Claude, audit v0.1; unverified)
+
+The following twelve leads are reproduced from the independent audit review, not from the original report. They were not fact-checked and are not findings or legal advice. H2 refers to L12 below.
+
+None of these was checked against primary sources. Each is a lead for the human and legal queue, not an audit finding.
+
+- **L1.** Article 145 of the Spanish Constitution reportedly prohibits federations of autonomous communities and subjects agreements between them to communication to, or authorization by, the Cortes Generales. If so, this bears on consortia, compacts and the League of Cities model.
+- **L2.** Article 149.1.22 reportedly reserves to the State competence over waters flowing through more than one community. The existing basin authorities (*confederaciones hidrográficas*) reportedly already include representation of the autonomous communities, within EU Water Framework Directive basin planning.
+- **L3.** Article 168 reportedly applies to total revision and to specific parts (including the Preliminary Title, where Article 2 sits), while Title VIII's territorial provisions may be amendable under Article 167. Article 167 was reportedly used in 1992 and 2011. If so, the "frozen" and "never been successfully used" framing (02:19, 03:5, 04:35) concerns a narrower set of provisions than the report implies.
+- **L4.** Since a 2007 reform of the Tribunal's organic law, the Senate's four Tribunal appointees are reportedly chosen from candidates nominated by autonomous-community legislatures. If so, the "no formal role" claim (02:47, 04:33) and kaizen proposal 2 (03:69) need revisiting.
+- **L5.** Article 69.5 reportedly provides senators designated by autonomous-community legislatures (04:37 "limited role").
+- **L6.** The 2014–2020 cohesion-fund envelope for Spain is reportedly well below €140bn. A figure near €140bn was reportedly the initial combined grant-and-loan envelope announced for Spain under the Recovery and Resilience Facility. If so, 01:25 may misattribute the NGEU figure.
+- **L7.** Ireland's marriage-equality referendum reportedly followed the 2012–14 Constitutional Convention, while the abortion question went to the 2016–18 Citizens' Assembly. Climate-assembly recommendations were reportedly not adopted by referendum (03:55, B:19, D:21).
+- **L8.** Many ERDF and ESF+ programmes in Spain are reportedly regional programmes managed by autonomous-community managing authorities, which would qualify "flow through Madrid" (03:15). EGTC formation reportedly requires member-state approval (D:17).
+- **L9.** The pardons reportedly came in June 2021, roughly three years and eight months after October 2017 (01:7, "within three years").
+- **L10.** In the 2024 Basque election EH Bildu and the PNV reportedly tied on seats, which bears on the "second-largest party" framing (01:23).
+- **L11.** Russia is listed in the table under "Legibility" but in E:21 under "power‑vertical". The earlier Russia report's own label should be checked.
+- **L12.** Candidate episodes for the O1 frame: the 2005 Basque statute proposal rejected by the Cortes; the 2006 Catalan statute and 2010 ruling; 2012–2015 fiscal consolidation; 2017–2019; 2021 pardons; 2023–2024 amnesty; and calm periods between them.
