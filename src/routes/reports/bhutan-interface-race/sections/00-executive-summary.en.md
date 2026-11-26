@@ -1,6 +1,6 @@
 ## Executive Summary
 
-**English dependency-correction candidate v0.3 — November 2026. Publication HOLD.** The numerical, legal, institutional and historical particulars retained here are leads from the original AI-generated report, not independently verified findings. Its original narrative and proposed interventions are retained where possible, with corrections to formal inference, causal claims, attribution and rights safeguards. Appendix E records the original provenance verbatim. This is not an authorized policy programme or advice about investments, migration or individual legal cases. The accepted Korea and R4–R8 corrections inform the methodological distinctions, not empirical evidence for Bhutan.
+The numerical, legal, institutional and historical particulars retained here are leads from the original AI-generated report, not independently verified findings. Its original narrative and proposed interventions are retained where possible, with corrections to formal inference, causal claims, attribution and rights safeguards. Appendix E records the original provenance verbatim. This is not an authorized policy programme or advice about investments, migration or individual legal cases. The accepted Korea and R4–R8 corrections inform the methodological distinctions, not empirical evidence for Bhutan.
 
 **The Paradox**
 

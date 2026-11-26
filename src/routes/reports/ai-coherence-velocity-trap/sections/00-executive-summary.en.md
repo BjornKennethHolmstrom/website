@@ -1,7 +1,5 @@
 ## Executive Summary
 
-**Research draft — dependency correction v0.2 (25 November 2026).** The original report is dated May 2026. This revision is under AI correction review; it is not peer reviewed. Company-specific descriptions below are historical research leads, not established findings. Primary-source verification and human domain review with disclosed conflicts are binding before release of company-specific findings. No community participation or legal authorization is claimed.
-
 **The Paradox**
 
 Frontier AI organisations can be understood as governance systems as well as technology companies: they make choices about risk, deployment, access and the allocation of resources. The original report asked whether two important ambitions — sustained alignment coherence and competitive viability — can be maintained together as capabilities change. It named the possible incompatibility the **Coherence–Velocity Trap**. The name is retained as a hypothesis, not a theorem or inevitable future. Technical AI-assisted research, autonomous recursive improvement and institutional learning are different processes; their rates and effects must be established separately.
