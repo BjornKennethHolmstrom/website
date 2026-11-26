@@ -2,31 +2,35 @@
 
 ### D.1 "Gross National Happiness is branding. Bhutan's real objective has always been growth and stability."
 
-The evidence does not support this. GNH is constitutionally anchored, measured through a genuinely multidimensional and sufficiency-based index, embedded in national planning, and historically capable of changing national deliberations. The 13th Plan's economic emphasis is framed explicitly as a rebalancing within GNH, and the plan retains social, ecological and cultural targets. This report takes the objective seriously precisely because the evidence shows it to be serious.
+The original argues against reducing GNH to branding by pointing to its constitutional language, multidimensional sufficiency design, planning targets and a WTO screening episode attributed to GNH institutions. The 13th Plan is reported to frame its economic emphasis as rebalancing GNH. These are reasons to investigate the stated objective seriously, not proof of sincerity, actual effects or superiority. Branding, partial implementation and meaningful institutional commitment remain genuine alternatives; verify primary evidence.
 
 ### D.2 "What this report calls actuator decoupling is simply normal governance of state-owned enterprises and central banks."
 
-Correct—and the report says so. Delegation to narrow mandates is how modern states function, and Norway and Singapore show that autonomous institutions can remain aligned with wider values. The report's claim is narrower: that the interfaces around Bhutan's fastest-growing actuators are younger than those around its established institutions, that one major commitment was made before any wider interface engaged, and that whether interface construction keeps pace is an open question. The comparison with Norway and Singapore concerns the maturity of interfaces, not the existence of autonomy.
+The original agrees that narrow delegation is normal and invokes Norway and Singapore as possible analogues of alignment with autonomy. The question is whether particular interfaces are adequate as tasks change. Public disclosure after a major commitment does not establish absence of wider review; institutional age does not establish quality. Existing effective distributed arrangements and justified narrow mandates are rivals.
 
 ### D.3 "An outside report has no standing to raise the Lhotshampa question."
 
-The question is raised because the logic of the national objective requires it, not to adjudicate a contested history. An objective that aspires to universality must be able to say whose flourishing it includes. The report presents Bhutan's position and the refugees' position as contested, distinguishes documented facts from disputed ones, states that present GNH statistics are not impugned, and notes that the boundary question lies outside the Interface Race. Omitting it would have been the greater failure of respect—to Bhutan's own stated aspiration as much as to those affected.
+The original raises the population boundary because an objective aspiring to universality must be able to say whose flourishing it includes.
+
+The original also states that “Omitting it would have been the greater failure of respect”—to Bhutan’s stated aspiration and those affected. This is its attributed ethical rationale for raising the question, not authority to adjudicate or presume consent. The report has no standing to adjudicate history or prescribe individual status. Preserve the distinct official and refugee accounts, scholarship, human-rights evidence and replies without false equivalence or unsupported adjudication. A valid resident survey does not resolve rights or membership. Safe community-designated participation, competent legal review and due process are required, independently of the Interface Race.
 
 ### D.4 "The cryptocurrency investment was a sensible use of hydropower that would otherwise have been wasted, and it paid off."
 
-This may be true, and the report does not argue otherwise. Its concern is not the merit of the investment but the timing of its interfaces: a commitment of roughly a fifth of GDP and 40 percent of reserves was made before any wider-objective assessment was publicly visible, and its revenues were later used to fund a permanent obligation. A good decision made through a high-latency interface is still evidence about the interface.
+The original accepts that diversification, hydropower use and investment returns could have been beneficial. The reported commitment of roughly a fifth of GDP and 40 percent of reserves, later disclosure and extraordinary revenue financing recurrent wages raise distinct questions of process and fiscal exposure. Good returns do not establish good review, nor adverse returns establish bad review. Public visibility is not actual ex-ante assessment; sustainable financing and effective confidential review are rivals (W5/W7).
 
 ### D.5 "The report questions the role of the monarchy."
 
-It does not. It describes royal leadership as an important integrative coupling channel whose legitimacy has given Bhutan's transition unusual coherence. Its recommendation—that the coupling become increasingly institutional over time—is framed as fidelity to the founding vision and as the ordinary maturation of institutions expected to outlast their founders. It makes no claim about the quality of present or future leadership.
+The original frames royal leadership as an important integrative channel “whose legitimacy has given Bhutan's transition unusual coherence” and institutionalization as fidelity to the founding vision. This favorable comparative claim is unverified and requires plural perspectives, civic-space context and independent evidence, just as adverse accounts do. This remains a contextual hypothesis and proposed narrative, not an inferred legitimacy gain or a bar to questioning leadership, objectives or arrangements. Independent scrutiny, plural perspectives, effective informal coordination and justified nonadoption are legitimate; no claim about quality of present or future leadership.
 
 ### D.6 "Bhutan is too small and too particular for its experience to generalise."
 
-Bhutan's scale makes some of its arrangements—such as informal coordination among a small elite—specific to it. But the central problem is general: every state is building institutions that act faster and at larger scale than its accountability structures were designed for. Bhutan's value as a case lies precisely in its unusually explicit objective, which makes it possible to ask whether institutions are drifting from it.
+The original regards Bhutan’s size and explicit objective as reasons to investigate the challenges of changing institutional capabilities. Transferability is an open question; compare different legal mandates, resources, confidentiality, scale and existing arrangements. No national adequacy or comparative superiority follows.
+
+Its substantive response is that the problem may be general despite Bhutan’s particular arrangements: it claims that every state is building institutions faster and larger than the accountability structures designed for them. Sovereign investors, special economic zones, expanded central-bank balance sheets and machine-speed automated decisions are the original’s wider examples (§7.3). This is a comparative hypothesis, not a universal finding. R4’s conditional strategic feasibility and R5’s distributed responsibility do not supply empirical evidence for Bhutan. Existing adequate arrangements and context-specific responsibilities are genuine rivals.
 
 ### D.7 "Emigration is normal and beneficial. Remittances are rising, and migrants may return."
 
-The report agrees that migration brings benefits, and it recommends treating the diaspora as a resource and supporting circulation across the migration cycle. Its argument does not depend on emigration being harmful. It depends on emigration having created pressure for rapid acceleration of economic institutions—which the 13th Plan, the pay revision and DHI's strategy all document.
+The original recognizes potential benefits of remittances, circulation and return, and proposes diaspora and migration-cycle support. H2’s claim that external comparison and exit contributed to later acceleration is conditional: domestic reform, reopening, other policy aims and earlier diversification remain rivals. The pay revision is a response candidate; mining predates the surge. Voluntary departure, return or nonreturn are legitimate.
 
 ---
 

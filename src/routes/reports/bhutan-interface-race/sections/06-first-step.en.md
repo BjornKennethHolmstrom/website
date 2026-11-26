@@ -4,15 +4,15 @@
 
 ### 6.1 The Logic of the First Step
 
-The Interface Race is a structural condition, and no single measure will settle it. The first step should therefore not be the most ambitious reform this report has described. It should be the one that makes every later reform easier: low in cost, unthreatening to the institutions it concerns, and capable of producing the evidence that the race itself requires.
+The Interface Race is a candidate structural condition, not settled by a single measure. The first-step proposal is to test whether clearer evidence about institutional interfaces improves understanding and accountability without unacceptable burden or harm.
 
-Two tempting candidates fail that test. A new oversight body with authority over DHI, the Royal Monetary Authority and Gelephu would add a layer to an architecture whose strength lies in distributed responsibility, and it would provoke exactly the friction—concerns about speed, confidentiality and deference—described in Section 4. An extension of the GNH screen to all commercial decisions would slow the institutions Bhutan has created precisely to move quickly.
+The original contrasts the Register with a new authority over DHI, RMA and Gelephu, and with universal GNH screening. Both could add delay or duplicate oversight; existing effective arrangements and targeted alternatives are genuine comparators.
 
-The first step proposed here does neither. It changes no institution's mandate and delays no decision. It asks a question that Bhutan, for all the care it has taken in defining what it values, has never systematically answered:
+The Register is proposed as a descriptive instrument, not a new mandate or guaranteed costless measure. It asks:
 
 > **Which institutions can change the country, and what connects each of them to the whole of what the country values?**
 
-The answer at present is distributed across charters, acts, annual reports, audit schedules and board papers. No single place records it. The **Actuator Interface Register** would be that place.
+The original locates relevant information across charters, acts, reports, audit schedules and board papers. Verify existing inventories, actual accessibility and gaps before new collection. No absence of a unified public record establishes absence of review.
 
 ---
 
@@ -20,27 +20,39 @@ The answer at present is distributed across charters, acts, annual reports, audi
 
 For each institution above a defined threshold of power, the register would record, in a standard format, the properties this report has used to describe interface capacity.
 
+Record evidence quality, dates, task, legitimate owner and confidence; not a composite score. A threshold may miss severe risks below it. The original seven fields remain distinct; actual procedures, evidence and independent outcomes matter.
+
 **Mandate.** What the institution is formally designed to achieve, and under what legal instrument: statute, charter, company law or intergovernmental agreement.
 
 **Power.** Indicators of the institution's capacity to change national outcomes: the resources it commits, its share of revenue or of reserves, the territory or sectors it governs, and the degree of its operational autonomy.
 
+Capital, speed, autonomy, reversibility and other descriptors have different units. No scalar actuator power, aggregate rate or national ranking follows.
+
 **Ex-ante interfaces.** What assessments, approvals or notifications its major decisions must pass through before commitment, which dimensions of Gross National Happiness they cover, and whether they are advisory, procedural or binding.
 
+Separate scope, actual application, deadlines, exceptions and protected evidence from public disclosure; record unknown rather than infer absence.
+
 **Oversight.** Which independent bodies—the Royal Audit Authority, Parliament, the Anti-Corruption Commission, external auditors, regulators—review its decisions, and what they review: legality, finances, or wider outcomes.
+
+Named bodies do not establish legal competence, independence or effective oversight. Check conflicts, appointments, funding, access, appeal and actual follow-up.
 
 **Transparency.** Whether the rules governing its decisions are published, and whether the trade-offs in its major decisions become visible before commitment, shortly after, or only much later.
 
 **Correction record.** Cases in which its decisions have been revised in response to adverse evidence, and how long the correction took.
 
-**Coverage map.** A simple matrix showing, for each institution, which GNH domains are covered by an interface before commitment, which only after, and which not at all.
+Record appropriate unchanged decisions, adverse outcomes, justified confidentiality, quiet cases and missing records. Correction chronology is not causal identification.
 
-The coverage map would be the register's most useful single output. It would show at a glance where Bhutan's objective reaches its institutions before they act, where it reaches them only through later audit, and where it does not reach them at all. In the language of this report, it would make the controllability of the objective as visible as its observability already is.
+**Coverage map.** Retain the original matrix of before-commitment, after-commitment and absent coverage by domain. Add distinct unknown and not-applicable states, advisory/procedural/binding status, actual application, task/owner, risk and evidence confidence. Report omitted domains and reasons. These labels are neither a numerical ranking nor exhaustive observation.
+
+The coverage map may help identify questions for independent investigation. It cannot establish controllability, valid measurement, legitimacy or implementation. Selection and omitted domains must be explicit; compare the map against actual decisions and independent outcomes (W1/W4).
 
 ---
 
 ### 6.3 Which Institutions
 
 The register should begin small and grow. A reasonable initial threshold would include any institution that commits resources exceeding a defined share of GDP in a year, holds or deploys a significant share of the country's foreign reserves, governs a significant share of its territory, or contributes a significant share of domestic revenue.
+
+Confirm thresholds, legal duties and risk-based exceptions, including small commitments with severe rights impacts. The six original classes below are candidates, not an exhaustive list or proof of need.
 
 On the evidence of this report, the initial register would include:
 
@@ -61,33 +73,39 @@ The register's value depends on its credibility, and its credibility on who main
 
 It should be maintained by an institution with constitutional standing and existing access to the actuators it describes. The Royal Audit Authority is the natural candidate. It already audits the ordinary budget, DHI and hydropower projects, and it is preparing statutory audit arrangements for Gelephu. Maintaining the register would extend its mandate from asking whether institutions complied with their rules to recording what those rules are and what they cover. The Centre for Bhutan and GNH Studies, which designs and administers the national GNH survey, could contribute the methodology for the coverage map, ensuring that the register speaks the same language as the national objective.
 
-The register should be published annually, presented to Parliament alongside the Royal Audit Authority's annual report, and require a response from the Cabinet to its principal findings—without binding the Cabinet to act on them. Each institution should prepare its own entry, with the maintaining authority verifying it. That design places the burden where the knowledge is, keeps the cost low, and gives each institution ownership of how its interfaces are described.
+RAA and CBS are original candidate institutional options; confirm competence, independent appointment, funding, capacity, lawful access and methodological authority. Separate self-reporting, independent verification and evaluation of the Register itself; no new authority by stealth.
 
-The register would not require access to confidential commercial information. It records rules, procedures and outcomes, not negotiations. That distinction, drawn in Section 4, allows it to be public without compromising the confidentiality that commercial actuators legitimately need.
+The register should be published annually, presented to Parliament alongside the Royal Audit Authority's annual report, and require a response from the Cabinet to its principal findings—without binding the Cabinet to act on them. Each institution should prepare its own entry, with the maintaining authority verifying it. The original expects that design to place the burden where the knowledge is, keep costs low and give institutions ownership of their descriptions. These are hypotheses; measure actual reporting and verification burdens, transfers, accuracy and incentives.
+
+The proposed annual parliamentary presentation and Cabinet response do not imply binding action or legal authorization. Verify entries using independent samples including adverse and quiet cases, reconcile disputes, allow reasoned correction and appeal; public aggregation must protect confidentiality, privacy and safety.
+
+The original distinguishes public rules from protected negotiations. Some verification may require confidential materials under competent authorization, independent protected access and reasoned redaction; the public record cannot establish that such review is absent. Publish safe aggregates and test actual burden, timeliness, usefulness and error against existing records or no additional collection.
 
 ---
 
 ### 6.5 Registered Predictions
 
-This report offers a diagnosis that evidence should be able to weaken or overturn. It therefore registers five predictions now, before their outcomes are known. The Actuator Interface Register would provide the means to test several of them.
+The original registered five prospective predictions, preserved below as historical proposals, not newly registered evidence. Before testing, confirm original registration date, available information at that date, evaluation windows, case selection and qualifying opportunities; do not count known events retrospectively. Distinguish no opportunity, missing/protected evidence, justified nonadoption, failure and success. Register adoption is not a prerequisite or a validation criterion.
 
-**P1 — DHI's interface matures beyond reporting.** If the present period reflects institutional maturation rather than persistent lag, DHI's ESG system will, within a few years, show explicit pre-investment procedures, disclosed materiality criteria, and at least one consequential investment modified, conditioned or declined on environmental, social or governance grounds. If it remains retrospective reporting while DHI's investment power expands, the case for concern strengthens.
+**P1 — DHI’s interface matures beyond reporting.** The original expects explicit pre-investment procedures, disclosed materiality and within a few years at least one consequential investment modified, conditioned or declined. Test actual timely review, independent outcomes and missed material risks in qualifying cases. Appropriate unchanged approvals and effective existing review can also weaken concern; a forced decision change is not needed. Retrospective reporting alone does not establish efficacy. No qualifying opportunity is inconclusive.
 
-**P2 — Gelephu's constraints bind.** Gelephu will publish outcome measures beyond investment, company formation and employment, covering ecological integrity, community outcomes, cultural continuity and wellbeing; and at least one development decision will visibly demonstrate that such a constraint binds at economic cost. If economic expansion repeatedly overrides these commitments without transparent justification, the case for concern strengthens.
+**P2 — Gelephu’s constraints bind.** Preserve the original expectation of published ecological, community, cultural and wellbeing outcomes alongside economic measures, and an example of constraint binding even at economic cost. Test actual decisions, authorized constraints, avoided harms, residents’ rights and alternatives, including appropriate approvals or constraints binding without a loss. No costly veto or public disclosure of protected material is required. No opportunity or missing evidence is inconclusive.
 
-**P3 — The scope of screening is clarified.** Bhutan will clarify whether contemporary treaty accessions, such as the WTO process resumed in 2026, fall within the GNH screening architecture, another whole-of-government assessment, or a different decision class. Publication of a screening or mitigation record would weaken the concern that high-impact decision classes fall outside the objective's interfaces; persistent ambiguity would strengthen it.
+**P3 — The scope of screening is clarified.** The original’s WTO screening episode is attributed to GNH institutions, with a reported renewed accession process in 2026. Verify primary records and decision scope: GNH screen, alternative whole-of-government review or other lawful decision class. Publication/redaction, protected evidence and justified confidentiality must be assessed separately. Ambiguity is not proof of absent assessment; effective authorized alternative review may satisfy the task.
 
-**P4 — Interfaces grow with actuators.** As DHI, Gelephu and other economic actuators grow in capital, autonomy and speed, their transparency, pre-commitment review, independent oversight and correction speed will strengthen at least comparably. If they do, the Interface Race will have been won, and this report's central concern will have resolved itself. If actuator power grows substantially faster for a sustained period, the race will have become a lag.
+**P4 — Interfaces grow with actuators.** The original expects transparency, pre-commitment review, independent oversight and correction to strengthen as capital, autonomy and speed increase. Evaluate task-specific material risks, lawful responsibilities, deadlines, feasible response and actual outcome, not unvalidated aggregate rates. Existing arrangements may remain adequate; report mixed, adverse, favorable and unknown results. No five-item victory theorem or scalar comparison.
 
-**P5 — The coupling becomes institutional.** Gelephu's multidimensional alignment will become increasingly visible in law, published standards, measurement, oversight and decision procedure, rather than resting primarily on shared leadership and purpose. This prediction makes no claim about the quality of present or future leadership. It concerns only how the coupling is carried.
+**P5 — The coupling becomes institutional.** The original predicts that alignment at Gelephu becomes more visible in law, standards, measurement, oversight and procedure rather than primarily shared leadership and purpose. Test actual application, independent outcomes, plural perspectives and legitimate authority. Informal coordination can also be effective, formalization alone is not benefit; no inference about the quality of leadership.
 
-Each prediction can fail. That is their purpose. If all five are borne out in Bhutan's favour, this report's concern will have been a description of a successful transition rather than a warning—and Bhutan will have demonstrated something rarely shown anywhere: that a rich national objective can keep command of the machinery built to realise it, even under the pressure of a globalising economy.
+Each prediction can fail, succeed in part, or remain inconclusive. Findings against a qualifying prediction can weaken the associated hypothesis; five favorable results would not establish national adequacy or validate the whole framework. Evaluate H0–H5, predictions and interventions separately; default unknown.
 
 ---
 
 ### 6.6 What the Register Would Not Do
 
 The register would not rank Bhutan's institutions or judge their performance. It would not second-guess commercial decisions, publish confidential negotiations, or require any institution to maximise every dimension of Gross National Happiness. It would not create a new authority over DHI, the Royal Monetary Authority or Gelephu. And it would not resolve the boundary question raised in Section 2.8, which lies outside any register of institutional interfaces.
+
+These limits are design requirements, not guarantees. Test whether the Register creates new mandates, ranking pressure, administrative burden, compelled disclosure or circular validation; use independent oversight, safe stops and legitimate nonadoption.
 
 Its purpose is narrower: to make visible, in one place and in a common language, how the objective reaches the institutions that act on its behalf. What Bhutan then chooses to do with that visibility is a matter for its government, its Parliament and its people.
 
@@ -97,9 +115,13 @@ Its purpose is narrower: to make visible, in one place and in a common language,
 
 The register's own success should be judged over five years, by whether it changes how Bhutan understands and governs its institutions rather than by any immediate change in their behaviour.
 
+Predeclare the evaluation window and comparison with existing documentation, targeted alternatives and no new collection. Independently evaluate accuracy, decision usefulness, opportunity costs, transferred workload, privacy, timeliness and outcomes; no adoption-based success criterion.
+
 Five markers would show that it is working. The first register has been published and debated in Parliament. Its coverage map has identified at least one interface gap that has since been addressed. The major new actuators—DHI's expanding portfolio and the Gelephu Authority—have entries that grow more detailed and more complete over successive years. At least one correction has been recorded and explained publicly with the help of the register's framework. And public discussion of Bhutan's economic transformation has begun to ask not only whether new institutions are growing, but whether what connects them to Gross National Happiness is growing with them.
 
-That last marker matters most. Bhutan's international reputation rests on having asked, earlier and more seriously than almost any other state, what a country should aim for. The register would add a second question to its public life, as necessary in an age of fast-growing institutions as the first was in an age of fast-growing economies: not only what Bhutan values, but whether everything powerful enough to change Bhutan answers to it.
+These five original markers are process indicators, not a composite or proof of effect. There is no requirement to find a gap, manufacture a correction, produce reform or rank institutions; justified unchanged decisions and nonadoption may be appropriate. Stop or redesign if evidence is unreliable, participation unsafe or burden excessive.
+
+The original’s aspiration is to ask not only what Bhutan values, but how institutions relate to legitimate commitments. Public discourse is not an outcome measure of adequacy. The Register itself must remain challengeable and its utility demonstrated independently.
 
 ---
 

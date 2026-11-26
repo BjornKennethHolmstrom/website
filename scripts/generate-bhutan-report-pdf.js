@@ -49,12 +49,12 @@ const metadata = {
 		title: 'Bhutan: The Interface Race',
 		subtitle: 'Objective–Actuator Coupling Under Acceleration',
 		description:
-			'Bhutan has not abandoned Gross National Happiness, and its institutions are not out of control. It is accelerating its economic machinery for good reason — to create the opportunities that might persuade its educated young people to stay — while building the interfaces that connect that machinery to its constitutional objective. This report diagnoses the Interface Race and proposes an Actuator Interface Register as the concrete first step.',
+			'A conditional investigation of the Interface Race and candidate Actuator Interface Register. English dependency correction v0.3; findings unverified, publication HOLD.',
 		author: 'Björn Kenneth Holmström',
-		date: 'September 2026',
+		date: 'September 2026 (original); November 2026 (English correction candidate v0.3)',
 		url: 'https://bjornkennethholmstrom.org/reports/bhutan-interface-race',
 		license: 'Creative Commons Attribution-ShareAlike 4.0 International',
-		type: 'Country Report · Bhutan'
+		type: 'Country Report · Bhutan · Research draft / HOLD'
 	}
 };
 
@@ -74,7 +74,7 @@ const sections = [
 	{ file: '08-appendix-b',                     titleEn: 'Appendix B: International Analogues and Precedents',           isAppendix: true  },
 	{ file: '08-appendix-c',                     titleEn: 'Appendix C: The Governance as Engineering Connection',         isAppendix: true  },
 	{ file: '08-appendix-d',                     titleEn: 'Appendix D: Anticipated Objections',                           isAppendix: true  },
-	{ file: '08-appendix-e',                     titleEn: 'Appendix E: About the Author and Method',                      isAppendix: true  },
+	{ file: '08-appendix-e',                     titleEn: 'Appendix E: About this report and how it was made',                      isAppendix: true  },
 	{ file: '08-appendix-f',                     titleEn: 'Appendix F: The Crypto–Pay Case File',                         isAppendix: true  },
 	{ file: '08-appendix-g',                     titleEn: 'Appendix G: The Gelephu Mindfulness City — Legal and Accountability Architecture', isAppendix: true }
 ];

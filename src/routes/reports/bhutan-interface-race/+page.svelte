@@ -119,7 +119,7 @@
     },
     {
       id: 'appendix-e',
-      title: 'Appendix E: About the Author and Method',
+      title: 'Appendix E: About this report and how it was made',
     },
     {
       id: 'appendix-f',
@@ -138,13 +138,13 @@
     title:
       'Bhutan: The Interface Race — Objective–Actuator Coupling Under Acceleration',
     subtitle:
-      'A governance-as-engineering diagnosis of a country that decided what it values more carefully than almost any state — and must now build institutions fast enough to keep its people, without letting them outrun that knowledge',
+      'Task-relative interfaces, multidimensional wellbeing and legitimate institutional response — English correction candidate v0.3',
     description:
-      'Bhutan has not abandoned Gross National Happiness, and its institutions are not out of control. It is accelerating its economic machinery for good reasons — to create the opportunities that might persuade its educated young people to stay — while building the interfaces that connect that machinery to its constitutional objective. This report diagnoses the Interface Race and proposes an Actuator Interface Register as the concrete first step.',
+      'A conditional investigation of the Interface Race and candidate Actuator Interface Register. English dependency correction v0.3; findings unverified, publication HOLD.',
   };
 
   const ui = {
-    tag: 'Country Report · Bhutan',
+    tag: 'Country Report · Bhutan · Research draft / HOLD',
     allReports: '← All Reports',
     downloads: 'Downloads',
     share: 'Share',
@@ -153,7 +153,7 @@
   };
 
   const citeText =
-    'Holmström, B. K. (2026). Bhutan: The Interface Race — Objective–Actuator Coupling Under Acceleration. Strategic Country Report. AI-generated; not peer-reviewed.';
+    'Holmström, B. K. (2026). Bhutan: The Interface Race — Objective–Actuator Coupling Under Acceleration. Strategic Country Report. AI-generated; English dependency-correction candidate v0.3 (November 2026); not peer-reviewed; publication HOLD.';
 
   // ------------------------------------------
   // 5. Reactive logic
