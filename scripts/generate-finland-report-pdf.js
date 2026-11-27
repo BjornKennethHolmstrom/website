@@ -382,14 +382,14 @@ const pdfStyles = `
 		margin: 1.5em 0;
 	}
 
-	em:only-child {
-		display: block;
-		font-size: 9.5pt;
-		color: #555;
-		margin-top: 0.4em;
-		text-align: center;
-		font-style: italic;
-	}
+ figure figcaption,
+ .figure-caption {
+     font-size: 9.5pt;
+     color: #555;
+     margin-top: 0.4em;
+     text-align: center;
+     font-style: italic;
+ }
 
 	.appendix, .acknowledgements, .references {
 		page-break-before: always;
