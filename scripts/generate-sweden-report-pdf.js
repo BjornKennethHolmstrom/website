@@ -33,7 +33,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const REPORT_SLUG = 'sweden-competence-trap';
 const INPUT_DIR = path.join(__dirname, `../src/routes/reports/${REPORT_SLUG}/sections`);
-const OUTPUT_DIR = path.join(__dirname, `../preview-reports`); // never overwrite published PDFs in preparation
+const OUTPUT_DIR = path.join(__dirname, `../static/reports`);
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `${REPORT_SLUG}-${LANGUAGE}.pdf`);
 const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG}/cover.png`);
 
@@ -376,14 +376,14 @@ const pdfStyles = `
 		margin: 1.5em 0;
 	}
 
-	em:only-child {
-		display: block;
-		font-size: 9.5pt;
-		color: #555;
-		margin-top: 0.4em;
-		text-align: center;
-		font-style: italic;
-	}
+ figure figcaption,
+ .figure-caption {
+     font-size: 9.5pt;
+     color: #555;
+     margin-top: 0.4em;
+     text-align: center;
+     font-style: italic;
+ }
 
 	.appendix, .acknowledgements, .references {
 		page-break-before: always;
