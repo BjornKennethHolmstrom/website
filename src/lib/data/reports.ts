@@ -257,8 +257,15 @@ export const reportsData: Report[] = [
          en: '40–50 min',
          sv: '40–50 min'
      },
-     version: '1.1',
-     releaseDate: '2026-11-12',
+     version: '2.0',
+     languageVersions: { sv: '1.0' },
+     internalRevision: {
+     	programmeId: 'GA-R02-R12',
+     	reviewedVersion: '0.4',
+     	reviewStatus: 'accepted',
+     	languages: ['en','sv']
+     },
+     releaseDate: '2026-11-27',
      coverImage: '/images/reports/sweden-competence-trap/cover.png',
      readOnlinePath: '/reports/sweden-competence-trap',
      pdfPath: {
