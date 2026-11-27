@@ -414,12 +414,12 @@ export const reportsData: Report[] = [
          en: '55–65 min',
          sv: '55–65 min'
      },
-     version: '2.0',
+     version: '1.0',
      languageVersions: { fi: '1.0', sv: '1.0' },
      internalRevision: {
      	programmeId: 'GA-R02-R11',
-     	reviewedVersion: '0.4',
-     	reviewStatus: 'accepted',
+     	reviewedVersion: '0.1',
+     	reviewStatus: 'reverted',
      	languages: ['en']
      },
      releaseDate: '2026-05-06',
