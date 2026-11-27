@@ -33,7 +33,7 @@ if (!VALID_LANGUAGES.includes(LANGUAGE)) {
 
 const REPORT_SLUG = 'sweden-competence-trap';
 const INPUT_DIR = path.join(__dirname, `../src/routes/reports/${REPORT_SLUG}/sections`);
-const OUTPUT_DIR = path.join(__dirname, `../static/reports`);
+const OUTPUT_DIR = path.join(__dirname, `../preview-reports`); // never overwrite published PDFs in preparation
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `${REPORT_SLUG}-${LANGUAGE}.pdf`);
 const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG}/cover.png`);
 
@@ -41,20 +41,20 @@ const COVER_IMAGE = path.join(__dirname, `../static/images/reports/${REPORT_SLUG
 const metadata = {
     en: {
         title: "The Competence Trap",
-        subtitle: "Why Sweden's High-Trust Model Is Quietly Deprecating",
-        description: "A field guide to the feedback deficit — and how Sweden can rebuild its capacity to sense, share, and adapt.",
+        subtitle: "Competence, Feedback and Institutional Adaptation in Sweden",
+        description: "A working report examining the Competence Trap hypothesis in Sweden, institutional strengths and competing explanations, and conditional proposals for lawful municipal learning.",
         author: "Björn Kenneth Holmström",
-        date: "May 2026",
+        date: "English correction accepted 27 November 2026 · Proposed edition 2.0 (not released)",
         url: "https://bjornkennethholmstrom.org/reports/sweden-competence-trap",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Country Report · Sweden"
     },
     sv: {
         title: "Kompetensfällan",
-        subtitle: "Varför Sveriges högtillitsmodell tyst deprekeras",
-        description: "En guide till återkopplingsunderskottet — och hur Sverige kan återuppbygga sin förmåga att upptäcka, dela och anpassa.",
+        subtitle: "Kompetens, återkoppling och institutionell anpassning i Sverige",
+        description: "En arbetsrapport om hypotesen om kompetensfällan i Sverige, institutionella styrkor och konkurrerande förklaringar samt villkorade förslag för rättsenligt kommunalt lärande.",
         author: "Björn Kenneth Holmström",
-        date: "Maj 2026",
+        date: "Engelsk korrigering godkänd 27 november 2026 · Föreslagen utgåva 2.0 (ej utgiven)",
         url: "https://bjornkennethholmstrom.org/reports/sweden-competence-trap",
         license: "Creative Commons Attribution-ShareAlike 4.0 International",
         type: "Landrapport · Sverige"
@@ -65,11 +65,12 @@ const meta = metadata[LANGUAGE];
 
 // ── Section definitions (file base name without language suffix) ───────────
 const sections = [
+    { file: '00-revision-note', titleEn: 'Revision note', titleSv: 'Revisionsnot', isAppendix: false },
     { file: '00-executive-summary',      titleEn: 'Executive Summary',                                  titleSv: 'Sammanfattning',                                            isAppendix: false },
     { file: '01-competence-trap',        titleEn: '1. The Competence Trap',                              titleSv: '1. Kompetensfällan',                                        isAppendix: false },
     { file: '02-feedback-deficit',       titleEn: '2. The Feedback Deficit: A New Diagnosis',            titleSv: '2. Återkopplingsunderskottet: En ny diagnos',              isAppendix: false },
     { file: '03-feedback-infrastructure',   titleEn: '3. What Building Feedback Infrastructure Looks Like',  titleSv: '3. Hur byggandet av återkopplingsinfrastruktur ser ut',    isAppendix: false },
-    { file: '04-political-immune-system',titleEn: '4. The Political Immune System: Why Feedback Fails',  titleSv: '4. Det politiska immunsystemet: Varför återkopplingen misslyckas', isAppendix: false },
+    { file: '04-political-immune-system',titleEn: '4. The Political Immune System: Why Feedback May Fail',  titleSv: '4. Det politiska immunsystemet: Varför återkoppling kan brista', isAppendix: false },
     { file: '05-transition-architecture',titleEn: '5. Working with the Grain: Transition Architecture for Sweden', titleSv: '5. Att arbeta med kornet: Övergångsarkitektur för Sverige', isAppendix: false },
     { file: '06-framtidskommuner',       titleEn: '6. A Concrete First Step: Framtidskommuner',          titleSv: '6. Ett konkret första steg: Framtidskommuner',             isAppendix: false },
     { file: '07-coda',                   titleEn: '7. Coda: From Competence to Adaptability',            titleSv: '7. Koda: Från kompetens till anpassningsförmåga',          isAppendix: false },
@@ -77,7 +78,8 @@ const sections = [
     { file: '08-appendix-b',             titleEn: 'Appendix B: International Analogues',                 titleSv: 'Bilaga B: Internationella analogier',                       isAppendix: true  },
     { file: '08-appendix-c',             titleEn: 'Appendix C: The Governance as Engineering Connection', titleSv: 'Bilaga C: Kopplingen till Governance as Engineering',      isAppendix: true  },
     { file: '08-appendix-d',             titleEn: 'Appendix D: Anticipated Objections',                  titleSv: 'Bilaga D: Förväntade invändningar',                        isAppendix: true  },
-    { file: '08-appendix-e',             titleEn: 'Appendix E: About the Author & Method',               titleSv: 'Bilaga E: Om författaren & metod',                         isAppendix: true  },
+    { file: '08-appendix-e',             titleEn: 'Appendix E: About this report and how it was made',               titleSv: 'Bilaga E: Om rapporten och hur den togs fram',                         isAppendix: true  },
+    { file: '08-appendix-f', titleEn: 'Appendix F: Editorial verification and open questions (12 November 2026)', titleSv: 'Bilaga F: Redaktionell källkontroll och öppna frågor (12 november 2026)', isAppendix: true },
 ];
 
 // ── CSS (exactly as in France report script) ─────────────────────────────────

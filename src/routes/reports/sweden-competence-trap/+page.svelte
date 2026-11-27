@@ -10,6 +10,8 @@
   // ------------------------------------------
 
   // Executive Summary
+  import RevisionNoteEn from './sections/00-revision-note.en.md';
+  import RevisionNoteSv from './sections/00-revision-note.sv.md';
   import ExecutiveSummaryEn from './sections/00-executive-summary.en.md';
   import ExecutiveSummarySv from './sections/00-executive-summary.sv.md';
 
@@ -50,11 +52,14 @@
 
   import AppendixEEn from './sections/08-appendix-e.en.md';
   import AppendixESv from './sections/08-appendix-e.sv.md';
+  import AppendixFEn from './sections/08-appendix-f.en.md';
+  import AppendixFSv from './sections/08-appendix-f.sv.md';
 
   // ------------------------------------------
   // 2. Section map
   // ------------------------------------------
   const contentMap = [
+    { id: 'revision-note', titleEn: 'Revision note', titleSv: 'Revisionsnot', compEn: RevisionNoteEn, compSv: RevisionNoteSv },
     {
       id: 'executive-summary',
       titleEn: 'Executive Summary',
@@ -85,8 +90,8 @@
     },
     {
       id: 'political-immune',
-      titleEn: '4. The Political Immune System: Why Feedback Fails',
-      titleSv: '4. Det politiska immunsystemet: Varför återkopplingen misslyckas',
+      titleEn: '4. The Political Immune System: Why Feedback May Fail',
+      titleSv: '4. Det politiska immunsystemet: Varför återkoppling kan brista',
       compEn: PoliticalImmuneEn,
       compSv: PoliticalImmuneSv,
     },
@@ -141,18 +146,19 @@
     },
     {
       id: 'appendix-e',
-      titleEn: 'Appendix E: About the Author & Method',
-      titleSv: 'Bilaga E: Om författaren & metod',
+      titleEn: 'Appendix E: About this report and how it was made',
+      titleSv: 'Bilaga E: Om rapporten och hur den togs fram',
       compEn: AppendixEEn,
       compSv: AppendixESv,
     },
+    { id: 'appendix-f', titleEn: 'Appendix F: Editorial verification and open questions (12 November 2026)', titleSv: 'Bilaga F: Redaktionell källkontroll och öppna frågor (12 november 2026)', compEn: AppendixFEn, compSv: AppendixFSv },
   ];
 
   // ------------------------------------------
   // 3. Local report language (EN / SV, independent of site UI)
   // ------------------------------------------
   let reportLang: 'en' | 'sv' = $state('en');
-  let activeSection = $state('executive-summary');
+  let activeSection = $state('revision-note');
 
   function toggleReportLang() {
     reportLang = reportLang === 'en' ? 'sv' : 'en';
@@ -178,15 +184,15 @@
   const metadata = {
     en: {
       title: 'The Competence Trap',
-      subtitle: 'Why Sweden\'s High-Trust Model Is Quietly Deprecating',
+      subtitle: 'Competence, Feedback and Institutional Adaptation in Sweden',
       description:
-        'Sweden does not lack competence — it lacks the capacity to sense, share, and act on disturbing signals before they compound. A field guide to the feedback deficit and how to rebuild Sweden\'s capacity to adapt.',
+        'A working report examining the Competence Trap hypothesis in Sweden, institutional strengths and competing explanations, and conditional proposals for lawful municipal learning.',
     },
     sv: {
       title: 'Kompetensfällan',
-      subtitle: 'Varför Sveriges högtillitsmodell tyst deprekeras',
+      subtitle: 'Kompetens, återkoppling och institutionell anpassning i Sverige',
       description:
-        'Sverige saknar inte kompetens — det saknar kapacitet att upptäcka, dela och agera på oroande signaler innan de förvärras. En guide till återkopplingsunderskottet och hur Sveriges anpassningsförmåga kan återuppbyggas.',
+        'En arbetsrapport om hypotesen om kompetensfällan i Sverige, institutionella styrkor och konkurrerande förklaringar samt villkorade förslag för rättsenligt kommunalt lärande.',
     },
   };
 
@@ -219,7 +225,6 @@
   title="{meta.title} | Country Report"
   description={meta.description}
   type="article"
-  publishedTime="2026-07"
 />
 
 <div class="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
@@ -261,8 +266,8 @@
     <button
       onclick={() => {
         const cite = reportLang === 'sv'
-          ? 'Holmström, B. K. (2026). Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras. Strategisk landrapport. AI-generated; not peer-reviewed.'
-          : 'Holmström, B. K. (2026). The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating. Strategic Country Report. AI-generated; not peer-reviewed.';
+          ? 'Holmström, B. K. (2026). Kompetensfällan: Kompetens, återkoppling och institutionell anpassning i Sverige. Arbetsrapport, föreslagen utgåva 2.0 (ej utgiven). AI-stödd granskning; inte vetenskapligt sakkunniggranskad.'
+          : 'Holmström, B. K. (2026). The Competence Trap: Competence, Feedback and Institutional Adaptation in Sweden. Working report, proposed edition 2.0 (not released). AI-assisted review; not peer-reviewed.';
         navigator.clipboard.writeText(cite);
         alert(reportLang === 'sv' ? 'Citat kopierat!' : 'Citation copied!');
       }}
@@ -323,8 +328,8 @@
       <button
         onclick={() => {
           const cite = reportLang === 'sv'
-            ? 'Holmström, B. K. (2026). Kompetensfällan: Varför Sveriges högtillitsmodell tyst deprekeras. Strategisk landrapport. AI-generated; not peer-reviewed.'
-            : 'Holmström, B. K. (2026). The Competence Trap: Why Sweden\'s High-Trust Model Is Quietly Deprecating. Strategic Country Report. AI-generated; not peer-reviewed.';
+            ? 'Holmström, B. K. (2026). Kompetensfällan: Kompetens, återkoppling och institutionell anpassning i Sverige. Arbetsrapport, föreslagen utgåva 2.0 (ej utgiven). AI-stödd granskning; inte vetenskapligt sakkunniggranskad.'
+            : 'Holmström, B. K. (2026). The Competence Trap: Competence, Feedback and Institutional Adaptation in Sweden. Working report, proposed edition 2.0 (not released). AI-assisted review; not peer-reviewed.';
           navigator.clipboard.writeText(cite);
           alert(reportLang === 'sv' ? 'Citat kopierat!' : 'Citation copied!');
         }}
@@ -364,6 +369,7 @@
       <p class="text-xl md:text-2xl opacity-70 font-light leading-relaxed" style="color: var(--color-page-text);">
         {meta.subtitle}
       </p>
+      <p class="text-sm opacity-80 mt-3">{reportLang === 'sv' ? 'Föreslagen utgåva 2.0 · Inte utgiven' : 'Proposed edition 2.0 · Not released'}</p>
       <Provenance lang={reportLang} align="start" />
     </header>
 
@@ -385,7 +391,7 @@
             <svelte:component this={sectionComp(section)} />
           </article>
         </div>
-        {#if section.id !== 'appendix-e'}
+        {#if section.id !== 'appendix-f'}
           <hr class="border-[var(--color-separator)] opacity-30 my-8" />
         {/if}
       {/each}
