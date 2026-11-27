@@ -1,5 +1,20 @@
 // src/lib/data/reports.ts
 
+// Public edition numbering is independent of the internal correction archive sequence.
+// Public: 1.0.1 = editorial fix; 1.1 = localized substantive revision;
+// 2.0 = material change to foundations, methodology or central conclusions.
+// Internal: preserve the exact GA-R02 review candidate identifier and version.
+// A public edition number does not imply peer review, empirical validation or release clearance.
+export interface InternalReportRevision {
+	programmeId: string;
+	/** Last independently AI-reviewed correction candidate, not the public edition. */
+	reviewedVersion: string;
+	/** Dependency-correction review only, not publication or human-domain approval. */
+	reviewStatus: 'accepted' | 'post-review-repair';
+	/** Languages covered by the correction; not a translation-quality certification. */
+	languages: string[];
+}
+
 export interface Report {
 	id: string;
 	key: string;
@@ -10,7 +25,12 @@ export interface Report {
 		en: string;
 		sv: string;
 	};
+	/** Public edition of the primary (English) report; retained for existing components. */
 	version?: string;
+	/** Overrides for published language editions when they differ from the primary edition. */
+	languageVersions?: Record<string, string>;
+	/** Internal review metadata; do not use as the reader-facing edition label. */
+	internalRevision?: InternalReportRevision;
 	releaseDate: string;
 	coverImage?: string;
 	readOnlinePath: string;
@@ -19,6 +39,14 @@ export interface Report {
  emoji?: string; 
 }
 
+/** Resolve the public edition for the actual report language, not the UI locale. */
+export function getReportVersion(report: Report, language = 'en'): string | undefined {
+	return report.languageVersions?.[language] ?? report.version;
+}
+
+// Edition numbers below assume the corrected sources/PDFs have been deployed.
+// Keep the previous edition number for any language not yet updated.
+// releaseDate is retained from the supplied registry; it is not the correction date.
 export const reportsData: Report[] = [
  {
 	 id: 'standard-setting-variety-gap',
@@ -31,7 +59,13 @@ export const reportsData: Report[] = [
 		 en: '70–85 min',
 		 sv: '70–85 min'
 	 },
-	 version: '1.0',
+	 version: '2.0',
+	 internalRevision: {
+	 	programmeId: 'GA-R02-R3',
+	 	reviewedVersion: '0.1',
+	 	reviewStatus: 'post-review-repair',
+	 	languages: ['en']
+	 },
 	 releaseDate: '2026-05-26',
 	 coverImage: '/images/reports/standard-setting-variety-gap/cover.png',
 	 readOnlinePath: '/reports/standard-setting-variety-gap',
@@ -51,7 +85,13 @@ export const reportsData: Report[] = [
 			en: '60–75 min',
 			sv: '60–75 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R6',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-05-18',
 		coverImage: '/images/reports/courts-adjudication-governance-variety-gap/cover.png',
 		readOnlinePath: '/reports/courts-adjudication-governance-variety-gap',
@@ -71,7 +111,13 @@ export const reportsData: Report[] = [
 			en: '60–75 min',
 			sv: '60–75 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R5',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-05-18',
 		coverImage: '/images/reports/central-banks-monetary-policy-variety-gap/cover.png',
 		readOnlinePath: '/reports/central-banks-monetary-policy-variety-gap',
@@ -91,7 +137,13 @@ export const reportsData: Report[] = [
 			en: '75–90 min',
 			sv: '75–90 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R8',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-05-17',
 		coverImage: '/images/reports/universities-integration-deficit/cover.png',
 		readOnlinePath: '/reports/universities-integration-deficit',
@@ -111,7 +163,13 @@ export const reportsData: Report[] = [
 			en: '70–85 min',
 			sv: '70–85 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R7',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-05-16',
 		coverImage: '/images/reports/healthcare-clinical-observability-gap/cover.png',
 		readOnlinePath: '/reports/healthcare-clinical-observability-gap',
@@ -131,7 +189,13 @@ export const reportsData: Report[] = [
 			en: '60–75 min',
 			sv: '60–75 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R4',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-05-15',
 		coverImage: '/images/reports/ai-coherence-velocity-trap/cover.png',
 		readOnlinePath: '/reports/ai-coherence-velocity-trap',
@@ -276,7 +340,13 @@ export const reportsData: Report[] = [
          en: '25–40 min',
          sv: '25–40 min'
      },
-     version: '1.0',
+     version: '2.0',
+     internalRevision: {
+     	programmeId: 'GA-R02-S',
+     	reviewedVersion: '0.1',
+     	reviewStatus: 'accepted',
+     	languages: ['en']
+     },
      releaseDate: '2026-10-01',
      coverImage: '/images/reports/subsidiarity-deficit/cover.png',
      readOnlinePath: '/reports/subsidiarity-deficit',
@@ -337,7 +407,14 @@ export const reportsData: Report[] = [
          en: '55–65 min',
          sv: '55–65 min'
      },
-     version: '1.0',
+     version: '2.0',
+     languageVersions: { fi: '1.0', sv: '1.0' },
+     internalRevision: {
+     	programmeId: 'GA-R02-R11',
+     	reviewedVersion: '0.4',
+     	reviewStatus: 'accepted',
+     	languages: ['en']
+     },
      releaseDate: '2026-05-06',
      coverImage: '/images/reports/finland-throughput-constraint/cover.png',
      readOnlinePath: '/reports/finland-throughput-constraint',
@@ -463,7 +540,14 @@ export const reportsData: Report[] = [
 			en: '70–85 min',
 			sv: '70–85 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		languageVersions: { es: '1.0', eu: '1.0' },
+		internalRevision: {
+			programmeId: 'GA-R02-R10',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-05-13',
 		coverImage: '/images/reports/spain-transition-trap/cover.png',
 		readOnlinePath: '/reports/spain-transition-trap',
@@ -485,7 +569,13 @@ export const reportsData: Report[] = [
 		 en: '70–90 min',
 		 sv: '70–90 min'
 	 },
-	 version: '1.0',
+	 version: '2.0',
+	 internalRevision: {
+	 	programmeId: 'GA-R02-C',
+	 	reviewedVersion: '0.1',
+	 	reviewStatus: 'accepted',
+	 	languages: ['en']
+	 },
 	 releaseDate: '2026-05-18',
 	 coverImage: '/images/reports/coordination-failure-structural-condition/cover.png',
 	 readOnlinePath: '/reports/coordination-failure-structural-condition',
@@ -505,7 +595,13 @@ export const reportsData: Report[] = [
 			en: '60–75 min',
 			sv: '60–75 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R2',
+			reviewedVersion: '0.2',
+			reviewStatus: 'accepted',
+			languages: ['en', 'de', 'fr', 'it']
+		},
 		releaseDate: '2026-06-08',
 		coverImage: '/images/reports/switzerland-boundary-expansion-deficit/cover.png',
 		readOnlinePath: '/reports/switzerland-boundary-expansion-deficit',
@@ -528,7 +624,13 @@ export const reportsData: Report[] = [
 			en: '75–90 min',
 			sv: '75–90 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R1',
+			reviewedVersion: '0.3',
+			reviewStatus: 'accepted',
+			languages: ['en', 'ko']
+		},
 		releaseDate: '2026-09-18',
 		coverImage: '/images/reports/south-korea-tournament-trap/cover.png',
 		readOnlinePath: '/reports/south-korea-tournament-trap',
@@ -549,7 +651,13 @@ export const reportsData: Report[] = [
 			en: '75–90 min',
 			sv: '75–90 min'
 		},
-		version: '1.0',
+		version: '2.0',
+		internalRevision: {
+			programmeId: 'GA-R02-R9',
+			reviewedVersion: '0.3',
+			reviewStatus: 'accepted',
+			languages: ['en']
+		},
 		releaseDate: '2026-09-19',
 		coverImage: '/images/reports/bhutan-interface-race/cover.png',
 		readOnlinePath: '/reports/bhutan-interface-race',
