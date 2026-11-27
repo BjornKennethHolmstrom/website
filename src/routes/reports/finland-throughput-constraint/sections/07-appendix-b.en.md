@@ -1,27 +1,31 @@
 ## Appendix B: International Analogues and Precedents
 
-The proposals in this report are not without precedent. The following examples illustrate existing implementations of velocity‑oriented governance reforms across multiple countries, with particular attention to the Nordic and Baltic contexts most relevant to Finland.
+The five original analogues are historical leads, not verified precedents of success or evidence of transferability. Apply identical standards to favorable and adverse cases, including institutional mandates, actual outcomes, costs, rights, participation and local alternatives.
 
 ### B.1 Denmark: Welfare State Reform and Labour Market Flexibility
 
-Denmark's "flexicurity" model—a combination of flexible labour markets, generous unemployment benefits, and active labour market policies—is the most frequently cited example of a Nordic welfare state that has successfully increased its transformational velocity. The model was built incrementally over several decades, negotiated with the social partners, and sustained across changes of government. Denmark has also demonstrated a capacity for institutionalised sunsetting: the pension reforms of 2011, which raised the retirement age and indexed it to life expectancy, were passed with broad parliamentary support and have proven durable across electoral cycles. For Finland, the Danish experience provides a template for how sunsetting mechanisms can be introduced without triggering the Stability Bias—through gradual, evidence‑based, negotiated reforms that preserve the fundamental architecture of universal provision while adapting specific instruments to changing conditions.
+Denmark's flexicurity combines flexible labour markets, unemployment benefits and active labour policy; the original cites pension and eligibility reforms negotiated with social partners as a sunsetting model. Verify actual instruments, worker outcomes, fiscal effects and protections, including harms and cases of retention. No general proof of welfare preservation or superiority. Compare Finnish alternatives.
+
+The source specifically dates pension reform to 2011 and describes retirement-age increases and life-expectancy indexing, broad parliamentary support and durability across electoral cycles. These particulars require verification, not silent correction.
 
 ### B.2 Estonia: Digital Velocity and Governance at Software Speed
 
-Estonia's e‑governance infrastructure—the X‑Road data exchange layer, the e‑residency programme, the digital identity system, the near‑complete digitisation of public services—is the world's most advanced example of what happens when governance operates at software speed. Estonia built this infrastructure over two decades, leveraging its small size, its post‑Soviet institutional flexibility, and a political consensus that digital transformation was essential to national survival. For Finland, Estonia provides a mirror of what is possible in a small, high‑trust, technologically sophisticated Nordic‑Baltic society—and a reminder that Finland, which possesses comparable technical capacity and higher levels of trust, has not yet achieved comparable digital velocity in its public sector.
+Estonia's X-Road, e-residency, digital identity and public-service digitisation are original leads for faster digital administration. Verify actual coverage, service outcomes, exclusions, privacy, security and lawful data exchange. Software-speed administration does not establish physical implementation adequacy; accessibility and non-digital alternatives matter.
+
+The original attributes the two-decade development to small size, post-Soviet institutional flexibility and a political consensus about survival, and claims comparable Finnish technical capacity and higher trust. These comparative and causal propositions are unverified; investigate actual service design and deployment rather than infer from size or trust.
 
 ### B.3 Singapore: Shock Absorber Institutions and Anticipatory Governance
 
-Singapore's Civil Defence Force, its pandemic response infrastructure, and its system of pre‑authorised emergency powers provide a model of shock absorber institutions—standing capacities for rapid, coordinated action during crises, designed in advance and constrained by safeguards. Singapore's governance model is not democratic in the Nordic sense, and Finland should not adopt its political architecture. But the operational design of its emergency response mechanisms—pre‑approved contingency plans, cross‑ministerial coordination bodies with pre‑authorised authority, fiscal reallocation powers activated by objectively defined triggers—is directly relevant to the National Resilience Agency proposed in this report.
+Singapore's Civil Defence Force, pandemic arrangements and pre-authorised emergency powers are original analogues for rapid standing capacity. Verify actual legal mandate, oversight, outcomes, rights and the differences between jurisdictions. Neither effectiveness nor legitimacy follows from analogy or speed; compare Finnish existing preparations and safeguards, including rights and applicable conflict/humanitarian law.
+
+The original distinguishes Singapore’s political architecture from Nordic democracy and proposes borrowing operational components rather than the whole system: pre-approved contingency plans, cross-ministerial delegated coordination and fiscal triggers. Rights and authorization must be assessed for each component in its destination, including affected populations.
 
 ### B.4 United Kingdom: The Climate Change Committee as a Model for Independent Commissions
 
-The United Kingdom's Climate Change Committee, established by the Climate Change Act of 2008, is the world's most successful example of an independent statutory body that sets legally binding long‑term targets and provides authoritative, non‑partisan assessment of progress against them. The Committee's carbon budgets have survived changes of government, periods of intense political controversy, and the UK's departure from the European Union. Its independence, technical credibility, and statutory foundation have made its recommendations difficult for politicians to ignore. The Demography Commission proposed in this report is explicitly modelled on the Climate Change Committee—a body that depoliticises the factual baseline, establishes a shared reference point for democratic debate, and constrains the range of politically defensible responses without dictating what those responses should be.
+The UK Climate Change Committee, Climate Change Act of 2008 and carbon budgets motivate the proposed independent commissions. Verify which institutions recommend, adopt or enforce targets, response obligations, actual effects and limits. Distinguish evidence and policy authority; no automatic factual monopoly or Finnish legal feasibility.
+
+The original credits the carbon budgets with durability across governments, controversy and EU departure. Verify those claims and the distinction between committee recommendations and legal enactment.
 
 ### B.5 Ireland: Citizens' Assemblies and Deliberative Democracy
 
-Ireland's citizens' assemblies—on marriage equality, on abortion, on climate change—have demonstrated that randomly selected citizens, provided with expert information and professional facilitation, can deliberate on deeply contentious issues and produce recommendations that unlock political gridlock and command broad public legitimacy. For Finland, which has already experimented with citizens' juries and deliberative polls, the Irish experience provides a template for how standing citizens' assemblies could be institutionalised as a permanent component of the governance architecture, providing democratic legitimacy for the trade‑offs that consensus alone cannot resolve.
-
----
-
-
+The original cites Ireland's deliberative processes on marriage equality, abortion and climate change. Verify the distinct institutions, selection, actual recommendation-to-decision pathways and evidence of effects. Random invitation does not establish random participation or public mandate. Include nonresponse, accessibility, minority reports, affected noncitizens, legitimate rejection and elected authority.

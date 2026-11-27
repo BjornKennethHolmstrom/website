@@ -17,3 +17,57 @@ The report refers to related material on this website—the Global Governance Fr
 ### The Country Reports Series
 
 This report is the tenth in a series of Country Reports for Systemic Change, all produced in the same way. The first examined Germany through the lens of an execution deficit. The second examined France through the lens of an integration deficit. The third examined Sweden through the lens of a feedback deficit. The fourth examined India through the lens of a synchronisation deficit. The fifth examined the European Union through the lens of a coherence deficit. The sixth examined the United Kingdom through the lens of a control‑delivery deficit. The seventh examined Brazil through the lens of an accumulation deficit. The eighth examined Russia through the lens of a power‑vertical deficit. The ninth examined the United States through the lens of an integration deficit. Together, the ten reports propose a global diagnostic framework covering a wide range of adaptive capacity failures—from first‑order deficits of execution and integration to second‑order constraints of velocity and throughput. The series does not claim to be complete. It is meant as a foundation on which further analysis, deeper testing, and better design can be built.
+
+
+### Separate correction provenance — English research draft v0.2
+
+The historical record above is unchanged. This English dependency-correction candidate was drafted by ChatGPT following the accepted GA-R02-R5-BRIDGE v0.2 and Finland audit v0.2. Claude reviewed the bridge, both local audit versions and English correction v0.1; both models and DeepSeek were original generators. This is AI-assisted dependency correction, not peer review, fact-checking or human domain review. Empirical, Finnish and other applicable jurisdictional and community-designated human review (including Sámi, language-minority, migrant, labour, welfare, education, fiscal, security, memory, victims and justice expertise), safe affected-person participation, rights, legal and ethical authorization, author confirmation, Finnish and Swedish translation/metadata, technical build/display and publication gates remain outstanding. No participant outreach or implementation is authorized. Dated developments must be verified before current-tense use.
+
+The original report labels, four-stage loop name with five described stages, six-component summary versus seven Chapter 3 designs, title and subtitle, provenance, chronology, characterisations and translation terminology require author confirmation. The source chronology is left unreconciled; no reviewer recollection is treated as a fact. The original section §1.1 chronology locator is 01:9, not 01:19 (the latter describes the loop); this is a locator-only carry-forward. The pilot commitment is recorded, with no random draw or spot-audit before independent correction acceptance.
+
+Historical headings changed in this draft (author confirmation pending):
+
+- Historical: 1.1 The Nation That Sees the Future
+  Proposed: 1.1 Foresight and the Implementation-Gap Hypothesis
+- Historical: 1.7 Finland's Genuine Strengths
+  Proposed: 1.7 Finland's Reported Institutional Strengths
+- Historical: 2.9 The Education Paradox—Human Capital Formation as a Second‑Order Throughput Constraint
+  Proposed: 2.9 The Education Paradox—Human Capital Formation and Temporal Adequacy
+- Historical: 2.10 The Immigration Bottleneck—and the Lutheran Collective Responsibility Shadow
+  Proposed: 2.10 Immigration, Integration and the Collective Responsibility Hypothesis
+- Historical: 2.12 The Cultural Operating System: *Sisu*, Quiet Consensus, Lutheran Responsibility—and *Kalsarikännit*
+  Proposed: 2.12 Cultural Lenses: *Sisu*, Quiet Consensus, Lutheran Responsibility—and *Kalsarikännit*
+- Historical: 2.13 How the Mechanisms Reinforce Each Other
+  Proposed: 2.13 Possible Interactions among the Mechanisms
+- Historical: 3.2 From Foresight to Binding Constraint
+  Proposed: 3.2 Proposed Binding Foresight Assessment
+- Historical: 3.4 Institutionalised Sunsetting—The Centrepiece
+  Proposed: 3.4 Institutionalised Sunsetting—A Proposal for Review
+- Historical: 3.9 Scaling by Attraction—The Nordic Way
+  Proposed: 3.9 Scaling by Attraction and Nordic Cooperation
+- Historical: 4. The Political Immune System: The Stability Bias
+  Proposed: 4. Stability Bias: A Political Immune-System Hypothesis
+- Historical: 4.2 Consensus as a Speed Limit
+  Proposed: 4.2 Consensus, Timing and Legitimate Deliberation
+- Historical: 4.3 The Populist Absorption Cycle
+  Proposed: 4.3 The Populist Absorption Hypothesis
+- Historical: 4.4 Institutional Inertia—and Who Benefits from It
+  Proposed: 4.4 Institutional Interests in Continuity and Reform
+- Historical: 4.5 Public Trust as a Double‑Edged Sword
+  Proposed: 4.5 Public Trust and Competing Timing Effects
+- Historical: 6. Coda: The Prototype at the Frontier
+  Proposed: 6. Coda: A Candidate Case for Temporal Adequacy
+- Historical: 6.3 The Series Boundary Condition
+  Proposed: 6.3 The Historical Series Synthesis and Its Limits
+- Historical: A.3 The Throughput Constraint as a Value‑System Clash
+  Proposed: A.3 Value-System Clash as an Interpretive Hypothesis
+- Historical: C.1 The Architectural Foundation
+  Proposed: C.1 Historical Mathematical Foundations and Scope
+- Historical: C.3 The Throughput Constraint and Second‑Order Governance Challenges
+  Proposed: C.3 The Throughput Hypothesis and Limits of the Formal Transfer
+
+- Added in correction v0.1: Research hypotheses and prospective tests (§1, no historical counterpart).
+
+The revision’s operational term “temporal adequacy”, including its proposed title and heading usage, requires author confirmation. The historical English wrapper titles for Chapters 4 and 6 differ from the revised manuscript headings; the wrappers remain frozen. The technical dependency-transfer record is retained with the correction evidence, including the narrower mathematical results from the revised governance-observation, counting and action-cover work, the coordination-failure capstone and the Subsidiarity report. The historical Papers I–V and XIII remain outside that validation. This version restores arguments and original qualifications identified in the v0.1 review; it does not assert empirical verification.
+
+Post-pilot revision: the historical four-stage loop title and five described stages remain an author-confirmation item. The original correction v0.2 is retained unchanged in the research archive; the subsequent sampled review identified a material unresolved authority issue and additional local omissions. This revision clarifies conditional assessment designs and restores local formal applications and safeguards. It is not empirical, legal, multilingual or publication approval.
